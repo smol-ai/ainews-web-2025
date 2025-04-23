@@ -3,6 +3,7 @@ import TableOfContentsHeading from "./TableOfContentsHeading.astro";
 
 // https://kld.dev/building-table-of-contents/
 const { headings } = Astro.props;
+console.log('Received headings:', JSON.stringify(headings, null, 2));
 const toc = buildToc(headings);
 
 export interface Heading {
@@ -12,15 +13,23 @@ export interface Heading {
 }
 
 function buildToc(headings: Heading[]) {
+  console.log('Building TOC with headings:', JSON.stringify(headings, null, 2));
   const toc: Heading[] = [];
   const parentHeadings = new Map();
   headings.forEach((h) => {
+    console.log('Processing heading:', JSON.stringify(h, null, 2));
     const heading = { ...h, subheadings: [] };
     parentHeadings.set(heading.depth, heading);
     if (heading.depth === 2) {
       toc.push(heading);
     } else {
-      parentHeadings.get(heading.depth - 1).subheadings.push(heading);
+      const parent = parentHeadings.get(heading.depth - 1);
+      console.log('Parent heading:', JSON.stringify(parent, null, 2));
+      if (!parent) {
+        console.warn(`No parent heading found for depth ${heading.depth - 1}`);
+        return;
+      }
+      parent.subheadings.push(heading);
     }
   });
   return toc;
