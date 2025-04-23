@@ -1,5 +1,16 @@
 ---
 import Search from "astro-pagefind/components/Search";
+
+// Add type declarations for pagefind
+interface Pagefind {
+  filters(): Promise<Record<string, Record<string, number>>>;
+}
+
+declare global {
+  interface Window {
+    pagefind: Pagefind;
+  }
+}
 ---
 
 <aside data-pagefind-ignore>
@@ -19,6 +30,11 @@ import Search from "astro-pagefind/components/Search";
           showImages: false,
           excerptLength: 15,
           resetStyles: false,
+          filters: {
+            tag: "Tags",
+            date: "Date",
+            reading_time: "Reading Time"
+          }
         }}
       />
       <div class="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
@@ -29,6 +45,43 @@ import Search from "astro-pagefind/components/Search";
     </div>
   </div>
 </aside>
+
+<script>
+  // Initialize pagefind
+  window.addEventListener("load", async () => {
+    try {
+      // Wait for pagefind to be available
+      let retries = 0;
+      const maxRetries = 10;
+      
+      const waitForPagefind = () => {
+        return new Promise((resolve) => {
+          const checkPagefind = () => {
+            if (window.pagefind) {
+              resolve(window.pagefind);
+            } else if (retries < maxRetries) {
+              retries++;
+              setTimeout(checkPagefind, 500);
+            } else {
+              resolve(null);
+            }
+          };
+          checkPagefind();
+        });
+      };
+
+      const pagefind = await waitForPagefind();
+      if (pagefind) {
+        const filters = await (pagefind as any).filters();
+        console.log("Available filters:", filters);
+      } else {
+        console.warn("Pagefind not found after maximum retries");
+      }
+    } catch (error) {
+      console.error("Error initializing filters:", error);
+    }
+  });
+</script>
 
 <script is:inline>
   const magnifyingGlass = document.getElementById("magnifying-glass");
@@ -128,5 +181,33 @@ import Search from "astro-pagefind/components/Search";
   #search .pagefind-ui__message {
     padding: 0;
     padding-bottom: 0.75rem;
+  }
+
+  /* Filter styles */
+  .pagefind-ui__filter {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: var(--pagefind-ui-border-radius);
+    background: var(--pagefind-ui-tag);
+  }
+
+  .pagefind-ui__filter-label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+
+  .pagefind-ui__filter-option {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--pagefind-ui-border-radius);
+    background: var(--pagefind-ui-background);
+    cursor: pointer;
+  }
+
+  .pagefind-ui__filter-option--selected {
+    background: var(--pagefind-ui-primary);
+    color: var(--pagefind-ui-background);
   }
 </style>

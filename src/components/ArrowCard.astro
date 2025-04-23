@@ -15,12 +15,19 @@ const { entry } = Astro.props as {
   class="not-prose group relative flex flex-nowrap rounded-lg border border-black/15 px-4 py-3 pr-10 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
 >
   <div class="flex flex-1 flex-col truncate">
-    <div class="font-semibold">
+    <div class="font-semibold" data-pagefind-filter="title">
       {entry.data.title}
     </div>
-    <div class="text-sm">
+    <div class="text-sm" data-pagefind-filter="description">
       {entry.data.description}
     </div>
+    {entry.collection === "blog" && entry.data.tags && entry.data.tags.length > 0 && (
+      <div class="text-xs mt-1">
+        {entry.data.tags.map((tag: string) => (
+          <span class="mr-2" data-pagefind-filter="tag">{tag}</span>
+        ))}
+      </div>
+    )}
   </div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
