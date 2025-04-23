@@ -1,7 +1,7 @@
 ---
 id: 38309c71-19ba-4feb-96d7-820f32ab6fb8
 title: not much happened today; New email provider for AINews
-date: '2025-04-21'
+date: '2025-04-21T05:44:39.731046Z'
 description: We moved to Resend
 tags:
   - Resend
