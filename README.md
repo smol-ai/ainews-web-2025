@@ -1,11 +1,44 @@
-# Introducing [Astro Micro 🔬](https://astro-micro.vercel.app/)
+# AINews - Weekday recaps of top News for AI Engineers
 
-Astro Micro is an accessible theme for Astro. It's a fork of [Mark Horn's](https://github.com/markhorn-dev) popular theme [Astro Nano](https://astro-nano-demo.vercel.app/). Like Nano, Micro comes with zero frameworks installed.
+AINews is a daily newsletter that summarizes top AI discords, reddits, and X/Twitter posts, delivering a comprehensive roundup to AI engineers every weekday.
 
-Micro adds features like [Pagefind](https://pagefind.app) for search, [Giscus](https://giscus.app) for comments, and more. For a full list of changes, see this [blog post](https://astro-micro.vercel.app/blog/00-micro-changelog).
+## Features
 
-Micro still comes with everything great about Nano — full type safety, a sitemap, an RSS feed, and Markdown + MDX support. Styled with TailwindCSS and preconfigured with system, light, and dark themes.
+- Daily AI news roundups
+- Curated from top AI communities
+- Easy to read and digest
+- Focused on practical AI engineering content
 
----
+## Getting Started
 
-![astro-micro](https://github.com/user-attachments/assets/fc9b55b9-53e5-4933-9d23-936e1c61e6c2)
+1. Clone the repository:
+```sh
+git clone https://github.com/smol_ai/ainews-web.git
+```
+
+2. Install dependencies:
+```sh
+cd ainews-web
+npm install
+```
+
+3. Start the development server:
+```sh
+npm run dev
+```
+
+4. Build for production:
+```sh
+npm run build
+```
+
+## Deployment
+
+The site can be deployed to Vercel or Netlify with a single click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/smol_ai/ainews-web)
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/smol_ai/ainews-web)
+
+## License
+
+MIT

@@ -31,8 +31,8 @@ In the above example, two project posts will be generated with the folder name r
 
 ```astro
 ---
-title: "Astro Micro";
-description: "Astro Micro is an accessible theme for Astro.";
+title: "AINews";
+description: "Weekday recaps of top News for AI Engineers";
 date: "2024-03-20";
 draft: false;
 ---
@@ -53,12 +53,12 @@ All that's left to do is write the content under the metadata.
 
 ```astro
 ---
-title: "Astro Micro";
-description: "Astro Micro is an accessible theme for Astro";
+title: "AINews";
+description: "Weekday recaps of top News for AI Engineers";
 date: "2024-03-20";
 draft: false;
 ---
 
-## Astro Micro 🔬
+## AINews
 <!-- content -->
 ```

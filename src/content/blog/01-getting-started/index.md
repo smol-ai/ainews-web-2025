@@ -8,16 +8,16 @@ tags:
 
 ---
 
-## Install astro-micro
+## Install AINews
 
-Clone the [Astro Micro repository](https://github.com/trevortylerlee/astro-micro.git).
+Clone the [AINews repository](https://github.com/smol_ai/ainews-web.git).
 
 ```sh
-git clone https://github.com/trevortylerlee/astro-micro.git my-astro-micro
+git clone https://github.com/smol_ai/ainews-web.git ainews
 ```
 
 ```sh
-cd my-astro-micro
+cd ainews
 ```
 
 ```sh
@@ -40,9 +40,9 @@ To change the website metadata, edit `src/consts.ts`.
 // src/consts.ts
 
 export const SITE: Site = {
-  NAME: "Astro Micro",
-  DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
-  EMAIL: "trevortylerlee@gmail.com",
+  NAME: "AINews",
+  DESCRIPTION: "Weekday recaps of top News for AI Engineers",
+  EMAIL: "swyx@smol.ai",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
@@ -65,7 +65,7 @@ export const SITE: Site = {
 
 export const ABOUT: Metadata = {
   TITLE: "About",
-  DESCRIPTION: "Astro Micro is a fork of Astro Nano.",
+  DESCRIPTION: "Weekday recaps of top News for AI Engineers",
 };
 ```
 
@@ -84,15 +84,11 @@ export const ABOUT: Metadata = {
 export const SOCIALS: Socials = [
   {
     NAME: "twitter-x",
-    HREF: "https://twitter.com/boogerbuttcheeks",
+    HREF: "https://twitter.com/smol_ai",
   },
   {
     NAME: "github",
-    HREF: "https://github.com/trevortylerlee",
-  },
-  {
-    NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/trevortylerlee",
+    HREF: "https://github.com/smol_ai",
   },
 ];
 ```
@@ -107,10 +103,10 @@ export const SOCIALS: Socials = [
 To set up RSS and Giscus, it's easier if the site is deployed and has a URL for you to use. Instantly deploy to Vercel or Netlify by clicking the buttons below.
 
 <div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/trevortylerlee/astro-micro">
+  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/smol_ai/ainews-web">
     <img src="/deploy_vercel.svg" />
   </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/trevortylerlee/astro-micro">
+  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/smol_ai/ainews-web">
     <img src="/deploy_netlify.svg" />
   </a>
 </div>
@@ -125,7 +121,7 @@ Change the `site` option to the deployed site's URL.
 // astro.config.mjs
 
 export default defineConfig({
-  site: "https://astro-micro.vercel.app",
+  site: "https://ainews.vercel.app",
   integrations: [tailwind(), sitemap(), mdx(), pagefind()],
   markdown: {
     shikiConfig: {
