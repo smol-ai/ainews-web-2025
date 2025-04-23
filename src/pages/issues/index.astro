@@ -3,14 +3,14 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
-import { BLOG } from "@consts";
+import { ISSUES } from "@consts";
 
-const data = (await getCollection("blog"))
+const data = (await getCollection("issues"))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 type Acc = {
-  [year: string]: CollectionEntry<"blog">[];
+  [year: string]: CollectionEntry<"issues">[];
 };
 
 const posts = data.reduce((acc: Acc, post) => {
@@ -25,7 +25,7 @@ const posts = data.reduce((acc: Acc, post) => {
 const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
 ---
 
-<Layout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
+<Layout title={ISSUES.TITLE} description={ISSUES.DESCRIPTION}>
   <Container>
     <aside data-pagefind-ignore>
       <div class="space-y-10">

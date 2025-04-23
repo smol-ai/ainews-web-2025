@@ -13,8 +13,8 @@ export const HOME: Metadata = {
   DESCRIPTION: "Weekday recaps of top News for AI Engineers",
 };
 
-export const BLOG: Metadata = {
-  TITLE: "Blog",
+export const ISSUES: Metadata = {
+  TITLE: "Issues",
   DESCRIPTION: "A collection of articles on topics I am passionate about.",
 };
 

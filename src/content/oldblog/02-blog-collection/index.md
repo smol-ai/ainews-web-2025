@@ -10,10 +10,10 @@ tags:
 
 ## Working with the `blog` collection:
 
-The `blog` collection is found in `src/content/blog`.
+The `blog` collection is found in `src/content/issues`.
 
 ```
-📁 /src/content/blog
+📁 /src/content/issues
 └── 📁 post-1
       └── 📄 index.md
 └── 📁 post-2
@@ -22,8 +22,8 @@ The `blog` collection is found in `src/content/blog`.
 
 In the above example, two blog posts will be generated with the folder name representing the id.
 
-- `https://example.com/blog/post-1`
-- `https://example.com/blog/post-2`
+- `https://example.com/issues/post-1`
+- `https://example.com/issues/post-2`
 
 ---
 

@@ -6,6 +6,6 @@ tags:
   - example
 ---
 
-This post should show up in proper chronological order even though its folder comes last in the `content/blog` directory.
+This post should show up in proper chronological order even though its folder comes last in the `content/issues` directory.
 
 The `Previous Post` and `Next Post` buttons under each blog post should also keep the proper chronological order, based on the frontmatter `date` field.
