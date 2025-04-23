@@ -5,15 +5,26 @@ import Link from "./Link.astro";
 // https://kld.dev/building-table-of-contents/
 
 const { heading } = Astro.props;
+
+// Determine the heading style based on depth
+const isH1 = heading.depth === 1;
+const headingClass = isH1 
+  ? "font-medium" 
+  : "text-black/70 dark:text-white/70";
+
+// Add indentation for H2s and deeper
+const indentClass = isH1 ? "" : "ml-4";
 ---
 
-<li class="list-inside list-disc px-6 py-1.5 text-sm">
-  <Link href={"#" + heading.slug} underline>
-    {heading.text}
-  </Link>
+<li class={`list-none ${isH1 ? 'mt-2' : ''} text-sm ${indentClass}`}>
+  <div class={headingClass}>
+    <Link href={"#" + heading.slug} underline>
+      {heading.text}
+    </Link>
+  </div>
   {
     heading.subheadings.length > 0 && (
-      <ul class="translate-x-3">
+      <ul class="ml-4 mt-1 space-y-1 border-l border-black/10 pl-2 dark:border-white/10">
         {heading.subheadings.map((subheading: Heading) => (
           <Astro.self heading={subheading} />
         ))}

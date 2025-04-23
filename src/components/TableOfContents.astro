@@ -20,7 +20,8 @@ function buildToc(headings: Heading[]) {
     console.log('Processing heading:', JSON.stringify(h, null, 2));
     const heading = { ...h, subheadings: [] };
     parentHeadings.set(heading.depth, heading);
-    if (heading.depth === 2) {
+    // Include both h1 and h2 as top-level entries
+    if (heading.depth === 1 || heading.depth === 2) {
       toc.push(heading);
     } else {
       const parent = parentHeadings.get(heading.depth - 1);
@@ -38,14 +39,14 @@ function buildToc(headings: Heading[]) {
 
 <details
   open
-  class="animate group rounded-lg border border-black/15 dark:border-white/20"
+  class="animate group rounded-lg border border-black/15 bg-white/50 dark:border-white/20 dark:bg-black/50 lg:border-0 lg:bg-transparent dark:lg:bg-transparent"
 >
   <summary
-    class="cursor-pointer rounded-t-lg px-3 py-1.5 font-medium transition-colors group-open:bg-black/5 hover:bg-black/5 dark:group-open:bg-white/5 hover:dark:bg-white/5"
+    class="cursor-pointer rounded-t-lg px-3 py-1.5 font-medium transition-colors group-open:bg-black/5 hover:bg-black/5 dark:group-open:bg-white/5 hover:dark:bg-white/5 lg:px-0 lg:py-0 lg:text-sm lg:font-semibold lg:uppercase lg:tracking-wider lg:text-black/60 dark:lg:text-white/60"
     >Table of Contents</summary
   >
-  <nav>
-    <ul class="py-3">
+  <nav class="lg:mt-4">
+    <ul class="space-y-1 py-3 lg:py-0">
       {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
     </ul>
   </nav>
