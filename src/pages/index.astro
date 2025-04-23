@@ -7,10 +7,14 @@ import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
-const blog = (await getCollection("blog"))
+// Get all issues first
+const allIssues = (await getCollection("issues"))
   .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Initial batch of 30 issues
+const ITEMS_PER_PAGE = 30;
+const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
 
 const projects: CollectionEntry<"projects">[] = (
   await getCollection("projects")
@@ -52,38 +56,36 @@ const projects: CollectionEntry<"projects">[] = (
         <section class="animate space-y-6">
           <div class="flex flex-wrap items-center justify-between gap-y-2">
             <h2 class="font-semibold text-black dark:text-white">
-              Latest posts
+              Latest issues
             </h2>
-            <Link href="/issues"> See all posts </Link>
+            <Link href="/issues"> See all issues </Link>
           </div>
-          <ul class="not-prose flex flex-col gap-4">
-            {
-              blog.map((post) => (
-                <li>
-                  <ArrowCard entry={post} />
-                </li>
-              ))
-            }
-          </ul>
+          <div class="relative">
+            <div class="absolute left-4 top-0 bottom-0 w-px bg-black/10 dark:bg-white/10 md:block hidden"></div>
+            <ul class="not-prose flex flex-col gap-4 relative" id="timeline">
+              {
+                allIssues.slice(0, ITEMS_PER_PAGE).map((post) => (
+                  <li class="relative md:pl-10">
+                    <div class="absolute left-[0.9rem] top-3 w-2 h-2 rounded-full bg-black/50 dark:bg-white/50 md:block hidden"></div>
+                    <ArrowCard entry={post} />
+                  </li>
+                ))
+              }
+            </ul>
+            {totalPages > 1 && (
+              <div class="mt-8 flex justify-center">
+                <button
+                  id="load-more"
+                  class="rounded-lg border-2 border-black/20 px-4 py-2 font-medium transition-colors hover:bg-black/5 dark:border-white/30 dark:hover:bg-white/5"
+                  data-current-page="1"
+                  data-total-pages={totalPages}
+                >
+                  Load more issues
+                </button>
+              </div>
+            )}
+          </div>
         </section>
-<!-- 
-        <section class="animate space-y-6">
-          <div class="flex flex-wrap items-center justify-between gap-y-2">
-            <h2 class="font-semibold text-black dark:text-white">
-              Recent projects
-            </h2>
-            <Link href="/projects"> See all projects </Link>
-          </div>
-          <ul class="not-prose flex flex-col gap-4">
-            {
-              projects.map((project) => (
-                <li>
-                  <ArrowCard entry={project} />
-                </li>
-              ))
-            }
-          </ul>
-        </section> -->
 
         <section class="animate space-y-4">
           <h2 class="font-semibold text-black dark:text-white">
@@ -124,3 +126,77 @@ const projects: CollectionEntry<"projects">[] = (
     </aside>
   </Container>
 </Layout>
+
+<script>
+  let isLoading = false;
+
+  function initLoadMore() {
+    const loadMoreButton = document.getElementById('load-more');
+    const timeline = document.getElementById('timeline');
+
+    if (!loadMoreButton || !timeline) return;
+
+    loadMoreButton.addEventListener('click', async () => {
+      if (isLoading) return;
+      isLoading = true;
+      loadMoreButton.textContent = 'Loading...';
+
+      const currentPage = parseInt(loadMoreButton.dataset.currentPage || '1');
+      const totalPages = parseInt(loadMoreButton.dataset.totalPages || '1');
+      
+      try {
+        const response = await fetch(`/api/issues?page=${currentPage + 1}`);
+        const data = await response.json();
+        
+        // Add new items to the timeline
+        data.issues.forEach((issue: any) => {
+          const li = document.createElement('li');
+          li.className = 'relative pl-10';
+          li.innerHTML = `
+            <div class="absolute left-[0.9rem] top-3 w-2 h-2 rounded-full bg-black/50 dark:bg-white/50"></div>
+            <a href="/issues/${issue.id}" class="group relative block rounded-lg border border-black/15 px-4 py-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white">
+              <div class="flex items-center gap-4">
+                <div class="min-w-24 text-sm text-gray-500 dark:text-gray-400">
+                  ${new Date(issue.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                </div>
+                <div class="font-semibold">
+                  ${issue.title}
+                </div>
+              </div>
+              ${issue.tags ? `
+                <div class="mt-1 flex flex-wrap gap-1 pl-24">
+                  ${issue.tags.map((tag: string) => `
+                    <span class="rounded-sm border border-black/15 px-1.5 py-0.5 text-xs dark:border-white/20">
+                      ${tag}
+                    </span>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </a>
+          `;
+          timeline.appendChild(li);
+        });
+
+        // Update button state
+        loadMoreButton.dataset.currentPage = (currentPage + 1).toString();
+        if (currentPage + 1 >= totalPages) {
+          loadMoreButton.style.display = 'none';
+        }
+      } catch (error) {
+        console.error('Error loading more issues:', error);
+        loadMoreButton.textContent = 'Error loading more issues. Try again.';
+      } finally {
+        isLoading = false;
+        if (currentPage + 1 < totalPages) {
+          loadMoreButton.textContent = 'Load more issues';
+        }
+      }
+    });
+  }
+
+  // Initialize on page load
+  initLoadMore();
+
+  // Re-initialize when navigating with View Transitions
+  document.addEventListener('astro:page-load', initLoadMore);
+</script>
