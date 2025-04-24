@@ -4,19 +4,85 @@ title: not much happened today
 date: '2025-03-14T22:57:23.512875Z'
 original_slug: ainews-not-much-happened-today-7693
 description: >-
-  Google DeepMind released Gemini 2.0 with enhanced reasoning, deeper app
-  integration, and native image generation capabilities, marking significant
-  progress in their AI models. Additionally, Cohere launched Command A, a 111B
-  parameter dense model with a 256K context window and competitive performance
-  close to OpenAI’s GPT-4o, now available on Hugging Face.
+  **Google DeepMind** released the **Gemma 3** family of models with up to *27B*
+  parameters, a *128K* token context window, and vision capabilities, while
+  **Cohere** launched their **Command A** dense model with *111B* parameters and
+  a *256K* context window, positioning it close to **OpenAI's GPT-4o**.
+  Additionally, **Meta AI** introduced **Dynamic Tanh (DyT)** as a novel
+  normalization replacement for Transformers, and **Alibaba** released the
+  *32.5B* parameter **QwQ-32B** model excelling in math and coding tasks.
 tags:
   - google
-  - deepmind
-  - gemini-2
-  - image-generation
+  - google-deepmind
   - cohere
+  - openai
+  - meta
+  - alibaba
+  - shopify
+  - amd
+  - gemini-2.0
+  - gemma-3
+  - shieldgemma-2
   - command-a
-  - large-language-models
+  - gpt-4
+  - gpt-4o
+  - dynamic-tanh
+  - dy-t
+  - qwq-32b
+  - deepseek-r1
+  - o1-mini
+  - llama-3.3-70b
+  - deepseek-v3-671b
+  - language-models
+  - model-benchmarks
+  - model-optimization
+  - vision-language-models
+  - normalization-techniques
+  - reinforcement-learning
+  - agentic-ai
+  - coding-assistance
+  - gpu-benchmarks
+  - long-term-memory
+  - machine-translation
+  - commercial-licenses
+  - software-integration
+companies:
+  - google
+  - google-deepmind
+  - cohere
+  - openai
+  - meta
+  - alibaba
+  - shopify
+  - amd
+models:
+  - gemini-2.0
+  - gemma-3
+  - shieldgemma-2
+  - command-a
+  - gpt-4
+  - gpt-4o
+  - dynamic-tanh
+  - dy-t
+  - qwq-32b
+  - deepseek-r1
+  - o1-mini
+  - llama-3.3-70b
+  - deepseek-v3-671b
+topics:
+  - language-models
+  - model-benchmarks
+  - model-optimization
+  - vision-language-models
+  - normalization-techniques
+  - reinforcement-learning
+  - agentic-ai
+  - coding-assistance
+  - gpu-benchmarks
+  - long-term-memory
+  - machine-translation
+  - commercial-licenses
+  - software-integration
 ---
 
 

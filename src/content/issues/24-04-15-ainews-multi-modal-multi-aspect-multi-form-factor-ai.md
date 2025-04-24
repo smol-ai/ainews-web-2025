@@ -4,19 +4,18 @@ title: Multi-modal, Multi-Aspect, Multi-Form-Factor AI
 date: '2024-04-15T22:42:55.173152Z'
 original_slug: ainews-multi-modal-multi-aspect-multi-form-factor
 description: >-
-  Reka Core launched a new GPT-4-class multimodal foundation model with a
-  comprehensive technical report, marking a significant advancement in AI
-  capabilities. Additionally, Cohere introduced Compass, a foundation embedding
-  model designed for indexing and searching multi-aspect enterprise data,
-  enhancing contextual data understanding.
+  **Reka Core**, a new GPT-4-class multimodal foundation model with a
+  comprehensive technical report, was launched by **Reka AI Labs**, marking a
+  significant advancement in multimodal AI. Additionally, **Cohere** introduced
+  Compass, a foundation embedding model designed for indexing and searching
+  complex multi-aspect enterprise data, highlighting progress in practical AI
+  applications for business contexts.
 tags:
-  - reka
-  - gpt-4
-  - multimodal
-  - cohere
-  - compass
-  - embedding
-  - enterprise-data
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

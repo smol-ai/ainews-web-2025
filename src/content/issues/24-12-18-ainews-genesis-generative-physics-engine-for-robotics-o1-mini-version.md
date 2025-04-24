@@ -4,22 +4,18 @@ title: 'Genesis: Generative Physics Engine for Robotics (o1-mini version)'
 date: '2024-12-19T05:17:10.096057Z'
 original_slug: ainews-genesis-generative-physics-engine-for
 description: >-
-  OpenAI has launched the o1 model API featuring function calling, vision
-  support, and improved efficiency with 60% fewer reasoning tokens, showing
-  strong performance in math and coding benchmarks. Meanwhile, Hugging Face
-  researchers demonstrated that their 3B Llama model, enhanced with search
-  techniques, can outperform the much larger 70B Llama model on MATH-500
-  accuracy, highlighting advances in model size optimization.
+  **OpenAI** launched the **o1 model API** featuring function calling, vision
+  support, and 60% fewer reasoning tokens, with benchmarks showing it excels in
+  math and coding tasks. Meanwhile, **Hugging Face** researchers demonstrated
+  that their **3B Llama model** outperforms the much larger 70B model on math
+  problems using search techniques, highlighting efficiency gains in smaller
+  models.
 tags:
-  - openai
-  - o1
-  - function-calling
-  - vision
-  - math
-  - coding
-  - hugging-face
-  - llama
-  - model-optimization
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -6,19 +6,89 @@ title: >-
 date: '2024-06-25T07:02:13.519492Z'
 original_slug: ainews-gemini-nano-50-90-of-gemini-pro-100ms
 description: >-
-  Google Chrome Canary now includes Gemini Nano, a lightweight 4-bit quantized
-  model accessible via a new prompt API, offering fast on-device performance
-  with model weights available on HuggingFace. Meanwhile, Anthropic released
-  Claude 3.5 Sonnet, a faster, cheaper, and free-to-try model that outperforms
-  GPT-4o on some benchmarks and leads open models in coding tasks.
+  The latest **Chrome Canary** browser now includes **Gemini Nano**, a
+  lightweight model with *1.8B* and *3.25B* parameter versions offering strong
+  performance at 4-bit quantization, accessible via
+  `window.ai.createTextSession()`. Meanwhile, **Anthropic** released **Claude
+  3.5 Sonnet**, an upgraded model that surpasses GPT-4o on some benchmarks, runs
+  twice as fast as Claude Opus, costs one-fifth as much, and is free to try,
+  making it the top open model for coding tasks.
 tags:
   - google
-  - chrome
-  - gemini
-  - prompt-api
-  - anthopic
-  - claude-3-5
+  - anthropic
+  - nvidia
+  - wayve
+  - runway
+  - hedera
+  - elevenlabs
+  - zhipu
+  - tsinghua
+  - gemini-nano
+  - gemini-pro
+  - claude-3.5-sonnet
+  - claude-opus
+  - deepseek-coder-v2
+  - glm-0520
+  - nemotron-340b
+  - prism-1
+  - gen-3-alpha
+  - character-1
+  - large-language-models
+  - model-benchmarks
   - coding
+  - synthetic-data-generation
+  - scene-reconstruction
+  - video-generation
+  - text-to-sound
+  - model-optimization
+  - inference-speed
+  - open-source-models
+  - model-quantization
+  - multi-step-reasoning
+  - retrieval-augmented-generation
+  - automatic-differentiation
+  - training-data-memorization
+  - autonomous-driving
+  - ai-demonstrations
+companies:
+  - google
+  - anthropic
+  - nvidia
+  - wayve
+  - runway
+  - hedera
+  - elevenlabs
+  - zhipu
+  - tsinghua
+models:
+  - gemini-nano
+  - gemini-pro
+  - claude-3.5-sonnet
+  - claude-opus
+  - deepseek-coder-v2
+  - glm-0520
+  - nemotron-340b
+  - prism-1
+  - gen-3-alpha
+  - character-1
+topics:
+  - large-language-models
+  - model-benchmarks
+  - coding
+  - synthetic-data-generation
+  - scene-reconstruction
+  - video-generation
+  - text-to-sound
+  - model-optimization
+  - inference-speed
+  - open-source-models
+  - model-quantization
+  - multi-step-reasoning
+  - retrieval-augmented-generation
+  - automatic-differentiation
+  - training-data-memorization
+  - autonomous-driving
+  - ai-demonstrations
 ---
 
 
@@ -738,6 +808,7 @@ capetownbali: Let us all know how your fine tuning on LLama goes!
 - [Well, This Is Shit](https://open.spotify.com/track/0dyz56yOkAvjJMAJ5IxfiE?si=caaca21651c44ccc): Thomas Benjamin Wild Esq · Song · 2021
 - [lllyasviel/sd-controlnet-canny at main](https://huggingface.co/lllyasviel/sd-controlnet-canny/tree/main): no description found
 - [Download the latest official NVIDIA drivers](http://www.nvidia.com/Download/index.aspx): Download the latest official NVIDIA drivers
+- [PyTorch](https://pytorch.org)
 - [List of Aesthetics](https://aesthetics.fandom.com/wiki/List_of_Aesthetics#Aesthetics_by_Type): If you need assistance with identifying your aesthetic or creating a moodboard, feel free to ask questions in the Discussion Tab (in the pull-down bar of the "Explore" tab at the top of the ...
 - [lllyasviel/sd_control_collection at main](https://huggingface.co/lllyasviel/sd_control_collection/tree/main): no description found
 - [TypeError: list indices must be integers or slices, not str](https://stackoverflow.com/questions/32554527/typeerror-list-indices-must-be-integers-or-slices-not-str): I've got two lists that I want to merge into a single array and finally put it in a csv file. How I can avoid this error : def fill_csv(self, array_urls, array_dates, csv_file_path): ...

@@ -4,21 +4,77 @@ title: Welcome /r/LocalLlama!
 date: '2024-03-21T23:33:53.811566Z'
 original_slug: ainews-welcome-rlocalllama
 description: >-
-  Aether Research released Cerebrum 8x7b, an open-source reasoning model
-  performing on par with GPT-3.5 Turbo and Gemini Pro, marking a new
-  state-of-the-art in open-source reasoning. Additionally, the Reddit IPO has
-  prompted AI News to start integrating Reddit summaries, beginning with
-  /r/LocalLlama and planning to expand to other AI-related subreddits.
+  Reddit's successful IPO on *3/21/2024* marks a key milestone as **AINews**
+  begins integrating Reddit summaries starting with /r/LocalLlama, featuring
+  notable open-source model releases like **Cerebrum 8x7b** and **Moistral 11B
+  v1** that compete with GPT-3.5 Turbo. Meanwhile, discussions highlight
+  advancements in quantization techniques, Nvidia's new **Blackwell (h200)**
+  chip with FP4 precision, and deployment tools such as **LMDeploy** for
+  vision-language models.
 tags:
-  - cerebrum
-  - mixtral
+  - reddit
+  - openai
+  - nvidia
+  - microsoft
+  - aether-research
+  - inflection
+  - openinterpreter
+  - cerebrum-8x7b
+  - mistral-11b-v1
   - gpt-3.5-turbo
   - gemini-pro
-  - open-source
-  - reasoning
+  - claude-3-opus
+  - q-star
+  - blackwell-h200
+  - cream-phi-2
+  - qwen-vl-chat
+  - reddit-ipo
+  - open-source-models
+  - model-benchmarks
+  - quantization
+  - fine-tuning
+  - deployment
+  - vision-language-models
+  - hardware-upgrades
+  - energy-based-models
+  - dialog-generation
+  - synthetic-training-data
+  - large-language-models
+  - model-optimization
+  - community-discussions
+companies:
   - reddit
-  - ipo
-  - reddit-summaries
+  - openai
+  - nvidia
+  - microsoft
+  - aether-research
+  - inflection
+  - openinterpreter
+models:
+  - cerebrum-8x7b
+  - mistral-11b-v1
+  - gpt-3.5-turbo
+  - gemini-pro
+  - claude-3-opus
+  - q-star
+  - blackwell-h200
+  - cream-phi-2
+  - qwen-vl-chat
+topics:
+  - reddit-ipo
+  - open-source-models
+  - model-benchmarks
+  - quantization
+  - fine-tuning
+  - deployment
+  - vision-language-models
+  - hardware-upgrades
+  - energy-based-models
+  - dialog-generation
+  - synthetic-training-data
+  - large-language-models
+  - model-optimization
+  - community-discussions
 ---
 
 

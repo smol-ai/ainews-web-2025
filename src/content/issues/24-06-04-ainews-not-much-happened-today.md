@@ -4,19 +4,18 @@ title: Not much happened today
 date: '2024-06-04T23:53:47.552835Z'
 original_slug: ainews-not-much-happened-today-5500
 description: >-
-  Twelve Labs raised $50 million in a Series A funding round co-led by NEA and
-  Nvidia’s Nventures to advance multimodal AI, while Livekit secured $22 million
-  in funding. Additionally, the Gemini 1.5 FlashModel was highlighted for
-  delivering high performance at low cost, making advanced language models more
-  accessible.
+  **Twelve Labs** raised *$50 million* in Series A funding co-led by NEA and
+  **NVIDIA NVentures** to advance multimodal AI, while **Gemini 1.5 FlashModel**
+  was highlighted for delivering high performance at low cost, making advanced
+  models more accessible. Additionally, **Mixtral** models can now run up to *8x
+  faster* on NVIDIA RTX GPUs using TensorRT-LLM optimizations, showcasing
+  significant inference efficiency improvements.
 tags:
-  - twelve-labs
-  - funding
-  - livekit
-  - multimodal
-  - gemini
-  - language-models
-  - nvidia
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

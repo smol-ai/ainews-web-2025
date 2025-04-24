@@ -4,19 +4,110 @@ title: Not much happened today.
 date: '2024-07-03T22:39:42.336133Z'
 original_slug: ainews-not-much-happened-today-1036
 description: >-
-  Meta introduced Meta 3D Gen, a new model capable of generating high-quality 3D
-  assets from text in under one minute, marking a significant advancement in
-  text-to-3D generation. Additionally, Perplexity AI updated Pro Search to
-  handle deeper research on complex queries using multi-step reasoning,
-  Wolfram|Alpha integration, and code execution.
+  **Meta** unveiled Meta 3D Gen, a new system capable of generating high-quality
+  3D assets from text in under *one minute*, marking a significant advancement
+  in text-to-3D generation. Additionally, an open-source mixture-of-agents
+  approach using models like Qwen, WizardLM, LLaMA, and Mixtral outperformed
+  GPT-4o on the AlpacaEval benchmark with a score of *65.1%* versus *57.5%*,
+  highlighting progress in open-source LLM performance.
 tags:
   - meta
-  - 3d-generation
-  - text-to-3d
+  - microsoft
   - perplexity
-  - pro-search
-  - multi-step-reasoning
-  - wolfram-alpha
+  - gpt4all
+  - yi
+  - magic
+  - poolside
+  - opendevin
+  - kyutai
+  - peter-thiel
+  - langchain
+  - qdrant
+  - leap
+  - sora
+  - runway
+  - meta-3d-gen
+  - phi-3-mini
+  - gpt4all-3.0
+  - yi-large
+  - qwen
+  - wizardlm
+  - llama
+  - mixtral
+  - rubra-v0.1
+  - mistral
+  - phi-medium
+  - yi-1.5
+  - llama-3-8b
+  - gpt-4o
+  - text-to-3d-generation
+  - open-source-llms
+  - mixture-of-agents
+  - benchmarks
+  - reinforcement-learning-from-human-feedback
+  - persona-driven-data-synthesis
+  - few-shot-generalization
+  - steering-vectors
+  - ai-workflows
+  - memory-retrieval
+  - vector-search
+  - gain-of-function-research
+  - ai-risk
+  - idle-compute
+  - tool-calling-llms
+  - video-generation
+  - ai-ethics
+  - agi-power-centralization
+companies:
+  - meta
+  - microsoft
+  - perplexity
+  - gpt4all
+  - yi
+  - magic
+  - poolside
+  - opendevin
+  - kyutai
+  - peter-thiel
+  - langchain
+  - qdrant
+  - leap
+  - sora
+  - runway
+models:
+  - meta-3d-gen
+  - phi-3-mini
+  - gpt4all-3.0
+  - yi-large
+  - qwen
+  - wizardlm
+  - llama
+  - mixtral
+  - rubra-v0.1
+  - mistral
+  - phi-medium
+  - yi-1.5
+  - llama-3-8b
+  - gpt-4o
+topics:
+  - text-to-3d-generation
+  - open-source-llms
+  - mixture-of-agents
+  - benchmarks
+  - reinforcement-learning-from-human-feedback
+  - persona-driven-data-synthesis
+  - few-shot-generalization
+  - steering-vectors
+  - ai-workflows
+  - memory-retrieval
+  - vector-search
+  - gain-of-function-research
+  - ai-risk
+  - idle-compute
+  - tool-calling-llms
+  - video-generation
+  - ai-ethics
+  - agi-power-centralization
 ---
 
 

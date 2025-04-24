@@ -103,17 +103,76 @@ const { Content, headings } = await render(post);
         {post.data.title}
       </h1>
       {
-        post.data.tags && post.data.tags?.length > 0 ? (
-          <div class="animate flex flex-wrap gap-2 pt-1">
-            {post.data.tags.map((tag) => (
-              <a
-                href={`/tags/${tag}`}
-                data-pagefind-filter="tag"
-                class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
-              >
-                {tag}
-              </a>
-            ))}
+        (post.data.tags && post.data.tags?.length > 0) || 
+        (post.data.companies && post.data.companies?.length > 0) || 
+        (post.data.models && post.data.models?.length > 0) || 
+        (post.data.topics && post.data.topics?.length > 0) ? (
+          <div class="animate space-y-3 pt-1">
+            {post.data.companies && post.data.companies?.length > 0 ? (
+              <div>
+                <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">Companies</h3>
+                <div class="flex flex-wrap gap-2">
+                  {post.data.companies.map((company) => (
+                    <a
+                      href={`/tags/${company}`}
+                      data-pagefind-filter="company"
+                      class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                    >
+                      {company}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            
+            {post.data.models && post.data.models?.length > 0 ? (
+              <div>
+                <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">Models</h3>
+                <div class="flex flex-wrap gap-2">
+                  {post.data.models.map((model) => (
+                    <a
+                      href={`/tags/${model}`}
+                      data-pagefind-filter="model"
+                      class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                    >
+                      {model}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            
+            {post.data.topics && post.data.topics?.length > 0 ? (
+              <div>
+                <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">Topics</h3>
+                <div class="flex flex-wrap gap-2">
+                  {post.data.topics.map((topic) => (
+                    <a
+                      href={`/tags/${topic}`}
+                      data-pagefind-filter="topic"
+                      class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                    >
+                      {topic}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            
+            {post.data.tags && post.data.tags?.length > 0 ? (
+              <div class="hidden">
+                {/* Keep original tags for backward compatibility, but hide them visually */}
+                {post.data.tags.map((tag) => (
+                  <a
+                    href={`/tags/${tag}`}
+                    data-pagefind-filter="tag"
+                    class="hidden"
+                  >
+                    {tag}
+                  </a>
+                ))}
+              </div>
+            ) : null}
           </div>
         ) : null
       }

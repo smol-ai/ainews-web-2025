@@ -4,20 +4,18 @@ title: Google's Agent2Agent Protocol (A2A)
 date: '2025-04-10T01:31:18.610701Z'
 original_slug: ainews-googles-agent2agent-protocol-a2a
 description: >-
-  Google and DeepMind have announced full support for the Multi-Channel Protocol
-  (MCP) and introduced a new Agent to Agent (A2A) protocol to enhance agent
-  interoperability, featuring enterprise-ready authentication, streaming, and
-  push notification capabilities. Additionally, Moonshot AI released
-  Kimi-VL-A3B, a multimodal language model with a 128K context window and strong
-  performance on vision and math benchmarks, outperforming GPT-4o.
+  **Google** and **DeepMind** announced full support for the Multi-Cloud
+  Protocol (MCP) and introduced the new Agent to Agent (A2A) protocol to enable
+  secure, interoperable collaboration between AI agents across ecosystems.
+  Meanwhile, **Moonshot AI** released Kimi-VL-A3B, a multimodal language model
+  with *128K* context length and MIT license, outperforming GPT-4o on vision and
+  math benchmarks.
 tags:
-  - google
-  - deepmind
-  - multi-channel-protocol
-  - agent-to-agent
-  - moonshot
-  - kimi-vl-a3b
-  - multimodal-model
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

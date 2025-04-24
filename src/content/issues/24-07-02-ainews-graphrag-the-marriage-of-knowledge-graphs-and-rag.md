@@ -4,21 +4,19 @@ title: 'GraphRAG: The Marriage of Knowledge Graphs and RAG'
 date: '2024-07-03T01:30:30.158799Z'
 original_slug: ainews-graphrag
 description: >-
-  Microsoft Research has open sourced GraphRAG, a novel retrieval-augmented
-  generation technique that uses knowledge graphs to improve LLM discovery on
-  private data, though it increases token usage and inference time.
-  Additionally, several new large language models were released or updated,
-  including Gemma 2, which achieves efficiency comparable to much larger models,
-  and Anthropic’s Claude 3.5 Sonnet, which leads in instruction following and
-  coding benchmarks.
+  Microsoft Research has open sourced GraphRAG, a novel retrieval augmented
+  generation technique that uses LLMs to extract and cluster knowledge graphs
+  for improved answer generation, though it increases token usage and inference
+  time. Additionally, several new large language models were released or
+  updated, including **Gemma 2**, which achieves near-parity with larger models
+  through efficient attention mechanisms, and **Anthropic’s Claude 3.5 Sonnet**,
+  now ranked #1 on instruction following and coding benchmarks.
 tags:
-  - microsoft
-  - graphrag
-  - retrieval-augmented-generation
-  - gemma-2
-  - anthropic
-  - claude-3-5
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

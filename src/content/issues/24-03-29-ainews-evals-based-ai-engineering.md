@@ -4,21 +4,85 @@ title: Evals-based AI Engineering
 date: '2024-03-29T22:20:49.586743Z'
 original_slug: ainews-evals-based-ai-engineering
 description: >-
-  Hamel Husain emphasizes the critical role of thorough evaluation processes in
-  AI product development, highlighting that focusing solely on model tuning
-  limits progress, while integrating evaluation, debugging, and behavior changes
-  creates a virtuous cycle for improvement. Additionally, OpenAI demonstrated
-  advanced voice cloning technology capable of translating 15-second voice
-  samples across domains and languages, raising important AI safety
-  considerations.
+  **Hamel Husain** emphasizes the critical role of comprehensive evaluation
+  ("evals") in AI product development, advocating for fast iteration cycles
+  involving quality evaluation, debugging, and behavior modification to
+  differentiate great AI products. Meanwhile, **OpenAI** released a demo of
+  their advanced voice engine capable of high-quality voice cloning from just
+  *15-second* samples, highlighting emerging risks in synthetic voice
+  technology. Additionally, several new AI models like **Jamba**, **Bamboo**,
+  **Qwen1.5-MoE**, and **Grok 1.5** showcase significant performance
+  improvements and innovations in architectures and quantization techniques.
 tags:
   - hamel-husain
-  - evals
-  - llm
   - openai
+  - heygen
+  - ai21labs
+  - databricks
+  - alibaba
+  - perplexity
+  - copy
+  - langchain
+  - brivaellp
+  - jamba
+  - bamboo
+  - qwen1.5-moe
+  - grok-1.5
+  - llama2-7b
+  - dbrx
+  - sft
+  - safe
+  - sdpo
+  - langfriend
+  - evaluation
+  - ai-product-development
   - voice-cloning
-  - ai-safety
-  - model-evaluation
+  - synthetic-voices
+  - large-language-models
+  - mixture-of-experts
+  - quantization
+  - retrieval-augmented-generation
+  - factuality-evaluation
+  - alignment
+  - ai-applications
+  - ai-iteration
+  - memory-augmented-models
+companies:
+  - hamel-husain
+  - openai
+  - heygen
+  - ai21labs
+  - databricks
+  - alibaba
+  - perplexity
+  - copy
+  - langchain
+  - brivaellp
+models:
+  - jamba
+  - bamboo
+  - qwen1.5-moe
+  - grok-1.5
+  - llama2-7b
+  - dbrx
+  - sft
+  - safe
+  - sdpo
+  - langfriend
+topics:
+  - evaluation
+  - ai-product-development
+  - voice-cloning
+  - synthetic-voices
+  - large-language-models
+  - mixture-of-experts
+  - quantization
+  - retrieval-augmented-generation
+  - factuality-evaluation
+  - alignment
+  - ai-applications
+  - ai-iteration
+  - memory-augmented-models
 ---
 
 

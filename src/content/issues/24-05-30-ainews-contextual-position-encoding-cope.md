@@ -5,18 +5,18 @@ date: '2024-05-31T03:11:48.061328Z'
 original_slug: ainews-contextual-position-encoding-cope
 description: >-
   Meta AI researcher Jason Weston introduced CoPE, a novel contextual positional
-  encoding method for transformers that significantly improves their ability to
-  perform counting and copying tasks, addressing limitations of traditional
-  positional encodings. Additionally, Google DeepMind released Gemini 1.5
-  models, featuring a Flash variant optimized for fast and efficient inference.
+  encoding method for transformers that improves performance on counting,
+  copying, language modeling, and coding tasks by incorporating learnable gates
+  based on context. Additionally, **Mistral AI** launched
+  **Codestral-22B-v0.1**, a versatile open-weight code generation model
+  supporting over *80* programming languages, marking a significant advancement
+  in coding-focused LLMs.
 tags:
-  - meta
-  - cope
-  - positional-encoding
-  - transformers
-  - counting
-  - google
-  - gemini-1.5
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

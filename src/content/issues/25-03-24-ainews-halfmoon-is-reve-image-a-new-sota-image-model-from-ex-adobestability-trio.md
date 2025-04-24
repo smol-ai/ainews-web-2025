@@ -4,20 +4,18 @@ title: 'Halfmoon is Reve Image: a new SOTA Image Model from ex-Adobe/Stability t
 date: '2025-03-25T01:43:04.934624Z'
 original_slug: ainews-halfmoon-is-reve-image-a-new-sota-image
 description: >-
-  Reve, a new composite image generation model developed by former Adobe and
-  Stability AI veterans, has emerged as the top-rated model for text rendering,
-  prompt adherence, and aesthetics, surpassing previous state-of-the-art models
-  like Recraft and Ideogram. Meanwhile, Alibaba released Qwen
-  2.5-VL-32B-Instruct, a vision-language model that outperforms larger versions
-  and GPT-4o Mini on vision tasks and reasoning benchmarks.
+  **Reve**, a new image generation model developed by former Adobe and Stability
+  AI veterans, has emerged as the top-rated imagegen model, surpassing previous
+  state-of-the-art models like Recraft and Ideogram in text rendering and prompt
+  adherence. Meanwhile, **DeepSeek** released its **V3-0324** model, showing
+  improved performance over earlier versions and competitors, and is now served
+  via **Hyperbolic Labs** and available on Hugging Face.
 tags:
-  - reve
-  - composite-model
-  - image-generation
-  - text-to-image
-  - qwen
-  - vision-language
-  - model-release
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

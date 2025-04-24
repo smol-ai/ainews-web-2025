@@ -4,20 +4,20 @@ title: 'SOTA Video Gen: Veo 2 and Kling 2 are GA for developers'
 date: '2025-04-16T05:55:06.551779Z'
 original_slug: ainews-sota-video-gen-veo-2-and-kling-2-are-ga
 description: >-
-  Google and China’s top video generation models, Veo 2 and Kling 2, have
-  launched with general availability and competitive pricing, marking
-  significant advancements in video generation technology. Meanwhile, OpenAI
-  released the GPT-4.1 family with improvements in coding, instruction
-  following, and a massive 1 million token context window, offering better
-  performance at lower cost and beginning the deprecation of GPT-4.5 Preview.
+  **OpenAI** has officially launched the **GPT-4.1 family** of models, including
+  **GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano**, featuring improved coding
+  capabilities, instruction following, and a massive *1 million token* context
+  window, with the family being *26% cheaper* than GPT-4o and API-only.
+  Meanwhile, **Google's Veo 2** video generation model is now generally
+  available via the **Gemini API** at a cost of *35 cents per second*, and
+  China's **Kling 2** video model also launched with competitive pricing,
+  marking significant advances in state-of-the-art video generation.
 tags:
-  - google
-  - veo-2
-  - kling-2
-  - video-generation
-  - openai
-  - gpt-4.1
-  - coding
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

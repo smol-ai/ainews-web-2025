@@ -4,20 +4,68 @@ title: The world's first fully autonomous AI Engineer
 date: '2024-03-12T23:05:08.530915Z'
 original_slug: ainews-the-worlds-first-fully-autonomous-ai
 description: >-
-  Cognition Labs has unveiled Devin, an AI software engineer agent capable of
-  learning new technologies from blog posts, addressing bugs from GitHub issues,
-  building and deploying frontend apps, and fine-tuning its own models. Backed
-  by notable investors and praised by beta testers, Devin combines GPT-4 with
-  reinforcement learning and advanced planning to execute complex engineering
-  tasks, potentially marking a significant advancement in AI agents.
+  **Cognition Labs** has unveiled **Devin**, an advanced AI software engineer
+  agent capable of learning new technologies from blog posts, addressing bugs
+  from GitHub issues, building and deploying frontend apps, and fine-tuning its
+  own models, with backing from notable investors like **Patrick Collison** and
+  **Fred Ehrsam**. Additionally, **Cohere** released **Command-R**, a 35B
+  parameter retrieval-augmented generation (RAG) optimized model designed for
+  large-scale production workloads, enhancing reasoning and summarization
+  capabilities.
 tags:
   - cognition-labs
+  - cohere
+  - openai
+  - anthropic
+  - google
+  - covariant
   - devin
+  - command-r
   - gpt-4
-  - reinforcement-learning
+  - claude-3
+  - rfm-1
+  - multistep-consistency-models
+  - v3d
   - software-engineering
-  - ai-agents
-  - long-term-planning
+  - reinforcement-learning
+  - retrieval-augmented-generation
+  - large-language-models
+  - multimodal-models
+  - video-understanding
+  - agent-systems
+  - model-finetuning
+  - responsible-ai
+  - bias
+  - agi
+  - long-term-reasoning
+companies:
+  - cognition-labs
+  - cohere
+  - openai
+  - anthropic
+  - google
+  - covariant
+models:
+  - devin
+  - command-r
+  - gpt-4
+  - claude-3
+  - rfm-1
+  - multistep-consistency-models
+  - v3d
+topics:
+  - software-engineering
+  - reinforcement-learning
+  - retrieval-augmented-generation
+  - large-language-models
+  - multimodal-models
+  - video-understanding
+  - agent-systems
+  - model-finetuning
+  - responsible-ai
+  - bias
+  - agi
+  - long-term-reasoning
 ---
 
 

@@ -4,20 +4,54 @@ title: OpenAI o3, o4-mini, and Codex CLI
 date: '2025-04-17T03:17:29.707499Z'
 original_slug: ainews-openai-o3-o4-mini-and-codex-cli
 description: >-
-  OpenAI launched the new o3 and o4-mini models, which offer significant
+  **OpenAI** launched the **o3 and o4-mini** models, showcasing significant
   improvements in reinforcement learning scaling, multimodal capabilities, and
-  tool use, making o4-mini both cheaper and more capable than previous
-  generations. Additionally, OpenAI introduced Codex CLI, an open-source coding
-  agent designed to enhance coding tasks with these new models.
+  tool use, making **o4-mini** cheaper and more efficient than previous
+  generations. Additionally, the open-source **Codex CLI** coding agent was
+  introduced to enhance coding tasks, while other notable releases include
+  **GPT-4.1**, **Gemini 2.5 Pro**, and **Seedream 3.0** from **ByteDance**.
 tags:
   - openai
+  - googleresearch
+  - google
+  - bytedance
   - o3
   - o4-mini
+  - gpt-4.1
+  - gemini-2.5-pro
+  - seedream-3.0
+  - codex-cli
+  - fire-1
   - reinforcement-learning
   - multimodal
-  - codex
-  - coding
+  - tool-use
   - open-source
+  - coding-agents
+  - web-scraping
+  - model-benchmarks
+  - agentic-systems
+companies:
+  - openai
+  - googleresearch
+  - google
+  - bytedance
+models:
+  - o3
+  - o4-mini
+  - gpt-4.1
+  - gemini-2.5-pro
+  - seedream-3.0
+  - codex-cli
+  - fire-1
+topics:
+  - reinforcement-learning
+  - multimodal
+  - tool-use
+  - open-source
+  - coding-agents
+  - web-scraping
+  - model-benchmarks
+  - agentic-systems
 ---
 
 

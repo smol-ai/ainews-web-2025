@@ -5,19 +5,95 @@ date: '2025-04-09T19:51:30.081055Z'
 original_slug: ainews-deepcoder-a-fully-open-source-14b-coder-at
 description: >-
   Together AI and Agentica have released DeepCoder-14B, a fully open-source 14B
-  parameter coding model that matches OpenAI’s o3-mini and o1 performance on
-  competitive coding benchmarks, with all training code, dataset, and recipes
-  publicly available. Additionally, Google has launched Gemini 2.5 Pro and its
-  experimental "Flash" versions for subscribers, accessible via the Gemini app’s
-  Deep Research feature.
+  parameter coding model that rivals OpenAI’s o3-mini and o1 on coding
+  benchmarks, with training costing around $26,880. Meanwhile, **Google** has
+  launched **Gemini 2.5 Pro** with experimental "Flash" versions available to
+  subscribers, praised for superior general capabilities and code generation
+  compared to **GPT-4.5** and **Claude 3.5 Sonnet**, though **Meta AI’s Llama
+  4** release has been met with disappointment over performance and efficiency
+  concerns.
 tags:
   - together
   - agentica
-  - deepcoder-14b
-  - open-source
-  - coding
+  - openai
   - google
+  - google-deepmind
+  - meta
+  - moonshot
+  - runway
+  - epoch-ai-research
+  - auth0
+  - mongodb
+  - deepcoder-14b
   - gemini-2.5-pro
+  - gemini-2.5-pro-flash
+  - o3-mini
+  - o1
+  - llama-4-scout
+  - llama-4-maverick
+  - llama-4-behemoth
+  - kimi-vl-a3b
+  - gen-4-turbo
+  - imagen-3
+  - veo-2
+  - deepseek-r1
+  - deepcogito-v1
+  - open-source-models
+  - coding-models
+  - reinforcement-learning
+  - multimodal-models
+  - model-evaluation
+  - reasoning-models
+  - text-to-image
+  - vision-language
+  - agent-frameworks
+  - ai-tooling
+  - model-benchmarks
+  - model-training-cost
+  - model-efficiency
+  - ai-industry-analysis
+companies:
+  - together
+  - agentica
+  - openai
+  - google
+  - google-deepmind
+  - meta
+  - moonshot
+  - runway
+  - epoch-ai-research
+  - auth0
+  - mongodb
+models:
+  - deepcoder-14b
+  - gemini-2.5-pro
+  - gemini-2.5-pro-flash
+  - o3-mini
+  - o1
+  - llama-4-scout
+  - llama-4-maverick
+  - llama-4-behemoth
+  - kimi-vl-a3b
+  - gen-4-turbo
+  - imagen-3
+  - veo-2
+  - deepseek-r1
+  - deepcogito-v1
+topics:
+  - open-source-models
+  - coding-models
+  - reinforcement-learning
+  - multimodal-models
+  - model-evaluation
+  - reasoning-models
+  - text-to-image
+  - vision-language
+  - agent-frameworks
+  - ai-tooling
+  - model-benchmarks
+  - model-training-cost
+  - model-efficiency
+  - ai-industry-analysis
 ---
 
 

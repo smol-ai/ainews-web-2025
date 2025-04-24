@@ -4,20 +4,77 @@ title: "GPT 4.5 —\_Chonky Orion ships!"
 date: '2025-02-28T07:24:08.803473Z'
 original_slug: ainews-gpt-45-chonky-orion-ships
 description: >-
-  OpenAI has released GPT-4.5 as a research preview, featuring improved world
-  knowledge, user intent understanding, and a large 128k token context window,
-  positioning it as a foundation for the upcoming GPT-5. Meanwhile, Microsoft
-  introduced open-source multimodal models Phi-4 Multimodal and Phi-4 Mini,
-  which integrate text, vision, and audio, and demonstrate competitive
-  performance against larger models.
+  **OpenAI released GPT-4.5** as a research preview featuring a *128,000 token
+  context window* and improved capabilities in writing, creative tasks, and
+  world knowledge, though it is *15-30x more expensive* and slower than GPT-4o
+  and underperforms some competitors like Sonnet 3.7. Meanwhile, **Microsoft
+  unveiled Phi-4 Multimodal and Phi-4 Mini**, open-source models excelling in
+  multimodal integration and math/coding tasks, challenging larger proprietary
+  models.
 tags:
   - openai
-  - gpt-4.5
-  - gpt-5
   - microsoft
-  - phi-4
-  - multimodal
-  - open-source
+  - cohere
+  - deepseek
+  - google
+  - langchain
+  - llamaindex
+  - jina
+  - mustafasuleyman
+  - gpt-4.5
+  - gpt-4o
+  - sonnet-3.7
+  - grok-3
+  - phi-4-multimodal
+  - phi-4-mini
+  - command-r7b-arabic
+  - deepseek-r1
+  - kimi-1.6-ioi-high
+  - large-language-models
+  - multimodal-models
+  - model-benchmarks
+  - model-efficiency
+  - open-source-models
+  - natural-language-processing
+  - coding
+  - creative-writing
+  - data-extraction
+  - speech-synthesis
+  - AI-cost-and-pricing
+  - AI-infrastructure
+companies:
+  - openai
+  - microsoft
+  - cohere
+  - deepseek
+  - google
+  - langchain
+  - llamaindex
+  - jina
+  - mustafasuleyman
+models:
+  - gpt-4.5
+  - gpt-4o
+  - sonnet-3.7
+  - grok-3
+  - phi-4-multimodal
+  - phi-4-mini
+  - command-r7b-arabic
+  - deepseek-r1
+  - kimi-1.6-ioi-high
+topics:
+  - large-language-models
+  - multimodal-models
+  - model-benchmarks
+  - model-efficiency
+  - open-source-models
+  - natural-language-processing
+  - coding
+  - creative-writing
+  - data-extraction
+  - speech-synthesis
+  - AI-cost-and-pricing
+  - AI-infrastructure
 ---
 
 

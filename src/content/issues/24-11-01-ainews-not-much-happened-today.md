@@ -4,18 +4,70 @@ title: not much happened today
 date: '2024-11-01T20:59:45.631653Z'
 original_slug: ainews-not-much-happened-today-8168
 description: >-
-  ChatGPT Search has officially launched, receiving positive early feedback and
-  doubling usage for its creator, Sam Altman. Meanwhile, Google introduced a
-  "Grounding" feature in its Gemini API that enables models to access up-to-date
-  web information at runtime, enhancing search capabilities.
+  Meta’s release of the **MobileLLM** family, featuring models from *125M* to
+  *1B* parameters optimized for mobile deployment, is a major highlight, with
+  the *1B* model achieving *90%* of the performance of much larger models.
+  Additionally, critical security vulnerabilities (CVE-2024-21626 to
+  CVE-2024-21631) were discovered in the **Ollama** framework, raising concerns
+  about remote code execution and container escape risks.
 tags:
-  - chatgpt
-  - search
+  - meta
+  - ollama
+  - openai
   - google
-  - grounding
+  - anthropic
+  - suno
+  - stable-diffusion
+  - mobilellm-125m
+  - mobilellm-350m
+  - mobilellm-600m
+  - mobilellm-1b
+  - smollm2
+  - claude
   - gemini
-  - model-access
-  - launch
+  - llama-3.2-1b
+  - stable-diffusion-3.5-medium
+  - qwen-2.5-0.5b
+  - mobile-llms
+  - model-efficiency
+  - security-vulnerabilities
+  - remote-code-execution
+  - container-escape
+  - llm-benchmarks
+  - on-device-inference
+  - ai-regulation
+  - prompt-engineering
+  - real-time-game-generation
+companies:
+  - meta
+  - ollama
+  - openai
+  - google
+  - anthropic
+  - suno
+  - stable-diffusion
+models:
+  - mobilellm-125m
+  - mobilellm-350m
+  - mobilellm-600m
+  - mobilellm-1b
+  - smollm2
+  - claude
+  - gemini
+  - llama-3.2-1b
+  - stable-diffusion-3.5-medium
+  - qwen-2.5-0.5b
+topics:
+  - mobile-llms
+  - model-efficiency
+  - security-vulnerabilities
+  - remote-code-execution
+  - container-escape
+  - llm-benchmarks
+  - on-device-inference
+  - ai-regulation
+  - prompt-engineering
+  - real-time-game-generation
 ---
 
 

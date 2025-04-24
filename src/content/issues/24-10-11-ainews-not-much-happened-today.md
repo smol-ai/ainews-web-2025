@@ -4,23 +4,70 @@ title: not much happened today
 date: '2024-10-11T23:00:43.056085Z'
 original_slug: ainews-not-much-happened-today-4857
 description: >-
-  Rhymes AI released Aria, a 25.3B parameter multimodal MoE model supporting
-  text, code, image, and video inputs with a 64k token context window, marking a
-  significant advancement in multimodal AI. Additionally, OpenAI's o1-preview
-  and o1-mini models demonstrate strong performance on long-context
-  retrieval-augmented generation benchmarks, outperforming Anthropic and Google
-  Gemini 1.5 models up to 128k tokens.
+  **Rhymes AI** released **Aria**, a groundbreaking *25.3B* parameter multimodal
+  model supporting text, code, image, and video inputs with a *64k* token
+  context window, marking a significant advancement in multimodal AI. Meanwhile,
+  **AMD** launched the **MI325X GPU** featuring *256 GB* HBM3e memory and *1.3x*
+  better performance than NVIDIA’s H200 and H100 GPUs, signaling major progress
+  in AI hardware capabilities.
 tags:
   - rhymes
-  - aria
-  - multimodal
-  - moe
   - openai
+  - google
+  - meta
+  - amd
+  - nvidia
+  - oxylabs
+  - latitude
+  - braintrust
+  - aria
   - o1-preview
+  - o1-mini
+  - gemini-1.5-pro
+  - gemini-1.5-flash
+  - mi325x
+  - h100
+  - h200sxm
+  - multimodal-models
+  - large-language-models
   - long-context
   - retrieval-augmented-generation
+  - gpu-hardware
+  - gpu-pricing
+  - software-engineering-benchmarks
+  - open-source
+  - prompt-engineering
+  - local-inference
+companies:
+  - rhymes
+  - openai
   - google
-  - gemini-1.5
+  - meta
+  - amd
+  - nvidia
+  - oxylabs
+  - latitude
+  - braintrust
+models:
+  - aria
+  - o1-preview
+  - o1-mini
+  - gemini-1.5-pro
+  - gemini-1.5-flash
+  - mi325x
+  - h100
+  - h200sxm
+topics:
+  - multimodal-models
+  - large-language-models
+  - long-context
+  - retrieval-augmented-generation
+  - gpu-hardware
+  - gpu-pricing
+  - software-engineering-benchmarks
+  - open-source
+  - prompt-engineering
+  - local-inference
 ---
 
 

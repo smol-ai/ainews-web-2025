@@ -4,21 +4,95 @@ title: AI gets Memory
 date: '2024-02-15T00:47:59.492420Z'
 original_slug: ainews-ai-gets-memory
 description: >-
-  OpenAI and LangChain have integrated advanced retrieval-augmented generation
-  (RAG) style memory features, inspired by MemGPT, to improve contextual and
-  memory handling in language models, though current memory modeling remains
-  limited. Meanwhile, TheBloke community is exploring large open-source models
-  with unprecedented context lengths up to 1 million tokens and advancing
-  fine-tuning methods like Sequential Fine-Tuning and Direct Preference
-  Optimization for better multi-turn conversational training.
+  OpenAI has integrated RAG-style memory and context operations, previously led
+  by MemGPT, into ChatGPT and LangChain, aiming to improve user experience
+  despite current memory modeling limitations. Meanwhile, TheBloke community is
+  exploring large language models with unprecedented context lengths like Large
+  World Model (up to *1 million tokens*) and advanced finetuning methods such as
+  Sequential Fine-Tuning and Direct Preference Optimization, highlighting
+  ongoing innovations in model training and deployment.
 tags:
   - openai
   - langchain
+  - cohere
+  - microsoft
+  - stability
+  - eleutherai
+  - laion
+  - chatgpt
   - memgpt
+  - large-world-model
+  - aya
+  - miqumaid-v2-70b
+  - mixtral-8x7b-qlora
+  - mistral-7b
+  - medalpaca
+  - phi-2
+  - iq3_xss
+  - magvit-v2
+  - stable-cascade
+  - owlvit
+  - clip
   - retrieval-augmented-generation
-  - large-language-models
-  - fine-tuning
-  - multi-turn-conversation
+  - memory-modeling
+  - large-context-length
+  - finetuning
+  - sequential-fine-tuning
+  - direct-preference-optimization
+  - roleplay-models
+  - model-quantization
+  - gpu-performance
+  - medical-llms
+  - copyright-in-ai
+  - ethical-ai
+  - image-generation
+  - cloud-computing
+  - neural-network-training
+  - test-time-augmentation
+  - encoder-decoder-models
+  - unsupervised-learning
+companies:
+  - openai
+  - langchain
+  - cohere
+  - microsoft
+  - stability
+  - eleutherai
+  - laion
+models:
+  - chatgpt
+  - memgpt
+  - large-world-model
+  - aya
+  - miqumaid-v2-70b
+  - mixtral-8x7b-qlora
+  - mistral-7b
+  - medalpaca
+  - phi-2
+  - iq3_xss
+  - magvit-v2
+  - stable-cascade
+  - owlvit
+  - clip
+topics:
+  - retrieval-augmented-generation
+  - memory-modeling
+  - large-context-length
+  - finetuning
+  - sequential-fine-tuning
+  - direct-preference-optimization
+  - roleplay-models
+  - model-quantization
+  - gpu-performance
+  - medical-llms
+  - copyright-in-ai
+  - ethical-ai
+  - image-generation
+  - cloud-computing
+  - neural-network-training
+  - test-time-augmentation
+  - encoder-decoder-models
+  - unsupervised-learning
 ---
 
 

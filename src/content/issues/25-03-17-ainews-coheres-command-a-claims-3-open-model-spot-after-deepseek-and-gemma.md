@@ -4,20 +4,79 @@ title: 'Cohere''s Command A claims #3 open model spot (after DeepSeek and Gemma)
 date: '2025-03-18T00:28:53.405655Z'
 original_slug: ainews-coheres-command-a-claims-3-open-model-spot
 description: >-
-  Cohere's Command A model has risen to #13 on the LMArena leaderboard,
-  showcasing its strong performance with a 256K context window and style control
-  capabilities. Meanwhile, Mistral AI released the lightweight, multilingual
-  Mistral Small 3.1 model featuring a 128K context window and Apache 2.0
-  license, gaining praise for its fast, low-latency responses and advanced
-  reasoning.
+  **Cohere’s Command A** model has risen to #13 on the LMArena leaderboard,
+  distinguished by its open-weight 111B parameters, an exceptionally long *256K*
+  context window, and competitive pricing, making it a strong contender among
+  open models. Additionally, **Mistral AI** released the **Mistral Small 3.1**
+  model, a lightweight, multilingual, multimodal model with a *128K* context
+  window and Apache 2.0 license, praised for fast, low-latency responses and
+  advanced reasoning capabilities.
 tags:
   - cohere
-  - command-a
   - mistral
+  - runpod
+  - appfolio
+  - anthropic
+  - hugging-face
+  - latent-space
+  - command-a
   - mistral-small-3.1
+  - smoldocling
+  - qwen2.5vl
+  - sdxl
+  - wan-2.1-i2v
+  - realm-x-assistant
+  - gemini-flash-2.0
   - large-language-models
-  - context-window
-  - open-weights
+  - open-weight-models
+  - long-context-window
+  - multilingual-models
+  - model-benchmarks
+  - model-evaluation
+  - ai-agents
+  - ocr
+  - alignment-auditing
+  - multimodal-models
+  - low-latency-inference
+  - software-task-autonomy
+  - therapeutic-reasoning
+  - ai-copilots
+  - model-licensing
+  - model-deployment
+companies:
+  - cohere
+  - mistral
+  - runpod
+  - appfolio
+  - anthropic
+  - hugging-face
+  - latent-space
+models:
+  - command-a
+  - mistral-small-3.1
+  - smoldocling
+  - qwen2.5vl
+  - sdxl
+  - wan-2.1-i2v
+  - realm-x-assistant
+  - gemini-flash-2.0
+topics:
+  - large-language-models
+  - open-weight-models
+  - long-context-window
+  - multilingual-models
+  - model-benchmarks
+  - model-evaluation
+  - ai-agents
+  - ocr
+  - alignment-auditing
+  - multimodal-models
+  - low-latency-inference
+  - software-task-autonomy
+  - therapeutic-reasoning
+  - ai-copilots
+  - model-licensing
+  - model-deployment
 ---
 
 

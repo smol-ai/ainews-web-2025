@@ -4,20 +4,59 @@ title: 'DeepSeek #1 on US App Store, Nvidia stock tanks -17%'
 date: '2025-01-28T05:28:32.064176Z'
 original_slug: ainews-deepseek-1-on-us-app-store-nvidia-stock
 description: >-
-  DeepSeek's latest model releases, including DeepSeek-R1 with 671B parameters
-  and V3 achieving 42% faster training on a 236B model using fp8 precision, have
-  garnered significant attention for their efficiency and chain-of-thought
-  capabilities rivaling OpenAI's models. These advancements have also impacted
-  the market, contributing to a notable 17% drop in NVIDIA's stock amid concerns
-  over compute demand and chip supply chain vulnerabilities.
+  DeepSeek has surged to #1 on the U.S. App Store, surpassing major apps like
+  ChatGPT and Threads, marking a significant cultural and market milestone. Its
+  latest **DeepSeek-R1** and **V3** models demonstrate cutting-edge efficiency
+  with a **671B parameter MoE architecture** and training speeds **42% faster**
+  than previous large models, sparking notable market reactions including a
+  **-17% drop** in **NVIDIA** stock due to concerns over compute demand and chip
+  supply chains.
 tags:
   - deepseek
+  - openai
+  - nvidia
+  - anthropic
   - deepseek-r1
   - deepseek-v3
+  - qwen2.5-vl
+  - qwen2.5-3b
+  - qwen2.5-7b
+  - qwen2.5-72b
+  - dall-e
   - mixture-of-experts
-  - qwen2.5
+  - model-efficiency
+  - multimodal-models
+  - reinforcement-learning
+  - quantization
+  - ai-market
+  - compute-demand
+  - agentic-ai
+  - open-source
+  - app-store-rankings
+companies:
+  - deepseek
+  - openai
   - nvidia
-  - gpu-hardware
+  - anthropic
+models:
+  - deepseek-r1
+  - deepseek-v3
+  - qwen2.5-vl
+  - qwen2.5-3b
+  - qwen2.5-7b
+  - qwen2.5-72b
+  - dall-e
+topics:
+  - mixture-of-experts
+  - model-efficiency
+  - multimodal-models
+  - reinforcement-learning
+  - quantization
+  - ai-market
+  - compute-demand
+  - agentic-ai
+  - open-source
+  - app-store-rankings
 ---
 
 

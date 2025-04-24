@@ -4,20 +4,19 @@ title: GPT4o August + 100% Structured Outputs for All (GPT4o August edition)
 date: '2024-08-07T02:40:09.048705Z'
 original_slug: ainews-gpt4o-august-100-structured-outputs-for
 description: >-
-  Meta released Llama 3.1, a 405-billion parameter model that surpasses GPT-4
-  and Claude 3.5 Sonnet on several benchmarks, while Google DeepMind quietly
-  launched Gemini 1.5 Pro, outperforming GPT-4o, Claude-3.5, and Llama 3.1 on
-  LMSYS and topping the Vision Leaderboard. Additionally, OpenAI introduced the
-  GPT-4o-2024-08-06 model with 16k context length and significantly lower
-  pricing, marking a notable upgrade over previous 4o versions.
+  **Meta** released **Llama 3.1**, a 405-billion parameter model that surpasses
+  **GPT-4** and **Claude 3.5 Sonnet** on multiple benchmarks, while **Google
+  DeepMind** quietly launched **Gemini 1.5 Pro**, outperforming top models
+  including GPT-4o and Llama 3.1 on vision and multilingual tasks. Additionally,
+  **OpenAI** introduced the new **gpt-4o-2024-08-06** model with *16k* context
+  length and *33-50%* lower pricing, marking a significant upgrade over previous
+  4o versions.
 tags:
-  - meta
-  - llama-3.1
-  - google
-  - deepmind
-  - gemini-1.5-pro
-  - openai
-  - gpt-4o-2024-08-06
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

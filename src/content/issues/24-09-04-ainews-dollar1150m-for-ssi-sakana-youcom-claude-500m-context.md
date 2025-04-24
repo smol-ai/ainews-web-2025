@@ -4,19 +4,73 @@ title: $1150m for SSI, Sakana, You.com + Claude 500m context
 date: '2024-09-05T03:25:36.408094Z'
 original_slug: ainews-1150m-for-ssi-sakana-youcom-claude-500m
 description: >-
-  Safe Superintelligence announced a $1 billion funding round at a $5 billion
-  valuation, with co-founder Ilya Sutskever hinting at their novel search-based
-  approach to AI safety. Meanwhile, Sakana AI secured $100 million in Series A
-  funding, focusing on evolutionary and collective intelligence-inspired
-  methods.
+  **Safe Superintelligence** announced a $1 billion raise at a $5 billion
+  valuation, with co-founder **Ilya Sutskever** hinting at their novel search
+  approach to AI safety. Meanwhile, **AI2** released **OLMoE**, an open-source
+  Mixture-of-Experts language model with *7 billion parameters* and *1 billion
+  active parameters*, pretrained on *5 trillion tokens*, outperforming models
+  like **Llama2-13B-Chat** and emphasizing efficient training and local
+  deployment.
 tags:
-  - safe
-  - superintelligence
-  - ilya-sutskever
+  - safe-superintelligence
   - sakana
+  - you
+  - perplexity
+  - anthropic
+  - openai
+  - ai2
+  - github
+  - olmoe
+  - olmoe-1b-7b-instruct
+  - llama2-13b-chat
+  - claude-enterprise
+  - deepseek-v2-lite-16b
+  - gpt-4
   - funding
-  - collective-intelligence
-  - evolution
+  - superintelligence
+  - mixture-of-experts
+  - open-source-models
+  - model-efficiency
+  - large-language-models
+  - ai-safety
+  - gpu-costs
+  - retrieval-augmented-generation
+  - local-llm-support
+  - autonomous-agents
+  - multimodal-search
+  - enterprise-ai
+  - ai-education
+companies:
+  - safe-superintelligence
+  - sakana
+  - you
+  - perplexity
+  - anthropic
+  - openai
+  - ai2
+  - github
+models:
+  - olmoe
+  - olmoe-1b-7b-instruct
+  - llama2-13b-chat
+  - claude-enterprise
+  - deepseek-v2-lite-16b
+  - gpt-4
+topics:
+  - funding
+  - superintelligence
+  - mixture-of-experts
+  - open-source-models
+  - model-efficiency
+  - large-language-models
+  - ai-safety
+  - gpu-costs
+  - retrieval-augmented-generation
+  - local-llm-support
+  - autonomous-agents
+  - multimodal-search
+  - enterprise-ai
+  - ai-education
 ---
 
 

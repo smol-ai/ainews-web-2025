@@ -4,19 +4,18 @@ title: 'Evals: The Next Generation'
 date: '2024-05-02T23:54:22.767341Z'
 original_slug: ainews-evals-the-next-generation
 description: >-
-  OpenAI CEO Sam Altman has hinted at the imminent release of GPT-5, describing
-  GPT-4 as "dumb" and emphasizing the future of AI agents as highly competent
-  personal assistants. Meanwhile, concerns over AI-powered weapons grow, with
-  world leaders calling for bans on autonomous lethal systems and urging that
-  only humans control nuclear weapons.
+  OpenAI CEO **Sam Altman** hinted at the imminent release of **GPT-5**,
+  describing **GPT-4** as "dumb" and emphasizing AI agents that assist users by
+  accessing personal information as the next breakthrough. Meanwhile, **Scale
+  AI** and **Reka** introduced new benchmarks addressing data contamination
+  issues in evaluating large language models, with **Phi-3** performing notably
+  well on arithmetic tasks.
 tags:
-  - openai
-  - gpt-4
-  - gpt-5
-  - ai-agents
-  - ai-weapons
-  - regulation
-  - safety
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

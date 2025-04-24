@@ -1,11 +1,71 @@
 ---
-id: 38309c71-19ba-4feb-96d7-820f32ab6fb8
+id: 38309c71-19ba-4feb-96d7-123
 title: not much happened today
 date: '2025-04-22T05:44:39.731046Z'
-description: not much happened.
+description: >-
+  **Nvidia** unveiled Eagle 2.5, a family of frontier vision-language models
+  (VLMs) excelling in long-context multimodal learning, with the 8B model
+  matching GPT-4o's performance on long-video understanding. Meanwhile, the
+  **Nemotron-H** model family introduces hybrid Mamba-Transformer architectures
+  that achieve up to *3x faster inference* than state-of-the-art Transformers
+  while maintaining accuracy, including variants with *8B*, *47B*, and *56B*
+  parameters.
 tags:
-  - quiet
+  - nvidia
+  - alibaba
+  - bytedance
+  - adobe
+  - google
+  - nemotron-h
+  - eagle-2.5
+  - gemini-2.5
+  - gemma-3
+  - qwen2.5-32b
+  - qwen2.5-72b
+  - seedream-3.0
+  - kimina-prover
+  - bitnet-b1.58-2b4t
+  - llama-3.2-1b
+  - vision-language-models
+  - long-context-learning
+  - transformer-architecture
+  - model-inference-speed
+  - reinforcement-learning
+  - multimodal-learning
+  - image-generation
+  - diffusion-models
+  - reasoning-in-llms
+  - training-data-optimization
+companies:
+  - nvidia
+  - alibaba
+  - bytedance
+  - adobe
+  - google
+models:
+  - nemotron-h
+  - eagle-2.5
+  - gemini-2.5
+  - gemma-3
+  - qwen2.5-32b
+  - qwen2.5-72b
+  - seedream-3.0
+  - kimina-prover
+  - bitnet-b1.58-2b4t
+  - llama-3.2-1b
+topics:
+  - vision-language-models
+  - long-context-learning
+  - transformer-architecture
+  - model-inference-speed
+  - reinforcement-learning
+  - multimodal-learning
+  - image-generation
+  - diffusion-models
+  - reasoning-in-llms
+  - training-data-optimization
 ---
+
 
 a quiet day is all you need.
 

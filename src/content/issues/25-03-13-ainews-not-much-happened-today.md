@@ -4,19 +4,73 @@ title: not much happened today
 date: '2025-03-13T21:13:47.394377Z'
 original_slug: ainews-not-much-happened-today-8188
 description: >-
-  DeepSeek R1, trained with efficient FP8 precision, outperforms Gemma 3 27B in
-  benchmarks but requires significant hardware resources like 32 H100 GPUs.
-  Meanwhile, OpenAI has labeled DeepSeek as "state-controlled" and called for
-  bans on PRC-produced models, sparking community backlash accusing OpenAI of
-  trying to stifle competition and limit open-source AI development.
+  **DeepSeek R1** has drawn significant attention for its efficient FP8 training
+  and superior performance over **Gemma 3 27B**, with **OpenAI** controversially
+  labeling it as "state-controlled" and calling for bans on "PRC-produced"
+  models, sparking community debate about openness and competition. Meanwhile,
+  **AI2** released **OLMo 32B**, a fully open-source model surpassing
+  **GPT-3.5** and **GPT-4o mini**, notable for its complete transparency and
+  accessibility on **Hugging Face**.
 tags:
   - deepseek
-  - fp8
-  - gemma-3
-  - nvidia
+  - google
   - openai
-  - prc
+  - nvidia
+  - ai2
+  - cohere
+  - hugging-face
+  - deepmind
+  - deepseek-r1
+  - gemma-3
+  - olmo-32b
+  - gpt-3.5
+  - gpt-4o-mini
+  - command-a
+  - fp8-precision
+  - model-efficiency
+  - state-controlled-models
+  - open-source-models
+  - model-licensing
+  - large-language-models
   - model-benchmarks
+  - gpu-hardware
+  - model-quantization
+  - model-inference
+  - multilingual-support
+  - model-architecture
+  - model-training
+  - community-discussion
+companies:
+  - deepseek
+  - google
+  - openai
+  - nvidia
+  - ai2
+  - cohere
+  - hugging-face
+  - deepmind
+models:
+  - deepseek-r1
+  - gemma-3
+  - olmo-32b
+  - gpt-3.5
+  - gpt-4o-mini
+  - command-a
+topics:
+  - fp8-precision
+  - model-efficiency
+  - state-controlled-models
+  - open-source-models
+  - model-licensing
+  - large-language-models
+  - model-benchmarks
+  - gpu-hardware
+  - model-quantization
+  - model-inference
+  - multilingual-support
+  - model-architecture
+  - model-training
+  - community-discussion
 ---
 
 

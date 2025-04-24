@@ -4,20 +4,19 @@ title: not much happened today
 date: '2025-03-28T23:18:38.632397Z'
 original_slug: ainews-not-much-happened-today-9938
 description: >-
-  GPT-4o has been recognized as the leading non-reasoning coding model with
-  improved coding, instruction following, and image generation features, though
-  it still trails behind reasoning models. Meanwhile, Gemini 2.5 Pro stands out
-  for its advanced audio and video understanding capabilities, including
-  processing hour-long videos and podcasts in a single request, and achieving
-  over 50% on AI Explained’s Simple-Bench.
+  **GPT-4o** has been recognized as the leading non-reasoning coding model as of
+  *March 2025*, praised for its improved coding, instruction following, and
+  image generation features, though it still trails behind reasoning models.
+  Meanwhile, **Gemini 2.5 Pro** stands out for its advanced audio and video
+  understanding capabilities, including processing *~1 hour* of video or *~2
+  hours* of podcast transcription in a single request, and is now accessible via
+  platforms like **Cursor** and **Windsurf**.
 tags:
-  - gpt-4o
-  - coding
-  - instruction-following
-  - image-generation
-  - gemini-2.5-pro
-  - audio-processing
-  - video-processing
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

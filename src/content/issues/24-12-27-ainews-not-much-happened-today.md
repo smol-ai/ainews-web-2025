@@ -4,18 +4,66 @@ title: not much happened today
 date: '2024-12-28T05:06:02.495266Z'
 original_slug: ainews-not-much-happened-today-4715
 description: >-
-  ChatGPT, Sora, and the OpenAI API experienced a major outage lasting over five
-  hours but have since been restored. Meanwhile, vLLM released updates to
-  DeepSeek-V3 that improve training efficiency through enhanced parallelism and
-  CPU offloading options.
+  **DeepSeek-V3** has been highlighted for its superior cost-efficiency and
+  performance compared to **GPT-4o**, processing inputs at *$0.27* per million
+  tokens versus *$2.50* and outputs at *$1.10* versus *$10.00*. Additionally,
+  **ChatGPT**, **Sora**, and the **OpenAI API** experienced a significant outage
+  lasting over *5 hours* but have since been restored.
 tags:
   - openai
-  - chatgpt
-  - outage
-  - vllm
+  - deepseek
+  - llama-index
+  - qdrant
+  - twilio
+  - github
+  - physicslm
+  - therasync
   - deepseek-v3
-  - training-efficiency
+  - gpt-4o
+  - vllm
+  - model-cost-efficiency
+  - model-performance
+  - outage
   - parallelism
+  - fp8-precision
+  - federated-learning
+  - ai-safety
+  - ai-alignment
+  - coding-assistants
+  - document-processing
+  - training-optimization
+  - multimodal-models
+  - on-device-ai
+  - open-source-collaboration
+companies:
+  - openai
+  - deepseek
+  - llama-index
+  - qdrant
+  - twilio
+  - github
+  - physicslm
+  - therasync
+models:
+  - deepseek-v3
+  - gpt-4o
+  - vllm
+  - physicslm
+topics:
+  - model-cost-efficiency
+  - model-performance
+  - outage
+  - parallelism
+  - fp8-precision
+  - federated-learning
+  - ai-safety
+  - ai-alignment
+  - coding-assistants
+  - document-processing
+  - training-optimization
+  - multimodal-models
+  - on-device-ai
+  - open-source-collaboration
 ---
 
 

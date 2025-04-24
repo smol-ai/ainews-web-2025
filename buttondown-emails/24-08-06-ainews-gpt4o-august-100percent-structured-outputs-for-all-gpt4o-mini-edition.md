@@ -1095,9 +1095,6 @@ vvelo: [https://fxtwitter.com/reach_vb/status/1820493688377643178](https://fxtwi
 
 **Links mentioned**:
 
-- `PyTorch`
-  
-  [](https://pytorch.org/): no description found
 - [ao/torchao/quantization/quant_primitives.py at de4a1fb3b1f71e2f61b84dfdc96e7d704ff72208 · pytorch/ao](https://github.com/pytorch/ao/blob/de4a1fb3b1f71e2f61b84dfdc96e7d704ff72208/torchao/quantization/quant_primitives.py#L610): The missing pytorch dtype and layout library for training and inference - pytorch/ao
 - [Quantization - Neural Network Distiller](https://intellabs.github.io/distiller/algo_quantization.html#symmetric-mode): no description found
 - [pytorch/aten/src/ATen/native/cuda/int4mm.cu at e98eac76b358fb4639b9e9ce6894014354d7b073 · pytorch/pytorch](https://github.com/pytorch/pytorch/blob/e98eac76b358fb4639b9e9ce6894014354d7b073/aten/src/ATen/native/cuda/int4mm.cu#L1): Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch

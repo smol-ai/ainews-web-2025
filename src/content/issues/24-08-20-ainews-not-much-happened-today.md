@@ -4,18 +4,17 @@ title: not much happened today
 date: '2024-08-21T00:22:36.551416Z'
 original_slug: ainews-not-much-happened-today-5079
 description: >-
-  Meta released Llama 3.1 405B, a GPT-4 level model now deployable on Google
-  Cloud Vertex AI, enabling in-house control and deployment. Additionally,
-  Qwen2-Math-72B achieved state-of-the-art results on multiple math benchmarks,
-  with a public Gradio demo available for testing.
+  Meta released **Llama 3.1 405B**, a GPT-4 level large language model now
+  easily deployable on Google Cloud Vertex AI, enabling in-house use with full
+  control. Meanwhile, **MistralAI** introduced **Magnum-v2-123B**, their largest
+  Magnum model trained on 8x MI300 GPUs, showing promising improvements over
+  previous versions despite lacking formal evaluations.
 tags:
-  - meta
-  - llama-3.1
-  - google-cloud
-  - vertex-ai
-  - qwen2-math-72b
-  - math-benchmarks
-  - gradio
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

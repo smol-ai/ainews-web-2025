@@ -4,21 +4,20 @@ title: 'ModernBert: small new Retriever/Classifier workhorse, 8k context, 2T tok
 date: '2024-12-20T03:27:55.084640Z'
 original_slug: ainews-modernbert-small-new-retrieverclassifier
 description: >-
-  Jeremy Howard and the Answer.ai/LightOn team released ModernBERT, an updated
-  encoder-only model with an 8,192 token context window, trained on 2 trillion
-  tokens including code, achieving state-of-the-art performance for its size and
-  faster variable-length input processing. Meanwhile, Google’s Gemini 2.0 Flash
-  Thinking model debuted as the top-ranked chatbot in Chatbot Arena,
-  highlighting advances in reasoning capabilities.
+  Jeremy Howard and the **Answer.ai/LightOn** team released **ModernBERT**, an
+  updated encoder-only model with a significantly extended context window of
+  *8,192 tokens*, trained on *2 trillion tokens* including code, achieving
+  state-of-the-art performance for its size and faster variable-length input
+  processing. Meanwhile, the open-source **Genesis** physics engine project
+  demonstrated a generative simulation platform capable of creating 4D dynamical
+  worlds with speeds up to *430,000x faster than real-time*, promising major
+  advances for robotics and physical AI.
 tags:
-  - answer
-  - lighton
-  - modernbert
-  - bert
-  - context-window
-  - google
-  - gemini-2-0
-  - chatbot
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

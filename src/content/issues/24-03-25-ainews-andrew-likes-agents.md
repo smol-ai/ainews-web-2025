@@ -4,20 +4,57 @@ title: Andrew likes Agents
 date: '2024-03-26T01:11:50.136366Z'
 original_slug: ainews-andrew-likes-agents
 description: >-
-  Andrew Ng’s analysis highlights that incorporating an iterative agent workflow
-  significantly boosts coding performance, with GPT-3.5 agents achieving up to
-  95.1% accuracy on the HumanEval benchmark, surpassing GPT-4’s zero-shot 67%.
-  Meanwhile, the Stable Diffusion community is actively developing new models
-  like Cyberrealistic_v40 and Platypus XL, alongside innovative techniques for
-  upscaling and image quality enhancement.
+  **Mistral AI** released their new **Mistral 7B v0.2** base model featuring a
+  *32k context window*, along with quantized 4-bit versions that enable *2x
+  faster inference* and *70% less VRAM* usage, expected to outperform the Yi-9B
+  model. Meanwhile, **Stability AI** faced leadership turmoil as **Emad
+  Mostaque** stepped down following investor and staff departures.
 tags:
-  - andrew-ng
-  - agents
+  - mistral
+  - stability
+  - openai
+  - mistral-7b-v0.2
+  - mistral-7b-quantized
+  - yi-9b
   - gpt-3.5
   - gpt-4
+  - sdxl-lightning
+  - cyberrealistic-v40
+  - platypus-xl
+  - large-language-models
+  - model-quantization
+  - inference-optimization
+  - multiagent-systems
+  - coding-assistants
+  - local-llm-deployment
   - stable-diffusion
-  - upscaling
-  - local-llm
+  - model-finetuning
+  - leadership-changes
+  - open-source-ai
+companies:
+  - mistral
+  - stability
+  - openai
+models:
+  - mistral-7b-v0.2
+  - mistral-7b-quantized
+  - yi-9b
+  - gpt-3.5
+  - gpt-4
+  - sdxl-lightning
+  - cyberrealistic-v40
+  - platypus-xl
+topics:
+  - large-language-models
+  - model-quantization
+  - inference-optimization
+  - multiagent-systems
+  - coding-assistants
+  - local-llm-deployment
+  - stable-diffusion
+  - model-finetuning
+  - leadership-changes
+  - open-source-ai
 ---
 
 

@@ -4,19 +4,19 @@ title: not much happened today
 date: '2024-10-24T00:39:59.759230Z'
 original_slug: ainews-not-much-happened-today-5175
 description: >-
-  Anthropic released Claude 3.5 Sonnet and Haiku models featuring a new computer
-  use capability that allows the AI to interact with computer interfaces by
-  interpreting screenshots and performing actions like clicking and typing.
-  Claude 3.5 Sonnet also achieved state-of-the-art coding performance,
-  surpassing OpenAI’s o1-preview model.
+  Anthropic has launched **Claude 3.5 Sonnet** and **Claude 3.5 Haiku**,
+  introducing a beta computer use capability that enables the models to interact
+  with virtual machines by perceiving screens and performing actions like
+  clicking and typing, with significant improvements in coding performance.
+  Meanwhile, **Stability AI** released **Stable Diffusion 3.5**, featuring three
+  variants including a Medium model launching on *October 29th*, boasting
+  enhanced image quality and text understanding.
 tags:
-  - anthropic
-  - claude-3.5
-  - computer-use
-  - coding
-  - model-release
-  - stable-diffusion
-  - video-generation
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

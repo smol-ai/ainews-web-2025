@@ -4,20 +4,19 @@ title: 'Pixtral 12B: Mistral beats Llama to Multimodality'
 date: '2024-09-12T00:30:22.330132Z'
 original_slug: ainews-pixtral-12b-mistral-beats-llama-to
 description: >-
-  Mistral has released Pixtral, a 12B vision-language model with open weights
-  ahead of Meta, featuring a Mistral Nemo 12B text backbone and a 400M vision
-  adapter, showcasing strong OCR and screen understanding capabilities.
-  Additionally, Arcee AI’s SuperNova, a distilled Llama 3.1 70B & 8B model,
-  outperforms Meta’s Llama 3.1 70B instruct and leads open LLM benchmarks like
-  IFEval.
+  Mistral has released **Pixtral 12B**, an open-weights vision-language model
+  that notably beats **Meta** to market with a multimodal offering, featuring a
+  *12B text backbone* and *400M vision adapter* and supporting *1024x1024* image
+  inputs. Additionally, **Arcee AI** announced **SuperNova**, a distilled
+  **Llama 3.1 70B & 8B** model that outperforms Meta’s Llama 3.1 70B instruct
+  across benchmarks, establishing itself as the best open large language model
+  on IFEval.
 tags:
-  - mistral
-  - pixtral
-  - vision-language-model
-  - llama
-  - supernova
-  - open-weights
-  - benchmarking
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

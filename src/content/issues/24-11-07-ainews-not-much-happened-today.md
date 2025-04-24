@@ -4,17 +4,72 @@ title: not much happened today
 date: '2024-11-08T01:01:09.630174Z'
 original_slug: ainews-not-much-happened-today-3089
 description: >-
-  Meta’s Llama 3.2 Vision models (11B and 90B) are now supported in Ollama 0.4,
-  enabling new capabilities like handwriting recognition. Additionally, a new
-  optimization method called Self-Consistency Preference Optimization (ScPO) has
-  been introduced to improve model consistency without requiring human labels.
+  A new release of **Ollama 0.4** now supports Meta’s **Llama 3.2 Vision**
+  models (11B and 90B), enabling capabilities like handwriting recognition,
+  while a Reddit user introduced **LLM Selector**, a tool analyzing 11
+  open-source models across 12 benchmarks to help users find the best AI model
+  for specific use cases, though it faces critiques regarding model diversity
+  and feature requests. Additionally, research discussions around multi-agent
+  systems, AI in healthcare, and advancements in transformer architectures
+  highlight ongoing innovation in AI development and applications.
 tags:
   - meta
-  - llama-3.2
   - ollama
-  - self-consistency-preference-optimization
+  - amd
+  - llama-index
+  - togethercompute
+  - langchain
+  - weights-biases
+  - stanfordnlp
+  - deeplearning
+  - tom-doerr
+  - llama-3.2-vision-11b
+  - llama-3.2-vision-90b
+  - llama-3.1-70b
+  - gemma-2-27b
+  - gpt-2
+  - dtrocr
   - model-scaling
   - handwriting-recognition
+  - multi-agent-systems
+  - healthcare-automation
+  - neural-networks
+  - transformer-architectures
+  - benchmark-evaluation
+  - model-selection
+  - open-source-tools
+  - ai-community
+  - agi-theories
+companies:
+  - meta
+  - ollama
+  - amd
+  - llama-index
+  - togethercompute
+  - langchain
+  - weights-biases
+  - stanfordnlp
+  - deeplearning
+  - tom-doerr
+models:
+  - llama-3.2-vision-11b
+  - llama-3.2-vision-90b
+  - llama-3.1-70b
+  - gemma-2-27b
+  - gpt-2
+  - dtrocr
+topics:
+  - model-scaling
+  - handwriting-recognition
+  - multi-agent-systems
+  - healthcare-automation
+  - neural-networks
+  - transformer-architectures
+  - benchmark-evaluation
+  - model-selection
+  - open-source-tools
+  - ai-community
+  - agi-theories
 ---
 
 

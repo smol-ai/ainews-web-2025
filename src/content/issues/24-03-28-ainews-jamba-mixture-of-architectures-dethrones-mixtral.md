@@ -4,20 +4,62 @@ title: 'Jamba: Mixture of Architectures dethrones Mixtral'
 date: '2024-03-28T23:43:23.713718Z'
 original_slug: ainews-jamba-mixture-of-architectures-dethrones
 description: >-
-  AI21 Labs has released Jamba, a 52B parameter Mixture of Experts (MoE) model
-  optimized for single 80GB A100 GPU inference with a 256K context length and
-  open weights under Apache 2.0, positioning it as a strong competitor to
-  Mixtral. Meanwhile, Databricks introduced DBRX, a new open LLM with 36B active
-  parameters and 16 experts, setting a new standard for open-source language
-  models.
+  AI21 Labs released **Jamba**, a 52B parameter MoE model with a *256K* context
+  window and open weights under Apache 2.0, optimized for single A100 GPU
+  performance, positioning it as a strong competitor to **Mixtral**. Meanwhile,
+  **Databricks** unveiled **DBRX**, a 36B active parameter MoE model trained on
+  *12 trillion* tokens, gaining attention as a new open LLM standard surpassing
+  several existing models.
 tags:
   - ai21
-  - jamba
-  - mixture-of-experts
   - databricks
+  - together
+  - microsoft
+  - amd
+  - jamba
   - dbrx
+  - qwen1.5-moe-a2.7b
+  - stripedhyena
+  - mixtral
+  - grok-1
+  - sdxs512-0.9
+  - deepseek-coder-33b
+  - mixture-of-experts
+  - long-context
   - large-language-models
-  - open-source
+  - open-weights
+  - model-efficiency
+  - retrieval-augmented-generation
+  - image-generation
+  - ai-hardware
+  - fine-tuning
+  - ai-agents
+companies:
+  - ai21
+  - databricks
+  - together
+  - microsoft
+  - amd
+models:
+  - jamba
+  - dbrx
+  - qwen1.5-moe-a2.7b
+  - stripedhyena
+  - mixtral
+  - grok-1
+  - sdxs512-0.9
+  - deepseek-coder-33b
+topics:
+  - mixture-of-experts
+  - long-context
+  - large-language-models
+  - open-weights
+  - model-efficiency
+  - retrieval-augmented-generation
+  - image-generation
+  - ai-hardware
+  - fine-tuning
+  - ai-agents
 ---
 
 

@@ -4,20 +4,95 @@ title: not much happened today
 date: '2025-02-21T22:50:40.653089Z'
 original_slug: ainews-not-much-happened-today-9617
 description: >-
-  xAI's new Grok-3 model, utilizing 200,000 Nvidia H100 GPUs, outperforms
-  competitors like Google, Anthropic, and OpenAI on math, science, and coding
-  benchmarks, marking a significant advancement in reasoning capabilities.
-  Additionally, ByteDance's DeepSeek-R1 achieves the highest accuracy on the
-  challenging SuperGPQA benchmark, demonstrating strong performance across
-  numerous graduate-level disciplines.
+  **xAI's Grok-3**, a new LLM family using *200,000 Nvidia H100 GPUs* and *10x*
+  the compute of its predecessor, outperforms models from **Google, Anthropic,
+  and OpenAI** on math, science, and coding benchmarks, signaling a major
+  advancement in reasoning capabilities. Additionally, **DeepSeek-R1** from
+  **ByteDance Research** achieves the highest accuracy of *61.82%* on the
+  challenging **SuperGPQA** benchmark, highlighting significant progress in
+  question answering across *26,529* questions in *285* graduate disciplines.
 tags:
   - xai
+  - google
+  - anthropic
+  - openai
+  - bytedance
+  - metai
+  - hugging-face
+  - together
+  - sakana
+  - uc-berkeley
+  - nousresearch
+  - tenstorrent
   - grok-3
-  - deepseek
-  - supergpqa
-  - benchmarking
-  - reasoning
+  - deepseek-r1
+  - siglip-2
+  - o3-mini-high
+  - perplexity-r1-1776
+  - llama-3.x
+  - llamba-1b
+  - llamba-3b
+  - llamba-8b
+  - audiobox-aesthetics
+  - deepseek-r1-1.5b
+  - ticket-to-pr
+  - vllm
   - large-language-models
+  - reasoning
+  - benchmarks
+  - question-answering
+  - model-performance
+  - open-source
+  - model-distillation
+  - recurrent-models
+  - compute-scaling
+  - gpu-pricing
+  - cuda-optimization
+  - reinforcement-learning
+  - community-engagement
+  - model-benchmarks
+companies:
+  - xai
+  - google
+  - anthropic
+  - openai
+  - bytedance
+  - metai
+  - hugging-face
+  - together
+  - sakana
+  - uc-berkeley
+  - nousresearch
+  - tenstorrent
+models:
+  - grok-3
+  - deepseek-r1
+  - siglip-2
+  - o3-mini-high
+  - perplexity-r1-1776
+  - llama-3.x
+  - llamba-1b
+  - llamba-3b
+  - llamba-8b
+  - audiobox-aesthetics
+  - deepseek-r1-1.5b
+  - ticket-to-pr
+  - vllm
+topics:
+  - large-language-models
+  - reasoning
+  - benchmarks
+  - question-answering
+  - model-performance
+  - open-source
+  - model-distillation
+  - recurrent-models
+  - compute-scaling
+  - gpu-pricing
+  - cuda-optimization
+  - reinforcement-learning
+  - community-engagement
+  - model-benchmarks
 ---
 
 

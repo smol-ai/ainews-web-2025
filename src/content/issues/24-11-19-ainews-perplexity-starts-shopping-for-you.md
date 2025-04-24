@@ -4,19 +4,77 @@ title: Perplexity starts Shopping for you
 date: '2024-11-20T00:43:00.876368Z'
 original_slug: ainews-perplexity-starts-shopping-for-you
 description: >-
-  Perplexity has launched an AI-native in-app shopping experience for US-based
-  Pro members featuring one-click checkout and free shipping, likely powered by
-  Stripe’s new Agent SDK. Meanwhile, Cerebras Systems announced a public
-  inference endpoint for Llama 3.1 405B, offering over 10x faster performance
-  than typical providers with a large 128k context window.
+  Perplexity has launched its AI-native in-app shopping experience for US Pro
+  members, featuring one-click checkout and free shipping through its new
+  Merchant Program, closely tied to Stripe’s recently released Agent SDK.
+  Meanwhile, **Mistral** unveiled **Pixtral Large**, a 124B parameter
+  multi-modal image model now supported on Hugging Face and integrated into
+  platforms like AnyChat and vLLM, marking significant advances in multi-modal
+  AI capabilities.
 tags:
-  - perplexity
   - stripe
+  - perplexity
+  - mistral
+  - huggingface
+  - cerebras-systems
+  - google-colab
+  - wandb
+  - shopify
+  - hyatt
+  - snowflake
+  - figure-robotics
+  - sambanova
+  - pixtral-large-124b
+  - llama-3.1-405b
+  - claude-3.5
+  - claude-3.6
+  - big-mamba
+  - ngpt
+  - ai-shopping
   - agent-sdk
-  - ecommerce
-  - cerebras
-  - llama-3-1
-  - inference-endpoint
+  - multi-modal-models
+  - large-language-models
+  - model-inference
+  - sdk-integration
+  - ai-benchmarks
+  - retrieval-augmented-generation
+  - ai-workshops
+  - robotics
+  - open-source-ai
+  - ai-humor
+companies:
+  - stripe
+  - perplexity
+  - mistral
+  - huggingface
+  - cerebras-systems
+  - google-colab
+  - wandb
+  - shopify
+  - hyatt
+  - snowflake
+  - figure-robotics
+  - sambanova
+models:
+  - pixtral-large-124b
+  - llama-3.1-405b
+  - claude-3.5
+  - claude-3.6
+  - big-mamba
+  - ngpt
+topics:
+  - ai-shopping
+  - agent-sdk
+  - multi-modal-models
+  - large-language-models
+  - model-inference
+  - sdk-integration
+  - ai-benchmarks
+  - retrieval-augmented-generation
+  - ai-workshops
+  - robotics
+  - open-source-ai
+  - ai-humor
 ---
 
 

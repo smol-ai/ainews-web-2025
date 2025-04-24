@@ -4,20 +4,93 @@ title: AI2 releases OLMo - the 4th open-everything LLM
 date: '2024-02-03T03:35:10.019799Z'
 original_slug: ainews-ai2-releases-olmo-the-4th-open-everything
 description: >-
-  AI2 is gaining attention in 2024 with the release of OLMo, a series of open
-  language models including 1B and 7B parameter versions, with a 65B model
-  forthcoming, positioning OLMo as a spiritual successor to the Pythia project
-  in open and reproducible research. Meanwhile, the Miqu-70B model from TheBloke
-  community is praised for its self-correcting abilities and competitive speed,
-  highlighting ongoing advancements in model optimization and deployment.
+  The AI2 research institute is gaining prominence in 2024 with the release of
+  the OLMo family of open language models, including *1B* and *7B* parameter
+  models and a forthcoming *65B* model, seen as a spiritual successor to the
+  Pythia project. Meanwhile, the Mistral Discord highlighted challenges in GPU
+  supply chains involving companies like **TSMC** and **ASML**, alongside active
+  discussions on fine-tuning large language models and open-source versus
+  proprietary software models.
 tags:
   - ai2
+  - mistral
+  - nous-research
+  - huggingface
+  - tsmc
+  - asml
+  - zeiss
+  - anthropic
+  - google
   - olmo
-  - open-language-models
-  - pythia
-  - thebloke
+  - olmo-1b
+  - olmo-7b
+  - olmo-65b
   - miqu-70b
-  - model-optimization
+  - mistral-7b
+  - distilbert-base-uncased
+  - qwen-72b
+  - qwen2
+  - llama2
+  - mobilediffusion
+  - efficientnet
+  - colbert
+  - open-language-models
+  - model-release
+  - reproducible-research
+  - gpu-shortage
+  - fine-tuning
+  - open-source
+  - proprietary-software
+  - weight-freezing
+  - low-bit-optimizers
+  - backdoor-training
+  - multimodality
+  - diffusion-models
+  - clustering
+  - remote-gpu
+  - dataset-creation
+  - model-benchmarking
+companies:
+  - ai2
+  - mistral
+  - nous-research
+  - huggingface
+  - tsmc
+  - asml
+  - zeiss
+  - anthropic
+  - google
+models:
+  - olmo
+  - olmo-1b
+  - olmo-7b
+  - olmo-65b
+  - miqu-70b
+  - mistral-7b
+  - distilbert-base-uncased
+  - qwen-72b
+  - qwen2
+  - llama2
+  - mobilediffusion
+  - efficientnet
+  - colbert
+topics:
+  - open-language-models
+  - model-release
+  - reproducible-research
+  - gpu-shortage
+  - fine-tuning
+  - open-source
+  - proprietary-software
+  - weight-freezing
+  - low-bit-optimizers
+  - backdoor-training
+  - multimodality
+  - diffusion-models
+  - clustering
+  - remote-gpu
+  - dataset-creation
+  - model-benchmarking
 ---
 
 

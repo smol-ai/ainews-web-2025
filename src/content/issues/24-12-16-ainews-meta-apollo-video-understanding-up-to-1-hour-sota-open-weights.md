@@ -4,21 +4,85 @@ title: Meta Apollo - Video Understanding up to 1 hour, SOTA Open Weights
 date: '2024-12-17T01:17:52.100442Z'
 original_slug: ainews-meta-apollo-video-understanding-up-to-1
 description: >-
-  Meta released Apollo, a new family of large multimodal video-language models
-  with open weights (1B, 3B, 7B) and introduced ApolloBench, a benchmark suite
-  that speeds up video understanding evaluation by 41× while providing detailed
-  temporal perception insights. Meanwhile, Google DeepMind launched Veo 2, a
-  state-of-the-art 4K video generation model with improved physics simulation
-  and camera control, alongside an enhanced Imagen 3 image model.
+  Meta and Stanford have collaboratively released the **Apollo family of Large
+  Multimodal Models**, with the **7B model** achieving state-of-the-art video
+  understanding capable of processing up to a *1-hour long video* locally on
+  consumer GPUs like the 3090. Meanwhile, **Google DeepMind** unveiled **Veo
+  2**, a new state-of-the-art video generation model supporting *4K resolution*
+  and advanced physics simulation, highlighting ongoing rapid advancements in
+  video-centric AI models.
 tags:
   - meta
-  - apollo
-  - apollobench
-  - video-understanding
+  - stanford
   - google
   - deepmind
+  - openai
+  - huggingface
+  - figure
+  - klarna
+  - notion
+  - cohere
+  - apollo-1b
+  - apollo-3b
+  - apollo-7b
   - veo-2
   - imagen-3
+  - llama-3b
+  - llama-70b
+  - chatgpt
+  - chatgpt-max
+  - command-r7b
+  - large-multimodal-models
+  - video-understanding
+  - video-generation
+  - model-scaling
+  - temporal-reasoning
+  - local-inference
+  - benchmark-evaluation
+  - chain-of-thought-prompts
+  - language-model-capabilities
+  - workforce-automation
+  - humanoid-robots
+  - search-enhancement
+  - self-recognition
+  - prompt-engineering
+companies:
+  - meta
+  - stanford
+  - google
+  - deepmind
+  - openai
+  - huggingface
+  - figure
+  - klarna
+  - notion
+  - cohere
+models:
+  - apollo-1b
+  - apollo-3b
+  - apollo-7b
+  - veo-2
+  - imagen-3
+  - llama-3b
+  - llama-70b
+  - chatgpt
+  - chatgpt-max
+  - command-r7b
+topics:
+  - large-multimodal-models
+  - video-understanding
+  - video-generation
+  - model-scaling
+  - temporal-reasoning
+  - local-inference
+  - benchmark-evaluation
+  - chain-of-thought-prompts
+  - language-model-capabilities
+  - workforce-automation
+  - humanoid-robots
+  - search-enhancement
+  - self-recognition
+  - prompt-engineering
 ---
 
 

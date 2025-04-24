@@ -6,19 +6,19 @@ title: >-
 date: '2024-12-27T01:18:46.567338Z'
 original_slug: ainews-deepseek-v3-671b-finegrained-moe-trained
 description: >-
-  DeepSeek v3 has launched with 671B MoE parameters, outperforming GPT-4o and
-  Claude Sonnet-3.5 while being trained on 8-11x less compute, using only 2.788M
-  H800 GPU hours compared to Llama 3’s 30.8M GPU hours. This open-source model
-  is now available via Hugging Face with API support, marking a significant
-  advancement in cost-efficient large language models.
+  DeepSeek has launched **DeepSeek-V3**, a 671B-parameter mixture-of-experts
+  model trained on *14.8 trillion tokens* using only *2.788 million H800 GPU
+  hours*, achieving performance that surpasses proprietary models like
+  **GPT-4o** and **Claude Sonnet-3.5**. This open-source model emphasizes
+  cost-effective training through algorithm-framework-hardware co-design and is
+  now available via platforms like **Hugging Face** with commercial licensing,
+  marking a significant milestone in democratizing advanced AI capabilities.
 tags:
-  - deepseek
-  - moe
-  - llama-3
-  - hugging-face
-  - open-source
-  - gpu-efficiency
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

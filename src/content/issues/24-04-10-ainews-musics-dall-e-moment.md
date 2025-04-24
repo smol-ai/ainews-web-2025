@@ -4,19 +4,17 @@ title: Music's Dall-E moment
 date: '2024-04-10T22:07:48.484098Z'
 original_slug: ainews-musics-dall-e-moment
 description: >-
-  Google's new Griffin architecture outperforms transformers with faster
-  inference and lower memory usage, while Mistral AI released an open-source
-  8x22B model featuring a 64K context window and 130B total parameters.
-  Additionally, Command R+ has surpassed GPT-4 models on the LMSYS Chatbot Arena
-  leaderboard, becoming the top open model.
+  Google’s new Griffin architecture model outperforms transformers in efficiency
+  and benchmarks, while **Mistral AI** released the open-source Mixtral 8x22B
+  model with a *64K* context window and strong performance on MMLU.
+  Additionally, **Cohere’s Command R+** model climbed to 6th place on the
+  Chatbot Arena leaderboard, surpassing GPT-4 variants as the best open model.
 tags:
-  - google
-  - griffin
-  - mistral
-  - open-source
-  - command-r+
-  - gpt-4
-  - chatbot-arena
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

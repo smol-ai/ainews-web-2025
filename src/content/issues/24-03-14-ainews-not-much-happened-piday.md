@@ -4,19 +4,63 @@ title: Not much happened piday
 date: '2024-03-14T23:53:52.756548Z'
 original_slug: ainews-not-much-happened-piday
 description: >-
-  DeepMind has announced SIMA, a generalist AI agent capable of following
+  **DeepMind** announced **SIMA**, a generalist AI agent capable of following
   natural language instructions across diverse 3D environments and video games,
-  marking a significant advancement in embodied AI. Additionally, Anthropic
-  released Claude 3 Haiku, their fastest and most affordable language model, now
-  accessible via API and Perplexity for Claude Pro users.
+  marking a significant advance in embodied AI. Meanwhile, **Anthropic**
+  released **Claude 3 Haiku**, their fastest and most affordable large language
+  model, now available via API and on Perplexity for Claude Pro subscribers.
 tags:
   - deepmind
-  - sima
-  - embodied-ai
   - anthropic
+  - cohere
+  - together-computing
+  - keras
+  - llama-index
+  - cerebras
+  - openai
+  - sima
+  - claude-3-haiku
+  - command-r
   - claude-3
-  - language-models
-  - natural-language-processing
+  - llama-parse
+  - embodied-agents
+  - natural-language-instructions
+  - large-language-models
+  - model-scaling
+  - retrieval-augmented-generation
+  - ai-safety
+  - eu-ai-act
+  - prompt-injection
+  - software-engineering
+  - generative-ai
+  - document-parsing
+companies:
+  - deepmind
+  - anthropic
+  - cohere
+  - together-computing
+  - keras
+  - llama-index
+  - cerebras
+  - openai
+models:
+  - sima
+  - claude-3-haiku
+  - command-r
+  - claude-3
+  - llama-parse
+topics:
+  - embodied-agents
+  - natural-language-instructions
+  - large-language-models
+  - model-scaling
+  - retrieval-augmented-generation
+  - ai-safety
+  - eu-ai-act
+  - prompt-injection
+  - software-engineering
+  - generative-ai
+  - document-parsing
 ---
 
 

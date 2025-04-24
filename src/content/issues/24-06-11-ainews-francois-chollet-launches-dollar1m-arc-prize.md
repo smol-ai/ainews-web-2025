@@ -4,20 +4,69 @@ title: Francois Chollet launches $1m ARC Prize
 date: '2024-06-11T23:42:03.241872Z'
 original_slug: ainews-francois-chollet-launches-1m-arc-prize
 description: >-
-  Apple is partnering with OpenAI to integrate ChatGPT into iOS, iPadOS, and
-  macOS later this year, enabling AI-powered features like document
-  summarization and photo analysis while emphasizing privacy through on-device
-  processing. This move has sparked mixed reactions, with some praising Apple's
-  deep AI integration and others questioning its ability to independently
-  deliver capable AI models.
+  Apple announced a major partnership with **OpenAI** to integrate **ChatGPT**
+  and **GPT-4o** into iOS, iPadOS, and macOS later this year, introducing "Apple
+  Intelligence" with on-device AI features like document summarization and photo
+  analysis while emphasizing privacy through on-device processing. Meanwhile,
+  François Chollet and collaborators launched the **$1M ARC Prize** to develop
+  AI systems capable of adapting to novelty and solving reasoning problems,
+  aiming to advance progress toward AGI.
 tags:
   - apple
   - openai
+  - amd
+  - microsoft
+  - google-deepmind
+  - figure
+  - brightwave
   - chatgpt
-  - ios
-  - macos
-  - on-device
+  - gpt-4o
+  - imagen-3
+  - vall-e-2
+  - dolphin-llama3
+  - stable-diffusion-3
+  - agi
+  - benchmarks
+  - on-device-inference
   - privacy
+  - reasoning
+  - multimodal-ai
+  - speech-synthesis
+  - image-generation
+  - rl-hf
+  - compiler
+  - ai-integration
+  - cost-performance
+  - seed-funding
+companies:
+  - apple
+  - openai
+  - amd
+  - microsoft
+  - google-deepmind
+  - figure
+  - brightwave
+models:
+  - chatgpt
+  - gpt-4o
+  - imagen-3
+  - vall-e-2
+  - dolphin-llama3
+  - stable-diffusion-3
+topics:
+  - agi
+  - benchmarks
+  - on-device-inference
+  - privacy
+  - reasoning
+  - multimodal-ai
+  - speech-synthesis
+  - image-generation
+  - rl-hf
+  - compiler
+  - ai-integration
+  - cost-performance
+  - seed-funding
 ---
 
 

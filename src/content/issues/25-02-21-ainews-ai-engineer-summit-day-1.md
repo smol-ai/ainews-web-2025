@@ -4,19 +4,67 @@ title: AI Engineer Summit Day 1
 date: '2025-02-22T02:50:34Z'
 original_slug: ainews-ai-engineer-summit-day-1
 description: >-
-  The AIE Summit in NYC highlighted major developments including OpenAI's first
-  formal definition of Agents and a significant $930 million funding
-  announcement from speakers and sponsors. On AI model performance, Grok-3's
-  capabilities sparked debate with mixed evaluations, while o3-mini demonstrated
-  superior performance and effective debugging of CUDA kernel issues.
+  Day 1 of the AIE Summit in NYC highlighted key talks including OpenAI’s first
+  formal definition of Agents and a $930 million funding announcement.
+  Meanwhile, xAI’s Grok-3 model sparked debate over its performance compared to
+  o3-mini, with Grok-3 noted for its record compute scale of *4e26 to 5e26
+  FLOP*, making it the first model trained on over *1e26 FLOP*.
 tags:
-  - aie-summit
   - openai
-  - agents
-  - funding
+  - xai
+  - anthropic
+  - neo4j
+  - pfizer
+  - alibaba
+  - sakana
+  - apple
+  - epfl
   - grok-3
   - o3-mini
-  - cuda-kernels
+  - deepseek-r1
+  - qwen-2.5-vl
+  - smolvml2
+  - helix
+  - vllm-v0.7.3
+  - agent-engineering
+  - model-benchmarks
+  - large-scale-training
+  - vision-language-models
+  - robotics
+  - quantization
+  - tokenizer
+  - synthetic-data
+  - open-source-models
+  - performance-evaluation
+companies:
+  - openai
+  - xai
+  - anthropic
+  - neo4j
+  - pfizer
+  - alibaba
+  - sakana
+  - apple
+  - epfl
+models:
+  - grok-3
+  - o3-mini
+  - deepseek-r1
+  - qwen-2.5-vl
+  - smolvml2
+  - helix
+  - vllm-v0.7.3
+topics:
+  - agent-engineering
+  - model-benchmarks
+  - large-scale-training
+  - vision-language-models
+  - robotics
+  - quantization
+  - tokenizer
+  - synthetic-data
+  - open-source-models
+  - performance-evaluation
 ---
 
 

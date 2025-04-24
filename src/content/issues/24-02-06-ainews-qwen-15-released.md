@@ -4,21 +4,64 @@ title: Qwen 1.5 Released
 date: '2024-02-06T23:40:32.776669Z'
 original_slug: ainews-qwen-15-released
 description: >-
-  Chinese model Qwen 1.5 was released with strong performance comparable to
-  Mistral and Llama 2, featuring up to 32k token context and support for Hugging
-  Face transformers and quantized models. Meta showcased advanced VR headset
-  prototypes with retinal resolution and light field passthrough at SIGGRAPH
-  2023, highlighting significant progress in VR display technology.
+  The release of **Qwen 1.5**, a 72B parameter Chinese language model with up to
+  *32k token* context and strong multilingual, retrieval-augmented generation,
+  agent planning, and code generation capabilities, marks a significant
+  advancement, featuring Hugging Face transformers compatibility and quantized
+  model support. Additionally, **Meta** showcased pioneering VR headset
+  prototypes with retinal resolution and advanced light field passthrough at
+  SIGGRAPH 2023, highlighting progress in immersive technology.
 tags:
-  - tags
   - qwen
   - mistral
-  - llama2
-  - hugging-face
-  - quantization
+  - llama
+  - deepseek
   - meta
-  - vr
+  - huggingface
+  - eleutherai
+  - qwen-1.5
+  - llama2
+  - bagel-7b-v0.4
+  - deepseek-math-7b-instruct
+  - sparsetral-16x7b-v2
+  - llama-vid
+  - large-language-models
+  - multilingual-models
+  - retrieval-augmented-generation
+  - quantization
+  - vr-headsets
   - retinal-resolution
+  - light-field-passthrough
+  - model-evaluation
+  - fine-tuning
+  - long-context-models
+companies:
+  - qwen
+  - mistral
+  - llama
+  - deepseek
+  - meta
+  - huggingface
+  - eleutherai
+models:
+  - qwen-1.5
+  - mistral
+  - llama2
+  - bagel-7b-v0.4
+  - deepseek-math-7b-instruct
+  - sparsetral-16x7b-v2
+  - llama-vid
+topics:
+  - large-language-models
+  - multilingual-models
+  - retrieval-augmented-generation
+  - quantization
+  - vr-headsets
+  - retinal-resolution
+  - light-field-passthrough
+  - model-evaluation
+  - fine-tuning
+  - long-context-models
 ---
 
 

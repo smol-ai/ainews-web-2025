@@ -4,19 +4,87 @@ title: 'GPT 4.1: The New OpenAI Workhorse'
 date: '2025-04-15T05:16:26.134697Z'
 original_slug: ainews-gpt-41-the-new-openai-workhorse
 description: >-
-  OpenAI has released GPT-4.1, including mini and nano versions, which offer
-  improved instruction following, coding performance, and support for long
-  contexts up to 1 million tokens, with GPT-4.1-nano being the cheapest and
-  fastest model. Additionally, GPT-4.5 Preview is being deprecated as GPT-4.1
-  provides similar or better performance.
+  **OpenAI** released **GPT-4.1**, including mini and nano versions, now
+  available via API with enhanced coding abilities, instruction following, and
+  support for very long contexts (up to *1 million tokens*), while deprecating
+  **GPT-4.5** by *July 14*. Meanwhile, **Meta** launched the **Llama 4** family
+  featuring models up to *2 trillion parameters* with unprecedented *10
+  million-token* context windows, claiming performance surpassing **GPT-4.5**
+  and **Claude 3.7 Sonnet**.
 tags:
   - openai
+  - meta
+  - google
+  - nvidia
+  - hugging-face
+  - samsung
+  - pollen-robotics
+  - fourier
   - gpt-4.1
   - gpt-4.1-mini
   - gpt-4.1-nano
+  - gpt-4.5
+  - llama-4
+  - llama-4-scout
+  - llama-4-maverick
+  - llama-4-behemoth
+  - gemini-2.5-pro
+  - gemini-2.0-flash
+  - deepseek-v3
+  - mistral-24b
+  - llama-nemotron-ultra
+  - kimina-prover
+  - cogito-v1
+  - large-language-models
   - coding
   - instruction-following
+  - long-context
   - model-benchmarks
+  - multimodal-models
+  - robotics
+  - open-source-robotics
+  - ai-research
+  - reinforcement-learning
+  - model-deprecation
+  - pricing-and-cost
+companies:
+  - openai
+  - meta
+  - google
+  - nvidia
+  - hugging-face
+  - samsung
+  - pollen-robotics
+  - fourier
+models:
+  - gpt-4.1
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - gpt-4.5
+  - llama-4
+  - llama-4-scout
+  - llama-4-maverick
+  - llama-4-behemoth
+  - gemini-2.5-pro
+  - gemini-2.0-flash
+  - deepseek-v3
+  - mistral-24b
+  - llama-nemotron-ultra
+  - kimina-prover
+  - cogito-v1
+topics:
+  - large-language-models
+  - coding
+  - instruction-following
+  - long-context
+  - model-benchmarks
+  - multimodal-models
+  - robotics
+  - open-source-robotics
+  - ai-research
+  - reinforcement-learning
+  - model-deprecation
+  - pricing-and-cost
 ---
 
 

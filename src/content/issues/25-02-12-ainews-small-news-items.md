@@ -4,19 +4,106 @@ title: small news items
 date: '2025-02-13T00:10:12.213344Z'
 original_slug: ainews-small-news-items
 description: >-
-  OpenAI announced plans for GPT-4.5 and GPT-5, with GPT-5 integrating advanced
-  technologies like the o3 model and offering unlimited chat access in the free
-  tier. Meanwhile, OpenAI's o3 model achieved a gold medal at the 2024
-  International Olympiad in Informatics, outperforming specialized pipelines
-  without hand-crafted heuristics.
+  **OpenAI** revealed plans for **GPT-4.5** and **GPT-5**, with GPT-5
+  integrating the advanced **o3+** model and offering unlimited chat access in
+  the free tier. Meanwhile, **OpenAI's o3 model** achieved a gold medal at the
+  *2024 International Olympiad in Informatics*, outperforming specialized
+  pipelines without hand-crafted heuristics, highlighting significant advances
+  in large reasoning models.
 tags:
   - openai
+  - ollama
+  - glean
+  - harvey
+  - fal
+  - scaled-cognition
+  - mistral
+  - perplexity
+  - cerebras
+  - alibaba
+  - groq
+  - bytedance
+  - figure
+  - bouygues-telecom
+  - together
+  - klarna
+  - langchain
+  - google-deepmind
   - gpt-4.5
   - gpt-5
   - o3
-  - competitive-programming
-  - international-olympiad-in-informatics
+  - o1-preview
+  - deepseek-r1-distilled-qwen-1.5b
+  - deepscaler
+  - qwen-1.5b
+  - qwen-0.5b
+  - modernbert-0.3b
+  - deepseek-r1
+  - o1-ioi
+  - webli-100b
   - large-language-models
+  - model-performance
+  - reinforcement-learning
+  - competitive-programming
+  - reasoning-models
+  - dataset-scaling
+  - vision-language-models
+  - model-benchmarks
+  - industry-adoption
+  - partnerships
+  - funding
+  - customer-support-automation
+  - compute-infrastructure
+  - multilinguality
+  - cultural-diversity
+companies:
+  - openai
+  - ollama
+  - glean
+  - harvey
+  - fal
+  - scaled-cognition
+  - mistral
+  - perplexity
+  - cerebras
+  - alibaba
+  - groq
+  - bytedance
+  - figure
+  - bouygues-telecom
+  - together
+  - klarna
+  - langchain
+  - google-deepmind
+models:
+  - gpt-4.5
+  - gpt-5
+  - o3
+  - o1-preview
+  - deepseek-r1-distilled-qwen-1.5b
+  - deepscaler
+  - qwen-1.5b
+  - qwen-0.5b
+  - modernbert-0.3b
+  - deepseek-r1
+  - o1-ioi
+  - webli-100b
+topics:
+  - large-language-models
+  - model-performance
+  - reinforcement-learning
+  - competitive-programming
+  - reasoning-models
+  - dataset-scaling
+  - vision-language-models
+  - model-benchmarks
+  - industry-adoption
+  - partnerships
+  - funding
+  - customer-support-automation
+  - compute-infrastructure
+  - multilinguality
+  - cultural-diversity
 ---
 
 

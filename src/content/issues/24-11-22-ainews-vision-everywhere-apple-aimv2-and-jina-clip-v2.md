@@ -4,21 +4,90 @@ title: 'Vision Everywhere: Apple AIMv2 and Jina CLIP v2'
 date: '2024-11-22T23:31:04.836919Z'
 original_slug: ainews-vision-everywhere-apple-aimv2-and-jina
 description: >-
-  Apple’s AIMv2 vision encoder achieves a new state-of-the-art 89.5% accuracy on
-  ImageNet by combining autoregressive vision and text objectives, significantly
-  advancing multimodal model pretraining. Meanwhile, Jina’s CLIP v2 offers a
-  highly efficient multilingual multimodal embedding model supporting 89
-  languages with strong compression capabilities for practical deployment.
+  **Apple's AIMv2 vision encoder achieves a new state-of-the-art 89.5% accuracy
+  on ImageNet by combining autoregressive vision and text objectives, surpassing
+  previous models. Meanwhile, Jina releases CLIP v2, a 0.9B multimodal embedding
+  model supporting 89 languages and featuring efficient Matryoshka embeddings
+  with minimal accuracy loss, targeting practical multimodal retrieval
+  applications.**
 tags:
   - apple
-  - aimv2
-  - vision-encoder
-  - imagenet
   - jina
-  - clip
-  - multilingual
-  - multimodal
-  - embeddings
+  - allen
+  - black-forest-labs
+  - suno
+  - google-deepmind
+  - openai
+  - bytedance
+  - anthropic
+  - amazon
+  - langchain
+  - aimv2
+  - aimv2-3b
+  - jina-clip-v2
+  - embeddings-v3
+  - tülu-3
+  - tülu-3-8b
+  - tülu-3-70b
+  - llama-3.1
+  - claude-3.5
+  - whisper
+  - marscode-agent
+  - vision-encoders
+  - multimodal-embeddings
+  - autoregressive-learning
+  - image-classification
+  - multilingual-models
+  - retrieval-augmented-generation
+  - scientific-discovery
+  - red-teaming
+  - automated-bug-fixing
+  - ai-collaborations
+  - voice-interaction
+  - music-generation
+  - open-science
+  - model-efficiency
+  - large-language-models
+companies:
+  - apple
+  - jina
+  - allen
+  - black-forest-labs
+  - suno
+  - google-deepmind
+  - openai
+  - bytedance
+  - anthropic
+  - amazon
+  - langchain
+models:
+  - aimv2
+  - aimv2-3b
+  - jina-clip-v2
+  - embeddings-v3
+  - tülu-3
+  - tülu-3-8b
+  - tülu-3-70b
+  - llama-3.1
+  - claude-3.5
+  - whisper
+  - marscode-agent
+topics:
+  - vision-encoders
+  - multimodal-embeddings
+  - autoregressive-learning
+  - image-classification
+  - multilingual-models
+  - retrieval-augmented-generation
+  - scientific-discovery
+  - red-teaming
+  - automated-bug-fixing
+  - ai-collaborations
+  - voice-interaction
+  - music-generation
+  - open-science
+  - model-efficiency
+  - large-language-models
 ---
 
 

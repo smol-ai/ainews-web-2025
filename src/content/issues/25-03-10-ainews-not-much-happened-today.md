@@ -4,20 +4,60 @@ title: not much happened today
 date: '2025-03-10T22:46:37.549783Z'
 original_slug: ainews-not-much-happened-today-3830
 description: >-
-  A new agentic leaderboard ranks LLMs powering smolagents CodeAgent, with
-  GPT-4.5 leading and Claude-3.7-Sonnet close behind, highlighting the
-  performance benefits of agentic approaches over vanilla LLMs. Additionally,
-  nanoMoE, a simple PyTorch implementation of a mid-sized Mixture-of-Experts
-  model, enables pretraining on commodity hardware within a week, making
-  advanced architectures more accessible.
+  **GPT-4.5** tops a new agentic leaderboard for LLMs powering **smolagents
+  CodeAgent**, outperforming models like **DeepSeek-R1** and
+  **Claude-3.7-Sonnet**. Additionally, **nanoMoE**, a simple PyTorch
+  implementation of a Mixture-of-Experts model based on nanoGPT, can be
+  pretrained on commodity hardware in under a week, making MoE architectures
+  more accessible.
 tags:
-  - smolagents
-  - codeagent
+  - openai
+  - anthropic
+  - deepseek
+  - hugging-face
+  - replit
+  - llama-index
   - gpt-4.5
+  - deepseek-r1
   - claude-3.7-sonnet
-  - mixture-of-experts
   - nanomoe
-  - pytorch
+  - tinyr1-32b-preview
+  - llama-3-8b
+  - mixture-of-experts
+  - agentic-llms
+  - reinforcement-learning
+  - kv-cache-compression
+  - minimax-agents
+  - semantic-search
+  - model-commoditization
+  - llm-leaderboards
+  - fine-tuning
+  - knowledge-distillation
+companies:
+  - openai
+  - anthropic
+  - deepseek
+  - hugging-face
+  - replit
+  - llama-index
+models:
+  - gpt-4.5
+  - deepseek-r1
+  - claude-3.7-sonnet
+  - nanomoe
+  - tinyr1-32b-preview
+  - llama-3-8b
+topics:
+  - mixture-of-experts
+  - agentic-llms
+  - reinforcement-learning
+  - kv-cache-compression
+  - minimax-agents
+  - semantic-search
+  - model-commoditization
+  - llm-leaderboards
+  - fine-tuning
+  - knowledge-distillation
 ---
 
 

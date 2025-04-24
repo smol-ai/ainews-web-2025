@@ -6,19 +6,81 @@ title: >-
 date: '2024-06-14T21:06:38.944616Z'
 original_slug: ainews-to-be-named-2748
 description: >-
-  NVIDIA has scaled up its Nemotron-4 model to an impressive 340 billion
-  parameters, achieving GPT-4 level performance while relying on over 98%
-  synthetic data for model alignment and fine-tuning. They have open-sourced the
-  synthetic data generation pipeline, marking a significant advancement in
-  efficient LLM training with minimal human-annotated data.
+  NVIDIA has scaled up its **Nemotron-4** model to an impressive *340 billion*
+  parameters, trained on *9 trillion* tokens, with over *98%* of its alignment
+  data synthetically generated; the company is open-sourcing the synthetic data
+  generation pipeline, marking a significant advance in large language model
+  training efficiency and performance. Additionally, the new Nemotron-4 base,
+  instruct, and reward models outperform competitors like Mixtral, Llama 3,
+  Gemini 1.5, Cohere, and GPT-4o, demonstrating state-of-the-art capabilities.
 tags:
   - nvidia
-  - nemotron-4
-  - synthetic-data
-  - large-language-model
+  - huggingface
+  - stability
+  - scale
+  - openai
+  - meta
+  - cohere
+  - llama-index
+  - nemotron-4-340b
+  - nemotron-4-15b
+  - mixtral
+  - llama-3
+  - gemini-1.5
+  - gpt-4o
+  - mamba-2-hybrid-8b
+  - samba-3.8b-instruct
+  - dolphin-2.9.3
+  - faro-yi-9b-dpo
+  - openvla-7b
+  - stable-diffusion-3.0
+  - synthetic-data-generation
+  - large-language-models
   - model-alignment
+  - reward-modeling
+  - instruction-following
+  - infinite-context
+  - multimodal-ai
+  - benchmarks
+  - dataset-curation
+  - model-scaling
   - open-source
-  - reward-model
+  - inference-optimization
+companies:
+  - nvidia
+  - huggingface
+  - stability
+  - scale
+  - openai
+  - meta
+  - cohere
+  - llama-index
+models:
+  - nemotron-4-340b
+  - nemotron-4-15b
+  - mixtral
+  - llama-3
+  - gemini-1.5
+  - gpt-4o
+  - mamba-2-hybrid-8b
+  - samba-3.8b-instruct
+  - dolphin-2.9.3
+  - faro-yi-9b-dpo
+  - openvla-7b
+  - stable-diffusion-3.0
+topics:
+  - synthetic-data-generation
+  - large-language-models
+  - model-alignment
+  - reward-modeling
+  - instruction-following
+  - infinite-context
+  - multimodal-ai
+  - benchmarks
+  - dataset-curation
+  - model-scaling
+  - open-source
+  - inference-optimization
 ---
 
 

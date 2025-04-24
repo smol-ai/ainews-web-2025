@@ -4,19 +4,66 @@ title: not much happened today
 date: '2024-08-08T01:50:11.687874Z'
 original_slug: ainews-not-much-happened-today-4029
 description: >-
-  OpenAI has introduced structured outputs in their API with 100% reliable JSON
-  schema enforcement across models like gpt-4-0613 and gpt-4o-2024-08-06,
-  alongside a 50% price cut for GPT-4o. Meanwhile, Mistral Large 2 has emerged
-  as a top-performing open-weight model, surpassing GPT-4 Turbo and Claude 3
-  Opus on challenging benchmarks.
+  OpenAI has introduced structured outputs across models including
+  **gpt-4-0613** and **gpt-3.5-turbo-0613**, enabling 100% reliable JSON schema
+  enforcement and launched the new **gpt-4o-2024-08-06** model with a 50% price
+  reduction on GPT-4o. Meanwhile, **Mistral Large 2** has been released,
+  outperforming **GPT-4 Turbo** and **Claude 3 Opus** on challenging benchmarks,
+  marking a significant advancement in open-weight large language models.
 tags:
   - openai
-  - gpt-4-0613
-  - gpt-4o-2024-08-06
   - mistral
+  - meta
+  - google
+  - deepmind
+  - langchain
+  - gpt-4-0613
+  - gpt-3.5-turbo-0613
+  - gpt-4o-2024-08-06
   - mistral-large-2
-  - benchmarks
+  - gpt-4-turbo
+  - claude-3-opus
+  - llama-3.1
+  - bigllama-3.1-1t-instruct
+  - idefics3-llama
+  - structured-outputs
+  - json-schema
+  - large-language-models
+  - model-benchmarks
+  - model-quantization
   - pricing
+  - multimodal-models
+  - hardware-robotics
+  - ai-safety
+  - regulation
+companies:
+  - openai
+  - mistral
+  - meta
+  - google
+  - deepmind
+  - langchain
+models:
+  - gpt-4-0613
+  - gpt-3.5-turbo-0613
+  - gpt-4o-2024-08-06
+  - mistral-large-2
+  - gpt-4-turbo
+  - claude-3-opus
+  - llama-3.1
+  - bigllama-3.1-1t-instruct
+  - idefics3-llama
+topics:
+  - structured-outputs
+  - json-schema
+  - large-language-models
+  - model-benchmarks
+  - model-quantization
+  - pricing
+  - multimodal-models
+  - hardware-robotics
+  - ai-safety
+  - regulation
 ---
 
 

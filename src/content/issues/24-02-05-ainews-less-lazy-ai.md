@@ -4,18 +4,93 @@ title: Less Lazy AI
 date: '2024-02-06T00:50:28.809972Z'
 original_slug: ainews-less-lazy-ai
 description: >-
-  OpenAI has acknowledged and fixed an issue related to AI models refusing to
-  follow instructions, though details remain undisclosed. Meanwhile, the Nous
-  Research AI community is exploring advanced model merging techniques like
-  frankenmerging and anticipating the release of the powerful Qwen2 model.
+  **OpenAI** has acknowledged and fixed an issue related to AI "laziness" in
+  following instructions, though details remain undisclosed. Meanwhile, the
+  **Nous Research** community is actively exploring advanced model merging
+  techniques like **frankenmerging** and anticipating the release of the
+  **Qwen2** model, while **LM Studio** users report persistent process bugs and
+  hardware compatibility challenges, especially involving AVX instruction sets
+  and AMD GPUs.
 tags:
   - openai
+  - polymind
+  - potatooff
+  - h2oai
+  - nous-research
+  - lm-studio
+  - mistral
+  - laion
+  - stability
+  - nvidia
+  - hugging-face
+  - perplexity-labs
+  - automatic1111
+  - hamster-v0.2
+  - flan-t5
+  - qwen2
+  - miqu-1-120b-gguf
+  - mixtral
+  - exllama-v2
+  - llama3
+  - openhermes-2.5
+  - mistral-medium
+  - mistral-small
+  - whisper
+  - llama
   - instruction-following
   - model-merging
-  - frankenmerging
-  - qwen2
+  - quantization
+  - fine-tuning
+  - local-chatbots
+  - gpu-compatibility
+  - cpu-inference
+  - lyric-generation
+  - dataset-ethics
+  - ai-collaboration
+  - hardware-requirements
+  - ai-benchmarking
+  - process-bugs
+companies:
+  - openai
+  - polymind
+  - potatooff
+  - h2oai
   - nous-research
-  - large-language-models
+  - lm-studio
+  - mistral
+  - laion
+  - stability
+  - nvidia
+  - hugging-face
+  - perplexity-labs
+  - automatic1111
+models:
+  - hamster-v0.2
+  - flan-t5
+  - qwen2
+  - miqu-1-120b-gguf
+  - mixtral
+  - exllama-v2
+  - llama3
+  - openhermes-2.5
+  - mistral-medium
+  - mistral-small
+  - whisper
+  - llama
+topics:
+  - instruction-following
+  - model-merging
+  - quantization
+  - fine-tuning
+  - local-chatbots
+  - gpu-compatibility
+  - cpu-inference
+  - lyric-generation
+  - dataset-ethics
+  - ai-collaboration
+  - hardware-requirements
+  - ai-benchmarking
+  - process-bugs
 ---
 
 

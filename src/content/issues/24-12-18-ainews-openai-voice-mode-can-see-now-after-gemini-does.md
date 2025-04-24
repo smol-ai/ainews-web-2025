@@ -4,19 +4,18 @@ title: OpenAI Voice Mode Can See Now - After Gemini Does
 date: '2024-12-18T09:46:07Z'
 original_slug: ainews-openai-voice-mode-can-see-now-after-gemini
 description: >-
-  Google DeepMind launched Gemini 2.0 Flash with enhanced multimodal and
-  real-time streaming capabilities, beating OpenAI’s recent ChatGPT video
-  feature release in cost and rate limits. Meanwhile, Meta’s Llama 3.3-70B is
-  gaining attention for its advanced roleplaying and persona adoption abilities,
-  outperforming some competitors in expressiveness and prompt handling.
+  OpenAI launched realtime video capabilities for ChatGPT shortly after Google’s
+  **Gemini 2.0 Flash**, which gained more attention due to lower cost and fewer
+  rate limits. Meanwhile, **Meta’s Llama 3.3-70B** is praised for its advanced
+  roleplay and persona adoption abilities, while **Microsoft’s Phi-4** small
+  language model shows strong benchmark results but faces skepticism about
+  real-world performance.
 tags:
-  - google
-  - deepmind
-  - gemini-2-0
-  - openai
-  - chatgpt
-  - meta
-  - llama-3-3-70b
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

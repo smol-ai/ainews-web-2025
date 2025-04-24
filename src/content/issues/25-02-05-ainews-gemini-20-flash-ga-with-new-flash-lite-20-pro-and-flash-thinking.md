@@ -4,20 +4,74 @@ title: Gemini 2.0 Flash GA, with new Flash Lite, 2.0 Pro, and Flash Thinking
 date: '2025-02-06T02:00:20.087119Z'
 original_slug: ainews-gemini-20-flash-ga-with-new-flash-lite-20
 description: >-
-  Google DeepMind officially launched Gemini 2.0 models including Flash,
-  Flash-Lite, and Pro Experimental, with Gemini 2.0 Flash outperforming its
-  predecessor at 12x lower cost and supporting multimodal input plus a 1 million
-  token context window. Additionally, Andrej Karpathy released an in-depth
-  3.5-hour video explaining the workings of large language models like ChatGPT,
-  covering pretraining, fine-tuning, and reinforcement learning.
+  Google DeepMind officially launched the **Gemini 2.0** series, including
+  **Flash**, **Flash-Lite**, and **Pro Experimental** models, with **Gemini 2.0
+  Flash** outperforming its predecessor while being *12x cheaper* and offering
+  advanced features like *multimodal input* and a *1 million token context
+  window*. Additionally, the **DeepSeek-R1** vision-language model surpassed
+  larger models in efficiency and robustness, reaching *1.2 million downloads*
+  since its January launch and demonstrating that smaller models can excel in
+  specific tasks with minimal compute.
 tags:
   - google
-  - deepmind
+  - google-deepmind
+  - openai
+  - anthropic
+  - deepseek
+  - hugging-face
   - gemini-2.0
   - gemini-2.0-flash
+  - gemini-2.0-flash-lite
+  - gemini-2.0-pro-experimental
+  - gemini-1.5-pro
+  - deepseek-r1
+  - deepseek-vl2-small
+  - llama-3.1
+  - gpt-2
+  - gsm8k
   - large-language-models
-  - chatgpt
-  - andrej-karpathy
+  - multimodal-models
+  - context-windows
+  - cost-efficiency
+  - vision-language-models
+  - model-benchmarking
+  - model-efficiency
+  - transformer-architecture
+  - reinforcement-learning
+  - jailbreak-challenges
+  - open-source-models
+  - model-fine-tuning
+companies:
+  - google
+  - google-deepmind
+  - openai
+  - anthropic
+  - deepseek
+  - hugging-face
+models:
+  - gemini-2.0
+  - gemini-2.0-flash
+  - gemini-2.0-flash-lite
+  - gemini-2.0-pro-experimental
+  - gemini-1.5-pro
+  - deepseek-r1
+  - deepseek-vl2-small
+  - llama-3.1
+  - gpt-2
+  - gsm8k
+topics:
+  - large-language-models
+  - multimodal-models
+  - context-windows
+  - cost-efficiency
+  - vision-language-models
+  - model-benchmarking
+  - model-efficiency
+  - transformer-architecture
+  - reinforcement-learning
+  - jailbreak-challenges
+  - open-source-models
+  - model-fine-tuning
 ---
 
 

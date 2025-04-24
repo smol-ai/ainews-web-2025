@@ -4,18 +4,93 @@ title: o3-mini launches, OpenAI on "wrong side of history"
 date: '2025-02-01T09:16:19.878807Z'
 original_slug: ainews-o3-mini-launches-openai-on-wrong-side-of
 description: >-
-  OpenAI has launched o3-mini, a new reasoning model available for free users
-  and via API, which outperforms the earlier o1 model on STEM tasks while
-  costing 93% less per token. Additionally, MistralAI released Mistral Small 3
-  (24B), an open-weight model with competitive performance and a low-cost API.
+  OpenAI released **o3-mini**, a new reasoning-focused model that significantly
+  outperforms the earlier **o1** model on STEM benchmarks while costing *93%
+  less* per token and offering improved safety over **GPT-4o**. Additionally,
+  **DeepSeek** revealed massive infrastructure investments with over *50,000
+  GPUs* and plans to subsidize inference pricing, while **MistralAI** launched
+  the open-weight **Mistral Small 3 (24B)** model under Apache 2.0 license,
+  competing on several benchmarks.
 tags:
   - openai
+  - mistral
+  - deepseek
+  - allen
+  - qwen
+  - nvidia
+  - google
+  - deepmind
+  - arcee
+  - velvet
+  - nvidiaai
   - o3-mini
   - o1
-  - mistralai
-  - mistral-small-3
-  - reasoning
-  - model-release
+  - gpt-4o
+  - mistral-small-3-24b
+  - deepseek-r1
+  - tülu-3-405b
+  - llama-3.1-405b
+  - qwen-2.5-1.5b
+  - qwen-2.5-3b
+  - virtuoso-medium-32.8b
+  - velvet-14b
+  - openthinker-7b
+  - eagle2-1b
+  - eagle2-9b
+  - janus-pro
+  - ben2
+  - yue
+  - reasoning-models
+  - model-performance
+  - cost-efficiency
+  - safety-evaluation
+  - open-source-models
+  - large-scale-infrastructure
+  - gpu-scaling
+  - reinforcement-learning
+  - distributed-training
+  - synthetic-data-generation
+companies:
+  - openai
+  - mistral
+  - deepseek
+  - allen
+  - qwen
+  - nvidia
+  - google
+  - deepmind
+  - arcee
+  - velvet
+  - nvidiaai
+models:
+  - o3-mini
+  - o1
+  - gpt-4o
+  - mistral-small-3-24b
+  - deepseek-r1
+  - tülu-3-405b
+  - llama-3.1-405b
+  - qwen-2.5-1.5b
+  - qwen-2.5-3b
+  - virtuoso-medium-32.8b
+  - velvet-14b
+  - openthinker-7b
+  - eagle2-1b
+  - eagle2-9b
+  - janus-pro
+  - ben2
+  - yue
+topics:
+  - reasoning-models
+  - model-performance
+  - cost-efficiency
+  - safety-evaluation
+  - open-source-models
+  - large-scale-infrastructure
+  - gpu-scaling
+  - reinforcement-learning
+  - distributed-training
+  - synthetic-data-generation
 ---
 
 

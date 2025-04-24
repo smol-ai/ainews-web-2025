@@ -4,21 +4,99 @@ title: not much happened this weekend
 date: '2024-08-27T00:09:52.018820Z'
 original_slug: ainews-not-much-happened-this-weekend
 description: >-
-  Nous Research announced DisTrO, a breakthrough distributed AI optimizer that
-  drastically reduces inter-GPU communication by 1000x to 10,000x, enabling
-  efficient training of large neural networks on slow and heterogeneous
-  networks. Meanwhile, Nvidia and Mistral released the Mistral-NeMo-Minitron 8B,
-  a compact yet powerful model that outperforms competitors like Mistral-7B and
-  Meta Llama 3.1-8B on the Open LLM leaderboard, suitable for running on laptops
-  and PCs.
+  Nous Research announced DisTrO, a distributed optimizer that drastically
+  reduces inter-GPU communication by *1000x to 10,000x*, enabling efficient
+  low-latency training of large neural networks on slow and heterogeneous
+  networks. Additionally, AI21 Labs unveiled Jamba 1.5, a multilingual AI model
+  with a *256,000* token context length and *2.5x* faster long-context
+  processing, featuring fully open weights and permissive licensing for smaller
+  organizations.
 tags:
   - nous-research
-  - distro
-  - distributed-training
+  - ai21
   - nvidia
   - mistral
+  - salesforce
+  - amazon
+  - neuralink
+  - cursor
+  - eth-zurich
+  - disney
+  - uc-san-diego
+  - agibot
+  - unitree
+  - luma-labs
+  - ideogram
+  - box
+  - distro
+  - jamba-1.5
+  - dream-machine-1.5
+  - ideogram-v2
   - mistral-nemo-minitron-8b
-  - large-language-models
+  - mistral-7b
+  - meta-llama-3.1-8b
+  - llama-70b
+  - distributed-training
+  - optimizer
+  - long-context
+  - multilingual-models
+  - open-weights
+  - humanoid-robots
+  - physics-based-motion
+  - teleoperation
+  - autonomous-agents
+  - brain-computer-interface
+  - speech-editing
+  - git-commit-generation
+  - speculative-decoding
+  - recommendation-systems
+  - retrieval-augmented-generation
+  - ai-ethics
+  - legislation
+companies:
+  - nous-research
+  - ai21
+  - nvidia
+  - mistral
+  - salesforce
+  - amazon
+  - neuralink
+  - cursor
+  - eth-zurich
+  - disney
+  - uc-san-diego
+  - agibot
+  - unitree
+  - luma-labs
+  - ideogram
+  - box
+models:
+  - distro
+  - jamba-1.5
+  - dream-machine-1.5
+  - ideogram-v2
+  - mistral-nemo-minitron-8b
+  - mistral-7b
+  - meta-llama-3.1-8b
+  - llama-70b
+topics:
+  - distributed-training
+  - optimizer
+  - long-context
+  - multilingual-models
+  - open-weights
+  - humanoid-robots
+  - physics-based-motion
+  - teleoperation
+  - autonomous-agents
+  - brain-computer-interface
+  - speech-editing
+  - git-commit-generation
+  - speculative-decoding
+  - recommendation-systems
+  - retrieval-augmented-generation
+  - ai-ethics
+  - legislation
 ---
 
 

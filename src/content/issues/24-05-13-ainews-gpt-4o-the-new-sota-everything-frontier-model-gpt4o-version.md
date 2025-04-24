@@ -4,20 +4,56 @@ title: 'GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4O version)'
 date: '2024-05-13T22:58:05.906872Z'
 original_slug: ainews-gpt-4o-the-new-sota-everything-frontier
 description: >-
-  OpenAI has launched GPT-4o, a multimodal model that integrates text, voice,
-  and vision with significantly faster response times and improved non-English
-  language support. Available to all ChatGPT users including free plans, GPT-4o
-  is priced at half the cost of GPT-4-turbo and offers enhanced real-time
-  interaction capabilities such as voice and video input/output.
+  OpenAI has released **GPT-4o**, a new multimodal model with advanced voice,
+  vision, and real-time audio/video capabilities that is faster, cheaper, and
+  more versatile than prior versions, available to all ChatGPT users including
+  free plans. Additionally, rumors suggest an **Apple-OpenAI deal** may have
+  closed, potentially powering the next generation of Siri with OpenAI
+  technology.
 tags:
   - openai
+  - apple
+  - anthropic
+  - meta
+  - ibm
+  - nasa
   - gpt-4o
-  - multimodal
-  - voice
-  - vision
+  - gpt-4-turbo
+  - claude
+  - llama-3
+  - multimodal-models
+  - voice-assistants
+  - real-time-processing
   - coding
-  - non-english
-  - chatgpt
+  - emotion-detection
+  - prompt-engineering
+  - open-source-ai
+  - drug-discovery
+  - autonomous-systems
+  - ai-governance
+companies:
+  - openai
+  - apple
+  - anthropic
+  - meta
+  - ibm
+  - nasa
+models:
+  - gpt-4o
+  - gpt-4-turbo
+  - claude
+  - llama-3
+topics:
+  - multimodal-models
+  - voice-assistants
+  - real-time-processing
+  - coding
+  - emotion-detection
+  - prompt-engineering
+  - open-source-ai
+  - drug-discovery
+  - autonomous-systems
+  - ai-governance
 ---
 
 

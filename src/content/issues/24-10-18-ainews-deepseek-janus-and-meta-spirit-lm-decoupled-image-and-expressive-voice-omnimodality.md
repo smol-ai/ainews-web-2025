@@ -6,21 +6,77 @@ title: >-
 date: '2024-10-18T22:46:38.720062Z'
 original_slug: ainews-deepseek-janus-and-meta-spirit-lm
 description: >-
-  Two significant multimodality AI research papers were released: DeepSeek
-  Janus, which improves image generation and understanding by separating vision
-  encoders, and Meta's SpiRit-LM, a speech and writing model with expressive
-  voice generation capabilities. Additionally, Nvidia's Nemotron 70b model
-  underperformed compared to other state-of-the-art models, while Meta
-  open-sourced new benchmarks for media generation.
+  Two major multimodal AI research breakthroughs were announced: **DeepSeek**
+  released **Janus**, a *1.3 billion* parameter model that separates visual
+  encoding for improved image understanding and generation, and **Meta**
+  introduced **SpiRit-LM**, a speech-and-writing model with expressive pitch and
+  style generation capabilities. Additionally, **Meta** open-sourced new media
+  generation benchmarks, and **Nvidia's Nemotron Fine-Tune 70b** model was
+  reported to underperform compared to state-of-the-art models.
 tags:
   - deepseek
-  - janus
   - meta
-  - spirit-lm
-  - multimodality
   - nvidia
-  - nemotron
-  - movie-gen-bench
+  - openai
+  - perplexity
+  - anthropic
+  - google-deepmind
+  - hugging-face
+  - wandb
+  - janus
+  - spirit-lm
+  - nemotron-finetune-70b
+  - sam-2.1
+  - prometheus-2
+  - claude
+  - gpt-4o
+  - multimodality
+  - image-generation
+  - image-understanding
+  - speech-synthesis
+  - expressive-tts
+  - benchmark
+  - model-merging
+  - reward-models
+  - llm-evaluation
+  - internal-knowledge-search
+  - ml-experiment-tracking
+  - local-llm-inference
+  - gpu-setup
+  - open-source-ai
+companies:
+  - deepseek
+  - meta
+  - nvidia
+  - openai
+  - perplexity
+  - anthropic
+  - google-deepmind
+  - hugging-face
+  - wandb
+models:
+  - janus
+  - spirit-lm
+  - nemotron-finetune-70b
+  - sam-2.1
+  - prometheus-2
+  - claude
+  - gpt-4o
+topics:
+  - multimodality
+  - image-generation
+  - image-understanding
+  - speech-synthesis
+  - expressive-tts
+  - benchmark
+  - model-merging
+  - reward-models
+  - llm-evaluation
+  - internal-knowledge-search
+  - ml-experiment-tracking
+  - local-llm-inference
+  - gpu-setup
+  - open-source-ai
 ---
 
 

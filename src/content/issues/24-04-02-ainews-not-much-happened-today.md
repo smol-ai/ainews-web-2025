@@ -4,20 +4,72 @@ title: Not much happened today
 date: '2024-04-02T21:04:12.327421Z'
 original_slug: ainews-not-much-happened-today-8015
 description: >-
-  RAGFlow, a deep document understanding retrieval-augmented generation (RAG)
-  engine with a 16.3k context length, has been open sourced, offering advanced
-  features like automated library parsing and natural language instruction
-  support. Additionally, a study found that AI chatbots, particularly GPT-4, are
-  more persuasive than humans in debates, effectively changing people's minds on
-  contentious topics.
+  **Open source model releases and architecture innovations dominated recent AI
+  news, with Lightblue’s 52B parameter Jamba model featuring a novel hybrid
+  SSM-Transformer and Mixture-of-Experts architecture, while DBRX topped the
+  WildBench leaderboard trained on 12T tokens with efficiency improvements.
+  Additionally, Google’s AI chief expressed cautious optimism about AGI arriving
+  within the next decade, highlighting ongoing hype and investment in AI.**
 tags:
-  - ragflow
-  - retrieval-augmented-generation
-  - document-understanding
+  - lightblue
+  - cohere
+  - openai
+  - google
+  - ai21labs
+  - groq
+  - qdrant
+  - deepset
+  - jamba-v0.1
+  - gpt-3.5-turbo
   - gpt-4
-  - chatbots
-  - debates
-  - open-source
+  - dbrx
+  - command-r
+  - mistral-7b
+  - openchat-3.5-0106
+  - mixtral-8x7b
+  - denseformer
+  - gecko
+  - open-source-models
+  - mixture-of-experts
+  - transformer-architecture
+  - retrieval-augmented-generation
+  - large-language-models
+  - model-performance
+  - hardware-for-llm-inference
+  - stable-diffusion
+  - ai-hype
+  - agi-predictions
+companies:
+  - lightblue
+  - cohere
+  - openai
+  - google
+  - ai21labs
+  - groq
+  - qdrant
+  - deepset
+models:
+  - jamba-v0.1
+  - gpt-3.5-turbo
+  - gpt-4
+  - dbrx
+  - command-r
+  - mistral-7b
+  - openchat-3.5-0106
+  - mixtral-8x7b
+  - denseformer
+  - gecko
+topics:
+  - open-source-models
+  - mixture-of-experts
+  - transformer-architecture
+  - retrieval-augmented-generation
+  - large-language-models
+  - model-performance
+  - hardware-for-llm-inference
+  - stable-diffusion
+  - ai-hype
+  - agi-predictions
 ---
 
 

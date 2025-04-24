@@ -7,18 +7,17 @@ date: '2024-04-05T22:44:29.761385Z'
 original_slug: ainews-mixture-of-depths-dynamically-allocating
 description: >-
   DeepMind introduced Mixture-of-Depths (MoD), a transformer technique that
-  dynamically allocates compute across layers by selectively routing tokens,
-  achieving over 50% faster inference without impacting training. This approach
-  can also be combined with Mixture-of-Experts (MoE) to optimize query, key, and
-  value routing, potentially enabling more efficient long-context processing.
+  dynamically allocates compute across layers to tokens, achieving over *50%
+  faster* forward passes without training impact. Additionally, **Alibaba**
+  released the Qwen1.5-32B dense multilingual LLM with *32k context length* and
+  strong performance on benchmarks like MMLU, while **Anthropic**’s Claude model
+  gained tool use capabilities enhancing its application scope.
 tags:
-  - deepmind
-  - mixture-of-depths
-  - transformers
-  - mixture-of-experts
-  - model-efficiency
-  - long-context
-  - dynamic-routing
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

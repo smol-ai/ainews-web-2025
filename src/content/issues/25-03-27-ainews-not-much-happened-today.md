@@ -4,20 +4,88 @@ title: not much happened today
 date: '2025-03-28T01:20:31.459275Z'
 original_slug: ainews-not-much-happened-today-3156
 description: >-
-  OpenAI has released significant updates to GPT-4o, enhancing its
-  instruction-following, technical problem-solving, and multimodal image
-  generation capabilities, now available via API. Meanwhile, DeepSeek V3-0324
-  APIs demonstrate top-tier performance, surpassing Gemini 2.0 Pro and Claude
-  3.7 Sonnet on key benchmarks, with Gemini 3 also gaining easy deployment on
-  Google Cloud Vertex AI.
+  **OpenAI** has released significant updates to **GPT-4o**, enhancing its
+  instruction-following, coding, and creative capabilities, including advanced
+  multimodal image generation with transparent backgrounds and improved content
+  filtering policies. Meanwhile, **GoogleDeepMind's Gemini** models continue to
+  advance with the release of Gemini 3, featuring multimodal vision
+  understanding, extended context windows, and easy deployment on Google Cloud
+  Vertex AI, alongside new APIs like DeepSeek V3-0324 that outperform
+  competitors in benchmarks.
 tags:
   - openai
+  - googledmind
+  - anthropic
+  - cohere
+  - langchain
+  - llama
+  - sambanova
+  - replicate
+  - fireworks
+  - deepinfra
+  - hyperbolic
+  - nebius
+  - centml
+  - novita
   - gpt-4o
-  - multimodal
-  - deepseek
-  - gemini
-  - google-cloud
-  - hugging-face
+  - chatgpt-4o-latest
+  - gemini-2.5-pro
+  - gemini-3
+  - deeseek-v3-0324
+  - claude-3.7-sonnet
+  - cohere-command-a
+  - gemma-3
+  - txgemma
+  - multimodal-models
+  - image-generation
+  - instruction-following
+  - coding
+  - model-deployment
+  - ai-safety
+  - interpretability
+  - api-integration
+  - benchmarking
+  - generative-ai
+  - observability
+  - molecule-prediction
+companies:
+  - openai
+  - googledmind
+  - anthropic
+  - cohere
+  - langchain
+  - llama
+  - sambanova
+  - replicate
+  - fireworks
+  - deepinfra
+  - hyperbolic
+  - nebius
+  - centml
+  - novita
+models:
+  - gpt-4o
+  - chatgpt-4o-latest
+  - gemini-2.5-pro
+  - gemini-3
+  - deeseek-v3-0324
+  - claude-3.7-sonnet
+  - cohere-command-a
+  - gemma-3
+  - txgemma
+topics:
+  - multimodal-models
+  - image-generation
+  - instruction-following
+  - coding
+  - model-deployment
+  - ai-safety
+  - interpretability
+  - api-integration
+  - benchmarking
+  - generative-ai
+  - observability
+  - molecule-prediction
 ---
 
 

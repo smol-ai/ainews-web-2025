@@ -4,20 +4,88 @@ title: OpenAI takes on Gemini's Deep Research
 date: '2025-02-04T02:44:29.143732Z'
 original_slug: ainews-openai-takes-on-geminis-deep-research
 description: >-
-  OpenAI has released Deep Research, a new agent that significantly outperforms
-  previous models on benchmarks like Dan Hendrycks' HLE and GAIA, showcasing
-  rigorous research and promising improvements in inference scaling. The release
-  marks the first full public availability of the o3 agent, with plans for
-  enhanced versions and growing positive reception despite some reported
-  failures.
+  OpenAI launched its Deep Research assistant, significantly improving
+  performance on benchmarks like Dan Hendrycks' HLE and GAIA, with the full o3
+  agent now publicly available and a more capable "o3-deep-research-mini"
+  version forthcoming. Meanwhile, Alibaba's Qwen2.5-Max model achieved a top-7
+  ranking in the Chatbot Arena, excelling particularly in math and coding tasks,
+  highlighting rapid advancements in large language and vision models.
 tags:
   - openai
-  - deep-research
+  - alibaba
+  - google
+  - deepmind
+  - nyu
+  - uc-berkeley
+  - hku
+  - anthropic
   - o3
+  - o3-mini
+  - o3-deep-research-mini
+  - deep-research
+  - qwen2.5-max
+  - r1-v
+  - s1
+  - s1-32b
+  - deepseek-r1
+  - deepseek-v3
+  - o1-preview
+  - claude-3.5-sonnet
+  - llama
+  - llama-cpp
+  - large-language-models
   - reinforcement-learning
-  - benchmarking
-  - inference-scaling
-  - agent
+  - test-time-scaling
+  - benchmark-performance
+  - agent-based-ai
+  - ai-safety
+  - jailbreak-prevention
+  - hallucination
+  - vision-language-models
+  - chatbot-arena
+  - coding
+  - math-competitions
+  - open-source-models
+  - developer-tools
+companies:
+  - openai
+  - alibaba
+  - google
+  - deepmind
+  - nyu
+  - uc-berkeley
+  - hku
+  - anthropic
+models:
+  - o3
+  - o3-mini
+  - o3-deep-research-mini
+  - deep-research
+  - qwen2.5-max
+  - r1-v
+  - s1
+  - s1-32b
+  - deepseek-r1
+  - deepseek-v3
+  - o1-preview
+  - claude-3.5-sonnet
+  - llama
+  - llama-cpp
+topics:
+  - large-language-models
+  - reinforcement-learning
+  - test-time-scaling
+  - benchmark-performance
+  - agent-based-ai
+  - ai-safety
+  - jailbreak-prevention
+  - hallucination
+  - vision-language-models
+  - chatbot-arena
+  - coding
+  - math-competitions
+  - open-source-models
+  - developer-tools
 ---
 
 

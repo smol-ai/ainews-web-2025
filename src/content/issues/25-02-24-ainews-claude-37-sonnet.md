@@ -4,18 +4,18 @@ title: Claude 3.7 Sonnet
 date: '2025-02-25T05:58:56.716932Z'
 original_slug: ainews-claude-37-sonnet
 description: >-
-  Anthropic has launched Claude 3.7 Sonnet, their most advanced model featuring
-  hybrid reasoning with two thinking modes and an extended 128k token output
-  capability. Alongside, they introduced Claude Code, a new agentic coding tool
-  that enhances coding performance and integrates with Claude 3.7 Sonnet.
+  **Anthropic** launched **Claude 3.7 Sonnet**, their most intelligent hybrid
+  reasoning model featuring two thinking modes and an extended 128k token output
+  capability, alongside the preview release of **Claude Code**, an agentic
+  coding tool integrated with terminal operations. Meanwhile, **Grok 3** gained
+  attention for its refusal-free responses and new voice mode, despite some
+  unexpected behavior in testing.
 tags:
-  - anthropic
-  - claude
-  - claude-3.7
-  - claude-code
-  - hybrid-reasoning
-  - extended-thinking
-  - coding
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

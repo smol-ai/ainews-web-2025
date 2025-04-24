@@ -4,21 +4,72 @@ title: 'Canvas: OpenAI''s answer to Claude Artifacts'
 date: '2024-10-03T23:22:37.798235Z'
 original_slug: ainews-canvas-openais-answer-to-claude-artifacts
 description: >-
-  OpenAI has launched Canvas, a new GPT-4o-powered tool that enhances writing
-  and coding workflows with inline suggestions, seamless editing, and
-  collaboration features, aiming to improve on competitors like Claude Artifacts
-  and Cursor. Despite positive early feedback on its user experience, some users
-  report issues with document updates, and OpenAI is also sponsoring key
-  open-source projects like ProseMirror and CodeMirror to support Canvas
-  development.
+  **OpenAI** has released **Canvas**, an enhanced writing and coding tool based
+  on **GPT-4o**, featuring inline suggestions, seamless editing, and
+  collaboration capabilities integrated into ChatGPT. Meanwhile, **Meta**
+  launched **Llama 3.2**, an open-source vision-capable model, alongside other
+  new models on **HuggingChat**, expanding free access to advanced AI models
+  including vision and tool-calling features.
 tags:
   - openai
-  - canvas
+  - meta
+  - huggingface
+  - nvidia
+  - daily
+  - pipecat
   - gpt-4o
-  - writing
-  - coding
-  - collaboration
-  - opensource
+  - llama-3.2
+  - qwen-2.5-72b-instruct
+  - mistral-nemo-instruct-2407
+  - hermes-3-llama-3.1-8b
+  - phi-3.5-mini-instruct
+  - meta-llama-3.1-70b-instruct
+  - c4ai-command-r-plus-08-2024
+  - nvml-d-1.0-72b
+  - llama-3.1-405b
+  - large-language-models
+  - writing-assistance
+  - code-editing
+  - vision-models
+  - open-source-models
+  - multi-modal-ai
+  - conversational-ai
+  - ai-in-healthcare
+  - ai-infrastructure
+  - ai-ethics
+  - prompt-engineering
+  - ai-hackathons
+companies:
+  - openai
+  - meta
+  - huggingface
+  - nvidia
+  - daily
+  - pipecat
+models:
+  - gpt-4o
+  - llama-3.2
+  - qwen-2.5-72b-instruct
+  - mistral-nemo-instruct-2407
+  - hermes-3-llama-3.1-8b
+  - phi-3.5-mini-instruct
+  - meta-llama-3.1-70b-instruct
+  - c4ai-command-r-plus-08-2024
+  - nvml-d-1.0-72b
+  - llama-3.1-405b
+topics:
+  - large-language-models
+  - writing-assistance
+  - code-editing
+  - vision-models
+  - open-source-models
+  - multi-modal-ai
+  - conversational-ai
+  - ai-in-healthcare
+  - ai-infrastructure
+  - ai-ethics
+  - prompt-engineering
+  - ai-hackathons
 ---
 
 

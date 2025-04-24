@@ -4,20 +4,19 @@ title: Reflection 70B, by Matt from IT Department
 date: '2024-09-07T01:17:07.379983Z'
 original_slug: ainews-reflection-70b-by-matt-from-it-department
 description: >-
-  A two-person team from Hyperwrite and Glaive fine-tuned Llama 3.1 70B using a
-  technique called Reflection Tuning, which enhances model reasoning by adding
-  "thinking" and "reflection" steps before output. Despite some criticisms about
-  data contamination, coding performance, and reliance on system prompts, the
-  model has received strong positive reception and shows promising results even
-  in 4-bit quantization.
+  A two-person team from **Hyperwrite** and **Glaive** fine-tuned **Llama 3.1
+  70B** using a method called Reflection Tuning, which enhances reasoning by
+  adding "thinking" and "reflection" steps before output. Despite some
+  criticisms regarding contamination, coding performance, and prompt reliance,
+  the model shows strong results on reasoning tasks and favorable comparisons to
+  **Claude 3.5 Sonnet**. Additionally, **Meta** is offering a **$200K grant**
+  for **LLM evaluation research** until *September 6th, 2024*.
 tags:
-  - hyperwrite
-  - glaive
-  - llama-3.1
-  - reflection-tuning
-  - chain-of-thought
-  - model-finetuning
-  - reasoning
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

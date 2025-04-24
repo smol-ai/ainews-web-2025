@@ -4,19 +4,19 @@ title: LMSys killed Model Versioning (gpt 4o 1120, gemini exp 1121)
 date: '2024-11-22T00:56:03.268058Z'
 original_slug: ainews-lmsys-killed-model-versioning-gpt-4o-1120
 description: >-
-  The AI frontier labs continue a fierce race with Google’s Gemini-Exp-1121
-  reclaiming the top lmsys spot from OpenAI’s controversial GPT-4o-2024-11-20,
-  which is suspected to be a downgraded but faster model. Meanwhile, DeepSeek R1
-  gains recognition as a strong open-source competitor amid escalating US-China
-  AI rivalry.
+  **OpenAI** and **Google Gemini** continue their intense competition for
+  state-of-the-art language model dominance, with Gemini Exp 1121 recently
+  retaking the top LMSYS spot from OpenAI’s GPT-4o-2024-11-20, amid concerns
+  about OpenAI’s model versioning transparency. Meanwhile, **Apple’s M4 Max**
+  laptop demonstrates impressive local LLM performance by running the **Qwen 72B
+  Q4 MLX** model at *11 tokens per second* with efficient power usage,
+  highlighting advancements in on-device AI capabilities.
 tags:
-  - google
-  - gemini-exp-1121
-  - openai
-  - gpt-4o-2024-11-20
-  - deepseek
-  - model-race
-  - us-china-competition
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

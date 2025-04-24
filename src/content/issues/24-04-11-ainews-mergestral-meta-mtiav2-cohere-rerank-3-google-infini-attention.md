@@ -4,17 +4,18 @@ title: Mergestral, Meta MTIAv2, Cohere Rerank 3, Google Infini-Attention
 date: '2024-04-11T22:56:47.954323Z'
 original_slug: ainews-mergestral-meta-mtiav2-cohere-rerank-3
 description: >-
-  Meta is set to roll out Llama 3 next week, marking a significant open-source
-  large language model release. Additionally, Meta announced their new MTIAv2
-  chips designed for enhanced training and inference performance, though they
-  are not commercially available.
+  **Mistral AI** released the Mixtral-8x22B, a 176B MoE model with ~40B active
+  parameters and 65k token context length, achieving *77.3% on MMLU* and
+  outperforming other open-source models. Meanwhile, **Cohere** launched Command
+  R+, an open-vocabulary model with strong multilingual capabilities that
+  outperforms GPT-4 Turbo in some non-English benchmarks, and **Meta** announced
+  their MTIAv2 chips designed for advanced training and inference acceleration.
 tags:
-  - meta
-  - llama-3
-  - mtiav2
-  - large-language-models
-  - open-source
-  - model-release
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

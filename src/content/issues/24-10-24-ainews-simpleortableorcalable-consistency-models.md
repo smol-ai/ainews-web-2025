@@ -4,20 +4,99 @@ title: s{imple|table|calable} Consistency Models
 date: '2024-10-25T02:36:02.241076Z'
 original_slug: ainews-simpletablecalable-consistency-models
 description: >-
-  Recent advances in diffusion models have enabled dramatic speedups from
-  100-200 step sampling to just 1-4 steps, powering realtime
-  generate-as-you-type image generation like BlinkShot and Flux Schnell.
-  Additionally, Tesla is deploying a massive 50,000 H100 GPU cluster at
-  Gigafactory Texas, potentially capable of completing GPT-4 training in under
-  three weeks.
+  Model distillation breakthroughs in diffusion models, led by **Yang Song** and
+  his new "sCM" approach, dramatically reduce sampling steps from *100-200* to
+  *1-4*, enabling real-time image generation capabilities like **BlinkShot** and
+  **Flux Schnell**. Meanwhile, **Tesla** is expanding its AI hardware with a
+  massive *50k H100 GPU cluster* at Gigafactory Texas, potentially completing
+  **GPT-4** training in under *three weeks*, marking a significant milestone in
+  AI infrastructure scale.
 tags:
-  - diffusion-models
-  - model-distillation
-  - realtime-generation
   - tesla
-  - h100
-  - gpt-4
-  - gpu-cluster
+  - stability
+  - blinkshot
+  - fal
+  - openai
+  - cerebras
+  - meta
+  - cohere
+  - snowflake
+  - servicenow
+  - google-deepmind
+  - huggingface
+  - ibm
+  - stable-diffusion-3.5
+  - flux-schnell
+  - sCM
+  - llama-3.1
+  - llama-3.2
+  - gemma-2-27b
+  - qwen-2.5
+  - command-r-35b
+  - mistral-small-instruct
+  - phi3.5-mini-instruct
+  - gemma-2-2b-it
+  - granite
+  - aya-expanse
+  - model-distillation
+  - diffusion-models
+  - consistency-models
+  - image-generation
+  - hardware-acceleration
+  - gpu-clusters
+  - language-model-inference
+  - quantization
+  - multilingual-models
+  - llm-testing
+  - browser-automation
+  - data-sharing
+  - music-generation
+  - system-1-system-2-integration
+  - realtime-generation
+companies:
+  - tesla
+  - stability
+  - blinkshot
+  - fal
+  - openai
+  - cerebras
+  - meta
+  - cohere
+  - snowflake
+  - servicenow
+  - google-deepmind
+  - huggingface
+  - ibm
+models:
+  - stable-diffusion-3.5
+  - flux-schnell
+  - sCM
+  - llama-3.1
+  - llama-3.2
+  - gemma-2-27b
+  - qwen-2.5
+  - command-r-35b
+  - mistral-small-instruct
+  - phi3.5-mini-instruct
+  - gemma-2-2b-it
+  - granite
+  - aya-expanse
+topics:
+  - model-distillation
+  - diffusion-models
+  - consistency-models
+  - image-generation
+  - hardware-acceleration
+  - gpu-clusters
+  - language-model-inference
+  - quantization
+  - multilingual-models
+  - llm-testing
+  - browser-automation
+  - data-sharing
+  - music-generation
+  - system-1-system-2-integration
+  - realtime-generation
 ---
 
 

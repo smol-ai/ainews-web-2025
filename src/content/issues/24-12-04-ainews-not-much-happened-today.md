@@ -4,20 +4,20 @@ title: not much happened today
 date: '2024-12-05T02:41:39.435306Z'
 original_slug: ainews-not-much-happened-today-1872
 description: >-
-  DeepMind released the GenCast weather model capable of 15-day forecasts in 8
-  minutes with high accuracy, and the Genie 2 world model that generates
-  playable 3D worlds from single images for AI training. Meanwhile, OpenAI
-  announced its "12 Days of OpenAI" event featuring daily launches, including
-  the anticipated O1 full model, amid notable hires of DeepMind vision
-  researchers.
+  **OpenAI** announced its "12 Days of OpenAI" event starting *December 5,
+  2024*, featuring daily livestreams with potential launches including the **O1
+  full model**, **Sora video model**, and **GPT-4.5**, while also recruiting top
+  vision researchers from **DeepMind**. Meanwhile, **DeepMind** released the
+  **GenCast** weather forecasting model capable of *15-day predictions in 8
+  minutes* and the **Genie 2** world model that generates playable 3D
+  environments from single images, showcasing significant advances in AI
+  research.
 tags:
-  - deepmind
-  - gencast
-  - genie-2
-  - openai
-  - o1-model
-  - vision-research
-  - talent-moves
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

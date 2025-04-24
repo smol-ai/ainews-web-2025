@@ -4,21 +4,100 @@ title: lots of little things happened this week
 date: '2025-03-22T00:20:28.950836Z'
 original_slug: ainews-lots-of-little-things-happened-this-week
 description: >-
-  Anthropic introduced a novel "think" tool that significantly enhances
+  **Anthropic** introduced a novel "think" tool that significantly enhances
   instruction adherence and multi-step problem solving by combining reasoning
-  with tool use, marking a first in AI agent capabilities. Meanwhile, Meta AI
-  released SWEET-RL, a reinforcement learning algorithm that improves
-  long-horizon multi-turn task performance, enabling Llama-3.1-8B to rival GPT-4
-  in collaborative content creation, alongside a new benchmark for collaborative
-  LLM agents.
+  and tool use, showcased with their Claude model. Meanwhile, **NVIDIA**
+  released the powerful open reasoning model
+  **Llama-3.3-Nemotron-Super-49B-v1**, ranking #14 on LMArena and excelling in
+  math with a publicly available 15M post-training dataset.
 tags:
   - anthropic
-  - think-tool
+  - nvidia
   - meta
-  - sweet-rl
-  - llama-3-1
-  - gpt-4
+  - byteDance
+  - roblox
+  - gallabytes
+  - cursor
+  - kyutai-labs
+  - roboflow
+  - topazlabs
+  - langchain
+  - llamaindex
+  - perplexity
+  - cloneofsimo
+  - claude
+  - llama-3.3-nemotron-super-49b-v1
+  - llama-3.1-8b
+  - gpt4-o
+  - moshi-vis
+  - groot-n1
+  - eagle-2
+  - smollm-1.7b
+  - infiniteyou
+  - cube-3d
+  - helm-capabilities-v1.0
+  - reasoning
+  - multi-step-problem-solving
+  - instruction-adherence
+  - benchmarks
+  - language-models
+  - vision-language-action
+  - reinforcement-learning
   - collaborative-agents
+  - coding-agents
+  - vision
+  - speech-models
+  - model-rankings
+  - training-datasets
+  - tool-use
+  - real-time-inference
+  - open-source-models
+  - multi-turn-collaboration
+companies:
+  - anthropic
+  - nvidia
+  - meta
+  - byteDance
+  - roblox
+  - gallabytes
+  - cursor
+  - kyutai-labs
+  - roboflow
+  - topazlabs
+  - langchain
+  - llamaindex
+  - perplexity
+  - cloneofsimo
+models:
+  - claude
+  - llama-3.3-nemotron-super-49b-v1
+  - llama-3.1-8b
+  - gpt4-o
+  - moshi-vis
+  - groot-n1
+  - eagle-2
+  - smollm-1.7b
+  - infiniteyou
+  - cube-3d
+  - helm-capabilities-v1.0
+topics:
+  - reasoning
+  - multi-step-problem-solving
+  - instruction-adherence
+  - benchmarks
+  - language-models
+  - vision-language-action
+  - reinforcement-learning
+  - collaborative-agents
+  - coding-agents
+  - vision
+  - speech-models
+  - model-rankings
+  - training-datasets
+  - tool-use
+  - real-time-inference
+  - open-source-models
+  - multi-turn-collaboration
 ---
 
 

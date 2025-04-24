@@ -4,19 +4,75 @@ title: 'SciCode: HumanEval gets a STEM PhD upgrade'
 date: '2024-07-17T02:04:35.319219Z'
 original_slug: ainews-to-be-named-5745
 description: >-
-  A new benchmark called SciCode challenges large language models to solve
-  advanced scientific coding problems crafted by PhDs, with leading models like
-  GPT-4 and Sonnet 3.5 scoring below 5%, highlighting the difficulty of these
-  tasks. Additionally, Anthropic has doubled the max output token limit for
-  Claude 3.5 Sonnet in their API, enhancing its usability for longer responses.
+  OpenAI has reportedly tested an AI system achieving over *90% accuracy* on the
+  MATH dataset, indicating significant progress in mathematical problem-solving
+  capabilities. Meanwhile, **Xanadu**'s new *56-qubit H2-1 quantum computer* has
+  shattered the quantum supremacy record set by Google's Sycamore by a factor of
+  *100*, marking a major breakthrough in quantum computing.
 tags:
-  - scicode
-  - scientific-coding
-  - gpt-4
-  - sonnet-3-5
+  - openai
+  - xanadu
+  - google
   - anthropic
-  - claude-3-5-sonnet
+  - huggingface
+  - mosaic
+  - meta
+  - exa
+  - sfcompute
+  - brev
+  - gpt-4
+  - claude-3.5-sonnet
+  - llama-3
+  - gemma-2-9b
+  - dolphin-2.9.3-yi-1.5-34b-32k-gguf
+  - llama-7b
   - benchmarks
+  - coding-benchmarks
+  - scientific-coding
+  - quantum-computing
+  - quantum-supremacy
+  - large-language-models
+  - synthetic-data
+  - model-evaluation
+  - ai-safety
+  - open-source
+  - multi-agent-systems
+  - video-generation
+  - robotics
+  - ai-regulation
+companies:
+  - openai
+  - xanadu
+  - google
+  - anthropic
+  - huggingface
+  - mosaic
+  - meta
+  - exa
+  - sfcompute
+  - brev
+models:
+  - gpt-4
+  - claude-3.5-sonnet
+  - llama-3
+  - gemma-2-9b
+  - dolphin-2.9.3-yi-1.5-34b-32k-gguf
+  - llama-7b
+topics:
+  - benchmarks
+  - coding-benchmarks
+  - scientific-coding
+  - quantum-computing
+  - quantum-supremacy
+  - large-language-models
+  - synthetic-data
+  - model-evaluation
+  - ai-safety
+  - open-source
+  - multi-agent-systems
+  - video-generation
+  - robotics
+  - ai-regulation
 ---
 
 

@@ -4,20 +4,82 @@ title: not much happened today
 date: '2025-01-29T01:48:45.233160Z'
 original_slug: ainews-not-much-happened-today-8335
 description: >-
-  Qwen 2.5-Max, a new Mixture of Experts model, has been released and
-  outperforms Deepseek V3 on several benchmarks, sparking discussions about
-  open-sourcing and competitive AI model development. Additionally, Deepseek R1
-  continues to demonstrate advanced capabilities in reasoning and multimodal
-  outputs, influencing both AI infrastructure demands and NVIDIA’s market
-  performance.
+  **DeepSeek R1** is now running inference on **Huawei’s 910C** chips, marking a
+  notable shift toward Chinese-made AI hardware with deployments on **Huawei
+  Cloud’s ModelArts Studio**. Meanwhile, the release of **Qwen 2.5-Max**, a
+  Mixture of Experts model, demonstrates competitive performance surpassing
+  **Deepseek V3** in benchmarks, highlighting rapid advancements in large
+  language models.
 tags:
-  - qwen
+  - deepseek
+  - huawei
+  - nvidia
+  - openai
+  - vercel
+  - anthropic
+  - hugging-face
+  - together
+  - langchain
+  - cambricon
+  - moore-threads
+  - deepseek-r1
+  - deepseek-r1-distill
+  - deepseek-janus-pro
   - qwen-2.5
   - qwen-2.5-max
-  - deepseek
-  - deepseek-r1
+  - qwen-14b
+  - qwen-32b
+  - llama-8b
+  - openthoughts-114k
+  - openthinker-7b
+  - gpt-4
+  - inference-on-homegrown-chips
+  - mixture-of-experts
+  - large-language-models
+  - multimodal-llms
   - reinforcement-learning
+  - reasoning-datasets
+  - gpu-optimization
+  - data-center-infrastructure
+  - open-source-models
+  - censorship
+  - geopolitics-of-ai-hardware
+companies:
+  - deepseek
+  - huawei
   - nvidia
+  - openai
+  - vercel
+  - anthropic
+  - hugging-face
+  - together
+  - langchain
+  - cambricon
+  - moore-threads
+models:
+  - deepseek-r1
+  - deepseek-r1-distill
+  - deepseek-janus-pro
+  - qwen-2.5
+  - qwen-2.5-max
+  - qwen-14b
+  - qwen-32b
+  - llama-8b
+  - openthoughts-114k
+  - openthinker-7b
+  - gpt-4
+topics:
+  - inference-on-homegrown-chips
+  - mixture-of-experts
+  - large-language-models
+  - multimodal-llms
+  - reinforcement-learning
+  - reasoning-datasets
+  - gpu-optimization
+  - data-center-infrastructure
+  - open-source-models
+  - censorship
+  - geopolitics-of-ai-hardware
 ---
 
 

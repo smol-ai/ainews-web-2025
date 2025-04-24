@@ -4,21 +4,18 @@ title: Did Nvidia's Nemotron 70B train on test?
 date: '2024-10-17T00:44:43.747168Z'
 original_slug: ainews-did-nvidias-nemotron-70b-train-on-test
 description: >-
-  Nvidia's Nemotron-70B model has drawn attention for outperforming GPT-4o and
-  Claude 3.5 Sonnet on leading benchmarks like Arena Hard and MT Bench, though
-  some standard benchmarks show mixed results. Meanwhile, Mistral released new
-  3B and 8B models with 128k context length that reportedly surpass Llama 3.1
-  and GPT-4o on various tests.
+  NVIDIA’s **Nemotron-70B** model has drawn significant attention for
+  outperforming competitors like **GPT-4o** and **Claude 3.5 Sonnet** on
+  benchmarks such as Arena Hard and MT Bench, though some standard benchmarks
+  show mixed results. Meanwhile, **Mistral** released new **Ministral 3B and
+  8B** models with *128k* context length, surpassing **Llama 3.1** and
+  **GPT-4o** on various benchmarks under the **Mistral Commercial License**.
 tags:
-  - nvidia
-  - nemotron
-  - mistral
-  - ministral-3b
-  - ministral-8b
-  - llama-3-1
-  - gpt-4o
-  - rlhf
-  - benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

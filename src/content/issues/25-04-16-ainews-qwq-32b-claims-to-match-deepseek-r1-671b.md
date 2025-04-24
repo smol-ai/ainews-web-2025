@@ -5,22 +5,93 @@ date: '2025-04-16T19:06:15Z'
 type: private
 original_slug: ainews-qwq-32b-claims-to-match-deepseek-r1-671b
 description: >-
-  Alibaba released Qwen QwQ-32B, a 32B parameter reasoning model using a novel
-  two-stage reinforcement learning approach that first focuses on math and
-  coding accuracy before general capabilities, claiming performance comparable
-  to much larger MoE models. Meanwhile, OpenAI began rolling out GPT-4.5 to Plus
-  users, with mixed early feedback highlighting strong reasoning but poor coding
-  capabilities.
+  Alibaba’s **Qwen QwQ-32B** model, a *32 billion parameter* reasoning model,
+  has been released claiming to outperform larger models like **DeepSeek-R1**
+  and is available under an **Apache 2.0 license**. Meanwhile, **OpenAI** has
+  begun rolling out **GPT-4.5** to Plus users, with mixed early feedback on
+  coding capabilities despite improvements in reasoning and inference cost.
 tags:
   - alibaba
-  - qwen
-  - qwq-32b
+  - openai
+  - deepseek
+  - cohere
+  - microsoft
+  - ibm
+  - coreweave
+  - weights-biases
+  - ollama
+  - cartesia
+  - hugging-face
+  - qwen-qwq-32b
+  - deepseek-r1
+  - gpt-4.5
+  - cohere-aya-vision
+  - llama-3.2
+  - microsoft-phi-4-mini
+  - ibm-granite-3.2-vision
+  - cohere-command-r7b
+  - visualthinker-r1-zero
+  - light-r1
+  - claude-3.7
+  - newsonnet
+  - llamba-1b
+  - llamba-3b
+  - llamba-7b
+  - large-language-models
   - reinforcement-learning
   - reasoning
-  - openai
-  - gpt-4.5
   - coding
+  - model-benchmarks
   - model-release
+  - open-source
+  - acquisition
+  - model-deployment
+  - multimodal-learning
+  - instruction-following
+  - alignment
+  - cost-efficiency
+companies:
+  - alibaba
+  - openai
+  - deepseek
+  - cohere
+  - microsoft
+  - ibm
+  - coreweave
+  - weights-biases
+  - ollama
+  - cartesia
+  - hugging-face
+models:
+  - qwen-qwq-32b
+  - deepseek-r1
+  - gpt-4.5
+  - cohere-aya-vision
+  - llama-3.2
+  - microsoft-phi-4-mini
+  - ibm-granite-3.2-vision
+  - cohere-command-r7b
+  - visualthinker-r1-zero
+  - light-r1
+  - claude-3.7
+  - newsonnet
+  - llamba-1b
+  - llamba-3b
+  - llamba-7b
+topics:
+  - large-language-models
+  - reinforcement-learning
+  - reasoning
+  - coding
+  - model-benchmarks
+  - model-release
+  - open-source
+  - acquisition
+  - model-deployment
+  - multimodal-learning
+  - instruction-following
+  - alignment
+  - cost-efficiency
 ---
 
 

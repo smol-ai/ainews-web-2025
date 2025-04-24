@@ -4,21 +4,17 @@ title: 'Titans: Learning to Memorize at Test Time'
 date: '2025-01-16T07:58:41.269179Z'
 original_slug: ainews-titans-learning-to-memorize-at-test-time
 description: >-
-  Google's new "Transformer²" paper introduces a novel architecture that
-  integrates persistent neural memory directly into the model at test time,
-  using surprisal-based updates and weight decay to manage forgetting, resulting
-  in improved long-context understanding. Additionally, the MiniMax-01 model
-  showcases a massive 456 billion parameter Mixture-of-Experts design with a 4
-  million token context window, significantly advancing long-context language
-  modeling capabilities.
+  **Google** released a groundbreaking paper on "Transformer²," integrating
+  persistent neural memory directly into the architecture for improved
+  long-context understanding. Meanwhile, **MiniMax-01**, a massive model with
+  *456B parameters* and a *4 million token* context window, was introduced,
+  outperforming models like **GPT-4o** and **Claude-3.5-Sonnet**.
 tags:
-  - google
-  - transformer2
-  - neural-memory
-  - minimax-01
-  - mixture-of-experts
-  - long-context
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

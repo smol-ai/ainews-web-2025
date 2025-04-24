@@ -4,19 +4,95 @@ title: DeepSeek's Open Source Stack
 date: '2025-03-08T05:06:31.351088Z'
 original_slug: ainews-deepseeks-open-source-stack
 description: >-
-  Google DeepMind released the Gemini embedding model, which ranks #1 on the
-  MMTEB leaderboard with an 8k context window and targets finance, science,
-  legal, search, and code applications. Additionally, OpenAI launched GPT-4.5,
-  their largest model to date, though it currently lacks the advanced reasoning
-  capabilities found in some other models.
+  **Qwen QwQ-32B**'s fine-tuned model **START** was released, achieving high
+  accuracy on PhD-level science and math benchmarks, while **Google DeepMind**
+  introduced the experimental **Gemini embedding model** ranking #1 on the MMTEB
+  leaderboard with an 8k context window for diverse applications. Additionally,
+  **Character-3**, an omnimodal AI video generation model by **Hedra Labs** and
+  scaled on **Together AI**, was launched, enabling realistic animated content
+  creation.
 tags:
+  - alibaba
   - google
   - deepmind
-  - gemini
-  - embedding
+  - hedra-labs
+  - together
   - openai
+  - ai21labs
+  - mistral
+  - inception-labs
+  - perplexity
+  - numbers-station
+  - hugging-face
+  - qwen-qwq-32b
+  - start
+  - gemini
+  - gemini-2.0
+  - character-3
+  - mercury-coder
   - gpt-4.5
-  - model-release
+  - jamba-mini-1.6
+  - mistral-ocr
+  - gpt-4o
+  - sonnet-3.7
+  - o3-mini-high
+  - llama-3.1-8b
+  - large-language-models
+  - embeddings
+  - video-generation
+  - code-generation
+  - reasoning
+  - benchmarks
+  - dataset-release
+  - multimodal-models
+  - model-debugging
+  - model-quantization
+  - no-code-tools
+  - ai-search
+  - model-integration
+  - token-efficiency
+companies:
+  - alibaba
+  - google
+  - deepmind
+  - hedra-labs
+  - together
+  - openai
+  - ai21labs
+  - mistral
+  - inception-labs
+  - perplexity
+  - numbers-station
+  - hugging-face
+models:
+  - qwen-qwq-32b
+  - start
+  - gemini
+  - gemini-2.0
+  - character-3
+  - mercury-coder
+  - gpt-4.5
+  - jamba-mini-1.6
+  - mistral-ocr
+  - gpt-4o
+  - sonnet-3.7
+  - o3-mini-high
+  - llama-3.1-8b
+topics:
+  - large-language-models
+  - embeddings
+  - video-generation
+  - code-generation
+  - reasoning
+  - benchmarks
+  - dataset-release
+  - multimodal-models
+  - model-debugging
+  - model-quantization
+  - no-code-tools
+  - ai-search
+  - model-integration
+  - token-efficiency
 ---
 
 

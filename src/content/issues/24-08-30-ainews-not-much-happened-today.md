@@ -4,18 +4,19 @@ title: not much happened today
 date: '2024-08-31T00:41:42.203560Z'
 original_slug: ainews-not-much-happened-today-5498
 description: >-
-  Meta’s LLaMA 3.1 has reached nearly 350 million downloads, highlighting the
-  growing impact of open-source AI models. Additionally, Magic AI Labs unveiled
-  LTM-2-Mini, a long-context model capable of processing 100 million tokens,
-  equivalent to 750 novels, pushing the boundaries of AI context length.
+  Meta’s LLaMA 3.1 model has reached nearly *350 million downloads* on Hugging
+  Face, highlighting significant open-source adoption, while Alibaba released
+  the multimodal Qwen2-VL model in *2B* and *7B* sizes under Apache 2.0 license,
+  showing competitive performance with GPT-4o mini. California’s newly passed SB
+  1047 bill introduces stringent regulations on AI-generated content and model
+  shutdown capabilities, potentially impacting open-source AI development and
+  prompting concerns about innovation and corporate concentration.
 tags:
-  - meta
-  - llama-3.1
-  - open-source
-  - magic-ai-labs
-  - ltm-2-mini
-  - long-context
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

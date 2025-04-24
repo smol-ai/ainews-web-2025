@@ -4,19 +4,71 @@ title: Anime pfp anon eclipses $10k A::B prompting challenge
 date: '2024-04-09T01:18:42.938105Z'
 original_slug: ainews-anime-pfp-anon-eclipses-10k-ab-prompting
 description: >-
-  Victor Taelin's $10k A::B challenge demonstrated a significant leap in GPT
-  performance, with community submissions surpassing 90% success after initial
-  state-of-the-art models only achieved 10%. Additionally, Command R Plus (104B)
-  is now compatible with Ollama on M2 Max hardware using quantized models, and
-  GGUF quantizations for this model have been released on Huggingface.
+  Victor Taelin issued a $10k challenge testing GPT models, initially yielding
+  low success rates but eventually surpassed 90% by a community member,
+  highlighting ongoing GPT capability improvements. Meanwhile, significant AI
+  model updates include the release of Command R Plus (104B) with GGUF
+  quantizations for efficient M2 Max hardware use, and rumors that OpenAI's
+  upcoming GPT-5 will surpass Anthropic's Claude 3 in coding, reasoning, and
+  language understanding.
 tags:
-  - victor-taelin
-  - gpt
-  - command-r-plus
+  - openai
+  - anthropic
+  - cohere
+  - google
+  - x
+  - llama-index
   - ollama
-  - quantization
-  - m2-max
-  - huggingface
+  - futuristfrog
+  - command-r-plus-104b
+  - gpt-4
+  - gpt-5
+  - claude-3
+  - claude-3-opus
+  - grok-2.0
+  - gemma-instruct-1.1
+  - qwen-1.5-32b
+  - mistral-7b
+  - large-language-models
+  - model-quantization
+  - retrieval-augmented-generation
+  - prompt-engineering
+  - ai-benchmarks
+  - ai-contests
+  - robotics
+  - coding-agents
+  - model-performance
+  - multi-document-agents
+companies:
+  - openai
+  - anthropic
+  - cohere
+  - google
+  - x
+  - llama-index
+  - ollama
+  - futuristfrog
+models:
+  - command-r-plus-104b
+  - gpt-4
+  - gpt-5
+  - claude-3
+  - claude-3-opus
+  - grok-2.0
+  - gemma-instruct-1.1
+  - qwen-1.5-32b
+  - mistral-7b
+topics:
+  - large-language-models
+  - model-quantization
+  - retrieval-augmented-generation
+  - prompt-engineering
+  - ai-benchmarks
+  - ai-contests
+  - robotics
+  - coding-agents
+  - model-performance
+  - multi-document-agents
 ---
 
 

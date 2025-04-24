@@ -6,21 +6,63 @@ title: >-
 date: '2025-01-21T07:50:24.815688Z'
 original_slug: ainews-deepseek-r1-o1-level-open-weights-model
 description: >-
-  DeepSeek has released its R1 series of models, including full-size 671B MoE
-  models and multiple distillations, showing significant performance
-  improvements over DeepSeek V3 from just weeks ago. The R1 models are MIT
-  licensed, support fine-tuning and distillation, and offer dramatically lower
-  pricing—up to 50x cheaper than comparable models—while using a novel GRPO
-  reinforcement learning approach that outperforms traditional methods like
-  MCTS.
+  **DeepSeek** has released the **DeepSeek-R1** suite, including full-size 671B
+  MoE models and multiple distilled versions, achieving reasoning performance
+  surpassing **OpenAI-o1** and rivaling **GPT-4o** on benchmarks like *AIME
+  2024*. The release is notable for its open MIT license, significant cost
+  efficiency (up to *50x* cheaper than o1), and a novel reinforcement learning
+  training pipeline (GRPO) that outperforms traditional RL and distillation
+  methods.
 tags:
   - deepseek
-  - r1
-  - moe
-  - llama
-  - qwen
+  - openai
+  - ollama
+  - gpt
+  - alpaca
+  - deepseek-r1
+  - deepseek-r1-zero
+  - deepseek-r1-distill-qwen-1.5b
+  - deepseek-r1-distill-qwen-7b
+  - deepseek-v3
+  - openai-o1
+  - gpt-4o
+  - llama-3.1-8b
+  - llama-3.3-70b
   - reinforcement-learning
   - model-distillation
+  - reasoning
+  - open-source-models
+  - large-language-models
+  - math-benchmarks
+  - cost-efficiency
+  - multi-expert-models
+  - training-pipelines
+companies:
+  - deepseek
+  - openai
+  - ollama
+  - gpt
+  - alpaca
+models:
+  - deepseek-r1
+  - deepseek-r1-zero
+  - deepseek-r1-distill-qwen-1.5b
+  - deepseek-r1-distill-qwen-7b
+  - deepseek-v3
+  - openai-o1
+  - gpt-4o
+  - llama-3.1-8b
+  - llama-3.3-70b
+topics:
+  - reinforcement-learning
+  - model-distillation
+  - reasoning
+  - open-source-models
+  - large-language-models
+  - math-benchmarks
+  - cost-efficiency
+  - multi-expert-models
+  - training-pipelines
 ---
 
 

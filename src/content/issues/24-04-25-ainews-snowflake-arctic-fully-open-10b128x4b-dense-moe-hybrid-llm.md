@@ -4,20 +4,67 @@ title: 'Snowflake Arctic: Fully Open 10B+128x4B Dense-MoE Hybrid LLM'
 date: '2024-04-26T01:33:53.546196Z'
 original_slug: ainews-snowflake
 description: >-
-  Snowflake has released Arctic, an open-source foundation language model under
-  Apache 2.0 license, which claims superior performance to Databricks by
-  leveraging a mixture-of-experts architecture and a three-stage curriculum
-  training approach. Additionally, Apple has open-sourced multiple versions of
-  its on-device language models, providing code and training logs, marking a
-  shift from the usual release of only weights and inference code.
+  Snowflake has released **Snowflake Arctic**, a 480B parameter Dense-MoE
+  open-source language model optimized for enterprise AI, claiming to use *17x
+  less compute* than **Llama 3 70B** while maintaining strong performance on
+  coding, SQL, and instruction tasks. Meanwhile, **NVIDIA** delivered the first
+  DGX H200 system to **OpenAI**, featuring *256 H100 GPUs* and *1.3TB GPU
+  memory*, highlighting a major hardware upgrade to accelerate AI training and
+  inference.
 tags:
   - snowflake
-  - arctic
-  - mixture-of-experts
-  - curriculum-learning
-  - databricks
+  - openai
+  - nvidia
   - apple
-  - on-device-models
+  - lenovo
+  - moderna
+  - snowflake-arctic
+  - llama-3-8b
+  - llama-3-70b
+  - phi-3
+  - dolphin-2.9-llama3-70b
+  - thinksystem-amd-mi300x
+  - dgx-h200
+  - large-language-models
+  - mixture-of-experts
+  - enterprise-ai
+  - model-efficiency
+  - hardware-acceleration
+  - gpu-clusters
+  - open-source-models
+  - retrieval-augmented-generation
+  - long-context
+  - drug-discovery
+  - video-upscaling
+  - ai-ethics
+companies:
+  - snowflake
+  - openai
+  - nvidia
+  - apple
+  - lenovo
+  - moderna
+models:
+  - snowflake-arctic
+  - llama-3-8b
+  - llama-3-70b
+  - phi-3
+  - dolphin-2.9-llama3-70b
+  - thinksystem-amd-mi300x
+  - dgx-h200
+topics:
+  - large-language-models
+  - mixture-of-experts
+  - enterprise-ai
+  - model-efficiency
+  - hardware-acceleration
+  - gpu-clusters
+  - open-source-models
+  - retrieval-augmented-generation
+  - long-context
+  - drug-discovery
+  - video-upscaling
+  - ai-ethics
 ---
 
 

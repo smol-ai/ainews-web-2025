@@ -4,20 +4,66 @@ title: 'Meta BLT: Tokenizer-free, Byte-level LLM'
 date: '2024-12-14T05:38:19.544715Z'
 original_slug: ainews-meta-blt-tokenizer-free-byte-level-llm
 description: >-
-  Meta Research introduced the Byte Latent Transformer (BLT), a tokenizer-free
-  model that dynamically forms byte-level patches for more efficient and
-  accurate language understanding, outperforming traditional token-based models
-  on several benchmarks. Meanwhile, Microsoft announced Phi-4, a 14B parameter
-  model achieving state-of-the-art results on STEM and reasoning tasks,
-  surpassing GPT-4o.
+  Meta released the Byte Latent Transformer (BLT), a tokenizer-free architecture
+  that dynamically encodes bytes into patches, improving inference efficiency
+  and outperforming Llama 3 on challenging benchmarks. Meanwhile, Microsoft
+  announced Phi-4, a 14B parameter model excelling in complex reasoning tasks
+  and achieving state-of-the-art results on STEM benchmarks, though its
+  real-world performance and availability are under community scrutiny.
 tags:
   - meta
-  - byte-latent-transformer
-  - tokenizer-free
   - microsoft
+  - openai
+  - cohere
+  - anthropic
+  - deepseek
+  - byte-latent-transformer
+  - llama-3
   - phi-4
-  - language-models
-  - model-efficiency
+  - phi-3
+  - chatgpt
+  - cohere-command-r7b
+  - deepseek-vl2
+  - qwen-2.5-14b
+  - tokenizer-free-models
+  - dynamic-patching
+  - model-scaling
+  - complex-reasoning
+  - benchmark-performance
+  - synthetic-data
+  - instruction-following
+  - vision-language-models
+  - jailbreaking
+  - multimodality
+  - model-availability
+companies:
+  - meta
+  - microsoft
+  - openai
+  - cohere
+  - anthropic
+  - deepseek
+models:
+  - byte-latent-transformer
+  - llama-3
+  - phi-4
+  - phi-3
+  - chatgpt
+  - cohere-command-r7b
+  - deepseek-vl2
+  - qwen-2.5-14b
+topics:
+  - tokenizer-free-models
+  - dynamic-patching
+  - model-scaling
+  - complex-reasoning
+  - benchmark-performance
+  - synthetic-data
+  - instruction-following
+  - vision-language-models
+  - jailbreaking
+  - multimodality
+  - model-availability
 ---
 
 

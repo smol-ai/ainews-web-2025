@@ -4,21 +4,20 @@ title: not much happened today
 date: '2025-01-17T06:04:28.978541Z'
 original_slug: ainews-not-much-happened-today-9711
 description: >-
-  Open Text-to-Speech models OuteTTS 0.3 1B & 500M were released, featuring
-  zero-shot voice cloning, multilingual support, and emotion control, marking a
-  major advance in text-to-speech technology. Additionally, Meta awarded $200K
-  in LLM evaluation research grants to projects focused on regional language
-  understanding, complex reasoning, and interactive programming environments.
+  **Google Research** unveiled the **Titans** architecture, a novel neural
+  memory model that dynamically manages long-term dependencies and promises
+  scalable context windows potentially up to *200k tokens*, marking a
+  significant advancement over traditional transformers. Meanwhile, **UMbreLLa**
+  demonstrated efficient inference of **Llama3.3-70B** on consumer GPUs like the
+  **RTX 4070 Ti**, achieving speeds up to *9.7 tokens/sec* through techniques
+  such as parameter offloading and quantization, making large language models
+  more accessible.
 tags:
-  - open
-  - text-to-speech
-  - oute-tts
-  - voice-cloning
-  - multilingual
-  - emotion-control
-  - meta
-  - llm
-  - research-grants
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

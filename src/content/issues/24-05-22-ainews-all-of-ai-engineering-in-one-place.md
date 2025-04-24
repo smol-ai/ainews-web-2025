@@ -4,20 +4,193 @@ title: ALL of AI Engineering in One Place
 date: '2024-05-23T01:22:53.232395Z'
 original_slug: ainews-the-top-ai-engineer
 description: >-
-  Anthropic has made progress in interpretability research on Claude 3 Sonnet by
-  extracting millions of multilingual and multimodal features that correspond to
-  abstract concepts, enabling feature steering to reliably modify model
-  behavior. They also identified safety-relevant features linked to unsafe or
-  biased outputs, though further research is needed to confirm practical
-  applications.
+  The AI Engineer World's Fair will take place June 25-27 in San Francisco,
+  featuring major companies like **OpenAI**, **DeepMind**, **Anthropic**, and
+  **Microsoft Azure**, with 9 tracks covering topics from RAG to AI leadership.
+  Meanwhile, **Microsoft** released its **Phi-3** small (7B) and medium (14B)
+  models under the MIT license, boasting superior benchmark performance over
+  Mistral, Llama 3, and GPT-3.5, alongside a new Phi-3-vision model excelling in
+  visual reasoning tasks.
 tags:
+  - openai
+  - deepmind
   - anthropic
-  - claude-3
+  - mistral
+  - cohere
+  - huggingface
+  - adept
+  - midjourney
+  - character
+  - microsoft
+  - amazon
+  - google
+  - nvidia
+  - salesforce
+  - mastercard
+  - palo-alto-networks
+  - axa
+  - novartis
+  - discord
+  - twilio
+  - tinder
+  - khan-academy
+  - sourcegraph
+  - mongodb
+  - neo4j
+  - hasura
+  - modular
+  - cognition
+  - anysphere
+  - perplexity
+  - groq
+  - mozilla
+  - nous-research
+  - galileo
+  - unsloth
+  - langchain
+  - llamaindex
+  - instructor
+  - weights-and-biases
+  - lambda-labs
+  - neptune
+  - datastax
+  - crusoe
+  - covalent
+  - qdrant
+  - baseten
+  - e2b
+  - octo
+  - gradient
+  - lancedb
+  - log10
+  - deepgram
+  - outlines
+  - crew
+  - factory
+  - suno
+  - cerebras
+  - neural-magic
+  - phi-3-small
+  - phi-3-medium
+  - phi-3-vision
+  - mistral-0.3
+  - mistral-7b
+  - llama-3-8b
+  - gpt-3.5
+  - claude-3-sonnet
+  - gemini-1.0-pro
+  - mistral-7b-base
+  - mistral-7b-instruct
+  - ai-engineer-worlds-fair
+  - large-language-models
   - interpretability
   - feature-steering
   - safety
-  - multimodal
-  - multilingual
+  - model-benchmarks
+  - vision-models
+  - multimodality
+  - knowledge-search
+  - data-visualization
+  - synthetic-data
+  - fine-tuning
+  - licensing
+  - sparse-models
+  - pretraining
+  - inference
+  - ai-conferences
+  - ai-leadership
+  - ai-workshops
+companies:
+  - openai
+  - deepmind
+  - anthropic
+  - mistral
+  - cohere
+  - huggingface
+  - adept
+  - midjourney
+  - character
+  - microsoft
+  - amazon
+  - google
+  - nvidia
+  - salesforce
+  - mastercard
+  - palo-alto-networks
+  - axa
+  - novartis
+  - discord
+  - twilio
+  - tinder
+  - khan-academy
+  - sourcegraph
+  - mongodb
+  - neo4j
+  - hasura
+  - modular
+  - cognition
+  - anysphere
+  - perplexity
+  - groq
+  - mozilla
+  - nous-research
+  - galileo
+  - unsloth
+  - langchain
+  - llamaindex
+  - instructor
+  - weights-and-biases
+  - lambda-labs
+  - neptune
+  - datastax
+  - crusoe
+  - covalent
+  - qdrant
+  - baseten
+  - e2b
+  - octo
+  - gradient
+  - lancedb
+  - log10
+  - deepgram
+  - outlines
+  - crew
+  - factory
+  - suno
+  - cerebras
+  - neural-magic
+models:
+  - phi-3-small
+  - phi-3-medium
+  - phi-3-vision
+  - mistral-0.3
+  - mistral-7b
+  - llama-3-8b
+  - gpt-3.5
+  - claude-3-sonnet
+  - gemini-1.0-pro
+  - mistral-7b-base
+  - mistral-7b-instruct
+topics:
+  - ai-engineer-worlds-fair
+  - large-language-models
+  - interpretability
+  - feature-steering
+  - safety
+  - model-benchmarks
+  - vision-models
+  - multimodality
+  - knowledge-search
+  - data-visualization
+  - synthetic-data
+  - fine-tuning
+  - licensing
+  - sparse-models
+  - pretraining
+  - inference
+  - ai-conferences
+  - ai-leadership
+  - ai-workshops
 ---
 
 

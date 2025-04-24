@@ -4,19 +4,19 @@ title: Qwen 2 beats Llama 3 (and we don't know how)
 date: '2024-06-06T22:33:41.101639Z'
 original_slug: ainews-qwen-2-beats-llama-3-and-we-dont-know-how
 description: >-
-  Alibaba released Qwen 2, a new open-source multilingual large language model
-  series claiming to outperform Llama 3 across benchmarks, with models ranging
-  up to 72B parameters and trained using innovative automated alignment
-  strategies. Groq demonstrated extremely fast inference speeds on Llama 3 70B,
-  processing about four Wikipedia articles in just 200 milliseconds.
+  Alibaba’s open-source **Qwen 2** models, released in *five sizes* and
+  supporting *29 languages*, claim to outperform **Llama 3** on benchmarks like
+  MMLU, with Qwen2-72B achieving an MMLU score of *82.3* and Qwen2-7B surpassing
+  Llama 3’s score on MMLU-PRO. Additionally, **Groq** demonstrated ultra-fast
+  inference speeds running **Llama 3 70B** at *40,792 tokens per second*,
+  processing the equivalent of four Wikipedia articles in just *200
+  milliseconds*.
 tags:
-  - alibaba
-  - qwen2
-  - llama3
-  - multilingual
-  - open-source
-  - groq
-  - inference-speed
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,19 +4,62 @@ title: not much happened today
 date: '2024-09-21T01:37:46.121441Z'
 original_slug: ainews-not-much-happened-today-5059
 description: >-
-  OpenAI is hiring machine learning engineers for a new multi-agent research
-  team aimed at improving AI reasoning, while their o1 models are generating
-  mixed reactions due to their unique prompting style. Additionally, Meta is
-  teasing a multimodal version of Llama 3 ahead of Meta Connect, signaling
-  significant upcoming advancements in multimodal AI.
+  **Meta's Llama 3** is poised to become a dominant multimodal AI model with
+  visual understanding capabilities, expected to be officially unveiled at next
+  week's **Meta Connect** event. Additionally, the **Qwen2.5 32B GGUF**
+  quantized models demonstrate impressive performance in the computer science
+  category of MMLU PRO, outperforming several competitors with minimal
+  performance loss.
 tags:
-  - openai
-  - multi-agent
-  - llama
-  - multimodal
   - meta
-  - machine-learning
-  - reasoning
+  - openai
+  - anthropic
+  - pocketpal
+  - llama-3
+  - qwen2.5-32b
+  - qwen2.5-1.5b
+  - qwen2.5-3b
+  - deepseek-2.5
+  - claude-3.5-sonnet
+  - gpt-4
+  - cogvideox
+  - 3dtopia-xl
+  - multimodal-models
+  - model-quantization
+  - retrieval-augmented-generation
+  - prompt-engineering
+  - large-language-models
+  - model-evaluation
+  - mobile-ai-applications
+  - ai-product-development
+  - ai-reasoning
+  - ai-regulation
+companies:
+  - meta
+  - openai
+  - anthropic
+  - pocketpal
+models:
+  - llama-3
+  - qwen2.5-32b
+  - qwen2.5-1.5b
+  - qwen2.5-3b
+  - deepseek-2.5
+  - claude-3.5-sonnet
+  - gpt-4
+  - cogvideox
+  - 3dtopia-xl
+topics:
+  - multimodal-models
+  - model-quantization
+  - retrieval-augmented-generation
+  - prompt-engineering
+  - large-language-models
+  - model-evaluation
+  - mobile-ai-applications
+  - ai-product-development
+  - ai-reasoning
+  - ai-regulation
 ---
 
 

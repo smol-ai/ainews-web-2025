@@ -1,11 +1,70 @@
 ---
-id: 38309c71-19ba-4feb-96d7-820f32ab6fb8
+id: 38309c71-19ba-4feb-96d7-xxx
 title: not much happened today; New email provider for AINews
 date: '2025-04-21T05:44:39.731046Z'
-description: We moved to Resend
+description: >-
+  OpenAI has released API-only GPT-4.1, 4.1 Mini, and 4.1 Nano models with up to
+  *1 million* token context windows, outperforming previous versions and
+  featuring smarter reasoning capabilities such as the o3 and o4-mini models.
+  Meanwhile, Google introduced **Gemini 2.5 Flash**, a reasoning model with up
+  to *24k* token context, demonstrating strong performance in reasoning, STEM,
+  and visual tasks.
 tags:
-  - Resend
+  - openai
+  - google
+  - bytedance
+  - anthropic
+  - cohere
+  - xai
+  - runwayml
+  - gpt-4.1
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - o3
+  - o4-mini
+  - gemini-2.5-flash
+  - seaweed
+  - embed-4
+  - large-language-models
+  - reasoning
+  - multimodal-embedding
+  - video-generation
+  - agentic-workflows
+  - reinforcement-learning
+  - model-benchmarks
+  - context-windows
+  - AI-deliverability
+  - AI-applications
+companies:
+  - openai
+  - google
+  - bytedance
+  - anthropic
+  - cohere
+  - xai
+  - runwayml
+models:
+  - gpt-4.1
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - o3
+  - o4-mini
+  - gemini-2.5-flash
+  - seaweed
+  - embed-4
+topics:
+  - large-language-models
+  - reasoning
+  - multimodal-embedding
+  - video-generation
+  - agentic-workflows
+  - reinforcement-learning
+  - model-benchmarks
+  - context-windows
+  - AI-deliverability
+  - AI-applications
 ---
+
 
 
 Resend is all we need!

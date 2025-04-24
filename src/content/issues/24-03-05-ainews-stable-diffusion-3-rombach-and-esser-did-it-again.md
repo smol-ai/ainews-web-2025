@@ -4,20 +4,19 @@ title: Stable Diffusion 3 — Rombach & Esser did it again!
 date: '2024-03-05T22:30:03.649594Z'
 original_slug: ainews-to-be-named-7776
 description: >-
-  Stable Diffusion 3 has been detailed in a new paper, showcasing significant
-  advances in text-to-image control and complex prompt handling, and it
-  outperforms most state-of-the-art image generation models in human-evaluated
-  benchmarks. Meanwhile, Anthropic released Claude 3, a large language model
-  with improved human-like responses and emotional roleplay capabilities,
-  positioning it as a strong competitor to GPT-4 despite a higher cost.
+  Anthropic's release of **Claude 3** has sparked significant discussion, with
+  the model showing strong language capabilities and a *79.88%* score on
+  HumanEval, though it trails **GPT-4**'s *88%* and costs over twice as much.
+  Meanwhile, **Stability AI** unveiled the **Stable Diffusion 3** paper
+  detailing major advances in text-to-image generation, with **SD3**
+  outperforming other state-of-the-art models in human-evaluated benchmarks,
+  though its *8B* parameter model release remains uncertain.
 tags:
-  - stability
-  - diffusion
-  - stable-diffusion-3
-  - anthropic
-  - claude-3
-  - gpt-4
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

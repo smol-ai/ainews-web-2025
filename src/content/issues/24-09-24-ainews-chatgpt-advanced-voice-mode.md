@@ -4,18 +4,68 @@ title: ChatGPT Advanced Voice Mode
 date: '2024-09-25T01:31:24.268326Z'
 original_slug: ainews-chatgpt-advanced-voice-mode
 description: >-
-  OpenAI has rolled out ChatGPT Advanced Voice Mode in the US, featuring five
-  new voices and enhanced accent and language support. Additionally, Google's
-  Gemini Pro has received a significant price cut ahead of anticipated Llama 3
-  and Claude 3.5 updates.
+  OpenAI has rolled out **ChatGPT Advanced Voice Mode** in the US with five new
+  voices and enhanced accent and language support, marking a significant update
+  in voice interaction capabilities. Meanwhile, **Alibaba Cloud's Qwen 2.5**
+  models, including the newly available *72B* parameter version on HuggingChat,
+  are gaining attention for their high performance and efficiency, rivaling
+  larger models like GPT-4 and Llama 3.1.
 tags:
   - openai
-  - chatgpt
-  - voice-mode
-  - google
-  - gemini-pro
-  - llama-3
-  - claude-3-5
+  - anthropic
+  - alibaba-cloud
+  - scale
+  - together
+  - nvidia
+  - chatgpt-advanced-voice-mode
+  - o1-preview
+  - qwen-2.5
+  - qwen-2.5-72b
+  - llama-3.1
+  - llama-3.1-nemotron-51b
+  - gpt-4-0613
+  - mistral-small
+  - mistral-large
+  - cohere-command-r+
+  - voice-interaction
+  - large-language-models
+  - model-efficiency
+  - model-quantization
+  - multilingual-datasets
+  - retrieval-augmented-generation
+  - knowledge-distillation
+  - open-source-models
+  - generative-ai-platforms
+  - ai-industry-growth
+companies:
+  - openai
+  - anthropic
+  - alibaba-cloud
+  - scale
+  - together
+  - nvidia
+models:
+  - chatgpt-advanced-voice-mode
+  - o1-preview
+  - qwen-2.5
+  - qwen-2.5-72b
+  - llama-3.1
+  - llama-3.1-nemotron-51b
+  - gpt-4-0613
+  - mistral-small
+  - mistral-large
+  - cohere-command-r+
+topics:
+  - voice-interaction
+  - large-language-models
+  - model-efficiency
+  - model-quantization
+  - multilingual-datasets
+  - retrieval-augmented-generation
+  - knowledge-distillation
+  - open-source-models
+  - generative-ai-platforms
+  - ai-industry-growth
 ---
 
 

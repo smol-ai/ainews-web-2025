@@ -4,21 +4,72 @@ title: Microsoft AgentInstruct + Orca 3
 date: '2024-07-16T00:42:03.637767Z'
 original_slug: ainews-microsoft-agentinstruct-orca-3
 description: >-
-  Microsoft Research’s latest Orca paper, AgentInstruct, introduces a
-  multi-agent pipeline generating 22 million diverse instructions to teach 17
-  capabilities, creating a 25.8 million instruction dataset used to finetune
-  Mistral 7B, resulting in significant performance improvements and reduced
-  hallucinations. This synthetic dataset approach highlights ongoing advances in
-  generative teaching and dataset quality enhancement, following FineWeb’s
-  success and Apple’s rephrasing research.
+  Microsoft Research’s latest paper, **AgentInstruct**, advances synthetic
+  dataset generation by using multiple agents to create a diverse 25.8 million
+  instruction dataset ("Orca 2.5") that significantly improves fine-tuning
+  results on **Mistral 7b**, boosting performance on benchmarks like AGIEval and
+  GSM8K by up to *54%*. Meanwhile, AI research continues to evolve rapidly, with
+  discussions highlighting the lag in academic publishing that causes papers
+  using models like **GPT-3.5** to become outdated amid breakthroughs such as
+  **GPT-4** and **Anthropic’s Claude 2.1**.
 tags:
   - microsoft
-  - orca
+  - mistral
+  - apple
+  - tencent
+  - openai
+  - anthropic
+  - google
   - agentinstruct
+  - orca-1
+  - orca-2
+  - orca-math
+  - orca-2.5
   - mistral-7b
-  - synthetic-datasets
-  - generative-teaching
+  - gpt-3.5
+  - gpt-4
+  - claude-2.1
+  - gemini
+  - synthetic-dataset-generation
+  - instruction-tuning
+  - language-model-finetuning
+  - hallucination-reduction
+  - benchmark-evaluation
+  - academic-publication-lag
+  - transformer-optimization
+  - multi-agent-systems
   - dataset-quality
+  - coding-assistance
+companies:
+  - microsoft
+  - mistral
+  - apple
+  - tencent
+  - openai
+  - anthropic
+  - google
+models:
+  - agentinstruct
+  - orca-1
+  - orca-2
+  - orca-math
+  - orca-2.5
+  - mistral-7b
+  - gpt-3.5
+  - gpt-4
+  - claude-2.1
+  - gemini
+topics:
+  - synthetic-dataset-generation
+  - instruction-tuning
+  - language-model-finetuning
+  - hallucination-reduction
+  - benchmark-evaluation
+  - academic-publication-lag
+  - transformer-optimization
+  - multi-agent-systems
+  - dataset-quality
+  - coding-assistance
 ---
 
 

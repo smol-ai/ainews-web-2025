@@ -4,20 +4,20 @@ title: Llama-3-70b is GPT-4-level Open Model
 date: '2024-04-20T02:21:27.301127Z'
 original_slug: ainews-llama-3
 description: >-
-  Meta has released Llama 3, their most capable open large language model to
-  date, with 8B and 70B parameter versions outperforming previous models
-  including Llama 2 and Mistral, and delivering GPT-4 level performance at a
-  fraction of the cost. Additionally, Groq is serving the Llama 3 70B model at
-  unprecedented speeds, making it the fastest GPT-4-level token source
-  available.
+  Meta has released **Llama 3**, their most capable open large language model to
+  date, available in *8B* and *70B* parameter versions with an *8K* context
+  window and a *128K* token tokenizer. Benchmarks show **Llama 3** outperforming
+  previous models including **Llama 2**, **Mistral 7B**, and rivaling **GPT-4**
+  level performance at significantly lower cost, while a *400B+* parameter
+  version is still in training. Additionally, **Groq** is serving the **Llama 3
+  70B** model at *500-800 tokens per second*, making it the fastest GPT-4-level
+  token source.
 tags:
-  - meta
-  - llama-3
-  - llama-2
-  - mistral
-  - groq
-  - gpt-4
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

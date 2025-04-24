@@ -4,19 +4,66 @@ title: lots of small launches
 date: '2025-02-27T04:09:12.976879Z'
 original_slug: ainews-lots-of-small-launches
 description: >-
-  OpenAI has launched the GPT-4o Advanced Voice feature for free ChatGPT users,
-  providing natural voice interactions with tiered access for Plus and Pro
-  subscribers. Meanwhile, Claude 3.7 Sonnet has achieved top performance in the
-  WebDev Arena, improving token efficiency and surpassing its predecessor by a
-  significant margin.
+  GPT-4o mini’s Advanced Voice feature is now available for free ChatGPT users,
+  with enhanced access and higher limits for Plus and Pro subscribers, marking a
+  significant update from **OpenAI**. Meanwhile, **Claude 3.7 Sonnet** has
+  achieved top performance in the WebDev Arena, outperforming its predecessor
+  with improved token efficiency, highlighting **Anthropic**’s ongoing model
+  advancements.
 tags:
   - openai
-  - gpt-4o
-  - advanced-voice
-  - claude
+  - anthropic
+  - deepseek
+  - perplexity
+  - langchain
+  - meta
+  - vevo
+  - together
+  - amazon
+  - gpt-4o-mini
   - claude-3.7-sonnet
+  - claude-3.5-sonnet
+  - deepsk-r1
+  - llama3-swe-rl-70b
+  - grok-3
+  - large-language-models
+  - voice-assistants
+  - model-performance
   - token-efficiency
-  - webdev-arena
+  - inference-optimization
+  - multi-agent-systems
+  - open-source-libraries
+  - reinforcement-learning
+  - long-context-models
+  - dataset-releases
+companies:
+  - openai
+  - anthropic
+  - deepseek
+  - perplexity
+  - langchain
+  - meta
+  - vevo
+  - together
+  - amazon
+models:
+  - gpt-4o-mini
+  - claude-3.7-sonnet
+  - claude-3.5-sonnet
+  - deepsk-r1
+  - llama3-swe-rl-70b
+  - grok-3
+topics:
+  - large-language-models
+  - voice-assistants
+  - model-performance
+  - token-efficiency
+  - inference-optimization
+  - multi-agent-systems
+  - open-source-libraries
+  - reinforcement-learning
+  - long-context-models
+  - dataset-releases
 ---
 
 

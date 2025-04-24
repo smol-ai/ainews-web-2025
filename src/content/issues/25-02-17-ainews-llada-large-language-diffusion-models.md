@@ -4,19 +4,20 @@ title: 'LLaDA: Large Language Diffusion Models'
 date: '2025-02-18T03:27:47.627285Z'
 original_slug: ainews-llada-large-language-diffusion-models
 description: >-
-  LLaDA, an 8B parameter large language diffusion model, has been released and
-  shows competitive performance with autoregressive models like LLaMA 3 8B while
-  using significantly fewer training tokens. Additionally, StepFun AI launched
-  two major models: Step-Video-T2V, a 30B text-to-video model generating
-  coherent long videos, and Step-Audio-Chat, a 132B voice-to-voice model.
+  **LLaDA**, an 8B parameter large language diffusion model, has been released
+  and demonstrated competitive performance with autoregressive models like
+  **LLaMA3 8B**, despite being trained on *7x fewer tokens (2 trillion)* and
+  requiring significantly less compute. Additionally, **StepFun** unveiled two
+  major models: **Step-Video-T2V (30B)**, a text-to-video model generating
+  coherent videos up to *204 frames*, and **Step-Audio-Chat (132B)**, a
+  voice-to-voice multimodal model, both pushing the boundaries in their
+  respective modalities.
 tags:
-  - lla
-  - diffusion-model
-  - llama
-  - stepfun
-  - text-to-video
-  - voice-to-voice
-  - large-language-model
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

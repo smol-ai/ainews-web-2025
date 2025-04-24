@@ -4,20 +4,60 @@ title: 'Llama 3.1 Leaks: big bumps to 8B, minor bumps to 70b, and SOTA OSS 405b 
 date: '2024-07-23T01:12:50.598107Z'
 original_slug: ainews-llama-31-leaks
 description: >-
-  Llama 3.1 has leaked ahead of its official release, revealing major upgrades
-  including a 128k context length, multilingual text and code capabilities, and
-  significant performance improvements especially for the 8B and 70B models.
-  Meanwhile, GPT-4o mini launched as a cost-effective variant of GPT-4o,
-  offering strong benchmark performance at a fraction of the cost but showing
-  some reasoning weaknesses compared to Llama 3 8B.
+  Meta’s **Llama 3.1** model weights have leaked ahead of its official release,
+  revealing major upgrades including a *128k context length*, *405B dense
+  parameter* variant, and significant performance improvements on multilingual
+  and coding tasks. Meanwhile, **OpenAI** launched **GPT-4o mini**, a smaller,
+  cost-efficient version of GPT-4o priced *over 60% cheaper than GPT-3.5 Turbo*,
+  showing strong benchmark results but with some reasoning limitations.
 tags:
-  - llama
-  - llama-3-1
-  - multilingual
-  - context-length
+  - meta
+  - openai
+  - alibaba
+  - ollama
+  - llama-3.1
+  - llama-3-8b
+  - llama-3-70b
+  - llama-3-405b
   - gpt-4o
   - gpt-4o-mini
+  - qwen-2
+  - large-language-models
+  - model-leaks
+  - multilingual-models
+  - long-context
   - synthetic-data
+  - math-datasets
+  - reasoning-benchmarks
+  - cost-efficiency
+  - cancer-detection
+  - vram-management
+  - local-llms
+companies:
+  - meta
+  - openai
+  - alibaba
+  - ollama
+models:
+  - llama-3.1
+  - llama-3-8b
+  - llama-3-70b
+  - llama-3-405b
+  - gpt-4o
+  - gpt-4o-mini
+  - qwen-2
+topics:
+  - large-language-models
+  - model-leaks
+  - multilingual-models
+  - long-context
+  - synthetic-data
+  - math-datasets
+  - reasoning-benchmarks
+  - cost-efficiency
+  - cancer-detection
+  - vram-management
+  - local-llms
 ---
 
 

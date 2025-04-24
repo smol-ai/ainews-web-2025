@@ -4,24 +4,93 @@ title: 'Bespoke-Stratos + Sky-T1: The Vicuna+Alpaca moment for reasoning'
 date: '2025-01-23T07:08:27.294133Z'
 original_slug: ainews-bespoke-stratos-sky-t1-the-vicunaalpaca
 description: >-
-  Berkeley and USC researchers have advanced reasoning models by distilling
-  powerful reasoning capabilities into smaller models using supervised
-  finetuning (SFT) with relatively few training samples, exemplified by Sky-T1
-  and Bespoke Labs’ distillations of Qwen and DeepSeek-R1. Meanwhile, Google’s
-  Gemini 2.0 introduces a massive 1 million token context window and enhanced
-  multimodal reasoning, setting new benchmarks in math, science, and code
-  execution.
+  Berkeley/USC researchers have advanced reasoning models by distilling from
+  Qwen 2.5 and DeepSeek-R1, achieving state-of-the-art performance with minimal
+  data and cost, demonstrating that supervised finetuning (SFT) alone enables
+  strong reasoning without architectural changes. Meanwhile, **Google's Gemini
+  2.0** introduces a massive *1 million token* context window and code execution
+  support, pushing the frontier in multimodal reasoning and scientific
+  benchmarks.
 tags:
   - berkeley
   - usc
-  - qwen-2.5
-  - deepseek-r1
-  - supervised-finetuning
-  - reasoning
+  - deepseek
+  - bespoke-labs
   - google
+  - nvidia
+  - openai
+  - lmsys
+  - stanford
+  - sky-t1-32b-preview
+  - qwen-2.5-32b
+  - qwq-32b
+  - deepseek-r1
+  - bespoke-stratos-32b
+  - alpaca
+  - vicuna
   - gemini-2.0
-  - multimodal
-  - large-language-models
+  - gpt-4o-mini
+  - o1-preview
+  - o1-mini
+  - o3-mini
+  - sonnet
+  - modernbert
+  - eagle-2
+  - reasoning-models
+  - supervised-finetuning
+  - reinforcement-learning
+  - model-distillation
+  - multimodal-reasoning
+  - large-context-windows
+  - code-execution
+  - AI-infrastructure
+  - AI-agent-frameworks
+  - local-LLM-deployment
+  - AI-workshops
+  - AI-community
+  - AI-evaluation
+  - AI-compute-management
+companies:
+  - berkeley
+  - usc
+  - deepseek
+  - bespoke-labs
+  - google
+  - nvidia
+  - openai
+  - lmsys
+  - stanford
+models:
+  - sky-t1-32b-preview
+  - qwen-2.5-32b
+  - qwq-32b
+  - deepseek-r1
+  - bespoke-stratos-32b
+  - alpaca
+  - vicuna
+  - gemini-2.0
+  - gpt-4o-mini
+  - o1-preview
+  - o1-mini
+  - o3-mini
+  - sonnet
+  - modernbert
+  - eagle-2
+topics:
+  - reasoning-models
+  - supervised-finetuning
+  - reinforcement-learning
+  - model-distillation
+  - multimodal-reasoning
+  - large-context-windows
+  - code-execution
+  - AI-infrastructure
+  - AI-agent-frameworks
+  - local-LLM-deployment
+  - AI-workshops
+  - AI-community
+  - AI-evaluation
+  - AI-compute-management
 ---
 
 

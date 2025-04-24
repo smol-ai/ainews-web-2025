@@ -4,19 +4,66 @@ title: Zero to GPT in 1 Year
 date: '2024-04-12T23:27:50.881515Z'
 original_slug: ainews-zero-to-gpt-in-1-year
 description: >-
-  OpenAI released a significantly improved GPT-4 Turbo model in ChatGPT, which
-  has reclaimed the top spot on the Arena leaderboard with notable performance
-  gains across multiple benchmarks. Despite this, Claude Opus continues to
-  outperform the new GPT-4 Turbo in creativity and intelligence according to
-  user reports.
+  The new **GPT-4 Turbo** model has reclaimed the top spot on the Arena
+  leaderboard with significant performance improvements across multiple
+  benchmarks, while **Claude Opus** remains the leader in creativity and
+  intelligence. Meanwhile, **Mistral AI** released powerful open-source models
+  like Mixtral-8x22B and Zephyr 141B, gaining attention for fine-tuning
+  capabilities and dense MoE model conversion.
 tags:
   - openai
-  - gpt-4-turbo
-  - chatgpt
-  - claude
-  - language-models
-  - model-evaluation
+  - anthropic
   - mistral
+  - cohere
+  - hugging-face
+  - elastic
+  - nvidia
+  - langchain
+  - gpt-4-turbo
+  - claude-opus
+  - mixtral-8x22b
+  - mistral-22b-v0.1
+  - zephyr-141b-a35b
+  - rerank-3
+  - medical-mt5
+  - large-language-models
+  - model-evaluation
+  - open-source-models
+  - fine-tuning
+  - mixture-of-experts
+  - enterprise-search
+  - quantization
+  - transformer-optimization
+  - scaling-laws
+  - multimodal-agents
+companies:
+  - openai
+  - anthropic
+  - mistral
+  - cohere
+  - hugging-face
+  - elastic
+  - nvidia
+  - langchain
+models:
+  - gpt-4-turbo
+  - claude-opus
+  - mixtral-8x22b
+  - mistral-22b-v0.1
+  - zephyr-141b-a35b
+  - rerank-3
+  - medical-mt5
+topics:
+  - large-language-models
+  - model-evaluation
+  - open-source-models
+  - fine-tuning
+  - mixture-of-experts
+  - enterprise-search
+  - quantization
+  - transformer-optimization
+  - scaling-laws
+  - multimodal-agents
 ---
 
 

@@ -5,19 +5,86 @@ date: '2024-03-20T00:46:48.498362Z'
 original_slug: ainews-to-be-named-9615
 description: >-
   NVIDIA announced Project GR00T, a foundation model for humanoid robot learning
-  capable of understanding multimodal instructions, and revealed the DGX
-  Grace-Blackwell GB200 system that can train a 1.8 trillion parameter GPT-4
-  model in 90 days. Additionally, Grok-1, a 340 billion parameter open-source
-  language model, was released, gaining significant attention in the AI
-  community.
+  leveraging their tech stack, and revealed the DGX Grace-Blackwell GB200 system
+  capable of over 1 exaflop compute, able to train GPT-4’s *1.8 trillion*
+  parameter model in *90 days*. Additionally, Stability AI released Stable Video
+  3D, an open-source text-to-video generation tool that creates 3D meshes from
+  single images, marking a significant advancement in video generation
+  technology.
 tags:
   - nvidia
-  - project-gr00t
-  - dgx-grace-blackwell
+  - stability
+  - openai
+  - nous-research
+  - langchain
+  - xai
+  - anthropic
+  - perplexity
+  - unsloth
+  - cohere
   - gpt-4
+  - gpt-5
   - grok-1
-  - open-source
+  - stable-video-3d
+  - stable-cascade
+  - sdxl
+  - claude-3
+  - claude-3-opus
+  - llama-cpp
+  - command-r
+  - foundation-models
+  - humanoid-robotics
+  - multimodal-instructions
+  - high-performance-computing
   - large-language-models
+  - retrieval-augmented-generation
+  - text-to-video-generation
+  - model-benchmarking
+  - fine-tuning
+  - hardware-optimization
+  - photonic-computing
+  - open-source-models
+  - model-parameter-scaling
+  - AI-reasoning
+  - cultural-implications-of-LLMs
+companies:
+  - nvidia
+  - stability
+  - openai
+  - nous-research
+  - langchain
+  - xai
+  - anthropic
+  - perplexity
+  - unsloth
+  - cohere
+models:
+  - gpt-4
+  - gpt-5
+  - grok-1
+  - stable-video-3d
+  - stable-cascade
+  - sdxl
+  - claude-3
+  - claude-3-opus
+  - llama-cpp
+  - command-r
+topics:
+  - foundation-models
+  - humanoid-robotics
+  - multimodal-instructions
+  - high-performance-computing
+  - large-language-models
+  - retrieval-augmented-generation
+  - text-to-video-generation
+  - model-benchmarking
+  - fine-tuning
+  - hardware-optimization
+  - photonic-computing
+  - open-source-models
+  - model-parameter-scaling
+  - AI-reasoning
+  - cultural-implications-of-LLMs
 ---
 
 

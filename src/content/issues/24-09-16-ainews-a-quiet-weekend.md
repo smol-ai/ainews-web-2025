@@ -4,20 +4,18 @@ title: a quiet weekend
 date: '2024-09-17T00:28:09.999129Z'
 original_slug: ainews-a-quiet-weekend-8098
 description: >-
-  OpenAI released its new o1 model, which uses reinforcement learning and
-  chain-of-thought prompting to achieve strong reasoning performance, scoring
-  25/35 on IQ tests and surpassing most humans. Meanwhile, Google DeepMind
-  introduced DataGemma to link language models with real-world data and unveiled
-  ALOHA and DemoStart to improve robot dexterity using diffusion methods.
+  OpenAI’s newly released **o1** model demonstrates advanced reasoning
+  capabilities, surpassing most humans on IQ tests and matching performance with
+  **Llama 3.1 405B**, suggesting possible collaboration or shared techniques
+  between **Meta** and **OpenAI**. Meanwhile, **Google DeepMind** introduced
+  DataGemma to reduce hallucinations in language models and unveiled robotics
+  systems ALOHA and DemoStart, advancing robot dexterity.
 tags:
-  - openai
-  - o1
-  - reinforcement-learning
-  - chain-of-thought
-  - google
-  - deepmind
-  - datagemma
-  - robot-dexterity
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -6,20 +6,62 @@ title: >-
 date: '2024-11-06T06:22:40.424116Z'
 original_slug: ainews-tencents-hunyuan-large-claims-to-beat
 description: >-
-  Tencent’s new >300B parameter MoE model, pretrained on just 7T tokens with
-  1.5T synthetic data via Evol-Instruct, demonstrates notable data efficiency
-  and novel techniques like recycle routing and expert-specific learning rates,
-  though its restrictive license limits usage. Meanwhile, Anthropic’s Claude 3.5
-  Haiku launches on major platforms as a fast, intelligent but significantly
-  more expensive model, gaining praise for performance and user experience.
+  Tencent has released the **Hunyuan-Large**, a **389B parameter Mixture of
+  Experts (MoE)** open-weights model pretrained on *7 trillion tokens*,
+  including *1.5 trillion synthetic tokens* generated via Evol-Instruct,
+  showcasing notable data efficiency compared to models like **Llama 3**.
+  Meanwhile, **Anthropic** launched **Claude 3.5 Haiku**, touted as the fastest
+  and most intelligent cost-efficient model, though its price is now *10x
+  higher* than competitors such as **Google's Gemini Flash** and **OpenAI's
+  GPT-4o mini**.
 tags:
   - tencent
-  - moe
-  - evol-instruct
-  - synthetic-data
-  - claude
-  - claude-3.5-haiku
   - anthropic
+  - meta
+  - google
+  - openai
+  - hunyuan-large
+  - claude-3.5-haiku
+  - llama-3
+  - llama-3.1
+  - gpt-4o-mini
+  - gemini-flash
+  - mixture-of-experts
+  - synthetic-data
+  - large-language-models
+  - model-efficiency
+  - model-pricing
+  - open-weights-models
+  - model-benchmarking
+  - reinforcement-learning
+  - hackathons
+  - meeting-transcription
+  - model-evaluation
+companies:
+  - tencent
+  - anthropic
+  - meta
+  - google
+  - openai
+models:
+  - hunyuan-large
+  - claude-3.5-haiku
+  - llama-3
+  - llama-3.1
+  - gpt-4o-mini
+  - gemini-flash
+topics:
+  - mixture-of-experts
+  - synthetic-data
+  - large-language-models
+  - model-efficiency
+  - model-pricing
+  - open-weights-models
+  - model-benchmarking
+  - reinforcement-learning
+  - hackathons
+  - meeting-transcription
+  - model-evaluation
 ---
 
 

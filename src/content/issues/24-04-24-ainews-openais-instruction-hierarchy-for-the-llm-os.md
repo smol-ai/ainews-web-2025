@@ -4,20 +4,17 @@ title: OpenAI's Instruction Hierarchy for the LLM OS
 date: '2024-04-25T00:15:11.343128Z'
 original_slug: ainews-openai-reveals-its-instruction-hierarchy
 description: >-
-  OpenAI published a new paper introducing a privilege-level system for large
-  language models to better handle prompt injections and improve alignment,
-  boosting defense effectiveness by 20-30%. Additionally, Microsoft released the
-  lightweight Phi-3-mini model with promising benchmarks, and Apple open-sourced
-  the OpenELM language model family featuring an efficient training and
-  inference framework.
+  OpenAI published a novel paper introducing privilege levels for large language
+  models to nearly solve prompt injection attacks and improve defenses by
+  *20-30%*. Meanwhile, **Microsoft** released the lightweight **Phi-3-mini**
+  model with *4K* and *128K* context variants, matching **Llama 3 8B**
+  performance and enabling efficient deployment on devices like phones.
 tags:
-  - openai
-  - prompt-injection
-  - model-alignment
-  - microsoft
-  - phi-3-mini
-  - apple
-  - openelm
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

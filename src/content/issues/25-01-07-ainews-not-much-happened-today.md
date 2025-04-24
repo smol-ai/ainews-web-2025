@@ -4,19 +4,77 @@ title: not much happened today
 date: '2025-01-08T04:01:51.252491Z'
 original_slug: ainews-not-much-happened-today-7007
 description: >-
-  NVIDIA has unveiled Cosmos, an open-source video world model trained on 20
-  million hours of video, poised to transform robotics and autonomous driving.
-  Additionally, NVIDIA announced Digits, a $3,000 personal AI supercomputer
-  aimed at making advanced AI computing accessible to individuals and smaller
-  organizations.
+  **NVIDIA** has released **Cosmos**, an open-source video world model trained
+  on *20 million hours* of video, poised to transform robotics and autonomous
+  driving. Additionally, **NVIDIA** announced the **Digits**, a $*3,000*
+  personal AI supercomputer with *128GB* unified RAM, expected in *May 2025*,
+  which could revolutionize local AI model deployment such as **Llama**.
 tags:
   - nvidia
+  - hugging-face
+  - amd
+  - intel
+  - apple
+  - microsoft
+  - openai
   - cosmos
-  - video-world-model
+  - digits
+  - llama-70b
+  - llama-3.2-3b
+  - grace-blackwell
+  - grace-hopper-gh200
+  - grace-cpu-c1
+  - epcy-genoa
   - robotics
   - autonomous-driving
+  - video-world-model
+  - open-source
+  - local-ai
+  - personal-ai-supercomputer
+  - memory-bandwidth
+  - fine-tuning
+  - inference
+  - low-bit-quantization
+  - hardware-specs
+  - model-training
+  - ai-hype
+  - agi
+  - asi
+  - singularity
+companies:
+  - nvidia
+  - hugging-face
+  - amd
+  - intel
+  - apple
+  - microsoft
+  - openai
+models:
+  - cosmos
   - digits
-  - personal-supercomputer
+  - llama-70b
+  - llama-3.2-3b
+  - grace-blackwell
+  - grace-hopper-gh200
+  - grace-cpu-c1
+  - epcy-genoa
+topics:
+  - robotics
+  - autonomous-driving
+  - video-world-model
+  - open-source
+  - local-ai
+  - personal-ai-supercomputer
+  - memory-bandwidth
+  - fine-tuning
+  - inference
+  - low-bit-quantization
+  - hardware-specs
+  - model-training
+  - ai-hype
+  - agi
+  - asi
+  - singularity
 ---
 
 

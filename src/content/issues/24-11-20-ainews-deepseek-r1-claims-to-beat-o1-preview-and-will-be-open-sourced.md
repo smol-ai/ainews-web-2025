@@ -4,21 +4,75 @@ title: DeepSeek-R1 claims to beat o1-preview AND will be open sourced
 date: '2024-11-21T02:41:02.660253Z'
 original_slug: ainews-deepseek-r1-claims-to-beat-o1-preview-and
 description: >-
-  DeepSeek has released the R1-Lite-Preview model, an open reproduction of
-  OpenAI's o1 with better benchmark results on math tasks and a publicly
-  available demo, indicating promising advances in reasoning models.
-  Additionally, NVIDIA reported record Q3 revenue of $35.1 billion driven by
-  strong data center sales and new Hopper and Blackwell architectures, with
-  Blackwell delivering a 2.2x performance improvement over Hopper.
+  **DeepSeek** has released the **R1-Lite-Preview** model, which matches or
+  exceeds the performance of **OpenAI's o1-preview** on key math benchmarks and
+  offers transparent chain-of-thought reasoning, with plans to open-source the
+  full model soon. Meanwhile, **NVIDIA** reported a record **$35.1 billion**
+  revenue in Q3 2024 driven by strong data center sales and the launch of the
+  **Blackwell architecture**, which delivers a **2.2x performance improvement**
+  over its predecessor, Hopper.
 tags:
-  - tags
   - deepseek
-  - r1-lite
-  - o1
+  - openai
   - nvidia
+  - nous
+  - fireworks
+  - google
+  - togethercompute
+  - stepfun
+  - langchain
+  - deepseek-r1-lite
+  - o1-preview
+  - fireworks-f1
+  - nous-forge-reasoning-api
   - hopper
   - blackwell
-  - reasoning-models
+  - gpt-4o
+  - stepfun-1-trillion-param-moe
+  - large-language-models
+  - chain-of-thought-reasoning
+  - benchmark-results
+  - open-source-models
+  - reinforcement-learning
+  - data-center
+  - model-inference
+  - quantum-computing
+  - error-correction
+  - creative-writing
+  - prompt-engineering
+  - ai-game-development
+companies:
+  - deepseek
+  - openai
+  - nvidia
+  - nous
+  - fireworks
+  - google
+  - togethercompute
+  - stepfun
+  - langchain
+models:
+  - deepseek-r1-lite
+  - o1-preview
+  - fireworks-f1
+  - nous-forge-reasoning-api
+  - hopper
+  - blackwell
+  - gpt-4o
+  - stepfun-1-trillion-param-moe
+topics:
+  - large-language-models
+  - chain-of-thought-reasoning
+  - benchmark-results
+  - open-source-models
+  - reinforcement-learning
+  - data-center
+  - model-inference
+  - quantum-computing
+  - error-correction
+  - creative-writing
+  - prompt-engineering
+  - ai-game-development
 ---
 
 

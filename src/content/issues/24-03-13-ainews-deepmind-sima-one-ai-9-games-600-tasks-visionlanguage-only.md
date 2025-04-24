@@ -4,19 +4,77 @@ title: 'DeepMind SIMA: one AI, 9 games, 600 tasks, vision+language ONLY'
 date: '2024-03-14T01:07:46.703107Z'
 original_slug: ainews-deepmind-sima-one-ai-9-games-600-tasks
 description: >-
-  DeepMind unveiled SIMA, a generalist AI agent capable of performing 600
-  diverse tasks across nine 3D games using only screengrabs and natural language
-  instructions, achieving 34% task success compared to humans' 60%. This marks a
-  significant step beyond specialized AI systems by demonstrating broader
-  adaptability in virtual environments.
+  DeepMind unveiled **SIMA**, a generalist AI agent capable of performing *600*
+  short tasks across *9* different 3D games using only screengrabs and natural
+  language instructions, achieving *34%* success where humans solve *60%*.
+  Meanwhile, **Cognition Labs** introduced **Devin**, an autonomous AI software
+  engineer that sets new benchmarks on the SWE-bench coding challenge by
+  navigating developer tools and completing complex engineering tasks,
+  generating significant excitement in the AI community.
 tags:
   - deepmind
+  - cognition-labs
+  - anthropic
+  - meta
+  - nvidia
+  - cerebras
+  - cohere
+  - discoresearch
+  - mistral
+  - unsloth
   - sima
-  - generalist-agent
-  - 3d-environments
-  - multimodal-transformer
-  - gaming
-  - virtual-worlds
+  - devin
+  - claude-3-haiku
+  - command-r
+  - cs-3
+  - mistral-medium
+  - mixtral
+  - mistral-7b
+  - codellama-34b
+  - generalist-agents
+  - 3d-virtual-environments
+  - autonomous-software-engineering
+  - large-language-models
+  - multimodal-transformers
+  - ai-infrastructure
+  - gpu-clusters
+  - open-source-models
+  - benchmarking
+  - fine-tuning
+  - prompt-engineering
+companies:
+  - deepmind
+  - cognition-labs
+  - anthropic
+  - meta
+  - nvidia
+  - cerebras
+  - cohere
+  - discoresearch
+  - mistral
+  - unsloth
+models:
+  - sima
+  - devin
+  - claude-3-haiku
+  - command-r
+  - cs-3
+  - mistral-medium
+  - mixtral
+  - mistral-7b
+  - codellama-34b
+topics:
+  - generalist-agents
+  - 3d-virtual-environments
+  - autonomous-software-engineering
+  - large-language-models
+  - multimodal-transformers
+  - ai-infrastructure
+  - gpu-clusters
+  - open-source-models
+  - benchmarking
+  - fine-tuning
+  - prompt-engineering
 ---
 
 

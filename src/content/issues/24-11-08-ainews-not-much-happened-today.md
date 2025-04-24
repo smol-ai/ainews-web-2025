@@ -4,20 +4,88 @@ title: not much happened today
 date: '2024-11-08T23:16:39.940280Z'
 original_slug: ainews-not-much-happened-today-8530
 description: >-
-  Anthropic released Claude Sonnet 3.5, a desktop-capable AI model that allows
-  natural language commands for file management and coding tasks, while
-  Microsoft introduced Magentic-One, a generalist multi-agent system built on
-  the AutoGen framework with specialized agents for web and file operations.
-  Additionally, Sophia Yang announced new Batch and Moderation APIs offering 50%
-  cost reduction and enhanced harmful text detection.
+  **Qwen2.5**, a *7B parameter* model, is reported to perform on par with
+  **GPT-4 Turbo** on code benchmarks, with its *32B* variant competing against
+  **GPT-4-O mini** and **Claude Haiku*. Additionally, **Geekerwan** benchmarked
+  Qwen2.5 models from *7B to 72B* parameters on **Apple M4 Pro/Max** chips,
+  showing notable hardware performance insights compared to **RTX 4090** GPUs.
+  Meanwhile, **Llama.cpp** released a major UI update (version *b4048*)
+  featuring a modern frontend with Vue.js and DaisyUI, improving usability and
+  functionality.
 tags:
+  - openai
   - anthropic
-  - claude-sonnet-3.5
   - microsoft
-  - magentic-one
-  - autogen
-  - batch-api
-  - moderation-api
+  - mistral
+  - samba nova
+  - meta
+  - llama-index
+  - geekerwan
+  - apple
+  - ollama
+  - qwen2.5
+  - gpt-4-turbo
+  - gpt-4-o-mini
+  - claude-sonnet-3.5
+  - mistral-8b
+  - llama-cpp-b4048
+  - llama-3.1-405b
+  - gemma2-9b
+  - dimensionx
+  - dynamem
+  - large-language-models
+  - model-benchmarking
+  - multi-agent-systems
+  - model-quantization
+  - secret-management
+  - autonomous-agents
+  - retrieval-augmented-generation
+  - memory-management
+  - moderation-models
+  - ui-frontend-development
+  - hardware-performance
+  - code-generation
+  - safety-and-ethics
+  - web-scraping
+  - ai-hackathons
+companies:
+  - openai
+  - anthropic
+  - microsoft
+  - mistral
+  - samba nova
+  - meta
+  - llama-index
+  - geekerwan
+  - apple
+  - ollama
+models:
+  - qwen2.5
+  - gpt-4-turbo
+  - gpt-4-o-mini
+  - claude-sonnet-3.5
+  - mistral-8b
+  - llama-cpp-b4048
+  - llama-3.1-405b
+  - gemma2-9b
+  - dimensionx
+  - dynamem
+topics:
+  - large-language-models
+  - model-benchmarking
+  - multi-agent-systems
+  - model-quantization
+  - secret-management
+  - autonomous-agents
+  - retrieval-augmented-generation
+  - memory-management
+  - moderation-models
+  - ui-frontend-development
+  - hardware-performance
+  - code-generation
+  - safety-and-ethics
+  - web-scraping
+  - ai-hackathons
 ---
 
 

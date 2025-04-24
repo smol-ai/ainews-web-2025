@@ -4,6 +4,7 @@ import Container from "@components/Container.astro";
 import { SITE, HOME, SOCIALS } from "@consts";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
+import FilterToggle from "@components/FilterToggle.astro";
 import { getCollection } from "astro:content";
 
 // Add logging to see what's happening with content
@@ -65,14 +66,17 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
             <h2 class="font-semibold text-black dark:text-white">
               Last 30 days in AI
             </h2>
+            <FilterToggle id="filter-quiet-days" label="Hide 'not much happened today' posts" />
             <Link href="/issues"> See all issues </Link>
           </div>
+          
+          
           <div class="relative">
             <div class="absolute left-4 top-0 bottom-0 w-px bg-black/10 dark:bg-white/10 md:block hidden"></div>
             <ul class="not-prose flex flex-col gap-4 relative" id="timeline">
               {
                 allIssues.slice(0, ITEMS_PER_PAGE).map((post) => (
-                  <li class="relative md:pl-10">
+                  <li class="relative md:pl-10" data-post-title={post.data.title.toLowerCase()}>
                     <div class="absolute left-[0.8rem] top-[40%] w-2 h-2 rounded-full bg-black/50 dark:bg-white/50 md:block hidden"></div>
                     <ArrowCard entry={post} />
                   </li>
@@ -142,6 +146,22 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
 
 <script>
   let isLoading = false;
+  let filterQuietDays = false;
+
+  function applyFilters() {
+    const items = document.querySelectorAll('#timeline li');
+    
+    items.forEach(item => {
+      const postTitle = item.getAttribute('data-post-title') || '';
+      const shouldHide = filterQuietDays && postTitle.includes('not much happened today');
+      
+      if (shouldHide) {
+        item.classList.add('hidden');
+      } else {
+        item.classList.remove('hidden');
+      }
+    });
+  }
 
   function initLoadMore() {
     const loadMoreButton = document.getElementById('load-more');
@@ -164,7 +184,14 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
         // Add new items to the timeline
         data.issues.forEach((issue: any) => {
           const li = document.createElement('li');
-          li.className = 'relative pl-10';
+          li.className = 'relative md:pl-10';
+          li.setAttribute('data-post-title', issue.title.toLowerCase());
+          
+          // Apply filter if needed
+          if (filterQuietDays && issue.title.toLowerCase().includes('not much happened today')) {
+            li.classList.add('hidden');
+          }
+          
           li.innerHTML = `
             <div class="absolute left-[0.9rem] top-3 w-2 h-2 rounded-full bg-black/50 dark:bg-white/50"></div>
             <a href="/issues/${issue.id}" class="group relative block rounded-lg border border-black/15 px-4 py-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white">
@@ -207,9 +234,31 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
     });
   }
 
+  function initFilterToggle() {
+    // Load initial filter state from localStorage
+    const savedFilterState = localStorage.getItem('filter_filter-quiet-days');
+    filterQuietDays = savedFilterState === 'true';
+    
+    document.addEventListener('filter-toggle-change', (event: any) => {
+      if (event.detail.id === 'filter-quiet-days') {
+        filterQuietDays = event.detail.checked;
+        applyFilters();
+      }
+    });
+    
+    // Apply initial filtering
+    if (filterQuietDays) {
+      applyFilters();
+    }
+  }
+
   // Initialize on page load
   initLoadMore();
-
+  initFilterToggle();
+  
   // Re-initialize when navigating with View Transitions
-  document.addEventListener('astro:page-load', initLoadMore);
+  document.addEventListener('astro:page-load', () => {
+    initLoadMore();
+    initFilterToggle();
+  });
 </script>

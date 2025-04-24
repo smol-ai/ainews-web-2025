@@ -4,19 +4,17 @@ title: not much happened today
 date: '2025-01-04T07:58:51.225259Z'
 original_slug: ainews-not-much-happened-today-4979
 description: >-
-  The open-source PRIME model has achieved a 26.7% pass@1 rate, surpassing
-  GPT-4o in reasoning tasks, while Olmo 2 released a detailed tech report
-  showcasing one of the few remaining frontier fully open models. Additionally,
-  significant performance improvements were reported with Qwen 32B generating
-  over 40 tokens per second on an M4 Max.
+  **Olmo 2** released a detailed tech report showcasing one of the few remaining
+  frontier fully open models, continuing to impress amid many imitators of
+  **Open O1**. Additionally, the open-source model **PRIME** achieved a notable
+  **26.7% pass@1** on reasoning benchmarks, surpassing **GPT-4o**, highlighting
+  advances in language model reasoning capabilities.
 tags:
-  - open-source
-  - prime
-  - gpt-4o
-  - olmo-2
-  - qwen-32b
-  - model-performance
-  - reasoning
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

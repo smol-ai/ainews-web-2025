@@ -4,20 +4,18 @@ title: OpenAI Sora Turbo and Sora.com
 date: '2024-12-10T02:21:42.861414Z'
 original_slug: ainews-openai-sora-turbo-and-soracom
 description: >-
-  OpenAI launched Sora Turbo, a text-to-video generation feature for ChatGPT
-  Plus and Pro users, offering up to 500 fast video generations monthly for Pro
-  users, though access is restricted in most of Europe and the UK due to
-  regulatory issues. Meanwhile, Google announced a significant quantum computing
-  breakthrough with its Willow chip, potentially enabling commercially relevant
-  quantum applications.
+  OpenAI launched **Sora Turbo**, a text-to-video generation feature for ChatGPT
+  Plus and Pro users, offering *50* to *500* monthly fast generations depending
+  on the subscription tier, though it faces regional restrictions in Europe and
+  the UK due to regulatory issues. Meanwhile, **Nvidia** is under investigation
+  by **China** for suspected anti-monopoly violations, highlighting global
+  scrutiny of its dominant position in the GPU market.
 tags:
-  - openai
-  - sora
-  - chatgpt
-  - text-to-video
-  - google
-  - quantum-computing
-  - willow-chip
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

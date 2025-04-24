@@ -4,20 +4,75 @@ title: One Year of Latent Space
 date: '2024-02-24T01:05:00.357006Z'
 original_slug: ainews-one-year-of-latent-space
 description: >-
-  Google’s Gemini 1.5 image generator faced significant backlash for biased
-  outputs, particularly its failure to accurately depict white individuals and
-  historic events, sparking a heated debate on AI ethics and rushed deployment.
-  Meanwhile, AI’s expanding role in creative fields was highlighted through
-  discussions on text-to-3D tools aiding smaller game developers and innovative
-  uses in artistic direction.
+  Google’s **Gemini 1.5** image generator sparked significant controversy over
+  bias issues, particularly its failure to accurately represent white
+  individuals and historic events, leading to community debates on AI ethics and
+  rushed deployment. Meanwhile, discussions in AI development communities
+  highlighted challenges in fine-tuning models like **Gemma 7B** and
+  **Mistral-next**, with shared solutions for performance optimization and
+  emerging trends in hardware acceleration and hallucination reduction.
 tags:
   - google
+  - openai
+  - stability
+  - lm-studio
+  - mistral
+  - jetbrains
+  - tesla
+  - laion
   - gemini-1.5
-  - image-generation
+  - gemma-7b
+  - mistral-next
+  - opus-v1
+  - orca-2-13b
+  - nous-hermes-2-dpo-7b
+  - stable-diffusion-3
+  - ai-ethics
   - bias
-  - ethics
+  - image-generation
+  - fine-tuning
+  - model-optimization
+  - hallucination
   - game-development
   - text-to-3d
+  - hardware-acceleration
+  - roleplay
+  - coding
+  - vulnerability-research
+  - local-models
+  - gpu-acceleration
+companies:
+  - google
+  - openai
+  - stability
+  - lm-studio
+  - mistral
+  - jetbrains
+  - tesla
+  - laion
+models:
+  - gemini-1.5
+  - gemma-7b
+  - mistral-next
+  - opus-v1
+  - orca-2-13b
+  - nous-hermes-2-dpo-7b
+  - stable-diffusion-3
+topics:
+  - ai-ethics
+  - bias
+  - image-generation
+  - fine-tuning
+  - model-optimization
+  - hallucination
+  - game-development
+  - text-to-3d
+  - hardware-acceleration
+  - roleplay
+  - coding
+  - vulnerability-research
+  - local-models
+  - gpu-acceleration
 ---
 
 

@@ -4,25 +4,18 @@ title: X.ai Grok 3 and Mira Murati's Thinking Machines
 date: '2025-02-18T23:54:10.975706Z'
 original_slug: ainews-xai-grok-3-and-mira-muratis-thinking
 description: >-
-  Grok 3 has launched with strong benchmark performance, outperforming models
-  like Gemini 2 Pro and GPT-4o, and achieving top ranks in reasoning and coding
-  tasks. Additionally, Mira Murati’s new frontier lab, Thinking Machines, aims
-  to focus on collaborative, multimodal, and safe AI research, recruiting key
-  talent from ChatGPT and other leading labs.
+  **xAI's Grok-3** model launch is the top story, with Grok-3 achieving #1
+  rankings in multiple benchmarks, outperforming competitors like Gemini 2 Pro
+  and GPT-4o, and demonstrating strong reasoning and coding capabilities powered
+  by extensive GPU training. Additionally, **Mira Murati's Thinking Machines**
+  lab was publicly announced, focusing on collaborative, multimodal AI research
+  with an emphasis on safety and alignment.
 tags:
-  - grok
-  - grok-3
-  - grok-3-mini
-  - gemini-2-pro
-  - gpt-4o
-  - mira-murati
-  - thinking-machines
-  - frontier-labs
-  - reasoning
-  - coding
-  - multimodality
-  - safety
-  - alignment
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

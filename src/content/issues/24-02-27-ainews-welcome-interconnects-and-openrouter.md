@@ -4,22 +4,96 @@ title: Welcome Interconnects and OpenRouter
 date: '2024-02-27T20:03:47.279106Z'
 original_slug: ainews-welcome-interconnects-and-openrouter
 description: >-
-  Mistral AI's new Mistral Large model is gaining attention for its competitive
-  performance and cost-effectiveness compared to OpenAI's GPT-4, alongside
-  active community discussions on model optimization techniques like GPTQ and
-  QLORA for efficient loading and reduced VRAM usage. Additionally, there is
-  growing interest in AI applications for role-playing and story-writing that
-  require managing consistent timelines and character emotions.
+  **Mistral AI**'s new **Mistral Large** model is gaining attention for its
+  cost-effective performance compared to **OpenAI GPT-4**, alongside active
+  community discussions on model quantization techniques like **GPTQ** and
+  **QLORA** to optimize VRAM usage. Additionally, Spain announced a new
+  Spanish-language large language model, marking a significant development for
+  Spanish AI applications.
 tags:
   - mistral
-  - mistral-large
   - openai
+  - polymind
+  - qwen
+  - perplexity
+  - llamaindex
+  - google
+  - darpa
+  - piper
+  - mistral-large
+  - mistral-7b
+  - mixtral-8x7b
+  - miqu
+  - gguf-quantized
   - gpt-4
-  - model-optimization
+  - orca-2-13b
+  - whiterabbitneo-13b
+  - rwkv
+  - mamba
+  - solar-10.7b
+  - structlm
+  - model-comparisons
+  - model-quantization
   - gptq
   - qlora
   - role-playing
   - story-writing
+  - code-clarity
+  - ai-assisted-decompilation
+  - asynchronous-summarization
+  - multi-gpu-setup
+  - wsl-networking
+  - text-to-speech
+  - mirostat-parameters
+  - context-length-extension
+  - ring-attention
+  - benchmark-transparency
+  - terms-of-service
+  - structured-data
+  - open-source-models
+companies:
+  - mistral
+  - openai
+  - polymind
+  - qwen
+  - perplexity
+  - llamaindex
+  - google
+  - darpa
+  - piper
+models:
+  - mistral-large
+  - mistral-7b
+  - mixtral-8x7b
+  - miqu
+  - gguf-quantized
+  - gpt-4
+  - orca-2-13b
+  - whiterabbitneo-13b
+  - rwkv
+  - mamba
+  - solar-10.7b
+  - structlm
+topics:
+  - model-comparisons
+  - model-quantization
+  - gptq
+  - qlora
+  - role-playing
+  - story-writing
+  - code-clarity
+  - ai-assisted-decompilation
+  - asynchronous-summarization
+  - multi-gpu-setup
+  - wsl-networking
+  - text-to-speech
+  - mirostat-parameters
+  - context-length-extension
+  - ring-attention
+  - benchmark-transparency
+  - terms-of-service
+  - structured-data
+  - open-source-models
 ---
 
 

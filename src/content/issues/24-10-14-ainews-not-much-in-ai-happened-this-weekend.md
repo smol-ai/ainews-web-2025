@@ -4,19 +4,87 @@ title: Not much (in AI) happened this weekend
 date: '2024-10-14T22:52:37.794603Z'
 original_slug: ainews-not-much-in-ai-happened-this-weekend
 description: >-
-  SpaceX's successful catch of the Starship rocket marks a major milestone in
-  space exploration, showcasing the company's exceptional organizational
-  efficiency in executing long-term engineering projects without bureaucracy.
-  Meanwhile, OpenAI's new "edit this area" feature for image generation has
-  garnered enthusiasm for enhancing creative brainstorming.
+  SpaceX's successful catch of the Starship rocket was widely celebrated as a
+  major milestone in space exploration, with praise for the company's
+  exceptional organizational efficiency from **Soumith Chintala**. In AI,
+  **OpenAI**'s new "edit this area" feature for image generation impressed **Sam
+  Altman**, while **xAI** rapidly deployed *100K H100 GPUs* in *19 days*,
+  highlighting intense infrastructure growth. Additionally, the open-source
+  **Ichigo-Llama3.1** system enables local real-time voice AI conversations with
+  sub-second latency, combining Whisper, Llama, and Bark models on consumer
+  hardware like the RTX 4090.
 tags:
-  - spacex
-  - starship
   - openai
-  - image-generation
+  - spacex
+  - xai
+  - meta
+  - engineere darts
+  - amd
+  - nvidia
+  - harvard
+  - llama-3.1-8b
+  - llama-3.2-1b
+  - llama-3.2-3b
+  - ichigo-llama3.1
+  - min-ichigo-llama3.2-3b
+  - dinov2
+  - whisper-turbo
+  - movie-gen
+  - movie-gen-audio
+  - ameca
+  - azi
+  - mlc-llm
   - space-exploration
-  - organizational-efficiency
-  - long-context-models
+  - rocket-recovery
+  - image-generation
+  - long-context-llms
+  - real-time-voice-ai
+  - gpu-inference
+  - open-source-llms
+  - ai-infrastructure
+  - ai-ethics
+  - privacy
+  - humanoid-robots
+  - transcription
+  - gpu-hardware
+  - ai-research-labs
+companies:
+  - openai
+  - spacex
+  - xai
+  - meta
+  - engineere darts
+  - amd
+  - nvidia
+  - harvard
+models:
+  - llama-3.1-8b
+  - llama-3.2-1b
+  - llama-3.2-3b
+  - ichigo-llama3.1
+  - min-ichigo-llama3.2-3b
+  - dinov2
+  - whisper-turbo
+  - movie-gen
+  - movie-gen-audio
+  - ameca
+  - azi
+  - mlc-llm
+topics:
+  - space-exploration
+  - rocket-recovery
+  - image-generation
+  - long-context-llms
+  - real-time-voice-ai
+  - gpu-inference
+  - open-source-llms
+  - ai-infrastructure
+  - ai-ethics
+  - privacy
+  - humanoid-robots
+  - transcription
+  - gpu-hardware
+  - ai-research-labs
 ---
 
 

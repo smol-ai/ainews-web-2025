@@ -4,22 +4,92 @@ title: Gemma 2 tops /r/LocalLlama vibe check
 date: '2024-07-17T22:57:14.252944Z'
 original_slug: ainews-gemma-2-tops-rlocalllama-vibe-check
 description: >-
-  Gemma 2, particularly the 9B model, is currently regarded as the best local
-  LLM for its size, outperforming larger models like Llama 8B and even Llama 70B
-  in some tasks, especially in multilingual capabilities. Additionally, Andrej
-  Karpathy announced Eureka Labs, an AI+Education startup aiming to create an
-  AI-native school with AI Teaching Assistants, launching with a free
-  undergraduate course on training AI models.
+  Gemma 2's 9B model continues to dominate discussions on best local LLMs for
+  its size, praised for speed, multilingual capabilities, and outperforming
+  larger models like Llama 8B and even Llama 70B in non-English tasks.
+  Meanwhile, **Andrej Karpathy** announced **Eureka Labs**, an AI+Education
+  startup launching the free undergraduate course **LLM101n** to teach AI
+  training fundamentals, signaling a major push in AI-driven education.
 tags:
   - gemma
-  - gemma-2
   - llama
-  - llama-3
   - mistral
-  - andrej-karpathy
+  - apple
   - eureka-labs
-  - education
-  - llm101n
+  - anthropic
+  - scale
+  - cohers
+  - internllm
+  - gemma-2-9b
+  - gemma-2-27b
+  - llama-3-70b
+  - mistral-7b
+  - mistral-instruct-v0.3-7b
+  - phi-3
+  - qwen-72b
+  - mathstral-7b
+  - codestral-mamba-7b
+  - smollm-135m
+  - smollm-360m
+  - smollm-1.7b
+  - dclm-baseline-7b
+  - dclm-baseline-7b-8k
+  - claude-android
+  - local-llms
+  - model-benchmarks
+  - multilingual-llms
+  - education-technology
+  - ai-education
+  - open-source-models
+  - code-generation
+  - synthetic-data
+  - transformer-architecture
+  - agent-native-llms
+  - context-length
+  - licensing
+  - model-training
+  - ai-curriculum
+companies:
+  - gemma
+  - llama
+  - mistral
+  - apple
+  - eureka-labs
+  - anthropic
+  - scale
+  - cohers
+  - internllm
+models:
+  - gemma-2-9b
+  - gemma-2-27b
+  - llama-3-70b
+  - mistral-7b
+  - mistral-instruct-v0.3-7b
+  - phi-3
+  - qwen-72b
+  - mathstral-7b
+  - codestral-mamba-7b
+  - smollm-135m
+  - smollm-360m
+  - smollm-1.7b
+  - dclm-baseline-7b
+  - dclm-baseline-7b-8k
+  - claude-android
+topics:
+  - local-llms
+  - model-benchmarks
+  - multilingual-llms
+  - education-technology
+  - ai-education
+  - open-source-models
+  - code-generation
+  - synthetic-data
+  - transformer-architecture
+  - agent-native-llms
+  - context-length
+  - licensing
+  - model-training
+  - ai-curriculum
 ---
 
 

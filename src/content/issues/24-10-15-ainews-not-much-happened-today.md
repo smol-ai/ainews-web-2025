@@ -4,20 +4,50 @@ title: not much happened today
 date: '2024-10-15T21:33:05.037085Z'
 original_slug: ainews-not-much-happened-today-7393
 description: >-
-  Decagon secured $100 million in funding shortly after Sierra's $4 billion
-  round, underscoring the rapid growth and strong investor confidence in
-  vertical AI agents as the future of the industry. Additionally, Mira Murati,
-  former OpenAI CTO, is launching a new venture with VC backing and talent
-  recruitment from OpenAI, signaling increasing competition in the AI startup
-  ecosystem.
+  Vertical AI agents continue to attract massive investment, highlighted by
+  **Decagon's** recent $100 million funding round following **Sierra's** $4
+  billion raise, signaling strong market confidence in specialized AI solutions.
+  Additionally, ex-**OpenAI** CTO **Mira Murati** is launching a new venture
+  backed by VC funds and talent recruitment from OpenAI, underscoring increasing
+  competition and innovation in the AI startup ecosystem.
 tags:
-  - vertical
-  - saas
-  - agents
   - decagon
   - sierra
-  - mira-murati
   - openai
+  - mira-murati
+  - llama-3.2-1b
+  - llama-3.1-70b
+  - llama-3.2-90b
+  - alphafold2
+  - vertical-agents
+  - funding
+  - startup-competition
+  - protein-structure-prediction
+  - large-language-models
+  - open-source-vs-closed-source
+  - hardware-requirements
+  - real-time-ai-gameplay
+  - self-supervised-learning
+companies:
+  - decagon
+  - sierra
+  - openai
+  - mira-murati
+models:
+  - llama-3.2-1b
+  - llama-3.1-70b
+  - llama-3.2-90b
+  - alphafold2
+topics:
+  - vertical-agents
+  - funding
+  - startup-competition
+  - protein-structure-prediction
+  - large-language-models
+  - open-source-vs-closed-source
+  - hardware-requirements
+  - real-time-ai-gameplay
+  - self-supervised-learning
 ---
 
 

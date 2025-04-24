@@ -5,18 +5,17 @@ date: '2024-11-01T07:04:02.532618Z'
 original_slug: ainews-the-ai-search-wars-have-begun-searchgpt
 description: >-
   ChatGPT has launched its long-anticipated search functionality across all
-  platforms, featuring a fine-tuned GPT-4o model and integration with various
-  partners, though it excludes New York Times content due to legal disputes.
-  Meanwhile, Claude 3.5 Sonnet has set a new benchmark by achieving 49% on the
-  SWE-bench Verified coding test, surpassing previous state-of-the-art results.
+  platforms using a fine-tuned version of **GPT-4o**, coinciding with
+  **Gemini**’s rollout of Search Grounding after delays. Meanwhile, **Claude 3.5
+  Sonnet** achieved a new state-of-the-art 49% score on the SWE-bench Verified
+  coding benchmark, surpassing previous records and highlighting ongoing
+  advances in AI model performance.
 tags:
-  - openai
-  - chatgpt
-  - gpt-4o
-  - search
-  - anthropic
-  - claude-3.5
-  - benchmark
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

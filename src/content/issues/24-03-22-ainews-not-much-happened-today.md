@@ -4,20 +4,79 @@ title: not much happened today
 date: '2024-03-22T23:55:31.644920Z'
 original_slug: ainews-not-much-happened-today-2070
 description: >-
-  Discussions on Reddit's /r/LocalLlama highlight community efforts to fine-tune
-  and optimize large language models like LLaMA 2, including hardware setups for
-  running 70B parameter models locally and techniques for improving
-  retrieval-augmented generation (RAG) performance. Additionally, users explore
-  extending LLaMA models with vision capabilities and generating large-scale
-  synthetic training data.
+  **Open-Sora 1.0** is an open-source text-to-video model with full training
+  data and checkpoints released, while **Sakana AI Labs** introduced an
+  evolutionary model merging technique that optimizes parameters and layer
+  arrangements to create specialized models including Japanese LLMs with math
+  reasoning and vision capabilities. Additionally, **RAFT** (Retrieval Augmented
+  Fine-Tuning) improves RAG performance by fine-tuning LLMs on domain-specific
+  documents, outperforming standard RAG approaches.
 tags:
-  - reddit
-  - local-llama
-  - llama-2
+  - open-sora
+  - sakana
+  - meta
+  - suno
+  - cohere
+  - runway
+  - musixmatch
+  - open-sora-1.0
+  - llama-2-7b
+  - llava-next-1.6
+  - qwen-1.5
+  - suno-v3
+  - mamba
+  - command-r
+  - musicgen-melody
+  - starcoder2
+  - seggpt
+  - open-source-models
+  - text-to-video
+  - evolutionary-model-merging
+  - retrieval-augmented-generation
   - fine-tuning
-  - rag
-  - synthetic-data
-  - model-optimization
+  - differential-privacy
+  - synthetic-data-generation
+  - vision-language-models
+  - compute-trends
+  - hardware-acceleration
+  - large-language-models
+  - music-generation
+  - insurance-automation
+  - lyric-video-creation
+companies:
+  - open-sora
+  - sakana
+  - meta
+  - suno
+  - cohere
+  - runway
+  - musixmatch
+models:
+  - open-sora-1.0
+  - llama-2-7b
+  - llava-next-1.6
+  - qwen-1.5
+  - suno-v3
+  - mamba
+  - command-r
+  - musicgen-melody
+  - starcoder2
+  - seggpt
+topics:
+  - open-source-models
+  - text-to-video
+  - evolutionary-model-merging
+  - retrieval-augmented-generation
+  - fine-tuning
+  - differential-privacy
+  - synthetic-data-generation
+  - vision-language-models
+  - compute-trends
+  - hardware-acceleration
+  - large-language-models
+  - music-generation
+  - insurance-automation
+  - lyric-video-creation
 ---
 
 

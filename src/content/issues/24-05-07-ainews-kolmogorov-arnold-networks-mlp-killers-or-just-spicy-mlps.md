@@ -4,20 +4,71 @@ title: 'Kolmogorov-Arnold Networks: MLP killers or just spicy MLPs?'
 date: '2024-05-07T22:47:14.398752Z'
 original_slug: ainews-kolmogorov-arnold-networks-mlp-killers-or
 description: >-
-  A recent theory paper on Kolmogorov-Arnold Networks (KANs) claimed they
-  outperform MLPs in interpretability and efficiency, but follow-up analysis
-  showed KANs can be mathematically rearranged into equivalent MLPs, sparking
-  debate on their true novelty. Meanwhile, OpenAI has adopted the C2PA metadata
-  standard to certify AI-generated images, achieving ~98% accuracy in detecting
-  DALL-E 3 outputs, enhancing content authenticity verification.
+  A recent theory paper on **Kolmogorov-Arnold Networks (KANs)** by Max
+  Tegmark’s grad student **Ziming Liu** sparked excitement for potentially
+  outperforming MLPs in interpretability and efficiency, but was quickly
+  challenged as equivalent to MLPs after a week, illustrating rapid academic
+  debate. Meanwhile, **Microsoft** is developing a massive *500B* parameter
+  model called **MAI-1** to compete with **OpenAI** and **Google**, signaling
+  intensifying competition in large language models, alongside positive
+  reception for Microsoft’s **Copilot Workspace** and OpenAI’s adoption of the
+  **C2PA** standard for AI image provenance.
 tags:
+  - openai
+  - microsoft
+  - google
+  - anthropic
+  - alembic
   - kan
   - mlp
-  - interpretability
-  - openai
+  - gpt-2
+  - gpt-4
+  - gpt-4.5
+  - gpt-5
+  - mai-1
   - dall-e-3
-  - c2pa
-  - image-detection
+  - deeps-eek-v2
+  - llama-3
+  - large-language-models
+  - model-interpretability
+  - model-efficiency
+  - safety-testing
+  - image-provenance
+  - mixture-of-experts
+  - scaling-laws
+  - hallucination-mitigation
+  - medical-ai
+  - developer-tools
+  - emergent-abilities
+companies:
+  - openai
+  - microsoft
+  - google
+  - anthropic
+  - alembic
+models:
+  - kan
+  - mlp
+  - gpt-2
+  - gpt-4
+  - gpt-4.5
+  - gpt-5
+  - mai-1
+  - dall-e-3
+  - deeps-eek-v2
+  - llama-3
+topics:
+  - large-language-models
+  - model-interpretability
+  - model-efficiency
+  - safety-testing
+  - image-provenance
+  - mixture-of-experts
+  - scaling-laws
+  - hallucination-mitigation
+  - medical-ai
+  - developer-tools
+  - emergent-abilities
 ---
 
 

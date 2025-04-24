@@ -4,20 +4,71 @@ title: 'RouteLLM: RIP Martian? (Plus: AINews Structured Summaries update)'
 date: '2024-07-02T00:23:08.479510Z'
 original_slug: ainews-to-be-named-5628
 description: >-
-  LMSys has introduced RouteLLM, an open-source router framework that uses
-  preference data from Chatbot Arena to train model routers, achieving over 85%
-  cost reductions on benchmarks while maintaining 95% of GPT-4’s performance.
-  Additionally, the Gemma 2 model family is gaining attention for delivering
-  near Llama 3 70B performance at significantly smaller sizes, highlighting
-  advances in efficient large language models.
+  LMSys has introduced **RouteLLM**, an open-source router framework trained on
+  preference data from Chatbot Arena that achieves up to *85% cost reductions*
+  compared to GPT-4 while maintaining *95% of its performance*, outperforming
+  existing commercial routing solutions by *40%*. Additionally, the **Gemma 2**
+  model family is gaining recognition, with **Gemma 2 27B** being praised as the
+  best open model at *2.5x smaller* than competitors and approaching **Llama 3
+  70B** performance.
 tags:
   - lmsys
+  - mistral
+  - deepseek
+  - openai
+  - langchain
+  - eureka-health
+  - nbc
   - routellm
-  - chatbot-arena
-  - cost-efficiency
+  - gemma-2-27b
+  - gemma-2-9b
+  - llama-3-70b
   - gpt-4
-  - gemma-2
-  - llama-3
+  - block-transformer
+  - q-star
+  - hipporag
+  - model-routing
+  - preference-data
+  - cost-efficiency
+  - large-language-models
+  - model-benchmarks
+  - inference-throughput
+  - multi-step-reasoning
+  - long-term-memory
+  - ai-generated-content
+  - ai-applications
+  - ai-humor
+  - scaling-limits
+companies:
+  - lmsys
+  - mistral
+  - deepseek
+  - openai
+  - langchain
+  - eureka-health
+  - nbc
+models:
+  - routellm
+  - gemma-2-27b
+  - gemma-2-9b
+  - llama-3-70b
+  - gpt-4
+  - block-transformer
+  - q-star
+  - hipporag
+topics:
+  - model-routing
+  - preference-data
+  - cost-efficiency
+  - large-language-models
+  - model-benchmarks
+  - inference-throughput
+  - multi-step-reasoning
+  - long-term-memory
+  - ai-generated-content
+  - ai-applications
+  - ai-humor
+  - scaling-limits
 ---
 
 

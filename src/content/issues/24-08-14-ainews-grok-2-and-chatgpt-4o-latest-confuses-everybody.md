@@ -4,19 +4,18 @@ title: Grok 2! and ChatGPT-4o-latest confuses everybody
 date: '2024-08-15T00:51:40.557390Z'
 original_slug: ainews-grok-2-and-chatgpt-4o-latest-confuses
 description: >-
-  OpenAI quietly released a new GPT-4o model in ChatGPT that outperforms
-  competitors across multiple benchmarks, reclaiming the top spot on Lmsys
-  arena. Meanwhile, X.ai launched Grok 2, a premium model integrated with the
-  uncensored Flux.1, surpassing Claude 3.5 Sonnet and earlier GPT-4o versions,
-  with plans for an Enterprise API release soon.
+  OpenAI quietly released a new **GPT-4o** model in ChatGPT, which has reclaimed
+  the #1 spot on the LMSYS Arena leaderboard, outperforming **Gemini 1.5 Pro
+  August** in multiple categories. Meanwhile, **xAI** launched **Grok 2** at
+  11pm PT, beating **Claude 3.5 Sonnet** and previous GPT-4o versions, with
+  plans to release Grok 2 and Grok 2 Mini on their Enterprise API platform later
+  this month.
 tags:
-  - openai
-  - gpt-4o
-  - x-ai
-  - grok-2
-  - flux-1
-  - large-language-models
-  - model-benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

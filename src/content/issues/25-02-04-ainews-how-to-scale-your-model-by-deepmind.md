@@ -4,20 +4,93 @@ title: How To Scale Your Model, by DeepMind
 date: '2025-02-05T06:59:23.438232Z'
 original_slug: ainews-how-to-scale-your-model-by-deepmind
 description: >-
-  Researchers released an extensive "How To Scale Your Model" textbook based on
-  internal GDM documentation, providing deep insights into transformer
-  architectures, inference optimization, and high-performance computing
-  concepts. Additionally, the humanoid robotics model "ASAP," which combines
-  real-world and simulation data to enable fluid motions inspired by famous
-  athletes, was open-sourced along with its paper and code.
+  **Google DeepMind** released an extensive "little textbook" on scaling AI
+  models, providing insights into Transformer architectures and high-performance
+  computing concepts. Meanwhile, **Hugging Face** launched an AI app store
+  featuring *400,000* apps and *2,000* new daily additions, emphasizing a
+  distributed future for AI applications.
 tags:
-  - gdm
-  - transformers
-  - model-scaling
-  - humanoid-robotics
+  - google
+  - deepmind
+  - hugging-face
+  - openai
+  - replit
+  - anthropic
+  - california-state-university
+  - deepseek
+  - llama-index
+  - vectara
+  - github
+  - aws
   - asap
+  - self-moa
+  - grpo
+  - qwen-0.5
+  - mistral
+  - chatgpt
+  - chatgpt-edu
+  - model-scaling
+  - transformers
+  - high-performance-computing
+  - humanoid-robotics
   - sim2real
-  - open-source
+  - mixture-of-agents
+  - large-language-models
+  - bias
+  - synthetic-data
+  - rust
+  - machine-learning-libraries
+  - ai-app-store
+  - mobile-apps
+  - ai-agents
+  - ai-education
+  - ai-conferences
+  - agi-safety
+  - frontier-safety-framework
+  - ai-ethics
+  - ai-hiring
+companies:
+  - google
+  - deepmind
+  - hugging-face
+  - openai
+  - replit
+  - anthropic
+  - california-state-university
+  - deepseek
+  - llama-index
+  - vectara
+  - github
+  - aws
+models:
+  - asap
+  - self-moa
+  - grpo
+  - qwen-0.5
+  - mistral
+  - chatgpt
+  - chatgpt-edu
+topics:
+  - model-scaling
+  - transformers
+  - high-performance-computing
+  - humanoid-robotics
+  - sim2real
+  - mixture-of-agents
+  - large-language-models
+  - bias
+  - synthetic-data
+  - rust
+  - machine-learning-libraries
+  - ai-app-store
+  - mobile-apps
+  - ai-agents
+  - ai-education
+  - ai-conferences
+  - agi-safety
+  - frontier-safety-framework
+  - ai-ethics
+  - ai-hiring
 ---
 
 

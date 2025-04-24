@@ -4,20 +4,60 @@ title: 'Meta Llama 3.3: 405B/Nova Pro performance at 70B price'
 date: '2024-12-06T22:44:07.580241Z'
 original_slug: ainews-meta-llama-33-405bnova-pro-performance-at
 description: >-
-  Meta AI released Llama 3.3, a 70B parameter model matching the performance of
-  their previous 405B model using a new alignment process and online
-  reinforcement learning techniques, significantly improving efficiency and
-  cost-effectiveness. Meanwhile, OpenAI previewed Reinforcement Fine-Tuning,
-  enabling users to create expert domain-specific models with limited data,
+  Meta AI has released **Llama 3.3 70B**, a model matching the performance of
+  their previous 405B model while requiring significantly less compute,
+  showcasing improvements in reasoning, coding, and multilingual support.
+  Meanwhile, **OpenAI** announced Reinforcement Fine-Tuning (RFT), enabling
+  organizations to build expert domain-specific models with limited data,
   currently available in alpha for researchers and enterprises.
 tags:
   - meta
-  - llama-3.3
-  - reinforcement-learning
   - openai
-  - fine-tuning
+  - google
+  - amazon
+  - hugging-face
+  - llama-3.3-70b
+  - llama-3.1-405b
+  - o1
+  - gemini-exp-1206
+  - gpt-4o
+  - sonnet
+  - qwen-2.5-72b
   - model-alignment
-  - online-rl
+  - reinforcement-learning
+  - fine-tuning
+  - large-language-models
+  - multilingual-models
+  - code-generation
+  - benchmarking
+  - cost-performance-ratio
+  - open-source-models
+  - document-processing
+companies:
+  - meta
+  - openai
+  - google
+  - amazon
+  - hugging-face
+models:
+  - llama-3.3-70b
+  - llama-3.1-405b
+  - o1
+  - gemini-exp-1206
+  - gpt-4o
+  - sonnet
+  - qwen-2.5-72b
+topics:
+  - model-alignment
+  - reinforcement-learning
+  - fine-tuning
+  - large-language-models
+  - multilingual-models
+  - code-generation
+  - benchmarking
+  - cost-performance-ratio
+  - open-source-models
+  - document-processing
 ---
 
 

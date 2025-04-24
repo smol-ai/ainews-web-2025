@@ -5,19 +5,17 @@ date: '2024-12-18T01:43:51.256632Z'
 type: archival
 original_slug: ainews-o1-api-4o4o-mini-in-realtime-api-webrtc
 description: >-
-  OpenAI launched the updated o1 API featuring vision inputs, function calling,
-  structured outputs, and a new reasoning_effort parameter, reducing reasoning
-  tokens by 60% compared to previous versions. Additionally, WebRTC integration
-  has improved the RealTime API with cheaper pricing and longer session limits,
-  enhancing real-time AI application development.
+  OpenAI launched the updated **o1 API** featuring vision inputs, function
+  calling, and a new reasoning_effort parameter, achieving *60% fewer reasoning
+  tokens* than previous versions. Additionally, the **Falcon 3** family of
+  models was released, trained on *14 trillion tokens* with sizes ranging from
+  *1B to 10B* parameters, marking a significant open-source milestone.
 tags:
-  - openai
-  - o1
-  - realtime-api
-  - webrtc
-  - function-calling
-  - vision
-  - reasoning-effort
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

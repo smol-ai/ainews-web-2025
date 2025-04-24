@@ -4,19 +4,110 @@ title: OpenAI beats Anthropic to releasing Speculative Decoding
 date: '2024-11-05T02:51:39.237539Z'
 original_slug: ainews-openai-beats-anthropic-to-releasing
 description: >-
-  OpenAI has introduced a new speculative decoding API that significantly speeds
-  up response times and file edits, offering about a 50% efficiency improvement
-  over previous methods. This advancement positions OpenAI strongly in the
-  competitive landscape of fast AI model inference, complementing recent
-  developments from Cursor, Fireworks, and Anthropic.
+  Open-source audio model **Hertz-Dev** achieves real-time conversational AI
+  performance with *120ms* latency on a single **RTX 4090**, outperforming
+  **GPT-4o** and approaching human conversational gaps. Additionally, voice
+  cloning advances highlight fine-tuned **F5-TTS** and alternatives like **RVC**
+  and **XTTS-2** for high-quality self-hosted speech synthesis with *10-20
+  minutes* of reference audio.
 tags:
+  - hertz-dev
+  - coqui
+  - microsoft
+  - amazon
+  - nvidia
   - openai
-  - speculative-decoding
-  - model-inference
-  - cursor
-  - fireworks
   - anthropic
-  - api-launch
+  - etched
+  - runway
+  - figure
+  - boston-dynamics
+  - elevenlabs
+  - osmo
+  - physical-intelligence
+  - meta
+  - hertz-dev-8.5b
+  - hertz-dev-70b
+  - coqui-tts
+  - microsoft-azure
+  - amazon-polly
+  - gpt-4o
+  - f5-tts
+  - rvc
+  - xtts-2
+  - gemma-9b-q6
+  - gpt-sovits
+  - maskcgt
+  - openvoice
+  - llama
+  - olmo
+  - mistral
+  - amd-1b
+  - real-time-audio
+  - text-to-speech
+  - voice-cloning
+  - latency-benchmarking
+  - conversational-ai
+  - open-source-models
+  - speech-synthesis
+  - model-inference
+  - gpu-acceleration
+  - fine-tuning
+  - multimodal-llms
+  - retrieval-augmented-generation
+  - ai-research-labs
+  - ai-safety
+  - ai-governance
+companies:
+  - hertz-dev
+  - coqui
+  - microsoft
+  - amazon
+  - nvidia
+  - openai
+  - anthropic
+  - etched
+  - runway
+  - figure
+  - boston-dynamics
+  - elevenlabs
+  - osmo
+  - physical-intelligence
+  - meta
+models:
+  - hertz-dev-8.5b
+  - hertz-dev-70b
+  - coqui-tts
+  - microsoft-azure
+  - amazon-polly
+  - gpt-4o
+  - f5-tts
+  - rvc
+  - xtts-2
+  - gemma-9b-q6
+  - gpt-sovits
+  - maskcgt
+  - openvoice
+  - llama
+  - olmo
+  - mistral
+  - amd-1b
+topics:
+  - real-time-audio
+  - text-to-speech
+  - voice-cloning
+  - latency-benchmarking
+  - conversational-ai
+  - open-source-models
+  - speech-synthesis
+  - model-inference
+  - gpu-acceleration
+  - fine-tuning
+  - multimodal-llms
+  - retrieval-augmented-generation
+  - ai-research-labs
+  - ai-safety
+  - ai-governance
 ---
 
 

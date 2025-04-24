@@ -4,19 +4,63 @@ title: not much happened today
 date: '2024-07-31T07:04:15.405372Z'
 original_slug: ainews-to-be-named-5098
 description: >-
-  Meta released Segment Anything Model 2 (SAM 2), a powerful real-time object
-  segmentation model for images and videos, accompanied by a significantly
-  larger annotated dataset and open-source code. Additionally, Jeremy Howard
-  introduced FastHTML, a new Python framework for building interactive web apps
-  with integrated features and easy deployment.
+  Meta has released **Segment Anything Model 2 (SAM 2)**, a powerful open-source
+  model for real-time object segmentation in images and videos, accompanied by a
+  significantly larger dataset and improved capabilities including 3D and
+  multi-modal prompting. Additionally, the **Llama 3.1 405B** model demonstrated
+  superior long-context performance with advanced quantization techniques,
+  outperforming smaller models in practical tasks and maintaining coherence near
+  its *128K* token limit.
 tags:
   - meta
-  - segment-anything-model
-  - sam-2
+  - openai
+  - canva
+  - scale
+  - apple
+  - activision-blizzard
+  - klarna
+  - segment-anything-model-2
+  - llama-3.1-405b
+  - llama-3.1-70b
+  - gemini-1.5-pro
+  - emu
+  - midjourney-v6.1
   - object-segmentation
-  - fasthtml
-  - python
-  - web-development
+  - image-segmentation
+  - video-segmentation
+  - large-language-models
+  - quantization
+  - adversarial-robustness
+  - open-source
+  - long-context
+  - web-development-framework
+  - gpu-resources
+companies:
+  - meta
+  - openai
+  - canva
+  - scale
+  - apple
+  - activision-blizzard
+  - klarna
+models:
+  - segment-anything-model-2
+  - llama-3.1-405b
+  - llama-3.1-70b
+  - gemini-1.5-pro
+  - emu
+  - midjourney-v6.1
+topics:
+  - object-segmentation
+  - image-segmentation
+  - video-segmentation
+  - large-language-models
+  - quantization
+  - adversarial-robustness
+  - open-source
+  - long-context
+  - web-development-framework
+  - gpu-resources
 ---
 
 

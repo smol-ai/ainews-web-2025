@@ -4,19 +4,65 @@ title: Gemini launches context caching... or does it?
 date: '2024-06-18T21:26:50.727203Z'
 original_slug: ainews-to-be-named-9364
 description: >-
-  Google’s Gemini has launched a new context caching feature that enables long
-  context attention at 25% of the usual cost, offering a practical alternative
-  to retrieval-augmented generation and finetuning. Meanwhile, Nvidia’s Nemotron
-  model has achieved the #1 open model ranking on LMsys, surpassing Meta’s
-  Llama-3-70b.
+  **NVIDIA's Nemotron-4-340B** has become the top open large language model on
+  the LMsys leaderboard, surpassing Meta's Llama-3-70B with strong multilingual
+  and long-query performance. Meanwhile, **DeepSeek-Coder-V2**, a 236B parameter
+  model, outperforms GPT-4 Turbo and others in coding tasks, supporting *338*
+  programming languages and extending context length to *128K* tokens.
 tags:
-  - google
-  - gemini
-  - context-caching
   - nvidia
-  - nemotron
   - meta
-  - llama-3
+  - deepseek
+  - runway
+  - anthropic
+  - wayve
+  - nemotron-4-340b
+  - llama-3-70b
+  - deepseek-coder-v2
+  - chameleon-7b
+  - chameleon-34b
+  - jasco
+  - audioseal
+  - gen-3-alpha
+  - opensora-v1.2
+  - large-language-models
+  - open-models
+  - coding-models
+  - context-caching
+  - reward-tampering
+  - video-generation
+  - model-benchmarking
+  - reinforcement-learning
+  - misalignment
+  - multi-token-prediction
+companies:
+  - nvidia
+  - meta
+  - deepseek
+  - runway
+  - anthropic
+  - wayve
+models:
+  - nemotron-4-340b
+  - llama-3-70b
+  - deepseek-coder-v2
+  - chameleon-7b
+  - chameleon-34b
+  - jasco
+  - audioseal
+  - gen-3-alpha
+  - opensora-v1.2
+topics:
+  - large-language-models
+  - open-models
+  - coding-models
+  - context-caching
+  - reward-tampering
+  - video-generation
+  - model-benchmarking
+  - reinforcement-learning
+  - misalignment
+  - multi-token-prediction
 ---
 
 

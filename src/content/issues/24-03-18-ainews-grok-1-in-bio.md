@@ -4,20 +4,20 @@ title: Grok-1 in Bio
 date: '2024-03-19T00:07:45.515064Z'
 original_slug: ainews-grok-1-in-bio
 description: >-
-  xAI has released Grok-1, a 314 billion parameter Mixture-of-Experts model
-  available under an open-source license, sparking discussions on its
-  architecture, performance, and finetuning challenges compared to other large
-  models like Mixtral and Miqu. Meanwhile, Anthropic's Claude continues to
-  impress users with its consistent ethical reasoning and engaging
-  conversational abilities.
+  The release of **Grok-1**, a 314 billion parameter Mixture-of-Experts model
+  from **xAI**, has generated significant attention due to its open-source
+  availability under the Apache 2.0 license and its large compute requirements
+  (up to *124GB VRAM*). While its performance is currently on par with smaller
+  models like Mixtral, the community is closely watching for future improvements
+  and fine-tuning efforts. Additionally, **Anthropic’s Claude** continues to
+  impress users with its coherent moral reasoning and self-consistent
+  conversational histories.
 tags:
-  - xai
-  - grok-1
-  - mixture-of-experts
-  - open-source
-  - model-performance
-  - anthropic
-  - claude
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

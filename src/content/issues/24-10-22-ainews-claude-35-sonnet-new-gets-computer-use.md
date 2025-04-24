@@ -4,20 +4,18 @@ title: Claude 3.5 Sonnet (New) gets Computer Use
 date: '2024-10-23T02:08:12.665635Z'
 original_slug: ainews-claude-35-sonnet-new-gets-computer-use
 description: >-
-  Anthropic released upgraded Claude 3.5 models, Sonnet and Haiku, with Sonnet
-  showing significant improvements in coding benchmarks, outperforming previous
-  versions and competitors on several coding tasks. Additionally, Anthropic
-  introduced a new Computer Use API enabling models to interact with computer
-  interfaces via vision, demonstrating promising but still limited performance
-  compared to humans.
+  Anthropic released upgraded Claude 3.5 models, **Sonnet** and **Haiku**, with
+  significant improvements in coding performance, including a jump from *33.4%*
+  to *49.0%* on SWE-bench Verified, surpassing previous versions. Meanwhile, the
+  open-source speech-to-text model **Moonshine** by **Hugging Face** and
+  **Sanchit Gandhi** offers *30x* faster transcription than Whisper on CPU,
+  optimized for low-resource devices like Raspberry Pi.
 tags:
-  - anthropic
-  - claude
-  - sonnet-3.5
-  - haiku-3.5
-  - coding
-  - computer-use
-  - vision-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

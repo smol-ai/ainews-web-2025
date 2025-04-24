@@ -4,17 +4,85 @@ title: A quiet weekend
 date: '2024-04-29T22:10:15.446084Z'
 original_slug: ainews-a-quiet-weekend
 description: >-
-  Yann LeCun predicts that within 10-15 years, AI assistants will be primarily
-  accessed through AR glasses and bracelets instead of smartphones.
-  Additionally, the Dolphin-2.9 model based on Llama-3 has been released,
-  potentially addressing quality issues from earlier versions.
+  **Yann LeCun** predicts a shift to AR interfaces with AI assistants within
+  *10-15 years*, while the **Dolphin-2.9 model** based on **Llama-3** was
+  released, potentially fixing previous quality issues. Additionally, **The
+  Coca-Cola Company** and **Microsoft** announced a *5-year* partnership to
+  accelerate cloud and generative AI initiatives.
 tags:
   - yann-lecun
+  - lmsys
+  - nous-research
+  - uber
+  - coca-cola
+  - microsoft
+  - openai
+  - mistral
+  - facebook
+  - gpt2-chatbot
+  - llama-3
+  - dolphin-2.9
+  - pixart-sigma
+  - stable-diffusion-3.0
+  - llama-3-70b
+  - exl2
+  - gguf
+  - pllava
+  - halo-nerf
+  - fp6
   - augmented-reality
   - ai-assistants
-  - dolphin-2.9
+  - large-language-models
+  - model-quantization
+  - generative-ai
+  - cloud-computing
+  - prompt-engineering
+  - video-captioning
+  - neural-rendering
+  - turing-test
+  - ai-regulation
+  - ai-billing-issues
+  - model-inference
+  - emergent-abilities
+  - vision-language-models
+companies:
+  - yann-lecun
+  - lmsys
+  - nous-research
+  - uber
+  - coca-cola
+  - microsoft
+  - openai
+  - mistral
+  - facebook
+models:
+  - gpt2-chatbot
   - llama-3
-  - model-release
+  - dolphin-2.9
+  - pixart-sigma
+  - stable-diffusion-3.0
+  - llama-3-70b
+  - exl2
+  - gguf
+  - pllava
+  - halo-nerf
+  - fp6
+topics:
+  - augmented-reality
+  - ai-assistants
+  - large-language-models
+  - model-quantization
+  - generative-ai
+  - cloud-computing
+  - prompt-engineering
+  - video-captioning
+  - neural-rendering
+  - turing-test
+  - ai-regulation
+  - ai-billing-issues
+  - model-inference
+  - emergent-abilities
+  - vision-language-models
 ---
 
 

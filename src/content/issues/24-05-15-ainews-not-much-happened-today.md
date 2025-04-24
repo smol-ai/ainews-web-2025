@@ -4,19 +4,21 @@ title: Not much happened today
 date: '2024-05-15T21:20:08.374758Z'
 original_slug: ainews-to-be-named-3669
 description: >-
-  Ilya Sutskever is stepping down as OpenAI's Chief Scientist after nearly a
-  decade, with Jakub Pachocki named as his successor to lead the company’s AGI
-  efforts. Meanwhile, Google unveiled several AI advancements at I/O, including
-  Gemini 1.5 Pro with a 2 million token context window, the Project Astra AI
-  assistant prototype, and the new Imagen 3 text-to-image model.
+  OpenAI is undergoing major leadership changes with **Ilya Sutskever** stepping
+  down as Chief Scientist after nearly a decade, succeeded by **Jakub
+  Pachocki**, while **Jan Leike** also resigned amid internal tensions.
+  Meanwhile, **GPT-4o** has emerged as OpenAI’s new flagship model, topping
+  leaderboards with improved efficiency, though some users report limitations in
+  reasoning and coding compared to competitors. At **Google I/O**, **Google
+  DeepMind** unveiled advanced models including **Gemini 1.5 Pro**, **Imagen
+  3**, and the video generation model **Veo**, showcasing significant multimodal
+  AI advancements.
 tags:
-  - openai
-  - ilya-sutskever
-  - jakub-pachocki
-  - google
-  - gemini-1.5-pro
-  - project-astra
-  - imagen-3
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

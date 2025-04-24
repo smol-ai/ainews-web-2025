@@ -4,22 +4,18 @@ title: not much happened today
 date: '2024-09-20T01:00:56.202964Z'
 original_slug: ainews-not-much-happened-today-7878
 description: >-
-  OpenAI's new o1-preview and o1-mini models have taken top spots in the Chatbot
-  Arena, excelling in math, coding, and technical tasks, while Qwen 2.5's 72B
-  model also showed strong performance close to GPT-4o. Additionally, Microsoft
-  released GRIN, a MoE model with efficient parameter usage, and Hugging Face
-  enhanced its integration with Google Cloud Vertex AI for easier deployment of
-  open-source models.
+  OpenAI’s **o1-preview** and **o1-mini** models have debuted on Chatbot Arena,
+  with o1-preview ranking first overall, particularly excelling in math, hard
+  prompts, and coding tasks. Meanwhile, **Kyutai Labs** released **Moshi v0.1**,
+  a 7.6B parameter open-source end-to-end speech-to-speech model trained on
+  *3,000 hours* of data, notable for its low latency and multi-voice variants,
+  marking a significant advancement in conversational audio AI.
 tags:
-  - openai
-  - o1-preview
-  - o1-mini
-  - qwen
-  - microsoft
-  - grin
-  - hugging-face
-  - google-cloud
-  - vertex-ai
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

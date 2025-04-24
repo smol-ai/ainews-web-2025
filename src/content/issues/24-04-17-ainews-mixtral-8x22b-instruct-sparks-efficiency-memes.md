@@ -4,19 +4,115 @@ title: Mixtral 8x22B Instruct sparks efficiency memes
 date: '2024-04-17T21:02:34.918866Z'
 original_slug: ainews-mixtral-8x22b-instruct-defines-frontier
 description: >-
-  Mistral released the Mixtral 8x22B instruct-tuned model, which achieves
-  superior performance with only 39 billion active parameters, outperforming
-  larger models while supporting multilingual capabilities and a 64k context
-  window. Additionally, Google plans to invest over $100 billion in AI,
-  signaling massive ongoing commitments from major tech companies.
+  Mistral released the instruct-tuned **Mixtral 8x22B** model, which achieves
+  strong multilingual performance with *39B active parameters* and a *64k
+  context window*, available under an Apache 2.0 license on Hugging Face.
+  Meanwhile, **Stability AI** launched **Stable Diffusion 3** and **Stable
+  Diffusion 3 Turbo** featuring the new Multimodal Diffusion Transformer
+  architecture, promising faster and more reliable image generation, with
+  community anticipation around self-hosting options.
 tags:
   - mistral
-  - mixtral
-  - instruct-tuning
-  - multilingual
-  - large-context
+  - databricks
   - google
-  - ai-investment
+  - ai21
+  - deepmind
+  - microsoft
+  - intel
+  - softbank
+  - abu-dhabi-fund
+  - nvidia
+  - huggingface
+  - snowflake
+  - neeva
+  - langchain
+  - llama-index
+  - stability
+  - unsloth
+  - wizardlm
+  - boston-dynamics
+  - mixtral-8x22b
+  - zamba-7b
+  - codeqwen1.5-7b
+  - codeqwen1.5-7b-chat
+  - groundx
+  - stable-diffusion-3
+  - stable-diffusion-3-turbo
+  - wizardlm-2-8x22b
+  - wizardlm-2-70b
+  - wizardlm-2-7b
+  - mistral7b
+  - sdxl
+  - instruct-tuning
+  - multilingual-language-models
+  - context-window
+  - retrieval-augmented-generation
+  - embedding-models
+  - open-source-licensing
+  - ai-investments
+  - deepfake-legislation
+  - ai-chip-technology
+  - ai-companions
+  - code-generation
+  - humanoid-robots
+  - multimodal-diffusion
+  - model-compliance
+  - model-takedown
+  - self-hosting
+  - model-performance
+  - long-context-modeling
+companies:
+  - mistral
+  - databricks
+  - google
+  - ai21
+  - deepmind
+  - microsoft
+  - intel
+  - softbank
+  - abu-dhabi-fund
+  - nvidia
+  - huggingface
+  - snowflake
+  - neeva
+  - langchain
+  - llama-index
+  - stability
+  - unsloth
+  - wizardlm
+  - boston-dynamics
+models:
+  - mixtral-8x22b
+  - zamba-7b
+  - codeqwen1.5-7b
+  - codeqwen1.5-7b-chat
+  - groundx
+  - stable-diffusion-3
+  - stable-diffusion-3-turbo
+  - wizardlm-2-8x22b
+  - wizardlm-2-70b
+  - wizardlm-2-7b
+  - mistral7b
+  - sdxl
+topics:
+  - instruct-tuning
+  - multilingual-language-models
+  - context-window
+  - retrieval-augmented-generation
+  - embedding-models
+  - open-source-licensing
+  - ai-investments
+  - deepfake-legislation
+  - ai-chip-technology
+  - ai-companions
+  - code-generation
+  - humanoid-robots
+  - multimodal-diffusion
+  - model-compliance
+  - model-takedown
+  - self-hosting
+  - model-performance
+  - long-context-modeling
 ---
 
 

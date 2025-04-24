@@ -4,22 +4,71 @@ title: 'Common Corpus: 2T Open Tokens with Provenance'
 date: '2024-11-14T01:54:53.118250Z'
 original_slug: ainews-common-corpus-2t-open-tokens-with
 description: >-
-  Pleais released an updated Common Corpus dataset on Huggingface, now
-  containing over 2 trillion tokens of multilingual, permissibly licensed
-  content with detailed provenance and OCR correction via their OCRonos-Vintage
-  model. Additionally, Alibaba Cloud announced Qwen2.5-Coder, a new code-focused
-  large language model emphasizing advanced coding capabilities, competing with
-  Claude 3.5 Sonnet in code generation performance.
+  **Pleais** released an updated **Common Corpus** dataset on **Huggingface**,
+  now containing over *2 trillion tokens* of permissibly licensed multilingual
+  content with detailed provenance, significantly expanding from the initial
+  *500 billion tokens* released in March. Meanwhile, **Alibaba Cloud** announced
+  **Qwen2.5-Coder**, a code-focused large language model with enhanced coding
+  capabilities and extended context windows up to *128K tokens*, though some
+  usability challenges remain.
 tags:
   - pleais
-  - common-corpus
-  - dataset
-  - ocronos-vintage
-  - ocr
   - alibaba-cloud
+  - deepseek
+  - langchain
+  - openai
+  - snowflake
+  - common-corpus
+  - ocronos-vintage
   - qwen2.5-coder
   - claude-3.5-sonnet
+  - janusflow-1.3b
+  - llama-ocr
+  - hermes-3-70b
+  - large-language-models
+  - dataset-release
+  - provenance
+  - multilingual-datasets
   - code-generation
+  - context-windows
+  - quantization
+  - multimodal-learning
+  - prompt-engineering
+  - ocr-correction
+  - developer-tools
+  - healthcare-ai
+  - enterprise-ai
+  - model-scaling
+companies:
+  - pleais
+  - alibaba-cloud
+  - deepseek
+  - langchain
+  - openai
+  - snowflake
+models:
+  - common-corpus
+  - ocronos-vintage
+  - qwen2.5-coder
+  - claude-3.5-sonnet
+  - janusflow-1.3b
+  - llama-ocr
+  - hermes-3-70b
+topics:
+  - large-language-models
+  - dataset-release
+  - provenance
+  - multilingual-datasets
+  - code-generation
+  - context-windows
+  - quantization
+  - multimodal-learning
+  - prompt-engineering
+  - ocr-correction
+  - developer-tools
+  - healthcare-ai
+  - enterprise-ai
+  - model-scaling
 ---
 
 

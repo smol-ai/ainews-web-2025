@@ -4,19 +4,17 @@ title: not much happened today
 date: '2025-02-08T04:22:33.821856Z'
 original_slug: ainews-not-much-happened-today-7786
 description: >-
-  DeepSeek-R1 has surpassed OpenAI's top projects in GitHub stars within three
-  weeks, signaling a major shift toward open-source AI prominence. Meanwhile,
-  Google's AlphaGeometry2 achieved gold-medalist level performance by solving
-  84% of International Math Olympiad geometry problems from the past 25 years,
-  marking a significant advancement in AI reasoning capabilities.
+  DeepSeek-R1 has surpassed OpenAI in GitHub stars for their top projects within
+  just *three weeks*, signaling a major shift in open-source AI influence.
+  Meanwhile, Google's AlphaGeometry2 achieved an *84% solving rate* on
+  International Math Olympiad geometry problems over the past *25 years*,
+  demonstrating significant advancements in AI reasoning capabilities.
 tags:
-  - deepseek
-  - openai
-  - github
-  - alphageometry2
-  - google
-  - reasoning
-  - olympiad-geometry
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

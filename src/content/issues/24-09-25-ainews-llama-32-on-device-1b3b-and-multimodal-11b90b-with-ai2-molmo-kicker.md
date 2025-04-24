@@ -4,19 +4,18 @@ title: 'Llama 3.2: On-device 1B/3B, and Multimodal 11B/90B (with AI2 Molmo kicke
 date: '2024-09-25T23:54:30.322812Z'
 original_slug: ainews-llama-32-on-device-1b3b-and-multimodal
 description: >-
-  Meta has released Llama 3.2, introducing multimodal versions with 3B and 20B
-  vision adapters and new 128k-context 1B and 3B models that compete with Gemma
-  2 and Phi 3.5, highlighting collaborations with Qualcomm, Mediatek, and Arm.
-  Additionally, AI2 launched the Molmo 72B and 7B multimodal models, which
-  outperform Llama 3.2 in vision tasks.
+  Meta released the multimodal **Llama 3.2** models, including new 3B and 20B
+  vision adapters and innovative 128k-context 1B and 3B models, showcasing
+  strong performance and promising on-device collaborations with Qualcomm,
+  Mediatek, and Arm. Meanwhile, **OpenAI** began rolling out an advanced voice
+  model for ChatGPT Plus and Team users, featuring lower latency, interruptible
+  responses, and personalized memory, enhancing conversational fluidity.
 tags:
-  - meta
-  - llama
-  - llama-3-2
-  - multimodal
-  - molmo
-  - ai2
-  - context-length
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

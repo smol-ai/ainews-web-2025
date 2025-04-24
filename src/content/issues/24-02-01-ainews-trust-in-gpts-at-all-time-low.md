@@ -4,20 +4,71 @@ title: Trust in GPTs at all time low
 date: '2024-02-02T03:25:24.640203Z'
 original_slug: ainews-trust-in-gpts-at-all-time-low
 description: >-
-  GPTs and the GPT store have faced harsh criticism due to inefficient context
-  management that reduces system prompt adherence, highlighting a need for
-  better visibility and control over context usage. Meanwhile, the AI community
-  is actively discussing new model developments such as Llama3, Mistral Medium,
-  and the leaked Miqu 70B model, alongside advancements in fine-tuning and model
-  merging techniques.
+  The AI community is critically evaluating **OpenAI**'s GPTs and GPT store,
+  highlighting significant issues with context management and system prompt
+  adherence, as noted by voices like Nick Dobos. Meanwhile, the leaked 70B model
+  **Miqu** (linked to **Mistral Medium**) and its successful dequantization to
+  f16 have sparked active discussions about model performance, fine-tuning
+  challenges, and merging techniques across platforms like Hugging Face and
+  Discord communities.
 tags:
   - openai
-  - gpt
-  - gpt-store
-  - llama3
   - mistral
-  - miqu
+  - nous-research
+  - bittensor
+  - hughface
+  - lm-studio
+  - gpt
+  - llama3
+  - mistral-medium
+  - llava-1.6
+  - miqu-1-70b
+  - miquella-120b-gguf
+  - harmony-4x7b-bf16
+  - smaug-34b-v0.1
+  - tinyllama
+  - llama-v2
+  - codellama
+  - context-management
+  - retrieval-augmented-generation
+  - model-fine-tuning
   - model-merging
+  - dequantization
+  - local-llm-hardware
+  - dataset-release
+  - api-vs-local-performance
+  - open-source-models
+  - memory-management
+companies:
+  - openai
+  - mistral
+  - nous-research
+  - bittensor
+  - hughface
+  - lm-studio
+models:
+  - gpt
+  - llama3
+  - mistral-medium
+  - llava-1.6
+  - miqu-1-70b
+  - miquella-120b-gguf
+  - harmony-4x7b-bf16
+  - smaug-34b-v0.1
+  - tinyllama
+  - llama-v2
+  - codellama
+topics:
+  - context-management
+  - retrieval-augmented-generation
+  - model-fine-tuning
+  - model-merging
+  - dequantization
+  - local-llm-hardware
+  - dataset-release
+  - api-vs-local-performance
+  - open-source-models
+  - memory-management
 ---
 
 

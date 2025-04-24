@@ -4,20 +4,62 @@ title: Mistral Large 2 + RIP Mistral 7B, 8x7B, 8x22B
 date: '2024-07-24T23:44:31.500890Z'
 original_slug: ainews-mistral-large-2
 description: >-
-  Meta has officially released the Llama 3.1 series, including the 405B, 70B,
-  and 8B parameter models, featuring extensive improvements in pre- and
-  post-training with up to 128K context length. Meanwhile, Mistral has launched
-  Mistral Large 2, a 123B parameter open-weight model with a strong focus on
-  code generation, math performance, and enhanced reasoning, offering a 128K
-  context window and outperforming GPT-4o in function calling.
+  **Meta** has officially released the **Llama 3.1** series, including the
+  **Llama-3.1-8B** model with *128K context*, showcasing significant
+  improvements in reasoning and performance, though some users find it
+  underwhelming compared to competitors like **Mistral Nemo**. Meanwhile,
+  **Mistral** has launched **Mistral Large 2**, a *123B parameter* open-weight
+  model with a *128K context window*, focusing on enhanced code generation, math
+  performance, and reasoning capabilities, marking a shift from their earlier
+  API-only Large 1 model.
 tags:
   - meta
-  - llama
-  - llama-3.1
   - mistral
+  - openai
+  - llama-3.1-8b
+  - llama-3.1-70b
+  - llama-3-405b
   - mistral-large-2
-  - codegen
-  - long-context
+  - mistral-nemo
+  - gpt-4
+  - gpt-4-turbo
+  - claude-2
+  - gemma
+  - gpt-3.5
+  - large-language-models
+  - context-length
+  - open-source
+  - model-benchmarks
+  - code-generation
+  - reasoning
+  - synthetic-data
+  - regulatory-risk
+  - model-deprecation
+companies:
+  - meta
+  - mistral
+  - openai
+models:
+  - llama-3.1-8b
+  - llama-3.1-70b
+  - llama-3-405b
+  - mistral-large-2
+  - mistral-nemo
+  - gpt-4
+  - gpt-4-turbo
+  - claude-2
+  - gemma
+  - gpt-3.5
+topics:
+  - large-language-models
+  - context-length
+  - open-source
+  - model-benchmarks
+  - code-generation
+  - reasoning
+  - synthetic-data
+  - regulatory-risk
+  - model-deprecation
 ---
 
 

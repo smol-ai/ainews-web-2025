@@ -4,19 +4,19 @@ title: not much happened today
 date: '2025-04-02T06:14:34.413400Z'
 original_slug: ainews-not-much-happened-today-2943
 description: >-
-  OpenAI plans to release its first open-weight language model since GPT-2
-  within the next few months, without usage restrictions even for services
-  exceeding 700 million monthly active users, signaling a potential new era of
-  AI openness. This move follows DeepSeek's launch of the open-source R1 model,
-  challenging perceptions of AI development progress in China.
+  **OpenAI** plans to release its first open-weight language model since
+  **GPT-2** in the next few months, removing usage restrictions even for
+  services exceeding *700 million* monthly active users, signaling a major shift
+  towards openness in AI. Meanwhile, a recent study revealed that top LLMs like
+  O3-MINI and Claude 3.7 scored below *5%* on the *2025 USA Mathematical
+  Olympiad*, highlighting significant limitations in current models’ logical
+  reasoning and creativity.
 tags:
-  - openai
-  - gpt-2
-  - open-weight
-  - deepseek
-  - r1-model
-  - open-source
-  - language-model
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,20 +4,86 @@ title: 'Every 7 Months: The Moore''s Law for Agent Autonomy'
 date: '2025-03-20T01:59:24.171505Z'
 original_slug: ainews-every-7-months-the-moores-law-for-agent
 description: >-
-  A new study by METR reveals that AI agent autonomy, measured by the time AI
-  models can complete tasks compared to humans, has doubled every 7 months since
-  2019, projecting one-day autonomy by 2028 and one-month autonomy by late 2029.
-  Additionally, Nvidia released Cosmos-Transfer1 for conditional world
-  generation and GR00T-N1-2B, the first open foundation model for humanoid robot
-  reasoning, on Hugging Face.
+  METR’s new research reveals that AI agent autonomy is doubling approximately
+  every *7 months* since *2019*, with models like **Claude 3.7 Sonnet** now able
+  to complete tasks with 50% success in about *50 minutes*. At this rate, AI
+  could achieve **one day of autonomous task completion by 2028** and **one
+  month by late 2029**. Additionally, **Nvidia** released two notable models on
+  Hugging Face: **Cosmos-Transfer1** for conditional world generation and
+  **GR00T-N1-2B**, the first open foundation model for humanoid robot reasoning
+  and skills.
 tags:
-  - metr
+  - meta
+  - microsoft
+  - nvidia
+  - tencent
+  - together
+  - perplexity
+  - google
+  - bytedance
+  - canopy-labs
+  - huggingface
+  - linkedin
+  - llama-4
+  - phi-4-multimodal
+  - cosmos-transfer1
+  - gr00t-n1-2b
+  - orpheus-3b
+  - claude-3.7-sonnet
+  - llama-nemotron-nano-8b
+  - llama-nemotron-super-49b
+  - llama-nemotron-ultra-249b
+  - gemma-3
+  - dapo
+  - grpo
   - agent-autonomy
   - task-completion
+  - multimodal-models
+  - humanoid-robotics
+  - text-to-speech
+  - open-foundation-models
+  - model-acceleration
+  - prompt-engineering
+  - reinforcement-learning
+  - inference-optimization
+  - open-source-research
+companies:
+  - meta
+  - microsoft
   - nvidia
+  - tencent
+  - together
+  - perplexity
+  - google
+  - bytedance
+  - canopy-labs
+  - huggingface
+  - linkedin
+models:
+  - llama-4
+  - phi-4-multimodal
   - cosmos-transfer1
-  - groot-n1-2b
-  - humanoid-robots
+  - gr00t-n1-2b
+  - orpheus-3b
+  - claude-3.7-sonnet
+  - llama-nemotron-nano-8b
+  - llama-nemotron-super-49b
+  - llama-nemotron-ultra-249b
+  - gemma-3
+  - dapo
+  - grpo
+topics:
+  - agent-autonomy
+  - task-completion
+  - multimodal-models
+  - humanoid-robotics
+  - text-to-speech
+  - open-foundation-models
+  - model-acceleration
+  - prompt-engineering
+  - reinforcement-learning
+  - inference-optimization
+  - open-source-research
 ---
 
 

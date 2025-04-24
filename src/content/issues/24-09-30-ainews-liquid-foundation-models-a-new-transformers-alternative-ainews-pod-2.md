@@ -4,19 +4,82 @@ title: 'Liquid Foundation Models: A New Transformers alternative + AINews Pod 2'
 date: '2024-10-01T01:34:19.663940Z'
 original_slug: ainews-liquid-foundation-models-a-new
 description: >-
-  Liquid.ai has emerged from stealth with three efficient subquadratic
-  foundation models that outperform state space models in benchmarks, promising
-  a new approach with liquid neural networks. Additionally, Meta AI released
-  Llama 3.2, featuring multimodal vision-capable models and lightweight versions
-  for mobile, enhancing deep understanding of image and text inputs.
+  Liquid.ai emerged from stealth after *10 months* post their *$37M seed*
+  funding, unveiling three efficient subquadratic "liquid networks" models that
+  outperform state space models and Apple’s foundation models in parameter
+  efficiency, with a full launch planned for *October 23, 2024*. Additionally,
+  Meta AI released **Llama 3.2**, introducing *11B* and *90B* multimodal models
+  with advanced vision capabilities and lightweight text-only models for mobile,
+  while Google DeepMind announced production-ready Gemini-1.5 models with
+  significant cost and performance improvements.
 tags:
   - liquid
-  - liquid-networks
-  - foundation-models
-  - llama
-  - llama-3-2
-  - multimodal
+  - apple
   - meta
+  - google
+  - deepmind
+  - openai
+  - stability
+  - ea
+  - liquid-networks
+  - llama-3.2
+  - gemini-1.5-pro-002
+  - gemini-1.5-flash-002
+  - o1-preview
+  - qwen-2.5
+  - emu3
+  - sdxl
+  - llava-1.6
+  - foundation-models
+  - multimodal-models
+  - subquadratic-models
+  - chip-design
+  - reinforcement-learning
+  - open-source
+  - ai-regulation
+  - next-token-prediction
+  - continuous-finetuning
+  - audio-overviews
+  - generative-ai
+  - video-generation
+  - ai-in-medicine
+  - user-generated-content
+  - benchmark-results
+companies:
+  - liquid
+  - apple
+  - meta
+  - google
+  - deepmind
+  - openai
+  - stability
+  - ea
+models:
+  - liquid-networks
+  - llama-3.2
+  - gemini-1.5-pro-002
+  - gemini-1.5-flash-002
+  - o1-preview
+  - qwen-2.5
+  - emu3
+  - sdxl
+  - llava-1.6
+topics:
+  - foundation-models
+  - multimodal-models
+  - subquadratic-models
+  - chip-design
+  - reinforcement-learning
+  - open-source
+  - ai-regulation
+  - next-token-prediction
+  - continuous-finetuning
+  - audio-overviews
+  - generative-ai
+  - video-generation
+  - ai-in-medicine
+  - user-generated-content
+  - benchmark-results
 ---
 
 

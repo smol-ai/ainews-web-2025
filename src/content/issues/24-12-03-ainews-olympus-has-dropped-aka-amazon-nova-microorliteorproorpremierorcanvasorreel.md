@@ -4,19 +4,21 @@ title: Olympus has dropped (aka, Amazon Nova Micro|Lite|Pro|Premier|Canvas|Reel)
 date: '2024-12-04T03:06:39.205571Z'
 original_slug: ainews-olympus-has-dropped-aka-amazon-nova
 description: >-
-  Amazon has launched its new multimodal foundation models, Amazon Nova,
-  available immediately via Amazon Bedrock with no waitlist. Nova offers
-  competitive pricing and performance, outperforming some existing models like
-  GPT-4o on certain benchmarks, while also boasting faster token processing and
-  significantly lower costs compared to rivals such as Claude.
+  Amazon unveiled its new multimodal foundation models, **Amazon Nova**, at AWS
+  Re:Invent, offering immediate general availability with competitive pricing
+  and performance that rivals leading models like **GPT-4o** and **Claude**,
+  while boasting up to *300k token* context length and significantly faster
+  token processing speeds. Meanwhile, **Hugging Face** introduced a *500GB*
+  storage limit for free-tier accounts, sparking community debate, but also
+  launched a powerful **Text-to-SQL** feature across *250,000+* public datasets
+  powered by the **Qwen 2.5 Coder 32B** model, enabling natural language queries
+  on large datasets.
 tags:
-  - amazon
-  - nova
-  - bedrock
-  - foundation-models
-  - multimodal
-  - pricing
-  - benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

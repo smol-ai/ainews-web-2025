@@ -4,23 +4,18 @@ title: Sora pushes SOTA
 date: '2024-02-16T11:15:03.174687Z'
 original_slug: ainews-sora-pushes-sota
 description: >-
-  Google's Gemini 1.5 model, featuring a groundbreaking 1 million token context
-  window, and OpenAI's Sora model have sparked significant excitement and
-  discussion in AI communities, highlighting their potential for advanced media
-  production and long-context applications. Meanwhile, NVIDIA's "Chat with RTX"
-  feature showcases retrieval-augmented generation (RAG) capabilities on 30+
-  series GPUs, contrasting with LM Studio's current support limited to smaller
-  models like Mistral 7b and Llama 13b.
+  Google’s **Gemini 1.5** model, boasting a groundbreaking *1 million token*
+  context window, and OpenAI’s **Sora**, a text-to-video model generating
+  minute-long videos, are generating significant excitement and debate across AI
+  communities. Meanwhile, OpenAI has introduced a new ChatGPT memory feature for
+  better conversation continuity, and research into advanced quantization
+  methods like **QuIP#** promises improvements in model compression efficiency.
 tags:
-  - google
-  - gemini-1.5
-  - openai
-  - sora
-  - nvidia
-  - chat-with-rtx
-  - retrieval-augmented-generation
-  - mistral-7b
-  - llama-13b
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,23 +4,19 @@ title: Claude 3 just destroyed GPT 4 (see for yourself)
 date: '2024-03-04T23:59:02.180354Z'
 original_slug: ainews-claude-3-just-destroyed-gpt-4-see-for
 description: >-
-  Anthropic has launched Claude 3, a multimodal AI available in three sizes,
-  with the largest model Opus outperforming GPT-4 on key benchmarks like GPQA
-  and offering advanced vision, long context (up to 1 million tokens), and
-  improved alignment. The smaller models Haiku and Sonnet provide faster,
-  cheaper alternatives with strong performance, making Claude 3 a significant
-  competitor in AI capabilities and cost-efficiency.
+  **Anthropic** has released **Claude 3**, available in three sizes—Haiku,
+  Sonnet, and Opus—with the largest model, Opus, outperforming **GPT-4** on key
+  benchmarks like GPQA and offering advanced multimodal capabilities, long
+  context windows up to *1 million tokens*, and improved alignment and safety
+  features. Haiku and Sonnet models provide faster and more cost-effective
+  options, with Haiku able to process dense research papers in under *three
+  seconds* and costing half as much as GPT-3.5 Turbo.
 tags:
-  - anthropic
-  - claude-3
-  - opus
-  - haiku
-  - sonnet
-  - multimodal
-  - long-context
-  - gpt-4
-  - gpqa
-  - vision
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,21 +4,71 @@ title: Mistral Large disappoints
 date: '2024-02-26T21:59:34.252178Z'
 original_slug: ainews-mistral-large-disappoints
 description: >-
-  Mistral recently launched Mistral Large, a new language model achieving 81.2%
-  accuracy on MMLU benchmarks, trailing GPT-4 Turbo by about 5 percentage points
-  but at similar cost, leading to mixed community reception and skepticism about
-  open sourcing. Additionally, technical discussions in TheBloke Discord
-  highlighted challenges in LLM training, such as DeepSpeed memory errors and
-  advanced model merging techniques, reflecting ongoing efforts to optimize
-  large language model development.
+  Mistral launched **Mistral Large**, a new language model achieving *81.2%*
+  accuracy on MMLU benchmarks and featuring multilingual support and native
+  function calling, though it trails **GPT-4 Turbo** by about *5 percentage
+  points* and has received mixed community feedback. Additionally, technical
+  discussions in the **TheBloke** Discord highlighted challenges in training and
+  deploying large language models, including memory errors with **DeepSpeed**
+  and advanced fine-tuning techniques like **DPO** and model merging strategies.
 tags:
   - mistral
+  - openai
+  - hugging-face
+  - nvidia
+  - amd
+  - perplexity
   - mistral-large
-  - gpt-4
+  - mistral-small
+  - mistral7x8b
+  - mistral-7b-instruct
   - gpt-4-turbo
-  - llm
-  - training
+  - dreamgen-opus-v1-34b
+  - llama-cpp
+  - large-language-models
+  - benchmarking
+  - multilingual-models
+  - function-calling
+  - fine-tuning
+  - deepspeed
+  - direct-preference-optimization
   - model-merging
+  - training-efficiency
+  - ai-storytelling
+  - roleplay-characters
+  - api-privacy
+  - gpu-compatibility
+  - troubleshooting
+companies:
+  - mistral
+  - openai
+  - hugging-face
+  - nvidia
+  - amd
+  - perplexity
+models:
+  - mistral-large
+  - mistral-small
+  - mistral7x8b
+  - mistral-7b-instruct
+  - gpt-4-turbo
+  - dreamgen-opus-v1-34b
+  - llama-cpp
+topics:
+  - large-language-models
+  - benchmarking
+  - multilingual-models
+  - function-calling
+  - fine-tuning
+  - deepspeed
+  - direct-preference-optimization
+  - model-merging
+  - training-efficiency
+  - ai-storytelling
+  - roleplay-characters
+  - api-privacy
+  - gpu-compatibility
+  - troubleshooting
 ---
 
 

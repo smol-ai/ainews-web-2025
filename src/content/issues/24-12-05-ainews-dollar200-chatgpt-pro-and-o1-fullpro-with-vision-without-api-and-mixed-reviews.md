@@ -4,21 +4,55 @@ title: $200 ChatGPT Pro and o1-full/pro, with vision, without API, and mixed rev
 date: '2024-12-06T02:34:03.824924Z'
 original_slug: ainews-200-chatgpt-pro-and-o1-fullpro-with-vision
 description: >-
-  OpenAI has launched the o1 model with multimodal capabilities including image
-  input, marking a state-of-the-art advancement despite some bugs and mixed
-  community reviews, while also introducing a $200/month pro tier with enhanced
-  features. Meanwhile, Google released PaliGemma 2, a new family of
-  vision-language models excelling in visual question answering and image
-  segmentation, available immediately with fine-tuning support.
+  OpenAI has launched the **o1** model with multimodal capabilities including
+  image input, marking it as a state-of-the-art reasoning model, though it still
+  shows some bugs and mixed community reception, especially compared to **Sonnet
+  3.5**. Meanwhile, **Google** released **PaLiGemma 2**, a family of
+  vision-language models available in *3B*, *10B*, and *28B* parameter sizes,
+  excelling at visual question answering and image segmentation with strong
+  community interest in its accessibility and fine-tuning options.
 tags:
   - openai
-  - o1
-  - multimodal
-  - pro-tier
   - google
+  - hugging-face
+  - meta
+  - o1
+  - o1-pro
+  - sonnet-3.5
   - paligemma-2
-  - vision-language
-  - fine-tuning
+  - sam-2
+  - samurai
+  - multimodal-models
+  - vision-language-models
+  - model-benchmarks
+  - model-reasoning
+  - model-safety
+  - image-segmentation
+  - visual-question-answering
+  - model-fine-tuning
+  - ai-community-feedback
+companies:
+  - openai
+  - google
+  - hugging-face
+  - meta
+models:
+  - o1
+  - o1-pro
+  - sonnet-3.5
+  - paligemma-2
+  - sam-2
+  - samurai
+topics:
+  - multimodal-models
+  - vision-language-models
+  - model-benchmarks
+  - model-reasoning
+  - model-safety
+  - image-segmentation
+  - visual-question-answering
+  - model-fine-tuning
+  - ai-community-feedback
 ---
 
 

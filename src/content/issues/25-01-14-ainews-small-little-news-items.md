@@ -4,20 +4,62 @@ title: small little news items
 date: '2025-01-15T02:19:30.206234Z'
 original_slug: ainews-small-little-news-items
 description: >-
-  Together AI released the free multimodal Llama 3.3 70B model with enhanced
-  reasoning and math capabilities, while OpenBMB introduced MiniCPM-o 2.6, an 8B
-  parameter multimodal model outperforming GPT-4V on visual tasks. Additionally,
-  OpenAI launched ChatGPT Tasks, enabling users to schedule reminders and
-  recurring actions, currently in beta for Plus, Pro, and Teams users.
+  **Together AI** released the free multimodal **Llama 3.3 70B** model with
+  improved reasoning and math capabilities, while **OpenBMB** introduced the
+  **MiniCPM-o 2.6**, an 8B parameter multimodal model that outperforms
+  **GPT-4V** on visual tasks. Additionally, **OpenAI** rolled out the **Tasks**
+  feature in beta, enabling **ChatGPT** users to schedule reminders and
+  recurring actions, enhancing productivity.
 tags:
   - together
-  - llama-3.3
   - openbmb
-  - minicmpm-o-2.6
-  - gpt-4v
   - openai
-  - chatgpt
+  - ollama
+  - langchain
+  - codestral
+  - qwen
+  - llama-3.3-70b
+  - minicpm-o-2.6
+  - gpt-4v
+  - ollama-v0.5.5
+  - r7b
+  - qwen2.5-math-prm-7b
+  - qwen2.5-math-prm-72b
+  - multimodal-models
+  - mathematical-reasoning
+  - large-language-models
+  - process-reward-models
   - task-scheduling
+  - chatgpt
+  - retrieval-augmented-generation
+  - ai-productivity-tools
+  - ai-community-events
+companies:
+  - together
+  - openbmb
+  - openai
+  - ollama
+  - langchain
+  - codestral
+  - qwen
+models:
+  - llama-3.3-70b
+  - minicpm-o-2.6
+  - gpt-4v
+  - ollama-v0.5.5
+  - r7b
+  - qwen2.5-math-prm-7b
+  - qwen2.5-math-prm-72b
+topics:
+  - multimodal-models
+  - mathematical-reasoning
+  - large-language-models
+  - process-reward-models
+  - task-scheduling
+  - chatgpt
+  - retrieval-augmented-generation
+  - ai-productivity-tools
+  - ai-community-events
 ---
 
 

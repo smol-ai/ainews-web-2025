@@ -1,22 +1,99 @@
 ---
 id: 149be255-dc25-4106-910a-266b6da49dcd
 title: not much happened today
-date: '2025-04-10T10:53:38.033308Z'
+date: '2025-04-11T00:53:38.033308Z'
 original_slug: ainews-not-much-happened-today-5595
 description: >-
-  Google announced its 7th-generation TPU, Ironwood, boasting 4,614 TFLOP/s FP8
-  performance and advanced interconnect bandwidth, positioning it as a strong
-  competitor to Nvidia's Blackwell B200 GPUs. Detailed comparisons highlight
-  TPUv7’s design trade-offs versus Nvidia’s GB200, including differences in
-  network topology and power efficiency.
+  **Google** announced its 7th-generation **TPUv7**, boasting *4,614 TFLOP/s
+  (FP8)* performance and advanced interconnects, positioning it as a strong
+  competitor to **Nvidia's GB200** GPU. Meanwhile, **Meta** released **Llama
+  4**, which has faced mixed reviews due to underwhelming coding performance,
+  and **X.ai** launched the **Grok-3** and **Grok-3-mini** APIs, expanding the
+  model ecosystem.
 tags:
   - google
-  - tpu
-  - tpuv7
-  - ironwood
   - nvidia
-  - blackwell-b200
+  - meta
+  - x
+  - openai
+  - together
+  - moonshot
+  - anthropic
+  - bytedance
+  - alibaba
+  - microsoft
+  - sakana
+  - tpuv7
+  - gb200
+  - llama-4
+  - grok-3
+  - grok-3-mini
+  - deepseek-r1-distill-qwen-14b
+  - claude-3.5-opus
+  - seed-thinking-v1.5
+  - kimi-vl-a3b
+  - lam
+  - pusa
+  - omnsvg
+  - skywork-r1v
   - hardware-accelerators
+  - tensor-processing-units
+  - gpu-comparison
+  - model-releases
+  - api-launch
+  - reinforcement-learning
+  - program-synthesis
+  - video-diffusion
+  - multimodal-reasoning
+  - agent-protocols
+  - open-source-models
+  - coding-performance
+  - ai-competitions
+  - ai-research
+  - ai-conferences
+companies:
+  - google
+  - nvidia
+  - meta
+  - x
+  - openai
+  - together
+  - moonshot
+  - anthropic
+  - bytedance
+  - alibaba
+  - microsoft
+  - sakana
+models:
+  - tpuv7
+  - gb200
+  - llama-4
+  - grok-3
+  - grok-3-mini
+  - deepseek-r1-distill-qwen-14b
+  - claude-3.5-opus
+  - seed-thinking-v1.5
+  - kimi-vl-a3b
+  - lam
+  - pusa
+  - omnsvg
+  - skywork-r1v
+topics:
+  - hardware-accelerators
+  - tensor-processing-units
+  - gpu-comparison
+  - model-releases
+  - api-launch
+  - reinforcement-learning
+  - program-synthesis
+  - video-diffusion
+  - multimodal-reasoning
+  - agent-protocols
+  - open-source-models
+  - coding-performance
+  - ai-competitions
+  - ai-research
+  - ai-conferences
 ---
 
 

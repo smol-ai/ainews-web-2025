@@ -4,21 +4,18 @@ title: 'ReALM: Reference Resolution As Language Modeling'
 date: '2024-04-04T00:00:20.574613Z'
 original_slug: ainews-realm-reference-resolution-as-language
 description: >-
-  Apple is advancing its AI capabilities with a new approach called ReALM
-  (Reference Resolution As Language Modeling), which outperforms GPT-4 in
-  understanding ambiguous references by integrating multiple contextual sources.
-  Meanwhile, open source developments include SWE-agent, a coding agent that
-  converts GitHub issues into pull requests, and QuaRot, a new efficient
-  quantization method enabling 4-bit inference without dequantization.
+  Apple is advancing its AI efforts with a new model called **ReALM** that
+  improves reference resolution by understanding ambiguous references using
+  multiple contexts, outperforming **GPT-4** on this task with a smaller
+  **FLAN-T5** model. Additionally, **Anthropic** released research on a
+  many-shot jailbreaking technique that exploits long context windows in large
+  language models, highlighting growing vulnerabilities as models scale.
 tags:
-  - apple
-  - realm
-  - flan-t5
-  - gpt-4
-  - open-source
-  - swe-agent
-  - quarot
-  - quantization
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

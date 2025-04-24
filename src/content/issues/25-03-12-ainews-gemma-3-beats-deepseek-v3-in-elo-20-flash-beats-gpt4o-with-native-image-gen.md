@@ -4,19 +4,67 @@ title: Gemma 3 beats DeepSeek V3 in Elo, 2.0 Flash beats GPT4o with Native Image
 date: '2025-03-13T01:01:43.616815Z'
 original_slug: ainews-gemma-3-beats-deepseek-v3-in-elo-20-flash
 description: >-
-  Google DeepMind launched Gemma 3, a family of advanced open models featuring a
-  128k context window, multimodal input (text, image, video), and multilingual
-  support for 140+ languages, achieving top rankings on LMArena benchmarks.
-  Additionally, Gemini 2 introduced Flash Native Image Generation, enabling easy
-  and high-quality image editing capabilities not yet matched by OpenAI.
+  Google DeepMind unveiled **Gemma 3**, a family of open multimodal models
+  featuring a *128k* context window, strong multilingual support (over *140
+  languages*), and top-tier performance on LMArena benchmarks, positioning it as
+  a leading open model. Additionally, **Google DeepMind** introduced **Gemini
+  Robotics**, a new generation of AI models for robots emphasizing reasoning,
+  dexterity, and generalization, with partnerships including **Apptronik** and
+  trusted testers like **Boston Dynamics**.
 tags:
   - google
-  - deepmind
+  - google-deepmind
+  - apptronik
+  - boston-dynamics
+  - agilityrobotics
+  - enchantedtools
+  - ollama
   - gemma-3
-  - multimodal
-  - multilingual
+  - gemma-2
+  - gemini-2
+  - gemini-1.5-pro
+  - gemini-robotics-er
+  - o1-preview
+  - o3-mini
+  - mistral-24b
+  - multimodal-models
   - long-context
+  - multilingual
+  - model-benchmarks
+  - robotics
+  - embodied-ai
   - image-generation
+  - model-deployment
+  - dexterity
+  - AI-reasoning
+companies:
+  - google
+  - google-deepmind
+  - apptronik
+  - boston-dynamics
+  - agilityrobotics
+  - enchantedtools
+  - ollama
+models:
+  - gemma-3
+  - gemma-2
+  - gemini-2
+  - gemini-1.5-pro
+  - gemini-robotics-er
+  - o1-preview
+  - o3-mini
+  - mistral-24b
+topics:
+  - multimodal-models
+  - long-context
+  - multilingual
+  - model-benchmarks
+  - robotics
+  - embodied-ai
+  - image-generation
+  - model-deployment
+  - dexterity
+  - AI-reasoning
 ---
 
 

@@ -4,19 +4,19 @@ title: not much happened today
 date: '2025-02-12T01:24:43.684385Z'
 original_slug: ainews-not-much-happened-today-1223
 description: >-
-  Perplexity AI's Sonar model, based on Llama 3.3 70b and powered by Cerebras
-  infrastructure, outperforms GPT-4o-mini and Claude 3.5 Haiku while matching
-  top models like GPT-4o with a decoding speed nearly 10 times faster.
-  Additionally, UC Berkeley open-sourced a 1.5B model trained with reinforcement
-  learning that surpasses o1-preview on math benchmarks.
+  **Perplexity's** new **Sonar** model, built on **Llama 3.3 70b** and powered
+  by **Cerebras** infrastructure, outperforms top competitors like **GPT-4o**
+  and **Claude 3.5 Sonnet** with a decoding speed nearly *10x faster*, becoming
+  the default for Perplexity Pro users. Meanwhile, **Zyphra AI** launched
+  **Zonos-v0.1**, a leading open-weight Text to Speech model supporting *five
+  languages* and featuring zero-shot voice cloning, marking a significant
+  advancement in speech technology.
 tags:
-  - perplexity
-  - sonar
-  - llama-3.3
-  - cerebras
-  - uc-berkeley
-  - reinforcement-learning
-  - math-benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

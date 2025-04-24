@@ -4,20 +4,21 @@ title: Apple Intelligence Beta + Segment Anything Model 2
 date: '2024-07-30T02:45:55.827150Z'
 original_slug: ainews-apple-intelligence
 description: >-
-  Apple has delayed the official release of its Apple Intelligence to iOS 18.1
-  in October but launched a developer preview on MacOS Sequoia, iOS 18, and
-  iPadOS 18, accompanied by a detailed 47-page paper revealing extensive
-  pretraining and hardware details. Meanwhile, Meta advanced its computer vision
-  capabilities with a new version of its Segment Anything Model that uses memory
-  attention to scale image segmentation to video efficiently.
+  Meta advanced its open-source AI with an improved Segment Anything Model that
+  scales image segmentation to video using memory attention, while **Apple
+  Intelligence** delayed its official release to *iOS 18.1 in October* but
+  launched a developer preview on *MacOS Sequoia, iOS 18, and iPadOS 18*,
+  accompanied by a detailed *47-page paper* revealing extensive pretraining on
+  *6.3T tokens* and use of TPUv4 and TPUv5p hardware. Additionally, **Meta**
+  released **Llama 3.1** with a *405B* parameter model and *128K* token context
+  window, and **Mistral AI** launched its *123B* parameter Large 2 model,
+  rivaling Llama 3.1 on coding benchmarks.
 tags:
-  - apple
-  - apple-intelligence
-  - ios-18
-  - macos-sequoia
-  - meta
-  - segment-anything
-  - image-segmentation
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

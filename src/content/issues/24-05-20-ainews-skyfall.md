@@ -4,20 +4,82 @@ title: Skyfall
 date: '2024-05-20T23:02:42.432305Z'
 original_slug: ainews-to-be-named-3447
 description: >-
-  Google DeepMind released Gemini 1.5 Pro, a sparse multimodal MoE model
-  supporting text, audio, image, and video with up to 10M context, alongside
-  Flash, a dense Transformer decoder model that is 3x faster and 10x cheaper. Yi
-  AI also launched Yi-1.5 models featuring extended context lengths of 16K and
-  32K tokens, enhancing long-context capabilities.
+  Google DeepMind released **Gemini 1.5 Pro**, a sparse multimodal MoE model
+  with up to *10M* context handling text, audio, image, and video, alongside
+  **Flash**, a dense Transformer decoder model that is *3x faster* and *10x
+  cheaper*. Additionally, **Apple** is reportedly partnering with **OpenAI** to
+  integrate AI technology into *iOS 18*, with a major announcement expected at
+  WWDC.
 tags:
   - google
   - deepmind
+  - apple
+  - openai
+  - huggingface
+  - langchain
+  - microsoft
+  - yi
+  - anthropic
+  - together
   - gemini-1.5-pro
   - flash
-  - transformer
-  - yi
   - yi-1.5
+  - kosmos-2.5
+  - paligemma
+  - cumollm
+  - falcon-2
+  - deepseek-v2
+  - hunyuandit
+  - lumina
+  - gpt-4o
+  - large-language-models
+  - multimodal-models
+  - model-efficiency
   - long-context
+  - model-finetuning
+  - ai-safety
+  - hallucinations
+  - retrieval-augmented-generation
+  - gpu-infrastructure
+  - ai-partnerships
+  - ai-product-integration
+  - open-source-models
+companies:
+  - google
+  - deepmind
+  - apple
+  - openai
+  - huggingface
+  - langchain
+  - microsoft
+  - yi
+  - anthropic
+  - together
+models:
+  - gemini-1.5-pro
+  - flash
+  - yi-1.5
+  - kosmos-2.5
+  - paligemma
+  - cumollm
+  - falcon-2
+  - deepseek-v2
+  - hunyuandit
+  - lumina
+  - gpt-4o
+topics:
+  - large-language-models
+  - multimodal-models
+  - model-efficiency
+  - long-context
+  - model-finetuning
+  - ai-safety
+  - hallucinations
+  - retrieval-augmented-generation
+  - gpu-infrastructure
+  - ai-partnerships
+  - ai-product-integration
+  - open-source-models
 ---
 
 

@@ -4,19 +4,18 @@ title: GPT4o August + 100% Structured Outputs for All (GPT4o mini edition)
 date: '2024-08-07T02:55:03.290831Z'
 original_slug: ainews-gpt4o-august-100-structured-outputs-for-9545
 description: >-
-  Google released Gemma 2 2B, a lightweight 2.6 billion parameter model
-  optimized for on-device and browser use, alongside safety and sparse
-  autoencoder tools. Meanwhile, Unsloth AI users face fine-tuning challenges
-  with LLaMA3 models due to recent updates, while anticipating multi-GPU support
-  for improved performance.
+  **Google** released the lightweight **Gemma 2 2B** model with *2.6B*
+  parameters optimized for on-device and browser use, alongside safety and
+  sparse autoencoder tools. Meanwhile, **Unsloth AI** users face challenges
+  fine-tuning **LLaMA3** models due to recent updates breaking compatibility,
+  while the experimental **BigLlama-3.1-1T-Instruct** model was launched but
+  requires further training to be effective.
 tags:
-  - google
-  - gemma-2-2b
-  - on-device
-  - unsloth
-  - llama3
-  - multi-gpu
-  - fine-tuning
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 
@@ -1106,9 +1105,6 @@ vvelo: [https://fxtwitter.com/reach_vb/status/1820493688377643178](https://fxtwi
 
 **Links mentioned**:
 
-- `PyTorch`
-  
-  [](https://pytorch.org/): no description found
 - [ao/torchao/quantization/quant_primitives.py at de4a1fb3b1f71e2f61b84dfdc96e7d704ff72208 · pytorch/ao](https://github.com/pytorch/ao/blob/de4a1fb3b1f71e2f61b84dfdc96e7d704ff72208/torchao/quantization/quant_primitives.py#L610): The missing pytorch dtype and layout library for training and inference - pytorch/ao
 - [Quantization - Neural Network Distiller](https://intellabs.github.io/distiller/algo_quantization.html#symmetric-mode): no description found
 - [pytorch/aten/src/ATen/native/cuda/int4mm.cu at e98eac76b358fb4639b9e9ce6894014354d7b073 · pytorch/pytorch](https://github.com/pytorch/pytorch/blob/e98eac76b358fb4639b9e9ce6894014354d7b073/aten/src/ATen/native/cuda/int4mm.cu#L1): Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch

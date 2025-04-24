@@ -4,20 +4,108 @@ title: not much happened today
 date: '2024-08-17T03:43:03.947952Z'
 original_slug: ainews-not-much-happened-today-9917
 description: >-
-  Anthropic has introduced prompt caching in its API, significantly cutting
-  input costs by up to 90% and reducing latency by 80%, enabling faster and
-  cheaper fine-tuning of model responses. Meanwhile, xAI released Grok-2, a new
-  AI model that competes with leading models from Google DeepMind, OpenAI,
-  Anthropic, Mistral, and Meta, supporting both vision and text inputs and
-  integrating external image generation models.
+  **xAI’s Grok-2 model has reached the top two spots on the MathVista
+  leaderboard, outperforming many leading AI models including GPT-4, with
+  speculation about its open-sourcing and the high talent density behind its
+  development. Meanwhile, Anthropic has introduced prompt caching in its API,
+  significantly reducing input costs by up to 90% and latency by up to 80%,
+  enabling more efficient and cost-effective AI model fine-tuning.**
 tags:
-  - anthropic
-  - prompt-caching
-  - api
   - xai
+  - anthropic
+  - google-deepmind
+  - openai
+  - mistral
+  - meta
+  - salesforce
+  - box
+  - nousresearch
   - grok-2
-  - vision
-  - text-input
+  - grok-2-mini
+  - sonnet-3.5
+  - gpt-4o-latest
+  - phi3-3b
+  - flux-1
+  - hermes-3
+  - hermes-2-base
+  - hermes-2-pro
+  - rocinante-12b-v1
+  - rocinante-12b-v1.1
+  - theia-21b
+  - prompt-caching
+  - api-cost-reduction
+  - latency-reduction
+  - model-benchmarks
+  - open-source-models
+  - local-llm-deployment
+  - multilingual-datasets
+  - ai-safety
+  - ai-regulation
+  - design-automation
+  - document-processing
+  - ai-agents
+  - software-engineering-agents
+  - talent-density
+  - model-performance
+  - reasoning
+  - coding
+  - math-visual-reasoning
+  - dataset-creation
+  - constitutional-ai
+  - direct-preference-optimization
+  - ai-job-market
+  - networking
+  - ai-acceleration
+  - quiet-day
+companies:
+  - xai
+  - anthropic
+  - google-deepmind
+  - openai
+  - mistral
+  - meta
+  - salesforce
+  - box
+  - nousresearch
+models:
+  - grok-2
+  - grok-2-mini
+  - sonnet-3.5
+  - gpt-4o-latest
+  - phi3-3b
+  - flux-1
+  - hermes-3
+  - hermes-2-base
+  - hermes-2-pro
+  - rocinante-12b-v1
+  - rocinante-12b-v1.1
+  - theia-21b
+topics:
+  - prompt-caching
+  - api-cost-reduction
+  - latency-reduction
+  - model-benchmarks
+  - open-source-models
+  - local-llm-deployment
+  - multilingual-datasets
+  - ai-safety
+  - ai-regulation
+  - design-automation
+  - document-processing
+  - ai-agents
+  - software-engineering-agents
+  - talent-density
+  - model-performance
+  - reasoning
+  - coding
+  - math-visual-reasoning
+  - dataset-creation
+  - constitutional-ai
+  - direct-preference-optimization
+  - ai-job-market
+  - networking
+  - ai-acceleration
+  - quiet-day
 ---
 
 

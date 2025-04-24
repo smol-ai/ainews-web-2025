@@ -4,19 +4,83 @@ title: 'Google AI: Win some (Gemma, 1.5 Pro), Lose some (Image gen)'
 date: '2024-02-22T02:21:19.724902Z'
 original_slug: ainews-google-ai-win-some-gemma-15-pro-lose-some
 description: >-
-  Google's new Gemma open models (2-7B parameters) outperform Llama 2 and
-  Mistral on benchmarks but face criticism due to an unusual license and poor
-  image generation quality. Meanwhile, the upcoming Gemini Pro 1.5 model
-  impresses with its 1 million token context window, enabling advanced video
-  understanding and needle-in-haystack search capabilities.
+  **Google's Gemma open models (2-7B) outperform Llama 2 and Mistral on
+  benchmarks but face criticism due to an unusual license and poor image
+  generation quality. Meanwhile, the long-context Gemini Pro 1.5 model (with 1
+  million token context) shows promising capabilities in video understanding and
+  needle-in-haystack tasks.**
 tags:
   - google
-  - gemma
-  - gemini
+  - microsoft
+  - nvidia
+  - nous-research
+  - huggingface
+  - lm-studio
+  - eleuther
+  - gemma-2b
+  - gemma-7b
+  - gemma-1.5-pro
   - gemini-pro-1.5
-  - llama2
+  - llama-2
   - mistral
-  - large-context
+  - nous-hermes-2
+  - deepseek-coder-6.7b-instruct
+  - miqu-70b
+  - open-models
+  - model-benchmarks
+  - licensing
+  - image-generation
+  - long-context
+  - video-understanding
+  - retrieval-augmented-generation
+  - dataset-editing
+  - roleplay-chatbots
+  - gpu-hardware
+  - multi-gpu-setup
+  - transformer-efficiency
+  - multilingual-models
+  - model-finetuning
+  - synthetic-datasets
+  - model-hosting
+  - chain-of-thought
+  - foundation-model-governance
+companies:
+  - google
+  - microsoft
+  - nvidia
+  - nous-research
+  - huggingface
+  - lm-studio
+  - eleuther
+models:
+  - gemma-2b
+  - gemma-7b
+  - gemma-1.5-pro
+  - gemini-pro-1.5
+  - llama-2
+  - mistral
+  - nous-hermes-2
+  - deepseek-coder-6.7b-instruct
+  - miqu-70b
+topics:
+  - open-models
+  - model-benchmarks
+  - licensing
+  - image-generation
+  - long-context
+  - video-understanding
+  - retrieval-augmented-generation
+  - dataset-editing
+  - roleplay-chatbots
+  - gpu-hardware
+  - multi-gpu-setup
+  - transformer-efficiency
+  - multilingual-models
+  - model-finetuning
+  - synthetic-datasets
+  - model-hosting
+  - chain-of-thought
+  - foundation-model-governance
 ---
 
 

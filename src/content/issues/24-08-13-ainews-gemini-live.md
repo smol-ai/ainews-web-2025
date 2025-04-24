@@ -4,19 +4,70 @@ title: Gemini Live
 date: '2024-08-14T01:23:26.876396Z'
 original_slug: ainews-gemini-live
 description: >-
-  Google launched Gemini Live for Android as part of the Pixel 9 event, offering
-  integrations with Google Workspace and other services, with cautious positive
-  reviews despite demo issues. Meanwhile, Anthropic released Genie, a new AI
-  software engineering system that significantly improves performance on
-  SWE-Bench by 57%.
+  Google launched Gemini Live today for Android as part of the Pixel 9 event,
+  offering integrations with Google Workspace and other services, marking a key
+  rollout ahead of ChatGPT's Advanced Voice Mode. Meanwhile, Anthropic released
+  Genie, a new AI software engineering system achieving a *57%* performance
+  improvement on SWE-Bench, and TII introduced Falcon Mamba, a 7B attention-free
+  open-access model with strong metrics.
 tags:
   - google
-  - gemini-live
-  - pixel-9
   - anthropic
+  - technology-innovation-institute
+  - openai
+  - supabase
+  - perplexity
+  - polymarket
+  - hugh-face
+  - deepmind
+  - deeplearningai
+  - gemini-live
   - genie
+  - falcon-mamba
+  - llama-3.1-70b
+  - retro-gpt
+  - keras-3.5.0
+  - large-language-models
+  - voice-assistants
+  - model-quantization
+  - retrieval-augmented-generation
   - software-engineering
-  - benchmarks
+  - model-benchmarks
+  - open-source
+  - multimodal-learning
+  - ai-regulation
+  - database-ai
+  - ai-education
+companies:
+  - google
+  - anthropic
+  - technology-innovation-institute
+  - openai
+  - supabase
+  - perplexity
+  - polymarket
+  - hugh-face
+  - deepmind
+  - deeplearningai
+models:
+  - gemini-live
+  - genie
+  - falcon-mamba
+  - llama-3.1-70b
+  - retro-gpt
+  - keras-3.5.0
+topics:
+  - large-language-models
+  - voice-assistants
+  - model-quantization
+  - retrieval-augmented-generation
+  - software-engineering
+  - model-benchmarks
+  - open-source
+  - multimodal-learning
+  - ai-regulation
+  - database-ai
+  - ai-education
 ---
 
 

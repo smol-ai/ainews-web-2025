@@ -5,19 +5,17 @@ date: '2024-08-16T04:05:53.457702Z'
 original_slug: ainews-not-much-happened-today-5446
 description: >-
   Anthropic has introduced prompt caching in their API, reducing input costs by
-  up to 90% and latency by up to 80%, significantly improving efficiency for
-  applications like coding assistants and large document processing.
-  Additionally, xAI released Grok-2, a vision and text multimodal model that
-  matches top models like Claude 3.5 Sonnet and GPT-4 Turbo on the LMSYS
-  leaderboard.
+  up to *90%* and latency by up to *80%*, significantly benefiting applications
+  like coding assistants and large document processing. Meanwhile, xAI released
+  **Grok-2**, a vision+text model that matches top-tier models such as **Claude
+  3.5 Sonnet** and **GPT-4 Turbo** on benchmarks, showcasing strong performance
+  in coding and reasoning tasks.
 tags:
-  - anthropic
-  - prompt-caching
-  - grok-2
-  - xai
-  - multimodal-models
-  - claude-3-5-sonnet
-  - gpt-4-turbo
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,18 +4,90 @@ title: Not much technical happened today
 date: '2024-10-02T22:45:37.315067Z'
 original_slug: ainews-not-much-technical-happened-today
 description: >-
-  OpenAI announced raising $6.6 billion at a $157 billion valuation, with
-  ChatGPT reaching 250 million weekly active users. Additionally, Poolside
-  secured $500 million to advance progress towards AGI, marking significant
-  fundraising milestones in the AI industry.
+  OpenAI announced a $6.6 billion funding round at a $157 billion valuation and
+  reported ChatGPT reaching *250 million* weekly active users, up from *200
+  million* a month ago. Additionally, OpenAI released Whisper V3 Turbo, an
+  open-source speech recognition model that is *8x faster* than Whisper Large
+  and runs fully locally in browsers using Transformers.js and WebGPU, enabling
+  real-time multilingual transcription without server dependency.
 tags:
   - openai
-  - chatgpt
-  - fundraising
   - poolside
-  - agi
-  - model-development
+  - liquidai
+  - perplexity
+  - baseten
+  - fair
+  - cohere
+  - fujitsu
+  - google
+  - deepmind
+  - hugging-face
+  - chatgpt
   - whisper-v3-turbo
+  - whisper-large-v3
+  - whisper-medium
+  - whisper-small
+  - llama-3
+  - takane
+  - liquid-foundation-models
+  - faster-whisper
+  - create-llama
+  - notebooklm
+  - funding
+  - user-growth
+  - speech-recognition
+  - open-source-models
+  - multilingual-transcription
+  - browser-based-ai
+  - real-time-inference
+  - model-optimization
+  - large-language-models
+  - ai-product-launches
+  - ai-research-internships
+  - ai-freelancing
+  - quantization
+  - model-training
+  - agi-fundraising
+companies:
+  - openai
+  - poolside
+  - liquidai
+  - perplexity
+  - baseten
+  - fair
+  - cohere
+  - fujitsu
+  - google
+  - deepmind
+  - hugging-face
+models:
+  - chatgpt
+  - whisper-v3-turbo
+  - whisper-large-v3
+  - whisper-medium
+  - whisper-small
+  - llama-3
+  - takane
+  - liquid-foundation-models
+  - faster-whisper
+  - create-llama
+  - notebooklm
+topics:
+  - funding
+  - user-growth
+  - speech-recognition
+  - open-source-models
+  - multilingual-transcription
+  - browser-based-ai
+  - real-time-inference
+  - model-optimization
+  - large-language-models
+  - ai-product-launches
+  - ai-research-internships
+  - ai-freelancing
+  - quantization
+  - model-training
+  - agi-fundraising
 ---
 
 

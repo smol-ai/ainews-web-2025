@@ -4,19 +4,67 @@ title: 'Contextual Document Embeddings: `cde-small-v1`'
 date: '2024-10-05T01:38:06.226049Z'
 original_slug: ainews-contextual-document-embeddings-cde-small-v1
 description: >-
-  Meta’s new Movie Gen model claims superior video generation by adapting Llama
-  3 better than OpenAI’s Sora, though no release is available yet. Meanwhile,
-  Jack Morris and Sasha Rush introduced cde-small-v1, a highly efficient 143M
-  parameter contextual embedding model that outperforms many larger models by
-  incorporating contextual tokens during training.
+  Meta’s new text-to-video model, **Movie Gen**, claims superior adaptation of
+  **Llama 3** to video generation compared to **OpenAI**’s Sora Diffusion
+  Transformers, though no release is available yet. Meanwhile, researchers
+  **Jack Morris** and **Sasha Rush** introduced the `cde-small-v1` model, a
+  highly efficient *143M* parameter contextual document embedding model that
+  outperforms many larger BERT-sized models by using a novel contextual batching
+  training technique.
 tags:
   - meta
+  - openai
+  - google
+  - togethercompute
+  - wandb
+  - nexaai
+  - huggingface
   - movie-gen
   - llama-3
-  - openai
   - sora
-  - contextual-embeddings
   - cde-small-v1
+  - whisper-turbo
+  - whisper-v3-large
+  - gemini-1.5-flash-8b
+  - flux1.1
+  - text-to-video-generation
+  - contextual-document-embeddings
+  - transformer-scaling-laws
+  - inference-optimization
+  - real-time-transcription
+  - speech-recognition
+  - retrieval-augmented-generation
+  - ai-safety
+  - developer-tools
+  - model-efficiency
+companies:
+  - meta
+  - openai
+  - google
+  - togethercompute
+  - wandb
+  - nexaai
+  - huggingface
+models:
+  - movie-gen
+  - llama-3
+  - sora
+  - cde-small-v1
+  - whisper-turbo
+  - whisper-v3-large
+  - gemini-1.5-flash-8b
+  - flux1.1
+topics:
+  - text-to-video-generation
+  - contextual-document-embeddings
+  - transformer-scaling-laws
+  - inference-optimization
+  - real-time-transcription
+  - speech-recognition
+  - retrieval-augmented-generation
+  - ai-safety
+  - developer-tools
+  - model-efficiency
 ---
 
 

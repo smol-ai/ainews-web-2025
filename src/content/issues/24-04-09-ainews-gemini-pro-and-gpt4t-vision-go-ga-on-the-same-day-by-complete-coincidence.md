@@ -4,21 +4,17 @@ title: Gemini Pro and GPT4T Vision go GA on the same day by complete coincidence
 date: '2024-04-10T01:05:31.512776Z'
 original_slug: ainews-gemini-pro-and-gpt4t-vision-go-ga-on-the
 description: >-
-  Google has released Gemini 1.5 Pro with a million-token context window and
-  advanced audio understanding, now available in 180+ countries, while OpenAI
-  launched GPT-4 Turbo with Vision API featuring significant reasoning
-  improvements. Meta also plans to release smaller versions of Llama 3 next
-  week, continuing the trend of more efficient and accessible large language
-  models.
+  **Google** unveiled the **Gemini 1.5 Pro** model with a million-token context
+  window, audio understanding up to *9.5 hours*, and a new File API, now
+  available in *180+ countries*. Shortly after, **OpenAI** released **GPT-4
+  Turbo with Vision** in the API, featuring a major update that significantly
+  improves reasoning capabilities.
 tags:
-  - google
-  - gemini-1.5-pro
-  - million-token-context
-  - audio-understanding
-  - openai
-  - gpt-4-turbo
-  - meta
-  - llama-3
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

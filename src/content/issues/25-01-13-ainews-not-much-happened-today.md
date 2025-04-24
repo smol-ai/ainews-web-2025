@@ -4,20 +4,18 @@ title: not much happened today
 date: '2025-01-14T06:08:22.078500Z'
 original_slug: ainews-not-much-happened-today-9477
 description: >-
-  Kyutai Labs previewed Helium-1, a 2B-parameter multilingual LLM optimized for
-  edge devices that outperforms Qwen 2.5, while Mistral AI released Codestral
-  25.01, a new state-of-the-art coding model supporting over 80 programming
-  languages with double the speed of previous versions. Additionally,
-  innovations in retrieval-augmented generation (RAG) frameworks like AutoRAG
-  and Agentic RAG are enhancing retrieval accuracy and autonomy in AI systems.
+  **Kyutai Labs** previewed **Helium-1**, a *2B-parameter* multilingual LLM
+  optimized for edge and mobile devices, outperforming **Qwen 2.5** with
+  training on *2.5T tokens* and a *4096 context size*. Meanwhile, **Mistral AI**
+  released **Codestral 25.01**, a new state-of-the-art coding model supporting
+  *80+ programming languages* and delivering *2x speed* improvements, currently
+  ranked #1 on LMSYS benchmarks.
 tags:
-  - kyutai-labs
-  - helium-1
-  - mistral-ai
-  - codestral-25-01
-  - coding
-  - rag
-  - autoreg
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

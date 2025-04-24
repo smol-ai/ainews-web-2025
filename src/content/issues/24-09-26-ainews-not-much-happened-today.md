@@ -4,20 +4,85 @@ title: not much happened today
 date: '2024-09-26T22:52:11.195444Z'
 original_slug: ainews-not-much-happened-today-2295
 description: >-
-  Meta AI released Llama 3.2 models, including efficient 1B and 3B text-only
-  versions for edge devices and powerful 11B and 90B multimodal vision models
-  with 128K token context length, outperforming several competitors and
-  available across major platforms. Additionally, OpenAI’s CTO Mira Murati
-  announced her departure, marking a significant leadership change amid ongoing
-  industry developments.
+  Meta has released **Llama 3.2** models, including *1B and 3B text-only*
+  versions optimized for edge devices and *11B and 90B multimodal vision* models
+  with *128K token context length*, outperforming several competitors and
+  available on major cloud platforms. Meanwhile, **Allen AI** launched
+  **Molmo**, an open-source family of multimodal models excelling at tasks like
+  analog clock reading, surpassing proprietary systems such as **Claude**,
+  **GPT**, and **Gemini** on specific vision-language benchmarks.
 tags:
   - meta
-  - llama-3.2
-  - multimodal
-  - edge-devices
   - openai
-  - cto-departure
-  - model-release
+  - allen
+  - google
+  - anthropic
+  - llama-3.2
+  - llama-3.1
+  - gemma-2
+  - gemma-2-2.6b
+  - phi-3.5-mini
+  - claude-3
+  - claude-3-haiku
+  - gpt-4o-mini
+  - molmo
+  - ovis-1.6
+  - gemma-2-10b
+  - gemini-1.5
+  - qwen-2-vl-7b
+  - minicpm-v2.6
+  - multimodal-models
+  - vision-language
+  - edge-devices
+  - model-pruning
+  - model-distillation
+  - open-source-models
+  - benchmark-evaluation
+  - analog-clock-reading
+  - model-optimization
+  - ai-safety
+  - augmented-reality
+  - ar-glasses
+  - response-synthesis
+  - model-alignment
+  - cloud-platforms
+companies:
+  - meta
+  - openai
+  - allen
+  - google
+  - anthropic
+models:
+  - llama-3.2
+  - llama-3.1
+  - gemma-2
+  - gemma-2-2.6b
+  - phi-3.5-mini
+  - claude-3
+  - claude-3-haiku
+  - gpt-4o-mini
+  - molmo
+  - ovis-1.6
+  - gemma-2-10b
+  - gemini-1.5
+  - qwen-2-vl-7b
+  - minicpm-v2.6
+topics:
+  - multimodal-models
+  - vision-language
+  - edge-devices
+  - model-pruning
+  - model-distillation
+  - open-source-models
+  - benchmark-evaluation
+  - analog-clock-reading
+  - model-optimization
+  - ai-safety
+  - augmented-reality
+  - ar-glasses
+  - response-synthesis
+  - model-alignment
+  - cloud-platforms
 ---
 
 

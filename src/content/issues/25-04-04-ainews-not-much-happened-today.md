@@ -4,19 +4,100 @@ title: not much happened today
 date: '2025-04-05T01:50:06.395334Z'
 original_slug: ainews-not-much-happened-today-7847
 description: >-
-  OpenAI announced delays in releasing o3 and o4-mini models, with GPT-5
-  expected in a few months to ensure improved quality and capacity. Meanwhile,
-  Google's Gemini 2.5 Pro entered public preview with higher rate limits and
-  competitive pricing, gaining traction as a versatile model for most tasks
-  except image generation.
+  OpenAI announced a revised release schedule with **o3 and o4-mini launching in
+  a few weeks**, followed by **GPT-5 in a few months**, aiming for improved
+  quality and capacity. Meanwhile, **DeepSeek** introduced **Self-Principled
+  Critique Tuning (SPCT)**, a method that enables their **27B parameter**
+  Generalist Reward Model to match or exceed much larger models, promising
+  enhanced inference-time scalability and open-source availability.
 tags:
   - openai
-  - gpt-5
+  - deepseek
   - google
+  - microsoft
+  - anthropic
+  - meta
+  - hugging-face
+  - apache
+  - langchain
+  - stanford
+  - o3
+  - o4-mini
+  - gpt-5
+  - deepseek-grm-27b
+  - sonnet-3.7
+  - gemma-3
   - gemini-2.5-pro
-  - model-release
-  - public-preview
-  - pricing
+  - qwen-2.5-vl
+  - gemma-2-27b
+  - llama-3.1
+  - llama-4
+  - gpt-img-eval
+  - dream-7b
+  - lla-da-8b
+  - unidisc
+  - model-releases
+  - inference-time-scaling
+  - generalist-reward-modeling
+  - large-language-models
+  - open-source-models
+  - gpu-server-builds
+  - benchmark-evaluation
+  - generative-models
+  - coding-models
+  - model-pricing
+  - agent-reliability
+  - retrieval-systems
+  - matrix-visualization
+  - scientific-reasoning
+  - diffusion-models
+  - multimodal-ocr
+  - ai-product-management
+companies:
+  - openai
+  - deepseek
+  - google
+  - microsoft
+  - anthropic
+  - meta
+  - hugging-face
+  - apache
+  - langchain
+  - stanford
+models:
+  - o3
+  - o4-mini
+  - gpt-5
+  - deepseek-grm-27b
+  - sonnet-3.7
+  - gemma-3
+  - gemini-2.5-pro
+  - qwen-2.5-vl
+  - gemma-2-27b
+  - llama-3.1
+  - llama-4
+  - gpt-img-eval
+  - dream-7b
+  - lla-da-8b
+  - unidisc
+topics:
+  - model-releases
+  - inference-time-scaling
+  - generalist-reward-modeling
+  - large-language-models
+  - open-source-models
+  - gpu-server-builds
+  - benchmark-evaluation
+  - generative-models
+  - coding-models
+  - model-pricing
+  - agent-reliability
+  - retrieval-systems
+  - matrix-visualization
+  - scientific-reasoning
+  - diffusion-models
+  - multimodal-ocr
+  - ai-product-management
 ---
 
 

@@ -4,20 +4,94 @@ title: Problems with MMLU-Pro
 date: '2024-07-09T00:20:51.624419Z'
 original_slug: ainews-et-tu-mmlu-pro
 description: >-
-  The MMLU-Pro benchmark has been named the successor to MMLU on the Open LLM
-  Leaderboard V2, showing significant improvements, but community researchers
-  have uncovered discrepancies in evaluation methods that may disadvantage open
-  models. Meanwhile, Meta unveiled MobileLLM, a technique enabling sub-billion
-  parameter LLMs to run efficiently on smartphones by sharing weights and
-  matrices across transformer blocks.
+  The community has raised concerns about the newly introduced **MMLU-Pro**
+  benchmark, highlighting discrepancies in evaluation methods that may unfairly
+  favor closed models over open ones, despite **HuggingFace** naming it the
+  successor to MMLU. Meanwhile, **Meta** unveiled **MobileLLM**, a novel
+  approach enabling sub-billion parameter LLMs to run efficiently on smartphones
+  using shared weights and deeper architectures.
 tags:
-  - mmlu-pro
-  - open-llm-leaderboard
-  - benchmark-evaluation
+  - huggingface
   - meta
+  - salesforce
+  - nomic
+  - pineapple
+  - uc-sd
+  - mit
+  - bmw
+  - altos-labs
+  - deepmind
+  - mmlu-pro
+  - llama-3-8b-q8
   - mobilellm
-  - transformers
-  - model-optimization
+  - apigen
+  - runway-gen-3
+  - gpt4all-3.0
+  - chatgpt
+  - claude
+  - llama
+  - gemini
+  - mamba-2-hybrid
+  - internlm2.5-7b-chat
+  - benchmarks
+  - model-evaluation
+  - prompt-engineering
+  - mobile-llms
+  - dataset-generation
+  - video-generation
+  - open-source-models
+  - ai-assistants
+  - multimodal-ai
+  - robotics
+  - lifespan-extension
+  - reasoning
+  - retrieval-augmented-generation
+  - teleoperation
+  - deepfake
+  - ai-culture
+  - model-training-costs
+companies:
+  - huggingface
+  - meta
+  - salesforce
+  - nomic
+  - pineapple
+  - uc-sd
+  - mit
+  - bmw
+  - altos-labs
+  - deepmind
+models:
+  - mmlu-pro
+  - llama-3-8b-q8
+  - mobilellm
+  - apigen
+  - runway-gen-3
+  - gpt4all-3.0
+  - chatgpt
+  - claude
+  - llama
+  - gemini
+  - mamba-2-hybrid
+  - internlm2.5-7b-chat
+topics:
+  - benchmarks
+  - model-evaluation
+  - prompt-engineering
+  - mobile-llms
+  - dataset-generation
+  - video-generation
+  - open-source-models
+  - ai-assistants
+  - multimodal-ai
+  - robotics
+  - lifespan-extension
+  - reasoning
+  - retrieval-augmented-generation
+  - teleoperation
+  - deepfake
+  - ai-culture
+  - model-training-costs
 ---
 
 

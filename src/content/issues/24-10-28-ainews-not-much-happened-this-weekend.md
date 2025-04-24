@@ -4,19 +4,76 @@ title: not much happened this weekend
 date: '2024-10-28T22:27:43.875190Z'
 original_slug: ainews-not-much-happened-this-weekend-2670
 description: >-
-  Moondream, a 1.6 billion parameter vision-language model, secured seed
-  funding, highlighting growing interest in moon-themed tiny models alongside
-  Moonshine, a smaller ASR model. Additionally, Mini-Omni 2 was showcased as a
-  multimodal model capable of understanding image, audio, and text inputs for
-  voice conversations, emphasizing advances in multimodal machine learning.
+  **Ollama** has launched a beta version of the multimodal **Llama 3.2 Vision**
+  model, capable of processing both text and images, marking a significant step
+  in accessible multimodal AI. Meanwhile, the **glm-4-voice-9b** model is now
+  runnable on *12GB GPUs*, expanding efficient voice AI capabilities to more
+  modest hardware and sparking discussions on the near-future of AI voice
+  assistants.
 tags:
+  - ollama
   - moondream
-  - vision-language
-  - seed-funding
   - moonshine
-  - mini-omni-2
-  - multimodal
-  - machine-learning
+  - nomic
+  - langchain
+  - hugging-face
+  - predibase
+  - apple
+  - runpod
+  - pixtral
+  - llama-3.2-vision
+  - glm-4-voice-9b
+  - llama3.2-3b
+  - minicmpm-2.6
+  - minicomni-2
+  - notebookllama
+  - octopus_v2
+  - gemma2-27b
+  - multimodal-models
+  - voice-assistants
+  - local-rag
+  - model-optimization
+  - prompt-optimization
+  - tensor-parallelism
+  - pattern-recognition
+  - reinforcement-learning
+  - software-engineering
+  - generative-ai
+  - embedding-models
+  - open-source-models
+companies:
+  - ollama
+  - moondream
+  - moonshine
+  - nomic
+  - langchain
+  - hugging-face
+  - predibase
+  - apple
+  - runpod
+  - pixtral
+models:
+  - llama-3.2-vision
+  - glm-4-voice-9b
+  - llama3.2-3b
+  - minicmpm-2.6
+  - minicomni-2
+  - notebookllama
+  - octopus_v2
+  - gemma2-27b
+topics:
+  - multimodal-models
+  - voice-assistants
+  - local-rag
+  - model-optimization
+  - prompt-optimization
+  - tensor-parallelism
+  - pattern-recognition
+  - reinforcement-learning
+  - software-engineering
+  - generative-ai
+  - embedding-models
+  - open-source-models
 ---
 
 

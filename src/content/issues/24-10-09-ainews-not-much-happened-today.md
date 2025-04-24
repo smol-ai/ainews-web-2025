@@ -5,20 +5,75 @@ date: '2024-10-10T01:02:45.022514Z'
 original_slug: ainews-not-much-happened-today-6017
 description: >-
   Demis Hassabis and John Jumper won the Nobel Prize in Chemistry for their work
-  on AlphaFold, revolutionizing protein folding prediction with AI.
-  Additionally, Geoffrey Hinton and John Hopfield received the Nobel Prize in
-  Physics for foundational contributions to neural networks and deep learning.
+  on **AlphaFold**, highlighting AI’s transformative impact on chemistry.
+  Additionally, continuous finetuning methods have enabled the creation of
+  advanced models like **Rombos-LLM-V2.5** based on **Qwen-2.5**, which topped
+  the Open-LLM leaderboard, demonstrating significant progress in model merging
+  and domain adaptation.
 tags:
-  - nobel-prize
-  - chemistry
-  - physics
-  - demis-hassabis
-  - john-jumper
-  - geoffrey-hinton
-  - john-hopfield
+  - openai
+  - sequoia
+  - meta
+  - anthropic
+  - togethercompute
+  - lm-studio
+  - hugh-face
+  - bespokelabs
   - alphafold
-  - neural-networks
-  - deep-learning
+  - qwen-2.5
+  - rombos-llm-v2.5
+  - llama-3.1
+  - llama-3.2
+  - flux-schnell
+  - hex-llm
+  - vllm
+  - llama.cpp
+  - pmrf
+  - message-batches-api
+  - nobel-prize
+  - protein-folding
+  - continuous-finetuning
+  - model-merging
+  - large-language-models
+  - distributed-inference
+  - model-quantization
+  - api-cost-optimization
+  - hallucination-detection
+  - ai-safety
+  - ai-governance
+companies:
+  - openai
+  - sequoia
+  - meta
+  - anthropic
+  - togethercompute
+  - lm-studio
+  - hugh-face
+  - bespokelabs
+models:
+  - alphafold
+  - qwen-2.5
+  - rombos-llm-v2.5
+  - llama-3.1
+  - llama-3.2
+  - flux-schnell
+  - hex-llm
+  - vllm
+  - llama.cpp
+  - pmrf
+  - message-batches-api
+topics:
+  - nobel-prize
+  - protein-folding
+  - continuous-finetuning
+  - model-merging
+  - large-language-models
+  - distributed-inference
+  - model-quantization
+  - api-cost-optimization
+  - hallucination-detection
+  - ai-safety
+  - ai-governance
 ---
 
 

@@ -4,18 +4,99 @@ title: The Dissection of Smaug (72B)
 date: '2024-02-13T01:40:29.456403Z'
 original_slug: ainews-to-be-named-3759
 description: >-
-  Abacus AI released Smaug 72B, a large finetuned version of Qwen, which
-  currently leads the Hugging Face Open LLM Leaderboard despite some skepticism
-  from the community. Additionally, LAION introduced a new local voice assistant
-  model named Bud-E, showcasing promising demo capabilities.
+  **Abacus AI** has made significant noise with the release of **Smaug 72B**,
+  their largest fine-tune of the Qwen model series, maintaining a top position
+  on the Hugging Face Open LLM Leaderboard despite skepticism from competitors
+  like Nous. Meanwhile, **LAION** introduced a new local voice assistant model
+  named Bud-E, showcasing advancements in voice AI technology.
 tags:
   - abacus
-  - smaug-72b
   - qwen
-  - huggingface
+  - nous
   - laion
+  - hugging-face
+  - thebloke
+  - lm-studio
+  - intel
+  - crewai
+  - autogen
+  - openai
+  - google
+  - smaug-72b
+  - qwen-1.0
+  - qwen-1.5
+  - mistral-7b
+  - miquella
+  - miqumaid
+  - wizardlm-evol-instruct-v2-196k
+  - openhermes-2.5
+  - gpt-4
+  - gpt-4-32k
+  - gpt-3.5
+  - goliath-120b
+  - mixtral-7b
   - bud-e
-  - voice-assistant
+  - dinov2-for-image-classification
+  - large-language-models
+  - fine-tuning
+  - model-merging
+  - model-quantization
+  - voice-assistants
+  - local-llms
+  - web-ui-development
+  - prompt-engineering
+  - computer-vision
+  - text-compression
+  - api-usage
+  - hardware-optimization
+  - token-context-limits
+  - ai-safety
+  - model-metadata-management
+companies:
+  - abacus
+  - qwen
+  - nous
+  - laion
+  - hugging-face
+  - thebloke
+  - lm-studio
+  - intel
+  - crewai
+  - autogen
+  - openai
+  - google
+models:
+  - smaug-72b
+  - qwen-1.0
+  - qwen-1.5
+  - mistral-7b
+  - miquella
+  - miqumaid
+  - wizardlm-evol-instruct-v2-196k
+  - openhermes-2.5
+  - gpt-4
+  - gpt-4-32k
+  - gpt-3.5
+  - goliath-120b
+  - mixtral-7b
+  - bud-e
+  - dinov2-for-image-classification
+topics:
+  - large-language-models
+  - fine-tuning
+  - model-merging
+  - model-quantization
+  - voice-assistants
+  - local-llms
+  - web-ui-development
+  - prompt-engineering
+  - computer-vision
+  - text-compression
+  - api-usage
+  - hardware-optimization
+  - token-context-limits
+  - ai-safety
+  - model-metadata-management
 ---
 
 

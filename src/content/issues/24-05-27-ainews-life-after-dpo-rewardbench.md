@@ -4,20 +4,77 @@ title: Life after DPO (RewardBench)
 date: '2024-05-28T00:04:01.538810Z'
 original_slug: ainews-life-after-dpo
 description: >-
-  xAI has raised $6 billion in funding, reaching a $24 billion valuation,
-  positioning it as one of the most highly valued AI startups with ambitions to
-  develop GPT-5 and GPT-6 class models. Additionally, Nathan Lambert’s recent
-  lecture and RewardBench tool highlight ongoing advancements and challenges in
-  reward models, emphasizing the importance of RLHF and emerging alternatives
-  like DPO for improving language model alignment and safety.
+  **xAI** raised *$6 billion* at a *$24 billion* valuation, positioning itself
+  among the most highly valued AI startups and potentially funding models on the
+  scale of **GPT-5** and **GPT-6**. Meanwhile, **Nathan Lambert** presented
+  insights on the evolution of language models and reward models, highlighting
+  the importance of **RLHF** and introducing **RewardBench**, a tool
+  benchmarking reward models where some **Llama 3 8B** variants are
+  outperforming established models like **GPT-4**, **Cohere**, and **Claude**.
 tags:
   - xai
-  - funding
+  - openai
+  - cohere
+  - meta
+  - microsoft
+  - naver
+  - anthropic
+  - mistral
+  - gpt-3
+  - gpt-4
   - gpt-5
   - gpt-6
+  - llama-3
+  - llama-3-8b
+  - claude
+  - rewardbench
+  - autocoder
+  - funding
+  - valuation
+  - reinforcement-learning-from-human-feedback
+  - direct-preference-optimization
   - reward-models
-  - rlhf
-  - dpo
+  - language-models
+  - model-benchmarking
+  - alignment-research
+  - transformer-architecture
+  - robotics
+  - ai-safety
+  - ai-regulation
+  - self-supervised-learning
+companies:
+  - xai
+  - openai
+  - cohere
+  - meta
+  - microsoft
+  - naver
+  - anthropic
+  - mistral
+models:
+  - gpt-3
+  - gpt-4
+  - gpt-5
+  - gpt-6
+  - llama-3
+  - llama-3-8b
+  - claude
+  - rewardbench
+  - autocoder
+topics:
+  - funding
+  - valuation
+  - reinforcement-learning-from-human-feedback
+  - direct-preference-optimization
+  - reward-models
+  - language-models
+  - model-benchmarking
+  - alignment-research
+  - transformer-architecture
+  - robotics
+  - ai-safety
+  - ai-regulation
+  - self-supervised-learning
 ---
 
 

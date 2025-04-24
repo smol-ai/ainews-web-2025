@@ -4,20 +4,20 @@ title: 'Promptable Prosody, SOTA ASR, and Semantic VAD: OpenAI revamps Voice AI'
 date: '2025-03-20T22:51:24.059321Z'
 original_slug: ainews-promptable-prosody-sota-asr-and-semantic
 description: >-
-  OpenAI has launched three new advanced audio models, including two
-  speech-to-text models that outperform Whisper and a new text-to-speech model
-  with controllable prosody, significantly enhancing voice capabilities in their
-  API. Additionally, OpenAI introduced the o1-pro model with vision and function
-  calling support, available to select developers at higher pricing tiers.
+  **OpenAI** has launched three new state-of-the-art audio models including
+  **gpt-4o-transcribe**, a speech-to-text model outperforming Whisper, and
+  **gpt-4o-mini-tts**, a text-to-speech model with promptable prosody, alongside
+  updates to real-time voice turn detection. Additionally, **OpenAI's o1-pro**
+  model is now available via API for select developers, supporting vision and
+  function calling with higher compute costs, while **Nvidia** open-sourced
+  multilingual speech recognition and translation models, and **Perplexity AI**
+  released upgraded Sonar models offering superior performance at lower prices.
 tags:
-  - openai
-  - speech-to-text
-  - text-to-speech
-  - gpt-4o-transcribe
-  - gpt-4o-mini-tts
-  - o1-pro
-  - vision
-  - function-calling
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

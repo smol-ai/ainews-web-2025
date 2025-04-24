@@ -4,19 +4,92 @@ title: The new OpenAI Agents Platform
 date: '2025-03-12T00:23:17.547385Z'
 original_slug: ainews-the-new-openai-agents-platform
 description: >-
-  OpenAI unveiled a comprehensive suite of new tools and an open-source Agents
-  SDK designed to accelerate the development of AI agents, including APIs for
-  responses, web search, file search, and computer use. Meanwhile, Reka AI
-  open-sourced Reka Flash 3, a 21B parameter reasoning model that outperforms
-  competitors and powers their new enterprise platform, Nexus.
+  OpenAI has launched a comprehensive suite of new tools and an open-source
+  Agents SDK to advance AI agent development, including a Responses API, Web
+  Search, File Search, and Computer Use tools, which have been praised as highly
+  well-designed and useful. Additionally, Reka AI open-sourced its 21B parameter
+  reasoning model, Reka Flash 3, which powers their new enterprise intelligence
+  platform and demonstrates competitive performance under an Apache 2.0 license.
 tags:
   - openai
-  - agents
-  - sdk
   - reka
+  - together
+  - alibaba
+  - hugging-face
+  - langchain
+  - weave
+  - perplexity
+  - figure
+  - anthropic
+  - zoom
+  - assembly
+  - cartesia
+  - embra
   - reka-flash-3
-  - enterprise
-  - reasoning-model
+  - olympiccoder
+  - claude-3.7-sonnet
+  - llama-3.3-70b
+  - sonic-2
+  - qwen-chat
+  - helix
+  - ai-agents
+  - agents-sdk
+  - responses-api
+  - web-search
+  - file-search
+  - computer-use
+  - open-source
+  - model-benchmarks
+  - reasoning-models
+  - enterprise-intelligence
+  - voice-synthesis
+  - multimodal-interfaces
+  - gpu-clusters
+  - inference-acceleration
+  - competitive-coding
+  - ai-automation
+  - ai-robotics
+companies:
+  - openai
+  - reka
+  - together
+  - alibaba
+  - hugging-face
+  - langchain
+  - weave
+  - perplexity
+  - figure
+  - anthropic
+  - zoom
+  - assembly
+  - cartesia
+  - embra
+models:
+  - reka-flash-3
+  - olympiccoder
+  - claude-3.7-sonnet
+  - llama-3.3-70b
+  - sonic-2
+  - qwen-chat
+  - helix
+topics:
+  - ai-agents
+  - agents-sdk
+  - responses-api
+  - web-search
+  - file-search
+  - computer-use
+  - open-source
+  - model-benchmarks
+  - reasoning-models
+  - enterprise-intelligence
+  - voice-synthesis
+  - multimodal-interfaces
+  - gpu-clusters
+  - inference-acceleration
+  - competitive-coding
+  - ai-automation
+  - ai-robotics
 ---
 
 

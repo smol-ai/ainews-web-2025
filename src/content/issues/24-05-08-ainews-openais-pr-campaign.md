@@ -4,20 +4,88 @@ title: OpenAI's PR Campaign?
 date: '2024-05-09T01:27:27.645324Z'
 original_slug: ainews-to-be-named-1752
 description: >-
-  Google DeepMind released AlphaFold 3, a cutting-edge AI model capable of
-  predicting the structure and interactions of nearly all biological molecules,
-  including proteins, DNA, and RNA, with state-of-the-art accuracy.
-  Additionally, new research on xLSTM presents a scalable alternative to
-  transformers, showing promising performance and efficiency for large-scale
-  language models.
+  **Google DeepMind** announced **AlphaFold 3**, a state-of-the-art model
+  capable of predicting the structure and interactions of nearly all biological
+  molecules with unprecedented accuracy. Meanwhile, **OpenAI** introduced the
+  **OpenAI Model Spec**, a public framework detailing how their models are
+  designed to behave, including responsible handling of NSFW content, aiming to
+  improve transparency and alignment.
 tags:
   - google
   - deepmind
+  - openai
+  - microsoft
+  - meta
+  - ibm
+  - llama
+  - tenyx
+  - infinity
   - alphafold-3
-  - protein-folding
-  - lstm
-  - transformers
-  - scaling
+  - llama-3
+  - llama3-tenyxchat-70b
+  - llama-3-8b-instruct-coder
+  - granite-code
+  - granite-8b
+  - gpt-4
+  - gpt-4-airgapped
+  - xlstm
+  - vattention
+  - ragflow-0.5.0
+  - deeseek-v2
+  - protein-structure-prediction
+  - molecular-biology
+  - model-alignment
+  - nsfw-content
+  - transformer-alternatives
+  - memory-management
+  - efficient-fine-tuning
+  - open-source-models
+  - benchmarking
+  - contamination-detection
+  - neural-interfaces
+  - retrieval-augmented-generation
+  - vector-search
+  - coding
+  - roleplay-applications
+companies:
+  - google
+  - deepmind
+  - openai
+  - microsoft
+  - meta
+  - ibm
+  - llama
+  - tenyx
+  - infinity
+models:
+  - alphafold-3
+  - llama-3
+  - llama3-tenyxchat-70b
+  - llama-3-8b-instruct-coder
+  - granite-code
+  - granite-8b
+  - gpt-4
+  - gpt-4-airgapped
+  - xlstm
+  - vattention
+  - ragflow-0.5.0
+  - deeseek-v2
+topics:
+  - protein-structure-prediction
+  - molecular-biology
+  - model-alignment
+  - nsfw-content
+  - transformer-alternatives
+  - memory-management
+  - efficient-fine-tuning
+  - open-source-models
+  - benchmarking
+  - contamination-detection
+  - neural-interfaces
+  - retrieval-augmented-generation
+  - vector-search
+  - coding
+  - roleplay-applications
 ---
 
 

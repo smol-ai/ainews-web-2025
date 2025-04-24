@@ -4,19 +4,100 @@ title: not much happened today
 date: '2025-04-11T20:07:39.735908Z'
 original_slug: ainews-not-much-happened-today-2885
 description: >-
-  Grok-3 outperforms several non-reasoning models like GPT-4.5 and Claude 3.7
-  Sonnet on reasoning benchmarks, while Grok-3 mini excels in reasoning tasks
-  with top scores on FrontierMath. Additionally, OpenAI introduced BrowseComp, a
-  new benchmark designed to evaluate AI agents' ability to browse the internet
-  for challenging information retrieval tasks.
+  **Meta’s Llama 4** has been removed from the Lmarena.ai leaderboard due to
+  concerns over submitting unreleased, chat-optimized models, which some users
+  find misleading and setting a bad precedent. Additionally, independent
+  evaluations show **Grok-3** outperforming models like **GPT-4.5** and **Claude
+  3.7 Sonnet** on reasoning benchmarks, while **Grok-3 mini** excels on
+  FrontierMath.
 tags:
+  - meta
+  - openai
+  - google
+  - alibaba
+  - apple
+  - deepseek
+  - lmarena
+  - epochai
+  - claude
+  - qwen
+  - llama-4
   - grok-3
   - grok-3-mini
-  - gpt-4-5
-  - claude-3-7
-  - reinforcement-learning
+  - gpt-4.5
+  - claude-3.7-sonnet
+  - deepcoder-14b
+  - qwen2.5
+  - quasar-alpha
+  - optimus-alpha
+  - llama-4-scout
+  - llama-4-maverick
+  - kaleidoscope
+  - internvl3
+  - transmamba
+  - fantasytalking
   - browsecomp
+  - augment
+  - ironwood-tpu
+  - vllm
+  - model-benchmarks
+  - reasoning
+  - reinforcement-learning
+  - vision-language-models
+  - multimodal-models
   - ai-agents
+  - ai-infrastructure
+  - chatgpt-memory
+  - tariffs
+  - geopolitical-implications
+  - coding-assistants
+  - ai-ethics
+  - leaderboard-management
+companies:
+  - meta
+  - openai
+  - google
+  - alibaba
+  - apple
+  - deepseek
+  - lmarena
+  - epochai
+  - claude
+  - qwen
+models:
+  - llama-4
+  - grok-3
+  - grok-3-mini
+  - gpt-4.5
+  - claude-3.7-sonnet
+  - deepcoder-14b
+  - qwen2.5
+  - quasar-alpha
+  - optimus-alpha
+  - llama-4-scout
+  - llama-4-maverick
+  - kaleidoscope
+  - internvl3
+  - transmamba
+  - fantasytalking
+  - browsecomp
+  - augment
+  - ironwood-tpu
+  - vllm
+topics:
+  - model-benchmarks
+  - reasoning
+  - reinforcement-learning
+  - vision-language-models
+  - multimodal-models
+  - ai-agents
+  - ai-infrastructure
+  - chatgpt-memory
+  - tariffs
+  - geopolitical-implications
+  - coding-assistants
+  - ai-ethics
+  - leaderboard-management
 ---
 
 

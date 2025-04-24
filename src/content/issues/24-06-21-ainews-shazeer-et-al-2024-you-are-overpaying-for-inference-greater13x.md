@@ -4,20 +4,68 @@ title: 'Shazeer et al (2024): you are overpaying for inference >13x'
 date: '2024-06-22T00:48:48.532463Z'
 original_slug: ainews-shazeer-et-al-2024
 description: >-
-  Character.ai now serves 20% of Google Search traffic for LLM inference while
-  reducing serving costs by 33x through advanced memory-efficiency and stateful
-  caching techniques. Additionally, Anthropic released Claude 3.5 Sonnet, which
-  offers twice the speed and one-fifth the cost of its predecessor, with
-  improved performance on nuanced tasks and new features like real-time artifact
-  generation.
+  Character.ai now serves **20% of Google Search traffic** for LLM inference
+  with a 33x reduction in serving costs using advanced memory-efficiency and
+  caching techniques. Meanwhile, **Anthropic** released **Claude 3.5 Sonnet**,
+  which outperforms competitors including GPT-4o on benchmarks and vision tasks,
+  running twice as fast as Claude 3 Opus at one-fifth the cost and showing
+  strong agentic coding capabilities.
 tags:
   - character
+  - google
+  - anthropic
+  - openai
+  - deepmind
+  - epfl
+  - apple
+  - claude-3.5-sonnet
+  - claude-3-opus
+  - gpt-4o
+  - mixture-of-agents
+  - infini-transformer
+  - 4m-21
+  - large-language-models
   - memory-efficiency
   - caching
+  - kv-cache
+  - transformer-architecture
+  - model-scaling
+  - agentic-coding
+  - multimodal-models
+  - retrieval-augmented-generation
+  - benchmarks
+  - evals
+  - quantization
+  - vision-reasoning
+companies:
+  - character
+  - google
   - anthropic
+  - openai
+  - deepmind
+  - epfl
+  - apple
+models:
   - claude-3.5-sonnet
-  - llm-inference
-  - cost-reduction
+  - claude-3-opus
+  - gpt-4o
+  - mixture-of-agents
+  - infini-transformer
+  - 4m-21
+topics:
+  - large-language-models
+  - memory-efficiency
+  - caching
+  - kv-cache
+  - transformer-architecture
+  - model-scaling
+  - agentic-coding
+  - multimodal-models
+  - retrieval-augmented-generation
+  - benchmarks
+  - evals
+  - quantization
+  - vision-reasoning
 ---
 
 

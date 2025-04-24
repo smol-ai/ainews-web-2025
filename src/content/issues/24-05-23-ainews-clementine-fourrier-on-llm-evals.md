@@ -4,19 +4,55 @@ title: Clémentine Fourrier on LLM evals
 date: '2024-05-23T23:34:22.485002Z'
 original_slug: ainews-to-be-named-4285
 description: >-
-  Clémentine Fourrier from Huggingface shared a detailed blog on large language
-  model (LLM) evaluation methods, outlining three main approaches: automated
-  benchmarking, human judges, and models as judges. The post highlights the
-  strengths and limitations of each method, emphasizing challenges like data
-  contamination, human bias, and model self-preference in scoring.
+  **NVIDIA** reported exceptional earnings with revenue up *262%* to *$26B* and
+  a market cap soaring over *6x* to *$2.3T*, surpassing Google and Amazon,
+  reflecting strong investor confidence. Meanwhile, **Mistral AI** released
+  updates including **Mistral-7B v0.3** with extended vocabulary and faster LoRA
+  finetuning, highlighting ongoing advancements in efficient model training.
 tags:
+  - nvidia
+  - mistral
+  - meta
+  - anthropic
+  - google
   - huggingface
-  - llm
-  - evaluation
+  - mistral-7b-v0.3
+  - claude-3-opus
+  - llama-3
+  - learnlm
+  - earnings
+  - stock-performance
+  - large-language-models
+  - model-evaluation
+  - open-source
+  - finetuning
+  - personalized-tutoring
+  - website-poisoning
   - benchmarking
-  - human-judges
-  - model-judges
-  - data-contamination
+  - human-evaluation
+companies:
+  - nvidia
+  - mistral
+  - meta
+  - anthropic
+  - google
+  - huggingface
+models:
+  - mistral-7b-v0.3
+  - claude-3-opus
+  - llama-3
+  - learnlm
+topics:
+  - earnings
+  - stock-performance
+  - large-language-models
+  - model-evaluation
+  - open-source
+  - finetuning
+  - personalized-tutoring
+  - website-poisoning
+  - benchmarking
+  - human-evaluation
 ---
 
 

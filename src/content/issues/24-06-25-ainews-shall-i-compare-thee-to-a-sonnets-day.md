@@ -4,19 +4,64 @@ title: Shall I compare thee to a Sonnet's day?
 date: '2024-06-26T00:39:44.720143Z'
 original_slug: ainews-sonnet
 description: >-
-  Anthropic's Claude 3.5 Sonnet has achieved top rankings in coding and hard
-  prompt challenges, outperforming competitors like GPT-4o at a lower cost,
-  though some critique its instruction-following capabilities. Additionally,
-  Glif demonstrated a fully automated Wojak meme generator using Claude 3.5,
-  showcasing new JSON extraction tools for rapid app creation.
+  **Claude 3.5 Sonnet** from **Anthropic** has achieved top rankings in multiple
+  coding and hard prompt arenas, surpassing models like GPT-4o and Gemini 1.5
+  Pro at lower cost, though some critique its instruction-following
+  capabilities. Additionally, **Glif** demonstrated a fully automated Wojak meme
+  generator built in just *5 minutes* using Claude 3.5, showcasing innovative
+  JSON extraction and integration techniques.
 tags:
   - anthropic
-  - claude-3.5
-  - coding
-  - hard-prompts
   - glif
-  - wojak
-  - meme-generator
+  - lmsys
+  - comfyui
+  - together
+  - microsoft
+  - google
+  - claude-3.5-sonnet
+  - gpt-4o
+  - gemini-1.5-pro
+  - mistral-7b
+  - llama-7b
+  - llama-70b
+  - coding-benchmarks
+  - hard-prompts
+  - instruction-tuning
+  - meme-generation
+  - json-extraction
+  - retrieval-augmented-generation
+  - long-context-llms
+  - many-shot-in-context-learning
+  - productivity
+  - fusion-energy
+  - nuclear-fission
+companies:
+  - anthropic
+  - glif
+  - lmsys
+  - comfyui
+  - together
+  - microsoft
+  - google
+models:
+  - claude-3.5-sonnet
+  - gpt-4o
+  - gemini-1.5-pro
+  - mistral-7b
+  - llama-7b
+  - llama-70b
+topics:
+  - coding-benchmarks
+  - hard-prompts
+  - instruction-tuning
+  - meme-generation
+  - json-extraction
+  - retrieval-augmented-generation
+  - long-context-llms
+  - many-shot-in-context-learning
+  - productivity
+  - fusion-energy
+  - nuclear-fission
 ---
 
 

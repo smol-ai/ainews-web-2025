@@ -4,20 +4,19 @@ title: That GPT-4o Demo
 date: '2024-06-29T00:48:47.349723Z'
 original_slug: ainews-that-openai-demo
 description: >-
-  Romain Huet demonstrated GPT-4o’s advanced multimodal capabilities including
-  rapid OCR, voice generation with tone control, and real-time screen sharing
-  with ChatGPT Desktop, showcasing significant improvements in interactive AI.
-  Additionally, Google DeepMind released Gemma 2, a highly efficient large
-  language model available in 9B and 27B parameter sizes, optimized for TPUv5e
-  and offering state-of-the-art performance with strong safety measures.
+  Romain Huet’s demo of **GPT-4o** showcased advanced multimodal capabilities
+  including rapid OCR, voice generation with tone control, and screen sharing
+  with ChatGPT Desktop, highlighting OpenAI’s focus on textual intelligence,
+  efficiency, model customization, and multimodal agents. Meanwhile, **Google
+  DeepMind** released **Gemma 2** models in *9B* and *27B* sizes, demonstrating
+  class-leading performance and efficiency, with availability on Kaggle and
+  Hugging Face and robust safety measures.
 tags:
-  - openai
-  - gpt-4o
-  - multimodal
-  - google
-  - deepmind
-  - gemma-2
-  - tpuv5e
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

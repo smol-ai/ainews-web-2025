@@ -4,21 +4,68 @@ title: Companies liable for AI hallucination is Good Actually for AI Engineers
 date: '2024-02-20T00:05:26.401101Z'
 original_slug: ainews-companies-liable-for-ai-hallucination-is
 description: >-
-  A Canadian tribunal ruled that Air Canada must honor a refund based on
-  misleading information provided by its AI chatbot, setting a precedent that
-  companies can be held liable for inaccurate AI-generated customer service
-  information. Additionally, advancements in AI model optimization and
-  large-scale text processing were highlighted, including new prototypes like
-  Mistral-Next and the Large World Model capable of handling over 1 million
-  tokens.
+  A landmark legal ruling held **Air Canada** liable for inaccurate information
+  provided by its chatbot, ordering a partial refund to a customer and setting a
+  precedent for corporate responsibility in AI engineering. Meanwhile, emerging
+  AI developments include the introduction of prototype models like
+  **Mistral-Next** and **Large World Model** capable of processing over *1
+  million tokens*, as well as advances in quantization techniques to optimize
+  GPU inference performance.
 tags:
   - air-canada
-  - chatbot
-  - legal-ruling
+  - mistral
+  - large-world-model
+  - huggingface
+  - nvidia
+  - karpathy
+  - mistral-next
+  - sora
+  - dreamshaperxl-turbo
+  - gpt-4
+  - gpt-2
+  - koboldcpp
+  - legal-implications
+  - chatbot-accuracy
+  - refund-policy
+  - quantization
+  - gpu-optimization
+  - retrieval-augmented-generation
+  - large-language-models
+  - long-context-processing
+  - open-source-frameworks
+  - community-collaboration
+  - vision-transformers
+  - asynchronous-python
+  - dataset-management
+companies:
+  - air-canada
+  - mistral
+  - large-world-model
+  - huggingface
+  - nvidia
+  - karpathy
+models:
   - mistral-next
   - large-world-model
-  - model-optimization
+  - sora
+  - dreamshaperxl-turbo
+  - gpt-4
+  - gpt-2
+  - koboldcpp
+topics:
+  - legal-implications
+  - chatbot-accuracy
+  - refund-policy
+  - quantization
+  - gpu-optimization
+  - retrieval-augmented-generation
   - large-language-models
+  - long-context-processing
+  - open-source-frameworks
+  - community-collaboration
+  - vision-transformers
+  - asynchronous-python
+  - dataset-management
 ---
 
 

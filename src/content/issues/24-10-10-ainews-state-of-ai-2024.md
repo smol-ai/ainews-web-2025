@@ -4,20 +4,72 @@ title: State of AI 2024
 date: '2024-10-10T22:35:38.089325Z'
 original_slug: ainews-state-of-ai-2024
 description: >-
-  The 2024 Nobel Prizes in Physics and Chemistry were awarded for groundbreaking
-  AI research, recognizing Geoffrey Hinton and John Hopfield for neural
-  networks, and Demis Hassabis, John Jumper, and David Baker for AlphaFold and
-  protein structure prediction. Additionally, Meta released Llama 3.2, a
-  multimodal AI model, accompanied by a free course highlighting its new
-  features.
+  **Geoffrey Hinton, John Hopfield, Demis Hassabis, John Jumper, and David
+  Baker** won the *2024 Nobel Prizes* in Physics and Chemistry for their
+  groundbreaking AI research on neural networks and protein structure prediction
+  with AlphaFold. Meanwhile, **Meta** released **Llama 3.2**, a multimodal large
+  language model, and **Drummer** launched the massive **Behemoth 123B** model
+  on Hugging Face, highlighting ongoing advances in large-scale AI models.
 tags:
-  - nobel-prize
-  - physics
-  - chemistry
-  - neural-networks
-  - alphafold
   - meta
-  - llama-3-2
+  - drummer
+  - nvidia
+  - anthropic
+  - suno
+  - daily
+  - gcp
+  - product-hunt
+  - llama-3.2
+  - behemoth-123b
+  - magnum-72b
+  - mistral-large-2
+  - rtx-5090
+  - rtx-3090
+  - rtx-4090
+  - nobel-prizes
+  - neural-networks
+  - protein-folding
+  - multimodal-models
+  - large-language-models
+  - model-benchmarks
+  - gpu-hardware
+  - voice-ai
+  - synthetic-data
+  - knowledge-transfer
+  - tutoring-systems
+  - music-generation
+  - ai-industry-trends
+companies:
+  - meta
+  - drummer
+  - nvidia
+  - anthropic
+  - suno
+  - daily
+  - gcp
+  - product-hunt
+models:
+  - llama-3.2
+  - behemoth-123b
+  - magnum-72b
+  - mistral-large-2
+  - rtx-5090
+  - rtx-3090
+  - rtx-4090
+topics:
+  - nobel-prizes
+  - neural-networks
+  - protein-folding
+  - multimodal-models
+  - large-language-models
+  - model-benchmarks
+  - gpu-hardware
+  - voice-ai
+  - synthetic-data
+  - knowledge-transfer
+  - tutoring-systems
+  - music-generation
+  - ai-industry-trends
 ---
 
 

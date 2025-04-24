@@ -4,20 +4,84 @@ title: 'Nvidia Minitron: LLM Pruning and Distillation updated for Llama 3.1'
 date: '2024-08-23T22:14:15.426361Z'
 original_slug: ainews-nvidia-minitron-llm-pruning-and
 description: >-
-  Nvidia researchers have demonstrated that pruning and knowledge distillation
-  of large Llama 3 models can efficiently produce smaller models with
-  competitive performance, reducing training costs significantly. Meanwhile,
-  AI21 Labs released Jamba 1.5, a large-scale hybrid MoE model supporting a 256K
-  token context window and multilingual tasks.
+  A new paper from **Nvidia** researchers presents an efficient method for
+  creating smaller LLMs by pruning and distilling the largest **Llama 3.1 8B**
+  model, significantly reducing training costs while maintaining competitive
+  performance. Meanwhile, **AI21 Labs** launched **Jamba 1.5**, a large-scale
+  hybrid MoE model with up to *398B* parameters and a *256K* context window,
+  highlighting advances in long-context and multilingual capabilities.
 tags:
   - nvidia
-  - llama-3
-  - pruning
-  - distillation
+  - meta
   - ai21labs
-  - jamba-1-5
-  - moe
+  - anthropic
+  - bindureddy
+  - mistral
+  - llama_index
+  - openai
+  - novelai
+  - minitron-4b
+  - minitron-8b
+  - llama-3.1-8b
+  - jamba-1.5
+  - claude-3
+  - dracarys-70b
+  - dracarys-72b
+  - mistral-7b
+  - exllamav2
+  - qwen-72b
+  - stable-diffusion-v1.4
+  - model-pruning
+  - knowledge-distillation
+  - large-language-models
+  - mixture-of-experts
   - long-context
+  - multilingual-models
+  - prompt-optimization
+  - fine-tuning
+  - open-source-models
+  - ai-regulation
+  - ai-hardware
+  - diffusion-models
+  - coding-models
+  - tensor-parallelism
+companies:
+  - nvidia
+  - meta
+  - ai21labs
+  - anthropic
+  - bindureddy
+  - mistral
+  - llama_index
+  - openai
+  - novelai
+models:
+  - minitron-4b
+  - minitron-8b
+  - llama-3.1-8b
+  - jamba-1.5
+  - claude-3
+  - dracarys-70b
+  - dracarys-72b
+  - mistral-7b
+  - exllamav2
+  - qwen-72b
+  - stable-diffusion-v1.4
+topics:
+  - model-pruning
+  - knowledge-distillation
+  - large-language-models
+  - mixture-of-experts
+  - long-context
+  - multilingual-models
+  - prompt-optimization
+  - fine-tuning
+  - open-source-models
+  - ai-regulation
+  - ai-hardware
+  - diffusion-models
+  - coding-models
+  - tensor-parallelism
 ---
 
 

@@ -4,21 +4,68 @@ title: Stripe lets Agents spend money with StripeAgentToolkit
 date: '2024-11-16T01:02:33.643600Z'
 original_slug: ainews-stripe-lets-agents-spend-money-with
 description: >-
-  Stripe has launched a pioneering AI SDK specifically designed for agent
-  workflows that handle payments, enabling developers to integrate financial
-  services directly into AI agents. Additionally, OpenAI released a ChatGPT
-  desktop app for macOS with enhanced integrations for developer tools like VS
-  Code, Xcode, and Terminal, improving productivity and pair programming
-  capabilities.
+  Stripe has launched a pioneering SDK specifically designed for AI agents that
+  handle payments, enabling seamless integration of financial services into
+  agent workflows. Meanwhile, **Google DeepMind's Gemini Exp 1114** has achieved
+  a joint #1 ranking on the Chatbot Arena, leading multiple leaderboards
+  including Vision and Math, marking a significant milestone in large language
+  model performance.
 tags:
   - stripe
-  - sdk
-  - agents
-  - payments
+  - google
+  - deepmind
   - openai
-  - chatgpt
-  - macos
-  - developer-tools
+  - anthropic
+  - meta
+  - nexai
+  - gemini-exp-1114
+  - gpt-4o
+  - claude-3.5
+  - omnivision-968m
+  - llama-cpp
+  - qwen2.5-0.5b
+  - olmmoe
+  - ai-developer-tooling
+  - ai-agents
+  - financial-services
+  - large-language-models
+  - benchmark-performance
+  - prompt-engineering
+  - vision-language-models
+  - edge-computing
+  - adaptive-decoding
+  - chatgpt-desktop
+  - cloud-automation
+  - multimodal-ai
+companies:
+  - stripe
+  - google
+  - deepmind
+  - openai
+  - anthropic
+  - meta
+  - nexai
+models:
+  - gemini-exp-1114
+  - gpt-4o
+  - claude-3.5
+  - omnivision-968m
+  - llama-cpp
+  - qwen2.5-0.5b
+  - olmmoe
+topics:
+  - ai-developer-tooling
+  - ai-agents
+  - financial-services
+  - large-language-models
+  - benchmark-performance
+  - prompt-engineering
+  - vision-language-models
+  - edge-computing
+  - adaptive-decoding
+  - chatgpt-desktop
+  - cloud-automation
+  - multimodal-ai
 ---
 
 

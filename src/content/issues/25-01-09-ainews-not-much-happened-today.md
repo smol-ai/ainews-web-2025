@@ -4,20 +4,18 @@ title: not much happened today
 date: '2025-01-10T03:35:37.109683Z'
 original_slug: ainews-not-much-happened-today-4520
 description: >-
-  rStar-Math, a 7B parameter LLM using MCTS and Process Reward Models, has
-  achieved 90% accuracy on the MATH benchmark, surpassing OpenAI's o1-preview by
-  4.5%. Additionally, Alibaba released Qwen Chat with advanced vision-language
-  and reasoning models, while Microsoft introduced Phi-4, a model trained on 40%
-  synthetic data to improve pretraining performance.
+  **rStar-Math**, a 7B parameter model using MCTS and Process Reward Models,
+  achieved *90.0% accuracy* on the MATH benchmark, outperforming OpenAI's
+  **o1-preview** by *4.5%*. Meanwhile, **Microsoft** released the **Phi-4**
+  model, trained with *40% synthetic data*, which shows strong benchmark
+  performance despite skepticism about its real-world task effectiveness
+  compared to larger models like **Llama 3.1 70B** and **Qwen 2.5**.
 tags:
-  - rstar
-  - math-benchmark
-  - mcts
-  - process-reward-model
-  - openai
-  - qwen
-  - microsoft
-  - phi-4
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

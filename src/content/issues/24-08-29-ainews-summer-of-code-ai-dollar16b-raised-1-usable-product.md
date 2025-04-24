@@ -4,19 +4,74 @@ title: 'Summer of Code AI: $1.6b raised, 1 usable product'
 date: '2024-08-30T00:01:06.332310Z'
 original_slug: ainews-code
 description: >-
-  Magic AI’s recent $320M funding round highlights a breakthrough in
-  long-context language models with their LTM-2, capable of handling 100 million
-  token contexts at dramatically reduced computational cost compared to
-  traditional attention mechanisms. Meanwhile, Codeium AI raised $150M to
-  compete with GitHub Copilot, offering an immediately usable coding assistant.
+  **Magic** announced a $320 million funding round to advance their LTM-2 model
+  featuring a groundbreaking 100 million token context window with efficiency
+  vastly surpassing Llama 3.1, alongside a Google Cloud partnership scaling to
+  tens of thousands of GPUs. Meanwhile, **Codeium AI** raised $150 million,
+  positioning itself as a notable competitor in the coding assistant space with
+  an available product.
 tags:
-  - magic
-  - long-context-models
-  - ltm-2
+  - cognition
+  - poolside
   - codeium
+  - magic
+  - google
+  - nvidia
+  - openai
+  - intel
+  - meta
+  - cohere
+  - atlassian
+  - ltm-2
+  - ltm-2-mini
+  - llama-3.1-405b
+  - magic-g4
+  - magic-g5
+  - gemini-advanced
+  - transfusion
+  - stable-diffusion-v1
+  - large-context-language-models
   - coding-assistants
-  - funding
-  - efficiency
+  - model-efficiency
+  - gpu-infrastructure
+  - model-quantization
+  - multimodal-models
+  - retrieval-augmented-generation
+  - mlops
+  - ai-safety
+  - ai-regulation
+companies:
+  - cognition
+  - poolside
+  - codeium
+  - magic
+  - google
+  - nvidia
+  - openai
+  - intel
+  - meta
+  - cohere
+  - atlassian
+models:
+  - ltm-2
+  - ltm-2-mini
+  - llama-3.1-405b
+  - magic-g4
+  - magic-g5
+  - gemini-advanced
+  - transfusion
+  - stable-diffusion-v1
+topics:
+  - large-context-language-models
+  - coding-assistants
+  - model-efficiency
+  - gpu-infrastructure
+  - model-quantization
+  - multimodal-models
+  - retrieval-augmented-generation
+  - mlops
+  - ai-safety
+  - ai-regulation
 ---
 
 

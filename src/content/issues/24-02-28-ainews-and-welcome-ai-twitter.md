@@ -4,19 +4,46 @@ title: ... and welcome AI Twitter!
 date: '2024-02-29T00:50:17.713944Z'
 original_slug: ainews-and-welcome-ai-twitter
 description: >-
-  Google CEO succession speculation and the launch of the multilingual Mistral
-  Large model are among the top AI news highlights, reflecting significant
-  shifts in corporate leadership and advancements in AI capabilities.
-  Discussions also emphasize evolving programming skills in the AI era and
-  ethical considerations following Google Gemini's release.
+  Microsoft’s recent **$16 million investment** in **Mistral AI** has sparked
+  significant debate about potential monopolistic practices versus fostering
+  competition in the AI industry, as detailed in a [TechCrunch
+  article](https://techcrunch.com/2024/02/27/microsoft-made-a-16-million-investment-in-mistral-ai/).
+  Concurrently, the AI community is actively exploring efficient training
+  techniques such as **DeepSeek** for coding model fine-tuning and **QLoRA** for
+  cost-effective training, highlighting ongoing innovation and operational
+  challenges in AI development.
 tags:
-  - google
-  - ceo
+  - microsoft
   - mistral
   - mistral-large
-  - programming
-  - ethics
-  - google-gemini
+  - deepseek
+  - qlora
+  - investment
+  - model-fine-tuning
+  - training-efficiency
+  - deployment
+  - ethical-considerations
+  - model-performance
+  - monopolistic-behavior
+  - open-source
+  - video-comprehension
+companies:
+  - microsoft
+  - mistral
+models:
+  - mistral-large
+  - deepseek
+  - qlora
+topics:
+  - investment
+  - model-fine-tuning
+  - training-efficiency
+  - deployment
+  - ethical-considerations
+  - model-performance
+  - monopolistic-behavior
+  - open-source
+  - video-comprehension
 ---
 
 

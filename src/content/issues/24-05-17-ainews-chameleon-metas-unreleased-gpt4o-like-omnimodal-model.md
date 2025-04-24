@@ -4,21 +4,65 @@ title: 'Chameleon: Meta''s (unreleased) GPT4o-like Omnimodal Model'
 date: '2024-05-17T20:46:44.950821Z'
 original_slug: ainews-chameleon-metas-unreleased-gpt4o-like
 description: >-
-  Meta AI introduced Chameleon, a new multimodal foundation model using an early
-  fusion approach that natively outputs and consumes multiple modalities,
-  trained on 10 trillion tokens of interleaved text and image data. Meanwhile,
-  OpenAI launched GPT-4o, a large model excelling in coding and multimodal
-  understanding, outperforming peers on benchmarks despite some regression in
-  coding performance.
+  Meta AI introduced **Chameleon**, a novel early-fusion mixed-modal foundation
+  model trained on *10 trillion* tokens of interleaved text and image data,
+  capable of generating and understanding multiple modalities natively.
+  Meanwhile, **OpenAI** launched **GPT-4o**, a multimodal model that outperforms
+  peers on benchmarks like MMLU and shows strong coding and image-text
+  integration capabilities, alongside a new partnership with Reddit to integrate
+  its content into ChatGPT products.
 tags:
   - meta
-  - chameleon
-  - multimodal
-  - early-fusion
   - openai
+  - google
+  - anthropic
+  - stability
+  - hugging-face
+  - reddit
+  - chameleon
   - gpt-4o
+  - gemini-1.5-flash
+  - claude-3
+  - imagen-3
+  - cosxl
+  - gpt-4turbo
+  - multimodal-models
+  - early-fusion
+  - large-language-models
+  - multimodal-benchmarks
   - coding
-  - multimodal-understanding
+  - long-context-evaluation
+  - ai-partnerships
+  - open-source-ai
+  - model-benchmarking
+  - ai-ethics
+companies:
+  - meta
+  - openai
+  - google
+  - anthropic
+  - stability
+  - hugging-face
+  - reddit
+models:
+  - chameleon
+  - gpt-4o
+  - gemini-1.5-flash
+  - claude-3
+  - imagen-3
+  - cosxl
+  - gpt-4turbo
+topics:
+  - multimodal-models
+  - early-fusion
+  - large-language-models
+  - multimodal-benchmarks
+  - coding
+  - long-context-evaluation
+  - ai-partnerships
+  - open-source-ai
+  - model-benchmarking
+  - ai-ethics
 ---
 
 

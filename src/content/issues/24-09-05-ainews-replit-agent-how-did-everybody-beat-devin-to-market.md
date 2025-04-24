@@ -4,20 +4,19 @@ title: Replit Agent - How did everybody beat Devin to market?
 date: '2024-09-06T01:54:59.572225Z'
 original_slug: ainews-replit-agent-how-did-everybody-beat-devin
 description: >-
-  Replit launched Replit Agent, a fully integrated Web IDE that enables users,
-  including those without coding skills, to generate, run, and deploy apps with
-  features like planning and self-healing, available immediately to paid users
-  without a waitlist. Additionally, Anthropic unveiled a new enterprise plan
-  featuring a 500K token context window and enhanced security, targeting
-  marketing and engineering applications.
+  **Replit** launched **Replit Agent**, a fully integrated Web IDE that enables
+  users—including those without coding skills—to generate, deploy, and self-heal
+  applications live with backend support, available immediately to paid users
+  without a waitlist. Meanwhile, the **Qwen** AI model repository was
+  temporarily deplatformed on **GitHub** but restored shortly after, sparking
+  community discussions on decentralized code hosting and backup solutions to
+  prevent future disruptions.
 tags:
-  - replit
-  - replit-agent
-  - web-ide
-  - enterprise
-  - anthropic
-  - context-window
-  - gpu-trends
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

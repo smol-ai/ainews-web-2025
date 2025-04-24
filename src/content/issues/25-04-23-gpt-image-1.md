@@ -1,11 +1,94 @@
 ---
-title: gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in API
+id: 23232324
+title: >-
+  gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in
+  API
 date: '2025-04-23T05:44:39.731046Z'
-description: gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in API
+description: >-
+  **OpenAI** has officially launched the **Imagegen API**, enabling advanced
+  image generation and editing capabilities including alpha channel transparency
+  and a "low" content moderation policy. Meanwhile, **OpenAI's o3 and o4-mini
+  models** are leading benchmarks in math, coding, and style control, with **o3
+  outperforming 94% of expert virologists** on a new Virology Capabilities Test,
+  highlighting significant advances in specialized knowledge and reasoning.
 tags:
-  - imagegen
+  - openai
+  - nvidia
+  - alibaba
+  - google
+  - bytedance
+  - adobe
+  - xai
+  - gemini
+  - gpt-4o
   - gpt-image-1
+  - o3
+  - o4-mini
+  - gpt-4.1
+  - eagle-2.5-8b
+  - qwen2.5-vl-72b
+  - describe-anything-3b
+  - realisdance-dit
+  - livecc
+  - vidi
+  - dragon
+  - uni3c
+  - flex.2-preview
+  - dia-1.6b
+  - blt
+  - llama-3
+  - image-generation
+  - multimodal-models
+  - large-language-models
+  - model-benchmarks
+  - virology-capabilities
+  - content-moderation
+  - video-understanding
+  - diffusion-models
+  - reasoning-methods
+  - ai-safety
+  - test-time-reinforcement-learning
+companies:
+  - openai
+  - nvidia
+  - alibaba
+  - google
+  - bytedance
+  - adobe
+  - xai
+  - gemini
+models:
+  - gpt-4o
+  - gpt-image-1
+  - o3
+  - o4-mini
+  - gpt-4.1
+  - eagle-2.5-8b
+  - qwen2.5-vl-72b
+  - describe-anything-3b
+  - realisdance-dit
+  - livecc
+  - vidi
+  - dragon
+  - uni3c
+  - flex.2-preview
+  - dia-1.6b
+  - blt
+  - llama-3
+topics:
+  - image-generation
+  - multimodal-models
+  - large-language-models
+  - model-benchmarks
+  - virology-capabilities
+  - content-moderation
+  - video-understanding
+  - diffusion-models
+  - reasoning-methods
+  - ai-safety
+  - test-time-reinforcement-learning
 ---
+
 
 **Autoregressive Imagegen is all you need.**
 

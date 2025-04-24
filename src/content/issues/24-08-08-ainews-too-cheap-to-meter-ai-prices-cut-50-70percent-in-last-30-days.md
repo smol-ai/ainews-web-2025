@@ -4,19 +4,18 @@ title: 'Too Cheap To Meter: AI prices cut 50-70% in last 30 days'
 date: '2024-08-09T04:27:56.926040Z'
 original_slug: ainews-too-cheap-to-meter-ai-prices-cut-50-70-in
 description: >-
-  Recent AI pricing wars have dramatically reduced costs, with Gemini 1.5 Flash
-  cutting prices by ~70% and offering a generous free tier, making many
-  lower-ranked models less competitive. Additionally, new model releases like
-  Llama 3.1 405b and EXAONE-3.0 showcase continued advancements in performance
-  and accessibility.
+  Price cuts in large language models continue to accelerate, with **Gemini 1.5
+  Flash** slashing prices by ~70% to an extremely low $0.075 per million tokens,
+  complemented by a generous free tier, effectively outcompeting many rivals.
+  Additionally, **Google Cloud** now offers free access to **Llama 3.1 405B**
+  and **Sonnet 3.5** models with $300 in credits, enabling broad experimentation
+  with these advanced models.
 tags:
-  - gemini
-  - llama
-  - llama-3-1
-  - exaone-3-0
-  - pricing
-  - model-releases
-  - reinforcement-learning
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

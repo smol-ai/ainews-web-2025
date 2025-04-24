@@ -4,21 +4,78 @@ title: 'Genesis: Generative Physics Engine for Robotics (o1-2024-12-17)'
 date: '2024-12-19T04:48:33.221430Z'
 original_slug: ainews-genesis-generative-physics-engine-for-6175
 description: >-
-  A major highlight is the launch of Genesis, a universal physics engine
-  developed by a large academic collaboration that integrates multiple
-  state-of-the-art physics solvers to simulate diverse materials and physical
-  phenomena, aimed primarily at robotics applications. Additionally, OpenAI
-  released the o1 model to their API, featuring improved reasoning efficiency,
-  vision support, and new SDKs, with benchmarks showing strong performance in
-  math and coding.
+  A major highlight is the launch of **Genesis**, a universal physics engine
+  developed by a large academic collaboration led by **CMU** PhD student **Zhou
+  Xian**, offering a versatile, open-source platform for robotics simulation and
+  generative data with photo-realistic rendering. Additionally, **OpenAI**
+  released the **o1** model to API with enhanced features like function calling
+  and vision support, showing strong math and coding performance, while
+  **Google** accelerated deployment of **Gemini 2.0 Pro** with improved
+  reasoning and coding capabilities.
 tags:
-  - genesis
-  - universal-physics-engine
-  - robotics
   - openai
-  - o1-model
-  - api
-  - sdk
+  - google
+  - cmu
+  - hugging-face
+  - meta
+  - o1
+  - gemini-2.0-pro
+  - genesis
+  - llama-3b
+  - llama-70b
+  - granite-3.1
+  - moonshine-web
+  - whisper-v3-large
+  - universal-physics-engine
+  - robotics-simulation
+  - generative-video
+  - generative-data
+  - photo-realistic-rendering
+  - function-calling
+  - vision-support
+  - reasoning-effort
+  - model-benchmarks
+  - transformer-training
+  - humanoid-robots
+  - speech-recognition
+  - real-time-inference
+  - context-length
+  - open-source
+  - licensing
+  - model-optimization
+companies:
+  - openai
+  - google
+  - cmu
+  - hugging-face
+  - meta
+models:
+  - o1
+  - gemini-2.0-pro
+  - genesis
+  - llama-3b
+  - llama-70b
+  - granite-3.1
+  - moonshine-web
+  - whisper-v3-large
+topics:
+  - universal-physics-engine
+  - robotics-simulation
+  - generative-video
+  - generative-data
+  - photo-realistic-rendering
+  - function-calling
+  - vision-support
+  - reasoning-effort
+  - model-benchmarks
+  - transformer-training
+  - humanoid-robots
+  - speech-recognition
+  - real-time-inference
+  - context-length
+  - open-source
+  - licensing
+  - model-optimization
 ---
 
 

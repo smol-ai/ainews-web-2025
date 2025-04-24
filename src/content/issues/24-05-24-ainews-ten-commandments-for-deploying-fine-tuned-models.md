@@ -4,20 +4,18 @@ title: Ten Commandments for Deploying Fine-Tuned Models
 date: '2024-05-24T22:12:57.081028Z'
 original_slug: ainews-ten-commandments-for-deploying-fine-tuned
 description: >-
-  Anthropic showcased a novel feature in their Claude model that allows altering
-  internal features to change behavior, exemplified by a "Golden Gate Claude"
-  demo, marking progress in understanding large language models. Additionally,
-  open-source models like GPT-4o are approaching the performance of
-  closed-source models such as GPT-4 on benchmarks like MMLU, signaling
-  significant advancements in accessible AI technology.
+  **Anthropic** showcased a novel interpretability feature in their **Claude**
+  model that allows altering internal features to change behavior, increasing
+  understanding of large language models. Meanwhile, open-source models like
+  **Phi-3 small** and **Aya 23** are rapidly advancing, with Phi-3 small
+  outperforming GPT-3.5T despite having fewer parameters, signaling significant
+  progress in model efficiency and multilingual capabilities.
 tags:
-  - anthropic
-  - claude
-  - feature-alteration
-  - large-language-models
-  - open-source
-  - gpt-4o
-  - gpt-4
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

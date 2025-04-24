@@ -4,18 +4,70 @@ title: not much happened today
 date: '2024-10-26T00:52:03.375131Z'
 original_slug: ainews-not-much-happened-today-5313
 description: >-
-  Meta FAIR released Open Materials 2024, introducing new models and datasets
-  for inorganic materials discovery using the EquiformerV2 architecture.
-  Meanwhile, Anthropic shared research on feature steering to reduce social
-  biases in AI models while maintaining their capabilities.
+  Meta has released quantized versions of their **Llama 2** and **Llama 1B/3B**
+  on-device models, achieving *2-3x faster inference* and *40-60% memory
+  reduction* while maintaining strong benchmark performance. These improvements,
+  announced by **Mark Zuckerberg**, significantly enhance efficiency and
+  accessibility for developers working with large language models on
+  resource-constrained devices.
 tags:
   - meta
-  - open-materials-2024
-  - equiformer-v2
   - anthropic
+  - nvidia
+  - perplexity
+  - langchain
+  - kestra
+  - cohere
+  - llamaindex
+  - llama-2
+  - llama-1b
+  - llama-3b
+  - llama-3.1-nemotron-70b
+  - embed-3
+  - golden-gate-claude
+  - model-quantization
+  - on-device-inference
+  - memory-efficiency
+  - large-language-models
   - feature-steering
   - social-bias
-  - model-optimization
+  - multimodal-embeddings
+  - workflow-orchestration
+  - event-driven-architecture
+  - ai-safety
+  - ai-national-security
+  - financial-search
+  - sales-automation
+companies:
+  - meta
+  - anthropic
+  - nvidia
+  - perplexity
+  - langchain
+  - kestra
+  - cohere
+  - llamaindex
+models:
+  - llama-2
+  - llama-1b
+  - llama-3b
+  - llama-3.1-nemotron-70b
+  - embed-3
+  - golden-gate-claude
+topics:
+  - model-quantization
+  - on-device-inference
+  - memory-efficiency
+  - large-language-models
+  - feature-steering
+  - social-bias
+  - multimodal-embeddings
+  - workflow-orchestration
+  - event-driven-architecture
+  - ai-safety
+  - ai-national-security
+  - financial-search
+  - sales-automation
 ---
 
 

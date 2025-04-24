@@ -4,20 +4,114 @@ title: BitNet was a lie?
 date: '2024-11-13T01:36:06.890884Z'
 original_slug: ainews-bitnet-was-a-lie
 description: >-
-  Recent research modifying Chinchilla scaling laws reveals that benefits of
-  quantization plateau at FP6 precision, with longer pretraining making models
-  more sensitive to quantization degradation, signaling limits to efficiency
-  gains from low-precision training. Meanwhile, Alibaba's Qwen
-  2.5-Coder-32B-Instruct model matches or surpasses GPT-4o on coding benchmarks,
-  showcasing strong open-source competition in AI coding capabilities.
+  A recent study led by **Tanishq Kumar** revises **Chinchilla** scaling laws
+  for quantization, revealing that benefits plateau at FP6 precision and that
+  longer pretraining increases sensitivity to quantization, which may explain
+  challenges with models like **Llama-3**. Meanwhile, **Tim Dettmers**
+  highlights the nearing end of efficiency gains from quantization and scaling,
+  suggesting a paradigm shift toward optimizing existing resources and enhancing
+  productivity with AI. Additionally, **Alibaba** announced **Qwen
+  2.5-Coder-32B-Instruct**, a model matching or surpassing **GPT-4o** on coding
+  benchmarks, signaling strong open-source competition.
 tags:
+  - chinchilla
+  - llama
+  - alibaba
+  - sambanova
+  - runway
+  - deep-learning
+  - latticeflow
+  - jamdotdev
+  - tom-doerr
+  - svpino
+  - reach-vb
+  - nearcyan
+  - richardmcngo
+  - karpathy
+  - mustafasuleyman
+  - fchollet
+  - samyaksharma
+  - hrishioa
+  - llama-index
+  - deep-learning-ai
+  - skirano
+  - runwayml
+  - langchain
+  - llama-3
+  - qwen-2.5-coder-32b-instruct
+  - gpt-4o
+  - deepeval
+  - compl-ai
   - quantization
   - scaling-laws
+  - pretraining
+  - model-optimization
+  - efficiency-limits
+  - knowledge-distillation
+  - open-source-models
+  - coding-benchmarks
+  - ai-productivity
+  - ai-governance
+  - ai-safety
+  - generative-ads
+  - data-cleaning
+  - bug-tracking
+  - error-monitoring
+  - developer-tools
+  - ai-hackathon
+  - ai-research
+  - model-benchmarking
+companies:
   - chinchilla
-  - qwen
-  - coding
-  - open-source
-  - model-efficiency
+  - llama
+  - alibaba
+  - sambanova
+  - runway
+  - deep-learning
+  - latticeflow
+  - jamdotdev
+  - tom-doerr
+  - svpino
+  - reach-vb
+  - nearcyan
+  - richardmcngo
+  - karpathy
+  - mustafasuleyman
+  - fchollet
+  - samyaksharma
+  - hrishioa
+  - llama-index
+  - deep-learning-ai
+  - skirano
+  - runwayml
+  - langchain
+models:
+  - chinchilla
+  - llama-3
+  - qwen-2.5-coder-32b-instruct
+  - gpt-4o
+  - deepeval
+  - compl-ai
+topics:
+  - quantization
+  - scaling-laws
+  - pretraining
+  - model-optimization
+  - efficiency-limits
+  - knowledge-distillation
+  - open-source-models
+  - coding-benchmarks
+  - ai-productivity
+  - ai-governance
+  - ai-safety
+  - generative-ads
+  - data-cleaning
+  - bug-tracking
+  - error-monitoring
+  - developer-tools
+  - ai-hackathon
+  - ai-research
+  - model-benchmarking
 ---
 
 

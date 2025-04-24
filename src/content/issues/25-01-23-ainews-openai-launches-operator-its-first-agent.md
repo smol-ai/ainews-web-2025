@@ -4,20 +4,65 @@ title: OpenAI launches Operator, its first Agent
 date: '2025-01-24T03:34:34.136294Z'
 original_slug: ainews-openai-launches-operator-its-first-agent
 description: >-
-  OpenAI has launched Operator, a premium computer-using agent for Pro users in
-  the US that can interact with web browsers to perform tasks such as booking
+  OpenAI launched **Operator**, a premium, hosted computer-using agent available
+  to Pro users in the US that can perform complex browser tasks like booking
   reservations and ordering groceries, marking a significant step beyond
-  Anthropic’s open-source demo. Additionally, DeepSeek unveiled DeepSeek R1, an
-  open-source reasoning model that outperforms many competitors on challenging
-  benchmarks like Humanity’s Last Exam.
+  Anthropic’s earlier open-source demo. Meanwhile, **DeepSeek** unveiled
+  **DeepSeek R1**, an open-source reasoning model that outperforms many
+  competitors on challenging benchmarks such as Humanity’s Last Exam, showcasing
+  advances in transformer-based architectures.
 tags:
   - openai
-  - operator
   - anthropic
   - deepseek
-  - reasoning
-  - humanitys-last-exam
-  - multimodal
+  - google
+  - deepmind
+  - perplexity
+  - together
+  - cartesia
+  - operator
+  - deepseek-r1
+  - videollama-3
+  - sonic
+  - claude-3.5
+  - computer-using-agents
+  - reasoning-models
+  - multimodal-models
+  - open-source
+  - benchmarks
+  - human-level-performance
+  - ai-safety
+  - program-synthesis
+  - self-supervised-learning
+  - gpu-access
+  - ai-industry-investment
+companies:
+  - openai
+  - anthropic
+  - deepseek
+  - google
+  - deepmind
+  - perplexity
+  - together
+  - cartesia
+models:
+  - operator
+  - deepseek-r1
+  - videollama-3
+  - sonic
+  - claude-3.5
+topics:
+  - computer-using-agents
+  - reasoning-models
+  - multimodal-models
+  - open-source
+  - benchmarks
+  - human-level-performance
+  - ai-safety
+  - program-synthesis
+  - self-supervised-learning
+  - gpu-access
+  - ai-industry-investment
 ---
 
 

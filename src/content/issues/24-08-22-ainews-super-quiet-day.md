@@ -4,19 +4,19 @@ title: super quiet day
 date: '2024-08-23T00:55:37.537285Z'
 original_slug: ainews-not-much-happened-today-4025
 description: >-
-  AI21 Labs released Jamba 1.5, a scaled-up hybrid SSM-Transformer model that
-  offers significantly faster inference and excels in long context tasks,
-  outperforming larger models like Llama 3.1 70B. Additionally, the open-source
-  coding-focused model Dracarys 70B was announced, claiming superior benchmark
-  performance over existing 70B models.
+  AI21 Labs released **Jamba 1.5**, a 94B parameter model with a novel hybrid
+  SSM-Transformer architecture optimized for long context windows and up to
+  *2.5x faster inference*, outperforming larger models like **Llama 3.1 70B**.
+  Meanwhile, **Microsoft’s Phi-3.5** model has sparked discussion for its heavy
+  censorship and safety features, with an uncensored variant now available on
+  **Hugging Face**, raising debates about usability in coding and technical
+  tasks.
 tags:
-  - ai21
-  - jamba-1.5
-  - state-space-models
-  - llama-3.1
-  - dracarys
-  - coding
-  - open-source
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,21 +4,79 @@ title: 1 TRILLION token context, real time, on device?
 date: '2024-05-29T23:01:07.584364Z'
 original_slug: ainews-sonic-a-low-latency-voice-model-for
 description: >-
-  Cartesia, a startup focused on State Space Models (SSMs), launched a low
-  latency voice model that outperforms Transformer-based models with 20% lower
-  perplexity and significantly better audio quality, showcasing the potential
-  for efficient, real-time on-device processing of massive streams of audio,
-  video, and text. This breakthrough highlights the emerging viability of SSMs
-  as a competitive alternative to current state-of-the-art models and opens new
-  possibilities for continuous, large-scale multimodal reasoning.
+  **Cartesia**, a startup specializing in State Space Models (SSMs), launched a
+  low latency voice model that significantly outperforms Transformer-based
+  equivalents, showing *20% lower perplexity* and *2x lower word error*. This
+  breakthrough highlights the potential for extremely efficient, real-time,
+  on-device AI capable of processing massive continuous streams of audio, video,
+  and text, potentially revolutionizing AI applications with trillion-token
+  context windows.
 tags:
   - cartesia
+  - mistral
+  - scale
+  - google-deepmind
+  - openai
+  - huggingface
+  - codestral-22b
+  - gemini-1.5-pro
+  - gemini-1.5-flash
+  - llama3-8b-vision
+  - phi-3-mini-128k
+  - phi-3-vision-128k
+  - veolo
+  - gpt-3
+  - gpt-4
+  - gpt-4o
+  - gpt-4-0125
   - state-space-models
-  - voice-model
-  - low-latency
-  - on-device
-  - transformer
+  - low-latency-voice-models
   - real-time-processing
+  - trillion-token-context
+  - large-language-models
+  - model-evaluation-leaderboards
+  - training-optimizers
+  - on-device-ai
+  - multimodal-ai
+  - ai-ethics
+  - ai-safety
+  - code-generation
+  - video-generation
+  - fine-tuning-techniques
+companies:
+  - cartesia
+  - mistral
+  - scale
+  - google-deepmind
+  - openai
+  - huggingface
+models:
+  - codestral-22b
+  - gemini-1.5-pro
+  - gemini-1.5-flash
+  - llama3-8b-vision
+  - phi-3-mini-128k
+  - phi-3-vision-128k
+  - veolo
+  - gpt-3
+  - gpt-4
+  - gpt-4o
+  - gpt-4-0125
+topics:
+  - state-space-models
+  - low-latency-voice-models
+  - real-time-processing
+  - trillion-token-context
+  - large-language-models
+  - model-evaluation-leaderboards
+  - training-optimizers
+  - on-device-ai
+  - multimodal-ai
+  - ai-ethics
+  - ai-safety
+  - code-generation
+  - video-generation
+  - fine-tuning-techniques
 ---
 
 

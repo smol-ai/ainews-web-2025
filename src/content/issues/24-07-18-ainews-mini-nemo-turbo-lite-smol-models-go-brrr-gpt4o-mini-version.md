@@ -4,20 +4,18 @@ title: Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o-mini version)
 date: '2024-07-19T00:13:31.815672Z'
 original_slug: ainews-mini-nemo-turbo-lite-smol-models-go-brrr
 description: >-
-  OpenAI released GPT-4o Mini, a highly cost-efficient and capable small model
-  designed to replace GPT-3.5 Turbo, while DeepSeek open-sourced
-  DeepSeek-V2-0628, topping the LMSYS Chatbot Arena Leaderboard. Additionally,
-  Mistral AI and NVIDIA introduced Mistral NeMo, a 12B parameter model with a
-  record 128k token context window, sparking debates on benchmarking accuracy.
+  OpenAI launched the cost-efficient **GPT-4o Mini**, designed to replace
+  GPT-3.5 Turbo with improved intelligence at just *$0.15 per million input
+  tokens*. Meanwhile, **Mistral AI** and **NVIDIA** released the **Mistral
+  NeMo**, a powerful *12B parameter* multilingual model featuring an
+  unprecedented *128k token* context window under an Apache 2.0 license,
+  sparking both excitement and benchmarking debates.
 tags:
-  - tags
-  - openai
-  - gpt-4o-mini
-  - deepseek
-  - deepseek-v2-0628
-  - mistral
-  - mistral-nemo
-  - nvidia
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

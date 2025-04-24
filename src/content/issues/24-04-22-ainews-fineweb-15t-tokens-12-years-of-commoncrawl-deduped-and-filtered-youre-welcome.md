@@ -6,19 +6,19 @@ title: >-
 date: '2024-04-23T00:03:58.017305Z'
 original_slug: ainews-fineweb-15t-tokens-of-commoncrawl
 description: >-
-  Huggingface has released an extensive open dataset containing 15 trillion
-  tokens from 12 years of filtered CommonCrawl data, enabling training of large
-  models like Llama 3 with sufficient compute and code. Additionally,
-  WizardLM-2-8x22b has demonstrated superior performance over other open LLMs,
-  including Llama 3 70B, in reasoning and mathematics benchmarks.
+  Meta’s release of **Llama 3** in *8B* and *70B* parameter sizes, trained on
+  *15T tokens* with advanced fine-tuning techniques, is a watershed moment for
+  open-source AI, with the 70B model approaching **GPT-4** level performance and
+  enabling broader access via quantized versions on consumer hardware.
+  Concurrently, **Huggingface** released a massive *15T token* open dataset from
+  12 years of filtered CommonCrawl data, empowering researchers to train models
+  like Llama 3 independently.
 tags:
-  - huggingface
-  - commoncrawl
-  - datasets
-  - llama-3
-  - wizardlm-2-8x22b
-  - large-language-models
-  - benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,25 +4,81 @@ title: How Carlini Uses AI
 date: '2024-08-05T23:43:14.094795Z'
 original_slug: ainews-how-carlini-uses-ai
 description: >-
-  Nicholas Carlini of DeepMind gained attention for his extensive 80,000-word
-  treatise on AI usage and a new benchmark for large language models, showcasing
-  the broad potential of LLM applications. Meanwhile, major AI companies
-  unveiled significant advancements: OpenAI rolled out an advanced voice mode
-  for ChatGPT with emotion detection, Google open-sourced the compact yet
-  powerful Gemma 2 2B model, and Meta released Segment Anything Model 2 for
-  real-time video object tracking.
+  Large language model (LLM) development is rapidly advancing, with predictions
+  that *300M parameter models* could soon outperform current *7B models* and
+  that GPT-4 level capabilities may run on smartphones within *two years*.
+  Meanwhile, data availability remains vast, with the internet holding *64 ZB*
+  of data far exceeding current training datasets, suggesting synthetic data
+  generation and private data acquisition will both play key roles in future LLM
+  training.
 tags:
-  - nicholas-carlini
+  - groq
+  - intel
   - deepmind
-  - large-language-models
+  - box
+  - figure
   - openai
-  - chatgpt
   - google
-  - gemma-2
   - meta
-  - segment-anything-model
+  - nvidia
+  - stability
+  - runway
+  - llama-index
+  - gemma-2-2b
+  - gpt-4
+  - gpt-3.5-turbo-0613
+  - mixtral-8x7b
+  - sam-2
+  - gen-3-alpha
+  - large-language-models
+  - model-efficiency
+  - synthetic-data
+  - multimodal-models
+  - data-availability
+  - mobile-deployment
+  - adversarial-robustness
   - robotics
   - voice-recognition
+  - object-tracking
+  - quantization
+  - preference-optimization
+  - ai-regulation
+  - ai-ethics
+companies:
+  - groq
+  - intel
+  - deepmind
+  - box
+  - figure
+  - openai
+  - google
+  - meta
+  - nvidia
+  - stability
+  - runway
+  - llama-index
+models:
+  - gemma-2-2b
+  - gpt-4
+  - gpt-3.5-turbo-0613
+  - mixtral-8x7b
+  - sam-2
+  - gen-3-alpha
+topics:
+  - large-language-models
+  - model-efficiency
+  - synthetic-data
+  - multimodal-models
+  - data-availability
+  - mobile-deployment
+  - adversarial-robustness
+  - robotics
+  - voice-recognition
+  - object-tracking
+  - quantization
+  - preference-optimization
+  - ai-regulation
+  - ai-ethics
 ---
 
 

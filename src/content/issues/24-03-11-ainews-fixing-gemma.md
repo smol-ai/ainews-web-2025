@@ -4,20 +4,17 @@ title: Fixing Gemma
 date: '2024-03-12T00:03:26.597451Z'
 original_slug: ainews-fixing-gemma
 description: >-
-  Google’s Gemma model, previously unstable for finetuning, was significantly
-  improved after Unsloth AI’s Daniel Han identified and fixed eight subtle bugs,
-  gaining community recognition and upstream contributions. Additionally,
-  Anthropic’s Claude 3 models demonstrate strong performance with no
-  hallucinations reported and superior accuracy on structured data benchmarks
-  compared to competitors.
+  **Unsloth AI** contributor Daniel Han fixed *8* critical bugs in **Google’s
+  Gemma** model finetuning implementation, resolving subtle numerical precision
+  issues and improving stability. Meanwhile, benchmarking shows **Anthropic’s
+  Claude 3 Opus** model outperforming **GPT-4** on structured data extraction
+  tasks, with users reporting significantly fewer hallucinations.
 tags:
-  - google
-  - gemma
-  - unsloth
-  - daniel-han
-  - anthropic
-  - claude-3
-  - hallucination
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

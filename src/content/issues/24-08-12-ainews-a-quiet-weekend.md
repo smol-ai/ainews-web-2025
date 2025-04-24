@@ -4,18 +4,17 @@ title: a quiet weekend
 date: '2024-08-12T22:36:30.630631Z'
 original_slug: ainews-a-quiet-weekend-1879
 description: >-
-  Figure unveiled Figure 02, claiming it as the most advanced humanoid robot,
-  now operating autonomously at BMW’s Plant Spartanburg. Additionally, DeepMind
-  developed a table tennis robot demonstrating human-level performance, winning
-  all matches against beginners and over half against intermediates.
+  **Figure** unveiled their humanoid robot Figure 02, touted as the most
+  advanced humanoid, now working autonomously at BMW’s Plant Spartanburg after
+  18 months of development. Meanwhile, **DeepMind** showcased a table tennis
+  robot achieving human-level performance, winning 100% of games against
+  beginners and 55% against intermediates in a 29-game series.
 tags:
-  - figure
-  - humanoid-robot
-  - bmw
-  - deepmind
-  - table-tennis
-  - robotics
-  - autonomous-systems
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

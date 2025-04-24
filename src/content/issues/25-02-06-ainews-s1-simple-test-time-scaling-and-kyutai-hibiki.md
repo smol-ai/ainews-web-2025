@@ -4,22 +4,70 @@ title: 's1: Simple test-time scaling (and Kyutai Hibiki)'
 date: '2025-02-07T03:47:44.376508Z'
 original_slug: ainews-s1-simple-test-time-scaling-and-kyutai
 description: >-
-  A new reasoning model called S1, finetuned from Qwen 2.5 32B using only 1000
-  high-quality reasoning examples distilled from Gemini 2.0, introduces
-  controllable test-time compute by appending "Wait" tokens to extend or
-  terminate its thinking process, achieving efficient and scalable reasoning
-  performance. Additionally, DeepSeek announced upcoming open source releases of
-  their R1-low-mid-high models, potentially marking a significant open source
-  milestone in large language models that could disrupt the current proprietary
-  market.
+  A new reasoning model, **S1**, finetuned from **Qwen 2.5 32B** using only
+  *1000* questions with reasoning traces from **Gemini 2.0 Flash Thinking**,
+  introduces controllable test-time compute by appending "Wait" to extend
+  reasoning, achieving efficient scaling with minimal training. Additionally,
+  **Hugging Face** released **SmolLM2**, a small language model demonstrating
+  strong performance driven by data-centric training, while **Kyutai**'s
+  **Hibiki** showcases impressive offline French-English live speech-to-speech
+  translation on an iPhone.
 tags:
+  - qwen
+  - gemini
+  - kyutai
+  - hugging-face
+  - mistral
+  - ibm
+  - cerebras
+  - google
+  - openai
   - s1
-  - qwen-2.5
-  - gemini-2
-  - reasoning
-  - deepseek
-  - open-source
-  - large-language-models
+  - qwen-2.5-32b
+  - gemini-2.0
+  - smollm2
+  - granite-vision-3.1-2b
+  - le-chat
+  - hibiki
+  - reasoning-models
+  - test-time-scaling
+  - speech-to-speech-translation
+  - data-centric-training
+  - small-language-models
+  - vision-language-models
+  - model-finetuning
+  - multi-modal-predictions
+  - collaborative-tools
+  - ai-infrastructure
+companies:
+  - qwen
+  - gemini
+  - kyutai
+  - hugging-face
+  - mistral
+  - ibm
+  - cerebras
+  - google
+  - openai
+models:
+  - s1
+  - qwen-2.5-32b
+  - gemini-2.0
+  - smollm2
+  - granite-vision-3.1-2b
+  - le-chat
+  - hibiki
+topics:
+  - reasoning-models
+  - test-time-scaling
+  - speech-to-speech-translation
+  - data-centric-training
+  - small-language-models
+  - vision-language-models
+  - model-finetuning
+  - multi-modal-predictions
+  - collaborative-tools
+  - ai-infrastructure
 ---
 
 

@@ -4,20 +4,70 @@ title: 'TinyZero: Reproduce DeepSeek R1-Zero for $30'
 date: '2025-01-25T02:32:28.760341Z'
 original_slug: ainews-tinyzero-reproduce-deepseek-r1-zero-for-30
 description: >-
-  DeepSeek-R1 continues to reshape the AI model landscape by demonstrating
-  strong chain-of-thought reasoning performance on the new Humanity’s Last Exam
-  benchmark, achieving 9.4% accuracy at 20x lower cost and ranking highly on
-  technical leaderboards. Meanwhile, OpenAI has fully deployed its Operator AI
-  agent to all US Pro users, enabling practical tasks like meal ordering and
-  research assistance.
+  DeepSeek-R1 continues to disrupt the AI model landscape by demonstrating
+  strong chain-of-thought reasoning capabilities at a fraction of the cost of
+  competitors like OpenAI's o1, while being fully open-source under an MIT
+  license. Meanwhile, OpenAI has rolled out its Operator AI agent to all Pro
+  users in the US, enabling practical task automation such as meal ordering and
+  research assistance, marking a significant step in AI agent deployment.
 tags:
   - deepseek
-  - deepseek-r1
-  - chain-of-thought
-  - benchmark
   - openai
-  - operator
-  - multi-modal
+  - huggingface
+  - meta
+  - nvidia
+  - lmarena
+  - deepscienceai
+  - composio
+  - deepseek-r1
+  - o1
+  - claude-3.5-sonnet
+  - llama-stack
+  - llama-3.1-8b-lora
+  - gpt-4o
+  - reinforcement-learning
+  - chain-of-thought-reasoning
+  - model-benchmarks
+  - multi-modal-benchmarks
+  - open-source-models
+  - ai-agents
+  - workflow-automation
+  - fine-tuning
+  - memory-management
+  - context-length
+  - knowledge-distillation
+  - video-simulation
+  - ai-research-assistant
+companies:
+  - deepseek
+  - openai
+  - huggingface
+  - meta
+  - nvidia
+  - lmarena
+  - deepscienceai
+  - composio
+models:
+  - deepseek-r1
+  - o1
+  - claude-3.5-sonnet
+  - llama-stack
+  - llama-3.1-8b-lora
+  - gpt-4o
+topics:
+  - reinforcement-learning
+  - chain-of-thought-reasoning
+  - model-benchmarks
+  - multi-modal-benchmarks
+  - open-source-models
+  - ai-agents
+  - workflow-automation
+  - fine-tuning
+  - memory-management
+  - context-length
+  - knowledge-distillation
+  - video-simulation
+  - ai-research-assistant
 ---
 
 

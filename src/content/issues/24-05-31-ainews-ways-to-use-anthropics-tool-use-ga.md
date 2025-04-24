@@ -4,20 +4,66 @@ title: Ways to use Anthropic's Tool Use GA
 date: '2024-05-31T20:31:29.874216Z'
 original_slug: ainews-ways-to-use-anthropics-tool-use-ga
 description: >-
-  Anthropic has launched general availability of tool use and function calling
-  across Anthropic, Amazon, and Google platforms, introducing features like
-  streaming, forced use, and vision capabilities, alongside five proposed
-  architectures for agentic tool integration. Meanwhile, Yann LeCun emphasized
-  the importance of open science and ethical research funding, advocating for
-  gradual development of superintelligence with robust safety measures.
+  **Anthropic** has launched general availability of tool use for its **Claude**
+  model across API, Amazon Bedrock, and Google Vertex AI, enabling intelligent
+  orchestration of tools for complex tasks. Meanwhile, **Google DeepMind**
+  announced that developers can now build with the **Gemini 1.5 Flash and Pro**
+  models via their API, highlighting advancements in efficient and scalable AI
+  services.
 tags:
   - anthropic
+  - amazon
+  - google
+  - google-deepmind
+  - openai
+  - microsoft
+  - claude
+  - gemini-1.5-flash
+  - gemini-1.5-pro
+  - suno-v3.5
+  - convnext
+  - neural-parametric-gaussian-avatars
+  - tooncrafter
   - tool-use
-  - function-calling
   - agent-architectures
-  - yann-lecun
+  - ai-api
+  - multimodal-ai
+  - ai-research-ethics
   - open-science
   - superintelligence
+  - ai-music-generation
+  - ai-image-generation
+  - ai-animation
+  - ai-game-development
+  - ai-ethics
+companies:
+  - anthropic
+  - amazon
+  - google
+  - google-deepmind
+  - openai
+  - microsoft
+models:
+  - claude
+  - gemini-1.5-flash
+  - gemini-1.5-pro
+  - suno-v3.5
+  - convnext
+  - neural-parametric-gaussian-avatars
+  - tooncrafter
+topics:
+  - tool-use
+  - agent-architectures
+  - ai-api
+  - multimodal-ai
+  - ai-research-ethics
+  - open-science
+  - superintelligence
+  - ai-music-generation
+  - ai-image-generation
+  - ai-animation
+  - ai-game-development
+  - ai-ethics
 ---
 
 

@@ -6,20 +6,20 @@ title: >-
 date: '2025-01-22T01:56:21.007400Z'
 original_slug: ainews-project-stargate-500b-datacenter-17-of-us
 description: >-
-  OpenAI and Softbank have announced Project Stargate, a major US "AI Manhattan
-  project" supported by top tech companies aiming for large-scale AI
-  advancements, though its immediate impact remains limited. Meanwhile, Noam
-  Shazeer revealed a significant update to Gemini 2.0 Flash with a 1 million
-  token context length, enabling more powerful AI applications today.
+  **OpenAI** and **Softbank** have announced **Project Stargate**, a major US
+  "AI Manhattan project" supported by multiple tech giants including
+  **Microsoft**, **NVIDIA**, and **Oracle**, aiming for large-scale AI
+  development with a budget comparable to the original Manhattan Project.
+  Meanwhile, **DeepSeek** released **DeepSeek R1 (Qwen 32B Distill)**, now
+  freely available on **HuggingChat**, showing strong performance and
+  efficiency, with its smaller variant running fully in-browser outperforming
+  **GPT-4o** and **Claude-3.5-Sonnet** on math benchmarks.
 tags:
-  - openai
-  - softbank
-  - project-stargate
-  - noam-shazeer
-  - gemini-2-0
-  - long-context
-  - microsoft
-  - nvidia
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

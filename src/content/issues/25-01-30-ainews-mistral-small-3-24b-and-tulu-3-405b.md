@@ -4,19 +4,19 @@ title: Mistral Small 3 24B and Tulu 3 405B
 date: '2025-01-31T00:08:47.548368Z'
 original_slug: ainews-mistral-small-3-24b-and-tulu-3-405b
 description: >-
-  Mistral AI released Mistral Small 3, a 24B parameter open-source model
-  optimized for low latency and competitive accuracy, available under the Apache
-  2.0 license. Additionally, Allen AI introduced Tülu 3 405B, a large finetuned
-  Llama 3 model using Reinforcement Learning from Verifiable Rewards, which
-  outperforms DeepSeek V3 in some aspects but lacks hosted APIs at launch.
+  **Mistral AI** released **Mistral Small 3**, a 24B parameter Apache 2.0
+  licensed model optimized for low latency local inference, achieving *81%
+  accuracy on MMLU* and competing with larger models like **Llama 3.3 70B**.
+  Meanwhile, **Allen AI** launched **Tülu 3 405B**, a large finetuned Llama 3
+  model using Reinforcement Learning from Verifiable Rewards (RVLR),
+  outperforming **DeepSeek V3** despite being *40% smaller* and demonstrating
+  strong open-source post-training capabilities.
 tags:
-  - mistral
-  - mistral-small-3
-  - allen
-  - tülu-3-405b
-  - llama-3
-  - reinforcement-learning
-  - open-source
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

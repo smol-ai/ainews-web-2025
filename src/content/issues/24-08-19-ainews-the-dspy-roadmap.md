@@ -4,20 +4,19 @@ title: The DSPy Roadmap
 date: '2024-08-20T05:06:22.742788Z'
 original_slug: ainews-the-dspy-roadmap
 description: >-
-  Omar Khattab outlined the roadmap for DSPy 2.5 and 3.0+, focusing on polishing
-  core components, improving optimizers, and enhancing interactive optimization
-  and tracking for declarative self-improving LLM pipelines. Meanwhile, Google
-  launched Gemini Live, a mobile conversational AI with voice capabilities and
-  new Pixel Buds Pro 2 featuring a custom Tensor A1 chip for hands-free AI
-  assistance.
+  Omar Khattab announced his upcoming year at **Databricks** before joining
+  **MIT**, highlighting the roadmap for **DSPy** versions 2.5 and 3.0+, focusing
+  on polishing core components, optimizing cost and quality, and enhancing
+  interactivity. Meanwhile, **Google** launched **Gemini Live**, a mobile
+  conversational AI with voice and 10 voices for Android users, and **OpenAI**’s
+  updated **ChatGPT-4o** reclaimed the top spot on LMSYS Arena with over
+  *11,000* votes, underscoring significant progress in conversational AI models.
 tags:
-  - databricks
-  - dsppy
-  - large-language-models
-  - google
-  - gemini
-  - pixel-buds
-  - conversational-ai
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

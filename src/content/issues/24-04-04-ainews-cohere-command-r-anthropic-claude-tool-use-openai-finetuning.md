@@ -4,20 +4,84 @@ title: Cohere Command R+, Anthropic Claude Tool Use, OpenAI Finetuning
 date: '2024-04-04T22:21:15.996359Z'
 original_slug: ainews-cohere-command-r-anthropic-claude-tool-use
 description: >-
-  Cohere launched Command R+, a 104B parameter dense model with a 128k context
-  length optimized for retrieval-augmented generation, tool use, and
-  multilingual tasks, offering open weights for research. Meanwhile, Anthropic
-  introduced beta tool use in Claude, supporting over 250 tools with new
-  cookbooks demonstrating advanced function calling and integration
-  capabilities.
+  **Cohere** launched Command R+, a 104B parameter dense model with a *128k*
+  context length optimized for retrieval-augmented generation (RAG), tool use,
+  and multilingual support across *10 key languages*. Meanwhile, **Anthropic**
+  introduced beta tool use for Claude, enabling integration with over *250
+  tools* and offering new cookbooks for practical applications, marking a
+  significant step in expanding model functionality.
 tags:
   - cohere
-  - command-r-plus
-  - retrieval-augmented-generation
-  - multilingual
   - anthropic
+  - openai
+  - microsoft
+  - stability
+  - opera
+  - meta
+  - google
+  - langchain
+  - daz3d
+  - command-r-plus
+  - command-r
   - claude
+  - gpt-3.5-turbo
+  - gemma
+  - vicuna
+  - llama
+  - gemini
+  - mistral
+  - gpt-4-vision
+  - dalle-3
+  - retrieval-augmented-generation
   - tool-use
+  - multilingual-models
+  - large-context-windows
+  - fine-tuning
+  - quantum-computing
+  - audio-generation
+  - local-llm-inference
+  - model-integration
+  - ai-education
+  - model-comparisons
+  - video-highlight-detection
+  - stylized-image-generation
+companies:
+  - cohere
+  - anthropic
+  - openai
+  - microsoft
+  - stability
+  - opera
+  - meta
+  - google
+  - langchain
+  - daz3d
+models:
+  - command-r-plus
+  - command-r
+  - claude
+  - gpt-3.5-turbo
+  - gemma
+  - vicuna
+  - llama
+  - gemini
+  - mistral
+  - gpt-4-vision
+  - dalle-3
+topics:
+  - retrieval-augmented-generation
+  - tool-use
+  - multilingual-models
+  - large-context-windows
+  - fine-tuning
+  - quantum-computing
+  - audio-generation
+  - local-llm-inference
+  - model-integration
+  - ai-education
+  - model-comparisons
+  - video-highlight-detection
+  - stylized-image-generation
 ---
 
 

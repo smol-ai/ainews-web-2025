@@ -4,21 +4,18 @@ title: 'GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4T version) '
 date: '2024-05-13T23:14:50.739179Z'
 original_slug: ainews-gpt-4o-the-new-sota-everything-frontier-9515
 description: >-
-  OpenAI has launched GPT-4o, a frontier model that supports real-time reasoning
-  across audio, vision, and text, now available for free to all ChatGPT users
-  with enhanced coding capabilities and upcoming advanced voice and video
-  features for Plus users. Additionally, there is growing interest in
-  open-source large language models, fine-tuning techniques, and new multimodal
-  architectures like YOCO and integrations combining autoregressive and
-  diffusion models.
+  OpenAI launched **GPT-4o**, a new frontier multimodal model supporting text,
+  audio, and image inputs, now freely available to all ChatGPT users with
+  enhanced coding capabilities and up to *5x higher limits* for Plus users.
+  Additionally, the community is actively exploring fine-tuning techniques and
+  hardware optimizations for open-source models like **Llama 3**, focusing on
+  improving performance and enabling complex conversational abilities.
 tags:
-  - openai
-  - gpt-4o
-  - multimodal
-  - coding
-  - open-source
-  - fine-tuning
-  - model-architecture
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

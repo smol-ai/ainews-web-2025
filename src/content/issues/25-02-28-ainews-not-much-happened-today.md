@@ -4,20 +4,62 @@ title: not much happened today
 date: '2025-03-01T03:41:57.593041Z'
 original_slug: ainews-not-much-happened-today-3457
 description: >-
-  User polls show mixed reactions to GPT-4.5, with many preferring GPT-4 despite
-  some experts praising GPT-4.5's creativity and humor; however, concerns about
-  GPT-4.5’s slow response times and questionable practical value have been
-  raised. Comparisons indicate GPT-4.5 performs better than GPT-4o but is
-  outperformed by Claude 3.5 and Claude 3.7, which also excel in humor and
-  emotional intelligence.
+  **GPT-4.5** has sparked mixed reactions among users, with some preferring the
+  older **GPT-4** for its familiarity, while others praise GPT-4.5 for its
+  creativity and humor despite concerns about its slow speed and high cost.
+  Discussions also highlight that GPT-4.5’s release may indicate a plateau in
+  scaling laws for large language models, emphasizing the growing importance of
+  algorithmic innovation and efficiency improvements.
 tags:
+  - openai
+  - xai
+  - deepseek
   - gpt-4
   - gpt-4.5
-  - claude-3.5
+  - gpt-4o
+  - gpt-3.5
+  - claude-3.5-sonnet
   - claude-3.7
+  - grok-3
+  - llama-1b
+  - llama-3b
+  - mamba
+  - large-language-models
   - model-performance
-  - humor
-  - user-feedback
+  - user-experience
+  - humor-in-llms
+  - model-efficiency
+  - training-techniques
+  - scaling-laws
+  - inference-compute
+  - algorithmic-innovation
+  - model-pricing
+companies:
+  - openai
+  - xai
+  - deepseek
+models:
+  - gpt-4
+  - gpt-4.5
+  - gpt-4o
+  - gpt-3.5
+  - claude-3.5-sonnet
+  - claude-3.7
+  - grok-3
+  - llama-1b
+  - llama-3b
+  - mamba
+topics:
+  - large-language-models
+  - model-performance
+  - user-experience
+  - humor-in-llms
+  - model-efficiency
+  - training-techniques
+  - scaling-laws
+  - inference-compute
+  - algorithmic-innovation
+  - model-pricing
 ---
 
 

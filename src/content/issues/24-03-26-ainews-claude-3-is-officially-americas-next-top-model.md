@@ -4,18 +4,80 @@ title: Claude 3 is officially America's Next Top Model
 date: '2024-03-27T00:11:55.849429Z'
 original_slug: ainews-claude-3-is-officially-americas-next-top
 description: >-
-  Claude 3 variants now outperform GPT-4T and Mistral Large in blind Elo
-  rankings, with Claude 3 Haiku notably offering a strong cost-performance
-  balance. Additionally, a new long-context recall benchmark reveals challenges
-  for models like Mistral 7B, while Qwen 72b demonstrates promising results.
+  **Anthropic’s Claude 3** models, particularly Claude 3 Opus, now outperform
+  several versions of **GPT-4** and **Mistral Large** in blind Elo rankings,
+  marking a new cost-performance frontier with the Claude 3 Haiku variant.
+  Meanwhile, the open-source **OpenCodeInterpreter-DS-33B** model rivals
+  **GPT-4** on the BigCode leaderboard, signaling growing competition in
+  high-performance open models.
 tags:
-  - claude-3
-  - gpt-4t
+  - anthropic
+  - openai
   - mistral
-  - llm
-  - recall-benchmark
+  - databricks
+  - stability
+  - unsloth
+  - openrouter
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - gpt-4
+  - gpt4t
+  - mistral-7b
+  - opencodeinterpreter-ds-33b
+  - masher-ai-v6-7b
+  - sd3
+  - sdxl
+  - cascade
   - qwen-72b
-  - cost-performance
+  - large-language-models
+  - model-benchmarking
+  - cost-performance-tradeoff
+  - open-source-models
+  - model-fine-tuning
+  - security-vulnerabilities
+  - AI-ethics
+  - AI-alignment
+  - AI-generated-video
+  - face-swapping
+  - transformer-models
+  - API-performance
+  - workflow-integration
+companies:
+  - anthropic
+  - openai
+  - mistral
+  - databricks
+  - stability
+  - unsloth
+  - openrouter
+models:
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - gpt-4
+  - gpt4t
+  - mistral-7b
+  - opencodeinterpreter-ds-33b
+  - masher-ai-v6-7b
+  - sd3
+  - sdxl
+  - cascade
+  - qwen-72b
+topics:
+  - large-language-models
+  - model-benchmarking
+  - cost-performance-tradeoff
+  - open-source-models
+  - model-fine-tuning
+  - security-vulnerabilities
+  - AI-ethics
+  - AI-alignment
+  - AI-generated-video
+  - face-swapping
+  - transformer-models
+  - API-performance
+  - workflow-integration
 ---
 
 

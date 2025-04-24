@@ -5,17 +5,88 @@ date: '2024-02-07T22:41:50.157897Z'
 original_slug: ainews-metavoice-rip-bard
 description: >-
   A new text-to-speech model supporting voice cloning and longform synthesis has
-  launched from the startup MetaVoice, following the shutdown of Coqui.
-  Meanwhile, Google has discontinued the Bard brand in favor of Gemini,
-  signaling a shift in their AI strategy.
+  emerged from the small startup **MetaVoice**, following the recent shutdown of
+  **Coqui**. Meanwhile, **Google** has discontinued the **Bard** brand in favor
+  of its **Gemini** AI initiative, marking a significant shift in its AI
+  strategy.
 tags:
   - metavoice
+  - coqui
+  - google
+  - openai
+  - huggingface
+  - lm-studio
+  - sambanova
+  - crew-ai
+  - bard
+  - gemini
+  - mixtral
+  - nous-mixtral-dpo
+  - miqu-70b
+  - llama2-70b-instruct
+  - thespis-0.8
+  - dall-e
+  - gpt-4
+  - hugging-chat-assistant
+  - bloomchat-v2
+  - llama-chat
+  - mistral
+  - lm-studio-v0.2.14
   - text-to-speech
   - voice-cloning
   - longform-synthesis
+  - ai-branding
+  - ai-model-fine-tuning
+  - content-authenticity
+  - metadata-verification
+  - open-source-models
+  - prompt-engineering
+  - model-personalization
+  - synthetic-data
+  - multilingual-language-models
+  - local-model-execution
+  - hardware-optimization
+  - ai-community-discussions
+companies:
+  - metavoice
+  - coqui
   - google
+  - openai
+  - huggingface
+  - lm-studio
+  - sambanova
+  - crew-ai
+models:
   - bard
   - gemini
+  - mixtral
+  - nous-mixtral-dpo
+  - miqu-70b
+  - llama2-70b-instruct
+  - thespis-0.8
+  - dall-e
+  - gpt-4
+  - hugging-chat-assistant
+  - bloomchat-v2
+  - llama-chat
+  - mistral
+  - lm-studio-v0.2.14
+topics:
+  - text-to-speech
+  - voice-cloning
+  - longform-synthesis
+  - ai-branding
+  - ai-model-fine-tuning
+  - content-authenticity
+  - metadata-verification
+  - open-source-models
+  - prompt-engineering
+  - model-personalization
+  - synthetic-data
+  - multilingual-language-models
+  - local-model-execution
+  - hardware-optimization
+  - ai-community-discussions
 ---
 
 

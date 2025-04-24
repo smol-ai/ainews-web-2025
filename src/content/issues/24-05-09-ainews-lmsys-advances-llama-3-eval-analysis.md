@@ -4,20 +4,19 @@ title: LMSys advances Llama 3 eval analysis
 date: '2024-05-10T00:52:45.516571Z'
 original_slug: ainews-lmsys-advances-llama-3-eval-analysis
 description: >-
-  LMSys has advanced LLM evaluation by breaking down model performance across
-  eight query categories and seven prompt complexity levels, revealing Llama 3’s
-  uneven strengths and weaknesses despite its leaderboard dominance. Meanwhile,
-  DeepMind released AlphaFold 3, a next-generation model that predicts protein,
-  DNA, and RNA structures and interactions with unprecedented accuracy,
-  promising significant impacts on biology and medicine.
+  LLM evaluation is becoming more granular with **LMSys** breaking down **Llama
+  3**’s performance across *8 categories* and *7 prompt complexity levels*,
+  revealing uneven strengths and weaknesses as it nears parity with top
+  proprietary models. Meanwhile, **DeepMind** released **AlphaFold 3**, a
+  next-generation model that predicts protein, DNA, and RNA structures and
+  interactions with state-of-the-art accuracy, promising major advances in
+  biology and medicine.
 tags:
-  - lmsys
-  - llama-3
-  - model-evaluation
-  - prompt-complexity
-  - deepmind
-  - alphafold-3
-  - molecular-structure
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -5,23 +5,51 @@ import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import BackToPrevious from "@components/BackToPrevious.astro";
 
+// Helper function to determine tag type
+function getTagType(
+  tag: string, 
+  tags: string[], 
+  companies: string[], 
+  models: string[], 
+  topics: string[]
+): string {
+  if (companies.includes(tag)) return "Company";
+  if (models.includes(tag)) return "Model";
+  if (topics.includes(tag)) return "Topic";
+  if (tags.includes(tag)) return "Tag";
+  return "Tag"; // Default fallback
+}
+
 export async function getStaticPaths() {
   const posts = await getCollection("issues", ({ data }) => !data.draft);
 
-  // Get unique tags
+  // Get unique tags from all tag types
   const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
+  const companies = [...new Set(posts.flatMap((post) => post.data.companies || []))];
+  const models = [...new Set(posts.flatMap((post) => post.data.models || []))];
+  const topics = [...new Set(posts.flatMap((post) => post.data.topics || []))];
+  
+  // Combine all unique tags
+  const allTags = [...new Set([...tags, ...companies, ...models, ...topics])];
 
   // Create paths for each tag
-  return tags.map((tag) => ({
+  return allTags.map((tag) => ({
     params: { id: tag },
     props: {
-      posts: posts.filter((post) => post.data.tags?.includes(tag)),
+      posts: posts.filter((post) => 
+        post.data.tags?.includes(tag) || 
+        post.data.companies?.includes(tag) || 
+        post.data.models?.includes(tag) || 
+        post.data.topics?.includes(tag)
+      ),
+      tag,
+      tagType: getTagType(tag, tags, companies, models, topics),
     },
   }));
 }
 
 const { id } = Astro.params;
-const { posts } = Astro.props;
+const { posts, tagType } = Astro.props;
 
 // Sort posts by date, most recent first
 const sortedPosts = posts.sort(
@@ -29,12 +57,12 @@ const sortedPosts = posts.sort(
 );
 ---
 
-<Layout title={`Tag: ${id}`} description={`Posts with the tag: ${id}`}>
+<Layout title={`${tagType}: ${id}`} description={`Posts tagged with ${tagType.toLowerCase()}: ${id}`}>
   <Container>
     <div class="space-y-10" data-pagefind-ignore>
       <BackToPrevious href="/tags"> All tags </BackToPrevious>
       <h1 class="animate font-semibold text-black dark:text-white">
-        Posts tagged with "{id}"
+        {tagType}: "{id}"
       </h1>
       <ul class="animate flex flex-col gap-4">
         {sortedPosts.map((post) => <ArrowCard entry={post} />)}

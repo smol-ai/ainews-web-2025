@@ -4,19 +4,19 @@ title: 'DBRX: Best open model (just not most efficient)'
 date: '2024-03-27T22:33:19.363427Z'
 original_slug: ainews-dbrx-best-open-model-but-not-most-efficient
 description: >-
-  Databricks Mosaic has released DBRX, a new state-of-the-art open-source large
-  language model that outperforms Grok, Mixtral, and Llama2 on benchmarks while
-  being twice as efficient. Trained on 12 trillion tokens with about $10 million
-  in compute, DBRX shows strong coding capabilities and introduces innovations
-  like OpenAI’s 100k tiktoken tokenizer and improved training efficiency.
+  Databricks Mosaic has released **DBRX**, a new state-of-the-art open-source
+  large language model trained on *12 trillion* tokens and costing about *$10
+  million* in compute, which outperforms models like Grok, Mixtral, and Llama2
+  while being twice as efficient. Meanwhile, **Claude 3 Opus** has emerged as
+  the new leader in chatbot performance, rivaling GPT-4 in benchmarks, and
+  **Microsoft** has made headlines by acquiring the former CEO of Stability AI,
+  signaling continued strategic moves in the AI industry.
 tags:
-  - databricks
-  - mosaic
-  - dbrx
-  - llama2
-  - grok
-  - mixtral
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

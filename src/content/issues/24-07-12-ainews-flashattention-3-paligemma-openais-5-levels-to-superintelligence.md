@@ -4,18 +4,68 @@ title: FlashAttention 3, PaliGemma, OpenAI's 5 Levels to Superintelligence
 date: '2024-07-12T09:31:43.702857Z'
 original_slug: ainews-flashattention-3-paligemma-openais-5
 description: >-
-  OpenAI has shared a new framework outlining levels of superintelligence,
-  revealing they believe they are close to achieving Level 2, with internal
-  disagreements on safety approaches. Meanwhile, the FlashAttention-3 update
-  brings fast, accurate attention optimized for H100 GPUs and advances toward
-  native FP8 training, marking a significant step in efficient model training.
+  Open-source AI models are rapidly advancing, with **NuminaMath 7B** winning
+  the AI Mathematical Olympiad by solving *29 problems* using innovative
+  tool-integrated reasoning, and open LLMs like **CodeLlama-34B** and
+  **WizardCoder-Python-34B-V1.0** closing the coding performance gap with closed
+  models such as **ChatGPT-3.5**. Meanwhile, **Microsoft** and **Apple** have
+  withdrawn from **OpenAI**’s board amid regulatory scrutiny but will maintain
+  strategic partnerships, signaling shifts in AI governance and industry
+  dynamics.
 tags:
   - openai
-  - superintelligence
-  - flashattention
-  - h100
-  - fp8
-  - model-training
+  - microsoft
+  - apple
+  - hugging-face
+  - deepseekmath
+  - numinamath-7b
+  - deepseekmath-7b
+  - codellama-34b
+  - wizardcoder-python-34b-v1.0
+  - phind-codellama-34b-v2
+  - chatgpt-3.5
+  - gpt-4
+  - llama-3-8b-formax-v1.0
+  - flashattention-3
+  - paligemma
+  - open-source-models
+  - large-language-models
+  - coding
+  - vision-language-models
+  - mathematical-reasoning
+  - model-fine-tuning
+  - regulatory-scrutiny
+  - ai-governance
+  - tool-integrated-reasoning
+  - response-formatting
+companies:
+  - openai
+  - microsoft
+  - apple
+  - hugging-face
+  - deepseekmath
+models:
+  - numinamath-7b
+  - deepseekmath-7b
+  - codellama-34b
+  - wizardcoder-python-34b-v1.0
+  - phind-codellama-34b-v2
+  - chatgpt-3.5
+  - gpt-4
+  - llama-3-8b-formax-v1.0
+  - flashattention-3
+  - paligemma
+topics:
+  - open-source-models
+  - large-language-models
+  - coding
+  - vision-language-models
+  - mathematical-reasoning
+  - model-fine-tuning
+  - regulatory-scrutiny
+  - ai-governance
+  - tool-integrated-reasoning
+  - response-formatting
 ---
 
 

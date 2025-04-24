@@ -4,19 +4,67 @@ title: ChatGPT Canvas GA
 date: '2024-12-11T04:20:02.638516Z'
 original_slug: ainews-chatgpt-canvas-ga
 description: >-
-  OpenAI launched ChatGPT Canvas to all users, offering code execution and GPT
-  integration with a Google Docs-like interface, effectively replacing the Code
-  Interpreter. Additionally, Meta introduced COCONUT, a new continuous latent
-  space reasoning paradigm for large language models, and Huggingface released
-  TGI v3, which processes tokens three times faster than previous versions.
+  OpenAI's launch of ChatGPT Canvas, now available to all users with integrated
+  code execution and GPT features, marks a significant advancement by
+  effectively replacing Code Interpreter with a Google Docs-like interface.
+  Meanwhile, Hugging Face released Text Generation Inference (TGI) v3.0, which
+  processes *3x* more tokens and runs *13x* faster than vLLM on long prompts,
+  showcasing major performance improvements in text generation. Additionally,
+  Meta introduced COCONUT, a new continuous latent space reasoning paradigm for
+  large language models, and DeepSeek announced the final V2.5-1210 release with
+  improved math and coding benchmarks.
 tags:
   - openai
-  - chatgpt
-  - canvas
-  - meta
-  - coconut
   - huggingface
+  - meta
+  - deepseek
+  - cognition-labs
+  - hyperbolic
+  - google-deepmind
+  - chatgpt-canvas
   - tgi-v3
+  - deepseek-v2.5-1210
+  - coconut
+  - llama-3.3-70b
+  - llama-3.1-8b
+  - vllm
+  - code-execution
+  - large-language-models
+  - model-optimization
+  - fine-tuning
+  - long-context
+  - text-generation
+  - reasoning-paradigms
+  - gpu-acceleration
+  - model-benchmarks
+  - developer-tools
+companies:
+  - openai
+  - huggingface
+  - meta
+  - deepseek
+  - cognition-labs
+  - hyperbolic
+  - google-deepmind
+models:
+  - chatgpt-canvas
+  - tgi-v3
+  - deepseek-v2.5-1210
+  - coconut
+  - llama-3.3-70b
+  - llama-3.1-8b
+  - vllm
+topics:
+  - code-execution
+  - large-language-models
+  - model-optimization
+  - fine-tuning
+  - long-context
+  - text-generation
+  - reasoning-paradigms
+  - gpu-acceleration
+  - model-benchmarks
+  - developer-tools
 ---
 
 

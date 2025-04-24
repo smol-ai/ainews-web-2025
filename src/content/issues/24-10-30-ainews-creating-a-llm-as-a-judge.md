@@ -4,19 +4,18 @@ title: Creating a LLM-as-a-Judge
 date: '2024-10-30T23:17:27.255253Z'
 original_slug: ainews-creating-a-llm-as-a-judge
 description: >-
-  Hamel Husain introduces "critique shadowing," a method for building LLM judges
-  aligned with domain experts by iteratively reviewing and refining AI outputs
-  through expert critiques. Additionally, Anthropic’s Claude 3.5 Sonnet is now
-  integrated with GitHub Copilot, expanding AI-assisted coding capabilities in
-  Visual Studio Code and GitHub.
+  **Hamel Husain** introduces the concept of **critique shadowing** to build LLM
+  judges aligned with domain experts, addressing the challenge of AI teams
+  having large amounts of untrusted data. Meanwhile, **Anthropic** announced
+  that **Claude 3.5 Sonnet** is now integrated into **GitHub Copilot**, joining
+  models like **Gemini 1.5 Pro** and **OpenAI's o1-preview**, marking a
+  significant expansion in AI-assisted coding tools.
 tags:
-  - critique-shadowing
-  - llm-judge
-  - hamel-husain
-  - anthropic
-  - claude-3.5
-  - github-copilot
-  - visual-studio-code
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,19 +4,93 @@ title: Somebody give Andrej some H100s already
 date: '2024-05-29T01:24:27.055047Z'
 original_slug: ainews-somebody-give-andrej-some-h100s-already
 description: >-
-  Andrej Karpathy demonstrated training a tiny GPT-2 model in 90 minutes for
-  just $20 using C+CUDA, aiming to drastically reduce the size and complexity of
-  AI training stacks. Meanwhile, Yann LeCun and Elon Musk debated the use of
-  convolutional neural networks (CNNs) in Tesla’s Full Self-Driving system, with
-  LeCun affirming CNNs are essential for real-time image processing.
+  **Andrej Karpathy** demonstrated training a tiny GPT-2 model in *90 minutes*
+  for only *$20* on an 8x A100 server, with plans to train the full 1.6B model
+  in about *one week* for *$2.5k*, signaling a major step toward more accessible
+  and efficient LLM training using C/CUDA. Meanwhile, **Meta’s Yann LeCun** and
+  **Elon Musk** engaged in a high-profile Twitter debate about the importance of
+  convolutional neural networks (CNNs) in real-time image processing for
+  autonomous driving, with LeCun emphasizing CNNs’ critical role and criticizing
+  AI doomsday fears and overregulation.
 tags:
-  - andrej-karpathy
+  - openai
+  - meta
+  - tesla
+  - nvidia
+  - internlm
+  - ai21
   - gpt-2
-  - cuda
-  - training
-  - yann-lecun
-  - elon-musk
+  - gpt-2-124m
+  - gpt-2-350m
+  - gpt-2-1.6b
+  - gemini-1.5-flash
+  - gemini-1.5-pro
+  - gemini-1.5-advanced
+  - llama-3-70b
+  - llama.cpp
+  - jamba
+  - internlm2-math-plus-1.8b
+  - internlm2-math-plus-7b
+  - internlm2-math-plus-20b
+  - internlm2-math-plus-mixtral8x22b
+  - pandora
+  - astroppt
+  - large-language-models
+  - model-training-efficiency
+  - cuda-programming
   - convolutional-neural-networks
+  - autonomous-driving
+  - ai-safety
+  - ai-regulation
+  - transformer-arithmetic
+  - hybrid-models
+  - embedding-models
+  - open-source-licensing
+  - model-benchmarks
+  - video-generation
+  - document-question-answering
+  - speech-recognition-optimization
+companies:
+  - openai
+  - meta
+  - tesla
+  - nvidia
+  - internlm
+  - ai21
+  - nvidia
+models:
+  - gpt-2
+  - gpt-2-124m
+  - gpt-2-350m
+  - gpt-2-1.6b
+  - gemini-1.5-flash
+  - gemini-1.5-pro
+  - gemini-1.5-advanced
+  - llama-3-70b
+  - llama.cpp
+  - jamba
+  - internlm2-math-plus-1.8b
+  - internlm2-math-plus-7b
+  - internlm2-math-plus-20b
+  - internlm2-math-plus-mixtral8x22b
+  - pandora
+  - astroppt
+topics:
+  - large-language-models
+  - model-training-efficiency
+  - cuda-programming
+  - convolutional-neural-networks
+  - autonomous-driving
+  - ai-safety
+  - ai-regulation
+  - transformer-arithmetic
+  - hybrid-models
+  - embedding-models
+  - open-source-licensing
+  - model-benchmarks
+  - video-generation
+  - document-question-answering
+  - speech-recognition-optimization
 ---
 
 

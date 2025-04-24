@@ -4,20 +4,85 @@ title: not much happened today
 date: '2025-03-18T22:00:12.689005Z'
 original_slug: ainews-not-much-happened-today-5716
 description: >-
-  Google’s Gemini 2.0 Flash introduces advanced multimodal capabilities with
-  image input/output, though dedicated image generation models like Imagen 3
-  remain recommended for text-to-image tasks. Meanwhile, Mistral AI launched
-  Mistral Small 3.1, enhancing image input and context window size to 128k
-  tokens, positioning it competitively alongside models like GPT-4o mini and
-  Claude 3.5 Haiku.
+  Google’s **Gemini 2.0 Flash** introduces advanced multimodal capabilities
+  integrating image input/output, signaling a new paradigm for language models,
+  though dedicated image generation models like **Imagen 3** remain recommended
+  for text-to-image tasks. Meanwhile, **Mistral AI** released **Mistral Small
+  3.1**, expanding context windows to *128k tokens* and aligning performance
+  with models like **GPT-4o mini** and **Claude 3.5 Haiku**, highlighting
+  ongoing advancements in large language model capabilities.
 tags:
+  - nvidia
   - google
-  - gemini-2-0-flash
-  - imagen-3
   - mistral
-  - mistral-small-3-1
+  - allen
+  - perplexity
+  - kalshi
+  - langchain
+  - anthropic
+  - stripe
+  - softbank
+  - harvard
+  - gemini-2.0-flash
+  - imagen-3
+  - mistral-small-3.1
+  - mistral-3
   - gpt-4o-mini
-  - claude-3-5-haiku
+  - claude-3.5-haiku
+  - olm-32b
+  - shieldgemma-2
+  - gemma-3
+  - julian
+  - fasttransform
+  - codegen
+  - claude-3.7
+  - multimodal-language-models
+  - large-context-windows
+  - open-source-llms
+  - image-safety-classification
+  - coding-assistants
+  - AI-benchmarks
+  - AI-hardware
+  - AI-application-in-sports
+  - AI-policy
+  - software-transformation-libraries
+companies:
+  - nvidia
+  - google
+  - mistral
+  - allen
+  - perplexity
+  - kalshi
+  - langchain
+  - anthropic
+  - stripe
+  - softbank
+  - harvard
+models:
+  - gemini-2.0-flash
+  - imagen-3
+  - mistral-small-3.1
+  - mistral-3
+  - gpt-4o-mini
+  - claude-3.5-haiku
+  - olm-32b
+  - shieldgemma-2
+  - gemma-3
+  - julian
+  - fasttransform
+  - codegen
+  - claude-3.7
+topics:
+  - multimodal-language-models
+  - large-context-windows
+  - open-source-llms
+  - image-safety-classification
+  - coding-assistants
+  - AI-benchmarks
+  - AI-hardware
+  - AI-application-in-sports
+  - AI-policy
+  - software-transformation-libraries
 ---
 
 

@@ -4,19 +4,92 @@ title: AdamW -> AaronD?
 date: '2024-04-01T19:58:53.959019Z'
 original_slug: ainews-adamw-aarond
 description: >-
-  Aaron Defazio is developing a tuning-free replacement for the Adam optimizer
-  that shows promising results across major machine learning benchmarks,
-  potentially marking a significant advancement in optimization methods.
-  Additionally, Claude 3 Opus has surpassed all OpenAI models on the LMSys
-  leaderboard, highlighting notable progress in language model performance.
+  **Claude 3 Opus** has overtaken all **OpenAI** models on the LMSys
+  leaderboard, establishing itself as the best AI model currently available.
+  Meanwhile, **Aaron Defazio** is developing a potential tuning-free replacement
+  for the Adam optimizer, showing promising experimental results across classic
+  machine learning benchmarks, which could significantly impact optimization in
+  AI training.
 tags:
-  - aaron-defazio
-  - adam-optimizer
-  - optimization
-  - claude-3
   - openai
-  - language-models
-  - machine-learning
+  - claude
+  - microsoft
+  - google
+  - apple
+  - huawei
+  - mistral
+  - crusoe-cloud
+  - vast
+  - g42
+  - claude-3
+  - claude-3-opus
+  - gpt-4
+  - dolphin-2.8-mistral-7b-v0.2
+  - llama-300m
+  - adam-optimizer
+  - gecko-embeddings
+  - realm
+  - llam2-7b
+  - sdxl
+  - sd1.5
+  - wdxl
+  - mambamixer
+  - large-language-models
+  - optimization
+  - machine-learning-benchmarks
+  - model-performance
+  - image-generation
+  - embeddings
+  - reference-resolution
+  - efficient-training
+  - programming-languages
+  - supercomputing
+  - ai-ethics
+  - prompt-injection
+  - agentic-behavior
+  - retrieval-augmented-generation
+  - evaluation-benchmarks
+companies:
+  - openai
+  - claude
+  - microsoft
+  - google
+  - apple
+  - huawei
+  - mistral
+  - crusoe-cloud
+  - vast
+  - g42
+models:
+  - claude-3
+  - claude-3-opus
+  - gpt-4
+  - dolphin-2.8-mistral-7b-v0.2
+  - llama-300m
+  - adam-optimizer
+  - gecko-embeddings
+  - realm
+  - llam2-7b
+  - sdxl
+  - sd1.5
+  - wdxl
+  - mambamixer
+topics:
+  - large-language-models
+  - optimization
+  - machine-learning-benchmarks
+  - model-performance
+  - image-generation
+  - embeddings
+  - reference-resolution
+  - efficient-training
+  - programming-languages
+  - supercomputing
+  - ai-ethics
+  - prompt-injection
+  - agentic-behavior
+  - retrieval-augmented-generation
+  - evaluation-benchmarks
 ---
 
 

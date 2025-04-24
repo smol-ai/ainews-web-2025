@@ -4,19 +4,69 @@ title: Nothing much happened today
 date: '2024-07-11T01:15:43.889022Z'
 original_slug: ainews-nothing-much-happened-today
 description: >-
-  Meta has released the Chameleon-7b and Chameleon-30b models on HuggingFace,
-  featuring a unified architecture that processes both text and images as input
-  and output. Additionally, Salesforce's xLAM-1b, a 1-billion parameter model,
-  outperforms GPT-3.5 in function calling capabilities, signaling advances in
-  efficient, smaller-scale models.
+  Meta released the **Chameleon-7b and Chameleon-30b** multimodal models on
+  HuggingFace, capable of processing both text and images with a unified
+  architecture, while **Salesforce's xLAM-1b** model outperforms **GPT-3.5** in
+  function calling despite its smaller size. Additionally, **Anole** emerged as
+  the first open-source autoregressive large multimodal model supporting
+  text-image-video generation, marking a significant advancement in multimodal
+  AI capabilities.
 tags:
   - meta
+  - salesforce
+  - microsoft
+  - apple
+  - huggingface
+  - xiaomi
+  - github
   - chameleon-7b
   - chameleon-30b
-  - salesforce
   - xlam-1b
-  - function-calling
+  - gpt-3.5
+  - anole
+  - phi-3-mini
+  - ghost-8b-beta
+  - gpt-4o
+  - gemini-1.5-pro
   - multimodal-models
+  - function-calling
+  - large-language-models
+  - model-benchmarking
+  - synthetic-data
+  - theorem-proving
+  - vision-language-models
+  - ai-governance
+  - autonomous-factories
+  - open-source-models
+companies:
+  - meta
+  - salesforce
+  - microsoft
+  - apple
+  - huggingface
+  - xiaomi
+  - github
+models:
+  - chameleon-7b
+  - chameleon-30b
+  - xlam-1b
+  - gpt-3.5
+  - anole
+  - phi-3-mini
+  - ghost-8b-beta
+  - gpt-4o
+  - gemini-1.5-pro
+topics:
+  - multimodal-models
+  - function-calling
+  - large-language-models
+  - model-benchmarking
+  - synthetic-data
+  - theorem-proving
+  - vision-language-models
+  - ai-governance
+  - autonomous-factories
+  - open-source-models
 ---
 
 

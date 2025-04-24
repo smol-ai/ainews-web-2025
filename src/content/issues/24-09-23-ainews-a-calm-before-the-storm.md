@@ -4,19 +4,117 @@ title: a calm before the storm
 date: '2024-09-23T23:33:49.803194Z'
 original_slug: ainews-sxxx
 description: >-
-  OpenAI released new reasoning models, o1 and o1-mini, aimed at improving
-  performance on complex scientific, coding, and math tasks, alongside increased
-  rate limits for these models. Meanwhile, Alibaba launched the open-source
-  Qwen2.5 model series, which supports over 29 languages and offers performance
-  comparable to GPT-4 at a lower cost.
+  OpenAI released new reasoning models, **o1** and **o1-mini**, enhancing
+  complex task performance in science, coding, and math, while **Alibaba**
+  launched the open-source **Qwen2.5** model series, achieving state-of-the-art
+  results comparable to GPT-4 at lower cost. Additionally, Microsoft and
+  Blackrock are raising *$30 billion* to expand AI data centers, and Open WebUI
+  introduced safe code execution using **gVisor** sandboxing for secure
+  interactive coding.
 tags:
   - openai
+  - alibaba
+  - microsoft
+  - blackrock
+  - groq
+  - aramco
+  - disney-research
+  - eth-zurich
+  - pudu-robotics
+  - slack
+  - scale
+  - sama
   - o1
   - o1-mini
-  - alibaba
+  - o1-preview
   - qwen2.5
-  - multilingual
+  - qwen2.5-coder
+  - llama2-70b
+  - llama-7b
+  - gemma2-2b
+  - gemma2-1.5b
+  - gpt-4
+  - gpt-4.1
+  - llama3-70b-iq2_m
+  - qwen2.5-32b-iq4_xs
   - reasoning-models
+  - open-source-models
+  - model-evaluation
+  - function-calling
+  - long-context-models
+  - kv-cache-quantization
+  - retrieval-augmented-generation
+  - synthetic-data
+  - ai-infrastructure
+  - data-centers
+  - ai-investment
+  - robotics
+  - diffusion-motion-generation
+  - reinforcement-learning
+  - ai-integration
+  - ai-agents
+  - code-execution
+  - sandboxing
+  - docker
+  - ai-ethics
+  - regulation
+  - synthetic-data-generation
+  - financial-research-assistant
+  - multi-lingual-models
+  - instruction-following
+companies:
+  - openai
+  - alibaba
+  - microsoft
+  - blackrock
+  - groq
+  - aramco
+  - disney-research
+  - eth-zurich
+  - pudu-robotics
+  - slack
+  - scale
+  - sama
+models:
+  - o1
+  - o1-mini
+  - o1-preview
+  - qwen2.5
+  - qwen2.5-coder
+  - llama2-70b
+  - llama-7b
+  - gemma2-2b
+  - gemma2-1.5b
+  - gpt-4
+  - gpt-4.1
+  - llama3-70b-iq2_m
+  - qwen2.5-32b-iq4_xs
+topics:
+  - reasoning-models
+  - open-source-models
+  - model-evaluation
+  - function-calling
+  - long-context-models
+  - kv-cache-quantization
+  - retrieval-augmented-generation
+  - synthetic-data
+  - ai-infrastructure
+  - data-centers
+  - ai-investment
+  - robotics
+  - diffusion-motion-generation
+  - reinforcement-learning
+  - ai-integration
+  - ai-agents
+  - code-execution
+  - sandboxing
+  - docker
+  - ai-ethics
+  - regulation
+  - synthetic-data-generation
+  - financial-research-assistant
+  - multi-lingual-models
+  - instruction-following
 ---
 
 

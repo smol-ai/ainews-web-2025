@@ -4,18 +4,74 @@ title: Anthropic's $61.5B Series E
 date: '2025-03-04T06:51:49.245801Z'
 original_slug: ainews-anthropics-615b-series-e
 description: >-
-  Anthropic has raised $3.5 billion in a Series E funding round, reaching a
-  $61.5 billion valuation to support AI development and global expansion.
-  Meanwhile, GPT-4.5 has achieved the #1 rank across all categories on the
-  LMArena leaderboard, outperforming competitors including Claude 3.7.
+  **Anthropic** announced a $3.5 billion funding round at a $61.5 billion
+  valuation led by Lightspeed Venture Partners, signaling strong investor
+  confidence in their AI development. Meanwhile, **OpenAI's GPT-4.5** has
+  achieved the #1 rank across all categories on the LMArena leaderboard,
+  outperforming competitors including **Anthropic's Claude Sonnet 3.7** in
+  multiple benchmarks.
 tags:
   - anthropic
-  - funding
+  - openai
+  - lightspeed-venture-partners
+  - perplexity
+  - deutsche-telekom
+  - microsoft
+  - deepseek
+  - google
+  - firefly-aerospace
+  - meta
   - gpt-4.5
-  - benchmarks
-  - claude
-  - lmarena
-  - model-performance
+  - claude-sonnet-3.7
+  - deepseek-r1
+  - gemini-2.0
+  - o3-mini
+  - funding
+  - valuation
+  - model-benchmarks
+  - coding-workflows
+  - style-control
+  - multi-turn-dialogue
+  - AI-partnerships
+  - AI-phone-integration
+  - healthcare-copilot
+  - AI-agent-communication
+  - brain-to-text-decoding
+  - diffusion-models
+  - flow-matching
+  - structured-generation
+companies:
+  - anthropic
+  - openai
+  - lightspeed-venture-partners
+  - perplexity
+  - deutsche-telekom
+  - microsoft
+  - deepseek
+  - google
+  - firefly-aerospace
+  - meta
+models:
+  - gpt-4.5
+  - claude-sonnet-3.7
+  - deepseek-r1
+  - gemini-2.0
+  - o3-mini
+topics:
+  - funding
+  - valuation
+  - model-benchmarks
+  - coding-workflows
+  - style-control
+  - multi-turn-dialogue
+  - AI-partnerships
+  - AI-phone-integration
+  - healthcare-copilot
+  - AI-agent-communication
+  - brain-to-text-decoding
+  - diffusion-models
+  - flow-matching
+  - structured-generation
 ---
 
 

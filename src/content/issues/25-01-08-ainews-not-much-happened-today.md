@@ -4,20 +4,77 @@ title: not much happened today
 date: '2025-01-09T03:45:48.690704Z'
 original_slug: ainews-not-much-happened-today-1150
 description: >-
-  Sebastien Bubeck introduced REINFORCE++, a training method that speeds up
-  reinforcement learning by 30% using PPO-inspired techniques, while AI21 Labs
-  released the Phi-4 model under the MIT License, now available via Ollama.
-  Additionally, François Chollet announced plans for ARC-AGI-2 and a
-  next-generation AGI benchmark to better evaluate artificial general
-  intelligence.
+  **Microsoft** has released **Phi-4**, a *14B parameter* model under the **MIT
+  license**, now available on **Hugging Face** and **Azure AI Foundry**, noted
+  for strong reasoning performance surpassing some larger models. Meanwhile,
+  **HP** announced an **AMD-based generative AI machine** with *128 GB unified
+  RAM* (including *96 GB VRAM*), designed to efficiently run *70B parameter*
+  models, sparking discussions on AMD's **RocM** versus Nvidia's **CUDA** for AI
+  inference optimization.
 tags:
-  - reinforce++
-  - ppo
-  - ai21
-  - phi-4
+  - microsoft
+  - hp
+  - amd
+  - nvidia
+  - ai21labs
+  - langchain
   - ollama
-  - francois-chollet
-  - agi-benchmark
+  - groq
+  - code-llm
+  - llama-index
+  - togethercompute
+  - phi-4
+  - reinforce++
+  - arc-agi-2
+  - deepseek-v3
+  - llama-3.3-70b
+  - qwen2.5
+  - generative-models
+  - model-quantization
+  - unified-memory-architecture
+  - gpu-inference
+  - agi-benchmarks
+  - open-source-licensing
+  - coding-assistants
+  - memory-optimization
+  - multi-modal-ai
+  - ethical-ai
+  - software-development
+  - ai-hardware
+  - training-optimization
+companies:
+  - microsoft
+  - hp
+  - amd
+  - nvidia
+  - ai21labs
+  - langchain
+  - ollama
+  - groq
+  - code-llm
+  - llama-index
+  - togethercompute
+models:
+  - phi-4
+  - reinforce++
+  - arc-agi-2
+  - deepseek-v3
+  - llama-3.3-70b
+  - qwen2.5
+topics:
+  - generative-models
+  - model-quantization
+  - unified-memory-architecture
+  - gpu-inference
+  - agi-benchmarks
+  - open-source-licensing
+  - coding-assistants
+  - memory-optimization
+  - multi-modal-ai
+  - ethical-ai
+  - software-development
+  - ai-hardware
+  - training-optimization
 ---
 
 

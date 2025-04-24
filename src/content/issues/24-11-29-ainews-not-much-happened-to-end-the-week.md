@@ -4,20 +4,83 @@ title: not much happened to end the week
 date: '2024-11-29T23:07:35.341765Z'
 original_slug: ainews-not-much-happened-to-end-the-week
 description: >-
-  Alibaba’s QwQ 32B model is gaining attention for reportedly challenging
-  leading models like o1 mini, o1 preview, Claude 3.5 Sonnet, and GPT-4o,
-  sparking significant discussion on Reddit. Meanwhile, the AI community is also
-  focused on the launch of the DeepSeek-R1 model, which emphasizes transparent
-  reasoning steps as an alternative to OpenAI’s approach.
+  The **Alibaba QwQ 32B model** is gaining attention for its strong mathematical
+  reasoning and coding capabilities, performing competitively against models
+  like **Claude 3.5 Sonnet**, **o1 preview**, and **GPT-4** on benchmarks such
+  as **farel-bench** with a score of *96.67*. Meanwhile, **Deepseek** introduced
+  **Janus**, a new browser-based multimodal AI model running entirely locally on
+  **WebGPU** via **Transformers.js**, showcasing advances in in-browser AI
+  processing despite some early limitations in image generation quality.
 tags:
   - alibaba
-  - qwq
-  - o1
-  - claude-3.5
-  - gpt-4o
+  - deepseek
+  - openai
+  - vercel
+  - amazon
+  - tesla
+  - ollama
+  - xai
+  - qwq-32b
+  - claude-3.5-sonnet
+  - o1-preview
+  - o1-mini
+  - gpt-4
+  - janus
   - deepseek-r1
-  - reasoning
+  - gemini
+  - vercel-v0
+  - amazon-olympus
+  - tesla-optimus
+  - large-language-models
   - benchmarking
+  - mathematical-reasoning
+  - coding
+  - multimodal-models
+  - browser-based-ai
+  - quantization
+  - ai-safety
+  - transparency
+  - system-prompts
+  - local-inference
+  - webgpu
+  - transformers-js
+  - model-evaluation
+companies:
+  - alibaba
+  - deepseek
+  - openai
+  - vercel
+  - amazon
+  - tesla
+  - ollama
+  - xai
+models:
+  - qwq-32b
+  - claude-3.5-sonnet
+  - o1-preview
+  - o1-mini
+  - gpt-4
+  - janus
+  - deepseek-r1
+  - gemini
+  - vercel-v0
+  - amazon-olympus
+  - tesla-optimus
+topics:
+  - large-language-models
+  - benchmarking
+  - mathematical-reasoning
+  - coding
+  - multimodal-models
+  - browser-based-ai
+  - quantization
+  - ai-safety
+  - transparency
+  - system-prompts
+  - local-inference
+  - webgpu
+  - transformers-js
+  - model-evaluation
 ---
 
 

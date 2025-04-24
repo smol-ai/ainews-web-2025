@@ -4,19 +4,69 @@ title: Perplexity, the newest AI unicorn
 date: '2024-04-23T22:48:23.949413Z'
 original_slug: ainews-perplexity
 description: >-
-  Perplexity has doubled its valuation shortly after its Series B funding,
-  highlighting strong investor confidence. Meanwhile, Meta's Phi-3 models,
-  released in multiple sizes, demonstrate competitive performance with Phi-3 14B
-  rivaling Llama 3 8B and Phi-3 3.8B approaching GPT-3.5 benchmarks, marking
-  significant progress in open-source language models.
+  **Perplexity AI** raised **$62.7 million** in a Series B1 funding round at a
+  **$1.04 billion valuation**, led by **Daniel Gross** and supported by
+  prominent investors including **Jeff Bezos** and **NVIDIA**, while serving
+  over *169 million queries per month*. Meanwhile, **Meta’s Llama-3 70B** model
+  achieved top-tier performance, tying with **GPT-4 Turbo** on the LMSYS
+  leaderboard, with training on over *15 trillion tokens* and advanced alignment
+  techniques. Additionally, **Microsoft** released the **Phi-3** language models
+  in *3.8B, 7B,* and *14B* sizes, with the smallest model rivaling GPT-3.5 on
+  benchmarks.
 tags:
   - perplexity
-  - funding
   - meta
-  - phi-3
-  - llama-3
-  - language-models
-  - open-source
+  - microsoft
+  - nvidia
+  - deutsche-telekom
+  - softbank
+  - llama-3-70b
+  - llama-3-8b
+  - phi-3-mini
+  - phi-3-7b
+  - phi-3-14b
+  - gpt-4-turbo
+  - gpt-3.5
+  - funding
+  - valuation
+  - large-language-models
+  - model-benchmarks
+  - model-training
+  - instruction-following
+  - quantization
+  - context-length-extension
+  - enterprise-security
+  - synthetic-data
+  - model-alignment
+  - leaderboard-performance
+companies:
+  - perplexity
+  - meta
+  - microsoft
+  - nvidia
+  - deutsche-telekom
+  - softbank
+models:
+  - llama-3-70b
+  - llama-3-8b
+  - phi-3-mini
+  - phi-3-7b
+  - phi-3-14b
+  - gpt-4-turbo
+  - gpt-3.5
+topics:
+  - funding
+  - valuation
+  - large-language-models
+  - model-benchmarks
+  - model-training
+  - instruction-following
+  - quantization
+  - context-length-extension
+  - enterprise-security
+  - synthetic-data
+  - model-alignment
+  - leaderboard-performance
 ---
 
 

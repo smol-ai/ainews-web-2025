@@ -4,21 +4,61 @@ title: Pixtral Large (124B) beats Llama 3.2 90B with updated Mistral Large 24.11
 date: '2024-11-19T02:25:23.507366Z'
 original_slug: ainews-pixtral-large-124b-beats-llama-32-90b-with
 description: >-
-  Mistral has upgraded its Pixtral Large vision encoder to 1B parameters and
-  updated the 123B parameter Mistral Large model with improved function calling
-  and system prompt features, while Pixtral Large now outperforms Llama 3.2 90B
-  on major multimodal benchmarks. Additionally, Mistral's Le Chat chatbot
-  received a comprehensive feature update, reflecting the company's increased
-  focus on product development alongside research.
+  Mistral has updated its Pixtral Large vision encoder to *1B parameters* and
+  released an incremental update to the *123B parameter* Mistral Large 24.11,
+  with Pixtral Large outperforming Llama 3.2 90B on major multimodal benchmarks.
+  Meanwhile, Qwen2.5-Turbo has extended its context length to *1 million
+  tokens*, marking a significant advancement in handling large-scale tasks, and
+  local benchmarks show Qwen2.5-coder 32B offering strong coding assistant
+  performance on RTX 4090 GPUs.
 tags:
   - mistral
+  - llama
+  - qwen
+  - samba-nova
+  - ollama
   - pixtral-large
+  - mistral-large-24.11
+  - llama-3.2
+  - qwen2.5-turbo
+  - qwen2.5-coder-32b
+  - claude-3.5-sonnet
+  - exllamav2
+  - multimodal-benchmarks
   - vision-encoder
-  - mistral-large
-  - llama-3-2
-  - multimodal
-  - chatbot
-  - le-chat
+  - large-language-models
+  - context-length-extension
+  - coding-assistants
+  - gpu-inference
+  - quantization
+  - model-optimization
+  - concurrency
+  - local-deployment
+companies:
+  - mistral
+  - llama
+  - qwen
+  - samba-nova
+  - ollama
+models:
+  - pixtral-large
+  - mistral-large-24.11
+  - llama-3.2
+  - qwen2.5-turbo
+  - qwen2.5-coder-32b
+  - claude-3.5-sonnet
+  - exllamav2
+topics:
+  - multimodal-benchmarks
+  - vision-encoder
+  - large-language-models
+  - context-length-extension
+  - coding-assistants
+  - gpu-inference
+  - quantization
+  - model-optimization
+  - concurrency
+  - local-deployment
 ---
 
 

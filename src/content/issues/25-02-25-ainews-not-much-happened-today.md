@@ -4,21 +4,99 @@ title: not much happened today
 date: '2025-02-26T02:19:12.201709Z'
 original_slug: ainews-not-much-happened-today-6477
 description: >-
-  Claude 3.7 Sonnet has been released, showcasing exceptional coding and
-  reasoning capabilities, including a new CLI-based coding assistant called
-  Claude Code and a massive 200k token context window with a toggleable thinking
-  mode. Additionally, DeepSeek launched DeepEP, an open-source communication
-  library optimized for MoE model training and inference with advanced features
-  like RDMA support and FP8 precision.
+  **Claude 3.7 Sonnet** has been released with notable improvements in coding,
+  reasoning, and a large context window of up to *200k tokens*, outperforming
+  competitors like DeepSeek and Gemini 2.0 Pro in coding benchmarks.
+  Additionally, **DeepSeek** announced the open-source release of **DeepEP**, a
+  communication library for MoE model training and inference, while **Alibaba
+  Qwen** teased an upcoming open-weight open-source release of **Qwen2.5-Max**
+  and its reasoning-enhanced variant **QwQ-Max**.
 tags:
-  - claude
-  - claude-3.7
+  - anthropic
+  - deepseek
+  - alibaba
+  - openai
+  - google
+  - replit
+  - runwayml
+  - allen
+  - perplexity
+  - langchain
+  - claude-3.7-sonnet
+  - claude-code
+  - deepseek-r1
+  - deepseek-v3
+  - gemini-2.0-pro
+  - gpt-4o
+  - qwen2.5-max
+  - qwq-max
+  - qwq-32b
+  - o3-mini
+  - o1-2024-12-17
+  - google-veo-2
+  - openai-sora
+  - kling-1.5-pro
+  - alibaba-wan2.1
+  - qwen2vl-7b
+  - replit-agent-v2
   - coding
   - reasoning
+  - large-context-windows
+  - model-benchmarks
+  - open-source-releases
+  - moe-training
+  - communication-libraries
+  - video-generation
+  - multimodal-models
+  - reinforcement-learning
+  - datasets
+  - tool-integration
+  - agentic-workflows
+  - pricing-models
+companies:
+  - anthropic
   - deepseek
-  - deepseek-deepep
-  - moe
-  - open-source
+  - alibaba
+  - openai
+  - google
+  - replit
+  - runwayml
+  - allen
+  - perplexity
+  - langchain
+models:
+  - claude-3.7-sonnet
+  - claude-code
+  - deepseek-r1
+  - deepseek-v3
+  - gemini-2.0-pro
+  - gpt-4o
+  - qwen2.5-max
+  - qwq-max
+  - qwq-32b
+  - o3-mini
+  - o1-2024-12-17
+  - google-veo-2
+  - openai-sora
+  - kling-1.5-pro
+  - alibaba-wan2.1
+  - qwen2vl-7b
+  - replit-agent-v2
+topics:
+  - coding
+  - reasoning
+  - large-context-windows
+  - model-benchmarks
+  - open-source-releases
+  - moe-training
+  - communication-libraries
+  - video-generation
+  - multimodal-models
+  - reinforcement-learning
+  - datasets
+  - tool-integration
+  - agentic-workflows
+  - pricing-models
 ---
 
 

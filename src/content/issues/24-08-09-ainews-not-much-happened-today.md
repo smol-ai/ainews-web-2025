@@ -4,19 +4,69 @@ title: not much happened today
 date: '2024-08-10T05:51:12.824379Z'
 original_slug: ainews-to-be-named-3898
 description: >-
-  Qwen2-Math-72B has outperformed leading models like GPT-4o and
-  Claude-3.5-Sonnet on various math benchmarks, showcasing advances in
-  specialized training techniques. Additionally, Google AI has significantly cut
-  prices for its Gemini 1.5 Flash model, reducing input costs by 78% and output
-  costs by 71%, making it more accessible for developers.
+  **Qwen2-Math-72B** has outperformed leading models like GPT-4o and
+  Claude-3.5-Sonnet on math benchmarks, showcasing advances in specialized
+  math-focused AI. Meanwhile, **Google AI** significantly cut pricing for its
+  **Gemini 1.5 Flash** model by *78%* for input and *71%* for output tokens,
+  making large-scale AI usage more affordable.
 tags:
-  - qwen2
+  - qwen
+  - google
+  - anthropic
+  - cursor
+  - hugging-face
+  - mistral
+  - paperspace
   - qwen2-math-72b
   - gpt-4o
   - claude-3.5-sonnet
-  - google
   - gemini-1.5-flash
-  - pricing
+  - llama-3.1-405b
+  - idefics3-llama-8b
+  - parler-tts-v1
+  - deepseek-v2
+  - math-benchmarks
+  - model-pricing
+  - fine-tuning
+  - bug-bounty
+  - function-calling
+  - open-source-models
+  - text-to-speech
+  - large-language-models
+  - ai-safety
+  - ai-regulation
+  - retrieval-augmented-generation
+  - software-engineering-agents
+companies:
+  - qwen
+  - google
+  - anthropic
+  - cursor
+  - hugging-face
+  - mistral
+  - paperspace
+models:
+  - qwen2-math-72b
+  - gpt-4o
+  - claude-3.5-sonnet
+  - gemini-1.5-flash
+  - llama-3.1-405b
+  - idefics3-llama-8b
+  - parler-tts-v1
+  - deepseek-v2
+topics:
+  - math-benchmarks
+  - model-pricing
+  - fine-tuning
+  - bug-bounty
+  - function-calling
+  - open-source-models
+  - text-to-speech
+  - large-language-models
+  - ai-safety
+  - ai-regulation
+  - retrieval-augmented-generation
+  - software-engineering-agents
 ---
 
 

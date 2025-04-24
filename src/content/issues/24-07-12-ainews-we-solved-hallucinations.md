@@ -4,22 +4,19 @@ title: We Solved Hallucinations
 date: '2024-07-13T02:52:26.666831Z'
 original_slug: ainews-we-solved-hallucinations
 description: >-
-  Recent advances in compute hardware and software have drastically reduced the
-  cost of training GPT-2 to around $672, down from $100,000 in 2019, thanks to
-  improvements like NVIDIA H100 GPUs and FlashAttention-3, which delivers up to
-  1.2 PFLOPS performance. Additionally, a new hallucination detection model
-  called Lynx has been introduced, targeting real-world applications in
-  healthcare and fintech to improve LLM reliability.
+  **WizardLM 3** is an upcoming language model generating anticipation for
+  significant improvements, while **FlashAttention-3**, developed
+  collaboratively by **Meta**, **NVIDIA**, and others, offers a 1.5-2x speedup
+  in attention computation enabling more efficient large model training.
+  Additionally, **fal** introduced **AuraFlow**, a new image generation model
+  combining strengths of **Stable Diffusion** and **Midjourney** to improve
+  image coherence and composition.
 tags:
-  - gpt-2
-  - training-cost
-  - nvidia
-  - h100
-  - flashattention-3
-  - hallucination-detection
-  - lynx
-  - healthcare
-  - fintech
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

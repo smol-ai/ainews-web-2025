@@ -4,19 +4,56 @@ title: Gemini 2.5 Pro + 4o Native Image Gen
 date: '2025-03-26T01:13:42.288748Z'
 original_slug: ainews-gemini-25-pro-4o-native-image-gen
 description: >-
-  Google’s Gemini 2.5 Pro has emerged as the new leading AI model, surpassing
-  Grok 3 by 40 LMarena points and showcasing advanced reasoning, coding, and
-  multimodal capabilities. Meanwhile, OpenAI released GPT-4o’s native image
-  generation, an autoregressive model that integrates text, pixels, and sound
-  for enhanced image creation and in-context learning.
+  **Google’s Gemini 2.5 Pro** has emerged as the new top AI model worldwide,
+  leading the LMarena leaderboard by a significant *40 points* over previous
+  leaders, with notable improvements in reasoning, coding, STEM, and multimodal
+  tasks. Meanwhile, **OpenAI** launched its **GPT-4o native image generation**
+  model, now available to all ChatGPT users, showcasing advanced capabilities in
+  photorealistic and complex instruction-following image synthesis.
 tags:
   - google
-  - gemini
-  - gemini-2.5-pro
   - openai
+  - databricks
+  - weights-biases
+  - langchain
+  - figure
+  - gemini-2.5-pro
   - gpt-4o
+  - deepseek-v3-0324
+  - llamaextract
+  - large-language-models
   - image-generation
-  - autoregressive-model
+  - reasoning
+  - coding
+  - multimodal
+  - benchmarks
+  - reinforcement-learning
+  - finetuning
+  - robotics
+  - agent-tooling
+companies:
+  - google
+  - openai
+  - databricks
+  - weights-biases
+  - langchain
+  - figure
+models:
+  - gemini-2.5-pro
+  - gpt-4o
+  - deepseek-v3-0324
+  - llamaextract
+topics:
+  - large-language-models
+  - image-generation
+  - reasoning
+  - coding
+  - multimodal
+  - benchmarks
+  - reinforcement-learning
+  - finetuning
+  - robotics
+  - agent-tooling
 ---
 
 

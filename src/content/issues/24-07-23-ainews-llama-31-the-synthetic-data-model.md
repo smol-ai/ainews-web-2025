@@ -4,20 +4,18 @@ title: 'Llama 3.1: The Synthetic Data Model'
 date: '2024-07-24T00:13:31.329222Z'
 original_slug: ainews-llama-31-the-synthetic-data-model
 description: >-
-  Meta AI has launched Llama 3.1, including a 405B parameter model that
-  incorporates extensive synthetic data training for code, math,
-  multilinguality, long context, and tool use, with a new license permitting
-  synthetic data generation. Independent evaluations show promising performance,
-  and inference providers are already supporting the model with competitive
-  pricing.
+  **Meta** has released **Llama 3.1**, including a powerful *405B* parameter
+  model that outperforms GPT-4o and incorporates extensive synthetic data
+  training for code, math, multilinguality, long context, and tool use. This
+  launch marks a significant milestone in open-source large language models,
+  with promising independent evaluations and broad industry support for
+  inference and pricing.
 tags:
-  - meta
-  - llama
-  - llama-3-1
-  - synthetic-data
-  - code
-  - multilingual
-  - long-context
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,20 +4,19 @@ title: The Last Hurrah of Stable Diffusion?
 date: '2024-06-12T22:08:29.963442Z'
 original_slug: ainews-the-last-hurrah-of-stable-diffusion
 description: >-
-  Stability AI launched Stable Diffusion 3 Medium, highlighting its MMDiT
-  architecture and T5 text encoder, with models ranging from 450M to 8B
-  parameters, marking a significant update amid community concerns over open
-  weights release delays. Meanwhile, Llama 3 8B Instruct shows strong evaluation
-  performance comparable to GPT-4, and Qwen 2 Instruct surpasses Llama 3 on MMLU
-  benchmarks, indicating rapid advancements in large language models.
+  Stable Diffusion 3 Medium launched with a detailed research paper revealing
+  its MultiModal Diffusion Transformer architecture and a range of models up to
+  *8B parameters*, marking the final legacy of Emad Mostaque at **Stability
+  AI**. Meanwhile, **Llama 3 8B Instruct** demonstrated strong evaluation
+  capabilities with *0.8 correlation to GPT-4*, and **Qwen 2 Instruct**
+  surpassed Llama 3 on MMLU benchmarks, highlighting ongoing advances in large
+  language model performance.
 tags:
-  - stability
-  - stable-diffusion
-  - mmdit
-  - t5
-  - llama-3
-  - qwen-2
-  - benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,20 +4,83 @@ title: not much happened today
 date: '2024-12-02T23:49:20.748299Z'
 original_slug: ainews-not-much-happened-today-4970
 description: >-
-  Nvidia unveiled Puzzle, a distillation-based neural architecture search method
-  to optimize inference efficiency in large language models, generating
-  significant community interest. Additionally, Amazon increased its investment
-  in Anthropic to $8 billion, supporting the startup’s growth and AI safety
-  research initiatives, including a new fellowship program.
+  Amazon has significantly increased its investment in **Anthropic**, bringing
+  the total to *$8 billion*, supporting the startup’s growth and AI
+  capabilities. Meanwhile, Chinese open-weight models like **QwQ 32B** and
+  **DeepSeek** are challenging **OpenAI**’s dominance, with **Sam Altman**
+  expressing concerns over open-source models as they rival closed systems.
 tags:
-  - nvidia
-  - puzzle
-  - neural-architecture-search
-  - large-language-models
   - amazon
   - anthropic
+  - openai
+  - nvidia
+  - pydantic
+  - supabase
+  - google
+  - browser-company
+  - world-labs
+  - ollama
+  - exllama
+  - koboldcpp
+  - qwq-32b
+  - deepseek
+  - qwen-2.5
+  - ic-light-v2
+  - puzzle
+  - pydantic-agent-framework
+  - advanced-voice-mode
+  - whisper
+  - gpt-4
+  - investment
+  - open-source-models
+  - large-language-models
+  - reasoning
+  - neural-architecture-search
   - ai-safety
-  - fellowship
+  - multilingual-reasoning
+  - model-compression
+  - video-models
+  - agent-frameworks
+  - domain-names
+  - reverse-thinking
+  - inference-optimization
+companies:
+  - amazon
+  - anthropic
+  - openai
+  - nvidia
+  - pydantic
+  - supabase
+  - google
+  - browser-company
+  - world-labs
+  - ollama
+  - exllama
+  - koboldcpp
+models:
+  - qwq-32b
+  - deepseek
+  - qwen-2.5
+  - ic-light-v2
+  - puzzle
+  - pydantic-agent-framework
+  - advanced-voice-mode
+  - whisper
+  - gpt-4
+topics:
+  - investment
+  - open-source-models
+  - large-language-models
+  - reasoning
+  - neural-architecture-search
+  - ai-safety
+  - multilingual-reasoning
+  - model-compression
+  - video-models
+  - agent-frameworks
+  - domain-names
+  - reverse-thinking
+  - inference-optimization
 ---
 
 

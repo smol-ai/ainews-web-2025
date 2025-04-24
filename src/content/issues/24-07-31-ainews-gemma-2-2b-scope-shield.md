@@ -4,21 +4,78 @@ title: Gemma 2 2B + Scope + Shield
 date: '2024-08-01T01:33:32.753297Z'
 original_slug: ainews-gemma-2-2b-scope-shield
 description: >-
-  Google’s Gemma 2B model, trained on 2 trillion tokens and distilled from a
-  larger LLM, is showing strong performance on major benchmarks, challenging the
-  notion that larger models like GPT-3.5 require billions of parameters.
-  Meanwhile, Meta’s Llama-3.1-405B has reached #3 on the Overall Arena
-  leaderboard, becoming the first open model to rank so highly, and Meta also
-  released SAM 2, a major upgrade for video and image segmentation offering
-  significant speed and interaction improvements.
+  **Google’s Gemma 2B model**, trained on *2 trillion tokens* and distilled from
+  a larger unnamed LLM, has been released and shows strong performance on
+  benchmarks like HF v2 Leaderboard and LMsys, outperforming some larger models
+  in specific areas. Meanwhile, **Meta’s Llama 3.1 405B** has reached #3 on the
+  Overall Arena leaderboard, marking the first time an open model ranks in the
+  top 3, and Meta also launched **Segment Anything Model 2 (SAM 2)**, offering
+  significant speed and interaction improvements for video and image
+  segmentation.
 tags:
   - google
-  - gemma-2b
-  - llama-3.1-405b
   - meta
+  - openai
+  - perplexity
+  - nvidia
+  - cohere
+  - allen-institute
+  - carnegie-mellon
+  - gemma-2b
+  - gemma-2-9b
+  - gemma-2-27b
+  - llama-3.1-405b
   - sam-2
+  - llama-3-8b-instruct
+  - deepseek-coder-v2
+  - large-language-models
+  - knowledge-distillation
   - model-distillation
   - model-benchmarks
+  - video-segmentation
+  - image-segmentation
+  - prompt-engineering
+  - quantization
+  - interpretability
+  - open-source-models
+  - self-improving-models
+  - llm-evaluation
+  - robotics-data-augmentation
+  - mlflow
+  - career-updates
+companies:
+  - google
+  - meta
+  - openai
+  - perplexity
+  - nvidia
+  - cohere
+  - allen-institute
+  - carnegie-mellon
+models:
+  - gemma-2b
+  - gemma-2-9b
+  - gemma-2-27b
+  - llama-3.1-405b
+  - sam-2
+  - llama-3-8b-instruct
+  - deepseek-coder-v2
+topics:
+  - large-language-models
+  - knowledge-distillation
+  - model-distillation
+  - model-benchmarks
+  - video-segmentation
+  - image-segmentation
+  - prompt-engineering
+  - quantization
+  - interpretability
+  - open-source-models
+  - self-improving-models
+  - llm-evaluation
+  - robotics-data-augmentation
+  - mlflow
+  - career-updates
 ---
 
 

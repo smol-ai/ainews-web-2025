@@ -4,19 +4,89 @@ title: Llama 4's Controversial Weekend Release
 date: '2025-04-08T01:55:40.760246Z'
 original_slug: ainews-llama-4s-controversial-weekend-release
 description: >-
-  Meta released Llama 4, including two new medium-size MoE open models and a
-  massive 2 trillion parameter model, aiming to reclaim its position in open AI
-  models. However, the release has faced criticism due to transparency issues,
-  performance inconsistencies, and controversy over training practices, which
-  Meta leadership has denied.
+  **Meta** released **Llama 4**, including two new medium-size MoE open models
+  and a forthcoming 2 trillion parameter model, aiming to reclaim leadership in
+  open AI models. However, the release has faced criticism over transparency,
+  performance inconsistencies, and controversy regarding training practices,
+  which Meta leadership denies. Additionally, **Mistral AI** announced a €100
+  million partnership with **CMA CGM** and is actively hiring for AI engineering
+  roles.
 tags:
   - meta
-  - llama
+  - mistral
+  - cma-cgm
+  - openai
+  - google
+  - deepmind
+  - replit
+  - perplexity
+  - hyundai
+  - boston-dynamics
+  - kawasaki
   - llama-4
+  - llama-3
+  - llama-3.2
+  - llama-4-scout
+  - llama-4-maverick
+  - deepseek-r1
+  - gemini-2.0-flash-thinking
+  - gemini-2.5-pro
+  - mistral-small-3.1
   - large-language-models
-  - open-models
+  - mixture-of-experts
   - model-benchmarks
-  - multimodal
+  - multimodal-intelligence
+  - model-training
+  - quantization-aware-training
+  - retrieval-augmented-generation
+  - model-context-protocol
+  - ai-powered-devices
+  - robotics
+  - ai-content-creation
+  - ai-hiring
+  - partnerships
+  - open-models
+  - transparency
+  - controversy
+companies:
+  - meta
+  - mistral
+  - cma-cgm
+  - openai
+  - google
+  - deepmind
+  - replit
+  - perplexity
+  - hyundai
+  - boston-dynamics
+  - kawasaki
+models:
+  - llama-4
+  - llama-3
+  - llama-3.2
+  - llama-4-scout
+  - llama-4-maverick
+  - deepseek-r1
+  - gemini-2.0-flash-thinking
+  - gemini-2.5-pro
+  - mistral-small-3.1
+topics:
+  - large-language-models
+  - mixture-of-experts
+  - model-benchmarks
+  - multimodal-intelligence
+  - model-training
+  - quantization-aware-training
+  - retrieval-augmented-generation
+  - model-context-protocol
+  - ai-powered-devices
+  - robotics
+  - ai-content-creation
+  - ai-hiring
+  - partnerships
+  - open-models
+  - transparency
+  - controversy
 ---
 
 

@@ -4,20 +4,20 @@ title: not much happened today
 date: '2025-01-30T01:07:40.495919Z'
 original_slug: ainews-not-much-happened-today-2391
 description: >-
-  DeepSeek's latest model, DeepSeek-V3, trained on a massive 1.5 million
-  instruction-tuning samples, is setting new records for open-source AI training
-  data and demonstrating strong performance with innovations like coding at the
-  speed of thought. Additionally, DeepSeek-R1 is now available for on-premise
-  deployment through a partnership with Dell and Hugging Face, enhancing
-  enterprise accessibility.
+  DeepSeek's AI models, including the full 671B DeepSeek-R1 and its distilled
+  version DeepSeek-V3 trained on *1.5M* instruction-tuning samples, are setting
+  new records for post-training data usage and demonstrating strong performance
+  benchmarks, with deployment now available on-premise via Dell and Hugging
+  Face. Meanwhile, significant confusion persists in the community about smaller
+  fine-tuned models mislabeled as DeepSeek-R1, and tensions rise as **OpenAI**
+  accuses **DeepSeek** of intellectual property theft, sparking debate over AI
+  model training ethics and competitive strategies.
 tags:
-  - deepseek
-  - deepseek-v3
-  - deepseek-r1
-  - open-source
-  - deployment
-  - dell
-  - hugging-face
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

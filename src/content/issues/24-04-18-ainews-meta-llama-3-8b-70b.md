@@ -4,19 +4,77 @@ title: Meta Llama 3 (8B, 70B)
 date: '2024-04-19T04:28:01.540342Z'
 original_slug: ainews-to-be-named-5820
 description: >-
-  Meta has partially released Llama 3 with 8B and 70B parameter models, praised
-  as the first open-source model matching GPT-4 level performance, while the
-  400B variant remains in training. Additionally, Stability AI launched the
-  Stable Diffusion 3 API with upcoming model weights, sparking comparisons with
-  Midjourney V6 on realism and capabilities.
+  Meta has partially released **Llama 3** models in *8B* and *70B* parameter
+  variants, with the *400B* parameter version still in training, positioning it
+  as the first open-source model rivaling GPT-4 in performance. Meanwhile,
+  **Mistral** launched **Mixtral 8x22B**, a sparse Mixture-of-Experts model with
+  *141B* parameters (active *39B*), featuring a *64K* token context window and
+  strong multilingual and math capabilities, setting a new standard for open
+  models.
 tags:
   - meta
-  - llama-3
-  - open-source
-  - gpt-4
-  - stability-ai
+  - mistral
+  - stability
+  - microsoft
+  - bostondynamics
+  - together
+  - huggingface
+  - google
+  - stanford
+  - openai
+  - llama-3-8b
+  - llama-3-70b
+  - llama-3-400b
+  - mixtral-8x22b
   - stable-diffusion-3
   - midjourney-v6
+  - vasa-1
+  - coxcomb-7b
+  - large-language-models
+  - open-source
+  - model-benchmarks
+  - instruction-tuning
+  - mixture-of-experts
+  - long-context
+  - multilingual
+  - robotics
+  - retrieval-augmented-generation
+  - ai-safety
+  - synthetic-datasets
+  - ml-education
+companies:
+  - meta
+  - mistral
+  - stability
+  - microsoft
+  - bostondynamics
+  - together
+  - huggingface
+  - google
+  - stanford
+  - openai
+models:
+  - llama-3-8b
+  - llama-3-70b
+  - llama-3-400b
+  - mixtral-8x22b
+  - stable-diffusion-3
+  - midjourney-v6
+  - vasa-1
+  - coxcomb-7b
+topics:
+  - large-language-models
+  - open-source
+  - model-benchmarks
+  - instruction-tuning
+  - mixture-of-experts
+  - long-context
+  - multilingual
+  - robotics
+  - retrieval-augmented-generation
+  - ai-safety
+  - synthetic-datasets
+  - ml-education
 ---
 
 

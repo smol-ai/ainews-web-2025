@@ -6,19 +6,84 @@ title: >-
 date: '2024-11-28T01:23:25.425054Z'
 original_slug: ainews-qwen-with-questions-32b-open-weights
 description: >-
-  The 32B QwQ model, recently released with weights and demo, outperforms GPT-4o
-  and Claude 3.5 Sonnet on all benchmarks, showcasing advanced reasoning through
-  sequential search and reflection techniques. Meanwhile, Hugging Face now
-  supports deploying llama.cpp-powered models on CPU servers, enabling more
-  accessible and cost-effective cloud LLM deployments.
+  **QwQ**, a new *32B* open-weight model from **Qwen** (likely based on Qwen
+  2.5), has been released with weights and a demo, outperforming **GPT-4o** and
+  **Claude 3.5 Sonnet** on all benchmarks by leveraging test-time scaling and
+  sequential reasoning. Meanwhile, **Hugging Face** now supports deploying
+  llama.cpp-powered models on CPU servers, marking a significant step toward
+  more accessible and low-cost cloud LLM availability.
 tags:
-  - qwq
   - qwen
-  - gpt-4o
-  - claude-3-5
-  - reasoning
+  - openai
+  - claude
   - hugging-face
+  - alibaba
+  - nvidia
+  - strip
+  - sambanova
+  - smollm
+  - qwq-32b
+  - qwen-2.5
+  - gpt-4o
+  - claude-3.5-sonnet
   - llama-cpp
+  - flux
+  - marker-v1
+  - reflection-70b
+  - showui
+  - qwenvl-flux
+  - open-weight-models
+  - test-time-scaling
+  - reasoning-models
+  - model-benchmarks
+  - model-deployment
+  - cpu-inference
+  - multimodal-models
+  - inference-optimization
+  - vector-stores
+  - agentic-rag
+  - cuda-graphs
+  - distributed-training
+  - startup-hiring
+  - pos-systems
+  - humor-in-ai
+companies:
+  - qwen
+  - openai
+  - claude
+  - hugging-face
+  - alibaba
+  - nvidia
+  - strip
+  - sambanova
+  - smollm
+models:
+  - qwq-32b
+  - qwen-2.5
+  - gpt-4o
+  - claude-3.5-sonnet
+  - llama-cpp
+  - flux
+  - marker-v1
+  - reflection-70b
+  - showui
+  - qwenvl-flux
+topics:
+  - open-weight-models
+  - test-time-scaling
+  - reasoning-models
+  - model-benchmarks
+  - model-deployment
+  - cpu-inference
+  - multimodal-models
+  - inference-optimization
+  - vector-stores
+  - agentic-rag
+  - cuda-graphs
+  - distributed-training
+  - startup-hiring
+  - pos-systems
+  - humor-in-ai
 ---
 
 

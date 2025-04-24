@@ -4,20 +4,20 @@ title: Claude Crushes Code - 92% HumanEval and Claude.ai Artifacts
 date: '2024-06-21T07:27:45.182774Z'
 original_slug: ainews-claude-crushes-code-92-humaneval-and
 description: >-
-  Anthropic has released Claude 3.5 Sonnet, a model that outperforms GPT-4o on
-  benchmarks like GPQA, MMLU, and HumanEval while operating twice as fast and at
-  one-fifth the cost of Claude 3 Opus. The update also introduces "Artifacts," a
-  feature enabling real-time interaction with AI-generated code, documents, and
-  designs, highlighting significant improvements in coding capabilities and
-  workflow integration.
+  **Anthropic** released **Claude 3.5 Sonnet**, a model that outperforms
+  **GPT-4o** on benchmarks like *GPQA, MMLU,* and *HumanEval*, operates at
+  *twice the speed* of Claude 3 Opus, and costs one-fifth as much, with a strong
+  emphasis on coding capabilities and a new "Artifacts" feature for interactive
+  content generation. Meanwhile, **Ilya Sutskever** announced a new company,
+  **Safe Super Intelligence (SSI)**, focused on developing safe
+  superintelligence with a small dedicated team, sparking mixed reactions about
+  its ambitious funding and strategic approach.
 tags:
-  - anthropic
-  - claude-3-5
-  - sonnet
-  - gpt-4o
-  - coding
-  - artifacts
-  - benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

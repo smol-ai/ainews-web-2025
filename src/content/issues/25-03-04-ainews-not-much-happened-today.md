@@ -4,20 +4,91 @@ title: not much happened today
 date: '2025-03-05T05:17:34.368145Z'
 original_slug: ainews-not-much-happened-today-4193
 description: >-
-  Cohere released the Aya Vision models, including 8B and 32B parameter
-  versions, which outperform much larger models like Llama 3.2 90B in
-  multilingual vision tasks and support 23 languages including Arabic. Microsoft
-  introduced Phi-4-Mini and Phi-4-Multimodal models, with the latter becoming
-  the new leader on the Open ASR leaderboard, surpassing Nvidia Canary and
-  OpenAI Whisper.
+  **Weights and Biases** announced a significant $1.7 billion acquisition by the
+  soon-IPOing **CoreWeave**, marking a major industry move. Meanwhile,
+  **CohereForAI** released the **Aya Vision models** (8B and 32B parameters),
+  which outperform larger models like **Llama-3.2 90B Vision** and **Molmo
+  72B**, supporting 23 languages and advancing multilingual vision capabilities.
 tags:
+  - weights-and-biases
+  - coreweave
   - cohere
-  - aya-vision
-  - llama
   - microsoft
+  - google
+  - llamaindex
+  - weaviate
+  - perplexity
+  - alibaba
+  - xai
+  - meta
+  - uc-san-diego
+  - aya-vision-8b
+  - aya-vision-32b
+  - llama-3.2-90b
+  - molmo-72b
   - phi-4-mini
   - phi-4-multimodal
-  - open-asr
+  - cogview4
+  - wan-2.1
+  - grok-3
+  - gpt-4.5
+  - qwen-32b-coder-instruct
+  - acquisitions
+  - multimodal-models
+  - multilingual-vision
+  - large-language-models
+  - model-benchmarks
+  - open-source-models
+  - agentic-knowledge-management
+  - generative-feedback-loops
+  - text-to-image-generation
+  - video-generation
+  - ai-product-updates
+  - ai-research
+  - reasoning-efficiency
+  - chain-of-thought
+  - honesty-benchmarks
+companies:
+  - weights-and-biases
+  - coreweave
+  - cohere
+  - microsoft
+  - google
+  - llamaindex
+  - weaviate
+  - perplexity
+  - alibaba
+  - xai
+  - meta
+  - uc-san-diego
+models:
+  - aya-vision-8b
+  - aya-vision-32b
+  - llama-3.2-90b
+  - molmo-72b
+  - phi-4-mini
+  - phi-4-multimodal
+  - cogview4
+  - wan-2.1
+  - grok-3
+  - gpt-4.5
+  - qwen-32b-coder-instruct
+topics:
+  - acquisitions
+  - multimodal-models
+  - multilingual-vision
+  - large-language-models
+  - model-benchmarks
+  - open-source-models
+  - agentic-knowledge-management
+  - generative-feedback-loops
+  - text-to-image-generation
+  - video-generation
+  - ai-product-updates
+  - ai-research
+  - reasoning-efficiency
+  - chain-of-thought
+  - honesty-benchmarks
 ---
 
 

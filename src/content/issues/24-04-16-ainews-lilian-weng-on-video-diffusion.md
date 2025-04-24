@@ -4,20 +4,18 @@ title: Lilian Weng on Video Diffusion
 date: '2024-04-17T02:15:37.824011Z'
 original_slug: ainews-lilian-weng-on-video-diffusion
 description: >-
-  Lilian Weng's comprehensive blog on diffusion models for video generation
-  offers an authoritative overview of state-of-the-art techniques, highlighting
-  the surprising possibility of training-free adaptation of text-to-image models
-  for video output. Additionally, OpenAI expands its presence by launching in
-  Japan, introducing a Batch API, and partnering with Adobe to integrate the
-  Sora video model into Premiere Pro.
+  OpenAI expanded its presence by launching in Japan and partnering with Adobe
+  to integrate the **Sora** video generation model into Premiere Pro, marking
+  one of the biggest AI launches of the year. Meanwhile, **WizardLM-2**, a
+  next-generation large language model family, was released but quickly pulled
+  due to missed toxicity testing, highlighting ongoing challenges in responsible
+  AI deployment.
 tags:
-  - diffusion-models
-  - video-generation
-  - training-free-adaptation
-  - openai
-  - sora
-  - adobe
-  - batch-api
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

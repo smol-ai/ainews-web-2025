@@ -4,20 +4,80 @@ title: DeepSeek-V2 beats Mixtral 8x22B with >160 experts at HALF the cost
 date: '2024-05-06T23:37:03.494203Z'
 original_slug: ainews-deepseek-v2-beats-mixtral-8x22b
 description: >-
-  DeepSeek-V2, a new open-source mixture-of-experts model with 236B parameters
-  and a novel Multi-Head Latent Attention mechanism, achieves top-3 performance
-  on AlignBench, surpassing GPT-4 while offering significantly faster inference
-  and lower token pricing. Meanwhile, Microsoft is reportedly developing a 500B
-  parameter LLM called MAI-1, expected to compete directly with OpenAI’s GPT
-  models.
+  DeepSeek-V2, an open-source mixture-of-experts model with *236B parameters*
+  and a novel Multi-Head Latent Attention mechanism, surpasses GPT-4 on
+  AlignBench and offers token inference at *$0.28 per million tokens*, setting a
+  new benchmark in cost and performance. Meanwhile, **Meta's Llama 3 120B**
+  demonstrates superior creative writing capabilities compared to GPT-4, with
+  the upcoming Llama3-400B eagerly anticipated for release.
 tags:
   - deepseek
-  - mixture-of-experts
-  - llama-3
+  - mistral
+  - snowflake
   - microsoft
-  - mai-1
+  - openai
+  - tesla
+  - nvidia
+  - google
+  - meta
+  - scale
+  - deepseek-v2
+  - mistral-convex-hull
+  - snowflake-arctic
+  - mai-1-500b
+  - llama-3-120b
+  - llama3-400b
+  - gpt-4
+  - claude-3
+  - med-gemini
+  - dreureka
+  - mixture-of-experts
   - large-language-models
-  - multimodal
+  - model-efficiency
+  - inference-pricing
+  - creative-writing
+  - robotics
+  - multimodal-llms
+  - hallucination
+  - parameter-efficient-finetuning
+  - benchmarks
+  - open-source-robotics
+  - neural-scaling-laws
+companies:
+  - deepseek
+  - mistral
+  - snowflake
+  - microsoft
+  - openai
+  - tesla
+  - nvidia
+  - google
+  - meta
+  - scale
+models:
+  - deepseek-v2
+  - mistral-convex-hull
+  - snowflake-arctic
+  - mai-1-500b
+  - llama-3-120b
+  - llama3-400b
+  - gpt-4
+  - claude-3
+  - med-gemini
+  - dreureka
+topics:
+  - mixture-of-experts
+  - large-language-models
+  - model-efficiency
+  - inference-pricing
+  - creative-writing
+  - robotics
+  - multimodal-llms
+  - hallucination
+  - parameter-efficient-finetuning
+  - benchmarks
+  - open-source-robotics
+  - neural-scaling-laws
 ---
 
 

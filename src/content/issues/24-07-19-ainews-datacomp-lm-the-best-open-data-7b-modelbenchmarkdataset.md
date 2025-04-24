@@ -4,21 +4,20 @@ title: 'DataComp-LM: the best open-data 7B model/benchmark/dataset'
 date: '2024-07-20T02:08:36.357452Z'
 original_slug: ainews-apple-dclm-7b-the-best-new-open-weights
 description: >-
-  DataComp has released an open 7B language model trained on a massive 240
-  trillion token dataset, achieving competitive performance with models like
-  Mistral and Llama3 using only 2.5T tokens, highlighting the impact of data
-  quality on scaling. Meanwhile, OpenAI launched GPT-4o mini, a cost-effective
-  model with performance close to GPT-4-Turbo, aimed at making AI more
-  affordable for developers.
+  A new open data language model from the DataComp team matches the performance
+  of leading 7B models like **Mistral**, **Llama3**, and **Qwen2** using only
+  *2.5 trillion tokens*, leveraging a massive *240 trillion token* dataset
+  (DCLM-POOL) and advanced data quality techniques. Meanwhile, **OpenAI**
+  released the cost-effective **GPT-4o mini** model with strong reasoning
+  capabilities, and **NVIDIA** and **Mistral** jointly launched the **Mistral
+  NeMo 12B** model featuring a *128k token* context window and Apache 2.0
+  licensing.
 tags:
-  - tags
-  - datacomp
-  - language-model
-  - open-data
-  - gpt-4o
-  - openai
-  - mistral
-  - model-scaling
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,20 +4,19 @@ title: There's Ilya!
 date: '2024-06-20T00:18:00.147344Z'
 original_slug: ainews-theres-ilya
 description: >-
-  Ilya Sutskever has co-founded Safe Superintelligence Inc, marking a
-  significant move after leaving OpenAI, while Meta released new models
-  including Chameleon 7B and 34B that unify image and text tokens with a novel
-  early fusion architecture. Additionally, DeepSeek-Coder-V2 demonstrates strong
-  coding capabilities comparable to GPT-4 Turbo, supporting 338 programming
-  languages and a 128K context length.
+  Ilya Sutskever has re-emerged to co-found **Safe Superintelligence Inc** just
+  a month after leaving **OpenAI**, marking a significant development in the
+  pursuit of safe AGI. Meanwhile, **Meta** released new mixed-modal language
+  models, including **Chameleon 7B** and **34B**, which unify image and text
+  tokens, and **DeepSeek-Coder-V2** demonstrated code generation capabilities
+  comparable to **GPT-4 Turbo**, supporting *338 programming languages* and a
+  *128K context length*.
 tags:
-  - ilya-sutskever
-  - safe-superintelligence
-  - openai
-  - meta
-  - chameleon
-  - deepseek-coder-v2
-  - coding
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

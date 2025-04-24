@@ -4,19 +4,73 @@ title: not much happened this weekend
 date: '2024-10-08T02:36:09.068096Z'
 original_slug: ainews-not-much-happened-this-weekend-5817
 description: >-
-  Meta introduced Movie Gen, a state-of-the-art media foundation model capable
-  of generating high-quality AI videos from text and performing precise video
-  editing. Additionally, OpenAI's o1-preview model shows strong performance on
-  complex tasks but struggles with simpler problems, while Claude 3.5 Sonnet can
-  match its reasoning ability through advanced prompting techniques.
+  **OpenAI** closed a new *$6.6 billion* funding round, valuing the company at
+  *$157 billion* and reinforcing its position as the most well-funded AI startup
+  globally. Meanwhile, **Meta** unveiled **Movie Gen**, touted as the most
+  advanced media foundation model to date, capable of generating high-quality AI
+  videos from text and performing precise video editing.
 tags:
-  - meta
-  - movie-gen
   - openai
-  - o1-preview
+  - meta
+  - reka
+  - cloudflare
+  - langchain
+  - arcee
+  - qwen
   - claude
-  - sonnet
+  - swebench
+  - o1-preview
+  - claude-3.5-sonnet
+  - movie-gen
+  - reka-21b-flash
+  - qwen2.5-3b
+  - llama3.1-8b
+  - funding
+  - media-generation
+  - video-generation
+  - large-language-models
   - reasoning
+  - reinforcement-learning
+  - retrieval-augmented-generation
+  - synthetic-data
+  - customer-support-automation
+  - adaptive-compute
+  - multimodal-models
+  - model-finetuning
+  - ai-safety
+  - ai-ethics
+companies:
+  - openai
+  - meta
+  - reka
+  - cloudflare
+  - langchain
+  - arcee
+  - qwen
+  - claude
+  - swebench
+models:
+  - o1-preview
+  - claude-3.5-sonnet
+  - movie-gen
+  - reka-21b-flash
+  - qwen2.5-3b
+  - llama3.1-8b
+topics:
+  - funding
+  - media-generation
+  - video-generation
+  - large-language-models
+  - reasoning
+  - reinforcement-learning
+  - retrieval-augmented-generation
+  - synthetic-data
+  - customer-support-automation
+  - adaptive-compute
+  - multimodal-models
+  - model-finetuning
+  - ai-safety
+  - ai-ethics
 ---
 
 

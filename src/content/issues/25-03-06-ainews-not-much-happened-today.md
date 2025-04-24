@@ -4,20 +4,99 @@ title: not much happened today
 date: '2025-03-07T05:50:14.781495Z'
 original_slug: ainews-not-much-happened-today-3137
 description: >-
-  AI21 Labs launched Jamba 1.6, an open model for private enterprise deployment
-  that outperforms Cohere, Mistral, and Llama on key benchmarks and rivals
-  closed models in speed and quality. Meanwhile, Mistral AI released a
-  state-of-the-art multimodal OCR model with multilingual and multimodal
-  capabilities, offering on-prem deployment and advanced document understanding
-  features.
+  **AI21 Labs launched Jamba 1.6**, an advanced open model for private
+  enterprise deployment that outperforms competitors like **Cohere, Mistral, and
+  Llama** on key benchmarks. Meanwhile, **Mistral AI released a state-of-the-art
+  multimodal OCR model** with multilingual and multimodal capabilities, offering
+  on-prem deployment and achieving top rankings on Hacker News.
 tags:
   - ai21
-  - jamba-1.6
   - mistral
-  - ocr
-  - multimodal
-  - enterprise
-  - open-model
+  - alibaba
+  - openai
+  - amd
+  - anthropic
+  - hugging-face
+  - figure
+  - google
+  - perplexity
+  - langchain
+  - elysian-labs
+  - jamba-1.6
+  - mistral-ocr
+  - qwq-32b
+  - deepseek-r1
+  - openai-o1
+  - openai-o3-mini
+  - claude-3.7-sonnet
+  - instella
+  - babel-9b
+  - babel-83b
+  - llama-3.2-3b
+  - gemma-2-2b
+  - qwen-2.5-3b
+  - gemini-2.0-flash
+  - open-models
+  - private-enterprise-deployment
+  - multimodal-ocr
+  - multilingual-llms
+  - on-prem-deployment
+  - reasoning-models
+  - model-benchmarks
+  - chat-models
+  - prompt-engineering
+  - human-ai-interaction
+  - image-generation
+  - pdf-parsing
+  - ai-reasoning
+  - agentic-capabilities
+  - software-development
+  - dynamic-benchmarks
+companies:
+  - ai21
+  - mistral
+  - alibaba
+  - openai
+  - amd
+  - anthropic
+  - hugging-face
+  - figure
+  - google
+  - perplexity
+  - langchain
+  - elysian-labs
+models:
+  - jamba-1.6
+  - mistral-ocr
+  - qwq-32b
+  - deepseek-r1
+  - openai-o1
+  - openai-o3-mini
+  - claude-3.7-sonnet
+  - instella
+  - babel-9b
+  - babel-83b
+  - llama-3.2-3b
+  - gemma-2-2b
+  - qwen-2.5-3b
+  - gemini-2.0-flash
+topics:
+  - open-models
+  - private-enterprise-deployment
+  - multimodal-ocr
+  - multilingual-llms
+  - on-prem-deployment
+  - reasoning-models
+  - model-benchmarks
+  - chat-models
+  - prompt-engineering
+  - human-ai-interaction
+  - image-generation
+  - pdf-parsing
+  - ai-reasoning
+  - agentic-capabilities
+  - software-development
+  - dynamic-benchmarks
 ---
 
 

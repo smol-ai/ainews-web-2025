@@ -4,19 +4,19 @@ title: Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o version)
 date: '2024-07-19T00:00:39.402250Z'
 original_slug: ainews-lskjd
 description: >-
-  OpenAI released GPT-4o-mini, a highly cost-efficient model priced at just 3.5%
-  of GPT-4o with strong benchmarks and support for long context and multimodal
-  inputs/outputs planned. Nvidia and Mistral unveiled Mistral Nemo, a 12B
-  parameter model with a record 128k token context window and superior
-  performance compared to Llama 3 8B.
+  **OpenAI** launched **GPT-4o-mini**, a highly cost-efficient model priced at
+  *$0.15/$0.60* per thousand tokens, offering *3.5%* of GPT-4o’s price with
+  comparable performance and support for multimodal inputs and outputs planned.
+  Meanwhile, **Mistral AI** and **Nvidia** unveiled **Mistral NeMo**, a *12B*
+  parameter model with a *128k* token context window, outperforming **Llama 3
+  8B** on benchmarks and featuring a new tokenizer optimized for code and
+  multilingual tasks.
 tags:
-  - openai
-  - gpt-4o-mini
-  - cost-efficiency
-  - mistral
-  - nvidia
-  - mistral-nemo
-  - llama-3
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

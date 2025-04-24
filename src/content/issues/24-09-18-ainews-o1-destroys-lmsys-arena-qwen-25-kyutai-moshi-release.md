@@ -4,18 +4,18 @@ title: o1 destroys Lmsys Arena, Qwen 2.5, Kyutai Moshi release
 date: '2024-09-18T21:51:26.650574Z'
 original_slug: ainews-o1-destroys-lmsys-arena-qwen-25-kyutai
 description: >-
-  OpenAI’s new o1-preview model has outperformed competitors in daily
-  evaluations, consistently matching top AI news stories without human input and
-  leading LMsys benchmarks. Meanwhile, Alibaba’s Qwen 2.5 models have advanced
-  in the open-source space, surpassing Llama 3.1 at the 70B parameter scale.
+  **OpenAI's o1-preview model** has outperformed competitors like Anthropic,
+  Google, and Llama 3 in daily AI news summarization and LMsys benchmarks, now
+  occupying the top 4 slots with improved rate limits up to *1000 requests per
+  minute*. Meanwhile, **Alibaba's Qwen 2.5 suite** has advanced in the
+  open-source space, surpassing Llama 3.1 at the *70B* parameter scale with
+  strong general, coding, and math capabilities.
 tags:
-  - openai
-  - o1-preview
-  - lmsys
-  - alibaba
-  - qwen
-  - llama-3-1
-  - open-source
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

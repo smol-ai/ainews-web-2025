@@ -4,21 +4,60 @@ title: not much happened to end the year
 date: '2024-12-31T23:55:07.995126Z'
 original_slug: ainews-not-much-happened-to-end-the-year
 description: >-
-  Reinforcement Fine-Tuning (RFT) has been introduced as a data-efficient method
-  to improve reasoning in large language models by learning from minimal
-  training data using strategies like First-Correct Solutions and Greedily
-  Diverse Solutions. Additionally, DeepSeek-V3, a massive 671B parameter
-  mixture-of-experts model trained on 14.8 trillion tokens, highlights the
-  growing importance of open-source LLMs for scalable and accessible AI
-  inference.
+  **DeepSeek-V3**, a massive *671B parameter* Mixture-of-Experts model trained
+  on *14.8 trillion tokens*, is gaining attention for its scale and performance,
+  though hosting challenges and limited third-party providers remain due to its
+  size and cost. Meanwhile, **Alibaba** has disrupted the Chinese AI market by
+  slashing prices on its large language models by up to *85%*, intensifying
+  competition in the region.
 tags:
-  - reinforcement-fine-tuning
-  - reasoning
-  - large-language-models
+  - deepseek
+  - alibaba
+  - together
+  - llama
+  - smol
+  - diamondquarters
   - deepseek-v3
+  - codellm
+  - sonnet-3.5
+  - o1
+  - large-language-models
   - mixture-of-experts
-  - open-source
   - model-training
+  - reinforcement-fine-tuning
+  - open-source
+  - model-hosting
+  - pricing-strategies
+  - ai-market-competition
+  - software-development
+  - natural-language-reinforcement-learning
+  - regulatory-challenges
+  - developer-tools
+companies:
+  - deepseek
+  - alibaba
+  - together
+  - llama
+  - smol
+  - diamondquarters
+models:
+  - deepseek-v3
+  - codellm
+  - sonnet-3.5
+  - o1
+topics:
+  - large-language-models
+  - mixture-of-experts
+  - model-training
+  - reinforcement-fine-tuning
+  - open-source
+  - model-hosting
+  - pricing-strategies
+  - ai-market-competition
+  - software-development
+  - natural-language-reinforcement-learning
+  - regulatory-challenges
+  - developer-tools
 ---
 
 

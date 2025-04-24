@@ -4,23 +4,106 @@ title: AlphaProof + AlphaGeometry2 reach 1 point short of IMO Gold
 date: '2024-07-26T01:15:56.829913Z'
 original_slug: ainews-alphaproof-alphageometry2-almost-reach-imo
 description: >-
-  Google DeepMind’s neurosymbolic AI systems AlphaProof and AlphaGeometry 2
-  achieved near-gold medal performance at the 2024 International Math Olympiad
-  by solving complex problems with advanced symbolic reasoning and search
-  techniques, though requiring significantly more computation time than human
-  competitors. Meanwhile, Meta released Llama 3.1 with a 405B parameter model
-  and Mistral AI launched Large 2 with 123B parameters, both supporting 128k
-  context windows and showing complementary strengths in coding and math tasks.
+  Google DeepMind’s neurosymbolic AI systems, **AlphaProof** and **AlphaGeometry
+  2**, achieved near-gold medal performance at the 65th International Math
+  Olympiad by solving complex geometry problems with human-level accuracy but
+  requiring significantly longer computation times. Meanwhile, **Meta** released
+  **Llama 3.1** with a massive *405B* parameter model and **Mistral AI**
+  launched **Mistral Large 2** with *123B* parameters, both featuring *128k*
+  context windows and showing competitive strengths in coding and multilingual
+  tasks, signaling a strong push in open-source large language models.
 tags:
   - google
   - deepmind
+  - meta
+  - mistral
+  - anthropic
+  - openai
+  - together
+  - fireworks
+  - apple
+  - nvidia
+  - amd
+  - intel
+  - x
+  - amazon
   - alphaproof
   - alphageometry-2
-  - international-math-olympiad
+  - gemini
+  - alphazero
+  - llama-3.1
+  - llama-3.1-405b
+  - llama-3.1-70b
+  - mistral-large-2
+  - claude
+  - claude-3.5-opus
+  - gemma-2
+  - yi-34b
+  - mixtral-8x22b
+  - neurosymbolic-ai
+  - math-olympiad
+  - theorem-proving
+  - large-language-models
+  - open-source-models
+  - model-benchmarking
+  - synthetic-data-training
+  - coding-performance
+  - multilingual-evaluation
+  - model-licensing
+  - ai-safety
+  - ai-deployment
+  - few-shot-prompting
+  - structured-extraction
+  - prediction-markets
+  - generalization
+  - intelligence-destruction-cycle
+companies:
+  - google
+  - deepmind
   - meta
-  - llama-3-1
   - mistral
-  - large-2
+  - anthropic
+  - openai
+  - together
+  - fireworks
+  - apple
+  - nvidia
+  - amd
+  - intel
+  - x
+  - amazon
+models:
+  - alphaproof
+  - alphageometry-2
+  - gemini
+  - alphazero
+  - llama-3.1
+  - llama-3.1-405b
+  - llama-3.1-70b
+  - mistral-large-2
+  - claude
+  - claude-3.5-opus
+  - gemma-2
+  - yi-34b
+  - mixtral-8x22b
+topics:
+  - neurosymbolic-ai
+  - math-olympiad
+  - theorem-proving
+  - large-language-models
+  - open-source-models
+  - model-benchmarking
+  - synthetic-data-training
+  - coding-performance
+  - multilingual-evaluation
+  - model-licensing
+  - ai-safety
+  - ai-deployment
+  - few-shot-prompting
+  - structured-extraction
+  - prediction-markets
+  - generalization
+  - intelligence-destruction-cycle
 ---
 
 

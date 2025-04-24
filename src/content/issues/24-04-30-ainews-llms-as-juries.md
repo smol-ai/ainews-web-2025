@@ -4,19 +4,68 @@ title: LLMs-as-Juries
 date: '2024-05-01T01:41:25.208668Z'
 original_slug: ainews-to-be-named-4408
 description: >-
-  OpenAI has rolled out the memory feature to all ChatGPT Plus users and
-  announced a content licensing partnership with the Financial Times to enhance
-  AI-driven news experiences. Meanwhile, concerns about OpenAI’s profitability
-  have emerged as the company begins paying for licensed training data, amid
-  reports of reduced GPT-4 usage limits.
+  **OpenAI** has rolled out the memory feature to all ChatGPT Plus users and
+  partnered with the **Financial Times** to license content for AI training,
+  signaling significant moves in AI product enhancement and data acquisition.
+  Meanwhile, **Meta’s Llama 3** models demonstrate exceptional performance with
+  *32k context windows* and strong benchmark results, including new LLaVA-like
+  variants and specialized models like Meditron excelling in medical benchmarks.
 tags:
   - openai
-  - chatgpt
-  - memory-feature
   - financial-times
-  - content-licensing
-  - profitability
+  - meta
+  - cohere
+  - huggingface
+  - chatgpt-plus
   - gpt-4
+  - gpt-3.5
+  - llama-3
+  - llama-3-70b
+  - llama-2
+  - llama-3-llava
+  - meditron
+  - phi-3
+  - gpt-2
+  - large-language-models
+  - memory-features
+  - content-licensing
+  - model-benchmarks
+  - medical-ai
+  - in-context-learning
+  - model-efficiency
+  - prompt-engineering
+  - image-generation
+  - stable-diffusion
+  - community-datasets
+companies:
+  - openai
+  - financial-times
+  - meta
+  - cohere
+  - huggingface
+models:
+  - chatgpt-plus
+  - gpt-4
+  - gpt-3.5
+  - llama-3
+  - llama-3-70b
+  - llama-2
+  - llama-3-llava
+  - meditron
+  - phi-3
+  - gpt-2
+topics:
+  - large-language-models
+  - memory-features
+  - content-licensing
+  - model-benchmarks
+  - medical-ai
+  - in-context-learning
+  - model-efficiency
+  - prompt-engineering
+  - image-generation
+  - stable-diffusion
+  - community-datasets
 ---
 
 

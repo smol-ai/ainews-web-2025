@@ -4,20 +4,92 @@ title: The Core Skills of AI Engineering
 date: '2024-02-04T00:54:29.799988Z'
 original_slug: ainews-the-core-skills-of-ai-engineering
 description: >-
-  A major discussion in AI engineering emerged around the overlap and
-  distinctions between software engineering and data science skills,
-  highlighting challenges in working with probabilistic, data-driven systems.
-  Additionally, the open-source release of AI2’s 65B parameter LLM, OLMo, under
-  the Apache 2.0 license, sparked conversations about open licensing and ethical
-  model usage.
+  The top story highlights a deep discussion led by **Eugene Yan** on the
+  evolving role and skill set of AI engineers, emphasizing the blend of software
+  engineering and data science competencies needed to work effectively with
+  probabilistic, data-driven systems and large language models. Additionally,
+  the **TheBloke** Discord featured key conversations about the open-source
+  **OLMo** 65B model released under the Apache 2.0 license by **AI2**, along
+  with debates on quantization techniques like **AWQ** and **LoftQ** and their
+  implications for fine-tuning and deployment.
 tags:
+  - ai2
+  - thebloke
+  - laion
+  - latent-space
+  - eleutherai
+  - ali-express
+  - mistral
+  - olmo-65b
+  - miqumaid
+  - awq
+  - exl2
+  - aphrodite
+  - momo
+  - loftq
+  - internlm
+  - ssd-1b
+  - byt5
+  - mamba
+  - transformers++
+  - pythia
   - ai-engineering
+  - large-language-models
+  - open-source-models
+  - model-quantization
+  - fine-tuning
+  - model-deployment
+  - activation-functions
+  - knowledge-distillation
+  - legal-issues-in-ai
+  - data-quality
+  - prompt-adherence
+  - image-generation
+  - community-learning
+  - ai-events
   - software-engineering
   - data-science
-  - open-source
-  - olmo
+  - probabilistic-systems
+companies:
+  - ai2
+  - thebloke
+  - laion
+  - latent-space
+  - eleutherai
+  - ali-express
+  - mistral
+models:
+  - olmo-65b
+  - miqumaid
+  - awq
+  - exl2
+  - aphrodite
+  - momo
+  - loftq
+  - internlm
+  - ssd-1b
+  - byt5
+  - mamba
+  - transformers++
+  - pythia
+topics:
+  - ai-engineering
   - large-language-models
-  - model-licensing
+  - open-source-models
+  - model-quantization
+  - fine-tuning
+  - model-deployment
+  - activation-functions
+  - knowledge-distillation
+  - legal-issues-in-ai
+  - data-quality
+  - prompt-adherence
+  - image-generation
+  - community-learning
+  - ai-events
+  - software-engineering
+  - data-science
+  - probabilistic-systems
 ---
 
 

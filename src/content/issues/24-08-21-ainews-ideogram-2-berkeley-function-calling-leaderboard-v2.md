@@ -4,20 +4,19 @@ title: Ideogram 2 + Berkeley Function Calling Leaderboard V2
 date: '2024-08-22T00:05:05.366247Z'
 original_slug: ainews-ideogram-2-berkeley-function-calling
 description: >-
-  Ideogram has launched version 2.0 of its image generation model featuring five
-  distinct styles, color palette control, a fully controllable API, and an iOS
-  app, marking over 1 billion images created. Meanwhile, Berkeley updated the
-  Function Calling Leaderboard to BFCL V2 Live with 2,251 live user-contributed
-  function documents, highlighting GPT-4's dominance and the strong performance
-  of the open-source Functionary Llama 3-70B finetune.
+  **Microsoft** released the advanced **Phi-3.5** family of models, including a
+  mini instruct version with *3.8B parameters* and a MoE variant with *42B
+  parameters*, featuring a *128K token context window* and outperforming many
+  competitors in reasoning tasks. Additionally, the **Berkeley Function Calling
+  Leaderboard (BFCL)** was updated to version 2 with *2251 live user-contributed
+  function calls*, highlighting the dominance of **GPT-4** and the strong
+  performance of the open-source **Functionary Llama 3-70B** finetune.
 tags:
-  - ideogram
-  - image-generation
-  - function-calling
-  - berkeley
-  - gpt-4
-  - llama-3
-  - functionary
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

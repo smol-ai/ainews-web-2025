@@ -4,21 +4,20 @@ title: Not much happened today
 date: '2024-03-07T01:15:26.009590Z'
 original_slug: ainews-not-much-happened-today
 description: >-
-  Anthropic released Claude 3, a new language model surpassing GPT-4, now the
-  default on Perplexity AI with support from LangChain and LlamaIndex for
-  multimodal applications. Meanwhile, enterprise AI adoption advances through
-  partnerships like Cohere with Accenture and Mistral AI with Snowflake,
-  enabling broader AI integration in business environments.
+  Anthropic has released **Claude 3**, replacing Claude 2.1 as the default model
+  on Perplexity AI, with the Opus variant surpassing **GPT-4** in performance
+  and gaining integration support from **LangChain** and **LlamaIndex**.
+  Meanwhile, enterprise AI adoption accelerates through partnerships like
+  **Cohere** with **Accenture** and **Mistral AI** with **Snowflake**, while
+  open source efforts continue with **Hugging Face** and the European Space
+  Agency releasing a large earth observation dataset and **Google** open
+  sourcing the smartphone-friendly **Gemma 2B** model.
 tags:
-  - anthropic
-  - claude-3
-  - perplexity
-  - langchain
-  - llamaindex
-  - cohere
-  - accenture
-  - mistral
-  - snowflake
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

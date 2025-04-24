@@ -4,20 +4,19 @@ title: 'HippoRAG: First, do know(ledge) Graph'
 date: '2024-06-07T23:55:52.482883Z'
 original_slug: ainews-hipporag-first-do-knowledge-graph
 description: >-
-  Alibaba released new state-of-the-art open-source Qwen2 language models
-  ranging from 0.5B to 72B parameters, achieving top benchmark results and broad
-  multilingual capabilities. Additionally, the HippoRAG paper introduces a
-  hippocampus-inspired retrieval augmentation method that uses knowledge graphs
-  and Personalized PageRank for efficient single-step multi-hop reasoning,
-  outperforming existing retrieval-augmented generation techniques.
+  New state-of-the-art open-source models from **Alibaba**, named **Qwen2**,
+  range from *0.5B to 72B parameters* and achieve top benchmark scores such as
+  *84.32 on MMLU* and *86.0 on HumanEval* for the 72B model. Additionally, the
+  **HippoRAG** paper introduces a hippocampus-inspired retrieval augmentation
+  method using knowledge graphs and Personalized PageRank, enabling efficient
+  single-step multi-hop reasoning that outperforms existing retrieval-augmented
+  generation techniques.
 tags:
-  - alibaba
-  - qwen2
-  - open-source
-  - language-models
-  - retrieval-augmentation
-  - hippocampus
-  - knowledge-graphs
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

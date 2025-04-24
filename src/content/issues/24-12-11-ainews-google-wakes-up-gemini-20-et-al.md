@@ -4,21 +4,57 @@ title: 'Google wakes up: Gemini 2.0 et al'
 date: '2024-12-12T03:16:07.864299Z'
 original_slug: ainews-google-wakes-up-gemini-20-et-al
 description: >-
-  Google officially launched Gemini 2.0 Flash at NeurIPS, a multimodal model
-  that outperforms its predecessor Gemini 1.5 Pro and includes new features like
-  image generation, text-to-speech, and advanced tool use. Additionally, OpenAI
-  announced ChatGPT integration across Apple devices, enhancing Siri and visual
-  intelligence capabilities.
+  Google officially launched **Gemini 2.0 Flash** at NeurIPS 2024, outperforming
+  its 1.5 Pro predecessor and rival models like **Claude Sonnet 3.5** on
+  benchmarks such as SWE-bench, while introducing multimodal capabilities
+  including vision and voice APIs. The model powers new AI agents like Project
+  Astra and Project Mariner, with features like deep research assistance and
+  asynchronous code fixing via the Jules agent, signaling a strong resurgence
+  for **Google** in the AI landscape.
 tags:
   - google
-  - gemini-2-0
-  - multimodal
-  - image-generation
-  - text-to-speech
   - openai
-  - chatgpt
   - apple
-  - siri
+  - deepmind
+  - gemini-2.0-flash
+  - gemini-1.5-pro
+  - gemini-exp-1206
+  - claude-3.5-sonnet
+  - gpt-4o
+  - o1-preview
+  - large-language-models
+  - multimodal-ai
+  - model-benchmarks
+  - ai-agents
+  - code-assistants
+  - neurips-2024
+  - model-performance
+  - ai-industry-competition
+  - natural-language-processing
+  - vision-and-voice-integration
+companies:
+  - google
+  - openai
+  - apple
+  - deepmind
+models:
+  - gemini-2.0-flash
+  - gemini-1.5-pro
+  - gemini-exp-1206
+  - claude-3.5-sonnet
+  - gpt-4o
+  - o1-preview
+topics:
+  - large-language-models
+  - multimodal-ai
+  - model-benchmarks
+  - ai-agents
+  - code-assistants
+  - neurips-2024
+  - model-performance
+  - ai-industry-competition
+  - natural-language-processing
+  - vision-and-voice-integration
 ---
 
 

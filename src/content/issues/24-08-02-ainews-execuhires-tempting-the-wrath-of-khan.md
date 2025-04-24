@@ -4,19 +4,94 @@ title: 'Execuhires: Tempting The Wrath of Khan'
 date: '2024-08-03T01:48:48.159187Z'
 original_slug: ainews-acquisitions-the-fosbury-flop-of-ma
 description: >-
-  Google DeepMind's Gemini 1.5 Pro has taken the top spot on Chatbot Arena,
-  outperforming GPT-4o and Claude-3.5 with strong multilingual and technical
-  capabilities. Meanwhile, Black Forest Labs launched FLUX.1, a new
-  state-of-the-art text-to-image model available in multiple variants including
-  an open-source schnell version.
+  **Google DeepMind’s Gemini 1.5 Pro** has claimed the top spot on Chatbot
+  Arena, outperforming GPT-4o and Claude-3.5 with a score of *1300*, excelling
+  in multilingual, math, and coding tasks. Meanwhile, **Character.ai’s** CEO
+  **Noam Shazeer** has returned to **Google** amid a wave of high-profile
+  executive hires from startups like Adept and Inflection to major tech
+  companies, signaling a shift in the AI industry landscape.
 tags:
   - google
-  - deepmind
-  - gemini-1.5-pro
-  - chatbot-arena
+  - google-deepmind
+  - openai
+  - anthropic
+  - meta
+  - character
+  - adept
+  - inflection
+  - microsoft
+  - stability
   - black-forest-labs
+  - schelling
+  - github
+  - cohere
+  - uber
+  - perplexity
+  - gemini-1.5-pro
+  - gpt-4o
+  - claude-3.5
+  - llama-3.1-405b
   - flux-1
+  - bitnet-b1.58
+  - gemma-2-2b
+  - gemma-2-9b-it
+  - llama-3.1-8b-instruct
+  - executive-hires
+  - chatbot-arena
+  - multilingual-nlp
+  - model-benchmarks
   - text-to-image
+  - model-optimization
+  - local-llm-deployment
+  - training-algorithms
+  - post-training
+  - ai-industry-trends
+  - open-source-models
+  - ai-partnerships
+  - model-hosting
+  - ideologies-in-ai
+companies:
+  - google
+  - google-deepmind
+  - openai
+  - anthropic
+  - meta
+  - character
+  - adept
+  - inflection
+  - microsoft
+  - stability
+  - black-forest-labs
+  - schelling
+  - github
+  - cohere
+  - uber
+  - perplexity
+models:
+  - gemini-1.5-pro
+  - gpt-4o
+  - claude-3.5
+  - llama-3.1-405b
+  - flux-1
+  - bitnet-b1.58
+  - gemma-2-2b
+  - gemma-2-9b-it
+  - llama-3.1-8b-instruct
+topics:
+  - executive-hires
+  - chatbot-arena
+  - multilingual-nlp
+  - model-benchmarks
+  - text-to-image
+  - model-optimization
+  - local-llm-deployment
+  - training-algorithms
+  - post-training
+  - ai-industry-trends
+  - open-source-models
+  - ai-partnerships
+  - model-hosting
+  - ideologies-in-ai
 ---
 
 

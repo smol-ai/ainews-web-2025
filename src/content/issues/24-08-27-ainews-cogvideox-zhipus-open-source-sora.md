@@ -4,20 +4,78 @@ title: 'CogVideoX: Zhipu''s Open Source Sora'
 date: '2024-08-28T01:26:46.937370Z'
 original_slug: ainews-cogvideox-zhipus-open-source-sora
 description: >-
-  Zhipu AI, Alibaba's AI arm, released CogVideoX, an open 5-billion-parameter
-  video generation model that runs without GPUs via their ChatGLM web and
-  desktop apps. Meanwhile, Meta announced updates to Llama 3.1, including new
-  trust and safety research and serverless availability of Llama 3 405B on
-  Google Cloud Vertex AI and Hugging Face with NVIDIA NIM API.
+  Open-source video generation advances with **Zhipu AI**, Alibaba’s AI arm,
+  releasing the open 5B parameter video model CogVideoX, which can run without
+  GPUs via their ChatGLM web or desktop app. Meanwhile, **Meta** announced trust
+  and safety research and CyberSecEval 3 alongside the release of **Llama 3.1**,
+  now available serverless on Google Cloud Vertex AI and Hugging Face with
+  NVIDIA NIM API.
 tags:
   - zhipu
-  - cogvideox
-  - video-generation
-  - chatglm
+  - alibaba
   - meta
-  - llama-3
-  - google-cloud
+  - google
   - hugging-face
+  - nvidia
+  - salesforce
+  - midjourney
+  - tinybox
+  - nous-research
+  - cogvideox
+  - chatglm
+  - llama-3
+  - llama-3.1
+  - llama-3-405b
+  - moondream
+  - phi-3.5
+  - llamarank
+  - distr0
+  - video-generation
+  - open-source
+  - large-language-models
+  - trust-and-safety
+  - serverless-computing
+  - distributed-training
+  - retrieval-augmented-generation
+  - multi-modal-qa
+  - gpu-clusters
+  - ai-hardware
+  - ai-ethics
+  - ai-regulation
+companies:
+  - zhipu
+  - alibaba
+  - meta
+  - google
+  - hugging-face
+  - nvidia
+  - salesforce
+  - midjourney
+  - tinybox
+  - nous-research
+models:
+  - cogvideox
+  - chatglm
+  - llama-3
+  - llama-3.1
+  - llama-3-405b
+  - moondream
+  - phi-3.5
+  - llamarank
+  - distr0
+topics:
+  - video-generation
+  - open-source
+  - large-language-models
+  - trust-and-safety
+  - serverless-computing
+  - distributed-training
+  - retrieval-augmented-generation
+  - multi-modal-qa
+  - gpu-clusters
+  - ai-hardware
+  - ai-ethics
+  - ai-regulation
 ---
 
 

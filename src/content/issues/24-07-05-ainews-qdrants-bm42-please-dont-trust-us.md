@@ -4,19 +4,20 @@ title: 'Qdrant''s BM42: "Please don''t trust us"'
 date: '2024-07-06T02:25:00.011918Z'
 original_slug: ainews-qdrants-bm42
 description: >-
-  Qdrant claimed their new "BM42" method outperforms traditional BM25 for
-  semantic and keyword search, but independent evaluations revealed flawed
-  datasets and incorrect results, with BM42 underperforming on better
-  benchmarks. Meanwhile, Stripe faces criticism for AI/ML-driven account issues,
-  prompting calls for alternative payment solutions.
+  Qdrant recently claimed their new "BM42" retrieval method outperforms BM25 and
+  SPLADE by combining transformer attention with collection-wide statistics, but
+  these claims were debunked by experts including **Jo Bergum** (Vespa) and
+  **Nils Reimers** (Cohere), who showed BM42 underperforms on proper datasets.
+  Meanwhile, on AI model developments, **Gemma 2** demonstrated finetuning
+  speeds *2x faster* with *63% less memory* usage, and **nanoLLaVA-1.5**, a
+  compact *1B parameter* vision model, was released with significant
+  improvements over its predecessor.
 tags:
-  - qdrant
-  - bm42
-  - bm25
-  - semantic-search
-  - stripe
-  - ml-model-failure
-  - payment-alternatives
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

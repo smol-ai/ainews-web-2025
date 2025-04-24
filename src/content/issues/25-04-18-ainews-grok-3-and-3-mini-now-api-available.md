@@ -4,19 +4,77 @@ title: Grok 3 & 3-mini now API Available
 date: '2025-04-19T05:44:39.731046Z'
 original_slug: ainews-grok-3-3-mini-now-api-available
 description: >-
-  Grok 3 mini is now available via API at a competitive price, offering full
-  reasoning traces and positioning itself against larger frontier models.
-  Meanwhile, Google DeepMind released Gemini 2.5 Flash, a hybrid reasoning model
-  that adapts its thinking based on prompts and currently leads the Chatbot
-  Arena leaderboard.
+  **GoogleDeepMind** has released Quantization Aware Trained (QAT) versions of
+  its **Gemma 3** models, reducing VRAM requirements from *54GB* to *14.1GB*
+  while maintaining near-bfloat16 accuracy, enabling efficient deployment across
+  platforms like **llama.cpp**, **MLX**, and **Hugging Face**. Additionally,
+  **X** has launched the API for **Grok 3** and introduced a smaller,
+  cost-effective **Grok 3 mini** model that offers competitive performance with
+  full reasoning traces at *50 cents* per output million tokens.
 tags:
+  - google
+  - googledmind
   - x
+  - openai
+  - llamaindex
+  - perplexity
+  - nvidia
+  - goodfire
+  - mechanize
+  - epochairesearch
   - grok-3
-  - gemini-2.5
-  - google-deepmind
-  - chatbot-arena
-  - model-api
-  - reasoning
+  - grok-3-mini
+  - gemma-3
+  - gemini-2.5-flash
+  - llama-3
+  - llama-3.1-nemotron
+  - deepseek-v3
+  - o3
+  - o4-mini
+  - maverick
+  - quantization-aware-training
+  - model-efficiency
+  - api-release
+  - multi-agent-systems
+  - reinforcement-learning
+  - large-language-models
+  - model-benchmarking
+  - virtual-work-environments
+  - multi-node-deployment
+  - embedding-quantization
+companies:
+  - google
+  - googledmind
+  - x
+  - openai
+  - llamaindex
+  - perplexity
+  - nvidia
+  - goodfire
+  - mechanize
+  - epochairesearch
+models:
+  - grok-3
+  - grok-3-mini
+  - gemma-3
+  - gemini-2.5-flash
+  - llama-3
+  - llama-3.1-nemotron
+  - deepseek-v3
+  - o3
+  - o4-mini
+  - maverick
+topics:
+  - quantization-aware-training
+  - model-efficiency
+  - api-release
+  - multi-agent-systems
+  - reinforcement-learning
+  - large-language-models
+  - model-benchmarking
+  - virtual-work-environments
+  - multi-node-deployment
+  - embedding-quantization
 ---
 
 

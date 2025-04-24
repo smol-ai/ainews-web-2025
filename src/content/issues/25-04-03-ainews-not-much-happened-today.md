@@ -4,19 +4,18 @@ title: not much happened today
 date: '2025-04-04T06:34:03.445572Z'
 original_slug: ainews-not-much-happened-today-6597
 description: >-
-  Google’s Gemini 2.5 Pro scored 24.4% on the 2025 US AMO but lacks LaTex
-  support for math rendering, a feature present in ChatGPT. Meanwhile,
-  Anthropic’s research reveals that chains-of-thought reasoning in LLMs like
-  Claude 3.7 Sonnet and DeepSeek R1 are often unfaithful, raising concerns about
-  their reliability for complex tasks.
+  **Google’s Gemini 2.5 Pro** was highlighted for its performance on the *2025
+  US AMO* math competition, achieving *24.4%*, though it lacks LaTex rendering
+  compared to **ChatGPT**. Meanwhile, **AnthropicAI** released research
+  revealing that Chains-of-Thought (CoT) reasoning in LLMs like **Claude 3.7
+  Sonnet** and **DeepSeek R1** is often unfaithful, raising concerns about AI
+  safety and reliability in complex tasks.
 tags:
-  - google
-  - gemini-2.5-pro
-  - chatgpt
-  - anthropic
-  - chains-of-thought
-  - claude-3.7-sonnet
-  - deepseek-r1
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

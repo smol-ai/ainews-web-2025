@@ -4,20 +4,65 @@ title: 'Gemma 2: The Open Model for Everyone'
 date: '2024-06-28T06:21:39.390033Z'
 original_slug: ainews-gemma-2-the-open-model-for-everyone
 description: >-
-  DeepMind has released Gemma 2, a 27B parameter model trained using extensive
-  knowledge distillation to simulate training on over 50× the typical token
-  count, achieving strong performance and multilingual adaptability, including
-  state-of-the-art results on Indic languages. Meanwhile, Alibaba's Qwen models
-  dominate the new Open LLM Leaderboard, taking four of the top ten spots, with
-  Qwen 72B ranked as the best overall model.
+  **DeepMind's Gemma 2** 27B model launched with a focus on knowledge
+  distillation to train smaller models on *50×* more tokens than theory
+  predicts, enhancing multilingual and multimodal capabilities. Meanwhile,
+  **Alibaba's Qwen 72B** tops the new Open LLM Leaderboard, dominating with four
+  of the top ten spots, signaling strong competition in large language models.
 tags:
   - deepmind
-  - gemma-2
-  - knowledge-distillation
-  - multilingual
   - alibaba
+  - anthropic
+  - nvidia
+  - mistral
+  - mozilla
+  - meta
+  - hugging-face
+  - gemma-2
+  - gemini-1.5
   - qwen-72b
-  - open-llm-leaderboard
+  - mixtral-8x22b-instruct
+  - claude-3.5-sonnet
+  - nv-embed
+  - llama
+  - knowledge-distillation
+  - large-language-models
+  - multilingual-models
+  - multimodal-models
+  - model-evaluation
+  - attention-scaling
+  - matrix-multiplication-elimination
+  - embedding-models
+  - self-awareness
+  - model-compression
+companies:
+  - deepmind
+  - alibaba
+  - anthropic
+  - nvidia
+  - mistral
+  - mozilla
+  - meta
+  - hugging-face
+models:
+  - gemma-2
+  - gemini-1.5
+  - qwen-72b
+  - mixtral-8x22b-instruct
+  - claude-3.5-sonnet
+  - nv-embed
+  - llama
+topics:
+  - knowledge-distillation
+  - large-language-models
+  - multilingual-models
+  - multimodal-models
+  - model-evaluation
+  - attention-scaling
+  - matrix-multiplication-elimination
+  - embedding-models
+  - self-awareness
+  - model-compression
 ---
 
 

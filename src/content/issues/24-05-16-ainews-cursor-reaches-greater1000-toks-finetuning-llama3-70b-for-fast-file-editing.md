@@ -4,20 +4,17 @@ title: Cursor reaches >1000 tok/s finetuning Llama3-70b for fast file editing
 date: '2024-05-17T00:50:41.737343Z'
 original_slug: ainews-to-be-named-9199
 description: >-
-  Cursor’s new speculative edits technique for code editing surpasses GPT-4 and
-  GPT-4o in speed and accuracy, achieving over 1000 tokens per second on a 70B
-  model by using a deterministic algorithm tailored for fast full-file edits.
-  Meanwhile, OpenAI released GPT-4o, a multimodal model with audio, vision, and
-  text capabilities that is twice as fast and 50% cheaper than GPT-4 turbo,
-  though early coding performance feedback is mixed.
+  Cursor has announced a *speculative edits* technique for their **70B model**
+  that surpasses **GPT-4** and **GPT-4o** in code editing speed, achieving over
+  *1000 tokens/s*. Meanwhile, **OpenAI** released **GPT-4o**, a multimodal model
+  with audio, vision, and text capabilities that is *2x faster* and *50%
+  cheaper* than GPT-4 turbo, though early coding performance feedback is mixed.
 tags:
-  - cursor
-  - speculative-edits
-  - gpt-4o
-  - openai
-  - multimodal
-  - code-editing
-  - model-performance
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

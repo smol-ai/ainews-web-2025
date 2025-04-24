@@ -4,19 +4,81 @@ title: Reasoning Models are Near-Superhuman Coders (OpenAI IOI, Nvidia Kernels)
 date: '2025-02-14T02:42:41.628781Z'
 original_slug: ainews-reasoning-models-are-near-superhuman
 description: >-
-  OpenAI's o3 model achieved a gold medal at the 2024 IOI and ranks among the
-  top human competitive coders, outperforming other methods through
-  reinforcement learning. Meanwhile, Nvidia's DeepSeek-R1 AI generated GPU
-  kernels that in some cases surpassed those optimized by skilled engineers,
-  showcasing AI's growing capability in code optimization.
+  o3 achieved a gold medal at the 2024 IOI and reached a Codeforces rating in
+  the 99.8 percentile, demonstrating reinforcement learning's superiority over
+  inductive bias methods, while Nvidia's DeepSeek-R1 generated GPU kernels
+  outperforming those by skilled engineers. Additionally, OpenAI expanded
+  accessibility of its o1 and o3-mini models with file and image upload support,
+  and DeepResearch, powered by the o3 model with reinforcement learning, was
+  released as a powerful research assistant.
 tags:
   - openai
-  - o3
-  - reinforcement-learning
   - nvidia
+  - ollama
+  - elevenlabs
+  - google
+  - apple
+  - meta
+  - sakana-ai-labs
+  - o3
+  - o1
+  - o3-mini
   - deepseek-r1
-  - gpu-kernel
-  - code-optimization
+  - openthinker
+  - qwen2.5
+  - fnet
+  - hrrformer
+  - m2-bert
+  - taid
+  - reinforcement-learning
+  - competitive-programming
+  - gpu-kernel-optimization
+  - large-language-models
+  - model-efficiency
+  - knowledge-distillation
+  - scaling-laws
+  - ai-research-assistants
+  - open-source-models
+  - ai-security
+  - ai-governance
+  - local-llm-deployment
+  - voice-synthesis
+  - responsible-ai
+companies:
+  - openai
+  - nvidia
+  - ollama
+  - elevenlabs
+  - google
+  - apple
+  - meta
+  - sakana-ai-labs
+models:
+  - o3
+  - o1
+  - o3-mini
+  - deepseek-r1
+  - openthinker
+  - qwen2.5
+  - fnet
+  - hrrformer
+  - m2-bert
+  - taid
+topics:
+  - reinforcement-learning
+  - competitive-programming
+  - gpu-kernel-optimization
+  - large-language-models
+  - model-efficiency
+  - knowledge-distillation
+  - scaling-laws
+  - ai-research-assistants
+  - open-source-models
+  - ai-security
+  - ai-governance
+  - local-llm-deployment
+  - voice-synthesis
+  - responsible-ai
 ---
 
 

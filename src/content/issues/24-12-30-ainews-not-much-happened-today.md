@@ -4,19 +4,68 @@ title: not much happened today
 date: '2024-12-31T02:24:45.402646Z'
 original_slug: ainews-to-be-named-9002
 description: >-
-  Sam Altman publicly criticized DeepSeek and Qwen models, sparking debate over
-  OpenAI's innovation claims and competitive edge as rivals offer similar
-  performance at lower costs. Meanwhile, DeepSeek V3, touted as surpassing
-  ChatGPT-4 as an open-source model, faces criticism for poor performance on
-  reasoning tests and questions about its true open-source status.
+  **Sam Altman** publicly criticized **DeepSeek** and **Qwen** models amid
+  debates on innovation and open-source AI, while **Deepseek V3** claims to
+  surpass **ChatGPT-4** but faces skepticism over performance and true
+  open-source status. Additionally, **Cerebras Systems** and **US Energy Sandia
+  National Labs** announced training a **1 trillion parameter model** on a
+  single **CS-3 system**, using only about *1%* of the footprint and power of
+  comparable GPU clusters, sparking discussions on hardware efficiency and
+  market impact.
 tags:
-  - sam-altman
   - openai
   - deepseek
   - qwen
+  - cerebras-systems
+  - sandia-national-labs
+  - nvidia
+  - deepseek-v3
   - chatgpt-4
-  - open-source
+  - qwen2.5-32b
+  - llama-405b
+  - claude-sonnet-3.5
+  - o1-mini
+  - cs-3
+  - smallthinker-3b
+  - open-source-models
   - model-performance
+  - model-overfitting
+  - mixture-of-experts
+  - trillion-parameter-model
+  - hardware-efficiency
+  - gpu-clusters
+  - local-llms
+  - budget-hardware
+  - reasoning-models
+  - innovation-in-ai
+companies:
+  - openai
+  - deepseek
+  - qwen
+  - cerebras-systems
+  - sandia-national-labs
+  - nvidia
+models:
+  - deepseek-v3
+  - chatgpt-4
+  - qwen2.5-32b
+  - llama-405b
+  - claude-sonnet-3.5
+  - o1-mini
+  - cs-3
+  - smallthinker-3b
+topics:
+  - open-source-models
+  - model-performance
+  - model-overfitting
+  - mixture-of-experts
+  - trillion-parameter-model
+  - hardware-efficiency
+  - gpu-clusters
+  - local-llms
+  - budget-hardware
+  - reasoning-models
+  - innovation-in-ai
 ---
 
 

@@ -1,0 +1,96 @@
+---
+interface Props {
+  id: string;
+  label: string;
+}
+
+const { id, label } = Astro.props;
+---
+
+<div class="inline-flex items-center gap-2 mt-4 mb-4">
+  <label for={id} class="font-medium text-sm text-gray-700 dark:text-gray-300 cursor-pointer">
+    {label}
+  </label>
+  <button
+    id={id}
+    role="switch"
+    aria-checked="false"
+    class="relative inline-flex h-6 w-11 items-center rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-black/20 focus:ring-offset-2 dark:bg-gray-700 dark:focus:ring-white/20"
+  >
+    <span
+      aria-hidden="true"
+      class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0 dark:bg-gray-200"
+    >
+    </span>
+  </button>
+</div>
+
+<script>
+  function setupToggle() {
+    const toggles = document.querySelectorAll('[role="switch"]');
+    
+    toggles.forEach((toggle) => {
+      const toggleId = toggle.id;
+      
+      // Load state from localStorage
+      const savedState = localStorage.getItem(`filter_${toggleId}`);
+      const initialState = savedState === 'true';
+      
+      // Set initial state
+      toggle.setAttribute('aria-checked', initialState.toString());
+      updateToggleAppearance(toggle, initialState);
+      
+      // Dispatch initial event if the toggle is on
+      if (initialState) {
+        const event = new CustomEvent('filter-toggle-change', { 
+          detail: { id: toggleId, checked: initialState }
+        });
+        document.dispatchEvent(event);
+      }
+      
+      // Add click handler
+      toggle.addEventListener('click', () => {
+        const isChecked = toggle.getAttribute('aria-checked') === 'true';
+        const newState = !isChecked;
+        
+        // Update the toggle state
+        toggle.setAttribute('aria-checked', newState.toString());
+        updateToggleAppearance(toggle, newState);
+        
+        // Save to localStorage
+        localStorage.setItem(`filter_${toggleId}`, newState.toString());
+        
+        // Dispatch an event to notify about the toggle change
+        const event = new CustomEvent('filter-toggle-change', { 
+          detail: { id: toggleId, checked: newState }
+        });
+        document.dispatchEvent(event);
+      });
+    });
+  }
+  
+  function updateToggleAppearance(toggle: Element, state: boolean) {
+    const toggleCircle = toggle.querySelector('span');
+    if (state) {
+      toggle.classList.remove('bg-gray-200', 'dark:bg-gray-700');
+      toggle.classList.add('bg-black', 'dark:bg-blue-500');
+      toggleCircle?.classList.remove('translate-x-0');
+      toggleCircle?.classList.add('translate-x-5');
+      toggleCircle?.classList.add('bg-white');
+      toggleCircle?.classList.remove('dark:bg-gray-200');
+    } else {
+      toggle.classList.add('bg-gray-200', 'dark:bg-gray-700');
+      toggle.classList.remove('bg-black', 'dark:bg-blue-500');
+      toggleCircle?.classList.add('translate-x-0');
+      toggleCircle?.classList.remove('translate-x-5');
+      toggleCircle?.classList.remove('bg-white');
+      toggleCircle?.classList.add('dark:bg-gray-200');
+    }
+  }
+
+  // Initialize on page load
+  setupToggle();
+
+  // Re-initialize when navigating with View Transitions
+  document.addEventListener('astro:page-load', setupToggle);
+</script> 

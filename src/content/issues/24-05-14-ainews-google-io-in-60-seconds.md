@@ -4,20 +4,77 @@ title: Google I/O in 60 seconds
 date: '2024-05-14T22:01:01.464489Z'
 original_slug: ainews-google-io-in-60-seconds
 description: >-
-  Google announced the expanded Gemini model family at Google I/O, introducing
-  Gemini 1.5 Pro with 2 million token support and Gemini Flash, a new
-  lightweight model optimized for speed and efficiency. Additionally, Google
-  revealed Gemini Live for interactive voice conversations and Project Astra, a
-  live video understanding assistant, highlighting significant advancements
-  across their AI product suite.
+  **Google** unveiled the expanded **Gemini** model family at Google I/O,
+  introducing **Gemini 1.5 Pro** with *2 million token support* and the new
+  **Gemini Flash** model optimized for speed with *1 million token capacity*.
+  Meanwhile, **OpenAI** released **GPT-4o**, a multimodal model that is *half
+  the price and twice as fast as GPT-4 Turbo*, featuring real-time reasoning
+  across text, audio, and video, and is now available to all ChatGPT users
+  including the free tier.
 tags:
   - google
-  - gemini
+  - openai
+  - deepmind
+  - apple
+  - youtube
   - gemini-1.5-pro
   - gemini-flash
-  - gemini-live
-  - project-astra
-  - google-io
+  - gemini-ultra
+  - gemini-pro
+  - gemini-nano
+  - gemma-2
+  - paligemma
+  - codegemma
+  - recurrentgemma
+  - gpt-4o
+  - gpt-4-turbo
+  - imagen-3
+  - large-language-models
+  - multimodal-ai
+  - token-capacity
+  - model-optimization
+  - real-time-reasoning
+  - ai-assistants
+  - ai-integration
+  - model-benchmarks
+  - on-device-ai
+  - ai-watermarking
+  - video-understanding
+  - ai-product-launch
+  - pricing-and-accessibility
+companies:
+  - google
+  - openai
+  - deepmind
+  - apple
+  - youtube
+models:
+  - gemini-1.5-pro
+  - gemini-flash
+  - gemini-ultra
+  - gemini-pro
+  - gemini-nano
+  - gemma-2
+  - paligemma
+  - codegemma
+  - recurrentgemma
+  - gpt-4o
+  - gpt-4-turbo
+  - imagen-3
+topics:
+  - large-language-models
+  - multimodal-ai
+  - token-capacity
+  - model-optimization
+  - real-time-reasoning
+  - ai-assistants
+  - ai-integration
+  - model-benchmarks
+  - on-device-ai
+  - ai-watermarking
+  - video-understanding
+  - ai-product-launch
+  - pricing-and-accessibility
 ---
 
 

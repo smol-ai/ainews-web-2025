@@ -4,20 +4,18 @@ title: Gemini Ultra is out, to mixed reviews
 date: '2024-02-09T05:58:08.478444Z'
 original_slug: ainews-gemini-ultra-is-out-to-mixed-reviews
 description: >-
-  Google released Gemini Ultra 1.0 as a paid upgrade to Gemini Advanced, with
-  early reviews noting modest improvements over ChatGPT but highlighting
-  reasoning gaps. Meanwhile, the AI community is exploring innovations like
-  Listwise Preference Optimization (LiPO) for model alignment and BiLLM’s 1-bit
-  quantization technique to reduce resource demands without sacrificing
-  performance.
+  **Google** released **Gemini Ultra 1.0** as a paid tier following the
+  discontinuation of Bard, with early reviews noting modest improvements over
+  ChatGPT but also identifying reasoning gaps. Meanwhile, the **Nous Research**
+  community highlighted **BiLLM**, a new large language model achieving
+  significant efficiency gains through one-bit post-training quantization, and
+  discussed advancements in transformer efficiency with the **Subformer** model.
 tags:
-  - google
-  - gemini
-  - gemini-ultra
-  - chatgpt
-  - model-alignment
-  - quantization
-  - billm
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

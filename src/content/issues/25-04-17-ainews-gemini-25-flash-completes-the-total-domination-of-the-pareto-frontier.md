@@ -4,20 +4,77 @@ title: Gemini 2.5 Flash completes the total domination of the Pareto Frontier
 date: '2025-04-18T02:06:17.104601Z'
 original_slug: ainews-gemini-25-flash-completes-the-total
 description: >-
-  Google's Gemini 2.5 Flash has been released with a new "thinking budget"
-  feature, marking a significant update in model control and pricing strategy,
-  while OpenAI launched o3 and o4-mini models emphasizing advanced tool use and
-  multimodal reasoning, though some critiques note they fall short on certain
-  benchmarks. The developments highlight ongoing competition and innovation in
-  AI model capabilities and usability.
+  **Google DeepMind’s Gemini 2.5 Flash** has been launched as a fast,
+  cost-efficient hybrid reasoning model offering fine-grained control over
+  reasoning budgets, ranking jointly #2 on leaderboards and competing closely
+  with OpenAI’s latest models. Meanwhile, **OpenAI** released **o3 and
+  o4-mini**, highlighting advanced tool use capabilities and multimodal
+  understanding, though some critiques note these models still fall short on
+  complex reasoning benchmarks like the International Mathematics Olympiad.
 tags:
   - google
-  - gemini
-  - gemini-2.5-flash
+  - google-deepmind
   - openai
+  - lmarena
+  - huggingface
+  - together
+  - huawei
+  - langchain
+  - weights-biases
+  - pytorch
+  - gemini-2.5-flash
+  - gemini-2.5-pro
   - o3
   - o4-mini
+  - gpt-4.5-preview
+  - grok-3
+  - sonnet-3.7
+  - llama-4
+  - codex-cli
+  - large-language-models
   - tool-use
+  - multimodal-understanding
+  - hybrid-reasoning
+  - model-benchmarks
+  - hallucination
+  - coding-assistants
+  - agentic-web-browsing
+  - scalable-inference
+  - ai-competitiveness
+  - open-source-tools
+companies:
+  - google
+  - google-deepmind
+  - openai
+  - lmarena
+  - huggingface
+  - together
+  - huawei
+  - langchain
+  - weights-biases
+  - pytorch
+models:
+  - gemini-2.5-flash
+  - gemini-2.5-pro
+  - o3
+  - o4-mini
+  - gpt-4.5-preview
+  - grok-3
+  - sonnet-3.7
+  - llama-4
+  - codex-cli
+topics:
+  - large-language-models
+  - tool-use
+  - multimodal-understanding
+  - hybrid-reasoning
+  - model-benchmarks
+  - hallucination
+  - coding-assistants
+  - agentic-web-browsing
+  - scalable-inference
+  - ai-competitiveness
+  - open-source-tools
 ---
 
 

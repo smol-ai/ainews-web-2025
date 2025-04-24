@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
+import FilterToggle from "@components/FilterToggle.astro";
 import { ISSUES } from "@consts";
 
 console.log(`[Issues Page] Environment: ${import.meta.env.MODE}`);
@@ -120,7 +121,9 @@ Object.entries(posts).forEach(([year, yearData]) => {
       <div class="flex-1 space-y-10">
         {years.map((year) => (
           <section id={`year-${year}`} class="animate space-y-6 scroll-mt-24">
-            <h2 class="text-2xl font-semibold text-black dark:text-white">{year}</h2>
+            <h2 class="text-2xl font-semibold text-black dark:text-white flex justify-between items-center">{year}
+              <FilterToggle id="filter-quiet-days" label="Hide 'not much happened today' posts" />
+            </h2>
             
             {monthOrder
               .filter((month) => posts[year].months[month]?.length > 0)
@@ -130,7 +133,7 @@ Object.entries(posts).forEach(([year, yearData]) => {
                   <h3 class="text-xl font-medium text-black/80 dark:text-white/80">{month}</h3>
                   <ul class="not-prose flex flex-col gap-4">
                     {posts[year].months[month].map((post) => (
-                      <li>
+                      <li data-post-title={post.data.title.toLowerCase()}>
                         <ArrowCard entry={post} />
                       </li>
                     ))}
@@ -143,3 +146,48 @@ Object.entries(posts).forEach(([year, yearData]) => {
     </div>
   </Container>
 </Layout>
+
+<script>
+  let filterQuietDays = false;
+
+  function applyFilters() {
+    const items = document.querySelectorAll('li[data-post-title]');
+    
+    items.forEach(item => {
+      const postTitle = item.getAttribute('data-post-title') || '';
+      const shouldHide = filterQuietDays && postTitle.includes('not much happened today');
+      
+      if (shouldHide) {
+        item.classList.add('hidden');
+      } else {
+        item.classList.remove('hidden');
+      }
+    });
+  }
+
+  function initFilterToggle() {
+    // Load initial filter state from localStorage
+    const savedFilterState = localStorage.getItem('filter_filter-quiet-days');
+    filterQuietDays = savedFilterState === 'true';
+    
+    document.addEventListener('filter-toggle-change', (event: any) => {
+      if (event.detail.id === 'filter-quiet-days') {
+        filterQuietDays = event.detail.checked;
+        applyFilters();
+      }
+    });
+    
+    // Apply initial filtering
+    if (filterQuietDays) {
+      applyFilters();
+    }
+  }
+
+  // Initialize on page load
+  initFilterToggle();
+  
+  // Re-initialize when navigating with View Transitions
+  document.addEventListener('astro:page-load', () => {
+    initFilterToggle();
+  });
+</script>

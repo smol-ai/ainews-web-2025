@@ -4,19 +4,17 @@ title: Everybody shipped small things this holiday weekend
 date: '2024-09-04T01:35:37.812399Z'
 original_slug: ainews-everybody-shipped-small-things-this
 description: >-
-  xAI has brought its Colossus 100k H100 cluster online, capable of training a
-  GPT-4 class FP8 model in just 4 days, marking a significant advancement in
-  large-scale AI training infrastructure. Meanwhile, AI21 Labs released Jamba
-  1.5 models featuring a massive 256K context window and faster long-context
-  performance, pushing the boundaries of model capabilities.
+  **xAI** has brought online the massive **Colossus 100k H100 cluster**, capable
+  of training a GPT-4 class FP8 model with *2e25 FLOPs* in just *4 days*.
+  Meanwhile, **AI21 Labs** released the **Jamba 1.5 Mini & Large** models
+  featuring a *256K context window* and *2.5x faster* long-context performance,
+  marking a significant advancement in high-performance language models.
 tags:
-  - xai
-  - colossus
-  - h100
-  - gpt-4
-  - ai21labs
-  - jamba-1.5
-  - long-context
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

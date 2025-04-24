@@ -4,19 +4,72 @@ title: $100k to predict LMSYS human preferences in a Kaggle contest
 date: '2024-05-03T22:09:28.423042Z'
 original_slug: ainews-not-much-happened-today-3049
 description: >-
-  A new $100K Kaggle competition challenges participants to develop models that
-  predict human preferences between LLM responses using a large dataset from
-  Chatbot Arena conversations. Meanwhile, Groq's Llama 3 70B model is setting
-  new cost-efficiency records, outperforming competitors while OpenAI focuses on
-  GPT-5 hype.
+  A quiet week in AI news highlights a $100K Kaggle competition hosted by
+  **lmsys** to improve chatbot alignment using a dataset of *55,000* human-LLM
+  conversations. Meanwhile, **Groq**’s **Llama 3 70B** model sets new
+  performance records at *$0.65/1M input tokens*, and **Nvidia** released
+  **ChatQA-1.5**, a fine-tuned Llama 3 70B model excelling in conversational QA
+  and retrieval-augmented generation.
 tags:
-  - kaggle
-  - human-preference-prediction
-  - chatbot-arena
-  - llama-3
+  - lmsys
   - groq
-  - model-benchmarks
-  - gpt-5
+  - nvidia
+  - openai
+  - anthropic
+  - stability
+  - jetbrains
+  - apple
+  - scale
+  - llama-3-70b
+  - chatqa-1.5
+  - gpt-4
+  - claude-3-opus
+  - prometheus-2
+  - openelm
+  - stable-diffusion-3
+  - kaggle-competition
+  - chatbot-alignment
+  - llm-benchmarks
+  - efficient-fine-tuning
+  - long-context-llms
+  - multimodal-llms
+  - dataset-release
+  - model-contamination
+  - on-device-inference
+  - retrieval-augmented-generation
+  - gene-editing
+  - ai-generated-music-video
+companies:
+  - lmsys
+  - groq
+  - nvidia
+  - openai
+  - anthropic
+  - stability
+  - jetbrains
+  - apple
+  - scale
+models:
+  - llama-3-70b
+  - chatqa-1.5
+  - gpt-4
+  - claude-3-opus
+  - prometheus-2
+  - openelm
+  - stable-diffusion-3
+topics:
+  - kaggle-competition
+  - chatbot-alignment
+  - llm-benchmarks
+  - efficient-fine-tuning
+  - long-context-llms
+  - multimodal-llms
+  - dataset-release
+  - model-contamination
+  - on-device-inference
+  - retrieval-augmented-generation
+  - gene-editing
+  - ai-generated-music-video
 ---
 
 

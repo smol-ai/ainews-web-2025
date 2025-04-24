@@ -4,18 +4,36 @@ title: Dia de las Secuelas (StarCoder, The Stack, Dune, SemiAnalysis)
 date: '2024-03-01T00:14:08.280260Z'
 original_slug: ainews-dia-de-las-secuelas-starcoder-the-stack
 description: >-
-  HuggingFace and BigCode have released StarCoder v2, a state-of-the-art 15B
-  parameter model trained on over 600 programming languages using the new The
-  Stack v2 dataset. This update marks a significant advancement in code
-  generation models with improved training data and architecture.
+  **HuggingFace** and **BigCode** have released **StarCoder v2**, a
+  state-of-the-art 15B parameter model trained on over *600 programming
+  languages* using the new **The Stack v2** dataset. The model features a large
+  *16,384 token* context window and incorporates advanced techniques like
+  Grouped Query Attention, making it a significant advancement in code
+  generation AI.
 tags:
   - huggingface
   - bigcode
-  - starcoder
+  - starcoder-2
   - starcoder2-15b
-  - the-stack-v2
   - code-generation
+  - large-language-models
   - programming-languages
+  - datasets
+  - context-windows
+  - grouped-query-attention
+companies:
+  - huggingface
+  - bigcode
+models:
+  - starcoder-2
+  - starcoder2-15b
+topics:
+  - code-generation
+  - large-language-models
+  - programming-languages
+  - datasets
+  - context-windows
+  - grouped-query-attention
 ---
 
 

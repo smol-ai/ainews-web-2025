@@ -4,18 +4,18 @@ title: Not much happened today
 date: '2024-11-07T02:54:09.545457Z'
 original_slug: ainews-not-much-happened-today-5822
 description: >-
-  Defense Llama, a new AI model developed with Meta and Scale AI, targets
-  American national security applications, highlighting the growing role of AI
-  in defense. Meanwhile, Grok Beta outperforms Llama 3.1 70B in intelligence but
-  faces challenges due to its high pricing and censorship policies.
+  **Microsoft** has stealth-released **Magentic-One**, an open-source generalist
+  multi-agent system designed for complex tasks, currently supporting only
+  **OpenAI** models but sparking interest in broader compatibility. Meanwhile,
+  **Ollama** officially supports **Llama 3.2 Vision**, enhancing AI vision
+  capabilities with growing community interest in system requirements and
+  cross-platform support.
 tags:
-  - defense-llama
-  - meta
-  - scale
-  - grok-beta
-  - llama-3-1
-  - national-security
-  - ai-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

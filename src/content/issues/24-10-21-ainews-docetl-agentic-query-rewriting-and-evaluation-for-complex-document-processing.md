@@ -4,22 +4,18 @@ title: 'DocETL: Agentic Query Rewriting and Evaluation for Complex Document Proc
 date: '2024-10-22T00:04:21.441910Z'
 original_slug: ainews-docetl-agentic-query-rewriting-and
 description: >-
-  UC Berkeley’s EPIC lab introduced innovative LLM data operators with their new
-  frameworks LOTUS and DocETL, offering advanced APIs for handling large data
-  corpora and presenting a promising alternative to GPU-heavy big lab
-  approaches. Additionally, Microsoft open-sourced BitNet b1.58, a 1-bit LLM
-  enabling 4-20x faster training and efficient 100B model inference on a single
-  CPU, significantly advancing on-device AI capabilities.
+  UC Berkeley’s EPIC lab released the highly anticipated **DocETL** paper on
+  *10/18/2024*, introducing advanced LLM operators for large data corpora that
+  could reshape big data AI workflows. Meanwhile, **Microsoft** open-sourced
+  **BitNet b1.58**, a 1-bit LLM enabling *4-20x* faster training and efficient
+  CPU inference of 100B parameter models, significantly advancing on-device AI
+  capabilities.
 tags:
-  - uc-berkeley
-  - epic
-  - lotus
-  - docetl
-  - microsoft
-  - bitnet
-  - on-device
-  - llm
-  - model-optimization
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

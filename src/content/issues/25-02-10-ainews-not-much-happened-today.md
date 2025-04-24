@@ -5,20 +5,18 @@ date: '2025-02-11T03:56:45.222082Z'
 original_slug: ainews-not-much-happened-today-3076
 description: >-
   Google released Gemini 2.0 Flash Thinking Experimental 1-21, a vision-language
-  reasoning model with a 1 million-token context window and improved accuracy on
-  science and math benchmarks, surpassing DeepSeek-R1 but still behind OpenAI's
-  o1. Additionally, ZyphraAI launched Zonos, a multilingual text-to-speech model
-  featuring instant voice cloning and fine-grained control over speech
-  attributes, available under an Apache 2.0 license.
+  reasoning model with an expanded *1 million-token context window* and improved
+  accuracy on science and math benchmarks, surpassing DeepSeek-R1 but still
+  behind OpenAI’s o1. Additionally, ZyphraAI launched Zonos, an Apache 2.0
+  licensed multilingual text-to-speech model featuring instant voice cloning and
+  advanced audio controls, running at approximately *2x real-time speed on an
+  RTX 4090*.
 tags:
-  - google
-  - gemini-2.0
-  - vision-language
-  - reasoning
-  - zyphra
-  - zonos
-  - text-to-speech
-  - voice-cloning
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

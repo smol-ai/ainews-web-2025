@@ -4,20 +4,49 @@ title: 'FSDP+QLoRA: the Answer to 70b-scale AI for desktop class GPUs'
 date: '2024-03-08T23:21:13.565774Z'
 original_slug: ainews-fsdpqlora-the-answer-to-70b-scale-ai-for
 description: >-
-  Jeremy Howard and collaborators have released a new method combining FSDP,
-  QLoRA, and HQQ that enables efficient training of 70-billion parameter
-  language models on affordable consumer GPUs like dual RTX 4090s, drastically
-  reducing costs from $150k data center setups to under $2.5k. This breakthrough
-  overcomes previous memory limitations by sharding model parameters and
-  leveraging quantization and advanced optimization techniques.
+  A new collaboration involving **Jeremy Howard**, **HuggingFace**, and **Mobius
+  Labs** has developed a method combining **FSDP** and **QLoRA** to enable
+  efficient training of *70 billion parameter* language models on affordable
+  consumer GPUs like the **RTX 4090**, drastically lowering the cost barrier
+  from *$150k* to under *$2.5k*. Meanwhile, **Inflection AI** announced their
+  **Inflection-2.5** model, which reportedly matches **GPT-4** benchmarks while
+  using less than half the compute for training.
 tags:
   - jeremy-howard
+  - huggingface
+  - mobius-labs
+  - inflection
+  - openai
   - fsdp
   - qlora
-  - hqq
-  - transformers
-  - rtx-4090
+  - inflection-2.5
+  - gpt-4
   - large-language-models
+  - model-training
+  - memory-efficiency
+  - quantization
+  - consumer-gpus
+  - distributed-training
+  - cost-reduction
+companies:
+  - jeremy-howard
+  - huggingface
+  - mobius-labs
+  - inflection
+  - openai
+models:
+  - fsdp
+  - qlora
+  - inflection-2.5
+  - gpt-4
+topics:
+  - large-language-models
+  - model-training
+  - memory-efficiency
+  - quantization
+  - consumer-gpus
+  - distributed-training
+  - cost-reduction
 ---
 
 

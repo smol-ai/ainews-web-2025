@@ -4,20 +4,19 @@ title: 'Gemini (Experimental-1114) retakes #1 LLM rank with 1344 Elo'
 date: '2024-11-15T02:50:42.092528Z'
 original_slug: ainews-gemini-experimental-1114-retakes-1-llm-9071
 description: >-
-  Anthropic's latest Gemini model update has taken the lead as the new top LLM,
-  continuing the intense benchmark race among the world's leading AI labs,
-  despite ongoing alignment challenges. Additionally, OpenAI's GPT-4
-  capabilities have been enhanced with a new RAG technique for contiguous chunk
-  retrieval, while Anthropic released a jailbreak robustness benchmark to
-  improve adaptive defenses.
+  Anthropic’s new **Gemini** model update has claimed the top spot among
+  frontier large language models as of *November 14, 2024*, continuing the "race
+  to the top" benchmark competition with **Claude 3.5 Sonnet** and other leading
+  models, despite unresolved alignment issues. Meanwhile, **Nvidia** is
+  reportedly shifting production to the **RTX 50 series**, with rumors of the
+  **RTX 5090** featuring *32GB VRAM*, sparking concerns about scalper-driven
+  pricing and availability for AI and professional workloads.
 tags:
-  - anthropic
-  - gemini
-  - openai
-  - gpt-4
-  - rag
-  - jailbreak
-  - benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

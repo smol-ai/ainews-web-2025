@@ -4,20 +4,84 @@ title: OpenAI adopts MCP
 date: '2025-03-27T01:07:34.503009Z'
 original_slug: ainews-ghibli-memes
 description: >-
-  Google’s Gemini 2.5 Pro has achieved top performance across multiple
-  benchmarks, including MMLU-Pro and AIME 2024, with a 1 million token context
-  window and multimodal input capabilities. Meanwhile, Alibaba released Qwen 2.5
-  Omni 7B, an open-source multimodal model supporting voice and video chat with
-  a novel thinker-talker architecture, excelling in speech, translation, and
-  reasoning tasks.
+  **Google’s Gemini 2.5 Pro** has achieved top performance with record-high
+  benchmark scores including *86%* on MMLU-Pro and a *1 million token context
+  window*, establishing it as the most skilled model globally. Meanwhile,
+  **Alibaba’s Qwen 2.5 Omni 7B** was released as a fully multimodal open-source
+  model supporting voice and video chat with a novel thinker-talker
+  architecture, outperforming previous models on OmniBench and excelling in
+  multimodal reasoning and speech tasks. Additionally, **OpenAI** announced
+  integration of the Model Context Protocol (MCP) into their API and ChatGPT
+  desktop app, marking rapid industry adoption of MCP for AI app
+  interoperability.
 tags:
   - google
-  - gemini-2.5-pro
-  - benchmarking
-  - multimodal
   - alibaba
+  - openai
+  - anthropic
+  - nvidia
+  - perplexity
+  - together
+  - replit
+  - synthesia
+  - databricks
+  - lepton
+  - gemini-2.5-pro
+  - gemini-1.5-pro
+  - gemini-2.0-flash
   - qwen-2.5-omni-7b
-  - open-source
+  - deepseek-v3-0324
+  - deepseek-v3
+  - deepseek-r1
+  - claude
+  - large-language-models
+  - multimodal-models
+  - model-benchmarks
+  - model-quantization
+  - model-context-protocol
+  - agent-frameworks
+  - synthetic-data
+  - reasoning-interpretability
+  - image-generation
+  - speech-recognition
+  - open-source-models
+  - ai-industry-acquisitions
+  - revenue-milestones
+companies:
+  - google
+  - alibaba
+  - openai
+  - anthropic
+  - nvidia
+  - perplexity
+  - together
+  - replit
+  - synthesia
+  - databricks
+  - lepton
+models:
+  - gemini-2.5-pro
+  - gemini-1.5-pro
+  - gemini-2.0-flash
+  - qwen-2.5-omni-7b
+  - deepseek-v3-0324
+  - deepseek-v3
+  - deepseek-r1
+  - claude
+topics:
+  - large-language-models
+  - multimodal-models
+  - model-benchmarks
+  - model-quantization
+  - model-context-protocol
+  - agent-frameworks
+  - synthetic-data
+  - reasoning-interpretability
+  - image-generation
+  - speech-recognition
+  - open-source-models
+  - ai-industry-acquisitions
+  - revenue-milestones
 ---
 
 

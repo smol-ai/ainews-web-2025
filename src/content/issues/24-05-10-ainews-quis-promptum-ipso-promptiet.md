@@ -4,19 +4,69 @@ title: Quis promptum ipso promptiet?
 date: '2024-05-11T06:34:12.398462Z'
 original_slug: ainews-anthropics
 description: >-
-  OpenAI teased a major new announcement coming Monday that is "not GPT-5 or a
-  search engine" but promises to be "magic," sparking speculation about a new
-  LLM or search-related product. Meanwhile, Anthropic released upgraded prompt
-  engineering tools in their Console that automate prompt generation,
-  significantly improving efficiency and quality for users like Zoominfo.
+  **OpenAI** has teased a major announcement scheduled for *May 13, 2024*,
+  described as "magic" but clarified it is neither GPT-5 nor a search engine,
+  sparking speculation about a new LLM or voice assistant. Meanwhile,
+  **Anthropic** released significant upgrades to their Workbench Console,
+  introducing advanced prompt engineering features that improve prompt precision
+  and reduce development time, signaling a shift in how prompt engineering is
+  approached.
 tags:
   - openai
   - anthropic
-  - prompt-engineering
-  - llama-3
+  - zoominfo
+  - mistral
+  - yi
   - neuralink
-  - rag
-  - iclr-2024
+  - google
+  - meta
+  - perplexity
+  - soundhound
+  - llama-3-70b
+  - llama-3-120b
+  - claude-3-opus
+  - yi-large
+  - gemini-1.5-pro
+  - gpt-4
+  - prompt-engineering
+  - large-language-models
+  - retrieval-augmented-generation
+  - neural-interfaces
+  - gene-therapy
+  - ai-ethics
+  - ai-governance
+  - ai-conferences
+  - open-source-models
+  - voice-assistants
+companies:
+  - openai
+  - anthropic
+  - zoominfo
+  - mistral
+  - yi
+  - neuralink
+  - google
+  - meta
+  - perplexity
+  - soundhound
+models:
+  - llama-3-70b
+  - llama-3-120b
+  - claude-3-opus
+  - yi-large
+  - gemini-1.5-pro
+  - gpt-4
+topics:
+  - prompt-engineering
+  - large-language-models
+  - retrieval-augmented-generation
+  - neural-interfaces
+  - gene-therapy
+  - ai-ethics
+  - ai-governance
+  - ai-conferences
+  - open-source-models
+  - voice-assistants
 ---
 
 

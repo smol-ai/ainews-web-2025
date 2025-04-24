@@ -4,19 +4,77 @@ title: 'FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning
 date: '2024-11-12T01:33:12.109076Z'
 original_slug: ainews-frontiermath-a-benchmark-for-evaluating
 description: >-
-  Epoch AI and leading mathematicians launched FrontierMath, a new benchmark of
-  hundreds of original math problems revealing that current AI models still
-  struggle with complex mathematical reasoning. Meanwhile, Microsoft introduced
-  Magentic-One, a multi-agent framework designed to coordinate AI agents for
-  real-world tasks, marking a significant step toward the AI agent era.
+  Epoch AI collaborated with over *60 mathematicians* to create the
+  **FrontierMath benchmark**, a new suite of original math problems designed to
+  test AI models' complex problem-solving abilities, with current models scoring
+  very low. Additionally, a team from **MIT** developed an *8B* parameter model
+  using **Test-Time-Training (TTT)** that achieved a *61.9%* score on the
+  **ARC-AGI-PUB** benchmark, significantly surpassing the previous record of
+  *42%*.
 tags:
   - epoch
-  - frontiermath
-  - mathematical-benchmarks
+  - mit
+  - openai
   - microsoft
-  - magentic-one
-  - multi-agent-systems
-  - ai-reasoning
+  - anthropic
+  - xai
+  - langchain
+  - china
+  - frontiermath
+  - arc-agi-pub
+  - 8b-llm
+  - qwen-coder-32b
+  - claude-3.5
+  - gpt-4o
+  - qwen-2.5-32b
+  - mathematical-benchmarks
+  - test-time-training
+  - complex-problem-solving
+  - large-language-models
+  - chain-of-thought
+  - sparse-transformers
+  - multi-modal-transformers
+  - ai-agent-frameworks
+  - coding-assistants
+  - autonomous-agents
+  - financial-metrics
+  - document-processing
+  - inductive-bias
+  - retrieval-augmented-generation
+  - bureaucracy-automation
+companies:
+  - epoch
+  - mit
+  - openai
+  - microsoft
+  - anthropic
+  - xai
+  - langchain
+  - china
+models:
+  - frontiermath
+  - arc-agi-pub
+  - 8b-llm
+  - qwen-coder-32b
+  - claude-3.5
+  - gpt-4o
+  - qwen-2.5-32b
+topics:
+  - mathematical-benchmarks
+  - test-time-training
+  - complex-problem-solving
+  - large-language-models
+  - chain-of-thought
+  - sparse-transformers
+  - multi-modal-transformers
+  - ai-agent-frameworks
+  - coding-assistants
+  - autonomous-agents
+  - financial-metrics
+  - document-processing
+  - inductive-bias
+  - retrieval-augmented-generation
+  - bureaucracy-automation
 ---
 
 

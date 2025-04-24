@@ -4,19 +4,18 @@ title: not much happened today
 date: '2024-09-27T21:53:11.435082Z'
 original_slug: ainews-not-much-happened-today-1696
 description: >-
-  Meta released Llama 3.2, introducing lightweight 1B and 3B models optimized
-  for on-device AI applications, enabling personalized and privacy-preserving
-  functionalities. Additionally, Google DeepMind announced AlphaChip, an
-  AI-driven method that revolutionizes microchip design by creating a feedback
-  loop between chip development and AI model training.
+  Meta released **Llama 3.2**, featuring lightweight 1B and 3B models optimized
+  for on-device AI with capabilities like summarization and retrieval-augmented
+  generation, while also facing EU regulatory challenges restricting multimodal
+  model use. Additionally, **Google DeepMind** announced **AlphaChip**, an
+  AI-driven chip design method that improves microchip development for AI
+  workloads, marking a significant advancement in AI hardware innovation.
 tags:
-  - meta
-  - llama-3.2
-  - on-device
-  - google
-  - deepmind
-  - alphachip
-  - chip-design
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,21 +4,19 @@ title: OpenAI Realtime API and other Dev Day Goodies
 date: '2024-10-02T06:06:20.556230Z'
 original_slug: ainews-openai-realtime-api-and-other-dev-day
 description: >-
-  OpenAI launched the new Realtime API with the `gpt-4o-realtime-preview` model,
-  enabling low-latency voice and text interactions with features like function
-  calling, voice activity detection, and partnerships for enhanced audio
-  capabilities and AI virtual agents via voice calls. Additionally, OpenAI
-  introduced vision fine-tuning allowing models like GPT-4o to improve
-  performance on tasks such as traffic sign localization and UI element
-  detection with as few as 100 examples.
+  OpenAI launched the **Realtime API** with the `gpt-4o-realtime-preview` model,
+  featuring voice agent capabilities, function calling, and partnerships with
+  **LiveKit**, **Agora**, and **Twilio** for enhanced audio and voice call
+  integration. Additionally, OpenAI introduced **Vision Fine-tuning** enabling
+  models like **GPT-4o** to improve real-world tasks such as traffic sign
+  localization and UI element detection with as few as *100 examples*, achieving
+  significant accuracy and performance gains.
 tags:
-  - openai
-  - realtime-api
-  - gpt-4o
-  - voice-agent
-  - vision-fine-tuning
-  - function-calling
-  - prompt-caching
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

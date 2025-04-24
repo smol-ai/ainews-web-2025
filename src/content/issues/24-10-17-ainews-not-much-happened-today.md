@@ -3,21 +3,13 @@ id: b8bacc64-9fc5-4299-b895-acc178b286d2
 title: not much happened today
 date: '2024-10-18T01:13:21.878974Z'
 original_slug: ainews-not-much-happened-today-7086
-description: >-
-  Meta released Llama 3.1, now powering Lenovo AI Now for on-device AI tasks,
-  while Yi announced Yi-Lightning, a new model ranked #6 globally and surpassing
-  GPT-4o. Additionally, ZyphraAI introduced Zyda-2, a massive 5 trillion token
-  dataset that improves downstream model performance.
+description: 'Answer:'
 tags:
-  - meta
-  - llama-3-1
-  - lenovo
-  - yi
-  - yi-lightning
-  - zyphra
-  - zyda-2
-  - dataset
-  - large-language-models
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

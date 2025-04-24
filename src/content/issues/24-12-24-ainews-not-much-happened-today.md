@@ -4,21 +4,66 @@ title: not much happened today
 date: '2024-12-25T02:01:53.771765Z'
 original_slug: ainews-not-much-happened-today-5863
 description: >-
-  The Qwen team launched QVQ, an open multimodal vision model that rivals Claude
-  3.5 Sonnet and GPT-4o in benchmarks, marking a significant advancement in AI
-  model performance. Additionally, OpenAI announced updates to their o3 and
-  o3-mini models along with a new deliberative alignment strategy and
-  improvements to the o1 model.
+  The **Qwen team** released **QVQ-72B**, a vision-capable multimodal model
+  achieving a *70.3* score on the MMMU benchmark, performing comparably or
+  better than **Claude 3.5 Sonnet** and **GPT-4o**. Meanwhile, **OpenAI**
+  announced updates on their **o3**, **o3-mini**, and improved **o1** models
+  alongside a new deliberative alignment strategy, reflecting ongoing
+  advancements in large language model calibration and alignment research.
 tags:
   - qwen
-  - qvq
-  - multimodal
-  - vision
   - openai
+  - alibaba
+  - mit
+  - swiss-ai-lab-idsia
+  - apple
+  - qvq-72b
+  - qwen2-vl-72b-instruct
+  - gpt-4o
+  - claude-3.5-sonnet
   - o3
   - o3-mini
-  - alignment
   - o1
+  - llama-3.2-3b
+  - multimodal-models
+  - large-language-models
+  - model-benchmarking
+  - model-calibration
+  - alignment
+  - autonomous-software-development
+  - synthetic-data
+  - foundation-models
+  - immigration-issues
+  - contract-review
+  - content-moderation
+companies:
+  - qwen
+  - openai
+  - alibaba
+  - mit
+  - swiss-ai-lab-idsia
+  - apple
+models:
+  - qvq-72b
+  - qwen2-vl-72b-instruct
+  - gpt-4o
+  - claude-3.5-sonnet
+  - o3
+  - o3-mini
+  - o1
+  - llama-3.2-3b
+topics:
+  - multimodal-models
+  - large-language-models
+  - model-benchmarking
+  - model-calibration
+  - alignment
+  - autonomous-software-development
+  - synthetic-data
+  - foundation-models
+  - immigration-issues
+  - contract-review
+  - content-moderation
 ---
 
 

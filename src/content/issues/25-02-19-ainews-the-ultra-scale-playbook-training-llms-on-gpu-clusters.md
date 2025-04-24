@@ -4,20 +4,91 @@ title: 'The Ultra-Scale Playbook: Training LLMs on GPU Clusters'
 date: '2025-02-20T05:57:17.513081Z'
 original_slug: ainews-the-ultra-scale-playbook-training-llms-on
 description: >-
-  Huggingface released "The Ultra-Scale Playbook," an extensive, interactive
-  guide based on 4000 experiments detailing best practices for training large
-  language models on GPU clusters. Meanwhile, DeepSeek's Native Sparse Attention
-  model and Perplexity AI's uncensored R1-1776 model are gaining significant
-  attention for advancing transformer architectures and unbiased AI outputs.
+  **Huggingface** released the comprehensive "Ultra-Scale Playbook: Training
+  LLMs on GPU Clusters," an interactive resource based on *4000 scaling
+  experiments* on up to *512 GPUs*, providing detailed best practices for
+  large-scale model training. Meanwhile, **DeepSeek**'s Native Sparse Attention
+  (NSA) model and **Perplexity AI**'s uncensored R1-1776 release are gaining
+  significant attention for advancing transformer architectures and unbiased
+  language modeling.
 tags:
   - huggingface
-  - gpu-clusters
-  - large-language-models
+  - deepmind
   - deepseek
-  - native-sparse-attention
   - perplexity
-  - transformer
-  - unbiased-models
+  - google
+  - microsoft
+  - baichuan
+  - together
+  - langchain
+  - meta
+  - llama-index
+  - modular
+  - bytendance
+  - native-sparse-attention
+  - r1-1776
+  - pali-gemma-2-mix
+  - muse
+  - baichuan-m1-14b
+  - magma
+  - strippedhyena-2
+  - naturalreasoning
+  - max-25.1
+  - large-language-models
+  - gpu-cluster-training
+  - model-scaling
+  - sparse-attention
+  - unbiased-language-modeling
+  - vision-language-models
+  - generative-models
+  - multimodal-ai
+  - foundation-models
+  - reasoning-datasets
+  - prompt-engineering
+  - ai-agent-evaluation
+  - open-source-models
+  - medical-llms
+  - genome-modeling
+companies:
+  - huggingface
+  - deepmind
+  - deepseek
+  - perplexity
+  - google
+  - microsoft
+  - baichuan
+  - together
+  - langchain
+  - meta
+  - llama-index
+  - modular
+  - bytendance
+models:
+  - native-sparse-attention
+  - r1-1776
+  - pali-gemma-2-mix
+  - muse
+  - baichuan-m1-14b
+  - magma
+  - strippedhyena-2
+  - naturalreasoning
+  - max-25.1
+topics:
+  - large-language-models
+  - gpu-cluster-training
+  - model-scaling
+  - sparse-attention
+  - unbiased-language-modeling
+  - vision-language-models
+  - generative-models
+  - multimodal-ai
+  - foundation-models
+  - reasoning-datasets
+  - prompt-engineering
+  - ai-agent-evaluation
+  - open-source-models
+  - medical-llms
+  - genome-modeling
 ---
 
 

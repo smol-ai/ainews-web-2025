@@ -4,21 +4,79 @@ title: Hybrid SSM/Transformers > Pure SSMs/Pure Transformers
 date: '2024-06-13T20:52:25.343318Z'
 original_slug: ainews-to-be-named-2494
 description: >-
-  Recent research from NVIDIA and others shows that hybrid models mixing Mamba
-  and Transformer blocks, with only about 7% attention, outperform pure
-  Transformers in accuracy and efficiency, challenging the "attention is all you
-  need" paradigm. Additionally, the new LiveBench AI benchmark offers a robust,
-  independent evaluation of LLMs on reasoning, coding, writing, and data
-  analysis tasks, highlighting models like Qwen 72B leading open-source
-  performance.
+  **NVIDIA**'s new paper on Mamba models reveals that hybrid architectures
+  mixing Mamba and Transformer blocks with less than *20%* attention outperform
+  pure Transformers, improving accuracy while reducing inference costs.
+  Meanwhile, **Stability AI** released **Stable Diffusion 3 Medium**, a *2B*
+  parameter model optimized for consumer GPUs with improved image quality and
+  new licensing terms, though it faces criticism for anatomical inaccuracies and
+  heavy censorship.
 tags:
-  - mamba
-  - transformer
-  - hybrid-models
-  - attention
   - nvidia
-  - livebench
+  - stability
+  - lamini
+  - hugging-face
+  - luma-labs
+  - sakana
+  - argilla
+  - mamba
+  - mamba-2-hybrid
+  - transformer
+  - stable-diffusion-3
+  - stable-diffusion-3-medium
+  - llama-3
+  - table-llava-7b
   - qwen-72b
+  - gpt-4
+  - mixture-of-experts
+  - hybrid-models
+  - attention-mechanisms
+  - large-language-models
+  - multimodal-models
+  - text-to-video
+  - image-captioning
+  - model-benchmarking
+  - model-fine-tuning
+  - dataset-creation
+  - model-licensing
+  - model-censorship
+  - reasoning
+  - coding
+  - video-understanding
+companies:
+  - nvidia
+  - stability
+  - lamini
+  - hugging-face
+  - luma-labs
+  - sakana
+  - argilla
+models:
+  - mamba
+  - mamba-2-hybrid
+  - transformer
+  - stable-diffusion-3
+  - stable-diffusion-3-medium
+  - llama-3
+  - table-llava-7b
+  - qwen-72b
+  - gpt-4
+topics:
+  - mixture-of-experts
+  - hybrid-models
+  - attention-mechanisms
+  - large-language-models
+  - multimodal-models
+  - text-to-video
+  - image-captioning
+  - model-benchmarking
+  - model-fine-tuning
+  - dataset-creation
+  - model-licensing
+  - model-censorship
+  - reasoning
+  - coding
+  - video-understanding
 ---
 
 

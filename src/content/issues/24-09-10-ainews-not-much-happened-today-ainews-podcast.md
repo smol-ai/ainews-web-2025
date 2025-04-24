@@ -4,20 +4,65 @@ title: not much happened today + AINews Podcast?
 date: '2024-09-11T02:24:16.042126Z'
 original_slug: ainews-not-much-happened-today-ainews-podcast
 description: >-
-  Apple introduced advanced AI features in iOS 18, including enhanced Siri
-  capabilities and a video understanding model that processes data both
-  on-device and in the cloud, positioning Apple ahead in AI-powered smartphones.
-  Meanwhile, the AI community is scrutinizing the Reflection 70B model’s
-  performance amid controversies and emphasizing the need for more reliable
-  evaluation methods beyond traditional benchmarks.
+  **Reflection 70B**, a recently hyped open-source model, has faced serious
+  controversy and accusations of fraud after investigations revealed it
+  underperforms and may have misrepresented its capabilities, sparking debate
+  about AI model verification. Meanwhile, **Apple** unveiled new AI features in
+  iOS 18, including advanced visual intelligence and improvements to Siri,
+  positioning itself ahead of competitors like **OpenAI** and **Google** in
+  on-device AI phone capabilities.
 tags:
+  - reflection
+  - glaive
   - apple
-  - ios-18
-  - siri
-  - video-understanding
+  - openai
+  - google
+  - sambanova
+  - cerebras
+  - stanford
+  - hugh-face
   - reflection-70b
-  - model-evaluation
-  - benchmarking
+  - llama-3.1-70b
+  - claude-3.5-sonnet
+  - llama-3
+  - superforecaster
+  - rum
+  - model-verification
+  - open-source-models
+  - ai-controversy
+  - ai-ethics
+  - visual-intelligence
+  - on-device-processing
+  - large-language-models
+  - evaluation-methods
+  - research-innovation
+companies:
+  - reflection
+  - glaive
+  - apple
+  - openai
+  - google
+  - sambanova
+  - cerebras
+  - stanford
+  - hugh-face
+models:
+  - reflection-70b
+  - llama-3.1-70b
+  - claude-3.5-sonnet
+  - llama-3
+  - superforecaster
+  - rum
+topics:
+  - model-verification
+  - open-source-models
+  - ai-controversy
+  - ai-ethics
+  - visual-intelligence
+  - on-device-processing
+  - large-language-models
+  - evaluation-methods
+  - research-innovation
 ---
 
 

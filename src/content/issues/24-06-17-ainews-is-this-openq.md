@@ -4,22 +4,88 @@ title: Is this... OpenQ*?
 date: '2024-06-18T00:38:33.191318Z'
 original_slug: ainews-is-this-openq
 description: >-
-  Apple unveiled Apple Intelligence with smarter Siri and integrated ChatGPT
-  into iOS 18, iPadOS 18, and macOS, alongside releasing new CoreML models and
-  datasets. Meanwhile, NVIDIA launched Nemotron-4 340B, an open large language
-  model matching GPT-4’s performance, and DeepSeek-Coder-V2 demonstrated
-  superior coding and math abilities at a fraction of GPT-4T’s cost.
+  Apple announced its new AI system, Apple Intelligence, featuring smarter Siri
+  and on-device AI models integrated with OpenAI's ChatGPT in upcoming OS
+  releases, while NVIDIA released Nemotron-4 340B, an open large language model
+  matching GPT-4 performance. Additionally, several new video generation models
+  debuted, including Luma Labs' Dream Machine and Runway's Gen-3 Alpha,
+  showcasing advances in text-to-video AI.
 tags:
   - apple
-  - siri
-  - chatgpt
-  - ios-18
-  - coreml
+  - openai
   - nvidia
-  - nemotron-4
+  - anthropic
+  - runway
+  - stability
+  - lumalabs
+  - apparate
+  - google
+  - deepmind
+  - metaverse
+  - northrop-grumman
+  - deepseek
+  - nemotron-4-340b
   - deepseek-coder-v2
+  - gpt-4
+  - gpt-4-0314
+  - stable-diffusion-3-medium
+  - gen-3-alpha
+  - openvla-7b
+  - llama-3-8b
+  - clip-vit-l-14
+  - long-clip
   - large-language-models
-  - open-source
+  - on-device-ai
+  - model-fine-tuning
+  - reward-tampering
+  - video-generation
+  - robotics
+  - embodied-ai
+  - process-supervision
+  - mathematical-reasoning
+  - autonomous-driving
+  - mixed-precision-training
+  - low-rank-approximation
+  - instruction-finetuning
+companies:
+  - apple
+  - openai
+  - nvidia
+  - anthropic
+  - runway
+  - stability
+  - lumalabs
+  - apparate
+  - google
+  - deepmind
+  - metaverse
+  - northrop-grumman
+  - deepseek
+models:
+  - nemotron-4-340b
+  - deepseek-coder-v2
+  - gpt-4
+  - gpt-4-0314
+  - stable-diffusion-3-medium
+  - gen-3-alpha
+  - openvla-7b
+  - llama-3-8b
+  - clip-vit-l-14
+  - long-clip
+topics:
+  - large-language-models
+  - on-device-ai
+  - model-fine-tuning
+  - reward-tampering
+  - video-generation
+  - robotics
+  - embodied-ai
+  - process-supervision
+  - mathematical-reasoning
+  - autonomous-driving
+  - mixed-precision-training
+  - low-rank-approximation
+  - instruction-finetuning
 ---
 
 

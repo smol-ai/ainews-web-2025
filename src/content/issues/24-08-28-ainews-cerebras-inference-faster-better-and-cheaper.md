@@ -4,20 +4,88 @@ title: 'Cerebras Inference: Faster, Better, AND Cheaper'
 date: '2024-08-29T00:59:27.113773Z'
 original_slug: ainews-cerebras-inference-faster-better-and
 description: >-
-  Cerebras has launched a new inference service for Llama 3.1 models, boasting
-  speeds up to 1,800 tokens per second for the 8B model at full precision and
-  competitive pricing, positioning itself as a strong contender in the
-  high-speed LLM inference market. Meanwhile, Google's Gemini 1.5 models have
-  shown significant benchmark improvements, with Gemini-1.5-Flash rising to #6
-  overall and notable gains in coding and math tasks.
+  Cerebras has launched a new inference service boasting unmatched speed and
+  cost-efficiency for **Llama 3.1** models, achieving *1800 tokens/sec* for the
+  8B model and *450 tokens/sec* for the 70B model at full precision, positioning
+  itself as a serious competitor to **Groq** and others in the wafer-scale chip
+  market. Meanwhile, **Google’s Gemini 1.5 Flash 8B** model demonstrated
+  significant benchmark improvements, climbing to #6 overall and showing strong
+  performance in coding and math tasks, highlighting advances in efficient AI
+  model design.
 tags:
   - cerebras
-  - llama-3-1
-  - inference
+  - groq
   - google
-  - gemini-1-5
-  - benchmarks
+  - cursor
+  - fireworks
+  - together
+  - anthropic
+  - openai
+  - tsinghua-keg
+  - solaris
+  - llama-3.1-8b
+  - llama-3.1-70b
+  - mixtral-8x7b
+  - llama-2-70b
+  - gemini-1.5-flash-8b
+  - gemini-1.5-pro
+  - cogvideox-5b
+  - rene-1.3b
+  - claude
+  - strawberry
+  - orion
+  - mamba-2
+  - inference-speed
+  - wafer-scale-chips
   - large-language-models
+  - model-benchmarking
+  - prompt-caching
+  - model-merging
+  - distributed-training
+  - text-to-video-generation
+  - open-source-models
+  - ai-regulation
+  - micro-transactions
+  - ai-cognition
+  - startup-incubators
+companies:
+  - cerebras
+  - groq
+  - google
+  - cursor
+  - fireworks
+  - together
+  - anthropic
+  - openai
+  - tsinghua-keg
+  - solaris
+models:
+  - llama-3.1-8b
+  - llama-3.1-70b
+  - mixtral-8x7b
+  - llama-2-70b
+  - gemini-1.5-flash-8b
+  - gemini-1.5-pro
+  - cogvideox-5b
+  - rene-1.3b
+  - claude
+  - strawberry
+  - orion
+  - mamba-2
+topics:
+  - inference-speed
+  - wafer-scale-chips
+  - large-language-models
+  - model-benchmarking
+  - prompt-caching
+  - model-merging
+  - distributed-training
+  - text-to-video-generation
+  - open-source-models
+  - ai-regulation
+  - micro-transactions
+  - ai-cognition
+  - startup-incubators
 ---
 
 

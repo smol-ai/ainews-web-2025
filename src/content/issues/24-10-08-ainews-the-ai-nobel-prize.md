@@ -4,20 +4,79 @@ title: The AI Nobel Prize
 date: '2024-10-09T01:33:48.218940Z'
 original_slug: ainews-the-ai-nobel-prize
 description: >-
-  Geoff Hinton and John Hopfield have been awarded the Nobel Prize in Physics,
-  marking a significant recognition of their contributions to artificial neural
-  networks and physics. Meanwhile, OpenAI's DevDay introduced key updates
-  including a real-time voice API, vision model fine-tuning, and cost-saving
-  prompt caching, highlighting ongoing advancements in AI capabilities.
+  **Geoff Hinton** and **John Hopfield** were awarded the *2024 Nobel Prize in
+  Physics* for their pioneering work in artificial neural networks, marking a
+  historic recognition of AI's impact on physics. Additionally, the novel
+  **AdderLM** model proposes replacing floating-point multiplications with
+  integer additions to reduce energy consumption by *95%* in language models,
+  potentially challenging current transformer architectures and hardware
+  monopolies.
 tags:
-  - geoff-hinton
-  - john-hopfield
-  - nobel-prize
   - openai
-  - devday
-  - voice-api
-  - vision-model
-  - prompt-caching
+  - anthropic
+  - reka
+  - zep
+  - google
+  - microsoft
+  - nvidia
+  - claude-3.5-sonnet
+  - reka-flash
+  - got
+  - mixture-of-experts
+  - switch-transformer
+  - turing-nlg
+  - adderlm
+  - jamba-1.5
+  - zamba-2
+  - gemma-2
+  - mistral-7b
+  - nobel-prize
+  - artificial-neural-networks
+  - energy-efficient-models
+  - integer-addition
+  - transformer-architecture
+  - long-context-language-models
+  - multimodal-ai
+  - knowledge-graphs
+  - memory-layers
+  - open-source-ai
+  - ai-ethics
+  - ai-research
+  - ai-applications
+companies:
+  - openai
+  - anthropic
+  - reka
+  - zep
+  - google
+  - microsoft
+  - nvidia
+models:
+  - claude-3.5-sonnet
+  - reka-flash
+  - got
+  - mixture-of-experts
+  - switch-transformer
+  - turing-nlg
+  - adderlm
+  - jamba-1.5
+  - zamba-2
+  - gemma-2
+  - mistral-7b
+topics:
+  - nobel-prize
+  - artificial-neural-networks
+  - energy-efficient-models
+  - integer-addition
+  - transformer-architecture
+  - long-context-language-models
+  - multimodal-ai
+  - knowledge-graphs
+  - memory-layers
+  - open-source-ai
+  - ai-ethics
+  - ai-research
+  - ai-applications
 ---
 
 

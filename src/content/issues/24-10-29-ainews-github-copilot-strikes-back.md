@@ -4,19 +4,19 @@ title: GitHub Copilot Strikes Back
 date: '2024-10-30T01:05:11.702248Z'
 original_slug: ainews-github-copilot-strikes-back-3402
 description: >-
-  GitHub’s Universe 2024 conference unveiled a Multi-model Copilot allowing
-  developers to choose from AI models by Anthropic, Google, and OpenAI, marking
-  a significant shift in AI-native coding tools. Additionally, GitHub introduced
-  Spark, a no-code platform for building AI-powered micro apps with integrated
-  hosting and data storage, aiming to simplify AI application development.
+  GitHub’s tenth annual Universe conference showcased major updates including
+  the **Multi-model Copilot**, which now integrates **Anthropic’s Claude 3.5
+  Sonnet**, **Google’s Gemini 1.5 Pro**, and **OpenAI’s o1-preview**, allowing
+  developers to select from multiple AI models in a single interface.
+  Additionally, **GitHub Spark** was introduced as an AI-native tool enabling
+  users to build and deploy natural language-driven micro apps without managing
+  cloud infrastructure.
 tags:
-  - github
-  - copilot
-  - multi-model
-  - anthropic
-  - google
-  - openai
-  - github-spark
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

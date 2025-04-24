@@ -4,18 +4,104 @@ title: '>$41B raised today (OpenAI @ 300b, Cursor @ 9.5b, Etched @ 1.5b)'
 date: '2025-04-01T06:33:20.931042Z'
 original_slug: ainews-41b-raised-today-openai-300b-cursor-95b
 description: >-
-  OpenAI is preparing to release a powerful new open-weight language model with
-  advanced reasoning capabilities, engaging with developers globally to optimize
-  its usefulness. Meanwhile, Cursor secured a record $625 million funding round
-  at a $9.6 billion valuation, marking the largest startup raise in AI history.
+  **OpenAI** is preparing to release a highly capable open-weight language model
+  with advanced reasoning capabilities in the coming months, engaging closely
+  with developers to optimize its utility. Meanwhile, **Cursor** secured a
+  historic $625 million funding round at a $9.6 billion valuation, marking the
+  largest startup fundraise in history.
 tags:
   - openai
-  - language-model
-  - open-weight
   - cursor
-  - startup-funding
-  - large-language-model
-  - reasoning
+  - amazon
+  - adept
+  - covariant
+  - sophont
+  - isomorphic-labs
+  - deepseek
+  - llamaindex
+  - togethercompute
+  - ucberkeley
+  - anthropic
+  - google
+  - orpheus-tts
+  - gpt-2
+  - gpt-4
+  - gpt-4o
+  - sonnet-3.5
+  - o1
+  - gemini-2.0-pro
+  - gemini-2.5-pro
+  - gemini-code
+  - deepseek-v3-0324
+  - qwen-2.5-omni
+  - qwen-3
+  - open-deepsearch
+  - perplexity-sonar
+  - moshi
+  - sesame
+  - open-weight-language-models
+  - startup-fundraising
+  - multimodal-models
+  - coding-assistants
+  - model-benchmarks
+  - model-releases
+  - image-generation
+  - diffusion-models
+  - model-evaluation
+  - open-source-tools
+  - multimodal-ai
+  - ai-investment
+  - ai-research
+  - privacy
+  - multi-agent-workflows
+companies:
+  - openai
+  - cursor
+  - amazon
+  - adept
+  - covariant
+  - sophont
+  - isomorphic-labs
+  - deepseek
+  - llamaindex
+  - togethercompute
+  - ucberkeley
+  - anthropic
+  - google
+  - orpheus-tts
+models:
+  - gpt-2
+  - gpt-4
+  - gpt-4o
+  - sonnet-3.5
+  - o1
+  - gemini-2.0-pro
+  - gemini-2.5-pro
+  - gemini-code
+  - deepseek-v3-0324
+  - qwen-2.5-omni
+  - qwen-3
+  - llamaindex
+  - open-deepsearch
+  - perplexity-sonar
+  - moshi
+  - sesame
+topics:
+  - open-weight-language-models
+  - startup-fundraising
+  - multimodal-models
+  - coding-assistants
+  - model-benchmarks
+  - model-releases
+  - image-generation
+  - diffusion-models
+  - model-evaluation
+  - open-source-tools
+  - multimodal-ai
+  - ai-investment
+  - ai-research
+  - privacy
+  - multi-agent-workflows
 ---
 
 

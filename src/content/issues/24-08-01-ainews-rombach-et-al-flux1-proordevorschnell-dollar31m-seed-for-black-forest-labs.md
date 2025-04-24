@@ -4,21 +4,69 @@ title: 'Rombach et al: FLUX.1 [pro|dev|schnell], $31m seed for Black Forest Labs
 date: '2024-08-02T01:05:39.247788Z'
 original_slug: ainews-rombach-et-al-flux1-prodevschnell-31m-seed
 description: >-
-  Google DeepMind released Gemma 2, a new family of open-source AI models
-  including the 2 billion parameter Gemma-2 2B, which outperforms GPT-3.5-Turbo
-  and other larger models on the Chatbot Arena leaderboard while being efficient
-  on various hardware. Additionally, Stability AI co-founder Rombach introduced
-  FLUX.1, a strong new text-to-image model with three variants that surpass
-  Midjourney and Ideogram in quality, and plans to develop state-of-the-art
-  text-to-video capabilities.
+  **Google DeepMind** launched Gemma 2, a new family of open-source AI models
+  highlighted by the *2 billion parameter* Gemma-2 2B, which outperforms larger
+  models including GPT-3.5-Turbo-0613 on the Chatbot Arena leaderboard.
+  Meanwhile, **Rombach et al** introduced FLUX.1, a promising new text-to-image
+  model family with three variants surpassing Midjourney and Ideogram in
+  performance, and plans to expand into state-of-the-art text-to-video
+  generation.
 tags:
   - google
+  - stability
   - deepmind
-  - gemma-2
-  - stable-diffusion
-  - flux-1
+  - midjourney
+  - ideogram
+  - black-forest-labs
+  - gemma-2-2b
+  - flux.1
+  - stable-diffusion-3
+  - llama-3.1-8b
+  - gpt-3.5-turbo-0613
+  - mixtral-8x7b
+  - samv2
   - text-to-image
-  - open-source
+  - text-to-video
+  - open-source-models
+  - model-benchmarks
+  - model-interpretability
+  - quantization
+  - model-distillation
+  - safety-classifiers
+  - sparse-autoencoders
+  - coding-tools
+  - ai-policy
+  - fine-tuning
+  - video-generation
+companies:
+  - google
+  - stability
+  - deepmind
+  - midjourney
+  - ideogram
+  - black-forest-labs
+models:
+  - gemma-2-2b
+  - flux.1
+  - stable-diffusion-3
+  - llama-3.1-8b
+  - gpt-3.5-turbo-0613
+  - mixtral-8x7b
+  - samv2
+topics:
+  - text-to-image
+  - text-to-video
+  - open-source-models
+  - model-benchmarks
+  - model-interpretability
+  - quantization
+  - model-distillation
+  - safety-classifiers
+  - sparse-autoencoders
+  - coding-tools
+  - ai-policy
+  - fine-tuning
+  - video-generation
 ---
 
 

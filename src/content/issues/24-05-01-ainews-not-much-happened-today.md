@@ -4,19 +4,86 @@ title: Not much happened today
 date: '2024-05-02T00:47:12.556282Z'
 original_slug: ainews-to-be-named-2666
 description: >-
-  Anthropic has launched a team plan and iOS app, following OpenAI’s lead by
-  about four months, while Perplexity teases a private Pages feature accessible
-  via Discord. Additionally, the Llama-3 8B model now supports an extended
-  context window of up to 1 million tokens, significantly improving long-context
-  understanding with minimal training resources.
+  Anthropic launched the **Claude iOS app** and introduced a new Team plan
+  featuring a 200K token context window, marking significant progress in their
+  AI offerings. Meanwhile, Reddit users highlighted the **Command-R 35B model**
+  outperforming larger models in creative writing, and the **Llama-3 8B model**
+  extending its context window to *1 million tokens*, enhancing long-context
+  understanding.
 tags:
   - anthropic
   - openai
-  - perplexity
-  - llama-3
-  - context-window
-  - ios-app
-  - team-plan
+  - amazon
+  - apple
+  - microsoft
+  - deepmind
+  - meta
+  - scale
+  - claude
+  - claude-ios-app
+  - command-r-35b
+  - llama-3-8b
+  - gpt-4-turbo
+  - gpt2-chat
+  - alphazero
+  - nex-t
+  - tensor-rt-llm
+  - llama-cpp
+  - sdxl
+  - large-language-models
+  - context-window-extension
+  - creative-writing
+  - ai-assistants
+  - mobile-apps
+  - ai-benchmarks
+  - ai-ethics
+  - copyright-lawsuit
+  - self-learning-agents
+  - multi-token-prediction
+  - instruction-following
+  - reinforcement-learning
+  - image-generation
+  - stable-diffusion
+  - ai-lobbying
+  - scientific-discovery
+companies:
+  - anthropic
+  - openai
+  - amazon
+  - apple
+  - microsoft
+  - deepmind
+  - meta
+  - scale
+models:
+  - claude
+  - claude-ios-app
+  - command-r-35b
+  - llama-3-8b
+  - gpt-4-turbo
+  - gpt2-chat
+  - alphazero
+  - nex-t
+  - tensor-rt-llm
+  - llama-cpp
+  - sdxl
+topics:
+  - large-language-models
+  - context-window-extension
+  - creative-writing
+  - ai-assistants
+  - mobile-apps
+  - ai-benchmarks
+  - ai-ethics
+  - copyright-lawsuit
+  - self-learning-agents
+  - multi-token-prediction
+  - instruction-following
+  - reinforcement-learning
+  - image-generation
+  - stable-diffusion
+  - ai-lobbying
+  - scientific-discovery
 ---
 
 

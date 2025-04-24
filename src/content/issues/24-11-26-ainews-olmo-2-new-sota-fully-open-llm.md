@@ -4,22 +4,73 @@ title: OLMo 2 - new SOTA Fully Open LLM
 date: '2024-11-27T05:17:18.239669Z'
 original_slug: ainews-olmo-2-new-sota-fully-open-model
 description: >-
-  AI2 has updated its fully open-source model OLMo-2 to be roughly equivalent to
-  Llama 3.1 8B, trained on 5 trillion tokens and leveraging Reinforcement
-  Learning with Verifiable Rewards from their recent Tülu 3 framework.
-  Meanwhile, Hugging Face released SmolVLM, a 2B parameter vision-language model
-  optimized for consumer hardware that runs significantly faster than larger
-  models and supports efficient fine-tuning and quantization.
+  **AI2** has updated its fully open-source model **OLMo-2** to roughly match
+  the capabilities of **Llama 3.1 8B**, training on *5 trillion tokens* and
+  leveraging the newly announced **Tülu 3** method using "Reinforcement Learning
+  with Verifiable Rewards." Meanwhile, **HuggingFace** released **SmolVLM**, a
+  *2 billion* parameter vision-language model optimized for consumer hardware,
+  achieving token generation speeds *7.5-16x* faster than larger counterparts
+  and demonstrating strong OCR and image captioning performance.
 tags:
   - ai2
+  - huggingface
+  - intel
+  - wilmerai
+  - anthropic
+  - apple
   - olmo-2
   - llama-3.1
-  - reinforcement-learning
-  - tulu-3
-  - huggingface
+  - tülu-3
+  - qwen2.5-72b
   - smolvlm
-  - vision-language-model
+  - mlx-lm-0.20.1
+  - mini-cpm-v-2.6
+  - command-r
+  - claude
+  - reinforcement-learning
+  - verifiable-rewards
+  - open-source-models
+  - large-language-models
   - quantization
+  - vision-language-models
+  - model-optimization
+  - domain-specialized-models
+  - mixture-of-experts
+  - model-context-protocol
+  - ocr
+  - consumer-hardware
+  - speed-optimization
+companies:
+  - ai2
+  - huggingface
+  - intel
+  - wilmerai
+  - anthropic
+  - apple
+models:
+  - olmo-2
+  - llama-3.1
+  - tülu-3
+  - qwen2.5-72b
+  - smolvlm
+  - mlx-lm-0.20.1
+  - mini-cpm-v-2.6
+  - command-r
+  - claude
+topics:
+  - reinforcement-learning
+  - verifiable-rewards
+  - open-source-models
+  - large-language-models
+  - quantization
+  - vision-language-models
+  - model-optimization
+  - domain-specialized-models
+  - mixture-of-experts
+  - model-context-protocol
+  - ocr
+  - consumer-hardware
+  - speed-optimization
 ---
 
 

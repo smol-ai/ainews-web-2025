@@ -4,20 +4,58 @@ title: Apple's OpenELM beats OLMo with 50% of its dataset, using DeLighT
 date: '2024-04-26T21:32:41.171695Z'
 original_slug: ainews-apples-openelm-beats-olmo-with-50-of-its
 description: >-
-  Apple has released OpenELM, its first relatively open large language model
-  featuring novel efficient architecture with layer-wise scaling, outperforming
-  its predecessor OLMo despite using fewer training tokens. Meanwhile, Meta’s
-  LLaMA 3 models have significantly expanded context lengths, with versions
-  supporting over 160K and even 262K tokens, enabling advanced reasoning
-  capabilities.
+  **Meta’s Llama 3** has seen rapid adoption with over *1.2 million downloads*
+  and *600+ derivative models* on Hugging Face, featuring context lengths
+  extended to *160K+ tokens* and training speed improvements of up to *20%*.
+  Meanwhile, **Apple** released **OpenELM**, its first relatively open large
+  multimodal model with novel efficient architecture techniques, marking a
+  significant step in Apple’s AI development ahead of WWDC.
 tags:
   - apple
+  - meta
+  - openai
+  - cohere
+  - tsmc
+  - micron
   - openelm
-  - large-language-model
-  - layer-wise-scaling
-  - llama
-  - context-length
+  - olmo
+  - llama-3
+  - phi-3
+  - llama-3-8b-instruct
+  - llama-3-70b
+  - large-language-models
+  - context-length-extension
   - model-efficiency
+  - open-source-models
+  - ai-ethics
+  - hardware-advancements
+  - ai-alignment
+  - inference-acceleration
+  - multimodal-models
+companies:
+  - apple
+  - meta
+  - openai
+  - cohere
+  - tsmc
+  - micron
+models:
+  - openelm
+  - olmo
+  - llama-3
+  - phi-3
+  - llama-3-8b-instruct
+  - llama-3-70b
+topics:
+  - large-language-models
+  - context-length-extension
+  - model-efficiency
+  - open-source-models
+  - ai-ethics
+  - hardware-advancements
+  - ai-alignment
+  - inference-acceleration
+  - multimodal-models
 ---
 
 

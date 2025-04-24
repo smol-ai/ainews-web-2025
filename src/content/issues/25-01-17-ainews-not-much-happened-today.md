@@ -4,18 +4,89 @@ title: not much happened today
 date: '2025-01-18T02:33:34.160647Z'
 original_slug: ainews-not-much-happened-today-9518
 description: >-
-  DeepSeek-V3, a new mixture-of-experts model with 671 billion parameters,
-  outperforms Llama 3.1 405B and GPT-4o on coding and math benchmarks.
-  Additionally, OpenAI announced the release date for GPT-5 as April 27, 2025,
-  generating significant community anticipation.
+  DeepSeek-V3, a 671-billion parameter mixture-of-experts model announced by
+  **DeepLearningAI**, outperforms **Llama 3.1 405B** and **GPT-4o** on coding
+  and math benchmarks, while **OpenAI** plans to release **GPT-5** on *April 27,
+  2023*, generating significant community anticipation. Additionally,
+  **ElevenLabs**' text-to-speech technology is recognized for its superior
+  quality, attributed to high-quality audiobook datasets and efficient compute
+  usage.
 tags:
-  - deepseek
-  - mixture-of-experts
-  - llama-3-1
-  - gpt-4o
+  - deeplearning
   - openai
+  - elevenlabs
+  - meta
+  - google
+  - saama
+  - virattt
+  - langchain
+  - nvidia
+  - deepseek-v3
+  - llama-3.1
+  - gpt-4o
   - gpt-5
-  - model-release
+  - minimax-01
+  - openbiollm-8b
+  - openbiollm-70b
+  - cosmos-nemotron-34b
+  - claude-3.5-sonnet
+  - claude-3-haiku
+  - large-language-models
+  - mixture-of-experts
+  - coding
+  - math
+  - text-to-speech
+  - model-benchmarks
+  - ai-policy
+  - export-restrictions
+  - inference-scaling
+  - retrieval-augmented-generation
+  - ai-security
+  - personalized-medicine
+  - hedge-funds
+  - cognitive-behavioral-therapy
+  - ai-frameworks
+  - gpu-optimization
+  - multi-agent-systems
+companies:
+  - deeplearning
+  - openai
+  - elevenlabs
+  - meta
+  - google
+  - saama
+  - virattt
+  - langchain
+  - nvidia
+models:
+  - deepseek-v3
+  - llama-3.1
+  - gpt-4o
+  - gpt-5
+  - minimax-01
+  - openbiollm-8b
+  - openbiollm-70b
+  - cosmos-nemotron-34b
+  - claude-3.5-sonnet
+  - claude-3-haiku
+topics:
+  - large-language-models
+  - mixture-of-experts
+  - coding
+  - math
+  - text-to-speech
+  - model-benchmarks
+  - ai-policy
+  - export-restrictions
+  - inference-scaling
+  - retrieval-augmented-generation
+  - ai-security
+  - personalized-medicine
+  - hedge-funds
+  - cognitive-behavioral-therapy
+  - ai-frameworks
+  - gpu-optimization
+  - multi-agent-systems
 ---
 
 

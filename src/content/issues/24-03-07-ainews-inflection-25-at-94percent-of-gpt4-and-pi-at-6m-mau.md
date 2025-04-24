@@ -4,23 +4,77 @@ title: Inflection-2.5 at 94% of GPT4, and Pi at 6m MAU
 date: '2024-03-08T02:11:17.500129Z'
 original_slug: ainews-inflection-25-at-94-of-gpt4-and-pi-at-6m
 description: >-
-  Inflection AI announced Inflection 2.5, a model achieving over 94% of GPT-4's
-  performance with only 40% of the training compute, alongside rapid user growth
-  for their Pi chatbot and new real-time web search capabilities. Meanwhile,
-  Anthropic's Claude 3 continues to impress, surpassing GPT-4 in user votes and
-  gaining adoption as the default model for Perplexity Pro, with expanded
-  features like OCR, structured extraction, and experimental tool calling
-  support.
+  Mustafa Suleyman announced **Inflection 2.5**, which reportedly achieves over
+  *94%* of **GPT-4**’s average performance using only *40%* of the training
+  FLOPs, while also focusing on emotional intelligence with rapidly growing user
+  numbers for Pi. Meanwhile, **Anthropic**’s **Claude 3 Opus** model
+  demonstrated superior performance to GPT-4 in user votes and became the
+  default for Perplexity Pro, showcasing advanced OCR and structured extraction
+  capabilities.
 tags:
   - inflection
-  - inflection-2-5
+  - openai
+  - anthropic
+  - perplexity
+  - llamaindex
+  - microsoft
+  - google
+  - meta
+  - nvidia
+  - inflection-2.5
   - gpt-4
   - pi
-  - claude
   - claude-3
-  - perplexity
+  - claude-3-opus
+  - claude-3-sonnet
+  - gemma
+  - mistral
+  - yi-9b
+  - large-language-models
+  - benchmarking
+  - model-efficiency
+  - emotional-intelligence
+  - user-growth
   - retrieval-augmented-generation
+  - optical-character-recognition
+  - model-evaluation
+  - network-pruning
+  - hardware-optimization
+  - tool-calling
+  - multi-modal-ai
+companies:
+  - inflection
+  - openai
+  - anthropic
+  - perplexity
   - llamaindex
+  - microsoft
+  - google
+  - meta
+  - nvidia
+models:
+  - inflection-2.5
+  - gpt-4
+  - pi
+  - claude-3
+  - claude-3-opus
+  - claude-3-sonnet
+  - gemma
+  - mistral
+  - yi-9b
+topics:
+  - large-language-models
+  - benchmarking
+  - model-efficiency
+  - emotional-intelligence
+  - user-growth
+  - retrieval-augmented-generation
+  - optical-character-recognition
+  - model-evaluation
+  - network-pruning
+  - hardware-optimization
+  - tool-calling
+  - multi-modal-ai
 ---
 
 

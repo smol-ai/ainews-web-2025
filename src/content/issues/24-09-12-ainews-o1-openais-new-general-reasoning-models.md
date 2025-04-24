@@ -4,19 +4,19 @@ title: 'o1: OpenAI''s new general reasoning models'
 date: '2024-09-13T01:18:57.613300Z'
 original_slug: ainews-o1-openais-new-general-reasoning-models
 description: >-
-  OpenAI has launched the o1 series models, including o1-preview and o1-mini,
-  featuring test-time reasoning with extended output token limits and impressive
-  performance on competitive programming and STEM benchmarks. This release
-  introduces a new approach of adding reasoning tokens during inference, showing
-  promising scaling laws and strong results even from the smaller o1-mini model.
+  OpenAI has released the **o1** family of models, including **o1-preview** and
+  **o1-mini**, featuring test-time reasoning with extended output token limits
+  exceeding *30k tokens* and achieving top-tier performance on competitive
+  programming and STEM benchmarks. Meanwhile, **Nvidia** is facing emerging
+  competition in AI chips, with startups challenging its market share and
+  **SambaNova** launching the "world's fastest API" powered by **Llama 3.1**
+  models.
 tags:
-  - openai
-  - o1
-  - o1-preview
-  - o1-mini
-  - test-time-reasoning
-  - competitive-programming
-  - stem-benchmarks
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

@@ -4,21 +4,66 @@ title: 'MM1: Apple''s first Large Multimodal Model'
 date: '2024-03-15T23:34:51.378733Z'
 original_slug: ainews-mm1-apples-first-large-multimodal-model
 description: >-
-  Apple announced MM1, a new family of multimodal large language models up to 30
-  billion parameters that achieve state-of-the-art pre-training results and
-  competitive fine-tuning performance, with potential applications in embodied
-  agents and business/education. Additionally, Yann LeCun emphasized that
-  achieving human-level AI requires understanding the physical world, memory
-  retrieval, reasoning, and hierarchical planning, highlighting the complexity
-  of true AI progress.
+  Apple announced MM1, a new family of multimodal large language models up to
+  *30B* parameters, claiming state-of-the-art pre-training performance
+  competitive with Gemini-1, with potential applications in embodied agents and
+  business/education. Additionally, Anthropic released the Claude 3 family of
+  models (Opus, Sonnet, Haiku), designed for a range of applications from high
+  capability to cost-effective speed.
 tags:
   - apple
+  - anthropic
+  - cohere
+  - nvidia
+  - lightmatter
   - mm1
-  - multimodal
+  - gemini-1
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - command-r
+  - d-qwen1.5-0.5b
+  - genstruct-7b
+  - hermes-2-pro
+  - rtx-50-series-blackwell
+  - multimodal-models
   - large-language-models
+  - retrieval-augmented-generation
   - embodied-agents
-  - yann-lecun
-  - human-level-ai
+  - fine-tuning
+  - function-calling
+  - open-source-hardware
+  - photonic-computing
+  - model-benchmarks
+  - prompt-engineering
+companies:
+  - apple
+  - anthropic
+  - cohere
+  - nvidia
+  - lightmatter
+models:
+  - mm1
+  - gemini-1
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - command-r
+  - d-qwen1.5-0.5b
+  - genstruct-7b
+  - hermes-2-pro
+  - rtx-50-series-blackwell
+topics:
+  - multimodal-models
+  - large-language-models
+  - retrieval-augmented-generation
+  - embodied-agents
+  - fine-tuning
+  - function-calling
+  - open-source-hardware
+  - photonic-computing
+  - model-benchmarks
+  - prompt-engineering
 ---
 
 

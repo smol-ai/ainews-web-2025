@@ -4,19 +4,18 @@ title: not much happened today
 date: '2025-02-15T01:23:56.534351Z'
 original_slug: ainews-not-much-happened-today-5861
 description: >-
-  DeepSeek R1 has set a new speed record as the fastest reasoning model at 198
-  tokens per second and gained massive popularity with over 10 million downloads
-  on Hugging Face. Meanwhile, Perplexity Deep Research outperforms several top
-  models on key benchmarks, offering a faster and more cost-effective
-  alternative by leveraging open-source architectures.
+  **DeepSeek R1 671B** has set a new speed record as the fastest reasoning model
+  at *198 t/s*, gaining massive popularity with over *10 million* downloads on
+  Hugging Face. Meanwhile, **Perplexity Deep Research** outperforms several
+  competitors on key benchmarks and is now free for all users, offering
+  expert-level AI research capabilities with up to *5 daily queries* for
+  non-subscribers.
 tags:
-  - deepseek
-  - reasoning-model
-  - perplexity
-  - benchmarks
-  - open-source
-  - huggingface
-  - model-performance
+  - untagged
+companies: []
+models: []
+topics:
+  - untagged
 ---
 
 

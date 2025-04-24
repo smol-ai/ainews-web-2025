@@ -2,30 +2,105 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
+import type { CollectionEntry } from "astro:content";
 
+type Post = CollectionEntry<"issues">;
 const posts = await getCollection("issues", ({ data }) => !data.draft);
-const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+
+// Helper function to get unique tags and sort them
+function getUniqueSortedTags(posts: Post[], tagType: 'companies' | 'models' | 'topics') {
+  const tags = [...new Set(posts.flatMap((post) => post.data[tagType] || []))]
+      .filter(tag => {
+        const count = posts.filter((post) => post.data[tagType]?.includes(tag)).length;
+        return count >= 2;
+      });
+  return {
+    alphabetical: [...tags].sort((a, b) => a.localeCompare(b)),
+    byUsage: [...tags]
+      .sort((a, b) => {
+        const countA = posts.filter((post) => post.data[tagType]?.includes(a)).length;
+        const countB = posts.filter((post) => post.data[tagType]?.includes(b)).length;
+        return countB - countA;
+      })
+  };
+}
+
+// Get sorted tags for each category
+const companies = getUniqueSortedTags(posts, 'companies');
+const models = getUniqueSortedTags(posts, 'models');
+const topics = getUniqueSortedTags(posts, 'topics');
+
+// Create tag data for rendering
+const categoryData = {
+  companies: {
+    alphabetical: companies.alphabetical,
+    byUsage: companies.byUsage
+  },
+  models: {
+    alphabetical: models.alphabetical,
+    byUsage: models.byUsage
+  },
+  topics: {
+    alphabetical: topics.alphabetical,
+    byUsage: topics.byUsage
+  }
+};
+
+const categories = ['companies', 'models', 'topics'] as const;
 ---
 
-<Layout title="Tags" description="List of tags used.">
+<Layout title="Tags" description="List of companies, models, and topics used in AINews.">
   <Container>
-    <div class="space-y-10">
+    <div class="space-y-12">
       <h1 class="animate font-semibold">All Tags</h1>
-      <div class="animate flex flex-wrap gap-2">
-        {
-          tags.map((tag) => (
-            <a
-              href={`/tags/${tag}`}
-              class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
-            >
-              {tag}{" "}
-              <span class="text-sm text-gray-600">
-                ({posts.filter((post) => post.data.tags?.includes(tag)).length})
-              </span>
-            </a>
-          ))
-        }
+      
+      <!-- Navigation links -->
+      <div class="animate flex flex-wrap gap-4 mb-8">
+        {categories.map((category) => (
+          <a href={`#${category}`} class="rounded-sm border border-black/15 px-3 py-1.5 font-medium transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white">
+            {category.charAt(0).toUpperCase() + category.slice(1)}
+          </a>
+        ))}
       </div>
+      
+      {categories.map((category) => (
+        <div id={category} class="animate space-y-8 scroll-mt-16">
+          <h2 class="text-xl font-medium">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+          
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="flex-1">
+              <h3 class="text-lg font-medium mb-4">Alphabetical</h3>
+              <div class="flex flex-wrap gap-2">
+                {categoryData[category].alphabetical.map((tag) => (
+                  <a href={`/tags/${tag}`}
+                    class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+                  >
+                    {tag}{" "}
+                    <span class="text-sm text-gray-600 dark:text-gray-400">
+                      ({posts.filter((post) => post.data[category]?.includes(tag)).length})
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-medium mb-4">Most Used</h3>
+              <div class="flex flex-wrap gap-2">
+                {categoryData[category].byUsage.map((tag) => (
+                  <a href={`/tags/${tag}`}
+                    class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+                  >
+                    {tag}{" "}
+                    <span class="text-sm text-gray-600 dark:text-gray-400">
+                      ({posts.filter((post) => post.data[category]?.includes(tag)).length})
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   </Container>
 </Layout>
