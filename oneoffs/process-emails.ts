@@ -61,7 +61,6 @@ interface ProcessFileResult {
   companies: string[];
   models: string[];
   topics: string[];
-  allTags: string[];
   content: string;
 }
 
@@ -124,22 +123,7 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
 
       // Use the structured extraction results
       const { description, companies, models, topics } = extractionResult;
-      
-      // Combine all tags and make unique
-      const allTags = [...new Set([...companies, ...models, ...topics])];
 
-      if (allTags.length === 0) {
-        console.warn(`No tags generated for ${filePath} - unusual with structured extraction`);
-        // If we still get no tags (highly unlikely), add a default
-        return {
-          description,
-          companies: ["untagged"],
-          models: [],
-          topics: ["untagged"],
-          allTags: ["untagged"],
-          content: ""
-        };
-      }
 
       console.log(`\nExtracted ${companies.length} companies, ${models.length} models, ${topics.length} topics for ${path.basename(filePath)}`);
       console.log(`Companies: ${companies.join(', ')}`);
@@ -163,7 +147,6 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
           companies,
           models,
           topics,
-          allTags,
           content: newContent
         };
       } else {
@@ -250,7 +233,6 @@ Follow these rules for all tags:
         console.log(`Companies (${companies.length}): ${companies.join(', ')}`);
         console.log(`Models (${models.length}): ${models.join(', ')}`);
         console.log(`Topics (${topics.length}): ${topics.join(', ')}`);
-        console.log(`Total tags: ${allTags.length}`);
 
         // Update frontmatter
         frontmatter.description = description;
@@ -268,7 +250,6 @@ Follow these rules for all tags:
             companies,
             models,
             topics,
-            allTags,
             content: newContent
           };
         } else {
@@ -306,7 +287,6 @@ Follow these rules for all tags:
             companies,
             models,
             topics,
-            allTags,
             content: newContent
           };
         } else {
@@ -346,17 +326,9 @@ async function main() {
         console.log('\n=== PROCESSING RESULTS ===');
         console.log('\nDescription:');
         console.log(result.description);
-        
-        console.log('\nCompanies:');
-        result.companies.forEach(tag => console.log(`- ${tag}`));
-        
-        console.log('\nModels:');
-        result.models.forEach(tag => console.log(`- ${tag}`));
-        
-        console.log('\nTopics:');
-        result.topics.forEach(tag => console.log(`- ${tag}`));
-        
-        console.log('\nTotal tags:', result.allTags.length);
+        console.log('\nCompanies:', result.companies.join(', '));
+        console.log('\nModels:', result.models.join(', '));
+        console.log('\nTopics:', result.topics.join(', '));
       }
       
       return;
