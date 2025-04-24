@@ -1,0 +1,55 @@
+---
+// LiteYoutube.astro - A lightweight YouTube embed component
+// Based on the lite-youtube-embed library
+
+interface Props {
+  videoId: string;
+  title?: string;
+  params?: string;
+}
+
+const { videoId, title = 'YouTube Video', params = '' } = Astro.props;
+
+// Build the query string for parameters
+const queryString = params ? `&${params}` : '';
+---
+
+<lite-youtube 
+  videoid={videoId} 
+  playlabel={`Play: ${title}`}
+  params={params}
+  style="background-image: url('https://i.ytimg.com/vi/{videoId}/hqdefault.jpg');"
+>
+  <a href={`https://youtube.com/watch?v=${videoId}${queryString}`} class="lyt-playbtn" title="Play Video">
+    <span class="lyt-visually-hidden">Play: {title}</span>
+  </a>
+</lite-youtube>
+
+<script>
+  // Only load the script once
+  if (!document.querySelector('script[data-lite-youtube-embed]')) {
+    // Create and load the CSS
+    const linkEl = document.createElement('link');
+    linkEl.rel = 'stylesheet';
+    linkEl.href = '/lite-youtube-embed/lite-yt-embed.css';
+    linkEl.setAttribute('data-lite-youtube-embed', 'css');
+    document.head.appendChild(linkEl);
+
+    // Create and load the script
+    const scriptEl = document.createElement('script');
+    scriptEl.src = '/lite-youtube-embed/lite-yt-embed.js';
+    scriptEl.defer = true;
+    scriptEl.setAttribute('data-lite-youtube-embed', 'js');
+    document.body.appendChild(scriptEl);
+  }
+</script>
+
+<style>
+  lite-youtube {
+    max-width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+</style> 

@@ -3,6 +3,7 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
+import remarkYouTube from "./src/remark-youtube.mjs";
 
 console.log(`[Astro Config] Environment: ${process.env.NODE_ENV || 'development'}`);
 console.log(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false'}`);
@@ -63,6 +64,7 @@ export default defineConfig({
     shikiConfig: {
       theme: "css-variables",
     },
+    remarkPlugins: [remarkYouTube],
   },
   pagefind: {
     uiOptions: {

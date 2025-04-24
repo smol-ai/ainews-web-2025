@@ -5,17 +5,40 @@ import yaml from 'js-yaml';
 import { glob } from 'glob';
 import PQueue from 'p-queue';
 import { load } from 'js-yaml';
+import Instructor from '@instructor-ai/instructor';
+import { z } from 'zod';
 
+// Regular OpenAI client for non-instructor calls
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+// Instructor-enhanced client for structured extraction
+const instructorClient = Instructor({
+  client: openai,
+  mode: "FUNCTIONS", // Use function calling
+});
+
 const INPUT_DIR = path.join(process.cwd(), 'buttondown-emails');
 const OUTPUT_DIR = path.join(process.cwd(), 'processed-emails');
-const MAX_CHARS = 10000;
+const MAX_CHARS = 5000;
 const MAX_CONCURRENCY = 10;
 const TEST_MODE = false;
 const TEST_COUNT = 10;
+
+// Define schemas for our tag extraction
+const CompanySchema = z.string().describe('A company or organization name mentioned in the content');
+const ModelSchema = z.string().describe('A specific AI model name, including version numbers if applicable');
+const TopicSchema = z.string().describe('A general topic, research area, concept, technology or domain discussed');
+
+const TagsResponseSchema = z.object({
+  description: z.string().describe('A concise 1-3 sentence summary focusing on the most important stories'),
+  companies: z.array(CompanySchema).describe('List of companies or organizations mentioned. Normalize company names (e.g., "OpenAI" not "open-ai"). NOT twitter handles.'),
+  models: z.array(ModelSchema).describe('List of AI model names mentioned, with proper versioning (e.g., "gpt-4", "claude-3-opus", "gemini-1.5-pro")'),
+  topics: z.array(TopicSchema).describe('List of topics, research areas, or concepts, using lowercase with hyphens for multi-word terms (e.g., "reinforcement-learning", "multimodal", "text-to-image")'),
+});
+
+type TagsResponse = z.infer<typeof TagsResponseSchema>;
 
 interface EmailMetadata {
   id?: string;
@@ -67,14 +90,103 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
       frontmatter.title = frontmatter.title.replace(/^\[AINews\]\s*/, '');
     }
 
-    // Generate description and categorized tags
-    const prompt = `Given this email content about AI news:
-1. Write a 1-3 sentence summary focusing ONLY on the top 1-2 most important stories. Do not start with "Description:" or any other prefix. **Bold** the most important names and companies, and *italicize* key numbers, dates, and other facts..
+    console.log(`Extracting tags for ${path.basename(filePath)}...`);
+    
+    try {
+      // Use Instructor for structured extraction
+      const extractionResult = await instructorClient.chat.completions.create({
+        model: "gpt-4.1-nano", // Using the same model as before
+        response_model: { 
+          schema: TagsResponseSchema,
+          name: "NewsTagsExtraction"
+        },
+        messages: [
+          {
+            role: "system",
+            content: `You are an expert AI news analyst and tagger. Extract a concise description and categorized tags from AI news content. 
+            
+            Follow these rules for tagging:
+            1. Keep tags concise, clear, and normalized (e.g. "openai" not "OpenAI" or "open-ai")
+            2. For models, use the exact model name with hyphens (e.g. "gpt-4", "claude-3-opus", "gemini-pro-1.5")
+            3. Use lowercase with hyphens for multi-word terms
+            4. Company names should be the official company name in lowercase (e.g., "google", "openai", "anthropic", "xai" - not "x"). IGNORE twitter handles.
+            5. Avoid redundant tags or overtagging
+            6. IMPORTANT: Be comprehensive - don't miss important companies and models mentioned
+            7. Output between 5-15 tags in each category for normal content`
+          },
+          {
+            role: "user",
+            content: `Extract tags from this AI news content:\n\n${truncatedBody}`
+          }
+        ],
+        temperature: 0.1, // Lower temperature for more consistent results
+      });
 
-2. Generate specific tag categories classifying the content. For each category, provide 3-10 relevant tags, one per line with the category heading:
+      // Use the structured extraction results
+      const { description, companies, models, topics } = extractionResult;
+      
+      // Combine all tags and make unique
+      const allTags = [...new Set([...companies, ...models, ...topics])];
+
+      if (allTags.length === 0) {
+        console.warn(`No tags generated for ${filePath} - unusual with structured extraction`);
+        // If we still get no tags (highly unlikely), add a default
+        return {
+          description,
+          companies: ["untagged"],
+          models: [],
+          topics: ["untagged"],
+          allTags: ["untagged"],
+          content: ""
+        };
+      }
+
+      console.log(`\nExtracted ${companies.length} companies, ${models.length} models, ${topics.length} topics for ${path.basename(filePath)}`);
+      console.log(`Companies: ${companies.join(', ')}`);
+      console.log(`Models: ${models.join(', ')}`);
+      console.log(`Topics: ${topics.join(', ')}`);
+
+      // Update frontmatter
+      frontmatter.description = description;
+      // frontmatter.tags = allTags;
+      frontmatter.companies = companies;
+      frontmatter.models = models;
+      frontmatter.topics = topics;
+
+      // Create new content
+      const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
+
+      if (cliMode) {
+        // In CLI mode, return the result without writing to file
+        return {
+          description,
+          companies,
+          models,
+          topics,
+          allTags,
+          content: newContent
+        };
+      } else {
+        // Write to new file
+        const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
+        await fs.promises.writeFile(outputPath, newContent, 'utf8');
+        console.log(`Processed: ${path.basename(filePath)}`);
+        return;
+      }
+    } catch (extractionError) {
+      console.error(`Error during tag extraction for ${filePath}:`, extractionError);
+      
+      // Fallback to old method if instructor extraction fails
+      console.log(`Falling back to regular OpenAI completion for ${path.basename(filePath)}`);
+      
+      // Generate description and categorized tags using standard completion
+      const prompt = `Given this email content about AI news:
+1. Write a 1-3 sentence summary focusing ONLY on the top 1-2 most important stories. Do not start with "Description:" or any other prefix.
+
+2. Generate specific tag categories. For each category, provide 5-15 relevant tags, one per line with the category heading:
 
 COMPANIES:
-- [company names mentioned in the content]
+- [company names mentioned, normalized to lowercase]
 
 MODELS:
 - [specific AI model names mentioned, including version numbers]
@@ -83,153 +195,106 @@ TOPICS:
 - [general topics, research areas, or domains discussed]
 
 Follow these rules for all tags:
+- Use lowercase throughout
 - Split compound terms (e.g. "openai-gpt4" should be "openai" under COMPANIES and "gpt4" under MODELS)
 - Remove redundant "ai" suffixes (e.g. use "coding" not "coding-ai")
-- Keep version numbers with model names (e.g. "gpt-4.1" not "gpt" "4" "1")
+- Keep version numbers with model names (e.g. "gpt-4-1" not "gpt" "4" "1")
 - Use lowercase and hyphens for multi-word tags
 - Be specific and precise when identifying companies and models
 - Include research areas, applications, and general concepts in TOPICS
-- If it was a "quiet day" you can also tag "quiet-day" under TOPICS
 
 Content:\n\n${truncatedBody}`;
-    
-    const completion = await openai.chat.completions.create({
-      model: "gpt-4.1-mini",
-      messages: [
-        {
-          role: "system",
-          content: "You are a helpful assistant that generates concise summaries and categorized tags for AI news. Focus on the most important stories and format tags consistently into specific categories for companies, models, and topics. DO NOT end without filling out at least one tag for each category."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      temperature: 0.3,
-    });
+      const QuestionAnswer = z.object({
+        description: z.string().describe("A 1-3 sentence summary focusing ONLY on the top 1-2 most important stories."),
+        companies: z.array(z.string()).describe("Company names mentioned, normalized to lowercase"),
+        models: z.array(z.string()).describe("Specific AI model names mentioned, including version numbers"),
+        topics: z.array(z.string()).describe("General topics, research areas, or domains discussed")
+      });
 
-    const response = completion.choices[0].message.content;
-    if (!response) {
-      console.error(`No response from OpenAI for ${filePath}`);
-      return;
-    }
+      try {
+        const result = await instructorClient.chat.completions.create({
+          messages: [
+            {
+              role: "system",
+              content: "You are a helpful assistant that generates concise summaries and categorized tags for AI news. Focus on the most important stories and format tags consistently into specific categories for companies, models, and topics."
+            },
+            {
+              role: "user",
+              content: `Given this email content about AI news:
+${truncatedBody}
 
-    // console.log(`\n=== DEBUG: Raw API Response for ${path.basename(filePath)} ===`);
-    // console.log(response);
-    
-    // Parse categorized tags
-    const lines = response.split('\n');
-    const description = lines[0].trim();
-    
-    let companies: string[] = [];
-    let models: string[] = [];
-    let topics: string[] = [];
-    let currentCategory: 'companies' | 'models' | 'topics' | null = null;
-    let foundCategories = false;
+1. Write a 1-3 sentence summary focusing ONLY on the top 1-2 most important stories.
 
-    for (const line of lines.slice(1)) {
-      const trimmedLine = line.trim();
-      
-      if (trimmedLine.toUpperCase() === 'COMPANIES:') {
-        currentCategory = 'companies';
-        foundCategories = true;
-      } else if (trimmedLine.toUpperCase() === 'MODELS:') {
-        currentCategory = 'models';
-        foundCategories = true;
-      } else if (trimmedLine.toUpperCase() === 'TOPICS:') {
-        currentCategory = 'topics';
-        foundCategories = true;
-      } else if (trimmedLine.startsWith('-') && currentCategory) {
-        const tag = trimmedLine.replace(/^-\s*/, '').trim();
-        if (tag.length > 0) {
-          switch (currentCategory) {
-            case 'companies': companies.push(tag); break;
-            case 'models': models.push(tag); break;
-            case 'topics': topics.push(tag); break;
-          }
-        }
-      }
-    }
+2. Generate specific tag categories. For each category, provide 5-15 relevant tags.
 
-    // Fall back to basic tag parsing if no categories were found
-    if (!foundCategories) {
-      console.log(`\n=== DEBUG: No categories found in response for ${path.basename(filePath)}, attempting fallback parsing ===`);
-      
-      // Try to extract any tags that start with a dash
-      const fallbackTags = lines
-        .slice(1)
-        .filter(line => line.trim().startsWith('-'))
-        .map(line => line.trim().replace(/^-\s*/, '').trim())
-        .filter(tag => tag.length > 0);
-      
-      if (fallbackTags.length > 0) {
-        topics = fallbackTags; // Add all uncategorized tags to topics
-        console.log(`Found ${fallbackTags.length} tags using fallback parsing`);
-      } else {
-        // If we still can't find tags, make a second attempt with more flexible parsing
-        const potentialTags = lines
-          .slice(1)
-          .map(line => line.trim())
-          .filter(line => line.length > 0 && !line.includes(':') && line.length < 50)
-          .slice(0, 10); // Limit to first 10 potential tags
+Follow these rules for all tags:
+- Use lowercase throughout
+- Split compound terms (e.g. "openai-gpt4" should be "openai" under COMPANIES and "gpt4" under MODELS)
+- Remove redundant "ai" suffixes (e.g. use "coding" not "coding-ai")
+- Keep version numbers with model names (e.g. "gpt-4-1" not "gpt" "4" "1")
+- Use lowercase and hyphens for multi-word tags
+- Be specific and precise when identifying companies and models
+- Include research areas, applications, and general concepts in TOPICS`
+            }
+          ],
+          model: "gpt-4-1106-preview",
+          response_model: { schema: QuestionAnswer, name: "AI News Summary and Tags" },
+          max_tokens: 1000,
+          temperature: 0.3,
+        });
+
+        const { description, companies, models, topics } = result;
+        const allTags = [...new Set([...companies, ...models, ...topics])];
+
+        console.log(`Generated tags for ${path.basename(filePath)}:`);
+        console.log(`Companies (${companies.length}): ${companies.join(', ')}`);
+        console.log(`Models (${models.length}): ${models.join(', ')}`);
+        console.log(`Topics (${topics.length}): ${topics.join(', ')}`);
+        console.log(`Total tags: ${allTags.length}`);
+
+        return { description, companies, models, topics, allTags };
+
+      } catch (error) {
+        console.error(`Error during tag extraction for ${filePath}:`, error);
         
-        if (potentialTags.length > 0) {
-          topics = potentialTags;
-          console.log(`Found ${potentialTags.length} potential tags with flexible parsing`);
-        }
+        // Fallback to adding a default "untagged" topic
+        console.warn(`No tags generated for ${filePath}`);
+        const description = "Unable to generate summary due to an error.";
+        const companies: string[] = [];
+        const models: string[] = [];
+        const topics = ["untagged"];
+        const allTags = ["untagged"];
+        
+        return { description, companies, models, topics, allTags };
       }
-    }
 
-    // Combine all tags for compatibility
-    const allTags = [...new Set([...companies, ...models, ...topics])];
+      // Update frontmatter
+      frontmatter.description = description;
+      // frontmatter.tags = allTags;
+      frontmatter.companies = companies;
+      frontmatter.models = models;
+      frontmatter.topics = topics;
 
-    if (allTags.length === 0) {
-      console.warn(`No tags generated for ${filePath}`);
-      
-      // For files with no tags, add a default "untagged" topic
-      topics = ["untagged"];
-      allTags.push("untagged");
-      
-      // console.log(`\n=== DEBUG: Response structure analysis for ${path.basename(filePath)} ===`);
-      // console.log(`Total lines: ${lines.length}`);
-      // console.log(`First 5 lines:`);
-      // for (let i = 0; i < Math.min(5, lines.length); i++) {
-      //   console.log(`Line ${i+1}: "${lines[i]}"`);
-      // }
-    } else {
-      // console.log(`Generated tags for ${path.basename(filePath)}:`);
-      // console.log(`Companies (${companies.length}): ${companies.join(', ')}`);
-      // console.log(`Models (${models.length}): ${models.join(', ')}`);
-      // console.log(`Topics (${topics.length}): ${topics.join(', ')}`);
-      // console.log(`Total tags: ${allTags.length}`);
-    }
+      // Create new content
+      const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
 
-    // Update frontmatter
-    frontmatter.description = description;
-    // frontmatter.tags = allTags;
-    frontmatter.companies = companies;
-    frontmatter.models = models;
-    frontmatter.topics = topics;
-
-    // Create new content
-    const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
-
-    if (cliMode) {
-      // In CLI mode, return the result without writing to file
-      return {
-        description,
-        companies,
-        models,
-        topics,
-        allTags,
-        content: newContent
-      };
-    } else {
-      // Write to new file
-      const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
-      await fs.promises.writeFile(outputPath, newContent, 'utf8');
-      console.log(`Processed: ${path.basename(filePath)}`);
-      return;
+      if (cliMode) {
+        // In CLI mode, return the result without writing to file
+        return {
+          description,
+          companies,
+          models,
+          topics,
+          allTags,
+          content: newContent
+        };
+      } else {
+        // Write to new file
+        const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
+        await fs.promises.writeFile(outputPath, newContent, 'utf8');
+        console.log(`Processed: ${path.basename(filePath)}`);
+        return;
+      }
     }
   } catch (error) {
     console.error(`Error processing ${filePath}:`, error);
