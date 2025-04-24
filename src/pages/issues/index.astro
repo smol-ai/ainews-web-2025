@@ -32,52 +32,114 @@ const data = allIssuesRaw
 
 console.log(`[Issues Page] Total issues after filtering: ${data.length}`);
 
-type Acc = {
-  [year: string]: CollectionEntry<"issues">[];
+// Group posts by year and month
+type MonthlyPosts = {
+  [month: string]: CollectionEntry<"issues">[];
 };
 
-const posts = data.reduce((acc: Acc, post) => {
-  const year = post.data.date.getFullYear().toString();
+type YearlyPosts = {
+  [year: string]: {
+    posts: CollectionEntry<"issues">[];
+    months: MonthlyPosts;
+  };
+};
+
+const posts = data.reduce((acc: YearlyPosts, post) => {
+  const date = post.data.date;
+  const year = date.getFullYear().toString();
+  const month = date.toLocaleString('en-US', { month: 'long' });
+  
+  // Initialize year if it doesn't exist
   if (!acc[year]) {
-    acc[year] = [];
+    acc[year] = {
+      posts: [],
+      months: {}
+    };
   }
-  acc[year].push(post);
+  
+  // Initialize month if it doesn't exist
+  if (!acc[year].months[month]) {
+    acc[year].months[month] = [];
+  }
+  
+  // Add post to both year and month collections
+  acc[year].posts.push(post);
+  acc[year].months[month].push(post);
+  
   return acc;
 }, {});
 
-// Log the distribution of posts by year
-Object.entries(posts).forEach(([year, postsForYear]) => {
-  console.log(`[Issues Page] Year ${year}: ${postsForYear.length} posts`);
-});
-
+// Sort years and months
 const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
+
+// Get months in order (for sidebar navigation)
+const monthOrder = [
+  'January', 'February', 'March', 'April', 'May', 'June', 
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+
+// Log the distribution of posts by year and month
+Object.entries(posts).forEach(([year, yearData]) => {
+  console.log(`[Issues Page] Year ${year}: ${yearData.posts.length} posts`);
+  Object.entries(yearData.months).forEach(([month, monthPosts]) => {
+    console.log(`[Issues Page] Year ${year}, Month ${month}: ${monthPosts.length} posts`);
+  });
+});
 ---
 
 <Layout title={ISSUES.TITLE} description={ISSUES.DESCRIPTION}>
   <Container>
-    <aside data-pagefind-ignore>
-      <div class="space-y-10">
-        <div class="space-y-4">
-          {
-            years.map((year) => (
-              <section class="animate space-y-4">
-                <div class="font-semibold text-black dark:text-white">
-                  {year}
-                </div>
-                <div>
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Sidebar navigation (hidden on mobile) -->
+      <aside class="hidden lg:block w-64 sticky top-24 self-start">
+        <nav class="bg-white dark:bg-neutral-900 p-4 rounded-lg border border-black/15 dark:border-white/20 max-h-[calc(100vh-120px)] overflow-y-auto">
+          <h2 class="text-lg font-semibold mb-4">Quick Navigation</h2>
+          <ul class="space-y-2">
+            {years.map((year) => (
+              <li>
+                <a href={`#year-${year}`} class="font-medium hover:underline text-black/80 dark:text-white/80 hover:text-black dark:hover:text-white">{year}</a>
+                <ul class="ml-4 space-y-1 mt-1">
+                  {monthOrder
+                    .filter((month) => posts[year].months[month]?.length > 0)
+                    .reverse()
+                    .map((month) => (
+                      <li>
+                        <a href={`#${year}-${month}`} class="text-sm hover:underline text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white">
+                          {month} ({posts[year].months[month].length})
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <div class="flex-1 space-y-10">
+        {years.map((year) => (
+          <section id={`year-${year}`} class="animate space-y-6 scroll-mt-24">
+            <h2 class="text-2xl font-semibold text-black dark:text-white">{year}</h2>
+            
+            {monthOrder
+              .filter((month) => posts[year].months[month]?.length > 0)
+              .reverse()
+              .map((month) => (
+                <div id={`${year}-${month}`} class="space-y-4 scroll-mt-24">
+                  <h3 class="text-xl font-medium text-black/80 dark:text-white/80">{month}</h3>
                   <ul class="not-prose flex flex-col gap-4">
-                    {posts[year].map((post) => (
+                    {posts[year].months[month].map((post) => (
                       <li>
                         <ArrowCard entry={post} />
                       </li>
                     ))}
                   </ul>
                 </div>
-              </section>
-            ))
-          }
-        </div>
+              ))}
+          </section>
+        ))}
       </div>
-    </aside>
+    </div>
   </Container>
 </Layout>

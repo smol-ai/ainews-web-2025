@@ -4,14 +4,17 @@ interface Props {
 }
 
 const { date } = Astro.props;
+const currentYear = new Date().getFullYear();
+const showYear = date.getFullYear() !== currentYear;
+
 ---
 
 <time datetime={date.toISOString()}>
   {
     date.toLocaleDateString("en-US", {
-      month: "long",
+      month: "short", 
       day: "2-digit",
-      year: "numeric",
+      ...(showYear && {year: "numeric"})
     })
   }
 </time>

@@ -27,3 +27,57 @@ const { title, description } = Astro.props;
     <Pagefind />
   </body>
 </html>
+
+<script>
+  // Smooth scrolling for anchor links with header offset
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('aside a[href^="#"]');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const targetId = link.getAttribute('href')?.substring(1) || '';
+        if (!targetId) return;
+        
+        const targetElement = document.getElementById(targetId);
+        if (!targetElement) return;
+        
+        // Get the header height for offset (add some extra padding)
+        const headerEl = document.querySelector('header');
+        if (!headerEl) return;
+        
+        const headerHeight = headerEl.offsetHeight + 16;
+        
+        // Scroll to the element with offset
+        window.scrollTo({
+          top: targetElement.offsetTop - headerHeight,
+          behavior: 'smooth'
+        });
+        
+        // Update URL without refreshing the page
+        history.pushState('', '', `#${targetId}`);
+      });
+    });
+
+    // Handle direct hash navigation on page load
+    if (window.location.hash) {
+      setTimeout(() => {
+        const targetId = window.location.hash.substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          const headerEl = document.querySelector('header');
+          if (!headerEl) return;
+          
+          const headerHeight = headerEl.offsetHeight + 16;
+          
+          window.scrollTo({
+            top: targetElement.offsetTop - headerHeight,
+            behavior: 'smooth'
+          });
+        }
+      }, 100); // Small delay to ensure the page has fully loaded
+    }
+  });
+</script>
