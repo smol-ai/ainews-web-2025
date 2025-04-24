@@ -1,17 +1,30 @@
 ---
-id: 38309c71-19ba-4feb-96d7-820f32ab6fb8
-title: not much happened today
-date: '2025-04-22T05:44:39.731046Z'
-description: not much happened.
+title: gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in API
+date: '2025-04-23T05:44:39.731046Z'
+description: gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in API
 tags:
-  - quiet
+  - imagegen
+  - gpt-image-1
 ---
 
-a quiet day is all you need.
-
-**TODO: ONELINE SUBTITLE**
+**Autoregressive Imagegen is all you need.**
 
 > AI News for 4/22/2025-4/23/2025. We checked 9 subreddits, [**449** Twitters](https://twitter.com/i/lists/1585430245762441216) and **29** Discords (**213** channels, and **6203** messages) for you. Estimated reading time saved (at 200wpm): **503 minutes**. You can now tag [@smol_ai](https://x.com/smol_ai) for AINews discussions!
+
+When Imagegen launched it was specifically branded as a capability of GPT 4o. With the Ghibli wave everyone rushed to create convoluted browser automations to "apify" a nonexistent imagegen API.
+
+Now, the offical API is here ([docs](https://platform.openai.com/docs/guides/image-generation?image-generation-model=gpt-image-1)), [cost](https://platform.openai.com/docs/guides/image-generation#cost-and-latency)), capable of new generations (using [references](https://platform.openai.com/docs/guides/image-generation?image-generation-model=gpt-image-1#create-a-new-image-using-image-references)) as well as partial/full image editing (using  [masks](https://platform.openai.com/docs/guides/image-generation#edit-an-image-using-a-mask-inpainting)).
+
+![https://cdn.openai.com/API/docs/images/images-gallery/furniture-poster.png](https://cdn.openai.com/API/docs/images/images-gallery/furniture-poster.png)
+
+It supports [alpha channel transparency](https://platform.openai.com/docs/guides/image-generation#transparency) and, in a first for OpenAI, a ["low" content moderation policy](https://platform.openai.com/docs/guides/image-generation#content-moderation), as well as (as [Kevin Weil notes](https://x.com/kevinweil/status/1915103388993302646)):
+
+
+* moderation sensitivity
+* image quality/generation speed
+* quantity of images generated
+* whether the background is transparent or opaque 
+* output format (jpeg, png, webp)
 
 
 ---
