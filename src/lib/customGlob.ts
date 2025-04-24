@@ -1,6 +1,6 @@
 import { promises as fs, existsSync } from 'node:fs';
 import { relative } from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { fileURLToPath, pathToFileURL, URL as NodeURL } from 'node:url';
 import { bold, green } from 'kleur/colors';
 import pLimit from 'p-limit';
 // @ts-ignore
@@ -10,13 +10,13 @@ import type { AstroLoader, AstroGlobOptions, AstroLoaderContext } from './custom
 
 interface GenerateIdOptions {
   entry: string;
-  base: URL;
+  base: NodeURL;
   data: Record<string, unknown>;
 }
 
 // Simplified ContentEntryType for our custom implementation
 interface ContentEntryType {
-  getEntryInfo: (options: { contents: string; fileUrl: URL }) => Promise<{ body: string; data: Record<string, unknown> }>;
+  getEntryInfo: (options: { contents: string; fileUrl: NodeURL }) => Promise<{ body: string; data: Record<string, unknown> }>;
   getRenderFunction?: (config: any) => Promise<ContentEntryRenderFunction>;
   contentModuleTypes?: unknown;
 }
@@ -83,7 +83,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
       
       async function syncData(
         entry: string,
-        base: URL,
+        base: NodeURL,
         entryType?: ContentEntryType,
         oldId?: string,
       ) {
@@ -220,6 +220,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
       });
 
       console.log(`[Custom Glob] Found ${files.length} files`);
+      
       
       if (exists && files.length === 0) {
         logger.warn(
