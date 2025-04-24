@@ -64,4 +64,13 @@ export default defineConfig({
       theme: "css-variables",
     },
   },
+  pagefind: {
+    uiOptions: {
+      showImages: false,
+      excerptLength: 15,
+      resetStyles: false,
+      showMeta: ["date"],
+      showFilters: ["tag"]
+    },
+  },
 });

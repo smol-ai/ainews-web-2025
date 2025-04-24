@@ -242,14 +242,14 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         return entryTypes.get(`.${ext}`);
       }
 
-      const limit = pLimit(10);
+    //   const limit = pLimit(10);
 
       await Promise.all(
-        files.map((entry) => {
-          return limit(async () => {
+        files.map(async (entry) => {
+        //   return limit(async () => {
             const entryType = configForFile(entry);
             await syncData(entry, baseDir, entryType);
-          });
+        //   });
         })
       );
 
