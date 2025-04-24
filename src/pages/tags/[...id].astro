@@ -6,13 +6,14 @@ import ArrowCard from "@components/ArrowCard.astro";
 import BackToPrevious from "@components/BackToPrevious.astro";
 
 // Helper function to determine tag type
-function getTagType(
+export function getTagType(
   tag: string, 
   tags: string[], 
   companies: string[], 
   models: string[], 
   topics: string[]
 ): string {
+  console.log("getTagType function called with:", { tag, tagsLength: tags.length, companiesLength: companies.length });
   if (companies.includes(tag)) return "Company";
   if (models.includes(tag)) return "Model";
   if (topics.includes(tag)) return "Topic";
@@ -21,6 +22,7 @@ function getTagType(
 }
 
 export async function getStaticPaths() {
+  console.log("getStaticPaths running, getTagType exists:", typeof getTagType === 'function');
   const posts = await getCollection("issues", ({ data }) => !data.draft);
 
   // Get unique tags from all tag types
@@ -33,19 +35,41 @@ export async function getStaticPaths() {
   const allTags = [...new Set([...tags, ...companies, ...models, ...topics])];
 
   // Create paths for each tag
-  return allTags.map((tag) => ({
-    params: { id: tag },
-    props: {
-      posts: posts.filter((post) => 
-        post.data.tags?.includes(tag) || 
-        post.data.companies?.includes(tag) || 
-        post.data.models?.includes(tag) || 
-        post.data.topics?.includes(tag)
-      ),
-      tag,
-      tagType: getTagType(tag, tags, companies, models, topics),
-    },
-  }));
+  return allTags.map((tag) => {
+    console.log("Creating path for tag:", tag);
+    try {
+      const tagTypeValue = getTagType(tag, tags, companies, models, topics);
+      console.log("Successfully determined tagType:", tagTypeValue);
+      return {
+        params: { id: tag },
+        props: {
+          posts: posts.filter((post) => 
+            post.data.tags?.includes(tag) || 
+            post.data.companies?.includes(tag) || 
+            post.data.models?.includes(tag) || 
+            post.data.topics?.includes(tag)
+          ),
+          tag,
+          tagType: tagTypeValue,
+        },
+      };
+    } catch (error) {
+      console.error("Error determining tagType for", tag, error);
+      return {
+        params: { id: tag },
+        props: {
+          posts: posts.filter((post) => 
+            post.data.tags?.includes(tag) || 
+            post.data.companies?.includes(tag) || 
+            post.data.models?.includes(tag) || 
+            post.data.topics?.includes(tag)
+          ),
+          tag,
+          tagType: "Tag", // Default fallback
+        },
+      };
+    }
+  });
 }
 
 const { id } = Astro.params;
