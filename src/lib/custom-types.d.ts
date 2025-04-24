@@ -1,4 +1,5 @@
 import type { z } from 'astro:content';
+import type { URL as NodeURL } from 'node:url';
 
 // Declare Astro loader types to match what's expected
 export interface AstroLoaderContext {
@@ -18,5 +19,5 @@ export interface AstroLoader {
 
 export interface AstroGlobOptions {
   pattern: string | Array<string>;
-  base?: string | URL;
+  base?: string | NodeURL;
 } 

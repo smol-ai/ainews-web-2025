@@ -32,7 +32,7 @@ function generateIdDefault({ entry, base, data }: GenerateIdOptions): string {
   
 //   console.log(`[Custom Glob] Generating ID for entry: ${entry}`);
   
-  const entryURL = new URL(encodeURI(entry), base);
+  const entryURL = new NodeURL(encodeURI(entry), base);
   // Simplified version just using the filename without extension as the slug
   const parts = entry.split('/');
   const filename = parts[parts.length - 1];
@@ -94,7 +94,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
           return;
         }
         
-        const fileUrl = new URL(encodeURI(entry), base);
+        const fileUrl = new NodeURL(encodeURI(entry), base);
         // console.log(`[Custom Glob] Reading file: ${fileUrl.href}`);
         
         const contents = await fs.readFile(fileUrl, 'utf-8').catch((err) => {
@@ -197,7 +197,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         // console.log(`[Custom Glob] Successfully processed: ${id}`);
       }
 
-      const baseDir = globOptions.base ? new URL(globOptions.base, config.root) : config.root;
+      const baseDir = globOptions.base ? new NodeURL(globOptions.base, config.root) : config.root;
 
       if (!baseDir.pathname.endsWith('/')) {
         baseDir.pathname = `${baseDir.pathname}/`;
