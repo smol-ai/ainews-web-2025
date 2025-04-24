@@ -252,7 +252,32 @@ Follow these rules for all tags:
         console.log(`Topics (${topics.length}): ${topics.join(', ')}`);
         console.log(`Total tags: ${allTags.length}`);
 
-        return { description, companies, models, topics, allTags };
+        // Update frontmatter
+        frontmatter.description = description;
+        frontmatter.companies = companies;
+        frontmatter.models = models;
+        frontmatter.topics = topics;
+
+        // Create new content
+        const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
+
+        if (cliMode) {
+          // In CLI mode, return the result without writing to file
+          return {
+            description,
+            companies,
+            models,
+            topics,
+            allTags,
+            content: newContent
+          };
+        } else {
+          // Write to new file
+          const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
+          await fs.promises.writeFile(outputPath, newContent, 'utf8');
+          console.log(`Processed: ${path.basename(filePath)}`);
+          return;
+        }
 
       } catch (error) {
         console.error(`Error during tag extraction for ${filePath}:`, error);
@@ -265,35 +290,32 @@ Follow these rules for all tags:
         const topics = ["untagged"];
         const allTags = ["untagged"];
         
-        return { description, companies, models, topics, allTags };
-      }
+        // Update frontmatter
+        frontmatter.description = description;
+        frontmatter.companies = companies;
+        frontmatter.models = models;
+        frontmatter.topics = topics;
 
-      // Update frontmatter
-      frontmatter.description = description;
-      // frontmatter.tags = allTags;
-      frontmatter.companies = companies;
-      frontmatter.models = models;
-      frontmatter.topics = topics;
-
-      // Create new content
-      const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
-
-      if (cliMode) {
-        // In CLI mode, return the result without writing to file
-        return {
-          description,
-          companies,
-          models,
-          topics,
-          allTags,
-          content: newContent
-        };
-      } else {
-        // Write to new file
-        const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
-        await fs.promises.writeFile(outputPath, newContent, 'utf8');
-        console.log(`Processed: ${path.basename(filePath)}`);
-        return;
+        // Create new content
+        const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
+        
+        if (cliMode) {
+          // In CLI mode, return the result without writing to file
+          return {
+            description,
+            companies,
+            models,
+            topics,
+            allTags,
+            content: newContent
+          };
+        } else {
+          // Write to new file
+          const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
+          await fs.promises.writeFile(outputPath, newContent, 'utf8');
+          console.log(`Processed: ${path.basename(filePath)}`);
+          return;
+        }
       }
     }
   } catch (error) {
