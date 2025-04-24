@@ -1,10 +1,9 @@
 ---
-import { type CollectionEntry, getCollection, getEntry, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
-import { SITE } from "@consts";
 import BackToPrevious from "@components/BackToPrevious.astro";
 import PostNavigation from "@components/PostNavigation.astro";
 import TableOfContents from "@components/TableOfContents.astro";
@@ -23,9 +22,9 @@ export async function getStaticPaths() {
   // Log 2025 issues data
   const issues2025 = allIssuesRaw.filter(post => new Date(post.data.date).getFullYear() === 2025);
   console.log(`[Issue Detail] Found ${issues2025.length} issues from 2025`);
-  issues2025.forEach(issue => {
-    console.log(`[Issue Detail] 2025 issue: ${issue.id}, date: ${issue.data.date}, draft: ${issue.data.draft || false}`);
-  });
+  // issues2025.forEach(issue => {
+  //   console.log(`[Issue Detail] 2025 issue: ${issue.id}, date: ${issue.data.date}, draft: ${issue.data.draft || false}`);
+  // });
 
   const allIssues = allIssuesRaw
     .filter((post) => {
@@ -81,17 +80,6 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 
 const { Content, headings } = await render(post);
 
-const currentPath = Astro.url.pathname.replace(/\/$/, "");
-const canonicalURL = new URL(currentPath, Astro.site);
-const socialImage = new URL(
-  `/images/logos/ainews.png`,
-  Astro.site,
-);
-const formattedDate = post.data.date.toLocaleDateString("en-us", {
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-});
 ---
 
 <Layout title={post.data.title} description={post.data.description}>

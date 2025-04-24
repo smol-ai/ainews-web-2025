@@ -5,7 +5,6 @@ import { SITE, HOME, SOCIALS } from "@consts";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
 
 // Add logging to see what's happening with content
 console.log(`[Build Info] Environment: ${import.meta.env.MODE}`);
@@ -30,13 +29,6 @@ console.log(`[Content Log] Total issues after filtering: ${allIssues.length}`);
 // Initial batch of 30 issues
 const ITEMS_PER_PAGE = 30;
 const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
-
-const projects: CollectionEntry<"projects">[] = (
-  await getCollection("projects")
-)
-  .filter((project) => !project.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
 ---
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
