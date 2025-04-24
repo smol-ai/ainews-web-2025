@@ -10,29 +10,31 @@ export interface Heading {
   depth: number;
   slug: string;
   text: string;
+  subheadings?: Heading[];
 }
-
 function buildToc(headings: Heading[]) {
-  // console.log('Building TOC with headings:', JSON.stringify(headings, null, 2));
+  console.log('Building TOC with headings:', JSON.stringify(headings, null, 2));
   const toc: Heading[] = [];
-  const parentHeadings = new Map();
+  const stack: Heading[] = [];
+
   headings.forEach((h) => {
-    // console.log('Processing heading:', JSON.stringify(h, null, 2));
     const heading = { ...h, subheadings: [] };
-    parentHeadings.set(heading.depth, heading);
-    // Include both h1 and h2 as top-level entries
-    if (heading.depth === 1 || heading.depth === 2) {
+
+    while (stack.length > 0 && stack[stack.length - 1].depth >= heading.depth) {
+      stack.pop();
+    }
+
+    if (stack.length === 0) {
       toc.push(heading);
     } else {
-      const parent = parentHeadings.get(heading.depth - 1);
-      // console.log('Parent heading:', JSON.stringify(parent, null, 2));
-      if (!parent) {
-        console.warn(`No parent heading found for depth ${heading.depth - 1}`);
-        return;
-      }
+      const parent = stack[stack.length - 1];
       parent.subheadings.push(heading);
     }
+
+    stack.push(heading);
   });
+
+  console.log('Final TOC structure:', JSON.stringify(toc, null, 2));
   return toc;
 }
 ---
@@ -46,7 +48,7 @@ function buildToc(headings: Heading[]) {
     >Table of Contents</summary
   >
   <nav class="lg:mt-4">
-    <ul class="space-y-1 py-3 lg:py-0">
+    <ul class="space-y-1 py-3 lg:py-0 max-h-[70vh] overflow-y-auto sticky top-24">
       {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
     </ul>
   </nav>
