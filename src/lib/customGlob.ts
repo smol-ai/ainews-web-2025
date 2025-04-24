@@ -197,7 +197,11 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         // console.log(`[Custom Glob] Successfully processed: ${id}`);
       }
 
-      const baseDir = globOptions.base ? new NodeURL(globOptions.base, config.root) : config.root;
+      const baseDir = globOptions.base 
+        ? typeof globOptions.base === 'string' 
+          ? new NodeURL(globOptions.base, config.root) 
+          : globOptions.base
+        : config.root;
 
       if (!baseDir.pathname.endsWith('/')) {
         baseDir.pathname = `${baseDir.pathname}/`;
