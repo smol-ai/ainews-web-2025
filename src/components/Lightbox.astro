@@ -1,0 +1,62 @@
+<script>
+  // Initialize the lightbox functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get all images in the content area
+    const contentImages = document.querySelectorAll('.content-area img');
+    
+    // Create a lightbox container if it doesn't exist
+    let lightbox = document.querySelector('.lightbox-container');
+    if (!lightbox) {
+      lightbox = document.createElement('div');
+      lightbox.className = 'lightbox-container fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center';
+      document.body.appendChild(lightbox);
+    }
+    
+    // Create image element for lightbox
+    const lightboxImage = document.createElement('img');
+    lightboxImage.className = 'max-h-[90vh] max-w-[90vw] object-contain';
+    lightbox.appendChild(lightboxImage);
+    
+    // Add close button
+    const closeButton = document.createElement('button');
+    closeButton.className = 'absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none';
+    closeButton.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    `;
+    lightbox.appendChild(closeButton);
+    
+    // Add click event to images
+    contentImages.forEach(img => {
+      // Add cursor pointer and transition classes
+      img.classList.add('cursor-pointer', 'transition-transform', 'hover:scale-[1.02]');
+      
+      img.addEventListener('click', () => {
+        // Cast to HTMLImageElement to access src property
+        const imgElement = img as HTMLImageElement;
+        const lightboxImgElement = lightboxImage as HTMLImageElement;
+        lightboxImgElement.src = imgElement.src;
+        lightbox.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      });
+    });
+    
+    // Close lightbox when clicking the close button or outside the image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target !== lightboxImage) {
+        lightbox.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+    });
+    
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        lightbox.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+    });
+  });
+</script> 

@@ -9,6 +9,7 @@ import BackToPrevious from "@components/BackToPrevious.astro";
 import PostNavigation from "@components/PostNavigation.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 import Giscus from "@components/Giscus.astro";
+import Lightbox from "@components/Lightbox.astro";
 
 export async function getStaticPaths() {
   console.log(`[Issue Detail] getStaticPaths - Environment: ${import.meta.env.MODE}`);
@@ -142,7 +143,9 @@ const formattedDate = post.data.date.toLocaleDateString("en-us", {
             headings && headings.length > 0 ? "w-full lg:order-2 lg:w-4/5" : "w-full"
           }`}
         >
-          <Content />
+          <article class="content-area">
+            <Content />
+          </article>
           <div class="mt-24">
             <PostNavigation prevPost={prevPost} nextPost={nextPost} />
           </div>
@@ -153,4 +156,131 @@ const formattedDate = post.data.date.toLocaleDateString("en-us", {
       </div>
     </div>
   </Container>
+  <Lightbox />
 </Layout>
+
+<style>
+  /* Add custom styles for the content area */
+  :global(.content-area) {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    :global(.content-area) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  :global(.content-area blockquote) {
+    border-left: 4px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding-left: 1rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  :global(.dark .content-area blockquote) {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  :global(.content-area p) {
+    line-height: 1.75;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  :global(.content-area h2) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  :global(.content-area h3) {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  :global(.content-area a) {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    word-break: break-word;
+  }
+  
+  :global(.content-area ul) {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  :global(.content-area ul li) {
+    margin-top: 0.5rem;
+  }
+  
+  :global(.content-area ol) {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  :global(.content-area ol li) {
+    margin-top: 0.5rem;
+  }
+  
+  :global(.content-area li) {
+    padding-left: 0.5rem;
+  }
+  
+  :global(.content-area pre) {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  :global(.content-area code:not(pre code)) {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 0.25rem;
+    padding: 0.125rem 0.375rem;
+  }
+  
+  :global(.dark .content-area code:not(pre code)) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  :global(.content-area hr) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-top: 1px solid;
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+  
+  :global(.dark .content-area hr) {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  :global(.content-area img) {
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  :global(.dark .content-area img) {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
+  }
+</style>
