@@ -5,9 +5,32 @@ import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { ISSUES } from "@consts";
 
-const data = (await getCollection("issues"))
-  .filter((post) => !post.data.draft)
+console.log(`[Issues Page] Environment: ${import.meta.env.MODE}`);
+
+// Get all issues with logging
+const allIssuesRaw = await getCollection("issues");
+console.log(`[Issues Page] Total raw issues before filtering: ${allIssuesRaw.length}`);
+
+// Log the years represented in the content
+const yearsFound = new Set(allIssuesRaw.map(post => new Date(post.data.date).getFullYear()));
+console.log(`[Issues Page] Years found in content: ${Array.from(yearsFound).sort().join(', ')}`);
+
+// Count 2025 issues specifically
+const issues2025Count = allIssuesRaw.filter(post => new Date(post.data.date).getFullYear() === 2025).length;
+console.log(`[Issues Page] Number of 2025 issues: ${issues2025Count}`);
+
+// Apply filtering
+const data = allIssuesRaw
+  .filter((post) => {
+    const isDraft = !!post.data.draft;
+    if (isDraft) {
+      console.log(`[Issues Page] Filtering out draft post: ${post.id}`);
+    }
+    return !isDraft;
+  })
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+console.log(`[Issues Page] Total issues after filtering: ${data.length}`);
 
 type Acc = {
   [year: string]: CollectionEntry<"issues">[];
@@ -21,6 +44,11 @@ const posts = data.reduce((acc: Acc, post) => {
   acc[year].push(post);
   return acc;
 }, {});
+
+// Log the distribution of posts by year
+Object.entries(posts).forEach(([year, postsForYear]) => {
+  console.log(`[Issues Page] Year ${year}: ${postsForYear.length} posts`);
+});
 
 const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
 ---

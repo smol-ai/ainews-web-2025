@@ -7,10 +7,36 @@ import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
+// Add logging to see what's happening with content
+console.log(`[Build Info] Environment: ${import.meta.env.MODE}`);
+
 // Get all issues first
-const allIssues = (await getCollection("issues"))
-  .filter((post) => !post.data.draft)
+const allIssuesRaw = await getCollection("issues");
+console.log(`[Content Log] Total raw issues before filtering: ${allIssuesRaw.length}`);
+
+// Log the years represented in the content
+const years = new Set(allIssuesRaw.map(post => new Date(post.data.date).getFullYear()));
+console.log(`[Content Log] Years found in content: ${[...years].sort().join(', ')}`);
+
+// Count 2025 issues specifically
+const issues2025 = allIssuesRaw.filter(post => new Date(post.data.date).getFullYear() === 2025);
+console.log(`[Content Log] Number of 2025 issues found: ${issues2025.length}`);
+if (issues2025.length > 0) {
+  console.log(`[Content Log] 2025 issues:`, issues2025.map(i => ({ id: i.id, date: i.data.date, draft: i.data.draft })));
+}
+
+// Apply filtering
+const allIssues = allIssuesRaw
+  .filter((post) => {
+    const isDraft = !!post.data.draft;
+    if (isDraft) {
+      console.log(`[Content Log] Filtered out draft post: ${post.id}`);
+    }
+    return !isDraft;
+  })
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+console.log(`[Content Log] Total issues after filtering: ${allIssues.length}`);
 
 // Initial batch of 30 issues
 const ITEMS_PER_PAGE = 30;

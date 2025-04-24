@@ -1,54 +1,96 @@
 ---
-import { type CollectionEntry, getCollection, render } from "astro:content";
+import { type CollectionEntry, getCollection, getEntry, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { readingTime } from "@lib/utils";
+import { SITE } from "@consts";
 import BackToPrevious from "@components/BackToPrevious.astro";
 import PostNavigation from "@components/PostNavigation.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 import Giscus from "@components/Giscus.astro";
 
 export async function getStaticPaths() {
-  const posts = (await getCollection("issues"))
-    .filter((post) => !post.data.draft)
-    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  return posts.map((post) => ({
-    params: { id: post.id },
-    props: post,
-  }));
-}
-type Props = CollectionEntry<"issues">;
+  console.log(`[Issue Detail] getStaticPaths - Environment: ${import.meta.env.MODE}`);
+  const allIssuesRaw = await getCollection("issues");
+  console.log(`[Issue Detail] Total raw issues: ${allIssuesRaw.length}`);
+  
+  // Log the years represented in all issues
+  const yearsFound = new Set(allIssuesRaw.map(post => new Date(post.data.date).getFullYear()));
+  console.log(`[Issue Detail] Years found in content: ${Array.from(yearsFound).sort().join(', ')}`);
+  
+  // Log 2025 issues data
+  const issues2025 = allIssuesRaw.filter(post => new Date(post.data.date).getFullYear() === 2025);
+  console.log(`[Issue Detail] Found ${issues2025.length} issues from 2025`);
+  issues2025.forEach(issue => {
+    console.log(`[Issue Detail] 2025 issue: ${issue.id}, date: ${issue.data.date}, draft: ${issue.data.draft || false}`);
+  });
 
+  const allIssues = allIssuesRaw
+    .filter((post) => {
+      const isDraft = !!post.data.draft;
+      if (isDraft) {
+        console.log(`[Issue Detail] Filtering out draft post: ${post.id}`);
+      }
+      return !isDraft;
+    })
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  
+  console.log(`[Issue Detail] Final filtered issues count: ${allIssues.length}`);
+  
+  // Log detailed path info
+  const paths = allIssues.map((post) => ({
+    params: { id: post.id },
+    props: { post, year: new Date(post.data.date).getFullYear() },
+  }));
+  
+  console.log(`[Issue Detail] Generated ${paths.length} paths`);
+  console.log(`[Issue Detail] Sample path details:`, paths.slice(0, 2));
+  
+  // Count paths by year
+  const pathsByYear = paths.reduce((acc: Record<number, number>, path) => {
+    const year = path.props.year;
+    acc[year] = (acc[year] || 0) + 1;
+    return acc;
+  }, {});
+  
+  console.log(`[Issue Detail] Paths by year:`, pathsByYear);
+  
+  return paths;
+}
+
+type Props = {
+  post: CollectionEntry<"issues">;
+  year: number;
+};
+
+const { post, year } = Astro.props;
+console.log(`[Issue Detail] Rendering issue: ${post.id}, date: ${post.data.date}, year: ${year}`);
+
+// To get the next and previous issues
+// Get all issues
 const posts = (await getCollection("issues"))
-  .filter((post) => !post.data.draft)
+  .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-function getNextPost() {
-  let postIndex;
-  for (const post of posts) {
-    if (post.id === Astro.params.id) {
-      postIndex = posts.indexOf(post);
-      return posts[postIndex + 1];
-    }
-  }
-}
+// Find current issue index
+const currentIndex = posts.findIndex((p) => p.id === post.id);
+const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
+const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
 
-function getPrevPost() {
-  let postIndex;
-  for (const post of posts) {
-    if (post.id === Astro.params.id) {
-      postIndex = posts.indexOf(post);
-      return posts[postIndex - 1];
-    }
-  }
-}
-
-const nextPost = getNextPost();
-const prevPost = getPrevPost();
-
-const post = Astro.props;
 const { Content, headings } = await render(post);
+
+const currentPath = Astro.url.pathname.replace(/\/$/, "");
+const canonicalURL = new URL(currentPath, Astro.site);
+const socialImage = new URL(
+  `/images/logos/ainews.png`,
+  Astro.site,
+);
+const formattedDate = post.data.date.toLocaleDateString("en-us", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
@@ -56,7 +98,7 @@ const { Content, headings } = await render(post);
     <div class="animate">
       <BackToPrevious href="/issues">Back to issues</BackToPrevious>
     </div>
-    <div class="my-10 space-y-1">
+    <div class="mx-auto max-w-3xl space-y-4 py-6">
       <div class="animate flex items-center gap-1.5">
         <div class="font-base text-sm">
           <FormattedDate date={post.data.date} />
@@ -77,7 +119,7 @@ const { Content, headings } = await render(post);
             {post.data.tags.map((tag) => (
               <a
                 href={`/tags/${tag}`}
-                class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+                class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
               >
                 {tag}
               </a>
@@ -86,31 +128,29 @@ const { Content, headings } = await render(post);
         ) : null
       }
     </div>
-
-    {headings.length > 0 && (
-      <div class="mb-8 lg:hidden overflow-x-auto">
-        <TableOfContents headings={headings} />
-      </div>
-    )}
-    
-    <div class="relative lg:flex lg:gap-8">
-      {headings.length > 0 && (
-        <div class="hidden lg:block lg:w-64 lg:shrink-0">
-          <div class="sticky top-8 max-h-[calc(100vh-4rem)] overflow-y-auto">
-            <TableOfContents headings={headings} />
+    <div class="astro-entry border-t border-black/15 pt-8 dark:border-white/15 animate">
+      <div class="mx-auto flex max-w-3xl flex-col items-start gap-8 lg:flex-row">
+        {
+          headings && headings.length > 0 && (
+            <aside class="order-2 w-full lg:order-1 lg:top-8 lg:w-1/5 lg:sticky lg:self-start">
+              <TableOfContents headings={headings} />
+            </aside>
+          )
+        }
+        <div
+          class={`order-1 ${
+            headings && headings.length > 0 ? "w-full lg:order-2 lg:w-4/5" : "w-full"
+          }`}
+        >
+          <Content />
+          <div class="mt-24">
+            <PostNavigation prevPost={prevPost} nextPost={nextPost} />
+          </div>
+          <div class="mt-24">
+            <Giscus />
           </div>
         </div>
-      )}
-      
-      <article class="animate lg:flex-1 prose-pre:overflow-x-auto prose-code:break-words">
-        <Content />
-        <div class="mt-24">
-          <PostNavigation prevPost={prevPost} nextPost={nextPost} />
-        </div>
-        <div class="mt-24">
-          <Giscus />
-        </div>
-      </article>
+      </div>
     </div>
   </Container>
 </Layout>
