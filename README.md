@@ -32,6 +32,25 @@ npm run dev
 npm run build
 ```
 
+## Newsletter Subscription
+
+AINews includes a newsletter subscription functionality using Resend. To set up the subscription feature:
+
+1. Create a Resend account at [resend.com](https://resend.com)
+2. Set up an audience in Resend to collect subscribers
+3. Add the following environment variables to your `.env` file:
+
+```sh
+RESEND_API_KEY=re_your_api_key_here
+RESEND_AUDIENCE_ID=your_audience_id_here
+```
+
+The subscription system features:
+- A dedicated `/subscribe` page (with `/signup` alias)
+- An embedded form on the homepage
+- Form validation and submission animations
+- Success and error state handling
+
 ## Deployment
 
 The site can be deployed to Vercel or Netlify with a single click:

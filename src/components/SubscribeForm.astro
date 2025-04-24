@@ -1,0 +1,150 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<div class="subscribe-form">
+  <form id="subscribe-form" class={`subscribe-form-container ${compact ? 'compact' : ''}`}>
+    <div class="form-fields">
+      <div class="form-group">
+        <label for="email" class="sr-only">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          class="form-input w-full rounded-lg border border-zinc-300 px-4 py-2 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800"
+        />
+      </div>
+      
+      <div class="form-group" class:list={["flex gap-2", { "hidden": compact }]}>
+        <div class="w-1/2">
+          <label for="firstName" class="sr-only">First Name</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First name (optional)"
+            class="form-input w-full rounded-lg border border-zinc-300 px-4 py-2 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800"
+          />
+        </div>
+        <div class="w-1/2">
+          <label for="lastName" class="sr-only">Last Name</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last name (optional)"
+            class="form-input w-full rounded-lg border border-zinc-300 px-4 py-2 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-800"
+          />
+        </div>
+      </div>
+      
+      <button
+        type="submit"
+        class="submit-button mt-3 w-full rounded-lg bg-blue-600 px-4 py-2 font-medium text-white transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-800"
+      >
+        <span class="button-text">Subscribe</span>
+        <span class="button-loader hidden">
+          <svg class="h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+    
+    <div class="form-message mt-3 text-center text-sm">
+      <p class="success-message hidden text-green-600 dark:text-green-400">
+        Thanks for subscribing! Please check your email to confirm your subscription.
+      </p>
+      <p class="error-message hidden text-red-600 dark:text-red-400"></p>
+    </div>
+  </form>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.querySelectorAll('.subscribe-form form');
+    
+    forms.forEach(form => {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formEl = e.currentTarget as HTMLFormElement;
+        const emailInput = formEl.querySelector('#email') as HTMLInputElement;
+        const firstNameInput = formEl.querySelector('#firstName') as HTMLInputElement;
+        const lastNameInput = formEl.querySelector('#lastName') as HTMLInputElement;
+        const submitButton = formEl.querySelector('.submit-button') as HTMLButtonElement;
+        const buttonText = formEl.querySelector('.button-text') as HTMLSpanElement;
+        const buttonLoader = formEl.querySelector('.button-loader') as HTMLSpanElement;
+        const successMessage = formEl.querySelector('.success-message') as HTMLParagraphElement;
+        const errorMessage = formEl.querySelector('.error-message') as HTMLParagraphElement;
+        
+        // Reset messages
+        successMessage.classList.add('hidden');
+        errorMessage.classList.add('hidden');
+        
+        // Show loading state
+        buttonText.classList.add('hidden');
+        buttonLoader.classList.remove('hidden');
+        submitButton.disabled = true;
+        
+        try {
+          const response = await fetch('/api/subscribe', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              email: emailInput.value,
+              firstName: firstNameInput?.value || '',
+              lastName: lastNameInput?.value || ''
+            })
+          });
+          
+          const data = await response.json();
+          
+          if (response.ok && data.success) {
+            // Show success message
+            successMessage.classList.remove('hidden');
+            formEl.reset();
+          } else {
+            // Show error message
+            errorMessage.textContent = data.message || 'An error occurred. Please try again.';
+            errorMessage.classList.remove('hidden');
+          }
+        } catch (error) {
+          // Show error message
+          errorMessage.textContent = 'An error occurred. Please try again.';
+          errorMessage.classList.remove('hidden');
+        } finally {
+          // Reset button state
+          buttonText.classList.remove('hidden');
+          buttonLoader.classList.add('hidden');
+          submitButton.disabled = false;
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .subscribe-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .subscribe-form-container.compact {
+    max-width: 100%;
+  }
+  
+  .form-message {
+    min-height: 1.5rem;
+  }
+</style> 
