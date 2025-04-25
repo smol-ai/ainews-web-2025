@@ -39,17 +39,230 @@ function buildToc(headings: Heading[]) {
 }
 ---
 
-<details
-  open
-  class="animate group rounded-lg border border-black/15 bg-white/50 dark:border-white/20 dark:bg-black/50 lg:border-0 lg:bg-transparent dark:lg:bg-transparent"
->
-  <summary
-    class="cursor-pointer rounded-t-lg px-3 py-1.5 font-medium transition-colors group-open:bg-black/5 hover:bg-black/5 dark:group-open:bg-white/5 hover:dark:bg-white/5 lg:px-0 lg:py-0 lg:text-sm lg:font-semibold lg:uppercase lg:tracking-wider lg:text-black/60 dark:lg:text-white/60"
-    >Table of Contents</summary
+<!-- Desktop TOC (hidden on mobile) -->
+<div class="hidden lg:block">
+  <details
+    open
+    class="animate group rounded-lg border border-black/15 bg-white/50 dark:border-white/20 dark:bg-black/50 lg:border-0 lg:bg-transparent dark:lg:bg-transparent"
   >
-  <nav class="lg:mt-4">
-    <ul class="space-y-1 py-3 lg:py-0 max-h-[70vh] overflow-y-auto sticky top-24">
+    <summary
+      class="cursor-pointer rounded-t-lg px-3 py-1.5 font-medium transition-colors group-open:bg-black/5 hover:bg-black/5 dark:group-open:bg-white/5 hover:dark:bg-white/5 lg:px-0 lg:py-0 lg:text-sm lg:font-semibold lg:uppercase lg:tracking-wider lg:text-black/60 dark:lg:text-white/60"
+      >Table of Contents</summary
+    >
+    <nav class="lg:mt-4">
+      <ul class="space-y-1 py-3 lg:py-0 max-h-[70vh] overflow-y-auto sticky top-24">
+        {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
+      </ul>
+    </nav>
+  </details>
+</div>
+
+<!-- Mobile TOC markup - Toggle button will be added to body via JS -->
+<div class="lg:hidden">
+  <div id="toc-content" class="hidden">
+    {/* Hidden container to store TOC content for JS to use */}
+    <ul class="space-y-1 py-1">
       {toc.map((heading) => <TableOfContentsHeading heading={heading} />)}
     </ul>
-  </nav>
-</details>
+  </div>
+</div>
+
+<script is:inline>
+  // Initialize the mobile TOC functionality
+  function initMobileToc() {
+    // Create portal elements - ensure they're added at document root
+    function createTocPortal() {
+      // Clean up any existing portal elements first
+      const existingToggle = document.getElementById('toc-toggle');
+      const existingDrawer = document.getElementById('toc-drawer');
+      const existingBackdrop = document.getElementById('toc-backdrop');
+      
+      if (existingToggle) existingToggle.remove();
+      if (existingDrawer) existingDrawer.remove();
+      if (existingBackdrop) existingBackdrop.remove();
+      
+      // Get TOC content
+      const tocContent = document.getElementById('toc-content');
+      if (!tocContent) return false;
+      
+      // Create toggle button
+      const tocToggle = document.createElement('button');
+      tocToggle.id = 'toc-toggle';
+      tocToggle.className = 'fixed left-0 top-1/2 z-40 -translate-y-1/2 bg-white/70 dark:bg-neutral-800/70 py-4 px-2 rounded-r-lg shadow-md transition-transform duration-300 ease-in-out border border-black/10 dark:border-white/10';
+      tocToggle.setAttribute('aria-label', 'Toggle Table of Contents');
+      tocToggle.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" /></svg>';
+      
+      // Create backdrop
+      const tocBackdrop = document.createElement('div');
+      tocBackdrop.id = 'toc-backdrop';
+      tocBackdrop.className = 'fixed inset-0 z-40 bg-black/20 backdrop-blur-xs invisible';
+      tocBackdrop.setAttribute('aria-hidden', 'true');
+      
+      // Create drawer
+      const tocDrawer = document.createElement('div');
+      tocDrawer.id = 'toc-drawer';
+      tocDrawer.className = 'fixed left-0 top-0 z-50 h-full w-0 bg-white dark:bg-neutral-900 shadow-lg transition-all duration-300 ease-in-out overflow-hidden';
+      
+      const drawerInner = document.createElement('div');
+      drawerInner.className = 'relative h-full w-64 max-w-[80vw] border-r border-black/15 dark:border-white/20 p-4';
+      
+      // Create close button
+      const closeButton = document.createElement('button');
+      closeButton.id = 'toc-close';
+      closeButton.className = 'absolute right-3 top-3 text-black/60 dark:text-white/60 p-1';
+      closeButton.setAttribute('aria-label', 'Close Table of Contents');
+      closeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 8.586l3.293-3.293a1 1 0 111.414 1.414L11.414 10l3.293 3.293a1 1 0 01-1.414 1.414L10 11.414l-3.293 3.293a1 1 0 01-1.414-1.414L8.586 10 5.293 6.707a1 1 0 111.414-1.414L10 8.586z" clip-rule="evenodd" /></svg>';
+      
+      // Create title
+      const title = document.createElement('h2');
+      title.className = 'mb-4 text-base font-semibold uppercase tracking-wider text-black/60 dark:text-white/60';
+      title.textContent = 'Table of Contents';
+      
+      // Create nav container
+      const nav = document.createElement('nav');
+      nav.className = '';
+      
+      // Clone the TOC content to the nav
+      const ul = document.createElement('ul');
+      ul.className = 'space-y-1 py-1 overflow-y-auto max-h-[calc(100vh-6rem)]';
+      ul.innerHTML = tocContent.querySelector('ul')?.innerHTML || '';
+      
+      // Append elements
+      nav.appendChild(ul);
+      drawerInner.appendChild(closeButton);
+      drawerInner.appendChild(title);
+      drawerInner.appendChild(nav);
+      tocDrawer.appendChild(drawerInner);
+      
+      // Add to document body
+      document.body.appendChild(tocToggle);
+      document.body.appendChild(tocDrawer);
+      document.body.appendChild(tocBackdrop);
+      
+      return true;
+    }
+    
+    // Create the TOC portal elements
+    if (!createTocPortal()) return;
+    
+    // Now get references to the newly created elements
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocDrawer = document.getElementById('toc-drawer');
+    const tocClose = document.getElementById('toc-close');
+    const tocBackdrop = document.getElementById('toc-backdrop');
+    
+    if (!tocToggle || !tocDrawer || !tocClose || !tocBackdrop) return;
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    // Open TOC drawer
+    function openTocDrawer() {
+      tocDrawer.style.width = tocDrawer.querySelector('div').offsetWidth + 'px';
+      tocBackdrop.classList.remove('invisible');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+    
+    // Close TOC drawer
+    function closeTocDrawer() {
+      tocDrawer.style.width = '0';
+      tocBackdrop.classList.add('invisible');
+      document.body.style.overflow = ''; // Re-enable scrolling
+    }
+    
+    // Toggle button click handler
+    tocToggle.addEventListener('click', openTocDrawer);
+    
+    // Close button click handler
+    tocClose.addEventListener('click', closeTocDrawer);
+    
+    // Backdrop click handler
+    tocBackdrop.addEventListener('click', closeTocDrawer);
+    
+    // Handle TOC links clicks - close drawer after navigation
+    const tocLinks = tocDrawer.querySelectorAll('a[href^="#"]');
+    tocLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const targetId = link.getAttribute('href')?.substring(1) || '';
+        if (!targetId) return;
+        
+        const targetElement = document.getElementById(targetId);
+        if (!targetElement) return;
+        
+        // Get the header height for offset (add some extra padding)
+        const headerEl = document.querySelector('header');
+        if (!headerEl) return;
+        
+        const headerHeight = headerEl.offsetHeight + 16;
+        
+        // Scroll to the element with offset
+        window.scrollTo({
+          top: targetElement.offsetTop - headerHeight,
+          behavior: 'smooth'
+        });
+        
+        // Update URL without refreshing the page
+        history.pushState('', '', `#${targetId}`);
+        
+        // Close the drawer
+        closeTocDrawer();
+      });
+    });
+    
+    // Swipe to open
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    document.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      
+      // Swipe right to open TOC drawer (when near left edge)
+      if (touchStartX < 30 && touchEndX > touchStartX + 50) {
+        openTocDrawer();
+      }
+      
+      // Swipe left to close TOC drawer
+      if (tocDrawer && tocDrawer.style.width !== '0px' && 
+          touchEndX < touchStartX - 50) {
+        closeTocDrawer();
+      }
+    }, { passive: true });
+    
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && tocDrawer.style.width !== '0px') {
+        closeTocDrawer();
+      }
+    });
+  }
+
+  // Initialize on DOMContentLoaded and after Astro page transitions
+  document.addEventListener('DOMContentLoaded', initMobileToc);
+  document.addEventListener('astro:after-swap', initMobileToc);
+  document.addEventListener('astro:page-load', initMobileToc);
+</script>
+
+<style is:global>
+  /* Styles for the mobile TOC toggle button */
+  #toc-toggle {
+    transform: translateY(-50%) translateX(-2px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #toc-toggle:hover, #toc-toggle:focus {
+    transform: translateY(-50%) translateX(0);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .dark #toc-toggle:hover, .dark #toc-toggle:focus {
+    background-color: rgba(38, 38, 38, 0.9);
+  }
+  
+  /* Ensure that the TOC drawer doesn't create horizontal overflow */
+  #toc-drawer {
+    max-width: 100vw;
+  }
+</style>
