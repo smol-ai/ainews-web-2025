@@ -110,7 +110,7 @@ const models = post.data.models || [];
       </div> -->
       
       {/* Right column - title and metadata */}
-      <div class="order-1 w-full lg:order-2 flex flex-col gap-4 lg:gap-24">
+      <div role="banner" class="order-1 w-full lg:order-2 flex flex-col gap-4 lg:gap-24">
         <div class="animate flex items-center gap-1.5">
         </div>
         <h1 class="animate text-3xl font-semibold text-black dark:text-white break-words">
@@ -124,16 +124,17 @@ const models = post.data.models || [];
           (post.data.companies && post.data.companies?.length > 0) || 
           (post.data.models && post.data.models?.length > 0) || 
           (post.data.topics && post.data.topics?.length > 0) ? (
-            <div class="animate space-y-3 pt-1">
+            <div class="animate space-y-3 pt-1" aria-label="Article metadata">
               {post.data.companies && post.data.companies?.length > 0 ? (
                 <div>
                   <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">Companies</h3>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2" role="list" aria-label="Companies mentioned">
                     {post.data.companies.map((company) => (
                       <a
                         href={`/tags/${company}`}
                         data-pagefind-filter="company"
                         class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                        role="listitem"
                       >
                         {company}
                       </a>
@@ -145,12 +146,13 @@ const models = post.data.models || [];
               {post.data.models && post.data.models?.length > 0 ? (
                 <div>
                   <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">Models</h3>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2" role="list" aria-label="AI models mentioned">
                     {post.data.models.map((model) => (
                       <a
                         href={`/tags/${model}`}
                         data-pagefind-filter="model"
                         class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                        role="listitem"
                       >
                         {model}
                       </a>
@@ -162,12 +164,13 @@ const models = post.data.models || [];
               {post.data.topics && post.data.topics?.length > 0 ? (
                 <div>
                   <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">Topics</h3>
-                  <div class="flex flex-wrap gap-2">
+                  <div class="flex flex-wrap gap-2" role="list" aria-label="Related topics">
                     {post.data.topics.map((topic) => (
                       <a
                         href={`/tags/${topic}`}
                         data-pagefind-filter="topic"
                         class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                        role="listitem"
                       >
                         {topic}
                       </a>
@@ -200,12 +203,15 @@ const models = post.data.models || [];
       <div class="mx-auto flex max-w-7xl flex-col items-start gap-8 lg:flex-row">
         {
           headings && headings.length > 0 && (
-            <aside class="order-2 w-full lg:order-1 lg:top-8 lg:w-1/5 lg:sticky lg:self-start">
+            <aside class="order-2 w-full lg:order-1 lg:top-8 lg:w-1/5 lg:sticky lg:self-start" role="complementary" aria-label="Table of contents">
               <TableOfContents headings={headings} />
             </aside>
           )
         }
-        <div
+        <main
+          id="main-content"
+          role="main"
+          aria-label={`Issue #${issueNumber}: ${post.data.title}`}
           class={`order-1 ${
             headings && headings.length > 0 ? "w-full lg:order-2 lg:w-4/5" : "w-full"
           }`}
@@ -213,13 +219,13 @@ const models = post.data.models || [];
           <article class="content-area">
             <Content />
           </article>
-          <div class="mt-24">
+          <nav class="mt-24" aria-label="Issue navigation">
             <PostNavigation prevPost={prevPost} nextPost={nextPost} />
-          </div>
-          <div class="mt-24">
+          </nav>
+          <section class="mt-24" aria-label="Comments">
             <Giscus />
-          </div>
-        </div>
+          </section>
+        </main>
       </div>
     </div>
   </Container>
