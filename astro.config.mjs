@@ -5,12 +5,15 @@ import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 import remarkYouTubeEmbed from "./src/remark-youtube-embed.mjs";
 
+import vercel from "@astrojs/vercel";
+
 console.log(`[Astro Config] Environment: ${process.env.NODE_ENV || 'development'}`);
 console.log(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false'}`);
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://news.smol.ai",
+
   integrations: [
     sitemap(), 
     mdx(),
@@ -45,6 +48,7 @@ export default defineConfig({
       }
     }
   ],
+
   vite: {
     plugins: [tailwindcss()],
     build: {
@@ -64,12 +68,14 @@ export default defineConfig({
       noExternal: [/@astro-community\//]
     }
   },
+
   markdown: {
     shikiConfig: {
       theme: "css-variables",
     },
     remarkPlugins: [remarkYouTubeEmbed],
   },
+
   pagefind: {
     uiOptions: {
       showImages: false,
@@ -79,4 +85,6 @@ export default defineConfig({
       showFilters: ["tag"]
     },
   },
+
+  adapter: vercel(),
 });
