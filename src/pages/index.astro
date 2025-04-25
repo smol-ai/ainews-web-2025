@@ -4,7 +4,7 @@ import Container from "@components/Container.astro";
 import { SITE, HOME, SOCIALS } from "@consts";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
-import FilterToggle from "@components/FilterToggle.astro";
+import RegexFilter from "@components/RegexFilter.astro";
 import { getCollection } from "astro:content";
 import SubscribeForm from "@components/SubscribeForm.astro";
 
@@ -37,16 +37,16 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
   <Container>
     <aside data-pagefind-ignore>
       <h1 class="font-semibold text-black dark:text-white text-8xl mb-8">
-        AI News Weekday Roundup
+        AI News
       </h1>
       <div class="space-y-16">
         <div class="flex gap-8">
           <section class="animate space-y-4">
-            <h2 class="font-semibold text-black dark:text-white">
+            <!-- <h2 class="font-semibold text-black dark:text-white">
               Subscribe to Updates
-            </h2>
+            </h2> -->
             <article>
-              <p class="mb-4">Join 50k top AI Engineers getting updates for their work.</p>
+              <p class="mb-4">Overwhelmed by AI Twitter/Reddit/Discords? Join 50k top AI Engineers every weekday.</p>
               <div class="max-w-md">
                 <SubscribeForm compact={true} />
               </div>
@@ -84,7 +84,7 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
             <h2 class="font-semibold text-black dark:text-white">
               Last 30 days in AI
             </h2>
-            <FilterToggle id="filter-quiet-days" label="Hide 'not much happened today' posts" />
+            <RegexFilter id="regex-filter-posts" label="Filter posts:" />
             <Link href="/issues"> See all issues </Link>
           </div>
           
@@ -94,7 +94,12 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
             <ul class="not-prose flex flex-col gap-4 relative" id="timeline">
               {
                 allIssues.slice(0, ITEMS_PER_PAGE).map((post) => (
-                  <li class="relative md:pl-10" data-post-title={post.data.title.toLowerCase()}>
+                  <li 
+                    class="relative md:pl-10" 
+                    data-post-title={post.data.title.toLowerCase()}
+                    data-post-description={post.data.description?.toLowerCase() || ""}
+                    data-post-tags={(post.data.tags || []).join(",").toLowerCase()}
+                  >
                     <div class="absolute left-[0.8rem] top-[40%] w-2 h-2 rounded-full bg-black/50 dark:bg-white/50 md:block hidden"></div>
                     <ArrowCard entry={post} />
                   </li>
@@ -164,21 +169,68 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
 
 <script>
   let isLoading = false;
-  let filterQuietDays = false;
+  let filterPattern = '';
+  let isValidPattern = true;
+  let filterFields = {
+    title: true,
+    description: false,
+    tags: false
+  };
 
   function applyFilters() {
     const items = document.querySelectorAll('#timeline li');
     
-    items.forEach(item => {
-      const postTitle = item.getAttribute('data-post-title') || '';
-      const shouldHide = filterQuietDays && postTitle.includes('not much happened today');
-      
-      if (shouldHide) {
-        item.classList.add('hidden');
-      } else {
+    // If no pattern or invalid pattern, show all items
+    if (!filterPattern.trim() || !isValidPattern) {
+      items.forEach(item => {
         item.classList.remove('hidden');
-      }
-    });
+      });
+      return;
+    }
+
+    try {
+      // Create a RegExp object from the pattern
+      const regex = new RegExp(filterPattern, 'i');
+      
+      items.forEach(item => {
+        let shouldHide = false;
+        
+        // Check title if enabled
+        if (filterFields.title) {
+          const postTitle = item.getAttribute('data-post-title') || '';
+          if (regex.test(postTitle)) {
+            shouldHide = true;
+          }
+        }
+        
+        // Check description if enabled
+        if (!shouldHide && filterFields.description) {
+          const postDescription = item.getAttribute('data-post-description') || '';
+          if (regex.test(postDescription)) {
+            shouldHide = true;
+          }
+        }
+        
+        // Check tags if enabled
+        if (!shouldHide && filterFields.tags) {
+          const postTags = item.getAttribute('data-post-tags') || '';
+          if (regex.test(postTags)) {
+            shouldHide = true;
+          }
+        }
+        
+        if (!shouldHide) {
+          item.classList.add('hidden');
+        } else {
+          item.classList.remove('hidden');
+        }
+      });
+    } catch (error) {
+      console.warn('Invalid regex pattern:', error);
+      items.forEach(item => {
+        item.classList.remove('hidden');
+      });
+    }
   }
 
   function initLoadMore() {
@@ -204,9 +256,15 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
           const li = document.createElement('li');
           li.className = 'relative md:pl-10';
           li.setAttribute('data-post-title', issue.title.toLowerCase());
+          li.setAttribute('data-post-description', (issue.description || '').toLowerCase());
+          li.setAttribute('data-post-tags', (issue.tags || []).join(',').toLowerCase());
           
           // Apply filter if needed
-          if (filterQuietDays && issue.title.toLowerCase().includes('not much happened today')) {
+          if (shouldHideItem(
+            issue.title.toLowerCase(), 
+            (issue.description || '').toLowerCase(), 
+            issue.tags || []
+          )) {
             li.classList.add('hidden');
           }
           
@@ -252,31 +310,89 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
     });
   }
 
-  function initFilterToggle() {
-    // Load initial filter state from localStorage
-    const savedFilterState = localStorage.getItem('filter_filter-quiet-days');
-    filterQuietDays = savedFilterState === 'true';
+  function shouldHideItem(title: string, description: string = '', tags: string[] = []): boolean {
+    if (!filterPattern.trim() || !isValidPattern) return false;
     
-    document.addEventListener('filter-toggle-change', (event: any) => {
-      if (event.detail.id === 'filter-quiet-days') {
-        filterQuietDays = event.detail.checked;
+    try {
+      const regex = new RegExp(filterPattern, 'i');
+      
+      if (filterFields.title && regex.test(title)) {
+        return true;
+      }
+      
+      if (filterFields.description && description && regex.test(description)) {
+        return true;
+      }
+      
+      if (filterFields.tags && tags.length > 0 && regex.test(tags.join(','))) {
+        return true;
+      }
+      
+      return false;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function initRegexFilter() {
+    // Load initial filter state from localStorage
+    const savedPattern = localStorage.getItem('filter_regex-filter-posts_pattern');
+    const savedTitleState = localStorage.getItem('filter_regex-filter-posts_title');
+    const savedDescriptionState = localStorage.getItem('filter_regex-filter-posts_description');
+    const savedTagsState = localStorage.getItem('filter_regex-filter-posts_tags');
+    
+    if (savedPattern) {
+      filterPattern = savedPattern;
+      try {
+        new RegExp(savedPattern);
+        isValidPattern = true;
+      } catch (error) {
+        isValidPattern = false;
+      }
+    }
+    
+    // Set filter fields
+    filterFields = {
+      title: savedTitleState !== 'false', // Default to true if not explicitly set to false
+      description: savedDescriptionState === 'true',
+      tags: savedTagsState === 'true'
+    };
+    
+    document.addEventListener('regex-filter-change', (event: any) => {
+      if (event.detail.id === 'regex-filter-posts') {
+        filterPattern = event.detail.pattern;
+        isValidPattern = event.detail.isValid;
+        
+        // Update filter fields if they exist in the event
+        if (event.detail.fields) {
+          filterFields = event.detail.fields;
+        }
+        
+        // Apply filters immediately
         applyFilters();
+        
+        // Log filter state for debugging
+        console.log('Filter applied:', {
+          pattern: filterPattern,
+          isValid: isValidPattern,
+          fields: filterFields
+        });
       }
     });
     
     // Apply initial filtering
-    if (filterQuietDays) {
+    if (filterPattern) {
       applyFilters();
     }
   }
 
   // Initialize on page load
   initLoadMore();
-  initFilterToggle();
+  initRegexFilter();
   
   // Re-initialize when navigating with View Transitions
   document.addEventListener('astro:page-load', () => {
     initLoadMore();
-    initFilterToggle();
+    initRegexFilter();
   });
 </script>

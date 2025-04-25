@@ -1,0 +1,224 @@
+---
+interface Props {
+  id: string;
+  placeholder?: string;
+  label: string;
+  showFields?: boolean;
+}
+
+const { 
+  id, 
+  placeholder = "^((?!not much).)*$",
+  label,
+  showFields = true 
+} = Astro.props;
+---
+
+<div class="inline-flex items-center gap-2 mt-4 mb-4 flex-wrap">
+  <label for={id} class="font-medium text-sm text-gray-700 dark:text-gray-300">
+    {label}
+  </label>
+  <div class="relative">
+    <input
+      type="text"
+      id={id}
+      placeholder={placeholder}
+      aria-label={label}
+      class="regex-filter-input rounded border border-gray-300 dark:border-gray-700 px-2 py-1 text-sm bg-white dark:bg-gray-800 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black/20 dark:focus:ring-white/20 min-w-48"
+    />
+    <span id={`${id}-error`} class="hidden absolute -bottom-5 right-0 text-xs text-red-500">Invalid regex</span>
+  </div>
+  {showFields && (
+    <div class="flex gap-2 items-center text-sm ml-1">
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" id={`${id}-title`} class="sr-only peer" checked />
+        <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-black dark:peer-checked:bg-blue-500"></div>
+        <span class="ms-1">Title</span>
+      </label>
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" id={`${id}-description`} class="sr-only peer" />
+        <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-black dark:peer-checked:bg-blue-500"></div>
+        <span class="ms-1">Desc</span>
+      </label>
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" id={`${id}-tags`} class="sr-only peer" />
+        <div class="relative w-8 h-4 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all dark:border-gray-600 peer-checked:bg-black dark:peer-checked:bg-blue-500"></div>
+        <span class="ms-1">Tags</span>
+      </label>
+    </div>
+  )}
+</div>
+
+<script>
+  function setupRegexFilter() {
+    const filters = document.querySelectorAll('input[id^="regex-filter-"]:not([type="checkbox"])');
+    
+    filters.forEach((filter) => {
+      const filterId = filter.id;
+      const errorElement = document.getElementById(`${filterId}-error`);
+      const titleCheckbox = document.getElementById(`${filterId}-title`) as HTMLInputElement;
+      const descriptionCheckbox = document.getElementById(`${filterId}-description`) as HTMLInputElement;
+      const tagsCheckbox = document.getElementById(`${filterId}-tags`) as HTMLInputElement;
+      
+      // Load initial filter state from localStorage
+      const savedPattern = localStorage.getItem(`filter_${filterId}_pattern`);
+      const savedTitleState = localStorage.getItem(`filter_${filterId}_title`);
+      const savedDescriptionState = localStorage.getItem(`filter_${filterId}_description`);
+      const savedTagsState = localStorage.getItem(`filter_${filterId}_tags`);
+      
+      // Initialize isValid flag  
+      let isValid = true;
+      
+      // Set initial input value
+      if (savedPattern) {
+        (filter as HTMLInputElement).value = savedPattern;
+        
+        // Validate the saved pattern
+        try {
+          new RegExp(savedPattern);
+          errorElement?.classList.add('hidden');
+        } catch (error) {
+          errorElement?.classList.remove('hidden');
+          isValid = false;
+        }
+      }
+      
+      // Set initial checkbox states
+      const fields = {
+        title: savedTitleState !== 'false', // Default to true
+        description: savedDescriptionState === 'true',
+        tags: savedTagsState === 'true'
+      };
+      
+      if (titleCheckbox) {
+        titleCheckbox.checked = fields.title;
+      }
+      
+      if (descriptionCheckbox) {
+        descriptionCheckbox.checked = fields.description;
+      }
+      
+      if (tagsCheckbox) {
+        tagsCheckbox.checked = fields.tags;
+      }
+      
+      // Setup checkbox change listeners
+      [titleCheckbox, descriptionCheckbox, tagsCheckbox].forEach(checkbox => {
+        if (!checkbox) return;
+        
+        checkbox.addEventListener('change', () => {
+          const fields = {
+            title: titleCheckbox?.checked || false,
+            description: descriptionCheckbox?.checked || false,
+            tags: tagsCheckbox?.checked || false
+          };
+          
+          // Save to localStorage
+          localStorage.setItem(`filter_${filterId}_title`, fields.title.toString());
+          localStorage.setItem(`filter_${filterId}_description`, fields.description.toString());
+          localStorage.setItem(`filter_${filterId}_tags`, fields.tags.toString());
+          
+          // Get current pattern from input
+          const pattern = (filter as HTMLInputElement).value;
+          
+          // Dispatch filter change event with updated fields
+          dispatchFilterChangeEvent(filterId, pattern, true, fields);
+        });
+      });
+      
+      // Initial dispatch if we have a saved pattern or checkboxes are set
+      if (savedPattern || fields.title || fields.description || fields.tags) {
+        // Use setTimeout to ensure DOM is ready
+        setTimeout(() => {
+          dispatchFilterChangeEvent(
+            filterId, 
+            savedPattern || '', 
+            isValid, 
+            fields
+          );
+        }, 0);
+      }
+      
+      // Add input handler with debounce
+      let debounceTimer: number;
+      filter.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          const pattern = (filter as HTMLInputElement).value;
+          let isValid = true;
+          
+          // Validate regex pattern
+          try {
+            if (pattern) new RegExp(pattern);
+            errorElement?.classList.add('hidden');
+          } catch (error) {
+            errorElement?.classList.remove('hidden');
+            isValid = false;
+          }
+          
+          // Save to localStorage
+          localStorage.setItem(`filter_${filterId}_pattern`, pattern);
+          
+          // Dispatch filter change event
+          dispatchFilterChangeEvent(
+            filterId, 
+            pattern, 
+            isValid, 
+            {
+              title: titleCheckbox?.checked || false,
+              description: descriptionCheckbox?.checked || false,
+              tags: tagsCheckbox?.checked || false
+            }
+          );
+        }, 300) as unknown as number;
+      });
+
+      // Make sure input changes are captured immediately
+      filter.addEventListener('keyup', (e) => {
+        // Handle Enter key press immediately
+        if ((e as KeyboardEvent).key === 'Enter') {
+          const pattern = (filter as HTMLInputElement).value;
+          let isValid = true;
+          
+          try {
+            if (pattern) new RegExp(pattern);
+            errorElement?.classList.add('hidden');
+          } catch (error) {
+            errorElement?.classList.remove('hidden');
+            isValid = false;
+          }
+          
+          localStorage.setItem(`filter_${filterId}_pattern`, pattern);
+          
+          // Get field values
+          const fields = {
+            title: titleCheckbox?.checked || false,
+            description: descriptionCheckbox?.checked || false,
+            tags: tagsCheckbox?.checked || false
+          };
+          
+          // Dispatch filter change event
+          dispatchFilterChangeEvent(filterId, pattern, isValid, fields);
+        }
+      });
+    });
+  }
+  
+  function dispatchFilterChangeEvent(
+    id: string, 
+    pattern: string, 
+    isValid: boolean, 
+    fields: {title: boolean, description: boolean, tags: boolean}
+  ) {
+    const event = new CustomEvent('regex-filter-change', { 
+      detail: { id, pattern, isValid, fields }
+    });
+    document.dispatchEvent(event);
+  }
+
+  // Initialize on page load
+  setupRegexFilter();
+
+  // Re-initialize when navigating with View Transitions
+  document.addEventListener('astro:page-load', setupRegexFilter);
+</script> 

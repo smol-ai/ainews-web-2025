@@ -3,7 +3,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
-import FilterToggle from "@components/FilterToggle.astro";
+import RegexFilter from "@components/RegexFilter.astro";
 import { ISSUES } from "@consts";
 
 console.log(`[Issues Page] Environment: ${import.meta.env.MODE}`);
@@ -122,7 +122,7 @@ Object.entries(posts).forEach(([year, yearData]) => {
         {years.map((year) => (
           <section id={`year-${year}`} class="animate space-y-6 scroll-mt-24">
             <h2 class="text-2xl font-semibold text-black dark:text-white flex justify-between items-center">{year}
-              <FilterToggle id="filter-quiet-days" label="Hide 'not much happened today' posts" />
+              <RegexFilter id="regex-filter-posts" label="Filter posts:" placeholder="^(?!.*not much happened today).*$" />
             </h2>
             
             {monthOrder
@@ -133,7 +133,11 @@ Object.entries(posts).forEach(([year, yearData]) => {
                   <h3 class="text-xl font-medium text-black/80 dark:text-white/80">{month}</h3>
                   <ul class="not-prose flex flex-col gap-4">
                     {posts[year].months[month].map((post) => (
-                      <li data-post-title={post.data.title.toLowerCase()}>
+                      <li 
+                        data-post-title={post.data.title.toLowerCase()}
+                        data-post-description={post.data.description?.toLowerCase() || ""}
+                        data-post-tags={(post.data.tags || []).join(",").toLowerCase()}
+                      >
                         <ArrowCard entry={post} />
                       </li>
                     ))}
@@ -148,46 +152,128 @@ Object.entries(posts).forEach(([year, yearData]) => {
 </Layout>
 
 <script>
-  let filterQuietDays = false;
+  let filterPattern = '';
+  let isValidPattern = true;
+  let filterFields = {
+    title: true,
+    description: false,
+    tags: false
+  };
 
   function applyFilters() {
     const items = document.querySelectorAll('li[data-post-title]');
     
-    items.forEach(item => {
-      const postTitle = item.getAttribute('data-post-title') || '';
-      const shouldHide = filterQuietDays && postTitle.includes('not much happened today');
-      
-      if (shouldHide) {
-        item.classList.add('hidden');
-      } else {
+    // If no pattern or invalid pattern, show all items
+    if (!filterPattern.trim() || !isValidPattern) {
+      items.forEach(item => {
         item.classList.remove('hidden');
-      }
-    });
+      });
+      return;
+    }
+    
+    try {
+      // Create a RegExp object from the pattern
+      const regex = new RegExp(filterPattern, 'i');
+      
+      items.forEach(item => {
+        let shouldHide = false;
+        
+        // Check title if enabled
+        if (filterFields.title) {
+          const postTitle = item.getAttribute('data-post-title') || '';
+          if (regex.test(postTitle)) {
+            shouldHide = true;
+          }
+        }
+        
+        // Check description if enabled
+        if (!shouldHide && filterFields.description) {
+          const postDescription = item.getAttribute('data-post-description') || '';
+          if (regex.test(postDescription)) {
+            shouldHide = true;
+          }
+        }
+        
+        // Check tags if enabled
+        if (!shouldHide && filterFields.tags) {
+          const postTags = item.getAttribute('data-post-tags') || '';
+          if (regex.test(postTags)) {
+            shouldHide = true;
+          }
+        }
+        
+        if (!shouldHide) {
+          item.classList.add('hidden');
+        } else {
+          item.classList.remove('hidden');
+        }
+      });
+    } catch (error) {
+      // If the regex is invalid, don't filter anything
+      console.warn('Invalid regex pattern:', error);
+      items.forEach(item => {
+        item.classList.remove('hidden');
+      });
+    }
   }
 
-  function initFilterToggle() {
+  function initRegexFilter() {
     // Load initial filter state from localStorage
-    const savedFilterState = localStorage.getItem('filter_filter-quiet-days');
-    filterQuietDays = savedFilterState === 'true';
+    const savedPattern = localStorage.getItem('filter_regex-filter-posts_pattern');
+    const savedTitleState = localStorage.getItem('filter_regex-filter-posts_title');
+    const savedDescriptionState = localStorage.getItem('filter_regex-filter-posts_description');
+    const savedTagsState = localStorage.getItem('filter_regex-filter-posts_tags');
     
-    document.addEventListener('filter-toggle-change', (event: any) => {
-      if (event.detail.id === 'filter-quiet-days') {
-        filterQuietDays = event.detail.checked;
+    if (savedPattern) {
+      filterPattern = savedPattern;
+      try {
+        new RegExp(savedPattern);
+        isValidPattern = true;
+      } catch (error) {
+        isValidPattern = false;
+      }
+    }
+    
+    // Set filter fields
+    filterFields = {
+      title: savedTitleState !== 'false', // Default to true if not explicitly set to false
+      description: savedDescriptionState === 'true',
+      tags: savedTagsState === 'true'
+    };
+    
+    document.addEventListener('regex-filter-change', (event: any) => {
+      if (event.detail.id === 'regex-filter-posts') {
+        filterPattern = event.detail.pattern;
+        isValidPattern = event.detail.isValid;
+        
+        // Update filter fields if they exist in the event
+        if (event.detail.fields) {
+          filterFields = event.detail.fields;
+        }
+        
+        // Apply filters immediately
         applyFilters();
+        
+        // Log filter state for debugging
+        console.log('Filter applied:', {
+          pattern: filterPattern,
+          isValid: isValidPattern,
+          fields: filterFields
+        });
       }
     });
     
     // Apply initial filtering
-    if (filterQuietDays) {
+    if (filterPattern) {
       applyFilters();
     }
   }
 
   // Initialize on page load
-  initFilterToggle();
+  initRegexFilter();
   
   // Re-initialize when navigating with View Transitions
   document.addEventListener('astro:page-load', () => {
-    initFilterToggle();
+    initRegexFilter();
   });
 </script>
