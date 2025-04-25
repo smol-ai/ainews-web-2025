@@ -329,6 +329,10 @@ async function main() {
         console.log('\nCompanies:', result.companies.join(', '));
         console.log('\nModels:', result.models.join(', '));
         console.log('\nTopics:', result.topics.join(', '));
+        
+        // Write the updated content back to the original file
+        await fs.promises.writeFile(filePath, result.content, 'utf8');
+        console.log(`\nUpdated file in place: ${filePath}`);
       }
       
       return;
