@@ -1,6 +1,6 @@
 ---
 id: 12141243
-title: Not much happened today
+title: not much happened today
 date: '2025-04-24T05:44:39.731046Z'
 description: >-
   AI news for April 23-24, 2025, covering new model releases, benchmarks, and
