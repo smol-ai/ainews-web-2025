@@ -80,9 +80,18 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 
 const { Content, headings } = await render(post);
 
+// Extract issue number from ID
+const issueNumber = post.id.split('-')[1] || '';
+
 ---
 
-<Layout title={post.data.title} description={post.data.description}>
+<Layout 
+  title={post.data.title} 
+  description={post.data.description || `AI News - Issue #${issueNumber}`}
+  type="issue"
+  issueNumber={issueNumber}
+  date={post.data.date}
+>
   <Container>
     <div class="animate">
       <BackToPrevious href="/issues">Back to issues</BackToPrevious>

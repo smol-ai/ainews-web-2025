@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import { generateOgImageUrl } from "../lib/og-image";
 
 import "@fontsource/geist-sans/100.css";
 import "@fontsource/geist-sans/200.css";
@@ -24,12 +25,32 @@ import "@fontsource/geist-mono/900.css";
 interface Props {
   title: string;
   description: string;
-  image?: string;
+  type?: 'issue' | 'homepage' | 'tag';
+  issueNumber?: string;
+  date?: string | Date;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/astro-micro.jpg" } = Astro.props;
+const {
+  title,
+  description,
+  type = 'homepage',
+  issueNumber,
+  date
+} = Astro.props;
+
+// Generate dynamic OG image URL
+const ogImageUrl = generateOgImageUrl({
+  title,
+  description,
+  type,
+  issueNumber,
+  date
+});
+
+// Get the absolute URL for the OG image
+const absoluteOgImageUrl = new URL(ogImageUrl, Astro.site).toString();
 ---
 
 <!-- Global Metadata -->
@@ -51,18 +72,31 @@ const { title, description, image = "/astro-micro.jpg" } = Astro.props;
 <meta name="description" content={description} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content={type === 'issue' ? 'article' : 'website'} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image" content={absoluteOgImageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="AI News" />
+{type === 'issue' && date && <meta property="article:published_time" content={date instanceof Date ? date.toISOString() : date} />}
 
-<!-- Twitter -->
+<!-- Twitter/X Meta Tags -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image" content={absoluteOgImageUrl} />
+<meta name="twitter:site" content="@smol_ai" />
+
+<!-- Also add new X meta tags -->
+<meta property="x:card" content="summary_large_image" />
+<meta property="x:url" content={Astro.url} />
+<meta property="x:title" content={title} />
+<meta property="x:description" content={description} />
+<meta property="x:image" content={absoluteOgImageUrl} />
+<meta name="x:site" content="@smol_ai" />
 
 <!-- PageFind -->
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />

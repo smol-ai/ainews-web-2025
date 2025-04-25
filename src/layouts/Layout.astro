@@ -9,15 +9,30 @@ import YouTubeEmbedScript from '../components/YouTubeEmbedScript.astro';
 type Props = {
   title: string;
   description: string;
+  type?: 'issue' | 'homepage' | 'tag';
+  issueNumber?: string;
+  date?: string | Date;
 };
 
-const { title, description } = Astro.props;
+const {
+  title,
+  description,
+  type = 'homepage',
+  issueNumber,
+  date
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <Head title={`${title} | ${SITE.TITLE}`} description={description} />
+    <Head
+      title={`${title} | ${SITE.TITLE}`}
+      description={description}
+      type={type}
+      issueNumber={issueNumber}
+      date={date}
+    />
     <YouTubeEmbedScript />
   </head>
   <body>
