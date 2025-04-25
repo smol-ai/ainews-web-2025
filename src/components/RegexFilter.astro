@@ -4,17 +4,19 @@ interface Props {
   placeholder?: string;
   label: string;
   showFields?: boolean;
+  extraClasses?: string;
 }
 
 const { 
   id, 
   placeholder = "^((?!not much).)*$",
   label,
-  showFields = true 
+  showFields = true,
+  extraClasses = ''
 } = Astro.props;
 ---
 
-<div class="inline-flex items-center gap-2 mt-4 mb-4 flex-wrap">
+<div class={"inline-flex items-center gap-2 mt-4 mb-4 flex-wrap " + extraClasses} data-show-fields={showFields.toString()}>
   <label for={id} class="font-medium text-sm text-gray-700 dark:text-gray-300">
     {label}
   </label>
@@ -53,42 +55,74 @@ const {
   function setupRegexFilter() {
     const filters = document.querySelectorAll('input[id^="regex-filter-"]:not([type="checkbox"])');
     
+    // Helper to update URL params without creating new history entries
+    function updateURLParams(params: URLSearchParams) {
+      const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+      console.log(`Updating URL to: ${newUrl}`);
+      window.history.replaceState(null, '', newUrl);
+    }
+    
+    // Helper to get URLSearchParams
+    function getURLParams() {
+      return new URLSearchParams(window.location.search);
+    }
+    
     filters.forEach((filter) => {
       const filterId = filter.id;
+      console.log(`Setting up filter: ${filterId}`);
       const errorElement = document.getElementById(`${filterId}-error`);
       const titleCheckbox = document.getElementById(`${filterId}-title`) as HTMLInputElement;
       const descriptionCheckbox = document.getElementById(`${filterId}-description`) as HTMLInputElement;
       const tagsCheckbox = document.getElementById(`${filterId}-tags`) as HTMLInputElement;
       
-      // Load initial filter state from localStorage
-      const savedPattern = localStorage.getItem(`filter_${filterId}_pattern`);
-      const savedTitleState = localStorage.getItem(`filter_${filterId}_title`);
-      const savedDescriptionState = localStorage.getItem(`filter_${filterId}_description`);
-      const savedTagsState = localStorage.getItem(`filter_${filterId}_tags`);
+      // Get showFields value from data attribute
+      const filterContainer = filter.closest('[data-show-fields]');
+      const showFields = filterContainer?.getAttribute('data-show-fields') === 'true';
       
       // Initialize isValid flag  
       let isValid = true;
       
-      // Set initial input value
-      if (savedPattern) {
-        (filter as HTMLInputElement).value = savedPattern;
-        
-        // Validate the saved pattern
+      // Read filter state from URL query parameters - using clearer names
+      const urlParams = getURLParams();
+      const paramPattern = urlParams.get('pattern');
+      const paramTitle = urlParams.get('filterTitle');
+      const paramDesc = urlParams.get('filterDesc');
+      const paramTags = urlParams.get('filterTags');
+      
+      console.log(`Reading URL params for ${filterId}:`, {
+        pattern: paramPattern,
+        title: paramTitle,
+        description: paramDesc,
+        tags: paramTags,
+        showFields
+      });
+      
+      // Set initial input value from URL params
+      if (paramPattern) {
         try {
-          new RegExp(savedPattern);
+          const decodedPattern = decodeURIComponent(paramPattern);
+          console.log(`Setting initial pattern: ${decodedPattern}`);
+          (filter as HTMLInputElement).value = decodedPattern;
+          
+          // Validate the pattern
+          new RegExp(decodedPattern);
           errorElement?.classList.add('hidden');
         } catch (error) {
+          console.error(`Invalid regex pattern in URL: ${paramPattern}`, error);
           errorElement?.classList.remove('hidden');
           isValid = false;
         }
       }
       
-      // Set initial checkbox states
+      // Set initial checkbox states from URL params
       const fields = {
-        title: savedTitleState !== 'false', // Default to true
-        description: savedDescriptionState === 'true',
-        tags: savedTagsState === 'true'
+        // If showFields is false, title is always on regardless of URL param
+        title: showFields ? (paramTitle !== 'false') : true,
+        description: paramDesc === 'true',
+        tags: paramTags === 'true'
       };
+      
+      console.log(`Initial field states:`, fields);
       
       if (titleCheckbox) {
         titleCheckbox.checked = fields.title;
@@ -102,37 +136,82 @@ const {
         tagsCheckbox.checked = fields.tags;
       }
       
+      // Helper to update URL with current filter state
+      function updateFilterInURL(pattern: string, fields: {title: boolean, description: boolean, tags: boolean}) {
+        const params = getURLParams();
+        
+        // Always update pattern regardless of showFields
+        if (pattern) {
+          params.set('pattern', encodeURIComponent(pattern));
+        } else {
+          params.delete('pattern');
+        }
+        
+        // Only update field-related params if showFields is true
+        if (showFields) {
+          // Only store false for title (since true is default)
+          if (!fields.title) {
+            params.set('filterTitle', 'false');
+          } else {
+            params.delete('filterTitle');
+          }
+          
+          if (fields.description) {
+            params.set('filterDesc', 'true');
+          } else {
+            params.delete('filterDesc');
+          }
+          
+          if (fields.tags) {
+            params.set('filterTags', 'true');
+          } else {
+            params.delete('filterTags');
+          }
+        }
+        
+        console.log(`Updating params for ${filterId}:`, {
+          pattern,
+          fields,
+          params: params.toString()
+        });
+        
+        // Update URL without creating a new history entry
+        updateURLParams(params);
+      }
+      
       // Setup checkbox change listeners
       [titleCheckbox, descriptionCheckbox, tagsCheckbox].forEach(checkbox => {
         if (!checkbox) return;
         
         checkbox.addEventListener('change', () => {
           const fields = {
-            title: titleCheckbox?.checked || false,
+            // If showFields is false, title is always considered on for filtering
+            title: showFields ? (titleCheckbox?.checked || false) : true,
             description: descriptionCheckbox?.checked || false,
             tags: tagsCheckbox?.checked || false
           };
           
-          // Save to localStorage
-          localStorage.setItem(`filter_${filterId}_title`, fields.title.toString());
-          localStorage.setItem(`filter_${filterId}_description`, fields.description.toString());
-          localStorage.setItem(`filter_${filterId}_tags`, fields.tags.toString());
+          console.log(`Checkbox changed for ${filterId}:`, fields);
           
           // Get current pattern from input
           const pattern = (filter as HTMLInputElement).value;
+          
+          // Update URL params
+          updateFilterInURL(pattern, fields);
           
           // Dispatch filter change event with updated fields
           dispatchFilterChangeEvent(filterId, pattern, true, fields);
         });
       });
       
-      // Initial dispatch if we have a saved pattern or checkboxes are set
-      if (savedPattern || fields.title || fields.description || fields.tags) {
+      // Initial dispatch if we have params or checkboxes are set
+      if (paramPattern || fields.title || fields.description || fields.tags) {
         // Use setTimeout to ensure DOM is ready
         setTimeout(() => {
+          console.log(`Initial dispatch for ${filterId}`);
           dispatchFilterChangeEvent(
             filterId, 
-            savedPattern || '', 
+            paramPattern ? decodeURIComponent(paramPattern) : '', 
             isValid, 
             fields
           );
@@ -147,17 +226,27 @@ const {
           const pattern = (filter as HTMLInputElement).value;
           let isValid = true;
           
+          console.log(`Input changed for ${filterId}: ${pattern}`);
+          
           // Validate regex pattern
           try {
             if (pattern) new RegExp(pattern);
             errorElement?.classList.add('hidden');
           } catch (error) {
+            console.error(`Invalid regex: ${pattern}`, error);
             errorElement?.classList.remove('hidden');
             isValid = false;
           }
           
-          // Save to localStorage
-          localStorage.setItem(`filter_${filterId}_pattern`, pattern);
+          // Update URL params
+          if (isValid) {
+            updateFilterInURL(pattern, {
+              // If showFields is false, title is always considered on for filtering
+              title: showFields ? (titleCheckbox?.checked || false) : true,
+              description: descriptionCheckbox?.checked || false,
+              tags: tagsCheckbox?.checked || false
+            });
+          }
           
           // Dispatch filter change event
           dispatchFilterChangeEvent(
@@ -165,7 +254,8 @@ const {
             pattern, 
             isValid, 
             {
-              title: titleCheckbox?.checked || false,
+              // If showFields is false, title is always considered on for filtering
+              title: showFields ? (titleCheckbox?.checked || false) : true,
               description: descriptionCheckbox?.checked || false,
               tags: tagsCheckbox?.checked || false
             }
@@ -177,6 +267,7 @@ const {
       filter.addEventListener('keyup', (e) => {
         // Handle Enter key press immediately
         if ((e as KeyboardEvent).key === 'Enter') {
+          console.log(`Enter pressed for ${filterId}`);
           const pattern = (filter as HTMLInputElement).value;
           let isValid = true;
           
@@ -184,15 +275,25 @@ const {
             if (pattern) new RegExp(pattern);
             errorElement?.classList.add('hidden');
           } catch (error) {
+            console.error(`Invalid regex on Enter: ${pattern}`, error);
             errorElement?.classList.remove('hidden');
             isValid = false;
           }
           
-          localStorage.setItem(`filter_${filterId}_pattern`, pattern);
+          // Update URL params if valid
+          if (isValid) {
+            updateFilterInURL(pattern, {
+              // If showFields is false, title is always considered on for filtering
+              title: showFields ? (titleCheckbox?.checked || false) : true,
+              description: descriptionCheckbox?.checked || false,
+              tags: tagsCheckbox?.checked || false
+            });
+          }
           
           // Get field values
           const fields = {
-            title: titleCheckbox?.checked || false,
+            // If showFields is false, title is always considered on for filtering
+            title: showFields ? (titleCheckbox?.checked || false) : true,
             description: descriptionCheckbox?.checked || false,
             tags: tagsCheckbox?.checked || false
           };
@@ -210,6 +311,7 @@ const {
     isValid: boolean, 
     fields: {title: boolean, description: boolean, tags: boolean}
   ) {
+    console.log(`Dispatching filter change event:`, { id, pattern, isValid, fields });
     const event = new CustomEvent('regex-filter-change', { 
       detail: { id, pattern, isValid, fields }
     });

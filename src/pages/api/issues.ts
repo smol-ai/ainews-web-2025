@@ -7,8 +7,23 @@ export const GET: APIRoute = async ({ url }) => {
   console.log(`[API] Processing request for page ${page}`);
 
   try {
-    // Get all issues with logging
-    const allIssuesRaw = await getCollection('issues');
+    // Get all issues with logging, only fetching essential metadata
+    const allIssuesRaw = await getCollection('issues', ({ data }) => {
+      // Only fetch the data we need for the listing page
+      return {
+        id: true,
+        data: {
+          title: true,
+          date: true, 
+          tags: true,
+          models: true,
+          companies: true,
+          topics: true,
+          description: true,
+          draft: true
+        }
+      };
+    });
     console.log(`[API] Total raw issues before filtering: ${allIssuesRaw.length}`);
     
     // Log the years represented in the content
@@ -39,6 +54,9 @@ export const GET: APIRoute = async ({ url }) => {
       title: issue.data.title,
       date: issue.data.date,
       tags: issue.data.tags,
+      models: issue.data.models,
+      companies: issue.data.companies,
+      topics: issue.data.topics,
       description: issue.data.description
     }));
 

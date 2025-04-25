@@ -57,6 +57,30 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
     >
     </div>
     <div class="text-sm leading-relaxed flex-col space-y-4">
+      {/* Models tags - blue color */}
+      {
+        isIssue(entry) && (entry.data.models?.length || 0) > 0 && (
+          <div class="mt-1 inline-flex flex-wrap gap-1">
+            {(entry.data.models || []).map((tag: string) => (
+              <span class="rounded-sm border border-blue-300 bg-blue-50 px-1.5 py-0.5 text-xs text-blue-800 dark:border-blue-800 dark:bg-blue-900/30 dark:text-blue-300">
+                {tag}
+              </span>
+            ))}
+            {isIssue(entry) && (entry.data.companies?.length || 0) > 0 && (entry.data.companies || []).map((tag: string) => (
+              <span class="rounded-sm border border-purple-300 bg-purple-50 px-1.5 py-0.5 text-xs text-purple-800 dark:border-purple-800 dark:bg-purple-900/30 dark:text-purple-300">
+                {tag}
+              </span>
+            ))}
+            {isIssue(entry) && (entry.data.topics?.length || 0) > 0 && (entry.data.topics || []).map((tag: string) => (
+              <span class="rounded-sm border border-green-300 bg-green-50 px-1.5 py-0.5 text-xs text-green-800 dark:border-green-800 dark:bg-green-900/30 dark:text-green-300">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )
+      }
+      
+      {/* For backward compatibility */}
       {
         isIssue(entry) && entry.data.tags && entry.data.tags.length > 0 && (
           <div class="mt-1 flex flex-wrap gap-1">
@@ -68,7 +92,9 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
           </div>
         )
       }
-      {entry.data.description}
+      <div>
+        {entry.data.description}
+      </div>
     </div>
   </div>
 </div>

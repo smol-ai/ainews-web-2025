@@ -11,12 +11,30 @@ import SubscribeForm from "@components/SubscribeForm.astro";
 // Add logging to see what's happening with content
 console.log(`[Build Info] Environment: ${import.meta.env.MODE}`);
 
-// Get all issues first
-const allIssuesRaw = await getCollection("issues");
+// Constants for pagination
+const ITEMS_PER_PAGE = 30;
+
+// Get all issues first but only fetch essential metadata, not content
+const allIssuesRaw = await getCollection("issues", ({ data }) => {
+  // Only fetch the data we need for the listing page
+  return {
+    id: true,
+    data: {
+      title: true,
+      date: true, 
+      tags: true,
+      models: true,
+      companies: true,
+      topics: true,
+      description: true,
+      draft: true
+    }
+  };
+});
 console.log(`[Content Log] Total raw issues before filtering: ${allIssuesRaw.length}`);
 
 // Apply filtering
-const allIssues = allIssuesRaw
+let allIssues = allIssuesRaw
   .filter((post) => {
     const isDraft = !!post.data.draft;
     if (isDraft) {
@@ -28,9 +46,8 @@ const allIssues = allIssuesRaw
 
 console.log(`[Content Log] Total issues after filtering: ${allIssues.length}`);
 
-// Initial batch of 30 issues
-const ITEMS_PER_PAGE = 30;
-const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
+// Only keep the first page of issues for initial render
+const initialIssues = allIssues.slice(0, ITEMS_PER_PAGE);
 ---
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -84,7 +101,7 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
             <h2 class="font-semibold text-black dark:text-white">
               Last 30 days in AI
             </h2>
-            <RegexFilter id="regex-filter-posts" label="Filter posts:" />
+            <RegexFilter id="regex-filter-posts" label="Filter titles:" showFields={false} />
             <Link href="/issues"> See all issues </Link>
           </div>
           
@@ -93,12 +110,23 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
             <div class="absolute left-4 top-0 bottom-0 w-px bg-black/10 dark:bg-white/10 md:block hidden"></div>
             <ul class="not-prose flex flex-col gap-4 relative" id="timeline">
               {
-                allIssues.slice(0, ITEMS_PER_PAGE).map((post) => (
+                initialIssues.map((post) => (
                   <li 
                     class="relative md:pl-10" 
                     data-post-title={post.data.title.toLowerCase()}
                     data-post-description={post.data.description?.toLowerCase() || ""}
-                    data-post-tags={(post.data.tags || []).join(",").toLowerCase()}
+                    data-post-tags={post.data.tags ? post.data.tags.join(",").toLowerCase() : ""}
+                    data-post-models={post.data.models ? post.data.models.join(",").toLowerCase() : ""}
+                    data-post-companies={post.data.companies ? post.data.companies.join(",").toLowerCase() : ""}
+                    data-post-topics={post.data.topics ? post.data.topics.join(",").toLowerCase() : ""}
+                    data-post-all-tags={[
+                      ...(post.data.models || []), 
+                      ...(post.data.companies || []), 
+                      ...(post.data.topics || []),
+                      ...(post.data.tags || [])
+                    ].join(",").toLowerCase()}
+                    data-post-id={post.id}
+                    data-post-date={post.data.date.toISOString()}
                   >
                     <div class="absolute left-[0.8rem] top-[40%] w-2 h-2 rounded-full bg-black/50 dark:bg-white/50 md:block hidden"></div>
                     <ArrowCard entry={post} />
@@ -106,24 +134,14 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
                 ))
               }
             </ul>
-            {totalPages > 1 && (
-              <div class="mt-8 flex justify-center">
-                <button
-                  id="load-more"
-                  class="rounded-lg border-2 border-black/20 px-4 py-2 font-medium transition-colors hover:bg-black/5 dark:border-white/30 dark:hover:bg-white/5"
-                  data-current-page="1"
-                  data-total-pages={totalPages}
-                >
-                  Load 30 more
-                </button>
-                <a
-                  href="/issues"
-                  class="ml-4 rounded-lg border-2 border-black/20 px-4 py-2 font-medium transition-colors hover:bg-black/5 dark:border-white/30 dark:hover:bg-white/5"
-                >
-                  See all
-                </a>
-              </div>
-            )}
+            <div class="mt-8 flex justify-center">
+              <a
+                href="/issues"
+                class="rounded-lg border-2 border-black/20 px-4 py-2 font-medium transition-colors hover:bg-black/5 dark:border-white/30 dark:hover:bg-white/5"
+              >
+                See all issues
+              </a>
+            </div>
           </div>
         </section>
 
@@ -168,7 +186,6 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
 </Layout>
 
 <script>
-  let isLoading = false;
   let filterPattern = '';
   let isValidPattern = true;
   let filterFields = {
@@ -176,6 +193,39 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
     description: false,
     tags: false
   };
+
+  function updateIssuesLinks() {
+    // Get all "See all issues" links
+    // match a href /issues with arbitrary query params after that, but not if they have other slugs after, eg /issues/foobar
+    const issuesLinks = document.querySelectorAll('a[href^="/issues"][href$="/issues"], a[href^="/issues?"]');
+    
+    // Build query string from current filter state
+    const params = new URLSearchParams();
+    if (filterPattern && isValidPattern) {
+      params.set('pattern', encodeURIComponent(filterPattern));
+      
+      if (!filterFields.title) {
+        params.set('filterTitle', 'false');
+      }
+      
+      if (filterFields.description) {
+        params.set('filterDesc', 'true');
+      }
+      
+      if (filterFields.tags) {
+        params.set('filterTags', 'true');
+      }
+    }
+    
+    const queryString = params.toString();
+    const newHref = queryString ? `/issues?${queryString}` : '/issues';
+    
+    // Update all links
+    issuesLinks.forEach(link => {
+      link.setAttribute('href', newHref);
+      link.textContent = `See all ${queryString} issues`
+    });
+  }
 
   function applyFilters() {
     const items = document.querySelectorAll('#timeline li');
@@ -185,6 +235,7 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
       items.forEach(item => {
         item.classList.remove('hidden');
       });
+      updateIssuesLinks(); // Update links when clearing filter
       return;
     }
 
@@ -193,38 +244,42 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
       const regex = new RegExp(filterPattern, 'i');
       
       items.forEach(item => {
-        let shouldHide = false;
+        let shouldShow = false;
         
         // Check title if enabled
         if (filterFields.title) {
           const postTitle = item.getAttribute('data-post-title') || '';
           if (regex.test(postTitle)) {
-            shouldHide = true;
+            shouldShow = true;
           }
         }
         
         // Check description if enabled
-        if (!shouldHide && filterFields.description) {
+        if (!shouldShow && filterFields.description) {
           const postDescription = item.getAttribute('data-post-description') || '';
           if (regex.test(postDescription)) {
-            shouldHide = true;
+            shouldShow = true;
           }
         }
         
-        // Check tags if enabled
-        if (!shouldHide && filterFields.tags) {
-          const postTags = item.getAttribute('data-post-tags') || '';
-          if (regex.test(postTags)) {
-            shouldHide = true;
+        // Check all tags if enabled - this includes models, companies, topics
+        if (!shouldShow && filterFields.tags) {
+          const postAllTags = item.getAttribute('data-post-all-tags') || '';
+          console.log({postAllTags})
+          if (regex.test(postAllTags)) {
+            shouldShow = true;
           }
         }
         
-        if (!shouldHide) {
-          item.classList.add('hidden');
-        } else {
+        if (shouldShow) {
           item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
         }
       });
+      
+      // Update the "See all issues" links with current filter
+      updateIssuesLinks();
     } catch (error) {
       console.warn('Invalid regex pattern:', error);
       items.forEach(item => {
@@ -233,129 +288,29 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
     }
   }
 
-  function initLoadMore() {
-    const loadMoreButton = document.getElementById('load-more');
-    const timeline = document.getElementById('timeline');
-
-    if (!loadMoreButton || !timeline) return;
-
-    loadMoreButton.addEventListener('click', async () => {
-      if (isLoading) return;
-      isLoading = true;
-      loadMoreButton.textContent = 'Loading...';
-
-      const currentPage = parseInt(loadMoreButton.dataset.currentPage || '1');
-      const totalPages = parseInt(loadMoreButton.dataset.totalPages || '1');
-      
-      try {
-        const response = await fetch(`/api/issues?page=${currentPage + 1}`);
-        const data = await response.json();
-        
-        // Add new items to the timeline
-        data.issues.forEach((issue: any) => {
-          const li = document.createElement('li');
-          li.className = 'relative md:pl-10';
-          li.setAttribute('data-post-title', issue.title.toLowerCase());
-          li.setAttribute('data-post-description', (issue.description || '').toLowerCase());
-          li.setAttribute('data-post-tags', (issue.tags || []).join(',').toLowerCase());
-          
-          // Apply filter if needed
-          if (shouldHideItem(
-            issue.title.toLowerCase(), 
-            (issue.description || '').toLowerCase(), 
-            issue.tags || []
-          )) {
-            li.classList.add('hidden');
-          }
-          
-          li.innerHTML = `
-            <div class="absolute left-[0.9rem] top-3 w-2 h-2 rounded-full bg-black/50 dark:bg-white/50"></div>
-            <a href="/issues/${issue.id}" class="group relative block rounded-lg border border-black/15 px-4 py-3 transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white">
-              <div class="flex items-center gap-4">
-                <div class="min-w-24 text-sm text-gray-500 dark:text-gray-400">
-                  ${new Date(issue.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                </div>
-                <div class="font-semibold">
-                  ${issue.title}
-                </div>
-              </div>
-              ${issue.tags ? `
-                <div class="mt-1 flex flex-wrap gap-1 pl-24">
-                  ${issue.tags.map((tag: string) => `
-                    <span class="rounded-sm border border-black/15 px-1.5 py-0.5 text-xs dark:border-white/20">
-                      ${tag}
-                    </span>
-                  `).join('')}
-                </div>
-              ` : ''}
-            </a>
-          `;
-          timeline.appendChild(li);
-        });
-
-        // Update button state
-        loadMoreButton.dataset.currentPage = (currentPage + 1).toString();
-        if (currentPage + 1 >= totalPages) {
-          loadMoreButton.style.display = 'none';
-        }
-      } catch (error) {
-        console.error('Error loading more issues:', error);
-        loadMoreButton.textContent = 'Error loading more issues. Try again.';
-      } finally {
-        isLoading = false;
-        if (currentPage + 1 < totalPages) {
-          loadMoreButton.textContent = 'Load more issues';
-        }
-      }
-    });
-  }
-
-  function shouldHideItem(title: string, description: string = '', tags: string[] = []): boolean {
-    if (!filterPattern.trim() || !isValidPattern) return false;
-    
-    try {
-      const regex = new RegExp(filterPattern, 'i');
-      
-      if (filterFields.title && regex.test(title)) {
-        return true;
-      }
-      
-      if (filterFields.description && description && regex.test(description)) {
-        return true;
-      }
-      
-      if (filterFields.tags && tags.length > 0 && regex.test(tags.join(','))) {
-        return true;
-      }
-      
-      return false;
-    } catch (error) {
-      return false;
-    }
-  }
-
   function initRegexFilter() {
-    // Load initial filter state from localStorage
-    const savedPattern = localStorage.getItem('filter_regex-filter-posts_pattern');
-    const savedTitleState = localStorage.getItem('filter_regex-filter-posts_title');
-    const savedDescriptionState = localStorage.getItem('filter_regex-filter-posts_description');
-    const savedTagsState = localStorage.getItem('filter_regex-filter-posts_tags');
+    // Load initial filter state from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const paramPattern = urlParams.get('pattern');
+    const paramTitle = urlParams.get('filterTitle');
+    const paramDesc = urlParams.get('filterDesc');
+    const paramTags = urlParams.get('filterTags');
     
-    if (savedPattern) {
-      filterPattern = savedPattern;
+    if (paramPattern) {
+      filterPattern = decodeURIComponent(paramPattern);
       try {
-        new RegExp(savedPattern);
+        new RegExp(filterPattern);
         isValidPattern = true;
       } catch (error) {
         isValidPattern = false;
       }
     }
     
-    // Set filter fields
+    // Set filter fields from URL params
     filterFields = {
-      title: savedTitleState !== 'false', // Default to true if not explicitly set to false
-      description: savedDescriptionState === 'true',
-      tags: savedTagsState === 'true'
+      title: paramTitle !== 'false', // Default to true if not explicitly set to false
+      description: paramDesc === 'true',
+      tags: paramTags === 'true'
     };
     
     document.addEventListener('regex-filter-change', (event: any) => {
@@ -380,19 +335,16 @@ const totalPages = Math.ceil(allIssues.length / ITEMS_PER_PAGE);
       }
     });
     
-    // Apply initial filtering
-    if (filterPattern) {
-      applyFilters();
-    }
+    // Apply initial filtering and update links
+    applyFilters();
+    updateIssuesLinks();
   }
 
   // Initialize on page load
-  initLoadMore();
   initRegexFilter();
   
   // Re-initialize when navigating with View Transitions
   document.addEventListener('astro:page-load', () => {
-    initLoadMore();
     initRegexFilter();
   });
 </script>
