@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
-import remarkYouTube from "./src/remark-youtube.mjs";
+import remarkYouTubeEmbed from "./src/remark-youtube-embed.mjs";
 
 console.log(`[Astro Config] Environment: ${process.env.NODE_ENV || 'development'}`);
 console.log(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false'}`);
@@ -59,12 +59,16 @@ export default defineConfig({
         },
       },
     },
+    ssr: {
+      // Ensure @astro-community packages are processed correctly by Vite
+      noExternal: [/@astro-community\//]
+    }
   },
   markdown: {
     shikiConfig: {
       theme: "css-variables",
     },
-    remarkPlugins: [remarkYouTube],
+    remarkPlugins: [remarkYouTubeEmbed],
   },
   pagefind: {
     uiOptions: {

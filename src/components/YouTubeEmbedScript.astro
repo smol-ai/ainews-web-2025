@@ -1,0 +1,134 @@
+---
+// This component adds the necessary script and styles for lite-youtube-embed
+---
+
+<script is:inline>
+  // Load the lite-youtube-embed script and styles once
+  if (!document.querySelector('script[data-lite-youtube-embed]')) {
+    // Add the CSS
+    const linkEl = document.createElement('link');
+    linkEl.rel = 'stylesheet';
+    linkEl.href = 'https://cdn.jsdelivr.net/npm/lite-youtube-embed@0.3.3/src/lite-yt-embed.css';
+    linkEl.setAttribute('data-lite-youtube-embed', 'css');
+    document.head.appendChild(linkEl);
+
+    // Add and run the script - simplified from the original
+    class LiteYTEmbed extends HTMLElement {
+      constructor() {
+        super();
+        this.videoId = this.getAttribute('videoid');
+        this.videoPlay = this.getAttribute('playlabel') || 'Play';
+        this.posterUrl = this.getAttribute('poster') || 
+          `https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg`;
+        
+        // Set up play button
+        this.addEventListener('pointerover', this.warmConnections.bind(this), {once: true});
+        this.addEventListener('click', () => this.addIframe());
+      }
+
+      static addPrefetch(kind, url) {
+        const linkEl = document.createElement('link');
+        linkEl.rel = kind;
+        linkEl.href = url;
+        document.head.append(linkEl);
+      }
+
+      warmConnections() {
+        if (LiteYTEmbed.preconnected) return;
+        LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube-nocookie.com');
+        LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
+        LiteYTEmbed.preconnected = true;
+      }
+
+      addIframe() {
+        if (this.classList.contains('lyt-activated')) return;
+        this.classList.add('lyt-activated');
+
+        // Create iframe
+        const iframeEl = document.createElement('iframe');
+        iframeEl.width = 560;
+        iframeEl.height = 315;
+        iframeEl.title = this.videoPlay;
+        iframeEl.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+        iframeEl.allowFullscreen = true;
+        iframeEl.src = `https://www.youtube-nocookie.com/embed/${this.videoId}?autoplay=1&playsinline=1`;
+        this.appendChild(iframeEl);
+      }
+    }
+
+    // Register custom element
+    if (!customElements.get('lite-youtube')) {
+      customElements.define('lite-youtube', LiteYTEmbed);
+    }
+  }
+</script>
+
+<style is:global>
+  /* Basic lite-youtube-embed styles (will be supplemented by the CDN CSS) */
+  lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  lite-youtube::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (16 / 9));
+  }
+
+  lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+  }
+
+  /* Play button */
+  lite-youtube > .lty-playbtn {
+    width: 68px;
+    height: 48px;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    background-color: transparent;
+    /* YouTube's play button SVG */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 68 48"><path fill="%23f00" fill-opacity="0.8" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path d="M 45,24 27,14 27,34" fill="%23fff"></path></svg>');
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: none;
+  }
+
+  lite-youtube:hover > .lty-playbtn,
+  lite-youtube .lty-playbtn:focus {
+    filter: none;
+  }
+
+  lite-youtube.lyt-activated {
+    cursor: unset;
+  }
+
+  lite-youtube.lyt-activated::before,
+  lite-youtube.lyt-activated > .lty-playbtn {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+</style> 
