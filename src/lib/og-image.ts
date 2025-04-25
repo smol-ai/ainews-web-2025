@@ -9,6 +9,8 @@ export interface OgImageParams {
   issueNumber?: string;
   date?: string | Date;
   secret?: string;
+  companies?: string[];
+  models?: string[];
 }
 
 /**
@@ -42,6 +44,15 @@ export function generateOgImageUrl(params: OgImageParams): string {
   if (params.date) {
     const dateStr = params.date instanceof Date ? params.date.toISOString() : params.date;
     queryParams.set('date', dateStr);
+  }
+  
+  // Add company and model tags
+  if (params.companies && params.companies.length > 0) {
+    queryParams.set('companies', params.companies.join(','));
+  }
+  
+  if (params.models && params.models.length > 0) {
+    queryParams.set('models', params.models.join(','));
   }
   
   // Secret for cache busting

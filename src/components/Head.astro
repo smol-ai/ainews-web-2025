@@ -28,6 +28,8 @@ interface Props {
   type?: 'issue' | 'homepage' | 'tag';
   issueNumber?: string;
   date?: string | Date;
+  companies?: string[];
+  models?: string[];
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -37,7 +39,9 @@ const {
   description,
   type = 'homepage',
   issueNumber,
-  date
+  date,
+  companies = [],
+  models = []
 } = Astro.props;
 
 // Generate dynamic OG image URL
@@ -46,7 +50,9 @@ const ogImageUrl = generateOgImageUrl({
   description,
   type,
   issueNumber,
-  date
+  date,
+  companies,
+  models
 });
 
 // Get the absolute URL for the OG image
