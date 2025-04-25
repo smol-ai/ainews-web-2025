@@ -10,7 +10,7 @@ console.log(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-micro.vercel.app",
+  site: "https://news.smol.ai",
   integrations: [
     sitemap(), 
     mdx(),
