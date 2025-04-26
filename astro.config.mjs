@@ -44,6 +44,42 @@ export default defineConfig({
           } else {
             console.log(`[Astro Build] WARNING: No 2025 issue pages were built!`);
           }
+          
+          // Check for recent content (within last 3 weeks)
+          const threeWeeksAgo = new Date();
+          threeWeeksAgo.setDate(threeWeeksAgo.getDate() - 21);
+          
+          // Extract date patterns from pathnames
+          const recentPages = pages.filter(page => {
+            // Match date patterns like YY-MM-DD (e.g., 24-05-14)
+            const dateMatch = page.pathname.match(/\/(\d{2})-(\d{2})-(\d{2})-/);
+            if (!dateMatch) return false;
+            
+            // Extract year, month, day from URL pattern
+            const [_, year, month, day] = dateMatch;
+            const fullYear = parseInt(year) < 50 ? 2000 + parseInt(year) : 1900 + parseInt(year);
+            const pageDate = new Date(fullYear, parseInt(month) - 1, parseInt(day));
+            
+            return pageDate >= threeWeeksAgo;
+          });
+          
+          console.log(`[Astro Build] Found ${recentPages.length} pages with content from the last 3 weeks`);
+          if (recentPages.length > 0) {
+            console.log(`[Astro Build] Recent content examples:`, recentPages.slice(0, 3).map(p => p.pathname));
+          }
+          
+          // Skip the check in development mode
+          if (process.env.NODE_ENV !== 'production') {
+            console.log(`[Astro Build] Skipping recent content check in development mode`);
+            return;
+          }
+          
+          // Fail build if no recent content and not explicitly bypassed
+          if (recentPages.length === 0 && process.env.BYPASS_RECENT_CONTENT_CHECK !== 'true') {
+            console.error('[Astro Build] ERROR: No content from the last 3 weeks detected!');
+            console.error('[Astro Build] Set BYPASS_RECENT_CONTENT_CHECK=true to bypass this check');
+            process.exit(1); // This will fail the build
+          }
         }
       }
     }

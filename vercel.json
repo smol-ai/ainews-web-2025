@@ -1,0 +1,25 @@
+{
+  "buildCommand": "pnpm build",
+  "outputDirectory": "dist",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "maxRetries": 3,
+        "retryDelay": 5000
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800"
+      },
+      "continue": true
+    }
+  ]
+} 

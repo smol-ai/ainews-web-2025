@@ -1,7 +1,7 @@
 import type { Metadata, Site, Socials } from "@types";
 
 export const SITE: Site = {
-  TITLE: "AINews with Smol.ai",
+  TITLE: "AINews",
   DESCRIPTION: "Weekday recaps of top News for AI Engineers",
   EMAIL: "swyx@smol.ai",
   NUM_POSTS_ON_HOMEPAGE: 5,
