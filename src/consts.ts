@@ -9,7 +9,7 @@ export const SITE: Site = {
 };
 
 export const HOME: Metadata = {
-  TITLE: "Home",
+  TITLE: "AINews",
   DESCRIPTION: "Weekday recaps of top News for AI Engineers",
 };
 
