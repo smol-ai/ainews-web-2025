@@ -5,6 +5,9 @@ import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import BackToPrevious from "@components/BackToPrevious.astro";
 
+// https://deepwiki.com/search/how-do-you-turn-a-page-from-pr_fac9b049-e0d8-48b5-a29e-1e30970faeb0
+export const prerender = false;
+
 // Helper function to determine tag type
 export function getTagType(
   tag: string, 
@@ -13,7 +16,6 @@ export function getTagType(
   models: string[], 
   topics: string[]
 ): string {
-  console.log("getTagType function called with:", { tag, tagsLength: tags.length, companiesLength: companies.length });
   if (companies.includes(tag)) return "Company";
   if (models.includes(tag)) return "Model";
   if (topics.includes(tag)) return "Topic";
@@ -22,7 +24,6 @@ export function getTagType(
 }
 
 export async function getStaticPaths() {
-  console.log("getStaticPaths running, getTagType exists:", typeof getTagType === 'function');
   const posts = await getCollection("issues", ({ data }) => !data.draft);
 
   // Get unique tags from all tag types
@@ -31,49 +32,32 @@ export async function getStaticPaths() {
   const models = [...new Set(posts.flatMap((post) => post.data.models || []))];
   const topics = [...new Set(posts.flatMap((post) => post.data.topics || []))];
   
-  // Combine all unique tags
-  const allTags = [...new Set([...tags, ...companies, ...models, ...topics])];
-
-  // Create paths for each tag
-  return allTags.map((tag) => {
-    // console.log("Creating path for tag:", tag);
-    try {
-      const tagTypeValue = getTagType(tag, tags, companies, models, topics);
-      // console.log("Successfully determined tagType:", tagTypeValue);
-      return {
-        params: { id: tag },
-        props: {
-          posts: posts.filter((post) => 
-            post.data.tags?.includes(tag) || 
-            post.data.companies?.includes(tag) || 
-            post.data.models?.includes(tag) || 
-            post.data.topics?.includes(tag)
-          ),
-          tag,
-          tagType: tagTypeValue,
-        },
-      };
-    } catch (error) {
-      console.error("Error determining tagType for", tag, error);
-      return {
-        params: { id: tag },
-        props: {
-          posts: posts.filter((post) => 
-            post.data.tags?.includes(tag) || 
-            post.data.companies?.includes(tag) || 
-            post.data.models?.includes(tag) || 
-            post.data.topics?.includes(tag)
-          ),
-          tag,
-          tagType: "Tag", // Default fallback
-        },
-      };
-    }
-  });
+  // Return empty array to enable dynamic routes - pages will be generated on demand
+  return [];
 }
 
+// Dynamic route handling
 const { id } = Astro.params;
-const { posts, tagType } = Astro.props;
+
+// Get data for this specific tag
+const allPosts = await getCollection("issues", ({ data }) => !data.draft);
+
+// Get all tag categories for classification
+const allTags = [...new Set(allPosts.flatMap((post) => post.data.tags || []))];
+const allCompanies = [...new Set(allPosts.flatMap((post) => post.data.companies || []))];
+const allModels = [...new Set(allPosts.flatMap((post) => post.data.models || []))];
+const allTopics = [...new Set(allPosts.flatMap((post) => post.data.topics || []))];
+
+// Find posts with this tag
+const posts = allPosts.filter((post) => 
+  post.data.tags?.includes(id) || 
+  post.data.companies?.includes(id) || 
+  post.data.models?.includes(id) || 
+  post.data.topics?.includes(id)
+);
+
+// Get tag type
+const tagType = getTagType(id, allTags, allCompanies, allModels, allTopics);
 
 // Sort posts by date, most recent first
 const sortedPosts = posts.sort(
