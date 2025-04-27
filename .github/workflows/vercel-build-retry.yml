@@ -44,14 +44,14 @@ jobs:
         run: |
           MAX_ATTEMPTS=3
           ATTEMPT=1
-          DELAY=10  # Initial delay of 60 seconds
+          DELAY=10  # Initial delay of 10 seconds
           
           while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
             echo "::group::Deployment Attempt $ATTEMPT of $MAX_ATTEMPTS"
             
             echo "Starting deployment to Vercel..."
-            # Use the locally installed Vercel CLI
-            if vercel --token $VERCEL_TOKEN --prod; then
+            # Use pnpm exec to ensure the local Vercel CLI is used
+            if pnpm exec vercel --token $VERCEL_TOKEN --prod; then
               echo "Deployment successful! ✅"
               echo "::endgroup::"
               exit 0
