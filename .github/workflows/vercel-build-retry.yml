@@ -1,0 +1,81 @@
+name: Vercel Build with Retry Logic
+
+on:
+  workflow_dispatch:  # Allow manual triggering
+  schedule:
+    - cron: '0 */8 * * *'  # Run every 8 hours
+
+jobs:
+  deploy-with-retry:
+    name: Deploy to Vercel with Retry Logic
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper versioning
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'  # Use pnpm cache for faster installs
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
+
+      - name: Install Vercel CLI
+        run: pnpm add -g vercel
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Deploy to Vercel with Retry Logic
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          # Optional: bypass content check on retries
+          BYPASS_RECENT_CONTENT_CHECK: 'true'
+        run: |
+          MAX_ATTEMPTS=3
+          ATTEMPT=1
+          DELAY=60  # Initial delay of 60 seconds
+          
+          while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
+            echo "::group::Deployment Attempt $ATTEMPT of $MAX_ATTEMPTS"
+            
+            echo "Starting deployment to Vercel..."
+            if vercel --token $VERCEL_TOKEN --prod; then
+              echo "Deployment successful! ✅"
+              echo "::endgroup::"
+              exit 0
+            else
+              DEPLOY_EXIT_CODE=$?
+              echo "Deployment attempt $ATTEMPT failed with exit code $DEPLOY_EXIT_CODE ❌"
+              
+              if [ $ATTEMPT -lt $MAX_ATTEMPTS ]; then
+                echo "Waiting for $DELAY seconds before next attempt..."
+                sleep $DELAY
+                # Increase delay for next attempt
+                DELAY=$((DELAY * 2))
+              fi
+            fi
+            
+            echo "::endgroup::"
+            ATTEMPT=$((ATTEMPT + 1))
+          done
+          
+          echo "All $MAX_ATTEMPTS deployment attempts failed. Please check logs for details."
+          exit 1
+
+      - name: Notify on Success
+        if: success()
+        run: echo "Vercel deployment completed successfully!"
+
+      - name: Notify on Failure
+        if: failure()
+        run: echo "Vercel deployment failed after multiple attempts. Please check the logs." 

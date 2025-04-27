@@ -135,8 +135,8 @@ export function renderHomepageOgImage({
             @smol_ai
           </span>
         </div>
-        {/* Gradient box visual element */}
-        <div tw="absolute w-72 h-72 rounded-2xl bg-gradient-to-br from-indigo-100 to-transparent -top-12 -right-12 rotate-12 opacity-70" />
+        {/* Gradient box visual element - replacing problematic utilities */}
+        <div tw="absolute w-72 h-72 rounded-2xl bg-indigo-100/70 -top-12 -right-12 opacity-70" style={{ transform: 'rotate(12deg)' }} />
       </div>
     </div>
   );
