@@ -4,33 +4,39 @@ title: Shall I compare thee to a Sonnet's day?
 date: '2024-06-26T00:39:44.720143Z'
 original_slug: ainews-sonnet
 description: >-
-  Claude 3.5 Sonnet is a highly capable AI model that outperforms some
-  competitors in coding and prompt tasks, with notable performance in AI meme
-  generation, niche app creation, and AI-assisted productivity. It is developed
-  by anthropic and is part of the latest AI advancements discussed in recent
-  recaps.
+  **Claude 3.5 Sonnet** from **Anthropic** achieves top rankings in coding and
+  hard prompt arenas, surpassing **GPT-4o** and competing with **Gemini 1.5
+  Pro** at lower cost. **Glif** demonstrates a fully automated **Wojak meme
+  generator** using Claude 3.5 for JSON generation and ComfyUI for images,
+  showcasing new JSON extractor capabilities. **Artifacts** enables rapid
+  creation of niche apps, exemplified by a dual monitor visualizer made in under
+  5 minutes. **François Chollet** highlights that fusion energy is not a
+  near-term solution compared to existing nuclear fission plants. **Mustafa
+  Suleyman** notes that 75% of desk workers now use AI, marking a shift toward
+  AI-assisted productivity.
 companies:
   - anthropic
   - lmsys
   - glif
-  - fchollet
-  - mustafasuleyman
+  - comfyui
 models:
-  - claude-3-5-sonnet
-  - gpt-4
+  - claude-3.5-sonnet
+  - claude-3.5
   - gpt-4o
   - gemini-1.5-pro
-  - claude-3-opus
 topics:
-  - ai-models
-  - natural-language-processing
-  - prompt-engineering
-  - ai-meme-generation
-  - ai-application-development
+  - hard-prompts
+  - json
+  - json-extraction
+  - meme-generation
+  - instruction-following
+  - app-development
   - fusion-energy
   - nuclear-fission
-  - ai-adoption
-  - ai-productivity
+  - productivity
+people:
+  - fchollet
+  - mustafasuleyman
 ---
 
 

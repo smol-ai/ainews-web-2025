@@ -4,24 +4,32 @@ title: ALL of AI Engineering in One Place
 date: '2024-05-23T01:22:53.232395Z'
 original_slug: ainews-the-top-ai-engineer
 description: >-
-  Deep IRL networks are highlighted at the AI Engineer World's Fair in San
-  Francisco, featuring major AI labs, cloud providers, and startups. The event
-  includes tracks on RAG, multimodality, evals, open models, codegen, GPUs,
-  agents, AI in the Fortune 500, and AI leadership. Recent AI research includes
-  interpretability work by Anthropic on Claude 3 Sonnet, focusing on feature
-  extraction, behavior modification, and safety features.
+  The upcoming **AI Engineer World's Fair** in San Francisco from **June 25-27**
+  will feature a significantly expanded format with booths, talks, and workshops
+  from **top model labs** like **OpenAI, DeepMind, Anthropic, Mistral, Cohere,
+  HuggingFace**, and **Character.ai**. It includes participation from
+  **Microsoft Azure, Amazon AWS, Google Vertex**, and major companies such as
+  **Nvidia, Salesforce, Mastercard, Palo Alto Networks**, and more. The event
+  covers **9 tracks** including **RAG, multimodality, evals/ops, open models,
+  code generation, GPUs, agents, AI in Fortune 500**, and a new **AI
+  leadership** track. Additionally, **Anthropic** shared interpretability
+  research on **Claude 3 Sonnet**, revealing millions of interpretable features
+  that can be steered to modify model behavior, including safety-relevant
+  features related to bias and unsafe content, though more research is needed
+  for practical applications. The event offers a discount code for AI News
+  readers.
 companies:
   - openai
+  - google-deepmind
   - anthropic
-  - mistral
+  - mistral-ai
   - cohere
-  - huggingface
+  - hugging-face
   - adept
   - midjourney
-  - character.ai
+  - character-ai
   - microsoft
   - amazon
-  - google
   - nvidia
   - salesforce
   - mastercard
@@ -39,7 +47,7 @@ companies:
   - modular
   - cognition
   - anysphere
-  - perplexity
+  - perplexity-ai
   - groq
   - mozilla
   - nous-research
@@ -67,20 +75,21 @@ companies:
   - factory-ai
 models:
   - claude-3-sonnet
+  - claude-3
 topics:
-  - ai-engineering
-  - multimodal
-  - evals
+  - interpretability
+  - feature-steering
+  - safety
+  - multilinguality
+  - multimodality
+  - rag
+  - evals-ops
   - open-models
-  - codegen
+  - code-generation
   - gpus
   - agents
-  - ai-in-fortune-500
   - ai-leadership
-  - interpretability
-  - safety
-  - feature-steering
-  - behavior-modification
+people: []
 ---
 
 

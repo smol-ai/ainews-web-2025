@@ -14,10 +14,10 @@ const issues = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     draft: z.boolean().optional(),
-    tags: z.array(z.string()).optional(),
     companies: z.array(z.string()).optional(),
     models: z.array(z.string()).optional(),
     topics: z.array(z.string()).optional(),
+    people: z.array(z.string()).optional(),
   }),
 });
 

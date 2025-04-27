@@ -4,31 +4,46 @@ title: not much happened today
 date: '2025-04-04T06:34:03.445572Z'
 original_slug: ainews-not-much-happened-today-6597
 description: >-
-  AI news for April 2-3, 2025, covering model performance, new tools, and
-  research insights. Highlights include Gemini 2.5 Pro, DeepSeek V3, Qwen 2.5,
-  and concerns about chains-of-thought in LLMs, along with new frameworks like
-  PaperBench and CodeAct.
+  **Gemini 2.5 Pro** shows strengths and weaknesses, notably lacking LaTex math
+  rendering unlike **ChatGPT**, and scored **24.4%** on the **2025 US AMO**.
+  **DeepSeek V3** ranks 8th and 12th on recent leaderboards. **Qwen 2.5** models
+  have been integrated into the **PocketPal** app. Research from **Anthropic**
+  reveals that **Chains-of-Thought (CoT)** reasoning is often unfaithful,
+  especially on harder tasks, raising safety concerns. **OpenAI**'s
+  **PaperBench** benchmark shows AI agents struggle with long-horizon planning,
+  with **Claude 3.5 Sonnet** achieving only **21.0%** accuracy. **CodeAct**
+  framework generalizes **ReAct** for dynamic code writing by agents.
+  **LangChain** explains multi-agent handoffs in LangGraph. **Runway Gen-4**
+  marks a new phase in media creation.
 companies:
   - google
-  - meta
   - anthropic
   - openai
+  - llama_index
+  - langchain
   - runway
+  - deepseek
 models:
-  - gemini-2-5-pro
+  - gemini-2.5-pro
+  - chatgpt
   - deepseek-v3
-  - qwen-2-5
-  - claude-3-7-sonnet
+  - qwen-2.5
+  - claude-3.5-sonnet
+  - claude-3.7-sonnet
 topics:
-  - large-language-models
-  - model-performance
-  - ai-evaluation
+  - math
+  - benchmarking
   - chains-of-thought
-  - ai-safety
-  - ai-tools
-  - ai-frameworks
+  - model-performance
   - multi-agent-systems
-  - media-creation
+  - agent-frameworks
+  - media-generation
+  - long-horizon-planning
+  - code-generation
+people:
+  - rasbt
+  - danielhanchen
+  - hkproj
 ---
 
 

@@ -5,29 +5,46 @@ date: '2025-04-16T19:06:15Z'
 type: private
 original_slug: ainews-qwq-32b-claims-to-match-deepseek-r1-671b
 description: >-
-  The article discusses the release of Alibaba's Qwen2.5-Plus + Thinking (QwQ)
-  model, a 32B reasoning model with staged reinforcement learning focusing on
-  math, coding, and general capabilities. It also covers the rollout of GPT-4.5,
-  user feedback, and benchmark comparisons.
+  **Alibaba Qwen** released their **QwQ-32B** model, a **32 billion parameter**
+  reasoning model using a novel two-stage reinforcement learning approach: first
+  scaling RL for math and coding tasks with accuracy verifiers and code
+  execution servers, then applying RL for general capabilities like instruction
+  following and alignment. Meanwhile, **OpenAI** rolled out **GPT-4.5** to Plus
+  users, with mixed feedback on coding performance and noted inference cost
+  improvements. The QwQ model aims to compete with larger MoE models like
+  **DeepSeek-R1**. *"GPT-4.5 is unusable for coding"* was a notable user
+  critique, while others praised its reasoning improvements due to scaling
+  pretraining.
 companies:
   - alibaba
   - openai
+  - deepseek-ai
 models:
-  - qwen2.5-plus
   - qwen-2.5-plus
-  - qwenq-32b
+  - qwq-32b
+  - deepseek-r1
   - gpt-4.5
+  - gpt-3
+  - davinci
 topics:
   - reinforcement-learning
-  - multimodal
-  - model-optimization
-  - benchmarking
-  - ai-models
-  - language-models
   - math
-  - coding
+  - code-execution
+  - instruction-following
   - alignment
-  - human-preference
+  - reasoning
+  - model-release
+  - model-benchmarking
+  - scaling
+  - performance
+  - inference-costs
+people:
+  - aidan_mclau
+  - sama
+  - scaling01
+  - juberti
+  - polynoamial
+  - reach_vb
 ---
 
 

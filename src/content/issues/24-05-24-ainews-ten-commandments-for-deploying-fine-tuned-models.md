@@ -4,21 +4,35 @@ title: Ten Commandments for Deploying Fine-Tuned Models
 date: '2024-05-24T22:12:57.081028Z'
 original_slug: ainews-ten-commandments-for-deploying-fine-tuned
 description: >-
-  AI news from 5/23/2024 to 5/24/2024 includes community discussions, deployment
-  guidelines, and research updates. Highlights include Anthropic's feature
-  manipulation in Claude, open-source model progress, and deployment best
-  practices.
+  **Gemini-in-Google-Slides** is highlighted as a useful tool for summarizing
+  presentations. Kyle Corbitt's talk on deploying fine-tuned models in
+  production emphasizes avoiding fine-tuning unless necessary, focusing on
+  prompting, data quality, appropriate model choice, and thorough evaluation.
+  **Anthropic** showcased feature alteration in **Claude AI**, demonstrating
+  control over model behavior and increased understanding of large language
+  models. Open-source models like **GPT-4o** are approaching closed-source
+  performance on benchmarks like MMLU for simple tasks, though advanced models
+  remain necessary for complex automation.
 companies:
   - anthropic
   - google
+  - openai
 models:
   - claude-3-opus
+  - claude-3
+  - gpt-4o
 topics:
-  - large-language-models
-  - model-deployment
+  - fine-tuning
   - prompt-engineering
   - model-evaluation
-  - open-source-ai
+  - feature-alteration
+  - benchmarking
+  - model-performance
+  - open-source-models
+people:
+  - kyle-corbitt
+  - bindureddy
+  - alexalbert__
 ---
 
 

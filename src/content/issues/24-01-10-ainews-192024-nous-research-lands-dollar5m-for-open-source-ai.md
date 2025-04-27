@@ -4,26 +4,37 @@ title: '1/9/2024: Nous Research lands $5m for Open Source AI'
 date: '2024-01-11T00:53:13.633860Z'
 original_slug: ainews-192024-nous-research-lands-5m-for-open
 description: >-
-  AI news covers Nous Research's seed funding, development of Activation Beacon
-  to extend LLM context windows, Rabbit R1 launch, OpenAI's GPT store release,
-  and ongoing AI research and discussions.
+  **Nous Research** announced a **$5.2 million seed financing** focused on
+  **Nous-Forge**, aiming to embed transformer architecture into chips for
+  powerful servers supporting real-time voice agents and **trillion parameter
+  models**. **Rabbit R1** launched a demo at CES with mixed reactions.
+  **OpenAI** shipped the **GPT store** and briefly leaked an upcoming
+  personalization feature. A new paper on **Activation Beacon** proposes a
+  solution to extend LLMs' context window significantly, with code to be
+  released on GitHub. Discussions also covered **QLORA**, **fine-tuning**,
+  **synthetic data**, and **custom architectures** for LLMs.
 companies:
-  - nous research
+  - nous-research
   - openai
-  - rabbit
-  - humane
-  - mit
+  - rabbit-tech
 models:
-  - gpt-4
+  - qlora
+  - phi-3
+  - mixtral
+  - ollama
 topics:
-  - large-language-models
   - context-window
+  - fine-tuning
+  - synthetic-data
   - activation-beacon
-  - llm
-  - ai-research
-  - ai-devices
-  - ai-funding
-  - ai-tools
+  - transformer-architecture
+  - seed-financing
+  - real-time-voice-agents
+  - trillion-parameter-models
+people:
+  - kenakafrosty
+  - _stilic_
+  - teknium
 ---
 
 

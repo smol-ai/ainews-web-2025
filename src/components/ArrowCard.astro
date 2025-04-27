@@ -97,19 +97,15 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
                 {tag}
               </span>
             ))}
-          </div>
-        )
-      }
-      
-      {/* For backward compatibility */}
-      {
-        isIssue(entry) && entry.data.tags && entry.data.tags.length > 0 && (
-          <div class="mt-1 flex flex-wrap gap-1">
-            {entry.data.tags.map((tag: string) => (
-              <span class="rounded-sm border border-black/15 px-1.5 py-0.5 text-xs dark:border-white/20">
-                {tag}
-              </span>
-            ))}
+            {isIssue(entry) && (() => {
+              // TypeScript-safe approach to access possibly undefined property
+              const entryData = entry.data as any;
+              return (entryData.people?.length || 0) > 0 && (entryData.people || []).map((tag: string) => (
+                <span class="rounded-sm border border-orange-300 bg-orange-50 px-1.5 py-0.5 text-xs text-orange-800 dark:border-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                  {tag}
+                </span>
+              ));
+            })()}
           </div>
         )
       }

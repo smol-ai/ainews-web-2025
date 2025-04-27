@@ -99,8 +99,9 @@ const models = post.data.models || [];
   models={models}
 >
   <Container>
-    <div class="animate hidden md:block">
+    <div class="animate flex justify-between items-center">
       <BackToPrevious href="/issues">Back to issues</BackToPrevious>
+      <BackToPrevious href="#main-content" direction="down">Skip to Main</BackToPrevious>
     </div>
     
     <div class="flex flex-col-reverse lg:flex-row mx-auto max-w-7xl items-start gap-8 py-6">
@@ -120,10 +121,10 @@ const models = post.data.models || [];
           </div> {post.data.title}
         </h1>
         {
-          (post.data.tags && post.data.tags?.length > 0) || 
           (post.data.companies && post.data.companies?.length > 0) || 
           (post.data.models && post.data.models?.length > 0) || 
-          (post.data.topics && post.data.topics?.length > 0) ? (
+          (post.data.topics && post.data.topics?.length > 0) || 
+          (post.data.people && post.data.people?.length > 0) ? (
             <div class="animate space-y-3 pt-1" aria-label="Article metadata">
               {post.data.companies && post.data.companies?.length > 0 ? (
                 <div>
@@ -179,18 +180,21 @@ const models = post.data.models || [];
                 </div>
               ) : null}
               
-              {post.data.tags && post.data.tags?.length > 0 ? (
-                <div class="hidden">
-                  {/* Keep original tags for backward compatibility, but hide them visually */}
-                  {post.data.tags.map((tag) => (
-                    <a
-                      href={`/tags/${tag}`}
-                      data-pagefind-filter="tag"
-                      class="hidden"
-                    >
-                      {tag}
-                    </a>
-                  ))}
+              {post.data.people && post.data.people?.length > 0 ? (
+                <div>
+                  <h3 class="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">People</h3>
+                  <div class="flex flex-wrap gap-2" role="list" aria-label="People mentioned">
+                    {post.data.people.map((person) => (
+                      <a
+                        href={`/tags/${person}`}
+                        data-pagefind-filter="person"
+                        class="rounded-lg border border-black/10 bg-black/5 px-2 py-1 text-xs text-black hover:bg-black/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+                        role="listitem"
+                      >
+                        {person}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               ) : null}
             </div>

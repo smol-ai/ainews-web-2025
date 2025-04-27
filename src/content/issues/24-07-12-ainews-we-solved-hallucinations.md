@@ -4,27 +4,48 @@ title: We Solved Hallucinations
 date: '2024-07-13T02:52:26.666831Z'
 original_slug: ainews-we-solved-hallucinations
 description: >-
-  AI news for July 11-12, 2024, covering Reddit URL structure issues,
-  improvements in compute hardware, new model releases like FlashAttention-3,
-  and evaluation benchmarks such as Avocado360 and Lynx for LLM hallucination
-  detection.
+  **Reddit's URL structure causes link errors in AI-generated summaries,
+  especially with NSFW content affecting models like Claude and GPT-4.** The
+  team fixed this glitch while still leveraging LLMs for summarizing Reddit
+  content. **GPT-2 training costs have dramatically dropped to ~$672 using H100
+  GPUs and software improvements like CUDA and FlashAttention.**
+  **FlashAttention-3 was released, achieving up to 740 TFLOPS on H100 GPUs, with
+  FP8 nearing 1.2 PFLOPS, developed collaboratively by Meta, NVIDIA, Princeton,
+  and Colfax.** Hopper GPUs enable major speedups with new hardware features.
+  **Synthetic data may not improve vision tasks, as shown in recent research.**
+  The **Avocado360 benchmark evaluates vision-language models' ability to detect
+  avocados in images.** **Lynx, a hallucination detection model for LLMs, was
+  introduced for real-world healthcare and fintech applications, trained by
+  Patronus AI on Databricks Mosaic AI using Composer.**
 companies:
+  - meta-ai-fair
   - nvidia
-  - meta
   - princeton
   - colfax
-  - databricks
   - patronus-ai
+  - databricks
+  - mosaic-ai
+  - openai
 models:
   - gpt-2
   - flashattention-3
   - lynx
 topics:
   - compute-hardware
+  - gpu-optimization
+  - flashattention
   - llm-evaluation
-  - vision-language-models
   - hallucination-detection
+  - vision
   - benchmarking
+  - synthetic-data
+  - model-training
+people:
+  - karpathy
+  - tri_dao
+  - giffmana
+  - vikhyatk
+  - dbrxmosaicai
 ---
 
 

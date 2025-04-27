@@ -4,32 +4,45 @@ title: 'Shipping and Dipping: Inflection + Stability edition'
 date: '2024-03-21T00:59:01.276091Z'
 original_slug: ainews-shipping-and-dipping-inflection-stability
 description: >-
-  AI startup Inflection AI and Stability AI experience major leadership
-  departures shortly after recent product launches, signaling potential industry
-  consolidation. Microsoft appoints Mustafa Suleyman as CEO of Microsoft AI, and
-  Google DeepMind introduces TacticAI for football insights. Anthropic releases
-  Claude 3 models on Google Cloud, and NVIDIA unveils AI nurses, raising safety
-  concerns.
+  **Inflection AI** and **Stability AI** recently shipped major updates
+  (**Inflection AI 2.5** and **Stable Diffusion 3**) but are now experiencing
+  significant executive departures, signaling potential consolidation in the
+  GPU-rich startup space. **Mustafa Suleyman** has joined **Microsoft AI** as
+  CEO, overseeing consumer AI products like Copilot, Bing, and Edge. **Microsoft
+  Azure** is collaborating with **NVIDIA** on the Grace Blackwell 200 Superchip.
+  **Google DeepMind** announced **TacticAI**, an AI assistant for football
+  tactics developed with Liverpool FC, using geometric deep learning and
+  achieving 90% expert approval in blind tests. **Anthropic** released **Claude
+  3 Haiku** and **Claude 3 Sonnet** on Google Cloud's Vertex AI, with **Claude 3
+  Opus** coming soon. Concerns about AI job displacement arise as **NVIDIA**
+  introduces AI nurses that outperform humans at bedside manner at 90% lower
+  cost.
 companies:
   - inflection-ai
   - stability-ai
   - microsoft
-  - google
+  - nvidia
   - google-deepmind
   - anthropic
-  - nvidia
 models:
+  - inflection-ai-2.5
+  - stable-diffusion-3
+  - claude-3-haiku
+  - claude-3-sonnet
   - claude-3-opus
+  - tacticai
 topics:
-  - ai-safety
-  - ai-safety-risks
-  - ai-startup
-  - ai-leadership
-  - ai-product-launch
-  - ai-application
+  - executive-departures
+  - gpu-acceleration
+  - ai-assistants
   - geometric-deep-learning
-  - football-ai
-  - ai-on-cloud
+  - ai-integration
+  - ai-cost-reduction
+  - ai-job-displacement
+  - ai-healthcare
+  - model-release
+people:
+  - mustafa-suleyman
 ---
 
 

@@ -4,37 +4,39 @@ title: Evals-based AI Engineering
 date: '2024-03-29T22:20:49.586743Z'
 original_slug: ainews-evals-based-ai-engineering
 description: >-
-  AI news covering eval systems, model updates, voice cloning, and new
-  architectures. Highlights include OpenAI's voice engine demo, new models like
-  Jamba, Bamboo, Qwen1.5-MoE, Grok 1.5, and quantization advances such as 1-bit
-  Llama2-7B and QLLM.
+  **Hamel Husain** emphasizes the importance of comprehensive evals in AI
+  product development, highlighting evaluation, debugging, and behavior change
+  as key iterative steps. **OpenAI** released a voice engine demo showcasing
+  advanced voice cloning from small samples, raising safety concerns. Reddit
+  discussions introduced new models like **Jamba** (hybrid Transformer-SSM with
+  MoE), **Bamboo** (7B LLM with high sparsity based on Mistral), **Qwen1.5-MoE**
+  (efficient parameter activation), and **Grok 1.5** (128k context length,
+  surpassing GPT-4 in code generation). Advances in quantization include **1-bit
+  Llama2-7B** models outperforming full precision and the **QLLM** quantization
+  toolbox supporting GPTQ/AWQ/HQQ methods.
 companies:
   - openai
-  - hamel husain
-  - langsmith
-  - heygen
-  - noam
-  - dwarkesh
-  - sholto
-  - trenton
-  - x.ai
+  - mistral-ai
+  - x-ai
+  - llamaindex
 models:
-  - gpt-4
-  - claude-3-opus
-  - grok-1.5
-  - qwen1.5-moe
-  - bamboo-7b
   - jamba
+  - bamboo
+  - qwen-1.5-moe
+  - grok-1.5
   - llama2-7b
-  - llama2-7b-quantized
 topics:
-  - ai-evaluation
-  - model-architecture
+  - evaluation
+  - fine-tuning
+  - prompt-engineering
   - voice-cloning
-  - multimodal
   - quantization
-  - llm-performance
-  - ai-safety
+  - model-optimization
+  - code-generation
+  - context-windows
+people:
+  - hamel-husain
+  - alec-radford
 ---
 
 

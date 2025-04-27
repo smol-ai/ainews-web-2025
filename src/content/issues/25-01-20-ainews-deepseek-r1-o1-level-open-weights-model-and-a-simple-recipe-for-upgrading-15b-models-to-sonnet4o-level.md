@@ -6,28 +6,38 @@ title: >-
 date: '2025-01-21T07:50:24.815688Z'
 original_slug: ainews-deepseek-r1-o1-level-open-weights-model
 description: >-
-  DeepSeek releases R1, a new open model surpassing previous versions like V3,
-  with significant improvements in performance and cost efficiency. The launch
-  includes multiple models, licensing details, and insights into their training
-  process involving reinforcement learning and reward models.
+  **DeepSeek** released **DeepSeek R1**, a significant upgrade over **DeepSeek
+  V3** from just three weeks prior, featuring 8 models including full-size 671B
+  MoE models and multiple distillations from **Qwen 2.5** and **Llama 3.1/3.3**.
+  The models are MIT licensed, allowing finetuning and distillation. Pricing is
+  notably cheaper than **o1** by 27x-50x. The training process used **GRPO**
+  (reward for correctness and style outcomes) without relying on PRM, MCTS, or
+  reward models, focusing on reasoning improvements through reinforcement
+  learning. Distilled models can run on **Ollama** and show strong capabilities
+  like writing **Manim code**. The release emphasizes advances in
+  **reinforcement-learning**, **fine-tuning**, and **model-distillation** with a
+  novel RL framework from DeepSeekMath.
 companies:
   - deepseek
+  - ollama
+  - qwen
+  - llama
 models:
   - deepseek-r1
   - deepseek-v3
   - qwen-2.5
-  - llama-3-1
-  - llama-3-70b
+  - llama-3.1
+  - llama-3.3-70b
 topics:
-  - open-models
-  - ai-research
   - reinforcement-learning
-  - reward-models
-  - model-distillation
-  - language-models
   - fine-tuning
-  - moe
-  - cost-efficiency
+  - model-distillation
+  - model-optimization
+  - reasoning
+  - reward-models
+  - multi-response-sampling
+  - model-training
+people: []
 ---
 
 

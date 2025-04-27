@@ -4,25 +4,43 @@ title: not much happened today
 date: '2025-02-08T04:22:33.821856Z'
 original_slug: ainews-not-much-happened-today-7786
 description: >-
-  AI news for 2/6/2025-2/7/2025 covers open-source AI milestones, advancements
-  in reasoning models like AlphaGeometry2, AI development tutorials, reflections
-  on AI model releases, and social media discussions about DeepSeek and AI
-  progress.
+  **DeepSeek-R1 surpasses OpenAI in GitHub stars**, marking a milestone in
+  open-source AI with rapid growth in community interest. **AlphaGeometry2
+  achieves gold-medalist level performance with an 84% solving rate on IMO
+  geometry problems**, showcasing significant advancements in AI reasoning.
+  **LangChain releases a tutorial for building AI agents in JavaScript**,
+  enhancing developer capabilities in agent deployment. Reflections on
+  **Anthropic's Claude model** reveal early access and influence on AI
+  development timelines. Lighthearted AI humor includes calls to ban
+  second-order optimizers and challenges in web development longevity. The AI
+  Engineer Summit 2025 workshops were announced, continuing community engagement
+  and education.
 companies:
+  - deepseek
   - openai
-  - google
+  - google-deepmind
   - anthropic
   - langchain
+  - adyen
 models:
   - deepseek-r1
   - alphageometry-2
+  - claude
 topics:
-  - open-source-ai
-  - ai-reasoning
-  - benchmarking
+  - open-source
+  - reasoning
+  - agentic-ai
+  - javascript
+  - model-release
+  - memes
   - ai-development
-  - ai-model-releases
-  - ai-memes
+  - benchmarking
+people:
+  - akhaliq
+  - lmthang
+  - aymericroucher
+  - vikhyatk
+  - swyx
 ---
 
 

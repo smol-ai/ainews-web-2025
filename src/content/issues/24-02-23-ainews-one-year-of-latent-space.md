@@ -4,33 +4,49 @@ title: One Year of Latent Space
 date: '2024-02-24T01:05:00.357006Z'
 original_slug: ainews-one-year-of-latent-space
 description: >-
-  AI Discords for 2/22/2024 cover topics including bias in Google's Gemini 1.5
-  image generator, AI-assisted creativity in game development, model fine-tuning
-  challenges, emerging AI deployment trends, and community discussions on model
-  merging and coding tools.
+  **Latent Space** podcast celebrated its first anniversary, reaching #1 in AI
+  Engineering podcasts and 1 million unique readers on Substack. The **Gemini
+  1.5** image generator by **Google DeepMind** sparked controversy over bias and
+  inaccurate representation, leading to community debates on AI ethics.
+  Discussions in **TheBloke** and **LM Studio** Discords highlighted AI's
+  growing role in creative industries, especially game development and
+  text-to-3D tools. Fine-tuning and performance optimization of models like
+  **Gemma 7B** and **Mistral-next** were explored in **Nous Research AI** and
+  **Mistral** Discords, with shared solutions including learning rates and
+  open-source tools. Emerging trends in AI hardware and application development
+  were discussed in **CUDA MODE** and **LangChain AI** Discords, including
+  critiques of **Nvidia's CUDA** by **Jim Keller** and advancements in reducing
+  AI hallucinations hinted by **Richard Socher**.
 companies:
-  - google
+  - google-deepmind
+  - nous-research
+  - mistral-ai
+  - hugging-face
+  - nvidia
+  - langchain
+  - jetbrains
 models:
   - gemini-1.5
+  - gemma-7b
+  - mistral-next
+  - opus-v1
   - orca-2-13b
   - nous-hermes-2-dpo-7b
-  - opus-v1
 topics:
   - ai-ethics
-  - bias
-  - generative-ai
-  - creative-ai
-  - model-fine-tuning
+  - bias-mitigation
+  - fine-tuning
   - performance-optimization
-  - ai-deployment
-  - ai-hallucination
-  - ai-ethics-bias
-  - text-to-3d
   - model-merging
-  - dpo
-  - ai-in-games
-  - ai-in-search
-  - ai-creative
+  - knowledge-transfer
+  - text-to-3d
+  - ai-hallucination
+  - hardware-optimization
+  - application-development
+  - vulnerability-research
+people:
+  - jim-keller
+  - richard-socher
 ---
 
 

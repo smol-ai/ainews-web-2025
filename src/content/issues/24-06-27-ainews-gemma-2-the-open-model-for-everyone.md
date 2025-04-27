@@ -4,37 +4,40 @@ title: 'Gemma 2: The Open Model for Everyone'
 date: '2024-06-28T06:21:39.390033Z'
 original_slug: ainews-gemma-2-the-open-model-for-everyone
 description: >-
-  Knowledge Distillation is being explored as a solution to the token crisis,
-  with recent developments including Gemma 2, large language models, and
-  multimodal multilingual models like Gemini. The news covers new model
-  releases, evaluation benchmarks, and research on efficient training
-  techniques.
+  **Gemma 2**, a **27B** parameter model from **google-deepmind**, was released
+  with innovations like 1:1 local-global attention alternation and logit
+  soft-capping, leveraging **knowledge distillation** to train smaller models on
+  over 50× the compute-optimal token quantity. The model supports multilingual
+  and multimodal capabilities, with fine-tuning success on over 200 Indic
+  language variants. The **Open LLM Leaderboard** highlights **alibaba's Qwen
+  72B** as the top model, with **mistral-ai's Mixtral-8x22B-Instruct** also
+  ranking highly. **Anthropic** launched **Claude 3.5 Sonnet**, improving
+  intelligence at mid-tier cost and speed. Research on eliminating matrix
+  multiplication in LLMs promises significant memory savings without performance
+  loss. *Kathleen Kenealy* and *Daniel Han* provided insights on Gemma 2's
+  tokenizer and attention scaling respectively.
 companies:
-  - deepmind
-  - google
-  - clementdelangue
+  - google-deepmind
   - alibaba
   - mistral-ai
   - anthropic
-  - rohanpaul-ai
 models:
   - gemma-2
   - qwen-72b
+  - mixtral-8x22b-instruct
   - claude-3.5-sonnet
-  - gpt-4
-  - claude-3
-  - grok
-  - phi-3
-  - yi-large
 topics:
   - knowledge-distillation
-  - large-language-models
-  - multimodal
-  - multilingual
-  - model-evaluation
-  - efficient-training
-  - attention-scaling
-  - matrix-multiplication
+  - attention-mechanisms
+  - multilingual-models
+  - multimodality
+  - model-training
+  - model-optimization
+  - memory-optimization
+  - fine-tuning
+people:
+  - kathleen-kenealy
+  - daniel-han
 ---
 
 

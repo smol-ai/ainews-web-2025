@@ -4,35 +4,59 @@ title: not much happened today
 date: '2025-03-05T05:17:34.368145Z'
 original_slug: ainews-not-much-happened-today-4193
 description: >-
-  Weave is all you need. AI news from 3/4/2025 to 3/5/2025 covers model
-  releases, company updates, and new AI tools. Highlights include the release of
-  Aya Vision models by Cohere, Phi-4-Mini and Phi-4-Multimodal by Microsoft,
-  CogView4 text-to-image model, Wan 2.1 video generation from Alibaba, and
-  Google Pixel AI features. LlamaCloud reaches GA and raises funding, Weaviate
-  launches Query Agent.
+  **Weights and Biases** announced a **$1.7 billion acquisition by CoreWeave**
+  ahead of CoreWeave's IPO. **CohereForAI** released the **Aya Vision models (8B
+  and 32B parameters)** supporting **23 languages**, outperforming larger models
+  like **Llama-3.2 90B Vision** and **Molmo 72B**. **Microsoft** introduced
+  **Phi-4-Mini (3.8B parameters)** and **Phi-4-Multimodal models**, excelling in
+  math, coding, and multimodal benchmarks. **CogView4**, a **6B parameter
+  text-to-image model** with **2048x2048 resolution** and Apache 2.0 license,
+  was released. **Alibaba** launched **Wan 2.1**, an open-source video
+  generation model with **720p output** and **16 fps generation**. **Google**
+  announced new AI features for Pixel devices including **Scam Detection** and
+  **Gemini integrations**. **LlamaCloud** reached **General Availability** and
+  raised **$19M Series A funding**, serving over **100 Fortune 500 companies**.
+  **Weaviate** launched the **Query Agent**, the first of three Weaviate Agents.
 companies:
-  - cohere
+  - weights-and-biases
+  - coreweave
+  - cohereforai
   - microsoft
   - alibaba
   - google
+  - llamaindex
   - weaviate
-  - llama-internet
 models:
   - aya-vision-8b
   - aya-vision-32b
+  - llama-3-2-90b-vision
+  - molmo-72b
   - phi-4-mini
   - phi-4-multimodal
   - cogview4
-  - wan-2.1
+  - wan-2-1
 topics:
-  - model-releases
-  - multimodal
-  - vision-models
-  - text-to-image
+  - multilinguality
+  - vision
+  - multimodality
+  - image-generation
   - video-generation
-  - ai-plugins
-  - ai-products
-  - ai-company-news
+  - model-releases
+  - benchmarking
+  - funding
+  - agentic-ai
+  - model-performance
+people:
+  - mervenoyann
+  - reach_vb
+  - jayalammar
+  - sarahookr
+  - aidangomez
+  - nickfrosst
+  - dair_ai
+  - akhaliq
+  - bobvanluijt
+  - jerryjliu0
 ---
 
 

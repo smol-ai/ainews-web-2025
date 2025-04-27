@@ -4,36 +4,62 @@ title: not much happened today
 date: '2024-12-28T05:06:02.495266Z'
 original_slug: ainews-not-much-happened-today-4715
 description: >-
-  AI news recap from 12/26/2024 to 12/27/2024 covering infrastructure updates,
-  AI applications in healthcare and coding, development practices, future AI
-  trends, and safety.
+  **ChatGPT**, **Sora**, and the **OpenAI API** experienced a >5 hour outage but
+  are now restored. Updates to **vLLM** enable **DeepSeek-V3** to run with
+  enhanced **parallelism** and **CPU offloading**, improving **model deployment
+  flexibility**. Discussions on **gradient descent** in **top-k routing MoE**
+  and adoption of **FP8 precision** focus on **training efficiency** and
+  **memory optimization**. **AIDE**, an **AI voice medical assistant** by **Team
+  Therasync**, leverages **Qdrant**, **OpenAI**, and **Twilio**.
+  **DeepSeek-Engineer** offers AI-powered coding assistance with structured
+  outputs. **LlamaIndex** integrates **LlamaCloud** and **ElevenLabs** for
+  large-scale **document processing** and voice interaction. Insights on
+  **version control** with **ghstack** and advocacy for **linear decay learning
+  rate schedules** highlight best practices in AI development. Experts predict
+  **smaller, tighter models**, **true multimodal models**, and **on-device AI**
+  in 2025. Proposals for **planetary-scale federated learning** and community
+  AGI moonshots emphasize future AI directions. Discussions on **agentic
+  systems**, **multi-agent workflows**, and **deliberative alignment** through
+  **chain of thought reasoning** underscore AI safety and alignment efforts.
 companies:
   - openai
+  - deepseek
   - qdrant
   - twilio
+  - llamaindex
+  - elevenlabs
 models:
-  - gpt-3.5-turbo
+  - vllm
   - deepseek-v3
+  - llamaindex
 topics:
-  - ai-infrastructure
-  - model-deployment
+  - training-efficiency
+  - parallelism
+  - cpu-offloading
   - gradient-descent
-  - moe-routing
+  - mixture-of-experts
   - fp8-precision
   - memory-optimization
-  - ai-healthcare
-  - ai-coding
+  - ai-voice-assistants
+  - coding-assistants
   - document-processing
   - version-control
-  - training-schedules
-  - open-source
-  - ai-predictions-2025
+  - learning-rate-schedules
   - federated-learning
-  - community-agi
-  - ai-ecosystem
   - agentic-systems
-  - ai-safety
-  - alignment
+  - multi-agent-systems
+  - deliberative-alignment
+  - chain-of-thought
+  - on-device-ai
+  - multimodality
+people:
+  - francois-fleuret
+  - daniel-hanchen
+  - aaron-defazio
+  - fchollet
+  - elad-gil
+  - wojciech-zaremba
+  - richard-socher
 ---
 
 

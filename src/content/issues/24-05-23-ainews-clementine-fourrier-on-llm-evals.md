@@ -4,24 +4,33 @@ title: Clémentine Fourrier on LLM evals
 date: '2024-05-23T23:34:22.485002Z'
 original_slug: ainews-to-be-named-4285
 description: >-
-  AI news for 5/22/2024-5/23/2024 covers updates on LLM evaluation methods,
-  insights from Clémentine Fourrier on LLM evals, and community activities like
-  the AI Engineer World's Fair. Highlights include discussions on automated
-  benchmarking, human and model judging, and the state of AI evaluation
-  research.
+  **Clémentine Fourrier** from **Huggingface** presented at **ICLR** about
+  **GAIA** with **Meta** and shared insights on **LLM evaluation** methods. The
+  blog outlines three main evaluation approaches: **Automated Benchmarking**
+  using sample inputs/outputs and metrics, **Human Judges** involving grading
+  and ranking with methods like **Vibe-checks**, **Arena**, and **systematic
+  annotations**, and **Models as Judges** using generalist or specialist models
+  with noted biases. Challenges include data contamination, subjectivity, and
+  bias in scoring. These evaluations help prevent regressions, rank models, and
+  track progress in the field.
 companies:
   - huggingface
-  - meta
+  - meta-ai-fair
 models:
   - claude-3-opus
 topics:
   - llm-evaluation
   - automated-benchmarking
-  - human-judges
-  - models-as-judges
-  - llm-evals
-  - ai-evaluation
-  - ai-research
+  - human-evaluation
+  - model-bias
+  - data-contamination
+  - elo-ranking
+  - systematic-annotations
+  - preference-learning
+  - evaluation-metrics
+  - prompt-sensitivity
+people:
+  - clem_fourrier
 ---
 
 

@@ -4,38 +4,61 @@ title: Not much (in AI) happened this weekend
 date: '2024-10-14T22:52:37.794603Z'
 original_slug: ainews-not-much-in-ai-happened-this-weekend
 description: >-
-  AI news recap from 10/11/2024 to 10/14/2024 covering AI advancements, space
-  exploration, ethics, research, and industry developments.
+  **OpenAI** introduced an "edit this area" feature for image generation,
+  praised by **Sam Altman**. **Yann LeCun** highlighted a NYU paper improving
+  pixel generation with feature prediction loss using pre-trained visual
+  encoders like DINOv2. Long-context LLMs such as **llama-3.1-8b** and
+  **llama-3.2** variants now support up to **131k tokens**, offering
+  alternatives to RAG systems. **Bindu Reddy** announced AI agents capable of
+  building and deploying code from English instructions, signaling AI's
+  replacement of SQL and potential impact on Python. SpaceX's successful
+  **Starship rocket catch** was celebrated by **Andrej Karpathy** and others,
+  with **Soumith Chintala** praising SpaceX's efficient, low-bureaucracy
+  research approach. Privacy concerns arose from **Harvard** students' AI
+  glasses, I-XRAY, which can reveal personal information. **Meta AI FAIR**'s
+  Movie Gen model advances media foundation models with high-quality
+  text-to-image and video generation, including synced audio. Humanoid robots
+  like **Ameca** and **Azi** now engage in expressive conversations using
+  **ChatGPT**. **xAI** rapidly deployed **100K Nvidia H100 GPUs** in 19 days,
+  with CEO Jensen Huang commending Elon Musk. Leading AI research labs compared
+  include **Meta-FAIR**, **Google DeepMind**, and **Microsoft Research**.
+  Skepticism about LLM intelligence was voiced by **Sam Pino**, emphasizing
+  limitations in novel problem-solving despite strong memorization.
 companies:
   - openai
-  - nyu
-  - spacex
-  - meta
-  - harvard
-  - engineered-arts
-  - xai
-  - nvidia
-  - google
+  - meta-ai-fair
+  - google-deepmind
   - microsoft
+  - x-ai
+  - spacex
+  - harvard
+  - nvidia
 models:
-  - gpt-3.5
-  - gpt-4
-  - llama-3-1-8b
-  - llama-3-2-1b
-  - llama-3-2-3b
-  - dino-v2
+  - llama-3.1-8b
+  - llama-3.2
+  - chatgpt
+  - movie-gen
 topics:
-  - ai-advancements
-  - long-context-llms
+  - long-context
+  - feature-prediction-loss
   - ai-agents
-  - space-exploration
-  - spacex-starship
-  - ai-ethics
-  - privacy-concerns
-  - media-foundation-models
+  - privacy
+  - text-to-video
+  - text-to-image
   - humanoid-robots
-  - ai-industry
-  - ai-research
+  - gpu-deployment
+  - media-foundation-models
+  - ai-research-labs
+people:
+  - sam-altman
+  - yann-lecun
+  - rasbt
+  - bindureddy
+  - andrej-karpathy
+  - soumithchintala
+  - svpino
+  - adcock_brett
+  - rohanpaul_ai
 ---
 
 

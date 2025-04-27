@@ -4,20 +4,39 @@ title: 'Halfmoon is Reve Image: a new SOTA Image Model from ex-Adobe/Stability t
 date: '2025-03-25T01:43:04.934624Z'
 original_slug: ainews-halfmoon-is-reve-image-a-new-sota-image
 description: >-
-  Reve, a new image generation model from former Stability and Adobe alumni,
-  aims to enhance visual generative models with logic and understanding of user
-  intent, moving beyond simple slice-of-the-world generation.
+  **Reve**, a new composite AI model from former Adobe and Stability alums
+  **Christian Cantrell**, **Taesung Park**, and **Michaël Gharbi**, has emerged
+  as the top-rated image generation model, surpassing previous state-of-the-art
+  models like Recraft and Ideogram in text rendering and typography. The team
+  emphasizes *"enhancing visual generative models with logic"* and
+  *"understanding user intent with advanced language capabilities"* to
+  iteratively amend visuals based on natural language input. Additionally,
+  **DeepSeek-V3-0324** and **Alibaba's Qwen2.5-VL-32B-Instruct** models were
+  released with notable performance improvements, including better vision task
+  benchmarks and mathematical reasoning.
 companies:
-  - stability
+  - artificial-analysis
+  - stability-ai
   - adobe
+  - deepseek
+  - alibaba
 models:
-  - reve
+  - deepseek-v3-0324
+  - qwen-2.5-vl-32b-instruct
+  - recraft
 topics:
   - text-to-image
+  - prompt-understanding
+  - model-composition
   - visual-generation
-  - natural-language-understanding
-  - interactive-systems
-  - prompt-engineering
+  - language-understanding
+  - model-performance
+  - complex-prompting
+  - iterative-generation
+people:
+  - christian-cantrell
+  - taesung-park
+  - michael-gharbi
 ---
 
 

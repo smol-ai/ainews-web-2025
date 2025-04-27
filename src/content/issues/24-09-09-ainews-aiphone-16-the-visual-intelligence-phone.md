@@ -4,33 +4,40 @@ title: 'AIPhone 16: the Visual Intelligence Phone'
 date: '2024-09-09T23:00:14.695088Z'
 original_slug: ainews-aiphone-16-the-visual-intelligence-phone
 description: >-
-  Apple announced new features including Visual Intelligence with the iPhone 16,
-  integrating AI services with Apple Maps and Siri, and enhancing video
-  understanding in Photos. The update emphasizes privacy and default services,
-  positioning Apple as a competitor to OpenAI. Discussions include reflections
-  on large language model evaluations and AI benchmarking, with community
-  commentary on AI performance and capabilities.
+  **Apple** announced the new **iPhone 16** lineup featuring **Visual
+  Intelligence**, a new AI capability integrated with Camera Control, Apple
+  Maps, and Siri, emphasizing privacy and default service use over third-party
+  AI like OpenAI. **Apple Photos** now includes advanced video understanding
+  with timestamp recognition. Meanwhile, **Reflection-70B** claims to be a top
+  open-source model but benchmarks show it performs close to **Llama 3 70B** and
+  slightly worse than **Qwen 2 72B**. **Yann LeCun** highlighted ongoing
+  challenges with LLM planning abilities, noting models like **Llama-3.1-405b**
+  and **Claude** show some skill, while **GPT-4** and **Gemini** lag behind.
+  **Weights & Biases** is sponsoring an event to advance LLM evaluation
+  techniques with prizes and API access.
 companies:
   - apple
   - openai
-  - google
-  - anthropic
-  - xai
+  - weights-biases
 models:
-  - gpt-4
-  - claude-3-opus
-  - gemini-pro-1.5
   - reflection-70b
-  - llama-3-1-405b
+  - llama-3-70b
   - qwen-2-72b
+  - llama-3-1-405b
+  - claude
+  - gpt-4
+  - gemini
 topics:
-  - visual-intelligence
-  - ai-privacy
-  - ai-benchmarking
-  - llm-evaluation
+  - vision
   - video-understanding
-  - ai-assistants
-  - llm-planning
+  - benchmarking
+  - planning
+  - model-evaluation
+  - privacy
+  - ai-integration
+  - instruction-following
+people:
+  - yann-lecun
 ---
 
 

@@ -4,37 +4,61 @@ title: not much happened today
 date: '2024-11-08T01:01:09.630174Z'
 original_slug: ainews-not-much-happened-today-3089
 description: >-
-  AI news recap covering model updates like Llama 3.2 Vision, model scaling,
-  transformers, AI in healthcare, recruitment tools, research surveys, OCR with
-  GPT-2, multi-agent systems, and community events including NeurIPS and NLP
-  seminars.
+  This week in AI news highlights **Ollama 0.4** supporting **Meta's Llama 3.2
+  Vision** models (11B and 90B), with applications like handwriting recognition.
+  **Self-Consistency Preference Optimization (ScPO)** was introduced to improve
+  model consistency without human labels. Discussions on **model scaling**,
+  **neural networks resurgence**, and **AMD's multi-GPU bandwidth** challenges
+  were noted. The importance of **skip connections** in **Transformers** was
+  emphasized. In healthcare, **less regulation plus AI** could revolutionize
+  disease treatment and aging. Tools like **LlamaParse** and **Gemini** aid
+  automated resume insights. **Gitpod Flex** demonstrated zero-trust
+  architecture for secure development environments. Research includes surveys on
+  **Small Language Models (SLMs)**, **number understanding** in LLMs, and
+  **DTrOCR** using a **GPT-2 decoder** for OCR. Multi-agent systems in
+  prediction markets were discussed by **TogetherCompute** and **LangChainAI**.
+  Community events include **NeurIPS Happy Hour**, **NLP seminars**, and courses
+  on **Agent Memory** with LLMs as operating systems.
 companies:
-  - meta
+  - meta-ai-fair
+  - ollama
   - amd
-  - llama
-  - google
+  - llamaindex
+  - gemini
+  - gitpod
+  - togethercompute
+  - langchainai
+  - weights-biases
   - stanfordnlp
   - deeplearningai
 models:
   - llama-3-2-vision
-  - gemini
   - gpt-2
 topics:
-  - transformers
   - model-scaling
-  - liquid-neural-networks
+  - neural-networks
+  - multi-gpu-support
   - skip-connections
-  - ai-healthcare
-  - ai-recruitment
+  - transformers
+  - healthcare-ai
+  - automated-recruitment
+  - zero-trust-security
   - small-language-models
-  - numerical-understanding
+  - numerical-processing
   - chain-of-thought
-  - ocr
+  - optical-character-recognition
   - multi-agent-systems
-  - ai-community
-  - conferences
-  - seminars
-  - workshops
+  - agent-memory
+  - interactive-language-learning
+people:
+  - bindureddy
+  - fstichler
+  - stasbekman
+  - jxmnop
+  - bindureddy
+  - omarsar0
+  - giffmana
+  - rajammanabrolu
 ---
 
 

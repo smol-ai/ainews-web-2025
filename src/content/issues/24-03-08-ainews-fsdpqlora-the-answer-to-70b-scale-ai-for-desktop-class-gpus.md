@@ -4,30 +4,45 @@ title: 'FSDP+QLoRA: the Answer to 70b-scale AI for desktop class GPUs'
 date: '2024-03-08T23:21:13.565774Z'
 original_slug: ainews-fsdpqlora-the-answer-to-70b-scale-ai-for
 description: >-
-  AI news discusses a new tool by Jeremy Howard for training 70b-scale language
-  models on consumer GPUs, the limitations of QLoRA, and the use of FSDP, GPU
-  memory management techniques, and cost-effective hardware solutions.
+  **Jeremy Howard** and collaborators released a new tool combining **FSDP**,
+  **QLoRA**, and **HQQ** to enable training **70b-parameter** models on
+  affordable consumer GPUs like **RTX 4090s** with only **24GB RAM**, overcoming
+  traditional memory constraints that required expensive data center GPUs
+  costing over $150k. The approach shards quantized models across multiple GPUs
+  and uses techniques like gradient checkpointing and CPU offloading to achieve
+  efficient training on desktop-class hardware. The blogpost details challenges
+  and solutions integrating these methods, highlighting a significant cost
+  reduction from $150k to under $2.5k for training large language models.
+  Additionally, Twitter recaps mention **Inflection AI**'s **Inflection-2.5**
+  model rivaling **GPT-4** in benchmarks with less compute, and **Grok**
+  improving speed by 3x. **Yann LeCun** discusses multi-step reasoning training
+  for LLMs.
 companies:
-  - huggingface
-  - meta
+  - answer.ai
+  - hugging-face
+  - meta-ai-fair
+  - nvidia
   - inflectionai
 models:
-  - gpt-4
-  - llama
   - qlora
   - fsdp
-  - hqq
+  - inflection-2.5
+  - gpt-4
 topics:
-  - large-language-models
   - model-training
-  - memory-optimization
-  - distributed-training
-  - gpu-hardware
   - quantization
-  - parameter-sharding
+  - memory-optimization
   - gradient-checkpointing
   - cpu-offloading
-  - flashattention
+  - fine-tuning
+  - model-sharding
+  - reinforcement-learning
+  - chain-of-thought
+  - benchmarking
+people:
+  - jeremy_howard
+  - tim_dettmers
+  - yann_lecun
 ---
 
 

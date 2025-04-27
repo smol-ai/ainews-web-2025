@@ -6,27 +6,46 @@ title: >-
 date: '2024-11-28T01:23:25.425054Z'
 original_slug: ainews-qwen-with-questions-32b-open-weights
 description: >-
-  AI news from 11/27/2024 to 11/28/2024 covers DeepSeek's R1 model, QwQ's
-  release, and advancements in inference hardware with SambaNova's RDUs.
-  Highlights include model benchmarks, open-source AI momentum, and deployment
-  updates from Hugging Face and other communities.
+  **DeepSeek r1** leads the race for "open o1" models but has yet to release
+  weights, while **Justin Lin** released **QwQ**, a **32B open weight model**
+  that outperforms **GPT-4o** and **Claude 3.5 Sonnet** on benchmarks. QwQ
+  appears to be a fine-tuned version of **Qwen 2.5**, emphasizing sequential
+  search and reflection for complex problem-solving. **SambaNova** promotes its
+  RDUs as superior to GPUs for inference tasks, highlighting the shift from
+  training to inference in AI systems. On Twitter, **Hugging Face** announced
+  CPU deployment for llama.cpp instances, **Marker v1** was released as a faster
+  and more accurate deployment tool, and **Agentic RAG** developments focus on
+  integrating external tools and advanced LLM chains for improved response
+  accuracy. The open-source AI community sees growing momentum with models like
+  **Flux** gaining popularity, reflecting a shift towards multi-modal AI models
+  including image, video, audio, and biology.
 companies:
   - deepseek
   - sambanova
   - hugging-face
+  - dair-ai
 models:
+  - deepseek-r1
   - qwq
-  - gpt-4
+  - gpt-4o
   - claude-3.5-sonnet
-  - reflection-70b
+  - qwen-2.5
+  - llama-cpp
 topics:
-  - open-o1
-  - model-benchmarking
-  - inference-hardware
-  - open-source-ai
-  - llm-deployments
-  - multimodal-ai
-  - ai-infrastructure
+  - model-releases
+  - benchmarking
+  - fine-tuning
+  - sequential-search
+  - inference
+  - model-deployment
+  - agentic-rag
+  - external-tools
+  - multi-modal-models
+people:
+  - justin-lin
+  - clementdelangue
+  - ggerganov
+  - vikparuchuri
 ---
 
 

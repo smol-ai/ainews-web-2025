@@ -4,36 +4,49 @@ title: small news items
 date: '2025-02-13T00:10:12.213344Z'
 original_slug: ainews-small-news-items
 description: >-
-  AI news from February 11-12, 2025, highlights OpenAI's upcoming models GPT-4.5
-  and GPT-5, new model specs, performance benchmarks, partnerships, funding, and
-  global AI community trends. Notable achievements include OpenAI's o3 model
-  winning gold at IOI 2024, and advancements in language models and AI hardware.
+  **OpenAI** announced plans for **GPT-4.5 (Orion)** and **GPT-5**, with GPT-5
+  integrating the **o3** model and offering unlimited chat access in the free
+  tier. **DeepSeek R1 Distilled Qwen 1.5B** outperforms OpenAI's **o1-preview**
+  on math benchmarks, while **ModernBERT 0.3b** surpasses **Qwen 0.5b** at MMLU
+  without fine-tuning. **Mistral** and **Perplexity** adopt **Cerebras**
+  hardware for 10x performance gains. OpenAI's **o3** model won a gold medal at
+  the 2024 International Olympiad in Informatics. Partnerships include **Qwen**
+  with **Groq**. Significant RLHF activity is noted in Nigeria and the global
+  south, and **Bytedance** is expected to rise in AI prominence soon. *"GPT5 is
+  all you need."*
 companies:
   - openai
   - ollama
-  - glean
-  - harvey
-  - fal
-  - scaled cognition
+  - mistral
+  - perplexity
+  - cerebras
   - alibaba
   - groq
+  - bytedance
 models:
   - gpt-4.5
   - gpt-5
-  - o3
   - deepseek-r1-distilled-qwen-1.5b
+  - o1-preview
   - modernbert-0.3b
+  - qwen-0.5b
+  - o3
 topics:
+  - math
+  - benchmarking
+  - fine-tuning
   - model-performance
-  - ai-hardware
-  - ai-research
-  - ai-competitions
-  - ai-funding
-  - ai-partnerships
-  - language-models
-  - ai-performance
-  - ai-roadmap
   - reinforcement-learning
+  - model-architecture
+  - partnerships
+  - funding
+people:
+  - jeremyphoward
+  - arankomatsuzaki
+  - sama
+  - nrehiew_
+  - danhendrycks
+  - akhaliq
 ---
 
 

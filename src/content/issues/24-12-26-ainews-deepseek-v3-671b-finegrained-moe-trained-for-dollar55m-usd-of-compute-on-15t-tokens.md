@@ -6,25 +6,43 @@ title: >-
 date: '2024-12-27T01:18:46.567338Z'
 original_slug: ainews-deepseek-v3-671b-finegrained-moe-trained
 description: >-
-  DeepSeek v3 is a new open model from China, trained efficiently with less
-  budget, featuring multi-head latent attention, synthetic reasoning data, and a
-  multi-token prediction objective. It outperforms some existing models and
-  emphasizes cost-effective AI development.
+  **DeepSeek-V3** has launched with **671B MoE parameters** and trained on
+  **14.8T tokens**, outperforming **GPT-4o** and **Claude-3.5-sonnet** in
+  benchmarks. It was trained with only **2.788M H800 GPU hours**, significantly
+  less than **Llama-3**'s **30.8M GPU-hours**, showcasing major compute
+  efficiency and cost reduction. The model is open-source and deployed via
+  **Hugging Face** with API support. Innovations include native FP8 mixed
+  precision training, Multi-Head Latent Attention scaling, distillation from
+  synthetic reasoning data, pruning and healing for MoEs with up to **256
+  experts**, and a new multi-token prediction objective enabling lookahead token
+  planning. Research highlights also cover the **OREO method** and **Natural
+  Language Reinforcement Learning (NLRL)** for multi-step reasoning and agent
+  control.
 companies:
   - deepseek-ai
-  - huggingface
-  - scaling01
-  - deeplearningai
+  - hugging-face
+  - openai
+  - anthropic
 models:
   - deepseek-v3
+  - gpt-4o
+  - claude-3.5-sonnet
+  - llama-3
 topics:
-  - large-language-models
+  - mixture-of-experts
   - model-training
-  - model-efficiency
-  - multitoken-prediction
-  - model-architecture
+  - model-optimization
+  - reinforcement-learning
+  - chain-of-thought
+  - multi-token-prediction
   - synthetic-data
-  - model-comparison
+  - model-distillation
+  - fine-tuning
+  - attention-mechanisms
+  - gpu-optimization
+people:
+  - nrehiew_
+  - denny_zhou
 ---
 
 

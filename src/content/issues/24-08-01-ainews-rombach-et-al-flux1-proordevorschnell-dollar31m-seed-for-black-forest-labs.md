@@ -4,33 +4,42 @@ title: 'Rombach et al: FLUX.1 [pro|dev|schnell], $31m seed for Black Forest Labs
 date: '2024-08-02T01:05:39.247788Z'
 original_slug: ainews-rombach-et-al-flux1-prodevschnell-31m-seed
 description: >-
-  AI news covering the release of Stability AI's Flux.1 text-to-image model, its
-  performance benchmarks, and upcoming text-to-video development. Also includes
-  updates on Google's Gemma 2 open-source models, AI model performance debates,
-  and policy support for open-weight AI models.
+  **Stability AI** co-founder Rombach launched **FLUX.1**, a new text-to-image
+  model with three variants: pro (API only), dev (open-weight, non-commercial),
+  and schnell (Apache 2.0). FLUX.1 outperforms **Midjourney** and **Ideogram**
+  based on Black Forest Labs' ELO score and plans to expand into text-to-video.
+  **Google DeepMind** released **Gemma-2 2B**, a 2 billion parameter open-source
+  model that outperforms larger models like **GPT-3.5-Turbo-0613** and
+  **Mixtral-8x7b** on Chatbot Arena, optimized with NVIDIA TensorRT-LLM. The
+  release includes safety classifiers (ShieldGemma) and sparse autoencoder
+  analysis (Gemma Scope). Discussions highlight benchmarking discrepancies and
+  US government support for open-weight AI models. Critiques of AI coding tools'
+  productivity gains were also noted.
 companies:
   - stability-ai
-  - google
-  - deepmind
-  - lmsys
+  - google-deepmind
   - nvidia
-  - fchollet
 models:
-  - flux-1
   - gemma-2-2b
   - gpt-3.5-turbo-0613
   - mixtral-8x7b
+  - flux-1
 topics:
   - text-to-image
   - text-to-video
-  - ai-benchmarks
-  - open-source-ai
-  - ai-policy
-  - ai-safety
-  - ai-performance
-  - ai-model-comparison
-  - ai-development
-  - ai-in-coding
+  - model-benchmarking
+  - open-weight-models
+  - model-distillation
+  - safety-classifiers
+  - sparse-autoencoders
+  - ai-coding-tools
+people:
+  - rohanpaul_ai
+  - fchollet
+  - bindureddy
+  - clementdelangue
+  - ylecun
+  - svpino
 ---
 
 

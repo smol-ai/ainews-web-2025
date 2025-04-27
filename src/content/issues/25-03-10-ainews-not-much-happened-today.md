@@ -4,35 +4,53 @@ title: not much happened today
 date: '2025-03-10T22:46:37.549783Z'
 original_slug: ainews-not-much-happened-today-3830
 description: >-
-  AI news from March 7-10, 2025, covers advancements in model architectures,
-  benchmarks, and new AI models like nanoMoE, GPT-4.5, Claude-3.7, DeepSeek R1,
-  and innovations such as Q-Filters, PokéChamp, TinyR1-32B, R1-Searcher, and
-  Forget Gate in transformers.
+  The AI news recap highlights several key developments: **nanoMoE**, a PyTorch
+  implementation of a mid-sized Mixture-of-Experts (MoE) model inspired by
+  Andrej Karpathy's nanoGPT, enables pretraining on commodity hardware within a
+  week. An agentic leaderboard ranks LLMs powering **smolagents CodeAgent**,
+  with **GPT-4.5** leading, followed by **Claude-3.7-Sonnet**. Discussions
+  around **DeepSeek-R1** emphasize AI model commoditization, with DeepSeek
+  dubbed the "OpenAI of China." **Q-Filters** offer a training-free method for
+  KV cache compression in autoregressive models, achieving **32x compression**
+  with minimal perplexity loss. The **PokéChamp** minimax language agent,
+  powered by **GPT-4o** and **Llama-3-8b**, demonstrates strong performance in
+  Pokémon battles. Other notable models include **TinyR1-32B-Preview** with
+  Branch-Merge Distillation, **R1-Searcher** incentivizing search capability via
+  reinforcement learning, and the **Forgetting Transformer** using a Forget Gate
+  in softmax attention. These advancements reflect ongoing innovation in model
+  architectures, compression, reinforcement learning, and agentic AI.
 companies:
+  - openai
+  - deepseek
+  - hugging-face
+models:
+  - gpt-4.5
+  - claude-3.7-sonnet
+  - deepseek-r1
+  - smolagents-codeagent
+  - gpt-4o
+  - llama-3-8b
+  - tinyr1-32b-preview
+  - r1-searcher
+  - forgetting-transformer
+  - nanomoe
+topics:
+  - mixture-of-experts
+  - reinforcement-learning
+  - kv-cache-compression
+  - agentic-ai
+  - model-distillation
+  - attention-mechanisms
+  - model-compression
+  - minimax
+  - model-pretraining
+people:
+  - andrej-karpathy
   - cwolferesearch
   - aymericroucher
   - teortaxestex
   - jonathanross321
-  - theaitimeline
   - akhaliq
-models:
-  - nanoMoE
-  - gpt-4.5
-  - claude-3.7
-  - deepseek-r1
-  - tinyr1-32b
-  - llama-3-8b
-topics:
-  - mixture-of-experts
-  - llm-benchmarks
-  - agentic-learning
-  - model-commoditization
-  - kv-cache-compression
-  - minimax-agent
-  - distillation
-  - search-capability
-  - transformer-architecture
-  - reinforcement-learning
 ---
 
 

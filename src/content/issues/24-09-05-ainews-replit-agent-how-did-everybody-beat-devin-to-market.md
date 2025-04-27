@@ -4,30 +4,40 @@ title: Replit Agent - How did everybody beat Devin to market?
 date: '2024-09-06T01:54:59.572225Z'
 original_slug: ainews-replit-agent-how-did-everybody-beat-devin
 description: >-
-  A fully integrated Web IDE launch by Replit, enabling live app deployment with
-  no waitlist, including features like self-healing and support for users who
-  cannot code. The news also covers recent AI model developments, new tools, and
-  industry trends.
+  **Replit Agent** launched as a fully integrated Web IDE enabling text-to-app
+  generation with planning and self-healing, available immediately to paid users
+  without a waitlist. Other notable developments include **Melodio**, a new
+  text-to-music model, and **Together AI**'s kernel and speculative decoding
+  work. **Anthropic AI** announced a new enterprise plan featuring a **500K
+  context window** and enhanced security. Discussions on **JPEG-LM** and
+  **AVC-LM** models for improved image and video generation, and GPU market
+  trends around the **H100 GPU** pricing were highlighted. Influential voices
+  like **Andrej Karpathy** shared insights on AI agents and automation.
 companies:
   - replit
   - anthropic
+  - togethercompute
 models:
-  - gpt-3.5-turbo
-  - gpt-4
-  - claude-3
-  - donut
-  - layoutlm
+  - jpeg-lm
+  - avc-lm
 topics:
-  - web-ide
-  - ai-developments
-  - ai-agents
-  - multimodal
+  - document-retrieval
   - retrieval-augmented-generation
+  - ai-agents
   - image-generation
   - video-generation
+  - context-windows
+  - gpu-pricing
   - enterprise-ai
-  - gpu-market
-  - ai-ethics
+  - self-healing
+  - text-to-music
+people:
+  - andrej-karpathy
+  - mervenoyann
+  - bindureddy
+  - rohanpaul_ai
+  - leptonai
+  - teortaxestex
 ---
 
 

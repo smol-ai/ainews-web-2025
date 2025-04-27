@@ -4,25 +4,42 @@ title: Gemma 3 beats DeepSeek V3 in Elo, 2.0 Flash beats GPT4o with Native Image
 date: '2025-03-13T01:01:43.616815Z'
 original_slug: ainews-gemma-3-beats-deepseek-v3-in-elo-20-flash
 description: >-
-  Google announced the release of Gemma 3, a highly capable open model with 128k
-  context, multilingual and multimodal support, and competitive benchmarks. The
-  launch included updates on Gemini 2's image editing features and performance
-  comparisons with other models like o1-preview and Gemini-1.5.
+  **Google DeepMind** launched the **Gemma 3** family of models featuring a
+  **128k context window**, **multimodal input (image and video)**, and
+  **multilingual support for 140+ languages**. The **Gemma 3-27B** model ranks
+  among the top open models on LMArena benchmarks, outperforming several
+  competitors and matching **Gemini-1.5-Pro** on benchmarks. Additionally,
+  **Gemini 2** introduced **Flash Native Image Generation** with advanced image
+  editing capabilities, a feature teased by OpenAI but not launched. The updates
+  highlight significant advances in context length, multimodality, and model
+  efficiency via quantization.
 companies:
-  - google
+  - google-deepmind
   - openai
 models:
   - gemma-3
+  - gemini-1.5-pro
   - gemini-2
   - o1-preview
-  - gemini-1.5
+  - o3-mini-high
+  - deepseek-v3
+  - claude-3.7-sonnet
+  - qwen-2.5-max
 topics:
-  - model-releases
-  - multimodal
-  - multilingual
-  - benchmarking
+  - multimodality
+  - multilinguality
+  - context-window
+  - quantization
   - image-generation
-  - context-windows
+  - model-benchmarking
+  - model-performance
+  - vision
+people:
+  - reach_vb
+  - _philschmid
+  - danielhanchen
+  - lmarena_ai
+  - osanseviero
 ---
 
 

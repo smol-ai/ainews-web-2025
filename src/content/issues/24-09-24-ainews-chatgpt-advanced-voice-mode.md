@@ -4,31 +4,55 @@ title: ChatGPT Advanced Voice Mode
 date: '2024-09-25T01:31:24.268326Z'
 original_slug: ainews-chatgpt-advanced-voice-mode
 description: >-
-  AI news for 9/23/2024-9/24/2024 covers updates on Llama 3, Claude 3.5, Gemini
-  Pro price cut, ChatGPT voice mode, new models from openai, anthropic, qwen
-  2.5, and various AI research, tools, industry developments, and societal
-  impacts.
+  **OpenAI** rolled out **ChatGPT Advanced Voice Mode** with 5 new voices and
+  improved accent and language support, available widely in the US. Ahead of
+  rumored updates for **Llama 3** and **Claude 3.5**, **Gemini Pro** saw a
+  significant price cut aligning with the new intelligence frontier pricing.
+  **OpenAI's o1-preview model** showed promising planning task performance with
+  52.8% accuracy on Randomized Mystery Blocksworld. **Anthropic** is rumored to
+  release a new model, generating community excitement. **Qwen 2.5** was
+  released with models up to 32B parameters and support for 128K tokens,
+  matching GPT-4 0613 benchmarks. Research highlights include PlanBench
+  evaluation of o1-preview, OpenAI's release of a multilingual MMMLU dataset
+  covering 14 languages, and RAGLAB framework standardizing Retrieval-Augmented
+  Generation research. New AI tools include PDF2Audio for converting PDFs to
+  audio, an open-source AI starter kit for local model deployment, and
+  **Moshi**, a speech-based AI assistant from Kyutai. Industry updates feature
+  **Scale AI** nearing $1B ARR with 4x YoY growth and **Together Compute's**
+  enterprise platform offering faster inference and cost reductions. Insights
+  from **Sam Altman**'s blog post were also shared.
 companies:
   - openai
   - anthropic
-  - google
   - scale-ai
+  - togethercompute
+  - kyutai-labs
 models:
-  - gpt-4
-  - claude-3
+  - o1-preview
+  - qwen-2.5
   - llama-3
   - claude-3.5
-  - gemini-pro-1.5
-  - qwen-2.5
 topics:
-  - ai-models
-  - ai-research
-  - ai-benchmarks
-  - multilingual-ai
+  - voice-synthesis
+  - planning
+  - multilingual-datasets
   - retrieval-augmented-generation
-  - ai-tools
-  - ai-industry
-  - ai-ethics
+  - open-source
+  - speech-assistants
+  - enterprise-ai
+  - price-cuts
+  - benchmarking
+  - model-performance
+people:
+  - sam-altman
+  - omarsar0
+  - bindureddy
+  - rohanpaul_ai
+  - _philschmid
+  - alexandr_wang
+  - svpino
+  - ylecun
+  - _akhaliq
 ---
 
 

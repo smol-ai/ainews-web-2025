@@ -141,7 +141,10 @@ Object.entries(posts).forEach(([year, yearData]) => {
                       <li 
                         data-post-title={post.data.title.toLowerCase()}
                         data-post-description={post.data.description?.toLowerCase() || ""}
-                        data-post-tags={(post.data.tags || []).join(",").toLowerCase()}
+                        data-post-companies={(post.data.companies || []).join(",").toLowerCase()}
+                        data-post-models={(post.data.models || []).join(",").toLowerCase()}
+                        data-post-topics={(post.data.topics || []).join(",").toLowerCase()}
+                        data-post-people={(post.data.people || []).join(",").toLowerCase()}
                       >
                         <ArrowCard entry={post} />
                       </li>
@@ -202,7 +205,15 @@ Object.entries(posts).forEach(([year, yearData]) => {
         // Check tags if enabled
         if (!shouldHide && filterFields.tags) {
           const postTags = item.getAttribute('data-post-tags') || '';
-          if (regex.test(postTags)) {
+          const postCompanies = item.getAttribute('data-post-companies') || '';
+          const postModels = item.getAttribute('data-post-models') || '';
+          const postTopics = item.getAttribute('data-post-topics') || '';
+          const postPeople = item.getAttribute('data-post-people') || '';
+          
+          // Combine all tag types for searching
+          const allTags = [postTags, postCompanies, postModels, postTopics, postPeople].join(',');
+          
+          if (regex.test(allTags)) {
             shouldHide = true;
           }
         }

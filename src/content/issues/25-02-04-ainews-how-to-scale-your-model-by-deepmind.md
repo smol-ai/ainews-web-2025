@@ -4,31 +4,49 @@ title: How To Scale Your Model, by DeepMind
 date: '2025-02-05T06:59:23.438232Z'
 original_slug: ainews-how-to-scale-your-model-by-deepmind
 description: >-
-  AI news from February 3-4, 2025, covers model scaling, new research papers, AI
-  tools, and platform updates. Highlights include a textbook on model scaling,
-  new models and methods in robotics and LLMs, bias studies, and the launch of
-  Hugging Face's AI app store.
+  **Researchers at Google DeepMind (GDM)** released a comprehensive "little
+  textbook" titled **"How To Scale Your Model"** covering modern Transformer
+  architectures, inference optimizations beyond O(N^2) attention, and
+  high-performance computing concepts like rooflines. The resource includes
+  practical problems and real-time comment engagement. On AI Twitter, several
+  key updates include the open-sourced humanoid robotics model **ASAP** inspired
+  by athletes like **Cristiano Ronaldo**, **LeBron James**, and **Kobe Bryant**;
+  a new paper on **Mixture-of-Agents** proposing the **Self-MoA** method for
+  improved LLM output aggregation; training of reasoning LLMs using the **GRPO
+  algorithm** from **DeepSeek** demonstrated on **Qwen 0.5**; findings on bias
+  in LLMs used as judges highlighting the need for multiple independent
+  evaluations; and the release of **mlx-rs**, a Rust library for machine
+  learning with examples including **Mistral** text generation. Additionally,
+  **Hugging Face** launched an AI app store featuring over **400,000 apps** with
+  2,000 new daily additions and 2.5 million weekly visits, enabling AI-powered
+  app search and categorization.
 companies:
-  - gdm
-  - jax-ml
+  - google-deepmind
   - deepseek
-  - hugging face
+  - hugging-face
 models:
-  - gemini
   - qwen-0.5
 topics:
-  - model-scaling
   - transformers
   - inference
-  - roofline
-  - humanoid-robotics
+  - high-performance-computing
+  - robotics
   - sim2real
-  - mixture-of-agents
-  - self-moa
-  - llm-training
-  - bias-in-llms
-  - rust-machine-learning
-  - ai-platforms
+  - mixture-of-experts
+  - reinforcement-learning
+  - bias-mitigation
+  - rust
+  - text-generation
+  - open-source
+people:
+  - omarsar0
+  - drjimfan
+  - tairanhe99
+  - guanyashi
+  - lioronai
+  - _philschmid
+  - awnihannun
+  - clementdelangue
 ---
 
 

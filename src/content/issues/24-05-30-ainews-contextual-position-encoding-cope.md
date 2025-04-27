@@ -4,20 +4,51 @@ title: Contextual Position Encoding (CoPE)
 date: '2024-05-31T03:11:48.061328Z'
 original_slug: ainews-contextual-position-encoding-cope
 description: >-
-  A new positional encoding method called CoPE for transformers, developed by
-  Jason Weston of Meta AI, improves counting and copy tasks, language modeling,
-  and coding by considering context and external memory. The year sees a variety
-  of position encoding variants, emphasizing adding capabilities to models.
+  **Meta AI** researcher **Jason Weston** introduced **CoPE**, a novel
+  positional encoding method for transformers that incorporates *context* to
+  create learnable gates, enabling improved handling of counting and copying
+  tasks and better performance on language modeling and coding. The approach can
+  potentially be extended with external memory for gate calculation. **Google
+  DeepMind** released **Gemini 1.5 Flash** and **Pro** models optimized for fast
+  inference. **Anthropic** announced general availability of tool use for
+  **Claude**, enhancing its ability to orchestrate tools for complex tasks.
+  **Alexandr Wang** launched **SEAL Leaderboards** for private, expert
+  evaluations of frontier models. **Karpathy** reflected on the 4th anniversary
+  of **GPT-3**, emphasizing scaling and practical improvements. **Perplexity
+  AI** launched **Perplexity Pages** to convert research into visually appealing
+  articles, described as an "AI Wikipedia" by **Arav Srinivas**.
 companies:
-  - meta-ai
+  - meta-ai-fair
+  - google-deepmind
+  - anthropic
+  - perplexity-ai
+  - langchain
+  - openai
 models:
   - cope
+  - gemini-1.5-flash
+  - gemini-1.5-pro
+  - claude
+  - gpt-3
 topics:
-  - transformers
   - positional-encoding
+  - transformers
+  - counting
+  - copying
   - language-modeling
   - coding
-  - artificial-intelligence-research
+  - external-memory
+  - tool-use
+  - model-evaluation
+  - inference-speed
+  - model-benchmarking
+  - scaling
+  - research-synthesis
+people:
+  - jason-weston
+  - alexandr-wang
+  - karpathy
+  - arav-srinivas
 ---
 
 

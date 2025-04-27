@@ -4,35 +4,50 @@ title: Mixtral 8x22B Instruct sparks efficiency memes
 date: '2024-04-17T21:02:34.918866Z'
 original_slug: ainews-mixtral-8x22b-instruct-defines-frontier
 description: >-
-  AI news covers investments by tech giants like Google and Microsoft, UK
-  criminalizing non-consensual deepfake porn, Nvidia's dominance in AI chips, AI
-  market for companions, unlimited context length in language models, AI
-  surpassing humans on basic tasks, Zamba hybrid architecture, Mixtral 8x22B
-  instruct model release, multilingual capabilities, RAG advancements.
+  **Mistral** released an instruct-tuned version of their **Mixtral 8x22B**
+  model, notable for using only **39B active parameters** during inference,
+  outperforming larger models and supporting **5 languages** with **64k context
+  window** and math/code capabilities. The model is available on **Hugging
+  Face** under an **Apache 2.0 license** for local use. **Google** plans to
+  invest over **$100 billion** in AI, with other giants like **Microsoft**,
+  **Intel**, and **SoftBank** also making large investments. The UK criminalized
+  non-consensual deepfake porn, raising enforcement debates. A former **Nvidia**
+  employee claims Nvidia's AI chip lead is unmatchable this decade. AI
+  companions could become a **$1 billion** market. AI has surpassed humans on
+  several basic tasks but lags on complex ones. **Zyphra** introduced **Zamba**,
+  a novel 7B parameter hybrid model outperforming **LLaMA-2 7B** and **OLMo-7B**
+  with less training data, trained on 128 H100 GPUs over 30 days. **GroundX**
+  API advances retrieval-augmented generation accuracy.
 companies:
+  - mistral-ai
+  - hugging-face
   - google
   - microsoft
-  - nvidia
-  - deepmind
   - intel
   - softbank
-  - abu-dhabi
-  - yahoo
-  - huggingface
+  - nvidia
 models:
   - mixtral-8x22b
-  - zamba-7b
-  - gpt-4
-  - claude-3-opus
+  - llama-2-7b
+  - olmo-7b
 topics:
-  - ai-investments
-  - deepfake
-  - ai-chips
-  - ai-companions
-  - language-models
-  - multimodal
-  - natural-language-processing
+  - multilinguality
+  - math
+  - code-generation
+  - context-window
+  - model-performance
+  - model-release
   - retrieval-augmented-generation
+  - deepfake
+  - ai-investment
+  - ai-chip
+  - hybrid-architecture
+  - training-data
+people:
+  - guillaume-lample
+  - osanseviero
+  - _philschmid
+  - svpino
 ---
 
 

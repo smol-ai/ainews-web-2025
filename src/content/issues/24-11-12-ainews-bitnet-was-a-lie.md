@@ -4,28 +4,37 @@ title: BitNet was a lie?
 date: '2024-11-13T01:36:06.890884Z'
 original_slug: ainews-bitnet-was-a-lie
 description: >-
-  Research on scaling laws for quantization in AI models shows benefits plateau
-  at certain levels, with implications for model training and efficiency. The
-  discussion includes the end of the 'free lunch' of quantization and the shift
-  towards optimizing existing models rather than scaling.
+  **Scaling laws for quantization** have been modified by a group led by Chris
+  Re, analyzing over **465 pretraining runs** and finding benefits plateau at
+  FP6 precision. Lead author **Tanishq Kumar** highlights that longer training
+  and more data increase sensitivity to quantization, explaining challenges with
+  models like **Llama-3**. **Tim Dettmers**, author of QLoRA, warns that the era
+  of efficiency gains from low-precision quantization is ending, signaling a
+  shift from scaling to optimizing existing resources. Additionally, **Alibaba**
+  announced **Qwen 2.5-Coder-32B-Instruct**, which matches or surpasses
+  **GPT-4o** on coding benchmarks, and open-source initiatives like **DeepEval**
+  for LLM testing are gaining traction.
 companies:
   - sambanova
   - alibaba
-  - reach
-  - llama
+  - hugging-face
 models:
   - qwen-2.5-coder-32b-instruct
-  - gpt-4
+  - gpt-4o
   - llama-3
 topics:
   - quantization
   - scaling-laws
   - model-efficiency
-  - pretraining
-  - model-compression
-  - low-precision
-  - sparsification
-  - ai-infrastructure
+  - fine-tuning
+  - model-performance
+  - code-generation
+  - open-source
+  - unit-testing
+  - ci-cd
+people:
+  - tanishq-kumar
+  - tim-dettmers
 ---
 
 

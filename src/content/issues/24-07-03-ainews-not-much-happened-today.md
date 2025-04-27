@@ -4,38 +4,47 @@ title: Not much happened today.
 date: '2024-07-03T22:39:42.336133Z'
 original_slug: ainews-not-much-happened-today-1036
 description: >-
-  AI News for 7/2/2024-7/3/2024. Highlights include Meta's 3D Gen system for
-  quick 3D asset generation, updates to Perplexity Pro Search, Phi-3 mini
-  improvements, GPT4All 3.0 launch, and Yi-Large model release. Research covers
-  RLHF evolution, persona-driven data synthesis, meta-tuning for few-shot
-  learning, and steering vectors. Tools like LangSmith and Qdrant Engine v1.10
-  are also discussed.
+  **Meta** introduced **Meta 3D Gen**, a system for end-to-end generation of 3D
+  assets from text in under 1 minute, producing high-quality 3D assets with
+  detailed textures. **Perplexity AI** updated Pro Search to handle deeper
+  research with multi-step reasoning and code execution. **Microsoft** improved
+  **Phi-3 Mini** with better long-context understanding and instruction
+  following. **GPT4All 3.0** launched with support for thousands of models and
+  major OS compatibility, featuring local file chat. **Yi-Large** model launched
+  on Fireworks AI Playground. Research highlights include the evolution of
+  **reinforcement learning from human feedback (RLHF)**, persona-driven data
+  synthesis using a billion diverse personas, meta-tuning for few-shot
+  generalization, and steering vectors for model behavior control. Tools updates
+  include **LangSmith** improving memory retrieval and **Qdrant Engine v1.10**
+  adding universal query API and multivector search.
 companies:
   - meta
   - perplexity-ai
   - microsoft
-  - andriy_mulyar
-  - cwolferesearch
-  - rohanpaul_ai
-  - slashml
-  - sarahookr
+  - gpt4all
   - langchainai
-  - qdrant_engine
+  - qdrant-engine
 models:
-  - meta-3d-gen
-  - perplexity-pro-search
   - phi-3-mini
   - gpt4all-3.0
   - yi-large
+  - meta-3d-gen
 topics:
-  - ai-models
-  - text-to-3d
-  - research-papers
+  - 3d-generation
+  - long-context
+  - instruction-following
   - reinforcement-learning-from-human-feedback
   - persona-driven-data-synthesis
   - meta-tuning
-  - steering-vectors
-  - frameworks-and-tools
+  - model-steering
+  - memory-retrieval
+  - multivector-search
+  - universal-query-api
+people:
+  - rohanpaul_ai
+  - andriy_mulyar
+  - cwolferesearch
+  - sarahookr
 ---
 
 

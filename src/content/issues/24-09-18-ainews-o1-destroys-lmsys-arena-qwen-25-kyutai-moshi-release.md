@@ -4,36 +4,49 @@ title: o1 destroys Lmsys Arena, Qwen 2.5, Kyutai Moshi release
 date: '2024-09-18T21:51:26.650574Z'
 original_slug: ainews-o1-destroys-lmsys-arena-qwen-25-kyutai
 description: >-
-  AI news highlights the success of o1-preview model in accurately reporting top
-  stories, outperforming other models like Llama 3, and dominating LMsys
-  rankings. OpenAI raises request limits, Alibaba's Qwen 2.5 surpasses Llama
-  3.1, and Kyutai Moshi releases open weights with a streaming neural
-  architecture. The news also covers model updates from OpenAI, Mistral AI, and
-  new tools like Weights & Biases Weave for LLM observability.
+  **OpenAI's o1-preview** model has achieved a milestone by fully matching top
+  daily AI news stories without human intervention, consistently outperforming
+  other models like **Anthropic**, **Google**, and **Llama 3** in vibe check
+  evaluations. **OpenAI** models dominate the top 4 slots on **LMsys**
+  benchmarks, with rate limits increasing to **500-1000 requests per minute**.
+  In open source, **Alibaba's Qwen 2.5** suite surpasses **Llama 3.1** at the
+  70B scale and updates its closed **Qwen-Plus** models to outperform **DeepSeek
+  V2.5** but still lag behind leading American models. **Kyutai Moshi** released
+  its open weights realtime voice model featuring a unique streaming neural
+  architecture with an "inner monologue." **Weights & Biases** introduced
+  **Weave**, an LLM observability toolkit that enhances experiment tracking and
+  evaluation, turning prompting into a more scientific process. The news also
+  highlights upcoming events like the **WandB LLM-as-judge hackathon** in San
+  Francisco. *"o1-preview consistently beats out our vibe check evals"* and
+  *"OpenAI models are gradually raising rate limits by the day."*
 companies:
   - openai
   - anthropic
   - google
   - alibaba
-  - qwenlm
+  - deepseek
   - kyutai
-  - wandb
+  - weights-biases
+  - mistral-ai
 models:
   - o1-preview
-  - llama-3
+  - o1-mini
   - qwen-2.5
-  - pixtral-12b
-  - gpt-4
-  - claude-3.5
-  - mistral-7b
+  - qwen-plus
+  - llama-3-1
+  - deepseek-v2.5
 topics:
-  - large-language-models
-  - multimodal
-  - model-evaluation
-  - open-source-ai
-  - voice-ai
-  - llm-optimization
-  - ai-model-comparison
+  - chain-of-thought
+  - multimodality
+  - model-benchmarking
+  - model-performance
+  - streaming-neural-architecture
+  - llm-observability
+  - experiment-tracking
+  - rate-limiting
+people:
+  - sama
+  - guillaumelample
 ---
 
 

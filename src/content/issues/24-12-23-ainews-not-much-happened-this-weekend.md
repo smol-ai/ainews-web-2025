@@ -4,37 +4,54 @@ title: not much happened this weekend
 date: '2024-12-24T01:01:31.548256Z'
 original_slug: ainews-not-much-happened-this-weekend-4954
 description: >-
-  AI news covers o3 model implications, LangChain's 2024 survey, Hume's OCTAVE
-  speech-language model, x.ai's $6B funding, and various industry updates
-  including AI performance, tools, and research.
+  **o3** model gains significant attention with discussions around its
+  capabilities and implications, including an OpenAI board member referencing
+  "AGI." **LangChain** released their **State of AI 2024** survey. **Hume**
+  announced **OCTAVE**, a **3B parameter** API-only speech-language model with
+  voice cloning. **x.ai** secured a **$6B Series C** funding round. Discussions
+  highlight **inference-time scaling**, **model ensembles**, and the surprising
+  generalization ability of **small models**. New tools and datasets include
+  **FineMath**, the best open math dataset on Hugging Face, and frameworks for
+  LLM agents. Industry updates cover a **5-month benchmarking** of **AMD
+  MI300X** vs **Nvidia H100 + H200**, insights from a meeting with **Lisa Su**
+  on AMD's software stack, and open AI engineering roles. Research innovations
+  include **Large Concept Models (LCM)** from Meta AI, **Chain of Continuous
+  Thought (Coconut)** for latent space reasoning, and mechanistic
+  interpretability initiatives.
 companies:
   - openai
   - langchain
   - hume
-  - x.ai
-  - dylan
-  - dylan522p
-  - perceptroninc
-  - meta
+  - x-ai
+  - amd
+  - nvidia
+  - meta-ai-fair
+  - hugging-face
 models:
   - o3
-  - gpt-3
-  - gpt-3.5
-  - claude-3
-  - claude-3.5
+  - o1
   - opus
   - sonnet
+  - octave
 topics:
-  - ai-models
-  - ai-research
-  - ai-industry
-  - ai-development
-  - large-language-models
+  - inference-time-scaling
+  - model-ensembles
+  - small-models
+  - voice-cloning
+  - fine-math-dataset
+  - llm-agent-framework
+  - benchmarking
+  - software-stack
+  - large-concept-models
+  - latent-space-reasoning
+  - mechanistic-interpretability
+  - planning
   - speech-language-models
-  - ai-benchmarking
-  - ai-hardware
-  - ai-hiring
-  - ai-innovation
+people:
+  - lisa-su
+  - clementdelangue
+  - philschmid
+  - neelnanda5
 ---
 
 

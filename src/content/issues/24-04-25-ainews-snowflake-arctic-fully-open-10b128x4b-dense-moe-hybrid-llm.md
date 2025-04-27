@@ -4,20 +4,54 @@ title: 'Snowflake Arctic: Fully Open 10B+128x4B Dense-MoE Hybrid LLM'
 date: '2024-04-26T01:33:53.546196Z'
 original_slug: ainews-snowflake
 description: >-
-  Snowflake has released Arctic, a new foundation language model claiming to
-  outperform Databricks, featuring a multi-stage curriculum and a mixture of
-  experts architecture, released under Apache 2.0. The release includes a
-  cookbook published on Medium.
+  **Snowflake Arctic** is a notable new foundation language model released under
+  Apache 2.0, claiming superiority over **Databricks** in data warehouse AI
+  applications and adopting a mixture-of-experts architecture inspired by
+  **DeepSeekMOE** and **DeepSpeedMOE**. The model employs a 3-stage curriculum
+  training strategy similar to the recent **Phi-3** paper. In AI image and video
+  generation, **Nvidia** introduced the **Align Your Steps** technique improving
+  image quality at low step counts, while **Stable Diffusion 3** and **SD3
+  Turbo** models were compared for prompt understanding and image quality.
+  **Adobe** launched an AI video upscaling project enhancing blurry videos to
+  HD, though with some high-resolution artifacts. **Apple** released open-source
+  on-device language models with code and training logs, diverging from typical
+  weight-only releases. The **Llama-3-70b** model ties for first place on the
+  LMSYS leaderboard for English queries, and **Phi-3** (4B params) outperforms
+  **GPT-3.5 Turbo** in the banana logic benchmark. Fast inference and
+  quantization of **Llama 3** models were demonstrated on MacBook devices.
 companies:
   - snowflake
+  - databricks
+  - deepseek
+  - deepspeed
+  - nvidia
+  - stable-diffusion
+  - adobe
+  - apple
+  - llamaindex
+  - lmsys
+  - openai
 models:
-  - arctic
+  - snowflake-arctic
+  - phi-3
+  - llama-3-70b
+  - llama-3
+  - stable-diffusion-3
+  - sd3-turbo
+  - gpt-3.5-turbo
 topics:
-  - foundation-models
   - mixture-of-experts
   - curriculum-learning
-  - language-models
-  - llm-architecture
+  - model-release
+  - image-generation
+  - video-upscaling
+  - quantization
+  - inference-speed
+  - benchmarking
+  - model-comparison
+  - open-source
+  - on-device-ai
+people: []
 ---
 
 

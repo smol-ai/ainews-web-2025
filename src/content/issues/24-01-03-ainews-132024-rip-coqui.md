@@ -4,26 +4,37 @@ title: '1/3/2024: RIP Coqui'
 date: '2024-01-04T06:56:46.257833Z'
 original_slug: ainews-132024-rip-coqui
 description: >-
-  Meta has been tuning its AI models and prompts, while Coqui, an open source
-  text-to-speech company from Mozilla's ML group, shut down. The HuggingFace
-  community discussed model performance claims, token sharing, web crawling, and
-  building transformers from scratch, along with datasets for image
-  classification.
+  **Coqui**, a prominent open source text-to-speech project from the Mozilla ML
+  group, officially shut down. Discussions in the **HuggingFace** Discord
+  highlighted skepticism about the claimed `3X faster` speed of **sdxl**,
+  attributing improvements more to techniques like `torch.compile` and removal
+  of `fp16` and `attention` rather than **diffusers 0.25** features. Users
+  confirmed that a *HuggingFace user token* can be used across multiple
+  machines, though distinct tokens are recommended for safety. The **Learning
+  Loss Minimization (LLM) Leaderboard** briefly experienced issues but was later
+  confirmed operational. A Kaggle notebook was shared demonstrating how to build
+  Transformer architectures from scratch using PyTorch. Additionally, a new
+  image dataset with 15k shoe, sandal, and boot images was introduced for
+  multiclass classification tasks. Explanations about the workings of the Common
+  Crawl web-crawling process were also shared.
 companies:
-  - meta
   - coqui
-  - huggingface
   - mozilla
+  - hugging-face
+  - google
 models:
   - sdxl
+  - diffusers-0.25
 topics:
-  - model-tuning
   - text-to-speech
-  - performance-claims
-  - token-sharing
+  - performance-optimization
+  - token-management
   - transformer-architecture
+  - image-datasets
   - web-crawling
-  - image-dataset
+  - pytorch
+  - leaderboards
+people: []
 ---
 
 

@@ -4,31 +4,34 @@ title: LMSys killed Model Versioning (gpt 4o 1120, gemini exp 1121)
 date: '2024-11-22T00:56:03.268058Z'
 original_slug: ainews-lmsys-killed-model-versioning-gpt-4o-1120
 description: >-
-  AI news for 11/21/2024-11/22/2024 covers recent model releases, frontier lab
-  race dynamics, and advancements in AI technology, highlighting OpenAI, Gemini,
-  DeepSeek, Mistral, and Claude.
+  **AI News for 11/21/2024-11/22/2024** highlights the intense frontier lab race
+  with **OpenAI's gpt-4o-2024-11-20** and **Google DeepMind's gemini-exp-1121**
+  trading top spots on the Lmsys leaderboard. The trend of using date-based
+  model identifiers instead of traditional versioning is noted across leading
+  labs including **Anthropic**. **DeepSeek R1** is gaining attention as a potent
+  open-source alternative, especially in the context of the AI competition
+  between China and the US. **Gemini-Exp-1121** is praised for improvements in
+  vision, coding, and reasoning, while **MistralAI** expands with a new Palo
+  Alto office, signaling growth and hiring.
 companies:
   - openai
-  - google
+  - google-deepmind
   - anthropic
-  - mistral
   - deepseek
+  - mistral-ai
 models:
   - gpt-4o-2024-11-20
   - gemini-exp-1121
-  - claude-3.5-sonnet
-  - gpt-5
-  - claude-4
+  - deepseek-r1
 topics:
-  - model-releases
-  - frontier-labs
-  - ai-race
-  - versioning
+  - model-release
+  - model-ranking
+  - open-source
   - vision
   - coding
   - reasoning
-  - multimodal
-  - ai-competition
+  - market-competition
+people: []
 ---
 
 

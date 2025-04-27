@@ -6,33 +6,38 @@ title: >-
 date: '2024-07-10T05:57:13.049109Z'
 original_slug: ainews-to-be-named-3686
 description: >-
-  AI news covering Lilian Weng's work on hallucination detection and
-  anti-hallucination methods, Facebook's MobileLLM optimizing sub-billion
-  parameter models for on-device use, a new RNN architecture for long-context
-  modeling, and updates on AI models like CodeGeeX4-ALL-9B.
+  **Lilian Weng** released a comprehensive literature review on **hallucination
+  detection** and **anti-hallucination methods** including techniques like
+  FactualityPrompt, SelfCheckGPT, and WebGPT. **Facebook AI Research (FAIR)**
+  published **MobileLLM**, a sub-billion parameter on-device language model
+  architecture achieving performance comparable to **llama-2-7b** with
+  innovations like thin and deep models and shared weights. A new **RNN-based
+  LLM architecture** with expressive hidden states was introduced, replacing
+  attention mechanisms and scaling better than Mamba and Transformer models for
+  long-context modeling. Additionally, **Tsinghua University** open sourced
+  **CodeGeeX4-ALL-9B**, a multilingual code generation model excelling in code
+  assistance.
 companies:
-  - lilian-weng
-  - facebook
+  - facebook-research
+  - meta-ai-fair
   - tsinghua-university
 models:
-  - factualityprompt
-  - fatscore
-  - safe
-  - factool
-  - selfcheckgpt
-  - truthfulqa
-  - mobilellm
-  - rnn-architecture
+  - llama-2-7b
   - codegeex4-all-9b
+  - mamba
 topics:
   - hallucination-detection
-  - anti-hallucination
+  - anti-hallucination-methods
   - on-device-ai
-  - sub-billion-parameter-models
+  - model-architecture
+  - rnn
   - long-context-modeling
-  - test-time-training
-  - transformer
-  - llm
+  - model-scaling
+  - expressive-hidden-states
+  - code-generation
+people:
+  - lilian-weng
+  - yann-lecun
 ---
 
 

@@ -4,37 +4,55 @@ title: 'Adept Fuyu-Heavy: Multimodal model for Agents'
 date: '2024-01-25T21:30:23.929279Z'
 original_slug: ainews-adept-fuyu-heavy-multimodal-model-for
 description: >-
-  AI Discord summaries highlight recent developments including Adept's
-  Fuyu-Heavy multimodal model, model deployment strategies, model merging,
-  quantization issues, and discussions on large language models like GPT-4,
-  Claude 2, and Gemini Ultra. The content also covers model training insights,
-  heterogenous AI architectures, and chatbot potential.
+  **Adept** launched **Fuyu-Heavy**, a multimodal model focused on UI
+  understanding and visual QA, outperforming **Gemini Pro** on the MMMU
+  benchmark. The model uses **DPO** (Direct Preference Optimization), gaining
+  attention as a leading tuning method. The size of Fuyu-Heavy is undisclosed
+  but estimated between **20B-170B** parameters, smaller than rumored frontier
+  models like **Claude 2**, **GPT4V**, and **Gemini Ultra**. Meanwhile,
+  **Mamba** was rejected at ICLR for quality concerns. In Discord discussions,
+  **DeepSeek Coder 33B** was claimed to outperform **GPT-4** in coding tasks,
+  and deployment strategies for large models like **Yi-34B-200K** and
+  **Goliath-120B** were explored. Quantization debates highlighted mixed views
+  on **Q8** and **EXL2 quants**. Fine-tuning and instruct-tuning of **Mistral 7B
+  Instruct v0.2** were discussed, alongside insights on RMS optimization and
+  heterogeneous AI architectures combining **Transformers** and **Selective SSM
+  (Mamba)**. The potential of recurrent LLMs like **RWKV** and techniques like
+  **Contrastive Preference Optimization (CPO)** were also noted.
 companies:
   - adept
-  - huggingface
-  - lesswrong
+  - hugging-face
+  - deepseek
+  - mistral-ai
+  - nous-research
 models:
   - fuyu-heavy
-  - gpt-4
+  - fuyu-8b
+  - gemini-pro
   - claude-2
+  - gpt4v
   - gemini-ultra
-  - mistral-7b
+  - deepseek-coder-33b
   - yi-34b-200k
   - goliath-120b
-  - mistral
+  - mistral-7b-instruct-v0.2
+  - mamba
+  - rwkv
 topics:
-  - multimodal
-  - large-language-models
-  - model-deployment
-  - model-merging
+  - multimodality
+  - visual-question-answering
+  - direct-preference-optimization
+  - benchmarking
+  - model-size-estimation
   - quantization
+  - model-merging
   - fine-tuning
   - instruct-tuning
-  - heterogeneous-ai
-  - transformers
-  - llm-training
-  - api-integration
-  - digital-agents
+  - rms-optimization
+  - heterogeneous-ai-architectures
+  - recurrent-llms
+  - contrastive-preference-optimization
+people: []
 ---
 
 

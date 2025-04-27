@@ -4,43 +4,58 @@ title: not much happened this weekend
 date: '2024-10-08T02:36:09.068096Z'
 original_slug: ainews-not-much-happened-this-weekend-5817
 description: >-
-  AI news for 10/4/2024-10/7/2024 covers model developments, research,
-  applications, and safety. Highlights include OpenAI's o1-preview performance,
-  Claude 3.5 Sonnet, Movie Gen by Meta, retrieval-augmented generation,
-  synthetic data, and AI safety innovations.
+  **AI news from 10/4/2024 to 10/7/2024** highlights several developments:
+  **OpenAI's o1-preview** shows strong performance on complex tasks but
+  struggles with simpler ones, while **Claude 3.5 Sonnet** can match its
+  reasoning through advanced prompting techniques. **Meta** introduced **Movie
+  Gen**, a cutting-edge media foundation model for text-to-video generation and
+  editing. **Reka** updated their 21B Flash Model with temporal video
+  understanding, native audio, and tool use capabilities. Interest grows in
+  "open o1" reproductions focusing on prompting and finetuning, with
+  **Entropix** exploring entropy-based sampling. **LangChainAI** demonstrated a
+  Retrieval Agent for complex Q&A, and synthetic data generation research
+  surveyed 417 models. A resurgence in RNNs shows efficient parallel training
+  making them competitive with Transformers. Biologically-inspired AI safety
+  approaches were also noted. *"A quiet weekend and air conditioning is all you
+  need."*
 companies:
   - openai
-  - claude-ai
-  - meta
-  - langchain
+  - meta-ai-fair
   - reka
-  - swebench
-  - giffmana
-  - karpathy
-  - rasbt
-  - labenz
-  - glennko
+  - langchainai
+  - entropix
 models:
   - o1-preview
-  - claude-3-sonnet
-  - llm
-  - gpt-4
-  - gpt-3.5
-  - gpt-3
-  - gpt-2
-  - movie-gen
+  - claude-3.5-sonnet
+  - 21b-flash-model
 topics:
-  - model-comparison
-  - prompt-engineering
+  - prompting-techniques
   - finetuning
-  - multimodal
-  - video-generation
+  - entropy-based-sampling
+  - temporal-understanding
+  - native-audio
+  - tool-use
+  - instruction-chaining
+  - multimodality
   - retrieval-augmented-generation
-  - synthetic-data
-  - ai-safety
-  - ai-ethics
-  - customer-support
-  - long-sequence-models
+  - synthetic-data-generation
+  - rnn
+  - parallel-training
+  - biologically-inspired-ai-safety
+  - text-to-video-generation
+  - video-editing
+people:
+  - lex-fridman
+  - imrat
+  - jjitsev
+  - giffmana
+  - _philschmid
+  - karpathy
+  - rasbt
+  - adcock_brett
+  - glennko
+  - rohanpaul_ai
+  - labenz
 ---
 
 

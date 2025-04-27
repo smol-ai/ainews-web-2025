@@ -4,29 +4,50 @@ title: 'LLaDA: Large Language Diffusion Models'
 date: '2025-02-18T03:27:47.627285Z'
 original_slug: ainews-llada-large-language-diffusion-models
 description: >-
-  Chinese AI news highlights recent model releases including LLaDA, a
-  diffusion-based language model, and StepFun's text-to-video and audio models.
-  It also covers AI evaluation benchmarks and research talks, emphasizing
-  innovation in diffusion models and multimodal AI.
+  **LLaDA (Large Language Diffusion Model) 8B** is a breakthrough
+  diffusion-based language model that rivals **LLaMA 3 8B** while training on
+  **7x fewer tokens (2 trillion tokens)** and using **0.13 million H800 GPU
+  hours**. It introduces a novel text generation approach by predicting
+  uniformly masked tokens in a diffusion process, enabling multi-turn dialogue
+  and instruction-following. Alongside, **StepFun AI** released two major
+  models: **Step-Video-T2V 30B**, a text-to-video model generating up to **204
+  frames** with high coherence and motion quality, and **Step-Audio-Chat 132B**,
+  a voice-to-voice model. Additionally, challenging multimodal benchmarks like
+  **Scale AI's EnigmaEval** and **Cambridge's ZeroBench** highlight current
+  frontier models scoring zero, emphasizing the difficulty of these tasks. The
+  community also noted the return of diffusion models in language modeling, a
+  previously speculative architecture now scaled successfully.
 companies:
   - stepfun-ai
-  - cambridge
   - scale-ai
+  - cambridge
+  - llamaindex
 models:
-  - llama-3
-  - llama-2
-  - llm-8b
-  - step-video-t2v
-  - step-audio-chat
+  - llada-8b
+  - llama-3-8b
+  - step-video-t2v-30b
+  - step-audio-chat-132b
+  - llama-2-7b
 topics:
   - diffusion-models
-  - multimodal
-  - text-to-video
-  - text-to-audio
-  - language-models
-  - ai-evaluation
-  - multiturn-dialogue
+  - text-generation
+  - multimodality
+  - video-generation
+  - voice-processing
+  - benchmarking
   - instruction-following
+  - model-scaling
+  - gpu-usage
+  - long-context
+  - multi-turn-dialogue
+people:
+  - arankomatsuzaki
+  - _akhaliq
+  - omarsar0
+  - iscienceluvr
+  - gallabytes
+  - maximelabonne
+  - reach_vb
 ---
 
 

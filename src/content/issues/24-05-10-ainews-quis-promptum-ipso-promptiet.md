@@ -4,28 +4,45 @@ title: Quis promptum ipso promptiet?
 date: '2024-05-11T06:34:12.398462Z'
 original_slug: ainews-anthropics
 description: >-
-  AI news for 5/9/2024-5/10/2024 covering OpenAI's upcoming announcement,
-  Anthropic's prompt engineering updates, open-source models like Llama 3,
-  Neuralink's brain-computer interface demo, and ICLR 2024 in Asia.
+  **Anthropic** released upgrades to their Workbench Console, introducing new
+  prompt engineering features like chain-of-thought reasoning and prompt
+  generators that significantly reduce development time, exemplified by their
+  customer **Zoominfo**. **OpenAI** teased a "magic" new development coming
+  soon, speculated to be a new LLM replacing GPT-3.5 in the free tier or a
+  search competitor. The open-source community highlighted **Llama 3 70B** as
+  "game changing" with new quantized weights for **Llama 3 120B** and CUDA graph
+  support for **llama.cpp** improving GPU performance. **Neuralink**
+  demonstrated a thought-controlled mouse, sparking interest in modeling
+  consciousness from brain signals. The **ICLR 2024** conference is being held
+  in Asia for the first time, generating excitement.
 companies:
-  - openai
   - anthropic
+  - openai
+  - zoominfo
   - neuralink
 models:
-  - gpt-4
-  - gpt-3.5
   - llama-3-70b
   - llama-3-120b
-  - gemini-1.5
-  - claude-3-opus
+  - llama-3
+  - llama-cpp
 topics:
   - prompt-engineering
-  - large-language-models
-  - open-source-models
-  - rag-application
-  - neural-interface
-  - brain-computer-interface
-  - iclr
+  - chain-of-thought
+  - rag
+  - quantization
+  - cuda-graphs
+  - gpu-optimization
+  - thought-controlled-devices
+  - modeling-consciousness
+  - conference
+people:
+  - sama
+  - gdb
+  - bindureddy
+  - svpino
+  - rohanpaul_ai
+  - alexalbert__
+  - abacaj
 ---
 
 

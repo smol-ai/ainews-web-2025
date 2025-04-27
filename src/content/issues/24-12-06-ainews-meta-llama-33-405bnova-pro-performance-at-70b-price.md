@@ -4,26 +4,40 @@ title: 'Meta Llama 3.3: 405B/Nova Pro performance at 70B price'
 date: '2024-12-06T22:44:07.580241Z'
 original_slug: ainews-meta-llama-33-405bnova-pro-performance-at
 description: >-
-  Meta AI announced Llama 3.3, a 70B model with performance comparable to larger
-  models but with lower compute requirements. OpenAI previewed Reinforcement
-  Fine-Tuning for custom model building. Google announced Gemini-Exp-1206
-  leading benchmarks, and LlamaCloud introduced new document processing
-  features. Discussions include AI pricing and industry updates.
+  **Meta AI** released **Llama 3.3 70B**, matching the performance of the 405B
+  model with improved efficiency using *"a new alignment process and progress in
+  online RL techniques"*. **OpenAI** announced **Reinforcement Fine-Tuning
+  (RFT)** for building expert models with limited data, offering alpha access to
+  researchers and enterprises. **Google DeepMind's Gemini-Exp-1206** leads
+  benchmarks, tying with **GPT-4o** in coding performance. **LlamaCloud**
+  enhanced document processing with table extraction and analytics. Discussions
+  on **OpenAI's** pricing plans continue in the community.
 companies:
-  - meta
+  - meta-ai-fair
   - openai
-  - google
+  - google-deepmind
+  - hugging-face
+  - llamacloud
 models:
+  - llama-3-70b
   - llama-3.3-70b
+  - gpt-4o
   - gemini-exp-1206
 topics:
+  - reinforcement-learning
+  - fine-tuning
+  - model-performance
+  - document-processing
+  - pricing-models
   - alignment
   - online-rl
-  - reinforcement-learning
-  - model-performance
-  - benchmarking
-  - document-processing
-  - ai-pricing
+people:
+  - sama
+  - steven-heidel
+  - aidan_mclau
+  - lmarena_ai
+  - oriolvinyalsml
+  - jerryjliu0
 ---
 
 

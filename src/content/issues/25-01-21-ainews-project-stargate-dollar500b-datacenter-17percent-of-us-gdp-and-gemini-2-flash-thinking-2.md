@@ -6,29 +6,46 @@ title: >-
 date: '2025-01-22T01:56:21.007400Z'
 original_slug: ainews-project-stargate-500b-datacenter-17-of-us
 description: >-
-  AI news covers Project Stargate, a US-led AI Manhattan project supported by
-  OpenAI, Softbank, Oracle, MGX, Arm, Microsoft, and NVIDIA, and updates from
-  Noam Shazeer on Gemini 2.0 Flash, AI Studio's code interpreter, and Reddit
-  discussions on DeepSeek R1, a distillation of Qwen 32B, highlighting
-  performance, accessibility, and strategic vision.
+  **Project Stargate**, a US "AI Manhattan project" led by **OpenAI** and
+  **Softbank**, supported by **Oracle**, **Arm**, **Microsoft**, and **NVIDIA**,
+  was announced with a scale comparable to the original Manhattan project
+  costing **$35B inflation adjusted**. Despite Microsoft's reduced role as
+  exclusive compute partner, the project is serious but not immediately
+  practical. Meanwhile, **Noam Shazeer** revealed a second major update to
+  **Gemini 2.0 Flash Thinking**, enabling **1M token long context** usable
+  immediately. Additionally, **AI Studio** introduced a new **code interpreter**
+  feature. On Reddit, **DeepSeek R1**, a distillation of **Qwen 32B**, was
+  released for free on **HuggingChat**, sparking discussions on self-hosting,
+  performance issues, and quantization techniques. DeepSeek's CEO **Liang
+  Wenfeng** highlighted their focus on **fundamental AGI research**, efficient
+  **MLA architecture**, and commitment to **open-source development** despite
+  export restrictions, positioning DeepSeek as a potential alternative to
+  closed-source AI trends.
 companies:
   - openai
   - softbank
   - oracle
+  - arm
   - microsoft
   - nvidia
-  - arm
+  - huggingface
+  - deepseek-ai
 models:
-  - gemini-2-0-flash
-  - qwen-32b
+  - gemini-2.0-flash
   - deepseek-r1
+  - qwen-32b
 topics:
-  - ai-projects
-  - ai-research
-  - large-language-models
-  - ai-performance
-  - ai-accessibility
-  - ai-strategies
+  - long-context
+  - quantization
+  - code-interpretation
+  - model-distillation
+  - open-source
+  - agi-research
+  - model-performance
+  - memory-optimization
+people:
+  - noam-shazeer
+  - liang-wenfeng
 ---
 
 

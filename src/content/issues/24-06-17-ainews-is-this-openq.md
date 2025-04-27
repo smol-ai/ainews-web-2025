@@ -4,35 +4,50 @@ title: Is this... OpenQ*?
 date: '2024-06-18T00:38:33.191318Z'
 original_slug: ainews-is-this-openq
 description: >-
-  AI news for 6/14/2024-6/17/2024 covers new model releases, research on
-  test-time search, Apple AI developments, open source models matching GPT-4,
-  and new video generation models.
+  **DeepSeekCoder V2** promises GPT4T-beating performance at a fraction of the
+  cost. **Anthropic** released new research on reward tampering. **Runway**
+  launched their Sora response and Gen-3 Alpha video generation model. A series
+  of papers explore "test-time" search techniques improving mathematical
+  reasoning with models like **LLaMa-3 8B**. **Apple** announced Apple
+  Intelligence with smarter Siri and image/document understanding, partnered
+  with **OpenAI** to integrate ChatGPT into iOS 18, and released 20 new CoreML
+  models with LoRA fine-tuning for specialization. **NVIDIA** released
+  **Nemotron-4 340B**, an open model matching GPT-4 performance.
+  **DeepSeek-Coder-V2** excels in coding and math with 338 programming languages
+  and 128K context length. **Stability AI** released Stable Diffusion 3 Medium
+  weights. **Luma Labs** launched Dream Machine for 5-second video generation
+  from text and images.
 companies:
-  - apple
+  - deepseek_ai
+  - anthropic
+  - runwayml
   - openai
+  - apple
   - nvidia
   - stability-ai
   - luma-labs
-  - runway
-  - apparate-labs
 models:
-  - gpt-4
+  - deepseek-coder-v2
   - llama-3-8b
   - nemotron-4-340b
-  - deepseek-coder-v2
   - stable-diffusion-3-medium
-  - dream-machine
-  - gen-3-alpha
-  - proteus
 topics:
+  - reward-tampering
   - test-time-search
-  - model-performance
+  - mathematical-reasoning
+  - process-supervision
+  - fine-tuning
   - on-device-ai
-  - llm-research
-  - multimodal
-  - text-to-image
   - video-generation
-  - ai-partnerships
+  - cost-efficiency
+  - context-length
+  - coding
+  - image-understanding
+  - multimodality
+people:
+  - adcock_brett
+  - clementdelangue
+  - svpino
 ---
 
 

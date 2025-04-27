@@ -4,28 +4,52 @@ title: not much happened today
 date: '2025-03-14T22:57:23.512875Z'
 original_slug: ainews-not-much-happened-today-7693
 description: >-
-  AI news highlights updates on language models including Google's Gemini 2.0,
-  Cohere's Command A, Meta's Dynamic Tanh, Alibaba's QwQ-32B, and Google's Gemma
-  3, along with market share shifts and upcoming surveys.
+  **Google DeepMind** announced updates to **Gemini 2.0**, including an upgraded
+  **Flash Thinking model** with stronger reasoning and native image generation
+  capabilities. **Cohere** launched **Command A**, a **111B** parameter dense
+  model with a **256K context window** and competitive pricing, available on
+  **Hugging Face**. **Meta AI** proposed **Dynamic Tanh (DyT)** as a replacement
+  for normalization layers in Transformers, supported by **Yann LeCun**.
+  **Alibaba** released **QwQ-32B**, a **32.5B** parameter model excelling in
+  math and coding, fine-tuned with reinforcement learning and freely available
+  under **Apache 2.0 license**. **Google DeepMind** also released **Gemma 3**
+  models ranging from **1B to 27B** parameters with a **128K token context
+  window** and over **140 language** support, plus **ShieldGemma 2**, an image
+  safety checker. Benchmarking shows **Gemma 3 27B** has strong vision and
+  memory efficiency but is outperformed by larger models like **Llama 3.3 70B**
+  and **DeepSeek V3 671B**. The **Hugging Face LLM leaderboard** history was
+  shared by @_lewtun.
 companies:
-  - google
+  - google-deepmind
   - cohere
-  - meta
+  - meta-ai-fair
   - alibaba
-  - google deepmind
+  - hugging-face
 models:
   - gemini-2.0-flash-thinking
-  - command-a-111b
-  - dy-tanh
+  - command-a
   - qwq-32b
   - gemma-3-27b
+  - gemma-3
+  - shieldgemma-2
+  - llama-3-70b
+  - deepseek-r1
+  - o1-mini
+  - deepseek-v3
 topics:
-  - language-models
   - model-updates
   - model-performance
   - benchmarking
-  - multilingual
-  - vision-ai
+  - reinforcement-learning
+  - transformers
+  - normalization-layers
+  - image-generation
+  - vision
+  - memory-efficiency
+  - context-windows
+  - fine-tuning
+people:
+  - yann-lecun
 ---
 
 

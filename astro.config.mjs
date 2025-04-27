@@ -32,7 +32,7 @@ export default defineConfig({
           console.log(`[Astro Build] Built ${pages.length} pages`);
           
           // Count and log pages by year
-          const issuesPages = pages.filter(page => page.pathname.includes('/issues/'));
+          const issuesPages = pages.filter(page => page.pathname.includes('issues/'));
           console.log(`[Astro Build] Built ${issuesPages.length} issue pages`);
           
           // Count issues with 2025 in the URL

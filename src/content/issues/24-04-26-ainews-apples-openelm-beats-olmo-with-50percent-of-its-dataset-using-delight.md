@@ -4,27 +4,37 @@ title: Apple's OpenELM beats OLMo with 50% of its dataset, using DeLighT
 date: '2024-04-26T21:32:41.171695Z'
 original_slug: ainews-apples-openelm-beats-olmo-with-50-of-its
 description: >-
-  Apple's AI emergence continues ahead of WWDC with the release of OpenELM,
-  Apple's first open LLM, featuring small sizes and layer-wise scaling inspired
-  by DeLight. The news also covers LLaMA 3's increased context length, new
-  models, and AI ethics debates including risks of open-source AI and U.S.
-  regulation proposals.
+  **Apple** advances its AI presence with the release of **OpenELM**, its first
+  relatively open large language model available in sizes from **270M to 3B**
+  parameters, featuring a novel layer-wise scaling architecture inspired by the
+  **DeLight** paper. Meanwhile, **Meta's LLaMA 3** family pushes context length
+  boundaries with models supporting over **160K tokens** and an **8B-Instruct
+  model with 262K context length** released on Hugging Face, alongside
+  performance improvements in quantized versions. A new paper on AI alignment
+  highlights **KTO** as the best-performing method, with sensitivity to training
+  data volume noted. In AI ethics and regulation, former **Google** CEO **Eric
+  Schmidt** warns about the risks of open-source AI empowering bad actors and
+  geopolitical rivals, while a U.S. proposal aims to enforce "Know Your
+  Customer" rules to end anonymous cloud usage.
 companies:
   - apple
-  - meta
+  - meta-ai-fair
+  - google
 models:
   - openelm
   - llama-3
   - llama-3-8b-instruct
   - llama-3-70b
 topics:
-  - multimodal
-  - large-language-models
-  - model-architecture
   - layer-wise-scaling
-  - ai-ethics
+  - context-length
+  - quantization
+  - ai-alignment
+  - open-source
   - ai-regulation
-  - llm-developments
+people:
+  - eric-schmidt
+  - sebastian-raschka
 ---
 
 

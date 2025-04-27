@@ -4,20 +4,34 @@ title: '1/13-14/2024: Don''t sleep on #prompt-engineering '
 date: '2024-01-16T00:58:42.745727Z'
 original_slug: ainews-113-142024-dont-sleep-on-prompt-engineering
 description: >-
-  AI community discussions on prompt engineering, AI consciousness,
-  hyperdimensional vectors, AI voice ethics, multilingual capabilities, and
-  model merging, with a focus on OpenAI's GPT-4 and related models.
+  The **OpenAI** Discord community engaged in diverse discussions including
+  **prompt engineering** techniques like contrastive Chain of Thought and step
+  back prompting, and explored **model merging** and **mixture-of-experts
+  (MoE)** concepts. Philosophical debates on **AI consciousness** and the ethics
+  of **AI-generated voices** highlighted concerns about AI sentience and
+  copyright issues. Technical clarifications were made on **hyperdimensional
+  vector space models** used in modern AI embeddings. Users also discussed
+  **customizing GPT** with personality profiles and prompt personalization to
+  overcome token limits, and proposed a **universal translator** feature for
+  multilingual Discord interactions. Key contributors included longtime regular
+  MadameArchitect and community members such as @darthgustav and @metaldrgn.
 companies:
   - openai
-models:
-  - gpt-4
+models: []
 topics:
   - prompt-engineering
-  - ai-consciousness
-  - hyperdimensional-vectors
-  - ai-ethics
-  - multilingual-ai
   - model-merging
+  - mixture-of-experts
+  - ai-consciousness
+  - ethics
+  - hyperdimensional-vector-space
+  - tokenization
+  - multilinguality
+  - prompt-personalization
+people:
+  - madamearchitect
+  - darthgustav
+  - metaldrgn
 ---
 
 

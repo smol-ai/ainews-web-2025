@@ -4,37 +4,46 @@ title: not much happened today
 date: '2024-10-10T01:02:45.022514Z'
 original_slug: ainews-not-much-happened-today-6017
 description: >-
-  AI news highlights include industry developments, Nobel Prize in Physics
-  awarded to Geoffrey Hinton, new AI models and tools from Meta, Anthropic, and
-  Together Compute, advancements in AI research, development tools, frameworks,
-  evaluation methods, and societal impact discussions.
+  **Geoffrey Hinton** and **John Hopfield** won the **Nobel Prize in Physics**
+  for foundational work on neural networks linking AI and physics. **Meta AI**
+  introduced a **13B parameter audio generation model** as part of Meta Movie
+  Gen for video-synced audio. **Anthropic** launched the **Message Batches API**
+  enabling asynchronous processing of up to 10,000 queries at half the cost.
+  **Together Compute** released **Flux Schnell**, a free model for 3 months. New
+  techniques like **PrefixQuant** quantization and **Prompt Caching** for
+  low-latency inference were highlighted by **rohanpaul_ai**. **LangGraph**
+  added long-term memory support for persistent document storage. **Hex-LLM**
+  framework was introduced for TPU-based low-cost, high-throughput LLM serving
+  from Hugging Face models. Discussions on AI safety emphasized gender equality
+  in science, and concerns about premature AI regulation by media and Hollywood
+  were raised.
 companies:
-  - meta
+  - meta-ai-fair
   - anthropic
   - togethercompute
-  - openai
-  - google
-  - sequoia
-  - nobelprize
+  - hugging-face
 models:
-  - audio-generation-13b
   - flux-schnell
-  - langgraph
-  - hex-llm
 topics:
-  - deep-learning
-  - neural-networks
   - audio-generation
-  - image-restoration
-  - api-platforms
   - quantization
   - prompt-caching
-  - ai-development
-  - ai-frameworks
-  - ai-evaluation
-  - ai-infrastructure
-  - ai-ethics
+  - long-term-memory
+  - llm-serving-framework
+  - hallucination-detection
+  - ai-safety
   - ai-governance
+people:
+  - geoffrey-hinton
+  - john-hopfield
+  - demis-hassabis
+  - rohanpaul_ai
+  - svpino
+  - hwchase17
+  - shreyar
+  - philschmid
+  - mmitchell_ai
+  - bindureddy
 ---
 
 

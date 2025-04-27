@@ -4,24 +4,41 @@ title: Learnings from o1 AMA
 date: '2024-09-14T00:55:34.586718Z'
 original_slug: ainews-learnings-from-o1-ama
 description: >-
-  AI news for 9/12/2024-9/13/2024 covering o1 model series release by openai,
-  performance benchmarks, reasoning techniques, and industry insights.
+  **OpenAI** released the **o1 model series**, touted as their "most capable and
+  aligned models yet," trained with reinforcement learning to enhance reasoning.
+  The **o1-preview** model scored **21% on ARC-AGI**, **~80% on aider code
+  editing** (surpassing Claude 3.5 Sonnet's 77%), and **~52% on
+  Cognition-Golden**, showcasing a shift from memorizing answers to memorizing
+  reasoning. The model employs a unique chain-of-thought approach enabling
+  "System II thinking" for better problem-solving. Experts like **Andrew Mayne**
+  advise framing o1 as a smart friend providing thoughtful explanations.
+  Additionally, an advanced RAG course sponsored by **Weights & Biases**,
+  **Cohere**, and **Weaviate** offers strategies for hybrid search and prompting
+  to optimize AI solutions.
 companies:
   - openai
+  - weights-biases
   - cohere
   - weaviate
-  - wandb
 models:
-  - o1
-  - gpt-4o
+  - o1-preview
+  - o1-mini
   - claude-3.5-sonnet
+  - gpt-4o
 topics:
   - reinforcement-learning
   - chain-of-thought
-  - multimodal
-  - benchmarking
+  - reasoning
+  - model-performance
   - prompting
-  - ai-research
+  - code-editing
+  - rag
+  - hybrid-search
+people:
+  - sama
+  - rohanpaul_ai
+  - gdb
+  - andrew-mayne
 ---
 
 

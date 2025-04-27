@@ -4,32 +4,46 @@ title: Creating a LLM-as-a-Judge
 date: '2024-10-30T23:17:27.255253Z'
 original_slug: ainews-creating-a-llm-as-a-judge
 description: >-
-  AI News for 10/29/2024-10/30/2024, covering releases from Anthropic, OpenAI,
-  DeepMind, Apple, and a new image model Recraft v3. The article discusses
-  critique shadowing for LLM evaluation, AI workflows, and a new memory API from
-  Zep. Highlights include Claude 3.5 on GitHub Copilot, Perplexity AI
-  partnership, and insights into AI evaluation and memory techniques.
+  **Anthropic** released details on Claude 3.5 SWEBench+SWEAgent, while
+  **OpenAI** introduced SimpleQA and **DeepMind** launched NotebookLM. **Apple**
+  announced new M4 Macbooks, and a new SOTA image model, Recraft v3, emerged.
+  Hamel Husain presented a detailed 6,000-word treatise on creating LLM judges
+  using a method called **critique shadowing** to align LLMs with domain
+  experts, addressing the problem of untrusted and unused data in AI teams. The
+  workflow involves expert-reviewed datasets and iterative prompt refinement.
+  Additionally, **Zep** introduced a temporal knowledge graph memory layer to
+  improve AI agent memory and reduce hallucinations. **Anthropic** also
+  integrated Claude 3.5 Sonnet with GitHub Copilot, expanding access to Copilot
+  Chat users.
 companies:
   - anthropic
   - openai
   - deepmind
   - apple
   - zep
-  - perplexity_ai
+  - perplexity-ai
+  - github
 models:
+  - claude-3.5-sonnet
   - claude-3.5
-  - simpleqa
   - notebooklm
+  - simpleqa
   - recraft-v3
 topics:
-  - ai-evaluation
   - critique-shadowing
-  - llm-judges
-  - ai-workflows
-  - memory-api
-  - rag-pipelines
-  - ai-releases
-  - ai-partnerships
+  - llm-judging
+  - domain-experts
+  - dataset-creation
+  - prompt-engineering
+  - error-analysis
+  - temporal-knowledge-graphs
+  - memory-layer
+  - ai-agent-memory
+  - hallucination-reduction
+  - integration
+people:
+  - hamel-husain
+  - swyx
 ---
 
 

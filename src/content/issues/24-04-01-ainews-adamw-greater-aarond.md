@@ -4,32 +4,40 @@ title: AdamW -> AaronD?
 date: '2024-04-01T19:58:53.959019Z'
 original_slug: ainews-adamw-aarond
 description: >-
-  AI News for 3/28/2024-4/1/2024. We checked 5 subreddits and 364 Twitters and
-  26 Discords for you. Highlights include a new optimizer inspired by LK-99,
-  Claude 3 Opus surpassing OpenAI models, a pretrained LLaMA-based 300M model,
-  promising results from MambaMixer architecture, advancements in Stable
-  Diffusion, AI-generated ads, and policy updates from OpenAI.
+  **Aaron Defazio** is gaining attention for proposing a potential tuning-free
+  replacement of the long-standing **Adam optimizer**, showing promising
+  experimental results across classic machine learning benchmarks like ImageNet
+  ResNet-50 and CIFAR-10/100. On Reddit, **Claude 3 Opus** has surpassed all
+  **OpenAI** models on the LMSys leaderboard, while a user pretrained a
+  **LLaMA-based 300M** model outperforming **bert-large** on language modeling
+  tasks with a modest budget. The new **MambaMixer** architecture demonstrates
+  promising results in vision and time series forecasting. In image generation,
+  **Stable Diffusion 1.5** with LoRAs achieves realistic outputs, and the
+  **WDXL** release showcases impressive capabilities. AI applications include an
+  AI-generated Nike spec ad and a chatbot built with OpenAI models that may
+  resist prompt injections. OpenAI is reportedly planning a ban wave targeting
+  policy violators and jailbreak users. *"The high alpha seems to come from
+  Aaron Defazio,"* highlighting his impactful work in optimizer research.
 companies:
   - openai
-  - la-mma
-  - stablediffusion
-  - sequoia-ascent
-  - arxiv
+  - hugging-face
 models:
   - claude-3-opus
-  - gpt-4
-  - gpt-3.5-turbo
-  - llama-300m
-  - mambamixer
+  - llama-3
+  - llama-3-300m
+  - bert-large
+  - stable-diffusion-1.5
+  - wdxl
 topics:
-  - large-language-models
+  - optimizer
+  - machine-learning-benchmarks
+  - vision
+  - time-series-forecasting
   - image-generation
-  - diffusion-models
-  - optimization
-  - ai-ethics
-  - ai-applications
-  - reinforcement-learning
-  - multimodal
+  - prompt-injection
+  - policy-enforcement
+people:
+  - aaron-defazio
 ---
 
 

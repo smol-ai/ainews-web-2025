@@ -4,35 +4,64 @@ title: a quiet weekend
 date: '2024-09-17T00:28:09.999129Z'
 original_slug: ainews-a-quiet-weekend-8098
 description: >-
-  AI news for September 13-16, 2024, highlighting new model releases, industry
-  updates, research papers, and benchmarks including OpenAI's o1, Google
-  DeepMind, Adobe Firefly, Mistral Pixtral, Tencent GameGen-O, and various AI
-  research developments.
+  **OpenAI** released the new **o1** model, leveraging reinforcement learning
+  and chain-of-thought prompting to excel in reasoning benchmarks, achieving an
+  IQ-like score of **120**. **Google DeepMind** introduced **DataGemma** to
+  reduce hallucinations by connecting LLMs with real-world data, and unveiled
+  **ALOHA** and **DemoStart** for robot dexterity using diffusion methods.
+  **Adobe** previewed its **Firefly AI Video Model** with text-to-video and
+  generative extend features. **Mistral** launched the multimodal **Pixtral
+  12B** model, and **Tencent** presented the **GameGen-O** open-world video game
+  generation model. Several research papers from **Stanford**, **OpenAI**,
+  **Microsoft**, **Mila**, and **Notre Dame** focus on advanced reasoning,
+  self-verification, and reflection tuning techniques. Experts like **Terence
+  Tao** and **George Hotz** have shared mixed but optimistic views on o1's
+  capabilities. Seed funding rounds include **Supermaven** ($12M) and **11x**
+  ($24M).
 companies:
   - openai
-  - google
-  - deepmind
+  - google-deepmind
   - adobe
-  - mistral
+  - mistral-ai
   - tencent
+  - supermaven
+  - 11x
+  - cohere
+  - anthropic
+  - latent-space-university
+  - stanford
+  - microsoft
+  - mila
+  - notre-dame
 models:
   - o1
+  - datagemma
   - aloha
   - demostart
+  - firefly-ai-video-model
   - pixtral-12b
+  - gamegen-o
 topics:
   - reinforcement-learning
   - chain-of-thought
-  - ai-hallucinations
-  - large-language-models
-  - robot-dexterity
-  - text-to-video
-  - multimodal
+  - reasoning
+  - robotics
+  - diffusion-models
+  - multimodality
   - video-generation
-  - ai-research
-  - self-taught-reasoning
+  - model-training
+  - reflection-tuning
   - mathematical-reasoning
-  - ai-benchmarks
+  - model-benchmarking
+  - fine-tuning
+people:
+  - george-hotz
+  - terence-tao
+  - adcock_brett
+  - rohanpaul_ai
+  - bindureddy
+  - fchollet
+  - philschmid
 ---
 
 

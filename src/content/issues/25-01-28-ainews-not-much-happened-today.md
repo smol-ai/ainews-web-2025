@@ -4,36 +4,56 @@ title: not much happened today
 date: '2025-01-29T01:48:45.233160Z'
 original_slug: ainews-not-much-happened-today-8335
 description: >-
-  AI news covers Huawei chips, Nvidia stock bounce, new open music foundation
-  models, Qwen 2.5 Max, Vercel AI SDK, open source reasoning datasets, AI model
-  comparisons including Deepseek R1, GPT-4, Qwen 2.5, innovations in AI image
-  generation, reinforcement learning advancements, AI infrastructure
-  developments, and enterprise AI applications.
+  **Huawei chips** are highlighted in a diverse AI news roundup covering
+  **NVIDIA's** stock rebound, new open music foundation models like **Local
+  Suno**, and competitive AI models such as **Qwen 2.5 Max** and **Deepseek
+  V3**. The release of **DeepSeek Janus Pro**, a multimodal LLM with image
+  generation capabilities, and advancements in **reinforcement learning** and
+  **chain-of-thought reasoning** are noted. Discussions include GPU rebranding
+  with **NVIDIA's H6400 GPUs**, data center innovations, and enterprise AI
+  applications like crypto APIs in hedge funds. *"Deepseek R1's capabilities"*
+  and *"Qwen 2.5 models added to applications"* are key highlights.
 companies:
   - nvidia
-  - openai
   - anthropic
+  - openai
+  - deepseek
+  - huawei
   - vercel
   - bespoke-labs
-  - sakana-ai-labs
-  - reach-vb
-  - id-aa-carmack
 models:
-  - gpt-4
+  - deepseek-r1
   - qwen-2.5
   - qwen-2.5-max
-  - deepseek-r1
   - deepseek-v3
-  - janus-pro
+  - deepseek-janus-pro
+  - gpt-4
 topics:
-  - ai-model-developments
-  - multimodal-ai
-  - reinforcement-learning
-  - reasoning-datasets
   - model-merging
-  - ai-infrastructure
-  - compute-optimization
-  - enterprise-ai
+  - multimodality
+  - reinforcement-learning
+  - chain-of-thought
+  - gpu-optimization
+  - compute-infrastructure
+  - compression
+  - crypto-api
+  - image-generation
+people:
+  - saranormous
+  - zizhpan
+  - victormustar
+  - omarsar0
+  - markchen90
+  - sakanaailabs
+  - reach_vb
+  - madiator
+  - dain_mclau
+  - francoisfleuret
+  - garygodchaux
+  - arankomatsuzaki
+  - id_aa_carmack
+  - lavanyasant
+  - virattt
 ---
 
 

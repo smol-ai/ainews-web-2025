@@ -4,35 +4,57 @@ title: Life after DPO (RewardBench)
 date: '2024-05-28T00:04:01.538810Z'
 original_slug: ainews-life-after-dpo
 description: >-
-  AI News for 5/24/2024-5/27/2024. Highlights include x.ai raising $6 billion at
-  a $24 billion valuation, a recap of ICLR papers, Meta's LlamaFS project, and
-  discussions on reward models, RLHF, DPO, and future alignment research. The
-  news also covers the rise of reward-model-focused Llama 3 models outperforming
-  GPT-4, Cohere, Gemini, and Claude, and xAI's funding and valuation.
+  **xAI raised $6 billion at a $24 billion valuation**, positioning it among the
+  most highly valued AI startups, with expectations to fund **GPT-5 and GPT-6
+  class models**. The **RewardBench** tool, developed by Nathan Lambert,
+  evaluates reward models (RMs) for language models, showing Cohere's RMs
+  outperforming open-source alternatives. The discussion highlights the
+  evolution of language models from Claude Shannon's 1948 model to GPT-3 and
+  beyond, emphasizing the role of **RLHF (Reinforcement Learning from Human
+  Feedback)** and the newer **DPO (Direct Preference Optimization)** method.
+  Notably, some **Llama 3 8B reward model-focused models** are currently
+  outperforming GPT-4, Cohere, Gemini, and Claude on the RewardBench
+  leaderboard, raising questions about reward hacking. Future alignment research
+  directions include improving preference datasets, DPO techniques, and
+  personalization in language models. The report also compares xAI's valuation
+  with OpenAI, Mistral AI, and Anthropic, noting speculation about xAI's
+  spending on Nvidia hardware.
 companies:
-  - x.ai
-  - meta
-  - cohere
-  - google
+  - x-ai
   - openai
-  - anthropic
   - mistral-ai
+  - anthropic
+  - cohere
+  - meta-ai-fair
+  - hugging-face
+  - nvidia
 models:
+  - gpt-3
   - gpt-4
-  - claude-3-opus
-  - gemini-pro-1.5
-  - llama-3-7b
-  - llama-3-13b
-  - llama-3-65b
+  - gpt-5
+  - gpt-6
+  - llama-3-8b
+  - llama-3
+  - claude-3
+  - gemini
 topics:
-  - rlhf
+  - reinforcement-learning-from-human-feedback
+  - direct-preference-optimization
   - reward-models
-  - dpo
-  - alignment-research
-  - language-models
   - rewardbench
-  - reward-hacking
-  - multimodal-ai
+  - language-model-history
+  - model-evaluation
+  - alignment-research
+  - preference-datasets
+  - personalization
+  - transformer-architecture
+people:
+  - nathan-lambert
+  - chris-manning
+  - elon-musk
+  - bindureddy
+  - rohanpaul_ai
+  - nearcyan
 ---
 
 

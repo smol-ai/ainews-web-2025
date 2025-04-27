@@ -4,29 +4,46 @@ title: 'Llama 3.1 Leaks: big bumps to 8B, minor bumps to 70b, and SOTA OSS 405b 
 date: '2024-07-23T01:12:50.598107Z'
 original_slug: ainews-llama-31-leaks
 description: >-
-  AI news covers the upcoming Llama 3.1 release, its features like multilingual
-  dialogue, increased context length, and performance benchmarks, along with the
-  GPT-4o mini launch, synthetic data advancements, and reasoning benchmarks.
+  **Llama 3.1** leaks reveal a **405B dense model** with **128k context
+  length**, trained on **39.3M GPU hours** using H100-80GB GPUs, and fine-tuned
+  with **over 25M synthetic examples**. The model shows significant benchmark
+  improvements, especially for the 8B and 70B variants, with some evals
+  suggesting the 70B outperforms **GPT-4o**. **GPT-4o Mini** launched as a
+  cost-efficient variant with strong performance but some reasoning weaknesses.
+  Synthetic datasets like **NuminaMath** enable models such as **Alibaba Qwen
+  2** to surpass GPT-4o and Claude 3.5 in math competitions. Discussions include
+  reasoning task benchmarks and dataset building for improved reasoning.
 companies:
-  - meta
+  - meta-ai-fair
   - openai
   - alibaba
 models:
-  - llama-3-1
-  - gpt-4o-mini
-  - llama-3-1-70b
+  - llama-3-1-405b
+  - llama-3-8b
+  - llama-3-70b
   - llama-3-1-8b
   - gpt-4o
-  - claude-3.5
-  - alibaba-qwen-2
+  - gpt-4o-mini
+  - claude-3-5
+  - qwen-2
 topics:
-  - multilingual-models
-  - large-language-models
-  - model-benchmarks
+  - multilinguality
+  - code-generation
+  - context-windows
+  - model-training
   - synthetic-data
-  - reasoning-benchmarks
-  - model-evaluation
-  - ai-research
+  - benchmarking
+  - reasoning
+  - fine-tuning
+  - model-performance
+  - dataset-release
+people:
+  - swyx
+  - philschmid
+  - jjitsev
+  - lewtun
+  - teknium1
+  - adcock_brett
 ---
 
 

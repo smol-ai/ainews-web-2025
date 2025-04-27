@@ -4,26 +4,30 @@ title: Nightshade poisons AI art... kinda?
 date: '2024-01-22T21:09:56.120967Z'
 original_slug: ainews-nightshade-poisons-ai-art-kinda
 description: >-
-  Nightshade, a new AI model teased two months ago, has sparked debate over its
-  originality and functioning. Discussions include MoE models, AI detection
-  tools like GPTZero, fine-tuning strategies for models like Mistral 7B, and
-  community-driven quantization and model merging techniques.
+  Over the weekend of **1/19-20/2024**, discussions in **TheBloke Discord**
+  covered key topics including **Mixture of Experts (MoE)** model efficiency,
+  GPU parallelism, and quantization strategies. Users debated the effectiveness
+  of AI detection tools like **GPTZero** and explored fine-tuning challenges
+  with models such as **Mistral 7B** and **Falcon 7B**. Community interest was
+  strong in developing simpler, community-powered quantization services and
+  understanding model merging techniques. Ethical considerations around AI
+  applications like AI girlfriend sites were also discussed.
 companies:
-  - google
-  - huggingface
+  - mistral-ai
+  - hugging-face
 models:
-  - nightshade
   - mistral-7b
-  - gpt-zero
+  - falcon-7b
 topics:
   - mixture-of-experts
   - gpu-parallelism
-  - ai-detection
-  - fine-tuning
   - quantization
+  - fine-tuning
   - model-merging
-  - llms
-  - ai-ethics
+  - ai-detection
+  - role-playing
+  - benchmarking
+people: []
 ---
 
 

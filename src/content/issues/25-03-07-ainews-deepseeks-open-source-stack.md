@@ -4,32 +4,67 @@ title: DeepSeek's Open Source Stack
 date: '2025-03-08T05:06:31.351088Z'
 original_slug: ainews-deepseeks-open-source-stack
 description: >-
-  AI news from March 7-8, 2025, covering new model releases, updates from
-  companies like google, openai, deepmind, and ai labs, including Qwen QwQ-32B,
-  Character-3, Gemini embeddings, GPT-4.5, Jamba Mini 1.6, Mistral OCR, and
-  Mercury Coder.
+  **DeepSeek's Open Source Week** was summarized by PySpur, highlighting
+  multiple interesting releases. The **Qwen QwQ-32B model** was fine-tuned into
+  **START**, excelling in PhD-level science QA and math benchmarks.
+  **Character-3**, an omnimodal AI video generation model by Hedra Labs and
+  Together AI, enables realistic animated content creation. **Google DeepMind**
+  introduced the **Gemini embedding model** with an 8k context window, ranking
+  #1 on MMTEB, alongside the **Gemini 2.0 Code Executor** supporting Python
+  libraries and auto-fix features. **Inception Labs' Mercury Coder** is a
+  diffusion-based code generation model offering faster token processing.
+  **OpenAI** released **GPT-4.5**, their largest model yet but with less
+  reasoning ability than some competitors. **AI21 Labs** launched **Jamba Mini
+  1.6**, noted for superior output speed compared to Gemini 2.0 Flash, GPT-4o
+  mini, and Mistral Small 3. A new dataset of 1.9M scanned pages was released
+  for OCR benchmarking, with **Mistral OCR** showing competitive but not
+  top-tier document parsing performance compared to LLM/LVM-powered methods.
+  *"Cracked engineers are all you need."*
 companies:
-  - google
+  - deepseek
+  - pyspur
+  - hugging-face
+  - togethercompute
+  - hedra-labs
+  - google-deepmind
+  - deeplearningai
   - openai
-  - deepmind
-  - ai-labs
+  - ai21-labs
+  - mistral-ai
 models:
   - qwen-qwq-32b
+  - start
   - character-3
-  - gemini-embeddings
-  - gemini-2.0-code-executor
+  - gemini
+  - gemini-2.0
+  - mercury-coder
   - gpt-4.5
   - jamba-mini-1.6
+  - gemini-2.0-flash
+  - gpt-4o-mini
+  - mistral-small-3
   - mistral-ocr
-  - mercury-coder
 topics:
-  - model-releases
-  - multimodal
-  - code-generation
-  - embeddings
-  - ocr
+  - fine-tuning
   - benchmarking
-  - ai-research
+  - multimodality
+  - code-generation
+  - diffusion-models
+  - model-performance
+  - model-optimization
+  - ocr
+  - embedding-models
+  - context-windows
+  - runtime-limits
+people:
+  - _akhaliq
+  - lmarena_ai
+  - reach_vb
+  - danielhanchen
+  - _philschmid
+  - aidan_mclau
+  - vikhyatk
+  - jerryjliu0
 ---
 
 

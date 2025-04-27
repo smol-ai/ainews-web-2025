@@ -5,24 +5,48 @@ date: '2024-12-18T01:43:51.256632Z'
 type: archival
 original_slug: ainews-o1-api-4o4o-mini-in-realtime-api-webrtc
 description: >-
-  OpenAI announced the launch of the o1 API with vision/image inputs, function
-  calling, structured outputs, and a new reasoning_effort parameter. The o1 API
-  is an improved version with fewer reasoning tokens and will have a pro
-  version. WebRTC and Realtime API improvements include better pricing and
-  session duration. OpenAI also released dev videos, SDKs, and held an AMA.
+  **OpenAI** launched the **o1 API** with enhanced features including vision
+  inputs, function calling, structured outputs, and a new `reasoning_effort`
+  parameter, achieving **60% fewer reasoning tokens** on average. The **o1 pro**
+  variant is confirmed as a distinct implementation coming soon. Improvements to
+  the **Realtime API** with **WebRTC** integration offer easier usage, longer
+  sessions (up to **30 minutes**), and significantly reduced pricing (up to
+  **10x cheaper** with mini models). **DPO Preference Tuning** for fine-tuning
+  is introduced, currently available for the **4o** model. Additional updates
+  include official Go and Java SDKs and OpenAI DevDay videos. The news also
+  highlights discussions on **Google Gemini 2.0 Flash** model's performance
+  reaching **83.6% accuracy**.
 companies:
   - openai
+  - google
+  - google-deepmind
 models:
   - o1-2024-12-17
+  - o1
+  - o1-pro
+  - 4o
+  - 4o-mini
+  - gemini-2-0-flash
+  - claude-3.5-sonnet
+  - claude-3.5
 topics:
-  - api-launch
-  - vision-inputs
   - function-calling
-  - structured-output
+  - structured-outputs
+  - vision
+  - reasoning
+  - webrtc
   - realtime-api
-  - webRTC
+  - preference-tuning
   - fine-tuning
-  - developer-tools
+  - api
+  - model-performance
+people:
+  - aidan_mclau
+  - kevinweil
+  - simonw
+  - michpokrass
+  - morgymcg
+  - juberti
 ---
 
 

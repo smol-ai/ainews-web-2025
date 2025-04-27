@@ -4,36 +4,48 @@ title: not much happened today
 date: '2024-11-08T23:16:39.940280Z'
 original_slug: ainews-not-much-happened-today-8530
 description: >-
-  A quiet week in AI news with muted launches, legal updates on copyright in LLM
-  training, new model Flux 1.1 Ultra, and ongoing AI hackathon by SambaNova.
-  Highlights include API releases, multi-agent systems, code models,
-  infrastructure tools, research advancements, and safety models.
+  This week in AI news, **Anthropic** launched **Claude Sonnet 3.5**, enabling
+  desktop app control via natural language. **Microsoft** introduced
+  **Magentic-One**, a multi-agent system built on the **AutoGen framework**.
+  **OpenCoder** was unveiled as an AI-powered code cookbook for large language
+  models. **SambaNova** is sponsoring a hackathon with prizes up to **$5000**
+  for building real-time AI agents. **Sophiamyang** announced new **Batch and
+  Moderation APIs** with **50% lower cost** and multi-dimensional harmful text
+  detection. Open-source tools like **Infisical** for secret management,
+  **CrewAI** for autonomous agent orchestration, and **Crawlee** for web
+  scraping were released. Research highlights include **SCIPE** for error
+  analysis in LLM chains, **Context Refinement Agent** for improved
+  retrieval-augmented generation, and **MemGPT** for managing LLM memory. The
+  week also saw a legal win for **OpenAI** in the RawStory copyright case,
+  affirming that facts used in LLM training are not copyrightable.
 companies:
-  - openai
   - anthropic
   - microsoft
-  - samba-nova
-  - blackforest-labs
-  - deeplearningai
-  - tom-doerr
-  - langchainai
+  - sambanova
+  - openai
+  - langchain
+  - llamaindex
 models:
-  - claude-3.5
-  - flux-1-1-ultra
-  - magentic-one
+  - claude-3.5-sonnet
   - opencoder
-  - dimensionx
-  - dynamem
 topics:
-  - large-language-models
-  - ai-models
-  - ai-infrastructure
-  - ai-research
-  - ai-safety
   - multi-agent-systems
-  - rag
+  - natural-language-interfaces
+  - batch-processing
+  - harmful-content-detection
+  - secret-management
+  - retrieval-augmented-generation
+  - error-analysis
   - memory-management
-  - ai-ethics
+  - web-scraping
+  - autonomous-agents
+people:
+  - sophiamyang
+  - tom_doerr
+  - omarsar0
+  - _akhaliq
+  - andrewyng
+  - giffmana
 ---
 
 

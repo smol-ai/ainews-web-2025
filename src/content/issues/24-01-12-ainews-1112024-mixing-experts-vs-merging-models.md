@@ -4,36 +4,56 @@ title: '1/11/2024: Mixing Experts vs Merging Models'
 date: '2024-01-12T18:49:15.256645Z'
 original_slug: ainews-1112024-mixing-experts-vs-merging-models
 description: >-
-  AI news covers the emergence of MoE models like DeepSeekMOE and Phixtral,
-  model merging techniques such as frankenmerges, and their impact on open
-  leaderboards. Discussions include AI sandbox tools, security concerns with
-  cloud-based AI, performance gaps between GPT-4 versions, fine-tuning
-  strategies, RAG integration, MoE vs dense models, and anomalies in fine-tuning
-  responses.
+  **18 guilds**, **277 channels**, and **1342 messages** were analyzed with an
+  estimated reading time saved of **187 minutes**. The community switched to
+  **GPT-4 turbo** and discussed the rise of **Mixture of Experts (MoE) models**
+  like **Mixtral**, **DeepSeekMOE**, and **Phixtral**. Model merging techniques,
+  including naive linear interpolation and "frankenmerges" by **SOLAR** and
+  **Goliath**, are driving new performance gains on open leaderboards.
+  Discussions in the **Nous Research AI Discord** covered topics such as AI
+  playgrounds supporting prompt and RAG parameters, security concerns about
+  third-party cloud usage, debates on Discord bots and TOS, skepticism about
+  **Teenage Engineering's** cloud LLM, and performance differences between
+  **GPT-4 0613** and **GPT-4 turbo**. The community also explored fine-tuning
+  strategies involving **DPO**, **LoRA**, and safetensors, integration of RAG
+  with API calls, semantic differences between MoE and dense LLMs, and data
+  frameworks like **llama index** and **SciPhi-AI's synthesizer**. Issues with
+  anomalous characters in fine-tuning were also raised.
 companies:
   - deepseek-ai
-  - maximelabonne
-  - huggingface
+  - hugging-face
   - nous-research
   - teenage-engineering
+  - discord
 models:
-  - gpt-4
   - gpt-4-turbo
-  - gpt-4-32k
+  - gpt-4-0613
+  - mixtral
+  - deepseekmoe
+  - phixtral
 topics:
-  - moe-models
+  - mixture-of-experts
   - model-merging
-  - open-leaderboards
-  - ai-sandbox
-  - prompt-llm-parameters
-  - cloud-security
-  - discord-tos
-  - llm-performance
   - fine-tuning
-  - rag-api-calls
-  - moe-vs-dense
-  - rag-data-architecture
-  - overfitting
+  - rag
+  - security
+  - discord-tos
+  - model-performance
+  - prompt-engineering
+  - function-calling
+  - semantic-analysis
+  - data-frameworks
+people:
+  - ash_prabaker
+  - shacrw
+  - teknium
+  - 0xevil
+  - everyoneisgross
+  - ldj
+  - pramod8481
+  - mgreg_42266
+  - georgejrjrjr
+  - kenakafrosty
 ---
 
 

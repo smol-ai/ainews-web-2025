@@ -4,33 +4,53 @@ title: Google I/O in 60 seconds
 date: '2024-05-14T22:01:01.464489Z'
 original_slug: ainews-google-io-in-60-seconds
 description: >-
-  Google I/O showcased the Gemini model family with new variants like Gemini 1.5
-  Pro, Flash, Nano, and Gemini Gems, along with other AI projects such as Gemma,
-  Veo, Imagen 3, and Music AI Sandbox. Google also announced AI integrations
-  across its product suite and new hardware codenamed Trillium. The event
-  highlights Google's focus on speed, efficiency, and multimodal capabilities.
+  **Google** announced updates to the **Gemini model family**, including
+  **Gemini 1.5 Pro** with **2 million token support**, and the new **Gemini
+  Flash** model optimized for speed with **1 million token capacity**. The
+  Gemini suite now includes **Ultra**, **Pro**, **Flash**, and **Nano** models,
+  with **Gemini Nano** integrated into **Chrome 126**. Additional Gemini
+  features include **Gemini Gems** (custom GPTs), **Gemini Live** for voice
+  conversations, and **Project Astra**, a live video understanding assistant.
+  The **Gemma model family** was updated with **Gemma 2** at **27B parameters**,
+  offering near-**llama-3-70b** performance at half the size, plus
+  **PaliGemma**, a vision-language open model inspired by **PaLI-3**. Other
+  launches include **DeepMind's Veo**, **Imagen 3** for photorealistic image
+  generation, and a **Music AI Sandbox** collaboration with YouTube. **SynthID
+  watermarking** now extends to text, images, audio, and video. The **Trillium
+  TPUv6** codename was revealed. Google also integrated AI across its product
+  suite including Workspace, Email, Docs, Sheets, Photos, Search, and Lens.
+  *"The world awaits Apple's answer."*
 companies:
   - google
-  - deepmind
+  - google-deepmind
+  - youtube
 models:
-  - gemini-1-5-pro
+  - gemini-1.5-pro
   - gemini-flash
+  - gemini-ultra
+  - gemini-pro
   - gemini-nano
-  - gemini-gems
   - gemma-2
-  - pali-gemma
-  - veo
+  - llama-3-70b
+  - paligemma
   - imagen-3
+  - veo
 topics:
-  - gemini-model-family
-  - gemma-model-family
-  - multimodal
-  - ai-deployments
-  - ai-hardware
-  - watermarking
-  - text-to-image
-  - text-to-video
+  - tokenization
+  - model-performance
+  - fine-tuning
+  - vision
+  - multimodality
+  - model-release
+  - model-training
+  - model-optimization
   - ai-integration
+  - image-generation
+  - watermarking
+  - hardware-optimization
+  - voice
+  - video-understanding
+people: []
 ---
 
 

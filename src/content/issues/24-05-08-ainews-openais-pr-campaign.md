@@ -4,26 +4,44 @@ title: OpenAI's PR Campaign?
 date: '2024-05-09T01:27:27.645324Z'
 original_slug: ainews-to-be-named-1752
 description: >-
-  Recent AI news highlights OpenAI's efforts to improve transparency and
-  responsible AI use, including new tools for content creators, model
-  specifications, and collaborations with Microsoft for secret AI services for
-  US spies. Discussions include model alignment, safety, and the potential for
-  generating NSFW content.
+  **OpenAI** faces user data deletion backlash over its new partnership with
+  StackOverflow amid GDPR complaints and US newspaper lawsuits, while addressing
+  election year concerns with efforts like the Media Manager tool for content
+  opt-in/out by 2025 and source link attribution. **Microsoft** develops a
+  top-secret airgapped GPT-4 AI service for US intelligence agencies. OpenAI
+  releases the Model Spec outlining responsible AI content generation policies,
+  including NSFW content handling and profanity use, emphasizing clear
+  distinctions between bugs and design decisions. **Google DeepMind** announces
+  **AlphaFold 3**, a state-of-the-art model predicting molecular structures with
+  high accuracy, showcasing cross-domain AI techniques. New research on
+  **xLSTM** proposes scaling LSTMs to billions of parameters, competing with
+  transformers in performance and scaling. Microsoft introduces **vAttention**,
+  a dynamic memory management method for efficient large language model serving
+  without PagedAttention.
 companies:
   - openai
   - microsoft
-  - google
+  - google-deepmind
 models:
+  - alphafold-3
+  - xlstm
   - gpt-4
 topics:
-  - responsible-ai
+  - memory-management
   - model-spec
-  - nsfw-content
-  - alignment
-  - ai-safety
-  - multimodal
   - scaling
-  - efficiency
+  - multimodality
+  - performance
+  - transformers
+  - dynamic-memory
+  - model-architecture
+people:
+  - demis-hassabis
+  - sama
+  - joanne-jang
+  - omarsar0
+  - arankomatsuzaki
+  - drjimfan
 ---
 
 

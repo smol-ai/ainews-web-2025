@@ -53,7 +53,6 @@ export const GET: APIRoute = async ({ url }) => {
       id: issue.id,
       title: issue.data.title,
       date: issue.data.date,
-      tags: issue.data.tags,
       models: issue.data.models,
       companies: issue.data.companies,
       topics: issue.data.topics,

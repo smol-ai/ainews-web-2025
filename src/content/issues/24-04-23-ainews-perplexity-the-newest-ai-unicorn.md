@@ -4,32 +4,40 @@ title: Perplexity, the newest AI unicorn
 date: '2024-04-23T22:48:23.949413Z'
 original_slug: ainews-perplexity
 description: >-
-  AI news covering recent developments in Llama 3 variants, optimizations,
-  performance, and open-source models like Phi-3, along with updates on
-  Perplexity's Series B-1 funding and community discussions on Reddit.
+  **Perplexity** doubles its valuation shortly after its Series B with a Series
+  B-1 funding round. Significant developments around **Llama 3** include context
+  length extension to **16K tokens**, new multimodal **LLaVA models**
+  outperforming Llama 2, and fine-tuning improvements like QDoRA surpassing
+  QLoRA. The **Llama-3-70B** model is praised for instruction following and
+  performance across quantization formats. **Phi-3 models** by **Meta AI**
+  released in multiple sizes show competitive benchmark results, with the 14B
+  model achieving **78% on MMLU** and the 3.8B model nearing **GPT-3.5**
+  performance.
 companies:
-  - huggingface
-  - meta
-  - perplexity
+  - perplexity-ai
+  - meta-ai-fair
+  - hugging-face
+  - groq
 models:
-  - llama-3-8b-16k
-  - llama-3-8b-v1_1
+  - llama-3-8b
   - llama-3-70b
-  - phi-3-3.8b
-  - phi-3-7b
-  - phi-3-14b
-topics:
   - llama-3
-  - multimodal
+  - llava-llama-3-8b-v1_1
+  - phi-3
+  - gpt-3.5
+topics:
+  - context-length
   - fine-tuning
-  - web-browsing
+  - quantization
   - instruction-following
   - model-comparison
-  - open-source-ai
-  - language-models
-  - performance-evaluation
-  - quantization
-  - web-data
+  - multimodality
+  - benchmarking
+  - memory-optimization
+  - model-performance
+people:
+  - daniel-gross
+  - aravind-srinivas
 ---
 
 

@@ -4,31 +4,40 @@ title: o3-mini launches, OpenAI on "wrong side of history"
 date: '2025-02-01T09:16:19.878807Z'
 original_slug: ainews-o3-mini-launches-openai-on-wrong-side-of
 description: >-
-  OpenAI released o3-mini, a new reasoning model outperforming previous models
-  in benchmarks, with significant cost reductions and safety improvements.
-  OpenAI also discussed strategy shifts and updates on their AI models and
-  safety evaluations. MistralAI released Mistral Small 3, a competitive
-  open-weight model, and DeepSeek R1 continues to be supported with new
-  inference tools.
+  **OpenAI** released **o3-mini**, a new reasoning model available for free and
+  paid users with a "high" reasoning effort option that outperforms the earlier
+  **o1** model on STEM tasks and safety benchmarks, costing **93% less** per
+  token. **Sam Altman** acknowledged a shift in open source strategy and
+  credited **DeepSeek R1** for influencing assumptions. **MistralAI** launched
+  **Mistral Small 3 (24B)**, an open-weight model with competitive performance
+  and low API costs. **DeepSeek R1** is supported by **Text-generation-inference
+  v3.1.0** and available via **ai-gradio** and replicate. The news highlights
+  advancements in reasoning, cost-efficiency, and safety in AI models.
 companies:
   - openai
-  - mistralai
+  - mistral-ai
   - deepseek
+  - togethercompute
+  - fireworksai_hq
+  - ai-gradio
+  - replicate
 models:
   - o3-mini
+  - o1
   - gpt-4o
   - mistral-small-3-24b
   - deepseek-r1
 topics:
-  - ai-models
   - reasoning
-  - cost-reduction
-  - safety-evaluation
-  - open-source-ai
+  - safety
+  - cost-efficiency
+  - model-performance
   - benchmarking
-  - ai-strategy
-  - multimodal
-  - ai-performance
+  - api
+  - open-weight-models
+  - model-releases
+people:
+  - sam-altman
 ---
 
 

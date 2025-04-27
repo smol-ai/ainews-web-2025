@@ -8,7 +8,7 @@ type Post = CollectionEntry<"issues">;
 const posts = await getCollection("issues", ({ data }) => !data.draft);
 
 // Helper function to get unique tags and sort them
-function getUniqueSortedTags(posts: Post[], tagType: 'companies' | 'models' | 'topics') {
+function getUniqueSortedTags(posts: Post[], tagType: 'companies' | 'models' | 'topics' | 'people') {
   const tags = [...new Set(posts.flatMap((post) => post.data[tagType] || []))]
       .filter(tag => {
         const count = posts.filter((post) => post.data[tagType]?.includes(tag)).length;
@@ -29,7 +29,7 @@ function getUniqueSortedTags(posts: Post[], tagType: 'companies' | 'models' | 't
 const companies = getUniqueSortedTags(posts, 'companies');
 const models = getUniqueSortedTags(posts, 'models');
 const topics = getUniqueSortedTags(posts, 'topics');
-
+const people = getUniqueSortedTags(posts, 'people');
 // Create tag data for rendering
 const categoryData = {
   companies: {
@@ -43,10 +43,14 @@ const categoryData = {
   topics: {
     alphabetical: topics.alphabetical,
     byUsage: topics.byUsage
+  },
+  people: {
+    alphabetical: people.alphabetical,
+    byUsage: people.byUsage
   }
 };
 
-const categories = ['companies', 'models', 'topics'] as const;
+const categories = ['companies', 'models', 'topics', 'people'] as const;
 ---
 
 <Layout title="Tags" description="List of companies, models, and topics used in AINews.">

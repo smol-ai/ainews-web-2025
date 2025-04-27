@@ -4,33 +4,49 @@ title: nothing much happened today
 date: '2024-09-18T00:27:31.736910Z'
 original_slug: ainews-nothing-much-happened-today-7147
 description: >-
-  AI news discusses open-source model replication, advancements in transformer
-  reasoning, model performance improvements, multimodal capabilities, AI safety,
-  and industry trends.
+  **OpenAI's o1 model** faces skepticism about open-source replication due to
+  its extreme restrictions and unique training advances like RL on CoT.
+  **ChatGPT-4o** shows significant performance improvements across benchmarks.
+  **Llama-3.1-405b** fp8 and bf16 versions perform similarly with cost benefits
+  for fp8. A new open-source benchmark "Humanity's Last Exam" offers $500K in
+  prizes to challenge LLMs. Model merging benefits from neural network sparsity
+  and linear mode connectivity. Embedding-based toxic prompt detection achieves
+  high accuracy with low compute. **InstantDrag** enables fast,
+  optimization-free drag-based image editing. **LangChain v0.3** releases with
+  improved dependency management. Automated code review tool **CodeRabbit**
+  adapts to team coding styles. Visual search advances integrate multimodal data
+  for better product search. Experts predict AI will be default software by
+  2030.
 companies:
   - openai
   - lmsys
-  - scale
-  - cais
+  - scale-ai
+  - cognition
   - langchain
   - qdrant
+  - rohanpaul_ai
 models:
   - o1
   - chatgpt-4o
-  - llama-3.1-405b
-  - gpt-4
-  - gpt-4o
+  - llama-3-1-405b
 topics:
-  - transformers
-  - intermediate-reasoning
-  - model-comparison
+  - reinforcement-learning
   - model-merging
-  - ai-safety
-  - multimodal
-  - ai-tools
-  - code-review
+  - embedding-models
+  - toxicity-detection
+  - image-editing
+  - dependency-management
+  - automated-code-review
   - visual-search
-  - ai-integration
+  - benchmarking
+people:
+  - denny_zhou
+  - svpino
+  - alexandr_wang
+  - cwolferesearch
+  - rohanpaul_ai
+  - _akhaliq
+  - kylebrussell
 ---
 
 

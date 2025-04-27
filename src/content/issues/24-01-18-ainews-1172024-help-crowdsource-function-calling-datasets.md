@@ -4,33 +4,46 @@ title: '1/17/2024: Help crowdsource function calling datasets'
 date: '2024-01-18T21:20:01.765780Z'
 original_slug: ainews-1172024-help-crowdsource-function-calling
 description: >-
-  Skunkworks is working on collating function calling datasets and exploring
-  data formats for tuning function calls. LM Studio updates include its
-  closed-source status, compatibility, and new features like 2-bit quantization.
-  Discussions cover model performance, hardware optimization, and new AI tools
-  like Microsoft's AutoGen Studio. The content also mentions various models,
-  companies, and tools such as llama.cpp, hugging face, and microsoft.
+  **LM Studio** updated its FAQ clarifying its **closed-source** status and
+  perpetual freeness for personal use with no data collection. The new beta
+  release includes fixes and hints at upcoming **2-bit quantization** support.
+  For gaming, models like **Dolphin 2.7 Mixtral 8x7B**, **MegaDolphin**, and
+  **Dolphin 2.6 Mistral 7B DPO** with **Q4_K_M** quantization were recommended.
+  Discussions highlighted that single powerful GPUs outperform multi-GPU setups
+  due to bottlenecks, with older GPUs like Tesla P40 being cost-effective.
+  **Microsoft's AutoGen Studio** was introduced but has issues and requires
+  **API fees** for open-source models. Linux users are advised to use
+  **llama.cpp** over LM Studio due to lack of headless mode. Additional tools
+  like **LLMFarm** for iOS and various Hugging Face repositories were also
+  mentioned. *"LM Studio must be running to use the local inference server as
+  there is no headless mode available"* and *"matching model size to GPU memory
+  is key for performance"* were notable points.
 companies:
-  - skunkworks
+  - lm-studio
+  - mistral-ai
   - microsoft
-  - llama.cpp
-  - hugging face
+  - hugging-face
+  - apple
 models:
-  - dolphin-2-7-mixtral-8x7b
+  - mistral-7b
+  - dolphin-2.7-mixtral-8x7b
   - mega-dolphin
-  - dolphin-2-6-m-7b-dpo
-  - ferret-7b
-  - llm-studio
-  - autogen-studio
+  - dolphin-2.6-mistral-7b-dpo
+  - llama-cpp
 topics:
   - function-calling
-  - data-formats
-  - model-quantization
-  - llm-performance
-  - hardware-optimization
-  - ai-tools
-  - llm-inference
-  - multilingual-ai
+  - quantization
+  - model-performance
+  - gpu-optimization
+  - model-selection
+  - closed-source
+  - memory-optimization
+  - linux-server
+  - api-fees
+  - headless-mode
+people:
+  - yagilb
+  - heyitsyorkie
 ---
 
 

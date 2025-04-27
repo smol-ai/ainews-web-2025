@@ -4,40 +4,51 @@ title: not much happened today
 date: '2024-08-10T05:51:12.824379Z'
 original_slug: ainews-to-be-named-3898
 description: >-
-  AI news for August 8-9, 2024, covering model updates, pricing, research,
-  tools, safety, and humor. Highlights include Google AI price cuts, Anthropic
-  bug bounty, new models like Qwen2-Math, and Mistral AI agents.
+  **Qwen2-Math-72B** outperforms **GPT-4o**, **Claude-3.5-Sonnet**,
+  **Gemini-1.5-Pro**, and **Llama-3.1-405B** on math benchmarks using synthetic
+  data and advanced optimization techniques. **Google AI** cuts pricing for
+  **Gemini 1.5 Flash** by up to 78%. **Anthropic** expands its bug bounty
+  program targeting universal jailbreaks in next-gen safety systems. Tutorial on
+  **QLoRA** fine-tuning of **IDEFICS3-Llama 8B** for visual question answering
+  released. A Chinese open weights model surpasses previous MATH benchmark
+  records. Surveys on **Mamba** models and LLM-based agents for software
+  engineering highlight advancements and applications. Open-source tools like
+  **R2R RAG engine** and **LlamaIndex Workflows** simplify building complex AI
+  applications. **Mistral AI** introduces customizable AI agents. Concerns
+  raised about California bill SB 1047's focus on existential risk and debates
+  on banning open-source AI. Memes and humor continue in AI communities.
 companies:
-  - google
   - anthropic
-  - rohanpaul_ai
-  - jeremyphoward
-  - omarsar0
-  - llama_index
-  - sophiamyang
-  - ylecun
-  - bindureddy
-  - nearcyan
+  - google
+  - mistral-ai
+  - llamaindex
 models:
   - qwen2-math-72b
-  - gemini-1.5-flash
-  - claude-3.5-sonnet
   - gpt-4o
+  - claude-3.5-sonnet
+  - gemini-1.5-pro
   - llama-3.1-405b
   - idefics3-llama-8b
 topics:
-  - ai-models
-  - ai-pricing
-  - ai-research
-  - benchmarks
+  - math
   - fine-tuning
-  - llm-agents
+  - synthetic-data
+  - reinforcement-learning
+  - bug-bounty
+  - visual-question-answering
+  - open-source
+  - retrieval-augmented-generation
+  - agentic-ai
   - ai-safety
-  - ai-regulation
-  - open-source-ai
-  - multimodal
-  - knowledge-graphs
-  - ai-tools
+  - policy
+people:
+  - rohanpaul_ai
+  - anthropicai
+  - mervenoyann
+  - jeremyphoward
+  - omarsar0
+  - ylecun
+  - bindureddy
 ---
 
 

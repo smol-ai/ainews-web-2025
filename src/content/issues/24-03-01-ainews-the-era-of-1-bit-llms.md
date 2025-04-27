@@ -4,34 +4,40 @@ title: The Era of 1-bit LLMs
 date: '2024-03-01T22:33:03.450029Z'
 original_slug: ainews-the-era-of-1-bit-llms
 description: >-
-  The news discusses advancements in 1-bit large language models (LLMs),
-  including the introduction of BitNet b1.58, which uses ternary weights and
-  offers high performance with reduced energy and memory costs. It highlights
-  research on quantization, multimodal models, AI security, and ethical
-  considerations, along with community discussions on AI innovation, societal
-  impact, and humor.
+  **The Era of 1-bit LLMs** research, including the **BitNet b1.58** model,
+  introduces a ternary parameter approach that matches full-precision
+  Transformer LLMs in performance while drastically reducing energy costs by
+  **38x**. This innovation promises new scaling laws and hardware designs
+  optimized for 1-bit LLMs. Discussions on AI Twitter highlight advances in
+  **AGI societal impact**, **robotics with multimodal models**, **fine-tuning
+  techniques like ResLoRA**, and **AI security efforts at Hugging Face**.
+  Ethical considerations in generative AI and humor within the AI community are
+  also prominent topics.
 companies:
-  - bitnet
-  - gpt-4
-  - openai
-  - anthropic
-  - google
-  - huggingface
+  - hugging-face
 models:
   - bitnet-b1.58
-  - gpt-4
-  - gpt-3
-  - gpt-3.5
-  - gpt-3-turbo
 topics:
   - quantization
-  - large-language-models
-  - multimodal
+  - model-optimization
+  - energy-efficiency
+  - fine-tuning
+  - robotics
+  - multimodality
   - ai-security
-  - ai-ethics
-  - ai-research
-  - ai-hardware
-  - energy-efficient-ai
+  - ethics
+  - humor
+people:
+  - swyx
+  - levelsio
+  - gdb
+  - npew
+  - _akhaliq
+  - osanseviero
+  - mmitchell_ai
+  - deliprao
+  - nearcyan
+  - clementdelangue
 ---
 
 

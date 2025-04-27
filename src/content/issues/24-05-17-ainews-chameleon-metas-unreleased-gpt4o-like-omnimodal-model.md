@@ -4,22 +4,48 @@ title: 'Chameleon: Meta''s (unreleased) GPT4o-like Omnimodal Model'
 date: '2024-05-17T20:46:44.950821Z'
 original_slug: ainews-chameleon-metas-unreleased-gpt4o-like
 description: >-
-  FAIR's Chameleon introduces an early fusion multimodal model trained on 10T
-  tokens, capable of outputting any modality with a focus on 'omnimodality'. It
-  compares favorably with GPT-4-class models, though benchmarks are modest. Meta
-  is close to releasing its own early fusion multimodal model.
+  **Meta AI FAIR** introduced **Chameleon**, a new multimodal model family with
+  **7B** and **34B** parameter versions trained on **10T tokens** of interleaved
+  text and image data enabling "early fusion" multimodality that can natively
+  output any modality. While reasoning benchmarks are modest, its "omnimodality"
+  approach competes well with pre-GPT4o multimodal models. **OpenAI** launched
+  **GPT-4o**, a model excelling in benchmarks like MMLU and coding tasks, with
+  strong multimodal capabilities but some regression in ELO scores and
+  hallucination issues. **Google DeepMind** announced **Gemini 1.5 Flash**, a
+  small model with **1M context window** and flash performance, highlighting
+  convergence trends between OpenAI and Google models. **Anthropic** updated
+  **Claude 3** with streaming support, forced tool use, and vision tool
+  integration for multimodal knowledge extraction. OpenAI also partnered with
+  Reddit, raising industry attention.
 companies:
-  - fair
-  - meta
+  - meta-ai-fair
+  - openai
+  - google-deepmind
+  - anthropic
+  - reddit
 models:
-  - chameleon-7b
-  - chameleon-34b
+  - chameleon
+  - gpt-4o
+  - gemini-1.5-flash
+  - claude-3
 topics:
-  - multimodal
+  - multimodality
   - early-fusion
-  - omnimodality
-  - large-language-models
-  - training-data
+  - benchmarking
+  - model-training
+  - tokenization
+  - streaming
+  - tool-use
+  - vision
+  - coding
+  - hallucination-detection
+  - model-performance
+people:
+  - armen-aghajanyan
+  - sama
+  - alexandr-wang
+  - abacaj
+  - alexalbert__
 ---
 
 

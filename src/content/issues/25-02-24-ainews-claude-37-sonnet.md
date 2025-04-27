@@ -4,22 +4,34 @@ title: Claude 3.7 Sonnet
 date: '2025-02-25T05:58:56.716932Z'
 original_slug: ainews-claude-37-sonnet
 description: >-
-  AI news covering the release of Claude 3.7 Sonnet by anthropic, its features
-  like hybrid reasoning, extended thinking, tool use, and new benchmarks such as
-  Pokebench. Also mentions GPT5 roadmap and other AI model updates.
+  **Anthropic** launched **Claude 3.7 Sonnet**, their most intelligent model to
+  date featuring hybrid reasoning with two thinking modes: near-instant and
+  extended step-by-step thinking. The release includes **Claude Code**, an
+  agentic coding tool in limited preview, and supports a **128k output token
+  capability** in beta. Claude 3.7 Sonnet performs well on coding benchmarks
+  like **SWE-Bench Verified** and **Cognition's junior-dev eval**, and
+  introduces advanced features such as streaming thinking, prompt caching, and
+  tool use. The model is also benchmarked on **Pokebench**, reflecting agentic
+  capabilities similar to the Voyager paper. The launch is accompanied by
+  extensive documentation, cookbooks, and prompting guides for extended
+  thinking. *"The first generally available hybrid reasoning model"* and *"first
+  coding tool from Anthropic"* were highlighted in social media announcements.
 companies:
   - anthropic
-  - openai
 models:
   - claude-3-7-sonnet
-  - gpt-5
+  - claude-3
+  - claude-code
 topics:
   - hybrid-reasoning
   - extended-thinking
-  - tool-use
-  - benchmarking
-  - coding-ai
+  - coding-benchmarks
   - agentic-ai
+  - prompt-caching
+  - streaming
+  - token-capacity
+  - tool-use
+people: []
 ---
 
 

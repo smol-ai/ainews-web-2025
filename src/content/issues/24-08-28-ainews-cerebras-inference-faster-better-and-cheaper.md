@@ -4,36 +4,50 @@ title: 'Cerebras Inference: Faster, Better, AND Cheaper'
 date: '2024-08-29T00:59:27.113773Z'
 original_slug: ainews-cerebras-inference-faster-better-and
 description: >-
-  Cerebras' new inference service demonstrates high-speed Llama 3.1 inference at
-  1800 tokens/sec, challenging GPU solutions with competitive pricing and
-  wafer-scale chips. The news covers recent advancements in LLM inference speed,
-  open-source models, and AI infrastructure developments.
+  **Groq** led early 2024 with superfast LLM inference speeds, achieving ~450
+  tokens/sec for Mixtral 8x7B and 240 tokens/sec for Llama 2 70B. **Cursor**
+  introduced a specialized code edit model hitting 1000 tokens/sec. Now,
+  **Cerebras** claims the fastest inference with their wafer-scale chips,
+  running **Llama3.1-8b** at 1800 tokens/sec and **Llama3.1-70B** at 450
+  tokens/sec at full precision, with competitive pricing and a generous free
+  tier. **Google's Gemini 1.5** models showed significant benchmark
+  improvements, especially Gemini-1.5-Flash and Gemini-1.5-Pro. New open-source
+  models like **CogVideoX-5B** and **Mamba-2 (Rene 1.3B)** were released,
+  optimized for consumer hardware. **Anthropic's Claude** now supports prompt
+  caching, improving speed and cost efficiency. *"Cerebras Inference runs
+  Llama3.1 20x faster than GPU solutions at 1/5 the price."*
 companies:
-  - cerebras
   - groq
-  - sambanova
-  - together
-  - fireworks
-  - solaris
-  - lmsys
-  - google
-  - meta
+  - cerebras
+  - cursor
+  - google-deepmind
+  - anthropic
 models:
-  - llama-3-1-8b
-  - llama-3-1-70b
-  - gemini-1.5-pro
+  - llama-3.1-8b
+  - llama-3.1-70b
   - gemini-1.5-flash
-  - gemini-1.5-flash-9b
+  - gemini-1.5-pro
   - cogvideox-5b
+  - mamba-2
+  - rene-1.3b
+  - llama-3.1
+  - gemini-1.5
+  - claude
 topics:
-  - llm-inference
-  - model-optimization
+  - inference-speed
   - wafer-scale-chips
-  - ai-infrastructure
-  - open-source-models
-  - benchmarking
   - prompt-caching
   - model-merging
+  - benchmarking
+  - open-source-models
+  - code-editing
+  - model-optimization
+people:
+  - jeremyphoward
+  - sam-altman
+  - nat-friedman
+  - daniel-gross
+  - swyx
 ---
 
 

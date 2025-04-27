@@ -4,22 +4,34 @@ title: Claude 3.5 Sonnet (New) gets Computer Use
 date: '2024-10-23T02:08:12.665635Z'
 original_slug: ainews-claude-35-sonnet-new-gets-computer-use
 description: >-
-  Anthropic announced new 3.5 models, Sonnet and Haiku, with improvements in
-  coding and benchmarking performance, surpassing previous models on several
-  tasks. The news also covers AI system benchmarks, computer use API
-  advancements, and AI agent memory considerations.
+  **Anthropic** announced new Claude 3.5 models: **3.5 Sonnet** and **3.5
+  Haiku**, improving coding performance significantly, with Sonnet topping
+  several coding benchmarks like **Aider** and **Vectara**. The new **Computer
+  Use API** enables controlling computers via vision, scoring notably higher
+  than other AI systems, showcasing progress in AI-driven computer interaction.
+  **Zep** launched a cloud edition for AI agents memory management, highlighting
+  challenges in **multimodal memory**. The update also mentions **Llama 3.1**
+  and **Nemotron** models from **NVIDIA**.
 companies:
   - anthropic
+  - zep
+  - nvidia
 models:
-  - claude-3-5-sonnet
-  - claude-3-5-haiku
+  - claude-3.5-sonnet
+  - claude-3.5-haiku
+  - llama-3.1
+  - nemotron
 topics:
-  - model-naming
-  - ai-benchmarks
-  - code-generation
-  - multimodal-ai
-  - ai-agent-memory
-  - computer-use-api
+  - coding
+  - benchmarks
+  - computer-use
+  - vision
+  - multimodal-memory
+  - model-updates
+  - ai-integration
+people:
+  - philschmid
+  - swyx
 ---
 
 

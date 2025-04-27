@@ -4,30 +4,41 @@ title: 'SciCode: HumanEval gets a STEM PhD upgrade'
 date: '2024-07-17T02:04:35.319219Z'
 original_slug: ainews-to-be-named-5745
 description: >-
-  AI news highlights include new benchmarks like SciCode challenging LLMs on
-  scientific coding, updates on AI models such as Claude 3.5 Sonnet doubling
-  token limits, and performance comparisons of Llama 3 and synthetic data
-  discussions.
+  **PhD-level benchmarks** highlight the difficulty of coding scientific
+  problems for LLMs, with **GPT-4** and **Claude 3.5 Sonnet** scoring under 5%
+  on the new **SciCode** benchmark. **Anthropic** doubled the max output token
+  limit for Claude 3.5 Sonnet to 8192 tokens. The **Q-GaLore** method enables
+  training **LLaMA-7B** on a single 16GB GPU. The **Mosaic compiler** now
+  generates efficient code for NVIDIA H100 GPUs. The **Dolphin
+  2.9.3-Yi-1.5-34B-32k-GGUF** model on Hugging Face has over 111k downloads.
+  **Llama 3** shows strong performance, achieving 90% zero-shot accuracy on the
+  MATH dataset. Discussions continue on the limitations and forms of synthetic
+  data for model training.
 companies:
   - anthropic
-  - huggingface
-  - exa
-  - sfcompute
-  - brev
+  - hugging-face
+  - nvidia
 models:
-  - claude-3-sonnet
   - gpt-4
-  - sonnet-3.5
+  - claude-3.5-sonnet
+  - llama-3-7b
   - llama-3
-  - mosaic-compiler
-  - dolphin-2.9.3-y1.5-34b
+  - dolphin-2.9.3-yi-1.5-34b-32k-gguf
 topics:
   - benchmarks
-  - scientific-coding
+  - coding
+  - model-training
+  - gpu-optimization
   - model-performance
   - synthetic-data
-  - training-methods
-  - ai-accelerators
+  - compiler-optimization
+  - zero-shot-learning
+people:
+  - yi-tay
+  - rohanpaul_ai
+  - alexalbert__
+  - tri_dao
+  - abacaj
 ---
 
 

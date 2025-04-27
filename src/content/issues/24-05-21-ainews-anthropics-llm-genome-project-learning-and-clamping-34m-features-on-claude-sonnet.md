@@ -6,23 +6,35 @@ title: >-
 date: '2024-05-21T22:47:46.990001Z'
 original_slug: ainews-anthropic-cracks-the-llm-genome-project
 description: >-
-  Anthropic's research on scaling monosemanticity in language models introduces
-  dictionary learning to interpret neuron activations, revealing abstract
-  features like code, errors, and safety-related behaviors in Claude 3 Sonnet.
-  The work emphasizes interpretability and modifiability of large transformer
-  models.
+  **Anthropic** released their third paper in the MechInterp series, **Scaling
+  Monosemanticity**, scaling interpretability analysis to **34 million
+  features** on **Claude 3 Sonnet**. This work introduces the concept of
+  **dictionary learning** to isolate recurring neuron activation patterns,
+  enabling more interpretable internal states by combining features rather than
+  neurons. The paper reveals abstract features related to code, errors,
+  sycophancy, crime, self-representation, and deception, demonstrating
+  intentional modifiability by clamping feature values. The research marks a
+  significant advance in **model interpretability** and **neural network
+  analysis** at frontier scale.
 companies:
   - anthropic
+  - scale-ai
+  - suno-ai
+  - microsoft
 models:
   - claude-3-sonnet
+  - claude-3
 topics:
+  - model-interpretability
   - dictionary-learning
-  - interpretability
-  - neuron-activations
-  - transformer-models
-  - large-language-models
-  - monosemanticity
-  - safety-relevant-behaviors
+  - neural-networks
+  - feature-activation
+  - intentional-modifiability
+  - scaling
+  - mechanistic-interpretability
+people:
+  - emmanuel-ameisen
+  - alex-albert
 ---
 
 

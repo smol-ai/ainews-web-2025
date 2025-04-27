@@ -4,27 +4,41 @@ title: 'Gemini (Experimental-1114) retakes #1 LLM rank with 1344 Elo'
 date: '2024-11-15T02:50:42.092528Z'
 original_slug: ainews-gemini-experimental-1114-retakes-1-llm-9071
 description: >-
-  Race dynamics in AI are highlighted by recent benchmark updates among top AI
-  labs, with Gemini achieving a new #1 position amidst alignment issues. The
-  news covers model developments, tool enhancements, and governance discussions
-  involving major companies like openai, anthropic, meta, and xai.
+  **Anthropic** released the **3.5 Sonnet** benchmark for jailbreak robustness,
+  emphasizing adaptive defenses. **OpenAI** enhanced **GPT-4** with a new RAG
+  technique for contiguous chunk retrieval. **LangChain** launched **Promptim**
+  for prompt optimization. **Meta AI** introduced **NeuralFeels** with neural
+  fields for visuotactile perception. **RichardMCNgo** resigned from **OpenAI**,
+  highlighting concerns on **AI governance** and **theoretical alignment**.
+  Discussions emphasized the importance of **truthful public information** and
+  **ethical alignment** in AI deployment. The latest **Gemini** update marks a
+  new #1 LLM amid alignment challenges. The AI community continues to focus on
+  **benchmarking**, **prompt-engineering**, and **alignment** issues.
 companies:
-  - openai
   - anthropic
-  - meta
-  - xai
+  - openai
+  - langchain
+  - meta-ai-fair
 models:
-  - gpt-4
   - claude-3-sonnet
-  - gemini-pro-1.5
+  - gpt-4
+  - gemini-1.5
+  - claude-3.5-sonnet
 topics:
-  - ai-benchmarking
-  - model-competitions
-  - alignment-issues
+  - benchmarking
+  - prompt-engineering
+  - rag
+  - visuotactile-perception
   - ai-governance
-  - prompt-optimization
-  - tool-integration
-  - ai-ethics
+  - theoretical-alignment
+  - ethical-alignment
+  - jailbreak-robustness
+  - model-releases
+  - alignment
+people:
+  - richardmcngo
+  - andrewyng
+  - philschmid
 ---
 
 

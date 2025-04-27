@@ -4,33 +4,55 @@ title: not much happened today
 date: '2025-03-18T22:00:12.689005Z'
 original_slug: ainews-not-much-happened-today-5716
 description: >-
-  Nvidia GTC day features announcements including Google's Gemini 2.0 Flash with
-  multimodal capabilities, Mistral AI's Small 3.1 with expanded context, Allen
-  AI's OLMo-32B outperforming some models, ShieldGemma 2 for image safety, and
-  updates on frameworks like LangChainAI and fasttransform. The event highlights
-  advancements in multimodal models, open-source LLMs, and AI tools.
+  At Nvidia GTC Day 1, several AI updates were highlighted: **Google's Gemini
+  2.0 Flash** introduces image input/output but is not recommended for
+  text-to-image tasks, with **Imagen 3** preferred for that. **Mistral AI**
+  released **Mistral Small 3.1** with 128k token context window and competitive
+  pricing. **Allen AI** launched **OLMo-32B**, an open LLM outperforming
+  **GPT-4o mini** and **Qwen 2.5**. **ShieldGemma 2** was introduced for image
+  safety classification. **LangChainAI** announced multiple updates including
+  **Julian** powered by **LangGraph** and integration with **AnthropicAI's
+  MCP**. Jeremy Howard released **fasttransform**, a Python library for data
+  transformations. **Perplexity AI** partnered with **Kalshi** for NCAA March
+  Madness predictions.
 companies:
+  - nvidia
   - google
   - mistral-ai
   - allen-ai
+  - anthropic
   - langchainai
-  - abacaj
+  - perplexity-ai
+  - kalshi
+  - stripe
   - qodoai
-  - stripe-dev
 models:
-  - gemini-2-0-flash
+  - gemini-2.0-flash
   - imagen-3
   - mistral-small-3.1
-  - olmo-32b
+  - mistral-3
+  - gpt-4o-mini
+  - claude-3.5-haiku
+  - olm0-32b
+  - qwen-2.5
   - shieldgemma-2
+  - julian
+  - fasttransform
 topics:
-  - multimodal
-  - language-models
-  - open-source-llm
-  - ai-frameworks
-  - ai-safety
-  - ai-tools
-  - ai-applications
+  - multimodality
+  - image-generation
+  - context-windows
+  - model-pricing
+  - open-source-models
+  - image-classification
+  - frameworks
+  - python-libraries
+  - partnerships
+people:
+  - jeremyphoward
+  - karpathy
+  - abacaj
+  - mervenoyann
 ---
 
 

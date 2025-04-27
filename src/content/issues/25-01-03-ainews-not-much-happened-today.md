@@ -4,34 +4,66 @@ title: not much happened today
 date: '2025-01-04T07:58:51.225259Z'
 original_slug: ainews-not-much-happened-today-4979
 description: >-
-  AI news for 1/2/2025-1/3/2025 covers model developments, benchmarks,
-  optimization techniques, architectural insights, tools, frameworks, robotics,
-  hardware, and applications in medical, financial, and creative fields.
+  **Olmo 2** released a detailed tech report showcasing full pre, mid, and
+  post-training details for a frontier fully open model. **PRIME**, an
+  open-source reasoning solution, achieved **26.7% pass@1**, surpassing
+  **GPT-4o** in benchmarks. Performance improvements include **Qwen 32B
+  (4-bit)** generating at **>40 tokens/sec** on an **M4 Max** and **libvips**
+  being **25x faster** than **Pillow** for image resizing. New tools like
+  **Swaggo/swag** for Swagger 2.0 documentation, **Jujutsu (jj)** Git-compatible
+  VCS, and **Portspoof** security tool were introduced. Robotics advances
+  include a weapon detection system with a meters-wide field of view and faster
+  frame rates. Hardware benchmarks compared **H100** and **MI300x**
+  accelerators. Applications span medical error detection using PRIME and a
+  financial AI agent integrating **LangChainAI** and **Vercel AI SDK**.
+  Architectural insights suggest the need for breakthroughs similar to **SSMs**
+  or **RNNs**.
 companies:
+  - olmo
   - openai
-  - soldni
+  - qwen
   - cerebras-systems
   - langchain
-  - go
+  - vercel
+  - swaggo
   - gin
   - echo
 models:
-  - gpt-4o
-  - qwen-32b-4bit
   - prime
+  - gpt-4o
+  - qwen-32b
 topics:
   - reasoning
   - chain-of-thought
+  - math
+  - coding
   - optimization
-  - architectural-breakthroughs
+  - performance
+  - image-processing
+  - software-development
   - agent-frameworks
   - version-control
-  - security-tools
+  - security
   - robotics
-  - hardware-acceleration
+  - hardware-optimization
   - medical-ai
   - financial-ai
-  - creative-tools
+  - architecture
+people:
+  - akhaliq
+  - jason-wei
+  - vikhyatk
+  - awnihannun
+  - arohan
+  - tom-doerr
+  - hendrikbgr
+  - jerryjliu0
+  - adcock-brett
+  - shuchaobi
+  - stasbekman
+  - reach-vb
+  - virattt
+  - andrew-n-carr
 ---
 
 

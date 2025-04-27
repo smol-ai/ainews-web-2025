@@ -4,28 +4,69 @@ title: not much happened today
 date: '2025-04-02T06:14:34.413400Z'
 original_slug: ainews-not-much-happened-today-2943
 description: >-
-  AI news for late March 2025 covers open-source model releases, benchmark
-  performances, new AI tools, and research updates, highlighting OpenAI's
-  open-weight models, Gemini's math progress, and humanoid robot deployments.
+  **OpenAI** plans to release its first open-weight language model since
+  **GPT-2** in the coming months, signaling a move towards more open AI
+  development. **DeepSeek** launched its open-source **R1 model** earlier this
+  year, challenging perceptions of China's AI progress. **Gemma 3** has achieved
+  function calling capabilities and ranks on the **Berkeley Function-Calling
+  Leaderboard**, while **GemmaCoder3-12b** improves code reasoning performance
+  on **LiveCodeBench**. **Alibaba_Qwen's Qwen2.5-Omni** introduces a novel
+  Thinker-Talker system and **TMRoPE** for multimodal input understanding. The
+  **TogetherCompute** team achieved **140 TPS** on a 671B parameter model,
+  outperforming **Azure** and **DeepSeek API** on **Nvidia GPUs**. **OpenAI**
+  also expanded **ChatGPT** features with image generation for all free users
+  and a new voice release. **Runway Gen-4** enhances animation for miniature
+  dioramas, and **LangChain** launched a chat-based generative UI agent.
+  Commercial deployment of **Figure 03 humanoid robots** at **BMW** highlights
+  advances in autonomy and manufacturing scaling. New tools include **OpenAI's
+  realtime transcription API** with **WebRTC** support and **Amazon's Nova Act
+  AI browser agent**.
 companies:
   - openai
   - deepseek
+  - berkeley
   - alibaba
-  - amazon
+  - togethercompute
+  - nvidia
+  - azure
+  - runway
+  - langchain
   - bmw
+  - amazon
 models:
   - gpt-2
+  - r1
   - gemma-3
   - gemmacoder3-12b
-  - qwen-2.5-omni
-  - gemini
+  - qwen2.5-omni
 topics:
-  - open-source-models
-  - model-performance
-  - benchmarks
-  - ai-product-releases
-  - humanoid-robots
-  - ai-research
+  - open-source
+  - function-calling
+  - benchmarking
+  - code-reasoning
+  - multimodality
+  - inference-speed
+  - image-generation
+  - voice-generation
+  - animation
+  - robotics
+  - realtime-transcription
+  - webrtc
+people:
+  - sama
+  - clémentdelangue
+  - lioronai
+  - scaling01
+  - cognitivecompai
+  - osanseviero
+  - jack_w_rae
+  - ben_burtenshaw
+  - theturingpost
+  - vipulved
+  - kevinweil
+  - tomlikesrobots
+  - adcock_brett
+  - juberti
 ---
 
 

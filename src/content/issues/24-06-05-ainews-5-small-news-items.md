@@ -4,30 +4,47 @@ title: 5 small news items
 date: '2024-06-06T02:50:37.633247Z'
 original_slug: ainews-5-small-news-items
 description: >-
-  AGI realism and progress updates including OpenAI's voice mode, AGI timelines,
-  new AI models, and funding rounds. Highlights include DeepMind's uncertainty
-  quantification, xLSTM extension, LLM geometry study, efficiency improvements,
-  alignment safety, and AI tools like LangChain, Hugging Face, NVIDIA
-  integrations, and Mistral fine-tuning.
+  **OpenAI** announces that ChatGPT's voice mode is "coming soon." **Leopold
+  Aschenbrenner** launched a 5-part AGI timelines series predicting a **trillion
+  dollar cluster** from current AI progress. **Will Brown** released a
+  comprehensive GenAI Handbook. **Cohere** completed a **$450 million funding
+  round** at a **$5 billion valuation**. DeepMind research on **uncertainty
+  quantification in LLMs** and an **xLSTM model** outperforming transformers
+  were highlighted. Studies on the **geometry of concepts in LLMs** and methods
+  to **eliminate matrix multiplication** for efficiency gains were shared.
+  Discussions on **parameter-efficient fine-tuning (PEFT)** and **automated
+  alignment of LLMs** were noted. New tools include **LangGraph** for AI agents,
+  **LlamaIndex** with longer context windows, and **Hugging Face's** integration
+  with **NVIDIA NIM** for Llama3. **Mistral AI** released a fine-tuning API for
+  their models.
 companies:
   - openai
   - cohere
   - deepmind
-  - nvidia
   - hugging-face
+  - nvidia
   - mistral-ai
 models:
-  - gpt-3
-  - x-lstm
+  - llama-3
+  - xLSTM
 topics:
-  - agi
-  - large-language-models
   - uncertainty-quantification
-  - llm-architecture
-  - efficiency-improvements
-  - alignment-safety
-  - ai-tools
-  - ai-funding
+  - parameter-efficient-fine-tuning
+  - automated-alignment
+  - model-efficiency
+  - long-context
+  - agentic-ai
+  - fine-tuning
+  - inference-optimization
+people:
+  - leopold-aschenbrenner
+  - will-brown
+  - rohanpaul_ai
+  - richardmcngo
+  - omarsar0
+  - hwchase17
+  - clementdelangue
+  - sophiamyang
 ---
 
 

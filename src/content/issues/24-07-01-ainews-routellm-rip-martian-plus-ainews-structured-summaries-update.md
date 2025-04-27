@@ -4,32 +4,40 @@ title: 'RouteLLM: RIP Martian? (Plus: AINews Structured Summaries update)'
 date: '2024-07-02T00:23:08.479510Z'
 original_slug: ainews-to-be-named-5628
 description: >-
-  AI news from late June to early July 2024 covers advancements in LLM routing,
-  model architectures like Gemma 2 and Block Transformer, open source frameworks
-  like RouteLLM, and discussions on AI models' capabilities and limitations.
+  **LMSys** introduces RouteLLM, an open-source router framework trained on
+  **preference data** from Chatbot Arena, achieving **cost reductions over 85%
+  on MT Bench, 45% on MMLU, and 35% on GSM8K** while maintaining **95% of
+  GPT-4's performance**. This approach surpasses previous task-specific routing
+  by using syntax-based Mixture of Experts (MoE) routing and data augmentation,
+  beating commercial solutions by 40%. The update highlights advances in **LLM
+  routing**, **cost-efficiency**, and **model performance optimization** across
+  multiple models rather than single-model or MoE-level improvements.
+  Additionally, the AI Twitter recap notes the **Gemma 2 model family** as a top
+  open model, the **Block Transformer architecture** for improved inference
+  throughput, and a proposal for a fully Software 2.0 computer vision system by
+  **karpathy**.
 companies:
-  - lm-sys
-  - armandjoulin
-  - bindureddy
-  - rohanpaul_ai
-  - karpathy
-  - ylecun
-  - giffmana
+  - lmsys
+  - openai
 models:
   - gpt-4
-  - claude-3-opus
   - gemma-2-27b
   - gemma-2-9b
-  - block-transformer
 topics:
   - llm-routing
-  - model-architectures
-  - open-source-ai
-  - ai-model-performance
-  - ai-agent-reasoning
+  - cost-efficiency
+  - model-performance
+  - model-optimization
+  - data-augmentation
+  - syntax-based-routing
+  - mixture-of-experts
+  - inference-throughput
+  - software-2.0
   - computer-vision
-  - video-generation
-  - ai-capabilities
+people:
+  - karpathy
+  - bindureddy
+  - armand-joulin
 ---
 
 

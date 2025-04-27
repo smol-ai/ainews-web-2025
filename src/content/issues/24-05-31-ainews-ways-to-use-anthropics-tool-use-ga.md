@@ -4,29 +4,43 @@ title: Ways to use Anthropic's Tool Use GA
 date: '2024-05-31T20:31:29.874216Z'
 original_slug: ainews-ways-to-use-anthropics-tool-use-ga
 description: >-
-  AI tools and research updates including Anthropic's tool use/function calling,
-  architectural patterns for agentic AI, self-guided courses, and Twitter recaps
-  on AI research, superintelligence, convolutional networks, and industry
-  trends.
+  **Anthropic** launched general availability of tool use/function calling with
+  support for streaming, forced use, and vision, alongside **Amazon** and
+  **Google**. Alex Albert shared five architectures for agentic tool use:
+  delegation, parallelization, debate, specialization, and tool suite experts.
+  **Anthropic** also introduced a self-guided course on tool use. **Yann LeCun**
+  emphasized ethical open science funding, gradual emergence of
+  superintelligence with safety guardrails, and convolutional networks for
+  image/video processing as competitive with vision transformers. He also noted
+  growth in AI researchers across industry, academia, and government.
 companies:
   - anthropic
   - amazon
   - google
-  - openai
-  - sainingxie
 models:
   - claude-3-opus
+  - haiku
+  - opus
+  - convnext
 topics:
   - tool-use
   - function-calling
   - agentic-ai
-  - architecture-patterns
-  - self-guided-course
-  - ai-research
+  - streaming
+  - vision
+  - parallelization
+  - delegation
+  - debate
+  - specialization
+  - open-science
   - superintelligence
   - convolutional-networks
-  - vision-transformers
-  - ai-industry-trends
+  - self-attention
+  - ai-research
+people:
+  - yann-lecun
+  - alex-albert
+  - sainingxie
 ---
 
 

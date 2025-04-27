@@ -4,38 +4,57 @@ title: AI gets Memory
 date: '2024-02-15T00:47:59.492420Z'
 original_slug: ainews-ai-gets-memory
 description: >-
-  AI Discords for 2/11-12/2024 discuss RAG operations, memory models like
-  MemGPT, open-source large language models, fine-tuning techniques,
-  JavaScript-Python integration, hardware issues with large models, medical LLMs
-  like medAlpaca, and hardware upgrades for AI development.
+  **AI Discords** analysis covered **20 guilds**, **312 channels**, and **6901
+  messages**. The report highlights the divergence of RAG style operations for
+  context and memory, with implementations like **MemGPT** rolling out in
+  **ChatGPT** and **LangChain**. The **TheBloke Discord** discussed
+  **open-source large language models** such as the **Large World Model** with
+  contexts up to **1 million tokens**, and the **Cohere aya model** supporting
+  **101 languages**. Roleplay-focused models like **MiquMaid-v2-70B** were noted
+  for performance improvements with enhanced hardware. Finetuning techniques
+  like **Sequential Fine-Tuning (SFT)** and **Direct Preference Optimization
+  (DPO)** were explained, with tools like **Unsloth AI's apply_chat_template**
+  preferred over Alpaca. Integration of JavaScript and Python via **JSPyBridge**
+  in the **SillyTavern** project was also discussed. Training challenges with
+  **Mixtral 8x7b qlora** versus **Mistral 7b** were noted. The **LM Studio
+  Discord** focused on hardware limitations affecting large model loading,
+  medical LLMs like **medAlpaca**, and hardware discussions around GPU upgrades
+  and overclocking. Anticipation for **IQ3_XSS** 1.5 bit quantization support in
+  LM Studio was expressed.
 companies:
   - openai
+  - langchain
+  - thebloke
   - cohere
   - unsloth-ai
-  - extremeheat
-  - medAlpaca
+  - mistral-ai
   - microsoft
 models:
-  - gpt-4
-  - aya
   - miqumaid-v2-70b
   - mixtral-8x7b-qlora
   - mistral-7b
   - phi-2
-  - iq3_xss
+  - medalpaca
+  - aya
 topics:
-  - rag-operations
-  - memory-models
-  - large-language-models
-  - fine-tuning
+  - rag
+  - memory-modeling
+  - context-windows
+  - open-source
+  - finetuning
+  - sequential-fine-tuning
+  - direct-preference-optimization
   - rlhf
-  - pplo
+  - ppo
   - javascript-python-integration
-  - model-training
-  - ram-issues
+  - hardware-optimization
   - gpu-overclocking
-  - model-quantization
-  - medical-llms
+  - quantization
+  - model-training
+  - large-context
+  - multilinguality
+people:
+  - joanne-jang
 ---
 
 

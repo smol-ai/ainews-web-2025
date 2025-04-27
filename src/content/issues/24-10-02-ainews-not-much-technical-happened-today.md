@@ -4,45 +4,52 @@ title: Not much technical happened today
 date: '2024-10-02T22:45:37.315067Z'
 original_slug: ainews-not-much-technical-happened-today
 description: >-
-  OpenAI raised $6.6 billion at a $157 billion valuation, and Poolside announced
-  a $500 million fundraise to advance towards AGI. New AI models and
-  capabilities were announced, including LiquidAI's models with 32k context
-  windows, OpenAI's Whisper V3 Turbo, and industry partnerships like Cohere's
-  Japanese model. Technical discussions covered large-scale training, inference,
-  and model fine-tuning challenges. Industry commentary addressed AI development
-  trends and freelancing opportunities.
+  **OpenAI** announced raising **$6.6B** in new funding at a **$157B
+  valuation**, with ChatGPT reaching *250M weekly active users*. **Poolside**
+  raised **$500M** to advance AGI development. **LiquidAI** introduced three new
+  MoE models (1B, 3B, 40B) with a **32k context window** and efficient token
+  handling. **OpenAI** released Whisper V3 Turbo, an open-source multilingual
+  model with significant speed improvements. **Meta AI FAIR** is hiring research
+  interns focusing on **LLM reasoning, alignment, synthetic data, and novel
+  architectures**. **Cohere** partnered with Fujitsu to launch Takane, a custom
+  Japanese model. Technical discussions included challenges in **LoRA
+  fine-tuning**, **float8 quantization** in Keras, and new tools like
+  **create-llama** for agent templates. Industry commentary raised concerns
+  about AI development priorities and highlighted freelancing opportunities in
+  AI.
 companies:
   - openai
   - poolside
   - liquidai
   - perplexity-ai
-  - basetenco
+  - meta-ai-fair
   - cohere
   - fujitsu
-  - fair
-  - jaseweston
-  - fchollet
-  - jerryjliu0
-  - mmitchell_ai
-  - jxnlco
 models:
-  - gpt-4
   - whisper-v3-turbo
-  - liquid-foundation-models-1b-3b-40b
   - llama-3
   - llamaindex
 topics:
-  - funding
-  - ai-models
-  - large-language-models
-  - multilingual-ai
-  - model-training
+  - mixture-of-experts
+  - context-windows
   - model-optimization
-  - ai-research
-  - ai-tools
-  - ai-frameworks
-  - ai-industry-trends
-  - ai-freelancing
+  - fine-tuning
+  - quantization
+  - model-training
+  - alignment
+  - synthetic-data
+  - model-architecture
+  - agentic-ai
+people:
+  - nick-turley
+  - arav-srinivas
+  - francois-fleuret
+  - finbarr-timbers
+  - lewtun
+  - francois-chollet
+  - jerry-j-liu
+  - mmitchell-ai
+  - jxnlco
 ---
 
 

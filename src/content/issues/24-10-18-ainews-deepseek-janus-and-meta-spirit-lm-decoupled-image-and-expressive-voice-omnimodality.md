@@ -6,32 +6,49 @@ title: >-
 date: '2024-10-18T22:46:38.720062Z'
 original_slug: ainews-deepseek-janus-and-meta-spirit-lm
 description: >-
-  AI research highlights multimodality papers Janus and SpiRit-LM, focusing on
-  vision, speech, and multimodal integration. DeepSeek separates vision
-  understanding and generation, showing improved results. Meta's SpiRit-LM
-  includes expressive speech and writing capabilities. Industry updates include
-  new benchmarks, open-source tools, and AI company developments.
+  **DeepSeek Janus** and **Meta SpiRit-LM** are two notable multimodality AI
+  models recently released, showcasing advances in image generation and speech
+  synthesis respectively. DeepSeek Janus separates vision encoders for image
+  understanding and generation, achieving better results in both tasks. Meta's
+  SpiRit-LM introduces an expressive speech and writing model generating pitch
+  and style units, improving over standard TTS. Additionally, **W&B Weave**
+  offers comprehensive LLM observability and multimodality fine-tuning tools.
+  Industry updates include Nvidia's Nemotron 70b model underperforming, Meta
+  open-sourcing Movie Gen Bench for media generation benchmarking, Perplexity
+  launching internal search with multi-step reasoning, and Anthropic updating
+  Claude apps. Open source progress includes Hugging Face's gradient
+  accumulation fix in transformers and advocacy for open source AI to prevent
+  Big Tech dominance. *"Model merging for combining skills of multiple models"*
+  is also highlighted.
 companies:
-  - meta
+  - deepseek
+  - meta-ai-fair
   - wandb
   - nvidia
   - anthropic
   - hugging-face
+  - perplexity-ai
 models:
-  - gpt-4
-  - claude-3-sonnet
-  - nvidia-nemotron
+  - nemotron-70b
+  - claude
+  - claude-3.5-sonnet
   - gpt-4o
 topics:
   - multimodality
-  - vision-understanding
   - image-generation
-  - speech-generation
-  - text-to-video
-  - text-to-audio
-  - llm-observability
+  - speech-synthesis
+  - fine-tuning
   - model-merging
-  - open-source-ai
+  - benchmarking
+  - open-source
+  - model-optimization
+  - reinforcement-learning
+people:
+  - bindureddy
+  - aravsrinivas
+  - danielhanchen
+  - clementdelangue
+  - cwolferesearch
 ---
 
 

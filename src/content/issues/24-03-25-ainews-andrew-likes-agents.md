@@ -4,24 +4,40 @@ title: Andrew likes Agents
 date: '2024-03-26T01:11:50.136366Z'
 original_slug: ainews-andrew-likes-agents
 description: >-
-  AI news covering agent frameworks, code-writing AI, Stable Diffusion models,
-  local LLM deployment, and recent industry updates including Andrew Ng's work,
-  Stability AI, and new image generation techniques.
+  **Andrew Ng's The Batch writeup on Agents** highlighted the significant
+  improvement in coding benchmark performance when using an iterative agent
+  workflow, with **GPT-3.5** wrapped in an agent loop achieving up to **95.1%**
+  correctness on HumanEval, surpassing **GPT-4** zero-shot at **67.0%**. The
+  report also covers new developments in **Stable Diffusion** models like
+  **Cyberrealistic_v40**, **Platypus XL**, and **SDXL Lightning** for
+  Naruto-style image generation, alongside innovations in LoRA and upscaling
+  techniques. Discussions on **local LLM deployment** and optimization focus on
+  hardware setups and finetuning strategies for efficient inference and
+  multi-user serving. Emad's departure from **Stability AI** and new **Sora**
+  videos from **OpenAI** were also noted.
 companies:
-  - google
-  - stability.ai
   - openai
+  - stability-ai
 models:
   - gpt-3.5
   - gpt-4
+  - cyberrealistic_v40
+  - platypus-xl
+  - sdxl-lightning
 topics:
   - agents
-  - code-generation
-  - multimodal
-  - stable-diffusion
-  - llm-deployment
+  - human-eval-benchmark
+  - fine-tuning
+  - local-llm-deployment
+  - inference-speed
   - image-generation
-  - ai-research
+  - lora
+  - upscaling
+  - workflow-optimization
+people:
+  - andrew-ng
+  - lilian-weng
+  - emad
 ---
 
 

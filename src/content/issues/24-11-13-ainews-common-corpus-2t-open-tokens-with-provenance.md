@@ -4,32 +4,52 @@ title: 'Common Corpus: 2T Open Tokens with Provenance'
 date: '2024-11-14T01:54:53.118250Z'
 original_slug: ainews-common-corpus-2t-open-tokens-with
 description: >-
-  AI news from 11/12/2024 to 11/13/2024 covers dataset releases, model updates,
-  AI tools, and research insights. Notable topics include the release of the
-  Common Corpus dataset with provenance info, OCR correction models, new LLMs
-  like Claude 3.5 Sonnet, Qwen2.5-Coder, and technical discussions on
-  quantization and scalability.
+  **Pleais** via **Huggingface** released **Common Corpus**, the largest fully
+  open multilingual dataset with over **2 trillion tokens** including detailed
+  **provenance information**. They also introduced **OCRonos-Vintage**, a
+  **124M-parameter OCR correction model** that efficiently fixes digitization
+  errors on CPU and GPU, unlocking knowledge from PDFs. On AI tools,
+  **LangChainAI** launched **Prompt Canvas** for collaborative **prompt
+  engineering**, while **DeepSeek** released **JanusFlow 1.3B**, a unified
+  multimodal LLM integrating autoregressive and rectified flow models for
+  enhanced **image understanding** and **generation**. **Alibaba Cloud**
+  announced **Qwen2.5-Coder**, a code-focused LLM with advanced coding
+  capabilities, and **Claude 3.5 Sonnet** was highlighted for superior code
+  generation. Discussions on **quantization challenges** and **scaling laws for
+  precision** by **Tim Dettmers** and others emphasized the impact of
+  low-precision training on model scalability and inference efficiency.
+  *"Scaling Laws for Precision"* paper insights and alternative efficiency
+  methods were also noted.
 companies:
+  - pleais
   - huggingface
-  - alibaba cloud
-  - deepseek ai
+  - langchainai
+  - deepseek
+  - alibaba
+  - anthropic
 models:
-  - gpt2
-  - claude-3-sonnet
-  - qwen2.5-coder
+  - qwen-2.5-coder
+  - claude-3.5-sonnet
   - janusflow-1.3b
+  - ocronos-vintage
 topics:
-  - dataset-release
-  - multilingual-data
   - provenance
-  - ocr-correction
-  - llm
+  - ocr
+  - multilingual-datasets
   - prompt-engineering
-  - multimodal
+  - multimodality
+  - image-generation
   - code-generation
-  - model-benchmarks
   - quantization
-  - scalability
+  - model-scaling
+  - inference-efficiency
+people:
+  - tim-dettmers
+  - tom-doerr
+  - omarsar0
+  - swyx
+  - madiator
+  - reach_vb
 ---
 
 

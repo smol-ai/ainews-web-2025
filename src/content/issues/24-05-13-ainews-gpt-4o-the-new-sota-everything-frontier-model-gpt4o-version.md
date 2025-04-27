@@ -4,24 +4,42 @@ title: 'GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4O version)'
 date: '2024-05-13T22:58:05.906872Z'
 original_slug: ainews-gpt-4o-the-new-sota-everything-frontier
 description: >-
-  OpenAI announced GPT-4o, a new multimodal model with voice, vision, and
-  real-time reasoning capabilities, surpassing previous models in speed,
-  versatility, and language performance. The release includes demos of 3D object
-  generation, improved image output, and expanded vocab size, challenging
-  existing desktop AI startups.
+  **OpenAI** has released **GPT-4o**, a new **multimodal** model capable of
+  reasoning across text, audio, and video in real time with low latency
+  (~300ms). It features voice and vision capabilities, improved non-English
+  language performance with an expanded 200k vocabulary tokenizer, and is
+  available to all ChatGPT users including free plans. GPT-4o is half the price
+  and twice as fast as GPT-4-turbo with 5x rate limits. The model supports
+  real-time voice and video input/output and shows strong coding capabilities.
+  The release includes a new desktop app that can read screen and clipboard
+  history, challenging existing desktop agent startups. The announcement was
+  accompanied by demos including image generation and 3D object handling, with
+  OpenAI achieving state-of-the-art performance in ASR and vision tasks. The
+  update was widely discussed on social media, with comparisons to GPT-4T
+  highlighting GPT-4o's speed and versatility. *"GPT-4o is smart, fast, natively
+  multimodal, and a step towards more natural human-computer interaction"* and
+  *"extremely versatile and fun to play with"*.
 companies:
   - openai
+  - lmsys
+  - multion
+  - adept
 models:
   - gpt-4o
+  - gpt-4-turbo
 topics:
-  - multimodal
-  - voice-recognition
+  - multimodality
   - vision
+  - speech-recognition
+  - tokenization
   - real-time-processing
-  - language-models
-  - image-generation
-  - 3d-modeling
-  - ai-advancements
+  - coding
+  - model-performance
+  - model-optimization
+  - desktop-agents
+people:
+  - sama
+  - gdb
 ---
 
 

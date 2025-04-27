@@ -4,23 +4,39 @@ title: 'Llama 3.1: The Synthetic Data Model'
 date: '2024-07-24T00:13:31.329222Z'
 original_slug: ainews-llama-31-the-synthetic-data-model
 description: >-
-  Meta AI announced the release of Llama 3.1, a new frontier-class open large
-  language model with extensive synthetic data elements, multi-language
-  training, long context capabilities, and tool use integration. The launch
-  included industry-wide inference provider support and updates on synthetic
-  data techniques, RLHF, and licensing for synthetic data generation.
+  **Meta AI** has released **Llama 3.1**, including a **405B parameter model**
+  that triggers regulatory considerations like the **EU AI Act** and **SB
+  1047**. The model incorporates extensive **synthetic data** techniques for
+  **code**, **math**, **multilinguality**, **long context**, and **tool use**
+  fine-tuning, with **RLHF** using synthetic preference data from **Llama 2**.
+  The launch was coordinated across major inference providers, with **Groq**
+  demonstrating **750 tokens per second** inference speed and **Fireworks**
+  leading in pricing. The updated license explicitly allows synthetic data
+  generation, marking a significant step in open frontier-class LLMs and
+  cost-efficiency improvements since March.
 companies:
-  - meta
+  - meta-ai-fair
+  - groq
+  - fireworks
 models:
-  - llama-3-1-405b
+  - llama-3-405b
+  - llama-3-1
+  - llama-3
 topics:
-  - large-language-models
   - synthetic-data
+  - fine-tuning
+  - reinforcement-learning
   - multilinguality
   - long-context
   - tool-use
-  - rlhf
-  - open-llm
+  - code-generation
+  - math
+  - model-licensing
+  - inference-speed
+  - model-deployment
+people:
+  - bindureddy
+  - thomas
 ---
 
 

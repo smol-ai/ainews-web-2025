@@ -4,31 +4,53 @@ title: There's Ilya!
 date: '2024-06-20T00:18:00.147344Z'
 original_slug: ainews-theres-ilya
 description: >-
-  Safe Superintelligence is co-founded by Ilya after leaving OpenAI, with new
-  models and architectures from Meta, DeepSeek, and others. Highlights include
-  Chameleon models supporting multimodal input, DeepSeek-Coder-V2's code
-  capabilities, and innovations in parallel decoding and vision-language models.
-  Benchmarks like BigCodeBench and datasets like PixelProse are also discussed.
+  **Ilya Sutskever** has co-founded **Safe Superintelligence Inc** shortly after
+  leaving **OpenAI**, while **Jan Leike** moved to **Anthropic**. **Meta**
+  released new models including **Chameleon 7B** and **34B** with mixed-modal
+  input and unified token space quantization. **DeepSeek-Coder-V2** shows code
+  capabilities comparable to **GPT-4 Turbo**, supporting **338 programming
+  languages** and **128K context length**. **Consistency Large Language Models
+  (CLLMs)** enable parallel decoding generating multiple tokens per step.
+  **Grokked Transformers** demonstrate reasoning through training dynamics
+  affecting memory formation and generalization. **VoCo-LLaMA** compresses
+  vision tokens with LLMs improving video temporal correlation understanding.
+  The **BigCodeBench** benchmark evaluates LLMs on **1,140 coding tasks** across
+  **139 Python libraries**, topped by DeepSeek-Coder-V2 and Claude 3 Opus.
+  **PixelProse** is a large **16M image-caption dataset** with reduced toxicity.
 companies:
-  - meta
+  - safe-superintelligence-inc
   - openai
   - anthropic
+  - meta
+  - deepseek
+  - google-deepmind
 models:
   - chameleon-7b
   - chameleon-34b
   - deepseek-coder-v2
-  - gpt4-turbo
+  - gpt-4-turbo
   - claude-3-opus
+  - voco-llama
 topics:
-  - multimodal
-  - text-to-music
-  - audio-watermarking
-  - code-generation
   - parallel-decoding
-  - reasoning
-  - vision-language
-  - datasets
+  - code-generation
+  - quantization
+  - training-dynamics
+  - vision
   - benchmarks
+  - datasets
+  - image-captioning
+  - reasoning
+  - memory-optimization
+people:
+  - ilya-sutskever
+  - jan-leike
+  - ylecun
+  - akhaliq
+  - philschmid
+  - rohanpaul_ai
+  - mervenoyann
+  - fchollet
 ---
 
 

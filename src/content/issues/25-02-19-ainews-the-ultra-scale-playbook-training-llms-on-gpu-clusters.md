@@ -4,33 +4,61 @@ title: 'The Ultra-Scale Playbook: Training LLMs on GPU Clusters'
 date: '2025-02-20T05:57:17.513081Z'
 original_slug: ainews-the-ultra-scale-playbook-training-llms-on
 description: >-
-  AI news for 2/18/2025-2/19/2025 includes DeepSeek's NSA model, Perplexity AI's
-  R1-1776, Google DeepMind’s PaliGemma 2 Mix, Microsoft’s Muse, Baichuan-M1
-  medical LLM, and a genome modeling model. Highlights include new model
-  releases, research papers, and advancements in multimodal AI, vision-language
-  models, and open-source projects.
+  **Huggingface** released "The Ultra-Scale Playbook: Training LLMs on GPU
+  Clusters," an interactive blogpost based on **4000 scaling experiments on up
+  to 512 GPUs**, providing detailed insights into modern GPU training
+  strategies. **DeepSeek** introduced the Native Sparse Attention (NSA) model,
+  gaining significant community attention, while **Perplexity AI** launched
+  R1-1776, an uncensored and unbiased version of DeepSeek's R1 model. **Google
+  DeepMind** unveiled PaliGemma 2 Mix, a multi-task vision-language model
+  available in **3B, 10B, and 28B sizes**. **Microsoft** introduced Muse, a
+  generative AI model trained on the game Bleeding Edge, and presented Magma, a
+  foundation model for multimodal AI agents excelling in UI navigation and
+  robotic manipulation. **Baichuan-M1-14B** was announced as a state-of-the-art
+  medical LLM trained on **20T tokens**, and a fully open-source 40B genome
+  modeling model using StripedHyena 2 architecture was also released. *"Making
+  your own gaming experience is coming sooner than you'd think,"* noted in
+  relation to Muse.
 companies:
+  - huggingface
   - deepseek
   - perplexity-ai
-  - google
-  - deepmind
+  - google-deepmind
   - microsoft
   - baichuan
+  - stripedhyena
 models:
-  - native-sparse-attention
+  - deepseek-native-sparse-attention
   - r1-1776
-  - pali-gemma-2-mix
+  - paligemma-2-mix
   - muse
-  - baichuan-m1
+  - baichuan-m1-14b
   - stripedhyena-2
 topics:
-  - model-releases
-  - research-papers
-  - multimodal-ai
-  - vision-language
-  - open-source
-  - medical-ai
+  - gpu-training
+  - scaling
+  - multimodality
+  - vision
+  - model-training
+  - foundation-models
+  - medical-llm
   - genome-modeling
+  - robotic-manipulation
+  - interactive-content
+people:
+  - eliebakouch
+  - nouamanetazi
+  - lvwerra
+  - thom-wolf
+  - proftomyeh
+  - alex-wang
+  - aravsrinivas
+  - _akhaliq
+  - _philschmid
+  - mervenoyann
+  - reach_vb
+  - arankomatsuzaki
+  - maximelabonne
 ---
 
 

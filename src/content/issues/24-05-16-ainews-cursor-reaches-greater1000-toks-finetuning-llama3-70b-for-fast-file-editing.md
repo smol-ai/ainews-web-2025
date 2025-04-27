@@ -4,29 +4,56 @@ title: Cursor reaches >1000 tok/s finetuning Llama3-70b for fast file editing
 date: '2024-05-17T00:50:41.737343Z'
 original_slug: ainews-to-be-named-9199
 description: >-
-  AI news for 5/15/2024-5/16/2024 covers Cursor's new fast code editing model
-  surpassing GPT-4, GPT-4o's multimodal and coding capabilities, and updates
-  from Anthropic, Google, and open-source AI initiatives. Highlights include
-  GPT-4o's multimodal features, Google's Imagen Video, Gemini 1.5, and open GPU
-  distributions.
+  **Cursor**, an AI-native IDE, announced a **speculative edits** algorithm for
+  code editing that surpasses **GPT-4** and **GPT-4o** in accuracy and latency,
+  achieving speeds of over **1000 tokens/s** on a **70b** model. **OpenAI**
+  released **GPT-4o** with multimodal capabilities including audio, vision, and
+  text, noted to be **2x faster and 50% cheaper** than GPT-4 turbo, though with
+  mixed coding performance. **Anthropic** introduced streaming, forced tool use,
+  and vision features for developers. **Google DeepMind** unveiled **Imagen
+  Video** and **Gemini 1.5 Flash**, a small model with a **1M-context** window.
+  **HuggingFace** is distributing **$10M** in free GPUs for open-source AI
+  models like **Llama**, **BLOOM**, and **Stable Diffusion**. Evaluation
+  insights highlight challenges with LLMs on novel problems and benchmark
+  saturation, with new benchmarks like **MMLU-Pro** showing significant drops in
+  top model performance.
 companies:
+  - cursor
   - openai
   - anthropic
-  - google
+  - google-deepmind
   - huggingface
 models:
   - gpt-4
   - gpt-4o
   - gpt-4-turbo
-  - gemini-1.5
-  - imagen-video
+  - gpt-4o-mini
+  - llama
+  - bloom
+  - stable-diffusion
 topics:
-  - multimodal
-  - code-editing
   - speculative-decoding
-  - ai-evaluation
-  - ai-safety
-  - open-source-ai
+  - code-edits
+  - multimodality
+  - image-generation
+  - streaming
+  - tool-use
+  - fine-tuning
+  - benchmarking
+  - mmlu
+  - model-performance
+  - evaluation
+  - synthetic-data
+  - context-windows
+people:
+  - sama
+  - abacaj
+  - imjaredz
+  - erhartford
+  - alexalbert
+  - svpino
+  - maximelabonne
+  - _philschmid
 ---
 
 

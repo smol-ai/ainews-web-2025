@@ -4,34 +4,55 @@ title: lots of small launches
 date: '2025-02-27T04:09:12.976879Z'
 original_slug: ainews-lots-of-small-launches
 description: >-
-  AI news from February 25-26, 2025, includes updates on GPT-4.5, Claude 3.7
-  Sonnet, DeepSeek inference platform, Perplexity API, and new AI tools and
-  models. Notable launches include Alexa+ refresh, Cloudflare agents SDK, Flora
-  Krea competitor, Elevenlabs ASR, and Inception labs language diffusion model.
+  **GPT-4o Advanced Voice Preview** is now available for free ChatGPT users with
+  enhanced daily limits for Plus and Pro users. **Claude 3.7 Sonnet** has
+  achieved the top rank in WebDev Arena with improved token efficiency.
+  **DeepSeek-R1** with 671B parameters benefits from the **Together Inference**
+  platform optimizing NVIDIA Blackwell GPU usage, alongside the open-source
+  **DeepGEMM** CUDA library delivering up to 2.7x speedups on Hopper GPUs.
+  **Perplexity** launched a new Voice Mode and a **Deep Research API**. The
+  upcoming **Grok 3 API** will support a 1M token context window. Several
+  companies including **Elicit**, **Amazon**, **Anthropic**, **Cloudflare**,
+  **FLORA**, **Elevenlabs**, and **Inception Labs** announced new funding
+  rounds, product launches, and model releases.
 companies:
   - openai
   - anthropic
   - amazon
   - cloudflare
-  - flora
+  - perplexity-ai
+  - deepseek-ai
+  - togethercompute
   - elevenlabs
-  - perplexity
-  - inception-labs
+  - elicitorg
+  - inceptionailabs
+  - mistral-ai
 models:
-  - gpt-4.5
-  - claude-3.7-sonnet
-  - deepseek-r1
-  - deepgemm
-  - grok-3
   - gpt-4o
+  - claude-3.7-sonnet
+  - claude-3.7
+  - claude-3.5-sonnet
+  - deepseek-r1
+  - deepseek-v3
+  - grok-3
 topics:
-  - model-updates
+  - voice
   - model-releases
-  - ai-inference
-  - ai-tools
-  - language-models
-  - speech-recognition
-  - multimodal
+  - cuda
+  - gpu-optimization
+  - inference
+  - open-source
+  - api
+  - model-performance
+  - token-efficiency
+  - context-windows
+  - cuda
+  - jit-compilation
+people:
+  - lmarena_ai
+  - alexalbert__
+  - aravsrinivas
+  - reach_vb
 ---
 
 

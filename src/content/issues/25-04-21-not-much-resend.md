@@ -3,39 +3,50 @@ id: 38309c71-19ba-4feb-96d7-xxx
 title: not much happened today; New email provider for AINews
 date: '2025-04-21T05:44:39.731046Z'
 description: >-
-  AI news from April 18-21, 2025, covering model updates, new releases, and AI
-  applications including OpenAI, Google Gemini, ByteDance Seaweed, Anthropic
-  Claude, Cohere Embed 4, Elon Musk's xAI Grok, and AI workflows.
+  **Smol AI** is migrating its AI news email service to **Resend** to improve
+  deliverability and enable new features like personalizable AI news and a
+  "Hacker News of AI." Recent AI model updates include **OpenAI**'s API-only
+  **GPT-4.1**, **Google Gemini 2.5 Flash** reasoning model, **ByteDance
+  Seaweed** 7B-param video AI, **Anthropic Claude**'s values system, **Cohere
+  Embed 4** multimodal embedding model, and **xAI Grok** updates with Memory and
+  Studio features. Discussions also cover agentic workflows for document
+  automation and AI coding patterns.
 companies:
+  - smol-ai
+  - resend
   - openai
   - google
-  - byte-dance
+  - bytedance
   - anthropic
   - cohere
-  - xai
+  - x-ai
 models:
-  - gemini-2.5-pro
   - gpt-4.1
-  - gpt-4.1-mini
-  - gpt-4.1-nano
+  - gpt-4o
+  - gpt-4o-mini
   - gemini-2.5-flash
   - seaweed-7b
   - claude
   - embed-4
   - grok
 topics:
+  - email-deliverability
   - model-releases
-  - benchmarks
-  - reasoning-ai
-  - multimodal
-  - text-to-video
-  - video-ai
-  - audio-driven-synthesis
-  - values-in-ai
+  - reasoning
+  - video-generation
+  - multimodality
   - embedding-models
-  - search-and-retrieval
-  - ai-automation
   - agentic-workflows
+  - document-processing
+  - function-calling
+  - tool-use
+  - ai-coding
+people:
+  - adcock_brett
+  - swyx
+  - jerryjliu0
+  - alexalbert
+  - omarsar0
 ---
 
 

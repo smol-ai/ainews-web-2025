@@ -4,30 +4,52 @@ title: not much happened today
 date: '2024-09-21T01:37:46.121441Z'
 original_slug: ainews-not-much-happened-today-5059
 description: >-
-  AI News for 9/19/2024-9/20/2024 covers developments in contextual retrieval,
-  Meta's multimodal Llama 3, OpenAI's multi-agent models, AI industry
-  disruptions, new tools like LangGraph Templates, and AI ethics discussions.
+  **Anthropic** introduced a RAG technique called Contextual Retrieval that
+  reduces retrieval failure rates by 67% using prompt caching. **Meta** is
+  teasing multimodal **Llama 3** ahead of Meta Connect. **OpenAI** is hiring for
+  a multi-agent research team focusing on improved AI reasoning with their **o1
+  models**, which have sparked mixed reactions. **DeepSeek 2.5** is noted as a
+  cost-effective alternative to **GPT-4** and **Claude 3.5 sonnet**. New models
+  like **3DTopia-XL** for 3D asset generation and **CogVideoX** for
+  image-to-video conversion were highlighted. Techniques to boost reasoning by
+  re-reading questions and combining retrieval with prompt caching were shared.
+  Industry insights emphasize the necessity of AI adoption in enterprises and
+  the disruption of traditional ML businesses. Tools like **LangChainAI's
+  LangGraph Templates** and **LlamaIndex's LlamaParse Premium** enhance agentic
+  applications and multimodal content extraction. Discussions on LLM evals and
+  caching highlight production challenges and improvements. *"Companies not
+  allowing developers to use AI are unlikely to succeed"* was a key sentiment.
 companies:
   - anthropic
-  - meta
+  - meta-ai-fair
   - openai
-  - langchain
-  - llama
+  - deepseek-ai
+  - llamaindex
+  - langchainai
 models:
-  - gpt-4
-  - claude-3-sonnet
-  - o1-models
+  - llama-3
+  - o1
   - deepseek-2.5
+  - gpt-4
+  - claude-3.5-sonnet
+  - 3dtopia-xl
   - cogvideox
 topics:
-  - contextual-retrieval
-  - multimodal
-  - llm-research
-  - ai-industry
-  - ai-tools
-  - ai-ethics
-  - ai-regulation
-  - production-ai
+  - retrieval-augmented-generation
+  - prompt-caching
+  - multimodality
+  - multi-agent-systems
+  - reasoning
+  - diffusion-models
+  - image-to-video
+  - prompting
+  - enterprise-ai
+  - agentic-ai
+  - long-context
+  - model-evaluation
+  - caching
+  - model-cost-efficiency
+people: []
 ---
 
 

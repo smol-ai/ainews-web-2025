@@ -4,38 +4,52 @@ title: '>$41B raised today (OpenAI @ 300b, Cursor @ 9.5b, Etched @ 1.5b)'
 date: '2025-04-01T06:33:20.931042Z'
 original_slug: ainews-41b-raised-today-openai-300b-cursor-95b
 description: >-
-  AI News for 3/28/2025-3/31/2025 covers major funding rounds, OpenAI's upcoming
-  open language model, advancements in Gemini models, new multimodal healthcare
-  foundation models, and AI tools like SkyPilot and AgentEvals.
+  **OpenAI** is preparing to release a highly capable open language model, their
+  first since GPT-2, with a focus on reasoning and community feedback, as shared
+  by **@kevinweil** and **@sama**. **DeepSeek V3 0324** has achieved the #5 spot
+  on the Arena leaderboard, becoming the top open model with an MIT license and
+  cost advantages. **Gemini 2.5 Pro** is noted for outperforming models like
+  **Claude 3.7 Sonnet** in coding tasks, with upcoming pricing and improvements
+  expected soon. New startups like **Sophont** are building open multimodal
+  foundation models for healthcare. Significant fundraises include **Cursor**
+  closing $625M at a $9.6B valuation and **Etched** raising $85M at $1.5B.
+  Innovations in AI infrastructure include **SkyPilot's** cost-efficient cloud
+  provisioning and the launch of **AgentEvals**, an open-source package for
+  evaluating AI agents. Discussions on smartphone privacy highlight **iPhone's**
+  stronger user defense compared to Android.
 companies:
-  - amazon
   - openai
   - deepseek
-  - scaling
-  - sophont
   - gemini
+  - cursor
+  - etched
   - skypilot
-  - agentevals
-  - karpathy
+  - agent-evals
 models:
-  - gpt-4
-  - sonnet-3.5
-  - o1
-  - gemini-2.5-pro
-  - gemini-2.5
-  - gemini-2.0
   - deepseek-v3-0324
+  - gemini-2.5-pro
+  - claude-3.7-sonnet
 topics:
-  - language-models
   - open-models
-  - multimodal
-  - healthcare-ai
-  - ai-application
-  - ai-frameworks
-  - ai-tools
+  - model-releases
+  - model-performance
+  - coding
+  - multimodality
+  - model-deployment
   - cost-efficiency
-  - ai-research
-  - ai-startups
+  - agent-evaluation
+  - privacy
+people:
+  - kevinweil
+  - sama
+  - lmarena_ai
+  - scaling01
+  - iscienceluvr
+  - stevenheidel
+  - lepikhin
+  - dzhng
+  - raizamrtn
+  - karpathy
 ---
 
 

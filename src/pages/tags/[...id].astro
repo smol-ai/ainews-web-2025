@@ -11,15 +11,15 @@ export const prerender = false;
 // Helper function to determine tag type
 export function getTagType(
   tag: string, 
-  tags: string[], 
   companies: string[], 
   models: string[], 
-  topics: string[]
+  topics: string[],
+  people: string[]
 ): string {
   if (companies.includes(tag)) return "Company";
   if (models.includes(tag)) return "Model";
   if (topics.includes(tag)) return "Topic";
-  if (tags.includes(tag)) return "Tag";
+  if (people.includes(tag)) return "Person";
   return "Tag"; // Default fallback
 }
 
@@ -27,10 +27,10 @@ export async function getStaticPaths() {
   const posts = await getCollection("issues", ({ data }) => !data.draft);
 
   // Get unique tags from all tag types
-  const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
   const companies = [...new Set(posts.flatMap((post) => post.data.companies || []))];
   const models = [...new Set(posts.flatMap((post) => post.data.models || []))];
   const topics = [...new Set(posts.flatMap((post) => post.data.topics || []))];
+  const people = [...new Set(posts.flatMap((post) => post.data.people || []))];
   
   // Return empty array to enable dynamic routes - pages will be generated on demand
   return [];
@@ -43,21 +43,21 @@ const { id } = Astro.params;
 const allPosts = await getCollection("issues", ({ data }) => !data.draft);
 
 // Get all tag categories for classification
-const allTags = [...new Set(allPosts.flatMap((post) => post.data.tags || []))];
 const allCompanies = [...new Set(allPosts.flatMap((post) => post.data.companies || []))];
 const allModels = [...new Set(allPosts.flatMap((post) => post.data.models || []))];
 const allTopics = [...new Set(allPosts.flatMap((post) => post.data.topics || []))];
+const allPeople = [...new Set(allPosts.flatMap((post) => post.data.people || []))];
 
 // Find posts with this tag
 const posts = allPosts.filter((post) => 
-  post.data.tags?.includes(id) || 
   post.data.companies?.includes(id) || 
   post.data.models?.includes(id) || 
-  post.data.topics?.includes(id)
+  post.data.topics?.includes(id) ||
+  post.data.people?.includes(id)
 );
 
 // Get tag type
-const tagType = getTagType(id, allTags, allCompanies, allModels, allTopics);
+const tagType = getTagType(id, allCompanies, allModels, allTopics, allPeople);
 
 // Sort posts by date, most recent first
 const sortedPosts = posts.sort(

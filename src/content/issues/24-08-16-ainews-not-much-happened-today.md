@@ -4,36 +4,55 @@ title: not much happened today
 date: '2024-08-17T03:43:03.947952Z'
 original_slug: ainews-not-much-happened-today-9917
 description: >-
-  AI news from August 15-16, 2024, covering model updates, new AI models like
-  Grok-2 from xAI, AI research, tools, industry trends, and market insights,
-  including developments from Anthropic, google, openai, deepmind, and others.
+  **Anthropic** rolled out **prompt caching** in its API, reducing input costs
+  by up to **90%** and latency by **80%**, enabling instant fine-tuning with
+  longer prompts. **xAI** released **Grok-2**, a new model competing with
+  frontier models from **Google DeepMind**, **OpenAI**, **Anthropic**, **Mistral
+  AI**, and **Meta AI Fair**, supporting vision and text inputs and integrating
+  external image generation models. **Claude 3.5 Sonnet** is reported to
+  outperform **GPT-4** in coding and reasoning, while **ChatGPT-4o-latest**
+  shows reasoning improvements. **François Chollet** proposed a theory defining
+  intelligence as the efficiency of operationalizing past information for future
+  tasks. The **Aya project** involves 3000 collaborators building multilingual
+  AI datasets. **Demis Hassabis** discussed AI hype and safe AI development in a
+  podcast. Tools like **Dora AI** for Figma and **Box's AI API** enhance design
+  automation and document processing. **Salesforce** released **DEI**, an open
+  AI software engineering agents framework with a 55% resolve rate on SWE-Bench
+  Lite. Industry trends highlight rapid AI integration, networking importance in
+  the AI job market, and potential OpenAI GPT-4 expansion in response to
+  competitors. Memes include humor about Apple Vision Pro.
 companies:
   - anthropic
-  - xai
-  - google
+  - x-ai
+  - google-deepmind
   - openai
-  - deepmind
   - mistral-ai
-  - meta
+  - meta-ai-fair
   - salesforce
+  - box
 models:
   - grok-2
-  - sonnet-3.5
+  - claude-3.5-sonnet
+  - claude-3.5
   - gpt-4
-  - chatgpt-4o
+  - chatgpt-4o-latest
 topics:
-  - ai-models
-  - api-enhancements
-  - ai-research
+  - prompt-caching
+  - model-performance
+  - vision
+  - fine-tuning
+  - multilinguality
   - ai-safety
-  - ai-tools
   - design-automation
   - document-processing
   - ai-agents
-  - industry-trends
+  - ai-integration
   - ai-job-market
   - ai-acceleration
-  - memes
+  - humor
+people:
+  - demis-hassabis
+  - francois-chollet
 ---
 
 

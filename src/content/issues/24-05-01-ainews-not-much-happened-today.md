@@ -4,30 +4,58 @@ title: Not much happened today
 date: '2024-05-02T00:47:12.556282Z'
 original_slug: ainews-to-be-named-2666
 description: >-
-  AI news from April 30 to May 1, 2024, covers updates on AI models, frameworks,
-  agents, assistants, ethics, research, and image generation, including new
-  model capabilities, company activities, and legal issues.
+  **Anthropic** released a team plan and iOS app about 4 months after
+  **OpenAI**. The **Command-R 35B** model excels at creative writing,
+  outperforming larger models like **Goliath-120** and **Miqu-120**. The
+  **Llama-3 8B** model now supports a 1 million token context window, improving
+  long-context understanding with minimal training on a single 8xA800 GPU
+  machine. **TensorRT-LLM** benchmarks show it is 30-70% faster than
+  **llama.cpp** on consumer hardware. A benchmark suggests **GPT2-Chat** may
+  have better reasoning than **GPT-4-Turbo**, though results are debated. Demos
+  include a self-learning **Llama-3** voice agent running locally on Jetson Orin
+  and a Self-Learning Large Action Model (LAM). **Amazon CodeWhisperer** was
+  renamed to **Q Developer**, expanding its generative AI assistant
+  capabilities. **Apple** plans an AI-enabled Safari browser with an on-device
+  LLM in iOS 18 and macOS 15. Big Tech dominates AI lobbying in Washington,
+  while major U.S. newspapers sued **OpenAI** and **Microsoft** for copyright
+  infringement. **DeepMind's AlphaZero** became the greatest chess player in 9
+  hours, and their Naturalized Execution Tuning (NExT) method improves LLM code
+  reasoning by 14-26%. **Stable Diffusion** is used for diverse image generation
+  applications.
 companies:
   - anthropic
   - openai
-  - perplexity
-  - google
+  - perplexity-ai
   - amazon
   - apple
+  - microsoft
   - deepmind
 models:
   - command-r-35b
+  - goliath-120
+  - miqu-120
   - llama-3-8b
+  - tensorrt-llm
+  - llama-cpp
   - gpt2-chat
   - gpt-4-turbo
+  - llama-3
+  - deepmind-alphazero
 topics:
-  - large-language-models
-  - ai-agents
+  - creative-writing
+  - context-windows
+  - benchmarking
+  - model-performance
+  - self-learning
+  - function-calling
+  - retrieval-augmented-generation
   - ai-assistants
-  - ai-ethics
-  - ai-governance
-  - ai-research
+  - on-device-ai
+  - ai-lobbying
+  - copyright-infringement
+  - code-reasoning
   - image-generation
+people: []
 ---
 
 

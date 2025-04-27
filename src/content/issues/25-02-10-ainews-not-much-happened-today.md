@@ -4,27 +4,57 @@ title: not much happened today
 date: '2025-02-11T03:56:45.222082Z'
 original_slug: ainews-not-much-happened-today-3076
 description: >-
-  AI news from February 2025 covers new model releases, advancements in
-  reasoning, multilingual TTS, and industry impact. Highlights include Google's
-  Gemini 2.0, ZyphraAI's Zonos TTS, Hugging Face's math dataset, Huginn-3.5B
-  reasoning model, and the Anthropic Economic Index.
+  **Google** released **Gemini 2.0 Flash Thinking Experimental 1-21**, a
+  vision-language reasoning model with a **1 million-token context window** and
+  improved accuracy on science, math, and multimedia benchmarks, surpassing
+  **DeepSeek-R1** but trailing **OpenAI's o1**. **ZyphraAI** launched **Zonos**,
+  a multilingual **Text-to-Speech model** with **instant voice cloning** and
+  controls for speaking rate, pitch, and emotions, running at **~2x real-time
+  speed on RTX 4090**. **Hugging Face** released **OpenR1-Math-220k**, a
+  large-scale **math reasoning dataset** with **220K problems** and **800K
+  reasoning traces** generated on **512 H100 GPUs**. **Tom Goldstein**
+  introduced **Huginn-3.5B**, an open-source latent reasoning model trained on
+  **800B tokens** that outperforms larger models on reasoning tasks like
+  **GSM8K**. Discussions by **Jeremy Howard** and **iScienceLuvr** highlight
+  advances in implicit latent reasoning and debate the future of human-readable
+  reasoning traces. **Anthropic** launched the **Anthropic Economic Index** to
+  analyze AI's economic impact using millions of **Claude** conversations.
 companies:
   - google
   - zyphraai
-  - hugging face
+  - hugging-face
   - anthropic
+  - deepseek
+  - openai
 models:
-  - gemini-2.0
+  - gemini-2.0-flash-thinking-experimental-1-21
   - zonos
+  - openr1-math-220k
   - huginn-3.5b
+  - deepseek-r1
+  - o1
+  - claude
 topics:
-  - vision-language reasoning
-  - multilingual-text-to-speech
+  - vision
+  - multilingual-models
+  - text-to-speech
   - voice-cloning
-  - math-reasoning
+  - math
+  - reasoning
   - latent-reasoning
-  - ai-industry-impact
-  - economic-index
+  - chain-of-thought
+  - dataset-release
+  - fine-tuning
+  - model-training
+  - model-performance
+  - context-windows
+  - benchmarking
+people:
+  - jeremyphoward
+  - andrej-karpathy
+  - tom-goldstein
+  - reach_vb
+  - iscienceluvr
 ---
 
 

@@ -4,26 +4,47 @@ title: 'GPT 4.1: The New OpenAI Workhorse'
 date: '2025-04-15T05:16:26.134697Z'
 original_slug: ainews-gpt-41-the-new-openai-workhorse
 description: >-
-  GPT 4.1 from openai introduces new benchmarks, prompting guides, and improved
-  performance in coding and instruction following. The release includes GPT-4.1
-  mini and nano models, with discussions on pricing, capabilities, and model
-  deprecation. The news covers Twitter reactions, performance benchmarks, and
-  industry implications.
+  **OpenAI** released **GPT-4.1**, including **GPT-4.1 mini** and **GPT-4.1
+  nano**, highlighting improvements in **coding**, **instruction following**,
+  and handling **long contexts** up to **1 million tokens**. The model achieves
+  a **54 score on SWE-bench verified** and shows a **60% improvement over
+  GPT-4o** on internal benchmarks. Pricing for **GPT-4.1 nano** is notably low
+  at **$0.10/1M input** and **$0.40/1M output**. **GPT-4.5 Preview** is being
+  deprecated in favor of **GPT-4.1**. Integration support includes **Llama
+  Index** with day 0 support. Some negative feedback was noted for **GPT-4.1
+  nano**. Additionally, **Perplexity's Sonar API** ties with **Gemini-2.5 Pro**
+  for the top spot in the LM Search Arena leaderboard. New benchmarks like
+  **MRCR** and **GraphWalks** were introduced alongside updated prompting guides
+  and cookbooks.
 companies:
   - openai
+  - llama-index
+  - perplexity-ai
+  - google-deepmind
 models:
-  - gpt-4-1
-  - gpt-4-1-mini
-  - gpt-4-1-nano
+  - gpt-4.1
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - gpt-4o
+  - gemini-2.5-pro
 topics:
-  - ai-models
-  - benchmarking
-  - prompting
-  - instruction-following
   - coding
-  - api
+  - instruction-following
+  - long-context
+  - benchmarks
+  - model-pricing
+  - model-integration
   - model-deprecation
-  - performance-comparison
+people:
+  - sama
+  - kevinweil
+  - omarsar0
+  - aidan_mclau
+  - danhendrycks
+  - polynoamial
+  - scaling01
+  - aravsrinivas
+  - lmarena_ai
 ---
 
 

@@ -4,37 +4,46 @@ title: Mozilla's AI Second Act
 date: '2024-06-27T01:37:35.020344Z'
 original_slug: ainews-mozillas-ai-second-act
 description: >-
-  AI news highlights superfast CPU inference, Mozilla's comeback at AIE World's
-  Fair with llama-file demos, new vector search project sqlite-vec, llama-agents
-  launch, Claude updates with new UI features and projects, Etched's inference
-  chip benchmarks, Sohu's chip performance, open-source models like Deepseek
-  Coder v2 outperforming Gemini and GPT-4, and the PyTorch documentary.
+  **Mozilla** showcased detailed live demos of **llamafile** and announced
+  **sqlite-vec** for vector search integration at the AIE World's Fair.
+  **LlamaIndex** launched **llama-agents**. **Anthropic** introduced new UI
+  features and **Projects** for **Claude** with a 200K context window. **Etched
+  AI** revealed a specialized inference chip claiming **500k tokens/sec**,
+  though benchmark claims are questioned. **Sohu** chip enables **15 agent
+  trajectories/sec**. **Tim Dettmers** shared theoretical GPU inference limits
+  of ~300k tokens/sec for 8xB200 NVLink on 70B Llama. **Deepseek Coder v2**
+  outperforms **Gemini** and GPT-4 variants in coding and reasoning. The
+  **PyTorch documentary** launched to little attention.
 companies:
   - mozilla
-  - anthropic
-  - etched
   - llamaindex
-  - etched
+  - anthropic
+  - etched-ai
   - sohu
   - deepseek
+  - openai
 models:
+  - llama-3
   - claude-3-opus
+  - gemini-1.5
+  - deepseek-coder-v2
   - gpt-4
-  - gemini
-  - llama-2
-  - b200
-  - billion-parameter-models
 topics:
-  - cpu-inference
   - vector-search
-  - llama-file
-  - llama-agents
-  - ai-hardware
-  - ai-benchmarks
-  - open-source-ai
-  - ai-model-performance
-  - ai-research
-  - ai-communities
+  - inference-speed
+  - hardware-benchmarks
+  - context-windows
+  - open-source-models
+  - coding
+  - reasoning
+  - model-benchmarking
+  - gpu-inference
+  - agentic-ai
+people:
+  - justine-tunney
+  - stephen-hood
+  - tim-dettmers
+  - bindureddy
 ---
 
 

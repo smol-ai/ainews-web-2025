@@ -4,32 +4,52 @@ title: super quiet day
 date: '2024-08-23T00:55:37.537285Z'
 original_slug: ainews-not-much-happened-today-4025
 description: >-
-  AI news for 8/21/2024-8/22/2024 covers AI model releases like Jamba 1.5,
-  performance benchmarks, safety legislation, new tools, and community events.
+  **AI21 Labs** released **Jamba 1.5**, a scaled-up State Space Model optimized
+  for long context windows with **94B parameters** and up to **2.5X faster
+  inference**, outperforming models like **Llama 3.1 70B** on benchmarks. The
+  **Phi-3.5** model was praised for its safety and performance, while
+  **Dracarys**, a new **70B open-source coding model** announced by **Bindu
+  Reddy**, claims superior benchmarks over Llama 3.1 70B. Discussions on
+  **California's SB 1047** AI safety legislation involve **Stanford** and
+  **Anthropic**, highlighting a balance between precaution and industry growth.
+  Innovations include **uv virtual environments** for rapid setup, **LangChain's
+  LangSmith** resource tags for project management, and multi-agent systems in
+  **Qdrant** enhancing data workflows. Community events like the **RAG
+  workshop** by **AWS**, **LangChain**, and **Elastic** continue to support AI
+  learning and collaboration. Memes remain a popular way to engage with AI
+  industry culture.
 companies:
   - ai21-labs
-  - stanford
   - anthropic
-  - rohanpaul-ai
-  - bindureddy
-  - reach-vb
+  - stanford
+  - hugging-face
   - langchain
   - qdrant
+  - aws
+  - elastic
 models:
   - jamba-1.5
   - phi-3.5
-  - flexora
-  - dracarys-70b
+  - dracarys
+  - llama-3-1-70b
+  - llama-3-1
 topics:
-  - ai-models
-  - long-context-models
+  - state-space-models
+  - long-context
+  - benchmarking
   - ai-safety
-  - ai-legislation
   - virtual-environments
-  - langchain
   - multi-agent-systems
-  - ai-conferences
-  - ai-humor
+  - resource-management
+  - community-engagement
+  - model-performance
+people:
+  - bindu-reddy
+  - rohanpaul_ai
+  - jackclarksf
+  - danhendrycks
+  - reach_vb
+  - iqdotgraph
 ---
 
 

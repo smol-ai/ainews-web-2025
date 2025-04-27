@@ -4,29 +4,43 @@ title: 'Cohere''s Command A claims #3 open model spot (after DeepSeek and Gemma)
 date: '2025-03-18T00:28:53.405655Z'
 original_slug: ainews-coheres-command-a-claims-3-open-model-spot
 description: >-
-  AI news from March 14-17, 2025, highlights open weights models, including
-  Cohere's Command A, Mistral AI Small 3.1, and SmolDocling OCR. Notable
-  discussions include model rankings, benchmarks like mcbench and HCAST, and the
-  focus on long context windows, multilingual capabilities, and open-source
-  deployment.
+  **Cohere's Command A** model has solidified its position on the LMArena
+  leaderboard, featuring an open-weight **111B** parameter model with an
+  unusually long **256K context window** and competitive pricing. **Mistral AI**
+  released the lightweight, multilingual, and multimodal **Mistral AI Small
+  3.1** model, optimized for single RTX 4090 or Mac 32GB RAM setups, with strong
+  performance on instruct and multimodal benchmarks. The new OCR model
+  **SmolDocling** offers fast document reading with low VRAM usage,
+  outperforming larger models like Qwen2.5VL. Discussions highlight the
+  importance of system-level improvements over raw LLM advancements, and
+  **MCBench** is recommended as a superior AI benchmark for evaluating model
+  capabilities across code, aesthetics, and awareness.
 companies:
   - cohere
   - mistral-ai
-  - smol-ai
   - hugging-face
 models:
-  - cohere-command-a-111b
+  - command-a
   - mistral-ai-small-3.1
-  - smol-docling
+  - smoldocling
+  - qwen-2.5-vl
 topics:
-  - large-language-models
-  - multimodal
-  - multilingual
-  - benchmarking
-  - open-source
   - context-windows
+  - multilinguality
+  - multimodality
+  - fine-tuning
+  - benchmarking
   - ocr
-  - model-ranking
+  - model-performance
+  - model-releases
+  - model-optimization
+people:
+  - aidangomez
+  - sophiamyang
+  - mervenoyann
+  - aidan_mclau
+  - reach_vb
+  - lateinteraction
 ---
 
 

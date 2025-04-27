@@ -4,36 +4,60 @@ title: not much happened today
 date: '2024-10-18T01:13:21.878974Z'
 original_slug: ainews-not-much-happened-today-7086
 description: >-
-  AI news for October 16-17, 2024, covering new model releases, datasets, tools,
-  and industry trends including Llama 3, Yi-Lightning, Zyda-2 dataset,
-  transformer architecture insights, and AI market developments.
+  **Answer.ai** launched **fastdata**, a synthetic data generation library using
+  `claudette` and Tencent's Billion Persona paper. **NotebookLM** became
+  customizable, and **Motherduck** introduced notable LLMs in SQL
+  implementations. **Perplexity** and **Dropbox** announced competitors to
+  **Glean**. **OpenAI** unveiled audio chat completions priced at 24 cents per
+  minute. **Meta AI** released **Llama 3.1**, powering Lenovo AI Now's on-device
+  agent. **Yi-Lightning** model ranked #6 globally, surpassing **GPT-4o**.
+  **Zyphra AI** released the large **Zyda-2** dataset with 5 trillion tokens.
+  **François Chollet** clarified transformer architecture as set-processing, not
+  sequence-processing. Research suggests memorization aids LLM reasoning.
+  **Anthropic** updated its Responsible Scaling Policy for AI safety. Tools like
+  **Perplexity Finance**, **Open Canvas** by **LangChain**, and **AlphaCodium**
+  code generation tool were highlighted. Approximately $500 million was raised
+  for AI agent startups, with ongoing discussions on AI's job market impact.
+  Combining prompt caching with the Batches API can yield a 95% discount on
+  **Claude 3.5 Sonnet** tokens.
 companies:
-  - meta
-  - answer.ai
+  - answer-ai
   - tencent
+  - notebooklm
+  - motherduck
+  - perplexity
   - dropbox
   - openai
-  - langchain
+  - meta-ai-fair
+  - yi-ai
+  - zyphra-ai
   - anthropic
-  - swyx
+  - langchain
+  - openai
 models:
-  - llama-3.1
+  - claudette
+  - llama-3-1
   - yi-lightning
-  - zyda-2
+  - gpt-4o
+  - claude-3.5-sonnet
 topics:
   - synthetic-data
-  - customizable-notebooks
-  - llm-in-sql
-  - ai-model-updates
-  - transformer-architecture
+  - fine-tuning
+  - sql
+  - audio-processing
+  - on-device-ai
+  - dataset-release
+  - transformer
   - llm-reasoning
   - ai-safety
-  - financial-ai
-  - collaborative-writing
   - code-generation
-  - ai-startups
-  - ai-job-market
   - ai-pricing
+  - ai-job-market
+people:
+  - fchollet
+  - aravsrinivas
+  - svpino
+  - swyx
 ---
 
 

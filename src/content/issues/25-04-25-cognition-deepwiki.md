@@ -3,45 +3,57 @@ id: 1214124323
 title: Cognition's DeepWiki, a free encyclopedia of all GitHub repos
 date: '2025-04-25T05:44:39.731046Z'
 description: >-
-  AI news highlights the launch of DeepWiki, a free encyclopedia of GitHub
-  repositories, and updates on various AI models and tools including Meta's
-  perception encoders, Qwen chat app, Hugging Face integrations, OpenAI's deep
-  research, and new OCR models. The news also covers model releases, inference
-  capabilities, and new frameworks for AI development.
+  **Silas Alberti** of **Cognition** announced **DeepWiki**, a free encyclopedia
+  of all GitHub repos providing Wikipedia-like descriptions and Devin-backed
+  chatbots for public repos. **Meta** released **Perception Encoders (PE)** with
+  A2.0 license, outperforming **InternVL3** and **Qwen2.5VL** on vision tasks.
+  **Alibaba** launched the **Qwen Chat App** for iOS and Android. **Hugging
+  Face** integrated the **Dia 1.6B SoTA** text-to-speech model via **FAL**.
+  **OpenAI** expanded deep research usage with a lightweight version powered by
+  **o4-mini** model, now available to free users. **Perplexity AI** updated
+  their model selector with **Grok 3 Beta**, **o4-mini**, and support for models
+  like **gemini 2.5 pro**, **claude 3.7**, and **gpt-4.1**. **vLLM** project
+  introduced **OpenRLHF** framework for reinforcement learning with human
+  feedback. **Surya OCR** alpha model supports 90+ languages and LaTeX.
+  **MegaParse** open-source library was introduced for LLM-ready data formats.
 companies:
   - cognition
-  - meta
+  - meta-ai-fair
   - alibaba
   - hugging-face
   - openai
   - perplexity-ai
   - vllm
+  - ''
 models:
-  - deepwiki
-  - perception-encoders
-  - qwen
-  - dia-1.6b
-  - deep-research
-  - grok-3-beta
   - o4-mini
+  - perception-encoder
+  - qwen-2.5-vl
+  - dia-1.6b
+  - grok-3
   - gemini-2.5-pro
   - claude-3.7
-  - deepseek-r1-1776
-  - openai-o4-mini
-  - vllm
-  - surya-ocr
+  - gpt-4.1
 topics:
-  - github
-  - ai-models
-  - vision-encoders
-  - chat-apps
+  - vision
   - text-to-speech
-  - deep-research
-  - rlhf
+  - reinforcement-learning
   - ocr
-  - datasets
+  - model-releases
+  - model-integration
+  - open-source
   - frameworks
+  - chatbots
+  - model-selector
+people:
+  - silas-alberti
+  - mervenoyann
+  - reach_vb
+  - aravsrinivas
+  - vikparuchuri
+  - lioronai
 ---
+
 
 
 **300k is all you need to index GitHub.**

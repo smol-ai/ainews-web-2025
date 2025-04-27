@@ -4,30 +4,50 @@ title: ... and welcome AI Twitter!
 date: '2024-02-29T00:50:17.713944Z'
 original_slug: ainews-and-welcome-ai-twitter
 description: >-
-  AI Twitter recap covering AI ethics, new models, corporate leadership,
-  hardware advancements, financial platform issues, and tech humor, highlighting
-  discussions among engineers and tech professionals.
+  The AI Twitter discourse from **2/27-28/2024** covers a broad spectrum
+  including **ethical considerations** highlighted by **Margaret Mitchell**
+  around **Google Gemini's** launch, and **John Carmack's** insights on evolving
+  coding skills in the AI era. **Guillaume Lample** announced the release of the
+  **Mistral Large** multilingual model. Discussions also touched on potential
+  leadership changes at **Google** involving **Sundar Pichai**, and **OpenAI's**
+  possible entry into the synthetic data market as noted by **Delip Rao**.
+  Technological advancements include **Yann LeCun's** commentary on running LLMs
+  on mobile devices and **Alex Wang's** praise for the **Apple Vision Pro**.
+  Financial platform issues were raised by **Pieter Levels** regarding
+  **Stripe's** payment policies. The cultural dynamics within big tech were
+  discussed by **François Chollet** and **Dhéliat**. The lighter side of AI was
+  represented by memes and humor from **Pieter Levels** and **AISafetyMemes**.
+  This summary reflects the fast-evolving AI landscape blending technical
+  innovation, corporate strategy, ethics, and community culture.
 companies:
   - google
   - openai
-  - microsoft
   - apple
+  - stripe
 models:
-  - google-gemini
   - mistral-large
+  - google-gemini
 topics:
   - ai-ethics
-  - ai-models
-  - corporate-leadership
-  - hardware
-  - financial-transactions
-  - ai-safety
-  - multimodal
+  - multilinguality
   - on-device-ai
+  - convolutional-neural-networks
   - synthetic-data
-  - deep-learning
-  - cnn
-  - vision-pro
+  - financial-transaction-systems
+  - corporate-culture
+  - humor
+people:
+  - margaret-mitchell
+  - john-carmack
+  - guillaume-lample
+  - sundar-pichai
+  - delip-rao
+  - santiago-l-valdarrama
+  - alex-wang
+  - yann-lecun
+  - pieter-levels
+  - francois-chollet
+  - dheliat
 ---
 
 

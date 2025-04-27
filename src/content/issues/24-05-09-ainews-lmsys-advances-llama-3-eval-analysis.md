@@ -4,30 +4,42 @@ title: LMSys advances Llama 3 eval analysis
 date: '2024-05-10T00:52:45.516571Z'
 original_slug: ainews-lmsys-advances-llama-3-eval-analysis
 description: >-
-  LMSys is analyzing Llama-3's performance across categories and prompt
-  complexities, highlighting uneven results and the importance of evaluation
-  methods. AlphaFold 3 by DeepMind has been released, capable of predicting
-  molecular structures with high accuracy, impacting biology and genetics.
-  OpenAI introduced Model Spec to clarify model behavior and improve
-  decision-making. Llama 3 has climbed to the top of the LMSYS leaderboard,
-  showing strengths and weaknesses in different prompt challenges.
+  **LMSys** is enhancing LLM evaluation by categorizing performance across **8
+  query subcategories** and **7 prompt complexity levels**, revealing uneven
+  strengths in models like **Llama-3-70b**. **DeepMind** released **AlphaFold
+  3**, advancing molecular structure prediction with holistic modeling of
+  protein-DNA-RNA complexes, impacting biology and genetics research. **OpenAI**
+  introduced the **Model Spec**, a public standard to clarify model behavior and
+  tuning, inviting community feedback and aiming for models to learn directly
+  from it. **Llama 3** has reached top leaderboard positions on LMSys, nearly
+  matching **Claude-3-sonnet** in performance, with notable variations on
+  complex prompts. The analysis highlights the evolving landscape of model
+  benchmarking and behavior shaping.
 companies:
   - lmsys
-  - google
-  - deepmind
-  - isomorphic-labs
   - openai
+  - google-deepmind
+  - isomorphic-labs
 models:
+  - llama-3-70b
   - llama-3
-  - gpt-4
   - claude-3-sonnet
+  - alphafold-3
 topics:
-  - llm-evaluation
-  - model-performance
+  - benchmarking
+  - model-behavior
+  - prompt-complexity
+  - model-specification
   - molecular-structure-prediction
-  - protein-folding
-  - model-spec
-  - ai-model-behavior
+  - performance-analysis
+  - leaderboards
+people:
+  - demis-hassabis
+  - sam-altman
+  - miranda-murati
+  - karina-nguyen
+  - joanne-jang
+  - john-schulman
 ---
 
 

@@ -4,30 +4,41 @@ title: '12/30/2023: Mega List of all LLMs'
 date: '2023-12-31T10:23:31.628480Z'
 original_slug: ainews-12302023-mega-list-of-all-llms
 description: >-
-  Discussion of various AI topics including local attention modules, LLM
-  benchmarking, model merging, AI in board games, startup MVPs, and new Amazon
-  LLMs like Titan Text Express and Titan Text Lite. Notable focus on local
-  attention complexity, code, and solutions, as well as community insights on
-  model training and data contamination.
+  **Stella Biderman**'s tracking list of **LLMs** is highlighted, with resources
+  shared for browsing. The **Nous Research AI** Discord discussed the **Local
+  Attention Flax** module focusing on computational complexity, debating linear
+  vs quadratic complexity and proposing chunking as a solution. Benchmark logs
+  for various LLMs including **Deita v1.0** with its **SFT+DPO** training method
+  were shared. Discussions covered model merging, graded modal types, function
+  calling in AI models, and data contamination issues in **Mixtral**. Community
+  insights were sought on **Amazon Titan Text Express** and **Amazon Titan Text
+  Lite** LLMs, including a unique training strategy involving bad datasets.
+  Several GitHub repositories and projects like **DRUGS**, **MathPile**,
+  **CL-FoMo**, and **SplaTAM** were referenced for performance and data quality
+  evaluations.
 companies:
-  - lucidrains
+  - nous-research
+  - hugging-face
   - amazon
+  - mistral-ai
 models:
-  - local-attention-flax
   - deita-v1.0
-  - llama2
-  - wizardslm-13b
+  - mixtral
+  - amazon-titan-text-express
+  - amazon-titan-text-lite
 topics:
   - local-attention
-  - llm-benchmarking
+  - computational-complexity
+  - benchmarking
   - model-merging
-  - ai-in-board-games
-  - startup-mvp
-  - data-contamination
   - graded-modal-types
   - function-calling
-  - retrieval-augmented-generation
-  - amazon-titan
+  - data-contamination
+  - training-methods
+people:
+  - stella-biderman
+  - euclaise
+  - joey00072
 ---
 
 

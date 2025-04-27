@@ -4,28 +4,44 @@ title: not much happened today
 date: '2025-01-30T01:07:40.495919Z'
 original_slug: ainews-not-much-happened-today-2391
 description: >-
-  AI news from late January 2025 highlights developments in DeepSeek models,
-  training costs, open-source deployment, AI safety, and industry insights. Key
-  topics include DeepSeek-R1, V3 advancements, hardware utilization, safety
-  reports, and market competitiveness.
+  **DeepSeek-R1 and DeepSeek-V3** models have made significant advancements,
+  trained on an **instruction-tuning dataset of 1.5M samples** with **600,000
+  reasoning** and **200,000 non-reasoning SFT data**. The models demonstrate
+  strong **performance benchmarks** and are deployed on-premise via
+  collaborations with **Dell** and **Hugging Face**. Training costs are
+  estimated around **$5.5M to $6M**, with efficient hardware utilization on
+  **8xH100 servers**. The **International AI Safety Report** highlights risks
+  such as **malicious use**, **malfunctions**, and **systemic risks** including
+  **AI-driven cyberattacks**. Industry leaders like **Yann LeCun** and **Yoshua
+  Bengio** provide insights on market reactions, AI safety, and ethical
+  considerations, with emphasis on AI's role in creativity and economic
+  incentives.
 companies:
   - deepseek
-  - groq
-  - dell
   - hugging-face
-  - yoshua-bengio
+  - dell
   - openai
 models:
   - deepseek-r1
   - deepseek-v3
+  - coder-v2
+  - prover
 topics:
-  - open-source-ai
+  - instruction-tuning
+  - performance-benchmarks
+  - model-deployment
+  - training-costs
+  - hardware-scalability
   - ai-safety
-  - model-training
-  - hardware-utilization
-  - ai-deployment
-  - ai-ethics
-  - market-competition
+  - risk-mitigation
+  - ethical-ai
+  - open-source
+  - gpu-utilization
+people:
+  - yann-lecun
+  - yoshua-bengio
+  - francois-chollet
+  - giffman
 ---
 
 

@@ -4,28 +4,58 @@ title: not much happened today
 date: '2025-02-26T02:19:12.201709Z'
 original_slug: ainews-not-much-happened-today-6477
 description: >-
-  AI news for 2/24/2025-2/25/2025 highlights Claude 3.7 Sonnet's performance,
-  availability, and features, as well as updates from DeepSeek and Qwen models.
-  Claude 3.7 excels in coding, reasoning, and multimodal tasks, with deployment
-  on multiple platforms and advanced context windows. DeepSeek releases DeepEP,
-  an open-source communication library for MoE models, and Qwen updates are also
-  discussed.
+  **Claude 3.7 Sonnet** demonstrates exceptional coding and reasoning
+  capabilities, outperforming models like **DeepSeek R1**, **O3-mini**, and
+  **GPT-4o** on benchmarks such as **SciCode** and **LiveCodeBench**. It is
+  available on platforms including **Perplexity Pro**, **Anthropic**, **Amazon
+  Bedrock**, and **Google Cloud**, with pricing at **$3/$15 per million
+  tokens**. Key features include a **64k token thinking mode**, **200k context
+  window**, and the **CLI-based coding assistant Claude Code**. Meanwhile,
+  **DeepSeek** released **DeepEP**, an open-source communication library
+  optimized for MoE model training and inference with support for **NVLink**,
+  **RDMA**, and **FP8**. These updates highlight advancements in coding AI and
+  efficient model training infrastructure.
 companies:
   - anthropic
-  - deepseek
-  - google
+  - perplexity-ai
   - amazon
+  - google-cloud
+  - deepseek_ai
 models:
   - claude-3.7-sonnet
-  - deepseek-ep
-  - qwen2.5-max
+  - claude-3.7
+  - deepseek-r1
+  - o3-mini
+  - deepseek-v3
+  - gemini-2.0-pro
+  - gpt-4o
+  - qwen2.5-coder-32b-instruct
 topics:
-  - large-language-models
-  - multimodal
-  - model-deployment
+  - coding
+  - reasoning
+  - model-benchmarking
+  - agentic-workflows
+  - context-window
+  - model-performance
   - open-source
-  - model-optimization
-  - communication-library
+  - moe
+  - model-training
+  - communication-libraries
+  - fp8
+  - nvlink
+  - rdma
+  - cli-tools
+people:
+  - skirano
+  - omarsar0
+  - reach_vb
+  - artificialanlys
+  - terryyuezhuo
+  - _akhaliq
+  - _philschmid
+  - catherineols
+  - goodside
+  - danielhanchen
 ---
 
 

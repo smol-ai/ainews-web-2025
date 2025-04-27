@@ -4,34 +4,57 @@ title: ChatGPT Canvas GA
 date: '2024-12-11T04:20:02.638516Z'
 original_slug: ainews-chatgpt-canvas-ga
 description: >-
-  AI news from 12/9/2024 to 12/10/2024 highlights OpenAI's Canvas launch, new
-  model updates, industry analysis, and NeurIPS conference activities. Key
-  developments include OpenAI's new features, Meta's reasoning paradigm, and
-  Huggingface's TGI v3 release.
+  **OpenAI** launched **ChatGPT Canvas** to all users, featuring **code
+  execution** and **GPT integration**, effectively replacing Code Interpreter
+  with a Google Docs-like interface. **Deepseek AI** announced their
+  **V2.5-1210** update improving performance on **MATH-500 (82.8%)** and
+  LiveCodebench. **Meta AI Fair** introduced **COCONUT**, a new continuous
+  latent space reasoning paradigm. **Huggingface** released **TGI v3**,
+  processing **3x more tokens** and running **13x faster** than vLLM on long
+  prompts. **Cognition Labs** released **Devin**, an AI developer building
+  Kubernetes operators. **Hyperbolic** raised **$12M Series A** to build an open
+  AI platform with an **H100 GPU marketplace**. Discussions included **AI
+  capabilities and employment impact**, and **NeurIPS 2024** announcements with
+  **Google DeepMind** demos and a debate on AI scaling. On Reddit, **Llama
+  3.3-70B** supports **90K context length** finetuning using **Unsloth** with
+  **gradient checkpointing** and Apple's **Cut Cross Entropy (CCE)** algorithm,
+  fitting on **41GB VRAM**. **Llama 3.1-8B** reaches **342K context lengths**
+  with Unsloth, surpassing native limits.
 companies:
   - openai
-  - meta
+  - deepseek-ai
+  - meta-ai-fair
   - huggingface
-  - google
-  - deepseek_ai
-  - cognition_labs
+  - cognition-labs
   - hyperbolic
-  - aravsrinivas
-  - sama
   - google-deepmind
 models:
-  - gpt-4
-  - gpt-3.5-turbo
+  - llama-3-70b
+  - llama-3-1-8b
   - tgi-v3
+  - deepseek-v2.5-1210
+  - coconut
 topics:
-  - ai-model-updates
-  - product-launches
-  - industry-market-analysis
+  - code-execution
+  - gpt-integration
+  - model-finetuning
+  - gradient-checkpointing
+  - context-length
+  - latent-space-reasoning
+  - performance-optimization
+  - gpu-memory-optimization
+  - kubernetes
+  - gpu-marketplace
+  - ai-capabilities
+  - employment-impact
   - neurips-2024
-  - ai-research
-  - llama-finetuning
-  - llm-reasoning
-  - ai-hardware
+  - ai-scaling
+  - humor
+people:
+  - arav_srinivas
+  - sama
+  - jonathan-frankle
+  - dylan
 ---
 
 

@@ -4,27 +4,41 @@ title: Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o version)
 date: '2024-07-19T00:00:39.402250Z'
 original_slug: ainews-lskjd
 description: >-
-  AI news from July 17-18, 2024, highlights new models like GPT-4o-mini, Mistral
-  Nemo, and collaborations with Nvidia, along with advancements in model
-  efficiency, cost, and multimodal capabilities.
+  **GPT-4o-mini** launches with a **99% price reduction** compared to
+  text-davinci-003, offering **3.5% the price of GPT-4o** and matching
+  Opus-level benchmarks. It supports **16k output tokens**, is faster than
+  previous models, and will soon support **text, image, video, and audio inputs
+  and outputs**. **Mistral Nemo**, a **12B parameter model** developed with
+  **Nvidia**, features a **128k token context window**, FP8 checkpoint, and
+  strong benchmark performance. **Together Lite and Turbo** offer fp8/int4
+  quantizations of **Llama 3** with up to **4x throughput** and significantly
+  reduced costs. **DeepSeek V2** is now open-sourced. Upcoming releases include
+  at least **5 unreleased models** and **Llama 4** leaks ahead of ICML 2024.
 companies:
   - openai
   - nvidia
+  - mistral-ai
+  - togethercompute
+  - deepseek-ai
   - lmsys
 models:
   - gpt-4o-mini
   - mistral-nemo
   - llama-3
   - llama-3-400b
+  - deepseek-v2
 topics:
-  - model-efficiency
-  - cost-reduction
-  - multimodal-ai
-  - large-language-models
-  - benchmarking
-  - instruction-hierarchy
+  - model-quantization
   - context-windows
-  - quantization
+  - instruction-following
+  - model-performance
+  - cost-efficiency
+  - multimodality
+  - benchmarking
+  - open-source
+  - model-release
+people:
+  - sam-altman
 ---
 
 

@@ -4,28 +4,44 @@ title: 'GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4T version) '
 date: '2024-05-13T23:14:50.739179Z'
 original_slug: ainews-gpt-4o-the-new-sota-everything-frontier-9515
 description: >-
-  AI news for 5/10/2024-5/13/2024 covers GPT-4o launch, open-source LLM
-  exploration, multimodal AI, efficient attention techniques, and model scaling
-  advancements, with discussions on open-source platforms, fine-tuning,
-  multimodal architectures, and GPU optimization.
+  **OpenAI** launched **GPT-4o**, a frontier model supporting real-time
+  reasoning across **audio, vision, and text**, now free for all ChatGPT users
+  with enhanced coding capabilities and upcoming advanced voice and video
+  features. Discussions cover **open-source LLMs** like **Llama 3**, fine-tuning
+  techniques including knowledge distillation for **GPT-3.5**, and hardware
+  optimization strategies such as quantization. Emerging architectures include
+  multimodal integrations with ChatGPT voice and Open Interpreter API, Mixture
+  of Experts models combining autoregressive and diffusion approaches, and novel
+  designs like the **YOCO architecture** and **ThunderKittens DSL** for
+  efficient GPU use. Research advances in efficient attention methods like
+  **Conv-Basis** using FFT and model scaling techniques such as depth upscaling
+  were also highlighted.
 companies:
   - openai
-  - huggingface
+  - hugging-face
+  - nous-research
+  - eleutherai
   - hazyresearch
 models:
   - gpt-4o
+  - gpt-3.5
+  - llama-3
 topics:
-  - frontier-models
-  - open-source-llms
+  - real-time-reasoning
+  - coding-capabilities
   - fine-tuning
-  - multimodal-ai
-  - autoregressive-models
-  - diffusion-models
-  - moe-architectures
-  - decoder-decoder-models
-  - gpu-optimization
-  - attention-mechanisms
+  - knowledge-distillation
+  - hardware-optimization
+  - quantization
+  - multimodality
+  - mixture-of-experts
+  - efficient-attention
   - model-scaling
+  - depth-upscaling
+  - transformer-architecture
+  - gpu-optimization
+  - prompt-engineering
+people: []
 ---
 
 

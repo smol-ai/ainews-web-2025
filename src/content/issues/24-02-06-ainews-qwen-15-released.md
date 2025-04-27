@@ -4,37 +4,49 @@ title: Qwen 1.5 Released
 date: '2024-02-06T23:40:32.776669Z'
 original_slug: ainews-qwen-15-released
 description: >-
-  AI Discords for 2/5/2024 discuss Chinese models like Qwen, Deepseek, Zhipu,
-  and Mistral, covering topics such as model performance, quantization,
-  multilingual capabilities, RAG, agent planning, code generation, and ecosystem
-  support. Community debates include model quantization, AI detection tools,
-  sparse MoE models, model merging, character memory, and AI scams. Meta's VR
-  prototypes and new AI models like bagel-7b-v0.4 and sparsetral are also
-  highlighted.
+  **Chinese AI models Yi, Deepseek, and Qwen** are gaining attention for strong
+  performance, with **Qwen 1.5** offering up to **32k token context** and
+  compatibility with Hugging Face transformers and quantized models. The
+  **TheBloke Discord** discussed topics like quantization of a **70B LLM**, the
+  introduction of the **Sparse MoE model Sparsetral** based on **Mistral**,
+  debates on merging vs fine-tuning, and Direct Preference Optimization (DPO)
+  for character generation. The **Nous Research AI Discord** covered challenges
+  in Japanese Kanji generation, AI scams on social media, and Meta's VR headset
+  prototypes showcased at **SIGGRAPH 2023**. Discussions also included
+  fine-tuning frozen networks and new models like **bagel-7b-v0.4**,
+  **DeepSeek-Math-7b-instruct**, and **Sparsetral-16x7B-v2**.
 companies:
+  - deepseek
   - qwen
-  - mistral
-  - zhipu
-  - meta
+  - mistral-ai
+  - hugging-face
+  - meta-ai-fair
 models:
   - qwen-1.5
-  - mistral
+  - mistral-7b
   - sparsetral-16x7b-v2
   - bagel-7b-v0.4
   - deepseek-math-7b-instruct
 topics:
-  - large-language-models
-  - multilingual-ai
-  - rag
+  - quantization
+  - token-context
+  - multilinguality
+  - retrieval-augmented-generation
   - agent-planning
   - code-generation
-  - model-quantization
-  - ai-detection
-  - sparse-mo-e
+  - sparse-moe
   - model-merging
-  - character-memory
-  - vr-prototypes
-  - ai-scams
+  - fine-tuning
+  - direct-preference-optimization
+  - character-generation
+  - ascii-art
+  - kanji-generation
+  - vr
+  - retinal-resolution
+  - light-field-passthrough
+  - frozen-networks
+  - normalization-layers
+people: []
 ---
 
 

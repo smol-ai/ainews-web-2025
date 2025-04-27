@@ -4,23 +4,36 @@ title: The world's first fully autonomous AI Engineer
 date: '2024-03-12T23:05:08.530915Z'
 original_slug: ainews-the-worlds-first-fully-autonomous-ai
 description: >-
-  Cognition Labs showcases an advanced AI system capable of complex engineering
-  tasks, long-term reasoning, and multi-step planning, integrating GPT-4 and
-  reinforcement learning techniques. The system demonstrates significant
-  progress in AI agent capabilities, attracting attention from investors and the
-  AI community.
+  **Cognition Labs's Devin** is highlighted as a potentially groundbreaking AI
+  software engineer agent capable of learning unfamiliar technologies,
+  addressing bugs, deploying frontend apps, and fine-tuning its own AI models.
+  It integrates **OpenAI's GPT-4** with reinforcement learning and features
+  tools like asynchronous chat, browser, shell access, and an IDE. The system
+  claims advanced long-term reasoning and planning abilities, attracting praise
+  from investors like **Patrick Collison** and **Fred Ehrsam**. The technology
+  is noted for its potential as one of the most advanced AI agents, sparking
+  excitement about agents and AGI.
 companies:
   - cognition-labs
+  - openai
 models:
   - gpt-4
+  - devin
 topics:
-  - large-language-models
   - reinforcement-learning
-  - ai-agents
+  - fine-tuning
   - long-term-reasoning
-  - ai-deployment
-  - ai-model-training
-  - ai-automation
+  - planning
+  - ai-agents
+  - software-engineering
+  - model-integration
+  - asynchronous-chat
+  - ide
+  - agentic-ai
+people:
+  - patrick-collison
+  - fred-ehrsam
+  - tim-dettmers
 ---
 
 
