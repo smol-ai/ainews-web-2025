@@ -72,19 +72,32 @@ const categories = ['companies', 'models', 'topics', 'people'] as const;
           <h2 class="text-xl font-medium">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
           
           <div class="flex flex-col md:flex-row gap-8">
-            <div class="flex-1">
+            <div class="flex-2">
               <h3 class="text-lg font-medium mb-4">Alphabetical</h3>
               <div class="flex flex-wrap gap-2">
-                {categoryData[category].alphabetical.map((tag) => (
-                  <a href={`/tags/${tag}`}
-                    class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
-                  >
-                    {tag}{" "}
-                    <span class="text-sm text-gray-600 dark:text-gray-400">
-                      ({posts.filter((post) => post.data[category]?.includes(tag)).length})
-                    </span>
-                  </a>
-                ))}
+                {categoryData[category].alphabetical.map((tag, index, array) => {
+                  const prevTag = index > 0 ? array[index - 1] : '';
+                  const needsBreak = index == 0 ||index > 0 && tag[0].toLowerCase() !== prevTag[0].toLowerCase();
+                  return (
+                    <>
+                      {needsBreak && (
+                        <>
+                          <div class="w-full"/>
+                          <p>{tag[0].toUpperCase()}</p>
+                        </>
+                      )}
+                      
+                      <a href={`/tags/${tag}`}
+                        class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+                      >
+                        {tag}{" "}
+                        <span class="text-sm text-gray-600 dark:text-gray-400">
+                          ({posts.filter((post) => post.data[category]?.includes(tag)).length})
+                        </span>
+                      </a>
+                    </>
+                  );
+                })}
               </div>
             </div>
             <div class="flex-1">

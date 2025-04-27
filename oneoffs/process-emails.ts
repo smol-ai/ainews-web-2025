@@ -78,7 +78,7 @@ const PeopleSchema = z.string().describe('A person mentioned in the content, typ
 // Unified schema for news tag extraction
 const NewsTagsSchema = z.object({
   description: z.string().describe('A concise 1-3 sentence summary focusing on the most important stories. Use **bold** for important companies, models, topics, numbers, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.'),
-  companies: z.array(CompanySchema).describe(`List of companies or organizations mentioned. Use official lowercase names with hyphens for multi-word names (e.g., "openai", "google-deepmind", "x-ai"). Meta AI has a few names - use "meta-ai-fair" not "meta-ai" or "facebook-ai-research". Use "x-ai" instead of "xai", "deepseek" instead of "deepseek-ai"..
+  companies: z.array(CompanySchema).describe(`List of companies or organizations mentioned. Use official lowercase names with hyphens for multi-word names (e.g., "openai", "google-deepmind", "x-ai"). Meta AI has a few names - use "meta-ai-fair" not "meta-ai" or "facebook-ai-research". Use "x-ai" instead of "xai", "deepseek" instead of "deepseek-ai", "together-ai" instead of "togethercompute", "figure-ai" instead of "figure", "langchain-ai" instead of "langchain".
     
 To improve tag density, try to prefer this list of company tags rather than making up new ones as long as they are appropriate: ${prefCompanies.join(', ')}
     `),
