@@ -1,9 +1,13 @@
 name: Vercel Build with Retry Logic
-
 on:
   workflow_dispatch:  # Allow manual triggering
-  schedule:
-    - cron: '0 */8 * * *'  # Run every 8 hours
+  push:
+    branches:
+      - main  # Trigger on commits/merges to main branch
+  pull_request:
+    types: [closed]  # Trigger when PRs are merged
+    branches:
+      - main
 
 jobs:
   deploy-with-retry:
