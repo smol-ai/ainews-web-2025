@@ -19,22 +19,19 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for proper versioning
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'pnpm'  # Use pnpm cache for faster installs
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 8
           run_install: false
 
-      - name: Install Vercel CLI
-        run: pnpm add -g vercel
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'  # Use pnpm cache for faster installs
 
-      - name: Install dependencies
+      - name: Install dependencies (includes Vercel CLI)
         run: pnpm install
 
       - name: Deploy to Vercel with Retry Logic
@@ -42,17 +39,18 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          # Optional: bypass content check on retries
-          BYPASS_RECENT_CONTENT_CHECK: 'true'
+          # # Optional: bypass content check on retries
+          # BYPASS_RECENT_CONTENT_CHECK: 'true'
         run: |
           MAX_ATTEMPTS=3
           ATTEMPT=1
-          DELAY=60  # Initial delay of 60 seconds
+          DELAY=10  # Initial delay of 60 seconds
           
           while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
             echo "::group::Deployment Attempt $ATTEMPT of $MAX_ATTEMPTS"
             
             echo "Starting deployment to Vercel..."
+            # Use the locally installed Vercel CLI
             if vercel --token $VERCEL_TOKEN --prod; then
               echo "Deployment successful! ✅"
               echo "::endgroup::"
