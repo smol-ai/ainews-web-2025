@@ -29,15 +29,56 @@ const TEST_MODE = false;
 // const TEST_COUNT = 10;
 const TEST_COUNT = MAX_CONCURRENCY;
 
+const systemPrompt = `You are an expert AI news analyst and tagger. Extract a concise description and categorized tags from AI news content. 
+
+For Description: Use **bold** for important companies, models, topics, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.
+
+Follow these rules for tagging:
+1. COMPANIES:
+    - Use lowercase normalized company names (e.g., "openai", "google-deepmind", "meta-ai-fair")
+    - Use hyphens for multi-word companies (e.g., "hugging-face", "mistral-ai")
+    - Favor specific subsidiaries over parent companies when appropriate (e.g., "google-deepmind" not just "google")
+    - GOOD EXAMPLES: "openai", "anthropic", "google-deepmind", "hugging-face", "mistral-ai"
+    - BAD EXAMPLES: "OpenAI", "Google", "Anthropic", "llama-AI"
+    
+2. MODELS:
+    - Use exact model names with proper versioning using hyphens (e.g., "gpt-4", "claude-3-opus", "gemini-1.5-pro")
+    - Include size parameters when mentioned (e.g., "llama-3-70b" not just "llama-3")
+    - If the model is a family of models, tag the family name eg "claude-3-opus" also has "claude-3" tag, "llama-3-70b" also has "llama-3" tag.
+    - GOOD EXAMPLES: "gpt-4o", "claude-3-sonnet", "llama-3-70b", "mistral-7b", "gemini-1.5-pro"
+    - BAD EXAMPLES: "GPT4", "Claude 3", "LLaMA 3", "Mistral"
+    
+3. TOPICS:
+    - Focus on specific technical concepts rather than generic "ai-something" terms
+    - Use lowercase with hyphens for multi-word terms
+    - Avoid redundant topics like "ai-research", "llm", "ai-models" - prefer more specific versions
+    - GOOD EXAMPLES: "fine-tuning", "multimodality", "reinforcement-learning", "quantization", "benchmarking"
+    - BAD EXAMPLES: "ai-research", "large-language-models", "ai-models", "llm", "ai-ethics"
+    - Here are TOPICS TO AVOID (use more specific versions instead): ${nonTopics.join(', ')}
+    
+4. PEOPLE:
+    - Tag prominent AI researchers, company leaders, and influential figures in the field
+    - Try to tag them using their Twitter handle - if not known, use lowercase standardized names with underscores if needed
+    - Focus on people who made significant contributions or statements in the content
+    - GOOD EXAMPLES: "sama", "demishassabis", "ylecun", "karpathy"
+    - BAD EXAMPLES: "Sam Altman", "sam-altman", "demis-hassabis", "yann-lecun", "andrej-karpathy"
+    
+5. General Guidelines:
+    - Be comprehensive - don't miss important companies, models, topics, and people mentioned
+    - Output between 5-15 tags in each category for normal content
+    - Avoid redundant tags or overtagging
+`
+
 // Define schemas for our tag extraction
 const CompanySchema = z.string().describe('A company or organization name mentioned in the content');
 const ModelSchema = z.string().describe('A specific AI model name, including version numbers if applicable');
 const TopicSchema = z.string().describe('A general topic, research area, concept, technology or domain discussed');
 const PeopleSchema = z.string().describe('A person mentioned in the content, typically AI researchers, leaders, or prominent figure - their twitter/x handle preferred if known');
 
-const TagsResponseSchema = z.object({
+// Unified schema for news tag extraction
+const NewsTagsSchema = z.object({
   description: z.string().describe('A concise 1-3 sentence summary focusing on the most important stories. Use **bold** for important companies, models, topics, numbers, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.'),
-  companies: z.array(CompanySchema).describe(`List of companies or organizations mentioned. Use official lowercase names with hyphens for multi-word names (e.g., "openai", "google-deepmind", "x-ai"). Meta AI has a few names - use "meta-ai-fair" not "meta-ai" or "facebook-ai-research".
+  companies: z.array(CompanySchema).describe(`List of companies or organizations mentioned. Use official lowercase names with hyphens for multi-word names (e.g., "openai", "google-deepmind", "x-ai"). Meta AI has a few names - use "meta-ai-fair" not "meta-ai" or "facebook-ai-research". Use "x-ai" instead of "xai", "deepseek" instead of "deepseek-ai"..
     
 To improve tag density, try to prefer this list of company tags rather than making up new ones as long as they are appropriate: ${prefCompanies.join(', ')}
     `),
@@ -54,8 +95,6 @@ To improve tag density, try to prefer this list of topic tags rather than making
 To improve tag density, try to prefer this list of people tags rather than making up new ones as long as they are appropriate: ${prefPeople.join(', ')}
     `),
 });
-
-type TagsResponse = z.infer<typeof TagsResponseSchema>;
 
 interface EmailMetadata {
   id?: string;
@@ -115,52 +154,13 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
       const extractionResult = await instructorClient.chat.completions.create({
         model: "gpt-4.1-mini", // Using the same model as before
         response_model: { 
-          schema: TagsResponseSchema,
+          schema: NewsTagsSchema,
           name: "NewsTagsExtraction"
         },
         messages: [
           {
             role: "system",
-            content: `You are an expert AI news analyst and tagger. Extract a concise description and categorized tags from AI news content. 
-
-            For Description: Use **bold** for important companies, models, topics, numbers, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.
-            
-            Follow these rules for tagging:
-            
-            1. COMPANIES:
-               - Use lowercase normalized company names (e.g., "openai", "google-deepmind", "meta-ai-fair")
-               - Use hyphens for multi-word companies (e.g., "hugging-face", "mistral-ai")
-               - Favor specific subsidiaries over parent companies when appropriate (e.g., "google-deepmind" not just "google")
-               - GOOD EXAMPLES: "openai", "anthropic", "google-deepmind", "hugging-face", "mistral-ai"
-               - BAD EXAMPLES: "OpenAI", "Google", "Anthropic", "llama-AI"
-               
-            2. MODELS:
-               - Use exact model names with proper versioning using hyphens (e.g., "gpt-4", "claude-3-opus", "gemini-1.5-pro")
-               - Include size parameters when mentioned (e.g., "llama-3-70b" not just "llama-3")
-               - If the model is a family of models, tag the family name eg "claude-3-opus" also has "claude-3" tag, "llama-3-70b" also has "llama-3" tag.
-               - GOOD EXAMPLES: "gpt-4o", "claude-3-sonnet", "claude-3", "llama-3-70b", "llama-3", "mistral-7b", "gemini-1.5-pro", "gemini-1.5"
-               - BAD EXAMPLES: "GPT4", "Claude 3", "LLaMA 3", "Mistral"
-               
-            3. TOPICS:
-               - Focus on specific technical concepts rather than generic "ai-something" terms
-               - Use lowercase with hyphens for multi-word terms
-               - Avoid redundant topics like "ai-research", "llm", "ai-models" - prefer more specific versions
-               - GOOD EXAMPLES: "fine-tuning", "multimodality", "reinforcement-learning", "quantization", "benchmarking"
-               - BAD EXAMPLES: "ai-research", "large-language-models", "ai-models", "llm", "ai-ethics"
-               
-            4. PEOPLE:
-               - Tag prominent AI researchers, company leaders, and influential figures in the field
-               - Use lowercase standardized names with hyphens if needed
-               - Focus on people who made significant contributions or statements in the content
-               - GOOD EXAMPLES: "sam-altman", "dario-amodei", "demis-hassabis", "yann-lecun", "andrej-karpathy"
-               - BAD EXAMPLES: "Sam Altman", "Dario Amodei", "JohnDoe"
-               
-            5. General Guidelines:
-               - Be comprehensive - don't miss important companies, models, topics, and people mentioned
-               - Output between 5-15 tags in each category for normal content
-               - Avoid redundant tags or overtagging
-               
-            Here are TOPICS TO AVOID (use more specific versions instead): ${nonTopics.join(', ')}`
+            content: systemPrompt
           },
           {
             role: "user",
@@ -214,55 +214,11 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
       console.log(`Falling back to regular OpenAI completion for ${path.basename(filePath)}`);
       
       try {
-        // Define the schema for response structure
-        const QuestionAnswer = z.object({
-          description: z.string().describe(`A 1-3 sentence summary focusing ONLY on the top 1-2 most important stories. Use **bold** for important companies, models, topics, numbers, facts, dates, and people, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.`),
-          companies: z.array(z.string()).describe("Company names mentioned, normalized to lowercase"),
-          models: z.array(z.string()).describe("Specific AI model names mentioned, including version numbers"),
-          topics: z.array(z.string()).describe("General topics, research areas, or domains discussed"),
-          people: z.array(z.string()).describe("People mentioned in the content, typically AI researchers or leaders")
-        });
-
         const result = await instructorClient.chat.completions.create({
           messages: [
             {
               role: "system",
-              content: `You are an expert AI news analyst and tagger. Extract a concise description and categorized tags from AI news content. 
-
-            For Description: Use **bold** for important companies, models, topics, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.
-            
-            Follow these rules for tagging:
-            1. COMPANIES:
-               - Use lowercase normalized company names (e.g., "openai", "google-deepmind", "meta-ai-fair")
-               - Use hyphens for multi-word companies (e.g., "hugging-face", "mistral-ai")
-               - Favor specific subsidiaries over parent companies when appropriate (e.g., "google-deepmind" not just "google")
-               - GOOD EXAMPLES: "openai", "anthropic", "google-deepmind", "hugging-face", "mistral-ai"
-               - BAD EXAMPLES: "OpenAI", "Google", "Anthropic", "llama-AI"
-               
-            2. MODELS:
-               - Use exact model names with proper versioning using hyphens (e.g., "gpt-4", "claude-3-opus", "gemini-1.5-pro")
-               - Include size parameters when mentioned (e.g., "llama-3-70b" not just "llama-3")
-               - GOOD EXAMPLES: "gpt-4o", "claude-3-sonnet", "llama-3-70b", "mistral-7b", "gemini-1.5-pro"
-               - BAD EXAMPLES: "GPT4", "Claude 3", "LLaMA 3", "Mistral"
-               
-            3. TOPICS:
-               - Focus on specific technical concepts rather than generic "ai-something" terms
-               - Use lowercase with hyphens for multi-word terms
-               - Avoid redundant topics like "ai-research", "llm", "ai-models" - prefer more specific versions
-               - GOOD EXAMPLES: "fine-tuning", "multimodality", "reinforcement-learning", "quantization", "benchmarking"
-               - BAD EXAMPLES: "ai-research", "large-language-models", "ai-models", "llm", "ai-ethics"
-               
-            4. PEOPLE:
-               - Tag prominent AI researchers, company leaders, and influential figures in the field
-               - Use lowercase standardized names with hyphens if needed
-               - Focus on people who made significant contributions or statements in the content
-               - GOOD EXAMPLES: "sam-altman", "dario-amodei", "demis-hassabis", "yann-lecun", "andrej-karpathy"
-               - BAD EXAMPLES: "Sam Altman", "Dario Amodei", "JohnDoe"
-               
-            5. General Guidelines:
-               - Be comprehensive - don't miss important companies, models, topics, and people mentioned
-               - Output between 5-15 tags in each category for normal content
-               - Avoid redundant tags or overtagging`
+              content: systemPrompt
             },
             {
               role: "user",
@@ -285,7 +241,7 @@ Follow these rules for all tags:
             }
           ],
           model: "gpt-4.1-mini", // Using the same model as before
-          response_model: { schema: QuestionAnswer, name: "AI News Summary and Tags" },
+          response_model: { schema: NewsTagsSchema, name: "AI News Summary and Tags" },
           max_tokens: 1000,
           temperature: 0.3,
         });

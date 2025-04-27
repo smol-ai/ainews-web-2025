@@ -14,6 +14,25 @@ const { entry } = Astro.props as {
 const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
   return entry.collection === "issues";
 };
+
+// Simple markdown to HTML converter for inline formatting
+function markdownToHtml(text: string): string {
+  if (!text) return '';
+  
+  // Convert bold (**text**)
+  text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  
+  // Convert italics (*text*)
+  text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+  
+  // Convert code blocks (`text`)
+  text = text.replace(/`(.*?)`/g, '<code>$1</code>');
+  
+  // Convert links [text](url)
+  text = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-blue-600 dark:text-blue-400 hover:underline">$1</a>');
+  
+  return text;
+}
 ---
 
 <div class="group relative arrow-card">
@@ -109,9 +128,7 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
           </div>
         )
       }
-      <div>
-        {entry.data.description}
-      </div>
+      <div set:html={markdownToHtml(entry.data.description)}></div>
     </div>
   </div>
 </div>
