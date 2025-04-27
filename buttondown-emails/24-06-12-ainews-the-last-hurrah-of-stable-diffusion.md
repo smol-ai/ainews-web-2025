@@ -1,13 +1,63 @@
 ---
 id: baa5ffc2-4e11-4be7-9ba4-182e18db701a
-title: '[AINews] The Last Hurrah of Stable Diffusion?'
+title: The Last Hurrah of Stable Diffusion?
 date: '2024-06-12T22:08:29.963442Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-last-hurrah-of-stable-diffusion
+description: >-
+  **Stability AI** launched **Stable Diffusion 3 (SD3)** Medium, featuring the
+  **MMDiT architecture** and **T5 text encoder** for image text rendering, with
+  models ranging from **450M to 8B parameters**. The community has shown mixed
+  reactions following the open weights release and leadership changes. On AI
+  models, **Llama 3 8B Instruct** shows strong evaluation correlation with
+  **GPT-4**, while **Qwen 2 Instruct** surpasses Llama 3 on **MMLU** benchmarks.
+  The **Mixture of Agents (MoA)** framework outperforms **GPT-4o** on AlpacaEval
+  2.0. Techniques like **Spectrum** and **QLoRA** enable efficient fine-tuning
+  with less VRAM. Research on **grokking** reveals transformers can transition
+  from memorization to generalization with extended training. Benchmark
+  initiatives include the **$1M ARC Prize Challenge** for AGI progress and
+  **LiveBench**, a live LLM benchmark to prevent dataset contamination. The
+  **Character Codex Dataset** offers extensive character data for RAG and
+  synthetic data. The **MLX 0.2** tool enhances LLM experience on Apple Silicon
+  Macs with improved UI and faster retrieval-augmented generation.
+companies:
+  - stability-ai
+  - togethercompute
+  - google-deepmind
+  - openai
+  - mistral-ai
+  - apple
+models:
+  - llama-3-8b
+  - qwen-2
+  - gpt-4
+  - gpt-4o
+  - stable-diffusion-3
+  - t5
+topics:
+  - model-architecture
+  - fine-tuning
+  - benchmarking
+  - reasoning
+  - dataset-release
+  - model-evaluation
+  - retrieval-augmented-generation
+  - multimodality
+  - model-training
+  - transformers
+  - model-optimization
+people:
+  - rasbt
+  - percyliang
+  - togethercompute
+  - cognitivecompai
+  - rohanpaul_ai
+  - fchollet
+  - mikeknoop
+  - micahgoldblum
+  - teknium1
+  - stablequan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**MultiModal Diffusion Transformers are All You Need.**
 

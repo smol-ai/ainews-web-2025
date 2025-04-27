@@ -1,13 +1,42 @@
 ---
 id: 7686668d-cc13-4875-995f-4ecff6d0ca34
-title: '[AINews] The world''s first fully autonomous AI Engineer'
+title: The world's first fully autonomous AI Engineer
 date: '2024-03-12T23:05:08.530915Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-worlds-first-fully-autonomous-ai
+description: >-
+  **Cognition Labs's Devin** is highlighted as a potentially groundbreaking AI
+  software engineer agent capable of learning unfamiliar technologies,
+  addressing bugs from GitHub issues, building and deploying frontend apps, and
+  training and fine-tuning its own AI models. It integrates **OpenAI's GPT-4**
+  with reinforcement learning techniques and features tools like asynchronous
+  chat, browser, shell access, and an IDE. Credible investors such as **Patrick
+  Collison** and **Fred Ehrsam** have praised its demos, sparking excitement
+  about AI agents and AGI. The system emphasizes long-term reasoning, planning,
+  and continuous learning.
+companies:
+  - cognition-labs
+  - openai
+models:
+  - gpt-4
+topics:
+  - reinforcement-learning
+  - fine-tuning
+  - long-term-reasoning
+  - planning
+  - ai-agents
+  - software-engineering
+  - model-training
+  - model-deployment
+  - asynchronous-chat
+  - ide
+  - browser
+  - shell-access
+people:
+  - patrick_collison
+  - fred_ehrsam
+  - tim_dettmers
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/11/2024-3/12/2024. We checked [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**336** channels, and **3499** messages) for you. Estimated reading time saved (at 200wpm): **410 minutes**. 
 

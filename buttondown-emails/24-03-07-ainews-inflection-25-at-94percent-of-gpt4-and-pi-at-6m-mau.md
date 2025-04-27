@@ -1,13 +1,57 @@
 ---
 id: 52967f97-5cc8-4648-86fa-c64518bb6048
-title: '[AINews] Inflection-2.5 at 94% of GPT4, and Pi at 6m MAU'
+title: Inflection-2.5 at 94% of GPT4, and Pi at 6m MAU
 date: '2024-03-08T02:11:17.500129Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-inflection-25-at-94-of-gpt4-and-pi-at-6m
+description: >-
+  **Mustafa Suleyman** announced **Inflection 2.5**, which *"achieves more than
+  94% the average performance of GPT-4 despite using only 40% the training
+  FLOPs"*, highlighting a compute-efficient approach. Inflection's Pi chatbot
+  shows strong user growth (~10% weekly) and now supports realtime web search.
+  The community noted Inflection 2.5's performance is suspiciously close to
+  **Claude 3 Sonnet**. **Claude 3 Opus** outperformed **GPT-4** in a user vote
+  and is now the default model for **Perplexity Pro** users. **Anthropic** added
+  experimental tool calling support for Claude 3 via **LangChain**.
+  **LlamaIndex** released new features enabling Retrieval Augmented Generation
+  (RAG) over PDFs and video data. New benchmarking tools like TinyBenchmarks and
+  the **Yi-9B** model release show progress in evaluation and model performance,
+  with Yi-9B surpassing **Mistral** on code and math benchmarks.
+companies:
+  - inflection
+  - anthropic
+  - perplexity-ai
+  - llamaindex
+  - mistral
+  - langchain-ai
+models:
+  - inflection-2.5
+  - claude-3-sonnet
+  - claude-3-opus
+  - gpt-4
+  - yi-9b
+  - mistral-7b
+topics:
+  - compute-efficiency
+  - user-growth
+  - realtime-web-search
+  - retrieval-augmented-generation
+  - benchmarking
+  - ocr
+  - structured-extraction
+  - video-retrieval
+  - knowledge-augmentation
+  - planning
+  - evaluation
+  - code-benchmarks
+  - math-benchmarks
+  - tool-calling
+people:
+  - mustafa_suleyman
+  - amandaaskell
+  - jeremyphoward
+  - abacaj
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/6/2024-3/7/2024. We checked [**356** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**332** channels, and **3382** messages) for you. Estimated reading time saved (at 200wpm): **419 minutes**.
 

@@ -1,13 +1,53 @@
 ---
 id: 8507691f-90e5-4413-84ba-debd5609a0f6
-title: '[AINews] Music''s Dall-E moment'
+title: Music's Dall-E moment
 date: '2024-04-10T22:07:48.484098Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-musics-dall-e-moment
+description: >-
+  **Google's Griffin architecture** outperforms transformers with faster
+  inference and lower memory usage on long contexts. **Command R+** climbs to
+  6th place on LMSYS Chatbot Arena leaderboard, surpassing **GPT-4-0613** and
+  **GPT-4-0314**. **Mistral AI** releases an open-source **8x22B** model with a
+  **64K context window** and around **130B parameters**. **Google** open-sources
+  **CodeGemma** models with pre-quantized 4-bit versions for faster downloads.
+  **Ella weights** enhance **Stable Diffusion 1.5** with LLM semantic alignment.
+  **Unsloth** enables 4x larger context windows and 80% memory reduction for
+  fine-tuning. **Andrej Karpathy** releases LLMs implemented in pure C for
+  potential speed gains. **Command R+** runs in realtime on **M2 Max MacBook**
+  using iMat q1 quantization. **Cohere's Command R** model offers low API costs
+  and strong leaderboard performance. **Gemini 1.5** impresses with audio
+  capabilities recognizing speech tone and speaker identification from audio
+  clips.
+companies:
+  - google
+  - mistral-ai
+  - cohere
+  - hugging-face
+  - lmsys
+models:
+  - griffin
+  - command-r-plus
+  - gpt-4-0613
+  - gpt-4-0314
+  - mistral-8x22b
+  - codegemma
+  - stable-diffusion-1.5
+  - gemini-1.5
+topics:
+  - model-architecture
+  - benchmarking
+  - open-source
+  - model-quantization
+  - fine-tuning
+  - inference-speed
+  - multimodality
+  - memory-optimization
+  - context-windows
+  - audio-processing
+people:
+  - andrej_karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/9/2024-4/10/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**388** channels, and **5893** messages) for you. Estimated reading time saved (at 200wpm): **600 minutes**.
 

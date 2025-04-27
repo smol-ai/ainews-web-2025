@@ -1,13 +1,50 @@
 ---
 id: aaf39f9e-09fa-4e00-b45d-9330235210ce
-title: '[AINews] 12/15/2023: Mixtral-Instruct beats Gemini Pro (and matches GPT3.5)'
+title: '12/15/2023: Mixtral-Instruct beats Gemini Pro (and matches GPT3.5)'
 date: '2023-12-15T22:33:20.436628Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12152023-mixtral-instruct-beats-gemini-pro
+description: >-
+  Thanks to a **Karpathy** shoutout, **Lmsys** now has enough data to rank
+  **Mixtral** and **Gemini Pro**. The discussion highlights impressive
+  performance of these state-of-the-art open source models that can run on
+  laptops. The **OpenAI Discord** community debated various AI models and tools,
+  including **Perplexity**, **ChatGPT's browsing tool**, **Gemini Pro**, and
+  **Mistral**. Users discussed AI's ability to convert large code files with
+  **DeepSeek Coder**, challenges with context window sizes, and privacy
+  implications for AI advancement. There were also conversations about running
+  LLMs on local and cloud GPUs, cost-effectiveness, and hardware choices like
+  **RTX 3090** and **A6000** GPUs. Issues with OpenAI services such as
+  performance, access, and new features like the archive button were also
+  covered. Future developments like **GPT 4.5** and prompt engineering for large
+  context windows were topics of interest.
+companies:
+  - lmsys
+  - openai
+  - deepseek
+  - cloudflare
+  - huggingface
+models:
+  - mixtral
+  - gemini-pro
+  - mistral-medium
+  - gpt-3.5
+  - gpt-4.5
+  - gpt-4
+topics:
+  - performance
+  - context-window
+  - privacy
+  - prompt-engineering
+  - cost-effectiveness
+  - gpu-selection
+  - model-comparison
+  - code-generation
+  - model-deployment
+people:
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Thanks to a [Karpathy](https://twitter.com/karpathy/status/1734687074350166089) shoutout, Lmsys  [now has enough data to rank Mixtral and Gemini Pro](https://twitter.com/lmsysorg/status/1735729398672716114/photo/1):
 

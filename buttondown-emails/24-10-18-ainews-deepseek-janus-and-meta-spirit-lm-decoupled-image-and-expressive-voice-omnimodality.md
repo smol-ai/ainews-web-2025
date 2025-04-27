@@ -1,15 +1,59 @@
 ---
 id: b5276b9b-b1bf-4b89-b9bd-5fc6cbf145d7
 title: >-
-  [AINews] DeepSeek Janus and Meta SpiRit-LM: Decoupled Image and Expressive
-  Voice Omnimodality
+  DeepSeek Janus and Meta SpiRit-LM: Decoupled Image and Expressive Voice
+  Omnimodality
 date: '2024-10-18T22:46:38.720062Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseek-janus-and-meta-spirit-lm
+description: >-
+  **DeepSeek Janus** and **Meta SpiRit-LM** are two notable multimodality AI
+  models recently released, showcasing advances in separate vision encoders for
+  image generation and understanding, and expressive speech and writing
+  generation respectively. **Nvidia Nemotron Fine-Tune 70b** underperforms
+  compared to other state-of-the-art models, while **Movie Gen Bench**
+  benchmarks new media generation tasks. **Perplexity** launched an internal
+  search tool with multi-step reasoning and code execution. Hugging Face
+  integrated a gradient accumulation fix into transformers, supporting open
+  source AI innovation. **Claude iOS and Android apps** received updates
+  including iPad support. The report on "Stopping Big Tech from becoming Big AI"
+  highlights the importance of open source AI for innovation and accessibility.
+  *"With 3 lines of code you can trace all LLM inputs, outputs and metadata"*
+  thanks to **W&B Weave**'s new LLM observability features.
+companies:
+  - deepseek
+  - meta-ai-fair
+  - nvidia
+  - perplexity-ai
+  - anthropic
+  - huggingface
+  - wandb
+models:
+  - nemotron-70b
+  - claude-3.5-sonnet
+  - gpt-4o
+topics:
+  - multimodality
+  - image-generation
+  - vision
+  - speech-generation
+  - model-merging
+  - benchmarking
+  - fine-tuning
+  - open-source
+  - model-optimization
+  - evaluation
+  - internal-search
+  - multi-step-reasoning
+  - code-execution
+  - llm-observability
+people:
+  - bindureddy
+  - aravsrinivas
+  - danielhanchen
+  - clementdelangue
+  - cwolferesearch
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Interleaving early fusion is all you need.**
 

@@ -1,13 +1,40 @@
 ---
 id: bb570981-3d29-411c-987c-80f89bc1d463
-title: '[AINews] BitNet was a lie?'
+title: BitNet was a lie?
 date: '2024-11-13T01:36:06.890884Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-bitnet-was-a-lie
+description: >-
+  **Quantization scaling laws** have been refined by a group led by **Tanishq
+  Kumar**, showing benefits plateau at FP6 precision and highlighting that
+  longer pretraining increases sensitivity to quantization, impacting models
+  like **Llama-3**. **Tim Dettmers** warns that the era of efficiency gains from
+  low-precision quantization is ending, signaling a shift from scaling to
+  optimizing existing resources. Meanwhile, **Alibaba** announced **Qwen
+  2.5-Coder-32B-Instruct**, which rivals **GPT-4o** in coding benchmarks, and
+  open-source efforts like **DeepEval** by **llama_index** are advancing LLM
+  testing and deployment.
+companies:
+  - sambanova
+  - alibaba
+  - huggingface
+models:
+  - qwen-2.5-coder-32b-instruct
+  - gpt-4o
+  - llama-3
+topics:
+  - quantization
+  - scaling-laws
+  - model-efficiency
+  - fine-tuning
+  - code-generation
+  - open-source
+  - model-testing
+  - inference-optimization
+people:
+  - tanishq_kumar
+  - tim_dettmers
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Scaling Laws for Precision (Quantization) are all you need.**
 

@@ -1,13 +1,55 @@
 ---
 id: 32c6f94e-a602-4966-a326-9f2dade3994b
-title: '[AINews] Contextual Position Encoding (CoPE)'
+title: Contextual Position Encoding (CoPE)
 date: '2024-05-31T03:11:48.061328Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-contextual-position-encoding-cope
+description: >-
+  **Meta AI** researcher Jason Weston introduced **CoPE**, a novel positional
+  encoding method for transformers that incorporates *context* to improve
+  counting, copying, and language modeling tasks. This approach enables
+  transformers to dynamically count distances per attention head and solve tasks
+  standard transformers struggle with. **Google DeepMind** released **Gemini 1.5
+  Flash and Pro** models optimized for fast inference, while **Anthropic**
+  announced general availability of tool use for **Claude** models, enhancing
+  complex task orchestration. Additionally, **SEAL Leaderboards** were launched
+  for private expert model evaluations, and **ChatGPT Free** tier received
+  upgrades expanding access to advanced AI features. **Karpathy** reflected on
+  GPT-3's impact, emphasizing scaling compute over algorithmic improvements for
+  AGI progress. **Perplexity AI** launched Perplexity Pages to convert research
+  into visually appealing articles.
+companies:
+  - meta-ai-fair
+  - google-deepmind
+  - anthropic
+  - seal
+  - perplexity-ai
+  - langchain-ai
+models:
+  - gemini-1.5-flash
+  - gemini-1.5-pro
+  - claude
+  - gpt-3
+topics:
+  - positional-encoding
+  - transformers
+  - counting
+  - language-modeling
+  - coding
+  - tool-use
+  - model-evaluation
+  - inference-speed
+  - model-optimization
+  - context-windows
+  - model-benchmarking
+  - api
+  - performance-optimization
+people:
+  - jaseweston
+  - alexandr_wang
+  - karpathy
+  - aravsrinivas
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Just one more RoPE variant bro just one more**
 

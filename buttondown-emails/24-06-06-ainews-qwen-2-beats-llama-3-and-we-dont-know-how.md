@@ -1,13 +1,51 @@
 ---
 id: faab9a69-3c95-4761-b1bb-d93d58c453b8
-title: '[AINews] Qwen 2 beats Llama 3 (and we don''t know how)'
+title: Qwen 2 beats Llama 3 (and we don't know how)
 date: '2024-06-06T22:33:41.101639Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-qwen-2-beats-llama-3-and-we-dont-know-how
+description: >-
+  **Alibaba** released **Qwen 2** models under Apache 2.0 license, claiming to
+  outperform **Llama 3** in open models with multilingual support in **29
+  languages** and strong benchmark scores like **MMLU 82.3** and **HumanEval
+  86.0**. **Groq** demonstrated ultra-fast inference speed on **Llama-3 70B**
+  with **40,792 tokens/s** and 200ms latency for processing 4 Wikipedia
+  articles. Research on **sparse autoencoders (SAEs)** for interpreting
+  **GPT-4** neural activity showed new training methods, metrics, and scaling
+  laws. **Meta AI** announced the **No Language Left Behind (NLLB)** model
+  capable of high-quality translation across **200 languages**, including
+  low-resource ones. *"Our post-training phase uses scalable training with
+  minimal human annotation and automated alignment strategies like rejection
+  sampling for math and execution feedback for coding."*
+companies:
+  - alibaba
+  - groq
+  - meta-ai-fair
+models:
+  - qwen-2
+  - llama-3-70b
+  - llama-3
+  - gpt-4
+  - nllb
+topics:
+  - multilinguality
+  - benchmarking
+  - inference-speed
+  - sparse-autoencoders
+  - scaling-laws
+  - post-training
+  - instruction-following
+  - automated-alignment
+  - multilingual-translation
+people:
+  - huybery
+  - _philschmid
+  - jonathanross321
+  - awnihannun
+  - gdb
+  - nabla_theta
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Another model release with no dataset details.**
 

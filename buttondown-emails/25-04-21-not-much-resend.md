@@ -2,7 +2,64 @@
 id: 38309c71-19ba-4feb-96d7-xxx
 title: not much happened today; New email provider for AINews
 date: '2025-04-21T05:44:39.731046Z'
+description: >-
+  **Resend** is now powering the AINews email delivery after previous provider
+  issues affecting one-third of subscribers. **OpenAI** released API-only models
+  **GPT-4.1**, **4.1 Mini**, and **4.1 Nano** with up to 1M context windows,
+  outperforming **GPT-4o** variants and scoring 55% on SWE-Bench Verified.
+  **Google Gemini** launched **Gemini 2.5 Flash**, a reasoning model with 24k
+  token context and strong STEM and visual reasoning capabilities. **ByteDance**
+  introduced **Seaweed**, a 7B-parameter video AI supporting text-to-video and
+  audio-driven synthesis, rivaling larger models. **Anthropic** developed a
+  system to analyze how **Claude**'s values adapt across diverse situations
+  using anonymized conversations. **Cohere** released **Embed 4**, a multimodal
+  embedding model with a 128K-token context window and support for 100+
+  languages, optimized for regulated data and storage savings. **xAI** by **Elon
+  Musk** updated **Grok** with Memory for chat personalization and Studio for
+  collaborative doc and code editing, similar to ChatGPT Canvas. AI applications
+  include agentic workflows for document automation and coding with LLMs, with
+  insights shared by **Anthropic** and others. *"OpenAI's smartest reasoning AI
+  models yet"* and *"Google's Gemini 2.5 Flash matches o4-mini in preview"*
+  highlight recent advancements.
+companies:
+  - resend
+  - openai
+  - google
+  - bytedance
+  - anthropic
+  - cohere
+  - x-ai
+models:
+  - gpt-4.1
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - gpt-4o
+  - gemini-2.5-flash
+  - seaweed-7b
+  - claude
+  - embed-4
+  - grok
+topics:
+  - model-releases
+  - reasoning
+  - multimodality
+  - video-generation
+  - embedding-models
+  - context-windows
+  - agentic-workflows
+  - personalization
+  - code-generation
+  - model-benchmarking
+people:
+  - adcock_brett
+  - scaling01
+  - anthropicai
+  - swyx
+  - jerryjliu0
+  - alexalbert__
+  - omarsar0
 ---
+
 
 
 Resend is all we need!

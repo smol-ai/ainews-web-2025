@@ -1,13 +1,70 @@
 ---
 id: 60e94bd9-9876-42d6-8ed2-89144d3dac29
-title: '[AINews] 12/21/2023: The State of AI (according to LangChain)'
+title: '12/21/2023: The State of AI (according to LangChain)'
 date: '2023-12-22T00:20:28.238274Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12212023-the-state-of-ai-according-to
+description: >-
+  **LangChain** launched their first report based on **LangSmith** stats
+  revealing top mindshare charts. On **OpenAI**'s Discord, users raised issues
+  about the **Mixtral model**'s inconsistent responses and compared it to
+  **Poe's Mixtral**. There were reports of declining output quality and
+  unpredictable behavior in **GPT-4** and **ChatGPT**, with discussions on
+  differences between **Playground GPT-4** and **ChatGPT GPT-4**. Users also
+  noted anomalous behavior in **Bing** and **Bard AI** models, including
+  hallucinations and strange assertions. Various user concerns were raised about
+  message limits, response completion errors, chat lags, voice setting
+  inaccessibility, 2FA problems, and subscription restrictions. Techniques for
+  guiding GPT-4 outputs and creative uses with **DALL-E** were also discussed.
+  *"OpenAI is looking into fixing unpredictable GPT-4 behavior,"* and users
+  debated safety measures and context length differences between GPT-4 variants.
+companies:
+  - langchain
+  - openai
+  - poe
+  - microsoft
+models:
+  - mixtral
+  - gpt-4
+  - chatgpt
+  - playground-gpt-4
+  - bard-ai
+  - dall-e
+topics:
+  - model-consistency
+  - model-behavior
+  - response-quality
+  - chat-platform-issues
+  - message-limits
+  - response-completion
+  - voice-settings
+  - two-factor-authentication
+  - subscription-models
+  - prompt-engineering
+  - creative-ai
+people:
+  - eljajasoriginal
+  - felly007
+  - odasso
+  - superiornickson5312
+  - sieventer
+  - afayt
+  - the_boss7044
+  - clockrelativity2003
+  - nicky_83270
+  - cymer
+  - satanhashtag
+  - rock
+  - cat.hemlock
+  - eskcanta
+  - stealth2077
+  - jeziboi
+  - rendo1
+  - seldomstatic
+  - neurophin
+  - errorsource
+  - antonioguak
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->LangChain [launched](https://twitter.com/LangChainAI/status/1737884196465782901) their first report based on LangSmith stats:
 

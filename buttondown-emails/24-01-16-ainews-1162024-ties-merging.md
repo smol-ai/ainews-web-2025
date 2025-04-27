@@ -1,13 +1,53 @@
 ---
 id: 5321cce1-4789-4c89-a93b-314a98edf4b5
-title: '[AINews] 1/16/2024: TIES-Merging'
+title: '1/16/2024: TIES-Merging'
 date: '2024-01-16T20:51:01.991703Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1162024-ties-merging
+description: >-
+  **TheBloke's Discord** has become ultra active with discussions on **Mixture
+  of Experts (MoE) models**, including experiments with **random gate routing
+  layers** and model merging. Debates on quantization methods highlight the
+  trade-offs between **GPTQ** and **EXL2 quants**, with EXL2 noted for faster
+  execution on specialized hardware. A new model, **Nous Hermes 2**, based on
+  **Mixtral 8x7B** and trained with **RLHF**, claims benchmark superiority but
+  shows some inconsistencies. The **Frontier supercomputer** at **Oak Ridge
+  National Laboratory** is noted for training a trillion-parameter LLM with 14TB
+  RAM, sparking discussions on open-sourcing government-funded AI. Additionally,
+  the application of **ghost attention** in the 'academicat' model is being
+  explored, with mixed reactions from the community. *"Random gate layer is good
+  for training but not for immediate use,"* and *"government-funded models
+  should be open-sourced"* were key sentiments.
+companies:
+  - thebloke
+  - huggingface
+  - nous-research
+  - together-ai
+  - oak-ridge-national-laboratory
+  - vast-ai
+  - runpod
+models:
+  - mixtral-8x7b
+  - nous-hermes-2
+  - frankendpo-4x7b-bf16
+topics:
+  - mixture-of-experts
+  - model-merging
+  - quantization
+  - reinforcement-learning-from-human-feedback
+  - supercomputing
+  - ghost-attention
+  - model-fine-tuning
+  - reward-models
+people:
+  - sanjiwatsuki
+  - superking__
+  - mrdragonfox
+  - _dampf
+  - kaltcit
+  - rombodawg
+  - technotech
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> We checked **19** guilds, **284** channels, and **4372** messages for you. Estimated reading time saved (at 200wpm): **460 minutes**. Notice a jump? We added TheBloke's Discord today... and it's ultra active. We'll have to figure out how to balance this. We've also tweaked the prompts to make the summaries more informative.
 

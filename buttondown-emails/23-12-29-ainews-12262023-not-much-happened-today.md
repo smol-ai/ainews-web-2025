@@ -1,13 +1,43 @@
 ---
 id: 80165381-8741-4085-9b82-3e1ec521d094
-title: '[AINews] 12/26/2023: not much happened today'
+title: '12/26/2023: not much happened today'
 date: '2023-12-29T10:07:18.273087Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12262023-not-much-happened-today
+description: >-
+  **LM Studio** users discussed various technical issues including
+  **performance**, **installation problems on macOS**, **model loading**, and
+  **GPU offloading**. Anticipated future features include **Exllama2 support**
+  and **multimodality with the Llava model**. Conversations covered **vRAM
+  utilization**, **MoE model expert selection**, **model conversion
+  compatibility**, and **saving model states with Autogen**. The community also
+  addressed handling inefficient help requests, shared a blog post titled
+  *"Don't Ask to Ask, Just Ask"*, and briefly touched on **music generation
+  models** like **AudioCraft** from **Meta** and **MusicLM** from **Google**.
+companies:
+  - lm-studio
+  - meta-ai-fair
+  - google-deepmind
+models:
+  - llava
+  - exllama2
+topics:
+  - performance
+  - installation
+  - gpu-offloading
+  - vram-utilization
+  - model-conversion
+  - moe-models
+  - saving-model-state
+  - music-generation
+  - multimodality
+people:
+  - kujila
+  - heyitsyorkie
+  - fabguy
+  - ptable
+  - yagilb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Boxing day was pretty quiet, but lots of experimentation and discussion continues.
 

@@ -1,13 +1,48 @@
 ---
 id: 0de61ce2-6328-46d7-9a74-e3cfdcb5b151
-title: '[AINews] Learnings from o1 AMA'
+title: Learnings from o1 AMA
 date: '2024-09-14T00:55:34.586718Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-learnings-from-o1-ama
+description: >-
+  **OpenAI** released the **o1 model series**, described as their "most capable
+  and aligned models yet," trained with reinforcement learning to enhance
+  reasoning. The **o1-preview** model scored **21% on ARC-AGI**, **~80% on aider
+  code editing** (surpassing Claude 3.5 Sonnet's 77%), and **~52% on
+  Cognition-Golden**. The model emphasizes "memorize the reasoning" over
+  memorizing answers and uses a unique chain-of-thought process enabling "System
+  II thinking." Experts like **Andrew Mayne** advise framing o1 as a smart
+  friend providing well-thought-out explanations. The release includes
+  **o1-preview** and **o1-mini** variants, now available in ChatGPT Plus.
+  Additionally, an advanced RAG course sponsored by **Weights & Biases**,
+  **Cohere**, and **Weaviate** offers training on hybrid search and advanced
+  prompting techniques.
+companies:
+  - openai
+  - weights-biases
+  - cohere
+  - weaviate
+models:
+  - o1-preview
+  - o1-mini
+  - claude-3.5-sonnet
+  - gpt-4o
+topics:
+  - reinforcement-learning
+  - chain-of-thought
+  - reasoning
+  - model-performance
+  - prompt-engineering
+  - fine-tuning
+  - code-generation
+  - model-optimization
+  - rag
+people:
+  - sama
+  - rohanpaul_ai
+  - gdb
+  - andrew_mayne
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Appreciation for RL-based CoT is all you need.**
 

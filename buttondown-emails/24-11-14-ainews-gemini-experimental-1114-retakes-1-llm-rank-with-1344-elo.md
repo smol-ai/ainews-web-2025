@@ -1,13 +1,42 @@
 ---
 id: fd70618b-b1ff-4d4e-93d4-34f078c50b4d
-title: '[AINews] Gemini (Experimental-1114) retakes #1 LLM rank with 1344 Elo'
+title: 'Gemini (Experimental-1114) retakes #1 LLM rank with 1344 Elo'
 date: '2024-11-15T02:50:42.092528Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-experimental-1114-retakes-1-llm-9071
+description: >-
+  **Anthropic** released the **3.5 Sonnet** benchmark for jailbreak robustness,
+  emphasizing adaptive defenses. **OpenAI** enhanced **GPT-4** with a new RAG
+  technique for contiguous chunk retrieval. **LangChainAI** launched
+  **Promptim** for prompt optimization. **Meta AI** introduced **NeuralFeels**
+  with neural fields for visuotactile perception. **RichardMCNgo** resigned from
+  OpenAI, highlighting concerns on AI governance and theoretical alignment. The
+  AI community is observing a "race to the top" among frontier models including
+  **Gemini** and **Claude 3.5 Sonnet** with ongoing alignment challenges.
+companies:
+  - anthropic
+  - openai
+  - langchain-ai
+  - meta-ai-fair
+models:
+  - claude-3.5-sonnet
+  - gpt-4
+  - gemini
+  - claude-3.5
+topics:
+  - prompt-optimization
+  - rag
+  - visuotactile-perception
+  - ai-governance
+  - theoretical-alignment
+  - jailbreak-robustness
+  - model-benchmarking
+  - alignment
+people:
+  - richardmcngo
+  - philschmid
+  - andrewyng
 ---
+
 
 **Race dynamics is all you need.**
 

@@ -1,13 +1,53 @@
 ---
 id: b4652fae-87f4-454e-8635-09c342357284
-title: '[AINews] 12/10/2023: not much happened today'
+title: '12/10/2023: not much happened today'
 date: '2023-12-10T23:49:57.169413Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12102023-not-much-happened-today
+description: >-
+  **Nous Research AI** community discussions highlight interest in attending
+  **NeurIPS** and organizing future AI events in Australia. Key topics include
+  the introduction of **StableLM Zephyr 3B**, the open-source **Mixtral** model
+  based on **Mistral 7B**, and its competitive performance against **GPT-3.5**
+  and potential to rival **GPT-4** after fine-tuning. Tools like
+  **Tensorboard**, **Wandb**, and **Llamahub** are noted for fine-tuning and
+  evaluation, while platforms such as **Ollama** and **LM Studio** are debated
+  for model hosting. The community also explores MoE architectures, inference
+  optimization strategies for ChatGPT, and open-source LLM implementations like
+  **OpenHermes 2.5**. Prominent figures like **Andrej Karpathy** and **Yann
+  LeCun** are mentioned, with a focus on decentralized AI projects and
+  open-source collaboration.
+companies:
+  - nous-research
+  - openai
+  - mistral-ai
+  - hugging-face
+  - ollama
+  - lm-studio
+models:
+  - mixtral-8x7b-32kseqlen
+  - mistral-7b
+  - stablelm-zephyr-3b
+  - openhermes-2.5-neural-chat-v3-3-slerp
+  - gpt-3.5
+  - gpt-4
+topics:
+  - fine-tuning
+  - model-benchmarking
+  - moe
+  - inference-optimization
+  - open-source-models
+  - model-hosting
+  - decentralized-ai
+  - performance
+  - ai-events
+  - community-engagement
+people:
+  - karpathy
+  - swyx
+  - yann_lecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->famous last words but it's a quiet day and everyone is heading out to neurips (so are we). Andrej called out sources of alpha [here](https://twitter.com/karpathy/status/1733968385472704548) and we're considering adding them, please shoutout what reddits/discords/anime pfp anons we should add.
 

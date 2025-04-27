@@ -1,13 +1,59 @@
 ---
 id: ccac20dd-1d94-42e9-aee5-2f3d79003fa4
-title: '[AINews] Not much happened today.'
+title: Not much happened today.
 date: '2024-07-03T22:39:42.336133Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-1036
+description: >-
+  **Meta** introduced **Meta 3D Gen**, a system for generating high-quality 3D
+  assets from text in under one minute. **Perplexity AI** updated Pro Search to
+  handle complex queries with multi-step reasoning and code execution.
+  **Microsoft** improved **Phi-3 Mini** with better long-context understanding
+  and instruction following. **GPT4All 3.0** launched with support for thousands
+  of models and major OS compatibility. Research highlights include advances in
+  **reinforcement learning from human feedback (RLHF)**, persona-driven data
+  synthesis using a billion diverse personas, meta-tuning for few-shot
+  generalization, and steering vectors for controlling model behavior. Tools
+  updates include **LangSmith** improving memory retrieval and **Qdrant Engine
+  v1.10** adding universal query API and multivector search. *"Agent papers are
+  mostly not reproducible and ignore cost,"* according to a new paper by Arvind
+  Narayanan et al. Other news covers new AI companies, realtime audio LLMs, and
+  blockchain-backed AGI projects.
+companies:
+  - meta-ai-fair
+  - perplexity-ai
+  - microsoft
+  - gpt4all
+  - langchain-ai
+  - qdrant
+  - kyutai
+  - magic-dev
+  - poolside
+  - opendevin
+models:
+  - meta-3d-gen
+  - phi-3-mini
+  - gpt4all-3.0
+  - yi-large
+topics:
+  - reinforcement-learning
+  - persona-driven-data-synthesis
+  - meta-tuning
+  - steering-vectors
+  - memory-retrieval
+  - multivector-search
+  - universal-query-api
+  - long-context
+  - instruction-following
+  - structured-output
+  - code-execution
+people:
+  - arvind_narayanan
+  - rohanpaul_ai
+  - cwolferesearch
+  - slashml
+  - sarahookr
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Honesty is all you need.**
 

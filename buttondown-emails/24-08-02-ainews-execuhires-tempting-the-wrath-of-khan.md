@@ -1,13 +1,64 @@
 ---
 id: c4fb887d-02de-4c94-8f1d-da8266ad631b
-title: '[AINews] Execuhires: Tempting The Wrath of Khan'
+title: 'Execuhires: Tempting The Wrath of Khan'
 date: '2024-08-03T01:48:48.159187Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-acquisitions-the-fosbury-flop-of-ma
+description: >-
+  **Character.ai's $2.5b execuhire to Google** marks a significant talent shift
+  alongside **Adept's $429m execuhire to Amazon** and **Inflection's $650m
+  execuhire to Microsoft**. Despite strong user growth and content momentum,
+  Character.ai's CEO Noam Shazeer returned to Google, highlighting shifting
+  industry dynamics discussed in **The Winds of AI Winter**. On the model front,
+  **Google DeepMind's Gemini 1.5 Pro** topped Chatbot Arena outperforming
+  **GPT-4o** and **Claude-3.5**, excelling in multilingual, math, and coding
+  tasks. New releases include **Black Forest Labs' FLUX.1** text-to-image model
+  and **Llama 3.1 405B**, the largest open-source model available for free
+  testing. **LangChainAI** launched LangGraph Studio, an IDE for agent
+  development. Industry leaders like **OpenAI**, **Google**, **Anthropic**, and
+  **Meta AI FAIR** remain at the forefront, with compute advantages and
+  post-training focus driving competition. *"When the bigco takes the key tech,
+  key executives, and pays back all the key investors... will the FTC consider
+  it close enough to skirting the letter of an acquisition but defying the
+  spirit of their jurisdiction?"*
+companies:
+  - character.ai
+  - google
+  - adept
+  - amazon
+  - inflection
+  - microsoft
+  - stability-ai
+  - black-forest-labs
+  - schelling
+  - google-deepmind
+  - lmsys
+  - langchain-ai
+  - openai
+  - anthropic
+  - meta-ai-fair
+models:
+  - gemini-1.5-pro
+  - gpt-4o
+  - claude-3.5
+  - flux-1
+  - llama-3-1-405b
+topics:
+  - execuhire
+  - model-comparison
+  - multilinguality
+  - math
+  - code-generation
+  - text-to-image
+  - open-source-models
+  - agent-development
+  - post-training
+  - industry-dynamics
+people:
+  - noam_shazeer
+  - mostafa_mostaque
+  - david
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Noam goes Home.**
 

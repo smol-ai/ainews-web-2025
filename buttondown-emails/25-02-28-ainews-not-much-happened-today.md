@@ -1,13 +1,61 @@
 ---
 id: 5f0db594-436e-4cad-8d4b-2e118c5f2505
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-01T03:41:57.593041Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-3457
+description: >-
+  **GPT-4.5** has sparked mixed reactions on Twitter, with **@karpathy** noting
+  users prefer **GPT-4** in polls despite his personal preference for GPT-4.5's
+  creativity and humor. Critics like **@abacaj** highlight **GPT-4.5's
+  slowness** and impracticality for agent loops, calling it more of a research
+  artifact. Pricing concerns are raised, comparing **Perplexity Deep Research at
+  $20/month** to **ChatGPT at $200/month**. Performance-wise, **GPT-4.5** ranks
+  above **GPT-4o** but below **o1** and **Claude 3.5 Sonnet**, with **Claude
+  3.7** outperforming it on most tasks but GPT-4.5 praised for its humor and
+  "vibes." Speculation suggests GPT-4.5 could have around **5 trillion
+  parameters**. Discussions also mention **Grok's 128k context window** and
+  comparisons with models like **Sonnet 3.7**, **Deepseek V3**, and **Grok 3**.
+  Overall, the debate centers on GPT-4.5's balance between creativity, speed,
+  and practical utility.
+companies:
+  - openai
+  - perplexity-ai
+  - anthropic
+  - deepseek
+  - mistral-ai
+models:
+  - gpt-4.5
+  - gpt-4
+  - gpt-4o
+  - o1
+  - claude-3.5-sonnet
+  - claude-3.7
+  - sonnet-3.7
+  - deepseek-v3
+  - grok-3
+topics:
+  - model-performance
+  - humor
+  - emotional-intelligence
+  - context-windows
+  - model-comparison
+  - pricing
+  - agent-loops
+  - research-artifacts
+people:
+  - karpathy
+  - jeremyphoward
+  - abacaj
+  - stevenheidel
+  - yuchenj_uw
+  - aravsrinivas
+  - dylan522p
+  - scaling01
+  - teknuim1
+  - multimodalart
+  - random_walker
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

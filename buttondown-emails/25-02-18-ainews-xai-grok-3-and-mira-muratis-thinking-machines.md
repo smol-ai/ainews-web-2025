@@ -1,13 +1,55 @@
 ---
 id: 253730e7-cc51-424c-89a3-c31ebf0c3199
-title: '[AINews] X.ai Grok 3 and Mira Murati''s Thinking Machines'
+title: X.ai Grok 3 and Mira Murati's Thinking Machines
 date: '2025-02-18T23:54:10.975706Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-xai-grok-3-and-mira-muratis-thinking
+description: >-
+  **Grok-3** has launched with mixed opinions but strong benchmark performance,
+  reportedly outperforming models like **Gemini 2 Pro** and **GPT-4o**, with its
+  mini version showing competitive or better results. It excels in reasoning and
+  coding, with reinforcement learning unlocking advanced capabilities.
+  Meanwhile, **Mira Murati** has publicly announced the formation of **Thinking
+  Machines**, a new frontier lab focusing on **collaborative and personalizable
+  AI**, **multimodality**, and an empirical approach to **safety and
+  alignment**, reminiscent of **Anthropic**'s philosophy. The community
+  highlights Grok-3's #1 ranking in various benchmarks and its creative emergent
+  abilities.
+companies:
+  - anthropic
+  - openai
+  - thinking-machines
+models:
+  - grok-3
+  - grok-3-mini
+  - gemini-2-pro
+  - gpt-4o
+  - o1
+  - o3
+  - deepseek-r1
+topics:
+  - reinforcement-learning
+  - reasoning
+  - coding
+  - multimodality
+  - model-performance
+  - benchmarking
+  - alignment
+  - safety
+  - research-publishing
+  - collaborative-ai
+  - personalizable-ai
+people:
+  - lmarena_ai
+  - karpathy
+  - mira_murati
+  - omarsar0
+  - iscienceluvr
+  - arankomatsuzaki
+  - scaling01
+  - ibab
+  - teknnium1
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GPUs are all you need.**
 

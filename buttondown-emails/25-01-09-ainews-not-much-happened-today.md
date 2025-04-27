@@ -1,13 +1,77 @@
 ---
 id: 1925a87f-9ac9-4fa2-b017-b90e7b4a88a7
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-10T03:35:37.109683Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-4520
+description: >-
+  **rStar-Math** achieves **90.0% accuracy** on the MATH benchmark with a **7B
+  LLM**, surpassing **o1-preview** by **+4.5%** using **MCTS** and a **Process
+  Reward Model**. **Qwen Chat** launches on Open WebUI with models like
+  **Qwen2.5-Plus** and **Qwen2.5-Coder-32B-Instruct**, enhancing **vision** and
+  **reasoning**. **Microsoft** releases **Phi-4**, trained on **40% synthetic
+  data** with improved pretraining. **North AI Workspace** integrates **LLMs**,
+  **RAG**, and **automation** for private enterprise deployments. **LangChain**
+  introduces a company research agent with a multi-step workflow and open-source
+  dataset. **Transformers.js** demos showcase text embeddings and image
+  segmentation in JavaScript. Research highlights include **Meta Meta-CoT** for
+  enhanced chain-of-thought reasoning, **DeepSeek V3**'s finetuning with domain
+  data and recursive self-improvement, and collaborative AI development
+  platforms. Industry partnerships include **Rakuten** with LangChain, **North**
+  with **RBC** for financial services, and **Agent Laboratory** collaborating
+  with **AMD** and **Johns Hopkins**. Technical discussions emphasize **CUDA**
+  and **Triton** for AI efficiency and evolving AI-assisted coding stacks using
+  models like **o1** and **Claude 3.5 Sonnet**.
+companies:
+  - anthropic
+  - openai
+  - alibaba
+  - microsoft
+  - cohere
+  - langchain
+  - deepseek
+  - rakuten
+  - rbc
+  - amd
+  - johns-hopkins
+models:
+  - rstar-math
+  - o1-preview
+  - qwen2.5-plus
+  - qwen2.5-coder-32b-instruct
+  - phi-4
+  - claude-3.5-sonnet
+topics:
+  - math
+  - reinforcement-learning
+  - process-reward-model
+  - vision
+  - reasoning
+  - pretraining
+  - retrieval-augmented-generation
+  - automation
+  - multi-step-workflow
+  - open-source
+  - text-embeddings
+  - image-segmentation
+  - chain-of-thought
+  - multimodal-reasoning
+  - finetuning
+  - recursive-self-improvement
+  - collaborative-platforms
+  - cuda
+  - triton
+  - ai-assisted-coding
+people:
+  - reach_vb
+  - akshaykagrawal
+  - arankomatsuzaki
+  - tom_doerr
+  - aidangomez
+  - rasbt
+  - hkproj
+  - andrewyng
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**more PRMs are all you need?**
 

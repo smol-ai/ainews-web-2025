@@ -1,13 +1,60 @@
 ---
 id: 5e1b2ebb-d5fe-478b-80e9-9859650de1b2
-title: '[AINews] RWKV "Eagle" v5: Your move, Mamba'
+title: 'RWKV "Eagle" v5: Your move, Mamba'
 date: '2024-01-30T01:20:56.614558Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mamba-meets-rwkv-eagle-v5
+description: >-
+  **RWKV v5 Eagle 7B** was released, outperforming **mistral-7b** in
+  multilingual benchmarks but trading off some English performance. Discussions
+  around **miqu-1-70b** speculate it might be a leak or distillation of
+  **Mistral Medium** or a fine-tuned **llama-2** model. Community interest in
+  fine-tuning techniques highlights the effectiveness of **1,000 high-quality
+  prompts** over larger mixed-quality datasets, with tools like **Deepspeed**,
+  **Axolotl**, and **QLoRA** being popular. The impact of **Rotary Position
+  Embedding (RoPE) theta settings** on LLM extrapolation was noted, especially
+  for **Mistral Instruct v0.2**. Speed improvements in **Mistral Tuna** kernels
+  reduce token processing costs, enhancing efficiency. Resources like
+  **LangChain**, **GPT-4**, and Andrej Karpathy’s zero to hero series support AI
+  engineering and model training.
+companies:
+  - eleutherai
+  - hugging-face
+  - mistral-ai
+  - nous-research
+  - rwkv
+  - thebloke
+  - langchain-ai
+  - openai
+models:
+  - rwkv-v5
+  - mistral-7b
+  - miqu-1-70b
+  - mistral-medium
+  - llama-2
+  - mistral-instruct-v0.2
+  - mistral-tuna
+  - gpt-4
+  - kunoichi-dpo-v2-7b
+topics:
+  - fine-tuning
+  - multilinguality
+  - rotary-position-embedding
+  - model-optimization
+  - model-efficiency
+  - quantization
+  - speed-optimization
+  - prompt-engineering
+  - roleplay
+  - text-to-speech
+  - ai-engineering
+  - model-training
+people:
+  - karpathy
+  - dreamgen
+  - euclaise
+  - carsonpoole
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/27-28/2024. We checked **20** guilds, **297** channels, and **10073** messages for you. Estimated reading time saved (at 200wpm): **826 minutes**. We are pinning our GPT4T version to 1106 for now, given [the slight regression in summarization quality from last week's A/B test](https://twitter.com/swyx/status/1751031903141208435) (More research to be performed, stay tuned)
 

@@ -1,13 +1,59 @@
 ---
 id: 46de1d43-b10e-4ea3-92b0-03485362004d
-title: '[AINews] Trust in GPTs at all time low'
+title: Trust in GPTs at all time low
 date: '2024-02-02T03:25:24.640203Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-trust-in-gpts-at-all-time-low
+description: >-
+  **21** Discord guilds, **312** channels, and **8530** messages were analyzed,
+  revealing critical feedback on GPTs and the GPT store since their release
+  about 3 months ago. Notably, **OpenAI's** GPTs face criticism for context
+  management issues in retrieval-augmented generation (RAG) systems, as
+  highlighted by **Nick Dobos**. The community discusses GPU server
+  cost-efficiency with **Xeon** processors, and model performance comparisons
+  among **Llama3**, **Mistral Medium**, **LLaVA-1.6**, and **Gemini Pro**. The
+  leaked **Miqu** 70B model sparked debate on origins and performance, with
+  fine-tuning challenges on **TinyLlama** and model merging techniques like
+  **Harmony-4x7B-bf16** being explored. **Nous Research AI** community debates
+  style influence in LLMs, quantization effects, and incentives in decentralized
+  AI networks like **Bittensor**. The release of the **Open Hermes 2.5** dataset
+  on **Hugging Face** was also announced. *"Miqu has been identified as Mistral
+  Medium"* and *"AI Grant is highlighted as an accelerator offering funding for
+  AI startups"*.
+companies:
+  - openai
+  - huggingface
+  - nous-research
+  - mistral-ai
+  - bittensor
+models:
+  - llama-3
+  - mistral-7b
+  - llava-1.6
+  - gemini-pro
+  - miqu-70b
+  - tinyllama
+  - harmony-4x7b-bf16
+  - smaug-34b-v0.1
+  - miqumaid
+  - euryale
+topics:
+  - context-management
+  - retrieval-augmented-generation
+  - fine-tuning
+  - model-merging
+  - quantization
+  - dataset-release
+  - gpu-servers
+  - model-performance
+  - incentives
+  - open-source-models
+people:
+  - nickadobos
+  - manojbh
+  - teknium
+  - arthurmensch
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/31/2024. We checked **21** guilds, **312** channels, and **8530** messages for you. Estimated reading time saved (at 200wpm): **628 minutes**.
 

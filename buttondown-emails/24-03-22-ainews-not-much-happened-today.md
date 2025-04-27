@@ -1,13 +1,46 @@
 ---
 id: e716fd7e-b73f-42dd-a92e-459827abadab
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-03-22T23:55:31.644920Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-2070
+description: >-
+  **Reddit** discussions focus on **fine-tuning** and **training** of **LLMs**
+  like **llama.cpp** and **Gemma**, including queries about training on
+  dictionaries and generating large-scale synthetic data with **Mixtral**
+  models. Users explore **retrieval-augmented generation (RAG)** with
+  **mistral-7b**, embedding generation on EEG brain activity, and challenges in
+  RAG query results. Hardware optimization for **llama-2-70b** and performance
+  benchmarking for **ollama** models on **Nvidia 4090** GPUs and **Qwen1.5**
+  models are also discussed. Extensions such as adding vision to **llama-2-7b**
+  to create **LLaVA** and improving model memory are topics of interest. *"Great
+  video on understanding why your RAG/LLM combo isn't working"* highlights the
+  importance of fine-tuning combined with RAG.
+companies:
+  - microsoft
+  - mistral-ai
+  - nvidia
+  - ollama
+  - qwen
+  - llamaindex
+models:
+  - llama-2-70b
+  - llama-2-7b
+  - mistral-7b
+  - mixtral
+  - qwen-1.5
+topics:
+  - fine-tuning
+  - training-data
+  - synthetic-data
+  - retrieval-augmented-generation
+  - embeddings
+  - hardware-optimization
+  - benchmarking
+  - memory-optimization
+  - multimodality
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/21/2024-3/22/2024. We checked [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**341** channels, and **5210** messages) for you. Estimated reading time saved (at 200wpm): **526 minutes**.
 

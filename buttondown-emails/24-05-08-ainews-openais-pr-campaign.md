@@ -1,13 +1,49 @@
 ---
 id: 83587f5f-161d-4ad4-b361-0683bc3549d3
-title: '[AINews] OpenAI''s PR Campaign?'
+title: OpenAI's PR Campaign?
 date: '2024-05-09T01:27:27.645324Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-1752
+description: >-
+  **OpenAI** faces user data deletion backlash over its new partnership with
+  StackOverflow amid **GDPR complaints** and **US newspaper lawsuits** accusing
+  it of unauthorized data scraping, while emphasizing trustworthiness through a
+  new Media Manager tool for content opt-in/out by 2025 and source link
+  attribution. **Microsoft** develops a top-secret airgapped **GPT-4** service
+  for US intelligence agencies. The newly introduced **OpenAI Model Spec**
+  explores responsible generation of NSFW content with alignment design
+  principles, as highlighted by **sama** and **Joanne Jang**. **Google
+  DeepMind** announces **AlphaFold 3**, a state-of-the-art model predicting
+  molecular structures with high accuracy, while research on **xLSTM** proposes
+  scaling LSTMs to billions of parameters, showing competitive performance
+  against transformers. Insights reveal that general-purpose AI architectures
+  like transformers and diffusion models can transfer knowledge across domains
+  such as life sciences.
+companies:
+  - openai
+  - microsoft
+  - google-deepmind
+models:
+  - gpt-4
+  - alphafold-3
+topics:
+  - data-privacy
+  - model-specification
+  - alignment
+  - multimodality
+  - memory-management
+  - scaling
+  - transformers
+  - long-short-term-memory
+  - model-architecture
+people:
+  - sama
+  - joannejang
+  - demishassabis
+  - omarsar0
+  - arankomatsuzaki
+  - drjimfan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 5/7/2024-5/8/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**419** channels, and **4079** messages) for you. Estimated reading time saved (at 200wpm): **463 minutes**.
 

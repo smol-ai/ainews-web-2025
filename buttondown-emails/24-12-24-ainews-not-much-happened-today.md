@@ -1,13 +1,64 @@
 ---
 id: f1113adc-bb26-471f-9805-0051137b076e
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-12-25T02:01:53.771765Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5863
+description: >-
+  **The Qwen team launched QVQ, a vision-enabled version of their experimental
+  QwQ o1 clone, benchmarking comparably to Claude 3.5 Sonnet.** Discussions
+  include Bret Taylor's insights on autonomous software development beyond the
+  Copilot era. The Latent Space LIVE! talks highlight **2024's best in AI
+  startups, vision, open models, post-transformers, synthetic data, smol models,
+  and agents.** Twitter recaps feature proposals for benchmarks measuring LLM
+  calibration and confidence in falsehoods, and the debut of QVQ outperforming
+  GPT-4o and Claude 3.5 Sonnet. OpenAI updates include new o3 and o3-mini models
+  and a deliberative alignment strategy. Collaborative projects like ASAL
+  involve MIT, OpenAI, and Swiss AI Lab IDSIA to automate artificial life
+  discovery. Personal stories reveal frustrations with USCIS green card denials
+  despite high qualifications. New tools GeminiCoder and a GDPR-compliant
+  contract review agent built with Reflex and Llama Index were introduced.
+  Holiday greetings and memes were also shared.
+companies:
+  - alibaba
+  - openai
+  - mit
+  - idsia
+  - llamaindex
+  - ollama
+models:
+  - qvq
+  - qwen-o1
+  - claude-3.5-sonnet
+  - gpt-4o
+  - o3
+  - o3-mini
+  - o1
+topics:
+  - vision
+  - benchmarking
+  - llm-calibration
+  - intentionality
+  - alignment-faking
+  - deliberative-alignment
+  - foundation-models
+  - artificial-life
+  - gdpr-compliance
+  - contract-review-agent
+  - app-creation
+  - multimodality
+people:
+  - tamaybes
+  - reach_vb
+  - brivaellp
+  - teortaxestex
+  - theturingpost
+  - sakanaailabs
+  - yuchenj_uw
+  - deedydas
+  - osanseviero
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet christmas eve is all you need.**
 

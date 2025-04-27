@@ -1,13 +1,45 @@
 ---
 id: d0f32680-11a3-4948-96e6-fe80c7b8e327
-title: '[AINews] 12/30/2023: Mega List of all LLMs'
+title: '12/30/2023: Mega List of all LLMs'
 date: '2023-12-31T10:23:31.628480Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12302023-mega-list-of-all-llms
+description: >-
+  **Stella Biderman**'s tracking list of LLMs was highlighted again in the
+  Eleuther discord, providing a useful resource for browsing. Notable image AI
+  activity was observed in **Huggingface**. The **Nous Research AI** Discord
+  featured detailed discussions on the **Local Attention Flax** module focusing
+  on computational complexity, with debates on linear vs quadratic complexity
+  and proposed chunking solutions. Benchmark logs for various LLMs including
+  **Deita v1.0** and its training method Deita SFT+DPO were shared. Projects
+  like **DRUGS**, **MathPile**, **Deita**, **CL-FoMo**, and **SplaTAM** were
+  discussed with emphasis on data quality and performance. Model merging
+  challenges, graded modal types, function calling, and data contamination in
+  **Mixtral** were explored. Community insights were sought on **Amazon Titan
+  Text Express** and **Amazon Titan Text Lite** LLMs, including a unique
+  training strategy involving bad datasets and a catalogue of ChatGPT missteps.
+companies:
+  - huggingface
+  - nous-research
+  - amazon
+models:
+  - deita-v1.0
+  - mixtral
+  - amazon-titan-text-express
+  - amazon-titan-text-lite
+topics:
+  - local-attention
+  - computational-complexity
+  - benchmarking
+  - model-merging
+  - training-data
+  - function-calling
+  - data-contamination
+people:
+  - stella_biderman
+  - euclaise
+  - joey00072
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Stella Biderman often mentions her tracking list of LLMs - it came up again today in the Eleuther discord. good to browse: https://docs.google.com/spreadsheets/d/1gc6yse74XCwBx028HV_cvdxwXkmXejVjkO-Mz2uwE0k/edit#gid=0
 

@@ -1,15 +1,67 @@
 ---
 id: 62cdab5a-9986-4b36-87d6-160445065bc1
-title: >-
-  [AINews] Cursor reaches >1000 tok/s finetuning Llama3-70b for fast file
-  editing
+title: Cursor reaches >1000 tok/s finetuning Llama3-70b for fast file editing
 date: '2024-05-17T00:50:41.737343Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-9199
+description: >-
+  **Cursor** announces a new speculative-decoding variant called **speculative
+  edits** for code editing that surpasses **GPT-4** and **GPT-4o** in accuracy
+  and latency, achieving speeds over **1000 tokens/s** on a 70b model.
+  **OpenAI** released **GPT-4o** with multimodal capabilities including audio,
+  vision, and text, noted to be **2x faster and 50% cheaper** than GPT-4 turbo
+  but with mixed coding performance. **Anthropic** rolls out streaming, forced
+  tool use, and vision features enhancing multimodal tool use. **Google
+  DeepMind** introduces **Imagen Video** and **Gemini 1.5 Flash**, a 1M-context
+  small model with fast performance. **Hugging Face** distributes $10M in free
+  GPUs to support open-source models like **Llama**, **BLOOM**, and **Stable
+  Diffusion**. Evaluation insights highlight LLMs' struggles with novel problems
+  and benchmark saturation, with new benchmarks like **MMLU-Pro** showing
+  significant performance drops.
+companies:
+  - cursor
+  - openai
+  - anthropic
+  - google-deepmind
+  - hugging-face
+models:
+  - gpt-4
+  - gpt-4o
+  - gpt-4-turbo
+  - claude-3-opus
+  - gemini-1.5-flash
+  - llama
+  - bloom
+  - stable-diffusion
+  - dall-e-mini
+topics:
+  - speculative-decoding
+  - code-edits
+  - multimodality
+  - image-generation
+  - streaming
+  - tool-use
+  - fine-tuning
+  - benchmarking
+  - model-performance
+  - evaluation
+  - synthetic-data
+  - context-windows
+people:
+  - sama
+  - imjaredz
+  - erhartford
+  - abacaj
+  - gdb
+  - goodside
+  - mbusigin
+  - alexalbert__
+  - drjwrae
+  - clementdelangue
+  - svpino
+  - maximelabonne
+  - _philschmid
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Speculative *edits* is all you need.**
 

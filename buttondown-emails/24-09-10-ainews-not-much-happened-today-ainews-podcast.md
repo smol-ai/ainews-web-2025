@@ -1,13 +1,60 @@
 ---
 id: 4166fea7-d8ed-4606-bb4c-3d44b0f7aa12
-title: '[AINews] not much happened today + AINews Podcast?'
+title: not much happened today + AINews Podcast?
 date: '2024-09-11T02:24:16.042126Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-ainews-podcast
+description: >-
+  **Glean** doubled its valuation again. **Dan Hendrycks' Superforecaster AI**
+  generates plausible election forecasts. A **Stanford** paper claims
+  **LLM-generated research ideas** are more novel than those by expert humans.
+  **SambaNova** announced faster **Llama 3** inference than **Cerebras**.
+  **Benjamin Clavie** gave a notable talk on **RAG** and **ColBERT/Late
+  Interaction**. **Strawberry** is launching in 2 weeks. **Google Illuminate**
+  offers AI-generated podcast discussions. **Apple** unveiled new AI features in
+  **iOS 18**, including visual intelligence and Siri improvements, with
+  on-device and cloud processing. The **Reflection 70B** model sparked
+  controversy over performance claims. Experts highlight the unreliability of
+  traditional benchmarks like **MMLU** and **HumanEval**, recommending
+  alternative evaluation methods such as **LMSys Chatbot Arena** and
+  **Lighteval** from **Hugging Face**. The AI research community discusses
+  evaluation improvements and innovation in AI-generated research ideas.
+companies:
+  - glean
+  - sambanova
+  - cerebras
+  - google
+  - apple
+  - huggingface
+  - stanford
+  - llmsys
+models:
+  - superforecaster-ai
+  - llama-3
+  - reflection-70b
+topics:
+  - evaluation
+  - research-ideas
+  - inference-speed
+  - rag
+  - colbert
+  - visual-intelligence
+  - on-device-ai
+  - benchmarking
+  - novelty
+  - model-performance
+people:
+  - dan_hendrycks
+  - benjamin_clavie
+  - swyx
+  - bindureddy
+  - borismpower
+  - corbtt
+  - drjimfan
+  - clementdelangue
+  - rohanpaul_ai
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**2 more weeks is all you need...**
 

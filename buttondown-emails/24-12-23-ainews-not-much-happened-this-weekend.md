@@ -1,13 +1,68 @@
 ---
 id: 4bde6599-04bd-4d95-aa5f-5e5e2f526cdb
-title: '[AINews] not much happened this weekend'
+title: not much happened this weekend
 date: '2024-12-24T01:01:31.548256Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-this-weekend-4954
+description: >-
+  **o3** model continues to generate discussion around its capabilities and
+  implications, with an OpenAI board member referencing "AGI". **LangChain**
+  released their **State of AI 2024** survey. **Hume** announced **OCTAVE**, a
+  3B parameter speech-language model for voice cloning. **x.ai** secured a $6B
+  Series C funding round. Twitter recaps highlight topics like **inference-time
+  scaling**, **model ensembles**, and surprising generalization abilities of
+  **small models**. New datasets like **FineMath** were released on **Hugging
+  Face**. Benchmarking between **AMD MI300X** and **Nvidia H100 + H200** GPUs
+  was shared, along with insights from a meeting with **AMD CEO Lisa Su**. Meta
+  introduced **Large Concept Models (LCM)** for decoupling reasoning from
+  language, and new methods like **Coconut** for latent space reasoning were
+  presented. These developments reflect ongoing innovation in model performance,
+  datasets, and AI tooling.
+companies:
+  - openai
+  - langchain-ai
+  - hume-ai
+  - x-ai
+  - huggingface
+  - amd
+  - nvidia
+  - meta-ai-fair
+models:
+  - o3
+  - o1
+  - opus
+  - sonnet
+  - octave
+  - fine-math
+topics:
+  - inference-time-scaling
+  - model-ensembles
+  - small-models
+  - generalization
+  - speech-language-models
+  - voice-cloning
+  - funding
+  - benchmarking
+  - latent-space-reasoning
+  - planning
+  - mechanistic-interpretability
+  - dataset-release
+  - agent-frameworks
+people:
+  - davidsholz
+  - shunyuyao12
+  - kazuchitonm
+  - scaling01
+  - gallabytes
+  - clementdelangue
+  - mrdbourke
+  - dylan522p
+  - lisa_su
+  - perceptroninc
+  - aiatmeta
+  - _philschmid
+  - neelnanda5
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**o3 is all you need.**
 

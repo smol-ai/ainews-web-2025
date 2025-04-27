@@ -1,15 +1,64 @@
 ---
 id: 8e70e6f1-f2bd-4ccd-923a-0f2d00840700
 title: >-
-  [AINews] Gemini Nano: 50-90% of Gemini Pro, <100ms inference, on device, in
-  Chrome Canary
+  Gemini Nano: 50-90% of Gemini Pro, <100ms inference, on device, in Chrome
+  Canary
 date: '2024-06-25T07:02:13.519492Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-nano-50-90-of-gemini-pro-100ms
+description: >-
+  **Gemini Nano** is now accessible in the latest **Chrome Canary** via a
+  feature flag, offering a prompt API and on-device optimization guide. The Nano
+  models, quantized at 4bit with **1.8B** and **3.25B** parameters, show
+  competitive performance relative to Gemini Pro. The base and instruct-tuned
+  model weights have been extracted and shared on **HuggingFace**. **Anthropic**
+  launched **Claude 3.5 Sonnet**, which outperforms **GPT-4o** on some
+  benchmarks, runs twice as fast as Claude 3 Opus, and is free to try.
+  **DeepSeek-Coder-V2** achieves **90.2% on HumanEval** and **75.7% on MATH**,
+  surpassing GPT-4-Turbo-0409, with models up to **236B parameters** and **128K
+  context length**. **Zhipu AI/Tsinghua's GLM-0520** ranks highly in coding
+  benchmarks. **NVIDIA** announced **Nemotron-4 340B**, an open model family for
+  synthetic data generation. New research includes **TextGrad** for automatic
+  differentiation on textual feedback, **PlanRAG** for iterative plan-then-RAG
+  decision making, a **goldfish loss** method to mitigate memorization in LLMs,
+  and a tree search algorithm for LM agents to improve inference-time
+  exploration.
+companies:
+  - google
+  - gemini
+  - huggingface
+  - anthropic
+  - lmsys
+  - deepseek
+  - zhipu-ai
+  - tsinghua
+  - nvidia
+models:
+  - gemini-nano
+  - claude-3.5-sonnet
+  - claude-3-opus
+  - gpt-4o
+  - deepseek-coder-v2
+  - glm-0520
+  - nemotron-4-340b
+  - gpt-4-turbo-0409
+topics:
+  - model-quantization
+  - prompt-api
+  - on-device-ai
+  - model-performance
+  - coding-benchmarks
+  - synthetic-data
+  - automatic-differentiation
+  - retrieval-augmented-generation
+  - mitigating-memorization
+  - tree-search
+  - inference-optimization
+people:
+  - adcock_brett
+  - dair_ai
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**window.ai.createTextSession() is all you need**
 

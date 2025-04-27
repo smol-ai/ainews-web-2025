@@ -1,13 +1,44 @@
 ---
 id: a5eeac59-20ea-4d49-8be6-6de29731d4ed
-title: '[AINews] 12/11/2023: Mixtral beats GPT3.5 and Llama2-70B'
+title: '12/11/2023: Mixtral beats GPT3.5 and Llama2-70B'
 date: '2023-12-11T20:11:07.966684Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12112023-mixtral-beats-gpt35-and-llama2-70b
+description: >-
+  **Mistral AI** announced the **Mixtral 8x7B** model featuring a high-quality
+  Sparse Mixture of Experts (SMoE) architecture, sparking discussions about its
+  potential to rival **GPT-4**. The community debated GPU hardware options for
+  training and fine-tuning transformer models, including **RTX 4070s**,
+  **A4500**, **RTX 3090s with nvlink**, and **A100** GPUs. Interest was
+  expressed in fine-tuning Mixtral, generating quantized versions, and curating
+  high-quality coding datasets. Resources shared include a GitHub repo for
+  role-playing with LLMs, an Arxiv paper, and a blog post on Mixture-of-Experts.
+  Discussions also touched on potential open-source releases of **GPT-3.5
+  Turbo** and **llama-3**. The **Nous Research AI** Discord community actively
+  exchanged insights on hardware, model deployment, and open-source AI
+  development.
+companies:
+  - mistral-ai
+  - openai
+  - huggingface
+  - nous-research
+models:
+  - mixtral-8x7b
+  - gpt-4
+  - gpt-3.5-turbo
+  - llama-3
+topics:
+  - gpu-hardware
+  - transformers
+  - fine-tuning
+  - mixture-of-experts
+  - quantization
+  - coding-datasets
+  - open-source-models
+  - model-deployment
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->These are the key results from [the Mixtral blogpost](https://mistral.ai/news/mixtral-of-experts/):
 

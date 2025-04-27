@@ -1,13 +1,50 @@
 ---
 id: 6c90b0ac-22eb-4f4b-92d1-4a9d069e7cd1
-title: '[AINews] SciCode: HumanEval gets a STEM PhD upgrade'
+title: 'SciCode: HumanEval gets a STEM PhD upgrade'
 date: '2024-07-17T02:04:35.319219Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-5745
+description: >-
+  **PhD-level benchmarks** challenge leading LLMs like **GPT-4** and **Claude
+  3.5 Sonnet**, which score below 5% on the new **SciCode** benchmark designed
+  for scientific coding problems from advanced papers, including Nobel-winning
+  research. **Anthropic** doubled the max output token limit for **Claude 3.5
+  Sonnet** to 8192 tokens in their API. **Q-GaLore** enables training
+  **LLaMA-7B** on a single 16GB GPU using low precision and lazy layer-wise
+  subspace exploration. The **Mosaic compiler** now generates efficient code for
+  **NVIDIA H100** GPUs, showing convergence of AI accelerators. The **Dolphin
+  2.9.3-Yi-1.5-34B-32k-GGUF** model on **Hugging Face** has over 111k downloads
+  last month. **Llama 3** achieves 90% zero-shot accuracy on the **MATH**
+  dataset. Discussions continue on the limitations and forms of synthetic data
+  for training.
+companies:
+  - anthropic
+  - hugging-face
+  - nvidia
+  - mistral-ai
+models:
+  - gpt-4
+  - claude-3.5-sonnet
+  - llama-7b
+  - llama-3
+  - dolphin-2.9.3-yi-1.5-34b-32k-gguf
+topics:
+  - benchmarking
+  - fine-tuning
+  - model-training
+  - model-performance
+  - gpu-optimization
+  - synthetic-data
+  - code-generation
+  - model-optimization
+  - reinforcement-learning
+people:
+  - rohanpaul_ai
+  - alexalbert__
+  - tri_dao
+  - awnihannun
+  - abacaj
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**PhD-level benchmarks are all you need.**
 

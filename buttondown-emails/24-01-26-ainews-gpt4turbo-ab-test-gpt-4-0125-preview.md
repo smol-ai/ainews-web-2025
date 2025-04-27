@@ -1,13 +1,52 @@
 ---
 id: 953e5a59-b782-442b-a642-7d27de68d9a4
-title: '[AINews] GPT4Turbo A/B Test: gpt-4-0125-preview'
+title: 'GPT4Turbo A/B Test: gpt-4-0125-preview'
 date: '2024-01-26T22:48:31.081164Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt4turbo-ab-test-gpt-4-0125-preview
+description: >-
+  **OpenAI** released a new **GPT-4 Turbo** version in January 2024, prompting
+  community experiments in summarization and discussions on API processing
+  speeds and limitations. The **UnSloth** project is advancing *limited
+  multi-GPU support* targeting Google Colab users, while AI models like **Tiny
+  Llama** and **Mistral** are being run on unconventional hardware such as the
+  Nintendo Switch. Model configuration techniques involving **exllama**,
+  **bagel**, and **dolphin** were explored, alongside innovative model merging
+  methods like DARE and SLERP. Challenges with large text transcription
+  highlight the transition from **GPT-3.5** to **GPT-4 Turbo** for better
+  context window handling. **Nous Research AI** showcased extended context
+  capabilities with **LLaMA-2-7B-Chat** reaching a **16,384** token window and
+  promoted fine-tune-free methods like **SelfExtend**. Discussions also touched
+  on chatbot persona creation and cost-performance trade-offs in AI model usage.
+companies:
+  - openai
+  - unsloth
+  - hugging-face
+  - nous-research
+models:
+  - gpt-4-turbo
+  - gpt-4-1106-preview
+  - gpt-3.5
+  - llama-2-7b-chat
+  - tiny-llama
+  - mistral-7b
+  - exllama
+  - bagel
+  - dolphin
+topics:
+  - multi-gpu-support
+  - model-configuration
+  - model-merging
+  - fine-tuning
+  - context-window
+  - text-transcription
+  - chatbot-personas
+  - cost-considerations
+  - api
+  - model-optimization
+people:
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/25/2024. We checked **20** guilds, **297** channels, and **5875** messages for you. Estimated reading time saved (at 200wpm): **555 minutes**.
 

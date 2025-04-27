@@ -1,13 +1,50 @@
 ---
 id: 2bb5808c-a173-4e92-8a75-1e22651b1692
-title: '[AINews] Microsoft AgentInstruct + Orca 3'
+title: Microsoft AgentInstruct + Orca 3
 date: '2024-07-16T00:42:03.637767Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-microsoft-agentinstruct-orca-3
+description: >-
+  **Microsoft Research** released **AgentInstruct**, part of the **Orca**
+  series, introducing a generative teaching pipeline that produces **25.8
+  million** synthetic instructions to fine-tune **Mistral 7b**, achieving
+  significant improvements on benchmarks like **AGIEval (+40%)**, **MMLU
+  (+19%)**, and **GSM8K (+54%)** with reduced hallucinations. This synthetic
+  dataset approach follows successes like **FineWeb** and **Apple's Rephrasing
+  research** in improving dataset quality. Additionally, **Tencent** claims a
+  dataset with **1 billion diverse personas**. The news also covers AI Twitter
+  discussions including a shooting incident at a Trump rally and highlights from
+  recent ML research such as **RankRAG**, **RouteLLM**, **FlashAttention-3**,
+  and **Mixture of A Million Experts**.
+companies:
+  - microsoft-research
+  - apple
+  - tencent
+  - huggingface
+models:
+  - mistral-7b
+  - orca-1
+  - orca-2
+  - orca-math
+topics:
+  - synthetic-data
+  - fine-tuning
+  - instruction-following
+  - transformers
+  - model-training
+  - benchmarking
+  - hallucination-detection
+  - model-performance
+  - multimodality
+  - reinforcement-learning
+people:
+  - _philschmid
+  - sama
+  - rohanpaul_ai
+  - bindureddy
+  - zachtratar
+  - dair_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Generative Teaching is all you need.**
 

@@ -1,15 +1,48 @@
 ---
 id: e46d711c-9bcd-4063-a752-d4e2a7ee14a8
-title: >-
-  [AINews] Llama 3.1 Leaks: big bumps to 8B, minor bumps to 70b, and SOTA OSS
-  405b model
+title: 'Llama 3.1 Leaks: big bumps to 8B, minor bumps to 70b, and SOTA OSS 405b model'
 date: '2024-07-23T01:12:50.598107Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-llama-31-leaks
+description: >-
+  **Llama 3.1** leaked early with key updates including **128k context length**,
+  **multilingual text and code output**, and training on **39.3M GPU hours**
+  with **15 trillion tokens** and **25M synthetic examples**. The **8B and 70B
+  models** show significant benchmark improvements, with some evals suggesting
+  **Llama 3.1 70B** may outperform **GPT-4o**. **GPT-4o Mini** launched as a
+  cheaper, compact variant with strong performance but some reasoning
+  weaknesses. Synthetic datasets like **NuminaMath** enable models such as
+  **Alibaba Qwen 2** to surpass GPT-4o and Claude 3.5 in math competitions.
+  Community efforts focus on reasoning task benchmarks and dataset building.
+companies:
+  - meta-ai-fair
+  - openai
+  - alibaba
+models:
+  - llama-3-1-8b
+  - llama-3-1-70b
+  - llama-3-1-405b
+  - gpt-4o-mini
+  - qwen-2
+topics:
+  - multilinguality
+  - context-window
+  - synthetic-data
+  - benchmarking
+  - reasoning
+  - fine-tuning
+  - model-performance
+  - dataset-release
+  - math
+  - model-training
+people:
+  - swyx
+  - _philschmid
+  - jjitsev
+  - _lewtun
+  - teknium1
+  - adcock_brett
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**TODO: ONELINE SUBTITLE**
 

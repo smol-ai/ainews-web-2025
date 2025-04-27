@@ -1,13 +1,60 @@
 ---
 id: f2aa0ef6-e431-40e9-97a8-a466b41c6991
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-30T01:07:40.495919Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-2391
+description: >-
+  **DeepSeek-R1 and DeepSeek-V3** models have advanced significantly, trained on
+  an **instruction-tuning dataset of 1.5M samples** with substantial
+  post-training data including **600,000 reasoning** and **200,000 non-reasoning
+  SFT samples**. The models demonstrate strong **performance benchmarks** and
+  are deployed on-premise via collaborations with **Dell** and **Hugging Face**.
+  Training costs are estimated around **$5.5M to $6M**, with efficient hardware
+  utilization on **8xH100 servers**. The **International AI Safety Report**
+  highlights risks such as **malicious use**, **malfunctions**, and **systemic
+  risks** including **AI-driven cyberattacks** and **environmental impacts**.
+  Industry leaders like **Yann LeCun** and **Yoshua Bengio** provide insights on
+  market reactions, AI safety, and ethical considerations, emphasizing that **AI
+  tools assist human creativity without diminishing copyright protection**.
+  Rumors about **Grok 3** and **o3-mini** models continue to circulate.
+companies:
+  - deepseek
+  - hugging-face
+  - dell
+  - openai
+models:
+  - deepseek-r1
+  - deepseek-v3
+  - grok-3
+  - o3-mini
+topics:
+  - instruction-tuning
+  - performance
+  - model-deployment
+  - training-costs
+  - hardware-utilization
+  - ai-safety
+  - risk-mitigation
+  - ethics
+  - open-source
+  - collaboration
+people:
+  - arankomatsuzaki
+  - alexandr_wang
+  - teknium1
+  - osanseviero
+  - teortaxesTex
+  - giffmana
+  - marktenenholtz
+  - clementdelangue
+  - yoshua_bengio
+  - markchen90
+  - c_valenzuelab
+  - ylecun
+  - fchollet
+  - scaling01
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Secure endpoints are all you need.**
 

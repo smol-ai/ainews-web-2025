@@ -1,13 +1,53 @@
 ---
 id: 4dcd1116-354d-4411-a04f-1540071c64db
-title: '[AINews] 1/16/2024: ArtificialAnalysis - a new model/host benchmark site'
+title: '1/16/2024: ArtificialAnalysis - a new model/host benchmark site'
 date: '2024-01-17T22:14:53.491208Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1162024-artificialanalysis-a-new-modelhost
+description: >-
+  **Artificial Analysis** launched a new models and hosts comparison site,
+  highlighted by **swyx**. **Nous Research AI** Discord discussed innovative
+  **summarization strategies** using *3090 and 2080ti NVIDIA GPUs* for
+  processing 100k tokens, and adapting prompts for smaller models like *7B* with
+  **OpenChat** showing strong performance. The availability of **Hermes 2
+  Mixtral** on Huggingface's **HuggingChat** platform was noted, alongside
+  fine-tuning challenges using Axolotl. Discussions included **byte-level
+  tokenization** with **Mistral** variants, multimodal training on *COCO image
+  bytes*, and inference speed improvements using tools like *vllm* and
+  *llama.cpp*. Calls for **transparency in data hoarding** and open-sourcing of
+  **Hermes 2 - Mixtral** datasets were emphasized, with comparisons of *dpo* and
+  *sft* methods and quantized LLM use on *M1 MacBook Pro* with models like
+  *laserxtral*.
+companies:
+  - nous-research
+  - nvidia
+  - huggingface
+  - openchat
+  - mistral-ai
+models:
+  - mixtral
+  - hermes-2-mixtral-8x7b
+  - mistral-7b
+  - openchat-7b
+  - laserxtral
+topics:
+  - summarization
+  - gpu-acceleration
+  - fine-tuning
+  - byte-level-tokenization
+  - multimodality
+  - inference-speed
+  - dataset-release
+  - quantization
+people:
+  - swyx
+  - gabriel_syme
+  - manojbh
+  - carsonpoole
+  - _3sphere
+  - fullstack6209
+  - teknium
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> We checked **19** guilds, **285** channels, and **4981** messages for you. Estimated reading time saved (at 200wpm): **436 minutes**. No TheBloke discord today because it was too active and we ran in to token limit issues. We will try to recursively summarize tomorrow.
 

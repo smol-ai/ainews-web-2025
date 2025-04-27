@@ -1,13 +1,62 @@
 ---
 id: ecf9bc48-0db1-4ed2-b326-536bd9bc10ee
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-09-26T22:52:11.195444Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-not-much-happened-today-2295
+description: >-
+  **Meta AI** released **Llama 3.2** models including **1B, 3B, 11B, and 90B**
+  parameter variants supporting **128K token context length** and multimodal
+  tasks with adapter layers for vision. These models outperform or compete with
+  **Gemma 2**, **Phi 3.5-mini**, **Claude 3 Haiku**, and **GPT4o-mini**. They
+  have broad ecosystem support including **AWS, Azure, Google Cloud**, and are
+  open source on **llama.com** and **Hugging Face**. **OpenAI CTO Mira Murati**
+  announced her departure amid management changes. **Allen AI** released
+  **Molmo**, an open-source multimodal model family reportedly outperforming
+  proprietary systems. **Google DeepMind** updated **Gemini 1.5** with Flash and
+  Pro models offering competitive performance and pricing. **Meta** previewed
+  **Project Orion AR glasses** and hinted at a **Quest 3S** priced at $300.
+  Discussions continue on multimodal benchmarks, model optimization, and AI
+  safety/alignment.
+companies:
+  - meta-ai-fair
+  - openai
+  - allenai
+  - google-deepmind
+  - weights-biases
+  - hugging-face
+models:
+  - llama-3-1-1b
+  - llama-3-1-3b
+  - llama-3-11b
+  - llama-3-90b
+  - gemma-2-2b
+  - phi-3-5-mini
+  - claude-3-haiku
+  - gpt-4o-mini
+  - molmo
+  - gemini-1-5
+  - llama-3-2
+topics:
+  - multimodality
+  - model-optimization
+  - fine-tuning
+  - model-distillation
+  - pruning
+  - benchmarking
+  - ai-safety
+  - alignment
+  - vision
+  - context-windows
+people:
+  - sama
+  - gdb
+  - miramurati
+  - rohanpaul_ai
+  - demishassabis
+  - ylecun
+  - mustafasuleyman
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day is all you need.**
 

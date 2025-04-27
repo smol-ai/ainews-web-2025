@@ -1,13 +1,59 @@
 ---
 id: 49d4d626-b51f-4b3e-b637-b3fe84795ce5
-title: '[AINews] Nothing much happened today'
+title: Nothing much happened today
 date: '2024-07-11T01:15:43.889022Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-nothing-much-happened-today
+description: >-
+  **HuggingFace** released a browser-based timestamped Whisper using
+  transformers.js. A Twitter bot by **truth_terminal** became the first
+  "semiautonomous" bot to secure VC funding. **Microsoft** and **Apple**
+  abruptly left the **OpenAI** board amid regulatory scrutiny. **Meta** is
+  upgrading Reddit comments following hallucination discussions. The **Yi
+  model** gained popularity on GitHub with 7.4K stars and 454 forks, with
+  potential integration of **Axolotl's pregeneration** and preprocessing
+  features. **AMD** technologies enable household/small business AI appliances.
+  **Meta** released **Chameleon-7b** and **Chameleon-30b** models on HuggingFace
+  supporting unified text-image tokenization. **Salesforce's xLAM-1b**
+  outperforms **GPT-3.5** in function calling despite its smaller size.
+  **Anole** pioneered open-source multimodal LLM supporting text-image-video
+  generation at 720p 144fps. **Phi-3 Mini** expanded from 3.8B to 4.7B
+  parameters with function calling, competing with **Mistral-7b v3**.
+companies:
+  - huggingface
+  - truth_terminal
+  - microsoft
+  - apple
+  - openai
+  - meta-ai-fair
+  - yi
+  - axolotl
+  - amd
+  - salesforce
+  - anole
+  - mistral
+models:
+  - chameleon-7b
+  - chameleon-30b
+  - xlam-1b
+  - gpt-3.5
+  - phi-3-mini
+  - mistral-7b
+topics:
+  - function-calling
+  - multimodality
+  - model-releases
+  - model-updates
+  - model-integration
+  - model-performance
+  - open-source-models
+  - model-scaling
+  - transformers
+  - reinforcement-learning
+people:
+  - jaseweston
+  - cognitivecompai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**ZZzzzzz.**
 

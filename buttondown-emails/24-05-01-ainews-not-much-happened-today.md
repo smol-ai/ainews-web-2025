@@ -1,13 +1,64 @@
 ---
 id: 97bbb126-3d3f-4d51-bfc9-052241177490
-title: '[AINews] Not much happened today'
+title: Not much happened today
 date: '2024-05-02T00:47:12.556282Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-2666
+description: >-
+  **Anthropic** released a team plan and iOS app about 4 months after
+  **OpenAI**. The **Command-R 35B** model excels at creative writing,
+  outperforming larger models like **Goliath-120** and **Miqu-120**. The
+  **Llama-3 8B** model now supports a 1 million token context window, improving
+  long-context understanding with minimal training on a single 8xA800 GPU.
+  **TensorRT-LLM** benchmarks show it is 30-70% faster than **llama.cpp** on
+  consumer hardware. A benchmark suggests **GPT2-Chat** may have better
+  reasoning than **GPT-4-Turbo**, though results are debated. Demos include a
+  self-learning **Llama-3** voice agent with function calling and a
+  Self-Learning Large Action Model (LAM). **Amazon CodeWhisperer** was renamed
+  to **Q Developer**, expanding generative AI assistant functions. **Apple**
+  plans an AI-enabled Safari browser with on-device LLM in iOS 18 and macOS 15.
+  Big Tech dominates AI lobbying in Washington, while major U.S. newspapers sued
+  **OpenAI** and **Microsoft** for copyright infringement. **DeepMind's
+  AlphaZero** became the greatest chess player in 9 hours, and their
+  **Naturalized Execution Tuning (NExT)** method improves LLM code reasoning by
+  14-26%. **Stable Diffusion** is used for diverse image generation
+  applications.
+companies:
+  - anthropic
+  - openai
+  - amazon
+  - apple
+  - microsoft
+  - deepmind
+models:
+  - command-r-35b
+  - goliath-120
+  - miqu-120
+  - llama-3-8b
+  - tensorrt-llm
+  - llama-cpp
+  - gpt2-chat
+  - gpt-4-turbo
+  - llama-3
+  - alphazero
+  - next
+topics:
+  - creative-writing
+  - context-windows
+  - benchmarking
+  - speed-optimization
+  - reasoning
+  - function-calling
+  - rag
+  - generative-ai
+  - on-device-ai
+  - ai-lobbying
+  - copyright-infringement
+  - self-learning
+  - code-reasoning
+  - image-generation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/30/2024-5/1/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**418** channels, and **5796** messages) for you. Estimated reading time saved (at 200wpm): **615 minutes**.
 

@@ -1,13 +1,48 @@
 ---
 id: 42e09d30-0605-4da8-921b-0e4cf2fd2c43
-title: '[AINews] 12/28/2023: Smol Talk updates'
+title: '12/28/2023: Smol Talk updates'
 date: '2023-12-29T10:32:18.263166Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12282023-smol-talk-updates
+description: >-
+  **Nous Research AI Discord** discussions covered **AI placement charts**,
+  **ChatGPT's** issues with **Latex math format** compatibility in **Obsidian**,
+  and performance metrics of the **TinyLlama 1.1B** model on various benchmarks
+  like **truthfulqa_mc** and **arc_challenge**. Users shared resources including
+  the **MathPile** math-centric corpus and debated decentralized computation for
+  models like **Mixtral**. Technical topics included **model conversion to
+  AWQ**, **token counting**, and **finetuning** strategies. The community also
+  discussed the **Obsidian** model, **TinyGPT-V** multimodal model release, and
+  philosophical aspects of AI sentience and vulnerabilities.
+companies:
+  - nous-research
+  - openai
+  - tyrannosaurus
+models:
+  - tinyllama-1.1b
+  - mixtral
+  - tinygpt-v
+topics:
+  - benchmarking
+  - latex
+  - model-conversion
+  - tokenization
+  - finetuning
+  - multimodality
+  - decentralized-computation
+  - philosophy-of-ai
+  - model-vulnerabilities
+people:
+  - teknium
+  - nonameusr
+  - ldj
+  - night_w0lf
+  - max_paperclips
+  - beowulfbr
+  - error.pdf
+  - skadeskoten
+  - metaldragon01
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Not much news today so a great time to improve the summary quality - we've improved the scraper's ability to reliably grab metadata from twitter for the summarizer to consume. And now we also spit out all links for easy browsing. Should be more readable/usable as a link surfacer now!
 

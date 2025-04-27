@@ -1,13 +1,55 @@
 ---
 id: cdeb5f79-6d6e-4d7a-a8eb-91e099ca1625
-title: '[AINews] Ring Attention for >1M Context'
+title: Ring Attention for >1M Context
 date: '2024-02-23T00:51:56.427034Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ring-attention-for-1m-context
+description: >-
+  **Gemini Pro** has highlighted the benefits of long context in language
+  models, inspiring a CUDA MODE Discord project to implement the RingAttention
+  paper by Liu, Zaharia, and Abbeel, with PyTorch implementations available from
+  LargeWorldModel and lucidrains. TheBloke Discord discussed topics including
+  **Nvidia's Chat with RTX**, **Polymind**, **deepseek-coder-6.7B-instruct**,
+  **Mistral** model access, and workflow challenges on Mac Studio involving
+  **ollama** and **llama.cpp**. Users debated chatbot UX, VRAM optimization,
+  fine-tuning for character roleplay using Dynamic Prompt Optimization (DPO),
+  and scaling inference with GPUs like the 4090 on runpod. LM Studio users face
+  manual update requirements for version 0.2.16, which includes **Gemma** model
+  support and bug fixes, with mixed feedback on **Gemma 7B** and positive notes
+  on **Gemma 2B** models.
+companies:
+  - nvidia
+  - deepseek
+  - mistral-ai
+  - ollama
+  - lmstudio
+  - cuda-mode
+  - lucidrains
+models:
+  - gemini-1.5-pro
+  - deepseek-coder-6.7b-instruct
+  - mistral-7b
+  - gemma-7b
+  - gemma-2b
+  - llama-cpp
+topics:
+  - long-context
+  - ring-attention
+  - pytorch
+  - fine-tuning
+  - dynamic-prompt-optimization
+  - vram-optimization
+  - chatbot-ux
+  - retrieval-augmented-generation
+  - scaling-inference
+  - gpu-deployment
+  - workflow-optimization
+  - model-updates
+people:
+  - superking__
+  - netrve
+  - dirtytigerx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/21/2024. We checked **20** guilds, **317** channels, and **8751** messages for you. Estimated reading time saved (at 200wpm): **796 minutes**. 
 

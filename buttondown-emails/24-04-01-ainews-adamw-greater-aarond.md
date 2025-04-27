@@ -1,13 +1,45 @@
 ---
 id: 915ba3cf-0b17-448d-b34b-30237a2a8c52
-title: '[AINews] AdamW -> AaronD?'
+title: AdamW -> AaronD?
 date: '2024-04-01T19:58:53.959019Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-adamw-aarond
+description: >-
+  **Aaron Defazio** is gaining attention for proposing a potential tuning-free
+  replacement for the long-standing **Adam optimizer**, showing promising
+  results across classic machine learning benchmarks like ImageNet ResNet-50 and
+  CIFAR-10/100. On Reddit, **Claude 3 Opus** has surpassed all **OpenAI** models
+  on the LMSys leaderboard, while a user pretrained a **LLaMA-based 300M** model
+  outperforming **bert-large** on language model evaluation tasks using a $500
+  budget and 4 x 4090 GPUs. The new **MambaMixer** architecture demonstrates
+  promising results in vision and time series forecasting. In image generation,
+  **Stable Diffusion 1.5** with LoRAs achieves realistic results, and the
+  **WDXL** release showcases impressive capabilities. AI applications include an
+  AI-generated **Nike** spec ad and a chatbot built with **OpenAI** models that
+  may resist prompt injections. OpenAI is reportedly planning a ban wave
+  targeting policy violations and jailbreak usage. *"The new LK-99"* analogy
+  highlights the significance of Defazio's optimizer work.
+companies:
+  - openai
+  - hugging-face
+  - llamaindex
+models:
+  - claude-3-opus
+  - llama-3-1-300m
+  - stable-diffusion-1.5
+  - wdxl
+topics:
+  - optimizer
+  - machine-learning-benchmarks
+  - vision
+  - time-series-forecasting
+  - image-generation
+  - prompt-injection
+  - policy-enforcement
+  - agentic-ai
+people:
+  - aaron_defazio
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/28/2024-4/1/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**381** channels, and **10260** messages) for you. Estimated reading time saved (at 200wpm): **1099 minutes**.
 

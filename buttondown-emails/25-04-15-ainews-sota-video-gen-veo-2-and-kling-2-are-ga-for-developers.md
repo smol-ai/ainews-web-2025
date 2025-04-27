@@ -1,13 +1,49 @@
 ---
 id: b7ff3b93-1a1c-4403-ac6d-b35b0a47052d
-title: '[AINews] SOTA Video Gen: Veo 2 and Kling 2 are GA for developers'
+title: 'SOTA Video Gen: Veo 2 and Kling 2 are GA for developers'
 date: '2025-04-16T05:55:06.551779Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-sota-video-gen-veo-2-and-kling-2-are-ga
+description: >-
+  **Google's Veo 2** video generation model is now available via the **Gemini
+  API** at a cost of **35 cents per second**, while China's **Kling 2** offers
+  video generation at about **$2 for a 10-second clip** with a minimum
+  subscription of $700 per month. **OpenAI** announced the **GPT-4.1 family**
+  including **GPT-4.1, GPT-4.1 mini, and GPT-4.1 nano**, featuring improvements
+  in **coding, instruction following, and a 1 million token context window**.
+  The GPT-4.1 models are **26% cheaper than GPT-4o** and will replace the
+  **GPT-4.5 Preview** API version by July 14. Performance benchmarks show
+  GPT-4.1 achieving **54-55% on SWE-bench verified** with some debate on its
+  coding performance compared to other models like DeepSeekV3. Key figures
+  include **@kevinweil**, **@stevenheidel**, and **@aidan_clark_** praising the
+  new models.
+companies:
+  - google
+  - openai
+  - deepseek
+  - google-deepmind
+models:
+  - gpt-4.1
+  - gpt-4o
+  - gpt-4.5
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - deepseek-v3
+  - veo-2
+  - kling-2
+topics:
+  - video-generation
+  - coding
+  - instruction-following
+  - context-windows
+  - model-deprecation
+  - benchmarking
+  - api
+people:
+  - kevinweil
+  - stevenheidel
+  - _aidan_clark_
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Lots of money is all you need.**
 

@@ -1,13 +1,49 @@
 ---
 id: 010a9b07-042e-4425-9fef-2806762d8754
-title: '[AINews] Apple Intelligence Beta + Segment Anything Model 2'
+title: Apple Intelligence Beta + Segment Anything Model 2
 date: '2024-07-30T02:45:55.827150Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-apple-intelligence
+description: >-
+  **Meta** advanced its open source AI with the **Segment Anything Model 2**,
+  enhancing image segmentation with memory attention for video using minimal
+  data and compute. **Apple Intelligence** delayed its official release to iOS
+  18.1 but launched developer previews on **MacOS Sequoia**, **iOS 18**, and
+  **iPadOS 18**, accompanied by a detailed 47-page paper revealing extensive
+  pretraining on **6.3 trillion tokens**, use of **Cloud TPU v4 and v5p
+  hardware**, and improvements via post-training and synthetic data. Despite
+  lower benchmark scores compared to **Llama 3**, Apple emphasizes strong human
+  evaluation results. Additionally, **Meta** released **Llama 3.1** with a 405B
+  parameter open-source model, marking a significant open frontier model
+  release.
+companies:
+  - meta-ai-fair
+  - apple
+  - google-deepmind
+models:
+  - llama-3-1-405b
+  - segment-anything-model-2
+topics:
+  - image-segmentation
+  - memory-attention
+  - video-processing
+  - pretraining
+  - synthetic-data
+  - post-training
+  - benchmarking
+  - human-evaluation
+  - cloud-tpu
+  - fine-tuning
+  - instruction-following
+  - reasoning
+  - writing
+  - model-release
+people:
+  - bindureddy
+  - maximelabonne
+  - reach_vb
+  - adcock_brett
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**The second largest LLM deployment of 2024 is so delayed/so here.**
 

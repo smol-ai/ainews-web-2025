@@ -1,13 +1,58 @@
 ---
 id: 20ffb8d1-e347-4153-9868-61e5ed39c855
-title: '[AINews] ChatGPT Advanced Voice Mode'
+title: ChatGPT Advanced Voice Mode
 date: '2024-09-25T01:31:24.268326Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-chatgpt-advanced-voice-mode
+description: >-
+  **OpenAI** launched the **ChatGPT Advanced Voice Mode** with 5 new voices and
+  improved accent/language support, available widely in the US. Ahead of rumored
+  **Llama 3** and **Claude 3.5** updates, **Gemini Pro** received a significant
+  price cut aligning with the intelligence frontier. **OpenAI's o1-preview
+  model** showed promising planning task performance with 52.8% accuracy on
+  Randomized Mystery Blocksworld. **Anthropic** is rumored to release a new
+  model, generating community excitement. **Qwen 2.5** was released in 1.5B, 7B,
+  and upcoming 32B sizes, matching GPT-4 0613 benchmarks and supporting up to
+  128K tokens. OpenAI released a **Multilingual MMLU dataset** covering 14
+  languages and 57 categories. RAGLAB framework was introduced for standardizing
+  Retrieval-Augmented Generation research. New AI tools include **PDF2Audio**
+  for converting PDFs to audio, an open-source AI starter kit for low-code
+  development, and **Moshi**, a speech-based AI assistant from Kyutai. **Scale
+  AI** reported nearly $1B ARR with 4x YoY growth, and **Together Enterprise
+  Platform** offers faster inference and cost reductions for GenAI processes.
+  Sam Altman's blog post on AI ethics and societal impact was also highlighted.
+companies:
+  - openai
+  - anthropic
+  - google-deepmind
+  - scale-ai
+  - togethercompute
+  - kyutai-labs
+models:
+  - o1-preview
+  - qwen-2.5
+  - llama-3
+  - claude-3.5
+topics:
+  - voice-synthesis
+  - planning
+  - multilingual-datasets
+  - retrieval-augmented-generation
+  - open-source
+  - speech-assistants
+  - enterprise-ai
+  - cost-reduction
+  - ai-ethics
+people:
+  - omarsar0
+  - bindureddy
+  - rohanpaul_ai
+  - _philschmid
+  - _akhaliq
+  - svpino
+  - ylecun
+  - alexandr_wang
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Patience is all you need, Jimmy.**
 

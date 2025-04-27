@@ -1,13 +1,56 @@
 ---
 id: 537664d4-7b41-43f8-a208-481226a82524
-title: '[AINews] Mergestral, Meta MTIAv2, Cohere Rerank 3, Google Infini-Attention'
+title: Mergestral, Meta MTIAv2, Cohere Rerank 3, Google Infini-Attention
 date: '2024-04-11T22:56:47.954323Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mergestral-meta-mtiav2-cohere-rerank-3
+description: >-
+  **Meta** announced their new **MTIAv2 chips** designed for training and
+  inference acceleration, though they are not commercially available.
+  **Mistral** released the **8x22B Mixtral** model, which was merged into a
+  dense 22B model by extracting a single expert. **Cohere** launched **Rerank
+  3**, a foundation model enhancing enterprise search and retrieval-augmented
+  generation (RAG) systems across 100+ languages. **Google** published a paper
+  on **Infini-attention**, an ultra-scalable linear attention mechanism
+  supporting models with up to 1 million sequence length. Additionally, **Meta's
+  Llama 3** open-source model rollout is expected next week. Minor updates
+  include performance benchmarks for **Mistral 8x22B**, the open-source
+  **Command R+** model surpassing GPT-4 in chatbot context length with 128k
+  tokens, and advances in Stable Diffusion image generation models like
+  **UniFL** and **CosXL** from Stability AI. Topics covered include model
+  merging, training accelerators, long-context transformers, retrieval-augmented
+  generation, and unified feedback learning for diffusion models.
+companies:
+  - meta-ai-fair
+  - mistral-ai
+  - cohere
+  - google
+  - stability-ai
+  - hugging-face
+models:
+  - mistral-8x22b
+  - mixtral-8x22b
+  - rerank-3
+  - infini-attention
+  - llama-3
+  - command-r-plus
+  - unifl
+  - cosxl
+topics:
+  - model-merging
+  - training
+  - model-architecture
+  - long-context
+  - reinforcement-learning
+  - retrieval-augmented-generation
+  - fine-tuning
+  - image-generation
+  - benchmarking
+people:
+  - ylecun
+  - aidan_mclau
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/10/2024-4/11/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**389** channels, and **4843** messages) for you. Estimated reading time saved (at 200wpm): **540 minutes**.
 

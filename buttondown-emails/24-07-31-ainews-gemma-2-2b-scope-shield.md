@@ -1,13 +1,60 @@
 ---
 id: 361c8ff4-c40f-435d-9744-2508f73ddec2
-title: '[AINews] Gemma 2 2B + Scope + Shield'
+title: Gemma 2 2B + Scope + Shield
 date: '2024-08-01T01:33:32.753297Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemma-2-2b-scope-shield
+description: >-
+  **Gemma 2B**, a distilled 2 billion parameter model trained on **2 trillion
+  tokens**, shows strong performance on the HF v2 Leaderboard and LMsys
+  benchmarks, despite weaknesses in math. The Gemma series, including **Gemma 2
+  9B** and **27B**, continues to gain popularity post Google I/O. The Gemma team
+  released **400 SAEs** for interpretability, inspired by **Anthropic's**
+  research, and introduced **ShieldGemma**, a finetuned classifier outperforming
+  Meta's LlamaGuard in harm detection. Meta's **Llama-3.1-405B** reached #3 on
+  the Overall Arena leaderboard, excelling in coding, math, and
+  instruction-following. Meta also launched **SAM 2**, a video and image
+  segmentation model with significant speed and interaction improvements. OpenAI
+  is rolling out an advanced **Voice Mode** for richer real-time conversations.
+  Perplexity AI launched a Publishers Program with major media partners and a
+  status page for product and API updates. NVIDIA's **Project GR00T** scales
+  robot data collection using Apple Vision Pro and generative simulation
+  frameworks. Interest in **quantization** for compressing LLMs is growing, and
+  implementations of **LLM-as-a-Judge** are being explored with models like
+  Vicuna and AlpacaEval. A new tool, **ComfyAGI**, enables generation of ComfyUI
+  workflows.
+companies:
+  - google
+  - meta-ai-fair
+  - openai
+  - perplexity-ai
+  - nvidia
+  - anthropic
+  - lmsys
+models:
+  - gemma-2-9b
+  - gemma-2-27b
+  - gemma-2-2b
+  - llama-3-1-405b
+  - sam-2
+  - vicuna
+  - alpacaeval
+topics:
+  - knowledge-distillation
+  - benchmarking
+  - interpretability
+  - fine-tuning
+  - harm-detection
+  - video-segmentation
+  - voice
+  - publishers-program
+  - robotics
+  - quantization
+  - llm-as-a-judge
+  - workflow-generation
+people:
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**2B params is all you need to beat GPT 3.5?**
 

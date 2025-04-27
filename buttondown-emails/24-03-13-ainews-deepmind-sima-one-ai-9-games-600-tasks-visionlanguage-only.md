@@ -1,13 +1,49 @@
 ---
 id: b0f21719-f41d-4a1e-ae08-1a52d609fd36
-title: '[AINews] DeepMind SIMA: one AI, 9 games, 600 tasks, vision+language ONLY'
+title: 'DeepMind SIMA: one AI, 9 games, 600 tasks, vision+language ONLY'
 date: '2024-03-14T01:07:46.703107Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepmind-sima-one-ai-9-games-600-tasks
+description: >-
+  **DeepMind SIMA** is a generalist AI agent for 3D virtual environments that
+  operates solely from screengrabs and natural language instructions, evaluated
+  on **600 tasks** across **9 games** with a performance of **34%** compared to
+  humans at **60%**. The system uses a multimodal Transformer architecture. Key
+  AI figures like **Andrej Karpathy**, **François Chollet**, and **Yann LeCun**
+  shared insights on AI autonomy in software engineering, AI architectures, and
+  training infrastructure, including Meta's **24k H100 Cluster Pods** for
+  **Llama-3** training. Notable demos include **Cognition Labs'** AI agent
+  surpassing human-level coding performance and **Deepgram's Aura** for
+  low-latency speech APIs. Memes and community engagement were also highlighted.
+companies:
+  - google-deepmind
+  - cognition
+  - deepgram
+  - modal-labs
+  - meta-ai-fair
+models:
+  - llama-3
+  - claude-3-opus
+topics:
+  - multimodality
+  - transformers
+  - software-engineering
+  - ai-autonomy
+  - model-training
+  - infrastructure
+  - speech-to-text
+  - text-to-speech
+  - real-time-processing
+  - benchmarking
+people:
+  - karpathy
+  - aravsrinivas
+  - fchollet
+  - ylecun
+  - svpino
+  - soumithchintala
+  - id_aa_carmack
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/12/2024-3/13/2024. We checked [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**336** channels, and **3167** messages) for you. Estimated reading time saved (at 200wpm): **376 minutes**.
 

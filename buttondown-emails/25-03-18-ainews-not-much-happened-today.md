@@ -1,13 +1,66 @@
 ---
 id: 4902af1b-518d-4dd7-98a2-de2a77bdb8d4
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-18T22:00:12.689005Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5716
+description: >-
+  At the Nvidia GTC event, **Google's Gemini 2.0 Flash** model introduced image
+  input/output capabilities, advancing multimodal language models, though
+  experts recommend using dedicated image generation models like **Imagen 3**
+  for text-to-image tasks. **Mistral AI** launched **Mistral Small 3.1** with a
+  128k token context window and competitive pricing, matching performance with
+  models like **GPT-4o mini** and **Claude 3.5 Haiku**. **Allen AI** released
+  the open LLM **OLMo-32B**, outperforming **GPT-4o mini** and **Qwen 2.5** with
+  cheaper pre-training costs. The image safety model **ShieldGemma 2** was
+  introduced for filtering unsafe content. **LangChainAI** announced updates
+  including the **Julian** tool powered by **LangGraph** and integration with
+  **AnthropicAI's MCP** for coding assistance. Jeremy Howard released
+  **fasttransform**, a Python library for reversible data transformations.
+  **Perplexity AI** partnered with **Kalshi** for NCAA basketball predictions.
+companies:
+  - nvidia
+  - google
+  - mistral-ai
+  - allen-ai
+  - langchain-ai
+  - anthropic
+  - perplexity-ai
+  - kalshi
+  - stripe
+  - qodoai
+models:
+  - gemini-2.0-flash
+  - imagen-3
+  - mistral-small-3.1
+  - mistral-3
+  - gpt-4o-mini
+  - claude-3.5-haiku
+  - olmo-32b
+  - qwen-2.5
+  - shieldgemma-2
+  - julian
+  - fasttransform
+topics:
+  - multimodality
+  - image-generation
+  - context-windows
+  - model-pricing
+  - open-source
+  - image-safety
+  - frameworks
+  - python-libraries
+  - coding-assistants
+  - data-transformation
+people:
+  - _akhaliq
+  - mervenoyann
+  - abacaj
+  - hwchase17
+  - jeremyphoward
+  - aidan_mclau
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Nvidia GTC day.**
 

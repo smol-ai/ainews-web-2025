@@ -1,13 +1,68 @@
 ---
 id: 55642e7a-1407-494d-bac5-6053afc28810
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-04T07:58:51.225259Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-4979
+description: >-
+  **Olmo 2** released a detailed tech report showcasing full pre, mid, and
+  post-training insights for a frontier fully open model. **PRIME**, an
+  open-source reasoning solution, achieved **26.7% pass@1**, surpassing
+  **GPT-4o** in benchmarks. Performance improvements include **Qwen 32B
+  (4-bit)** generating at **>40 toks/sec** on an **M4 Max** and **libvips**
+  being **25x faster** than **Pillow** for image resizing. New AI tools like
+  **Swaggo/swag** for Swagger 2.0 documentation, **Jujutsu (jj)** Git-compatible
+  VCS, and **Portspoof** security tool were introduced. Robotics advances
+  include a weapon detection system with a meters-wide field of view and faster
+  frame rates. Hardware benchmarks compared **H100** and **MI300x**
+  accelerators. Applications span medical error detection with PRIME and a
+  production AI financial agent integrating **LangChainAI** and **Vercel AI
+  SDK**. *"Breakthroughs in architectures akin to SSMs or RNNs might be
+  necessary,"* noted a critic on architectural stagnation.
+companies:
+  - olmo
+  - openai
+  - qwen
+  - cerebras
+  - langchain-ai
+  - vercel
+  - h100
+  - amd
+models:
+  - olmo-2
+  - prime
+  - gpt-4o
+  - qwen-32b
+topics:
+  - reasoning
+  - benchmarking
+  - optimization
+  - image-processing
+  - agent-frameworks
+  - version-control
+  - security
+  - robotics
+  - hardware-optimization
+  - medical-ai
+  - financial-ai
+  - software-development
+  - architecture
+people:
+  - _akhaliq
+  - _jasonwei
+  - vikhyatk
+  - awnihannun
+  - _arohan_
+  - tom_doerr
+  - hendrikbgr
+  - jerryjliu0
+  - adcock_brett
+  - shuchaobi
+  - stasbekman
+  - reach_vb
+  - virattt
+  - andrew_n_carr
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet week to start the year**
 

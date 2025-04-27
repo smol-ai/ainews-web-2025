@@ -1,13 +1,32 @@
 ---
 id: 9c3c47c6-79a3-4764-a3e0-5da15e724c97
-title: '[AINews] Dia de las Secuelas (StarCoder, The Stack, Dune, SemiAnalysis)'
+title: Dia de las Secuelas (StarCoder, The Stack, Dune, SemiAnalysis)
 date: '2024-03-01T00:14:08.280260Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-dia-de-las-secuelas-starcoder-the-stack
+description: >-
+  **HuggingFace/BigCode** has released **StarCoder v2**, including a **15B
+  parameter** model trained on **600+ programming languages** using the **The
+  Stack v2** dataset. This release marks a state-of-the-art model for its size,
+  with a detailed technical report available. The update was highlighted by
+  **Noah** from the team, and a live event featuring **Dylan Patel** is upcoming
+  in San Francisco.
+companies:
+  - hugging-face
+  - bigcode
+models:
+  - starcoder-2-15b
+  - starcoder-2-3b
+topics:
+  - code-generation
+  - dataset-release
+  - model-training
+  - model-release
+  - programming-languages
+people:
+  - thenoahhein
+  - dylan522p
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 2/28/2024. We checked [**356** Twitter feeds](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**351** channels, and **9043** messages) for you. Estimated reading time saved (at 200wpm): **860 minutes**. Today's Twitter summary is a big upgrade driven by [Noah](https://twitter.com/thenoahhein) on our team, give him feedback/brickbats.
 

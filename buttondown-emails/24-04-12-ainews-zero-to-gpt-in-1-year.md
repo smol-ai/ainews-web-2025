@@ -1,13 +1,53 @@
 ---
 id: 36826f16-41ad-4a33-8a5e-31b025f58f95
-title: '[AINews] Zero to GPT in 1 Year'
+title: Zero to GPT in 1 Year
 date: '2024-04-12T23:27:50.881515Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-zero-to-gpt-in-1-year
+description: >-
+  **GPT-4 Turbo** reclaimed the top leaderboard spot with significant
+  improvements in coding, multilingual, and math benchmarks, as announced by
+  **OpenAI** leaders including **@sama** and **@miramurati**. Despite this,
+  **Claude 3 Opus** from **Anthropic** still outperforms GPT-4 Turbo in
+  creativity and intelligence. **Mistral AI** released new open-source models
+  like **Mixtral-8x22B** and **Zephyr 141B**, noted for fine-tuning
+  capabilities. **LangChain AI** and **Hugging Face** updated integrations for
+  tool calling and browser-based transformer frameworks. Additionally, a new
+  open-source medical multilingual LLM, Medical mT5, was shared by
+  **@arankomatsuzaki**. The community also highlighted quality advice from **Vik
+  Paruchuri** on OCR/PDF data modeling.
+companies:
+  - openai
+  - anthropic
+  - mistral-ai
+  - langchain-ai
+  - hugging-face
+models:
+  - gpt-4-turbo
+  - claude-3-opus
+  - mixtral-8x22b
+  - zephyr-141b
+  - medical-mt5
+topics:
+  - fine-tuning
+  - multilinguality
+  - code-generation
+  - model-evaluation
+  - open-source-models
+  - transformers
+  - model-integration
+  - medical-nlp
+  - ocr
+  - evaluation
+people:
+  - sama
+  - miramurati
+  - abacaj
+  - mbusigin
+  - _akhaliq
+  - vik_paruchuri
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/11/2024-4/12/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**394** channels, and **4818** messages) for you. Estimated reading time saved (at 200wpm): **534 minutes**.
 

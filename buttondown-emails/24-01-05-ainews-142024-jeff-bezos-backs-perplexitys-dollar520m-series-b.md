@@ -1,13 +1,57 @@
 ---
 id: 10c69001-13c7-47bf-aa5a-e5c7636d97c1
-title: '[AINews] 1/4/2024: Jeff Bezos backs Perplexity''s $520m Series B.'
+title: '1/4/2024: Jeff Bezos backs Perplexity''s $520m Series B.'
 date: '2024-01-05T08:29:59.746847Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-142024-jeff-bezos-backs-perplexitys-520m
+description: >-
+  **Perplexity** announced their Series B funding round with notable investment
+  from **Jeff Bezos**, who also invested in **Google** 25 years ago.
+  **Anthropic** is raising $750 million and issued ambitious revenue forecasts
+  alongside "brutal" changes to their Terms of Service. Discussions in **Nous
+  Research AI** Discord cover topics such as **document recall limits**, **RNN
+  memory and compute trade-offs**, **synthetic datasets**, and new language
+  models like **WizardCoder-33B-V1.1**, **MobileLLaMA-1.4B-Base**, and
+  **ShearedLLaMA**. Technical conversations include **multi-GPU optimization**,
+  **sliding window attention**, and **FSDP** for parallelizing models like
+  **Mixtral 8x7b**. The community also explores novel techniques like **CALM
+  model expansion** and practical challenges in **context management** and
+  **retrieval**.
+companies:
+  - perplexity
+  - anthropic
+  - google
+  - nous-research
+  - hugging-face
+models:
+  - wizardcoder-33b-v1.1
+  - mobilellama-1.4b-base
+  - shearedllama
+  - tinyllama
+  - mixtral-8x7b
+topics:
+  - document-recall
+  - rnn-memory
+  - synthetic-datasets
+  - multi-gpu-support
+  - sliding-window-attention
+  - model-expansion
+  - context-management
+  - retrieval
+  - model-parallelism
+people:
+  - benjoyo
+  - teknium
+  - euclaise
+  - gabriel_syme
+  - max_paperclips
+  - metaldragon01
+  - benxh
+  - _nord
+  - uchihakrishnaa
+  - kyleboddy
+  - orangetin
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->As widely rumored, Perplexity [announced their Series B](https://x.com/AravSrinivas/status/1743046115707285877?s=20). Most notable investor is Jeff Bezos, who also invested in Google 25 years ago.
 

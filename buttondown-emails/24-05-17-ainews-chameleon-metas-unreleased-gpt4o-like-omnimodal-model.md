@@ -1,13 +1,52 @@
 ---
 id: c2c1a068-3828-4075-9931-a30fe0baab4b
-title: '[AINews] Chameleon: Meta''s (unreleased) GPT4o-like Omnimodal Model'
+title: 'Chameleon: Meta''s (unreleased) GPT4o-like Omnimodal Model'
 date: '2024-05-17T20:46:44.950821Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-chameleon-metas-unreleased-gpt4o-like
+description: >-
+  **Meta AI FAIR** introduced **Chameleon**, a new multimodal model family with
+  **7B** and **34B** parameter versions trained on **10T tokens** of interleaved
+  text and image data, pioneering an "early fusion" approach that natively
+  outputs multiple modalities. While reasoning benchmarks for the **34B** model
+  are modest, its "omnimodality" compares well with peers before **GPT-4o**.
+  **OpenAI** launched **GPT-4o**, outperforming other models on benchmarks like
+  MMLU and showing improved coding and multimodal capabilities, though with some
+  regression in ELO scores. **Google** announced **Gemini 1.5 Flash**, a
+  **1M-context small model** with Flash performance, highlighting convergence
+  trends between OpenAI and Google models. **Anthropic** updated **Claude 3**
+  with streaming support, forced tool use, and vision tool integration for
+  multimodal knowledge extraction. OpenAI also partnered with Reddit, stirring
+  industry attention.
+companies:
+  - meta-ai-fair
+  - openai
+  - google
+  - anthropic
+  - reddit
+models:
+  - chameleon
+  - gpt-4o
+  - gemini-1.5-flash
+  - claude-3
+topics:
+  - multimodality
+  - early-fusion
+  - benchmarking
+  - coding
+  - model-performance
+  - streaming
+  - tool-use
+  - vision
+  - multimodal-tool-use
+  - model-training
+people:
+  - armen_aghajanyan
+  - sama
+  - alexandr_wang
+  - abacaj
+  - alexalbert__
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Early Fusion is all you need.**
 

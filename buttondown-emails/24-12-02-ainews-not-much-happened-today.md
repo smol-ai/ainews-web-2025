@@ -1,13 +1,58 @@
 ---
 id: 4ac56488-4ba3-4258-9079-a5d96a6d3c99
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-12-02T23:49:20.748299Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-4970
+description: >-
+  **AI News for 11/29/2024-12/2/2024** highlights several developments including
+  **Nvidia's Puzzle**, a distillation-based neural architecture search for
+  inference-optimized LLMs, and the release of **IC-Light V2** for varied
+  illumination in video models. **Amazon** increased its investment in
+  **Anthropic** to **$8 billion**, supporting AI safety research fellowships.
+  **Google** expands AI efforts with the **Gemini API** and open models.
+  Discussions around domain name relevance emphasize alternatives to **.com**
+  like **.io**, **.ai**, and **.co**. Advances in reasoning include a **13.53%
+  improvement** in LLM performance using reverse thinking techniques. New agent
+  frameworks were launched by **Pydantic** and **Supabase** released v2 of their
+  assistant. The **NotebookLM** team left **Google**, and **Cognition** was
+  featured on the cover of **Forbes**. These updates reflect ongoing innovation
+  in model optimization, AI safety, and domain strategy.
+companies:
+  - nvidia
+  - amazon
+  - anthropic
+  - google
+  - pydantic
+  - supabase
+  - cognition
+models:
+  - ic-light-v2
+  - puzzle
+  - gemini-api
+  - claude-3.5-sonnet
+topics:
+  - distillation
+  - neural-architecture-search
+  - inference-optimization
+  - video-models
+  - reward-hacking
+  - ai-safety-research
+  - fellowship-programs
+  - reverse-thinking
+  - reasoning
+  - agent-frameworks
+  - domain-names
+  - branding
+  - model-optimization
+  - video-diffusion
+  - trajectory-attention
+people:
+  - _akhaliq
+  - adcock_brett
+  - iScienceLuvr
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day is all you need.**
 

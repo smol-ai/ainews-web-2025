@@ -1,13 +1,45 @@
 ---
 id: d2ec8f17-55b8-4970-b09c-76b6c3739617
-title: '[AINews] Evals-based AI Engineering'
+title: Evals-based AI Engineering
 date: '2024-03-29T22:20:49.586743Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-evals-based-ai-engineering
+description: >-
+  **Hamel Husain** emphasizes the importance of comprehensive evals in AI
+  product development, highlighting evaluation, debugging, and behavior change
+  as key iterative steps. **OpenAI** released a voice engine demo showcasing
+  advanced voice cloning from 15-second samples, raising safety concerns. Reddit
+  discussions introduced new models like **Jamba** (hybrid Transformer-SSM with
+  MoE), **Bamboo** (7B LLM with 85% activation sparsity based on **Mistral**
+  weights), **Qwen1.5-MoE** (efficient parameter activation), and **Grok 1.5**
+  (128k context length, surpassing GPT-4 in code generation). Advances in
+  quantization include a **1-bit Llama2-7B** model outperforming smaller
+  full-precision models and the **QLLM** quantization toolbox supporting
+  GPTQ/AWQ/HQQ methods.
+companies:
+  - openai
+  - mistral-ai
+  - x-ai
+models:
+  - jamba
+  - bamboo
+  - qwen-1.5-moe
+  - grok-1.5
+  - llama-2-7b
+topics:
+  - evaluation
+  - fine-tuning
+  - voice-cloning
+  - quantization
+  - model-optimization
+  - transformer-architecture
+  - mixture-of-experts
+  - context-windows
+  - code-generation
+people:
+  - hamel_husain
+  - alec_radford
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/27/2024-3/29/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **25** Discords (**377** channels, and **5415** messages) for you. Estimated reading time saved (at 200wpm): **615 minutes**.
 

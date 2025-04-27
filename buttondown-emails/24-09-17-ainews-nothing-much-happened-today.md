@@ -1,13 +1,55 @@
 ---
 id: e94eef2f-48e7-4416-b4e9-429de3b66f45
-title: '[AINews] nothing much happened today'
+title: nothing much happened today
 date: '2024-09-18T00:27:31.736910Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-nothing-much-happened-today-7147
+description: >-
+  **OpenAI's o1 model** is discussed with debates on its replication in open
+  source and unique training advances like RL on CoT. **ChatGPT-4o (20240903)**
+  shows significant performance improvements across benchmarks.
+  **Llama-3.1-405b** fp8 and bf16 versions are compared, showing cost-effective
+  performance. **GPT-4o** and **o1** models are analyzed for System 1 and System
+  2 thinking specialization. A new open-source benchmark "Humanity's Last Exam"
+  with $500K prizes is launched by **Scale** and **CAIS**. Model merging
+  effectiveness is explained via linear mode connectivity and sparsity. Advances
+  in toxic prompt detection, image editing with **InstantDrag**, and LangChain
+  v0.3 release are highlighted. AI applications in code review with
+  **CodeRabbit** and visual product search with **Qdrant** are noted. Industry
+  trends predict AI as default software by 2030.
+companies:
+  - openai
+  - scale-ai
+  - cais
+  - lmsys
+  - qdrant
+  - langchain-ai
+models:
+  - o1
+  - chatgpt-4o
+  - llama-3-1-405b
+  - gpt-4o
+topics:
+  - reinforcement-learning
+  - model-merging
+  - toxic-prompt-detection
+  - image-editing
+  - performance-optimization
+  - benchmarking
+  - code-review
+  - visual-search
+  - system-1-thinking
+  - system-2-thinking
+people:
+  - denny_zhou
+  - lmsysorg
+  - svpino
+  - alexandr_wang
+  - cwolferesearch
+  - rohanpaul_ai
+  - _akhaliq
+  - kylebrussell
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Peace and quiet is all you need.**
 

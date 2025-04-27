@@ -1,13 +1,45 @@
 ---
 id: f57c70e2-cab0-4c52-b940-e3d98d2def04
-title: '[AINews] 12/22/2023: Anyscale''s Benchmark Criticisms'
+title: '12/22/2023: Anyscale''s Benchmark Criticisms'
 date: '2023-12-23T01:16:52.465251Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12222023-anyscales-benchmark-criticisms
+description: >-
+  **Anyscale** launched their **LLMPerf leaderboard** to benchmark LLM inference
+  performance but faced criticism regarding metrics transparency like cost per
+  token and throughput, and the validity of comparing public LLM endpoints. In
+  **OpenAI Discord** discussions, users reported usability issues with **Bard**
+  and preferred **MSFT Copilot** for storytelling, noting fewer hallucinations.
+  The community debated the value of upgrading from **GPT-3.5** to **GPT-4**,
+  with many finding paid AI models worthwhile for coding productivity. Bugs and
+  performance issues with **OpenAI API** were highlighted, including slow
+  responses and message limits. Future AI developments like **GPT-6** and
+  concerns about OpenAI's transparency and profitability were also discussed.
+  Prompt engineering for image generation was another key topic, emphasizing
+  clear positive prompts and the desire for negative prompts.
+companies:
+  - anyscale
+  - openai
+  - microsoft
+models:
+  - gpt-4
+  - gpt-3.5
+  - bard
+  - msft-copilot
+topics:
+  - benchmarking
+  - performance
+  - prompt-engineering
+  - api
+  - bug-tracking
+  - model-comparison
+  - productivity
+  - coding
+  - storytelling
+  - hallucinations
+  - future-ai
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Following up from [their initial work](https://www.anyscale.com/blog/reproducible-performance-metrics-for-llm-inference) in November, [Anyscale announced their LLMPerf leaderboard](https://twitter.com/anyscalecompute/status/1737883193720922413), where they of course come out looking great, but it has come under intense scrutiny:
 

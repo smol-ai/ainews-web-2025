@@ -1,15 +1,54 @@
 ---
 id: 65a7ef70-6cea-4cb1-a00a-26d16f926569
-title: >-
-  [AINews] ModernBert: small new Retriever/Classifier workhorse, 8k context, 2T
-  tokens, 
+title: 'ModernBert: small new Retriever/Classifier workhorse, 8k context, 2T tokens, '
 date: '2024-12-20T03:27:55.084640Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-modernbert-small-new-retrieverclassifier
+description: >-
+  **Answer.ai/LightOn** released **ModernBERT**, an encoder-only model with **8k
+  token context**, trained on **2 trillion tokens** including code, and sized at
+  **139M/395M parameters**. It achieves state-of-the-art performance on
+  retrieval, NLU, and code tasks, with faster variable-length input processing
+  and uses **Alternating Attention** layers mixing global and local attention.
+  Meanwhile, **Google DeepMind's Gemini 2.0 Flash Thinking** leads reasoning
+  benchmarks, and the **O1 model** tops Livebench AI with a 91.58 score.
+  **Meta's Llama** surpassed **650 million downloads** in 3 months. **OpenAI**
+  launched desktop app integrations with Xcode, Warp, and Notion, and **Figure**
+  delivered its first humanoid robots commercially. Advances in robotics
+  simulation and a new physics engine, **Genesis**, claiming 430,000x faster
+  simulation, were also highlighted.
+companies:
+  - answerdotai
+  - lightonio
+  - huggingface
+  - google-deepmind
+  - meta-ai-fair
+  - openai
+  - figure-ai
+models:
+  - modernbert
+  - gemini-2.0-flash-thinking
+  - o1
+topics:
+  - encoder-only-models
+  - long-context
+  - natural-language-understanding
+  - code-understanding
+  - alternating-attention
+  - reasoning
+  - robotics-simulation
+  - physics-engine
+  - variable-length-inputs
+people:
+  - jeremyphoward
+  - drjwrae
+  - lmarena_ai
+  - bindureddy
+  - adcock_brett
+  - drjimfan
+  - _philschmid
+  - krandiash
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Encoder-only models are all you need.**
 

@@ -1,13 +1,56 @@
 ---
 id: c75b60c6-4f06-4b9c-99cb-3f9939a75ef2
-title: '[AINews] Llama-3-70b is GPT-4-level Open Model'
+title: Llama-3-70b is GPT-4-level Open Model
 date: '2024-04-20T02:21:27.301127Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-llama-3
+description: >-
+  **Meta** has released **Llama 3**, their most capable open large language
+  model with **8B and 70B parameter versions** supporting **8K context length**.
+  Early benchmarks show **Llama 3 8B instruct** outperforming **Llama 2 70B
+  instruct**, and the **70B model** delivers **GPT-4 level performance at over
+  20x lower cost**. **Groq** is serving the **Llama 3 70B** model at **500-800
+  tokens/second**, making it the fastest GPT-4-level token source. Microsoft
+  unveiled **VASA-1** for lifelike talking face generation from audio, while
+  **Stable Diffusion 3** received mixed impressions with new extensions like
+  Forge Couple. AI compute demands are rapidly increasing, with Elon Musk
+  stating **Grok 3** training will require **100,000 Nvidia H100 GPUs**, and AWS
+  planning to acquire **20,000 B200 GPUs** for a **27 trillion parameter
+  model**. Discussions on AI safety and political bias continue in the
+  community.
+companies:
+  - meta-ai-fair
+  - groq
+  - microsoft
+  - nvidia
+  - amazon
+models:
+  - llama-3-70b
+  - llama-3-8b
+  - llama-2-70b
+  - mistral-7b
+  - grok-3
+  - stable-diffusion-3
+  - vasa-1
+topics:
+  - benchmarking
+  - model-performance
+  - fine-tuning
+  - code-generation
+  - image-generation
+  - video-generation
+  - energy-usage
+  - gpu-demand
+  - ai-safety
+  - political-bias
+  - context-windows
+  - function-calling
+  - arithmetic
+people:
+  - susan_zhang
+  - borgeaud_s
+  - elonmusk
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/18/2024-4/19/2024. We checked 6 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **10403** messages) for you. Estimated reading time saved (at 200wpm): **958 minutes**.
 

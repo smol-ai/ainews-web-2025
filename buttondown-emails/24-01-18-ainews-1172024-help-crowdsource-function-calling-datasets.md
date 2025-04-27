@@ -1,13 +1,49 @@
 ---
 id: c809dfbf-4c0c-4562-8f89-82b4d58e553a
-title: '[AINews] 1/17/2024: Help crowdsource function calling datasets'
+title: '1/17/2024: Help crowdsource function calling datasets'
 date: '2024-01-18T21:20:01.765780Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1172024-help-crowdsource-function-calling
+description: >-
+  **Skunkworks** is compiling function calling datasets, crucial for turning
+  operations into callable functions. **LM Studio** updated its FAQ confirming
+  it is **closed-source**, free for personal use, and does not collect user
+  data, with a new beta release addressing memory and generation consistency
+  issues and hinting at upcoming **2-bit quantization** support. For gaming
+  mods, models like **Dolphin 2.7 Mixtral 8x7B**, **MegaDolphin**, and **Dolphin
+  2.6 Mistral 7B DPO** with **Q4_K_M** quantization were recommended.
+  Discussions highlighted that single powerful GPUs often outperform multi-GPU
+  setups due to bottlenecks, with older GPUs like the Tesla P40 being
+  cost-effective for LLMs. Microsoft's **AutoGen Studio** was introduced but has
+  limitations due to **API fees** for open-source models. Linux users are
+  advised to use **llama.cpp** over LM Studio due to lack of headless mode.
+  Additional projects and tools like **LLMFarm** for iOS and various Hugging
+  Face repositories were also mentioned.
+companies:
+  - skunkworks
+  - lmstudio
+  - microsoft
+  - huggingface
+models:
+  - mistral-7b
+  - mixtral-8x7b
+  - dolphin-2.7-mixtral-8x7b
+  - dolphin-2.6-mistral-7b-dpo
+topics:
+  - function-calling
+  - quantization
+  - model-performance
+  - gpu-optimization
+  - memory-optimization
+  - model-selection
+  - closed-source
+  - local-inference
+  - linux-server
+  - api
+people:
+  - yagilb
+  - heyitsyorkie
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> We checked **19** guilds, **287** channels, and **3277** messages for you. Estimated reading time saved (at 200wpm): **363 minutes**.
 

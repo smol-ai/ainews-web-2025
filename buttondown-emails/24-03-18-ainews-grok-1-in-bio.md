@@ -1,13 +1,57 @@
 ---
 id: ea737d6a-049c-436d-8f1f-18d1b91bab5d
-title: '[AINews] Grok-1 in Bio'
+title: Grok-1 in Bio
 date: '2024-03-19T00:07:45.515064Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-grok-1-in-bio
+description: >-
+  **Grok-1**, a **314B parameter Mixture-of-Experts (MoE)** model from **xAI**,
+  has been released open-source under Apache 2.0 license, sparking discussions
+  on its architecture, finetuning challenges, and performance which currently
+  lags behind smaller models like **Miqu 70B** and **Mixtral**. The model's code
+  and weights are available on Hugging Face, and it features unique technical
+  details such as attention scaled by 30/tanh(x/30) and RoPE in float32. **Sam
+  Altman** highlighted the growing importance of compute resources, while
+  **Grok-1**'s potential on **Groq** hardware was noted as a possible
+  game-changer. Meanwhile, **Anthropic's Claude** models continue to impress
+  with their self-consistent histories and ethical reasoning, described by users
+  as a "spiritual experience." The AI community also engaged with memes and
+  humor around Grok's capabilities and misuse.
+companies:
+  - x-ai
+  - mistral-ai
+  - perplexity-ai
+  - groq
+  - anthropic
+  - huggingface
+models:
+  - grok-1
+  - miqu-70b
+  - mixtral
+  - claude-3-opus
+  - claude-3
+topics:
+  - mixture-of-experts
+  - model-performance
+  - finetuning
+  - open-source
+  - model-architecture
+  - compute
+  - hardware-optimization
+  - attention-mechanisms
+  - rope
+  - moral-framework
+  - memes
+  - model-release
+people:
+  - sama
+  - aravsrinivas
+  - danielhanchen
+  - arthur_mensch
+  - francis_yao_
+  - kevinafischer
+  - cto_junior
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/15/2024-3/18/2024. We checked [**358** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**337** channels, and **9841** messages) for you. Estimated reading time saved (at 200wpm): **1033 minutes**.
 

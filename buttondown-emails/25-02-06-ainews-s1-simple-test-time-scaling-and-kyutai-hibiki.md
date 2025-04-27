@@ -1,13 +1,54 @@
 ---
 id: 2d857dce-c18a-4052-b410-8600e1f0a510
-title: '[AINews] s1: Simple test-time scaling (and Kyutai Hibiki)'
+title: 's1: Simple test-time scaling (and Kyutai Hibiki)'
 date: '2025-02-07T03:47:44.376508Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-s1-simple-test-time-scaling-and-kyutai
+description: >-
+  **Simple test-time scaling (s1)** introduces a novel reasoning model finetuned
+  from **Qwen 2.5 32B** using only **1000 questions paired with reasoning
+  traces** distilled from **Gemini 2.0 Flash Thinking**, enabling controllable
+  test-time compute by appending "Wait" to extend reasoning. Lead author
+  **Niklas Muennighoff**, known for work on **Bloom**, **StarCoder**, and
+  **BIG-bench**, highlights this method's sample efficiency and reproduction of
+  the famous **o1 scaling chart**. Additionally, **Kyutai Moshi**'s offline
+  French-English live translation on iPhone impresses as an intern project.
+  Recent AI model releases include **DeepSeek R1 and R3** open source models,
+  potentially disrupting proprietary incumbents, **Hugging Face's SmolLM2**
+  emphasizing data-centric training for small LMs, and **IBM's
+  Granite-Vision-3.1-2B**, a small vision-language model with strong
+  performance. Research highlights include **LIMO** demonstrating emergent
+  complex reasoning with minimal demonstrations, achieving **57.1% accuracy on
+  AIME** and **94.8% on MATH** with only **817 samples**, and **Token-Assisted
+  Reasoning** mixing latent and text tokens to improve language model reasoning.
+companies:
+  - google-deepmind
+  - hugging-face
+  - ibm
+  - deepseek
+  - kyutai-labs
+models:
+  - qwen-2.5-32b
+  - gemini-2.0-flash
+  - deepseek-r1
+  - deepseek-r3
+  - smollm2
+  - granite-vision-3.1-2b
+topics:
+  - fine-tuning
+  - reasoning
+  - model-scaling
+  - sample-efficiency
+  - data-centric-training
+  - vision
+  - multimodality
+  - language-model-reasoning
+people:
+  - niklas_muennighoff
+  - akhaliq
+  - arankomatsuzaki
+  - gneubig
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**"Wait" is all you need.**
 

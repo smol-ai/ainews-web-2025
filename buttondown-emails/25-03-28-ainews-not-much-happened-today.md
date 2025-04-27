@@ -1,13 +1,65 @@
 ---
 id: 181c127f-3bfe-45c7-9adc-372f7f24c16b
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-28T23:18:38.632397Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-9938
+description: >-
+  **GPT-4o** is praised for its improved coding, instruction following, and
+  freedom, becoming the leading non-reasoning coding model surpassing **DeepSeek
+  V3** and **Claude 3.7 Sonnet** in coding benchmarks, though it still lags
+  behind reasoning models like **o3-mini**. Concerns about policy compliance in
+  image generation were noted, with transparency and background generation
+  features highlighted. **Gemini 2.5 Pro** is recognized for its advanced audio
+  and video understanding, long context capabilities, and integration with
+  platforms like **Cursor AI** and **Windsurf AI**, scoring above 50% on
+  Simple-Bench AI Explanation. AI infrastructure developments include increased
+  GPU/TPU usage, a partnership between **Together AI** and **Hypertec Group**
+  for large-scale GPU clusters, and **CoreWeave's IPO** celebrating its AI
+  infrastructure advancements. The 2025 State of AI Engineering survey was soft
+  launched, inviting participation with a $1000 Amazon gift card raffle.
+companies:
+  - openai
+  - deepseek-ai
+  - anthropic
+  - google-deepmind
+  - together-ai
+  - hypertec-group
+  - coreweave
+  - cursor-ai
+  - windsurf-ai
+models:
+  - gpt-4o
+  - deepseek-v3
+  - claude-3-7-sonnet
+  - o3-mini
+  - gemini-2-5-pro
+topics:
+  - coding
+  - instruction-following
+  - model-performance
+  - image-generation
+  - policy-compliance
+  - transparency
+  - background-generation
+  - audio-processing
+  - video-understanding
+  - long-context
+  - api-access
+  - gpu-clusters
+  - infrastructure
+  - ipo
+  - survey
+people:
+  - sama
+  - kevinweil
+  - joannejang
+  - nrehiew_
+  - giffmana
+  - _philschmid
+  - scaling01
+  - saranormous
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day**
 

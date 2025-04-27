@@ -1,13 +1,67 @@
 ---
 id: d367a428-c79b-48d6-ac14-2d8b0a5bfb67
-title: '[AINews] World_sim.exe'
+title: World_sim.exe
 date: '2024-03-20T00:46:48.498362Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-9615
+description: >-
+  **NVIDIA** announced **Project GR00T**, a foundation model for humanoid robot
+  learning using multimodal instructions, built on their tech stack including
+  Isaac Lab, OSMO, and Jetson Thor. They revealed the **DGX Grace-Blackwell
+  GB200** system capable of over 1 exaflop compute, training **GPT-4** with 1.8
+  trillion parameters in 90 days on 2000 Blackwells. Jensen Huang confirmed
+  GPT-4's size at **1.8 trillion parameters**. The new **GB200 GPU** supports
+  float4/6 precision with ~3 bits per parameter and achieves 40,000 TFLOPs on
+  fp4 with 2x sparsity. 
+
+
+  Open source developments include the release of **Grok-1**, a **340B
+  parameter** model, and **Stability AI**'s **SV3D**, an open-source
+  text-to-video generation solution. **Nous Research** collaborated on
+  implementing Steering Vectors in **Llama.CPP**. 
+
+
+  In Retrieval Augmented Generation (RAG), new tutorials and integrations were
+  released by **LangChain** including GPU-optimized LLM inference with NVIDIA
+  NIM. 
+
+
+  Prominent opinions include **Yann LeCun** distinguishing language from other
+  cognitive abilities, and **Sam Altman** suggesting AGI may arrive in 6 years
+  with a leap from GPT-4 to GPT-5 comparable to GPT-3 to GPT-4. Discussions also
+  emerged on the philosophical status of LLMs like **Claude** and the
+  practicality of training models from scratch.
+companies:
+  - nvidia
+  - nous-research
+  - stability-ai
+  - langchain
+  - anthropic
+  - openai
+models:
+  - gpt-4
+  - grok-1
+  - llama-cpp
+  - claude-3-opus
+  - claude-3
+  - gpt-5
+topics:
+  - multimodality
+  - foundation-models
+  - hardware-optimization
+  - model-scaling
+  - float4
+  - float6
+  - precision-quantization
+  - retrieval-augmented-generation
+  - text-to-video
+  - prompt-engineering
+  - philosophy-of-ai
+  - model-training
+people:
+  - ylecun
+  - sama
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/18/2024-3/19/2024. We checked [**358** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**337** channels, and **9841** messages) for you. Estimated reading time saved (at 200wpm): **1033 minutes**.
 

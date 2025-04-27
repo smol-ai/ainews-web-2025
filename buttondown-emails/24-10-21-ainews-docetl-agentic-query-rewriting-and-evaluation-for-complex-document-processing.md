@@ -1,15 +1,56 @@
 ---
 id: ca91a315-7798-4ce9-bd9b-21efdb591416
-title: >-
-  [AINews] DocETL: Agentic Query Rewriting and Evaluation for Complex Document
-  Processing
+title: 'DocETL: Agentic Query Rewriting and Evaluation for Complex Document Processing'
 date: '2024-10-22T00:04:21.441910Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-docetl-agentic-query-rewriting-and
+description: >-
+  **UC Berkeley's EPIC lab** introduces innovative LLM data operators with
+  papers like **LOTUS** and **DocETL**, focusing on effective programming and
+  computation with large data corpuses. This approach contrasts GPU-rich big
+  labs like **Deepmind** and **OpenAI** with GPU-poor methods such as **Compound
+  AI**. Meanwhile, **Microsoft** open-sourced **BitNet b1.58**, a 1-bit ternary
+  parameter LLM enabling 4-20x faster training and efficient on-device AI
+  running 100B models on a single CPU. Additionally, **Nvidia** released
+  **Llama-3.1-Nemotron-70B-Instruct**, a fine-tuned open-source model
+  outperforming **GPT-4o** and **Claude 3.5 Sonnet**. These developments
+  highlight advances in model efficiency, on-device AI, and large-scale LLM
+  fine-tuning.
+companies:
+  - uc-berkeley
+  - microsoft
+  - nvidia
+  - deepmind
+  - openai
+  - compound-ai
+  - archetype-ai
+  - boston-dynamics
+  - toyota-research
+  - google
+  - adobe
+  - openai
+  - mistral
+  - tesla
+  - meta-ai-fair
+models:
+  - bitnet-b1.58
+  - llama-3.1-nemotron-70b-instruct
+  - gpt-4o
+  - claude-3.5-sonnet
+topics:
+  - llm-operators
+  - big-data
+  - gpu-optimization
+  - on-device-ai
+  - model-fine-tuning
+  - model-efficiency
+  - open-source-models
+  - training-speed
+  - inference-speed
+people:
+  - rohanpaul_ai
+  - adcock_brett
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**LLM data operators are all you need.**
 

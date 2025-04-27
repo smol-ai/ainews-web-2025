@@ -53,7 +53,7 @@ topics:
   - multilinguality
   - zero-shot-learning
 people:
-  - dan-hendrycks
+  - danhendrycks
 ---
 
 

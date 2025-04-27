@@ -1,13 +1,59 @@
 ---
 id: dd694420-bc14-4229-b025-f0f76213db66
-title: '[AINews] a calm before the storm'
+title: a calm before the storm
 date: '2024-09-23T23:33:49.803194Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-sxxx
+description: >-
+  **Anthropic** is preparing for a major update amid a $40 billion valuation
+  raise, while **OpenAI** released new reasoning models **o1** and **o1-mini**
+  with increased rate limits and shipped a multilingual MMLU variant.
+  **Alibaba** launched the open-source **Qwen2.5** model supporting 29+
+  languages, showing competitive performance to **GPT-4** at lower cost.
+  **Microsoft** and **Blackrock** are investing $30 billion in AI data centers,
+  with **Groq** partnering with Aramco to build the world's largest AI inference
+  center. Robotics advances include Disney Research and ETH Zurich's
+  diffusion-based motion generation robot and Pudu Robotics' semi-humanoid
+  robot. Slack and Microsoft introduced AI-powered agents in their platforms.
+  Research highlights include a paper on Dual Chunk Attention enabling
+  **Llama-2-70b** to handle 100k+ token contexts without retraining, and KV
+  cache quantization techniques allowing **LLaMA-7B** to serve 1 million token
+  contexts on a single GPU. *"Sama calls this the Intelligence Age."*
+companies:
+  - anthropic
+  - openai
+  - alibaba
+  - microsoft
+  - blackrock
+  - groq
+  - aramco
+  - disney
+  - eth-zurich
+  - pudu-robotics
+  - slack
+models:
+  - o1
+  - o1-mini
+  - qwen2.5
+  - gpt-4
+  - llama-2-70b
+  - llama-7b
+topics:
+  - long-context
+  - kv-cache-quantization
+  - multilinguality
+  - robotics
+  - ai-infrastructure
+  - ai-integration
+  - diffusion-models
+  - reinforcement-learning
+  - retrieval-augmentation
+people:
+  - sama
+  - adcock_brett
+  - _philschmid
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Peace is all you need.**
 

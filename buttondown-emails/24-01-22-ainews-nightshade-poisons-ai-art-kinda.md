@@ -1,13 +1,50 @@
 ---
 id: 13898afe-b80e-4949-aca6-cbba064bc918
-title: '[AINews] Nightshade poisons AI art... kinda?'
+title: Nightshade poisons AI art... kinda?
 date: '2024-01-22T21:09:56.120967Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-nightshade-poisons-ai-art-kinda
+description: >-
+  Over the weekend of **1/19-20/2024**, discussions in **TheBloke Discord**
+  covered key topics including **Mixture of Experts (MoE)** model efficiency and
+  GPU parallelism, with debates on variable routing and expert count trade-offs.
+  The AI detection tool **GPTZero** was analyzed for its ability to detect
+  AI-generated content and potential evasion via noise application. Challenges
+  in role-playing AI models like **Solar** were noted, especially regarding
+  alignment and long-context performance. Fine-tuning strategies for models such
+  as **Mistral 7B** and **Falcon 7B** were shared, highlighting few-shot
+  learning preferences and community interest in simpler quantization methods
+  and community-powered quantization services. Confusion around model merging
+  techniques for **Mistral-based models** was discussed, emphasizing caution
+  with blending ratios. Newcomers showed interest in training on domain-specific
+  corpora using open-source models. Ethical considerations around AI girlfriend
+  sites were also debated.
+companies:
+  - thebloke
+  - mistral-ai
+  - hugging-face
+models:
+  - mistral-7b
+  - falcon-7b
+topics:
+  - mixture-of-experts
+  - gpu-parallelism
+  - quantization
+  - fine-tuning
+  - model-merging
+  - ai-detection
+  - long-context
+  - role-playing
+  - few-shot-learning
+  - community-services
+  - ethical-ai
+people:
+  - kalomaze
+  - selea
+  - kaltcit
+  - nigelt11
+  - rwitz_
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> Weekend of 1/19-20/2024. We checked **19** guilds, **290** channels, and **7248** messages for you. Estimated reading time saved (at 200wpm): **676 minutes**.
 

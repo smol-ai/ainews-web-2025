@@ -1,13 +1,59 @@
 ---
 id: 0ae6301c-88bb-40d4-837e-83424c28aa99
-title: '[AINews] not much happened this weekend'
+title: not much happened this weekend
 date: '2024-10-08T02:36:09.068096Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-this-weekend-5817
+description: >-
+  **AI news from 10/4 to 10/7/2024** covers various updates including **OpenAI's
+  o1-preview** showing strong performance on complex tasks but fluctuations on
+  simpler ones, and **Claude 3.5 Sonnet** matching reasoning capabilities of
+  OpenAI o1 through advanced prompting techniques. **Meta** unveiled **Movie
+  Gen**, a state-of-the-art media foundation model for text-to-video generation
+  and editing. **Reka** updated their **21B Flash Model** with temporal and
+  audio understanding plus tool use and instruction chaining. Interest grows in
+  reproducing OpenAI o1 with prompting and finetuning, notably **Entropix's
+  entropy-based sampling**. Research highlights include a survey of **417
+  synthetic data generation models**, a resurgence of **RNNs** with efficient
+  parallel training, and biologically-inspired AI safety approaches by **AE
+  Studio**. Applications include **LangChainAI's Retrieval Agent** for complex
+  Q&A and automation of 60-70% customer support volume for a Fortune 500 client.
+companies:
+  - openai
+  - meta-ai-fair
+  - reka
+  - langchain-ai
+  - ae-studio
+models:
+  - o1-preview
+  - claude-3.5-sonnet
+  - 21b-flash-model
+  - movie-gen
+topics:
+  - prompting
+  - finetuning
+  - entropy-based-sampling
+  - temporal-understanding
+  - audio-processing
+  - tool-use
+  - instruction-chaining
+  - multimodality
+  - retrieval-augmented-generation
+  - synthetic-data
+  - rnn
+  - parallel-training
+  - ai-safety
+  - customer-support-automation
+  - text-to-video-generation
+people:
+  - karpathy
+  - rasbt
+  - _philschmid
+  - giffmana
+  - jjitsev
+  - labenz
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet weekend and [air conditioning](https://x.com/doomie/status/1843380556802994422) is all you need.**
 

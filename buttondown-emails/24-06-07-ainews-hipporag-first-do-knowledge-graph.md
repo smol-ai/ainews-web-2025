@@ -1,13 +1,43 @@
 ---
 id: b349be5b-3e3c-4042-9eb9-989b14a9cbac
-title: '[AINews] HippoRAG: First, do know(ledge) Graph'
+title: 'HippoRAG: First, do know(ledge) Graph'
 date: '2024-06-07T23:55:52.482883Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-hipporag-first-do-knowledge-graph
+description: >-
+  **Memory implementations** are gaining interest in the AI community, with
+  startups receiving increased funding and research exploring
+  hippocampal-inspired retrieval methods like **HippoRAG** that use knowledge
+  graphs and Personalized PageRank for efficient multi-hop reasoning.
+  **Alibaba** released new **Qwen2** models ranging from 0.5B to 72B parameters,
+  achieving SOTA results on benchmarks such as MMLU and HumanEval. Research on
+  **Sparse Autoencoders** aims to interpret **GPT-4** neural activity, while new
+  methods like **Stepwise Internalization** and **Buffer of Thoughts** improve
+  implicit chain-of-thought reasoning and reasoning efficiency in LLMs. A novel
+  scalable MatMul-free LLM architecture competitive with SOTA Transformers was
+  also introduced.
+companies:
+  - alibaba
+models:
+  - qwen-2
+  - gpt-4
+topics:
+  - memory
+  - knowledge-graphs
+  - personalized-pagerank
+  - multi-hop-reasoning
+  - chain-of-thought
+  - fine-tuning
+  - model-interpretability
+  - model-optimization
+  - scaling
+  - transformers
+people:
+  - rohanpaul_ai
+  - huybery
+  - nabla_theta
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Memory is all LLMs need.**
 

@@ -1,13 +1,59 @@
 ---
 id: a00a923a-5c1d-4a39-af65-baa5017358b8
-title: '[AINews] Everybody shipped small things this holiday weekend'
+title: Everybody shipped small things this holiday weekend
 date: '2024-09-04T01:35:37.812399Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-everybody-shipped-small-things-this
+description: >-
+  **xAI** activated a **Colossus 100k H100 cluster** capable of training an FP8
+  GPT-4 class model in 4 days. **Google**'s **Gemini** model received Structured
+  Output capabilities. **Anthropic** faces criticism over **Claude**'s declining
+  performance, possibly due to API prompt modifications. **OpenAI** enhanced
+  controls for File Search in their Assistants API. **Cognition** and **AI21
+  Labs** released new models and tools, including **Jamba 1.5** with a 256K
+  context window and **Mistral-NeMo-Minitron-8B** debuted on Nvidia's Open LLM
+  Leaderboard. **LangChainAI** introduced resource tags for workspace
+  organization, and open-source low-code AI toolkits were shared by **svpino**.
+  AI legal and financial agents were launched by **SpellbookLegal** and
+  evaluated with **LangSmith**. Key topics include **parameter-efficient
+  fine-tuning**, **long-context embedding challenges**, and **LaTeX rendering**
+  in Claude.
+companies:
+  - xai
+  - google
+  - anthropic
+  - openai
+  - cognition
+  - ai21-labs
+  - nvidia
+  - langchainai
+  - spellbooklegal
+  - microsoft
+models:
+  - colossus
+  - gemini
+  - claude
+  - jamba-1.5
+  - mistral-nemo-minitron-8b
+  - phi-3.5-vision
+topics:
+  - parameter-efficient-fine-tuning
+  - long-context
+  - embedding
+  - latex-rendering
+  - context-window
+  - model-performance
+  - workspace-organization
+  - low-code
+  - ai-legal-agents
+  - ai-financial-agents
+  - fine-tuning
+  - model-benchmarking
+people:
+  - fchollet
+  - svpino
+  - yampeleg
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**smol updates are all you need.**
 

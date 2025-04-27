@@ -1,13 +1,38 @@
 ---
 id: ad06ca0b-4375-46a3-a673-3d829bbb1f66
-title: '[AINews] LLMs-as-Juries'
+title: LLMs-as-Juries
 date: '2024-05-01T01:41:25.208668Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-4408
+description: >-
+  **OpenAI** has rolled out the **memory feature** to all ChatGPT Plus users and
+  partnered with the **Financial Times** to license content for AI training.
+  Discussions highlight concerns about OpenAI's profitability due to paid
+  training data and possible reductions in **GPT-4** usage limits. Users report
+  issues with ChatGPT's data cleansing after the memory update. Community posts
+  cover building AI voice assistants with OpenAI's API, AI-powered side projects
+  using **GPT-4** and **GPT-3.5**, and interface agents powered by LLMs. In the
+  **Stable Diffusion** space, users seek realistic **SDXL** models comparable to
+  PonyXL, praise the **Hi-diffusion** extension for ComfyUI, and note the
+  release of Virtuoso Nodes v1.1 adding Photoshop-like features to ComfyUI.
+companies:
+  - openai
+  - financial-times
+  - cohere
+models:
+  - gpt-4
+  - gpt-3.5
+  - sdxl
+topics:
+  - memory
+  - training-data
+  - api
+  - interface-agents
+  - image-generation
+  - model-optimization
+  - prompt-engineering
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/29/2024-4/30/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**417** channels, and **4855** messages) for you. Estimated reading time saved (at 200wpm): **579 minutes**.
 

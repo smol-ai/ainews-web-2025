@@ -1,13 +1,51 @@
 ---
 id: fcf1837d-66ee-4eaa-a953-9d366d904115
-title: '[AINews] Perplexity, the newest AI unicorn'
+title: Perplexity, the newest AI unicorn
 date: '2024-04-23T22:48:23.949413Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-perplexity
+description: >-
+  **Perplexity** doubles its valuation with a Series B-1 funding round,
+  maintaining most previous investors but with a notable split between Daniel
+  Gross and Nat Friedman. The **Llama 3** family sees significant advancements
+  including a context length extension to **16K tokens** for Llama-3-8B, new
+  multimodal **LLaVA models** outperforming Llama 2, and fine-tuning
+  improvements like QDoRA surpassing QLoRA. The **Llama-3-70B** model is praised
+  for instruction following and concise responses, with detailed quantization
+  comparisons revealing performance trade-offs. Groq-hosted Llama-3-70B shows
+  sensitivity to temperature settings affecting reasoning. Meta releases
+  **Phi-3** models in 3.8B, 7B, and 14B sizes trained on filtered web and
+  synthetic data, with the 14B model achieving **78% on MMLU** and the 3.8B
+  model nearing **GPT-3.5** benchmark performance. These developments highlight
+  ongoing innovation in open-source language AI models and fine-tuning
+  techniques.
+companies:
+  - perplexity-ai
+  - hugging-face
+  - meta-ai-fair
+  - groq
+models:
+  - llama-3-8b
+  - llama-3-70b
+  - phi-3
+  - gpt-3.5
+topics:
+  - context-length
+  - fine-tuning
+  - quantization
+  - instruction-following
+  - multimodality
+  - benchmarking
+  - model-comparison
+  - model-performance
+  - synthetic-data
+  - memory-optimization
+  - temperature-tuning
+people:
+  - danielgross
+  - natfriedman
+  - aravsrinivas
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/20/2024-4/23/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **14864** messages) for you. Estimated reading time saved (at 200wpm): **1509 minutes**.
 

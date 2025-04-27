@@ -1,13 +1,44 @@
 ---
 id: 29d2bd25-904a-4768-a6f4-e490017e475e
-title: '[AINews] 12/19/2023: Everybody Loves OpenRouter'
+title: '12/19/2023: Everybody Loves OpenRouter'
 date: '2023-12-20T08:10:20.249651Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12192023-everybody-loves-openrouter
+description: >-
+  **OpenRouter** offers an easy OpenAI-compatible proxy for
+  **Mixtral-8x7b-instruct**. Discord discussions highlight **GPT-4** performance
+  and memory issues compared to **GPT-3.5**, with users recommending downgrading
+  for speed. Debates cover local LLMs versus OpenAI API, censorship concerns
+  around **Gemini**, and AI tool updates including **Dolphin 2.0 Mistral 7B**
+  and Google's video generation project. Prompt engineering and custom
+  instructions for GPT models are also key topics.
+companies:
+  - openai
+  - mistral-ai
+  - google
+  - huggingface
+models:
+  - gpt-4
+  - gpt-3.5
+  - mixtral-8x7b-instruct
+  - mistral-7b
+topics:
+  - performance
+  - memory-management
+  - api
+  - local-language-models
+  - translation
+  - censorship
+  - video-generation
+  - prompt-engineering
+  - custom-instructions
+people:
+  - thewizzard___
+  - azru
+  - zeriouszhit
+  - eljajasoriginal
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Multiple shoutouts across multiple discords today for OpenRouter, which has an easy OpenAI compatible proxy for Mixtral: https://openrouter.ai/models/mistralai/mixtral-8x7b-instruct?tab=api&utm_source=ainews&utm_medium=email
 

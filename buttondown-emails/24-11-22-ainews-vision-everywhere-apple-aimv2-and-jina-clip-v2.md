@@ -1,13 +1,46 @@
 ---
 id: ed748f64-a55b-415e-b592-306ee274f930
-title: '[AINews] Vision Everywhere: Apple AIMv2 and Jina CLIP v2'
+title: 'Vision Everywhere: Apple AIMv2 and Jina CLIP v2'
 date: '2024-11-22T23:31:04.836919Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-vision-everywhere-apple-aimv2-and-jina
+description: >-
+  **Apple AIMv2** introduces a novel autoregressive multimodal vision encoder
+  achieving **89.5% accuracy on ImageNet**, extending their AIMv1 work with
+  joint visual and textual objectives. **Jina CLIP v2** offers a **0.9B
+  multimodal embedding model** supporting **89 languages** and high-resolution
+  images, featuring efficient Matryoshka embeddings with minimal accuracy loss.
+  The **Tülu 3 family by allen_ai**, based on **Llama 3.1**, includes **8B and
+  70B models** with **2.5x faster inference**, aligned using SFT, DPO, and RLVR
+  methods, and is competitive with **Claude 3.5** and **Llama 3.1 70B**. These
+  developments highlight advances in autoregressive objectives, vision encoders,
+  multilingual multimodal embeddings, and efficient model deployment.
+companies:
+  - apple
+  - jina
+  - allen_ai
+models:
+  - aimv2-3b
+  - jina-clip-v2
+  - tulu-3
+  - llama-3-1
+  - llama-3-1-70b
+  - claude-3-5-sonnet
+topics:
+  - autoregressive-objectives
+  - vision
+  - multilingual-models
+  - multimodality
+  - model-efficiency
+  - embedding-models
+  - image-generation
+  - fine-tuning
+  - reinforcement-learning
+  - model-training
+people:
+  - reach_vb
+  - mervenoyann
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Autoregressive objectives are all you need.**
 

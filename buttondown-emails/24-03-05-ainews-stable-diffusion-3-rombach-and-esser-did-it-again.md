@@ -1,13 +1,51 @@
 ---
 id: 5d80b84e-df0d-4bfe-bed2-f0c8c83b98ea
-title: '[AINews] Stable Diffusion 3 — Rombach & Esser did it again!'
+title: Stable Diffusion 3 — Rombach & Esser did it again!
 date: '2024-03-05T22:30:03.649594Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-7776
+description: >-
+  **Stable Diffusion 3 (SD3)** paper reveals advanced multimodal capabilities
+  with improved text-in-image control, beating other SOTA image generation
+  models except possibly Ideogram. **Anthropic** released **Claude 3** models,
+  noted for human-like responses and emotional roleplay, scoring 79.88% on
+  HumanEval but costing over twice as much as **GPT-4**. **Microsoft** launched
+  new Orca-based models and datasets. **Stability AI** and **Tripo AI**
+  introduced **TripoSR**, a fast image-to-3D model. **Latitude** released
+  **DolphinCoder-StarCoder2-15b** with strong coding skills, alongside plans for
+  smaller StarCoder2 and CodeLlama models. Use cases include Claude 3 generating
+  d3 visualizations, Perplexity AI integrating Playground AI's image models, and
+  PolySpectra using LLMs with LlamaIndex for 3D CAD model generation.
+companies:
+  - stability-ai
+  - anthropic
+  - microsoft
+  - tripo-ai
+  - latitude
+  - perplexity-ai
+  - playground-ai
+  - llamaindex
+models:
+  - stable-diffusion-3
+  - claude-3
+  - gpt-4
+  - orca
+  - triposr
+  - dolphincoder-starcoder2-15b
+  - starcoder2
+  - codellama
+topics:
+  - multimodality
+  - image-generation
+  - model-benchmarking
+  - human-eval
+  - fine-tuning
+  - text-to-3d
+  - code-generation
+  - model-releases
+  - model-evaluation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/4-3/5/2024. We checked [**356** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**352** channels, and **7550** messages) for you. Estimated reading time saved (at 200wpm): **697 minutes**.
 

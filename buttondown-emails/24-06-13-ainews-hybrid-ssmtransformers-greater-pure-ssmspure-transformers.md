@@ -1,13 +1,58 @@
 ---
 id: eab4785c-c252-4c7f-9cf6-1c8e4f50c74e
-title: '[AINews] Hybrid SSM/Transformers > Pure SSMs/Pure Transformers'
+title: Hybrid SSM/Transformers > Pure SSMs/Pure Transformers
 date: '2024-06-13T20:52:25.343318Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-2494
+description: >-
+  **NVIDIA**'s Bryan Catanzaro highlights a new paper on **Mamba models**
+  showing that mixing Mamba and Transformer blocks outperforms either alone,
+  with optimal attention below 20%. **Mixture-of-Agents (MoA)** architecture
+  improves LLM generation quality, scoring **65.1% on AlpacaEval 2.0** versus
+  **GPT-4 Omni's 57.5%**. The **LiveBench AI benchmark** evaluates LLMs on
+  reasoning, coding, writing, and data analysis. An 8B-3.5T hybrid
+  **Mamba-2-Hybrid** model with 7% attention surpasses an 8B-3.5T Transformer in
+  accuracy and efficiency. **GPT-4** performs better at temperature=1. **Qwen
+  72B** leads open-source models on LiveBench AI. **LaminiAI**'s Memory Tuning
+  achieves 95% accuracy on a SQL agent task using Mixture-of-Experts. **Sakana
+  AI Lab** uses evolutionary strategies for LLM optimization. **Luma Labs Dream
+  Machine** demonstrates advanced text-to-video generation. **MMWorld**
+  benchmark evaluates multimodal video understanding. **Table-LLaVa 7B**
+  competes with GPT-4V on multimodal table understanding.
+companies:
+  - nvidia
+  - lamini-ai
+  - sakana-ai
+  - luma-labs
+  - google-deepmind
+models:
+  - mamba-2-hybrid
+  - gpt-4
+  - qwen-72b
+  - table-llava-7b
+topics:
+  - mixture-of-experts
+  - mixture-of-agents
+  - benchmarking
+  - fine-tuning
+  - multimodality
+  - text-to-video
+  - video-understanding
+  - model-optimization
+  - memory-optimization
+  - pretraining
+  - reinforcement-learning
+people:
+  - bindureddy
+  - ylecun
+  - ctnzr
+  - corbtt
+  - realsharonzhou
+  - andrew_n_carr
+  - karpathy
+  - _akhaliq
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**7% Transformers are all you need.**
 

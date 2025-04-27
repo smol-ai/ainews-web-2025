@@ -1,13 +1,58 @@
 ---
 id: 6d6bf91e-0eae-41b6-9792-5162e266a599
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-08-10T05:51:12.824379Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-3898
+description: >-
+  **Cursor AI** announced a **$60m Series A** funding round. **Qwen2-Math-72B**
+  outperformed **GPT-4o**, **Claude-3.5-Sonnet**, **Gemini-1.5-Pro**, and
+  **Llama-3.1-405B** on math benchmarks using synthetic data and advanced
+  optimization techniques. **Google AI** cut pricing for **Gemini 1.5 Flash** by
+  up to 78%. **Anthropic** expanded their bug bounty program targeting jailbreak
+  vulnerabilities. New fine-tuning tutorial for **IDEFICS3-Llama 8B** on VQAv2
+  using QLoRA was shared. A Chinese open weights model surpassed previous MATH
+  benchmark records. Surveys on **Mamba** models and LLM-based agents for
+  software engineering were highlighted. Open-source tools like **R2R RAG
+  engine** and **LlamaIndex Workflows** were introduced. **Mistral AI** launched
+  AI agents for building custom models. Discussions on AI safety include
+  concerns over California bill SB 1047 and debates on banning open-source AI.
+  Memes and humor around "Heavenbanning Day" were noted.
+companies:
+  - cursor-ai
+  - a16z
+  - anthropic
+  - google
+  - mistral-ai
+  - llamaindex
+models:
+  - qwen2-math-72b
+  - gpt-4o
+  - claude-3.5-sonnet
+  - gemini-1.5-pro
+  - llama-3.1-405b
+  - idefics3-llama-8b
+topics:
+  - fine-tuning
+  - math
+  - synthetic-data
+  - reinforcement-learning
+  - bug-bounty
+  - rag
+  - multimodality
+  - open-source
+  - ai-safety
+  - pricing
+  - agentic-ai
+people:
+  - rohanpaul_ai
+  - mervenoyann
+  - jeremyphoward
+  - omarsar0
+  - sophiamyang
+  - ylecun
+  - bindureddy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**A quiet week is all you need.**
 

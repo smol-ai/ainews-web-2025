@@ -1,13 +1,60 @@
 ---
 id: b5462156-6ed0-48d6-854b-9091926ceb0f
-title: '[AINews] GraphRAG: The Marriage of Knowledge Graphs and RAG'
+title: 'GraphRAG: The Marriage of Knowledge Graphs and RAG'
 date: '2024-07-03T01:30:30.158799Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-graphrag
+description: >-
+  **Microsoft Research** open sourced **GraphRAG**, a retrieval augmented
+  generation (RAG) technique that extracts knowledge graphs from sources and
+  clusters them for improved LLM answers, though it increases token usage and
+  inference time. **Gemma 2** models were released focusing on efficient small
+  LLMs with innovations like sliding window attention and RMS norm, performing
+  close to the larger **Llama 3 70B**. **Anthropic's Claude 3.5 Sonnet** leads
+  in instruction following and coding benchmarks, while **Nvidia's Nemotron
+  340B** and **Qwen2-72B** top open model leaderboards with strengths in math
+  and reasoning. Discussions on RAG highlight challenges with retrieval, long
+  context windows, and system configuration, with tips to improve context usage
+  via function calls. Synthetic data generation advances include persona-driven
+  synthesis with 1 billion personas and a 200GB AutoMathText dataset, achieving
+  GPT-4 level performance at smaller scales.
+companies:
+  - microsoft-research
+  - anthropic
+  - nvidia
+  - huggingface
+  - llamaindex
+models:
+  - gemma-2
+  - llama-3-70b
+  - claude-3.5-sonnet
+  - nemotron-340b
+  - qwen2-72b
+topics:
+  - retrieval-augmented-generation
+  - knowledge-graphs
+  - token-usage
+  - inference-time
+  - attention-mechanisms
+  - sliding-window-attention
+  - rms-norm
+  - instruction-following
+  - coding
+  - math
+  - long-context
+  - synthetic-data
+  - dataset-release
+  - fine-tuning
+people:
+  - rasbt
+  - alexandr_wang
+  - osanseviero
+  - rohanpaul_ai
+  - svpino
+  - hamelhusain
+  - aaaazzam
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**KGs are all LLMs need.**
 

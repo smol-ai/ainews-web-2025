@@ -1,13 +1,57 @@
 ---
 id: 389fe33a-89ae-4e74-a614-54ad32710598
-title: '[AINews] Evals: The Next Generation'
+title: 'Evals: The Next Generation'
 date: '2024-05-02T23:54:22.767341Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-evals-the-next-generation
+description: >-
+  **Scale AI** highlighted issues with data contamination in benchmarks like
+  **GSM8K** and **MMLU**, noting **Mistral** overfits GSM8K while **Phi-3**
+  performs well. **Reka** released **VibeEval**, a new benchmark for multimodal
+  models addressing multiple choice benchmark limitations. OpenAI CEO **Sam
+  Altman** called **GPT-4** "dumb" and hinted at the upcoming **GPT-5** with
+  improved AI agents as "super-competent colleagues." Researchers demonstrated
+  jailbreaking **GPT-3.5** via fine-tuning. Global leaders urge bans on
+  AI-powered weapons, with US officials pushing for human control over nuclear
+  arms. Ukraine launched an AI consular avatar, while **Moderna** partnered with
+  **OpenAI** for AI-driven medical advances. **Sanctuary AI** and **Microsoft**
+  collaborate on AI for general-purpose robots. MIT introduced
+  **Kolmogorov-Arnold networks (KANs)**, a novel neural network architecture.
+  **Meta AI** is training **Llama 3** models with over 400 billion parameters,
+  aiming for multimodality and longer context lengths.
+companies:
+  - scale-ai
+  - mistral-ai
+  - reka-ai
+  - openai
+  - moderna
+  - sanctuary-ai
+  - microsoft
+  - mit
+  - meta-ai-fair
+models:
+  - gpt-4
+  - gpt-5
+  - gpt-3.5
+  - mistral
+  - phi-3
+  - llama-3
+topics:
+  - benchmark-contamination
+  - multimodality
+  - fine-tuning
+  - ai-regulation
+  - ai-weapons
+  - neural-networks
+  - model-architecture
+  - model-scaling
+  - robotics
+  - ai-safety
+people:
+  - sama
+  - _akhaliq
+  - jim_fan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 5/1/2024-5/2/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**418** channels, and **5582** messages) for you. Estimated reading time saved (at 200wpm): **588 minutes**.
 

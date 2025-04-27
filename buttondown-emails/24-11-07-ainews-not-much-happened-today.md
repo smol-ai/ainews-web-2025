@@ -1,13 +1,64 @@
 ---
 id: a7c09fbc-b6d7-4d70-a73d-23b960fdab7f
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-11-08T01:01:09.630174Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-3089
+description: >-
+  **Ollama** announced **Ollama 0.4** supporting Meta's **Llama 3.2 Vision**
+  models (11B and 90B), showcasing handwriting recognition. **Self-Consistency
+  Preference Optimization (ScPO)** was introduced to improve model consistency
+  without human labels. Discussions highlighted the importance of **model
+  scaling**, **skip connections** in **Transformers**, and challenges with
+  **AMD's** multi-GPU bandwidth. AI applications include healthcare innovations
+  with less regulation, automated resume parsing using **LlamaIndex** and
+  **Gemini**, and secure development environments with **Gitpod Flex**. Research
+  covers **Small Language Models (SLMs)**, numerical understanding in LLMs,
+  **OCR** using a **GPT-2 decoder**, and multi-agent systems in prediction
+  markets. Community events include **NeurIPS Happy Hour**, NLP seminars, and
+  courses on agent memory with LLMs as operating systems.
+companies:
+  - ollama
+  - meta-ai-fair
+  - amd
+  - llamaindex
+  - gemini
+  - gitpod
+  - togethercompute
+  - langchain-ai
+  - weights-biases
+  - stanfordnlp
+  - deeplearningai
+models:
+  - llama-3-2-vision
+  - gpt-2
+topics:
+  - model-scaling
+  - skip-connections
+  - transformers
+  - self-consistency-preference-optimization
+  - handwriting-recognition
+  - healthcare-ai
+  - automated-resume-parsing
+  - secure-development-environments
+  - small-language-models
+  - numerical-processing
+  - chain-of-thought
+  - optical-character-recognition
+  - multi-agent-systems
+  - interactive-language-learning
+  - agent-memory
+people:
+  - bindureddy
+  - fstichler
+  - stasbekman
+  - jxmnop
+  - llama_index
+  - svpino
+  - omarsar0
+  - giffmana
+  - rajammanabrolu
 ---
+
 
 **a quiet week is all we need.**
 

@@ -1,13 +1,66 @@
 ---
 id: 36f8e198-8bb3-4914-abea-5eabbf2a49ca
-title: '[AINews] small little news items'
+title: small little news items
 date: '2025-01-15T02:19:30.206234Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-small-little-news-items
+description: >-
+  **Ollama** enhanced its models with **Cohere's R7B**, optimized for **RAG**
+  and **tool use tasks**, and released **Ollama v0.5.5** with quality updates
+  and a new engine. **Together AI** launched the free **Llama 3.3 70B**, a
+  **multimodal model** with improved reasoning and math, while **OpenBMB**
+  released the **MiniCPM-o 2.6**, an **8B parameter multimodal model**
+  outperforming **GPT-4V** on visual tasks. Insights into **Process Reward
+  Models (PRM)** were shared to enhance **LLM reasoning**, alongside the
+  **Qwen2.5-Math-PRM** models excelling in mathematical reasoning. **LangChain**
+  introduced beta **tasks** for **ChatGPT** to schedule reminders and summaries,
+  and an open-source **ambient agents** email assistant. **OpenAI** rolled out
+  **Tasks** for scheduling actions in **ChatGPT** for Plus, Pro, and Teams
+  users. AI software engineering is rapidly advancing, predicted to match human
+  SWE capabilities in 18 months. Research on **LLM scaling laws** highlights
+  power law relationships and plateauing improvements, challenging exponential
+  AI progress.
+companies:
+  - ollama
+  - cohere
+  - together-ai
+  - openbmb
+  - openai
+  - langchain-ai
+models:
+  - r7b
+  - llama-3-70b
+  - minicpm-o-2.6
+  - gpt-4v
+  - qwen2.5-math-prm
+topics:
+  - rag
+  - tool-use-tasks
+  - quality-of-life
+  - new-engine
+  - multimodality
+  - reasoning
+  - math
+  - process-reward-models
+  - llm-reasoning
+  - tasks
+  - ambient-agents
+  - email-assistants
+  - ai-software-engineering
+  - codebase-analysis
+  - test-case-generation
+  - security-infrastructure
+  - llm-scaling-laws
+  - power-law
+  - model-size
+  - dataset-size
+  - test-loss
+  - exponential-ai-advancements
+people:
+  - _philschmid
+  - bindureddy
+  - cwolferesearch
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**patience is all you need.**
 

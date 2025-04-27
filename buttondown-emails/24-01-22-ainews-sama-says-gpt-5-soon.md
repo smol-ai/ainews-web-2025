@@ -1,13 +1,52 @@
 ---
 id: 134bae82-928e-4c06-8299-07e9b9135c3f
-title: '[AINews] Sama says: GPT-5 soon'
+title: 'Sama says: GPT-5 soon'
 date: '2024-01-22T20:51:23.366064Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ai-discords-1192024
+description: >-
+  **Sam Altman** at Davos highlighted the priority of launching the new model,
+  likely named **GPT-5**, while expressing uncertainty about **Ilya
+  Sutskever**'s employment status. **Itamar from Codium** introduced the concept
+  of **Flow Engineering** with **AlphaCodium**, gaining attention from **Andrej
+  Karpathy**. On **TheBloke** Discord, discussions included a **multi-specialty
+  mixture-of-experts (MOE) model** combining seven 7B parameter models
+  specialized in law, finance, and medicine, debates on **8-bit fine-tuning**
+  with **bitsandbytes** GPU support, and model merging techniques using
+  **Mergekit** and **Alpaca format**. Interest in **AMD AOCL blas and lapack
+  libraries** for optimizing **llama.cpp** on AMD hardware was noted. Users
+  compared LLMs like **Mixtral**, **GPT-3.5**, **Gemini Pro**, and **GPT-4** for
+  coding and autonomous task capabilities, with experiments on AI performing
+  command line tasks and embedding-enhanced vector stores for knowledge depth.
+companies:
+  - openai
+  - codium
+  - thebloke
+  - amd
+  - huggingface
+models:
+  - gpt-5
+  - mixtral-7b
+  - gpt-3.5
+  - gemini-pro
+  - gpt-4
+  - llama-cpp
+topics:
+  - mixture-of-experts
+  - fine-tuning
+  - model-merging
+  - amd-optimization
+  - vector-stores
+  - coding
+  - autonomous-systems
+  - performance-comparison
+  - command-line-ai
+  - embeddings
+people:
+  - sama
+  - itamar_mar
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> We checked **19** guilds, **290** channels, and **4378** messages for you. Estimated reading time saved (at 200wpm): **377 minutes**.
 

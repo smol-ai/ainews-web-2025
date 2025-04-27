@@ -1,15 +1,50 @@
 ---
 id: 5a1c6a0b-4f1a-4a34-88de-3563bb82d098
-title: >-
-  [AINews] Cohere's Command A claims #3 open model spot (after DeepSeek and
-  Gemma)
+title: 'Cohere''s Command A claims #3 open model spot (after DeepSeek and Gemma)'
 date: '2025-03-18T00:28:53.405655Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-coheres-command-a-claims-3-open-model-spot
+description: >-
+  **Cohere's Command A** model has proven its strong performance with a **256K
+  context window**, **111B parameters**, and competitive pricing, climbing to
+  #13 on the LMArena leaderboard with notable style control capabilities.
+  **Mistral AI Small 3.1** was released as a lightweight, multilingual,
+  multimodal model optimized for fast response and low-latency function calling,
+  supporting a **128K context window** and available under an **Apache 2.0
+  license**. The new OCR model **SmolDocling** offers fast document reading with
+  low VRAM usage, outperforming larger models like Qwen2.5VL. Discussions
+  highlight the importance of system-level improvements (CoT) over raw LLM
+  advancements. The **MCBench** benchmark is recommended for its comprehensive
+  and auditable evaluation of AI models.
+companies:
+  - cohere
+  - mistral-ai
+  - huggingface
+models:
+  - command-a
+  - mistral-ai-small-3.1
+  - smoldocling
+  - qwen-2.5-vl
+topics:
+  - context-windows
+  - multilinguality
+  - multimodality
+  - fine-tuning
+  - ocr
+  - benchmarking
+  - model-performance
+  - function-calling
+  - style-control
+  - model-optimization
+  - model-deployment
+people:
+  - aidan_gomez
+  - sophiamyang
+  - mervenoyann
+  - lmarena_ai
+  - aidan_mclau
+  - lateinteraction
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Yay for open weights models!**
 

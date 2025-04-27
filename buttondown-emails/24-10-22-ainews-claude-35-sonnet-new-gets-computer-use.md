@@ -1,13 +1,48 @@
 ---
 id: 92b32e84-5e69-4ee5-8bd5-b272bd08060c
-title: '[AINews] Claude 3.5 Sonnet (New) gets Computer Use'
+title: Claude 3.5 Sonnet (New) gets Computer Use
 date: '2024-10-23T02:08:12.665635Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-claude-35-sonnet-new-gets-computer-use
+description: >-
+  **Anthropic** announced new **Claude 3.5 Sonnet** and **Claude 3.5 Haiku**
+  models, improving coding performance significantly, with Sonnet topping
+  multiple code editing benchmarks and Haiku matching Claude 3 Opus in many
+  evaluations. Sonnet improved SWE-bench Verified coding score from 33.4% to
+  **49.0%**, surpassing **o1-preview**'s 41.4%, though its math performance
+  remains lower. The new Computer Use API from Anthropic enables controlling
+  computers via vision, scoring **14.9%** on OSWorld's screen manipulation
+  benchmark, outperforming other AI systems. This functionality contrasts with
+  traditional tool use via APIs. Replit integrated Claude as a human feedback
+  replacement for its agent. Additionally, **Zep** launched a cloud edition
+  memory layer for AI agents focusing on reasoning about changing facts,
+  highlighting challenges in multimodal memory. *"Computer use now officially
+  blessed by Claude's upgraded vision model"* raises questions on agent memory
+  storage evolution.
+companies:
+  - anthropic
+  - nvidia
+  - replit
+  - zep
+models:
+  - claude-3.5-sonnet
+  - claude-3.5-haiku
+  - claude-3-opus
+  - o1-preview
+topics:
+  - coding
+  - benchmarking
+  - computer-use
+  - vision
+  - multimodality
+  - memory
+  - model-performance
+  - api
+  - model-updates
+people:
+  - _philschmid
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Better model naming is all we need.**
 

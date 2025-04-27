@@ -69,10 +69,10 @@ const categories = ['companies', 'models', 'topics', 'people'] as const;
       
       {categories.map((category) => (
         <div id={category} class="animate space-y-8 scroll-mt-16">
-          <h2 class="text-xl font-medium">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+          <h2 class="text-2xl font-mono uppercase tracking-widest">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
           
           <div class="flex flex-col md:flex-row gap-8">
-            <div class="flex-2">
+            <div class="flex-1">
               <h3 class="text-lg font-medium mb-4">Alphabetical</h3>
               <div class="flex flex-wrap gap-2">
                 {categoryData[category].alphabetical.map((tag, index, array) => {
@@ -103,18 +103,32 @@ const categories = ['companies', 'models', 'topics', 'people'] as const;
             <div class="flex-1">
               <h3 class="text-lg font-medium mb-4">Most Used</h3>
               <div class="flex flex-wrap gap-2">
-                {categoryData[category].byUsage.map((tag) => (
-                  <a href={`/tags/${tag}`}
-                    class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
-                  >
-                    {tag}{" "}
-                    <span class="text-sm text-gray-600 dark:text-gray-400">
-                      ({posts.filter((post) => post.data[category]?.includes(tag)).length})
-                    </span>
-                  </a>
-                ))}
+                {categoryData[category].byUsage.map((tag, index, array) => {
+                  const count = posts.filter((post) => post.data[category]?.includes(tag)).length;
+                  const prevCount = index > 0 ? posts.filter((post) => post.data[category]?.includes(array[index-1])).length : 0;
+                  const needsBreak = index === 0 || 
+                    (Math.log2(count) | 0) !== (Math.log2(prevCount) | 0);
+                  return (
+                    <>
+                      {needsBreak && (
+                        <>
+                          <div class="w-full"/>
+                          <p>{Math.pow(2, Math.log2(count) | 0)}+</p>
+                        </>
+                      )}
+                      <a href={`/tags/${tag}`}
+                        class="rounded-sm border border-black/15 px-2 py-1 text-sm transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white"
+                      >
+                        {tag}{" "}
+                        <span class="text-sm text-gray-600 dark:text-gray-400">
+                          ({count})
+                        </span>
+                      </a>
+                    </>
+                  );
+                })}
               </div>
-            </div>
+              </div>
           </div>
         </div>
       ))}

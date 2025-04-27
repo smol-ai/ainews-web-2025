@@ -1,13 +1,50 @@
 ---
 id: f85cc97e-71fc-4e40-a6fc-93604214255a
-title: '[AINews] Google wakes up: Gemini 2.0 et al'
+title: 'Google wakes up: Gemini 2.0 et al'
 date: '2024-12-12T03:16:07.864299Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-google-wakes-up-gemini-20-et-al
+description: >-
+  **Google** launched the **Gemini 2.0 Flash** model at NeurIPS, surprising many
+  by outperforming the 1.5 Pro version and the o1-preview on LMArena benchmarks.
+  This model introduces a new multimodal API supporting vision and voice, along
+  with features like image generation and text-to-speech. Google also announced
+  several AI projects including **Project Mariner**, a browser agent with SOTA
+  83.5% on WebVoyager, **Project Astra** with multilingual and tool use
+  enhancements, and **Jules**, an AI-powered code agent integrated with GitHub
+  workflows. Meanwhile, **OpenAI** revealed ChatGPT integration with Apple
+  devices, enhancing Siri and visual intelligence capabilities. The community
+  response to Google's advancements has been overwhelmingly positive, signaling
+  a strong comeback.
+companies:
+  - google-deepmind
+  - openai
+models:
+  - gemini-2.0-flash
+  - gemini-1.5-pro
+  - gemini-exp-1206
+  - claude-3.5-sonnet
+  - opus
+  - chatgpt
+topics:
+  - multimodality
+  - image-generation
+  - text-to-speech
+  - multilinguality
+  - tool-use
+  - browser-agents
+  - benchmarking
+  - ai-integration
+  - code-generation
+  - model-performance
+people:
+  - demishassabis
+  - bindureddy
+  - sundarpichai
+  - scaling01
+  - paigebailey
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**TPUs are all you need.**
 

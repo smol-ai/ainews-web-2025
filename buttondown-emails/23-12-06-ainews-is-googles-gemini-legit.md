@@ -1,13 +1,41 @@
 ---
 id: a1ee8502-437a-478e-8745-89dfdc26e01e
-title: '[AINews] Is Google''s Gemini... legit?'
+title: Is Google's Gemini... legit?
 date: '2023-12-06T22:22:18.156000Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ai-discords-1262023-9118
+description: >-
+  **Google's Gemini** and **OpenAI's GPT-4** models are central to active
+  discussions, focusing on performance, context window size, and capabilities
+  like image sourcing on Bard. Users debate the superiority of **Gemini Pro**
+  over **GPT-3.5** and anticipate improvements in speech, multimodality, and
+  speed for upcoming GPT versions. Issues with **OpenAI services** such as login
+  problems, chatbot errors, and subscription recognition are reported. New
+  prompt engineering techniques like "convo-lang" for GPT models are introduced.
+  Comparative AI model evaluations include **GPT-4**, **Claude 2.1**, and
+  **PaLM2**. *"Gemini has a 32k context window"* and *"Bard only finds existing
+  images from the web"* are notable user insights. More details expected on Dec
+  13th.
+companies:
+  - google
+  - openai
+models:
+  - gpt-4
+  - gpt-3.5
+  - gemini-pro
+  - claude-2.1
+  - palm2
+topics:
+  - context-windows
+  - prompt-engineering
+  - model-evaluation
+  - multimodality
+  - speech-processing
+  - chatbot-errors
+  - subscription-management
+people:
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Hi alpha testers!
 

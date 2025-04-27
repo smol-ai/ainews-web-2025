@@ -1,13 +1,41 @@
 ---
 id: a116b502-c917-4ef7-ab3c-ac75c1b4f51d
-title: '[AINews] OpenAI Realtime API and other Dev Day Goodies'
+title: OpenAI Realtime API and other Dev Day Goodies
 date: '2024-10-02T06:06:20.556230Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-openai-realtime-api-and-other-dev-day
+description: >-
+  **OpenAI** launched the **Realtime API** preview for
+  **gpt-4o-realtime-preview**, featuring text and audio token support with
+  pricing details and partnerships with **LiveKit**, **Agora**, and **Twilio**
+  for advanced audio and voice call capabilities. The API supports voice
+  activity detection modes, function calling, session instructions, and auto
+  truncation for the 128k token limit. Additionally, OpenAI announced **Vision
+  Fine-tuning** with only 100 examples improving mapping accuracy significantly
+  for **Grab** and **Automat**, and introduced **Model Distillation** with
+  stored completions and free eval inference for users opting to share data.
+  Prompt caching is also planned for future updates.
+companies:
+  - openai
+  - livekit
+  - agora
+  - twilio
+  - grab
+  - automat
+models:
+  - gpt-4o-realtime-preview
+  - gpt-4o
+topics:
+  - voice-activity-detection
+  - function-calling
+  - prompt-caching
+  - vision-fine-tuning
+  - model-distillation
+  - audio-processing
+  - session-management
+  - token-limits
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Websockets are all you need.**
 

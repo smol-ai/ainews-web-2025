@@ -1,13 +1,53 @@
 ---
 id: 35042e7a-2765-48c3-a894-4ff649792087
-title: '[AINews] 1/2/2024: Smol tweaks to Smol Talk'
+title: '1/2/2024: Smol tweaks to Smol Talk'
 date: '2024-01-03T07:38:24.484214Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-122024-smol-tweaks-to-smol-talk
+description: >-
+  **OpenAI** Discord discussions highlight a detailed comparison of AI search
+  engines including **Perplexity**, **Copilot**, **Bard**, and **Claude 2**,
+  with Bard and Claude 2 trailing behind. **Meta AI** chatbot by Meta is
+  introduced, available on Instagram and Whatsapp, featuring image generation
+  akin to a free GPT version. Users report multiple browser issues with
+  **ChatGPT**, including persistent captchas when using VPNs and plugin
+  malfunctions. Debates cover prompt engineering, API usage, and data format
+  preferences like **JSON**, **YAML**, and **Markdown**. The community also
+  discusses ChatGPT's personality tuning and model capability variations.
+companies:
+  - openai
+  - meta-ai-fair
+  - perplexity-ai
+models:
+  - claude-2
+  - bard
+  - copilot
+  - meta-ai
+  - gemini-ultra
+  - chatgpt
+topics:
+  - prompt-engineering
+  - api
+  - json
+  - yaml
+  - markdown
+  - image-generation
+  - browser-compatibility
+  - vpn
+  - plugin-issues
+  - chatgpt-personality
+  - model-capabilities
+people:
+  - jaicraft
+  - thedreamakeem
+  - rosyskull
+  - kilogamz
+  - satanhashtag
+  - lugui
+  - beanz_and_rice
+  - thedeeplearningdummy
+  - kez92
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Some Smol Talk meta today: we didn't feel too happy with the "boringness" of the bullet point summaries so we tried to tweak the prompts:
 

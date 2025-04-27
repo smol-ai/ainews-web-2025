@@ -1,13 +1,65 @@
 ---
 id: bfd6ecb6-ea05-4120-af25-be51bdfc677c
-title: '[AINews] DeepSeek #1 on US App Store, Nvidia stock tanks -17%'
+title: 'DeepSeek #1 on US App Store, Nvidia stock tanks -17%'
 date: '2025-01-28T05:28:32.064176Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseek-1-on-us-app-store-nvidia-stock
+description: >-
+  **DeepSeek** has made a significant cultural impact by hitting mainstream news
+  unexpectedly in 2025. The **DeepSeek-R1** model features a massive **671B
+  parameter MoE architecture** and demonstrates **chain-of-thought (CoT)**
+  capabilities rivaling **OpenAI's o1** at lower cost. The **DeepSeek V3** model
+  trains a **236B parameter model 42% faster** than its previous **67B model**
+  using **fp8 precision**. **Qwen2.5-VL** is a new multimodal model supporting
+  images and videos with sizes ranging from **3B to 72B parameters**, featuring
+  strong vision and agentic capabilities. Discussions highlight **NVIDIA's**
+  role in hardware acceleration, with concerns about stock drops due to
+  **DeepSeek's** efficiency gains and compute demand increases. The AI
+  competition landscape is tense with market reactions and strategic
+  vulnerabilities related to chip supply chains. **LangChain** and **LangGraph**
+  integrations enable advanced chatbot memory and tool use, including DeFi
+  automation.
+companies:
+  - deepseek
+  - openai
+  - nvidia
+  - langchain
+models:
+  - deepseek-r1
+  - deepseek-v3
+  - qwen2.5-vl
+  - o1
+topics:
+  - moe
+  - chain-of-thought
+  - fp8
+  - multimodality
+  - vision
+  - agentic-ai
+  - inference-speed
+  - compute-demand
+  - stock-market
+  - hardware-acceleration
+  - model-training
+  - model-efficiency
+  - ai-competition
+  - chatbots
+  - defi
+people:
+  - sama
+  - teortaxestex
+  - nptacek
+  - carpeetti
+  - mervenoyann
+  - omarasar0
+  - samyj19
+  - ykylee
+  - finbarrtimbers
+  - cwolferesearch
+  - arthurrapier
+  - danhendrycks
+  - scaling01
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**DeepSeek is all you need.**
 

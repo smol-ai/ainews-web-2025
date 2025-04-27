@@ -1,13 +1,57 @@
 ---
 id: 08835504-dbe9-4ddb-bf22-7fc0232bdb02
-title: '[AINews] GPT4o August + 100% Structured Outputs for All (GPT4o August edition)'
+title: GPT4o August + 100% Structured Outputs for All (GPT4o August edition)
 date: '2024-08-07T02:40:09.048705Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt4o-august-100-structured-outputs-for
+description: >-
+  **OpenAI** released the new **gpt-4o-2024-08-06** model with **16k context
+  window** and **33-50% lower pricing** than the previous 4o-May version,
+  featuring a new Structured Output API that improves output formatting and
+  reduces retry costs. **Meta AI** launched **Llama 3.1**, a **405-billion
+  parameter** model surpassing **GPT-4** and **Claude 3.5 Sonnet** on
+  benchmarks, alongside expanding the **Llama Impact Grant** program. **Google
+  DeepMind** quietly released **Gemini 1.5 Pro**, outperforming **gpt-4o**,
+  **Claude-3.5**, and **Llama 3.1** on LMSYS benchmarks and leading the Vision
+  Leaderboard. **Yi-Large Turbo** was introduced as a cost-effective upgrade
+  priced at $0.19 per million tokens. On hardware, **NVIDIA H100 GPUs** were
+  highlighted by John Carmack for their massive AI compute power, and **Groq**
+  announced plans to deploy **108,000 LPUs** by Q1 2025. Development tools like
+  **RAG (Retrieval-Augmented Generation)**, **JamAI Base** for Mixture of
+  Agents, and **LangSmith** filtering enhancements were also discussed. Google
+  DeepMind introduced **PEER (Parameter Efficient Expert Retrieval)**
+  architecture for efficient expert retrieval.
+companies:
+  - openai
+  - meta-ai-fair
+  - google-deepmind
+  - nvidia
+  - groq
+  - langchain-ai
+models:
+  - gpt-4o-2024-08-06
+  - llama-3-1-405b
+  - gemini-1.5-pro
+  - claude-3.5-sonnet
+  - yi-large-turbo
+topics:
+  - structured-output
+  - context-windows
+  - model-pricing
+  - benchmarking
+  - parameter-efficient-expert-retrieval
+  - retrieval-augmented-generation
+  - mixture-of-experts
+  - model-performance
+  - ai-hardware
+  - model-architecture
+  - model-optimization
+  - filtering
+people:
+  - john_carmack
+  - jonathan_ross
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Pydantic/Zod is all you need.**
 

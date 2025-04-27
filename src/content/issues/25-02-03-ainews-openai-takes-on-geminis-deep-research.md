@@ -37,7 +37,7 @@ topics:
   - agent-design
 people:
   - sama
-  - dan-hendrycks
+  - danhendrycks
   - ethan-mollick
   - dan-shipper
 ---

@@ -1,13 +1,51 @@
 ---
 id: f351a999-84b5-4ade-9120-63cf65530493
-title: '[AINews] Lilian Weng on Video Diffusion'
+title: Lilian Weng on Video Diffusion
 date: '2024-04-17T02:15:37.824011Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-lilian-weng-on-video-diffusion
+description: >-
+  **OpenAI** expands with a launch in Japan, introduces a Batch API, and
+  partners with Adobe to integrate the **Sora video model** into Premiere Pro.
+  **Reka AI** releases the **Reka Core multimodal language model**.
+  **WizardLM-2** debuts with impressive performance, and **Llama 3** news is
+  anticipated soon. Geoffrey Hinton highlights AI models showing **intuition,
+  creativity, and analogy recognition** beyond humans. The **Devin AI model**
+  notably contributes to its own codebase, and **Opus** can recognize its own
+  generated outputs. Sam Altman warns startups about being "steamrolled" by
+  OpenAI, while Yann LeCun discusses AGI timelines, emphasizing it is not
+  imminent or solely from LLMs. Lilian Weng's blog on **diffusion models for
+  video generation** spotlights **training-free adaptation**, enabling video
+  output from pre-trained text-to-image models without additional training.
+companies:
+  - openai
+  - adobe
+  - reka-ai
+models:
+  - wizardlm-2
+  - llama-3
+  - reka-core
+  - devin
+  - opus
+  - sora
+topics:
+  - diffusion-models
+  - video-generation
+  - training-free-adaptation
+  - multimodality
+  - intuition
+  - creativity
+  - analogy-recognition
+  - model-self-improvement
+  - model-recognition
+  - startup-competition
+  - agi-timelines
+people:
+  - sama
+  - ylecun
+  - lilian_weng
+  - geoffrey_hinton
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/15/2024-4/16/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **5610** messages) for you. Estimated reading time saved (at 200wpm): **615 minutes**.
 

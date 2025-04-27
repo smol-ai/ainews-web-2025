@@ -1,13 +1,78 @@
 ---
 id: ecee3ef6-d3b0-4616-85d5-7cbe6a7bdbf8
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-04-11T20:07:39.735908Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-2885
+description: >-
+  **Grok-3** and **Grok-3 mini** models were independently evaluated, showing
+  **Grok-3** outperforms **GPT-4.5** and **Claude 3.7 Sonnet** on reasoning
+  benchmarks like **GPQA Diamond**, while **Grok-3 mini** excels in reasoning
+  tasks such as **FrontierMath**. Research on **reinforcement learning (RL)**
+  for improving small reasoning models highlights both promising improvements
+  and challenges with evaluation stability. Benchmark results for **Quasar
+  Alpha**, **Optimus Alpha**, **Llama-4 Scout**, and **Llama-4 Maverick**
+  suggest **Quasar Alpha** may be **GPT-4.1** or a variant. Vision and
+  multimodal models like **Kaleidoscope** support 18 languages and 14 subjects,
+  while **InternVL3** combines **InternViT** and **Qwen2.5VL** for reasoning and
+  tool use. **TransMamba** innovates by fusing transformer precision with
+  **SSM** speed. Alibaba's **FantasyTalking** generates realistic talking
+  portraits. Agent-focused events at **CMU** and tools like **FilmAgent AI**
+  simulate filmmaking roles in 3D. **BrowseComp** benchmark tests AI agents'
+  internet browsing capabilities. The coding assistant **Augment** integrates
+  with **VSCode**, **JetBrains**, and **NeoVim** to analyze and suggest code
+  changes. Discussions include Google's new agent-to-agent protocol and the
+  concept of agents having "cards" akin to business cards.
+companies:
+  - epochairesearch
+  - openai
+  - alibaba
+  - cmu
+  - google
+  - microsoft
+models:
+  - grok-3
+  - grok-3-mini
+  - gpt-4.5
+  - claude-3-7-sonnet
+  - quasar-alpha
+  - optimus-alpha
+  - llama-4-scout
+  - llama-4-maverick
+  - kaleidoscope
+  - internvl3
+  - internvit
+  - qwen-2.5-vl
+  - transmamba
+  - fantasytalking
+topics:
+  - reinforcement-learning
+  - reasoning
+  - benchmarking
+  - vision
+  - multimodality
+  - agents
+  - tooling
+  - code-assistants
+  - model-performance
+  - model-evaluation
+  - transformers
+  - ssm
+  - 3d-environments
+  - internet-browsing
+people:
+  - rasbt
+  - scaling01
+  - sarahookr
+  - mervenoyann
+  - theturingpost
+  - cloneofsimo
+  - _akhaliq
+  - gneubig
+  - lioronai
+  - svpino
+  - mathemagic1an
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

@@ -1,13 +1,60 @@
 ---
 id: c385ed86-3c44-4026-a4da-380d75752f43
-title: '[AINews] AI gets Memory'
+title: AI gets Memory
 date: '2024-02-15T00:47:59.492420Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ai-gets-memory
+description: >-
+  **AI Discords** analysis covered **20 guilds**, **312 channels**, and **6901
+  messages**, highlighting developments in **RAG operations** for context and
+  memory, with implementations in **MemGPT**, **ChatGPT**, and **LangChain**.
+  The **TheBloke Discord** discussed **open-source large language models** like
+  **Large World Model** with 1 million token contexts, **Cohere's aya model**
+  supporting 101 languages, and finetuning methods such as **Sequential
+  Fine-Tuning (SFT)** and **Direct Preference Optimization (DPO)**. Hardware
+  improvements boosted token processing speeds for **MiquMaid-v2-70B** models
+  specialized in Erotic Role Play. Integration efforts between JavaScript and
+  Python via **JSPyBridge** expanded the **SillyTavern** project. Training
+  challenges with **Mixtral 8x7b qlora** versus **Mistral 7b** were noted. The
+  **LM Studio Discord** focused on hardware constraints affecting large model
+  loading, medical LLMs like **medAlpaca**, and GPU performance discussions
+  including overclocking and NVLink. Anticipation for **IQ3_XSS** 1.5 bit
+  quantization support in LM Studio was also reported.
+companies:
+  - openai
+  - langchain
+  - cohere
+  - unsloth-ai
+  - mistral-ai
+  - microsoft
+models:
+  - miqumaid-v2-70b
+  - mixtral-8x7b-qlora
+  - mistral-7b
+  - aya
+  - medalpaca
+  - phi-2
+  - iq3_xss
+  - large-world-model
+topics:
+  - rag
+  - memory-modeling
+  - context-windows
+  - open-source
+  - finetuning
+  - direct-preference-optimization
+  - sequential-fine-tuning
+  - hardware-acceleration
+  - gpu-overclocking
+  - jax
+  - model-training
+  - quantization
+  - medical-llm
+  - gpu-memory-management
+  - software-integration
+people:
+  - joannejang
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/11-12/2024. We checked **20** guilds, **312** channels, and **6901** messages for you. Estimated reading time saved (at 200wpm): **589 minutes**.
 

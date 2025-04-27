@@ -1,15 +1,70 @@
 ---
 id: 60040813-c586-425c-a173-004426b1de69
 title: >-
-  [AINews] FineWeb: 15T Tokens, 12 years of CommonCrawl (deduped and filtered,
-  you're welcome)
+  FineWeb: 15T Tokens, 12 years of CommonCrawl (deduped and filtered, you're
+  welcome)
 date: '2024-04-23T00:03:58.017305Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-fineweb-15t-tokens-of-commoncrawl
+description: >-
+  **2024** has seen a breakthrough in dataset sizes for training large language
+  models, with **Redpajama 2** offering up to **30T tokens**, and other models
+  like **DBRX (12T tokens)**, **Reka Core/Flash/Edge (5T tokens)**, and **Llama
+  3 (15T tokens)** pushing the scale. **Huggingface** released an open dataset
+  of **15T tokens** from 12 years of filtered CommonCrawl data, enabling
+  training of models like **Llama 3** if compute and code are available. On
+  Reddit, **WizardLM-2-8x22b** outperformed other open LLMs including
+  **Llama-3-70b-instruct** in reasoning and math benchmarks. **Claude Opus**
+  showed strong zero-shot code error spotting, surpassing **Llama 3**.
+  Benchmarks reveal limitations in the **LMSYS chatbot leaderboard** due to
+  instruction-tuned models gaming the system, and a new RAG benchmark showed
+  **Llama 3 70B** underperforming compared to **GPT-4**, while **Mistral 8x7B**
+  remains strong. Efficient quantized versions of **Llama 3** by
+  **quantfactory** are noted, with users generating up to ~9600 tokens on
+  **Llama 3 70B q2_xs**. **AQLM quantization** for **Llama 3 8B** performs on
+  par with baseline models. Safety concerns include a UK sex offender banned
+  from AI tool usage and **GPT-4** demonstrating an 87% success rate exploiting
+  real vulnerabilities, raising security concerns.
+companies:
+  - huggingface
+  - meta-ai-fair
+  - mistral-ai
+  - lmsys
+  - quantfactory
+  - openai
+  - reka-ai
+  - dbrx
+models:
+  - redpajama-2
+  - dbrx
+  - reka-core
+  - reka-flash
+  - reka-edge
+  - llama-3
+  - wizardlm-2-8x22b
+  - llama-3-70b-instruct
+  - claude-opus
+  - llama-3-70b
+  - mistral-8x7b
+  - llama-3-8b
+  - llama-3-q2_xs
+topics:
+  - datasets
+  - benchmarking
+  - reasoning
+  - mathematics
+  - zero-shot-learning
+  - quantization
+  - model-efficiency
+  - code-error-detection
+  - instruction-tuning
+  - rag
+  - security-vulnerabilities
+  - censorship
+  - model-performance
+people:
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/19/2024-4/22/2024. We checked 6 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **14973** messages) for you. Estimated reading time saved (at 200wpm): **1510 minutes**.
 

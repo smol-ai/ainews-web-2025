@@ -1,13 +1,48 @@
 ---
 id: 5a90e352-28be-4325-900c-7b5b71490f5d
-title: '[AINews] OpenAI takes on Gemini''s Deep Research'
+title: OpenAI takes on Gemini's Deep Research
 date: '2025-02-04T02:44:29.143732Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-openai-takes-on-geminis-deep-research
+description: >-
+  **OpenAI** released the full version of the **o3** agent, with a new **Deep
+  Research** variant showing over double the performance on Dan Hendrycks' **HLE
+  benchmark** compared to **o3-mini-high**. The release includes impressive
+  inference time scaling and a $200/month subscription model. Reception has been
+  mostly positive with some criticism on public test set results for the
+  **GAIA** benchmark. Upcoming events include the **Gemini Deep Research** team
+  at AI Engineer NYC. On the research front, advances in **reinforcement
+  learning** were highlighted, including a new simple test-time scaling
+  technique called **budget forcing** that improves reasoning by 27%.
+  Collaborations involve **Google DeepMind**, **NYU**, **UC Berkeley**, and
+  **HKU**.
+companies:
+  - openai
+  - google-deepmind
+  - nyu
+  - uc-berkeley
+  - hku
+models:
+  - o3
+  - o3-mini-high
+  - o3-deep-research-mini
+topics:
+  - reinforcement-learning
+  - benchmarking
+  - inference-speed
+  - model-performance
+  - reasoning
+  - test-time-scaling
+  - subscription-model
+people:
+  - sama
+  - ethan_mollick
+  - dan_shipper
+  - andersonbcdefg
+  - iScienceLuvr
+  - _akhaliq
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**o3 and tools are all you need.**
 

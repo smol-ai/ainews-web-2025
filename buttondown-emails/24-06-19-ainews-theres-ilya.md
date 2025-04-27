@@ -1,13 +1,59 @@
 ---
 id: 749a1b07-1c88-4358-a33e-230b7bfb7907
-title: '[AINews] There''s Ilya!'
+title: There's Ilya!
 date: '2024-06-20T00:18:00.147344Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-theres-ilya
+description: >-
+  **Ilya Sutskever** has co-founded **Safe Superintelligence Inc** shortly after
+  leaving **OpenAI**, while **Jan Leike** joined **Anthropic**. **Meta**
+  released new models including **Chameleon 7B** and **34B** with mixed-modal
+  input and unified token space quantization. **DeepSeek-Coder-V2** demonstrates
+  code capabilities comparable to **GPT-4 Turbo**, supporting 338 programming
+  languages and 128K context length. **Consistency Large Language Models
+  (CLLMs)** enable parallel decoding generating multiple tokens per step.
+  **Grokked Transformers** show reasoning improvements through training
+  dynamics. **VoCo-LLaMA** compresses vision tokens for efficient
+  vision-language modeling. The **BigCodeBench** benchmark evaluates LLMs on
+  1,140 coding tasks across 139 Python libraries, with **DeepSeek-Coder-V2** and
+  **Claude 3 Opus** leading. **PixelProse** is introduced as a 16M image-caption
+  dataset with reduced toxicity. *"Chameleon quantizes images and text into a
+  unified token space"* and *"CLLMs map random initializations to the same
+  result as autoregressive decoding in few steps."*
+companies:
+  - safe-superintelligence-inc
+  - openai
+  - anthropic
+  - meta
+  - deepseek
+  - google-deepmind
+models:
+  - chameleon-7b
+  - chameleon-34b
+  - deepseek-coder-v2
+  - gpt-4-turbo
+  - claude-3-opus
+  - voco-llama
+topics:
+  - parallel-decoding
+  - code-generation
+  - quantization
+  - training-dynamics
+  - vision
+  - benchmarks
+  - datasets
+  - image-captioning
+  - reasoning
+people:
+  - ilya_sutskever
+  - jan_leike
+  - ylecun
+  - _akhaliq
+  - _philschmid
+  - rohanpaul_ai
+  - mervenoyann
+  - fchollet
 ---
+
 
 <!-- buttondown-editor-mode: plaintext --><p><strong>Safe Superintelligence is All You Need.</strong></p>
 <blockquote>

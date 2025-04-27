@@ -1,13 +1,54 @@
 ---
 id: ec3ace29-f799-43c3-a386-d0d0efd46c4f
-title: '[AINews] One Year of Latent Space'
+title: One Year of Latent Space
 date: '2024-02-24T01:05:00.357006Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-one-year-of-latent-space
+description: >-
+  **Latent Space** podcast celebrates its first anniversary with over **1
+  million unique readers** and top rankings in U.S. tech podcast charts. The
+  **Gemini 1.5** image generator by **Google DeepMind** sparked controversy over
+  bias and inaccurate representation, fueling debates on AI ethics. Discussions
+  in **TheBloke** and **LM Studio** Discords highlighted AI's growing role in
+  creative industries, especially game development and text-to-3D tools.
+  Fine-tuning and performance optimization of models like **Gemma 7B** and
+  **Mistral-next** were key topics in **Nous Research AI** and **Mistral**
+  Discords, with community-shared solutions including GitHub repositories.
+  Emerging trends in AI hardware optimization and deployment were discussed in
+  **CUDA MODE** and **LangChain AI** Discords, featuring critiques of **Nvidia's
+  CUDA** by **Jim Keller** and advancements in reducing AI hallucinations hinted
+  by **Richard Socher**.
+companies:
+  - google-deepmind
+  - thebloke
+  - lm-studio
+  - nous-research
+  - mistral-ai
+  - langchain-ai
+  - nvidia
+models:
+  - gemini-1.5
+  - gemma-7b
+  - mistral-next
+  - opus-v1
+  - orca-2-13b
+  - nous-hermes-2-dpo-7b
+topics:
+  - ai-ethics
+  - bias
+  - fine-tuning
+  - performance-optimization
+  - model-merging
+  - knowledge-transfer
+  - vulnerability-research
+  - ai-hallucination
+  - hardware-optimization
+  - text-to-3d
+  - game-development
+people:
+  - jim_keller
+  - richard_socher
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/22/2024. We checked **20** guilds, **317** channels, and **8875** messages for you. Estimated reading time saved (at 200wpm): **835 minutes**.
 

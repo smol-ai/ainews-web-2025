@@ -1,13 +1,65 @@
 ---
 id: fb8f064c-a654-4286-a905-a014e041c5ad
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-02-26T02:19:12.201709Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-6477
+description: >-
+  **Claude 3.7 Sonnet** demonstrates strong coding and reasoning capabilities,
+  outperforming models like **DeepSeek R1**, **O3-mini**, and **GPT-4o** on
+  benchmarks such as **SciCode** and **LiveCodeBench**. It features a large
+  **200k context window**, **64k token thinking mode**, and a new coding tool
+  called **Claude Code** that acts as a CLI-based coding assistant. The model is
+  available on platforms including **Anthropic**, **Amazon Bedrock**, and
+  **Google Cloud** at a price of **$3/$15 per million tokens**. Meanwhile,
+  **DeepSeek** released **DeepEP**, an open-source communication library
+  optimized for **MoE model training and inference** with support for
+  **NVLink**, **RDMA**, and **FP8** precision. These updates highlight
+  advancements in **model-performance**, **fine-tuning**, and
+  **model-optimization** for large language models.
+companies:
+  - anthropic
+  - deepseek
+  - amazon
+  - google-cloud
+  - perplexity-ai
+models:
+  - claude-3-7-sonnet
+  - claude-3-7
+  - deepseek-r1
+  - deepseek-v3
+  - gemini-2-0-pro
+  - gpt-4o
+  - qwen2-5-coder-32b-instruct
+  - o3-mini
+  - o1-2024-12-17
+topics:
+  - coding
+  - reasoning
+  - model-performance
+  - fine-tuning
+  - model-optimization
+  - moe
+  - communication-libraries
+  - fp8
+  - nvlink
+  - rdma
+  - context-windows
+  - cli-tools
+people:
+  - skirano
+  - omarsar0
+  - reach_vb
+  - artificialanlys
+  - terryyuezhuo
+  - perplexity_ai
+  - _akhaliq
+  - _philschmid
+  - teknium1
+  - catherineols
+  - goodside
+  - danielhanchen
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

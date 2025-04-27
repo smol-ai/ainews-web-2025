@@ -1,13 +1,41 @@
 ---
 id: f874277f-0d6b-4ad1-9d82-77acda3da946
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-13T21:13:47.394377Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-8188
+description: >-
+  **DeepSeek R1** was trained using **FP8** precision, demonstrating efficiency
+  in model storage and processing, and outperforming **Gemma 3 27B** in the
+  Chatbot Arena Elo Score. Discussions highlight the hardware requirements
+  including **32 H100s** and **2,560GB VRAM**, and debate the accuracy of AI
+  benchmarks. **OpenAI** labeled **DeepSeek** as "state-controlled" and called
+  for bans on "PRC-produced" models, sparking criticism from the community about
+  OpenAI's motives and the openness of **DeepSeek** models, which can be run
+  locally or on **Hugging Face**. The community contrasts OpenAI's stance with
+  the democratization of AI models like **DeepSeek** and **Claude**. **NVIDIA**
+  demonstrated **DeepSeek R1** running on **8xH200s** GPUs.
+companies:
+  - deepseek
+  - google
+  - openai
+  - nvidia
+  - hugging-face
+models:
+  - deepseek-r1
+  - gemma-3-27b
+  - claude
+topics:
+  - fp8
+  - model-efficiency
+  - quantization
+  - hardware
+  - benchmarking
+  - model-deployment
+  - open-source
+people:
+  - sama
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

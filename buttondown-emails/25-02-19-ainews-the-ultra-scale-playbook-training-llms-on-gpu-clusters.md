@@ -1,13 +1,73 @@
 ---
 id: 627736a9-c551-42f4-ab08-e615b14cfbca
-title: '[AINews] The Ultra-Scale Playbook: Training LLMs on GPU Clusters'
+title: 'The Ultra-Scale Playbook: Training LLMs on GPU Clusters'
 date: '2025-02-20T05:57:17.513081Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-ultra-scale-playbook-training-llms-on
+description: >-
+  **Huggingface** released "The Ultra-Scale Playbook: Training LLMs on GPU
+  Clusters," an interactive blogpost based on 4000 scaling experiments on up to
+  512 GPUs, providing detailed training strategies for GPU clusters.
+  **DeepSeek** introduced the Native Sparse Attention (NSA) model, gaining
+  significant community attention, while **Perplexity AI** launched R1-1776, an
+  uncensored and factual version of DeepSeek's R1 model. **Google DeepMind**
+  released PaliGemma 2 Mix, a multi-task vision-language model available in 3B,
+  10B, and 28B sizes, capable of tasks like outfit judging and object counting.
+  **Microsoft** unveiled Muse, a generative AI model trained on the game
+  Bleeding Edge, with weights and code released. The open-source
+  **Baichuan-M1-14B** medical LLM was announced, trained on 20T tokens for
+  medical tasks. A fully open-source 40B genome modeling model using
+  StripedHyena 2 architecture was also introduced. Additionally, **Microsoft**
+  presented Magma, a foundation model for multimodal AI agents excelling in UI
+  navigation and robotic manipulation, pretrained with Set-of-Mark and
+  Trace-of-Mark annotations.
+companies:
+  - huggingface
+  - deepseek
+  - perplexity-ai
+  - google-deepmind
+  - microsoft
+  - baichuan
+  - stripedhyena
+models:
+  - deepseek-nsa
+  - r1-1776
+  - paligemma-2-mix
+  - baichuan-m1-14b
+  - magma
+  - muse
+topics:
+  - gpu-clusters
+  - training-strategies
+  - native-sparse-attention
+  - uncensored-models
+  - vision-language
+  - multimodality
+  - generative-ai
+  - medical-llm
+  - genome-modeling
+  - foundation-models
+  - robotic-manipulation
+  - ui-navigation
+  - pretraining
+  - set-of-mark
+  - trace-of-mark
+people:
+  - eliebakouch
+  - nouamanetazi
+  - lvwerra
+  - thom_wolf
+  - proftomyeh
+  - alex_wang
+  - qtnx_
+  - aravsrinivas
+  - _akhaliq
+  - _philschmid
+  - mervenoyann
+  - reach_vb
+  - arankomatsuzaki
+  - maximelabonne
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**2 days is all you need to read this.**
 

@@ -1,13 +1,50 @@
 ---
 id: 2c5b54c8-2b22-4462-8e1d-fc3c428eecab
-title: '[AINews] Gemma 2: The Open Model for Everyone'
+title: 'Gemma 2: The Open Model for Everyone'
 date: '2024-06-28T06:21:39.390033Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemma-2-the-open-model-for-everyone
+description: >-
+  **Knowledge Distillation** is highlighted as a key technique to address the
+  token scarcity problem in training large language models, exemplified by
+  **Gemma 2** from **google-deepmind**, which uses a 27B parameter model and
+  smaller distilled models trained on over 50× the compute-optimal tokens. The
+  Gemma tokenizer supports multilingual and multimodal capabilities, with
+  notable fine-tuning success on over 200 Indic language variants. The **Open
+  LLM Leaderboard** shows **Alibaba's Qwen 72B** leading, with multiple Qwen
+  models dominating top spots, and **Anthropic** releasing **Claude 3.5
+  Sonnet**. Research on eliminating matrix multiplication in LLMs promises
+  significant memory savings. *"Gemma models are super easily adaptable to
+  different languages"* and *"attention-scaling"* innovations were also
+  discussed.
+companies:
+  - google-deepmind
+  - anthropic
+  - alibaba
+  - mistral-ai
+models:
+  - gemma-2
+  - qwen-72b
+  - claude-3.5-sonnet
+  - mixtral-8x22b-instruct
+topics:
+  - knowledge-distillation
+  - tokenization
+  - multilingual-models
+  - multimodality
+  - attention-mechanisms
+  - model-training
+  - model-optimization
+  - memory-optimization
+  - benchmarking
+people:
+  - kathleen_kenealy
+  - daniel_han
+  - clementdelangue
+  - clefourrier
+  - dl_weekly
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Knowledge Distillation is all you need to solve the token crisis?**
 

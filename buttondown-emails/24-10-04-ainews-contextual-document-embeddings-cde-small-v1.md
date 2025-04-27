@@ -1,13 +1,48 @@
 ---
 id: 2bac3a4c-2649-40d3-965c-5fc2ab97ddb2
-title: '[AINews] Contextual Document Embeddings: `cde-small-v1`'
+title: 'Contextual Document Embeddings: `cde-small-v1`'
 date: '2024-10-05T01:38:06.226049Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-contextual-document-embeddings-cde-small-v1
+description: >-
+  **Meta** announced a new text-to-video model, **Movie Gen**, claiming superior
+  video generation adaptation of **Llama 3** compared to OpenAI's Sora Diffusion
+  Transformers, though no release is available yet. Researchers Jack Morris and
+  Sasha Rush introduced the **cde-small-v1** model with a novel **contextual
+  batching** training technique and **contextual embeddings**, achieving strong
+  performance with only 143M parameters, offering an efficiency advantage over
+  larger models. **OpenAI** launched Canvas, a collaborative interface for
+  ChatGPT with synthetic data training. **Google DeepMind** welcomed
+  @_tim_brooks to work on video generation and world simulators, with CEO
+  @demishassabis expressing excitement. Google released **Gemini 1.5 Flash-8B**,
+  improving pricing and rate limits through algorithmic efficiency.
+companies:
+  - meta-ai-fair
+  - openai
+  - google-deepmind
+  - weights-biases
+  - togethercompute
+models:
+  - llama-3
+  - cde-small-v1
+  - gemini-1.5-flash-8b
+topics:
+  - contextual-batching
+  - contextual-embeddings
+  - video-generation
+  - synthetic-data
+  - model-efficiency
+  - training-techniques
+  - algorithmic-efficiency
+people:
+  - jack_morris
+  - sasha_rush
+  - karinanguyen_
+  - _tim_brooks
+  - demishassabis
+  - _arohan_
+  - bfl_ml
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Contextual Batching is all you need.**
 

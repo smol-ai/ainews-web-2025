@@ -1,13 +1,44 @@
 ---
 id: 56ec05bf-3c4f-454a-aa7c-26178a8809fd
-title: '[AINews] Anime pfp anon eclipses $10k A::B prompting challenge'
+title: Anime pfp anon eclipses $10k A::B prompting challenge
 date: '2024-04-09T01:18:42.938105Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-anime-pfp-anon-eclipses-10k-ab-prompting
+description: >-
+  **Victor Taelin** issued a $10k challenge to GPT models, initially achieving
+  only 10% success with state-of-the-art models, but community efforts surpassed
+  90% success within 48 hours, highlighting GPT capabilities and common skill
+  gaps. On Reddit, **Command R Plus (104B)** is running quantized on **M2 Max
+  hardware** via **Ollama** and **llama.cpp**, with **GGUF quantizations**
+  released on Huggingface. Streaming text-to-video generation and **WD Tagger
+  v3** for mass auto-captioning datasets with WebUI were introduced.
+  Lesser-known prompting techniques and self-evolving system prompts showed
+  promising outputs. Discussions covered image composition for character LoRAs,
+  best checkpoints for video game characters in **Stable Diffusion 1.5**,
+  scarcity of 5B parameter models, and open-source AI licensing. Memes included
+  jokes on ChatGPT and Gemini training data.
+companies:
+  - ollama
+  - huggingface
+  - openai
+models:
+  - command-r-plus-104b
+  - stable-diffusion-1.5
+  - chatgpt
+  - gemini
+topics:
+  - quantization
+  - model-optimization
+  - streaming
+  - prompt-engineering
+  - image-composition
+  - fine-tuning
+  - open-source
+  - humor
+people:
+  - victor_taelin
+  - futuristfrog
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/5/2024-4/8/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**387** channels, and **9770** messages) for you. Estimated reading time saved (at 200wpm): **1103 minutes**.
 

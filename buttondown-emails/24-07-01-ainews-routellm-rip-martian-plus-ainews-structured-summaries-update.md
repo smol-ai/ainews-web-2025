@@ -1,13 +1,52 @@
 ---
 id: b9088584-8ef0-45e9-9390-6a5c1547cfc2
-title: '[AINews] RouteLLM: RIP Martian? (Plus: AINews Structured Summaries update)'
+title: 'RouteLLM: RIP Martian? (Plus: AINews Structured Summaries update)'
 date: '2024-07-02T00:23:08.479510Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-5628
+description: >-
+  **LLM Preference data** is highlighted as a key innovation by **LMSys** with
+  their open source router framework **RouteLLM**, which uses preference data
+  from Chatbot Arena to train routers that reduce costs by over **85% on MT
+  Bench**, **45% on MMLU**, and **35% on GSM8K** while maintaining **95% of
+  GPT-4's performance**. This approach contrasts with previous task-specific
+  routing by focusing on syntax-based mixture-of-experts routing. The news also
+  covers the **Gemma 2** model family, with **Gemma 2 27B** being noted as the
+  best open model at 2.5x smaller than alternatives and approaching **Llama 3
+  70B** performance. A new **Block Transformer** architecture shows up to **20x
+  inference throughput improvement** by optimizing KV cache IO. Additionally,
+  **Andrej Karpathy** proposes a fully Software 2.0 computer vision system using
+  a single neural net without classical software. **Yann LeCun** critiques video
+  generation models for lacking understanding of physics and human body
+  dynamics. The update also mentions improved structured summaries for better
+  topic selection and clarity.
+companies:
+  - lmsys
+  - openai
+models:
+  - gpt-4
+  - gemma-2-27b
+  - llama-3-70b
+topics:
+  - model-routing
+  - cost-efficiency
+  - preference-data
+  - data-augmentation
+  - model-performance
+  - block-transformer
+  - inference-throughput
+  - software-2.0
+  - computer-vision
+  - video-generation
+  - physics-simulation
+people:
+  - karpathy
+  - ylecun
+  - bindureddy
+  - armandjoulin
+  - rohanpaul_ai
+  - giffmana
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**LLM Preference data is all you need.**
 

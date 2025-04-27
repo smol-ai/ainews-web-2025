@@ -1,13 +1,50 @@
 ---
 id: 9a53eef2-e998-45eb-a4a3-57a5f270286a
-title: '[AINews] Did Nvidia''s Nemotron 70B train on test?'
+title: Did Nvidia's Nemotron 70B train on test?
 date: '2024-10-17T00:44:43.747168Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-did-nvidias-nemotron-70b-train-on-test
+description: >-
+  **NVIDIA's Nemotron-70B** model has drawn attention for its performance on
+  benchmarks like **Arena Hard**, **AlpacaEval**, and **MT-Bench**, though some
+  standard benchmarks such as **GPQA** and **MMLU Pro** show unchanged or worse
+  results compared to the base **Llama-3.1-70B**. The new
+  **HelpSteer2-Preference dataset** improves performance on some benchmarks with
+  minimal loss elsewhere. **Mistral AI** released **Ministral 3B and 8B** models
+  featuring **128k context length** under the **Mistral Commercial License**,
+  outperforming **Llama-3.1** and **GPT-4o**. Nvidia's Nemotron 70B surpasses
+  **GPT-4o** and **Claude-3.5-Sonnet** on several benchmarks using **RLHF
+  (REINFORCE)** training techniques. **Zep** introduced **Graphiti**, an
+  open-source tool for temporal knowledge graph memory layers for AI agents,
+  built on **Neo4j**.
+companies:
+  - nvidia
+  - mistral-ai
+  - huggingface
+  - zep
+models:
+  - nemotron-70b
+  - llama-3.1-70b
+  - ministral-3b
+  - ministral-8b
+  - gpt-4o
+  - claude-3.5-sonnet
+  - llama-3.1
+topics:
+  - benchmarking
+  - reinforcement-learning
+  - reward-models
+  - temporal-knowledge-graphs
+  - memory-layers
+  - context-windows
+  - model-performance
+  - open-source
+people:
+  - swyx
+  - reach_vb
+  - _philschmid
+  - alphasignalai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Patience for standard evals are all you need.**
 

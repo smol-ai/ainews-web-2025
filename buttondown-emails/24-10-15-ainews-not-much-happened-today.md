@@ -1,13 +1,62 @@
 ---
 id: ed773f33-d4cf-4b5e-a29b-bdcd887a1edb
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-10-15T21:33:05.037085Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-7393
+description: >-
+  **Vertical SaaS agents** are gaining rapid consensus as the future of AI
+  agents, highlighted by **Decagon's $100m funding** and **Sierra's $4b round**.
+  **OpenAI alumni** are launching over 10 startups, intensifying competition.
+  **Demis Hassabis** celebrated the **Nobel Prize** for **AlphaFold2**, a
+  breakthrough in protein structure prediction. Advances in AI models include
+  techniques like **LoRA projectors** and **annealing** on high-quality data,
+  with diminishing gaps between open-source and closed-source LLMs. Discussions
+  emphasize the need for **high-bandwidth sensory inputs** beyond language for
+  common sense learning and innovative uses of LLMs in theorem proving.
+  Infrastructure demands for frontier models remain massive. New tools and
+  workflows involve **LlamaParse** and long-context LLMs. Ethical concerns focus
+  on AI agents' susceptibility to harmful task execution. Model evaluation
+  reveals vulnerabilities in benchmarks, while optimization methods like
+  **LoLCATs** and **LPZero** promise efficiency gains. Industry opinions
+  highlight fierce competition and debate over open vs closed-source AI.
+companies:
+  - openai
+  - decagon
+  - sierra
+  - togethercompute
+models:
+  - llama
+  - mistral
+  - alphafold2
+topics:
+  - fine-tuning
+  - model-optimization
+  - model-evaluation
+  - reinforcement-learning
+  - self-supervised-learning
+  - neural-architecture-search
+  - memory-optimization
+  - long-context
+  - ethics
+  - benchmarking
+  - transformers
+  - multi-agent-systems
+  - ai-infrastructure
+people:
+  - bindureddy
+  - demishassabis
+  - clementdelangue
+  - johnowhitaker
+  - ylecun
+  - fchollet
+  - nearcyan
+  - rasbt
+  - jerryjliu0
+  - ajeya_cotra
+  - rohanpaul_ai
+  - adcock_brett
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Vertical SaaS agents are all you need.**
 

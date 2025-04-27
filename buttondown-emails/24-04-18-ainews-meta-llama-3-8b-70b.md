@@ -1,13 +1,58 @@
 ---
 id: b447f626-a7a1-46cd-b9fc-b62c3b585f06
-title: '[AINews] Meta Llama 3 (8B, 70B)'
+title: Meta Llama 3 (8B, 70B)
 date: '2024-04-19T04:28:01.540342Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-5820
+description: >-
+  **Meta** partially released **Llama 3** models including **8B** and **70B**
+  variants, with the **400B** variant still in training and considered the first
+  GPT-4 level open-source model. **Stability AI** launched the **Stable
+  Diffusion 3 API** with upcoming model weights, showing competitive realism
+  against Midjourney V6. **Boston Dynamics** introduced an electric version of
+  their humanoid robot Atlas, while **Microsoft** showcased the **VASA-1** model
+  generating real-time lifelike talking faces. **Mistral AI** seeks $5 billion
+  funding and released the **Mixtral-8x22B-Instruct-v0.1** model with 100%
+  accuracy on 64K context. AI safety discussions include calls for audits by
+  former OpenAI board member **Helen Toner** and AI usage principles from the
+  Mormon Church. New AI tools and frameworks like **Ctrl-Adapter**, **Distilabel
+  1.0.0**, **Data Bonsai**, and **Dendron** were highlighted. Memes and humor
+  around AI development also featured prominently.
+companies:
+  - meta-ai-fair
+  - stability-ai
+  - boston-dynamics
+  - microsoft
+  - mistral-ai
+  - openai
+models:
+  - llama-3-8b
+  - llama-3-70b
+  - llama-3-400b
+  - stable-diffusion-3
+  - mixtral-8x22b-instruct-v0.1
+  - vasa-1
+topics:
+  - transformer-architecture
+  - tokenization
+  - long-context
+  - model-pretraining
+  - image-generation
+  - robotics
+  - real-time-processing
+  - benchmarking
+  - ai-safety
+  - natural-language-processing
+  - synthetic-data
+  - dataset-cleaning
+  - agent-frameworks
+  - memes
+  - humor
+people:
+  - helen_toner
+  - omarsar0
+  - emad_mostaque
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/17/2024-4/18/2024. We checked 6 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **9849** messages) for you. Estimated reading time saved (at 200wpm): **918 minutes**.
 

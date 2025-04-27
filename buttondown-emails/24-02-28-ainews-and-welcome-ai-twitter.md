@@ -1,13 +1,50 @@
 ---
 id: f6170a9b-bb14-404e-ad10-06dc9e044d33
-title: '[AINews] ... and welcome AI Twitter!'
+title: ... and welcome AI Twitter!
 date: '2024-02-29T00:50:17.713944Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-and-welcome-ai-twitter
+description: >-
+  **AI Twitter discourse** from **22 guilds**, **349 channels**, and **8212
+  messages** highlights fast-evolving AI trends including **ethical
+  considerations** discussed by **Margaret Mitchell** around **Google Gemini's**
+  launch, and **coding skill shifts** noted by **John Carmack**. **Guillaume
+  Lample** announced the release of **mistral-large**, a multilingual model.
+  Discussions include **synthetic data** market entry by **OpenAI** and
+  **on-device AI** advancements by **Yann LeCun**. Financial platform issues
+  with **Stripe** were raised by **Pieter Levels**, alongside cultural insights
+  from **François Chollet**. The report also touches on leadership speculation
+  at **Google** and humor from **AISafetyMemes** and **Pieter Levels**.
+companies:
+  - google
+  - openai
+  - stripe
+  - apple
+models:
+  - mistral-large
+  - gemini
+topics:
+  - ai-ethics
+  - multilingual-models
+  - synthetic-data
+  - on-device-ai
+  - convolutional-neural-networks
+  - financial-transactions
+  - corporate-culture
+  - humor
+people:
+  - mmitchell_ai
+  - id_aa_carmack
+  - guillaumelample
+  - levelsio
+  - aravsrinivas
+  - deliprao
+  - svpino
+  - alexandr_wang
+  - ylecun
+  - fchollet
+  - aisafetymemes
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords + Twitter for 2/27-28/2024. We checked **22** guilds, **349** channels, and **8212** messages for you. Estimated reading time saved (at 200wpm): **743 minutes**.
 

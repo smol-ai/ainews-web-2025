@@ -1,13 +1,56 @@
 ---
 id: 156435c9-3f17-4b0d-bacb-39074b5f3d98
-title: '[AINews] 12/25/2023: Nous Hermes 2 Yi 34B for Christmas'
+title: '12/25/2023: Nous Hermes 2 Yi 34B for Christmas'
 date: '2023-12-26T07:45:27.644769Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12252023-nous-hermes-2-yi-34b-for-christmas
+description: >-
+  **Teknium** released **Nous Hermes 2** on **Yi 34B**, positioning it as a top
+  open model compared to **Mixtral**, **DeepSeek**, and **Qwen**. **Apple**
+  introduced **Ferret**, a new open-source multimodal LLM. Discussions in the
+  **Nous Research AI Discord** focused heavily on **AI model optimization** and
+  **quantization techniques** such as **AWQ**, **GPTQ**, and **AutoAWQ**, with
+  insights on throughput metrics and proprietary optimization methods like
+  tensor parallelization. Additional highlights include the addition of the
+  **NucleusX Model** to **Huggingface transformers**, a 30B model achieving **80
+  MMLU**, and the **YAYI 2** language model by **Wenge Technology** trained on
+  **2.65 trillion tokens**. The community also discussed hosting inference
+  servers and updating model cards for better deployment.
+companies:
+  - teknim
+  - apple
+  - huggingface
+  - wenge-technology
+  - nous-research-ai
+  - deepseek
+  - mistral-ai
+  - qwen
+models:
+  - nous-hermes-2
+  - mixtral
+  - yayi-2
+  - nucleusx
+  - ferret
+  - 30b-model
+topics:
+  - quantization
+  - model-optimization
+  - throughput-metrics
+  - tensor-parallelization
+  - multimodality
+  - model-card
+  - inference
+  - language-model-pretraining
+  - batching
+  - model-benchmarking
+people:
+  - teknium
+  - carsonpoole
+  - casper_ai
+  - pradeep1148
+  - osanseviero
+  - metaldragon01
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Today Teknium released Nous Hermes 2 on Yi, making it the top open model compared to Mixtral, DeepSeek, Qwen, and others:
 

@@ -1,13 +1,52 @@
 ---
 id: 18d27612-ca78-43a0-a945-87952e9d460b
-title: '[AINews] s{imple|table|calable} Consistency Models'
+title: s{imple|table|calable} Consistency Models
 date: '2024-10-25T02:36:02.241076Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-simpletablecalable-consistency-models
+description: >-
+  **TrigFlow** highlights the impact of model distillation on diffusion models,
+  enabling dramatic speedups from 100-200 step sampling down to 1-4 steps,
+  powering realtime generate-as-you-type applications like **BlinkShot** and
+  **Flux Schnell**. Research led by **Yang Song** on consistency models,
+  including **Latent Consistency Models** and **LCM-LoRA**, has advanced stable
+  diffusion with new algorithmic improvements called **sCMs** that achieve under
+  10% FID difference in just 2 steps and scale up to 1.5B parameters. On AI
+  hardware, **Tesla** is deploying a massive **50k H100 cluster** potentially
+  capable of completing **GPT-4** training in under three weeks, while
+  **Cerebras Systems** set a new inference speed record on **Llama 3.1 70B**
+  with their wafer-scale AI accelerator. **Stability AI** released **Stable
+  Diffusion 3.5** and a Turbo variant with quality improvements, and **Cohere**
+  launched new multilingual models covering 23 languages with state-of-the-art
+  performance available on **Hugging Face**. **Llama 3.1 405B bf16** inference
+  was demonstrated on an 8xH200 GPU node with high token throughput and no
+  network overhead. These developments showcase advances in diffusion model
+  distillation, AI hardware scaling, and multilingual model releases.
+companies:
+  - stability-ai
+  - tesla
+  - cerebras
+  - cohere
+  - hugging-face
+models:
+  - llama-3-70b
+  - llama-3-405b
+  - llama-3-1
+  - stable-diffusion-3.5
+  - gpt-4
+topics:
+  - model-distillation
+  - diffusion-models
+  - consistency-models
+  - inference-speed
+  - gpu-optimization
+  - multilingual-models
+  - model-scaling
+  - token-throughput
+  - ai-hardware-performance
+people:
+  - yang_song
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**TrigFlow is all you need.**
 

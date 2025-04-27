@@ -1,13 +1,51 @@
 ---
 id: 36b4513c-1d0d-4df2-96ad-9e13095c3d11
-title: '[AINews] o1 API, 4o/4o-mini in Realtime API + WebRTC, DPO Finetuning'
+title: o1 API, 4o/4o-mini in Realtime API + WebRTC, DPO Finetuning
 date: '2024-12-18T01:43:51.256632Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-o1-api-4o4o-mini-in-realtime-api-webrtc
+description: >-
+  **OpenAI** launched the **o1 API** with new features including vision inputs,
+  function calling, structured outputs, and a new `reasoning_effort` parameter,
+  achieving **60% fewer reasoning tokens** than previous versions. The **o1
+  pro** variant is confirmed as a distinct implementation coming soon.
+  Improvements to the **Realtime API** with **WebRTC** integration offer easier
+  usage, longer sessions (30 minutes), and significantly reduced pricing (10x
+  cheaper for mini models). OpenAI also introduced **DPO Preference Tuning** for
+  fine-tuning, currently available for the **4o** model. Additional updates
+  include official Go and Java SDKs and released DevDay videos. The news
+  highlights ongoing API enhancements and developer-focused features from
+  OpenAI.
+companies:
+  - openai
+models:
+  - o1-2024-12-17
+  - o1
+  - o1-pro
+  - gpt-4o
+  - gpt-4o-mini
+  - gpt-4o-2024-08-06
+  - gpt-4o-mini
+topics:
+  - function-calling
+  - structured-outputs
+  - vision
+  - reasoning
+  - api
+  - webrtc
+  - realtime-api
+  - fine-tuning
+  - pricing
+  - sdk
+  - model-release
+people:
+  - aidan_mclau
+  - simonw
+  - michpokrass
+  - morgymcg
+  - juberti
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**[Better APIs are all you need for AGI](https://www.latent.space/p/openai-api-and-o1).**
 

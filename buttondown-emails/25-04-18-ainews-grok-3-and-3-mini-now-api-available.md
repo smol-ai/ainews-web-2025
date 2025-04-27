@@ -1,13 +1,57 @@
 ---
 id: 38309c71-19ba-4feb-96d7-820f32ab6fb8
-title: '[AINews] Grok 3 & 3-mini now API Available'
+title: Grok 3 & 3-mini now API Available
 date: '2025-04-19T05:44:39.731046Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-grok-3-3-mini-now-api-available
+description: >-
+  **Grok 3** and its mini version are now API available, offering competitive
+  pricing and full reasoning traces. **OpenAI** provides a practical guide for
+  building **AI agents** with safe deployment practices, while **LlamaIndex**
+  supports the **Agent2Agent (A2A) protocol** for multi-agent communication.
+  **Codex CLI** is evolving with new features and competing with **Aider** and
+  **Claude Code** for AI-assisted code editing. **GoogleDeepMind** released
+  **Gemini 2.5 Flash**, a hybrid reasoning model topping the **Chatbot Arena
+  leaderboard**. Discussions include performance-per-cost evaluation, emergent
+  behaviors in **o3** and **o4-mini** models from large-scale RL, and updated
+  training compute metrics for **Llama 4 Maverick**. **GoodfireAI** announced a
+  **$50M Series A** for **Ember**, a neural programming platform, and
+  **Mechanize** was founded to build virtual work environments and automation
+  benchmarks. **GoogleDeepMind's** **Quantisation Aware Training (QAT)** for
+  **Gemma 3** models reduces model size significantly, with open source
+  checkpoints available.
+companies:
+  - openai
+  - llamaindex
+  - google-deepmind
+  - deepmind
+  - goodfireai
+  - mechanize
+models:
+  - grok-3
+  - grok-3-mini
+  - gemini-2.5-flash
+  - o3
+  - o4-mini
+  - llama-4-maverick
+  - gemma-3-27b
+topics:
+  - ai-agent-development
+  - agent-communication
+  - ai-assisted-code-editing
+  - hybrid-reasoning
+  - performance-per-cost
+  - reinforcement-learning
+  - training-compute
+  - quantization-aware-training
+  - model-compression
+people:
+  - swyx
+  - jeremyphoward
+  - philschmid
+  - mckbrando
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**X is all you need?**
 

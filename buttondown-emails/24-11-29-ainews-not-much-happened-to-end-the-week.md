@@ -1,13 +1,73 @@
 ---
 id: 2993aba9-2f86-4135-be57-f3c184cebeb8
-title: '[AINews] not much happened to end the week'
+title: not much happened to end the week
 date: '2024-11-29T23:07:35.341765Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-to-end-the-week
+description: >-
+  **AI News for 11/29/2024-11/30/2024** covers updates from **433 Twitters**,
+  **29 Discords**, and multiple subreddits. Highlights include the **Gemini
+  multimodal model** advancing in understanding complex musical structures, the
+  upcoming **quantized SWE-Bench** for benchmarking at 1.3 bits per task, and
+  the launch of the **DeepSeek-R1 model** focusing on transparent reasoning as
+  an alternative to OpenAI's **o1** model. The establishment of the **1st
+  International Network of AI Safety Institutes** marks a global collaboration
+  for AI safety. Industry updates feature **Amazon's Olympus AI model** and
+  **Tesla's Optimus** AI agents with internet access. Community reflections
+  emphasize the impact of large language models like **ChatGPT** and medical AI
+  applications. Discussions include scaling sparse autoencoders to **gpt-4** and
+  the need for transparency in reasoning LLMs. Memes highlight humor around
+  **ChatGPT**.
+companies:
+  - google-deepmind
+  - deepseek
+  - openai
+  - amazon
+  - tesla
+  - x-ai
+  - alibaba
+  - anthropic
+  - ollama
+models:
+  - gemini
+  - deepseek-r1
+  - o1
+  - claude-3.5-sonnet
+  - gpt-4
+  - chatgpt
+  - qwen-32b
+  - o1-mini
+  - o1-preview
+  - claude-3.5
+  - gpt-4o
+topics:
+  - multimodality
+  - benchmarking
+  - quantization
+  - reinforcement-learning
+  - ai-safety
+  - translation
+  - reasoning
+  - interpretability
+  - model-scaling
+  - model-transparency
+  - community-engagement
+  - humor
+people:
+  - hrishioa
+  - ofirpress
+  - tamaybes
+  - yoshua_bengio
+  - kevinweil
+  - therundownai
+  - ollama
+  - hydeai
+  - jd_pressman
+  - ylecun
+  - nrehiew_
+  - omarsar0
+  - marktenenholtz
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet holiday weekend is all we need.**
 

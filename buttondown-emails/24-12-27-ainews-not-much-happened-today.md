@@ -1,13 +1,74 @@
 ---
 id: 5cd40505-c2bf-4d82-bb10-46d8f0cb669d
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-12-28T05:06:02.495266Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-4715
+description: >-
+  **ChatGPT**, **Sora**, and the **OpenAI API** experienced a >5 hour outage but
+  are now restored. Updates to **vLLM** enable **DeepSeek-V3** to run with
+  enhanced **parallelism** and **CPU offloading**, improving **model deployment
+  flexibility**. Discussions on **gradient descent** in **top-k routing MoE**
+  and adoption of **FP8 precision** in **DeepSeek V3** highlight advances in
+  **training efficiency** and **memory optimization**. **AIDE**, an **AI voice
+  medical assistant** by **Team Therasync**, leverages **Qdrant**, **OpenAI**,
+  and **Twilio** for healthcare applications. New tools like
+  **DeepSeek-Engineer** and **LlamaIndex** assist in **coding** and **document
+  processing** with **RAG** over large PDF datasets. Insights on **version
+  control** with **ghstack** and advocacy for **linear decay learning rate
+  schedules** support better **model training** practices. Predictions for 2025
+  emphasize **smaller, tighter models**, **true multimodality**, and **on-device
+  AI**. Calls for **planetary-scale federated learning** and **community AGI**
+  moonshots reflect future AI ambitions. Discussions on **agentic systems**,
+  **multi-agent workflows**, and **deliberative alignment** via **chain of
+  thought reasoning** underscore ongoing focus on **AI safety** and
+  **alignment**.
+companies:
+  - openai
+  - deepseek-ai
+  - qdrant
+  - twilio
+  - llamaindex
+  - elevenlabs
+  - github
+models:
+  - deepseek-v3
+  - vllm
+topics:
+  - training-efficiency
+  - parallelism
+  - cpu-offloading
+  - gradient-descent
+  - mixture-of-experts
+  - fp8-precision
+  - memory-optimization
+  - ai-voice-assistants
+  - rag
+  - document-processing
+  - version-control
+  - linear-decay-learning-rate
+  - model-training
+  - multimodality
+  - on-device-ai
+  - federated-learning
+  - community-agi
+  - agentic-systems
+  - multi-agent-systems
+  - deliberative-alignment
+  - chain-of-thought
+people:
+  - francois_fleuret
+  - danielhanchen
+  - aaron_defazio
+  - armenagha
+  - zeyuanallenzhu
+  - fchollet
+  - eladgil
+  - richardsocher
+  - woj_zaremba
+  - giffmana
+  - abacaj
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet weekend is all we need.**
 

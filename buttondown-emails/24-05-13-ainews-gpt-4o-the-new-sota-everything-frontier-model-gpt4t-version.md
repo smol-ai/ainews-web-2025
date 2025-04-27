@@ -1,13 +1,47 @@
 ---
 id: 371f7c57-ad0f-4260-852c-258384391dc6
-title: '[AINews] GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4T version) '
+title: 'GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4T version) '
 date: '2024-05-13T23:14:50.739179Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt-4o-the-new-sota-everything-frontier-9515
+description: >-
+  **OpenAI** launched **GPT-4o**, a frontier model supporting real-time
+  reasoning across **audio, vision, and text**, now free for all ChatGPT users
+  with enhanced coding capabilities and upcoming advanced voice and video
+  features for Plus users. Discussions covered **open-source LLMs** like **Llama
+  3**, fine-tuning techniques including knowledge distillation for **GPT-3.5**,
+  and hardware optimization strategies such as quantization. Emerging
+  architectures like **YOCO** decoder-decoder model and **ThunderKittens** DSL
+  aim to improve GPU efficiency, while research on **Conv-Basis** attention
+  using FFT and depth upscaling techniques promise better model scaling and
+  performance. Multimodal AI integration and mixture-of-experts architectures
+  were also key topics.
+companies:
+  - openai
+  - huggingface
+  - nous-research
+  - eleuther
+  - hazyresearch
+models:
+  - gpt-4o
+  - gpt-3.5
+  - llama-3
+topics:
+  - multimodality
+  - fine-tuning
+  - knowledge-distillation
+  - hardware-limitations
+  - quantization
+  - autoregressive-models
+  - diffusion-models
+  - mixture-of-experts
+  - gpu-optimization
+  - efficient-attention
+  - model-scaling
+  - transformer-architecture
+  - prompt-engineering
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Omnimodality is all you want.**
 

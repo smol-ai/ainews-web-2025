@@ -1,13 +1,50 @@
 ---
 id: a48f879b-435a-4f55-9cd2-eff30a9f057d
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-10-10T01:02:45.022514Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-6017
+description: >-
+  **Geoffrey Hinton** and **John Hopfield** won the **Nobel Prize in Physics**
+  for foundational work on neural networks linking AI and physics. **Meta AI**
+  introduced a **13B parameter audio generation model** for video
+  synchronization. **Anthropic** launched the **Message Batches API** enabling
+  asynchronous processing of up to 10,000 queries at half the cost. **Together
+  Compute** released **Flux Schnell**, a free model for 3 months. New research
+  highlights include **PrefixQuant** quantization and **Prompt Caching** for
+  low-latency inference. **OpenAI** faces projected losses of **$14 billion**
+  over two years. Discussions on AI safety emphasize gender equality, and AI
+  governance concerns about premature regulation by media and Hollywood were
+  raised.
+companies:
+  - meta-ai-fair
+  - anthropic
+  - togethercompute
+  - openai
+  - sequoia
+  - nobelprize
+models:
+  - flux-schnell
+  - prefixquant
+topics:
+  - quantization
+  - audio-generation
+  - model-optimization
+  - api
+  - low-latency-inference
+  - neural-networks
+  - ai-safety
+  - ai-governance
+  - model-serving
+  - benchmarking
+people:
+  - demishassabis
+  - ilyasut
+  - john_hopfield
+  - rohanpaul_ai
+  - mmitchell_ai
+  - bindureddy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**AI is all you need to be a chemist.**
 

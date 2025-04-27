@@ -1,15 +1,41 @@
 ---
 id: de6fed18-27ad-4a29-829f-3d6a4ec67722
 title: >-
-  [AINews] Anthropic's "LLM Genome Project": learning & clamping 34m features on
-  Claude Sonnet
+  Anthropic's "LLM Genome Project": learning & clamping 34m features on Claude
+  Sonnet
 date: '2024-05-21T22:47:46.990001Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-anthropic-cracks-the-llm-genome-project
+description: >-
+  **Anthropic** releases the third paper in their MechInterp trilogy, scaling up
+  to **34 million features** on **Claude 3 Sonnet**, introducing the concept of
+  **dictionary learning** to isolate recurring neuron activation patterns for
+  interpretability. This research enables understanding and intentional
+  modification of abstract features like code errors, sycophancy, crime/harm,
+  self-representation, and deception in large models. Significant funding rounds
+  from **Scale AI** and **Suno AI** and reactions to **Microsoft Build**
+  announcements are also noted.
+companies:
+  - anthropic
+  - scale-ai
+  - suno-ai
+  - microsoft
+models:
+  - claude-3-sonnet
+  - claude-3
+topics:
+  - interpretability
+  - dictionary-learning
+  - feature-activation
+  - model-interpretation
+  - intentional-modifiability
+  - neural-networks
+  - transformer
+  - scaling
+people:
+  - emmanuel_ameisen
+  - alex_albert
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Dictionary Learning is All You Need.**
 

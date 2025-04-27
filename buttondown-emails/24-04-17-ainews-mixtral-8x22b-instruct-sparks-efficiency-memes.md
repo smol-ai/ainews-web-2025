@@ -1,13 +1,53 @@
 ---
 id: 0b735461-2b40-4353-8a4a-33b39cfeec54
-title: '[AINews] Mixtral 8x22B Instruct sparks efficiency memes'
+title: Mixtral 8x22B Instruct sparks efficiency memes
 date: '2024-04-17T21:02:34.918866Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mixtral-8x22b-instruct-defines-frontier
+description: >-
+  **Mistral** released the **Mixtral 8x22B Instruct** model with **39B active
+  parameters**, outperforming larger models and supporting **5 languages**,
+  **math and code capabilities**, and a **64k context window**. The model is
+  available on **Hugging Face** under an **Apache 2.0 license** for local use.
+  **Google DeepMind** plans to invest over **$100 billion** in AI, with other
+  giants like **Microsoft**, **Intel**, and **SoftBank** also making large
+  investments. The UK criminalized non-consensual deepfake porn, sparking debate
+  on enforcement. A former **Nvidia** employee claims Nvidia's AI chip lead is
+  unassailable this decade. A new hybrid architecture model, **Zamba 7B**,
+  combining Mamba blocks and shared attention, outperforms **LLaMA-2 7B** and
+  **OLMo-7B** despite less training data. AI surpasses humans on basic tasks,
+  and unlimited context length for language models was announced.
+companies:
+  - mistral-ai
+  - huggingface
+  - google-deepmind
+  - microsoft
+  - intel
+  - softbank
+  - nvidia
+models:
+  - mixtral-8x22b
+  - llama-2-7b
+  - olmo-7b
+topics:
+  - multilinguality
+  - math
+  - code-generation
+  - context-windows
+  - model-architecture
+  - model-performance
+  - model-release
+  - ai-investment
+  - deepfake
+  - ai-chip
+  - hybrid-architecture
+  - instruction-tuning
+people:
+  - guillaumelample
+  - osanseviero
+  - _philschmid
+  - svpino
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/16/2024-4/17/2024. We checked 6 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **5173** messages) for you. Estimated reading time saved (at 200wpm): **587 minutes**.
 

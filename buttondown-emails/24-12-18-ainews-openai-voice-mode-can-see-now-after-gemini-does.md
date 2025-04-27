@@ -1,13 +1,51 @@
 ---
 id: 3351b790-b00d-40d0-814f-04f641efa8ba
-title: '[AINews] OpenAI Voice Mode Can See Now - After Gemini Does'
+title: OpenAI Voice Mode Can See Now - After Gemini Does
 date: '2024-12-18T09:46:07Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-openai-voice-mode-can-see-now-after-gemini
+description: >-
+  **OpenAI** launched **Realtime Video** shortly after expected, but **Google
+  DeepMind's Gemini 2.0 Flash** arrived first with lower cost and less rate
+  limiting, gaining strong positive buzz. **Anthropic** released research on
+  **Clio**, analyzing real-world usage of **Claude** models. Together Computing
+  acquired CodeSandbox to launch Together Code Interpreter. Discussions
+  highlighted **Meta AI's Llama 3.3-70B** for its advanced roleplay and prompt
+  handling capabilities, outperforming models like **Mistral Large** and
+  **GPT-4o** in expressiveness and censorship. The AI community also noted the
+  importance of attention mechanisms and shared humorous takes on AI outages and
+  competition. Key topics include multimodality, real-time streaming, roleplay,
+  and developer ecosystem dynamics.
+companies:
+  - openai
+  - google-deepmind
+  - anthropic
+  - togethercompute
+  - scale-ai
+  - meta-ai-fair
+  - mistral-ai
+models:
+  - gemini-2.0-flash
+  - claude
+  - claude-3.5-sonnet
+  - llama-3-70b
+  - llama-3.3-70b
+  - mistral-large
+  - gpt-4o
+topics:
+  - multimodality
+  - real-time-streaming
+  - roleplay
+  - attention-mechanisms
+  - developer-ecosystem
+  - model-comparison
+  - model-training
+  - prompt-handling
+  - model-censorship
+  - creative-writing
+people:
+  - bindureddy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Shipping first is all you need.**
 

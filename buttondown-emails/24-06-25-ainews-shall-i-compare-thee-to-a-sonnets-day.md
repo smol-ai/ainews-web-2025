@@ -1,13 +1,45 @@
 ---
 id: a7147fb1-bfa9-47d9-b734-cbb42c629bd8
-title: '[AINews] Shall I compare thee to a Sonnet''s day?'
+title: Shall I compare thee to a Sonnet's day?
 date: '2024-06-26T00:39:44.720143Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-sonnet
+description: >-
+  **Claude 3.5 Sonnet** from **Anthropic** excels in coding and hard prompt
+  challenges, outperforming **GPT-4o** and competing closely with **Gemini 1.5
+  Pro** at lower cost. The model demonstrates strong **instruction-following**
+  but faces critiques on its perceived capabilities. **Glif** showcases a rapid
+  **Wojak meme generator** using Claude 3.5 for **JSON generation** and
+  extraction, highlighting advances in **automation** and **JSON parsing**.
+  **Artifacts** enables fast creation of niche apps, exemplified by a dual
+  monitor visualizer built in under 5 minutes. AI adoption is widespread with
+  **75% of workers** integrating AI tools, signaling a shift towards AI-assisted
+  productivity. Additionally, **fusion energy** is unlikely to impact energy
+  economics soon, while **nuclear fission** remains a cost-effective clean
+  energy source, as noted by **François Chollet**.
+companies:
+  - anthropic
+  - lmsys
+  - glif
+models:
+  - claude-3.5-sonnet
+  - gpt-4o
+  - gemini-1.5-pro
+topics:
+  - hard-prompts
+  - json-parsing
+  - automation
+  - instruction-following
+  - app-development
+  - energy-economics
+  - fusion-energy
+  - nuclear-fission
+  - ai-adoption
+  - productivity
+people:
+  - fchollet
+  - mustafasuleyman
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Claude 3.5 Sonnet is all you need.**
 

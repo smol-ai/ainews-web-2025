@@ -1,15 +1,51 @@
 ---
 id: 053b2d22-8ad9-4c99-b280-315317098012
-title: >-
-  [AINews] Companies liable for AI hallucination is Good Actually for AI
-  Engineers
+title: Companies liable for AI hallucination is Good Actually for AI Engineers
 date: '2024-02-20T00:05:26.401101Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-companies-liable-for-ai-hallucination-is
+description: >-
+  **Air Canada** faced a legal ruling requiring it to honor refund policies
+  communicated by its AI chatbot, setting a precedent for corporate liability in
+  AI engineering. The ruling ordered a refund of **$650.88 CAD** plus damages
+  after the chatbot misled a customer about bereavement travel refunds.
+  Meanwhile, advancements in AI model optimization were highlighted, including
+  **quantization techniques** for GPU inference, **Retrieval-Augmented
+  Generation (RAG)** fine-tuning of LLMs, and **CUDA**-based PyTorch
+  optimizations. New prototype models like **Mistral-Next** and the **Large
+  World Model (LWM)** were introduced, capable of processing over **1 million
+  tokens**. The community is also promoting open-source frameworks such as the
+  TypeScript agent framework **bazed-af**. Discussions touched on AI ethics,
+  data management challenges, and multimedia AI applications like video editing
+  with models such as **Sora**. Additionally, benchmarks like **BABILong** for
+  up to **10M context evaluation** and projects by **karpathy** were noted.
+  *"Air Canada must honor refund policy invented by airlines chatbot"*
+  underscores the growing legal scrutiny of AI systems.
+companies:
+  - air-canada
+  - huggingface
+  - mistral-ai
+  - cuda-mode
+models:
+  - mistral-next
+  - large-world-model
+  - sora
+  - babilong
+topics:
+  - quantization
+  - retrieval-augmented-generation
+  - fine-tuning
+  - cuda-optimization
+  - model-scaling
+  - video-generation
+  - ai-ethics
+  - data-management
+  - open-source
+  - community-collaboration
+people:
+  - karpathy
+  - magsp
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/16-18/2024. We checked **20** guilds, **313** channels, and **12360** messages for you. Estimated reading time saved (at 200wpm): **1022 minutes**. By popular demand (seriously thanks for the interest), we've added a new "Part 0", which summarizes all the summaries of summaries. As expected it's not super specific which we find to be a problem being this far abstracted. Working on it but ideas welcome.
 

@@ -1,13 +1,50 @@
 ---
 id: e87581dc-f03a-4370-afce-92a804557693
-title: '[AINews] 5 small news items'
+title: 5 small news items
 date: '2024-06-06T02:50:37.633247Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-5-small-news-items
+description: >-
+  **OpenAI** announces ChatGPT's voice mode is "coming soon." **Leopold
+  Aschenbrenner** predicts a **trillion dollar cluster** in AGI progress.
+  **Cohere** completes a **$450m raise at $5b valuation**. DeepMind research
+  highlights **Uncertainty Quantification in LLMs** and **xLSTM**, an extension
+  of LSTM outperforming Transformers. Studies reveal the **geometry of concepts
+  in LLMs** and propose eliminating matrix multiplications to reduce memory by
+  10x. Surveys cover **Parameter-Efficient Fine-Tuning (PEFT)** methods.
+  Discussions on **AGI alignment and safety** warn of risks from misaligned AGI.
+  New tools include **LangGraph** for AI agents, **LlamaIndex** with longer
+  context windows, and **Hugging Face's** integration with **NVIDIA NIM** for
+  Llama3. **Mistral AI** releases a fine-tuning API for their models.
+companies:
+  - openai
+  - cohere
+  - deepmind
+  - hugging-face
+  - nvidia
+  - mistral-ai
+models:
+  - llama-3
+  - mistral-7b
+topics:
+  - uncertainty-quantification
+  - lstm
+  - model-efficiency
+  - parameter-efficient-fine-tuning
+  - alignment
+  - agentic-ai
+  - long-context
+  - inference-speed
+  - fine-tuning
+people:
+  - leopold_aschenbrenner
+  - rohanpaul_ai
+  - richardmcngo
+  - omarsar0
+  - hwchase17
+  - clementdelangue
+  - sophiamyang
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**AGI Realism may be what Humanity Needs**
 

@@ -1,13 +1,52 @@
 ---
 id: 134d580b-d650-41c0-bdf3-3118898ad27c
-title: '[AINews] AI2 releases OLMo - the 4th open-everything LLM'
+title: AI2 releases OLMo - the 4th open-everything LLM
 date: '2024-02-03T03:35:10.019799Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ai2-releases-olmo-the-4th-open-everything
+description: >-
+  **AI2** is gaining attention in 2024 with the release of **OLMo**, a series of
+  open language models including **1B**, **7B**, and an upcoming **65B** model,
+  emphasizing reproducible and open research akin to **Pythia**. The
+  **TheBloke** Discord highlighted **Miqu-70B**'s self-correcting abilities and
+  discussions on programming languages and VRAM optimization. The **Mistral**
+  Discord focused on the **GPU shortage** impacting semiconductor production
+  involving **TSMC**, **ASML**, and **Zeiss**, debates on open-source versus
+  proprietary models, and fine-tuning challenges with references to **LoRA**
+  techniques. *"The releasing-models-thru-magnet-link meta still has not yet run
+  out of juice"* and detailed community insights were shared by **Nathan
+  Lambert** and others.
+companies:
+  - ai2
+  - allenai
+  - mistral-ai
+  - tsmc
+  - asml
+  - zeiss
+models:
+  - olmo-1b
+  - olmo-7b
+  - olmo-65b
+  - miqu-70b
+  - miqu-1-70b-sf-4.25bpw-h6-exl2
+  - distilbert-base-uncased
+topics:
+  - fine-tuning
+  - gpu-shortage
+  - model-release
+  - open-source
+  - embedding-chunking
+  - search-functionality
+  - programming-languages
+  - vram-optimization
+  - reproducibility
+people:
+  - natolambert
+  - lhc1921
+  - mrdragonfox
+  - gbourdin
+  - yashkhare_
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/1/2024. We checked **21** guilds, **312** channels, and **5874** messages for you. Estimated reading time saved (at 200wpm): **483 minutes**. We enountered stability issues with very link-heavy messages (thanks @yikesawjeez...) that we had to figure out how to address.
 

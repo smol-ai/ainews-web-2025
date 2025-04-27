@@ -1,13 +1,58 @@
 ---
 id: f8dc17bb-79ec-43be-b087-a224f36f63c5
-title: '[AINews] GitHub Copilot Strikes Back'
+title: GitHub Copilot Strikes Back
 date: '2024-10-30T01:05:11.702248Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-github-copilot-strikes-back-3402
+description: >-
+  **GitHub's tenth annual Universe conference** introduced a **Multi-model
+  Copilot** integrating **Anthropic's Claude 3.5 Sonnet**, **Google's Gemini 1.5
+  Pro**, and **OpenAI's o1-preview** models, allowing developers to choose from
+  multiple AI providers. The event also showcased **GitHub Spark**, an AI-native
+  tool for building natural language applications with features like
+  deployment-free hosting and persistent data storage. Additionally, GitHub
+  updated Copilot with multi-file editing, custom instructions, and new agents
+  for code review and security autofix. Meanwhile, **Weights & Biases** launched
+  **Weave**, supporting multimodal AI observability including audio tracing.
+  Twitter highlights included discussions on **tinygrad optimization** and
+  **Gemini Flash-8B's** cost efficiency. *"Utilizing a creativity feedback loop,
+  users start with an initial prompt, see live previews of their app as it’s
+  built,"* and *"your LLMs aren't just text-only anymore - so why should your
+  observability be?"*
+companies:
+  - github
+  - anthropic
+  - google-deepmind
+  - openai
+  - weights-biases
+models:
+  - claude-3-sonnet
+  - gemini-1.5-pro
+  - o1-preview
+  - gemini-flash-8b
+topics:
+  - multi-model-integration
+  - natural-language-applications
+  - model-picker-ui
+  - multi-file-editing
+  - custom-instructions
+  - ai-native-development
+  - deployment-free-hosting
+  - persistent-data-storage
+  - model-prompting
+  - code-review-agents
+  - security-autofix
+  - multimodality
+  - audio-tracing
+  - tinygrad-optimization
+  - price-performance-ratio
+people:
+  - cassidy_williams
+  - swyx
+  - fchollet
+  - rohanpaul_ai
+  - jxmnop
 ---
+
 
 **GitHub may be all you need for AI-Native coding.**
 

@@ -1,13 +1,50 @@
 ---
 id: 28549af9-0301-4f3f-a4d8-369a8359538c
-title: '[AINews] The Dissection of Smaug (72B)'
+title: The Dissection of Smaug (72B)
 date: '2024-02-13T01:40:29.456403Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-3759
+description: >-
+  **Abacus AI** launched **Smaug 72B**, a large finetune of **Qwen 1.0**,
+  currently leading the **HF Open LLM Leaderboard** with published contamination
+  results, though **Nous Research** remains skeptical. **LAION** introduced a
+  local voice assistant model named Bud-E with a demo. Discord communities like
+  **TheBloke** discussed model performance trade-offs between large models like
+  **GPT-4** and smaller quantized models, fine-tuning techniques using datasets
+  such as WizardLM_evol_instruct_V2_196k, and model merging projects involving
+  **Mistral-7b** and **MiquMaid**. The **LM Studio** community highlighted
+  technical issues with model conversion (PyTorch to gguf), hardware setups
+  involving Intel Xeon CPUs and Nvidia P40 GPUs, privacy considerations, and
+  challenges with image generation and web UI availability.
+companies:
+  - abacus-ai
+  - huggingface
+  - nous-research
+  - laion
+  - thebloke
+  - lm-studio
+  - intel
+  - nvidia
+models:
+  - smaug-72b
+  - qwen-1.0
+  - gpt-4
+  - mistral-7b
+  - miqumaid
+topics:
+  - fine-tuning
+  - model-merging
+  - quantization
+  - model-conversion
+  - hardware-setup
+  - privacy
+  - image-generation
+  - web-ui
+  - optical-character-recognition
+  - prompt-engineering
+people:
+  - bindureddy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/8-10/2024. We checked **20** guilds, **311** channels, and **6143** messages for you. Estimated reading time saved (at 200wpm): **528 minutes**.
 

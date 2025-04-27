@@ -1,13 +1,65 @@
 ---
 id: d0550d67-e91a-463a-95eb-e1fa1d923fcd
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-08-21T00:22:36.551416Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5079
+description: >-
+  **OpenAI** launched **GPT-4o finetuning** with a case study on Cosine.
+  **Anthropic** released **Claude 3.5 Sonnet** with 8k token output. **Microsoft
+  Phi** team introduced **Phi-3.5** in three variants (Mini 3.8B, MoE 16x3.8B,
+  Vision 4.2B) noted for sample efficiency. **Meta** released **Llama 3.1
+  405B**, deployable on Google Cloud Vertex AI, offering GPT-4 level
+  capabilities. **Qwen2-Math-72B** achieved state-of-the-art math benchmark
+  results with a Gradio demo. Discussions included model comparisons like ViT vs
+  CNN and Mamba architecture. Tools updates featured **DSPy** roadmap, **Flux
+  Schnell** improving diffusion speed on M1 Max, and **LangChain** community
+  events. Research highlights zero-shot DUP prompting for math reasoning and
+  fine-tuning best practices. AI ethics covered California AI Safety Bill SB
+  1047 and regulatory concerns by **ylecun**. Commentary on AI engineer roles by
+  **swyx**. *"Chat with PDF" is now one React component and an API key away,
+  available to Box Enterprise Plus customers.*
+companies:
+  - openai
+  - anthropic
+  - microsoft
+  - meta-ai-fair
+  - hugging-face
+  - langchain-ai
+  - box
+models:
+  - gpt-4o
+  - claude-3.5-sonnet
+  - phi-3.5-mini
+  - phi-3.5-moe
+  - phi-3.5-vision
+  - llama-3-1-405b
+  - qwen2-math-72b
+topics:
+  - fine-tuning
+  - benchmarking
+  - model-comparison
+  - model-performance
+  - diffusion-models
+  - reinforcement-learning
+  - zero-shot-learning
+  - math
+  - ai-regulation
+  - ai-safety
+  - ai-engineering
+  - model-efficiency
+  - prompt-engineering
+people:
+  - swyx
+  - ylecun
+  - rohanpaul_ai
+  - philschmid
+  - huybery
+  - giffmana
+  - wightmanr
+  - lateinteraction
+  - awnihannun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**another quiet day in AI.**
 

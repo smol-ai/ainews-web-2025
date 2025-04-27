@@ -1,13 +1,53 @@
 ---
 id: 58f3574c-ce94-4006-b73f-944f6a76e291
-title: '[AINews] Adept Fuyu-Heavy: Multimodal model for Agents'
+title: 'Adept Fuyu-Heavy: Multimodal model for Agents'
 date: '2024-01-25T21:30:23.929279Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-adept-fuyu-heavy-multimodal-model-for
+description: >-
+  **Adept** launched **Fuyu-Heavy**, a multimodal model focused on UI
+  understanding and visual QA, outperforming **Gemini Pro** on the MMMU
+  benchmark. The model size is estimated between **20B-170B** parameters,
+  smaller than rumored frontier models like **Claude 2**, **GPT4V**, and
+  **Gemini Ultra**. Discussions in **TheBloke** Discord highlighted a user model
+  outperforming **GPT-4** in coding, deployment strategies for large models like
+  **Yi-34B-200K** and **Goliath-120B**, and debates on quantization methods such
+  as **Q8** and **EXL2**. **Nous Research AI** Discord focused on chatbot API
+  integration, fine-tuning vs instruct-tuning for **Mistral 7B Instruct v0.2**,
+  and heterogeneous AI architectures combining **Transformers** and **Selective
+  SSM (Mamba)**. The rejection of **Mamba** at ICLR was noted. Topics include
+  fine-tuning, quantization, model merging, multimodality, and heterogeneous AI
+  architectures.
+companies:
+  - adept
+  - hugging-face
+  - thebloke
+  - nous-research
+  - mistral-ai
+models:
+  - fuyu-heavy
+  - gemini-pro
+  - yi-34b-200k
+  - goliath-120b
+  - mistral-7b-instruct-v0.2
+  - claude-2
+  - gpt-4v
+  - gemini-ultra
+  - deepseek-coder-33b
+  - mamba
+topics:
+  - fine-tuning
+  - quantization
+  - model-merging
+  - multimodality
+  - heterogeneous-ai-architectures
+  - transformers
+  - instruct-tuning
+  - rms-optimization
+  - visual-question-answering
+  - model-deployment
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/24/2024. We checked **20** guilds, **297** channels, and **3025** messages for you. Estimated reading time saved (at 200wpm): **295 minutes**.
 

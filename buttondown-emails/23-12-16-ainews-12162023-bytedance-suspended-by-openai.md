@@ -1,13 +1,52 @@
 ---
 id: bc4e900e-7ccc-4551-b210-2a556c5472c4
-title: '[AINews] 12/16/2023: ByteDance suspended by OpenAI'
+title: '12/16/2023: ByteDance suspended by OpenAI'
 date: '2023-12-16T19:41:52.447379Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12162023-bytedance-suspended-by-openai
+description: >-
+  **OpenAI** community discussions cover hardware preferences like the **Mac
+  racks** and **A6000 GPU**, and API usage including the **Bard API** for
+  **gemini-pro** with its free quota. A notable **comparison video** highlights
+  **GPT-4 Turbo** outperforming **Claude 2.1** on coding tasks. Users debate
+  **ChatGPT Plus** subscription issues, speculate on **GPT-5** release
+  timelines, and discuss AI art generation policies. The **Alpha feature**
+  status remains unclear, and there are concerns about API costs and usage
+  limits. *"Bard seems to be hallucinating less and performs better than Claude
+  2"* was a key user insight.
+companies:
+  - openai
+  - google
+  - anthropic
+models:
+  - gpt-4-turbo
+  - claude-2.1
+  - gemini-pro
+  - gpt-5
+  - claude-2
+topics:
+  - hardware
+  - api
+  - cost-analysis
+  - coding
+  - subscription-management
+  - model-comparison
+  - feature-status
+  - hallucination
+  - ai-art-generation
+  - user-experience
+people:
+  - exx1
+  - birdetta
+  - thepitviper
+  - webhead
+  - rrross
+  - auracletech
+  - mrcrack_
+  - wintre
+  - eljajasoriginal
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->We covered the OpenAI Terms of Service issue in our [most recent podcast](https://twitter.com/latentspacepod/status/1733160841997070683) - but it's usually a nonissue for "open source AI" individual enthusiasts. Different story when it comes to bigcos - here's a remarkably [swift](https://twitter.com/alexeheath/status/1735805122104680675) punishment meted out to ByteDance:
 

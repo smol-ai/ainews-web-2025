@@ -1,13 +1,58 @@
 ---
 id: 51b40116-a3ef-4b57-9319-aa59f90dc696
-title: '[AINews] OpenAI adopts MCP'
+title: OpenAI adopts MCP
 date: '2025-03-27T01:07:34.503009Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ghibli-memes
+description: >-
+  **OpenAI** announced support for **MCP**, a significant technical update
+  enhancing AI agent capabilities. **Google's Gemini 2.5 Pro** leads benchmarks
+  with top scores in **MMLU-Pro (86%)**, **GPQA Diamond (83%)**, and **AIME 2024
+  (88%)**, featuring a **1 million token context window** and multimodal inputs.
+  **Alibaba's Qwen2.5-Omni-7B** was released as a fully multimodal open-source
+  model with a novel "thinker-talker" architecture supporting voice and video
+  chat. **DeepSeek-V3-0324** outperforms its predecessor on multiple benchmarks.
+  Research on reasoning features in large language models using sparse
+  autoencoders was highlighted, alongside studies on synthetic data scaling laws
+  showing performance plateaus near **300B tokens**. Discussions also covered
+  the fastest output speeds of Gemini models and concerns about over-reliance on
+  benchmarks for intelligence measurement.
+companies:
+  - openai
+  - google-deepmind
+  - alibaba
+  - togethercompute
+models:
+  - gemini-2.5-pro
+  - gemini-2.0-flash
+  - qwen2.5-omni-7b
+  - deepseek-v3-0324
+  - deepseek-r1
+topics:
+  - benchmarking
+  - multimodality
+  - model-quantization
+  - scaling-laws
+  - reasoning
+  - model-performance
+  - sparse-autoencoders
+  - context-windows
+  - speech-recognition
+  - translation
+  - audio-processing
+  - video-processing
+  - instruction-following
+people:
+  - swyx
+  - artificialanlys
+  - zacharynado
+  - oriolvinyalsml
+  - reach_vb
+  - rasbt
+  - iscienceluvr
+  - davidsholz
+  - smokeawayyy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**MCP is all you need.**
 

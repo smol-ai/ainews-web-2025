@@ -1,13 +1,54 @@
 ---
 id: 10a98466-e7c6-4648-91ad-4a36d91165f3
-title: '[AINews] $1150m for SSI, Sakana, You.com + Claude 500m context'
+title: $1150m for SSI, Sakana, You.com + Claude 500m context
 date: '2024-09-05T03:25:36.408094Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1150m-for-ssi-sakana-youcom-claude-500m
+description: >-
+  **Safe Superintelligence** announced a **$1 billion** raise at a **$5
+  billion** valuation, focusing on AI safety. **Sakana AI** secured a **$100
+  million** Series A funding, inspired by nature's evolution and collective
+  intelligence. **You.com** pivoted to a ChatGPT-like productivity agent after a
+  **$50 million** Series B, while **Perplexity** raised over **$250 million**
+  this year. **Anthropic** launched Claude for Enterprise with a **500 million**
+  token context window. **AI2** released a 64-expert Mixture-of-Experts model,
+  OLMo, with **1B active** and **7B total** parameters, trained on **5 trillion
+  tokens**. Key AI research trends include efficient MoE architectures, AI
+  alignment challenges with costly GPU training, and autonomous AI agents for
+  enterprise tasks. Innovations in AI development feature command and control
+  for video generation, Retrieval-Augmented Generation (RAG) efficiency, and
+  GitHub integration under Anthropic's enterprise plan.
+companies:
+  - safe-superintelligence
+  - sakana-ai
+  - you-com
+  - perplexity-ai
+  - anthropic
+  - ai2
+models:
+  - olmo
+  - claude
+  - claude-3
+  - claude-enterprise
+topics:
+  - mixture-of-experts
+  - model-training
+  - gpu-costs
+  - retrieval-augmented-generation
+  - ai-alignment
+  - ai-agents
+  - video-generation
+  - enterprise-ai
+  - model-architecture
+  - context-windows
+  - model-efficiency
+people:
+  - mervenoyann
+  - yuchenj_uw
+  - rohanpaul_ai
+  - ctojunior
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**$1b is all you need for safe superintelligence?**
 

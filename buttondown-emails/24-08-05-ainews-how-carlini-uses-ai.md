@@ -1,13 +1,61 @@
 ---
 id: 8ed20429-df08-4f5d-8ae1-db6e30ed9a10
-title: '[AINews] How Carlini Uses AI'
+title: How Carlini Uses AI
 date: '2024-08-05T23:43:14.094795Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-how-carlini-uses-ai
+description: >-
+  **Groq's shareholders' net worth increased** while others declined, with
+  **Intel's CEO** noted. **Nicholas Carlini** from **DeepMind** gained
+  recognition and criticism for his extensive AI writings, including an
+  **80,000-word treatise** on AI use and a new benchmark for large language
+  models. **Chris Dixon** commented on AI's long-term impact despite skepticism
+  about the AI Winter. **Box** introduced an AI API for extracting structured
+  data from documents, highlighting opportunities in multimodal data handling.
+  Recent AI developments include **Figure AI's** humanoid robot Figure 02,
+  **OpenAI's Advanced Voice Mode** for ChatGPT with emotion detection,
+  **Google's open-sourced Gemma 2 2B** model matching GPT-3.5-Turbo-0613
+  performance, **Meta's Segment Anything Model 2 (SAM 2)** for real-time object
+  tracking, **NVIDIA's Project GR00T** using Apple Vision Pro for robot
+  teleoperation, **Stability AI's Stable Fast 3D** for rapid 3D asset
+  generation, and **Runway's Gen-3 Alpha** text-to-video model producing
+  high-quality videos from images. Research highlights include a from-scratch
+  implementation of Direct Preference Optimization (DPO).
+companies:
+  - groq
+  - intel
+  - deepmind
+  - box
+  - figure-ai
+  - openai
+  - google
+  - meta-ai-fair
+  - nvidia
+  - stability-ai
+  - runway
+models:
+  - gemma-2-2b
+  - gpt-3.5-turbo-0613
+  - mixtral-8x7b
+  - sam-2
+  - gen-3-alpha
+topics:
+  - benchmarking
+  - multimodality
+  - robotics
+  - emotion-detection
+  - structured-data-extraction
+  - real-time-processing
+  - text-to-video
+  - 3d-generation
+  - direct-preference-optimization
+people:
+  - nicholas_carlini
+  - chris_dixon
+  - rasbt
+  - adcock_brett
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**An open mind is all you need.**
 

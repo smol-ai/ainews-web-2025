@@ -1,15 +1,46 @@
 ---
 id: 0b192491-4b94-40a0-8b77-f0fba182816d
-title: >-
-  [AINews] Gemini 2.5 Flash completes the total domination of the Pareto
-  Frontier
+title: Gemini 2.5 Flash completes the total domination of the Pareto Frontier
 date: '2025-04-18T02:06:17.104601Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-25-flash-completes-the-total
+description: >-
+  **Gemini 2.5 Flash** is highlighted as a major new release with a novel
+  "thinking budget" feature offering more control compared to Anthropic and
+  OpenAI models. **OpenAI** launched **o3** and **o4-mini**, emphasizing their
+  advanced tool use and multimodal capabilities, with **o3** dominating several
+  benchmarks but receiving mixed reviews on math and reasoning performance. The
+  community notes the importance of tool use in these models for research and
+  coding, with **OpenAI Codex CLI** introduced as a lightweight open-source
+  coding agent. The news reflects a broader trend of renewed competition and
+  innovation in AI model capabilities and pricing strategies.
+companies:
+  - google-deepmind
+  - openai
+  - anthropic
+models:
+  - gemini-2.5-flash
+  - o3
+  - o4-mini
+topics:
+  - tool-use
+  - multimodality
+  - benchmarking
+  - reasoning
+  - model-performance
+  - open-source
+  - coding-agents
+  - reinforcement-learning
+people:
+  - sama
+  - kevinweil
+  - markchen90
+  - alexandr_wang
+  - polynoamial
+  - scaling01
+  - aidan_mclau
+  - cwolferesearch
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Gemini is all you need.**
 

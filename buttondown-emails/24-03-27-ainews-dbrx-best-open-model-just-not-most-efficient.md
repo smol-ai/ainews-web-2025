@@ -1,13 +1,52 @@
 ---
 id: a81ae2a3-d6ce-49d5-897a-b8aad197bae8
-title: '[AINews] DBRX: Best open model (just not most efficient)'
+title: 'DBRX: Best open model (just not most efficient)'
 date: '2024-03-27T22:33:19.363427Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-dbrx-best-open-model-but-not-most-efficient
+description: >-
+  **Databricks Mosaic** has released a new open-source model called **DBRX**
+  that outperforms **Grok**, **Mixtral**, and **Llama2** on evaluations, while
+  being about **2x more efficient** than Llama2 and Grok. The model was trained
+  on an unprecedented **12 trillion tokens** using **3,000 H100 GPUs** over 2
+  months, with an estimated compute cost of **$10 million**. It adopts OpenAI's
+  **100k tiktoken tokenizer** and shows strong zero-shot code generation
+  performance, even beating **GPT-4** on the Humaneval benchmark. DBRX also
+  upstreamed work to **MegaBlocks** open source. Despite its scale and
+  efficiency, its MMLU performance is only marginally better than Mixtral,
+  raising questions about MoE scaling. The focus of DBRX is on enabling
+  customers to train models efficiently, claiming **2x FLOP efficiency** over
+  dense models and nearly **4x less compute** than previous MPT models for
+  similar quality. This positions DBRX as a strong contender in the open-source
+  LLM space alongside models like **Dolly**, **MPT**, and **Mistral**.
+companies:
+  - databricks
+  - huggingface
+  - mistral-ai
+  - openai
+models:
+  - dbrx
+  - grok
+  - mixtral
+  - llama-2
+  - gpt-4
+  - mpt-7b
+  - dolly
+topics:
+  - model-efficiency
+  - training-data
+  - tokenization
+  - code-generation
+  - mixture-of-experts
+  - model-architecture
+  - model-training
+  - open-source-models
+  - benchmarking
+  - flop-efficiency
+people:
+  - jefrankle
+  - justinlin610
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/26/2024-3/27/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (374 channels, and 4858 messages) for you (we added Modular and Tinygrad today). Estimated reading time saved (at 200wpm): 538 minutes.
 

@@ -1,13 +1,57 @@
 ---
 id: 47aa9d67-913f-4412-ae5d-caa6cd205923
-title: '[AINews] Qdrant''s BM42: "Please don''t trust us"'
+title: 'Qdrant''s BM42: "Please don''t trust us"'
 date: '2024-07-06T02:25:00.011918Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-qdrants-bm42
+description: >-
+  **Qdrant** attempted to replace BM25 and SPLADE with a new method called
+  **BM42**, combining transformer attention and collection-wide statistics for
+  semantic and keyword search. However, critiques from **Jo Bergum** (Vespa) and
+  **Nils Reimers** (Cohere) revealed flawed evaluation datasets and poor
+  performance of BM42 on finance, biomedical, and Wikipedia datasets. **Qdrant**
+  acknowledged errors but still ran a suboptimal BM25 implementation. This
+  episode highlights the importance of dataset choice and evaluation sanity
+  checks in AI research. Additionally, **Stripe** faced criticism for account
+  issues and AI/ML false positives, prompting calls for alternatives.
+  **Anthropic** discussed **Claude 3.5 Sonnet**'s answer suppression mechanism,
+  while **Gemma 2** model optimizations enable faster fine-tuning and longer
+  context windows. The compact **nanoLLaVA-1.5** vision model with 1B parameters
+  was also announced.
+companies:
+  - qdrant
+  - openai
+  - vespa
+  - cohere
+  - stripe
+  - anthropic
+  - hugging-face
+  - unslothai
+  - stablequan_ai
+models:
+  - claude-3.5-sonnet
+  - gemma-2
+  - nano-llava-1.5
+  - bm25
+  - splade
+  - bm42
+topics:
+  - semantic-search
+  - transformer-attention
+  - evaluation-methodologies
+  - dataset-quality
+  - model-optimization
+  - fine-tuning
+  - memory-optimization
+  - context-windows
+  - vision
+people:
+  - jobergum
+  - nils_reimers
+  - hamelhusain
+  - jeremyphoward
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Peer review is all you need.**
 

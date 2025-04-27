@@ -1,13 +1,61 @@
 ---
 id: 2bb42a5c-ee60-4fe5-8167-fb6b53efaad4
-title: '[AINews] 12/8/2023 - Mamba v Mistral v Hyena'
+title: 12/8/2023 - Mamba v Mistral v Hyena
 date: '2023-12-08T22:40:04.800968Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1282023-mamba-v-mistral-v-hyena
+description: >-
+  Today, three new AI models are highlighted: **Mistral's 8x7B MoE model
+  (Mixtral)**, a classical attention model praised by Andrej Karpathy; **Mamba
+  models** up to 3B by Tri Dao of Together; and **StripedHyena 7B**, a
+  competitive subquadratic attention model from Stanford's Hazy Research lab.
+  Discussions in the **Nous Research AI Discord** cover **Anthropic's Claude
+  2.1** with its 200,000 token context window and prompting techniques, the
+  open-source **StripedHyena-Nous-7B** chatbot, and Google's new **Gemini** AI,
+  believed to potentially surpass **GPT-4**. Other topics include **Dreambooth**
+  image training hacks, deployment challenges of large language models on CPUs,
+  and new releases like **cybertron 7b v2 GGUF** and **Mistral 8x7B MoE**. The
+  community also shares resources such as the **DialogRPT-human-vs-machine**
+  model on Hugging Face and practical demos.
+companies:
+  - mistral-ai
+  - together-ai
+  - stanford
+  - anthropic
+  - google-deepmind
+  - hugging-face
+  - nous-research
+models:
+  - mistral-8x7b-moe
+  - mamba-3b
+  - stripedhyena-7b
+  - claude-2.1
+  - gemini
+  - gpt-4
+  - cybertron-7b-v2-gguf
+  - stripedhyena-nous-7b
+  - dialogrpt-human-vs-machine
+topics:
+  - mixture-of-experts
+  - attention-mechanisms
+  - subquadratic-attention
+  - prompt-engineering
+  - context-windows
+  - open-source-models
+  - model-deployment
+  - gpu-requirements
+  - memory-optimization
+  - model-inference
+  - image-training
+  - chatbot
+  - model-releases
+people:
+  - karpathy
+  - tri_dao
+  - omarsar0
+  - maxwellandrews
+  - raddka
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Happy Friday. 3 new models are the talk of the town today:
 

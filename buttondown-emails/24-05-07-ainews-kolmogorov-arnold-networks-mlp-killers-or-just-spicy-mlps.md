@@ -1,13 +1,53 @@
 ---
 id: bb0bd562-3bbf-4479-a6a1-0e1ef2c16d71
-title: '[AINews] Kolmogorov-Arnold Networks: MLP killers or just spicy MLPs?'
+title: 'Kolmogorov-Arnold Networks: MLP killers or just spicy MLPs?'
 date: '2024-05-07T22:47:14.398752Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-kolmogorov-arnold-networks-mlp-killers-or
+description: >-
+  **Ziming Liu**, a grad student of **Max Tegmark**, published a paper on **KANs
+  (Kolmogorov-Arnold Networks)** claiming superior interpretability, inductive
+  bias injection, function approximation accuracy, and parameter efficiency
+  compared to **MLPs**, though training is currently 10x slower. KANs use
+  learnable activation functions modeled by B-splines on edges instead of fixed
+  activations on nodes. However, recent analysis shows KANs can be rearranged
+  back into MLPs with similar parameter counts, challenging claims of their
+  uniqueness and interpretability. On the industry front, **OpenAI** is
+  speculated to be testing **GPT-5** variants with mixed impressions, and has
+  adopted the **C2PA metadata standard** for detecting AI-generated images with
+  high accuracy in **DALL-E 3**. **Microsoft** is training a 500B parameter
+  model called **MAI-1**, potentially previewed at Build, signaling competition
+  with OpenAI's GPT line. **Copilot Workspace** received positive feedback for
+  its refined approach.
+companies:
+  - openai
+  - microsoft
+models:
+  - gpt-5
+  - gpt-4.5
+  - dall-e-3
+  - mai-1
+topics:
+  - learnable-activations
+  - mlp
+  - function-approximation
+  - interpretability
+  - inductive-bias-injection
+  - b-splines
+  - parameter-efficiency
+  - model-rearrangement
+  - ai-safety-testing
+  - ai-generated-image-detection
+  - metadata-standards
+people:
+  - ziming_liu
+  - max_tegmark
+  - bindureddy
+  - nptacek
+  - zacharynado
+  - rohanpaul_ai
+  - svpino
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Are Learnable Activations all you need?**
 

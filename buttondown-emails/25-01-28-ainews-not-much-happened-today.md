@@ -1,13 +1,61 @@
 ---
 id: 4a51e687-cba1-4ef2-8327-74dd83709a8d
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-29T01:48:45.233160Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-8335
+description: >-
+  **Huawei chips** are highlighted in the AI news roundup covering **January
+  27-28, 2025**, with significant updates on **Deepseek R1**, **Qwen 2.5-Max**,
+  and **NVIDIA's H6400 GPUs**. The **Qwen 2.5-Max**, a **Mixture of Experts
+  (MoE) model**, surpasses **Deepseek V3** in benchmarks like **Arena Hard** and
+  **LiveBench**. Innovations include **model merging** techniques, **multimodal
+  LLMs** like **DeepSeek Janus Pro**, and advancements in **reinforcement
+  learning** and **chain-of-thought reasoning**. Discussions also cover **GPU
+  rebranding**, **compute infrastructure growth**, and enterprise AI
+  applications such as crypto APIs in hedge funds. Notable contributors include
+  **@saranormous**, **@omarsar0**, and **@garygodchaux**.
+companies:
+  - huawei
+  - nvidia
+  - openai
+  - anthropic
+  - deepseek
+  - vercel
+models:
+  - deepseek-r1
+  - qwen-2.5
+  - qwen-2.5-max
+  - deepseek-v3
+  - claude-3.5-sonnet
+topics:
+  - mixture-of-experts
+  - model-merging
+  - multimodality
+  - reinforcement-learning
+  - chain-of-thought
+  - gpu-optimization
+  - compute-infrastructure
+  - policy-optimization
+  - compression
+  - enterprise-ai
+people:
+  - saranormous
+  - zizhpan
+  - victormustar
+  - omarsar0
+  - markchen90
+  - sakanaailabs
+  - reach_vb
+  - madiator
+  - dain_mclau
+  - francoisfleuret
+  - garygodchaux
+  - arankomatsuzaki
+  - id_aa_carmack
+  - lavanyasant
+  - virattt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Huawei chips are all you need?**
 

@@ -1,13 +1,58 @@
 ---
 id: 36ff4b14-66cf-4d3a-a67d-abedc139f795
-title: '[AINews] 12/23/2023: NeurIPS Best Papers of 2023'
+title: '12/23/2023: NeurIPS Best Papers of 2023'
 date: '2023-12-24T07:45:58.983278Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12232023-neurips-best-papers-of-2023
+description: >-
+  The **Latent Space Pod** released a **3-hour recap** of the **best NeurIPS
+  2023 papers**. The **Nous Research AI Discord** community discussed
+  **optimizing AI performance** with shorter context windows, **malware
+  security** concerns related to **HuggingFace**, and shared insights on **video
+  and music content**. Technical discussions included the **DYAD** layer as a
+  faster alternative to linear layers, **Apple's ML Ferret** machine learning
+  tool, and accessing **PALM2** via API. The community also explored **Large
+  Language Models** topics such as specialized model building, data scaling,
+  embedding/vector database management, model merging, and interpretability,
+  with performance results shared for **Hermes 2.5**, **GPT-4**, and
+  **Mistral**. Additionally, there was active exploration of the **Striped Hyena
+  Architecture**, **quantization challenges**, and **RMSNorm** issues, alongside
+  calls for more honest AI media coverage and concerns about clickbait in AI
+  YouTube channels.
+companies:
+  - nous-research
+  - huggingface
+  - apple
+models:
+  - gpt-4
+  - palm2
+  - hermes-2.5
+  - mistral
+topics:
+  - context-length
+  - malware-security
+  - video-content
+  - music-content
+  - linear-layers
+  - api-access
+  - model-scaling
+  - embedding
+  - vector-databases
+  - model-merging
+  - interpretability
+  - quantization
+  - rmsnorm
+  - ai-media
+  - clickbait
+people:
+  - cognitivetech
+  - fullstack6209
+  - beowulfbr
+  - error.pdf
+  - henriqueln7
+  - euclaise
+  - tofhunterrr
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Shameless plug time - the Latent Space Pod shipped the [first NeurIPS Best Papers recap pod](https://twitter.com/latentspacepod/status/1738709627829883346)!
 

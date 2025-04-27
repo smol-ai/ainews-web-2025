@@ -1,13 +1,39 @@
 ---
 id: 81ca9896-156e-42c9-ae5d-7dd740c11ba8
-title: '[AINews] Claude Crushes Code - 92% HumanEval and Claude.ai Artifacts'
+title: Claude Crushes Code - 92% HumanEval and Claude.ai Artifacts
 date: '2024-06-21T07:27:45.182774Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-claude-crushes-code-92-humaneval-and
+description: >-
+  **Claude 3.5 Sonnet** by **Anthropic** is highlighted as a significant upgrade
+  over Claude 3 Opus, operating at **twice the speed** and costing **one-fifth**
+  as much. It achieves state-of-the-art results on benchmarks like **GPQA, MMLU,
+  and HumanEval**, surpassing even **GPT-4o**. The model excels in coding tasks,
+  passing **64% of test cases** compared to 38% for Claude 3 Opus, and features
+  a new **Artifacts** interface for real-time interaction with generated
+  content, positioning it as a competitor to OpenAI's Code Interpreter. *"Claude
+  is starting to get really good at coding and autonomously fixing pull
+  requests,"* noted Alex Albert.
+companies:
+  - anthropic
+  - openai
+  - cognition
+models:
+  - claude-3.5-sonnet
+  - claude-3-opus
+  - gpt-4o
+topics:
+  - model-performance
+  - coding
+  - benchmarking
+  - model-optimization
+  - instruction-following
+  - model-efficiency
+  - api
+  - interactive-ui
+people:
+  - alexalbert__
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Claude 3.5 Sonnet is all you need?**
 

@@ -1,13 +1,61 @@
 ---
 id: bcaa22ff-74a7-41b9-ba6f-51b5b3fc1ea5
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-09-21T01:37:46.121441Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-not-much-happened-today-5059
+description: >-
+  **Anthropic** introduced a RAG technique called Contextual Retrieval that
+  reduces retrieval failure rates by 67% using prompt caching. **Meta** is
+  teasing multimodal capabilities for **Llama 3** ahead of Meta Connect.
+  **OpenAI** is hiring for a multi-agent research team working on **o1 models**,
+  which require goal-oriented prompting and have sparked debate similar to early
+  GPT-3 reactions. Comparisons show **DeepSeek 2.5** is significantly cheaper
+  than **Claude 3.5 Sonnet** and **GPT-4**. New models like **3DTopia-XL** use
+  diffusion transformers for 3D asset generation, and **CogVideoX** enables
+  image-to-video conversion. Research highlights include a prompting technique
+  that boosts reasoning by having LLMs re-read questions. Industry insights
+  emphasize the necessity of AI adoption in enterprises and the disruption of
+  traditional ML businesses. Tools like **LangChainAI's LangGraph Templates**
+  and **LlamaIndex's LlamaParse Premium** enhance agentic applications and
+  multimodal content extraction. Production advice focuses on LLM evals and
+  caching for efficiency. *"Companies not allowing developers to use AI are
+  unlikely to succeed"* - @svpino.
+companies:
+  - anthropic
+  - meta-ai-fair
+  - openai
+  - deepseek
+  - claude
+  - langchain-ai
+  - llamaindex
+models:
+  - o1
+  - deepseek-v2-0628
+  - claude-3.5-sonnet
+  - gpt-4
+  - 3dtopia-xl
+  - cogvideox
+  - llama-3
+topics:
+  - retrieval-augmented-generation
+  - prompt-caching
+  - multimodality
+  - multi-agent-systems
+  - prompt-engineering
+  - diffusion-models
+  - image-generation
+  - video-generation
+  - reasoning
+  - enterprise-ai
+  - agentic-ai
+  - long-context
+  - model-evaluation
+  - model-optimization
+  - caching
+people:
+  - svpino
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Custom AINews may be all you need soon...**
 

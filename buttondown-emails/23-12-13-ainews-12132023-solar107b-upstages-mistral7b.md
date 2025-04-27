@@ -1,13 +1,50 @@
 ---
 id: 345ace40-a282-40b7-9d43-ac97244d93fd
-title: '[AINews] 12/13/2023 SOLAR10.7B upstages Mistral7B?'
+title: 12/13/2023 SOLAR10.7B upstages Mistral7B?
 date: '2023-12-13T23:29:29.946888Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-ai-discords-12132023-6438
+description: >-
+  **Upstage** released the **SOLAR-10.7B** model featuring the novel Depth
+  Up-Scaling technique built on **Llama2** architecture and integrating
+  **Mistral-7b** weights. The **Nous community** finds it promising but not
+  exceptional. Additionally, weights for the **Phi-2** base model were released,
+  trained on 1.4 trillion tokens including synthetic data from **GPT-3** and
+  filtered websites by **GPT-4**, using 96 A100 GPUs over 14 days. On
+  **OpenAI**'s Discord, users discussed challenges with various **GPT** models
+  including incoherent outputs, API usage limits, and issues with **GPT-4 Vision
+  API**. Conversations also covered the definitions and expectations of **AGI**
+  and **ASI**, concerns about OpenAI's partnership with Axel Springer, and
+  comparisons involving **Gemini AI** integrated into Bard, with mentions of
+  Microsoft's prompting techniques to match Gemini Ultra performance.
+companies:
+  - upstage
+  - mistral-ai
+  - nous-research
+  - openai
+  - microsoft
+models:
+  - solar-10.7b
+  - llama-2
+  - mistral-7b
+  - phi-2
+  - gpt-3
+  - gpt-4
+  - gemini-ultra
+topics:
+  - depth-upscaling
+  - model-pretraining
+  - synthetic-data
+  - gpu-training
+  - api-usage
+  - gpt-4-vision
+  - agi
+  - asi
+  - model-integration
+  - prompting
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Upstage's 10.7B [model was released](https://huggingface.co/upstage/SOLAR-10.7B-Instruct-v1.0):
 

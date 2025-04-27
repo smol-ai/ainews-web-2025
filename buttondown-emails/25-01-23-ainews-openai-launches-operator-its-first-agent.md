@@ -1,13 +1,53 @@
 ---
 id: 467b0e01-1a3e-4a2a-9f2b-a7eaedd3acfb
-title: '[AINews] OpenAI launches Operator, its first Agent'
+title: OpenAI launches Operator, its first Agent
 date: '2025-01-24T03:34:34.136294Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-openai-launches-operator-its-first-agent
+description: >-
+  **OpenAI** launched **Operator**, a premium computer-using agent product with
+  API access, capable of automating web browser tasks like booking and ordering,
+  available live for Pro users in the US. **Anthropic** had released a similar
+  agent three months earlier. **DeepSeek AI** introduced **DeepSeek R1**, an
+  open-source reasoning model excelling on the **Humanity's Last Exam**
+  benchmark, which tests AI reasoning with a 3,000-question dataset where
+  current models score below 10%. **Google DeepMind** open-sourced **VideoLLaMA
+  3**, a multimodal foundation model for image and video understanding.
+  **Perplexity AI** released **Perplexity Assistant** for Android, integrating
+  reasoning and search with multimodal interactions. The Computer-Using Agent
+  (CUA) shows improved but still subhuman performance on OSWorld and WebArena
+  benchmarks. The AI community anticipates more agent launches soon, with
+  discussions highlighting Operator's long-horizon remote VM capabilities and
+  self-correction features. *Sam Altman praised the release*, and *early access
+  users noted some misclicks but overall promise*.
+companies:
+  - openai
+  - anthropic
+  - deepseek-ai
+  - google-deepmind
+  - perplexity-ai
+models:
+  - deepseek-r1
+  - videollama-3
+  - operator
+topics:
+  - computer-using-agent
+  - reasoning
+  - multimodality
+  - benchmarking
+  - performance
+  - open-source
+  - model-evaluation
+  - api
+  - long-context
+  - self-correction
+people:
+  - sama
+  - swyx
+  - danhendrycks
+  - omarsar0
+  - francoisfleuret
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**A virtual browser is all you need.**
 

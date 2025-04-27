@@ -1,15 +1,52 @@
 ---
 id: bdb257be-bb5c-4a2e-a142-55ffb972fa94
 title: >-
-  [AINews] DeepSeek v3: 671B finegrained MoE trained for $5.5m USD of compute on
-  15T tokens
+  DeepSeek v3: 671B finegrained MoE trained for $5.5m USD of compute on 15T
+  tokens
 date: '2024-12-27T01:18:46.567338Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseek-v3-671b-finegrained-moe-trained
+description: >-
+  **DeepSeek-V3** has been released by **DeepSeek AI**, featuring **671B MoE
+  parameters** and trained on **14.8T tokens** with remarkable compute
+  efficiency using only **2.788M H800 GPU hours**, significantly less than
+  **Llama 3**'s **30.8M GPU-hours**. The model outperforms **GPT-4o** and
+  **Claude-3.5-sonnet** on benchmarks and is available open-source via **Hugging
+  Face** with API support. Innovations include native FP8 mixed precision
+  training, multi-head latent attention, pruning and healing for MoEs scaled to
+  256 experts, and a novel multi-token prediction objective enabling lookahead
+  token planning. Research advances such as **OREO** and **Natural Language
+  Reinforcement Learning (NLRL)** improve multi-step reasoning and agent control
+  without prompting.
+companies:
+  - deepseek-ai
+  - hugging-face
+  - openai
+  - anthropic
+models:
+  - deepseek-v3
+  - gpt-4o
+  - claude-3.5-sonnet
+  - llama-3-405b
+  - llama-3
+topics:
+  - mixture-of-experts
+  - model-training
+  - model-optimization
+  - reinforcement-learning
+  - chain-of-thought
+  - multi-token-prediction
+  - fine-tuning
+  - scaling
+  - model-efficiency
+  - reward-models
+  - synthetic-data
+  - attention-mechanisms
+people:
+  - reach_vb
+  - scaling01
+  - denny_zhou
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Full co-design of algirthms, frameworks, and hardware is all you need.**
 

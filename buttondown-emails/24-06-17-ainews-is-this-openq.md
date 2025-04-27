@@ -1,13 +1,51 @@
 ---
 id: 673ee033-f1bd-46e2-a99c-140ed5ab9682
-title: '[AINews] Is this... OpenQ*?'
+title: Is this... OpenQ*?
 date: '2024-06-18T00:38:33.191318Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-is-this-openq
+description: >-
+  **DeepSeekCoder V2** promises GPT4T-beating performance at a fraction of the
+  cost. **Anthropic** released new research on reward tampering. **Runway**
+  launched their Sora response and Gen-3 Alpha video generation model. A cluster
+  of papers explores "test-time" search and Monte Carlo Tree Search (MCTS)
+  techniques for improving mathematical reasoning in language models, including
+  work with **LLaMa-3 8B**. **Apple** announced Apple Intelligence AI system
+  with smarter Siri and image/document understanding, partnered with **OpenAI**
+  to integrate ChatGPT into iOS/macOS, released 20 new CoreML models, and uses
+  LoRA fine-tuning for specialized adapters. **NVIDIA** released Nemotron-4
+  340B, an open model matching GPT-4 performance. **Stability AI** released
+  Stable Diffusion 3 Medium weights. **Luma Labs** launched Dream Machine for
+  short video generation. The news highlights advances in **on-device AI**,
+  **fine-tuning**, **process supervision**, **mathematical reasoning**, **video
+  generation**, and **cost-efficient large models**.
+companies:
+  - deepseek-ai
+  - anthropic
+  - runway
+  - apple
+  - openai
+  - nvidia
+  - stability-ai
+  - luma-labs
+models:
+  - deepseek-coder-v2
+  - llama-3-8b
+  - nemotron-4-340b
+  - stable-diffusion-3-medium
+topics:
+  - process-supervision
+  - mathematical-reasoning
+  - monte-carlo-tree-search
+  - fine-tuning
+  - on-device-ai
+  - video-generation
+  - cost-efficiency
+people:
+  - adcock_brett
+  - clementdelangue
+  - svpino
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**MCTS is all you need.**
 

@@ -1,13 +1,71 @@
 ---
 id: 3b3c903f-bd16-42fd-97e8-2a91264faf5e
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-14T06:08:22.078500Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-9477
+description: >-
+  **Helium-1 Preview** by **kyutai_labs** is a **2B-parameter multilingual base
+  LLM** optimized for edge/mobile, outperforming **Qwen 2.5** with **2.5T
+  tokens** training and **4096 context size**. **Phi-4 (4-bit)** model released
+  in **lmstudio** on **M4 max** noted for speed and performance.
+  **Sky-T1-32B-Preview** is a **$450 open-source reasoning model** matching
+  **o1's performance** with strong math benchmarks. **Codestral 25.01** by
+  **MistralAI** is a new SOTA coding model supporting **80+ languages** and
+  doubling speed. Innovations include **AutoRAG** for optimizing
+  retrieval-augmented generation pipelines, **Agentic RAG** for autonomous query
+  reformulation, **Multiagent Finetuning** with models like **Phi-3, Mistral,
+  LLaMA-3, GPT-3.5** improving reasoning, and **VideoRAG** incorporating video
+  content in RAG. Applications include a dynamic UI AI chat app on **Replit**,
+  **LangChain AI tools** like **DocTalk** for voice PDF interaction, AI travel
+  agent tutorial, and news summarization. **Hyperbolic Labs** offers competitive
+  GPU rentals including **H100, A100, RTX 4090**. **LLMQuoter** improves RAG
+  accuracy by identifying key quotes. Infrastructure updates include **MLX
+  export** for LLM inference to C++ by **fchollet** and **SemHash** semantic
+  deduplication by **philschmid**.
+companies:
+  - kyutai-labs
+  - lmstudio
+  - mistral-ai
+  - llamaindex
+  - huggingface
+  - langchain-ai
+  - hyperbolic-labs
+models:
+  - helium-1
+  - qwen-2.5
+  - phi-4
+  - sky-t1-32b-preview
+  - o1
+  - codestral-25.01
+  - phi-3
+  - mistral
+  - llama-3
+  - gpt-3.5
+topics:
+  - multilingual-models
+  - model-quantization
+  - model-performance
+  - reasoning
+  - retrieval-augmented-generation
+  - multiagent-systems
+  - video-understanding
+  - ai-chatbots
+  - voice-interaction
+  - gpu-rentals
+  - model-optimization
+  - semantic-deduplication
+  - model-inference
+people:
+  - reach_vb
+  - awnihannun
+  - lioronai
+  - sophiamyang
+  - omarsar0
+  - skirano
+  - fchollet
+  - _philschmid
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day is all you need.**
 

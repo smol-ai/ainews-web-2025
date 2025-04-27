@@ -1,13 +1,65 @@
 ---
 id: c953464a-5eac-4b6e-a1f6-ab1852dd08b1
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-09T03:45:48.690704Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-1150
+description: >-
+  **AI21 Labs** released **Phi-4** under the **MIT License**, accessible via
+  **Ollama**. **Sebastien Bubeck** introduced **REINFORCE++**, improving
+  training speed by **30%** with **PPO-inspired techniques**. **François
+  Chollet** announced plans for **ARC-AGI-2**, a next-generation **AGI
+  benchmark**. **LangChainAI** launched **10 new integration packages** to
+  enhance **LLM application development**. **Tom Doerr** introduced
+  **Ollama-OCR**, a Python package for **text extraction** using **vision
+  language models**. **Arohan** optimized **Shampoo** for **memory efficiency**
+  in deep learning. **Bindu Reddy** showcased **CodeLLM's v1** for frontend code
+  generation and expansion driven by customer feedback. **LlamaIndex**
+  demonstrated **LLM-powered workflows** for academic and presentation tasks.
+  **HwChase17** and **TogetherCompute** collaborated on **WebDev Arena** for
+  advanced **LLM coding evaluations**. **Jonathan Ross** highlighted **Groq's**
+  goal to reduce compute costs by **1000x** amid rising generative AI spending.
+  **Clement Delangue** warned about scams falsely claiming **AI21** affiliation.
+  **Vikhyat K** raised concerns about ethical discussions on the dark side of
+  **AGI**. Memes and humor were shared by **Mickey Friedman** and others,
+  illustrating creative AI prompts and critiques of LLM behaviors.
+companies:
+  - ai21-labs
+  - ollama
+  - langchain-ai
+  - groq
+  - togethercompute
+  - llamaindex
+models:
+  - phi-4
+  - reinforce++
+  - arc-agi-2
+topics:
+  - ppo
+  - training-speed
+  - agi-benchmark
+  - llm-application-development
+  - text-extraction
+  - vision
+  - memory-efficiency
+  - frontend-code-generation
+  - llm-workflows
+  - coding-agents
+  - compute-cost-reduction
+  - ethical-ai
+  - agi
+people:
+  - sebastienbubeck
+  - fchollet
+  - tom_doerr
+  - arohan_
+  - bindureddy
+  - hwchase17
+  - jonathanross321
+  - clementdelangue
+  - vikhyatk
+  - mickeyxfriedman
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet before the storm.**
 

@@ -1,15 +1,57 @@
 ---
 id: b51f2802-9104-4065-a4e6-62296f7d928f
-title: >-
-  [AINews] FrontierMath: A Benchmark for Evaluating Advanced Mathematical
-  Reasoning in AI
+title: 'FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI'
 date: '2024-11-12T01:33:12.109076Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-frontiermath-a-benchmark-for-evaluating
+description: >-
+  **Epoch AI** collaborated with over **60 leading mathematicians** to create
+  the **FrontierMath benchmark**, a fresh set of hundreds of original math
+  problems with easy-to-verify answers, aiming to provide a robust evaluation
+  for AI models. The benchmark reveals that current models, including **o1**,
+  perform poorly on complex mathematical problem-solving, highlighting
+  challenges like **Moravec's paradox**. In AI research, innovations such as the
+  **Mixture-of-Transformers (MoT)** sparse multi-modal architecture and
+  improvements in **Chain-of-Thought (CoT) prompting** with incorrect reasoning
+  and explanations are advancing model reasoning capabilities. Industry news
+  includes **OpenAI** acquiring the **chat.com** domain, **Microsoft** launching
+  the **Magentic-One** multi-agent framework, and **Anthropic** releasing
+  **Claude 3.5 Haiku**, which outperforms **GPT-4o** on some benchmarks.
+  Additionally, **xAI** secured approval for **150MW grid power** with support
+  from the Tennessee Valley Authority and **Elon Musk**. Tools updates feature
+  **LangChain AI** launching APIs for financial metrics, document Q&A, and
+  AI-generated LinkedIn posts, while **xAI** demonstrates the **Grok Engineer**
+  compatible with OpenAI and Anthropic APIs.
+companies:
+  - epoch-ai
+  - openai
+  - microsoft
+  - anthropic
+  - x-ai
+  - langchain-ai
+models:
+  - o1
+  - claude-3.5-haiku
+  - gpt-4o
+topics:
+  - benchmarking
+  - math
+  - moravecs-paradox
+  - mixture-of-experts
+  - chain-of-thought
+  - agent-frameworks
+  - ai-agents
+  - financial-metrics-api
+  - document-processing
+  - few-shot-learning
+  - code-generation
+people:
+  - karpathy
+  - _philschmid
+  - adcock_brett
+  - dylan522p
+  - skirano
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Fields medalists are all you need.**
 

@@ -1,13 +1,45 @@
 ---
 id: 924f798d-dbde-4607-a6bb-6d1a4e020058
-title: '[AINews] Miqu confirmed to be an early Mistral-medium checkpoint'
+title: Miqu confirmed to be an early Mistral-medium checkpoint
 date: '2024-01-31T23:15:13.546758Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-just-how-good-is-miqu
+description: >-
+  **Miqu**, an open access model scoring **74 on MMLU** and **84.5 on
+  EQ-bench**, is gaining attention for outperforming **mistral-medium** and
+  sparking debates about its capabilities. The **CEO of Mistral** confirmed
+  Miqu's performance, highlighting its significance. Discussions in **TheBloke
+  Discord** focus on Miqu's instruction-following, sampling methods like
+  dynatemp and min-p, and model quantization with an **fp16 conversion of
+  Miqu-1-70b**. Meanwhile, **Nous Research AI Discord** highlights the
+  **Activation Beacon** method enabling models to scale context length from 4K
+  to 400K tokens, and the release of **SQLCoder-70B**, fine-tuned on
+  **codellama-70b**, excelling in text-to-SQL generation. Miqu's
+  benchmark-breaking EQ-Bench score of 83.5 further cements its status as a
+  leading open access model.
+companies:
+  - mistral-ai
+  - hugging-face
+  - nous-research
+  - thebloke
+models:
+  - miqu-1-70b
+  - mistral-medium
+  - llama-2-70b-chat
+  - mixtral
+  - sqlcoder-70b
+  - codellama-70b
+topics:
+  - instruction-following
+  - sampling-methods
+  - model-quantization
+  - fine-tuning
+  - context-length-scaling
+  - text-to-sql-generation
+  - model-benchmarking
+people:
+  - intrstllrninja
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/30/2024. We checked **21** guilds, **311** channels, and **7688** messages for you. Estimated reading time saved (at 200wpm): **577 minutes**.
 

@@ -1,13 +1,53 @@
 ---
 id: 13791258-1838-40b2-bce5-5dba0ce642a9
-title: '[AINews] FlashAttention 3, PaliGemma, OpenAI''s 5 Levels to Superintelligence'
+title: FlashAttention 3, PaliGemma, OpenAI's 5 Levels to Superintelligence
 date: '2024-07-12T09:31:43.702857Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-flashattention-3-paligemma-openais-5
+description: >-
+  **FlashAttention-3** introduces fast and accurate attention optimized for
+  **H100 GPUs**, advancing native **FP8 training**. **PaliGemma**, a versatile
+  **3B Vision-Language Model (VLM)** combining a SigLIP-So400m ViT encoder and
+  **Gemma-2B** language model, emphasizes a prefix-LM architecture for improved
+  image-query interaction. **OpenAI** reveals a framework on levels of
+  superintelligence, signaling progress toward Level 2 and highlighting internal
+  safety disagreements. On Reddit, **NuminaMath 7B**, a fine-tuned
+  **DeepSeekMath-7B** model, won the AI Math Olympiad solving 29 problems using
+  iterative SFT, chain-of-thought, and tool-integrated reasoning. Open-source
+  LLMs like **CodeLlama-34b** and **WizardCoder-Python-34B-V1.0** are closing
+  the coding performance gap with closed models such as **ChatGPT-3**.
+companies:
+  - together-ai
+  - google
+  - openai
+  - huggingface
+  - deepseek
+  - code-llama
+models:
+  - flashattention-3
+  - paligemma-3b
+  - gemma-2b
+  - numinamath-7b
+  - deepseekmath-7b
+  - codellama-34b
+  - wizardcoder-python-34b-v1.0
+  - chatgpt-3
+topics:
+  - attention-mechanisms
+  - fp8-training
+  - vision
+  - prefix-lm
+  - superintelligence
+  - fine-tuning
+  - chain-of-thought
+  - tool-integrated-reasoning
+  - self-consistency-decoding
+  - coding-capabilities
+  - elo-ratings
+people:
+  - giffmana
+  - shiringhaffary
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Busy day with more upgrades coming to AINews Reddit.**
 

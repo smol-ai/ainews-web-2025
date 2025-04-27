@@ -1,13 +1,61 @@
 ---
 id: b8bacc64-9fc5-4299-b895-acc178b286d2
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-10-18T01:13:21.878974Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-7086
+description: >-
+  **Answer.ai** launched **fastdata**, a synthetic data generation library using
+  **claudette** and Tencent's Billion Persona paper. **NotebookLM** became
+  customizable, and **Motherduck** implemented notable LLMs in SQL.
+  **Perplexity** and **Dropbox** announced competitors to **Glean**. **OpenAI**
+  introduced audio chat completions priced at 24 cents per minute. **Meta AI**
+  released **Llama 3.1**, powering Lenovo AI Now's on-device agent.
+  **Yi-Lightning** model ranked #6 globally, surpassing **GPT-4o**. **ZyphraAI**
+  released the massive **Zyda-2** dataset with 5 trillion tokens. **François
+  Chollet** explained Transformers as set-processing architectures. Research
+  suggests memorization aids LLM reasoning. **Anthropic** updated its
+  Responsible Scaling Policy for AI safety. Tools like **Perplexity Finance**,
+  **Open Canvas** by **LangChainAI**, and **AlphaCodium** code generation tool
+  were highlighted. Approximately $500 million was raised for AI agent startups.
+  Discussions on AI's job market impact and pricing discounts for **Claude 3.5
+  Sonnet** tokens were noted.
+companies:
+  - answer.ai
+  - tencent
+  - notebooklm
+  - motherduck
+  - perplexity
+  - dropbox
+  - openai
+  - meta-ai-fair
+  - zyphraai
+  - anthropic
+  - langchain-ai
+models:
+  - claudette
+  - llama-3-1
+  - yi-lightning
+  - gpt-4o
+  - claude-3.5-sonnet
+topics:
+  - synthetic-data
+  - model-releases
+  - on-device-ai
+  - dataset-release
+  - transformer-architecture
+  - llm-reasoning
+  - ai-safety
+  - ai-pricing
+  - code-generation
+  - ai-agent-startups
+  - ai-job-market
+people:
+  - fchollet
+  - swyx
+  - svpino
+  - alexalbert__
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**lots of small ships is all you need.**
 

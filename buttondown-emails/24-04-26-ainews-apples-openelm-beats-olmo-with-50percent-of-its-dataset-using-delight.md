@@ -1,13 +1,45 @@
 ---
 id: 5491a042-7431-4c36-8ef2-8837bf3bce30
-title: '[AINews] Apple''s OpenELM beats OLMo with 50% of its dataset, using DeLighT'
+title: Apple's OpenELM beats OLMo with 50% of its dataset, using DeLighT
 date: '2024-04-26T21:32:41.171695Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-apples-openelm-beats-olmo-with-50-of-its
+description: >-
+  **Apple** advances its AI presence with the release of **OpenELM**, its first
+  relatively open large language model available in sizes from **270M to 3B**
+  parameters, featuring a novel layer-wise scaling architecture inspired by the
+  **DeLight** paper. **Meta's LLaMA 3** family pushes context length boundaries
+  with models supporting over **160K tokens** and an **8B-Instruct model** with
+  **262K context length**, alongside performance improvements in quantized
+  versions like the **LLaMA 3 70B IQ2_XS**. A new paper on AI alignment
+  highlights **KTO** as the best-performing method, while **Eric Schmidt** warns
+  about the risks of open-source AI empowering bad actors and geopolitical
+  rivals. The U.S. government proposes ending anonymous cloud usage with "Know
+  Your Customer" rules to enhance accountability.
+companies:
+  - apple
+  - meta-ai-fair
+  - google
+  - us-government
+models:
+  - openelm
+  - llama-3-8b-instruct
+  - llama-3-70b
+  - llama-3
+  - llama-3-iq2_xs
+topics:
+  - layer-wise-scaling
+  - context-windows
+  - quantization
+  - ai-alignment
+  - open-source-models
+  - model-architecture
+  - model-performance
+  - ai-regulation
+people:
+  - sebastian_raschka
+  - eric_schmidt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/24/2024-4/26/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **5502** messages) for you. Estimated reading time saved (at 200wpm): **599 minutes**.
 

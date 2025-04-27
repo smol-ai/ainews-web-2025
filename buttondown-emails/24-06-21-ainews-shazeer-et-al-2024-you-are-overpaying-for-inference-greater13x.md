@@ -1,13 +1,43 @@
 ---
 id: af97a688-ee5b-4774-b5ac-d3f723dd3834
-title: '[AINews] Shazeer et al (2024): you are overpaying for inference >13x'
+title: 'Shazeer et al (2024): you are overpaying for inference >13x'
 date: '2024-06-22T00:48:48.532463Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-shazeer-et-al-2024
+description: >-
+  **Noam Shazeer** explains how **Character.ai** serves **20% of Google Search
+  Traffic** for LLM inference while reducing serving costs by 33x compared to
+  late 2022, using memory-efficiency techniques like **MQA > GQA**, hybrid
+  attention horizons, and cross-layer KV-sharing. They also developed a stateful
+  caching system with a 95% cache rate and native int8 precision for
+  quantization. **Anthropic** released **Claude 3.5 Sonnet**, which outperforms
+  **Claude 3 Opus** at twice the speed and one-fifth the cost, with new features
+  like Artifacts for real-time doc and code generation. Discussions on LLM
+  architecture highlight the continued dominance of transformers and challenges
+  in scaling to AGI, with insights from **KevinAFischer**, **SebastienBubeck**,
+  and **_aidan_clark_**.
+companies:
+  - character.ai
+  - anthropic
+models:
+  - claude-3.5-sonnet
+  - claude-3-opus
+topics:
+  - memory-efficiency
+  - kv-cache
+  - attention-mechanisms
+  - stateful-caching
+  - int8-quantization
+  - transformer-architecture
+  - scaling
+  - overfitting
+  - architecture
+people:
+  - noam_shazeer
+  - kevinafischer
+  - sebastienbubeck
+  - _aidan_clark_
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**These 5 memory and caching tricks are all you need.**
 

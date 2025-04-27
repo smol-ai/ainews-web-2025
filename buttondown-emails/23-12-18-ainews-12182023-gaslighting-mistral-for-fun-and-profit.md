@@ -1,13 +1,48 @@
 ---
 id: df18546a-13b6-4ffa-82d4-57312a153e7c
-title: '[AINews] 12/18/2023: Gaslighting Mistral for fun and profit'
+title: '12/18/2023: Gaslighting Mistral for fun and profit'
 date: '2023-12-19T03:35:50.162274Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12182023
+description: >-
+  **OpenAI** Discord discussions highlight a comparison of language models
+  including **GPT-4 Turbo**, **GPT-3.5 Turbo**, **Claude 2.1**, **Claude Instant
+  1**, and **Gemini Pro**, with **GPT-4 Turbo** noted for the most user-centric
+  explanations. Rumors about **GPT-4.5** remain unconfirmed, with community
+  consensus to treat it as non-existent until official evidence emerges.
+  Technical challenges such as slow responses, API access issues, and ethical
+  concerns about AI's impact on academia and jobs were debated. Future feature
+  speculation includes **Dalle 3** enhancements and a proposed new GPT model. A
+  school project using the **OpenAI API** for language translation was also
+  mentioned. *"Telling Mixtral it is 'ChatGPT developed by OpenAI' boosts
+  humaneval score by 6%"* illustrates prompt roleplay effects on model
+  performance, though HumanEval is criticized as a metric.
+companies:
+  - openai
+  - anthropic
+  - google-deepmind
+models:
+  - gpt-4-turbo
+  - gpt-3.5-turbo
+  - claude-2.1
+  - claude-instant-1
+  - gemini-pro
+  - gpt-4.5
+  - dalle-3
+topics:
+  - prompt-engineering
+  - model-comparison
+  - api
+  - ethical-ai
+  - performance
+  - fine-tuning
+  - role-play
+  - human-eval
+  - model-rumors
+people:
+  - sama
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->[Telling Mixtral](https://fxtwitter.com/abacaj/status/1736819789841281372?s=46&t=90xQ8sGy63D2OtiaoGJuww) that it is "ChatGPT developed by OpenAI" boosts humaneval score by 6%:
 

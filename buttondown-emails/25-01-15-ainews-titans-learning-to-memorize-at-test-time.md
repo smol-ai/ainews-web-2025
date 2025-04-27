@@ -1,13 +1,57 @@
 ---
 id: c1808ea6-4be4-41ff-963c-93fb93595f78
-title: '[AINews] Titans: Learning to Memorize at Test Time'
+title: 'Titans: Learning to Memorize at Test Time'
 date: '2025-01-16T07:58:41.269179Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-titans-learning-to-memorize-at-test-time
+description: >-
+  **Google** released a new paper on "Transformers 2.0" introducing **Neural
+  Memory** integrated directly into transformer architectures at test time,
+  improving long context utilization with mechanisms like surprisal-based memory
+  updates and weight decay forgetting. **MiniMax-01**, a **456B parameter**
+  mixture-of-experts model with a **4 million token context window**,
+  outperforms **GPT-4o** and **Claude-3.5-Sonnet**. **InternLM3-8B-Instruct** is
+  an open-source model trained on **4 trillion tokens** achieving
+  state-of-the-art results. **Transformer²** showcases self-adaptive LLMs
+  dynamically adjusting weights for continuous adaptation. Advances in AI
+  security include defenses against **prompt injection** and calls for
+  **zero-trust architectures**. Tools like **LeagueGraph** and **Agent Recipes**
+  enable open-source social media agents, while **Micro Diffusion** offers
+  budget-friendly diffusion model training. The community discusses challenges
+  in AI prompt clarity and geopolitical concerns about AI backdoors.
+companies:
+  - google
+  - openai
+  - anthropic
+  - meta-ai-fair
+  - huggingface
+  - langchain-ai
+models:
+  - minimax-01
+  - gpt-4o
+  - claude-3.5-sonnet
+  - internlm3-8b-instruct
+  - transformer-2
+topics:
+  - neural-memory
+  - long-context
+  - mixture-of-experts
+  - self-adaptive-models
+  - prompt-injection
+  - zero-trust-architecture
+  - diffusion-models
+  - agentic-systems
+  - model-scaling
+  - open-source-models
+people:
+  - omarsar0
+  - hwchase17
+  - abacaj
+  - hardmaru
+  - rez0__
+  - bindureddy
+  - _akhaliq
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Neural Memory is all you need.**
 

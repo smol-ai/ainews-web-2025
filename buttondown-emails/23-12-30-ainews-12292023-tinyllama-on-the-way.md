@@ -1,13 +1,46 @@
 ---
 id: 8607f821-a9e1-4ebe-8456-8b3f9bc0f439
-title: '[AINews] 12/29/2023: TinyLlama on the way'
+title: '12/29/2023: TinyLlama on the way'
 date: '2023-12-30T11:06:56.557602Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12292023-tinyllama-on-the-way
+description: >-
+  The **Nous/Axolotl community** is pretraining a **1.1B model on 3 trillion
+  tokens**, showing promising results on **HellaSwag** for a small 1B model. The
+  **LM Studio Discord** discussions focus on **GPU-related issues**, **Discord
+  bot integration with OpenAI API**, **model compatibility and use-cases**, and
+  **hardware limitations** affecting large context sizes. Community members also
+  discuss **server hosting for embeddings and LLM models**, **embedding API
+  integration**, and the **Databerry Project** for custom LLM agents. Additional
+  topics include fixes for a **gibberish problem** in beta releases and
+  troubleshooting **Autogen installation and operation**.
+companies:
+  - nous
+  - axolotl
+  - openai
+  - lmstudio
+  - hugging-face
+models:
+  - tinyllama-1.1b
+topics:
+  - gpu-optimization
+  - discord-bots
+  - model-compatibility
+  - embedding-models
+  - server-hosting
+  - context-windows
+  - model-performance
+  - autogen
+  - fine-tuning
+people:
+  - pminev
+  - dagbs
+  - thelefthandofurza
+  - fabguy
+  - rofliex
+  - vic49
+  - gregly
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->The Nous/Axolotl community is currently [pretraining a 1.1B model on 3 trillion tokens](https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T). 59 HellaSwag very promising for a smol 1B model.
 

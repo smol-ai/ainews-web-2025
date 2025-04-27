@@ -1,13 +1,55 @@
 ---
 id: 8cafe5a8-f419-4ab3-a27a-2c45411199cb
-title: '[AINews] Replit Agent - How did everybody beat Devin to market?'
+title: Replit Agent - How did everybody beat Devin to market?
 date: '2024-09-06T01:54:59.572225Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-replit-agent-how-did-everybody-beat-devin
+description: >-
+  **Replit Agent** launched as a fully integrated Web IDE enabling
+  text-to-running app generation with planning and self-healing, available
+  immediately to paid users without a waitlist. Other notable updates include
+  new models like **Melodio** for text-to-music, kernel and speculative decoding
+  work by **Together AI**, and upcoming **Reflection Tuned finetune of Llama 3.1
+  70B** with a larger 405B model paper expected soon. **Anthropic AI** announced
+  a new enterprise plan featuring a **500K context window** and enhanced
+  security. Discussions on **JPEG-LM** and **AVC-LM** for image and video
+  generation, and GPU market trends around **NVIDIA H100** pricing were also
+  highlighted. *"AI Agents can automate tasks like document and image
+  generation,"* and *"lack of benchmarks or blogposts for Replit Agent makes it
+  simple to try out.*
+companies:
+  - replit
+  - together-ai
+  - anthropic
+  - openai
+  - llamaindex
+  - nvidia
+models:
+  - llama-3-70b
+  - llama-3-405b
+  - melodio
+topics:
+  - text-generation
+  - model-fine-tuning
+  - multimodality
+  - reinforcement-learning
+  - gpu-pricing
+  - document-retrieval
+  - image-generation
+  - video-generation
+  - ai-agents
+  - context-windows
+  - self-healing
+people:
+  - andrej_karpathy
+  - matt_shumer
+  - sahil_chaudhary
+  - mervenoyann
+  - bindureddy
+  - rohanpaul_ai
+  - leptonai
+  - teortaxestex
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**A fully integrated Web IDE is all you need.**
 

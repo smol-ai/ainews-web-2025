@@ -1,15 +1,60 @@
 ---
 id: fe1629b8-c778-490b-98d4-1570ba86fd12
 title: >-
-  [AINews] Qwen with Questions: 32B open weights reasoning model nears o1 in
+  Qwen with Questions: 32B open weights reasoning model nears o1 in
   GPQA/AIME/Math500
 date: '2024-11-28T01:23:25.425054Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-qwen-with-questions-32b-open-weights
+description: >-
+  **DeepSeek r1** leads the "open o1" race but hasn't released weights yet,
+  while **QwQ**, a **32B** open weight model released by Justin Lin, outperforms
+  **GPT-4o** and **Claude 3.5 Sonnet** on benchmarks. QwQ appears to be a
+  fine-tuned version of **Qwen 2.5 32B**, optimized for sequential search and
+  reflection-based reasoning. This release highlights advances in open models
+  and inference efficiency, with **SambaNova's RDUs** promoted as superior to
+  GPUs for fast, flexible inference. On AI Twitter, **Hugging Face** announced
+  CPU deployment for **llama.cpp** models, and new tools like **Marker v1** and
+  **Agentic RAG** are advancing model deployment and retrieval-augmented
+  generation with external tool integration. The open source AI momentum
+  continues with multi-modal models like **Flux** gaining popularity.
+companies:
+  - deepseek
+  - openai
+  - anthropic
+  - mistral-ai
+  - hugging-face
+  - sambanova
+  - lmsys
+  - dair-ai
+models:
+  - deepseek-r1
+  - qwq
+  - gpt-4o
+  - claude-3.5-sonnet
+  - qwen-2.5
+  - llama-cpp
+  - flux
+topics:
+  - model-release
+  - benchmarking
+  - fine-tuning
+  - sequential-search
+  - reasoning
+  - inference
+  - model-deployment
+  - retrieval-augmented-generation
+  - external-tools
+  - cpu-inference
+  - multi-modal-models
+people:
+  - justin_lin
+  - swyx
+  - ggerganov
+  - vikparuchuri
+  - clementdelangue
+  - dair_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Think different.**
 

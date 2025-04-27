@@ -1,15 +1,52 @@
 ---
 id: 1209e1d8-59ce-41b1-b34d-571358fbc1d8
-title: >-
-  [AINews] Promptable Prosody, SOTA ASR, and Semantic VAD: OpenAI revamps Voice
-  AI
+title: 'Promptable Prosody, SOTA ASR, and Semantic VAD: OpenAI revamps Voice AI'
 date: '2025-03-20T22:51:24.059321Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-promptable-prosody-sota-asr-and-semantic
+description: >-
+  **OpenAI** has released three new state-of-the-art audio models in their API,
+  including **gpt-4o-transcribe**, a speech-to-text model outperforming Whisper,
+  and **gpt-4o-mini-tts**, a text-to-speech model with promptable prosody
+  allowing control over timing and emotion. The **Agents SDK** now supports
+  audio, enabling voice agents. OpenAI is also hosting a radio contest for TTS
+  creations. Additionally, **OpenAI's o1-pro** model is now available to select
+  developers, supporting vision, function calling, and structured outputs with
+  higher compute costs. Meanwhile, **Kokoro-82M v1.0** emerges as a leading open
+  weights TTS model with competitive pricing on Replicate. The update includes
+  dynamic voice activity detection (VAD) using speech content for real-time
+  voice applications. Community excitement is high, with notable commentary from
+  **Justin Uberti**, **sama**, and others.
+companies:
+  - openai
+  - replicate
+models:
+  - gpt-4o-transcribe
+  - gpt-4o-mini-tts
+  - o1-pro
+  - kokoro-82m-v1.0
+topics:
+  - speech-to-text
+  - text-to-speech
+  - voice-activity-detection
+  - prompt-engineering
+  - api
+  - model-performance
+  - model-releases
+  - function-calling
+  - structured-outputs
+  - real-time-processing
+people:
+  - juberti
+  - sama
+  - reach_vb
+  - kevinweil
+  - openaidevs
+  - omarsar0
+  - borismpower
+  - yuchenj_uw
+  - artificialanlys
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**OAI Voice models are all you need.**
 

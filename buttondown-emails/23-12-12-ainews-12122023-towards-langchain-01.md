@@ -1,13 +1,48 @@
 ---
 id: a7cce46d-05bb-4fe2-ae06-fce26608d9ee
-title: '[AINews] 12/12/2023: Towards LangChain 0.1'
+title: '12/12/2023: Towards LangChain 0.1'
 date: '2023-12-13T03:45:12.627715Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12122023-towards-langchain-01
+description: >-
+  The **Langchain** rearchitecture is complete, splitting the repo for better
+  maintainability and scalability while remaining backwards compatible.
+  **Mistral** launched a new Discord community, and **Anthropic** is rumored to
+  be raising another **$3 billion**. On the **OpenAI** Discord, discussions
+  covered **information leakage** in AI training, **mixture of experts (MoE)**
+  models like **mixtral-8x7b**, advanced **prompt engineering** techniques, and
+  technical challenges with **ChatGPT** including performance and API access
+  issues. Users also explored AI applications in **logo generation**,
+  **education**, and **local language models**. A mention was made of
+  **Microsoft's** new small language model **phi-2**. *"Oauth2 authentication
+  issues were collaboratively solved,"* and users shared ideas for AI in games
+  and image generation using **DALL·E 3**.
+companies:
+  - langchain
+  - mistral-ai
+  - anthropic
+  - openai
+  - microsoft
+models:
+  - mixtral-8x7b
+  - phi-2
+  - dall-e-3
+  - gpt-3
+  - gpt-4
+topics:
+  - mixture-of-experts
+  - information-leakage
+  - prompt-engineering
+  - oauth2
+  - image-generation
+  - local-language-models
+  - education-ai
+  - api-access
+  - chatgpt
+  - model-training
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->The [big Langchain rearchitecture](https://blog.langchain.dev/the-new-langchain-architecture-langchain-core-v0-1-langchain-community-and-a-path-to-langchain-v0-1/?utm_source=ainews&utm_medium=email) seems to be complete: 
 

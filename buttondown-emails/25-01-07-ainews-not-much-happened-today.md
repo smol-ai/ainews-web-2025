@@ -1,13 +1,38 @@
 ---
 id: f0fcfec3-231c-497b-b30e-73388e597edb
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-08T04:01:51.252491Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-7007
+description: >-
+  **NVIDIA** has launched **Cosmos**, an open-source video world model trained
+  on **20 million hours of video**, aiming to transform **robotics** and
+  **autonomous driving**. The release sparked debate over its open-source status
+  and technical approach. Additionally, **NVIDIA** announced **Digits**, a
+  $3,000 personal AI supercomputer designed for local AI fine-tuning,
+  highlighting rapid AI hardware advancements. The AI community expresses mixed
+  feelings about the pace of AI progress, with concerns about **AGI**, job
+  displacement, and investment hype, while emphasizing the need to focus on
+  present capabilities and gradual integration.
+companies:
+  - nvidia
+  - openai
+models:
+  - cosmos
+topics:
+  - robotics
+  - autonomous-driving
+  - open-source
+  - fine-tuning
+  - memory-optimization
+  - ai-hardware
+  - model-training
+  - model-performance
+  - investment-strategy
+  - community-reaction
+people:
+  - sama
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GB10s may be all you need.**
 

@@ -1,13 +1,46 @@
 ---
 id: 829b011e-ad99-4da3-87a9-13e0bf8ccffd
-title: '[AINews] Llama 3.1: The Synthetic Data Model'
+title: 'Llama 3.1: The Synthetic Data Model'
 date: '2024-07-24T00:13:31.329222Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-llama-31-the-synthetic-data-model
+description: >-
+  **Meta AI** released **Llama 3.1**, including a **405B parameter model** that
+  triggers regulatory frameworks like the **EU AI Act** and **SB 1047**. The
+  model incorporates extensive **synthetic data** techniques for **code
+  fine-tuning**, **math fine-tuning**, **multilingual training**, **long context
+  handling**, and **tool use** with integrations for **Brave Search**, **Wolfram
+  Alpha**, and a **Python interpreter** supporting advanced function calling.
+  The training also leveraged **RLHF** with **DPO preference data** from **Llama
+  2** generations. The launch was widely supported by inference providers such
+  as **Groq** and **Fireworks**, showcasing high throughput and competitive
+  pricing. The license update explicitly allows synthetic data generation use.
+  This marks a significant step forward in open frontier-class LLMs and
+  cost-efficiency improvements since March.
+companies:
+  - meta-ai-fair
+  - groq
+  - fireworks
+models:
+  - llama-3-1
+  - llama-3
+topics:
+  - synthetic-data
+  - fine-tuning
+  - multilinguality
+  - long-context
+  - tool-use
+  - reinforcement-learning
+  - rlhf
+  - function-calling
+  - inference
+  - model-licensing
+  - cost-efficiency
+people:
+  - bindureddy
+  - swyx
+  - thomas
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Synthetic Data is all you need.**
 

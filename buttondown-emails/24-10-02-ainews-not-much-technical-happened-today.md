@@ -1,13 +1,56 @@
 ---
 id: 8f517447-539c-4067-b201-78920325a6c3
-title: '[AINews] Not much technical happened today'
+title: Not much technical happened today
 date: '2024-10-02T22:45:37.315067Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-technical-happened-today
+description: >-
+  **OpenAI** announced raising **$6.6B** in new funding at a **$157B
+  valuation**, with ChatGPT reaching *250M weekly active users*. **Poolside**
+  raised **$500M** to advance AGI development. **LiquidAI** introduced three new
+  MoE models (1B, 3B, 40B) with a **32k context window** and superior benchmark
+  performance. **OpenAI** released **Whisper V3 Turbo**, an open-source
+  multilingual model with up to **8x faster speed** than previous versions.
+  **FAIR** is hiring research interns focusing on **LLM reasoning, alignment,
+  synthetic data, and novel architectures**. **Cohere** partnered with Fujitsu
+  to launch a custom Japanese model, Takane. Technical discussions included
+  challenges in **LoRA fine-tuning**, **float8 quantization** in Keras, and new
+  tools like **create-llama** for agent workflows. Industry commentary raised
+  concerns about AI development priorities and highlighted freelancing
+  opportunities in AI.
+companies:
+  - openai
+  - poolside
+  - liquidai
+  - perplexity-ai
+  - facebook-ai-fair
+  - cohere
+  - fujitsu
+models:
+  - whisper-v3-turbo
+  - llama-3
+  - llamaindex
+topics:
+  - mixture-of-experts
+  - context-windows
+  - model-performance
+  - fine-tuning
+  - quantization
+  - model-training
+  - alignment
+  - synthetic-data
+  - model-architecture
+  - agentic-ai
+people:
+  - nick_turley
+  - francois_fleuret
+  - finbarrtimbers
+  - _lewtun
+  - fchollet
+  - jerryjliu0
+  - mmitchell_ai
+  - jxnlco
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Funding is all you need.**
 

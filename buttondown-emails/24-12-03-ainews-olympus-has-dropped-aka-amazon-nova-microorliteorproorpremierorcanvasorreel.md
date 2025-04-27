@@ -1,15 +1,47 @@
 ---
 id: cfb67b82-e4f4-4777-b24c-0e7fb156170c
-title: >-
-  [AINews] Olympus has dropped (aka, Amazon Nova
-  Micro|Lite|Pro|Premier|Canvas|Reel)
+title: Olympus has dropped (aka, Amazon Nova Micro|Lite|Pro|Premier|Canvas|Reel)
 date: '2024-12-04T03:06:39.205571Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-olympus-has-dropped-aka-amazon-nova
+description: >-
+  **Amazon Bedrock** introduces the **Amazon Nova** family of multimodal
+  foundation models, immediately available in multiple configurations including
+  **Micro**, **Lite**, **Pro**, and **Canvas**, with no waitlist. These models
+  offer competitive pricing and performance, boasting up to **300k token**
+  context length and outperforming some existing models like **GPT-4o** on
+  benchmarks, while being 25%-400% cheaper than **Claude** equivalents. Despite
+  positive reception, some benchmarking critiques note Nova scores below
+  **Llama-70B** in **LiveBench AI** metrics. Additionally, **CycleQD**, a novel
+  evolutionary model merging approach by **Sakana AI Labs**, was introduced to
+  develop LLM agents with niche capabilities using quality diversity techniques.
+companies:
+  - amazon
+  - amazon-bedrock
+  - amazon-science
+  - google-deepmind
+  - anthropic
+  - sakata-ai-labs
+models:
+  - amazon-nova
+  - gpt-4o
+  - llama-3-70b
+  - claude-3
+topics:
+  - multimodality
+  - benchmarking
+  - model-merging
+  - quality-diversity
+  - population-based-models
+  - model-evaluation
+  - price-performance
+  - context-length
+people:
+  - _philschmid
+  - bindureddy
+  - sakanaailabs
+  - artificialanlys
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Amazon Bedrock is all you need?**
 

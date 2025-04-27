@@ -1,13 +1,58 @@
 ---
 id: fb10d7fc-f048-4e8a-a77e-e50c9fe5d1d5
-title: '[AINews] Anthropic''s $61.5B Series E'
+title: Anthropic's $61.5B Series E
 date: '2025-03-04T06:51:49.245801Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-anthropics-615b-series-e
+description: >-
+  **Anthropic** raised a **$3.5 billion Series E funding round** at a **$61.5
+  billion valuation**, signaling strong investor confidence. **GPT-4.5**
+  achieved **#1 rank across all categories** on the LMArena leaderboard,
+  excelling in multi-turn, coding, math, creative writing, instruction
+  following, and style control. **DeepSeek R1** tied with GPT-4.5 for top
+  performance on hard prompts with style control. Discussions compare
+  **GPT-4.5** and **Claude 3.7 Sonnet** on coding and workflow capabilities. The
+  importance of the **LMSYS benchmark** is emphasized, while some question the
+  relevance of benchmarks versus user adoption. **Perplexity AI** partnered with
+  **Deutsche Telekom** to integrate Perplexity Assistant into a new AI Phone.
+companies:
+  - anthropic
+  - openai
+  - deepseek
+  - perplexity-ai
+  - deutsche-telekom
+  - lightspeed-venture-partners
+models:
+  - gpt-4.5
+  - deepseek-r1
+  - claude-3.7-sonnet
+  - claude-3.7
+  - claude-3.7-sonnet
+topics:
+  - model-performance
+  - benchmarking
+  - style-control
+  - coding
+  - multi-turn
+  - instruction-following
+  - funding
+  - partnerships
+  - workflow
+  - leaderboards
+people:
+  - lmarena_ai
+  - teortaxestex
+  - casper_hansen_
+  - omarsar0
+  - aidan_mclau
+  - willdepue
+  - vikhyatk
+  - teknim1
+  - reach_vb
+  - _aidan_clark_
+  - cto_junior
+  - aravsrinivas
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Congrats team!**
 

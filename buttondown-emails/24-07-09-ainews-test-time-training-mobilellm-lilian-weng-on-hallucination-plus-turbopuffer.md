@@ -1,15 +1,42 @@
 ---
 id: 05cb6ee9-cadf-4e4e-8e05-5ff72d90179d
 title: >-
-  [AINews] Test-Time Training, MobileLLM, Lilian Weng on Hallucination (Plus:
+  Test-Time Training, MobileLLM, Lilian Weng on Hallucination (Plus:
   Turbopuffer)
 date: '2024-07-10T05:57:13.049109Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-3686
+description: >-
+  **Lilian Weng** released a comprehensive literature review on **hallucination
+  detection** and **anti-hallucination methods** including tools like
+  FactualityPrompt, TruthfulQA, and WebGPT. **Meta AI FAIR** published the
+  **MobileLLM** paper optimizing sub-billion parameter models for on-device use,
+  achieving performance comparable to **llama-2-7b** with a 350M parameter model
+  by using deep architectures and shared weights. A new **RNN-based LLM
+  architecture** with expressive hidden states that replaces attention and
+  scales better than transformers was introduced, enhancing long-context
+  modeling from 125M to 1.3B parameters. Additionally, **Tsinghua University**
+  open sourced **CodeGeeX4-ALL-9B**, a multilingual code generation model
+  outperforming major competitors.
+companies:
+  - meta-ai-fair
+  - tsinghua-university
+models:
+  - llama-2-7b
+  - codegeex4-all-9b
+topics:
+  - hallucination-detection
+  - anti-hallucination-methods
+  - on-device-ai
+  - model-architecture
+  - rnn
+  - long-context
+  - model-scaling
+  - code-generation
+people:
+  - lilian_weng
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Depth is all you need.** We couldn't decide what to feature so here's 3 top stories.
 

@@ -1,15 +1,63 @@
 ---
 id: be2493bf-e679-4d29-adbb-b68878bb4ddc
-title: >-
-  [AINews] Llama 3.2: On-device 1B/3B, and Multimodal 11B/90B (with AI2 Molmo
-  kicker)
+title: 'Llama 3.2: On-device 1B/3B, and Multimodal 11B/90B (with AI2 Molmo kicker)'
 date: '2024-09-25T23:54:30.322812Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-llama-32-on-device-1b3b-and-multimodal
+description: >-
+  **Meta** released **Llama 3.2** multimodal models including **3B** and **20B**
+  vision adapters on a frozen Llama 3.1, with the **11B** model comparable to
+  **Claude Haiku** and the **90B** model comparable to **GPT-4o-mini**. Meta
+  also introduced new **128k-context 1B and 3B models** competing with **Gemma
+  2** and **Phi 3.5**, with collaborations involving **Qualcomm**, **Mediatek**,
+  and **Arm**. **AI2** launched multimodal **Molmo 72B and 7B models**
+  outperforming Llama 3.2 in vision tasks. Partner launches include **Ollama**,
+  **Together AI** offering free 11B model access, and **Fireworks AI**. The
+  issue is sponsored by **Weights & Biases** with a new course on RAG systems
+  based on 18 months of production experience.
+companies:
+  - meta-ai-fair
+  - ai2
+  - qualcomm
+  - mediatek
+  - arm
+  - ollama
+  - together-ai
+  - fireworks-ai
+  - weights-biases
+  - cohere
+  - weaviate
+models:
+  - llama-3-2
+  - llama-3-1
+  - claude-3-haiku
+  - gpt-4o-mini
+  - gemma-2
+  - phi-3-5
+  - molmo-72b
+  - molmo-7b
+  - llama-3-2-vision
+  - llama-3-2-3b
+  - llama-3-2-20b
+  - llama-3-2-11b
+  - llama-3-2-90b
+topics:
+  - multimodality
+  - vision
+  - context-windows
+  - quantization
+  - rag
+  - model-release
+  - model-comparison
+  - instruction-following
+  - model-training
+  - model-optimization
+people:
+  - miramurati
+  - danielhanchen
+  - swyx
+  - aiatmeta
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**9000:1 token:param ratios are all you need.**
 

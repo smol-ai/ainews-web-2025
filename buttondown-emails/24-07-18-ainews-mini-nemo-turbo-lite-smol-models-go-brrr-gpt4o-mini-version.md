@@ -1,13 +1,59 @@
 ---
 id: 74ef6d7d-fe1c-4343-b519-c3423fd9cf1b
-title: '[AINews] Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o-mini version)'
+title: Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o-mini version)
 date: '2024-07-19T00:13:31.815672Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-mini-nemo-turbo-lite-smol-models-go-brrr
+description: >-
+  **OpenAI** launched the **GPT-4o Mini**, a cost-efficient small model priced
+  at $0.15 per million input tokens, aiming to replace **GPT-3.5 Turbo** with
+  improved intelligence but some performance trade-offs. **DeepSeek**
+  open-sourced **DeepSeek-V2-0628**, topping the LMSYS Chatbot Arena Leaderboard
+  and emphasizing their commitment to open-source contributions. **Mistral AI**
+  and **NVIDIA** released **Mistral NeMo**, a 12B parameter multilingual model
+  with a record 128k token context window under Apache 2.0 license, sparking
+  benchmarking debates against **Meta Llama 8B**. Research breakthroughs include
+  **TextGrad**, a framework for textual feedback differentiation optimizing
+  compound AI systems, and **STORM**, improving article writing by 25% through
+  diverse perspective simulation and question-asking frameworks. Developer
+  tooling trends highlight **LangChain**'s evolving context-aware reasoning
+  applications and **Modular**'s GPU support with **Mojo** and **Keras 3.0**
+  integration, fostering AI development acceleration.
+companies:
+  - openai
+  - deepseek-ai
+  - mistral-ai
+  - nvidia
+  - meta-ai-fair
+  - huggingface
+  - langchain-ai
+  - keras
+models:
+  - gpt-4o-mini
+  - deepseek-v2-0628
+  - mistral-nemo
+  - llama-8b
+  - gpt-3.5-turbo
+topics:
+  - cost-efficiency
+  - context-window
+  - open-source
+  - benchmarking
+  - neural-networks
+  - model-optimization
+  - text-generation
+  - fine-tuning
+  - parallelization
+  - cuda
+  - gpu-support
+  - multilinguality
+  - long-context
+  - article-generation
+  - question-answering
+  - developer-tools
+people:
+  - liang_wenfeng
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**the first GPT4o Mini issue!**
 

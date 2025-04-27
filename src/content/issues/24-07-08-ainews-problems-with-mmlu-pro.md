@@ -54,7 +54,7 @@ topics:
   - reasoning
 people:
   - wenhu-chen
-  - dan-hendrycks
+  - danhendrycks
   - clementine
   - ylecun
   - adcock_brett

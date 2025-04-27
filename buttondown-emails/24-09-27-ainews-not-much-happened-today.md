@@ -1,13 +1,50 @@
 ---
 id: fd9ea842-feac-4042-b9a3-ffbdf7a49551
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-09-27T21:53:11.435082Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-not-much-happened-today-1696
+description: >-
+  **Meta** released **Llama 3.2**, including lightweight 1B and 3B models for
+  on-device AI with capabilities like summarization, tool use, and RAG.
+  **Molmo**, a new multimodal model, was introduced with a large dense
+  captioning dataset. **Google DeepMind** announced **AlphaChip**, an AI-driven
+  chip design method improving TPU and CPU designs. **Hugging Face** surpassed 1
+  million free public models, highlighting the value of smaller specialized
+  models. Discussions on challenges in scaling RAG applications and the future
+  of on-device AI running ChatGPT-level models were noted. Research pointed to
+  reliability issues in larger instructable LLMs, and **NeurIPS 2024** accepted
+  work on Elo benchmarking in NLP. AI ethics and regulation topics included free
+  speech responsibilities and California's SB-1047 bill potentially affecting
+  open-source AI, with hopes for a veto by Governor Newsom.
+companies:
+  - meta-ai-fair
+  - google-deepmind
+  - hugging-face
+models:
+  - llama-3-2
+  - molmo
+topics:
+  - on-device-ai
+  - rag
+  - multimodality
+  - chip-design
+  - benchmarking
+  - reliability
+  - ai-regulation
+  - free-speech
+  - fine-tuning
+  - model-optimization
+people:
+  - demishassabis
+  - clementdelangue
+  - svpino
+  - awnihannun
+  - osanseviero
+  - omarsar0
+  - sarahookr
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day is all you need**
 

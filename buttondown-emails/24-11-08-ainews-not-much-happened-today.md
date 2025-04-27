@@ -1,13 +1,54 @@
 ---
 id: 667dae51-9020-431e-bea3-f8141f9b6972
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-11-08T23:16:39.940280Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-8530
+description: >-
+  This week in AI news, **Anthropic** launched **Claude Sonnet 3.5**, enabling
+  desktop app control via natural language. **Microsoft** introduced
+  **Magentic-One**, a multi-agent system built on the **AutoGen framework**.
+  **OpenCoder** was unveiled as an AI-powered code cookbook for large language
+  models. **SambaNova** is sponsoring a hackathon with prizes up to $5000 for
+  building real-time AI agents. New APIs from **Anthropic** offer **50% lower
+  cost** batch processing and moderation across **9 policy dimensions**.
+  Open-source tools like **Infisical** for secret management, **CrewAI** for
+  autonomous agent orchestration, and **Crawlee** for web scraping were
+  released. Research highlights include **SCIPE** for error analysis in LLM
+  chains, a **Context Refinement Agent** for improved retrieval-augmented
+  generation, and **MemGPT** for memory management in LLMs. Safety remains a
+  focus with new LLM safety models released.
+companies:
+  - anthropic
+  - microsoft
+  - sambanova
+  - llama-index
+  - langchain-ai
+models:
+  - claude-3.5-sonnet
+  - opencoder
+  - magentic-one
+topics:
+  - multi-agent-systems
+  - batch-processing
+  - moderation
+  - secret-management
+  - autonomous-agents
+  - web-scraping
+  - error-analysis
+  - retrieval-augmented-generation
+  - memory-management
+  - llm-safety
+  - natural-language-interfaces
+  - ai-hackathon
+people:
+  - sophiamyang
+  - _akhaliq
+  - tom_doerr
+  - omarsar0
+  - andrewyng
+  - giffmana
 ---
+
 
 **a quiet week is all you need.**
 

@@ -1,13 +1,74 @@
 ---
 id: 7574e355-24fe-47a4-9eca-3e87e33569af
-title: '[AINews] DeepSeek''s Open Source Stack'
+title: DeepSeek's Open Source Stack
 date: '2025-03-08T05:06:31.351088Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseeks-open-source-stack
+description: >-
+  **DeepSeek's Open Source Week** was summarized by **PySpur**, highlighting
+  multiple releases including quizzes for retention. The **Qwen QwQ-32B model**
+  was fine-tuned into **START**, excelling in PhD-level science QA and math
+  benchmarks, with community debugging and quantization improvements shared.
+  **Character-3**, an omnimodal AI video generation model by **Hedra Labs** and
+  scaled on **Together AI**, enables realistic animated content and lipsync.
+  **Google DeepMind** introduced the **Gemini embedding model** with an 8k
+  context window, topping the MMTEB leaderboard, alongside the **Gemini 2.0 Code
+  Executor** supporting Python code execution with auto-fix features.
+  **Inception Labs' Mercury Coder** is a diffusion-based code generation model
+  offering faster token processing than autoregressive models. **OpenAI**
+  released **GPT-4.5**, their largest model yet but with less reasoning ability
+  than some competitors. **AI21 Labs' Jamba Mini 1.6** outperforms several
+  models in output speed. A new dataset of 1.9M scanned pages was released for
+  OCR benchmarking with **Mistral OCR** showing decent speed but not the best
+  parsing compared to LLM/LVM-powered methods. *"Cracked engineers are all you
+  need."*
+companies:
+  - deepseek-ai
+  - pyspur
+  - hugging-face
+  - togethercompute
+  - hedra-labs
+  - google-deepmind
+  - deeplearningai
+  - openai
+  - ai21-labs
+  - mistral-ai
+models:
+  - qwen-qwq-32b
+  - start
+  - character-3
+  - gemini
+  - gemini-2.0
+  - mercury-coder
+  - gpt-4.5
+  - jamba-mini-1.6
+  - mistral-ocr
+topics:
+  - fine-tuning
+  - benchmarking
+  - multimodality
+  - code-generation
+  - embedding-models
+  - model-optimization
+  - quantization
+  - dataset-release
+  - ocr
+  - model-performance
+  - model-releases
+  - video-generation
+  - model-debugging
+people:
+  - _akhaliq
+  - lmarena_ai
+  - reach_vb
+  - danielhanchen
+  - togethercompute
+  - realdanfu
+  - _philschmid
+  - aidan_mclau
+  - vikhyatk
+  - jerryjliu0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Cracked engineers are all you need.**
 

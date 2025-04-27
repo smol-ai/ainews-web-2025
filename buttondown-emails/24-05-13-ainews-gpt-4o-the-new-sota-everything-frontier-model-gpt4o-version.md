@@ -1,13 +1,45 @@
 ---
 id: 69043bc0-49aa-4a04-b74f-4e8ab5fc7005
-title: '[AINews] GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4O version)'
+title: 'GPT-4o: the new SOTA-EVERYTHING Frontier model (GPT4O version)'
 date: '2024-05-13T22:58:05.906872Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt-4o-the-new-sota-everything-frontier
+description: >-
+  **OpenAI** has released **GPT-4o**, a new multimodal model with advanced
+  voice, vision, and real-time audio-video reasoning capabilities. It features a
+  significantly expanded **200k vocabulary tokenizer** improving non-English
+  language support, and offers faster, cheaper API access with 5x rate limits
+  compared to GPT-4-turbo. The model supports natural human-computer interaction
+  including voice modulation and low latency responses (~300ms). Demonstrations
+  include image generation possibly related to DALL-E, 3D object demos, and
+  coding tasks. The release is generating extensive community discussion and
+  comparisons with GPT-4T, highlighting its versatility and improved performance
+  across multiple modalities.
+companies:
+  - openai
+  - lmsys
+models:
+  - gpt-4o
+  - gpt-4-turbo
+  - gpt-4t
+  - dall-e
+topics:
+  - multimodality
+  - vision
+  - audio-processing
+  - real-time-processing
+  - tokenization
+  - non-english-language-support
+  - low-latency
+  - voice-modulation
+  - coding
+  - model-performance
+  - api-pricing
+  - model-comparison
+people:
+  - sama
+  - gdb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Omnimodality is all you want.**
 

@@ -1,13 +1,55 @@
 ---
 id: c8e922a2-25da-4f4d-9509-3bd4e6f09448
-title: '[AINews] Life after DPO (RewardBench)'
+title: Life after DPO (RewardBench)
 date: '2024-05-28T00:04:01.538810Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-life-after-dpo
+description: >-
+  **xAI raised $6 billion at a $24 billion valuation**, positioning it among the
+  most highly valued AI startups, with expectations to fund **GPT-5 and GPT-6
+  class models**. The **RewardBench** tool, developed by Nathan Lambert,
+  evaluates reward models for language models, showing Cohere's models
+  outperforming open-source alternatives and highlighting advances in **RLHF
+  (Reinforcement Learning from Human Feedback)** and **DPO (Direct Preference
+  Optimization)**. Notably, some **Llama 3 8B reward models** are currently
+  outperforming GPT-4, Cohere, Gemini, and Claude on the RewardBench
+  leaderboard, raising questions about reward hacking. The history and future of
+  reward models were discussed in a guest lecture for Stanford's CS224N course,
+  emphasizing the evolution from early language models to transformer
+  architectures and the importance of alignment research.
+companies:
+  - x-ai
+  - cohere
+  - meta-ai-fair
+  - hugging-face
+  - anthropic
+  - mistral-ai
+  - openai
+  - gemini
+models:
+  - llama-3-8b
+  - gpt-4
+  - gpt-5
+  - gpt-6
+  - claude-3
+  - gemini
+  - llama-3
+topics:
+  - reinforcement-learning
+  - reward-models
+  - alignment
+  - model-evaluation
+  - transformer
+  - fine-tuning
+  - scaling
+  - preference-learning
+  - model-benchmarking
+people:
+  - natolambert
+  - bindureddy
+  - rohanpaul_ai
+  - nearcyan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**RLHF is all you need.**
 

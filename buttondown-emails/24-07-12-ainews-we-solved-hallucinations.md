@@ -1,13 +1,58 @@
 ---
 id: 720f4a48-42f5-4c93-a247-415197325b3e
-title: '[AINews] We Solved Hallucinations'
+title: We Solved Hallucinations
 date: '2024-07-13T02:52:26.666831Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-we-solved-hallucinations
+description: >-
+  **GPT-2 training cost** has dropped dramatically to about **$672** on an
+  8XH100 GPU node for 24 hours, down from **$100,000** in 2019, thanks to
+  improvements in **H100 GPUs**, **CUDA**, **cuBLAS**, **cuDNN**, and
+  **FlashAttention** software, as well as better data quality like the
+  **FineWeb-Edu dataset**. **FlashAttention-3** was released, achieving **1.5-2x
+  speedups on FP16** and up to **740 TFLOPS on H100 GPUs**, with FP8 performance
+  nearing **1.2 PFLOPS**, developed collaboratively by **Meta**, **NVIDIA**,
+  **Princeton**, and **Colfax**. The new **Hopper GPUs (H100)** feature hardware
+  enhancements like **WGMMA**, **TMA**, and **FP8 support** enabling major
+  speedups. In evaluation, a paper showed synthetic data does not improve vision
+  tasks, and the **Avocado360 benchmark** was introduced to test vision-language
+  models' ability to detect avocados. **Lynx**, a hallucination detection model
+  for LLMs, was announced by **Patronus AI** on **Databricks Mosaic AI** using
+  **Composer**, targeting real-world sectors like healthcare and fintech. The
+  content also discusses Reddit URL quirks affecting LLM summarization and
+  features a conversation on LLM Evals and the Open LLM Leaderboard.
+companies:
+  - meta-ai-fair
+  - nvidia
+  - princeton
+  - colfax
+  - patronus-ai
+  - databricks
+  - mosaic-ai
+  - composer
+models:
+  - gpt-2
+  - flashattention-3
+  - lynx
+topics:
+  - compute-hardware
+  - gpu-optimization
+  - flashattention
+  - fp16
+  - fp8
+  - benchmarking
+  - vision
+  - hallucination-detection
+  - synthetic-data
+  - dataset-quality
+  - llm-evaluation
+people:
+  - karpathy
+  - tri_dao
+  - giffmana
+  - vikhyatk
+  - dbrxmosaicai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**With one weird trick!**
 

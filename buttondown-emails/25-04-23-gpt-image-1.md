@@ -1,8 +1,61 @@
 ---
 id: 23232324
-title: gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in API
+title: >-
+  gpt-image-1 - ChatGPT's imagegen model, confusingly NOT 4o, now available in
+  API
 date: '2025-04-23T05:44:39.731046Z'
+description: >-
+  **OpenAI** has officially launched the **GPT-Image-1** API for image
+  generation and editing, featuring alpha channel transparency and a "low"
+  content moderation policy. **OpenAI's** models **o3** and **o4-mini** are
+  leading in benchmarks, with **o3** ranking #1 in Style Control, Hard Prompts,
+  Coding, and Math, and **o4-mini** topping Math benchmarks. The new
+  **Vending-Bench** benchmark reveals high performance variance in LLMs on
+  extended tasks. **GPT-4.1** ranks in the top 5 for Hard Prompts and Math.
+  **Nvidia's** **Eagle 2.5-8B** matches **GPT-4o** and **Qwen2.5-VL-72B** in
+  long-video understanding. AI supercomputer performance doubles every 9 months,
+  with **xAI's Colossus** costing $7 billion and the US holding 75% of global
+  performance. The Virology Capabilities Test shows **OpenAI's o3** outperforms
+  94% of expert virologists. **Nvidia** also released the multimodal **Describe
+  Anything 3B (DAM)** model for detailed image and video captioning, now
+  available on Hugging Face.
+companies:
+  - openai
+  - nvidia
+  - x-ai
+  - huggingface
+models:
+  - gpt-image-1
+  - o3
+  - o4-mini
+  - gpt-4.1
+  - eagle-2.5-8b
+  - gpt-4o
+  - qwen2.5-vl-72b
+  - describe-anything-3b
+topics:
+  - image-generation
+  - content-moderation
+  - benchmarking
+  - long-context
+  - multimodality
+  - model-performance
+  - supercomputing
+  - virology
+  - video-understanding
+  - fine-tuning
+people:
+  - lmarena_ai
+  - _philschmid
+  - willdepue
+  - arankomatsuzaki
+  - epochairesearch
+  - danhendrycks
+  - reach_vb
+  - mervenoyann
+  - _akhaliq
 ---
+
 
 **Autoregressive Imagegen is all you need.**
 

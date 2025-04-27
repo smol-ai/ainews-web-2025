@@ -1,13 +1,57 @@
 ---
 id: 7495507e-4f91-471d-a8f4-3893fbe23ec7
-title: '[AINews] Nvidia Minitron: LLM Pruning and Distillation updated for Llama 3.1'
+title: 'Nvidia Minitron: LLM Pruning and Distillation updated for Llama 3.1'
 date: '2024-08-23T22:14:15.426361Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-nvidia-minitron-llm-pruning-and
+description: >-
+  **Nvidia's** distillations of **Llama 3.1 8B** into **4B and 8B Minitron**
+  models showcase the effectiveness of combining **weight pruning** with
+  **knowledge distillation** to reduce training costs, training only the largest
+  model from scratch and pruning others. The process involves teacher
+  correction, depth/width pruning, and retraining with distillation, producing
+  better models at comparable sizes but with some tradeoffs. Recent AI model
+  releases include **AI21 Labs' Jamba 1.5**, a hybrid SSM-Transformer MoE model
+  with up to **398B parameters** and a **256K context window**; **Anthropic's
+  Claude 3** update adding LaTeX rendering and prompt caching; **Dracarys**, an
+  open-source coding-focused LLM in **70B and 72B** sizes; and **Mistral Nemo
+  Minitron 8B** outperforming Llama 3.1 8B and Mistral 7B on Hugging Face's
+  leaderboard. Research highlights include prompt optimization challenges and
+  hybrid architectures.
+companies:
+  - nvidia
+  - meta-ai-fair
+  - ai21-labs
+  - anthropic
+  - mistral-ai
+  - huggingface
+models:
+  - llama-3-1-8b
+  - minitron-8b
+  - minitron-4b
+  - jamba-1.5
+  - claude-3
+  - dracarys
+  - mistral-nemo-minitron-8b
+  - mistral-7b
+topics:
+  - weight-pruning
+  - knowledge-distillation
+  - model-fine-tuning
+  - activation-based-pruning
+  - kl-divergence
+  - prompt-optimization
+  - mixture-of-experts
+  - long-context
+  - multilinguality
+  - model-compression
+people:
+  - sreenivas
+  - muralidharan
+  - bindureddy
+  - philschmid
+  - jxmnop
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Pruning and Distillation are all you need.**
 

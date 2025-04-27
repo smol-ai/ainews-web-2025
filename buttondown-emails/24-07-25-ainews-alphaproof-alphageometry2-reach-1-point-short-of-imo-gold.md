@@ -1,13 +1,53 @@
 ---
 id: f7083578-ee7e-4149-ba26-dd24dc859768
-title: '[AINews] AlphaProof + AlphaGeometry2 reach 1 point short of IMO Gold'
+title: AlphaProof + AlphaGeometry2 reach 1 point short of IMO Gold
 date: '2024-07-26T01:15:56.829913Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-alphaproof-alphageometry2-almost-reach-imo
+description: >-
+  **Google DeepMind** announced that their new combination of **AlphaProof** and
+  **AlphaGeometry 2**, both based on the **Gemini** model family, solved four
+  out of six problems at the 65th International Math Olympiad, achieving
+  near-gold medal performance. **AlphaProof** uses an AlphaZero-style approach
+  to prove mathematical statements in Lean, while **AlphaGeometry 2** is a
+  neuro-symbolic hybrid trained on significantly more synthetic data and
+  features a novel knowledge-sharing mechanism. Despite impressive results, the
+  AI required much longer computation times than human competitors, sometimes
+  over 60 hours per problem. Meanwhile, **Meta AI** released **Llama 3.1** with
+  a 405B parameter model and smaller variants, featuring 128k context windows,
+  and **Mistral AI** released **Mistral Large 2** with 123B parameters and the
+  same context window size. Mistral Large 2 outperforms Llama 3.1 405B on coding
+  benchmarks but Llama 3.1 excels in math tasks and multilingual benchmarks.
+companies:
+  - google-deepmind
+  - meta-ai-fair
+  - mistral-ai
+models:
+  - alpha-proof
+  - alpha-geometry-2
+  - gemini
+  - llama-3-1-405b
+  - llama-3-8b
+  - llama-3-70b
+  - mistral-large-2
+topics:
+  - neurosymbolic-ai
+  - mathematical-proving
+  - synthetic-data
+  - knowledge-sharing
+  - alpha-zero
+  - benchmarking
+  - multilinguality
+  - context-windows
+  - model-finetuning
+  - model-training
+  - coding-benchmarks
+  - math-benchmarks
+people:
+  - wtgowers
+  - guillaumelample
+  - osanseviero
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Search+Verifier is all you need.**
 

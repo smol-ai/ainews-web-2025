@@ -1,15 +1,47 @@
 ---
 id: 36f06701-8c17-4a55-851f-0eea9196abb2
-title: >-
-  [AINews] $200 ChatGPT Pro and o1-full/pro, with vision, without API, and mixed
-  reviews
+title: $200 ChatGPT Pro and o1-full/pro, with vision, without API, and mixed reviews
 date: '2024-12-06T02:34:03.824924Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-200-chatgpt-pro-and-o1-fullpro-with-vision
+description: >-
+  **OpenAI** launched the **o1** model with multimodal capabilities, including
+  image input, marking it as a state-of-the-art model despite some bugs. The new
+  **o1 pro** tier offers unlimited access for $200/month with improved
+  benchmarks but mixed community reviews, especially compared to **Claude 3.5
+  Sonnet** which still outperforms it in coding tasks. **Google** released the
+  **PaliGemma 2** family (3B, 10B, 28B) excelling in visual question answering,
+  image segmentation, and OCR, available with fine-tuning support.
+  **LlamaIndex** announced discounts and updates for large-scale document
+  processing. The AI community reacted with humor and memes around pricing and
+  model comparisons.
+companies:
+  - openai
+  - google
+  - llamaindex
+models:
+  - o1
+  - o1-pro
+  - claude-3.5-sonnet
+  - paligemma-2
+  - gemma-2
+topics:
+  - multimodality
+  - vision
+  - image-segmentation
+  - ocr
+  - fine-tuning
+  - benchmarking
+  - model-performance
+  - document-processing
+  - model-comparison
+  - humor
+people:
+  - sama
+  - bindureddy
+  - mervenoyann
+  - fchollet
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Is Claude Sonnet all you need?**
 

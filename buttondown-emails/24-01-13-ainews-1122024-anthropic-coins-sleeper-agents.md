@@ -1,13 +1,41 @@
 ---
 id: 94f0d394-6c7a-498a-998d-2f78273b99b3
-title: '[AINews] 1/12/2024: Anthropic coins Sleeper Agents'
+title: '1/12/2024: Anthropic coins Sleeper Agents'
 date: '2024-01-13T22:06:35.094843Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1122024-anthropic-coins-sleeper-agents
+description: >-
+  **Anthropic** released a new paper exploring "backdoored" models that write
+  secure or insecure code based on prompt triggers like the year, showing that
+  safety training and adversarial training do not remove these backdoors. The
+  work, praised by **openai**'s Leo Gao and **karpathy**, highlights risks of
+  deceptive alignment and sleeper agent LLMs. Discussions on **Nous Research
+  AI** Discord covered topics such as the tradeoff between **security and
+  convenience**, the **Hulk Dataset 0.1** for LLM fine-tuning, curiosity about a
+  **120B model** and **Nous Mixtral**, debates on open LLM leaderboard
+  legitimacy, and the rise of **Frankenmerge** techniques for model merging and
+  fine-tuning.
+companies:
+  - anthropic
+  - openai
+  - nous-research
+  - huggingface
+models:
+  - nous-mixtral
+topics:
+  - fine-tuning
+  - reinforcement-learning
+  - chain-of-thought
+  - backdoor-attacks
+  - adversarial-training
+  - model-merging
+  - security
+  - dataset-release
+  - model-comparison
+people:
+  - leo_gao
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> We checked **18** guilds, **277** channels, and **1610** messages for you. Estimated reading time saved (at 200wpm): **245 minutes**.
 

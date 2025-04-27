@@ -1,13 +1,74 @@
 ---
 id: a35e3928-79cc-409b-be9a-581b57c2d5e5
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-09-20T01:00:56.202964Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-not-much-happened-today-7878
+description: >-
+  **OpenAI's o1-preview and o1-mini models** lead benchmarks in Math, Hard
+  Prompts, and Coding. **Qwen 2.5 72B** shows strong performance close to
+  **GPT-4o**. **DeepSeek-V2.5** tops Chinese LLM rankings, rivaling
+  **GPT-4-Turbo-2024-04-09**. **Microsoft's GRIN MoE** achieves good results
+  with 6.6B active parameters. **Moshi voice model** from Kyutai Labs runs
+  locally on Apple Silicon Macs. **LlamaCoder** by Together.ai uses **Llama 3.1
+  405B** for app generation. **Google DeepMind's Veo** is an advanced generative
+  video model for YouTube Shorts. The **ARC-AGI 2024 competition** increases
+  prize money and plans a university tour. A new paper introduces the
+  **Kolmogorov–Arnold Transformer (KAT)** replacing MLP layers with KAN layers
+  for better expressiveness. **Hugging Face Hub** integrates with **Google Cloud
+  Vertex AI Model Garden** for easier open-source model deployment. **Agent.ai**
+  is launched as a professional network for AI agents. Nous Research announced
+  **Forge**, an open repro of **o1**. *"The AI community took a breather after a
+  jam packed day."*
+companies:
+  - openai
+  - qwen
+  - deepseek-ai
+  - microsoft
+  - kyutai-labs
+  - together-ai
+  - google-deepmind
+  - huggingface
+  - google
+  - nous-research
+models:
+  - o1-preview
+  - o1-mini
+  - qwen-2.5
+  - gpt-4o
+  - deepseek-v2.5
+  - gpt-4-turbo-2024-04-09
+  - grin-moe
+  - llama-3-1-405b
+  - veo
+  - kat
+topics:
+  - benchmarking
+  - math
+  - coding
+  - instruction-following
+  - model-merging
+  - moe
+  - voice
+  - generative-video
+  - model-architecture
+  - open-source-models
+  - ai-agents
+people:
+  - hwchung27
+  - noam_brown
+  - bindureddy
+  - _akhaliq
+  - karpathy
+  - aravsrinivas
+  - aiatmeta
+  - googledeepmind
+  - fchollet
+  - cwolferesearch
+  - _philschmid
+  - labenz
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**touching grass is all you need.**
 

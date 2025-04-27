@@ -1,13 +1,72 @@
 ---
 id: 25b33252-c1f3-4683-bc0a-d44b9ce2d534
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-08-16T04:05:53.457702Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-not-much-happened-today-5446
+description: >-
+  **GPT5** delayed again with no major story. **Nous Research** released Hermes
+  3 finetune of **Llama 3** base models, matching FAIR's 3.1 instruct tunes but
+  sparking controversy over claimed emergent existential crisis behavior with 6%
+  roleplay data. **Nvidia's Minitron** is another finetune of Llama 3.1.
+  **Salesforce** launched a new DEI agent scoring 55% on SWE-Bench Lite.
+  **Goodfire AI** announced a $7M seed round focused on mechanistic
+  interpretability. **Anthropic** introduced prompt caching in their API,
+  cutting input costs by up to 90% and latency by 80%, enabling reuse of large
+  context across requests. **xAI** released **Grok-2**, matching **Claude 3.5
+  Sonnet** and **GPT-4 Turbo** on LMSYS leaderboard, supporting vision+text and
+  external image generation models. **Claude 3.5 Sonnet** reportedly outperforms
+  GPT-4 in coding and reasoning. **François Chollet** defined intelligence as
+  efficient operationalization of past info for future. **Salesforce's DEI
+  framework** surpasses individual agent performance. **Google DeepMind's**
+  Demis Hassabis discussed AGI's role in scientific discovery and safe AI
+  development. **Dora AI Figma plugin** can generate landing pages in under 60
+  seconds, boosting web team efficiency. **Box AI API** beta enables document
+  chat, data extraction, and content summarization from Box storage.
+  **LangChain** updated integration docs for Python and JavaScript.
+companies:
+  - nous-research
+  - nvidia
+  - salesforce
+  - goodfire-ai
+  - anthropic
+  - x-ai
+  - google-deepmind
+  - box
+  - langchain-ai
+models:
+  - llama-3
+  - llama-3-1
+  - hermes-3
+  - minitron
+  - grok-2
+  - claude-3.5-sonnet
+  - gpt-4-turbo
+topics:
+  - fine-tuning
+  - prompt-caching
+  - model-performance
+  - multimodality
+  - mechanistic-interpretability
+  - agent-frameworks
+  - reinforcement-learning
+  - ai-application
+  - api
+  - model-benchmarking
+  - software-engineering
+  - efficiency
+  - scientific-discovery
+  - document-processing
+  - integration
+people:
+  - fchollet
+  - demishassabis
+  - svpino
+  - akhaliq
+  - bindureddy
+  - alexalbert__
+  - _philschmid
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GPT5 delayed another day?**
 

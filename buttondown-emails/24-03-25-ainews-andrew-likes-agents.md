@@ -1,13 +1,44 @@
 ---
 id: 474d1a8b-e935-44b5-b8bf-714a5c63822a
-title: '[AINews] Andrew likes Agents'
+title: Andrew likes Agents
 date: '2024-03-26T01:11:50.136366Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-andrew-likes-agents
+description: >-
+  **Andrew Ng's The Batch** highlighted the significant improvement in code
+  generation performance when using an iterative agent workflow, with
+  **GPT-3.5** wrapped in an agent loop achieving up to **95.1%** accuracy on the
+  HumanEval benchmark, surpassing **GPT-4** zero-shot at **67.0%**. The report
+  also covers new developments in **Stable Diffusion** models like
+  **Cyberrealistic_v40**, **Platypus XL**, and **SDXL Lightning** for
+  Naruto-style image generation, alongside innovations in LoRA and upscaling
+  techniques. Discussions on **local deployment and optimization of large
+  language models** focus on hardware setups and finetuning strategies to
+  enhance reasoning and multi-user serving capabilities.
+companies:
+  - openai
+  - stability-ai
+models:
+  - gpt-3.5
+  - gpt-4
+  - cyberrealistic_v40
+  - platypus-xl
+  - sdxl-lightning
+topics:
+  - agents
+  - code-generation
+  - human-eval-benchmark
+  - image-generation
+  - lora
+  - upscaling
+  - local-llm-deployment
+  - model-optimization
+  - finetuning
+  - reasoning
+people:
+  - andrew_ng
+  - lilianweng
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/21/2024-3/25/2024. We checked [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**342** channels, and **12281** messages) for you. Estimated reading time saved (at 200wpm): **1173 minutes**.
 

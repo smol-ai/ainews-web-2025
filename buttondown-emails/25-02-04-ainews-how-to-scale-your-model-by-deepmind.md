@@ -1,13 +1,52 @@
 ---
 id: c70df8df-638b-4e98-b325-007ce112f82e
-title: '[AINews] How To Scale Your Model, by DeepMind'
+title: How To Scale Your Model, by DeepMind
 date: '2025-02-05T06:59:23.438232Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-how-to-scale-your-model-by-deepmind
+description: >-
+  **Researchers at Google DeepMind (GDM)** released a comprehensive "little
+  textbook" titled **"How To Scale Your Model"** covering Transformer
+  architectures, inference optimization beyond O(N^2) attention, and
+  high-performance computing concepts like rooflines. In AI model news,
+  **DeepSeek** demonstrated training a reasoning LLM with the **GRPO algorithm**
+  on **Qwen 0.5** (500M parameters) to enhance math reasoning. A new humanoid
+  robotics model, **ASAP**, was open-sourced, enabling fluid motions inspired by
+  athletes like **Cristiano Ronaldo**. The **Self-MoA** method was proposed to
+  improve mixture-of-agents approaches by leveraging in-model diversity. Studies
+  revealed significant bias in LLMs used as judges, highlighting the need for
+  multiple independent evaluations. Additionally, **Hugging Face** launched an
+  AI app store with 400,000 apps and 2,000 new daily apps, boosting AI app
+  discovery.
+companies:
+  - google-deepmind
+  - deepseek
+  - huggingface
+models:
+  - qwen-0.5
+topics:
+  - transformers
+  - inference
+  - high-performance-computing
+  - robotics
+  - sim2real
+  - mixture-of-experts
+  - bias-mitigation
+  - rust
+  - text-generation
+  - math-reasoning
+  - open-source
+  - ai-applications
+people:
+  - drjimfan
+  - tairanhe99
+  - guanyashi
+  - omarsar0
+  - lioronai
+  - _philschmid
+  - awnihannun
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Systems thinking is all you need.**
 

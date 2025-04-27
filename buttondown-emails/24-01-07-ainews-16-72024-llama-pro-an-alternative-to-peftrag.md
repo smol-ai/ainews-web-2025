@@ -1,13 +1,47 @@
 ---
 id: 1f96b623-39c8-477a-9333-7ef7fb3223b1
-title: '[AINews] 1/6-7/2024: LlaMA Pro - an alternative to PEFT/RAG??'
+title: '1/6-7/2024: LlaMA Pro - an alternative to PEFT/RAG??'
 date: '2024-01-08T00:51:41.330707Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-16-72024-llama-pro-just-add-new-layers-lol
+description: >-
+  New research papers introduce promising **Llama Extensions** including
+  **TinyLlama**, a compact **1.1B** parameter model pretrained on about **1
+  trillion tokens**, and **LLaMA Pro**, an **8.3B** parameter model expanding
+  **LLaMA2-7B** with additional training on code and math corpora totaling **80
+  billion tokens**. LLaMA Pro adds layers to avoid catastrophic forgetting and
+  balances language and code tasks but faces scrutiny for not using models like
+  **Mistral** or **Qwen**. Meanwhile, **OpenAI** Discord discussions cover
+  topics such as enterprise GPT packages limited to large corporations, privacy
+  reassurances about GPT data usage, fine-tuning of **GPT-3.5 1106** for
+  assistants, token limits and access issues with **GPT-4**, challenges with
+  custom GPTs and domain verification, and creative uses of **DALL-E** for image
+  and logo generation. Users also discuss security concerns and copyright issues
+  related to GPTs.
+companies:
+  - openai
+  - mistral-ai
+  - langchain-ai
+models:
+  - llama-3-1-1b
+  - llama-3-8-3b
+  - llama-2-7b
+  - gpt-3.5-1106
+  - gpt-4
+  - dall-e-3
+topics:
+  - fine-tuning
+  - model-expansion
+  - training-data
+  - privacy
+  - token-limits
+  - security
+  - image-generation
+  - code-generation
+  - model-architecture
+people:
+  - yannic_kilcher
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> This is 2 day's worth of content because we missed yesterday.
 

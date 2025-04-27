@@ -1,13 +1,52 @@
 ---
 id: 0f4a2a7d-2a07-47aa-8fb5-2f8377b999ca
-title: '[AINews] o1 destroys Lmsys Arena, Qwen 2.5, Kyutai Moshi release'
+title: o1 destroys Lmsys Arena, Qwen 2.5, Kyutai Moshi release
 date: '2024-09-18T21:51:26.650574Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-o1-destroys-lmsys-arena-qwen-25-kyutai
+description: >-
+  **OpenAI's o1-preview** model has achieved a milestone by fully matching top
+  daily AI news stories without human intervention, consistently outperforming
+  other models like **Anthropic**, **Google**, and **Llama 3** in vibe check
+  evaluations. **Alibaba's Qwen 2.5** suite has caught up to **DeepSeek** and
+  surpassed **Llama 3.1** at the 70B parameter scale, while **Kyutai Moshi**
+  released an open weights realtime voice model with a unique streaming neural
+  architecture featuring an "inner monologue." **Weights & Biases Weave**
+  introduced an LLM observability toolkit enhancing production monitoring and
+  evaluation of LLM calls. Demand for OpenAI models remains high with increased
+  rate limits up to 1000 requests per minute. *"o1-preview has basically won
+  every day since introduction"* and *"OpenAI models now occupy the top 4 slots
+  on LMsys benchmarks."*
+companies:
+  - openai
+  - anthropic
+  - google
+  - alibaba
+  - deepseek
+  - kyutai
+  - weights-biases
+  - mistral-ai
+  - llamaindex
+models:
+  - o1-preview
+  - o1-mini
+  - qwen-2.5
+  - llama-3-1-70b
+  - pixtral-12b
+  - llama-3.1
+topics:
+  - chain-of-thought
+  - multimodality
+  - model-benchmarking
+  - model-performance
+  - streaming-neural-architecture
+  - voice-models
+  - llm-observability
+  - rate-limiting
+people:
+  - sama
+  - guillaumelample
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**o1 may be all you need.**
 

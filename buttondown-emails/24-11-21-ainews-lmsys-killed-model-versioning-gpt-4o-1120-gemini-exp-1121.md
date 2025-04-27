@@ -1,13 +1,46 @@
 ---
 id: 9853bcdc-3ed8-46e6-96b3-4e9c7e438e70
-title: '[AINews] LMSys killed Model Versioning (gpt 4o 1120, gemini exp 1121)'
+title: LMSys killed Model Versioning (gpt 4o 1120, gemini exp 1121)
 date: '2024-11-22T00:56:03.268058Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-lmsys-killed-model-versioning-gpt-4o-1120
+description: >-
+  **AI news from 11/21-11/22/2024** highlights the intense frontier lab race
+  with **OpenAI's gpt-4o-2024-11-20** and **Google's Gemini Exp 1121** trading
+  top spots on the lmsys leaderboard. The trend of using date-based model
+  identifiers instead of traditional versioning is noted across **Anthropic**,
+  **OpenAI**, and **Google DeepMind**. **DeepSeek R1** gains attention as a
+  potent open-source competitor, especially amid US-China AI race concerns.
+  **Gemini Exp 1121** is praised for advances in vision, coding, and reasoning,
+  while **MistralAI** expands with a new Palo Alto office. The community
+  discusses the implications of rapid model releases and evolving AI development
+  dynamics, with commentary from key figures like *@saranormous*, *@bindureddy*,
+  and *@_akhaliq*.
+companies:
+  - openai
+  - google-deepmind
+  - anthropic
+  - deepseek
+  - mistral-ai
+models:
+  - gpt-4o-2024-11-20
+  - gemini-exp-1121
+  - deepseek-r1
+topics:
+  - model-release
+  - model-versioning
+  - vision
+  - coding
+  - reasoning
+  - open-source
+  - ai-race
+  - leaderboard
+  - model-performance
+people:
+  - saranormous
+  - bindureddy
+  - _akhaliq
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Dates are all you need.**
 

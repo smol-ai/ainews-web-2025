@@ -1,13 +1,51 @@
 ---
 id: 011d8801-60a5-4eab-a7c5-330020cf23b3
-title: '[AINews] Francois Chollet launches $1m ARC Prize'
+title: Francois Chollet launches $1m ARC Prize
 date: '2024-06-11T23:42:03.241872Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-francois-chollet-launches-1m-arc-prize
+description: >-
+  **Nonmemorizable Benchmarks** are proposed as a robust solution to test AI
+  progress toward **AGI**, focusing on pattern-recognition-and-completion tasks
+  that are "easy for humans hard for AI." The definition of **AGI** is refined
+  as a system that can efficiently acquire new skills and solve open-ended
+  problems, with benchmarks designed to resist saturation cycles. Meanwhile,
+  **Apple** announced a partnership with **OpenAI** to integrate **ChatGPT**
+  into **iOS, iPadOS, and macOS** with AI-powered features like document
+  summarization and photo analysis, emphasizing privacy through on-device
+  processing and differential privacy. The AI community reacted with mixed
+  opinions on Apple's AI capabilities and reliance on **OpenAI**, noting Apple's
+  use of adapters and mixed-precision quantization to optimize on-device model
+  performance. Additionally, **Together Compute** introduced a Mixture of Agents
+  (MoA) approach achieving a 65.1% score on AlpacaEval 2.0, showcasing advances
+  in leveraging multiple open-source LLMs.
+companies:
+  - openai
+  - apple
+  - togethercompute
+models:
+  - chatgpt
+topics:
+  - benchmarking
+  - agi
+  - pattern-recognition
+  - skill-acquisition
+  - privacy
+  - on-device-ai
+  - mixed-precision-quantization
+  - mixture-of-experts
+  - alpacaeval
+people:
+  - sama
+  - gdb
+  - miramurati
+  - kevinweil
+  - sarah-friar
+  - karpathy
+  - svpino
+  - _philschmid
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Nonmemorizable Benchmarks are all you need.**
 

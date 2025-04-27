@@ -1,15 +1,47 @@
 ---
 id: 5d6d2927-f07e-400b-b2f6-70b5d8b9607f
-title: >-
-  [AINews] Pixtral Large (124B) beats Llama 3.2 90B with updated Mistral Large
-  24.11
+title: Pixtral Large (124B) beats Llama 3.2 90B with updated Mistral Large 24.11
 date: '2024-11-19T02:25:23.507366Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-pixtral-large-124b-beats-llama-32-90b-with
+description: >-
+  **Mistral** has updated its **Pixtral Large** vision encoder to 1B parameters
+  and released an update to the **123B parameter Mistral Large 24.11** model,
+  with improvements in function calling and system prompts. **Pixtral Large**
+  outperforms **Llama 3.2 90B** on major multimodal benchmarks despite having a
+  smaller vision adapter. **Mistral's Le Chat** chatbot received comprehensive
+  feature updates, reflecting a company focus on product and research
+  integration. Additionally, **SambaNova** promotes its RDUs, specialized AI
+  processors offering significant speed advantages over GPUs for large model
+  inference. On Reddit, **vLLM** demonstrated high concurrency performance on an
+  **RTX 3090** GPU, handling up to 30 concurrent requests with
+  **Qwen2.5-7B-Instruct** models, though issues with FP8 kv-cache were noted,
+  with **llama.cpp** providing more stable quantization alternatives.
+companies:
+  - mistral-ai
+  - sambanova
+models:
+  - pixtral-large
+  - mistral-large-24.11
+  - llama-3-2
+  - qwen2.5-7b-instruct
+  - qwen2.5-32b
+topics:
+  - multimodality
+  - vision
+  - function-calling
+  - system-prompt
+  - model-updates
+  - quantization
+  - gpu-performance
+  - inference-speed
+  - chatbots
+  - model-benchmarking
+  - high-concurrency
+people:
+  - arthur_mensch
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**More params is all you need?**
 

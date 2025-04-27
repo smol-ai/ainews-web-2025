@@ -1,13 +1,38 @@
 ---
 id: 8f586835-8d9c-4a69-8163-a84dbaf7ee47
-title: '[AINews] Clémentine Fourrier on LLM evals'
+title: Clémentine Fourrier on LLM evals
 date: '2024-05-23T23:34:22.485002Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-4285
+description: >-
+  **Clémentine Fourrier** from **Huggingface** presented insights on **LLM
+  evaluation** at **ICLR**, highlighting three main evaluation methods:
+  **automated benchmarking**, **human judges**, and **models as judges**.
+  Automated benchmarking involves sample input/outputs and metrics for specific
+  tasks or general capabilities but faces issues like data contamination and
+  sensitivity to prompting. Human judges provide flexible grading but can be
+  subjective and costly. Models as judges use high-capability or specialist
+  models but may introduce bias and inconsistency. These evals help prevent
+  regressions, rank models, and track progress in the field.
+companies:
+  - huggingface
+  - meta-ai-fair
+  - scale-ai
+  - lmsys
+models:
+  - claude-3-opus
+topics:
+  - llm-evaluation
+  - automated-benchmarking
+  - human-evaluation
+  - model-bias
+  - data-contamination
+  - ranking-systems
+  - evaluation-metrics
+  - prompt-sensitivity
+people:
+  - clefourrier
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Leaderboards are all you need.**
 

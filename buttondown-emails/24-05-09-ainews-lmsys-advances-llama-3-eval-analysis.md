@@ -1,13 +1,46 @@
 ---
 id: f796c5d2-c3ba-454e-ba2f-c0bb31b5008f
-title: '[AINews] LMSys advances Llama 3 eval analysis'
+title: LMSys advances Llama 3 eval analysis
 date: '2024-05-10T00:52:45.516571Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-lmsys-advances-llama-3-eval-analysis
+description: >-
+  **LMSys** is enhancing LLM evaluation by breaking down scores into **8
+  subcategories** and **7 prompt complexity levels**, revealing uneven
+  performance such as in **Llama 3's** results. **DeepMind** released
+  **AlphaFold 3**, advancing molecular structure prediction with holistic
+  modeling of protein-DNA-RNA complexes, impacting biology and biorenewable
+  materials. **OpenAI** introduced the **Model Spec**, a public framework to
+  clarify model behavior and bugs, aiming to improve transparency and tuning.
+  **Llama 3 70B** nearly matches **Claude-3 Sonnet** on the LMSys leaderboard
+  but shows performance gaps on complex prompts. The community is watching
+  LMSys's evolving evaluation methods closely, noting some opacity in analysis
+  notebook releases.
+companies:
+  - lmsys
+  - openai
+  - google-deepmind
+  - anthropic
+models:
+  - llama-3-70b
+  - claude-3-sonnet
+  - alphafold-3
+topics:
+  - llm-evaluation
+  - prompt-complexity
+  - model-behavior
+  - molecular-structure-prediction
+  - model-specification
+  - leaderboard-analysis
+  - performance-variation
+people:
+  - demishassabis
+  - sama
+  - miramurati
+  - karinanguyen_
+  - joannejang
+  - johnschulman2
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**LLM evals will soon vary across categories and prompt complexity.**
 

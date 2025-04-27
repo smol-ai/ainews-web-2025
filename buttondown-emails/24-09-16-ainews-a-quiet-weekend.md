@@ -1,13 +1,61 @@
 ---
 id: 1e5313c1-2e4c-43db-8f18-db7ad7783b3e
-title: '[AINews] a quiet weekend'
+title: a quiet weekend
 date: '2024-09-17T00:28:09.999129Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-a-quiet-weekend-8098
+description: >-
+  **OpenAI** released the new **o1** model, leveraging reinforcement learning
+  and chain-of-thought prompting to excel in reasoning benchmarks, achieving an
+  IQ-like score of **120**. **Google DeepMind** introduced **DataGemma** to
+  reduce hallucinations by connecting LLMs with real-world data, and unveiled
+  **ALOHA** and **DemoStart** for robot dexterity using diffusion. **Adobe**
+  previewed its **Firefly AI Video Model** with text-to-video and generative
+  extend features. **Mistral** launched the multimodal **Pixtral 12B** model,
+  and **Tencent** presented **GameGen-O** for open-world video game generation.
+  Several research papers from **Stanford**, **OpenAI**, **Microsoft**,
+  **Mila**, and **Tencent** explored advanced reasoning, self-verification, and
+  reflection-tuning techniques relevant to o1. Experts like **Terence Tao** and
+  AI researchers commented on the model's capabilities and limitations.
+companies:
+  - openai
+  - google-deepmind
+  - adobe
+  - mistral-ai
+  - tencent
+  - stanford
+  - microsoft
+  - mila
+  - notre-dame
+models:
+  - o1
+  - pixtral-12b
+  - firefly-ai-video-model
+  - gamegen-o
+  - aloha
+  - demogstart
+  - datagemma
+topics:
+  - reinforcement-learning
+  - chain-of-thought
+  - reasoning
+  - robotics
+  - diffusion-models
+  - multimodality
+  - video-generation
+  - reflection-tuning
+  - self-verification
+  - mathematical-reasoning
+  - model-benchmarking
+  - model-interpretability
+people:
+  - rohanpaul_ai
+  - adcock_brett
+  - bindureddy
+  - fchollet
+  - _philschmid
+  - mathemagic1an
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Patience is all you need.**
 

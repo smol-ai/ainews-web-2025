@@ -1,13 +1,41 @@
 ---
 id: 72ea2fa2-ac11-4be2-90ca-e6963178858a
-title: '[AINews] Ways to use Anthropic''s Tool Use GA'
+title: Ways to use Anthropic's Tool Use GA
 date: '2024-05-31T20:31:29.874216Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ways-to-use-anthropics-tool-use-ga
+description: >-
+  **Anthropic** launched general availability of tool use and function calling
+  with support for streaming, forced use, and vision. Alex Albert shared **5
+  architectures** for agentic tool use: delegation, parallelization, debate,
+  specialization, and tool suite experts. **Claude 3 Opus** was used for AI
+  Twitter recaps. **Yann LeCun** emphasized ethical open science funding,
+  gradual emergence of superintelligence with safety guardrails, and
+  convolutional networks combined with self-attention for image/video
+  processing. He also noted growth in AI researchers across industry, academia,
+  and government.
+companies:
+  - anthropic
+  - amazon
+  - google
+  - openai
+models:
+  - claude-3-opus
+topics:
+  - function-calling
+  - agent-architectures
+  - streaming
+  - vision
+  - open-science
+  - superintelligence
+  - convolutional-networks
+  - self-attention
+  - ai-research-growth
+people:
+  - ylecun
+  - sainingxie
+  - alexalbert
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Tools are all AIs need.**
 

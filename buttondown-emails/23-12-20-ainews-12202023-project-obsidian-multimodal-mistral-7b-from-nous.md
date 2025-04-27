@@ -1,13 +1,42 @@
 ---
 id: 473b90b4-7a43-4efb-9eed-4859c24f2b11
-title: '[AINews] 12/20/2023: Project Obsidian - Multimodal Mistral 7B from Nous'
+title: '12/20/2023: Project Obsidian - Multimodal Mistral 7B from Nous'
 date: '2023-12-21T03:20:57.056468Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12202023-project-obsidian-multimodal
+description: >-
+  **Project Obsidian** is a new multimodal model training project publicly
+  tracked on the Nous Discord by **Teknium**. Discussions include **4M:
+  Massively Multimodal Masked Modeling** and **Reason.dev**, a TypeScript
+  framework for LLM applications. The **OpenAI Discord** community discussed
+  hardware specs for running **TensorFlow JS** for image detection, security API
+  services for filtering inappropriate images, and concerns about racial and
+  cultural bias in AI, especially in facial recognition and healthcare.
+  Challenges using **GPT-3.5** and **GPT-4** in word puzzle games were noted,
+  along with budget GPU recommendations emphasizing VRAM. Users also debated
+  **GPT-4**'s vision capabilities, **DALL·E 3**'s limitations, platform access
+  issues, and prompting strategies for better AI outputs.
+companies:
+  - nous-research
+  - teknim
+  - openai
+models:
+  - gpt-4
+  - gpt-3.5
+  - dall-e-3
+topics:
+  - multimodality
+  - image-detection
+  - security
+  - bias
+  - facial-recognition
+  - healthcare
+  - gpu-optimization
+  - prompt-engineering
+  - vision
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->If you've ever wanted to see a multimodal model being trained in front of your eyes, now's the time for [Project Obsidian](https://github.com/NousResearch/Obsidian):
 

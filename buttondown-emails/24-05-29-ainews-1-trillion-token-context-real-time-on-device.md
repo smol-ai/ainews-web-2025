@@ -1,13 +1,43 @@
 ---
 id: d9902b7c-cdb3-4e85-8ad1-44856e5da308
-title: '[AINews] 1 TRILLION token context, real time, on device?'
+title: 1 TRILLION token context, real time, on device?
 date: '2024-05-29T23:01:07.584364Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-sonic-a-low-latency-voice-model-for
+description: >-
+  **Cartesia** launched a new low latency voice model based on **state space
+  models (SSMs)**, outperforming transformer equivalents with **20% lower
+  perplexity**, **2x lower word error**, and improved audio quality. This
+  breakthrough suggests the potential for models that can continuously process
+  and reason over **a trillion tokens** of audio, video, and text on-device,
+  enabling efficient real-time AI applications. Other notable updates include
+  **Mistral AI** releasing the **Codestral** weights under a noncommercial
+  license, **Scale AI** launching elo-style eval leaderboards for coding, math,
+  and multilingual tasks, and ongoing debates on AI research and engineering by
+  **Yann LeCun** and **Elon Musk**. The **Gemini 1.5 Pro/Advanced** models show
+  strong performance in recent benchmarks.
+companies:
+  - cartesia
+  - mistral-ai
+  - scale-ai
+models:
+  - gemini-1.5-pro
+topics:
+  - state-space-models
+  - voice-models
+  - real-time-processing
+  - low-latency
+  - multilinguality
+  - evaluation-leaderboards
+  - benchmarking
+  - continuous-learning
+  - on-device-ai
+  - audio-processing
+  - model-performance
+  - research-publication
+people:
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**SSMs are all you need.**
 

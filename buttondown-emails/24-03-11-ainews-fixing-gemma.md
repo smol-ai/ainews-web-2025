@@ -1,13 +1,47 @@
 ---
 id: 35ce32a7-d9d2-418c-b544-6195895b01ea
-title: '[AINews] Fixing Gemma'
+title: Fixing Gemma
 date: '2024-03-12T00:03:26.597451Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-fixing-gemma
+description: >-
+  **Google's Gemma model** was found unstable for finetuning until **Daniel Han
+  from Unsloth AI** fixed 8 critical bugs, improving its implementation.
+  **Claude 3 Opus** was used to generate AI Twitter recaps covering technical
+  deep dives by **Yann LeCun** and **François Chollet** on adaptive equalizers
+  and human visual system bandwidth. Benchmarks show **Anthropic's Claude-3
+  Opus** outperforming **Mistral-Large** in structured data extraction, with
+  users reporting fewer hallucinations compared to **GPT-4**. Emerging trends
+  include a shift towards rebuilding GPT-based pipelines to work with Claude
+  models, and reflections on AI progress by Yann LeCun. The community
+  appreciates detailed debugging efforts and ongoing AI model improvements.
+companies:
+  - google
+  - unsloth
+  - anthropic
+  - mistral-ai
+models:
+  - gemma
+  - claude-3-opus
+  - mistral-large
+  - gpt-4
+topics:
+  - fine-tuning
+  - benchmarking
+  - model-bugs
+  - model-implementation
+  - technical-deep-dive
+  - structured-data-extraction
+  - hallucination-detection
+  - model-comparison
+  - ai-progress
+people:
+  - daniel_han
+  - ylecun
+  - fchollet
+  - aravsrinivas
+  - aidan_clark
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/7/2024-3/11/2024. We checked [**356** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**335** channels, and **6154** messages) for you. Estimated reading time saved (at 200wpm): **734 minutes**. We [added Unsloth AI today](https://news.ycombinator.com/item?id=39671146).
 

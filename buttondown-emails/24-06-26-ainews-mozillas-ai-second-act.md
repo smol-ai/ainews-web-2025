@@ -1,13 +1,49 @@
 ---
 id: 5193e590-b36c-4c34-a4f1-59f563eb578c
-title: '[AINews] Mozilla''s AI Second Act'
+title: Mozilla's AI Second Act
 date: '2024-06-27T01:37:35.020344Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mozillas-ai-second-act
+description: >-
+  **Mozilla** showcased live demos of **llamafile** and announced **sqlite-vec**
+  for vector search integration at the AIE World's Fair. **LlamaIndex** launched
+  **llama-agents**. **Anthropic** introduced new UI features and **Projects**
+  for **Claude** with 200K context windows. **Etched AI** released a specialized
+  inference chip claiming **500k tokens/sec**, but benchmarks are questioned by
+  experts like **Tim Dettmers**. **Deepseek Coder v2** reportedly outperforms
+  **Gemini** and GPT-4 variants in coding and reasoning tasks. The **PyTorch
+  documentary** launched with little attention.
+companies:
+  - mozilla
+  - llamaindex
+  - anthropic
+  - etched-ai
+  - deepseek
+  - google-deepmind
+models:
+  - claude-3-opus
+  - deepseek-coder-v2
+  - gemini-1.5-pro
+  - gpt-4o
+topics:
+  - inference-speed
+  - vector-search
+  - context-windows
+  - hardware-benchmarks
+  - open-source-models
+  - code-generation
+  - reasoning
+  - model-benchmarking
+  - model-performance
+people:
+  - justine_tunney
+  - stephen_hood
+  - alexalbert__
+  - cHHillee
+  - mathemagic1an
+  - tim_dettmers
+  - bindureddy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Superfast CPU inference is all you need.**
 

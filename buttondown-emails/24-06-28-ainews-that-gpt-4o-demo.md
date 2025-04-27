@@ -1,13 +1,49 @@
 ---
 id: 521448c3-d0cc-48c6-bb04-66adbc1f25b0
-title: '[AINews] That GPT-4o Demo'
+title: That GPT-4o Demo
 date: '2024-06-29T00:48:47.349723Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-that-openai-demo
+description: >-
+  **Romain Huet** demonstrated **GPT-4o** in an unreleased ChatGPT Desktop
+  version showcasing capabilities like low latency voice generation, whisper
+  tone moderation, camera mode streaming, rapid OCR, screen sharing, clipboard
+  reading, and code conversation using vision. OpenAI's four investment areas
+  highlighted are textual intelligence, efficiency/cost, model customization,
+  and multimodal agents. **Google DeepMind** released **Gemma 2** in 9B and 27B
+  sizes, trained on trillions of tokens with SFT, distillation, RLHF, and model
+  merging, optimized for TPUv5e, offering class-leading performance and safety
+  measures. **Meta AI** announced the Meta LLM Compiler based on Meta Code Llama
+  with enhanced code optimization and compiler features. *"Gemma 2 is available
+  on Kaggle and Hugging Face, written in Keras 3 and compatible with TensorFlow,
+  JAX, and PyTorch."*
+companies:
+  - openai
+  - google-deepmind
+  - meta-ai-fair
+  - hugging-face
+  - kaggle
+models:
+  - gpt-4o
+  - gemma-2
+  - meta-code-llama
+topics:
+  - voice-generation
+  - ocr
+  - screen-sharing
+  - code-understanding
+  - model-customization
+  - textual-intelligence
+  - efficiency
+  - model-optimization
+  - reinforcement-learning
+  - distillation
+  - safety
+  - compiler-optimization
+people:
+  - romain_huet
+  - fchollet
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Omnimodel is all you need**
 

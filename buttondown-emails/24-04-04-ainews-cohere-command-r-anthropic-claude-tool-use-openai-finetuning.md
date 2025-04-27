@@ -1,13 +1,59 @@
 ---
 id: c2eed8e3-e60a-4b34-b7b5-4f7d26aa5c66
-title: '[AINews] Cohere Command R+, Anthropic Claude Tool Use, OpenAI Finetuning'
+title: Cohere Command R+, Anthropic Claude Tool Use, OpenAI Finetuning
 date: '2024-04-04T22:21:15.996359Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-cohere-command-r-anthropic-claude-tool-use
+description: >-
+  **Cohere** launched **Command R+**, a **104B dense model** with **128k context
+  length** focused on **RAG**, **tool-use**, and **multilingual** support for
+  **10 key languages**, with open weights for research and multi-step tool use.
+  **Anthropic** introduced beta **tool use** supporting over **250 tools** with
+  new cookbooks for calculator, customer service, and JSON extraction using
+  **Claude**. **OpenAI** upgraded its fine-tuning API with new case studies from
+  Indeed, SK Telecom, and Harvey, enabling better DIY fine-tuning and custom
+  model training. **Microsoft** achieved a quantum computing breakthrough with
+  an **800x error rate improvement** and the most usable qubits to date.
+  **Stability AI** released **Stable Audio 2.0** enhancing audio generation
+  quality and control. **Opera browser** added local inference support for large
+  language models including **Meta's Llama**, **Google's Gemma**, and
+  **Vicuna**. Discussions highlighted **Gemini's large context window**,
+  **GPT-3.5-Turbo** likely being an **8x7B model** similar to **Mixtral-8x7B**,
+  and a local model battle simulation between **Claude 3** and **ChatGPT** using
+  **Mistral** and **Gemma** 7B models.
+companies:
+  - cohere
+  - anthropic
+  - openai
+  - microsoft
+  - stability-ai
+  - opera
+  - meta-ai-fair
+  - google-deepmind
+  - mistral-ai
+models:
+  - c4ai-command-r-plus
+  - claude-3
+  - gpt-3.5-turbo
+  - mixtral-8x7b
+  - gemini
+  - gemma
+  - mistral-7b
+topics:
+  - tool-use
+  - multilingual-models
+  - rag
+  - fine-tuning
+  - quantum-computing
+  - audio-generation
+  - local-inference
+  - context-windows
+  - model-size-analysis
+  - model-comparison
+people:
+  - aidangomez
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/3/2024-4/4/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**385** channels, and **5656** messages) for you. Estimated reading time saved (at 200wpm): **639 minutes**.
 

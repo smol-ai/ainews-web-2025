@@ -1,13 +1,58 @@
 ---
 id: 072fd118-83ff-4b75-996e-0a0010280266
-title: '[AINews] super quiet day'
+title: super quiet day
 date: '2024-08-23T00:55:37.537285Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-4025
+description: >-
+  **AI21 Labs** released **Jamba 1.5**, a scaled-up State Space Model with a
+  novel hybrid SSM-Transformer architecture optimized for long context windows
+  and 2.5X faster inference at 94B parameters, outperforming models like **Llama
+  3.1 70B**. The **Phi-3.5** model was praised for its safety and performance,
+  alongside **Flexora**'s adaptive layer selection improvements. **Dracarys**, a
+  new open-source 70B class coding model announced by **Bindu Reddy**, surpasses
+  **Llama 3.1 70B** benchmarks. Discussions around **California's SB 1047** AI
+  safety legislation highlight mixed views from **Stanford** and **Anthropic**,
+  emphasizing balancing regulation with research and industry growth.
+  Innovations include **uv virtual environments** for rapid setup, **LangChain**
+  and **LangSmith** resource tags for project management, and multi-agent
+  systems in **Qdrant** enhancing semantic caching and data workflows. Community
+  events like the RAG workshop by **AWS**, **LangChain**, and **Elastic**
+  continue to foster AI engagement. Industry humor remains a popular way to
+  reflect on AI trends.
+companies:
+  - ai21-labs
+  - anthropic
+  - stanford
+  - huggingface
+  - langchain
+  - qdrant
+  - aws
+  - elastic
+models:
+  - jamba-1.5
+  - llama-3-1-70b
+  - phi-3.5
+  - dracarys
+topics:
+  - state-space-models
+  - long-context
+  - model-benchmarking
+  - ai-safety
+  - virtual-environments
+  - multi-agent-systems
+  - resource-management
+  - community-events
+  - humor
+people:
+  - bindureddy
+  - rohanpaul_ai
+  - jackclarksf
+  - danhendrycks
+  - reach_vb
+  - iqdotgraph
+  - lumpenspace
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**peace and quiet is all you need.**
 

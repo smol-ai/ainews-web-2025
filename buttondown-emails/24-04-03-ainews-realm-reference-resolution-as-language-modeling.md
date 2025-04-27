@@ -1,13 +1,46 @@
 ---
 id: c6ea6f49-0170-43c6-93c1-308fd26576f2
-title: '[AINews] ReALM: Reference Resolution As Language Modeling'
+title: 'ReALM: Reference Resolution As Language Modeling'
 date: '2024-04-04T00:00:20.574613Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-realm-reference-resolution-as-language
+description: >-
+  **Apple** is advancing in AI with its new **ReALM** model focusing on
+  reference resolution using multimodal contexts, finetuned on a smaller
+  **FLAN-T5** model that outperforms **GPT-4** in this task. Reddit highlights
+  include the open-source coding agent **SWE-agent** achieving 12.29% on
+  SWE-bench, the customizable **RAGFlow** retrieval-augmented generation engine,
+  and the efficient 4-bit quantization method **QuaRot**. AI applications such
+  as AI-generated t-shirt designs and the **podgenai** GPT-4 based podcast
+  generator were shared. Industry discussions cover the impact of large language
+  models on AI progress and decentralization efforts, with **Takuto Takizawa**
+  joining **Stability AI Japan** as Head of Sales & Partnerships.
+companies:
+  - apple
+  - openai
+  - huggingface
+  - stability-ai
+models:
+  - flan-t5
+  - gpt-4
+  - swe-agent
+  - ragflow
+  - quarot
+  - pipableai-pip-library-etl-1.3b
+  - podgenai
+topics:
+  - reference-resolution
+  - multimodality
+  - fine-tuning
+  - quantization
+  - retrieval-augmented-generation
+  - open-source
+  - ai-applications
+  - model-performance
+  - decentralization
+people:
+  - takuto_takizawa
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/2/2024-4/3/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**382** channels, and **4673** messages) for you. Estimated reading time saved (at 200wpm): **512 minutes**.
 

@@ -1,13 +1,45 @@
 ---
 id: f655930c-e7b4-4c62-b373-de80ef23d0ca
-title: '[AINews] o1: OpenAI''s new general reasoning models'
+title: 'o1: OpenAI''s new general reasoning models'
 date: '2024-09-13T01:18:57.613300Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-o1-openais-new-general-reasoning-models
+description: >-
+  **OpenAI** has released **o1**, also known as Strawberry or Q*, with two
+  available models: **o1-preview** and **o1-mini**, focusing on test-time
+  reasoning and longer step-by-step inference. The models extend output token
+  limits beyond 30k tokens and show exceptional evaluation results, ranking in
+  the 89th percentile on competitive programming, top 500 in USA Math Olympiad
+  qualifiers, and exceeding PhD-level accuracy on science benchmarks. Notably,
+  **o1-mini** performs impressively despite its smaller size compared to
+  **gpt-4o**. The release introduces new scaling laws for test-time compute that
+  appear to scale loglinearly. Additionally, **Nvidia** is reportedly losing AI
+  chip market share to startups, with a shift from CUDA to Llama-based
+  development among AI developers in 2024, though Nvidia remains dominant in
+  training performance.
+companies:
+  - openai
+  - nvidia
+models:
+  - o1
+  - o1-preview
+  - o1-mini
+  - gpt-4o
+topics:
+  - test-time-inference
+  - reasoning
+  - scaling-laws
+  - competitive-programming
+  - benchmarking
+  - token-limits
+  - model-distillation
+  - performance-evaluation
+people:
+  - draecomino
+  - aravsrinivas
+  - jason_wei
+  - jim_fan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Test-time reasoning is all you need.**
 

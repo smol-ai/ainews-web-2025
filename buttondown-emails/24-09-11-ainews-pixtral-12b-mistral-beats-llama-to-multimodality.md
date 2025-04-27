@@ -1,13 +1,68 @@
 ---
 id: 2c30c16c-0df7-443b-93bd-09097bce542a
-title: '[AINews] Pixtral 12B: Mistral beats Llama to Multimodality'
+title: 'Pixtral 12B: Mistral beats Llama to Multimodality'
 date: '2024-09-12T00:30:22.330132Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-pixtral-12b-mistral-beats-llama-to
+description: >-
+  **Mistral** released **Pixtral 12B**, an open-weights **vision language
+  model** with a **Mistral Nemo 12B** text backbone and a 400M vision adapter,
+  beating **Meta** to market with a multimodal model. The model supports a large
+  vocabulary of 131,072 tokens and new special tokens for image processing, with
+  weights available on the Hugging Face Hub. At the Mistral AI Summit,
+  architecture details and benchmark performance were shared, showing strong OCR
+  and screen understanding capabilities. Additionally, **Arcee AI** announced
+  **SuperNova**, a distilled reasoning model based on **Llama 3.1 70B** and 8B,
+  outperforming Meta's Llama 3.1 70B instruct and other leading models on
+  IFEval. **DeepSeek** released **DeepSeek-V2.5**, scoring 89 on HumanEval,
+  surpassing **GPT-4-Turbo**, **Opus**, and **Llama 3.1** in coding tasks.
+  **OpenAI** plans to release **Strawberry** as part of ChatGPT soon, though its
+  reception is mixed. **Anthropic** introduced Workspaces for managing multiple
+  **Claude** deployments with enhanced API key and user role controls.
+  **SambaNova Cloud** was also highlighted for AI infrastructure.
+companies:
+  - mistral-ai
+  - meta-ai-fair
+  - huggingface
+  - arcee-ai
+  - deepseek
+  - openai
+  - anthropic
+  - sambanova
+models:
+  - pixtral-12b
+  - mistral-nemo-12b
+  - llama-3-1-70b
+  - llama-3-1-8b
+  - supernova
+  - deepseek-v2.5
+  - gpt-4-turbo
+  - opus
+  - strawberry
+  - claude
+topics:
+  - vision
+  - multimodality
+  - model-release
+  - benchmarking
+  - ocr
+  - screen-understanding
+  - model-architecture
+  - model-performance
+  - distillation
+  - reasoning
+  - coding
+  - api
+  - deployment
+  - user-access-control
+people:
+  - reach_vb
+  - devendra_chapilot
+  - _philschmid
+  - rohanpaul_ai
+  - swyx
+  - aiexplainedyt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Vision Language Models are all you need.**
 

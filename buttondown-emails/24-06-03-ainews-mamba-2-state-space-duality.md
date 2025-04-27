@@ -1,13 +1,48 @@
 ---
 id: afc160a0-c657-47c5-bdaa-cf40080a004f
-title: '[AINews] Mamba-2: State Space Duality'
+title: 'Mamba-2: State Space Duality'
 date: '2024-06-03T21:31:26.119127Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mamba-2-state-space-duality
+description: >-
+  **Mamba-2**, a new state space model (SSM), **outperforms Mamba and
+  Transformer++ in perplexity and training speed**, introducing a framework
+  called **state space duality (SSD)** that connects SSMs and linear attention.
+  It features **8x larger states and 50% faster training** than its predecessor.
+  The **FineWeb-Edu dataset**, a high-quality subset of the 15 trillion token
+  FineWeb dataset, was created using a **Llama 3 70B** model to filter for
+  educational quality, enabling better and faster LLM learning and potentially
+  reducing tokens needed to surpass GPT-3 performance. Additionally,
+  perplexity-based data pruning using a **125M parameter model** improves
+  downstream performance and reduces pretraining steps by up to 1.45x. The
+  **Video-MME benchmark** was introduced as the first comprehensive evaluation
+  of multi-modal LLMs on video analysis across multiple visual domains and video
+  lengths. Key contributors include **@_albertgu**, **@tri_dao**, **@_akhaliq**,
+  **@arankomatsuzaki**, **@ClementDelangue**, and **@karpathy**.
+companies:
+  - hugging-face
+models:
+  - mamba-2
+  - mamba
+  - transformer++
+  - llama-3-70b
+topics:
+  - state-space-models
+  - perplexity
+  - data-pruning
+  - benchmarking
+  - multi-modal-llms
+  - training-speed
+  - linear-attention
+  - dataset-quality
+people:
+  - _albertgu
+  - tri_dao
+  - _akhaliq
+  - arankomatsuzaki
+  - clementdelangue
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Transformers are SSMs.**
 

@@ -1,13 +1,52 @@
 ---
 id: 6c4b56a6-b583-4f56-b52b-6851094b7ada
-title: '[AINews] Summer of Code AI: $1.6b raised, 1 usable product'
+title: 'Summer of Code AI: $1.6b raised, 1 usable product'
 date: '2024-08-30T00:01:06.332310Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-code
+description: >-
+  **Code + AI** is emphasized as essential, with major funding rounds for
+  **Cognition ($175m)**, **Poolside ($400m)**, **Codeium AI ($150m)**, and
+  **Magic ($320m)**, highlighting the rise of AI coding assistants. **Magic**
+  announced their **LTM-2** model featuring a **100 million token context
+  window** with efficiency vastly surpassing **Llama 3.1 405B** in memory and
+  compute, built on a custom training and inference stack without open-source
+  foundations. They also revealed a partnership with **Google Cloud** and use of
+  **NVIDIA H100** and **GB200 GPUs**, aiming to scale massively and improve
+  inference-time compute. On the AI model front, **Google DeepMind** introduced
+  customizable expert "Gems" for **Gemini Advanced**, and a neural game engine
+  capable of running DOOM via diffusion models was discussed by **DrJimFan**.
+  The news reflects significant advances in long-context models, efficient
+  training, and AI-assisted coding productivity.
+companies:
+  - cognition
+  - poolside
+  - codeium
+  - magic
+  - google-cloud
+  - nvidia
+  - google-deepmind
+models:
+  - llama-3-1-405b
+  - ltm-2
+  - gemini-advanced
+topics:
+  - long-context
+  - model-efficiency
+  - training-techniques
+  - gpu-optimization
+  - inference
+  - custom-training-stack
+  - funding
+  - neural-networks
+  - diffusion-models
+  - code-generation
+people:
+  - nat_friedman
+  - ben_chess
+  - drjimfan
+  - rohanpaul
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Code + AI is all you need.**
 

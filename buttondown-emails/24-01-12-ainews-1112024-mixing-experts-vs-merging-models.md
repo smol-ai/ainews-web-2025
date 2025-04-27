@@ -1,13 +1,64 @@
 ---
 id: 74952f13-4d65-423c-a435-e605626adb4b
-title: '[AINews] 1/11/2024: Mixing Experts vs Merging Models'
+title: '1/11/2024: Mixing Experts vs Merging Models'
 date: '2024-01-12T18:49:15.256645Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1112024-mixing-experts-vs-merging-models
+description: >-
+  **18 guilds**, **277 channels**, and **1342 messages** were analyzed with an
+  estimated reading time saved of **187 minutes**. The community switched to
+  **GPT-4 turbo** from GPT-4-32k. Emerging **Mixture of Experts (MoE)** models
+  like **Mixtral**, **DeepSeekMOE**, and **Phixtral** are gaining traction,
+  alongside innovative **model merging** techniques such as linear interpolation
+  and "frankenmerges" by **SOLAR** and **Goliath**. Discussions include **AI
+  playgrounds** supporting prompt and LLM parameter tuning, with recommendations
+  for **LangFlow** and **langchain** integrated with **GPT-4** for data
+  analysis. Security concerns about third-party cloud usage and Discord bot
+  compliance with TOS were raised. Notable performance differences between
+  **GPT-4 0613** and **GPT-4 turbo** were highlighted, favoring GPT-4 turbo for
+  conversational and creative tasks. The community also debated fine-tuning
+  strategies involving **DPO**, **LoRA**, and safetensors, and explored
+  integrating **retrieval-augmented generation (RAG)** with API calls using
+  function-calling models. Discussions on MoE versus dense LLM communication
+  styles and the use of **llama index** and **SciPhi-AI synthesizer** for RAG
+  data frameworks were prominent. Issues with anomalous characters during
+  fine-tuning were also noted.
+companies:
+  - deepseek-ai
+  - huggingface
+  - nous-research
+  - langchain-ai
+  - solarlabs
+  - goliath
+  - openai
+models:
+  - gpt-4-turbo
+  - gpt-4-0613
+  - mixtral
+  - deepseekmoe
+  - phixtral
+topics:
+  - mixture-of-experts
+  - model-merging
+  - fine-tuning
+  - retrieval-augmented-generation
+  - prompt-engineering
+  - security
+  - function-calling
+  - rag
+  - model-performance
+  - ai-playgrounds
+people:
+  - ash_prabaker
+  - everyoneisgross
+  - shacrw
+  - teknium
+  - ldj
+  - pramod8481
+  - mgreg_42266
+  - georgejrjrjr
+  - kenakafrosty
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> We checked **18** guilds, **277** channels, and **1342** messages for you. Estimated reading time saved (at 200wpm): **187 minutes**. New: we also switched to GPT-4 turbo today. Let us know how it feels vs previous days (GPT-4-32k)!
 

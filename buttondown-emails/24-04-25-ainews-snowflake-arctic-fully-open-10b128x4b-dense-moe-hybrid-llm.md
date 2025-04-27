@@ -1,13 +1,57 @@
 ---
 id: 1d0c21a9-ca19-4b5a-977c-7e448365a79f
-title: '[AINews] Snowflake Arctic: Fully Open 10B+128x4B Dense-MoE Hybrid LLM'
+title: 'Snowflake Arctic: Fully Open 10B+128x4B Dense-MoE Hybrid LLM'
 date: '2024-04-26T01:33:53.546196Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-snowflake
+description: >-
+  **Snowflake Arctic** is a notable new open-source foundation language model
+  released under Apache 2.0, featuring a 3-stage curriculum and a
+  mixture-of-experts architecture inspired by **DeepSeekMOE** and
+  **DeepSpeedMOE**. It claims superior performance over **Databricks** in
+  enterprise intelligence domains. On Reddit, **Nvidia** introduced the **Align
+  Your Steps** technique improving image quality at low step counts for **Stable
+  Diffusion** samplers. Comparisons highlight **Stable Diffusion 3** and **SD3
+  Turbo** models, with **Llama-3-8b** prompts used for image generation.
+  **Adobe** launched an AI video upscaling project enhancing blurry videos to
+  HD, while **Instagram** spammers exploit **FaceFusion/Roop** for face swaps in
+  videos. **Apple** open-sourced on-device language models with code and
+  training logs. **Llama 3 70B** ties for first on the LMSYS leaderboard, and
+  **Phi 3 (4B params)** outperforms **GPT-3.5 Turbo** in banana logic
+  benchmarks. Fast inference and quantization of **Llama 3 8B** on MacBook were
+  also demonstrated.
+companies:
+  - snowflake
+  - databricks
+  - deepseek-ai
+  - deepspeed
+  - nvidia
+  - stable-diffusion
+  - adobe
+  - apple
+  - llamaindex
+models:
+  - llama-3-8b
+  - stable-diffusion-3
+  - sd3-turbo
+  - phi-3
+  - gpt-3.5-turbo
+  - llama-3-70b
+  - llama-3
+  - phi-3-4b
+topics:
+  - mixture-of-experts
+  - curriculum-learning
+  - model-release
+  - image-generation
+  - video-upscaling
+  - face-swap
+  - on-device-ai
+  - model-quantization
+  - inference-speed
+  - benchmarking
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/24/2024-4/25/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **5506** messages) for you. Estimated reading time saved (at 200wpm): **631 minutes**.
 

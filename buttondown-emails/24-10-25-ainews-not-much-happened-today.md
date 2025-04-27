@@ -1,13 +1,59 @@
 ---
 id: 979bf92e-0951-413c-86d3-cba6b11c44e8
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-10-26T00:52:03.375131Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5313
+description: >-
+  **Liquid AI** held a launch event introducing new foundation models.
+  **Anthropic** shared follow-up research on social bias and feature steering
+  with their "Golden Gate Claude" feature. **Cohere** released multimodal Embed
+  3 embeddings models following Aya Expanse. There was clarification on fake
+  news about **GPT-5/Orion**. **Meta FAIR** announced **Open Materials 2024**
+  for inorganic materials discovery using the EquiformerV2 architecture.
+  **NVIDIA**'s **Llama-3.1-Nemotron-70B** ranked highly on the Arena leaderboard
+  with Style Control. **Perplexity** expanded to 100M weekly queries with new
+  Finance and Reasoning modes. **LangChain** emphasized real application
+  integration with Interactive Frame Interpolation. **Kestra** showcased
+  scalable event-driven workflows with YAML-based orchestration. **OpenFLUX**
+  demonstrated inference speed doubling via guidance LoRA optimization.
+  Discussions on AI trust, economic impact, and national security were
+  highlighted by experts including **RichardMCNgo**, **ajeya_cotra**, and
+  **DanHendrycks**. **LlamaIndex** presented knowledge-backed agents for
+  enhanced AI applications.
+companies:
+  - liquid-ai
+  - anthropic
+  - cohere
+  - meta-ai-fair
+  - nvidia
+  - perplexity-ai
+  - langchain-ai
+  - kestra
+  - ostrisai
+models:
+  - llama-3.1-nemotron-70b
+  - gpt-5
+  - embed-3
+topics:
+  - feature-steering
+  - social-bias
+  - multimodality
+  - foundation-models
+  - model-optimization
+  - workflow-orchestration
+  - inference-speed
+  - knowledge-backed-agents
+  - economic-impact
+  - national-security
+  - trust
+  - event-driven-workflows
+  - embedding-models
+people:
+  - richardmcngo
+  - ajeya_cotra
+  - danhendrycks
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet weekend is all you need.**
 

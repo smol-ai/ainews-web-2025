@@ -1,13 +1,66 @@
 ---
 id: b2d51ae2-7760-48c7-943f-00f8c0adfa43
-title: '[AINews] Not much (in AI) happened this weekend'
+title: Not much (in AI) happened this weekend
 date: '2024-10-14T22:52:37.794603Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-not-much-in-ai-happened-this-weekend
+description: >-
+  **OpenAI** introduced an "edit this area" feature in their image generation
+  tool, praised by **@sama**. **NYU** research highlighted by **@ylecun** shows
+  feature prediction loss improves pixel generation with pre-trained visual
+  encoders like **DINOv2**. Long-context LLMs such as **Llama 3.1 8B** and
+  **Llama 3.2 1B/3B** now support up to **131k tokens**, discussed by
+  **@rasbt**. **SpaceX**'s successful **Starship** rocket catch was celebrated
+  by **@karpathy** and others, with **@soumithchintala** praising SpaceX's
+  organizational efficiency. **Meta**'s **Movie Gen** media foundation models
+  generate high-quality images, videos, and audio from text. **xAI** rapidly
+  deployed **100K H100 GPUs** in 19 days, noted by **@rohanpaul_ai** quoting
+  **Nvidia** CEO Jensen Huang. Privacy concerns raised over **I-XRAY** AI
+  glasses by Harvard students. Skepticism about LLM intelligence expressed by
+  **@svpino**. Advances in humanoid robots like **Ameca** and **Azi** using
+  **ChatGPT** for expressive conversations were also discussed.
+companies:
+  - openai
+  - nyu
+  - metameta
+  - meta-ai-fair
+  - llamaindex
+  - spacex
+  - x-ai
+  - nvidia
+  - engineered-arts
+  - harvard
+models:
+  - llama-3-1-8b
+  - llama-3-2-1b
+  - llama-3-2-3b
+  - dino-v2
+  - movie-gen
+  - chatgpt
+topics:
+  - long-context
+  - feature-prediction-loss
+  - vision
+  - image-generation
+  - video-generation
+  - audio-generation
+  - organizational-efficiency
+  - privacy
+  - humanoid-robots
+  - gpu-deployment
+  - ai-capabilities
+people:
+  - sama
+  - ylecun
+  - rasbt
+  - bindureddy
+  - karpathy
+  - willdepue
+  - soumithchintala
+  - svpino
+  - adcock_brett
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Chopstick arms are all you need.**
 

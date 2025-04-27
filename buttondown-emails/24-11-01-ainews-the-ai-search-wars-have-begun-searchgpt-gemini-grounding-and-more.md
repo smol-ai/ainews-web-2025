@@ -1,13 +1,58 @@
 ---
 id: 1ebaad4e-825d-49f1-bcd0-ebb899df6312
-title: '[AINews] The AI Search Wars Have Begun — SearchGPT, Gemini Grounding, and more'
+title: The AI Search Wars Have Begun — SearchGPT, Gemini Grounding, and more
 date: '2024-11-01T07:04:02.532618Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-ai-search-wars-have-begun-searchgpt
+description: >-
+  **ChatGPT** launched its search functionality across all platforms using a
+  *fine-tuned version of GPT-4o* with synthetic data and distillation from
+  **OpenAI's o1-preview**. This feature includes a Chrome extension promoted by
+  **@sama** but has issues with hallucinations. The launch coincides with
+  **Gemini** introducing Search Grounding after delays. Notably, **The New York
+  Times** is not a partner due to legal disputes with **OpenAI**. The AI search
+  competition intensifies with consumer and B2B players like **Perplexity** and
+  **Glean**. Additionally, **Claude 3.5 Sonnet** achieved a new benchmark record
+  on SWE-bench Verified, and **Universal-2** speech-to-text model with 660M
+  parameters shows improvements in accuracy. The **HOVER** neural whole-body
+  controller for humanoid robots was also introduced, trained in NVIDIA Isaac
+  simulation. The newsletter is sponsored by the **RAG++ course** from **Weights
+  & Biases**, **Cohere**, and **Weaviate** focusing on advanced
+  retrieval-augmented generation techniques.
+companies:
+  - openai
+  - gemini
+  - perplexity-ai
+  - glean
+  - weights-biases
+  - cohere
+  - weaviate
+  - nvidia
+  - langchain
+models:
+  - gpt-4o
+  - o1-preview
+  - claude-3.5-sonnet
+  - universal-2
+topics:
+  - fine-tuning
+  - synthetic-data
+  - distillation
+  - hallucinations
+  - search
+  - benchmarking
+  - speech-to-text
+  - robotics
+  - retrieval-augmented-generation
+  - model-performance
+people:
+  - sama
+  - alexalbert__
+  - _jasonwei
+  - svpino
+  - drjimfan
+  - virattt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**One AI Searchbox is All You Need.**
 

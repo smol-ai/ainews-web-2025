@@ -1,13 +1,77 @@
 ---
 id: 87181d6e-1365-401c-91ec-3842a5e16461
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-04-02T06:14:34.413400Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-2943
+description: >-
+  **OpenAI** plans to release its first open-weight language model since
+  **GPT-2** in the coming months, signaling a potential golden age of AI
+  progress. **DeepSeek's R1 model** launch challenges perceptions of China's AI
+  development pace. **Gemma 3** achieves function calling and ranks on the
+  **Berkeley Function-Calling Leaderboard**, while **GemmaCoder3-12b** improves
+  code reasoning on **LiveCodeBench** with 128k context length and 32GB RAM
+  compatibility. **Alibaba's Qwen2.5-Omni** introduces a Thinker-Talker system
+  and **TMRoPE** for multimodal input understanding. **TogetherCompute**'s
+  inference team achieves 140 TPS on a 671B parameter R1 model, outperforming
+  **Azure** and **DeepSeek API** on **Nvidia GPUs**. **ChatGPT** expands image
+  generation to all free users and adds a new voice feature. **Runway Gen-4**
+  enhances animation for miniature dioramas, and **LangChain** introduces a
+  chat-based generative UI agent. **Figure 03** deploys autonomous humanoid
+  robots at **BMW** with fleet data for improved pretraining and manufacturing
+  scaling. New tools include **OpenAI's realtime transcription API** with
+  **WebRTC** support and **Amazon's Nova Act AI browser agent**. *"People were
+  mostly smart enough not to launch things on April Fools'."*
+companies:
+  - openai
+  - deepseek
+  - berkeley
+  - alibaba
+  - togethercompute
+  - nvidia
+  - runway
+  - langchain-ai
+  - figure-ai
+  - amazon
+models:
+  - gpt-2
+  - gemma-3
+  - gemmacoder3-12b
+  - qwen-2.5-omni
+  - r1
+topics:
+  - function-calling
+  - benchmarking
+  - code-reasoning
+  - context-windows
+  - multimodality
+  - inference-speed
+  - image-generation
+  - voice-generation
+  - animation
+  - chatbots
+  - humanoid-robots
+  - realtime-api
+  - webrtc
+people:
+  - sama
+  - lioronai
+  - clementdelangue
+  - snsf
+  - scaling01
+  - cognitivecompai
+  - osanseviero
+  - jack_w_rae
+  - ben_burtenshaw
+  - theturingpost
+  - vipulved
+  - kevinweil
+  - tomlikesrobots
+  - adcock_brett
+  - juberti
+  - therundownai
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day is all you need.**
 

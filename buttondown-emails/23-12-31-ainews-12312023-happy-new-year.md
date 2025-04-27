@@ -1,13 +1,46 @@
 ---
 id: fd48fb4a-2ba8-4a30-8320-96820a4f8e54
-title: '[AINews] 12/31/2023: Happy New Year'
+title: '12/31/2023: Happy New Year'
 date: '2024-01-01T05:33:14.937445Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12312023-happy-new-year
+description: >-
+  The **LM Studio** community discussed variations and optimizations in
+  **Dolphin** and **Mistral 7b** models, focusing on hardware-software
+  configurations and fine-tuning differences. Challenges with deploying
+  **Mixtral** models locally were noted, with recommendations to use smaller
+  models or download from **HuggingFace**. Discussions emphasized the importance
+  of GPU vRAM over CPU upgrades for processing speed, with VRAM limits ranging
+  from 24GB to 188GB on different GPUs. Users explored enhancing AI's emotional
+  intelligence and personalities through extended prompts. The community also
+  shared insights on integrating **ChromaDB** and **Autogen**, software
+  upgrades, and API enhancements, alongside celebrating the New Year.
+companies:
+  - lm-studio
+  - mistral-ai
+  - hugging-face
+  - amd
+models:
+  - mistral-7b
+  - mixtral
+  - dolphin
+topics:
+  - fine-tuning
+  - hardware
+  - vram
+  - gpu-optimization
+  - model-deployment
+  - emotional-intelligence
+  - integration
+  - software-updates
+  - api
+  - prompt-engineering
+people:
+  - dagbs
+  - heyitsyorkie
+  - vic49
+  - leviticus_slow
 ---
+
 
 <!-- buttondown-editor-mode: plaintext --> ![image.png](https://assets.buttondown.email/images/d7934abf-71d8-428f-9121-c0d717339821.png?w=960&fit=max) 
 

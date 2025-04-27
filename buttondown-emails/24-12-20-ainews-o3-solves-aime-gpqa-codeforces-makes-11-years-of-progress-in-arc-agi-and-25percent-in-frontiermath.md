@@ -1,15 +1,45 @@
 ---
 id: b92815e1-7acf-47ff-950a-245e04940e94
 title: >-
-  [AINews] o3 solves AIME, GPQA, Codeforces, makes 11 years of progress in
-  ARC-AGI and 25% in FrontierMath
+  o3 solves AIME, GPQA, Codeforces, makes 11 years of progress in ARC-AGI and
+  25% in FrontierMath
 date: '2024-12-21T01:44:22.839525Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-o3-solves-aime-gpqa-codeforces-makes-11
+description: >-
+  **OpenAI** announced the **o3 and o3-mini** models with groundbreaking
+  benchmark results, including a jump from 2% to 25% on the **FrontierMath**
+  benchmark and achieving up to **87.5% on ARC-AGI**, representing about 11
+  years of progress on the GPT-3 to GPT-4o scaling curve. The **o1-mini** model
+  shows superior inference efficiency compared to o3-full, promising significant
+  cost reductions on coding tasks. The release has sparked extensive community
+  analysis and safety testing initiatives, with contributions from key figures
+  like **sama**, **Noam Shazeer**, and **Eric Wallace**. This marks a major
+  milestone in AI model performance and alignment strategies.
+companies:
+  - openai
+models:
+  - o3
+  - o3-mini
+  - o1-mini
+  - gpt-3
+  - gpt-4o
+  - o1
+topics:
+  - benchmarking
+  - math
+  - reasoning
+  - inference
+  - model-performance
+  - alignment
+  - safety-testing
+  - cost-efficiency
+  - model-distillation
+people:
+  - sama
+  - noam_shazeer
+  - eric_wallace
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**DistilledInference Time Compute is all you need.**
 

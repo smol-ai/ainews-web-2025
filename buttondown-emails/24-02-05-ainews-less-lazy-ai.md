@@ -1,13 +1,52 @@
 ---
 id: 01eabd5a-e8bb-41e3-981b-58cc9467e3b3
-title: '[AINews] Less Lazy AI'
+title: Less Lazy AI
 date: '2024-02-06T00:50:28.809972Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-less-lazy-ai
+description: >-
+  **AI Discords** analysis for early 2024 covered **20 guilds**, **308
+  channels**, and **10449 messages**, saving an estimated **780 minutes** of
+  reading time. Key highlights include **TheBloke** Discord's work on the
+  **Polymind Plugin** integrating PubMed API, roleplay with **HamSter v0.2**,
+  VRAM challenges in training with **Axolotl**, and fine-tuning tips for
+  **FLAN-T5**. **Nous Research AI** discussed GPT-4's lyric generation issues,
+  quantization strategies using **llama.cpp**, innovative model merging like
+  **frankenmerging** with **miqu-1-120b-GGUF** and **MergeMonster**, and
+  anticipation for the **Qwen2** model with preference tuning methods IPO, DPO,
+  and KTO. Tools like **text-generation-webui**, **ExLlamaV2**, and
+  **Lone-Arena** were noted for AI interaction and testing. **LM Studio** users
+  reported a bug with the app not shutting down properly, requiring forced
+  termination.
+companies:
+  - openai
+  - hugging-face
+  - nous-research
+  - h2oai
+models:
+  - hamster-0.2
+  - flan-t5
+  - miqu-1-120b-gguf
+  - qwen2
+topics:
+  - model-merging
+  - fine-tuning
+  - quantization
+  - vram-optimization
+  - preference-tuning
+  - model-benchmarking
+  - ai-bots
+  - plugin-development
+  - bug-reporting
+people:
+  - philschmid
+  - maldevide
+  - naruto08
+  - rolandtannous
+  - aletheion
+  - wildcat_aurora
+  - vishnu_86081
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/3-4/2024. We checked **20** guilds, **308** channels, and **10449** messages for you. Estimated reading time saved (at 200wpm): **780 minutes**.
 

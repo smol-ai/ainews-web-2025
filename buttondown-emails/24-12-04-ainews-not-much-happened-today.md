@@ -1,13 +1,55 @@
 ---
 id: 276161f6-797f-4b69-898f-ddb7654dba8e
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-12-05T02:41:39.435306Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-1872
+description: >-
+  **OpenAI** announced their "12 Days of OpenAI" event with potential releases
+  including the **O1 full model**, **Sora video model**, and **GPT-4.5**.
+  **Google DeepMind** released the **GenCast weather model** capable of 15-day
+  forecasts in 8 minutes and the **Genie 2 world model** for creating 3D
+  playable worlds from images. Key vision researchers **Lucas Beyer**,
+  **Alexander Kolesnikov**, and **Xiaohua Zhai** moved from DeepMind to OpenAI,
+  which is opening a Zürich office. Criticism arose over OpenAI's strategy and
+  model quality compared to **Anthropic** and **Claude 3.5 Sonnet**. On Reddit,
+  Nvidia's **Llama-3_1-Nemotron-51B** model optimized by NAS matches 70B
+  performance, supported by a modified **llama.cpp** on HuggingFace.
+companies:
+  - openai
+  - google-deepmind
+  - anthropic
+  - nvidia
+  - huggingface
+models:
+  - o1-full
+  - sora-video-model
+  - gpt-4.5
+  - gpt-4.5
+  - genie-2
+  - gencast-weather-model
+  - llama-3-1-nemotron-51b
+  - llama-3-1
+  - llama-3
+  - claude-3.5-sonnet
+topics:
+  - vision
+  - model-performance
+  - neural-architecture-search
+  - model-optimization
+  - multimodality
+  - model-releases
+  - model-deployment
+  - fine-tuning
+people:
+  - sama
+  - joannejang
+  - giffmana
+  - aidan_mclau
+  - lucas_beyer
+  - alexander_kolesnikov
+  - xiaohua_zhai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**another quiet day is all we need.**
 

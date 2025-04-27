@@ -1,13 +1,44 @@
 ---
 id: 8b2bbd94-300e-4a69-b1ad-4d147b7bbec3
-title: '[AINews] Talaria: Apple''s new MLOps Superweapon'
+title: 'Talaria: Apple''s new MLOps Superweapon'
 date: '2024-06-11T06:41:05.024816Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-talaria-apples-new-mlops-superweapon-4066
+description: >-
+  **Apple Intelligence** introduces a small (~3 billion parameters) on-device
+  model and a larger server model running on Apple Silicon with Private Cloud
+  Compute. Apple employs a novel **lossless quantization** strategy using mixed
+  2-bit and 4-bit LoRA adapters averaging 3.5 bits-per-weight, enabling
+  efficient hot-swapping of adapters and low latency (0.6 ms per token) on
+  iPhone 15 Pro. The **Talaria** tool profiles model architectures and
+  quantization under resource budgets. Apple focuses on an "adapter for
+  everything" approach with initial support for SiriKit and App Intents,
+  emphasizing practical consumer performance over academic benchmarks. The Apple
+  ML blog also mentions an Xcode code model and a diffusion model for Genmoji.
+companies:
+  - apple
+  - google
+  - mistral-ai
+  - microsoft
+  - gemini
+  - mosaic
+models:
+  - apple-intelligence
+topics:
+  - lossless-quantization
+  - lora
+  - on-device-ai
+  - model-optimization
+  - adapter-models
+  - inference-latency
+  - private-cloud-compute
+  - model-profiling
+  - neural-engines
+  - foundation-models
+  - instruction-following
+people:
+  - craig_federighi
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Apple Intelligence is all you need.**
 

@@ -1,13 +1,65 @@
 ---
 id: 4dcb087d-c5a7-4dae-a9c0-dd1cf43afe20
-title: '[AINews] DeepCoder: A Fully Open-Source 14B Coder at O3-mini Level'
+title: 'DeepCoder: A Fully Open-Source 14B Coder at O3-mini Level'
 date: '2025-04-09T19:51:30.081055Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepcoder-a-fully-open-source-14b-coder-at
+description: >-
+  **Together AI** and **Agentica** have released **DeepCoder-14B**, an
+  open-source 14B parameter coding model that rivals **OpenAI's o3-mini** and
+  **o1** on coding benchmarks, achieving **60.6% on LiveCodeBench** and **1936
+  on CodeForces**. **Google DeepMind** launched **Gemini 2.5 Pro** with
+  experimental "Flash" versions available to subscribers, while **Moonshot AI**
+  released **Kimi-VL-A3B**, a multimodal model with **128K context**
+  outperforming **GPT-4o** on vision and math benchmarks. **Meta AI** introduced
+  **Llama 4 Scout** and **Maverick**, with a larger **Behemoth** model in
+  training, and **Runway** released **Gen-4 Turbo** with 10x better results than
+  Gen-3. **Google** also announced **Imagen 3**, a high-quality text-to-image
+  model now in Vertex AI, and **Veo 2**. The open-source nature of
+  DeepCoder-14B, including dataset, code, and training recipe, highlights
+  advances in reinforcement learning training pipelines and sampler bottleneck
+  solutions.
+companies:
+  - together-ai
+  - agentica
+  - openai
+  - google-deepmind
+  - moonshot-ai
+  - meta-ai-fair
+  - runway
+models:
+  - deepcoder-14b
+  - o3-mini
+  - o1
+  - gemini-2.5-pro
+  - kimi-vl-a3b
+  - gpt-4o
+  - llama-4-scout
+  - maverick
+  - behemoth
+  - gen-4-turbo
+  - imagen-3
+  - veo-2
+topics:
+  - reinforcement-learning
+  - code-generation
+  - multimodality
+  - model-training
+  - model-releases
+  - model-optimization
+  - fine-tuning
+  - sampler-bottleneck
+  - pipelining
+  - open-source
+people:
+  - _philschmid
+  - reach_vb
+  - yuchenj_uw
+  - togethercompute
+  - epochairesearch
+  - danielhanchen
+  - c_valenzuelab
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GPRO+ is all you need.**
 

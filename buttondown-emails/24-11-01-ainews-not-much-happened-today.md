@@ -1,13 +1,65 @@
 ---
 id: 59f971f8-f93a-496b-9e1c-07dbd81ff70a
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-11-01T20:59:45.631653Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-8168
+description: >-
+  **ChatGPT Search** was launched by **@sama**, becoming his favorite ChatGPT
+  feature and doubling his usage. Comparisons were made between ChatGPT Search
+  and **Perplexity**, with improvements noted in Perplexity's navigational
+  queries. **Google** introduced a "Grounding" feature in the **Gemini API & AI
+  Studio** enabling Gemini models to access real-time web information. Despite
+  Gemini's leaderboard performance, developer adoption lags behind **OpenAI**
+  and **Anthropic**. **SmolLM2**, a new small, powerful on-device language
+  model, outperforms **Meta's Llama 3.2 1B**. A **Claude** desktop app was
+  released for Mac and Windows. **Meta AI** announced robotics advancements
+  including Meta Sparsh, Meta Digit 360, and Meta Digit Plexus. **Stable
+  Diffusion 3.5 Medium**, a 2B parameter model with a commercial license, was
+  released. Insights on AGI development, AI regulation, and ML specialization
+  futures were shared by **François Chollet**, **Anthropic**, and **Stas
+  Bekman**. New AI tools like **Suno AI Personas**, **PromptQL**, and **Agent
+  S** were introduced. Memes and humor from the AI community were also
+  highlighted.
+companies:
+  - openai
+  - anthropic
+  - google
+  - meta-ai-fair
+  - suno-ai
+  - lmsys
+models:
+  - smollm2
+  - llama-3-2
+  - stable-diffusion-3.5
+  - claude-3.5-sonnet
+  - gemini
+topics:
+  - on-device-ai
+  - search
+  - model-release
+  - robotics
+  - reinforcement-learning
+  - ai-regulation
+  - ml-specialization
+  - natural-language-api
+  - agentic-ai
+  - humor
+people:
+  - sama
+  - _akhaliq
+  - aravsrinivas
+  - labenz
+  - loubnabenallal1
+  - alexalbert__
+  - aiatmeta
+  - mervenoyann
+  - fchollet
+  - stasbekman
+  - svpino
+  - rohanpaul_ai
+  - hamelhusain
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a spooky quiet weekend is all you need.**
 

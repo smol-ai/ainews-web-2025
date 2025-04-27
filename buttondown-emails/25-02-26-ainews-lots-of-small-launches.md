@@ -1,13 +1,56 @@
 ---
 id: f98b3a6c-3c56-432d-a822-c9a4ed105451
-title: '[AINews] lots of small launches'
+title: lots of small launches
 date: '2025-02-27T04:09:12.976879Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-lots-of-small-launches
+description: >-
+  **GPT-4.5** is launching this week, with **OpenAI** previewing **GPT-4o
+  Advanced Voice** for free users and enhanced access for Plus and Pro tiers.
+  **Anthropic** released **Claude 3.7 Sonnet**, which leads the WebDev Arena
+  with improved token efficiency. **DeepSeek** introduced **DeepGEMM**, a
+  CUDA-based library accelerating FP8 GEMMs on NVIDIA Hopper GPUs, boosting
+  inference for their **DeepSeek-R1** model with 671B parameters. **Perplexity**
+  launched a new Voice Mode and a Deep Research API, valued at $15B. Other
+  notable releases include **Grok 3 API** with 1M context, **Elevenlabs** ASR,
+  and **Cloudflare**'s agents SDK. Several startups like **Elicit** and
+  **Inception Labs** announced funding and new production models.
+companies:
+  - openai
+  - anthropic
+  - deepseek
+  - perplexity-ai
+  - elevenlabs
+  - cloudflare
+  - elicitorg
+  - inception-labs
+  - togethercompute
+models:
+  - gpt-4o
+  - gpt-4.5
+  - claude-3.7-sonnet
+  - deepseek-r1
+  - grok-3
+topics:
+  - voice
+  - cuda
+  - fp8
+  - inference
+  - model-performance
+  - open-source
+  - api
+  - model-release
+  - cuda-optimization
+  - token-efficiency
+  - context-windows
+people:
+  - lmarena_ai
+  - alexalbert__
+  - reach_vb
+  - deepseek_ai
+  - aravsrinivas
+  - teortaxesTex
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

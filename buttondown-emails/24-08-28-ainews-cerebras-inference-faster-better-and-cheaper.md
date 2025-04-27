@@ -1,13 +1,56 @@
 ---
 id: df31451f-7460-4ef7-b063-1b3d31d35d59
-title: '[AINews] Cerebras Inference: Faster, Better, AND Cheaper'
+title: 'Cerebras Inference: Faster, Better, AND Cheaper'
 date: '2024-08-29T00:59:27.113773Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-cerebras-inference-faster-better-and
+description: >-
+  **Groq** led early 2024 with ~450 tokens/sec for Mixtral 8x7B and 240
+  tokens/sec for Llama 2 70B. **Cursor** introduced a specialized code edit
+  model hitting 1000 tokens/sec. **Cerebras** now offers an inference service
+  for **Llama3.1-8b** at 1800 tokens/sec and **Llama3.1-70B** at 450 tokens/sec
+  at full precision, claiming 20x speed over GPUs at 1/5 the price, with a
+  generous free tier of 1 million tokens daily. Their wafer-scale chips enable
+  storing entire models in SRAM, challenging Groq and Sambanova. On AI models,
+  **Google's Gemini 1.5** series showed strong benchmark gains, especially
+  Gemini-1.5-Pro in coding and math. New open-source models like
+  **CogVideoX-5B** for text-to-video and **Mamba-2** family model **Rene 1.3B**
+  demonstrated high efficiency on consumer hardware. **Anthropic's Claude** now
+  supports prompt caching, reducing costs and improving speed. *"Cerebras
+  Inference runs Llama3.1 20x faster than GPU solutions at 1/5 the price."*
+companies:
+  - groq
+  - cursor
+  - cerebras
+  - together-ai
+  - fireworks
+  - google-deepmind
+  - anthropic
+models:
+  - mixtral-8x7b
+  - llama-2-70b
+  - llama3.1-8b
+  - llama3.1-70b
+  - gemini-1.5-pro
+  - gemini-1.5-flash
+  - cogvideox-5b
+  - rene-1.3b
+  - claude
+topics:
+  - inference-speed
+  - model-quantization
+  - wafer-scale-chips
+  - prompt-caching
+  - benchmarking
+  - text-to-video
+  - model-merging
+  - code-generation
+  - model-efficiency
+people:
+  - jeremyphoward
+  - _akhaliq
+  - awnihannun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Wafer-scale engines are all you need.**
 

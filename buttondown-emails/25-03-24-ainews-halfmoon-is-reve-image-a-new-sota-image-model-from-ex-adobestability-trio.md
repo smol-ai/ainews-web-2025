@@ -1,15 +1,56 @@
 ---
 id: 9e88f842-ed12-4ead-aa52-fe4d029a6454
-title: >-
-  [AINews] Halfmoon is Reve Image: a new SOTA Image Model from
-  ex-Adobe/Stability trio
+title: 'Halfmoon is Reve Image: a new SOTA Image Model from ex-Adobe/Stability trio'
 date: '2025-03-25T01:43:04.934624Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-halfmoon-is-reve-image-a-new-sota-image
+description: >-
+  **Reve**, a new composite image generation model from former Adobe and
+  Stability AI alums **Christian Cantrell**, **Taesung Park**, and **Michaël
+  Gharbi**, has emerged as the top rated imagegen model on Artificial Analysis'
+  leaderboard, surpassing previous SOTA models like Recraft and Ideogram in text
+  rendering and typography. The model emphasizes *"intent-driven visual
+  creation"* by integrating advanced natural language understanding and
+  interactive systems to iteratively refine visuals, aiming to enhance user
+  intent comprehension with logic and complex prompt understanding.
+  Additionally, **DeepSeek-V3-0324** and **Alibaba's Qwen2.5-VL-32B-Instruct**
+  were released with notable performance improvements, including superior vision
+  task benchmarks and mathematical reasoning capabilities. DeepSeek's model is
+  served via Hyperbolic Labs and FireworksAI, highlighting ongoing advancements
+  in model deployment and accessibility.
+companies:
+  - artificial-analysis
+  - stability-ai
+  - adobe
+  - deepseek
+  - alibaba
+  - hyperbolic-labs
+  - fireworksai
+models:
+  - reve
+  - deepseek-v3-0324
+  - qwen-2.5-vl-32b-instruct
+  - recraft
+  - ideogram
+topics:
+  - image-generation
+  - natural-language-processing
+  - prompt-understanding
+  - model-composition
+  - interactive-systems
+  - visual-creation
+  - complex-prompt-understanding
+  - model-serving
+  - vision
+  - mathematical-reasoning
+people:
+  - christian_cantrell
+  - taesung_park
+  - michaël_gharbi
+  - _akhaliq
+  - reach_vb
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Composite AI is all you need?**
 

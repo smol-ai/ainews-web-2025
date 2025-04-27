@@ -1,13 +1,51 @@
 ---
 id: 1b804ad2-b650-4eb1-bdfc-25a39c23d100
-title: '[AINews] Every 7 Months: The Moore''s Law for Agent Autonomy'
+title: 'Every 7 Months: The Moore''s Law for Agent Autonomy'
 date: '2025-03-20T01:59:24.171505Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-every-7-months-the-moores-law-for-agent
+description: >-
+  **METR** published a paper measuring AI agent autonomy growth, showing it has
+  doubled every 7 months since 2019 (GPT-2). They introduced the
+  **50%-task-completion time horizon** metric, finding models like **Claude 3.7
+  Sonnet** achieve 50% success on tasks in about 50 minutes. Projections
+  estimate **1 day autonomy by 2028** and **1 month autonomy by late 2029**.
+  Meanwhile, **Nvidia** released **Cosmos-Transfer1** for conditional world
+  generation and **GR00T-N1-2B**, an open foundation model for humanoid robot
+  reasoning. **Canopy Labs** released **Orpheus 3B**, a high-quality
+  text-to-speech model with zero-shot voice cloning. **Meta** reportedly delayed
+  **Llama-4** release due to poor performance, and **Microsoft** launched
+  **Phi-4-multimodal**.
+companies:
+  - metr
+  - openai
+  - nvidia
+  - canopy-labs
+  - meta-ai-fair
+  - microsoft
+  - hugging-face
+models:
+  - claude-3-7-sonnet
+  - llama-4
+  - gr00t-n1-2b
+  - orpheus-3b
+  - phi-4-multimodal
+  - cosmos-transfer1
+topics:
+  - agent-autonomy
+  - benchmarking
+  - multimodality
+  - robotics
+  - text-to-speech
+  - fine-tuning
+  - open-models
+  - model-release
+people:
+  - _akhaliq
+  - reach_vb
+  - drjimfan
+  - scaling01
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Perspective is all you need.**
 

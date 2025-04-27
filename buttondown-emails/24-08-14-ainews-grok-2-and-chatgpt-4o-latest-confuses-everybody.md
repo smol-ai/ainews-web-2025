@@ -1,13 +1,45 @@
 ---
 id: 5479b511-511b-4adc-855c-752df22743c3
-title: '[AINews] Grok 2! and ChatGPT-4o-latest confuses everybody'
+title: Grok 2! and ChatGPT-4o-latest confuses everybody
 date: '2024-08-15T00:51:40.557390Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-grok-2-and-chatgpt-4o-latest-confuses
+description: >-
+  **OpenAI** quietly released a new **GPT-4o** model in ChatGPT, distinct from
+  the API version, reclaiming the #1 spot on Lmsys arena benchmarks. Meanwhile,
+  **X.ai** launched **Grok 2**, outperforming **Claude 3.5 Sonnet** and previous
+  GPT-4o versions, integrating **Black Forest Labs' Flux.1** model for
+  text-to-image generation. **Google DeepMind** announced **Gemini Advanced**
+  with enhanced conversational features on Pixel devices powered by Tensor G4.
+  Researchers like *@ylecun* highlighted LLM limitations, while *@rohanpaul_ai*
+  showcased an AI Scientist system generating publishable ML papers
+  cost-effectively. *@karpathy* warned about tokenizer security vulnerabilities
+  resembling SQL injection attacks.
+companies:
+  - openai
+  - x-ai
+  - black-forest-labs
+  - google-deepmind
+models:
+  - gpt-4o
+  - grok-2
+  - claude-3.5-sonnet
+  - flux-1
+  - gemini-advanced
+topics:
+  - benchmarking
+  - model-performance
+  - tokenization
+  - security-vulnerabilities
+  - text-to-image
+  - multi-agent-systems
+  - ai-scientist
+  - conversational-ai
+people:
+  - ylecun
+  - rohanpaul_ai
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**2 frontier models in 1 day?!**
 

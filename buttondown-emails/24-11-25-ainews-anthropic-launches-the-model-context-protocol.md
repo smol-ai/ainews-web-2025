@@ -1,13 +1,45 @@
 ---
 id: 00ee9286-efb3-4e70-abb0-93c2978589c7
-title: '[AINews] Anthropic launches the Model Context Protocol'
+title: Anthropic launches the Model Context Protocol
 date: '2024-11-26T01:56:47.720158Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-anthropic-launches-the-model-context
+description: >-
+  **Anthropic** has launched the **Model Context Protocol (MCP)**, an open
+  protocol designed to enable seamless integration between large language model
+  applications and external data sources and tools. MCP supports diverse
+  resources such as file contents, database records, API responses, live system
+  data, and more, identified by unique URIs. It also facilitates reusable
+  prompts, system operations, API integrations, and advanced sampling features
+  that allow model routing based on cost, speed, and intelligence priorities.
+  Launch partners like **Zed**, **Sourcegraph**, and **Replit** have reviewed
+  MCP favorably, while some developers express skepticism about its provider
+  exclusivity and adoption potential. The protocol aims to enhance
+  **terminal-level integration**, **agentic behaviors**, and **security** in AI
+  applications, with detailed documentation and community discussions ongoing.
+companies:
+  - anthropic
+  - amazon
+  - zed
+  - sourcegraph
+  - replit
+models:
+  - claude-3-sonnet
+  - claude-3.5-sonnet
+topics:
+  - model-context-protocol
+  - integration
+  - agentic-ai
+  - security
+  - json-rpc
+  - api-integration
+  - system-operations
+  - sampling
+  - software-development
+people:
+  - alexalbert__
+  - hwchase17
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**`claude_desktop_config.json` is all you need.**
 

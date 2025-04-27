@@ -1,13 +1,50 @@
 ---
 id: 6c45beca-eea7-466c-8e72-8f3eabd4e033
-title: '[AINews] Shipping and Dipping: Inflection + Stability edition'
+title: 'Shipping and Dipping: Inflection + Stability edition'
 date: '2024-03-21T00:59:01.276091Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-shipping-and-dipping-inflection-stability
+description: >-
+  **Inflection AI** and **Stability AI** recently shipped major updates
+  (**Inflection AI 2.5** and **Stable Diffusion 3**) but are now experiencing
+  significant executive departures, signaling potential consolidation in the
+  GPU-rich startup space. **Mustafa Suleyman** has joined **Microsoft AI** as
+  CEO, overseeing consumer AI products like Copilot and Bing. **Microsoft
+  Azure** is collaborating with **NVIDIA** on the Grace Blackwell 200 Superchip.
+  **Google DeepMind** announced **TacticAI**, an AI assistant for football
+  tactics developed with Liverpool FC, using geometric deep learning and
+  achieving 90% expert approval in blind tests. **Anthropic** released **Claude
+  3 Haiku** and **Claude 3 Sonnet** on Google Cloud's Vertex AI, with **Claude 3
+  Opus** coming soon. Concerns about AI job displacement arise as **NVIDIA**
+  introduces AI nurses that outperform humans at bedside manner at 90% lower
+  cost.
+companies:
+  - inflection-ai
+  - stability-ai
+  - microsoft
+  - nvidia
+  - google-deepmind
+  - anthropic
+models:
+  - inflection-ai-2.5
+  - stable-diffusion-3
+  - claude-3-haiku
+  - claude-3-sonnet
+  - claude-3-opus
+  - tacticai
+topics:
+  - executive-departures
+  - gpu-acceleration
+  - ai-startups
+  - ai-assistants
+  - geometric-deep-learning
+  - ai-integration
+  - ai-healthcare
+  - model-release
+  - ai-productivity
+people:
+  - mustafasuleyman
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/19/2024-3/20/2024. We checked [**358** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**337** channels, and **9841** messages) for you. Estimated reading time saved (at 200wpm): **1033 minutes**.
 

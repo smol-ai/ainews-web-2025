@@ -1,13 +1,83 @@
 ---
 id: 1a9ce6e6-a854-47d3-97a5-1649bdd032f4
-title: '[AINews] CodeLLama 70B beats GPT4 on HumanEval'
+title: CodeLLama 70B beats GPT4 on HumanEval
 date: '2024-01-30T21:10:01.398467Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-codellama-70b-beats-gpt4-on-humaneval
+description: >-
+  **Meta AI** surprised the community with the release of **CodeLlama**, an
+  open-source model now available on platforms like **Ollama** and **MLX** for
+  local use. The **Miqu model** sparked debate over its origins, possibly linked
+  to **Mistral Medium** or a fine-tuned **Llama-2-70b**, with discussions on
+  **AI ethics** and alignment risks. The **Aphrodite engine** showed strong
+  performance on **A6000 GPUs** with fp8 quantization. Role-playing models such
+  as **Mixtral** and **Flatdolphinmaid** faced repetitiveness issues, while
+  **Noromaid** and **Rpcal** performed better, with **ChatML** and **DPO**
+  techniques recommended for improvement. Educational advice highlighted the
+  **fast.ai** course for ML/DL beginners and fine-tuning tips for **Mistral 7B**
+  using advanced optimizers like *Paged 8bit lion* and *adafactor*. 
+
+
+  At **Nous Research AI**, the **Activation Beacon** project introduced a method
+  for unlimited context length in LLMs using "global state" tokens, potentially
+  transforming dense retrieval. The **Eagle-7B** model, based on **RWKV-v5**,
+  outperforms **Mistral** with efficient multilingual capabilities.
+  **OpenHermes2.5** is recommended for consumer hardware due to its quantization
+  methods. Multimodal and domain-specific models like **IMP v1-3b**,
+  **Bakllava**, **Moondream**, and **Qwen-vl** were discussed for classification
+  and vision-language tasks. The community also aims to centralize AI resources
+  and research efforts.
+companies:
+  - meta-ai-fair
+  - ollama
+  - mlx
+  - mistral-ai
+  - nous-research
+  - hugging-face
+  - rwkv-ai
+models:
+  - codellama
+  - miqu
+  - mistral-7b
+  - llama-2-70b
+  - mixtral
+  - flatdolphinmaid
+  - noromaid
+  - rpcal
+  - chatml
+  - activation-beacon
+  - eagle-7b
+  - openhermes2.5
+  - nous-hermes-2-mixtral-8x7b-dpo
+  - imp-v1-3b
+  - bakllava
+  - moondream
+  - qwen-vl
+  - rwkv-v5
+topics:
+  - ai-ethics
+  - alignment
+  - gpu-optimization
+  - quantization
+  - direct-prompt-optimization
+  - fine-tuning
+  - multimodality
+  - multilingual-models
+  - model-performance
+  - context-length
+  - dense-retrieval
+  - retrieval-augmented-generation
+  - classification
+  - vision
+people:
+  - reach_vb
+  - itsme9316
+  - rombodawg
+  - ks_c
+  - dirtytigerx
+  - cyrusofeden
+  - kquant
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/29/2024. We checked **21** guilds, **311** channels, and **8276** messages for you. Estimated reading time saved (at 200wpm): **605 minutes**.
 

@@ -1,13 +1,47 @@
 ---
 id: 80cf371a-cbd9-42db-ba0a-b43efaba411e
-title: '[AINews] Google Solves Text to Video'
+title: Google Solves Text to Video
 date: '2024-01-25T05:36:26.994654Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-google-solves-text-to-video
+description: >-
+  **Google Research** introduced **Lumiere**, a text-to-video model featuring
+  advanced inpainting capabilities using a Space-Time diffusion process,
+  surpassing previous models like Pika and Runway. **Manveer** from
+  UseScholar.org compiled a comprehensive list of code evaluation benchmarks
+  beyond HumanEval, including datasets from **Amazon Science**, **Hugging
+  Face**, and others. The **TheBloke** Discord community discussed API usage and
+  deployment of models such as **Mistral-7B**, **LLava**, and the concept of
+  "frankenmerging" multimodal models. The **Nous Research AI** Discord
+  highlighted fine-tuning challenges, learning rate strategies, and the emerging
+  **RestGPT** model for RESTful API control of LLMs. The **Mistral** Discord
+  focused on the design of **Mistral Instruct** as an autocomplete system.
+companies:
+  - google-research
+  - amazon-science
+  - huggingface
+  - mistral-ai
+  - together-ai
+  - useScholar.org
+models:
+  - mistral-7b
+  - llava
+  - mistral-instruct
+  - restgpt
+topics:
+  - text-to-video
+  - inpainting
+  - space-time-diffusion
+  - code-evaluation
+  - fine-tuning
+  - learning-rates
+  - api
+  - model-deployment
+  - multimodality
+  - autocomplete
+people:
+  - manveer
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/23/2024. We checked **19** guilds, **291** channels, and **4199** messages for you. Estimated reading time saved (at 200wpm): **348 minutes**.
 

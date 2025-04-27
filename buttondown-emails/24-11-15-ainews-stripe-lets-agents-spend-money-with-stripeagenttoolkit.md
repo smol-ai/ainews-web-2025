@@ -1,13 +1,57 @@
 ---
 id: e4872678-788f-483d-a30f-726fe0dcbfa6
-title: '[AINews] Stripe lets Agents spend money with StripeAgentToolkit'
+title: Stripe lets Agents spend money with StripeAgentToolkit
 date: '2024-11-16T01:02:33.643600Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-stripe-lets-agents-spend-money-with
+description: >-
+  **Stripe** leads innovation in AI developer tooling with its new **AI SDK**
+  designed for agentic workflows that handle payments, integrating with models
+  like **gpt-4o** from **OpenAI**. The SDK enables agents to send invoices and
+  charge based on token usage, addressing key financial service needs for AI
+  agents. On the research front, **Gemini-Exp-1114** tops the Vision Leaderboard
+  and advances in Math Arena, while **Anthropic** enhances prompt quality with a
+  new prompt improver using **chain-of-thought reasoning**. **OpenAI** releases
+  a **ChatGPT desktop app for macOS** with integrations for **VS Code**,
+  **Xcode**, and **Terminal**, improving developer workflows and enabling
+  advanced voice and pair programming features. Highlights from **ICLR 2025**
+  include studies on diffusion-based illumination harmonization, open
+  mixture-of-experts language models (**OLMoE**), and hyperbolic vision-language
+  models. New decoding methods like Adaptive Decoding via Latent Preference
+  Optimization improve creativity and factuality balance per token. Tools like
+  **LlamaParse** and **RAGformation** support complex document parsing and
+  retrieval-augmented generation.
+companies:
+  - stripe
+  - openai
+  - anthropic
+  - meta-ai-fair
+models:
+  - gpt-4o
+  - gemini-exp-1114
+topics:
+  - ai-sdk
+  - agentic-ai
+  - chain-of-thought
+  - prompt-improvement
+  - vision
+  - math
+  - diffusion-models
+  - mixture-of-experts
+  - adaptive-decoding
+  - fine-tuning
+  - pair-programming
+  - document-parsing
+  - retrieval-augmented-generation
+people:
+  - abacaj
+  - francoisfleuret
+  - lmarena_ai
+  - goodside
+  - jxmnop
+  - jaseweston
+  - stevenheidel
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**AI SDKs are all you need.**
 

@@ -1,13 +1,51 @@
 ---
 id: 4c58d595-fd90-448e-87dc-e3d95a3f7c54
-title: '[AINews] Problems with MMLU-Pro'
+title: Problems with MMLU-Pro
 date: '2024-07-09T00:20:51.624419Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-et-tu-mmlu-pro
+description: >-
+  **MMLU-Pro** has been recognized by **HuggingFace** as the successor to MMLU
+  in the Open LLM Leaderboard V2, despite community concerns about evaluation
+  discrepancies involving sampling parameters, system prompts, and answer
+  extraction. Notably, **Llama-3-8b-q8** showed a 10-point performance
+  improvement from simple system prompt tweaks, highlighting the sensitivity of
+  models to prompt engineering. Recent AI developments include **Meta's
+  MobileLLM** for sub-billion parameter models on smartphones, **Salesforce's
+  APIGen** for automated dataset generation in function-calling tasks,
+  **Runway's Gen-3 Alpha** video generator, and **Nomic AI's GPT4All 3.0**
+  open-source local LLM app. AI assistants with multimodal capabilities and new
+  AI-generated 3D assets from **Meta** were also highlighted.
+companies:
+  - huggingface
+  - meta-ai-fair
+  - salesforce
+  - runway
+  - nomic-ai
+  - pineapple
+  - argil-ai
+models:
+  - mmlu-pro
+  - llama-3-8b-q8
+  - gpt4all-3.0
+topics:
+  - benchmarking
+  - prompt-engineering
+  - model-evaluation
+  - automated-dataset-generation
+  - function-calling
+  - video-generation
+  - multimodality
+  - deepfake
+  - 3d-modeling
+  - reasoning
+  - transformers
+people:
+  - ylecun
+  - adcock_brett
+  - svpino
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Reading benchmark code is all you need.**
 

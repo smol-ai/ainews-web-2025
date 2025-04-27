@@ -1,13 +1,49 @@
 ---
 id: f690e30b-6ad3-498e-b669-fe87f4a9b5ff
-title: '[AINews] Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o version)'
+title: Mini, Nemo, Turbo, Lite - Smol models go brrr (GPT4o version)
 date: '2024-07-19T00:00:39.402250Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-lskjd
+description: >-
+  **GPT-4o-mini** launches at **3.5% the price of GPT-4o** with **16k output
+  tokens** and support for future multimodal inputs/outputs, featuring a new
+  **instruction hierarchy** framework. **Mistral Nemo**, a **12B** model
+  co-developed with **Nvidia**, offers a **128k token context window** and FP8
+  checkpoint, outperforming **llama-3-8b**. **Together Lite and Turbo** provide
+  fp8/int4 quantizations of **llama-3** with up to **4x throughput** and cost as
+  low as **$0.1/mtok**. **DeepSeek V2** is now open source. The surge in
+  releases coincides with the upcoming **ICML conference** and ongoing
+  developments around **llama-4**.
+companies:
+  - openai
+  - nvidia
+  - mistral-ai
+  - togethercompute
+  - deepseek-ai
+  - lmsys
+models:
+  - gpt-4o-mini
+  - mistral-nemo
+  - llama-3-8b
+  - llama-3
+  - llama-4
+  - deepseek-v2
+topics:
+  - instruction-hierarchy
+  - context-windows
+  - model-quantization
+  - fp8
+  - int4
+  - multimodality
+  - model-performance
+  - open-source-models
+  - throughput
+  - cost-efficiency
+people:
+  - sama
+  - gdb
+  - abacaj
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Efficiency is all you need.**
 

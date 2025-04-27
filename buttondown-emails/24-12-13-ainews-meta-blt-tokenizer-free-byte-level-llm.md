@@ -1,13 +1,54 @@
 ---
 id: 3a0cb60d-923c-4305-a76e-3a1bdad0cf39
-title: '[AINews] Meta BLT: Tokenizer-free, Byte-level LLM'
+title: 'Meta BLT: Tokenizer-free, Byte-level LLM'
 date: '2024-12-14T05:38:19.544715Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-meta-blt-tokenizer-free-byte-level-llm
+description: >-
+  **Meta AI** released the **Byte Latent Transformer (BLT)**, a tokenizer-free
+  architecture that dynamically forms byte-level patches encoded into latent
+  representations, improving compute efficiency by allocating resources based on
+  prediction complexity. Trained on ~**1 trillion tokens**, BLT outperforms
+  **Llama 3** on standard benchmarks and excels on tokenizer-challenging tasks
+  like the CUTE benchmark. This approach may enable new multimodal capabilities
+  such as direct file-type input without retrieval-augmented generation.
+  Additionally, **Microsoft** announced the **Phi-4 14B** parameter model
+  achieving state-of-the-art STEM/reasoning results, and **DeepSeek** launched
+  new vision-language models using their MoE architecture. **OpenAI** introduced
+  a new Projects feature for ChatGPT, **Cohere** released the Command R7B model,
+  and **Anthropic** published research on jailbreaking vulnerabilities across
+  modalities. *"Tokenization-based LLMs allocate the same amount of compute to
+  every token... models should dynamically allocate compute where it is
+  needed,"* highlighting a shift in model efficiency design.
+companies:
+  - meta-ai-fair
+  - microsoft
+  - deepseek
+  - openai
+  - cohere
+  - anthropic
+models:
+  - byte-latent-transformer
+  - llama-3
+  - phi-4
+  - deepseek-vl2
+  - cohere-command-r7b
+  - claude-3.5-sonnet
+topics:
+  - tokenization
+  - transformer-architecture
+  - model-efficiency
+  - benchmarking
+  - multimodality
+  - vision
+  - reinforcement-learning
+  - model-scaling
+  - jailbreaking
+  - fine-tuning
+people:
+  - sebastienbubeck
+  - tamaybes
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Dynamic byte patch sizing is all you need.**
 

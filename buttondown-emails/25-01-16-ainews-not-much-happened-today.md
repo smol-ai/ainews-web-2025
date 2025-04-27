@@ -1,13 +1,75 @@
 ---
 id: 396334e6-b342-4817-8596-176a39a5bfc0
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-01-17T06:04:28.978541Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-9711
+description: >-
+  **Harvey** secured a new **$300M funding round**. **OuteTTS 0.3 1B & 500M**
+  text-to-speech models were released featuring **zero-shot voice cloning**,
+  **multilingual support** (en, jp, ko, zh, fr, de), and **emotion control**,
+  powered by **OLMo-1B** and **Qwen 2.5 0.5B**. The **HOVER** model, a
+  **1.5M-parameter neural net** for **agile motor control**, was introduced,
+  advancing **robotic motor coordination**. **kokoro.js** enables running AI
+  models locally in browsers with minimal dependencies. **Meta** awarded **$200K
+  LLM evaluation grants** for projects on **regional language understanding**,
+  **complex reasoning**, and **interactive programming**. **Stability AI's
+  Twitter account was hacked**, prompting security warnings. **Alibaba Qwen**
+  improved **Process Reward Models** for enhanced **mathematical reasoning**
+  using **consensus filtering** and **MC estimation**. **DeepSeek V3** employs
+  **pipeline parallelism** for efficient **distributed inference** and
+  **long-context generation**. Discussions on **AI policy in legal trust** and
+  **AI's role in democratizing education** were highlighted. Lighthearted AI
+  humor was shared by community members.
+companies:
+  - harvey
+  - meta-ai-fair
+  - stability-ai
+  - alibaba
+  - deepseek
+  - hugging-face
+models:
+  - oute-tts-0.3-1b
+  - oute-tts-0.3-500m
+  - olm-1b
+  - qwen-2.5-0.5b
+  - hover
+  - gpt-4o
+  - deepseek-v3
+topics:
+  - text-to-speech
+  - zero-shot-learning
+  - multilinguality
+  - emotion-control
+  - motor-control
+  - robotics
+  - local-ai
+  - distributed-inference
+  - pipeline-parallelism
+  - long-context
+  - process-reward-models
+  - mathematical-reasoning
+  - consensus-filtering
+  - mc-estimation
+  - legal-trust
+  - ai-policy
+  - education-ai
+  - ai-accessibility
+  - humor
+people:
+  - reach_vb
+  - drjimfan
+  - vikhyatk
+  - mervenoyann
+  - aiatmeta
+  - iscienceluvr
+  - alibaba_qwen
+  - awnihannun
+  - ajeya_cotra
+  - emollick
+  - qtnx_
+  - designerx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a long weekend is all you need.**
 

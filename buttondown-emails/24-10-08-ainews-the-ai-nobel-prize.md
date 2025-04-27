@@ -1,13 +1,58 @@
 ---
 id: f285ff85-b5c0-4008-ab38-4fd516cc1561
-title: '[AINews] The AI Nobel Prize'
+title: The AI Nobel Prize
 date: '2024-10-09T01:33:48.218940Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-ai-nobel-prize
+description: >-
+  **Geoff Hinton** and **John Hopfield** won the **Nobel Prize in Physics** for
+  their work on **Artificial Neural Networks**. The news highlights the
+  significance of their contributions to physics and AI. **OpenAI** announced
+  new features at DevDay including real-time voice API, vision model
+  fine-tuning, and prompt caching with a 50% discount on reused tokens.
+  **Anthropic's Claude 3.5 Sonnet** model is recognized as the best current
+  model. **Reka AI Labs** updated their **Reka Flash** model with enhanced
+  multimodal and function calling capabilities. The **GOT (Generic OCR
+  Transformer)** model achieved a 98.79% accuracy on OCR benchmarks. Discussions
+  on open-source AI emphasize its role in fostering competition and
+  decentralization. Software development insights include the importance of
+  Single Sign-On (SSO) and thorough testing. Ethical and societal topics include
+  criticism of tax policy and the appointment of France's first Minister of AI.
+companies:
+  - openai
+  - anthropic
+  - reka-ai
+  - zep
+  - google-deepmind
+models:
+  - claude-3.5-sonnet
+  - reka-flash
+  - got
+topics:
+  - artificial-neural-networks
+  - nobel-prize
+  - vision
+  - fine-tuning
+  - prompt-caching
+  - multimodality
+  - function-calling
+  - ocr
+  - open-source
+  - single-sign-on
+  - software-testing
+  - ai-ethics
+people:
+  - geoff_hinton
+  - john_hopfield
+  - _philschmid
+  - alexalbert__
+  - mervenoyann
+  - clementdelangue
+  - svpino
+  - bindureddy
+  - ylecun
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Artificial Neural Networks are all you need to be a physicist.**
 

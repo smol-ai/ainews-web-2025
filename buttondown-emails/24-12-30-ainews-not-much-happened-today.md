@@ -1,13 +1,40 @@
 ---
 id: a8d4e427-2925-4b28-868a-b6d5cc9b9f28
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-12-31T02:24:45.402646Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-9002
+description: >-
+  **Sam Altman** publicly criticizes **DeepSeek** and **Qwen** models, sparking
+  debate about **OpenAI**'s innovation claims and reliance on foundational
+  research like the **Transformer architecture**. **Deepseek V3** shows
+  significant overfitting issues in the **Misguided Attention** evaluation,
+  solving only **22%** of test prompts, with discussions around its **MoE
+  architecture** and finetuning challenges. Despite skepticism about its
+  open-source status, **Deepseek V3** is claimed to surpass **ChatGPT4** as an
+  open-source model, marking a milestone 1.75 years after ChatGPT4's release on
+  **March 14, 2023**.
+companies:
+  - openai
+  - deepseek
+  - google
+  - qwen
+models:
+  - deepseek-v3
+  - chatgpt-4
+  - o1-mini
+topics:
+  - overfitting
+  - misguided-attention
+  - model-architecture
+  - moe
+  - finetuning
+  - reasoning
+  - evaluation-methods
+  - open-source
+people:
+  - sama
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet week is all we need.**
 

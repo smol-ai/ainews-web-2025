@@ -1,13 +1,40 @@
 ---
 id: 325d5c12-539f-4f8b-83aa-e352013f752c
-title: '[AINews] OLMo 2 - new SOTA Fully Open LLM'
+title: OLMo 2 - new SOTA Fully Open LLM
 date: '2024-11-27T05:17:18.239669Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-olmo-2-new-sota-fully-open-model
+description: >-
+  **AI2** has updated **OLMo-2** to roughly **Llama 3.1 8B** equivalent, trained
+  on **5T tokens** with learning rate annealing and new high-quality data
+  (Dolmino). They credit **Tülu 3** and its "Reinforcement Learning with
+  Verifiable Rewards" approach, with open datasets released. Reddit discussions
+  highlight **lossless 4-bit quantization** using **AutoRound** on **Qwen2.5-72B
+  instruct** model, showing performance parity with original models and unique
+  quantization resilience. **HuggingFace** released **SmolVLM**, a **2B
+  parameter vision-language model** running efficiently on consumer hardware,
+  supporting fine-tuning on Google Colab and demonstrating strong OCR
+  capabilities with adjustable resolution and quantization options.
+companies:
+  - ai2
+  - huggingface
+  - intel
+models:
+  - llama-3-1-8b
+  - olmo-2
+  - qwen2.5-72b
+  - smolvlm
+  - tulu-3
+topics:
+  - reinforcement-learning
+  - quantization
+  - learning-rate-annealing
+  - fine-tuning
+  - vision
+  - ocr
+  - model-training
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Reinforcement Learning with Verifiable Rewards is all you need.**
 

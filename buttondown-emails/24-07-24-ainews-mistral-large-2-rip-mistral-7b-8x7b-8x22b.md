@@ -1,13 +1,50 @@
 ---
 id: 6da8ca62-994d-48b0-ab35-e69b703e4450
-title: '[AINews] Mistral Large 2 + RIP Mistral 7B, 8x7B, 8x22B'
+title: Mistral Large 2 + RIP Mistral 7B, 8x7B, 8x22B
 date: '2024-07-24T23:44:31.500890Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mistral-large-2
+description: >-
+  **Mistral Large 2** introduces **123B parameters** with **Open Weights** under
+  a Research License, focusing on **code generation**, **math performance**, and
+  a massive **128k context window**, improving over Mistral Large 1 which had
+  **API-only access** and **32k context**. The model also enhances **function
+  calling** capabilities, reportedly surpassing **GPT-4o**. Meanwhile, **Meta**
+  officially released **Llama-3-405B**, **Llama-3.1-70B**, and **Llama-3.1-8B**
+  with detailed pre-training and post-training insights, including a **128k
+  context** for the 8B model, though its performance was underwhelming compared
+  to **Mistral Nemo** and **Yi 34B 200K**. Mistral is deprecating older Apache
+  open-source models, focusing on Large 2 and **Mistral Nemo 12B**. The news
+  highlights advances in **multilingual MMLU**, **reasoning capabilities**, and
+  **synthetic data usage** for improving math and reasoning in models.
+companies:
+  - mistral-ai
+  - meta-ai-fair
+  - groq
+  - together-ai
+models:
+  - mistral-large-2
+  - mistral-nemo-12b
+  - llama-3-405b
+  - llama-3.1-70b
+  - llama-3.1-8b
+  - llama-3.1
+  - gpt-4o
+  - yi-34b-200k
+topics:
+  - code-generation
+  - math
+  - function-calling
+  - multilingual-mmlu
+  - context-window
+  - reasoning
+  - synthetic-data
+  - model-deprecation
+  - model-performance
+  - pretraining
+  - posttraining
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**A Mistral Commercial License is what you'll need.**
 

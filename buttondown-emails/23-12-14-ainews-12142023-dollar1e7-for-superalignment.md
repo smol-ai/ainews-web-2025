@@ -1,13 +1,61 @@
 ---
 id: ce475876-3b1b-474a-9c6f-031e31149698
-title: '[AINews] 12/14/2023: $1e7 for Superalignment'
+title: '12/14/2023: $1e7 for Superalignment'
 date: '2023-12-14T22:51:28.552831Z'
-status: sent
 type: archival
-source: api
-metadata: {}
 original_slug: ainews-12142023-1e7-for-superalignment
+description: >-
+  **Jan Leike** is launching a new grant initiative inspired by **Patrick
+  Collison's Fast Grants** to support AI research. **OpenAI** introduced a new
+  Twitter handle @OpenAIDevs for developer updates. Discussions highlight
+  differences between **Gemini** and **Bard** chatbots, with users noting their
+  ability to read each other's instructions and provide unique coding solutions.
+  There are ongoing issues reported with **OpenAI's GPT-4**, including
+  performance problems, customization difficulties, and feature bugs, some of
+  which have been resolved. The community also discussed prompt engineering
+  challenges and new **JSON mode support** in Convo-lang for API usage,
+  alongside concerns about misuse of AI for illegal activities and alternatives
+  like **Llama2** models and the **Perplexity** chatbot with real-time browsing.
+companies:
+  - openai
+  - google
+  - anthropic
+  - hugging-face
+  - mistral-ai
+models:
+  - gemini
+  - bard
+  - gpt-4
+  - gpt-4.5
+  - llama-2
+topics:
+  - prompt-engineering
+  - custom-gpt
+  - json
+  - api
+  - chatbots
+  - model-customization
+  - performance
+  - bug-fixes
+  - real-time-browsing
+  - illegal-activity-monitoring
+people:
+  - jan_leike
+  - patrick_collison
+  - abdubs
+  - offline
+  - muyfashionista
+  - sylviajade
+  - lugui
+  - rudish
+  - elektronisade
+  - aznironman
+  - webhead
+  - stevenramenby
+  - jerrybobs
+  - chief_executive
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Inspired by Patrick Collison's [Fast Grants](https://future.com/what-we-learned-doing-fast-grants/), Jan Leike is [launching his own](https://openai.com/blog/superalignment-fast-grants):
 

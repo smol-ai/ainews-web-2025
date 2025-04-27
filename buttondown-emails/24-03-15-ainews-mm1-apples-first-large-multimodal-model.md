@@ -1,13 +1,62 @@
 ---
 id: 769f97bd-e196-43ce-a5a9-8215666675eb
-title: '[AINews] MM1: Apple''s first Large Multimodal Model'
+title: 'MM1: Apple''s first Large Multimodal Model'
 date: '2024-03-15T23:34:51.378733Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mm1-apples-first-large-multimodal-model
+description: >-
+  **Apple** announced the **MM1** multimodal LLM family with up to **30B
+  parameters**, claiming performance comparable to **Gemini-1**. The model
+  excels on VQA benchmarks despite their flaws and shows potential for embodied
+  agents and business/education applications. **Yann LeCun** emphasized the need
+  for AI systems to understand the physical world and plan hierarchically to
+  reach human-level intelligence. **Cohere** released **Command-R** for
+  Retrieval Augmented Generation, and **Anthropic** expanded the **Claude 3**
+  family with Opus, Sonnet, and Haiku models targeting various use cases.
+  Open-source hardware **DexCap** enables dexterous robot manipulation training.
+  Tools like **CopilotKit** simplify AI integration into React apps, and
+  LangChain added an open-source financial agent. Discussions highlighted the
+  ongoing challenges in NLP and AI progress, with insights from **Yann LeCun**
+  and **François Chollet**.
+companies:
+  - apple
+  - cohere
+  - anthropic
+  - huggingface
+  - langchain
+models:
+  - mm1
+  - gemini-1
+  - command-r
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+topics:
+  - multimodality
+  - vqa
+  - fine-tuning
+  - retrieval-augmented-generation
+  - open-source
+  - robotics
+  - model-training
+  - react
+  - rag
+  - financial-agents
+  - model-evaluation
+  - planning
+  - reasoning
+people:
+  - ylecun
+  - fchollet
+  - arankomatsuzaki
+  - dl_weekly
+  - deep-learning-ai
+  - drjimfan
+  - alexalbert__
+  - svpino
+  - jeremyphoward
+  - virattt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/14/2024-3/15/2024. We checked [**358** Twitters](https://twitter.com/i/lists/1585430245762441216) and **20** Discords (**332** channels, and **2839** messages) for you. Estimated reading time saved (at 200wpm): **353 minutes**.
 

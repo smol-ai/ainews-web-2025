@@ -1,13 +1,52 @@
 ---
 id: 5daa80d8-1d76-461d-9b2e-facedc00251c
-title: '[AINews] GPT4Turbo A/B Test: gpt-4-1106-preview'
+title: 'GPT4Turbo A/B Test: gpt-4-1106-preview'
 date: '2024-01-26T22:07:42.174546Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt4turbo-ab-test-gpt-4-1106-preview
+description: >-
+  **OpenAI** released a new **GPT-4 Turbo** version in January 2024, prompting
+  community discussions on summarization and model performance. Discord
+  communities like **TheBloke** and **Nous Research AI** highlighted issues such
+  as model loading errors with **OpenHermes-2.5-Mistral-7B-4.0bpw**, debates on
+  infrastructure like RHEL, and challenges in fine-tuning with **LangChain** for
+  **Llama2**. Users reported **GPT-4** API speed inconsistencies and explored
+  prompt engineering techniques with **GPT-3.5** and **GPT-4 Turbo**. Problems
+  with **DALL-E** generating typos in images were noted. Extended context window
+  capabilities were discussed, including **Mistral instruct v0.2** disabling
+  sliding windows and **LLaMA-2-7B-Chat** achieving a 16,384 token context
+  window. The community also explored non-finetuning methods like **SelfExtend**
+  for context extension.
+companies:
+  - openai
+  - huggingface
+  - mistral-ai
+  - thebloke
+  - nous-research
+models:
+  - gpt-4-turbo
+  - gpt-4
+  - gpt-3.5
+  - openhermes-2.5-mistral-7b-4.0bpw
+  - llama-2-7b-chat
+  - mistral-instruct-v0.2
+  - llama-2
+  - llama2
+topics:
+  - model-loading
+  - fine-tuning
+  - prompt-engineering
+  - api
+  - context-window
+  - model-compatibility
+  - extended-context
+  - model-performance
+  - token-limits
+  - dataset-generation
+  - speed-optimization
+  - error-handling
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/25/2024. We checked **20** guilds, **297** channels, and **5898** messages for you. Estimated reading time saved (at 200wpm): **557 minutes**.
 

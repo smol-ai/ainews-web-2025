@@ -1,13 +1,56 @@
 ---
 id: 5666df5a-ff06-4544-9aa0-3b42b0a11136
-title: '[AINews] o3-mini launches, OpenAI on "wrong side of history"'
+title: o3-mini launches, OpenAI on "wrong side of history"
 date: '2025-02-01T09:16:19.878807Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-o3-mini-launches-openai-on-wrong-side-of
+description: >-
+  **OpenAI** released **o3-mini**, a new reasoning model outperforming the
+  earlier **o1** model on STEM tasks and safety benchmarks, costing **93% less**
+  per token and available free in ChatGPT with paid API access. **MistralAI**
+  launched **Mistral Small 3 (24B)**, an open-weight model under Apache 2.0
+  license, competitive on GPQA Diamond but behind **Qwen 2.5 32B** and **GPT-4o
+  mini** on MATH Level 5, with a fast and cost-effective API. **DeepSeek R1** is
+  supported by **Text-generation-inference v3.1.0** and available via
+  **ai-gradio** and replicate. Sam Altman acknowledged OpenAI's open source
+  strategy shortcomings and credited DeepSeek R1 for influencing assumptions.
+  The update includes significant price cuts and improved transparency on
+  thinking tokens.
+companies:
+  - openai
+  - mistral-ai
+  - togethercompute
+  - fireworksai_hq
+  - ai-gradio
+  - replicate
+models:
+  - o3-mini
+  - o1
+  - mistral-small-3-24b
+  - qwen-2.5-32b
+  - gpt-4o
+  - gpt-4o-mini
+  - deepseek-r1
+  - text-generation-inference-v3.1.0
+topics:
+  - reasoning
+  - safety
+  - benchmarking
+  - cost-efficiency
+  - model-releases
+  - api
+  - open-source
+  - model-performance
+  - fine-tuning
+  - model-optimization
+people:
+  - sama
+  - dan_hendrycks
+  - rishdotblog
+  - swyx
+  - mark_chen
+  - kevin_weil
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**o3-mini is all you need.**
 

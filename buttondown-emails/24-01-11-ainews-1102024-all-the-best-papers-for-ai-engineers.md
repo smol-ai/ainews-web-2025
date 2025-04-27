@@ -1,13 +1,40 @@
 ---
 id: 2acb7ece-903b-4422-9ef7-6afecabd67d4
-title: '[AINews] 1/10/2024: All the best papers for AI Engineers'
+title: '1/10/2024: All the best papers for AI Engineers'
 date: '2024-01-11T08:35:15.099429Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1102024-all-the-best-papers-for-ai
+description: >-
+  **OpenAI** launched the **GPT Store** featuring over **3 million custom
+  ChatGPT models** accessible to Plus, Team, and Enterprise users, with weekly
+  highlights like **AllTrails**. The new **ChatGPT Team** plan offers advanced
+  models including **GPT-4** and **DALL·E 3**, plus collaborative tools with
+  privacy safeguards. Discussions covered rate limit issues, skepticism about
+  the GPT Store's SEO and categorization, and ethical frameworks in prompt
+  engineering such as 'The Sieve'. Additionally, **DeepSeek-MoE** released a
+  range of mixture-of-experts models. The community is actively engaging in AMAs
+  and exploring AI image generation technologies like **DALL·E** and **Stable
+  Diffusion**.
+companies:
+  - openai
+  - deepseek-ai
+models:
+  - chatgpt
+  - gpt-4
+  - dall-e-3
+  - deepseek-moe
+topics:
+  - mixture-of-experts
+  - prompt-engineering
+  - rate-limiting
+  - ethics
+  - image-generation
+  - collaborative-workspaces
+  - privacy
+people:
+  - abdubs
+  - darthgustav
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> This summarizes **18** guilds, **277** channels, and **2029** messages. Estimated reading time saved (at 200wpm): 249 minutes.
 

@@ -1,13 +1,48 @@
 ---
 id: f2d4419f-c61f-46d6-8045-b1d6334d5125
-title: '[AINews] Creating a LLM-as-a-Judge'
+title: Creating a LLM-as-a-Judge
 date: '2024-10-30T23:17:27.255253Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-creating-a-llm-as-a-judge
+description: >-
+  **Anthropic** released details on Claude 3.5 SWEBench+SWEAgent, while
+  **OpenAI** introduced SimpleQA and **DeepMind** launched NotebookLM. **Apple**
+  announced M4 Macbooks, and a new state-of-the-art image model, **Recraft v3**,
+  was revealed. Hamel Husain published a comprehensive 6,000-word article on
+  creating LLM judges using a method called **critique shadowing** to align LLMs
+  with domain experts, addressing the problem of untrusted and unused data in AI
+  teams. The workflow involves expert-reviewed datasets, iterative error fixing,
+  and prompt refinement. Additionally, **Zep** introduced a **temporal knowledge
+  graph** memory layer to improve AI agent memory and reduce hallucinations in
+  retrieval-augmented generation pipelines. **Anthropic's Claude 3.5 Sonnet** is
+  now integrated with GitHub Copilot, expanding AI integration in developer
+  tools. This news highlights advances in AI evaluation, domain expert
+  alignment, memory optimization, and AI tool integration.
+companies:
+  - anthropic
+  - openai
+  - deepmind
+  - apple
+  - zep
+  - perplexity-ai
+  - github
+models:
+  - claude-3.5-sonnet
+  - recraft-v3
+topics:
+  - fine-tuning
+  - model-evaluation
+  - domain-expert-alignment
+  - temporal-knowledge-graphs
+  - memory-optimization
+  - retrieval-augmented-generation
+  - ai-integration
+  - prompt-engineering
+people:
+  - hamel_husain
+  - swyx
+  - alexalbert__
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Critique Shadowing is all you need.**
 

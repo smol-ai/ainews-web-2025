@@ -1,13 +1,64 @@
 ---
 id: 6e45bfbf-a041-4008-bf35-a867965a8c93
-title: '[AINews] Perplexity starts Shopping for you'
+title: Perplexity starts Shopping for you
 date: '2024-11-20T00:43:00.876368Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-perplexity-starts-shopping-for-you
+description: >-
+  **Stripe** launched their Agent SDK, enabling new AI-native shopping
+  experiences like **Perplexity Shopping** for US Pro members, featuring
+  one-click checkout and free shipping through the **Perplexity Merchant
+  Program**. **Mistral AI** released the **Pixtral Large 124B** multi-modal
+  image model, now supported on **Hugging Face** and integrated with **Le Chat**
+  for image generation. **Cerebras Systems** offers a public inference endpoint
+  for **Llama 3.1 405B** with a 128k context window and high throughput at
+  competitive pricing. **Claude 3.6** shows improved performance but more subtle
+  hallucinations compared to **Claude 3.5**, prompting user debugging efforts.
+  The **Bi-Mamba** 1-bit architecture promises efficient LLM performance with
+  reduced memory use. The **wandb SDK** is preinstalled on Google Colab, and
+  **Pixtral Large** is integrated into **AnyChat** and supported by **vLLM** for
+  easier deployment.
+companies:
+  - stripe
+  - perplexity-ai
+  - mistral-ai
+  - huggingface
+  - cerebras
+  - anthropic
+  - weights-biases
+  - google
+  - vllm-project
+  - anychat
+models:
+  - pixtral-large-124b
+  - llama-3.1-405b
+  - claude-3.6
+  - claude-3.5
+  - bi-mamba
+topics:
+  - multi-modal-models
+  - image-generation
+  - inference-endpoints
+  - context-windows
+  - model-performance
+  - hallucination-detection
+  - model-debugging
+  - model-efficiency
+  - sdk-integration
+  - ai-shopping
+  - one-click-checkout
+people:
+  - patrick_collison
+  - jeff_weinstein
+  - mervenoyann
+  - sophiamyang
+  - artificialanlys
+  - yuchenj_uw
+  - tim_dettmers
+  - omarsar0
+  - akhaliq
+  - aravsrinivas
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Stripe SDK is all you need?**
 

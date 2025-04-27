@@ -1,13 +1,53 @@
 ---
 id: 461f40b5-4290-495d-8ed4-16c0908c6215
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-28T01:20:31.459275Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-3156
+description: >-
+  **OpenAI** announced the new **GPT-4o** model with enhanced
+  instruction-following, complex problem-solving, and native image generation
+  capabilities, now available in the API. The model shows improvements in math,
+  coding, and creativity, with notable features like transparent background
+  image generation. Discussions around content filtering and policy for image
+  generation highlight a balance between creative freedom and harm prevention.
+  **DeepSeek V3-0324** APIs, including offerings on **Hugging Face** via
+  **SambaNovaAI**, lead benchmarks surpassing **Gemini 2.0 Pro** and **Claude
+  3.7 Sonnet**. **Gemini 2.5 Pro** is recommended for coding, and **Gemini 3**
+  deployment is simplified on Google Cloud Vertex AI with the new Model Garden
+  SDK. The **Gemma 3 Technical Report** is now available on arXiv.
+companies:
+  - openai
+  - huggingface
+  - sambanova
+  - google-deepmind
+  - deepseek
+models:
+  - gpt-4o
+  - gpt-4o-latest
+  - deepseek-v3-0324
+  - gemini-2.5-pro
+  - gemini-3
+  - claude-3.7-sonnet
+topics:
+  - instruction-following
+  - image-generation
+  - model-performance
+  - api
+  - coding
+  - model-deployment
+  - benchmarking
+  - content-moderation
+  - policy
+people:
+  - sama
+  - abacaj
+  - joannejang
+  - giffmana
+  - lmarena_ai
+  - _philschmid
+  - nrehiew_
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

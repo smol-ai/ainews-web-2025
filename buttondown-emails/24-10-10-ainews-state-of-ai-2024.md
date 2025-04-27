@@ -1,13 +1,52 @@
 ---
 id: 10190a60-a023-4cf0-9c90-2cb19e6e37f0
-title: '[AINews] State of AI 2024'
+title: State of AI 2024
 date: '2024-10-10T22:35:38.089325Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-state-of-ai-2024
+description: >-
+  **Nathan Benaich's State of AI Report** in its 7th year provides a
+  comprehensive overview of AI research and industry trends, including
+  highlights like **BitNet** and the synthetic data debate. **Cerebras** is
+  preparing for an IPO, supported by the Compute Index reflecting its market
+  emergence. The funding landscape is also summarized. A hackathon hosted by
+  **Daily** and the open-source **Pipecat** community focuses on conversational
+  voice AI and multimodal experiences, with sponsors like **Cartesia** and
+  **Google Cloud Platform (GCP)**. Nobel Prizes in Physics and Chemistry were
+  awarded for AI research: Geoffrey Hinton and John Hopfield for neural networks
+  and statistical mechanics, and Demis Hassabis, John Jumper, and David Baker
+  for AlphaFold and protein structure prediction. **Meta** released **Llama
+  3.2** with multimodal capabilities, and **Anthropic** announced updates.
+companies:
+  - cerebras
+  - daily
+  - pipecat
+  - cartesia
+  - google
+  - meta-ai-fair
+  - anthropic
+models:
+  - llama-3-2
+  - bitnet
+topics:
+  - multimodality
+  - neural-networks
+  - protein-structure-prediction
+  - synthetic-data
+  - compute-index
+  - funding
+  - conversational-ai
+  - voice-ai
+  - hackathon
+people:
+  - geoffrey_hinton
+  - john_hopfield
+  - demis_hassabis
+  - john_jumper
+  - david_baker
+  - ylecun
+  - mark_riedl
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**204 slides is all you need to catch up on AI.**
 

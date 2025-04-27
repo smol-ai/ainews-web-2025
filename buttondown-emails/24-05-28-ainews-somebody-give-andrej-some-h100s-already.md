@@ -1,13 +1,44 @@
 ---
 id: b863d96e-eb38-4240-ace3-59652884734d
-title: '[AINews] Somebody give Andrej some H100s already'
+title: Somebody give Andrej some H100s already
 date: '2024-05-29T01:24:27.055047Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-somebody-give-andrej-some-h100s-already
+description: >-
+  **OpenAI**'s early controversy with **GPT-2** is contrasted with recent
+  advances where a tiny GPT-2 model can be trained in 90 minutes for $20 using
+  8xA100 GPUs, thanks to **FineWeb** and work by **Andrej Karpathy**. The
+  training stack aims to be much smaller than the current bulky PyTorch + CUDA
+  ecosystem, potentially reducing costs and complexity. On Twitter, **Yann
+  LeCun** and **Elon Musk** debated the use of **Convolutional Neural Networks
+  (CNNs)** in Tesla's Full Self-Driving system, with LeCun emphasizing CNNs'
+  efficiency over attention mechanisms for real-time image processing. LeCun
+  also criticized AI doomsday scenarios and cautioned against premature AI
+  regulation, highlighting the risk of monopolization and overregulation.
+companies:
+  - openai
+  - meta-ai-fair
+  - nvidia
+  - tesla
+models:
+  - gpt-2
+topics:
+  - cuda
+  - fine-tuning
+  - convolutional-neural-networks
+  - real-time-processing
+  - gpu-optimization
+  - ai-safety
+  - ai-regulation
+people:
+  - karpathy
+  - ylecun
+  - elonmusk
+  - fchollet
+  - svpino
+  - mervenoyann
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**C+CUDA is all you need.**
 

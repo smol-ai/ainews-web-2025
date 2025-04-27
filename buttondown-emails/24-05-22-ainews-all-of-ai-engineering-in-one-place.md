@@ -1,13 +1,99 @@
 ---
 id: cb95bcde-3d85-4898-9cc4-6b7272ca5b88
-title: '[AINews] ALL of AI Engineering in One Place'
+title: ALL of AI Engineering in One Place
 date: '2024-05-23T01:22:53.232395Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-top-ai-engineer
+description: >-
+  The upcoming **AI Engineer World's Fair** in San Francisco from **June 25-27**
+  will feature **top AI labs** like **OpenAI, DeepMind, Anthropic, Mistral,
+  Cohere, HuggingFace**, and **Midjourney**, alongside major cloud providers
+  **Microsoft Azure, Amazon AWS, Google Vertex** and leading companies deploying
+  AI such as **Nvidia, Salesforce, Mastercard, Palo Alto Networks**, and more.
+  The event includes **9 tracks** covering topics like **RAG, multimodality,
+  evals/ops, open models, code generation, GPUs, agents, AI in Fortune 500, and
+  AI leadership**, plus **50+ workshops and expo sessions**. Additionally,
+  **Anthropic** shared interpretability research on **Claude 3 Sonnet**,
+  revealing millions of interpretable features extracted via dictionary
+  learning, including safety-relevant features related to bias, dishonesty, and
+  dangerous content, with potential for feature steering to modify model
+  behavior. This research is preliminary and calls for further study.
+companies:
+  - openai
+  - google-deepmind
+  - anthropic
+  - mistral-ai
+  - cohere
+  - hugging-face
+  - adept
+  - midjourney
+  - character.ai
+  - microsoft
+  - amazon
+  - nvidia
+  - salesforce
+  - mastercard
+  - palo-alto-networks
+  - axa
+  - novartis
+  - discord
+  - twilio
+  - tinder
+  - khan-academy
+  - sourcegraph
+  - mongodb
+  - neo4j
+  - hasura
+  - modular
+  - cognition
+  - anysphere
+  - perplexity-ai
+  - groq
+  - mozilla
+  - nous-research
+  - galileo
+  - unsloth
+  - langchain-ai
+  - llamaindex
+  - instructor
+  - weights-biases
+  - lambda-labs
+  - neptune
+  - datastax
+  - crusoe
+  - covalent
+  - qdrant
+  - baseten
+  - e2b
+  - octo-ai
+  - gradient-ai
+  - lancedb
+  - log10
+  - deepgram
+  - outlines
+  - crew-ai
+  - factory-ai
+models:
+  - claude-3-sonnet
+  - claude-3
+topics:
+  - interpretability
+  - feature-steering
+  - safety
+  - multimodality
+  - rag
+  - evals-ops
+  - open-models
+  - code-generation
+  - gpus
+  - agents
+  - ai-leadership
+  - workshops
+  - expo
+  - ai-engineering
+people:
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Deep IRL networks are all you need! Jun 25-27 in SF.**
 

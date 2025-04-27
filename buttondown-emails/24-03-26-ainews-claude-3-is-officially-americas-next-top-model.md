@@ -1,13 +1,61 @@
 ---
 id: 83d2a258-8434-45ba-9fea-46fb1d7833d6
-title: '[AINews] Claude 3 is officially America''s Next Top Model'
+title: Claude 3 is officially America's Next Top Model
 date: '2024-03-27T00:11:55.849429Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-claude-3-is-officially-americas-next-top
+description: >-
+  **Claude 3 Opus** now slightly outperforms **GPT-4 Turbo** in blind Elo
+  rankings, with **Claude 3 Sonnet** and **Haiku** beating some versions of
+  **GPT-4** and **Mistral Large** in cost-performance tradeoffs. Fine-tuning
+  techniques like **QLoRA** on **Mistral 7B** enable efficient model adaptation.
+  Evolutionary model merging from **HuggingFace** unlocks new capabilities with
+  less compute. Public opinion strongly favors banning ASI development,
+  highlighting societal concerns. Alignment research continues with efforts in
+  interpretability and eliciting human preferences. The **Stable Diffusion 3
+  (SD3)** release raises workflow concerns in the community. **Opus** shows a 5%
+  performance dip on **OpenRouter** compared to the **Anthropic API**. A new
+  benchmark stresses LLM recall at long contexts, with **Mistral 7B** struggling
+  and **Qwen 72b** showing promise.
+companies:
+  - anthropic
+  - mistral-ai
+  - huggingface
+models:
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - gpt-4-turbo
+  - mistral-7b
+  - qwen-72b
+topics:
+  - fine-tuning
+  - model-merging
+  - alignment
+  - interpretability
+  - cost-efficiency
+  - benchmarking
+  - long-context
+  - model-performance
+  - ai-ethics
+  - societal-impact
+  - reinforcement-learning
+  - memes
+  - deepfake
+  - workflow-integration
+people:
+  - virattt
+  - drjimfan
+  - aisafetymemes
+  - mark_riedl
+  - jachiam0
+  - ethanjperez
+  - stuhlmueller
+  - ylecun
+  - aravsrinivas
+  - nearcyan
+  - teknium1
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/25/2024-3/26/2024. We checked [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**342** channels, and **5104** messages) for you. Estimated reading time saved (at 200wpm): **546 minutes**.
 

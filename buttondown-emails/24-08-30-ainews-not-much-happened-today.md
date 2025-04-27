@@ -1,13 +1,52 @@
 ---
 id: 7de5091f-80d2-45af-b049-8df262bd2e14
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-08-31T00:41:42.203560Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5498
+description: >-
+  This AI news update highlights **Meta's LLaMA 3.1** model adoption with nearly
+  **350 million downloads**, **Magic AI Labs' LTM-2-Mini** model featuring a
+  **100 million token context window**, and **Alibaba's Qwen2-VL** multimodal
+  LLM release under Apache 2.0 license. **LMSys** introduced style control in AI
+  evaluation leaderboards, improving rankings for models like **Claude 3.5
+  Sonnet** and **Llama-3.1-405B**. **OpenAI CEO @sama** announced collaboration
+  with the US AI Safety Institute for pre-release model testing, while
+  **@ajeya_cotra** raised concerns about AI takeover risks. Tools like
+  **firecrawl** for web crawling and challenges in PDF processing were
+  discussed. Market trends include AI hype cycles and potential disruption of
+  the call center industry by AI agents.
+companies:
+  - meta-ai-fair
+  - magic-ai-labs
+  - alibaba
+  - lmsys
+  - openai
+models:
+  - llama-3-1
+  - llama-3-1-405b
+  - claude-3-5-sonnet
+  - qwen2-vl
+  - ltm-2-mini
+topics:
+  - long-context
+  - style-control
+  - multimodality
+  - ai-safety
+  - model-evaluation
+  - web-crawling
+  - pdf-processing
+  - market-trends
+  - ai-hype
+  - call-center-automation
+people:
+  - sama
+  - ajeya_cotra
+  - rohanpaul_ai
+  - svpino
+  - fchollet
+  - philschmid
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**3 day weekends are all you need.**
 

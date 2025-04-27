@@ -1,13 +1,71 @@
 ---
 id: 71868cce-79a2-4ff0-af3e-13d4e6017711
-title: '[AINews] DeepSeek-V2 beats Mixtral 8x22B with >160 experts at HALF the cost'
+title: DeepSeek-V2 beats Mixtral 8x22B with >160 experts at HALF the cost
 date: '2024-05-06T23:37:03.494203Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseek-v2-beats-mixtral-8x22b
+description: >-
+  **DeepSeek V2** introduces a new state-of-the-art MoE model with **236B
+  parameters** and a novel Multi-Head Latent Attention mechanism, achieving
+  faster inference and surpassing GPT-4 on AlignBench. **Llama 3 120B** shows
+  superior creative writing compared to GPT-4 but mixed reasoning results.
+  Microsoft is reportedly developing a **500B parameter LLM called MAI-1**.
+  Research from Scale AI highlights overfitting issues in models like
+  **Mistral** and **Phi**, while **GPT-4**, **Claude**, **Gemini**, and
+  **Llama** maintain robustness. In robotics, **Tesla Optimus** advances with
+  improved teleoperation and data collection, Nvidia's **DrEureka** automates
+  robot skill training, and open-source robotics AI emerges with **LeRobot**.
+  Google introduces **Med-Gemini**, fine-tuned for medical AI tasks with top
+  benchmark performance. A paper overviewing hallucinations in multimodal LLMs
+  discusses detection and mitigation strategies.
+companies:
+  - deepseek-ai
+  - mistral-ai
+  - scale-ai
+  - microsoft
+  - openai
+  - anthropic
+  - google-deepmind
+  - nvidia
+  - tesla
+  - lerobot
+  - google
+models:
+  - deepseek-v2
+  - llama-3-120b
+  - llama-3-400b
+  - gpt-4
+  - mistral
+  - phi
+  - claude
+  - gemini
+  - mai-1
+  - drureka
+  - med-gemini
+topics:
+  - mixture-of-experts
+  - multi-head-attention
+  - model-optimization
+  - benchmarking
+  - overfitting
+  - robotics
+  - teleoperation
+  - simulation-to-real
+  - multimodality
+  - hallucination-detection
+  - fine-tuning
+  - medical-ai
+  - model-training
+people:
+  - erhartford
+  - maximelabonne
+  - bindureddy
+  - adcock_brett
+  - drjimfan
+  - clementdelangue
+  - omarsar0
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 5/3/2024-5/6/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**419** channels, and **10335** messages) for you. Estimated reading time saved (at 200wpm): **1112 minutes**.
 

@@ -1,13 +1,54 @@
 ---
 id: 673a1f3a-267d-4d1b-a03d-73462dbe536b
-title: '[AINews] Not much happened today'
+title: Not much happened today
 date: '2024-04-02T21:04:12.327421Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-8015
+description: >-
+  **RAGFlow** open sourced, offering deep document understanding with a 16.3k
+  context length and natural language instruction support. **Lightblue**
+  released **Jamba v0.1**, a 52B parameter MoE model, though some users found
+  its outputs repetitive. **Cohere**'s **Command-R** model is noted for good
+  performance but limited discussion. Analysis of **GPT-3.5-Turbo** reveals an
+  embedding size of 4096 and about 7B parameters, comparable to
+  **OpenChat-3.5-0106** and **Mixtral-8x7B**. AI chatbots, including **GPT-4**,
+  outperform humans in debates, persuading opponents more effectively.
+  **Mistral-7B** made amusing errors on a simple math riddle. Hardware
+  highlights include a discounted **HGX H100** machine with 8 H100 GPUs bought
+  for $58k, and CPU comparisons between **Epyc 9374F** and **Threadripper
+  1950X** for LLM inference. GPU recommendations for local LLMs focus on VRAM
+  and inference speed, with users testing models like
+  **Midnight-miqu-70b-v1.0.q5_k_s** on an RTX 4090 setup. **Stable Diffusion**
+  usage reportedly reduces gaming time as users shift to creative AI
+  exploration. A study reveals bias in AI art evaluation, with people preferring
+  AI art when believed to be human-made.
+companies:
+  - lightblue
+  - cohere
+  - openai
+  - mistral-ai
+  - nvidia
+models:
+  - jamba-v0.1
+  - command-r
+  - gpt-3.5-turbo
+  - openchat-3.5-0106
+  - mixtral-8x7b
+  - mistral-7b
+  - midnight-miqu-70b-v1.0.q5_k_s
+topics:
+  - deep-document-understanding
+  - mixture-of-experts
+  - model-analysis
+  - debate-ai
+  - hardware-performance
+  - cpu-comparison
+  - gpu-recommendations
+  - local-llm
+  - stable-diffusion
+  - bias-in-ai-art-evaluation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/1/2024-4/2/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**382** channels, and **4481** messages) for you. Estimated reading time saved (at 200wpm): **463 minutes**.
 

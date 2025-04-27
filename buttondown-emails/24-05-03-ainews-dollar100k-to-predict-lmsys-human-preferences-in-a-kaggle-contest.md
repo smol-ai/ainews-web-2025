@@ -1,13 +1,53 @@
 ---
 id: 4caf2d11-37e1-4ed4-9a10-356e62c70c59
-title: '[AINews] $100k to predict LMSYS human preferences in a Kaggle contest'
+title: $100k to predict LMSYS human preferences in a Kaggle contest
 date: '2024-05-03T22:09:28.423042Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-3049
+description: >-
+  This week's AI news highlights a new **Kaggle competition** offering a
+  **$100,000 prize** to develop models predicting human preferences from a
+  dataset of **55,000+ user and LLM conversations**. **Groq's Llama 3 70B
+  model** achieves record low token costs, while **DrEureka** demonstrates
+  zero-shot robot skill training. Benchmarking advances include **Prometheus
+  2**, an open-source evaluator LLM outperforming GPT-4 and Claude 3 Opus. New
+  datasets like **WildChat1M** with 2.5M ChatGPT turns and the **GSM1K** dataset
+  reveal prompt sensitivity issues. Efficient training techniques such as
+  **4-bit LoRA fine-tuning** outperform GPT-4 by 10 points on average, and
+  **NVIDIA's NeMo-Aligner** scales alignment training across hundreds of GPUs.
+  Factuality-aware alignment methods aim to reduce hallucinations in LLM
+  outputs.
+companies:
+  - groq
+  - openai
+  - scale-ai
+  - lmsys
+  - ai2
+  - nvidia
+models:
+  - llama-3-70b
+  - claude-3-opus
+  - prometheus-2
+  - gpt-4
+  - dreuera
+topics:
+  - benchmarking
+  - datasets
+  - fine-tuning
+  - reinforcement-learning
+  - model-alignment
+  - hallucination
+  - parameter-efficient-fine-tuning
+  - scaling
+  - training
+  - model-evaluation
+people:
+  - bindureddy
+  - drjimfan
+  - percyliang
+  - seungonekim
+  - _akhaliq
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 5/2/2024-5/3/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**418** channels, and **5847** messages) for you. Estimated reading time saved (at 200wpm): **642 minutes**.
 

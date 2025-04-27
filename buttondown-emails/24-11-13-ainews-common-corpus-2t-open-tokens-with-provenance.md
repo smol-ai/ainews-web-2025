@@ -1,13 +1,56 @@
 ---
 id: d946c7f1-6897-4eb2-a880-64a0fab7aea9
-title: '[AINews] Common Corpus: 2T Open Tokens with Provenance'
+title: 'Common Corpus: 2T Open Tokens with Provenance'
 date: '2024-11-14T01:54:53.118250Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-common-corpus-2t-open-tokens-with
+description: >-
+  **Pleais** via **Huggingface** released **Common Corpus**, the largest fully
+  open multilingual dataset with over **2 trillion tokens** including detailed
+  **provenance information**. They also introduced **OCRonos-Vintage**, a
+  **124M-parameter OCR correction model** that efficiently fixes digitization
+  errors on CPU and GPU, enhancing knowledge extraction from PDFs. On AI tools,
+  **LangChainAI** launched **Prompt Canvas** for collaborative **prompt
+  engineering**, while **DeepSeek** unveiled **JanusFlow 1.3B**, a unified
+  multimodal LLM combining autoregressive models with rectified flow for
+  improved **image understanding** and generation. **Alibaba Cloud** released
+  **Qwen2.5-Coder**, a code-focused LLM with advanced coding capabilities, and
+  **Claude 3.5 Sonnet** demonstrated superior code generation performance.
+  Discussions on **quantization challenges** and **scaling laws for precision**
+  highlighted the impact of low-precision training on model scalability and
+  inference efficiency, with insights from **Tim Dettmers** and others.
+companies:
+  - pleais
+  - huggingface
+  - langchain-ai
+  - deepseek
+  - alibaba
+  - anthropic
+models:
+  - qwen-2.5-coder
+  - claude-3.5-sonnet
+  - janusflow-1.3b
+topics:
+  - provenance
+  - dataset-release
+  - ocr
+  - multilinguality
+  - prompt-engineering
+  - multimodality
+  - image-generation
+  - code-generation
+  - quantization
+  - scaling-laws
+  - model-efficiency
+people:
+  - tom_doerr
+  - omarsar0
+  - swyx
+  - reach_vb
+  - tim_dettmers
+  - madiator
+  - lateinteraction
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Provenance is all you need.**
 

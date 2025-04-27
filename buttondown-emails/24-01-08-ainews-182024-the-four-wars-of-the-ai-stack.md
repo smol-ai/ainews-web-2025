@@ -1,13 +1,58 @@
 ---
 id: 2f78c3db-d078-41d9-96c1-9feb81775d69
-title: '[AINews] 1/8/2024: The Four Wars of the AI Stack'
+title: '1/8/2024: The Four Wars of the AI Stack'
 date: '2024-01-09T07:39:51.817056Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-182024-the-four-wars-of-the-ai-stack
+description: >-
+  **Nous Research AI** Discord discussions covered various topics including the
+  **Obsidian Project** utilizing **DINO**, **CLIP**, and **CNNs**; challenges
+  and solutions for cloud-based LLM services via distributed models like
+  **DistAttention** and **DistKV-LLM**; and a paper on **self-extending LLM
+  context windows** without tuning. The community also discussed AI models like
+  **Mistral**, **Mixtral** (noted for its 32k context window), and **TinyLLAM**.
+  Other highlights include the launch of the **AgentSearch-V1** dataset with one
+  billion embedding vectors, applications of LLMs in the oil & gas industry, and
+  fine-tuning techniques using synthetic data. The conversations reflect active
+  research and experimentation in **long-context handling**, **distributed LLM
+  architectures**, **hierarchical embeddings**, **agentic retrieval-augmented
+  generation (RAG)**, and **mixture-of-experts (MoE)** implementations.
+  *"Smaller models may hold more processing capabilities than they seem"* was a
+  notable insight shared.
+companies:
+  - nous-research
+  - openai
+  - mistral-ai
+  - huggingface
+models:
+  - mistral
+  - mixtral
+  - tinyllam
+topics:
+  - long-context
+  - distributed-models
+  - hierarchical-embeddings
+  - agentic-rag
+  - fine-tuning
+  - mixture-of-experts
+  - embedding-vectors
+  - context-window
+  - cloud-based-llm-services
+people:
+  - qnguyen3
+  - maxwellandrews
+  - kenakafrosty
+  - adjectiveallison
+  - leontello
+  - deki04
+  - vincentweisser
+  - gabriel_syme
+  - n8programs
+  - realsedlyf
+  - kapnap_n
+  - teknium
+  - ocolegro
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Not much happened in the discords today, so time to plug our Latent Space 2023 recap! 
 

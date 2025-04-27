@@ -1,15 +1,50 @@
 ---
 id: 88d8fa16-a359-48ca-8b50-fe959a5c6924
-title: >-
-  [AINews] Gemma 3 beats DeepSeek V3 in Elo, 2.0 Flash beats GPT4o with Native
-  Image Gen
+title: Gemma 3 beats DeepSeek V3 in Elo, 2.0 Flash beats GPT4o with Native Image Gen
 date: '2025-03-13T01:01:43.616815Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemma-3-beats-deepseek-v3-in-elo-20-flash
+description: >-
+  **Google DeepMind** launched the **Gemma 3** family of models featuring a
+  **128k context window**, **multimodal input (image and video)**, and
+  **multilingual support for 140+ languages**. The **Gemma 3-27B** model ranks
+  top 10 overall on LMArena benchmarks, outperforming models like **o3-mini**,
+  **DeepSeek V3**, and **Claude 3.7 Sonnet**. Additionally, **Gemini 2**
+  introduced **Flash Native Image Generation** with advanced image editing
+  capabilities, a feature teased by OpenAI but not released. The models
+  emphasize memory efficiency via quantization and incorporate a vision encoder
+  based on SigLIP. This release sets a new Pareto frontier for its weight class
+  and subsumes previous models like PaliGemma.
+companies:
+  - google-deepmind
+  - openai
+  - deepseek
+  - anthropic
+models:
+  - gemma-3
+  - gemma-3-27b
+  - gemini-1.5-pro
+  - o1-preview
+  - o3-mini
+  - deepseek-v3
+  - claude-3.7-sonnet
+topics:
+  - multimodality
+  - multilinguality
+  - context-window
+  - quantization
+  - vision
+  - image-generation
+  - benchmarking
+  - model-training
+people:
+  - osanseviero
+  - _philschmid
+  - reach_vb
+  - scaling01
+  - danielhanchen
+  - lmarena_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GDM is all you need.**
 

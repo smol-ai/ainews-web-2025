@@ -1,13 +1,36 @@
 ---
 id: 02416d00-dc64-487c-ade4-95eb958e04bb
-title: '[AINews] Reflection 70B, by Matt from IT Department'
+title: Reflection 70B, by Matt from IT Department
 date: '2024-09-07T01:17:07.379983Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-reflection-70b-by-matt-from-it-department
+description: >-
+  **Reflection Tuning** technique has been applied by a two-person team from
+  **Hyperwrite** and **Glaive** to finetune **llama-3.1-70b**, showing strong
+  results with minimal synthetic data and drawing on concepts from the **Chain
+  of Thought** literature. Despite some criticisms like **contamination
+  concerns**, weaker coding performance, and reliance on system prompts, the
+  model has received positive reception and comparisons to
+  **claude-3.5-sonnet**. The approach recycles data for better instruction
+  tuning and is related to the "Let's Think Step By Step" methodology.
+companies:
+  - hyperwrite
+  - glaive
+models:
+  - llama-3.1-70b
+  - claude-3.5-sonnet
+topics:
+  - fine-tuning
+  - chain-of-thought
+  - instruction-tuning
+  - synthetic-data
+  - quantization
+  - model-evaluation
+  - prompt-engineering
+people:
+  - matt_shumer
+  - sahil_chaudhary
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Reflection Tuning is all you need?**
 

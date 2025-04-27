@@ -1,13 +1,50 @@
 ---
 id: 0a752f76-32dd-43fc-bc5e-127df72c56cf
-title: '[AINews] FSDP+QLoRA: the Answer to 70b-scale AI for desktop class GPUs'
+title: 'FSDP+QLoRA: the Answer to 70b-scale AI for desktop class GPUs'
 date: '2024-03-08T23:21:13.565774Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-fsdpqlora-the-answer-to-70b-scale-ai-for
+description: >-
+  **Jeremy Howard** and collaborators released a new tool combining **FSDP**,
+  **QLoRA**, and **HQQ** to enable training **70B-parameter** models on
+  affordable consumer GPUs like **RTX 4090s** with 24GB RAM, overcoming
+  traditional memory constraints that required expensive data center GPUs
+  costing over $150k. The approach uses techniques like **4-bit quantization**,
+  **gradient checkpointing**, **CPU offloading**, and **FlashAttention 2** to
+  shard models across multiple GPUs efficiently. This breakthrough narrows the
+  performance gap between gaming and data center GPUs for large model training.
+  Additionally, **Inflection AI** announced **Inflection-2.5**, a model
+  competitive with **GPT-4** but trained with less compute, and **Grok**
+  improved speed by 3x. **Yann LeCun** discussed multi-step reasoning training
+  methods like **Chain-of-Abstraction** for LLMs.
+companies:
+  - answer.ai
+  - huggingface
+  - meta-ai-fair
+  - mobiusml
+  - inflectionai
+  - openai
+models:
+  - gpt-4
+  - inflection-2.5
+  - claude-3-opus
+  - grok
+topics:
+  - model-training
+  - quantization
+  - memory-optimization
+  - gradient-checkpointing
+  - cpu-offloading
+  - flashattention
+  - model-sharding
+  - fine-tuning
+  - chain-of-abstraction
+  - multi-step-reasoning
+people:
+  - jeremyphoward
+  - tim_dettmers
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/7/2024-3/8/2024. We checked [**356** Twitters](https://twitter.com/i/lists/1585430245762441216) and **20** Discords (**326** channels, and **2933** messages) for you. Estimated reading time saved (at 200wpm): **366 minutes**.
 

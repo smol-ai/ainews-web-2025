@@ -1,13 +1,50 @@
 ---
 id: c0d7868b-224b-4597-a78c-7e5f396130d6
-title: '[AINews] >$41B raised today (OpenAI @ 300b, Cursor @ 9.5b, Etched @ 1.5b)'
+title: '>$41B raised today (OpenAI @ 300b, Cursor @ 9.5b, Etched @ 1.5b)'
 date: '2025-04-01T06:33:20.931042Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-41b-raised-today-openai-300b-cursor-95b
+description: >-
+  **OpenAI** is preparing to release its first highly capable open language
+  model since GPT-2, engaging developers for feedback to ensure utility.
+  **DeepSeek V3 0324** ranks #5 on the Arena leaderboard and is the top open
+  model with an MIT license, offering cost advantages. **Gemini 2.5 Pro**
+  outperforms models like **Claude 3.7 Sonnet** in coding tasks, with a
+  production version and pricing expected soon. **Cursor** and **Etched** closed
+  significant funding rounds at $625M and $85M respectively, marking major
+  startup valuations. New tools and frameworks like **SkyPilot's SkyServe** and
+  **AgentEvals** are advancing AI deployment and evaluation. Key figures such as
+  *@kevinweil*, *@sama*, *@scaling01*, and *@karpathy* provide insights on model
+  releases, privacy, and AI progress.
+companies:
+  - openai
+  - deepseek
+  - amazon
+  - cursor
+  - etched
+  - skypilot
+  - agent-evals
+models:
+  - deepseek-v3-0324
+  - gemini-2.5-pro
+  - claude-3.7-sonnet
+  - gpt-2
+topics:
+  - open-models
+  - model-releases
+  - model-performance
+  - coding
+  - model-pricing
+  - cost-efficiency
+  - ai-deployment
+  - agent-evaluation
+  - privacy
+people:
+  - kevinweil
+  - sama
+  - scaling01
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**More money is all you need**
 

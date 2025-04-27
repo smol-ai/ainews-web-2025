@@ -1,13 +1,53 @@
 ---
 id: fd6ab5f1-7943-4163-bff1-af1c235853f7
-title: '[AINews] 12/9/2023: The Mixtral Rush'
+title: '12/9/2023: The Mixtral Rush'
 date: '2023-12-09T23:30:00.926075Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1292023-the-mixtral-rush
+description: >-
+  **Mixtral's weights** were released without code, prompting the **Disco
+  Research community** and **Fireworks AI** to implement it rapidly. Despite
+  active discussions on **benchmarking** and **model sampling techniques** like
+  Min P and Top P, no significant benchmark improvements were reported yet. The
+  **Mixtral model** was implemented using **HuggingFace transformers** and
+  showed performance comparable to a 70B parameter model with about 12B compute
+  and 47B memory requirements. Users also debated **model merging tactics**,
+  **quantization via GPTQ**, and the adaptability of models under different
+  sampling conditions. Discussions included benchmarks such as **winogrande**,
+  **truthfulqa_mc2**, and **arc_challenge**, and explored detection strategies
+  to prevent cheating in evaluations.
+companies:
+  - discoresearch
+  - fireworks-ai
+  - huggingface
+models:
+  - mixtral
+  - hermes-2.5
+  - hermes-2
+  - mistral
+  - ultrachat
+  - mistral-yarn
+topics:
+  - benchmarking
+  - model-sampling
+  - quantization
+  - model-merging
+  - huggingface-transformers
+  - memory-optimization
+  - gpu-requirements
+  - chain-of-thought
+  - min-p-sampling
+  - top-p-sampling
+  - model-performance
+  - reasoning-consistency
+people:
+  - bjoernp
+  - the_bloke
+  - rtyax
+  - calytrix
+  - kalomaze
+  - solbus
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Mixtral's weights were released without code, so overnight the Disco Research community (newly added) blew up to implement it:
 

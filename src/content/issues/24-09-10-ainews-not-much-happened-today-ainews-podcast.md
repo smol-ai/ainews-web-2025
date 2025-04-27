@@ -45,7 +45,7 @@ topics:
   - benchmarking
   - novelty-detection
 people:
-  - dan-hendrycks
+  - danhendrycks
   - benjamin-clavie
   - bclavie
   - bindureddy

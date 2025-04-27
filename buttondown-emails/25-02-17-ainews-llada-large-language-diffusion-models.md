@@ -1,13 +1,52 @@
 ---
 id: 4466a990-74f9-45b5-9f9d-8903f3cf38e0
-title: '[AINews] LLaDA: Large Language Diffusion Models'
+title: 'LLaDA: Large Language Diffusion Models'
 date: '2025-02-18T03:27:47.627285Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-llada-large-language-diffusion-models
+description: >-
+  **LLaDA (Large Language Diffusion Model) 8B** is a breakthrough
+  diffusion-based language model rivaling **LLaMA-3 8B** in performance while
+  trained on **7x fewer tokens (2T tokens)** and using **0.13 million H800 GPU
+  hours**. It introduces a novel text generation approach using diffusion to
+  predict uniformly masked tokens, enabling coherent long-form and multi-turn
+  dialogue capabilities. Other notable releases include **Step-Video-T2V 30B**,
+  a text-to-video model generating up to **204 frames** with high quality and
+  motion coherence, and **Step-Audio-Chat 132B**, a voice-to-voice model.
+  Evaluation benchmarks like **Scale AI's EnigmaEval** and **Cambridge's
+  ZeroBench** highlight the difficulty of current frontier models on multimodal
+  and multi-step visual reasoning tasks. The diffusion model approach marks a
+  significant alternative to traditional autoregressive architectures.
+companies:
+  - stepfun-ai
+  - scale-ai
+  - cambridge
+  - llamaindex
+models:
+  - llada-8b
+  - llama-3-8b
+  - step-video-t2v-30b
+  - step-audio-chat-132b
+topics:
+  - diffusion-models
+  - text-generation
+  - multimodality
+  - video-generation
+  - voice-generation
+  - benchmarking
+  - multi-step-reasoning
+  - instruction-following
+  - model-scaling
+  - gpu-optimization
+people:
+  - arankomatsuzaki
+  - _akhaliq
+  - omarsar0
+  - iscienceluvr
+  - gallabytes
+  - maximelabonne
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Chinese AI is all you need?**
 

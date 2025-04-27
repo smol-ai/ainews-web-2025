@@ -1,13 +1,48 @@
 ---
 id: 0ac84141-a02b-474c-9ddd-2cf9fadab854
-title: '[AINews] OpenAI o3, o4-mini, and Codex CLI'
+title: OpenAI o3, o4-mini, and Codex CLI
 date: '2025-04-17T03:17:29.707499Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-openai-o3-o4-mini-and-codex-cli
+description: >-
+  **OpenAI** launched the **o3** and **o4-mini** models, emphasizing
+  improvements in **reinforcement-learning scaling**, **efficiency**, and
+  **multimodal tool use**. The **o4-mini** model is noted as cheaper yet better
+  across prioritized metrics, with enhanced vision and tool capabilities. OpenAI
+  also introduced **Codex CLI**, an open-source coding agent to boost coding
+  tasks with these models. Performance benchmarks show **o3** and **o4-mini**
+  outperforming previous generations and competing models like **Gemini 2.5
+  Pro** and **Sonnet**. Access to these models is available for ChatGPT Plus,
+  Pro, and Team users. Key figures such as *@sama*, *@aidan_clark_*,
+  *@scaling01*, and *@kevinweil* contributed insights on the launch and
+  capabilities.
+companies:
+  - openai
+models:
+  - o3
+  - o4-mini
+  - gemini-2.5-pro
+  - claude-3-sonnet
+topics:
+  - reinforcement-learning
+  - multimodality
+  - tool-use
+  - efficiency
+  - performance
+  - benchmarking
+  - open-source
+  - coding-agent
+  - vision
+people:
+  - sama
+  - _aidan_clark_
+  - scaling01
+  - kevinweil
+  - swyx
+  - markchen90
+  - gdb
+  - polynoamial
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**10x compute on RL is all you need.**
 

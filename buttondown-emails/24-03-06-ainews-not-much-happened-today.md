@@ -1,13 +1,58 @@
 ---
 id: 8942bd61-0918-46c1-8b55-9790321e4d29
-title: '[AINews] Not much happened today'
+title: Not much happened today
 date: '2024-03-07T01:15:26.009590Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today
+description: >-
+  **Anthropic** released **Claude 3**, replacing Claude 2.1 as the default on
+  Perplexity AI, with **Claude 3 Opus** surpassing **GPT-4** in capability.
+  **LangChain** and **LlamaIndex** added support for Claude 3 enabling
+  multimodal and tool-augmented applications. Despite progress, current models
+  still face challenges in out-of-distribution reasoning and robustness.
+  **Cohere** partnered with **Accenture** for enterprise AI search, while
+  **Mistral AI** and **Snowflake** collaborated to offer Mistral's LLMs on
+  Snowflake's platform. **Together AI Research** is accelerating generative AI
+  cloud infrastructure with innovations from **Deepspeed**. **Hugging Face** and
+  the **European Space Agency** released a large earth observation dataset, and
+  **Google** open sourced **Gemma 2B**, optimized for smartphones via the
+  MLC-LLM project. **GPT4All** improved model discoverability for open models.
+  The AI community is active with new model releases, enterprise adoption, open
+  datasets, and social commentary through memes.
+companies:
+  - anthropic
+  - perplexity
+  - langchain
+  - llamaindex
+  - cohere
+  - accenture
+  - mistral-ai
+  - snowflake
+  - together-ai
+  - deepspeed
+  - huggingface
+  - european-space-agency
+  - google
+  - gpt4all
+models:
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3
+  - gpt-4
+  - gemma-2b
+topics:
+  - multimodality
+  - instruction-following
+  - out-of-distribution-generalization
+  - enterprise-ai
+  - cloud-infrastructure
+  - open-datasets
+  - model-deployment
+  - model-discoverability
+  - robustness
+  - image-generation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/5/2024-3/6/2024. We checked [**356** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**353** channels, and **6774** messages) for you. Estimated reading time saved (at 200wpm): **689 minutes**.
 

@@ -1,13 +1,75 @@
 ---
 id: d98ed4a0-b5e7-47b2-8fa7-611b82789b8f
-title: '[AINews] not much happened this weekend'
+title: not much happened this weekend
 date: '2024-10-28T22:27:43.875190Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-this-weekend-2670
+description: >-
+  **Moondream**, a **1.6b vision language model**, secured seed funding,
+  highlighting interest in moon-themed tiny models alongside **Moonshine**
+  (27-61m ASR model). **Claude 3.5 Sonnet** was used for AI Twitter recaps.
+  Discussions included **pattern recognition** vs. **intelligence** in **LLMs**,
+  **reinforcement learning** for **prompt optimization**, and the open-source
+  **NotebookLlama** based on **LLaMA models** for **text-to-speech**. Advances
+  in **async tensor parallelism** in **PyTorch** and **model hyperparameters**
+  like **d_model** and **n_heads** were noted. **Mini-Omni 2** demonstrated
+  **multimodal** capabilities with **image**, **audio**, and **text** inputs. AI
+  productivity tools such as an **AI email writer** and **LlamaCloud** for
+  research assistants were highlighted. Emphasis on practical skill development
+  and privacy-conscious AI tool usage with **Llama3-8B** was discussed.
+  Generative AI tools like **#AIPythonforBeginners** and **LangGraph** for
+  **GenAI agents** were shared. Business insights included rapid execution in AI
+  product development and emerging AI-related job roles. Challenges in
+  enterprise **text-to-SQL** and **retrieval-augmented generation** with
+  **LangChain** and **MongoDB** were also covered.
+companies:
+  - moondream
+  - usefulsensors
+  - openai
+  - meta-ai-fair
+  - huggingface
+  - langchain
+  - deeplearningai
+models:
+  - claude-3.5-sonnet
+  - llama-3
+  - llama-3-8b
+topics:
+  - pattern-recognition
+  - reinforcement-learning
+  - prompt-optimization
+  - text-to-speech
+  - tensor-parallelism
+  - model-hyperparameters
+  - multimodality
+  - ai-productivity
+  - privacy
+  - generative-ai
+  - agent-architectures
+  - knowledge-assistants
+  - enterprise-software
+  - retrieval-augmented-generation
+  - rag
+people:
+  - amandaaskell
+  - cwolferesearch
+  - ophilschmid
+  - philschmid
+  - stasbekman
+  - francoisfleuret
+  - mervenoyann
+  - reach_vb
+  - dzhng
+  - aravsrinivas
+  - sama
+  - lateinteraction
+  - deeplearningai
+  - langchainai
+  - andrewyng
+  - bindureddy
+  - jerryjliu0
+  - scottastevenson
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet weekend is all you need.**
 

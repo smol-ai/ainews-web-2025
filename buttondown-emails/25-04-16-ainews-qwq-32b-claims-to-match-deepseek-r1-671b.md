@@ -1,13 +1,53 @@
 ---
 id: 588aee90-b755-446c-9e0b-a05e07085b52
-title: '[AINews] QwQ-32B claims to match DeepSeek R1-671B'
+title: QwQ-32B claims to match DeepSeek R1-671B
 date: '2025-04-16T19:06:15Z'
-status: sent
 type: private
-source: api
-metadata: {}
 original_slug: ainews-qwq-32b-claims-to-match-deepseek-r1-671b
+description: >-
+  **Alibaba's Qwen team** released the **QwQ-32B**, a **32 billion parameter**
+  model using a novel two-stage reinforcement learning (RL) approach focusing
+  first on math and coding tasks with accuracy verifiers and code execution
+  servers, then on general capabilities with reward models and rule-based
+  verifiers. This method aims to improve instruction following, alignment, and
+  agent performance without degrading math/coding skills. Meanwhile, **OpenAI**
+  rolled out **GPT-4.5** to Plus users, with mixed feedback on coding
+  performance and noted inference cost improvements compared to GPT-3. The
+  QwQ-32B model is positioned to compete with **DeepSeek-R1**, though
+  independent benchmarks are pending. *"GPT-4.5 is unusable for coding"* was a
+  notable user sentiment, while others highlighted its reasoning improvements
+  due to scaling pretraining.
+companies:
+  - alibaba
+  - openai
+  - deepseek-ai
+models:
+  - qwen-2.5-plus
+  - qwen-qwq-32b
+  - deepseek-r1
+  - gpt-4.5
+topics:
+  - reinforcement-learning
+  - math
+  - code-execution
+  - reward-models
+  - instruction-following
+  - alignment
+  - agent-performance
+  - model-benchmarking
+  - model-release
+  - scaling
+  - reasoning
+  - inference-costs
+people:
+  - sama
+  - aidan_mclau
+  - scaling01
+  - juberti
+  - polynoamial
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Two stage RL is all you need?**
 

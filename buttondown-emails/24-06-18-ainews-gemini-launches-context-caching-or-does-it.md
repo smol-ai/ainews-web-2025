@@ -1,13 +1,51 @@
 ---
 id: 13926d1d-7c18-4519-bde1-5bd7599aeabb
-title: '[AINews] Gemini launches context caching... or does it?'
+title: Gemini launches context caching... or does it?
 date: '2024-06-18T21:26:50.727203Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-9364
+description: >-
+  **Nvidia's Nemotron** ranks #1 open model on LMsys and #11 overall, surpassing
+  **Llama-3-70b**. **Meta AI** released the **Chameleon 7B/34B** models after
+  further post-training. **Google's Gemini** introduced context caching,
+  offering a cost-efficient middle ground between RAG and finetuning with a
+  minimum input token count of 33k and no latency savings. **DeepSeek** launched
+  **DeepSeek-Coder-V2**, a 236B parameter model outperforming **GPT4-Turbo**,
+  **Claude-3-Opus**, and **Gemini-1.5-Pro** in coding, supporting 338
+  programming languages and extending context length to 128K. It was trained on
+  6 trillion tokens using the **Group Relative Policy Optimization (GRPO)**
+  algorithm and is available on Hugging Face with a commercial license. These
+  developments highlight advances in model performance, context caching, and
+  coding AI capabilities.
+companies:
+  - nvidia
+  - meta-ai-fair
+  - google
+  - deepseek
+  - huggingface
+models:
+  - nemotron
+  - llama-3-70b
+  - chameleon-7b
+  - chameleon-34b
+  - gemini-1.5-pro
+  - deepseek-coder-v2
+  - gpt-4o
+  - claude-3-opus
+topics:
+  - context-caching
+  - model-performance
+  - fine-tuning
+  - reinforcement-learning
+  - group-relative-policy-optimization
+  - coding
+  - long-context
+  - model-training
+  - model-release
+people:
+  - rohanpaul_ai
+  - _philschmid
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**1 week left til [AI Engineer World's Fair](https://ti.to/software-3/ai-engineer-worlds-fair)! Full schedule now live including [AI Leadership track](https://x.com/swyx/status/1802848106536681838).**
 

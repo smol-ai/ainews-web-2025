@@ -1,13 +1,68 @@
 ---
 id: a823d9be-3c00-44e1-85ae-271beb397f02
-title: '[AINews] Skyfall'
+title: Skyfall
 date: '2024-05-20T23:02:42.432305Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-3447
+description: >-
+  **Google DeepMind** released **Gemini 1.5 Pro**, a sparse multimodal MoE model
+  with up to 10M context, and **Gemini Flash**, a dense Transformer decoder
+  distilled from Pro that is 3x faster and 10x cheaper, both supporting up to 2M
+  token context. **Yi AI** launched **Yi-1.5** models with extended context
+  lengths of 32K and 16K tokens, available on Hugging Face. Other notable
+  releases include **Kosmos 2.5** from Microsoft, **PaliGemma** from Google,
+  **Falcon 2**, **DeepSeek v2 lite**, and **HunyuanDiT** diffusion model.
+  Research highlights include an **Observational Scaling Laws** paper predicting
+  model performance across families, a **Layer-Condensed KV Cache** technique
+  boosting inference throughput by up to 26x, and the **SUPRA** method
+  converting LLMs into RNNs for reduced compute costs. Hugging Face expanded
+  local AI capabilities enabling no-cloud, no-cost, and no-data-external usage.
+  LangChain updated to v0.2 with refreshed documentation. The community engaged
+  in discussions on fine-tuning effects on hallucinations and causal world
+  models for robust agents. *"Hugging Face is profitable, or close to
+  profitable"* and committed $10 million in free shared GPUs to developers.
+companies:
+  - google-deepmind
+  - yi-ai
+  - hugging-face
+  - microsoft
+  - langchain
+  - deepseek
+  - pali-gemma
+models:
+  - gemini-1.5-pro
+  - gemini-flash
+  - yi-1.5
+  - kosmos-2.5
+  - paligemma
+  - falcon-2
+  - deepseek-v2
+  - hunyuan-dit
+  - observational-scaling-laws
+  - supra
+  - layer-condensed-kv-cache
+topics:
+  - multimodality
+  - mixture-of-experts
+  - long-context
+  - model-distillation
+  - transformer
+  - model-optimization
+  - model-performance
+  - model-inference
+  - fine-tuning
+  - causal-models
+  - local-ai
+  - diffusion-models
+  - documentation
+people:
+  - _philschmid
+  - rohanpaul_ai
+  - osanseviero
+  - arankomatsuzaki
+  - _jasonwei
+  - clementdelangue
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Not thinking about ~~superalignment~~ ~~Google~~ ~~Scarlett Johansson~~ is all you need.**
 

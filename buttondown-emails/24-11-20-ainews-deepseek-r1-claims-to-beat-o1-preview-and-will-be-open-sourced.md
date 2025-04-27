@@ -1,13 +1,38 @@
 ---
 id: cf470da6-b5f6-4356-ac97-101745d71f29
-title: '[AINews] DeepSeek-R1 claims to beat o1-preview AND will be open sourced'
+title: DeepSeek-R1 claims to beat o1-preview AND will be open sourced
 date: '2024-11-21T02:41:02.660253Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseek-r1-claims-to-beat-o1-preview-and
+description: >-
+  **DeepSeek** has released **DeepSeek-R1-Lite-Preview**, an open-source
+  reasoning model that matches **o1-preview** performance on math benchmarks and
+  offers transparent reasoning, signaling a strong contender in open
+  reproduction of OpenAI's models. **NVIDIA** reported a record **$35.1
+  billion** revenue in Q3 with a **112% year-on-year increase** in data center
+  sales, driven by its **Hopper** and **Blackwell architectures**, with
+  Blackwell delivering a **2.2x performance improvement** over Hopper. **Google
+  DeepMind** introduced **AlphaQubit**, a quantum computing system improving
+  error correction and outperforming existing decoders, though challenges remain
+  in scaling and speed. The news highlights advancements in **reasoning
+  models**, **benchmarking**, and **quantum error correction**.
+companies:
+  - deepseek
+  - openai
+  - nvidia
+  - google-deepmind
+models:
+  - deepseek-r1-lite-preview
+  - o1-preview
+topics:
+  - reasoning
+  - benchmarking
+  - quantum-error-correction
+  - performance
+  - model-evaluation
+people:
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Whalebros are all you need.**
 

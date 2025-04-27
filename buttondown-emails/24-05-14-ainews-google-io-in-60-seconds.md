@@ -1,13 +1,50 @@
 ---
 id: 60e36161-5a94-4ded-b4a9-cb88b377ff37
-title: '[AINews] Google I/O in 60 seconds'
+title: Google I/O in 60 seconds
 date: '2024-05-14T22:01:01.464489Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-google-io-in-60-seconds
+description: >-
+  **Google** announced updates to the **Gemini** model family at Google I/O
+  2024, including **Gemini 1.5 Pro** with **2 million token support**, and the
+  new **Gemini Flash** model optimized for speed with **1 million token
+  capacity**. The Gemini suite now includes **Ultra**, **Pro**, **Flash**, and
+  **Nano** models, with **Gemini Live** enabling voice conversations and
+  **Project Astra** showcasing live video understanding. The **Gemma** family
+  also expanded with **Gemma 2** at **27B parameters**, offering
+  near-**llama-3-70b** performance, plus vision-language models like
+  **PaliGemma**. Other launches include **DeepMind's Veo**, **Imagen 3** for
+  photorealistic image generation, and **SynthID watermarking** extended to
+  text, audio, and video. Google is integrating AI across its product suite
+  including Workspace, Docs, Sheets, Photos, and Search. *"a series of quality
+  improvements across key use cases, such as translation, coding, reasoning and
+  more"* and *"optimized for narrower or high-frequency tasks where the speed of
+  the model’s response time matters the most"*.
+companies:
+  - google
+  - google-deepmind
+models:
+  - gemini-1.5-pro
+  - gemini-flash
+  - gemma-2
+  - llama-3-70b
+  - imagen-3
+  - veo
+topics:
+  - tokenization
+  - model-performance
+  - fine-tuning
+  - vision
+  - multimodality
+  - model-release
+  - ai-integration
+  - text-generation
+  - image-generation
+  - voice
+  - video-understanding
+people:
+  - officiallogan_k
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Spot the 7 flavors of Gemini!**
 

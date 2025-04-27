@@ -1,13 +1,61 @@
 ---
 id: b138e365-95ff-4f55-8811-5a76a5e17422
-title: '[AINews] Multi-modal, Multi-Aspect, Multi-Form-Factor AI'
+title: Multi-modal, Multi-Aspect, Multi-Form-Factor AI
 date: '2024-04-15T22:42:55.173152Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-multi-modal-multi-aspect-multi-form-factor
+description: >-
+  Between April 12-15, 2024, major AI developments include the launch of **Reka
+  Core**, a new GPT4-class multimodal foundation model with a detailed technical
+  report, and **Cohere Compass**, a foundation embedding model for multi-aspect
+  enterprise data indexing and search. The open-source **IDEFICS 2-8B** model
+  continues Google's Flamingo multimodal model reproduction. Performance
+  benchmarks highlight **Apple MLX** achieving **105.5 tokens/s on M2 Ultra with
+  76 GPU**, surpassing **Ollama** with Mistral Instruct 4bit. Discussions on GPU
+  choices for LLMs and Stable Diffusion emphasize VRAM importance. Microsoft
+  Research's **Chris Bishop** critiques AI models as "stochastic parrots," while
+  former PayPal CEO **Dan Schulman** warns of **GPT-5** causing significant job
+  scope reductions. **Mistral's CEO Arthur Mensch** comments on AGI obsession
+  likened to "creating God."
+companies:
+  - reka-ai
+  - cohere
+  - google
+  - mistral-ai
+  - apple
+  - microsoft
+  - paypal
+  - ollama
+models:
+  - gpt-4
+  - idefics-2-8b
+  - mistral-instruct
+  - apple-mlx
+  - gpt-5
+  - command-r
+  - mixtral-8x7b
+topics:
+  - multimodality
+  - foundation-models
+  - embedding-models
+  - performance
+  - gpu-optimization
+  - tokenization
+  - model-benchmarking
+  - enterprise-ai
+  - model-comparison
+  - vision
+  - long-context
+  - gpu
+  - model-performance
+  - prompt-speed
+  - job-impact
+  - agi
+people:
+  - chris_bishop
+  - dan_schulman
+  - arthur_mensch
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/12/2024-4/15/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **8916** messages) for you. Estimated reading time saved (at 200wpm): **985 minutes**.
 

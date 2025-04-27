@@ -1,13 +1,69 @@
 ---
 id: e46c6df2-3a65-4e48-98eb-5c2c50f31fbc
-title: '[AINews] Meta Apollo - Video Understanding up to 1 hour, SOTA Open Weights'
+title: Meta Apollo - Video Understanding up to 1 hour, SOTA Open Weights
 date: '2024-12-17T01:17:52.100442Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-meta-apollo-video-understanding-up-to-1
+description: >-
+  **Meta** released **Apollo**, a new family of state-of-the-art video-language
+  models (1B, 3B, 7B) with an open paper and demo showcasing efficient video
+  understanding via "Scaling Consistency." They introduced **ApolloBench**, a
+  benchmark suite reducing evaluation time by 41× across temporal perception
+  categories like Temporal OCR and Reasoning. **Google Deepmind** launched **Veo
+  2**, a 4K video generation model with physics simulation and camera control,
+  alongside an enhanced **Imagen 3** image model. **OpenAI** expanded ChatGPT
+  search globally with voice and map features and discussed a $2,000/month
+  "ChatGPT Max" tier. Research highlights include scaling Llama 3B to Llama 70B
+  performance, language expansion in Command R7B, and LLaMA 1B outperforming 8B
+  in math via test-time compute scaling. Industry updates cover **Figure AI**
+  delivering humanoid robots commercially, **Klarna** reducing workforce through
+  AI, and **Cohere** improving Notion search with Rerank. Studies reveal LLMs'
+  self-recognition bias and insights on video vs text processing efficiency.
+companies:
+  - meta-ai-fair
+  - hugging-face
+  - google-deepmind
+  - openai
+  - figure-ai
+  - klarna
+  - cohere
+models:
+  - apollo-1b
+  - apollo-3b
+  - apollo-7b
+  - veo-2
+  - imagen-3
+  - llama-3b
+  - llama-3-70b
+  - llama-1b
+topics:
+  - video-understanding
+  - benchmarking
+  - temporal-ocr
+  - egocentric-perception
+  - spatial-perception
+  - reasoning
+  - video-generation
+  - physics-simulation
+  - camera-control
+  - voice-features
+  - map-integration
+  - language-expansion
+  - test-time-compute-scaling
+  - humanoid-robots
+  - workforce-optimization
+  - search-accuracy
+  - self-recognition
+  - self-preference-bias
+  - video-processing
+people:
+  - _akhaliq
+  - _lewtun
+  - clementdelangue
+  - adcock_brett
+  - rohanpaul_ai
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Scaling Consistency is all you need.**
 

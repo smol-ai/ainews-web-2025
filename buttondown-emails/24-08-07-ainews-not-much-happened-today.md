@@ -1,13 +1,66 @@
 ---
 id: e19ff7ac-ae0f-4018-b347-1bb26b3044ee
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-08-08T01:50:11.687874Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-4029
+description: >-
+  **OpenAI** introduced structured outputs in their API with 100% reliability in
+  matching JSON schemas, supporting models like **gpt-4-0613**,
+  **gpt-3.5-turbo-0613**, and the new **gpt-4o-2024-08-06**. The price of
+  **gpt-4o** was quietly cut by 50%. **Mistral Large 2** outperforms
+  **gpt4-turbo** and **claude-3-opus** on hard benchmarks and coding tasks.
+  **Idefics3-Llama** offers multimodal capabilities with a 10k token context
+  window, while **BigLlama-3.1-1T-Instruct** is an upscaled version of
+  **llama-3-120b-instruct**. New benchmarks like **big_model_smell** evaluate
+  creativity and instruction following. **Figure 02** robot features advanced AI
+  hardware with onboard vision-language models and extended battery life.
+  Concerns about AI safety and regulation were raised by **ylecun** regarding
+  California's SB1047.
+companies:
+  - openai
+  - mistral-ai
+  - meta-ai-fair
+  - figure-ai
+models:
+  - gpt-4-0613
+  - gpt-3.5-turbo-0613
+  - gpt-4o-2024-08-06
+  - mistral-large-2
+  - gpt4-turbo
+  - claude-3-opus
+  - idefics3-llama
+  - llama-3-1
+  - bigllama-3-1-1t-instruct
+  - llama-3-120b-instruct
+topics:
+  - structured-outputs
+  - json-schema
+  - model-pricing
+  - benchmarking
+  - multimodality
+  - context-windows
+  - model-scaling
+  - creativity-evaluation
+  - instruction-following
+  - ai-hardware
+  - vision
+  - robotics
+  - battery-technology
+  - speech-to-speech-reasoning
+  - ai-safety
+  - regulation
+people:
+  - sama
+  - rohanpaul_ai
+  - corbtt
+  - guillaumelample
+  - mervenoyann
+  - maximelabonne
+  - aidan_mclau
+  - adcock_brett
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**[anonymous](https://x.com/AndrewCurran_/status/1821051919768678701) [strawberries](https://x.com/swyx/status/1821359574068146681) are all you need.**
 

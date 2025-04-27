@@ -1,13 +1,55 @@
 ---
 id: 9aafab3a-27e5-44fa-bc6d-e939622430e1
-title: '[AINews] 12/27/2023: NYT vs OpenAI'
+title: '12/27/2023: NYT vs OpenAI'
 date: '2023-12-29T10:14:01.623905Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12272023-nyt-vs-openai
+description: >-
+  **LM Studio** Discord discussions highlight **model performance** comparisons
+  between **Phi2** by Microsoft Research and **OpenHermes 2.5 Mistral 7b**,
+  focusing on U.S. history knowledge and fine-tuning potential. Technical
+  challenges include maintaining conversation history in the **LLM API**,
+  optimizing GPU layers for inference speed, and debugging the **ChromaDB
+  Plugin**. Hardware topics cover DDR4 vs DDR5, GPU selection for local models
+  and **Stable Diffusion**, and Apple's **M1/M3** and AMD AI CPUs. The community
+  actively shares solutions and announces the **ChromaDB Plugin v3.0.2** release
+  enabling image search in vector databases.
+companies:
+  - microsoft-research
+  - mistral-ai
+  - apple
+  - amd
+models:
+  - phi2
+  - openhermes-2.5-mistral-7b
+topics:
+  - model-performance
+  - fine-tuning
+  - llm-api
+  - inference-speed
+  - gpu-optimization
+  - hardware-optimization
+  - software-debugging
+  - plugin-development
+  - conversation-history
+  - vector-database
+  - stable-diffusion
+people:
+  - dharmabum125
+  - heyitsyorkie
+  - dagbs
+  - code_3090
+  - queuelabs
+  - thelefthandofurza
+  - sheepdestroyer
+  - rugg0064
+  - fabguy
+  - psipiai
+  - yoangab
+  - yunta0
+  - ptable
+  - vic49
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Here is the [best thread](https://twitter.com/ceciliazin/status/1740109462319644905) on the NYT OpenAI lawsuit today:
 

@@ -1,13 +1,58 @@
 ---
 id: 117d6739-42ce-4ce5-afeb-d11cee530906
-title: '[AINews] small news items'
+title: small news items
 date: '2025-02-13T00:10:12.213344Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-small-news-items
+description: >-
+  **OpenAI** announced plans for **GPT-4.5 (Orion)** and **GPT-5** integrating
+  **o3+** technology, with **GPT-5** offering unlimited chat access in the free
+  tier. **DeepSeek R1 Distilled Qwen 1.5B** outperforms OpenAI's **o1-preview**
+  on math benchmarks, and **ModernBERT 0.3b** surpasses **Qwen 0.5b** at MMLU
+  without fine-tuning. **Mistral** and **Perplexity** adopt **Cerebras**
+  hardware for 10x performance gains. OpenAI's **o3 model** won a gold medal at
+  the 2024 IOI, outperforming specialized pipelines. Partnerships include
+  **Qwen** with **Groq**. Significant RLHF activity is noted in Nigeria and the
+  global south. Funding updates from **Harvey**, **FAL**, and **Scaled
+  Cognition** were also shared. *"GPT5 is all you need."*
+companies:
+  - openai
+  - ollama
+  - mistral
+  - perplexity
+  - cerebras
+  - alibaba
+  - groq
+  - harvey
+  - fal
+  - scaled-cognition
+  - bytedance
+models:
+  - gpt-4.5
+  - gpt-5
+  - o3
+  - o1-preview
+  - deepseek-r1-distilled-qwen-1.5b
+  - modernbert-0.3b
+  - qwen-0.5b
+topics:
+  - benchmarking
+  - math
+  - fine-tuning
+  - model-performance
+  - reinforcement-learning
+  - model-optimization
+  - partnerships
+  - funding
+  - rlhf
+people:
+  - sama
+  - jeremyphoward
+  - arankomatsuzaki
+  - draecomino
+  - nrehiew_
+  - danhendrycks
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GPT5 is all you need.**
 

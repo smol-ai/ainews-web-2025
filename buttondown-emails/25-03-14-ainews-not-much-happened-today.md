@@ -1,13 +1,59 @@
 ---
 id: 080524db-34b6-4c7d-b8e3-fa03f4e2d105
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-14T22:57:23.512875Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-7693
+description: >-
+  **GPT-4** and **Claude 1** celebrate their 2nd birthdays amid significant
+  market share shifts. **Google DeepMind** announced major updates to **Gemini
+  2.0**, including the new **Flash Thinking** model with enhanced reasoning and
+  native image generation capabilities. **Cohere** launched **Command A**, a
+  **111B** parameter dense model with a **256K** context window and competitive
+  pricing, available on **Hugging Face**. **Meta AI** introduced **Dynamic Tanh
+  (DyT)** as a novel normalization replacement for Transformers, supported by
+  **Yann LeCun**. **Alibaba** released **QwQ-32B**, a **32.5B** parameter model
+  excelling in math and coding, fine-tuned with reinforcement learning and
+  open-sourced under Apache 2.0. **Google DeepMind** also released the **Gemma
+  3** family (1B to 27B parameters) with a **128K** token context window and
+  multi-language support, plus **ShieldGemma 2**, an image safety checker.
+  Benchmarking shows **Gemma 3 27B** is efficient and commercially permissive
+  but less competitive with larger models like **Llama 3.3 70B** and **DeepSeek
+  V3 671B**. The **Hugging Face LLM leaderboard** history was also discussed.
+companies:
+  - google-deepmind
+  - cohere
+  - meta-ai-fair
+  - alibaba
+  - hugging-face
+  - openai
+  - anthropic
+models:
+  - gemini-2.0-flash-thinking
+  - command-a
+  - dynamic-tanh
+  - qwq-32b
+  - gemma-3-27b
+  - llama-3-70b
+  - deepseek-r1
+  - o1-mini
+  - deepseek-v3
+topics:
+  - model-updates
+  - model-performance
+  - benchmarking
+  - reinforcement-learning
+  - fine-tuning
+  - vision
+  - memory-optimization
+  - context-windows
+  - commercial-licensing
+  - image-generation
+  - normalization-layers
+  - transformers
+people:
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**A quiet Friday**
 

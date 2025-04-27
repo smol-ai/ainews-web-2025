@@ -1,13 +1,64 @@
 ---
 id: e7f662d9-c99c-4670-9247-561b3dd6709f
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-04-05T01:50:06.395334Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-7847
+description: >-
+  **OpenAI** announced that **o3** and **o4-mini** models will release soon,
+  with **GPT-5** expected in a few months, delayed for quality and capacity
+  reasons. **DeepSeek** introduced **Self-Principled Critique Tuning (SPCT)** to
+  improve inference-time scalability for Generalist Reward Models. **Anthropic's
+  Sonnet 3.7** remains a top coding model. **Google's Gemma 3** is available on
+  KerasHub, and **Qwen 2.5 VL** powers a new Apache 2.0 licensed OCR model.
+  **Gemini 2.5 Pro** entered public preview with increased rate limits and
+  pricing announced, becoming a daily driver for many tasks except image
+  generation. Meta's architectural advantage and the **FrontierMath benchmark**
+  push AI's long-form reasoning and worldview coherence. Research highlights
+  include attention sink behavior in **Gemma 7B** and **LLaMa 3.1 405B** models,
+  and **MegaScale-Infer** offers efficient serving of large Mixture-of-Experts
+  models with up to 1.90x higher per-GPU throughput. *"o3 and o4-mini will be
+  released in a couple of weeks, followed by GPT-5 in a few months"* - @sama
+companies:
+  - openai
+  - deepseek
+  - anthropic
+  - google
+  - meta-ai-fair
+models:
+  - o3
+  - o4-mini
+  - gpt-5
+  - sonnet-3.7
+  - gemma-3
+  - qwen-2.5-vl
+  - gemini-2.5-pro
+  - gemma-7b
+  - llama-3-1-405b
+topics:
+  - inference
+  - reward-modeling
+  - model-releases
+  - ocr
+  - public-preview
+  - rate-limits
+  - pricing
+  - benchmarking
+  - long-form-reasoning
+  - attention-mechanisms
+  - mixture-of-experts
+  - model-efficiency
+people:
+  - sama
+  - _akhaliq
+  - nearcyan
+  - fchollet
+  - reach_vb
+  - _philschmid
+  - teortaxestex
+  - epochairesearch
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Apply for AIEWF talk slots!**
 

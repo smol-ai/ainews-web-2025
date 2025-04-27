@@ -1,13 +1,42 @@
 ---
 id: d3dcb7f4-723e-4d1b-92a9-407b70e2d4f5
-title: '[AINews] Llama 4''s Controversial Weekend Release'
+title: Llama 4's Controversial Weekend Release
 date: '2025-04-08T01:55:40.760246Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-llama-4s-controversial-weekend-release
+description: >-
+  **Meta** released **Llama 4**, featuring 2 new medium-size MoE open models and
+  a promised 2 Trillion parameter model, aiming to be the largest open model
+  ever. The release included advanced training techniques like early fusion with
+  MetaCLIP, interleaved chunked attention without RoPE, native FP8 training, and
+  training on up to 40T tokens. Despite the hype, the release faced criticism
+  for lack of transparency, implementation issues, and poor benchmark
+  performance, with Meta leadership denying allegations of training on test
+  sets. Key figures like **@Ahmad_Al_Dahle**, **@ylecun**, and **@reach_vb**
+  provided clarifications and defended the release.
+companies:
+  - meta-ai-fair
+models:
+  - llama-4
+  - llama-3
+  - llama-3-2
+topics:
+  - mixture-of-experts
+  - early-fusion
+  - attention-mechanisms
+  - fp8-training
+  - training-data
+  - benchmarking
+  - model-performance
+  - model-release
+  - multimodality
+  - model-optimization
+people:
+  - ahmad_al_dahle
+  - ylecun
+  - reach_vb
+  - yuchenj_uw
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Transparency and patience is all we need.**
 

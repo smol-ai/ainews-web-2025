@@ -1,13 +1,57 @@
 ---
 id: 149be255-dc25-4106-910a-266b6da49dcd
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-04-11T00:53:38.033308Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5595
+description: >-
+  **AI News for 4/9/2025-4/10/2025** highlights a quiet day with **Sama**
+  promoting a *Memory update in ChatGPT* without much technical detail. Evidence
+  suggests upcoming releases of **o3** and **o4-mini** models, alongside a press
+  leak about **GPT-4.1**. **X.ai** launched the **Grok 3** and **Grok 3 mini
+  API**, confirmed as an **o1** level model. Discussions on **Google's TPUv7**
+  versus **Nvidia's GB200** reveal TPUv7's comparable specs but lower power
+  usage, with detailed analysis of **FP8 performance**, **HBM3e stacks**, and
+  **ICI bandwidth**. **Google's Ironwood TPU** announcement boasts **4,614
+  TFLOP/s (FP8)** and advanced bandwidth specs. Speculation suggests TPUv7
+  shifted from training to inference focus. Rumors of exaggerated TPUv7
+  marketing claims also surfaced. Top AI stories include **Google Cloud Next
+  2025**, **Google’s AI agent collaboration protocol**, and **Samsung’s
+  Gemini-powered Ballie robot**. *"You can now tag @smol_ai for AINews
+  discussions!"*
+companies:
+  - openai
+  - x-ai
+  - google
+  - nvidia
+  - scaling01
+  - samsung
+  - smol_ai
+models:
+  - gpt-4.1
+  - o3
+  - o4-mini
+  - grok-3
+  - grok-3-mini
+  - tpuv7
+  - gb200
+  - ironwood-tpu
+topics:
+  - hardware-accelerators
+  - fp8
+  - hbm3e
+  - ici-bandwidth
+  - inference
+  - training
+  - model-release
+  - ai-agent-collaboration
+  - robotics
+people:
+  - sama
+  - itsclivetime
+  - scaling01
+  - therundownai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

@@ -1,13 +1,49 @@
 ---
 id: 17ad79bf-7163-457b-91d4-ced9e9bb7e2d
-title: '[AINews] Mistral Large disappoints'
+title: Mistral Large disappoints
 date: '2024-02-26T21:59:34.252178Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mistral-large-disappoints
+description: >-
+  **Mistral** announced **Mistral Large**, a new language model with **81.2%
+  accuracy on MMLU**, trailing **GPT-4 Turbo** by about 5 percentage points on
+  benchmarks. The community reception was mixed, with skepticism about open
+  sourcing and claims that **Mistral Small** outperforms the open-source
+  **Mixtral 8x7B**. Discussions in the **TheBloke Discord** highlighted
+  challenges with **DeepSpeed** training, use of **DPOTrainer** for
+  optimization, and creative AI storytelling using **DreamGen Opus V1**. Model
+  merging techniques like **linear interpolation** and **PEFT merging** were
+  explored, alongside interest in **AI-assisted decompilation** for code
+  reconstruction. These conversations reflect ongoing efforts to improve LLM
+  performance, cost-efficiency, and novel AI applications.
+companies:
+  - mistral-ai
+  - huggingface
+models:
+  - mistral-large
+  - mistral-small
+  - mixtral-8x7b
+  - dreamgen-opus-v1
+  - gpt-4-turbo
+topics:
+  - benchmarking
+  - model-merging
+  - fine-tuning
+  - reinforcement-learning
+  - model-training
+  - model-optimization
+  - ai-assisted-decompilation
+  - tokenization
+  - storytelling
+people:
+  - timotheeee1
+  - cogbuji
+  - plasmator
+  - jsarnecki
+  - maldevide
+  - spottyluck
+  - mrjackspade
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/21-23/2024. We checked **20** guilds, **318** channels, and **15439** messages for you. Estimated reading time saved (at 200wpm): **1430 minutes**.
 

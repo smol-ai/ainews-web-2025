@@ -1,15 +1,55 @@
 ---
 id: 8ba0f2e0-044e-41dc-bf4c-46997af4535d
-title: >-
-  [AINews] Gemini Pro and GPT4T Vision go GA on the same day by complete
-  coincidence
+title: Gemini Pro and GPT4T Vision go GA on the same day by complete coincidence
 date: '2024-04-10T01:05:31.512776Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-pro-and-gpt4t-vision-go-ga-on-the
+description: >-
+  **Google Cloud Next** announced the release of **Gemini 1.5 Pro** with a
+  million-token context window, available in 180+ countries, featuring up to 9.5
+  hours of audio understanding, a new File API for nearly unlimited free
+  uploads, and the **Gecko-1b-256/768** embedding model. **OpenAI** launched
+  **GPT-4 Turbo with Vision** API, with major improvements in reasoning
+  capabilities. **Meta Platforms** plans to release smaller versions of **Llama
+  3** next week. **Orca 2.5 7B** surpasses older GPT-4 versions using Direct
+  Nash Optimization. New models like **Functionary-V2.4** and **CosXL** were
+  released, and research highlights include efficient diffusion models with
+  continuous U-Nets offering up to 80% faster inference and a massive
+  multilingual dataset with 5.6 trillion tokens. Creative AI applications
+  include a no-code game made with Gemini 1.5 Pro and AI-generated novel
+  trailers.
+companies:
+  - google
+  - openai
+  - meta-ai-fair
+  - huggingface
+  - cohere
+models:
+  - gemini-1.5-pro
+  - gpt-4-turbo
+  - llama-3
+  - orca-2.5-7b
+  - functionary-v2.4
+  - cosxl
+topics:
+  - million-token-context-window
+  - audio-processing
+  - file-api
+  - text-embedding
+  - function-calling
+  - reasoning
+  - direct-nash-optimization
+  - contrastive-learning
+  - code-interpreter
+  - diffusion-models
+  - neural-odes
+  - multilingual-dataset
+  - inference-speed
+  - creative-ai
+  - game-development
+  - video-generation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/8/2024-4/9/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**388** channels, and **4154** messages) for you. Estimated reading time saved (at 200wpm): **468 minutes**.
 

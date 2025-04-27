@@ -1,13 +1,54 @@
 ---
 id: 53c5605c-6852-4809-bb57-e7a742de7da3
-title: '[AINews] GPT 4.1: The New OpenAI Workhorse'
+title: 'GPT 4.1: The New OpenAI Workhorse'
 date: '2025-04-15T05:16:26.134697Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt-41-the-new-openai-workhorse
+description: >-
+  **OpenAI** released **GPT-4.1**, including **GPT-4.1 mini** and **GPT-4.1
+  nano**, highlighting improvements in **coding**, **instruction following**,
+  and handling **long contexts** up to 1 million tokens. **GPT-4.1** achieves a
+  **54 score on SWE-bench verified** and shows a **60% improvement over GPT-4o**
+  in coding benchmarks. The **GPT-4.1 nano** model is noted as the cheapest and
+  fastest, costing $0.10 per million input tokens. Integration support includes
+  **Llama Index** with day 0 support for **GPT-4.1**. The **GPT-4.5 Preview**
+  API is being deprecated in favor of **GPT-4.1**. Some negative feedback exists
+  for **GPT-4.1 nano**. Additionally, **Perplexity's Sonar API** ties with
+  **Gemini-2.5 Pro** for the top spot in the LM Search Arena leaderboard. The
+  news includes insights from prominent figures like *@sama*, *@kevinweil*, and
+  *@OpenAIDevs*.
+companies:
+  - openai
+  - llamaindex
+  - perplexity-ai
+  - gemini
+models:
+  - gpt-4.1
+  - gpt-4.1-mini
+  - gpt-4.1-nano
+  - gpt-4o
+  - gemini-2.5-pro
+topics:
+  - coding
+  - instruction-following
+  - long-context
+  - model-benchmarking
+  - api
+  - model-pricing
+  - integration
+  - model-deprecation
+people:
+  - sama
+  - kevinweil
+  - openaidevs
+  - omarsar0
+  - polynoamial
+  - aidan_mclau
+  - danhendrycks
+  - scaling01
+  - aravsrinivas
+  - lmarena_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GPT 4.1 is all you need from OpenAI?**
 

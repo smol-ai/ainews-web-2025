@@ -1,13 +1,60 @@
 ---
 id: abdcdec1-8bb9-4db6-9518-d728096e9274
-title: '[AINews] Qwen 1.5 Released'
+title: Qwen 1.5 Released
 date: '2024-02-06T23:40:32.776669Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-qwen-15-released
+description: >-
+  **Chinese models Yi, Deepseek, and Qwen** are gaining attention, with **Qwen
+  1.5** showing strong performance against **Mistral** and **Llama2** models,
+  supporting up to **32k token context** and offering multilingual, RAG, agent
+  planning, and code generation capabilities. The Qwen release includes
+  **Hugging Face transformers compatibility** and official **AWQ/GPTQ 4/8bit
+  quantized models**. On Discord, **TheBloke** community discussed quantization
+  of a **70B LLM**, the introduction of the **Sparse MoE model Sparsetral**
+  based on Mistral, debates on model merging versus fine-tuning, and techniques
+  like **Direct Preference Optimization (DPO)** for character generation. The
+  **Nous Research AI** Discord highlighted challenges in Japanese Kanji
+  generation, AI scams on social media, and Meta's VR headset prototypes with
+  retinal resolution and light field passthrough presented at **SIGGRAPH 2023**.
+  Discussions also covered fine-tuning frozen networks and new models like
+  **bagel-7b-v0.4**, **DeepSeek-Math-7b-instruct**, and **Sparsetral-16x7B-v2**
+  on Hugging Face.
+companies:
+  - qwenlm
+  - deepseek
+  - mistral-ai
+  - hugging-face
+  - meta-ai-fair
+  - thebloke
+  - nous-research
+models:
+  - qwen-1.5
+  - mistral-7b
+  - sparsetral-16x7b-v2
+  - bagel-7b-v0.4
+  - deepseek-math-7b-instruct
+topics:
+  - quantization
+  - multilinguality
+  - rag
+  - agent-planning
+  - code-generation
+  - fine-tuning
+  - direct-preference-optimization
+  - model-merging
+  - memory-augmentation
+  - ascii-art
+  - character-generation
+  - stable-diffusion
+  - vr
+  - retinal-resolution
+  - light-field-passthrough
+  - frozen-networks
+people:
+  - lorenzoroxyolo
+  - nonameusr
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/5/2024. We checked **20** guilds, **308** channels, and **5078** messages for you. Estimated reading time saved (at 200wpm): **418 minutes**.
 

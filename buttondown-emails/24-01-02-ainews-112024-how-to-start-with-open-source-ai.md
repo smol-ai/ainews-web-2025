@@ -1,13 +1,38 @@
 ---
 id: d11ec836-6a8e-4d11-9b8d-ad23da8c1ac1
-title: '[AINews] 1/1/2024: How to start with Open Source AI'
+title: '1/1/2024: How to start with Open Source AI'
 date: '2024-01-03T07:23:06.742443Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-112024-how-to-start-with-open-source-ai
+description: >-
+  **OpenAI** Discord discussions revealed mixed sentiments on **Bing's AI**,
+  **ChatGPT**, and **Perplexity AI**, with debates on **Microsoft Copilot** and
+  **Office 365** integration. Users explored **DALL-E 3** access within
+  **ChatGPT Plus**, **GPT-4 turbo** anticipation for Copilot, and challenges in
+  **ChatGPT's performance**. There were also conversations about training custom
+  GPT models using book content, improving **Custom GPT** performance, and using
+  **Python** for AI programming. The community discussed the future of AI
+  specialization and the role of multiple GPTs.
+companies:
+  - openai
+  - microsoft
+  - perplexity-ai
+models:
+  - gpt-4-turbo
+  - dall-e-3
+  - chatgpt
+topics:
+  - custom-gpt
+  - prompt-engineering
+  - ai-performance
+  - python
+  - model-training
+  - api
+  - chatgpt-plus
+  - ai-integration
+people:
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Teknium and LDJ dropped a good learning path in the Nous Discord over the new year. swyx also updated his [December notes repo](https://github.com/swyxio/ai-notes/commit/650319e6cb5423a684200255de3ec200ef9953f0) in preparation for the monthly/year end recap on Latent Space.
 

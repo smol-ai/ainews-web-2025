@@ -1,13 +1,56 @@
 ---
 id: 6c5cc475-cfad-4134-afe6-f3fda815591b
-title: '[AINews] OpenAI''s Instruction Hierarchy for the LLM OS'
+title: OpenAI's Instruction Hierarchy for the LLM OS
 date: '2024-04-25T00:15:11.343128Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-openai-reveals-its-instruction-hierarchy
+description: >-
+  **OpenAI** published a paper introducing a novel system design using privilege
+  levels for LLMs to nearly solve prompt injection attacks, improving defenses
+  by 20-30%. **Microsoft** released the lightweight **Phi-3-mini** model with 4K
+  and 128K context variants. **Apple** open-sourced the **OpenELM** language
+  model family with a 270M parameter model outperforming larger models on MMLU.
+  An instruction accuracy benchmark compared 12 models, with **Claude 3 Opus**,
+  **GPT-4 Turbo**, and **Llama 3 70B** topping rankings. The **Rho-1** method
+  enables training SOTA models with only 3% of tokens, boosting models like
+  **Mistral**. **Wendy's** deployed AI-powered drive-thru ordering, and a study
+  found Gen Z workers prefer generative AI for career advice. Tutorials for
+  deploying **Llama 3** models on AWS EC2 were shared, highlighting resource
+  requirements and inference server use.
+companies:
+  - openai
+  - microsoft
+  - apple
+  - hugging-face
+  - anthropic
+  - meta-ai-fair
+  - mistral-ai
+  - llamaindex
+  - wendys
+models:
+  - phi-3-mini
+  - openelm
+  - claude-3-opus
+  - gpt-4-turbo
+  - gpt-3.5-turbo
+  - llama-3-70b
+  - rho-1
+  - mistral-7b
+  - llama-3-8b
+  - llama-3
+topics:
+  - prompt-injection
+  - alignment
+  - instruction-following
+  - benchmarking
+  - context-windows
+  - model-deployment
+  - training-data
+  - fine-tuning
+  - ai-application
+  - career-advice
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/23/2024-4/24/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **27** Discords (**395** channels, and **6364** messages) for you. Estimated reading time saved (at 200wpm): **666 minutes**.
 

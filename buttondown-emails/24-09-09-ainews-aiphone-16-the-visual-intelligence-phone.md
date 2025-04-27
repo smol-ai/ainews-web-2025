@@ -1,13 +1,47 @@
 ---
 id: 7214b2cc-a903-40be-b22f-bcdae70ab4f5
-title: '[AINews] AIPhone 16: the Visual Intelligence Phone'
+title: 'AIPhone 16: the Visual Intelligence Phone'
 date: '2024-09-09T23:00:14.695088Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-aiphone-16-the-visual-intelligence-phone
+description: >-
+  At the recent **Apple Event**, **Apple** introduced **Visual Intelligence**
+  with the new iPhone 16, integrating AI features like enhanced video
+  understanding in Apple Photos and prioritizing Apple Maps and Siri for AI
+  queries. This move positions Apple to commoditize OpenAI services by
+  emphasizing privacy and default integration. Meanwhile, **Reflection-70B**
+  claims to be a top open-source model but benchmarks show it performs close to
+  **Llama-3-70b** and slightly worse than **Qwen-2-72b**. AI researcher
+  **ylecun** highlighted ongoing challenges with LLM planning abilities, noting
+  poor performance from **GPT-4** and **Gemini** models. Additionally, **Weights
+  & Biases** announced a hackathon event focused on advancing LLM evaluators
+  with $5k in prizes.
+companies:
+  - apple
+  - openai
+  - weights-biases
+models:
+  - reflection-70b
+  - llama-3-70b
+  - qwen-2-72b
+  - llama-3.1-405b
+  - claude-3
+  - gpt-4
+  - gemini
+topics:
+  - video-understanding
+  - planning
+  - benchmarking
+  - model-performance
+  - llm-evaluation
+  - privacy
+  - ai-integration
+  - model-comparison
+  - api
+  - hackathon
+people:
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Apple Intelligence is maybe all you need.**
 

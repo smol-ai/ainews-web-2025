@@ -1,13 +1,48 @@
 ---
 id: 305c4e89-b402-4507-89eb-224a5d3ea59f
-title: '[AINews] Gemma 2 tops /r/LocalLlama vibe check'
+title: Gemma 2 tops /r/LocalLlama vibe check
 date: '2024-07-17T22:57:14.252944Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemma-2-tops-rlocalllama-vibe-check
+description: >-
+  **Gemma 2 (9B, 27B)** is highlighted as a top-performing local LLM, praised
+  for its speed, multilingual capabilities, and efficiency on consumer GPUs like
+  the 2080ti. It outperforms models like **Llama 3** and **Mistral 7B** in many
+  tasks, especially non-English text processing. The community discussion on
+  /r/LocalLlama and other platforms shows strong preference for Gemma 2, with
+  mentions of other models like **Phi 3**, **Qwen**, and **DeepSeek**.
+  Additionally, **Andrej Karpathy** announced his new AI+Education startup
+  **Eureka Labs**, aiming to create an AI-native school with free course
+  materials and AI Teaching Assistants, starting with the **LLM101n** course.
+companies:
+  - gemma
+  - llama
+  - mistral
+  - deepseek
+  - cohere
+  - internllm
+  - nous-research
+  - eureka-labs
+models:
+  - gemma-2-9b
+  - gemma-2-27b
+  - llama-3
+  - mistral-7b
+  - phi-3
+  - qwen
+topics:
+  - local-llms
+  - multilingual-models
+  - model-efficiency
+  - gpu-optimization
+  - ai-education
+  - course-development
+  - ai-teaching-assistants
+people:
+  - karpathy
+  - drjimfan
+  - danielhanchen
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Gemma 2 (9b, 27B) is all you need?**
 

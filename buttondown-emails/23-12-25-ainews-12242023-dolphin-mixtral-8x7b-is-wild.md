@@ -1,13 +1,43 @@
 ---
 id: 31baae57-4f8f-4247-ad05-5bc7adf7a871
-title: '[AINews] 12/24/2023: Dolphin Mixtral 8x7b is wild'
+title: '12/24/2023: Dolphin Mixtral 8x7b is wild'
 date: '2023-12-26T07:23:04.603056Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-12242023-dolphin-mixtral-8x7b-is-wild
+description: >-
+  **Mistral** models are recognized for being uncensored, with **Eric Hartford's
+  Dolphin series** applying uncensoring fine-tunes gaining popularity on Discord
+  and Reddit. The **LM Studio** Discord community discusses various topics
+  including **hardware compatibility** (notably Nvidia GPUs and Linux Mint for
+  Mac users), **fine-tuning** and training models, **performance issues** like
+  high CPU and RAM usage, and integration efforts with tools like **GPT Pilot**.
+  A Beta release for **Local LLM ROCm integration** is underway, and users share
+  troubleshooting tips and usage experiences. Discussions also cover external
+  models such as **Google Gemini** and model hosting limitations of LM Studio.
+companies:
+  - mistral-ai
+  - lmstudio
+  - ollama
+  - google
+  - openai
+models:
+  - dolphin-mixtral-8x7b
+  - glm3
+  - chatglm3-ggml-bin
+topics:
+  - fine-tuning
+  - hardware-compatibility
+  - performance-optimization
+  - local-model-hosting
+  - rocm-integration
+  - gpu-acceleration
+  - model-integration
+  - linux
+  - python
+  - troubleshooting
+people:
+  - eric_hartford
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Mistral models are known for being uncensored, so it's surprising that Eric Hartford's Dolphin series of models - basically applying some standard uncensoring finetunes to released models - is finding some love in the Discords [and Reddits](https://www.reddit.com/r/LocalLLaMA/comments/18l7o15/dolphin_mixtral_8x7b_is_wild/):
 

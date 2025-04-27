@@ -1,13 +1,45 @@
 ---
 id: 963b20a5-2ea7-411d-861e-a94a2974b33f
-title: '[AINews] RIP Latent Diffusion, Hello Hourglass Diffusion'
+title: RIP Latent Diffusion, Hello Hourglass Diffusion
 date: '2024-01-24T01:38:15.342406Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-rip-latent-diffusion-hello
+description: >-
+  **Katherine Crowson**, known for **Stable Diffusion**, introduces a
+  hierarchical pure transformer backbone for megapixel image generation with
+  diffusion models, improving efficiency and scaling with a <600M parameter
+  model. This redesign updates the Latent Diffusion architecture with a more
+  transformer-like UNet and state-of-the-art inference techniques. Meanwhile,
+  Meta's Self Rewarding LM paper has inspired **lucidrains** to begin an
+  implementation. Discord discussions highlight **GPT-4**'s robustness against
+  quantification tricks, open-source GPT-0 alternatives, challenges in DPO
+  training on limited VRAM with suggestions like QLoRA fine-tuning, and efforts
+  to improve roleplay model consistency through fine-tuning and merging.
+  Philosophical debates on AI sentience and practical GPT-4 customization and
+  prompt engineering for tasks like markdown generation and Latin-to-English
+  translation were also prominent.
+companies:
+  - stable-diffusion
+  - meta-ai-fair
+  - openai
+  - huggingface
+models:
+  - gpt-4
+  - latent-diffusion
+topics:
+  - diffusion-models
+  - transformer-architecture
+  - image-generation
+  - model-efficiency
+  - fine-tuning
+  - quantization
+  - prompt-engineering
+  - roleplay
+  - memory-optimization
+people:
+  - katherine_crowson
+  - lucidrains
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 1/22/2024. We checked **19** guilds, **291** channels, and **4368** messages for you. Estimated reading time saved (at 200wpm): **436 minutes**.
 

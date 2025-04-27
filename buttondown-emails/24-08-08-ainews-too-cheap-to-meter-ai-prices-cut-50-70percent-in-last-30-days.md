@@ -1,13 +1,61 @@
 ---
 id: 7d8d0c98-cad0-44de-a76d-4882abd5a690
-title: '[AINews] Too Cheap To Meter: AI prices cut 50-70% in last 30 days'
+title: 'Too Cheap To Meter: AI prices cut 50-70% in last 30 days'
 date: '2024-08-09T04:27:56.926040Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-too-cheap-to-meter-ai-prices-cut-50-70-in
+description: >-
+  **Gemini 1.5 Flash** cut prices by ~70%, offering a very generous free tier at
+  **$0.075/mtok**, intensifying the AI model price war alongside **GPT-4o**,
+  **GPT-4o mini**, **Llama 3.1 405b**, and **Mistral Large 2**. **Deepseek v2**
+  introduced context caching reducing input token costs by up to 90%. New model
+  releases include **Llama 3.1 405b**, **Sonnet 3.5**, **EXAONE-3.0** from **LG
+  AI Research**, and **MiniCPM V 2.6** combining vision and language
+  capabilities. Benchmarks show **Claude-3.5** leading LiveBench, with **Mistral
+  Large** performing well on ZebraLogic. **FlexAttention**, a PyTorch API for
+  optimized attention mechanisms, was introduced. **Andrej Karpathy** analyzed
+  RLHF, noting its limitations compared to traditional reinforcement learning. A
+  Google DeepMind paper on compute-optimal scaling was summarized.
+companies:
+  - llmsys
+  - together-ai
+  - deepinfra
+  - lepton
+  - mistral-ai
+  - gemini
+  - deepseek
+  - lg-ai-research
+  - google-deepmind
+models:
+  - gpt-4o
+  - gpt-4o-mini
+  - llama-3-1-405b
+  - mistral-large-2
+  - gemini-1.5-flash
+  - deepseek-v2
+  - sonnet-3.5
+  - exaone-3.0
+  - minicpm-v-2.6
+  - claude-3.5
+topics:
+  - price-cuts
+  - context-caching
+  - vision
+  - benchmarking
+  - attention-mechanisms
+  - reinforcement-learning
+  - compute-optimal-scaling
+  - model-performance
+  - model-releases
+  - model-training
+people:
+  - rohanpaul_ai
+  - _akhaliq
+  - mervenoyann
+  - sophiamyang
+  - chhillee
+  - karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Gemini Flash is all you need?**
 

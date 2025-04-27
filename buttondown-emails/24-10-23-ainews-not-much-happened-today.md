@@ -1,13 +1,56 @@
 ---
 id: 87b2cb83-51c8-40f3-995f-4cb8953a9a66
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-10-24T00:39:59.759230Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5175
+description: >-
+  **Anthropic** released **Claude 3.5 Sonnet** and **Claude 3.5 Haiku** models
+  featuring a new computer use capability that allows interaction with computer
+  interfaces via screenshots, mouse movements, clicks, and typing. The 3.5
+  Sonnet model achieved a state-of-the-art 49% score on SWE-bench Verified,
+  surpassing OpenAI's o1-preview. **Anthropic** is focusing on teaching general
+  computer skills rather than task-specific tools, with expected rapid
+  improvements. Other notable releases include **Mochi 1**, an open-source video
+  generation model, **Stable Diffusion 3.5** with Large (8B) and Medium (2.5B)
+  variants improving training stability and fine-tuning, and **Embed 3** by
+  **Cohere**, a multimodal embedding model for text and image search.
+  **KerasHub** was launched by **François Chollet**, unifying KerasNLP and
+  KerasCV with 37 pretrained models. Microsoft introduced the **Differential
+  Transformer**, which uses differential attention maps to reduce attention
+  noise and promote sparse attention. A paper discussed by **Rasbt** found that
+  removing half of the attention layers in transformers still maintains
+  performance.
+companies:
+  - anthropic
+  - openai
+  - cohere
+  - microsoft
+  - huggingface
+models:
+  - claude-3.5-sonnet
+  - claude-3.5-haiku
+  - o1-preview
+  - mochi-1
+  - stable-diffusion-3.5
+  - embed-3
+  - differential-transformer
+topics:
+  - computer-use
+  - coding
+  - video-generation
+  - fine-tuning
+  - multimodality
+  - transformers
+  - attention-mechanisms
+  - model-performance
+  - model-optimization
+people:
+  - alexalbert__
+  - rohanpaul_ai
+  - fchollet
+  - rasbt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day is all you need.**
 

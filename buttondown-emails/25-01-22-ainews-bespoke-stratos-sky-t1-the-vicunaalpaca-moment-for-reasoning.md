@@ -1,13 +1,65 @@
 ---
 id: 347f62d8-8868-459b-9a7d-9567f2c702cd
-title: '[AINews] Bespoke-Stratos + Sky-T1: The Vicuna+Alpaca moment for reasoning'
+title: 'Bespoke-Stratos + Sky-T1: The Vicuna+Alpaca moment for reasoning'
 date: '2025-01-23T07:08:27.294133Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-bespoke-stratos-sky-t1-the-vicunaalpaca
+description: >-
+  **Reasoning Distillation** has emerged as a key technique, with Berkeley/USC
+  teams releasing **Sky-T1-32B-Preview**, a finetune of **Qwen-2.5-32B** using
+  17k reasoning traces for just $450, matching **o1-preview** benchmarks.
+  **DeepSeek** introduced **DeepSeek-R1**, outperforming **o1-preview** and
+  enabling distillation to smaller models that match **gpt-4o** and
+  **claude-3-sonnet** levels. **Bespoke Labs** further distilled **R1** on
+  **Qwen**, greatly surpassing **o1-preview** with fewer samples. This progress
+  suggests that *"SFT is all you need"* for reasoning without major architecture
+  changes, explaining efficiency gains in models like **o1-mini** and
+  **o3-mini**. Additionally, **DeepSeek-R1** uses pure reinforcement learning
+  with supervised finetuning to accelerate convergence and supports multimodal
+  reasoning. **Google's Gemini 2.0 Flash Thinking** model features a 1 million
+  token context window and excels in math, science, and multimodal benchmarks.
+  Discussions also covered model repeatability, behavioral self-awareness, and
+  RLHF limitations in reasoning robustness.
+companies:
+  - berkeley
+  - usc
+  - lmsys
+  - deepseek
+  - bespoke-labs
+  - google
+  - google-deepmind
+models:
+  - sky-t1-32b-preview
+  - qwen-2.5-32b
+  - qwen-1.5b
+  - o1-preview
+  - deepseek-r1
+  - gpt-4o
+  - claude-3-sonnet
+  - o1-mini
+  - o3-mini
+  - gemini-2.0-flash-thinking
+topics:
+  - reasoning
+  - supervised-finetuning
+  - reinforcement-learning
+  - multimodality
+  - model-distillation
+  - model-efficiency
+  - context-windows
+  - benchmarking
+  - model-repeatability
+  - behavioral-self-awareness
+  - rlhf-limitations
+people:
+  - teortaxestex
+  - cwolferesearch
+  - madiator
+  - chakraai
+  - philschmid
+  - abacaj
+  - omarsar0
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Reasoning Distillation is all you need.**
 

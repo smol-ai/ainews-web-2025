@@ -1,13 +1,62 @@
 ---
 id: 9169a5c7-16b2-4b72-b2d7-f6c76a58304d
-title: '[AINews] Ideogram 2 + Berkeley Function Calling Leaderboard V2'
+title: Ideogram 2 + Berkeley Function Calling Leaderboard V2
 date: '2024-08-22T00:05:05.366247Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ideogram-2-berkeley-function-calling
+description: >-
+  **Flux** and **Ideogram** teams have launched new image generation models with
+  advanced features like **color palette control** and a fully controllable API,
+  marking a milestone of **1 billion images created**. **Midjourney** released a
+  Web UI but still lacks an API. The **Berkeley Function Calling Leaderboard
+  (BFCL V2)** was updated with **2251 live, user-contributed function calls**,
+  emphasizing the importance of **multiple functions over parallel functions**
+  and including complex function calls with 10+ nested parameters. **GPT-4**
+  leads the leaderboard, but the open-source **Functionary Llama 3-70B**
+  finetune from Kai surpasses **Claude**. Microsoft released three new
+  **Phi-3.5** models with MIT licenses, featuring a **128k context window** and
+  outperforming several competitors. Meta FAIR introduced **UniBench**, a
+  unified benchmark suite covering **50+ vision-language model (VLM)
+  benchmarks**. Baseten improved **Llama 3** inference speed by up to **122%**
+  using Medusa, a multi-token generation method. A new cybersecurity benchmark,
+  **Cyberbench**, with 40 professional CTF tasks was released. A new tool,
+  **Codegen**, enables programmatic codebase analysis and transformation,
+  supporting AI-assisted development. *"a very high demand for the feature of
+  having to intelligently choose between functions (multiple functions) and
+  lower demand for making parallel function calls in a single turn (parallel
+  functions)"* was highlighted in function calling updates.
+companies:
+  - flux
+  - ideogram
+  - midjourney
+  - berkeley
+  - kai
+  - microsoft
+  - meta-ai-fair
+  - baseten
+  - perplexity-ai
+models:
+  - functionary-llama-3-70b
+  - gpt-4
+  - phi-3.5
+  - llama-3
+  - gemma-2-9b
+  - gpt-4o-mini
+topics:
+  - function-calling
+  - image-generation
+  - benchmarking
+  - multimodality
+  - model-optimization
+  - context-windows
+  - model-fine-tuning
+  - cybersecurity
+  - code-analysis
+  - model-performance
+people:
+  - osanseviero
+  - alexalbert__
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Two big steps in imagegen and function calling.**
 

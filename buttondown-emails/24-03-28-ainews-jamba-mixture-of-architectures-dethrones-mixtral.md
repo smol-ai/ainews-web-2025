@@ -1,13 +1,43 @@
 ---
 id: 96bbde86-0900-4165-ba3b-63492f334b76
-title: '[AINews] Jamba: Mixture of Architectures dethrones Mixtral'
+title: 'Jamba: Mixture of Architectures dethrones Mixtral'
 date: '2024-03-28T23:43:23.713718Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-jamba-mixture-of-architectures-dethrones
+description: >-
+  **AI21 labs** released **Jamba**, a **52B parameter** Mixture of Experts (MoE)
+  model with **256K context length** and open weights under Apache 2.0 license,
+  optimized for single A100 GPU performance. It features a novel
+  blocks-and-layers architecture combining transformer and MoE layers, competing
+  with models like **Mixtral** and **StripedHyena**. Meanwhile, **Databricks**
+  introduced **DBRX**, a 36B active parameter MoE model trained on 12T tokens,
+  setting a new standard for open LLMs. In image generation, advancements
+  include **Animatediff**'s improved img2vid workflow, **FastSD CPU** enabling
+  ultra-fast Stable Diffusion generation on CPU, and novel techniques like
+  B-LoRA for style-content separation in images.
+companies:
+  - ai21-labs
+  - databricks
+  - together-ai
+  - hugging-face
+  - midjourney
+models:
+  - jamba
+  - dbrx
+  - mixtral
+  - stripedhyena
+  - sdxs512-0.9
+topics:
+  - mixture-of-experts
+  - long-context
+  - model-optimization
+  - transformer-architecture
+  - fine-tuning
+  - image-generation
+  - style-content-separation
+  - cpu-optimization
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/27/2024-3/28/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **24** Discords (**374** channels, and **4693** messages) for you. Estimated reading time saved (at 200wpm): **529 minutes**.
 

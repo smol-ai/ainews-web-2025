@@ -1,13 +1,51 @@
 ---
 id: 5aa32ff4-41c3-4ddf-8f02-7d76d46ca933
-title: '[AINews] 1/3/2024: RIP Coqui'
+title: '1/3/2024: RIP Coqui'
 date: '2024-01-04T06:56:46.257833Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-132024-rip-coqui
+description: >-
+  **Coqui**, a prominent open source text-to-speech project from the Mozilla ML
+  group, has shut down, marking the end of a significant open source TTS option.
+  On the **HuggingFace Discord**, discussions highlighted skepticism about the
+  claimed `3X faster` performance of **sdxl** related to **diffusers 0.25**,
+  with users noting the impact of techniques like `torch.compile` and removal of
+  `fp16` and `attention`. The community also explored the use of *HuggingFace
+  user tokens* across multiple machines, the resolution of issues with the
+  Learning Loss Minimization (LLM) leaderboard, and shared resources for
+  building Transformers from scratch using PyTorch. Additionally, a new image
+  dataset with 15k shoe-related images was introduced for multiclass
+  classification tasks. The Common Crawl web-crawling process was explained,
+  inviting further exploration via its GitHub codebase. These updates reflect
+  ongoing community engagement in model performance, dataset creation, and
+  open-source AI tooling.
+companies:
+  - coqui
+  - mozilla
+  - huggingface
+  - google
+models:
+  - sdxl
+topics:
+  - text-to-speech
+  - performance-optimization
+  - transformer-architecture
+  - dataset-release
+  - web-crawling
+  - multiclass-classification
+  - python
+people:
+  - aifartist
+  - osanseviero
+  - lee0099
+  - torres8552
+  - andysingal
+  - exponentialxp
+  - cakiki
+  - dizzyme
+  - gez_gin
+  - kquant
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> Meta: More tuning since yesterday. We've tuned down the repetitive OpenAI bug reports, and also tweaked the prompts for better summarization.
 

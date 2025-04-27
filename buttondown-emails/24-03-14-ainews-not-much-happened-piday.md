@@ -1,13 +1,47 @@
 ---
 id: efb00c05-281c-4d5f-873c-bdd3fe101a25
-title: '[AINews] Not much happened piday'
+title: Not much happened piday
 date: '2024-03-14T23:53:52.756548Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-piday
+description: >-
+  **DeepMind** announces **SIMA**, a generalist AI agent capable of following
+  natural language instructions across diverse 3D environments and video games,
+  advancing embodied AI agents. **Anthropic** releases **Claude 3 Haiku**, their
+  fastest and most affordable model, now available via API and Perplexity. New
+  research explores language model scaling laws and efficient training methods
+  like Branch-Train-MiX (BTX) for mixture-of-experts models. **Cohere**
+  introduces the Command-R model focusing on retrieval-augmented generation and
+  tool use for LLM applications. The **EU AI Act** is approved, mandating
+  transparency in training data for GPAI systems. AI's impact on software
+  engineering job growth is discussed, with predictions of increased engineers
+  due to easier coding. Memes humorously reflect on AI software engineers and
+  notable figures like Andrej Karpathy.
+companies:
+  - google-deepmind
+  - anthropic
+  - cohere
+  - eu
+models:
+  - claude-3-haiku
+topics:
+  - embodied-ai
+  - reinforcement-learning
+  - language-model-scaling
+  - mixture-of-experts
+  - retrieval-augmented-generation
+  - ai-regulation
+  - differential-privacy
+  - software-engineering
+  - model-training
+  - natural-language-processing
+  - humor
+people:
+  - demishassabis
+  - fchollet
+  - abacaj
+  - andrej_karpathy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/13/2024-3/14/2024. We checked [**358** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**336** channels, and **3518** messages) for you. Estimated reading time saved (at 200wpm): **426 minutes**.
 

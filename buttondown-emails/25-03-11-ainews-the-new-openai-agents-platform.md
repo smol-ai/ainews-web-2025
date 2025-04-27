@@ -1,13 +1,60 @@
 ---
 id: 599f1341-a28e-45b3-9feb-e507c722162c
-title: '[AINews] The new OpenAI Agents Platform'
+title: The new OpenAI Agents Platform
 date: '2025-03-12T00:23:17.547385Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-new-openai-agents-platform
+description: >-
+  **OpenAI** introduced a comprehensive suite of tools for the Year of Agents,
+  including a **Responses API**, **Web Search Tool**, **Computer Use Tool**,
+  **File Search Tool**, and an open-source **Agents SDK** with integrated
+  **Observability Tools**. **Reka AI** open-sourced **Reka Flash 3**, a **21B
+  parameter reasoning model** licensed under Apache 2.0, outperforming
+  **o1-mini** and powering their **Nexus enterprise intelligence platform**. The
+  **OlympicCoder** open reasoning models surpassed **Claude 3.7 Sonnet** and
+  much larger models, releasing the **CodeForces-CoTs dataset** and **IOI'2024
+  benchmark**. **DeepSeek** built a **32K GPU cluster** capable of training
+  V3-level models in under a week and is exploring **AI distillation**.
+  **Hugging Face** added **Cerebras** support, enabling inference of models like
+  **Llama 3.3 70B** at over **2,000 tokens/s**, 70x faster than GPUs. **Reka's
+  Sonic-2** voice AI model is available via **Together API** with **40ms
+  latency** and high-fidelity synthesis. **Alibaba's Qwen Chat** enhanced its
+  multimodal interface with text, images, videos, voice-to-text, guest mode, and
+  expanded file uploads.
+companies:
+  - openai
+  - reka-ai
+  - huggingface
+  - deepseek
+  - togethercompute
+  - alibaba
+models:
+  - reka-flash-3
+  - o1-mini
+  - claude-3-7-sonnet
+  - llama-3-70b
+topics:
+  - reasoning
+  - fine-tuning
+  - reinforcement-learning
+  - model-quantization
+  - inference-speed
+  - multimodality
+  - voice
+  - api
+  - agents-sdk
+  - observability-tools
+  - gpu-clusters
+  - synthetic-data
+  - dataset-release
+  - voice-synthesis
+  - model-performance
+people:
+  - sama
+  - reach_vb
+  - _lewtun
+  - _akhaliq
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**OpenAI may be all you need.**
 

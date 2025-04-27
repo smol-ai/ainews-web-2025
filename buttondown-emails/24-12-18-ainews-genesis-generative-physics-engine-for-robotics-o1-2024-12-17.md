@@ -1,13 +1,44 @@
 ---
 id: a782d961-2f3c-41fc-a476-d01484fea774
-title: '[AINews] Genesis: Generative Physics Engine for Robotics (o1-2024-12-17)'
+title: 'Genesis: Generative Physics Engine for Robotics (o1-2024-12-17)'
 date: '2024-12-19T04:48:33.221430Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-genesis-generative-physics-engine-for-6175
+description: >-
+  **Genesis** is a newly announced **universal physics engine** developed by a
+  large academic collaboration led by CMU PhD student Zhou Xian, designed for
+  robotics and beyond. It integrates multiple state-of-the-art physics solvers
+  to simulate diverse materials and physical phenomena, offering a lightweight,
+  ultra-fast, pythonic robotics simulation platform with photo-realistic
+  rendering and generative data capabilities. Additionally, **OpenAI** released
+  the **o1** model to API with features like function calling, structured
+  outputs, and vision support, boasting 60% fewer reasoning tokens and strong
+  math/code performance. **Google**'s **Gemini 2.0 Pro** (Gemini Exp 1206) shows
+  accelerated deployment and improved coding, math, and reasoning capabilities.
+companies:
+  - openai
+  - google
+  - carnegie-mellon-university
+models:
+  - o1
+  - gemini-2.0-pro
+topics:
+  - universal-physics-engine
+  - robotics-simulation
+  - photo-realistic-rendering
+  - generative-data
+  - physics-simulation
+  - function-calling
+  - structured-outputs
+  - vision
+  - performance-benchmarks
+  - math
+  - code-generation
+people:
+  - zhou_xian
+  - aidan_mclau
+  - sundarpichai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**A universal physics engine is all you need.**
 

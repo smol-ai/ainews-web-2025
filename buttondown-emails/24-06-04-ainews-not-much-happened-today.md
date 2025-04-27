@@ -1,13 +1,66 @@
 ---
 id: b67a635d-1bfc-4e15-bbb2-e7c543f37bde
-title: '[AINews] Not much happened today'
+title: Not much happened today
 date: '2024-06-04T23:53:47.552835Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-5500
+description: >-
+  **Twelve Labs** raised **$50m** in Series A funding co-led by NEA and
+  **NVIDIA's NVentures** to advance multimodal AI. **Livekit** secured **$22m**
+  funding. **Groq** achieved a throughput of **800k tokens/second**. OpenAI saw
+  a resignation thread from Daniel Kokotajlo. Twitter users highlighted **Gemini
+  1.5 FlashModel** for high performance at low cost and **Gemini Pro** ranking
+  #2 in Japanese language benchmarks. **Mixtral models** optimized with
+  TensorRT-LLM run up to 8x faster on NVIDIA RTX GPUs. **Mamba-2** architecture
+  uses state space duality for larger states and faster training, outperforming
+  previous models. **Phi-3 Medium (14B)** and **Small (7B)** models benchmark
+  near GPT-3.5-Turbo-0613 and Llama 3 8B. Prompt engineering enables advanced
+  capabilities like jailbreaking and schema adherence. Data quality is critical
+  for model performance, with upcoming masterclasses on data curation.
+  Discussions on AI safety include Frontier AI lab whistleblower protections and
+  debates on aligning AI to user intent versus broader humanity interests.
+companies:
+  - twelve-labs
+  - livekit
+  - groq
+  - openai
+  - nvidia
+  - nea
+  - lmsys
+models:
+  - gemini-1.5-flashmodel
+  - gemini-pro
+  - mixtral
+  - mamba-2
+  - phi-3-medium
+  - phi-3-small
+  - gpt-3.5-turbo-0613
+  - llama-3-8b
+  - llama-2-70b
+  - mistral-finetunes
+topics:
+  - multimodality
+  - model-optimization
+  - tensor-cores
+  - state-space-models
+  - sequence-models
+  - benchmarking
+  - prompt-engineering
+  - data-curation
+  - ai-safety
+  - alignment
+people:
+  - _arohan_
+  - rohanpaul_ai
+  - tri_dao
+  - _albertgu
+  - _philschmid
+  - sarahcat21
+  - hamelhusain
+  - jachiam0
+  - willdepue
+  - teknium1
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 6/3/2024-6/4/2024.
 We checked 7 subreddits, [**384** Twitters](https://twitter.com/i/lists/1585430245762441216) and **29** Discords (**400** channels, and **4568** messages) for you. 

@@ -1,13 +1,50 @@
 ---
 id: d5c69936-e1cf-458c-860d-c5af248bd0cf
-title: '[AINews] A quiet weekend'
+title: A quiet weekend
 date: '2024-04-29T22:10:15.446084Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-a-quiet-weekend
+description: >-
+  **Yann LeCun** predicts a shift to **AR interfaces** with AI assistants in
+  10-15 years. The **Dolphin-2.9** model based on **Llama-3** was released,
+  improving quality. **PixArt Sigma** achieves **Stable Diffusion 3.0** level
+  with only **0.6B parameters** and full prompt adherence. Transformers can use
+  meaningless filler tokens for algorithmic tasks with dense supervision.
+  AI-generated restaurant reviews can pass the Turing test. **Uber** uses graph
+  algorithms and learned embeddings for ETA prediction. **Coca-Cola** and
+  **Microsoft** announce a 5-year AI partnership. The **Llama-3 70B** model can
+  run on a single 4GB GPU with **AirLLM** optimization. **Mistral.rs** is
+  introduced as a fast LLM inference platform with quantization and OpenAI API
+  compatibility. Only 5% of LLMs make it from prototype to production in
+  enterprise settings. EXL2 and GGUF quantization methods for Llama models show
+  similar performance, with quantization degrading Llama-3 and Llama-2 more than
+  full precision.
+companies:
+  - microsoft
+  - coca-cola
+  - uber
+  - lmsys
+  - nous-research
+  - mistral-ai
+models:
+  - llama-3
+  - dolphin-2.9
+  - pixart-sigma
+  - llama-3-70b
+topics:
+  - ar-interfaces
+  - transformers
+  - quantization
+  - model-optimization
+  - turing-test
+  - graph-algorithms
+  - embedding-models
+  - inference-speed
+  - model-deployment
+  - algorithmic-tasks
+people:
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/26/2024-4/29/2024. We checked 7 subreddits and [**373** Twitters](https://twitter.com/i/lists/1585430245762441216) and **28** Discords (**416** channels, and **10824** messages) for you. Estimated reading time saved (at 200wpm): **1197 minutes**.
 

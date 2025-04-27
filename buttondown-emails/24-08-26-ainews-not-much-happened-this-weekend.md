@@ -1,13 +1,68 @@
 ---
 id: bd83aaf6-a034-4ade-acd4-2426be77d923
-title: '[AINews] not much happened this weekend'
+title: not much happened this weekend
 date: '2024-08-27T00:09:52.018820Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-this-weekend
+description: >-
+  **Nous Research** announced **DisTrO**, a distributed AI optimizer reducing
+  inter-GPU communication by 1000x-10,000x enabling low-latency training on slow
+  networks, offering an alternative to **GDM's DiLoCo**. **Cursor AI** gained
+  viral attention from an 8-year-old user and announced a fundraise, with
+  podcast co-host Aman returning. **George Hotz** launched **tinybox** for sale.
+  In robotics, Chinese startup **AGIBOT** revealed 5 new humanoid robots, and
+  **Unitree** showcased its G1 humanoid robot nearing mass production at
+  $16,000. ETH Zurich and Disney developed an AI system for physics-based robot
+  motion generation from text/image inputs. UC San Diego released **ACE**, an
+  open-source teleoperation system for multi-robot control. AI21 Labs unveiled
+  **Jamba 1.5**, a multilingual model with 256k context length and permissive
+  licensing. **Luma Labs** released **Dream Machine 1.5** for improved
+  text-to-video generation. **Ideogram v2** improved text-to-image generation
+  with near-perfect text output. **Nvidia** and **Mistral** released
+  **Mistral-NeMo-Minitron 8B**, a small model outperforming **Mistral-7B** and
+  **llama-3-1-8b** on the Open LLM leaderboard.
+companies:
+  - nous-research
+  - cursor-ai
+  - gdm
+  - box
+  - agibot
+  - unitree
+  - eth-zurich
+  - disney
+  - uc-san-diego
+  - ai21-labs
+  - luma-labs
+  - ideogram
+  - nvidia
+  - mistral
+models:
+  - mistral-nemo-minitron-8b
+  - mistral-7b
+  - llama-3-1-8b
+  - jamba-1.5
+  - dream-machine-1.5
+  - ideogram-v2
+topics:
+  - distributed-ai
+  - optimizer
+  - inter-gpu-communication
+  - low-latency-training
+  - humanoid-robots
+  - open-source
+  - physics-based-motion
+  - teleoperation
+  - multilingual-models
+  - long-context
+  - text-to-video
+  - text-to-image
+  - model-performance
+people:
+  - adcock_brett
+  - aman
+  - george_hotz
+  - swyx
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**we're running out of subtitles.**
 

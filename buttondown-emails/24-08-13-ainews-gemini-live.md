@@ -1,13 +1,63 @@
 ---
 id: 9afa131e-b7a0-448b-a184-550ac7f96ccf
-title: '[AINews] Gemini Live'
+title: Gemini Live
 date: '2024-08-14T01:23:26.876396Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-live
+description: >-
+  **Google** launched **Gemini Live** on Android for **Gemini Advanced**
+  subscribers during the Pixel 9 event, featuring integrations with Google
+  Workspace apps and Pixel Buds Pro 2. The rollout began on 8/12/2024, with iOS
+  support planned. **Anthropic** released **Genie**, an AI software engineering
+  system achieving a 57% improvement on SWE-Bench. **TII** introduced **Falcon
+  Mamba**, a 7B attention-free open-access model scalable to long sequences.
+  Benchmarking revealed that longer context lengths do not always improve
+  Retrieval-Augmented Generation performance. **Supabase** launched an
+  AI-powered Postgres service dubbed the "ChatGPT of databases," fully open
+  source. **Perplexity AI** partnered with Polymarket to integrate real-time
+  event probability predictions. A tutorial demonstrated a multimodal recipe
+  recommender using **Qdrant**, **LlamaIndex**, and **Gemini**. OpenAI
+  engineering insights emphasized debugging and hard work, while Keras 3.5.0
+  added Hugging Face Hub integration.
+companies:
+  - google
+  - anthropic
+  - tii
+  - supabase
+  - perplexity-ai
+  - llamaindex
+  - hugging-face
+  - openai
+  - qdrant
+models:
+  - gemini-1.5-pro
+  - genie
+  - falcon-mamba
+  - gemini
+topics:
+  - multimodality
+  - benchmarking
+  - long-context
+  - retrieval-augmented-generation
+  - open-source
+  - model-releases
+  - ai-software-engineering
+  - attention-mechanisms
+  - model-scaling
+  - model-performance
+  - model-training
+  - api
+  - model-integration
+people:
+  - omarsar0
+  - osanseviero
+  - dbrxmosaicai
+  - alphasignalai
+  - perplexity_ai
+  - llama_index
+  - _jasonwei
+  - svpino
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Lots of little $20/month subscriptions for everything in your life are all you need.**
 

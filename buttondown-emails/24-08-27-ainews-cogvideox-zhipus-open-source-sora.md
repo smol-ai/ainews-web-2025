@@ -1,13 +1,60 @@
 ---
 id: 4f94e7b8-9da2-49af-ada9-2ee46641fb3a
-title: '[AINews] CogVideoX: Zhipu''s Open Source Sora'
+title: 'CogVideoX: Zhipu''s Open Source Sora'
 date: '2024-08-28T01:26:46.937370Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-cogvideox-zhipus-open-source-sora
+description: >-
+  **Zhipu AI**, Alibaba's AI arm and one of China's top AI labs, released
+  **CogVIdeoX**, an open **5B video generation model** that runs without GPUs
+  via their ChatGLM web and desktop apps. **Meta AI** announced trust & safety
+  research and **CyberSecEval 3** alongside the release of **Llama 3.1**, with
+  **Llama 3 405B** now available serverless on Google Cloud Vertex AI and
+  Hugging Face x NVIDIA NIM API. The open vision-language model **Moondream**
+  received updates improving DocVQA and TextVQA performance. The **Phi-3.5 MoE
+  chat model** was highlighted as a lightweight LLM with 16x3.8B parameters and
+  2 experts. Salesforce's **LlamaRank** model powers the new Together Rerank API
+  for document and code ranking. Novel techniques like **superposition
+  prompting** and the **AgentWrite pipeline** for generating long-form content
+  over 20,000 words were discussed. Research comparing **Retrieval Augmented
+  Generation (RAG)** and **Long Context (LC)** approaches found LC more
+  effective but costlier. Tools like **Not Diamond** AI model router, AI command
+  line interfaces, and an open-source WebGPU background removal tool were also
+  featured.
+companies:
+  - zhipu-ai
+  - alibaba
+  - meta-ai-fair
+  - google
+  - hugging-face
+  - nvidia
+  - togethercompute
+  - salesforce
+models:
+  - cogvideox
+  - llama-3-1
+  - llama-3-405b
+  - moondream
+  - phi-3.5
+  - llamarank
+topics:
+  - video-generation
+  - serverless-computing
+  - vision
+  - docvqa
+  - textvqa
+  - mixture-of-experts
+  - retrieval-augmented-generation
+  - long-context
+  - superposition-prompting
+  - long-form-content-generation
+  - model-routing
+  - webgpu
+  - background-removal
+people:
+  - _philschmid
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Open Source Videogen is all you need.**
 

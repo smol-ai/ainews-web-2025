@@ -1,13 +1,61 @@
 ---
 id: bef0ea8e-4b87-4f2e-a4fb-5fb98fa9c019
-title: '[AINews] DataComp-LM: the best open-data 7B model/benchmark/dataset'
+title: 'DataComp-LM: the best open-data 7B model/benchmark/dataset'
 date: '2024-07-20T02:08:36.357452Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-apple-dclm-7b-the-best-new-open-weights
+description: >-
+  **DataComp team** released a competitive **7B open data model** trained on
+  only **2.5T tokens** from the massive **DCLM-POOL** dataset of **240 trillion
+  tokens**, showing promising scaling trends for dataset design and
+  outperforming FineWeb at all scales. **OpenAI** launched the **GPT-4o mini**
+  model with cost-effective pricing and performance near **GPT-4-Turbo**,
+  praised for reasoning capabilities. **NVIDIA** and **Mistral** introduced the
+  **Mistral NeMo 12B** model featuring a **128k token context window**, FP8
+  checkpoint, multilingual support, and Apache 2.0 licensing. **DeepSeek**
+  announced **DeepSeek-V2-0628** as the top open-source model on the LMSYS
+  Chatbot Arena leaderboard with strong rankings in coding, math, and hard
+  prompts. These developments highlight advances in dataset quality, model
+  efficiency, and open-source leadership.
+companies:
+  - datacomp
+  - hugging-face
+  - openai
+  - nvidia
+  - mistral
+  - deepseek
+models:
+  - mistral-7b
+  - mistral-nemo-12b
+  - gpt-4o-mini
+  - deepseek-v2-0628
+  - llama-3
+  - gemma-2
+  - qwen-2
+topics:
+  - dataset-design
+  - scaling-laws
+  - fine-tuning
+  - multilinguality
+  - function-calling
+  - benchmarking
+  - model-performance
+  - cost-efficiency
+  - context-windows
+  - open-source-models
+  - reasoning
+  - tokenization
+people:
+  - sama
+  - gdb
+  - miramurati
+  - lmsysorg
+  - polynoamial
+  - guillaumelample
+  - _philschmid
+  - osanseviero
+  - deepseek_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**240T tokens is all you need to start with.**
 

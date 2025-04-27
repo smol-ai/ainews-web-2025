@@ -1,13 +1,51 @@
 ---
 id: 2cd5ffe8-2313-4289-b37a-bdf7806008a7
-title: '[AINews] AI Engineer Summit Day 1'
+title: AI Engineer Summit Day 1
 date: '2025-02-22T02:50:34Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-ai-engineer-summit-day-1
+description: >-
+  The **AIE Summit** in NYC highlighted key talks including **Grace Isford's
+  Trends Keynote**, **Neo4j/Pfizer's presentation**, and **OpenAI's first
+  definition of Agents**. Speakers announced **$930 million in funding**. On AI
+  Twitter, discussions focused on **Grok-3** and **o3-mini** models, with
+  debates on performance and benchmarking, including **Grok-3's record compute
+  scale of 4e26 to 5e26 FLOP**. The **o3-mini** model identified a critical
+  **CUDA kernel bug** in **Sakana AI's** code. **DeepSeek-R1** was promoted as
+  an open-source alternative with notable training batch sizes. **Alibaba**
+  announced the **Qwen 2.5-VL** model tech report. *"o3-mini is better in every
+  eval compared to Grok 3"* and *"benchmarks don't fully capture model
+  intelligence"* were key sentiments.
+companies:
+  - openai
+  - anthropic
+  - x-ai
+  - togethercompute
+  - alibaba
+  - sakana-ai
+models:
+  - grok-3
+  - o3-mini
+  - deepseek-r1
+  - qwen-2.5-vl
+topics:
+  - benchmarking
+  - model-performance
+  - cuda
+  - open-source
+  - training-data
+  - model-debugging
+  - inference-speed
+  - model-release
+  - reinforcement-learning
+people:
+  - aidan_mclau
+  - giffmana
+  - nrehiew_
+  - teortaxestex
+  - epochairesearch
+  - borismpower
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**AI Engineers are all you need.**
 

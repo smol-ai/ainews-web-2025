@@ -1,13 +1,62 @@
 ---
 id: c95ebc48-feaa-4982-8a91-92a04a1035bb
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-04-04T06:34:03.445572Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-6597
+description: >-
+  **Devin** significantly cut prices for its AI software engineer product to
+  **$20 per month** from **$500**. The **Qusar-Alpha** model offers a **1
+  million token context window** and might be related to either **OpenAI** or
+  **Meta's Llama 4**, though it lacks substantial impact. **Gemini 2.5 Pro**
+  from **Google** scored **24.4%** on the **2025 US AMO** but lacks LaTex
+  rendering compared to **ChatGPT**. **DeepSeek V3** ranks 8th and 12th on
+  recent AI leaderboards. **Qwen 2.5** models have been integrated into the
+  **PocketPal** app. Research from **Anthropic** reveals that
+  **Chains-of-Thought (CoT)** reasoning in models like **Claude 3.7 Sonnet** and
+  **DeepSeek R1** is often unfaithful, especially on harder tasks. **OpenAI**
+  introduced **PaperBench** to benchmark AI agent coding abilities, showing
+  current agents struggle with long-horizon planning. **CodeAct**, a new agent
+  framework from **llama_index**, generalizes ReAct by enabling dynamic code
+  writing. **LangChain** explains multi-agent handoffs in LangGraph. **Runway
+  Gen-4** marks a new phase in media creation.
+companies:
+  - devin
+  - openai
+  - meta-ai-fair
+  - google
+  - anthropic
+  - llama_index
+  - langchain
+  - runway
+  - deepseek
+  - qwen
+models:
+  - gemini-2.5-pro
+  - chatgpt
+  - deepseek-v3
+  - qwen-2.5
+  - claude-3.7-sonnet
+  - deepseek-r1
+  - claude-3.5-sonnet
+topics:
+  - long-context
+  - benchmarking
+  - model-performance
+  - chains-of-thought
+  - reasoning
+  - multi-agent-systems
+  - agent-frameworks
+  - model-evaluation
+  - code-generation
+  - model-accuracy
+  - media-creation
+people:
+  - hkproj
+  - danielhanchen
+  - rasbt
+  - alexandr_wang
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

@@ -1,15 +1,57 @@
 ---
 id: 2afdc67e-0128-4608-8ca5-f19a62ad396e
 title: >-
-  [AINews] Tencent's Hunyuan-Large claims to beat DeepSeek-V2 and Llama3-405B
-  with LESS Data
+  Tencent's Hunyuan-Large claims to beat DeepSeek-V2 and Llama3-405B with LESS
+  Data
 date: '2024-11-06T06:22:40.424116Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-tencents-hunyuan-large-claims-to-beat
+description: >-
+  **Tencent** released a notable >300B parameter MoE model pretrained on **7T
+  tokens**, including **1.5T synthetic data** generated via **Evol-Instruct**.
+  The model introduces novel techniques like "recycle routing" and
+  expert-specific learning rates, alongside a compute-efficient scaling law for
+  MoE active parameters. However, its custom license restricts use in the EU and
+  large companies, and it avoids China-sensitive queries. Meanwhile,
+  **Anthropic** launched **Claude 3.5 Haiku**, touted as the **fastest and most
+  intelligent cost-efficient model**, though it is **10x more expensive** than
+  competitors like **Google's Gemini Flash** and **OpenAI's GPT-4o mini**.
+  **Meta** opened **Llama AI** to the **U.S. defense sector**. Additionally, a
+  **Llama 3.1 & 3.2 Vision hackathon** with a **$15K prize pool** was announced,
+  and **LlamaIndex** released a **React chat UI component**. Research highlights
+  include **MLX LM** advancements with **KV cache quantization** for efficiency.
+companies:
+  - tencent
+  - huggingface
+  - wizard-lm
+  - anthropic
+  - amazon
+  - google
+  - meta-ai-fair
+  - togethercompute
+  - llamaindex
+models:
+  - claude-3.5-haiku
+  - gemini-flash
+  - gpt-4o-mini
+  - llama-3-1
+  - llama-3-2
+  - mlx-lm
+topics:
+  - mixture-of-experts
+  - synthetic-data
+  - scaling-laws
+  - model-optimization
+  - model-architecture
+  - kv-cache-quantization
+  - model-licenses
+  - model-efficiency
+  - react
+  - hackathons
+  - api
+  - cost-efficiency
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Evol-instruct synthetic data is all you need.**
 

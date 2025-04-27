@@ -1,13 +1,70 @@
 ---
 id: 51d6e76c-1680-4f11-8d64-28bd1544e38e
-title: '[AINews] Google''s Agent2Agent Protocol (A2A)'
+title: Google's Agent2Agent Protocol (A2A)
 date: '2025-04-10T01:31:18.610701Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-googles-agent2agent-protocol-a2a
+description: >-
+  **Google Cloud Next** announcements introduced full **MCP support** and a new
+  **Agent to Agent protocol** designed for interoperability with partners
+  including **Anthropic**. The protocol features **Agent Card**, **Task
+  communication channels**, **Enterprise Auth and Observability**, and
+  **Streaming and Push Notification support**. In model news, **Moonshot AI**
+  released **Kimi-VL-A3B**, a multimodal model with **128K context** and **~3B
+  active parameters**, outperforming **gpt-4o** on vision and math benchmarks.
+  **Meta AI** launched smaller versions of **llama-4**: **Scout** and
+  **Maverick**, with fine-tuning capabilities and improved intelligence indices.
+  **UC Berkeley** open-sourced **DeepCoder 14B**, a coding model trained with
+  reinforcement learning on **24K coding problems** using **32 H100 GPUs** over
+  2.5 weeks, rivaling **openai's o3-mini** and **o1**. **Nvidia** released
+  **llama-3.1-nemotron-ultra-253b** on Hugging Face, outperforming **llama-4
+  behemoth** and **maverick**.
+companies:
+  - google
+  - google-deepmind
+  - anthropic
+  - moonshot-ai
+  - meta-ai-fair
+  - uc-berkeley
+  - openai
+  - nvidia
+  - huggingface
+  - togethercompute
+  - deepseek
+models:
+  - kimi-vl-a3b
+  - gpt-4o
+  - llama-4-scout
+  - llama-4-maverick
+  - deepcoder-14b
+  - o3-mini
+  - o1
+  - llama-3.1-nemotron-ultra-253b
+  - llama-4-behemoth
+  - llama-4
+topics:
+  - multimodality
+  - reinforcement-learning
+  - fine-tuning
+  - model-training
+  - model-release
+  - model-performance
+  - coding
+  - agent-communication
+  - enterprise-authentication
+  - streaming
+  - push-notifications
+  - context-windows
+people:
+  - reach_vb
+  - _akhaliq
+  - epochairesearch
+  - artificialanlys
+  - winglian
+  - danielhanchen
+  - yuchenj_uw
+  - jeremyphoward
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Remote agents are all you need.**
 

@@ -1,13 +1,61 @@
 ---
 id: c7621e73-b07b-43ec-b2b9-6458dcb3bf6c
-title: '[AINews] The Core Skills of AI Engineering'
+title: The Core Skills of AI Engineering
 date: '2024-02-04T00:54:29.799988Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-core-skills-of-ai-engineering
+description: >-
+  **AI Discords** analysis for **2/2/2024** covered **21 guilds**, **312
+  channels**, and **4782 messages**, saving an estimated **382 minutes** of
+  reading time. A major discussion led by **Eugene Yan** focused on **AI
+  Engineering**, highlighting the overlap and challenges between software
+  engineering and data science skills in AI development. The **TheBloke
+  Discord** featured talks on **large language models** like **MiquMaid** and
+  **OLMo**, including **open-source LLM** licensing under **Apache 2.0** for a
+  **65B** parameter model, and technical topics such as **Automatic Weight
+  Quantization (AWQ)**, **LoRA fine-tuning**, and **quantization** techniques
+  like **LoftQ**. Discussions also touched on **AI security** with watermarking,
+  **superconductors** and **carbon nanotubes** in hardware, and deployment of
+  LLMs via **Hugging Face spaces**. The **LAION Discord** focused on challenges
+  in **model distillation** with **SSD-1B**, data quality improvements using
+  captioned datasets like **BLIP**, **COCO**, and **LLaVA**, and debates on
+  **tokenization** methods for better prompt adherence in image generation.
+companies:
+  - ai2
+  - huggingface
+  - laion
+  - aliexpress
+models:
+  - miqumaid
+  - olmo
+  - awq
+  - exl2
+  - mistral-medium
+  - internlm
+  - ssd-1b
+  - lora
+topics:
+  - ai-engineering
+  - software-engineering
+  - data-science
+  - open-source
+  - large-language-models
+  - automatic-weight-quantization
+  - quantization
+  - fine-tuning
+  - model-distillation
+  - dataset-quality
+  - tokenization
+  - prompt-adherence
+  - image-generation
+  - ai-security
+  - superconductors
+  - carbon-nanotubes
+  - deployment
+  - hf-spaces
+people:
+  - eugene_yan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/2/2024. We checked **21** guilds, **312** channels, and **4782** messages for you. Estimated reading time saved (at 200wpm): **382 minutes**.
 

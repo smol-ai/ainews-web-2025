@@ -1,13 +1,50 @@
 ---
 id: efb96740-607d-4a0a-98d5-26ccac6e392d
-title: '[AINews] Sora pushes SOTA'
+title: Sora pushes SOTA
 date: '2024-02-16T11:15:03.174687Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-sora-pushes-sota
+description: >-
+  **Discord communities** analyzed over **20 guilds**, **312 channels**, and
+  **10550 messages** revealing discussions on advanced AI topics. Highlights
+  include the development of a **Dungeons and Dragons DM assistant** using
+  models like **H20 GPT**, GPU power supply debates involving **3090 and 3060
+  GPUs**, and excitement around **Google's Gemini 1.5** with its **1 million
+  token context window** and **OpenAI's Sora** model. Technical challenges with
+  **large world models (LWM)**, **GPT-assisted coding**, and **role-play model
+  optimization** using **Yi models** and **Mixtral Instruct** were discussed.
+  Fine-tuning tools like **AutoFineTune** and integration techniques such as
+  **JSPyBridge** for Python-JavaScript interoperability were also key topics.
+  NVIDIA's **Chat with RTX** feature leveraging **retrieval-augmented generation
+  (RAG)** on 30+ series GPUs was compared to LM Studio's support for **Mistral
+  7b** and **Llama 13b** models.
+companies:
+  - openai
+  - google-deepmind
+  - nvidia
+  - mistral-ai
+  - thebloke
+models:
+  - gemini-1.5
+  - h20-gpt
+  - mistral-7b
+  - llama-13b
+  - mixtral-instruct
+  - yi-models
+topics:
+  - retrieval-augmented-generation
+  - fine-tuning
+  - multimodality
+  - model-merging
+  - model-optimization
+  - gpu-power-management
+  - cross-language-integration
+  - role-play
+  - training-loss
+  - synthetic-data
+  - code-generation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/13-15/2024. We checked **20** guilds, **312** channels, and **10550** messages for you. Estimated reading time saved (at 200wpm): **909 minutes**. Due to a config bug we summarized 2.5 days worth of conversations by accident.
 

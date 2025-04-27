@@ -1,15 +1,50 @@
 ---
 id: d7e2899a-fcf4-4b0b-a5aa-beb34e412da2
 title: >-
-  [AINews] DeepSeek R1: o1-level open weights model and a simple recipe for
-  upgrading 1.5B models to Sonnet/4o level
+  DeepSeek R1: o1-level open weights model and a simple recipe for upgrading
+  1.5B models to Sonnet/4o level
 date: '2025-01-21T07:50:24.815688Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-deepseek-r1-o1-level-open-weights-model
+description: >-
+  **DeepSeek** released **DeepSeek R1**, a significant upgrade over their recent
+  **DeepSeek V3** open model, featuring 8 models including full-size 671B MoE
+  and multiple distillations from **Qwen 2.5** and **Llama 3.1/3.3**. The models
+  are **MIT licensed** allowing finetuning and distillation. Pricing is
+  drastically reduced, up to **50x cheaper than o1**. The training process used
+  **GRPO** (reward for correctness and style outcomes) instead of traditional RL
+  methods like MCTS or reward models, leading to emergent reasoning capabilities
+  after thousands of RL steps. Distillations proved highly effective, and the
+  models can run on platforms like **Ollama** and generate complex code such as
+  **Manim**. The release addresses all issues from the o1 blogpost and
+  demonstrates novel training techniques and alignment strategies.
+companies:
+  - deepseek
+  - ollama
+  - qwen
+  - llama
+models:
+  - deepseek-r1
+  - deepseek-v3
+  - qwen-2.5
+  - llama-3.1
+  - llama-3.3-70b
+topics:
+  - reinforcement-learning
+  - model-fine-tuning
+  - distillation
+  - moe
+  - model-optimization
+  - pricing
+  - alignment
+  - reasoning
+  - reward-models
+  - model-training
+  - open-models
+  - multimodality
+  - code-generation
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**GRPO is all you need.**
 

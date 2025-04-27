@@ -1,13 +1,70 @@
 ---
 id: a2bd40a4-dce3-4c05-82d4-e6c52223e086
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-02-12T01:24:43.684385Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-1223
+description: >-
+  **Zyphra AI** launched **Zonos-v0.1**, a leading open-weight Text to Speech
+  model supporting multiple languages and zero-shot voice cloning. **Meta FAIR**
+  released the open source **Audiobox Aesthetics** model trained on 562 hours of
+  audio data, enhancing **Meta Movie Gen**. **Kyutai Labs** introduced
+  **Moshi**, a real-time speech-to-speech system with 200ms latency.
+  **Perplexity AI's Sonar model**, based on **Llama 3.3 70b**, outperforms
+  **GPT-4o-mini** and **Claude 3.5 Haiku**, running at 1200 tokens/second on
+  **Cerebras** infrastructure with nearly 10x faster decoding than **Gemini 2.0
+  Flash**. **UC Berkeley** open-sourced a 1.5B model trained with reinforcement
+  learning on 40K math problems, surpassing **o1-preview**. **ReasonFlux-32B**
+  achieved 91.2% on the MATH benchmark, outperforming **OpenAI o1-preview** and
+  **DeepSeek-V3**. **CrossPoster**, an open-source AI agent built on
+  **LlamaIndex**, automates cross-posting across social platforms. **Brilliant
+  Labs** integrated the **Google DeepMind Gemini Live API** into smart glasses
+  for real-time translation and object recognition.
+companies:
+  - zyphra-ai
+  - meta-ai-fair
+  - kyutai-labs
+  - perplexity-ai
+  - uc-berkeley
+  - google-deepmind
+  - llamaindex
+  - cerebras
+models:
+  - zonos-v0.1
+  - audiobox-aesthetics
+  - moshi
+  - sonar
+  - llama-3-70b
+  - gpt-4o-mini
+  - claude-3.5-haiku
+  - gpt-4o
+  - claude-3.5-sonnet
+  - deepseek-r1-distilled-qwen-1.5b
+  - reasonflux-32b
+  - o1-preview
+topics:
+  - text-to-speech
+  - speech-to-speech
+  - benchmarking
+  - model-performance
+  - reinforcement-learning
+  - math
+  - real-time-processing
+  - open-source
+  - cross-platform-integration
+  - multilinguality
+  - voice-cloning
+people:
+  - danhendrycks
+  - artificialanlys
+  - aiatmeta
+  - deeplearningai
+  - perplexity_ai
+  - yuchenj_uw
+  - omarsar0
+  - jerryjliu0
+  - _philschmid
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Paris is all you need.**
 

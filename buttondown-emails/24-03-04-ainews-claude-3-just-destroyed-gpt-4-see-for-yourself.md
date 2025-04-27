@@ -1,13 +1,51 @@
 ---
 id: bd591bdf-2e17-43a4-942e-2384e35a4b5a
-title: '[AINews] Claude 3 just destroyed GPT 4 (see for yourself)'
+title: Claude 3 just destroyed GPT 4 (see for yourself)
 date: '2024-03-04T23:59:02.180354Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-claude-3-just-destroyed-gpt-4-see-for
+description: >-
+  **Claude 3** from **Anthropic** launches in three sizes: Haiku (small,
+  unreleased), Sonnet (medium, default on claude.ai, AWS, GCP), and Opus (large,
+  on Claude Pro). Opus reportedly **outperforms GPT-4 on key benchmarks** like
+  GPQA, impressing benchmark authors. All models support **multimodality with
+  vision capabilities**, including converting a 2-hour video into a blog post.
+  Claude 3 features **better alignment, fewer refusals, and improved accuracy**
+  on complex queries. It supports a **200k token context window extendable to 1
+  million tokens** with near-perfect recall. Haiku is the fastest and most
+  cost-effective, reading dense research papers in under 3 seconds. The models
+  excel at structured output like JSON and are trained partly on synthetic data.
+  Safety improvements reduce refusal rates, though some criticism remains from
+  AI researchers. Finance, Medicine, and Philosophy domain evaluations are
+  highlighted over standard benchmarks. Opus also beats GPT-4 in coding tasks
+  but has some failure cases. Overall, Claude 3 offers significant advances in
+  speed, cost, multimodality, and long-context capabilities.
+companies:
+  - anthropic
+  - amazon
+  - google
+  - claude-ai
+models:
+  - claude-3-opus
+  - claude-3-sonnet
+  - claude-3-haiku
+  - claude-3
+topics:
+  - multimodality
+  - vision
+  - long-context
+  - model-alignment
+  - fine-tuning
+  - synthetic-data
+  - structured-output
+  - model-performance
+  - benchmarking
+  - safety
+  - code-generation
+people:
+  - mmitchell_ai
+  - connor_leahy
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/2/2024-3/4/2024. We checked [**356** Twitters](https://twitter.com/i/lists/1585430245762441216) and **22** Discords (**352** channels, and **9688** messages) for you. Estimated reading time saved (at 200wpm): **984 minutes**.
 

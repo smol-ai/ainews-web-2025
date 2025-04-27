@@ -1,13 +1,55 @@
 ---
 id: fbc61a1c-0a30-4463-9668-0bbe726114ee
-title: '[AINews] OpenAI Sora Turbo and Sora.com'
+title: OpenAI Sora Turbo and Sora.com
 date: '2024-12-10T02:21:42.861414Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-openai-sora-turbo-and-soracom
+description: >-
+  **OpenAI** launched **Sora Turbo**, enabling text-to-video generation for
+  ChatGPT Plus and Pro users with monthly generation limits and regional
+  restrictions in Europe and the UK. **Google** announced a quantum computing
+  breakthrough with the **Willow chip**, potentially advancing commercial
+  quantum applications. Discussions on **O1** model performance reveal it lags
+  behind **Claude 3.5 Sonnet** and **Gemini** in coding tasks, highlighting
+  transformer limitations in search tasks. The **Llama 3.3 Euryale v2.3** model
+  is praised for storytelling and roleplay on Reddit, with users adjusting
+  parameters to improve output. **Nvidia** faces an anti-monopoly investigation
+  in China, impacting its market position. Memes and humor around GPU issues and
+  embargo mishaps were also noted.
+companies:
+  - openai
+  - google
+  - meta-ai-fair
+  - nvidia
+  - huggingface
+models:
+  - sora-turbo
+  - o1
+  - claude-3.5-sonnet
+  - gemini
+  - llama-3-3-euryale-v2-3
+  - mistral-large
+  - behemoth
+  - endurance-v1-1
+topics:
+  - text-to-video-generation
+  - quantum-computing
+  - coding-capabilities
+  - transformers
+  - search-algorithms
+  - storytelling
+  - roleplay
+  - model-parameter-tuning
+  - anti-monopoly-investigation
+  - gpu-hardware
+people:
+  - sama
+  - sundarpichai
+  - bindureddy
+  - denny_zhou
+  - nrehiew_
+  - billpeeb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Access is all you need.**
 

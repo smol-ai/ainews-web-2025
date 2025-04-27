@@ -1,15 +1,57 @@
 ---
 id: 7b69cd80-a3f6-41e9-b1a7-5deff8ab7c50
-title: >-
-  [AINews] Reasoning Models are Near-Superhuman Coders (OpenAI IOI, Nvidia
-  Kernels)
+title: Reasoning Models are Near-Superhuman Coders (OpenAI IOI, Nvidia Kernels)
 date: '2025-02-14T02:42:41.628781Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-reasoning-models-are-near-superhuman
+description: >-
+  **o3** achieved a gold medal at the **2024 IOI** with a Codeforces rating in
+  the 99.8 percentile, outperforming most humans using **reinforcement
+  learning** over inductive bias methods, as noted by team member Alex Wei.
+  **Nvidia's DeepSeek-R1** automated GPU kernel generation, producing kernels
+  sometimes better than those by skilled engineers. **OpenAI** updated **o1**
+  and **o3-mini** to support file and image uploads in ChatGPT and released
+  **DeepResearch**, a powerful **o3** model with RL for deep chain-of-thought
+  reasoning. **Ollama** announced **OpenThinker** models fine-tuned from
+  **Qwen2.5** surpassing DeepSeek-R1 distillation models. **ElevenLabs** grew
+  into a $3.3 billion company offering AI voice synthesis tools without
+  open-sourcing. Research highlights include **Sakana AI Labs' TAID** knowledge
+  distillation method spotlighted at **ICLR2025**, and **Apple's** work on
+  scaling laws for MoEs.
+companies:
+  - openai
+  - nvidia
+  - ollama
+  - elevenlabs
+  - sakana-ai-labs
+  - apple
+  - stanfordnlp
+models:
+  - o3
+  - o1
+  - o3-mini
+  - deepseek-r1
+  - openthinker
+  - qwen-2.5
+  - deepresearch
+  - taid
+topics:
+  - reinforcement-learning
+  - gpu-kernel-optimization
+  - knowledge-distillation
+  - scaling-laws
+  - chain-of-thought-reasoning
+  - fine-tuning
+  - model-distillation
+  - model-optimization
+  - image-processing
+  - voice-synthesis
+people:
+  - alex_wei
+  - abacaj
+  - karpathy
+  - awnihannun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**RL is all you need.**
 

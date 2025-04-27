@@ -1,15 +1,44 @@
 ---
 id: b3ded501-bfcb-415e-9f51-e69f84ca18dd
 title: >-
-  [AINews] Mixture of Depths: Dynamically allocating compute in
-  transformer-based language models
+  Mixture of Depths: Dynamically allocating compute in transformer-based
+  language models
 date: '2024-04-05T22:44:29.761385Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mixture-of-depths-dynamically-allocating
+description: >-
+  **DeepMind** introduces the **Mixture-of-Depths (MoD)** technique, dynamically
+  allocating FLOPs across transformer layers to optimize compute usage,
+  achieving over **50% faster** forward passes without training impact. MoD
+  selectively processes tokens via top-k routing, improving efficiency and
+  potentially enabling faster ultra-long context handling. The method can
+  combine with Mixture-of-Experts (MoE) for decoupled routing of queries, keys,
+  and values. Reddit discussions highlight concerns about **LLM hype**
+  overshadowing other AI research, improvements in transformer efficiency, and
+  new frameworks like **Think-and-Execute** boosting algorithmic reasoning by
+  **10-20%** over baselines. Visual Autoregressive modeling (VAR) advances image
+  generation quality and speed, surpassing diffusion models, while **Octopus
+  v2**, a 2B parameter on-device model, outperforms **GPT-4** in function
+  calling accuracy and latency.
+companies:
+  - google-deepmind
+models:
+  - gpt-4
+  - octopus-v2
+topics:
+  - transformer-efficiency
+  - dynamic-compute-allocation
+  - mixture-of-experts
+  - mixture-of-depths
+  - top-k-routing
+  - algorithmic-reasoning
+  - autoregressive-modeling
+  - on-device-ai
+  - function-calling
+  - scaling-laws
+people:
+  - piotrpadlewski
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 4/4/2024-4/5/2024. We checked 5 subreddits and [**364** Twitters](https://twitter.com/i/lists/1585430245762441216) and **26** Discords (**386** channels, and **5819** messages) for you. Estimated reading time saved (at 200wpm): **631 minutes**. 19663
 

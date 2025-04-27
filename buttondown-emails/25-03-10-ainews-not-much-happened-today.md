@@ -1,13 +1,59 @@
 ---
 id: c9ae1eeb-08d5-4bc3-aed8-e07720f485fa
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-10T22:46:37.549783Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-3830
+description: >-
+  The AI news recap highlights several key developments: **nanoMoE**, a PyTorch
+  implementation of a mid-sized Mixture-of-Experts (MoE) model inspired by
+  Andrej Karpathy's nanoGPT, enabling pretraining on commodity hardware in under
+  a week. An agentic leaderboard ranks LLMs powering **smolagents CodeAgent**,
+  with **GPT-4.5** leading, followed by **Claude-3.7-Sonnet** and
+  **DeepSeek-R1**. Discussions on **DeepSeek's R1** model emphasize AI
+  commoditization and strategic moats based on brand and network effects.
+  **Q-Filters** introduce a training-free method for **KV cache compression**
+  achieving 32x compression with minimal perplexity loss. **PokéChamp**, a
+  minimax language agent for Pokémon battles powered by **GPT-4o** and
+  **Llama-3-8b**, achieves high win rates against existing bots. Other papers
+  include **TinyR1-32B-Preview** with Branch-Merge Distillation, **R1-Searcher**
+  incentivizing search capability via reinforcement learning, and the
+  **Forgetting Transformer** using a forget gate in softmax attention. The
+  summary also notes a paper on reinforcement learning fine-tuning emphasizing
+  likelihood-based approaches.
+companies:
+  - openai
+  - deepseek
+  - huggingface
+models:
+  - gpt-4.5
+  - claude-3.7-sonnet
+  - deepseek-r1
+  - nano-moe
+  - smolagents-codeagent
+  - gpt-4o
+  - llama-3-8b
+  - tinyr1-32b-preview
+  - r1-searcher
+  - forgetting-transformer
+topics:
+  - mixture-of-experts
+  - reinforcement-learning
+  - kv-cache-compression
+  - agentic-ai
+  - model-distillation
+  - minimax
+  - attention-mechanisms
+  - fine-tuning
+people:
+  - karpathy
+  - cwolferesearch
+  - aymericroucher
+  - teortaxestex
+  - jonathanross321
+  - akhaliq
+  - theaitimeline
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet weekend**
 

@@ -1,13 +1,50 @@
 ---
 id: e86c3e37-29c0-4b8a-97af-fadc9413dc21
-title: '[AINews] a quiet weekend'
+title: a quiet weekend
 date: '2024-08-12T22:36:30.630631Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-a-quiet-weekend-1879
+description: >-
+  **Figure** unveiled their humanoid robot Figure 02 operating autonomously at
+  BMW's plant, claimed as **the most advanced humanoid on the planet**.
+  **DeepMind** developed a table tennis robot achieving **100% wins against
+  beginners and 55% against intermediates**. **Boston Dynamics** showcased
+  Atlas' dexterity with pushups and burpees. An autonomous dental robot
+  performed the world's first dental procedure on a human, reducing a 2-hour
+  procedure to 15 minutes using a **3D volumetric scanner**. **SAM 2** is an
+  open unified model for real-time object segmentation applicable to unseen
+  visual content. **Alibaba** released **Qwen2-Math**, outperforming **GPT-4**
+  and **Claude 3.5** in math capabilities. A new Listening-While-Speaking
+  Language Model enables real-time simultaneous listening and speaking. A
+  disease prediction AI achieved **95% accuracy** predicting coronary artery
+  disease, type 2 diabetes, and breast cancer. Tools like **LlamaParse CLI** and
+  **MLX Whisper** package improve PDF parsing and speech recognition speed
+  respectively.
+companies:
+  - figure
+  - deepmind
+  - boston-dynamics
+  - alibaba
+  - llamaindex
+models:
+  - sam-2
+  - qwen2-math
+  - gpt-4
+  - claude-3.5
+topics:
+  - robotics
+  - object-segmentation
+  - real-time-processing
+  - disease-prediction
+  - speech-recognition
+  - cli-tools
+  - 3d-scanning
+people:
+  - adcock_brett
+  - rasbt
+  - hamel_husain
+  - rohanpaul_ai
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**peace and quiet is all you need.**
 

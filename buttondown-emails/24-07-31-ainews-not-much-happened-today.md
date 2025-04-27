@@ -1,13 +1,55 @@
 ---
 id: f6ce07b9-cb0b-4d23-8996-04827151f6a2
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2024-07-31T07:04:15.405372Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-to-be-named-5098
+description: >-
+  **Meta** released **SAM 2**, a unified model for real-time, promptable object
+  segmentation with a new dataset 4.5x larger and 53x more annotated than
+  previous ones. **FastHTML**, a new Python web framework by **Jeremy Howard**,
+  enables easy creation and deployment of interactive web apps. **Scale AI**
+  launched the SEAL Leaderboard on adversarial robustness, topped by **Gemini
+  1.5 Pro** from **Google DeepMind**. **Apple** published a technical report on
+  their Intelligence Foundation Language Models for on-device and server use.
+  **Yann LeCun** emphasized the importance of open source AI in a co-authored
+  article. On Reddit, a viral "Visual Guide to Quantization" detailed INT8,
+  INT4, and binary quantization techniques for efficient LLM inference.
+  **ChatGPT** advanced voice mode and vision-enabled versions began rolling out
+  to select users. **Leonardo AI** was acquired by **Canva**, and **Midjourney
+  v6.1** was released. **Project Groot** shared advancements in augmenting human
+  demonstration data for robotics.
+companies:
+  - meta-ai-fair
+  - jeremyphoward
+  - scale-ai
+  - google-deepmind
+  - apple
+  - openai
+  - canva
+  - midjourney
+  - project-groot
+models:
+  - sam-2
+  - gemini-1.5-pro
+  - chatgpt
+  - midjourney-v6.1
+topics:
+  - object-segmentation
+  - quantization
+  - web-development-framework
+  - adversarial-robustness
+  - on-device-ai
+  - open-source
+  - model-benchmarking
+  - voice-recognition
+  - robotics
+  - model-release
+people:
+  - jeremyphoward
+  - demishassabis
+  - ylecun
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**it was a quiet day.**
 

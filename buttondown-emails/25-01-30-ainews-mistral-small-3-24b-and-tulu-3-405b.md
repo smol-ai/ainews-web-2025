@@ -1,13 +1,56 @@
 ---
 id: 43d26a15-9c4e-4391-9331-9f5e01ce3300
-title: '[AINews] Mistral Small 3 24B and Tulu 3 405B'
+title: Mistral Small 3 24B and Tulu 3 405B
 date: '2025-01-31T00:08:47.548368Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-mistral-small-3-24b-and-tulu-3-405b
+description: >-
+  **Mistral AI** released **Mistral Small 3**, a 24B parameter model optimized
+  for local inference with low latency and 81% accuracy on MMLU, competing with
+  **Llama 3.3 70B**, **Qwen-2.5 32B**, and **GPT4o-mini**. **AI2** released
+  **Tülu 3 405B**, a large finetuned model of **Llama 3** using Reinforcement
+  Learning from Verifiable Rewards, competitive with **DeepSeek v3**. **Sakana
+  AI** launched **TinySwallow-1.5B**, a Japanese language model with their TAID
+  distillation method, runnable on-device. **Alibaba_Qwen** released **Qwen 2.5
+  Max**, their largest model trained on 20 trillion tokens, matching performance
+  of **DeepSeek V3**, **Claude 3.5 Sonnet**, and **Gemini 1.5 Pro**, with
+  updated API pricing. These releases highlight advances in model efficiency,
+  finetuning, and on-device AI capabilities.
+companies:
+  - mistral-ai
+  - ai2
+  - sakana-ai
+  - alibaba_qwen
+  - deepseek
+  - ollama
+  - llamaindex
+models:
+  - mistral-small-3
+  - tulu-3-405b
+  - llama-3
+  - llama-3-70b
+  - qwen-2.5-max
+  - qwen-2.5
+  - claude-3.5-sonnet
+  - gemini-1.5-pro
+  - gpt4o-mini
+  - tinyswallow-1.5b
+  - deepseek-v3
+topics:
+  - model-releases
+  - model-fine-tuning
+  - reinforcement-learning
+  - local-inference
+  - model-optimization
+  - on-device-ai
+  - distillation
+  - performance
+  - api
+  - natural-language-processing
+people:
+  - clementdelangue
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Open models are all we need.**
 

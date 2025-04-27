@@ -1,13 +1,58 @@
 ---
 id: 56bd7e91-4e60-435f-a93b-7956e5414a24
-title: '[AINews] The DSPy Roadmap'
+title: The DSPy Roadmap
 date: '2024-08-20T05:06:22.742788Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-the-dspy-roadmap
+description: >-
+  **Omar Khattab** announced joining **Databricks** before his MIT professorship
+  and outlined the roadmap for **DSPy 2.5 and 3.0+**, focusing on improving core
+  components like LMs, Signatures, Optimizers, and Assertions, with plans to
+  adopt **LiteLLM** to reduce code and enhance caching and streaming. **Google**
+  launched **Gemini Live**, a mobile conversational AI with voice and 10 voices,
+  alongside **Pixel Buds Pro 2** featuring a custom Tensor A1 chip. **OpenAI**'s
+  updated **ChatGPT-4o** reclaimed the top spot on LMSYS Arena. **xAI** released
+  **Grok-2** in beta with advanced image generation capabilities. **Nous
+  Research** introduced **Hermes 3**, an open-source model with up to 405B
+  parameters achieving SOTA. Robotics advances include **Astribot**'s new
+  humanoid and **Apple**'s tabletop robot with Siri voice commands. **Sakana
+  AI** launched "The AI Scientist," an autonomous AI research system. Vision
+  Transformer (ViT) performance was also discussed.
+companies:
+  - databricks
+  - mit
+  - google
+  - openai
+  - x-ai
+  - nous-research
+  - astribot
+  - apple
+  - sakana-ai
+models:
+  - dspy-2.5
+  - dspy-3.0
+  - litellm
+  - gemini
+  - chatgpt-4o
+  - grok-2
+  - hermes-3
+  - vit
+topics:
+  - declarative-pipelines
+  - fine-tuning
+  - optimizers
+  - interactive-optimization
+  - model-efficiency
+  - voice-ai
+  - image-generation
+  - open-source-models
+  - robotics
+  - autonomous-systems
+  - vision
+people:
+  - omar_khattab
+  - giffmana
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Systematic AI engineering is all you need.**
 

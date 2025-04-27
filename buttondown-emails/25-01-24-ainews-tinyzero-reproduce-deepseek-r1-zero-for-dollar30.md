@@ -1,13 +1,56 @@
 ---
 id: dcf864bd-c550-4eaa-a273-43ca29ccec9a
-title: '[AINews] TinyZero: Reproduce DeepSeek R1-Zero for $30'
+title: 'TinyZero: Reproduce DeepSeek R1-Zero for $30'
 date: '2025-01-25T02:32:28.760341Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-tinyzero-reproduce-deepseek-r1-zero-for-30
+description: >-
+  **DeepSeek R1** demonstrates a lower bound distillation effect at **1.5B**
+  parameters with RLCoT reasoning as an emergent property, validated by Jiayi
+  Pan from Berkeley using a cheap **Qwen** model finetune for math tasks. The
+  **Humanity’s Last Exam (HLE)** benchmark introduces **3,000 expert-level
+  questions** across **100+ subjects** with current models scoring below
+  **10%**, where **DeepSeek R1** achieves **9.4%**. **DeepSeek R1** excels in
+  chain-of-thought reasoning, outperforming **o1** while being **20x cheaper**
+  and MIT licensed. **OpenAI Operator** is deployed to all US Pro users enabling
+  AI agent tasks like ordering meals and booking reservations. **Hugging Face**
+  announces leadership changes after significant growth, and **Meta AI**
+  releases the first stable **Llama Stack** with automated verification.
+  Technical challenges like macOS memory management and efficient model training
+  are also discussed.
+companies:
+  - deepseek
+  - berkeley
+  - openai
+  - huggingface
+  - meta-ai-fair
+models:
+  - deepseek-r1
+  - qwen
+  - o1
+  - claude-3-sonnet
+  - llama-stack
+topics:
+  - reinforcement-learning
+  - fine-tuning
+  - chain-of-thought
+  - benchmarking
+  - memory-management
+  - model-training
+  - agentic-workflows
+  - multi-modal-benchmarks
+people:
+  - jiayi_pan
+  - saranormous
+  - reach_vb
+  - lmarena_ai
+  - nearcyan
+  - omarsar0
+  - philschmid
+  - hardmaru
+  - awnihannun
+  - winglian
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**RL is all you need.**
 

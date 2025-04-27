@@ -1,13 +1,41 @@
 ---
 id: c9965154-d604-4bbd-b2a4-0197cfb2005a
-title: '[AINews] lots of little things happened this week'
+title: lots of little things happened this week
 date: '2025-03-22T00:20:28.950836Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-lots-of-little-things-happened-this-week
+description: >-
+  **Anthropic** introduced a novel 'think' tool enhancing instruction adherence
+  and multi-step problem solving in agents, with combined reasoning and tool use
+  demonstrated in **Claude**. **NVIDIA**'s **Llama-3.3-Nemotron-Super-49B-v1**
+  ranked #14 on LMArena, noted for strong math reasoning using a 15M
+  post-training dataset. **Sakana AI** launched a Sudoku-based reasoning
+  benchmark to advance AI reasoning capabilities. **Meta AI** released
+  **SWEET-RL**, a reinforcement learning algorithm improving long-horizon
+  multi-turn tasks by 6%, and introduced **CollaborativeAgentBench**, a new
+  benchmark for collaborative LLM agents in programming and design tasks.
+  **Percy Liang** relaunched the **HELM** benchmark with 5 challenging datasets
+  evaluating 22 top language models.
+companies:
+  - anthropic
+  - nvidia
+  - sakana-ai
+  - meta-ai-fair
+models:
+  - llama-3.3-nemotron-super-49b-v1
+  - claude
+topics:
+  - reinforcement-learning
+  - reasoning
+  - benchmarks
+  - multi-turn-collaboration
+  - instruction-following
+  - model-evaluation
+  - dataset-release
+  - collaborative-agents
+people:
+  - percyliang
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Incremental updates are all you need.**
 

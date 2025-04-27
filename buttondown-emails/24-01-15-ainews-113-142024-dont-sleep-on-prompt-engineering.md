@@ -1,13 +1,42 @@
 ---
 id: d2a501db-7db2-4fe8-9458-bd56211a3f1c
-title: '[AINews] 1/13-14/2024: Don''t sleep on #prompt-engineering '
+title: '1/13-14/2024: Don''t sleep on #prompt-engineering '
 date: '2024-01-16T00:58:42.745727Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-113-142024-dont-sleep-on-prompt-engineering
+description: >-
+  The **OpenAI** Discord community engaged in diverse discussions including
+  **prompt engineering** techniques like contrastive Chain of Thought and step
+  back prompting, and explored **model merging** and **mixture-of-experts
+  (MoE)** concepts. Philosophical debates on **AI consciousness** and the ethics
+  of **AI-generated voices** highlighted concerns about copyright and
+  impersonation. Technical clarifications were made on **hyperdimensional vector
+  space models** used in AI embeddings, and users experimented with **prompt
+  personalization** to optimize GPT's capabilities within token limits. The
+  community also touched on multilingual support and the idea of a universal
+  translator feature for Discord.
+companies:
+  - openai
+models: []
+topics:
+  - prompt-engineering
+  - model-merging
+  - mixture-of-experts
+  - ai-consciousness
+  - ethics
+  - hyperdimensional-vector-space
+  - prompt-personalization
+  - multilinguality
+people:
+  - notbrianzach
+  - darthgustav
+  - metaldrgn
+  - red_code
+  - _jonpo
+  - undyingderp
+  - '7877'
+  - .dooz
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> Weekend edition: We checked **18** guilds, **278** channels, and **3257** messages for you. Estimated reading time saved (at 200wpm): **412 minutes**.
 

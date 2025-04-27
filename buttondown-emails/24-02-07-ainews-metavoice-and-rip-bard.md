@@ -1,13 +1,57 @@
 ---
 id: 914ee360-1e87-4dc6-90f8-6de50ace445b
-title: '[AINews] MetaVoice & RIP Bard'
+title: MetaVoice & RIP Bard
 date: '2024-02-07T22:41:50.157897Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-metavoice-rip-bard
+description: >-
+  **Discord AI communities** analyzed **20 guilds**, **308 channels**, and
+  **5284 messages** revealing active discussions on AI model efficiency and
+  capabilities, including **Mixtral**, **Nous Mixtral DPO**, and **Miqu 70B**
+  compared to **OpenAI's GPT models**. The startup **MetaVoice** launched a new
+  **TTS model** supporting voice cloning and longform synthesis, following the
+  closure of **Coqui**. **Google** discontinued the **Bard** brand for
+  **Gemini**. Key topics include **LoRA fine-tuning** to remove safety features
+  from models like **Llama2 70B instruct**, challenges in offloading transformer
+  layers between CPU and GPU, and adoption of **C2PA metadata standards** in
+  **DALL-E** images for content authenticity. Debates on AI censorship, metadata
+  manipulation, and open-source AI models versus commercial giants like
+  **GPT-4** highlight community concerns about ethics, authenticity, and
+  innovation.
+companies:
+  - openai
+  - google
+  - metavoice
+  - thebloke
+  - hugging-face
+models:
+  - mixtral
+  - nous-mixtral-dpo
+  - miqu-70b
+  - gpt-4
+  - llama-2-70b-instruct
+  - dall-e-3
+  - llama-2
+topics:
+  - fine-tuning
+  - tts
+  - voice-cloning
+  - longform-synthesis
+  - model-efficiency
+  - transformers
+  - gpu-optimization
+  - content-authenticity
+  - metadata
+  - ai-censorship
+  - open-source
+  - model-comparison
+  - prompt-engineering
+  - dpo
+people:
+  - abdubs
+  - kotykd
+  - arturmentado
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/6/2024. We checked **20** guilds, **308** channels, and **5284** messages for you. Estimated reading time saved (at 200wpm): **437 minutes**.
 

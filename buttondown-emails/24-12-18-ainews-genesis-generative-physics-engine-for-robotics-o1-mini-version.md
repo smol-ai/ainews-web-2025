@@ -1,13 +1,53 @@
 ---
 id: fc096fb8-c65f-415f-ac11-5edc3c431554
-title: '[AINews] Genesis: Generative Physics Engine for Robotics (o1-mini version)'
+title: 'Genesis: Generative Physics Engine for Robotics (o1-mini version)'
 date: '2024-12-19T05:17:10.096057Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-genesis-generative-physics-engine-for
+description: >-
+  **OpenAI** launched the **o1 model** API featuring function calling,
+  structured outputs, vision support, and developer messages, achieving **60%
+  fewer reasoning tokens** and strong math/code performance with a **0.76
+  LiveBench Coding score**. **Google Gemini 2.0 Pro (Gemini Exp 1206)**
+  deployment accelerated, showing improved coding, math, and reasoning
+  capabilities. Meta AI FAIR researched training transformers on raw bytes using
+  dynamic entropy-based patching. Commercial deployment of humanoid robots
+  reported by **Brett Adcock**. **Hugging Face** researchers demonstrated the
+  **3B Llama model** outperforming the **70B Llama model** on MATH-500 accuracy
+  using search techniques, sparking discussions on model size optimization and
+  reproducibility concerns.
+companies:
+  - openai
+  - google-deepmind
+  - meta-ai-fair
+  - hugging-face
+models:
+  - o1-mini
+  - o1
+  - o1-preview
+  - gpt-4o
+  - gemini-2.0-pro
+  - llama-3-3b
+  - llama-3-70b
+topics:
+  - function-calling
+  - structured-outputs
+  - vision
+  - performance-benchmarks
+  - math
+  - code-generation
+  - model-training
+  - transformer-architecture
+  - model-optimization
+  - robotics
+  - search
+  - model-size-optimization
+  - reproducibility
+people:
+  - aidan_mclau
+  - sundarpichai
+  - adcock_brett
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**the old o1-mini version for comparison**
 

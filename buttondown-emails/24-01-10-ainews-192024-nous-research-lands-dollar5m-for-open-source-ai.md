@@ -1,13 +1,45 @@
 ---
 id: 583253c9-34dc-4ce7-984b-5cecaef1ceb8
-title: '[AINews] 1/9/2024: Nous Research lands $5m for Open Source AI'
+title: '1/9/2024: Nous Research lands $5m for Open Source AI'
 date: '2024-01-11T00:53:13.633860Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-192024-nous-research-lands-5m-for-open
+description: >-
+  **Nous Research** announced a successful **$5.2 million seed financing**
+  focused on developing **Nous-Forge**, aiming to embed transformer architecture
+  into chips for powerful servers running **trillion parameter models**.
+  **OpenAI** launched the **GPT store** and briefly leaked an upcoming
+  personalization feature. A new research paper on **Activation Beacon**
+  proposes a solution to extend Large Language Models' context window
+  significantly, with code soon available on GitHub. Discussions also covered
+  topics like **QLORA fine-tuning**, **synthetic data generation**, and
+  challenges with **VRAM** in models like **Mixtral** and **Ollama**. The Rabbit
+  R1 demo at CES received mixed opinions.
+companies:
+  - nous-research
+  - openai
+  - huggingface
+  - rabbit-tech
+models:
+  - mixtral
+  - ollama
+  - qlora
+topics:
+  - context-window
+  - activation-beacon
+  - fine-tuning
+  - synthetic-data
+  - vram-optimization
+  - transformer-architecture
+  - seed-financing
+  - real-time-voice-agents
+  - trillion-parameter-models
+people:
+  - kenakafrosty
+  - _stilic_
+  - teknium
+  - sama
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> This summarizes **18** guilds, **277** channels, and **1566** messages. Estimated reading time saved (at 200wpm): **193 minutes**.
 

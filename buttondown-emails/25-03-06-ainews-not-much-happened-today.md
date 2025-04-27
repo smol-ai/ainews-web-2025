@@ -1,13 +1,69 @@
 ---
 id: 2ac42108-f069-4ad9-b095-330b2a12a6aa
-title: '[AINews] not much happened today'
+title: not much happened today
 date: '2025-03-07T05:50:14.781495Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-not-much-happened-today-3137
+description: >-
+  **AI21 Labs launched Jamba 1.6**, touted as the **best open model for private
+  enterprise deployment**, outperforming **Cohere, Mistral, and Llama** on
+  benchmarks like **Arena Hard**. **Mistral AI** released a state-of-the-art
+  **multimodal OCR model** with **multilingual and multimodal capabilities**,
+  **doc-as-prompt**, and **structured output** for **on-prem deployment**.
+  **Alibaba Qwen** introduced **QwQ-32B**, an **open-weight reasoning model**
+  with **32B parameters** and cost-effective pricing, showing strong benchmark
+  results and local run capability. **OpenAI** released **o1** and **o3-mini**
+  models with advanced API features including **streaming, function calling, and
+  vision** support. **AMD** unveiled **Instella**, fully open-source 3B
+  parameter language models trained on **AMD Instinct MI300X GPUs**, competing
+  with **Llama-3.2-3B, Gemma-2-2B, and Qwen-2.5-3B**. **Alibaba** also released
+  **Babel** multilingual LLMs on Hugging Face, rivaling **GPT-4o** on some
+  tasks. **Anthropic** launched **Claude 3.7 Sonnet** with enhanced reasoning
+  and prompt engineering features. These developments highlight advances in
+  **multimodality, reasoning, model deployment, and open-source language
+  models**.
+companies:
+  - ai21-labs
+  - mistral-ai
+  - alibaba
+  - openai
+  - amd
+  - anthropic
+  - hugging-face
+models:
+  - jamba-1.6
+  - mistral-ocr
+  - qwq-32b
+  - o1
+  - o3-mini
+  - instella
+  - llama-3-2-3b
+  - gemma-2-2b
+  - qwen-2.5-3b
+  - babel-9b
+  - babel-83b
+  - gpt-4o
+  - claude-3-7-sonnet
+topics:
+  - multimodality
+  - reasoning
+  - model-deployment
+  - open-source-models
+  - multilingual-models
+  - prompt-engineering
+  - structured-output
+  - on-prem-deployment
+  - cost-efficiency
+  - benchmarking
+people:
+  - sophiamyang
+  - reach_vb
+  - awnihannun
+  - philschmid
+  - artificialanlys
+  - omarsar0
+  - akhaliq
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**a quiet day.**
 

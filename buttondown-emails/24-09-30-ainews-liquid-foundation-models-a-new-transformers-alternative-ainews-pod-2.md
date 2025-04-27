@@ -1,15 +1,54 @@
 ---
 id: 21fed6b0-f5de-419a-8a11-9f0745506282
-title: >-
-  [AINews] Liquid Foundation Models: A New Transformers alternative + AINews Pod
-  2
+title: 'Liquid Foundation Models: A New Transformers alternative + AINews Pod 2'
 date: '2024-10-01T01:34:19.663940Z'
-status: sent
-type: public
-source: app
-metadata: {}
 original_slug: ainews-liquid-foundation-models-a-new
+description: >-
+  **Liquid.ai** launched 3 subquadratic foundation models showing superior
+  efficiency compared to Apple on-device and server models, with an API and
+  playground ahead of their Oct 23 launch. **Meta AI** released **Llama 3.2**
+  multimodal models including 11B and 90B sizes with vision and reasoning
+  capabilities, plus lightweight text-only models for mobile. **Google
+  DeepMind** announced production-ready **Gemini-1.5-Pro-002** and
+  **Gemini-1.5-Flash-002** models with significant cost and rate limit
+  improvements, and unveiled **AlphaChip**, an AI chip design system using
+  reinforcement learning for rapid superhuman layouts. **OpenAI** enhanced
+  ChatGPT Plus and Teams with Advanced Voice Mode featuring Custom Instructions,
+  Memory, and new voices. California Governor vetoed SB-1047 AI regulation bill,
+  celebrated by AI community figures like **@ylecun** and **@svpino** as a win
+  for open-source AI. **Google** upgraded **NotebookLM** with YouTube and audio
+  support for AI-generated podcasts. *"Open source in AI is thriving with 1
+  million models on Github and HuggingFace,"* said **@ylecun**.
+companies:
+  - liquid-ai
+  - meta-ai-fair
+  - google-deepmind
+  - openai
+  - california-government
+models:
+  - llama-3-2
+  - gemini-1.5-pro-002
+  - gemini-1.5-flash-002
+topics:
+  - subquadratic-complexity
+  - multimodality
+  - vision
+  - reinforcement-learning
+  - foundation-models
+  - ai-regulation
+  - open-source
+  - audio-processing
+  - model-efficiency
+  - model-deployment
+  - custom-instructions
+  - memory-management
+  - voice-synthesis
+people:
+  - ylecun
+  - svpino
+  - adcock_brett
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Adaptive computational operators are all you need.**
 

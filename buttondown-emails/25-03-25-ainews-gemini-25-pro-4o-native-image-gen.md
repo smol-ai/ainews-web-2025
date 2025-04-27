@@ -1,13 +1,44 @@
 ---
 id: 270c74dd-e984-447a-b1e7-90637af80bd2
-title: '[AINews] Gemini 2.5 Pro + 4o Native Image Gen'
+title: Gemini 2.5 Pro + 4o Native Image Gen
 date: '2025-03-26T01:13:42.288748Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-25-pro-4o-native-image-gen
+description: >-
+  **Gemini 2.5 Pro** from **Google DeepMind** has become the new top AI model,
+  leading by 40 LMarena points over **Grok 3**. It features advanced reasoning,
+  coding, STEM, and multimodal capabilities, with involvement from **Noam
+  Shazeer**. Meanwhile, **OpenAI** released **GPT 4o Native Images**, an
+  autoregressive model for image generation with detailed technical insights
+  shared by **Allan Jabri**. Both models highlight significant advances in
+  **multimodality**, **autoregressive transformers**, and **instruction
+  following**.
+companies:
+  - google-deepmind
+  - openai
+  - lmarena_ai
+models:
+  - gemini-2.5-pro
+  - gpt-4o
+topics:
+  - multimodality
+  - autoregressive
+  - instruction-following
+  - coding
+  - stem
+  - model-releases
+  - model-performance
+  - transformers
+  - image-generation
+  - reasoning
+people:
+  - noam_shazeer
+  - allan_jabri
+  - jack_w_rae
+  - simon_willison
+  - paul_gauthier
+  - andrew_carr
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**What a time to be alive.**
 

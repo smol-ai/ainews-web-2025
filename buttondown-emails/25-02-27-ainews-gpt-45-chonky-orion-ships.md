@@ -1,13 +1,50 @@
 ---
 id: 268455b4-8cce-4600-ab0d-1a2ac422601b
-title: "[AINews] GPT 4.5 —\_Chonky Orion ships!"
+title: "GPT 4.5 —\_Chonky Orion ships!"
 date: '2025-02-28T07:24:08.803473Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gpt-45-chonky-orion-ships
+description: >-
+  **OpenAI released GPT-4.5** as a research preview with **128,000 token context
+  window**, emphasizing **deep world knowledge**, **improved user intent
+  understanding**, and suitability for **natural conversation and agentic
+  planning**. It is expected to be the basis for GPT-5. **Microsoft unveiled
+  Phi-4 Multimodal and Phi-4 Mini**, open-source models integrating **text,
+  vision, and speech/audio**, with Phi-4-Mini having **3.8 billion parameters**
+  and strong math and coding performance. **Cohere released Command R7B
+  Arabic**, an open-weights model optimized for Arabic language capabilities
+  targeting enterprises in MENA. The community is exploring GPT-4.5's creative
+  writing, intent response, and world knowledge improvements. Other notable
+  releases include **Grok 3** and **Claude 3.7**.
+companies:
+  - openai
+  - microsoft
+  - cohere
+models:
+  - gpt-4.5
+  - phi-4-multimodal
+  - phi-4-mini
+  - command-r7b-arabic
+  - grok-3
+  - claude-3.7
+topics:
+  - multimodality
+  - context-windows
+  - natural-language-processing
+  - creative-writing
+  - agentic-planning
+  - math
+  - code-generation
+  - open-source
+  - arabic-language
+people:
+  - sama
+  - kevinweil
+  - omarsar0
+  - aidan_mclau
+  - rasbt
+  - reach_vb
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**5T params are all you need?**
 

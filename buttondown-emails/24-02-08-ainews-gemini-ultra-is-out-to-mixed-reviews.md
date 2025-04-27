@@ -1,13 +1,49 @@
 ---
 id: d33c7c5b-7cb7-49e7-97e3-b27de96a449f
-title: '[AINews] Gemini Ultra is out, to mixed reviews'
+title: Gemini Ultra is out, to mixed reviews
 date: '2024-02-09T05:58:08.478444Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-ultra-is-out-to-mixed-reviews
+description: >-
+  **Gemini Ultra** was released as a paid tier for "Gemini Advanced with Ultra
+  1.0" by **Google DeepMind**, receiving mixed reviews noting it is "slightly
+  faster/better than ChatGPT" but with reasoning gaps. The **Steam Deck** is
+  highlighted as a surprising AI powerhouse capable of running models like
+  **Solar 10.7B**. Discussions on AI philosophy, model optimization, and
+  training data contamination reveal concerns about data influenced by
+  **OpenAI** outputs. New alignment techniques such as **Listwise Preference
+  Optimization (LiPO)** and advancements in coding with **Mojo language** and
+  Hugging Face models were noted. **Nous Research AI** community discussed the
+  **Subformer** model using SAFE for efficient transformers, **BiLLM**'s 1-bit
+  quantization breakthrough, and tools like the **OpenHermes** dataset viewer.
+  GPU scheduling with Slurm and fine-tuning challenges for models like
+  **OpenHermes-2.5-Mistral-7B** were also covered.
+companies:
+  - google-deepmind
+  - openai
+  - hugging-face
+  - nous-research
+  - mistral-ai
+models:
+  - gemini-ultra
+  - solar-10.7b
+  - openhermes-2.5-mistral-7b
+  - subformer
+  - billm
+topics:
+  - model-optimization
+  - training-data-contamination
+  - listwise-preference-optimization
+  - multi-gpu-support
+  - quantization
+  - fine-tuning
+  - gpu-scheduling
+  - dataset-viewer
+  - ai-philosophy
+  - coding
+  - model-alignment
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI Discords for 2/7/2024. We checked **20** guilds, **311** channels, and **6128** messages for you. Estimated reading time saved (at 200wpm): **496 minutes**.
 

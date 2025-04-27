@@ -1,13 +1,60 @@
 ---
 id: 6ab1afd9-3227-4381-8d83-c63e4833e11c
-title: '[AINews] ChatGPT Canvas GA'
+title: ChatGPT Canvas GA
 date: '2024-12-11T04:20:02.638516Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-chatgpt-canvas-ga
+description: >-
+  **OpenAI** launched **ChatGPT Canvas** to all users, featuring **code
+  execution** and **GPT integration**, effectively replacing Code Interpreter
+  with a Google Docs-like interface. **Deepseek AI** announced their
+  **V2.5-1210** update improving performance on **MATH-500 (82.8%)** and
+  LiveCodebench (34.38%). **Meta AI Fair** introduced **COCONUT**, a new
+  continuous latent space reasoning paradigm for LLMs. **Huggingface** released
+  **TGI v3**, processing **3x more tokens** and running **13x faster** than vLLM
+  on long prompts. **Cognition Labs** released **Devin**, an AI developer
+  building Kubernetes operators. **Hyperbolic** raised **$12M Series A** to
+  build an open AI platform with an **H100 GPU marketplace** at $0.99/hour.
+  **Sama** noted significant underestimation of **Sora** demand, working on
+  expanding access. At **NeurIPS 2024**, **Google DeepMind** hosted demos
+  including GenCast weather forecasting. Reddit's /r/LocalLlama highlighted
+  **Llama 3.3-70B** fine-tuning with **90K context length** on <41GB VRAM using
+  **Unsloth** and Apple's **Cut Cross Entropy (CCE)** algorithm, vastly
+  surpassing previous context length limits.
+companies:
+  - openai
+  - deepseek_ai
+  - meta-ai-fair
+  - huggingface
+  - cognition_labs
+  - hyperbolic
+  - google-deepmind
+models:
+  - v2.5-1210
+  - coconut
+  - tgi-v3
+  - devin
+  - llama-3-70b
+  - llama-3-1-8b
+  - llama-3-1-70b
+topics:
+  - code-execution
+  - gpt-integration
+  - fine-tuning
+  - gradient-checkpointing
+  - context-windows
+  - latent-space
+  - model-performance
+  - gpu-memory-optimization
+  - kubernetes
+  - gpu-marketplace
+  - model-optimization
+  - neural-networks
+  - model-scaling
+people:
+  - sama
+  - aravsrinivas
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**Karina Nguyen is all you need.**
 

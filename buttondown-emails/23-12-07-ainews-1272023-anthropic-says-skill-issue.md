@@ -1,13 +1,49 @@
 ---
 id: 57ecf7d0-ec3a-44ab-91f5-4f2038f07e8b
-title: '[AINews] 12/7/2023: Anthropic says "skill issue"'
+title: '12/7/2023: Anthropic says "skill issue"'
 date: '2023-12-07T20:49:01.544973Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-1272023-anthropic-says-skill-issue
+description: >-
+  **Anthropic** fixed a glitch in their **Claude-2.1** prompting test.
+  Discussions on **OpenAI's GPT-4** and **GPT-3.5** compared to **Google's
+  Gemini Pro and Gemini Ultra** models highlighted mixed user experiences, with
+  some finding *GPT-4 to outperform Gemini* in benchmarks. Concerns about
+  *selective censorship* affecting model performance and potential **EU AI
+  regulations** impacting models like **ChatGPT** were raised. Users reported
+  issues with **ChatGPT Plus** message limits and subscription upgrades, and
+  shared experiences with **BingChat** and **DALL-E**. The community also
+  discussed prompt engineering techniques and speculated about an upcoming
+  **GPT-4.5** release.
+companies:
+  - anthropic
+  - openai
+  - google
+  - bloomberg
+models:
+  - claude-2.1
+  - gpt-4
+  - gpt-3.5
+  - gemini-pro
+  - gemini-ultra
+  - gpt-4.5
+  - chatgpt
+  - bingchat
+  - dall-e
+topics:
+  - prompt-engineering
+  - model-performance
+  - ai-regulation
+  - language-model-performance
+  - image-generation
+  - audio-processing
+  - midi-sequence-analysis
+  - subscription-management
+  - network-errors
+people:
+  - swyx
+  - greg_kamradt
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->Fun to meet some of you at [the Nous Research launch](https://twitter.com/swyx/status/1732592248955740179) last night.
 

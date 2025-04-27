@@ -1,13 +1,54 @@
 ---
 id: 6ae360e4-c736-4611-b702-7a2c02157747
-title: '[AINews] Welcome /r/LocalLlama!'
+title: Welcome /r/LocalLlama!
 date: '2024-03-21T23:33:53.811566Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-welcome-rlocalllama
+description: >-
+  **Sakana** released a paper on evolutionary model merging, while
+  **OpenInterpreter** launched their **O1 devkit**. Discussions highlight
+  **Claude Haiku**'s underrated performance with 10-shot examples. On Reddit's
+  IPO day, **Reddit summaries** are introduced to AI News, starting with
+  /r/LocalLlama and expanding to other AI-related subreddits. Key model releases
+  include **Cerebrum 8x7b** by Aether Research, matching **GPT-3.5 Turbo** and
+  **Gemini Pro** in reasoning, and **Moistral 11B v1** fine-tuned from
+  Cream-Phi-2. Quantization advances focus on **1.58 BitNet** ternary models and
+  Nvidia's **Blackwell (h200)** chip supporting FP4 precision. Deployment tools
+  like **LMDeploy** enable efficient vision-language model serving, including
+  **Qwen-VL-Chat**. Training data pipelines and fine-tuning techniques for chat
+  models are also discussed.
+companies:
+  - sakana
+  - openinterpreter
+  - reddit
+  - aether-research
+  - mistral-ai
+  - nvidia
+  - lmdeploy
+  - huggingface
+models:
+  - cerebrum-8x7b
+  - mixtral-7b
+  - gpt-3.5-turbo
+  - gemini-pro
+  - moistral-11b-v1
+  - claude-3-opus
+  - qwen-vl-chat
+  - bitnet-b1.58
+  - h200
+topics:
+  - model-merging
+  - fine-tuning
+  - quantization
+  - performance-optimization
+  - deployment
+  - training-data
+  - vision
+  - reasoning
+  - synthetic-data
+  - model-benchmarking
+people: []
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->> AI News for 3/20/2024-3/21/2024. We checked [**358** Twitters](https://twitter.com/i/lists/1585430245762441216) and **21** Discords (**337** channels, and **9841** messages) for you. Estimated reading time saved (at 200wpm): **1033 minutes**.
 

@@ -1,13 +1,51 @@
 ---
 id: 043b46cf-2ff6-40c4-ac85-344be87f269d
-title: '[AINews] Gemini 2.0 Flash GA, with new Flash Lite, 2.0 Pro, and Flash Thinking'
+title: Gemini 2.0 Flash GA, with new Flash Lite, 2.0 Pro, and Flash Thinking
 date: '2025-02-06T02:00:20.087119Z'
-status: sent
-type: public
-source: api
-metadata: {}
 original_slug: ainews-gemini-20-flash-ga-with-new-flash-lite-20
+description: >-
+  **Google DeepMind** officially launched **Gemini 2.0** models including Flash,
+  Flash-Lite, and Pro Experimental, featuring **multimodal input**, a **1
+  million token context window**, and **cost-efficiency** with Flash being **12x
+  cheaper** than Gemini 1.5 Pro. **Andrej Karpathy** released a **3h31m** deep
+  dive video on **large language models** covering **pretraining**,
+  **fine-tuning**, and **reinforcement learning**. A free course on
+  **Transformer architecture** was introduced by **Jay Alammar**, **Maarten
+  Gr**, and **Andrew Ng** focusing on **tokenizers**, **embeddings**, and
+  **mixture-of-expert models**. **DeepSeek-R1** surpassed **1.2 million
+  downloads** on Hugging Face with a detailed technical report. **Anthropic**
+  increased rewards to **$10K-$20K** for their jailbreak challenge, while
+  **nearcyan** released the **BlueRaven** extension to hide Twitter metrics for
+  unbiased engagement.
+companies:
+  - google-deepmind
+  - anthropic
+  - huggingface
+models:
+  - gemini-2.0-flash
+  - gemini-2.0-flash-lite
+  - gemini-2.0-pro-experimental
+  - deepseek-r1
+topics:
+  - multimodality
+  - context-window
+  - cost-efficiency
+  - pretraining
+  - fine-tuning
+  - reinforcement-learning
+  - transformer-architecture
+  - tokenization
+  - embeddings
+  - mixture-of-experts
+people:
+  - karpathy
+  - jayalammar
+  - maartengr
+  - andrewyng
+  - omarsar0
+  - nearcyan
 ---
+
 
 <!-- buttondown-editor-mode: plaintext -->**[REDACTED] is all you need.**
 
