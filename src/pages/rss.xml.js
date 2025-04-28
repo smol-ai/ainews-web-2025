@@ -38,7 +38,8 @@ export async function GET(context) {
     title: SITE.TITLE,
     description: SITE.DESCRIPTION,
     site: context.site,
-    items: items.map((item) => {
+    // Map items to RSS format
+    items: items.map((item, index) => {
       // Sanitize potential null characters using the utility function
       const title = sanitizeString(item.data.title);
       const descriptionRaw = sanitizeString(item.data.description);
@@ -48,9 +49,10 @@ export async function GET(context) {
       const pubDateStr = sanitizeString(item.data.date);
       const pubDate = new Date(pubDateStr); // Convert sanitized string back to Date
 
-      return {
+      // Prepare the base item object
+      const rssItem = {
         title: title,
-        description: descriptionHtml,
+        description: descriptionHtml, // Use the HTML description
         pubDate: pubDate,
         link: `/${item.collection}/${item.id}/`,
         // Combine all tag-like fields into categories
@@ -61,6 +63,21 @@ export async function GET(context) {
           ...(item.data.topics?.filter(tag => typeof tag === 'string') ?? []),
         ],
       };
+
+      // // Add truncated body content for the first 10 items
+      // console.log('printing for ' + item.id, item.body)
+      if (index < 10 && item.body) {
+        const sanitizedBody = sanitizeString(item.body).split('--- # PART 1: High level Discord summaries')[0];
+        // Truncate, ensuring we don't leave dangling tags (simple approach)
+        const truncatedBody = sanitizedBody.length > 100000
+          ? sanitizedBody.substring(0, 100000) + '...'
+          : sanitizedBody;
+        rssItem.content = markdownToHtml(truncatedBody); // Add the content field
+      }
+
+      return rssItem;
     }),
+    // (Optional) Add custom data
+    customData: `<language>en-us</language>`,
   });
 }
