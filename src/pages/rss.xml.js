@@ -1,7 +1,10 @@
 import rss from "@astrojs/rss";
 import { SITE } from "@consts";
 import { getCollection } from "astro:content";
-
+import {
+  sanitizeString,
+  markdownToHtml,
+} from "../utils/textUtils";
 
 // catch unsanitary strings
 
@@ -18,7 +21,6 @@ import { getCollection } from "astro:content";
 //   }
 // });
 // console.log("--- End RSS Items ---");
-import { sanitizeString } from "../utils/textUtils";
 
 export async function GET(context) {
   const issues = (await getCollection("issues")).filter((post) => !post.data.draft);
@@ -39,14 +41,16 @@ export async function GET(context) {
     items: items.map((item) => {
       // Sanitize potential null characters using the utility function
       const title = sanitizeString(item.data.title);
-      const description = sanitizeString(item.data.description);
+      const descriptionRaw = sanitizeString(item.data.description);
+      // Convert description markdown to HTML
+      const descriptionHtml = markdownToHtml(descriptionRaw);
       // Sanitize the date string before converting to Date
       const pubDateStr = sanitizeString(item.data.date);
       const pubDate = new Date(pubDateStr); // Convert sanitized string back to Date
 
       return {
         title: title,
-        description: description,
+        description: descriptionHtml,
         pubDate: pubDate,
         link: `/${item.collection}/${item.id}/`,
         // Combine all tag-like fields into categories
