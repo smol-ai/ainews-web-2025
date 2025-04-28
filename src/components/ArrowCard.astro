@@ -33,23 +33,26 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
       </div>
     </div>
 
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      class="absolute top-1/2 right-2 size-5 -translate-y-1/2 fill-none stroke-current stroke-2"
-    >
-      <line
-        x1="5"
-        y1="12"
-        x2="19"
-        y2="12"
-        class="translate-x-3 scale-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-hover:scale-x-100 group-focus-visible:translate-x-0 group-focus-visible:scale-x-100 group-focus-within:translate-x-0 group-focus-within:scale-x-100"
-      ></line>
-      <polyline
-        points="12 5 19 12 12 19"
-        class="-translate-x-1 transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-focus-visible:translate-x-0 group-focus-within:translate-x-0"
-      ></polyline>
-    </svg>
+    {/* Wrap SVG in a span for easier event targeting */}
+    <span class="details-touch-toggle absolute top-1/2 right-2 -translate-y-1/2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        class="size-5 fill-none stroke-current stroke-2"
+      >
+        <line
+          x1="5"
+          y1="12"
+          x2="19"
+          y2="12"
+          class="translate-x-3 scale-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-hover:scale-x-100 group-focus-visible:translate-x-0 group-focus-visible:scale-x-100 group-focus-within:translate-x-0 group-focus-within:scale-x-100"
+        ></line>
+        <polyline
+          points="12 5 19 12 12 19"
+          class="-translate-x-1 transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-focus-visible:translate-x-0 group-focus-within:translate-x-0"
+        ></polyline>
+      </svg>
+    </span>
     
     <button 
       type="button" 
@@ -70,7 +73,7 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
     </div>
     <button 
       type="button"
-      class="close-details absolute top-2 right-2 size-6 flex items-center justify-center rounded-full bg-black/5 text-black/70 hover:bg-black/10 dark:bg-white/10 dark:text-white/70 dark:hover:bg-white/20"
+      class="close-details absolute top-2 right-2 size-6 flex items-center justify-center rounded-full bg-black/5 text-black/70 hover:bg-black/10 dark:bg-white/10 dark:text-white/70 dark:hover:bg-white/20 p-2 -m-2"
       aria-label="Close details"
       tabindex="0"
     >
@@ -117,77 +120,82 @@ const isIssue = (entry: Props["entry"]): entry is CollectionEntry<"issues"> => {
 </div>
 
 <script>
-  // Add support for touch events on mobile
   document.addEventListener('DOMContentLoaded', () => {
-    // Only run this script on mobile/touch devices
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     
     if (isTouchDevice) {
       const cards = document.querySelectorAll<HTMLElement>('.arrow-card');
       
       cards.forEach(card => {
-        // Handle tap on mobile (which doesn't trigger hover)
-        card.addEventListener('touchstart', (e: TouchEvent) => {
-          // Only handle taps on the card itself, not the popup
-          const target = e.target as HTMLElement;
-          if (!target.closest('.card-details')) {
-            // Prevent default to avoid immediate navigation
+        const detailsToggle = card.querySelector<HTMLElement>('.details-touch-toggle');
+        const details = card.querySelector<HTMLElement>('.card-details');
+        const closeButton = card.querySelector<HTMLElement>('.close-details');
+
+        // Handle tap on the arrow icon to toggle details
+        if (detailsToggle && details) {
+          detailsToggle.addEventListener('touchstart', (e: TouchEvent) => {
+            // Prevent the link navigation when tapping the icon
             e.preventDefault();
-            
+            e.stopPropagation(); 
+
             // Toggle active class on the card
-            card.classList.toggle('touch-active');
+            const isActive = card.classList.toggle('touch-active');
             
-            // Find the details element within this card
-            const details = card.querySelector<HTMLElement>('.card-details');
-            
-            // If the card is active, show the details
-            if (details && card.classList.contains('touch-active')) {
+            // Show/hide the details based on the active state
+            if (isActive) {
               details.style.display = 'block';
+              // Trigger reflow before adding opacity/transform classes for transition
+              void details.offsetWidth; 
               details.style.opacity = '1';
               details.style.transform = 'translateY(0)';
-            } else if (details) {
-              // If we're toggling off, hide the details
-              details.style.display = '';
+            } else {
               details.style.opacity = '';
               details.style.transform = '';
+              // Use transitionend event to set display: none after hiding
+              details.addEventListener('transitionend', () => {
+                if (!card.classList.contains('touch-active')) {
+                  details.style.display = '';
+                }
+              }, { once: true });
             }
-          }
-        }, { passive: false });
+          }, { passive: false });
+        }
         
-        // Handle close button clicks
-        const closeButton = card.querySelector<HTMLElement>('.close-details');
-        if (closeButton) {
-          closeButton.addEventListener('click', (e: MouseEvent) => {
+        // Handle close button clicks/taps
+        if (closeButton && details) {
+          // Use 'click' for broader compatibility, handles tap too
+          closeButton.addEventListener('click', (e: MouseEvent) => { 
             e.preventDefault();
             e.stopPropagation();
             
-            // Remove active class from the card
             card.classList.remove('touch-active');
-            
-            // Hide the details
-            const details = card.querySelector<HTMLElement>('.card-details');
-            if (details) {
-              details.style.display = '';
-              details.style.opacity = '';
-              details.style.transform = '';
-            }
+            details.style.opacity = '';
+            details.style.transform = '';
+            details.addEventListener('transitionend', () => {
+              if (!card.classList.contains('touch-active')) {
+                details.style.display = '';
+              }
+            }, { once: true });
           });
         }
       });
       
-      // Hide all popups when tapping elsewhere on the page
+      // Hide open popups when tapping elsewhere
       document.addEventListener('touchstart', (e: TouchEvent) => {
-        // If the tap is not on a card or its details
         const target = e.target as HTMLElement;
-        if (!target.closest('.arrow-card')) {
-          // Hide all active cards
-          document.querySelectorAll<HTMLElement>('.arrow-card.touch-active').forEach(card => {
-            card.classList.remove('touch-active');
-            const details = card.querySelector<HTMLElement>('.card-details');
-            if (details) {
-              details.style.display = '';
-              details.style.opacity = '';
-              details.style.transform = '';
+        // If the tap is not on a card that is currently active
+        if (!target.closest('.arrow-card.touch-active')) { 
+          document.querySelectorAll<HTMLElement>('.arrow-card.touch-active').forEach(activeCard => {
+            activeCard.classList.remove('touch-active');
+            const activeDetails = activeCard.querySelector<HTMLElement>('.card-details');
+            if (activeDetails) {
+              activeDetails.style.opacity = '';
+              activeDetails.style.transform = '';
+              activeDetails.addEventListener('transitionend', () => {
+                if (!activeCard.classList.contains('touch-active')) {
+                  activeDetails.style.display = '';
+                }
+              }, { once: true });
             }
           });
         }
