@@ -67,12 +67,12 @@ export async function GET(context) {
       // // Add truncated body content for the first 10 items
       // console.log('printing for ' + item.id, item.body)
       if (index < 10 && item.body) {
-        const sanitizedBody = sanitizeString(item.body).split('--- # PART 1: High level Discord summaries')[0];
+        const sanitizedBody = sanitizeString(item.body).split('# PART 1: High level Discord summaries')[0];
         // Truncate, ensuring we don't leave dangling tags (simple approach)
         const truncatedBody = sanitizedBody.length > 100000
           ? sanitizedBody.substring(0, 100000) + '...'
           : sanitizedBody;
-        rssItem.content = markdownToHtml(truncatedBody); // Add the content field
+        rssItem.content = markdownToHtml(truncatedBody, true); // Add the content field
       }
 
       return rssItem;

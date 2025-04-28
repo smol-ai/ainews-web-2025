@@ -15,10 +15,12 @@ export function sanitizeString(str) {
 /**
  * Simple markdown to HTML converter for inline formatting.
  * Converts bold, italics, code, and links.
+ * If fullConversion is true, also converts images, blockquotes, headers, paragraphs, and bullet points. (things that often take more vertical space)
  * @param {string | null | undefined} text The input markdown string.
+ * @param {boolean} [fullConversion=false] Whether to perform full conversion.
  * @returns {string} The converted HTML string.
  */
-export function markdownToHtml(text) {
+export function markdownToHtml(text, fullConversion = false) {
   if (!text) return '';
 
   let html = String(text);
@@ -32,9 +34,33 @@ export function markdownToHtml(text) {
   // Convert code blocks (`text`)
   html = html.replace(/`(.*?)`/g, '<code>$1</code>');
 
-  // Convert links [text](url)
-  // Note: No extra styling class here, as it's for general use (e.g., RSS)
+
+  if (fullConversion) {
+    // Convert images ![alt](url)
+    html = html.replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1">');
+
+    // Convert blockquotes
+    html = html.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
+
+    // Convert headers
+    html = html.replace(/^#{1,6} (.+)$/gm, (match, p1) => {
+      const level = match.trim().indexOf(' ');
+      return `<h${level}>${p1}</h${level}>`;
+    });
+
+    // Convert paragraphs
+    html = html.replace(/^(?!<[a-z]|\s*$)(.+)$/gm, '<p>$1</p>');
+
+    // Convert bullet points
+    html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+    html = html.replace(/<li>.*?<\/li>/gs, '<ul>$&</ul>');
+
+    // Convert horizontal rules
+    html = html.replace(/^---+$/gm, '<hr>');
+  }
+
+  // Convert links [text](url). must come after images
   html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
 
   return html;
-} 
+}
