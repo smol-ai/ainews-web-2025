@@ -28,12 +28,17 @@
     `;
     lightbox.appendChild(closeButton);
     
+    let scrollYBeforeOpen = 0; // Variable to store scroll position
+
     // Add click event to images
     contentImages.forEach(img => {
       // Add cursor pointer and transition classes
       img.classList.add('cursor-pointer', 'transition-transform', 'hover:scale-[1.02]');
       
       img.addEventListener('click', () => {
+        scrollYBeforeOpen = window.scrollY; // Store scroll position
+        console.log(`Lightbox opening. ScrollY was: ${scrollYBeforeOpen}`); 
+
         // Cast to HTMLImageElement to access src property
         const imgElement = img as HTMLImageElement;
         const lightboxImgElement = lightboxImage as HTMLImageElement;
@@ -43,19 +48,28 @@
       });
     });
     
+    const closeLightbox = () => {
+      if (!lightbox.classList.contains('hidden')) {
+        console.log(`Lightbox closing. Current ScrollY: ${window.scrollY}. ScrollY before open was: ${scrollYBeforeOpen}`);
+        lightbox.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+        // Restore scroll position
+        window.scrollTo(0, scrollYBeforeOpen);
+        console.log(`Scroll position restored to: ${scrollYBeforeOpen}`);
+      }
+    };
+
     // Close lightbox when clicking the close button or outside the image
     lightbox.addEventListener('click', (e) => {
       if (e.target !== lightboxImage) {
-        lightbox.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
+        closeLightbox();
       }
     });
     
     // Close on escape key
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-        lightbox.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
+      if (e.key === 'Escape') {
+        closeLightbox();
       }
     });
   });

@@ -3,7 +3,7 @@ import type { Metadata, Site, Socials } from "@types";
 export const SITE: Site = {
   TITLE: "AINews",
   DESCRIPTION: "Weekday recaps of top News for AI Engineers",
-  EMAIL: "swyx@smol.ai",
+  EMAIL: "swyx at smol dot ai",
   NUM_POSTS_ON_HOMEPAGE: 5,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
 };
