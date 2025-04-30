@@ -67,7 +67,7 @@ https://www.youtube.com/watch?v=rYXeQbTuVl0
 
 And for AI Engineers the main other notable update from the event was Meta launching, for the first time, an AI Developer platform, arguably their equivalent of Google's AI Studio, with finetuning capability and fast inference with Cerebras and Groq, although for now it remains waitlisted:
 
-[](https://resend-attachments.s3.amazonaws.com/nDIFJugV5oxnd9O)
+![](https://resend-attachments.s3.amazonaws.com/nDIFJugV5oxnd9O)
 
 ---
 
