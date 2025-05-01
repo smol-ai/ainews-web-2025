@@ -50,15 +50,31 @@ jobs:
             echo "::group::Deployment Attempt $ATTEMPT of $MAX_ATTEMPTS"
             
             echo "Starting deployment to Vercel..."
+            # Capture stderr to a variable
+            DEPLOY_OUTPUT=$(pnpm exec vercel --token $VERCEL_TOKEN --prod 2>&1)
+            DEPLOY_EXIT_CODE=$?
+            
             # Use pnpm exec to ensure the local Vercel CLI is used
-            if pnpm exec vercel --token $VERCEL_TOKEN --prod; then
+            if [ $DEPLOY_EXIT_CODE -eq 0 ]; then
               echo "Deployment successful! ✅"
+              echo "$DEPLOY_OUTPUT" # Print output even on success
               echo "::endgroup::"
               exit 0
             else
-              DEPLOY_EXIT_CODE=$?
+              # DEPLOY_EXIT_CODE=$? # Already captured above
               echo "Deployment attempt $ATTEMPT failed with exit code $DEPLOY_EXIT_CODE ❌"
+              echo "--- Vercel CLI Output (stdout/stderr) ---"
+              echo "$DEPLOY_OUTPUT"
+              echo "-----------------------------------------"
               
+              # --- !!! ADD CANCELLATION CHECK HERE (after testing) !!! ---
+              # Example placeholder:
+              # if [[ "$DEPLOY_OUTPUT" == *"Build Canceled"* ]] || [ $DEPLOY_EXIT_CODE -eq SOME_CANCEL_CODE ]; then
+              #   echo "Deployment appears to have been manually canceled. Not retrying."
+              #   exit 1 # Exit with failure, but don't retry loop
+              # fi
+              # --- !!! END CANCELLATION CHECK AREA !!! ---
+
               if [ $ATTEMPT -lt $MAX_ATTEMPTS ]; then
                 echo "Waiting for $DELAY seconds before next attempt..."
                 sleep $DELAY
