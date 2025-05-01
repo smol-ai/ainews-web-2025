@@ -5,6 +5,7 @@ import type { APIRoute } from 'astro';
 import { renderIssueOgImage, renderHomepageOgImage } from '../../lib/renderOgImage';
 
 // https://og-playground.vercel.app/
+export const prerender = false;
 
 export const GET: APIRoute = async ({ request }) => {
   try {

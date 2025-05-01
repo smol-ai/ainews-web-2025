@@ -17,7 +17,7 @@ export function renderIssueOgImage({
   modelTags = []
 }: OgImageProps) {
   // Get first 10 words of description
-  const shortDescription = description.split(' ').slice(0, 10).join(' ') + 
+  const shortDescription = description.split(' ').slice(0, 20).join(' ') + 
     (description.split(' ').length > 10 ? '...' : '');
 
   return (
@@ -29,17 +29,17 @@ export function renderIssueOgImage({
       <div tw="flex justify-between items-center w-full">
         {/* Logo area */}
         <div tw="flex flex-col">
-          <span tw="text-2xl font-bold tracking-tight text-gray-800">
+          <span tw="text-6xl font-bold tracking-tight text-gray-800 bg-black text-white p-2">
             AI NEWS
           </span>
-          <span tw="text-sm text-gray-500">
+          {/* <span tw="text-sm text-gray-500">
             NEWS.SMOL.AI
-          </span>
+          </span> */}
         </div>
         
         {/* Issue metadata */}
         <div tw="flex flex-col items-end">
-          <span tw="text-lg text-gray-600 mt-1">
+          <span tw="text-6xl text-gray-600 mt-1">
             {formattedDate}
           </span>
         </div>
@@ -52,7 +52,7 @@ export function renderIssueOgImage({
       <div tw="flex flex-col flex-1">
         {/* Title */}
         <h1 tw={`font-extrabold tracking-tight text-gray-800 mb-8 max-w-[90%] leading-tight ${
-          `text-${Math.max(2, 6 - Math.floor(title.length / 20))}xl`
+          `text-${Math.max(5, 8 - Math.floor(title.length / 20))}xl`
         }`}>
           {title}
         </h1>
@@ -67,14 +67,14 @@ export function renderIssueOgImage({
           <div tw="flex flex-wrap gap-2">
             {/* Company tags */}
             {companyTags.slice(0, 4).map((tag, i) => (
-              <div key={`company-${i}`} tw="bg-green-100 text-green-600 px-3 py-1 rounded-md text-sm">
+              <div key={`company-${i}`} tw="bg-green-100 text-green-600 px-3 py-1 rounded-md text-lg">
                 {tag}
               </div>
             ))}
             
             {/* Model tags */}
             {modelTags.slice(0, 4).map((tag, i) => (
-              <div key={`model-${i}`} tw="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-md text-sm">
+              <div key={`model-${i}`} tw="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-md text-lg">
                 {tag}
               </div>
             ))}
@@ -84,10 +84,10 @@ export function renderIssueOgImage({
       
       {/* Footer */}
       <div tw="flex justify-between items-center mt-4">
-        <span tw="text-sm text-gray-500">
+        <span tw="text-lg text-gray-500">
           news.smol.ai
         </span>
-        <span tw="text-sm text-gray-500">
+        <span tw="text-lg text-gray-500">
           @smol_ai
         </span>
       </div>
