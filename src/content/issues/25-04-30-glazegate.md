@@ -54,11 +54,11 @@ people:
 
 It is perhaps too coincidental that, the week after Dario Amodei stressed [the Urgency of Interpretability,](https://www.darioamodei.com/post/the-urgency-of-interpretability) ChatGPT shipped an update that was so roundly hated it had to offer an [official retraction overnight](https://openai.com/index/sycophancy-in-gpt-4o/), saying "*we focused too much on short-term feedback, and did not fully account for how users’ interactions with ChatGPT evolve over time*". Joanne Jang of the Model Spec even did [a rare Reddit AMA](https://www.reddit.com/r/ChatGPT/comments/1kbjowz/ama_with_openais_joanne_jang_head_of_model/) sharing a little detail on their learnings:
 
-[](https://resend-attachments.s3.amazonaws.com/jOgMdIaIiK1q9bU)
+![][https://resend-attachments.s3.amazonaws.com/jOgMdIaIiK1q9bU)
 
 Elsewhere on AI Twitter, the growing dissatistfaction with LMArena (after [a rough Llama 4 weekend](https://buttondown.com/ainews/archive/ainews-llama-4s-controversial-weekend-release/)) came to a head as a group of researchers who primarily work at Cohere [published a paper documenting](https://x.com/arankomatsuzaki/status/1917400711882797144?s=46) unfair practices favoring big incumbents like OpenAI, DeepMind, [X.ai](http://x.ai/) and Meta.
 
-[](https://resend-attachments.s3.amazonaws.com/aA19laonkNG3mZ0)
+![](https://resend-attachments.s3.amazonaws.com/aA19laonkNG3mZ0)
 
 They gave LMArena a heads up and [they have responded,](https://x.com/lmarena_ai/status/1917492084359192890) but the [damage is done](https://x.com/maximelabonne/status/1917563456632328508) and there is officially an appetite for [alternatives](https://x.com/karpathy/status/1917546757929722115). Fortunately, the paper comes with actionable recommendations that LMArena can consider to restore confidence.
 
