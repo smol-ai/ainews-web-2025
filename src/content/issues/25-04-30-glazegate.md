@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0w
 title: ChatGPT responds to GlazeGate + LMArena responds to Cohere
-date: '2025-04-29T05:44:39.731046Z'
+date: '2025-04-30T05:44:39.731046Z'
 description: >-
   **OpenAI** faced backlash after a controversial ChatGPT update, leading to an
   official retraction admitting they "focused too much on short-term feedback."
