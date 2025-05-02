@@ -89,7 +89,7 @@ Anthropic launched [remote MCP server support in Claude](https://news.ycombinato
 
 Cursor released their model popularity list, with not much surprises.
 
-[](https://resend-attachments.s3.amazonaws.com/hM6qEzvvHIVmVdX)
+![](https://resend-attachments.s3.amazonaws.com/hM6qEzvvHIVmVdX)
 
 ---
 
