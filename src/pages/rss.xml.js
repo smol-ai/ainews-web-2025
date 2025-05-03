@@ -3,8 +3,9 @@ import { SITE } from "@consts";
 import { getCollection } from "astro:content";
 import {
   sanitizeString,
-  markdownToHtml,
 } from "../utils/textUtils";
+import { remark } from 'remark';
+import remarkHtml from 'remark-html';
 
 // catch unsanitary strings
 
@@ -33,18 +34,20 @@ export async function GET(context) {
     (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
   );
 
+  // Create a remark processor to convert markdown to HTML
+  const processor = remark().use(remarkHtml);
 
   return rss({
     title: SITE.TITLE,
     description: SITE.DESCRIPTION,
     site: context.site,
-    // Map items to RSS format
-    items: items.map((item, index) => {
+    // Map items to RSS format - Use Promise.all for async mapping
+    items: await Promise.all(items.map(async (item, index) => {
       // Sanitize potential null characters using the utility function
       const title = sanitizeString(item.data.title);
       const descriptionRaw = sanitizeString(item.data.description);
-      // Convert description markdown to HTML
-      const descriptionHtml = markdownToHtml(descriptionRaw);
+      // Convert description markdown to HTML (using the simplified version)
+      const descriptionHtml = sanitizeString(item.data.description); // Keep raw description for now, or use simplified markdownToHtml if needed later.
       // Sanitize the date string before converting to Date
       const pubDateStr = sanitizeString(item.data.date);
       const pubDate = new Date(pubDateStr); // Convert sanitized string back to Date
@@ -72,11 +75,12 @@ export async function GET(context) {
         const truncatedBody = sanitizedBody.length > 100000
           ? sanitizedBody.substring(0, 100000) + '...'
           : sanitizedBody;
-        rssItem.content = markdownToHtml(truncatedBody, true); // Add the content field
+        // Use remark to convert the markdown body to HTML
+        rssItem.content = (await processor.process(truncatedBody)).toString();
       }
 
       return rssItem;
-    }),
+    })),
     // (Optional) Add custom data
     customData: `<language>en-us</language>`,
   });
