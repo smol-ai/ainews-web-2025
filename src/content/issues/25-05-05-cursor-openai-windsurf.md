@@ -54,7 +54,7 @@ people:
 
 The Windsurf-OpenAI [talks](https://x.com/KateClarkTweets/status/1912569653777301816) have been happening for a few weeks, but after appearing on the [o3 livestream](https://news.smol.ai/issues/25-04-16-ainews-openai-o3-o4-mini-and-codex-cli) and [interesting sartorial banter](https://x.com/sama/status/1918456033623888317), Bloomberg is [reporting](https://x.com/Katie_Roof/status/1919547270913048804) that OpenAI has agreed to the deal, though not yet closed. This comes just as Cursor closes its [$900m round at a $9b valuation,](https://techcrunch.com/2025/05/04/cursor-is-reportedly-raising-funds-at-9-billion-valuation-from-thrive-a16z-and-accel/?utm_campaign=social&utm_source=X&utm_medium=organic) and OpenAI [updates that the nonprofit is staying in control of the for-profit](https://news.ycombinator.com/item?id=43897772).
 
-[](https://resend-attachments.s3.amazonaws.com/9mklxswMvnCD54M)
+![](https://resend-attachments.s3.amazonaws.com/9mklxswMvnCD54M)
 
 A lot of notable takes like [this one,](https://x.com/deedydas/status/1915083513189298620) and we'll have to wait a while to learn the full blow by blow, but the first "AI Wrapper" unicorn exit is certainly newsworthy.
 
