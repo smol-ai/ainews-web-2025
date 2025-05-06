@@ -17,8 +17,9 @@ export function renderIssueOgImage({
   modelTags = []
 }: OgImageProps) {
   // Get first 10 words of description
-  const shortDescription = description.split(' ').slice(0, 20).join(' ') + 
-    (description.split(' ').length > 10 ? '...' : '');
+  const split = description.split(' ')
+  const shortDescription = split.slice(0, 30).join(' ') + 
+    (split.length > 30 ? '...' : '');
 
   return (
     <div tw="flex flex-col w-full h-full p-12 bg-white font-sans relative">

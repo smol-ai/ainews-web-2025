@@ -3,6 +3,7 @@ import React from 'react';
 import { ImageResponse } from '@vercel/og';
 import type { APIRoute } from 'astro';
 import { renderIssueOgImage, renderHomepageOgImage } from '../../lib/renderOgImage';
+import { markdownToHtml } from '@utils/textUtils';
 
 // https://og-playground.vercel.app/
 export const prerender = false;
@@ -50,7 +51,7 @@ export const GET: APIRoute = async ({ request }) => {
       return new ImageResponse(
         renderIssueOgImage({
           title,
-          description,
+          description: markdownToHtml(description),
           formattedDate,
           companyTags,
           modelTags,

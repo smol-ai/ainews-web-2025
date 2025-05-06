@@ -25,7 +25,7 @@ export function generateOgImageUrl(params: OgImageParams): string {
   
   // Always include title
   if (params.title) {
-    queryParams.set('title', params.title);
+    queryParams.set('title', params.title.slice(0, params.title.length - 9));
   }
   
   // Optional parameters
