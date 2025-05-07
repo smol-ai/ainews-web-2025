@@ -24,6 +24,7 @@ export function getTagType(
 
 export async function getStaticPaths() {
   const posts = await getCollection("issues", ({ data }) => !data.draft);
+  console.log("Total issues posts found:", posts.length);
 
   // Get unique tags from all tag types
   const companies = [...new Set(posts.flatMap((post) => post.data.companies || []))];
@@ -31,15 +32,27 @@ export async function getStaticPaths() {
   const topics = [...new Set(posts.flatMap((post) => post.data.topics || []))];
   const people = [...new Set(posts.flatMap((post) => post.data.people || []))];
   
-  // Return empty array to enable dynamic routes - pages will be generated on demand
-  return [];
+  console.log("Unique tags found:", {
+    companies: companies.length,
+    models: models.length,
+    topics: topics.length,
+    people: people.length
+  });
+  // Prerender all tag pages
+  const allTags = [...companies, ...models, ...topics, ...people];
+  return allTags.map(tag => ({
+    params: { id: tag },
+    props: { tag, tagType: getTagType(tag, companies, models, topics, people) }
+  }));
 }
 
 // Dynamic route handling
 const { id } = Astro.params;
+// console.log("Current tag ID:", id);
 
 // Get data for this specific tag
 const allPosts = await getCollection("issues", ({ data }) => !data.draft);
+// console.log("Posts found for current tag:", allPosts.length);
 
 // Get all tag categories for classification
 const allCompanies = [...new Set(allPosts.flatMap((post) => post.data.companies || []))];
@@ -54,9 +67,11 @@ const posts = allPosts.filter((post) =>
   post.data.topics?.includes(id) ||
   post.data.people?.includes(id)
 );
+// console.log("Posts filtered for tag:", posts.length);
 
 // Get tag type
 const tagType = getTagType(id, allCompanies, allModels, allTopics, allPeople);
+// console.log("Tag type determined:", tagType);
 
 // Sort posts by date, most recent first
 const sortedPosts = posts.sort(
