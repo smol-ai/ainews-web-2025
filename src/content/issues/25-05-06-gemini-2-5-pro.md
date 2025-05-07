@@ -39,13 +39,13 @@ people:
 
 [Google I/O is in two weeks](https://blog.google/feed/google-io-2025-save-the-date/), and there's an old adage that adding more coding in a model's dataset somehow helps it improve in all other respects, and today's Gemini 2.5 Pro update (which was [only released 6 weeks ago](https://news.smol.ai/issues/25-03-25-ainews-gemini-25-pro-4o-native-image-gen)) highlights its multimodal image-to-code capabilities that evoke [the viral Tldraw moment of last year](https://www.latent.space/p/tldraw).
 
-[](https://resend-attachments.s3.amazonaws.com/xydPOHUJqHbS23W)
+![](https://resend-attachments.s3.amazonaws.com/xydPOHUJqHbS23W)
 
 [Making a clean sweep of #1 across LMArena leaderboards](https://x.com/lmarena_ai/status/1919774743038984449) these days carries less weight than it used to, but [beating Sonnet 3.7 at Coding](https://x.com/scaling01/status/1919771796334616759) still is noteworthy.
 
 The [finer details](https://x.com/_philschmid/status/1919770969788313836) of the rollout across AIStudio and Gemini App are also to be appreciated.
 
-[](https://resend-attachments.s3.amazonaws.com/HDVLuLnQSsk0uTe)
+![](https://resend-attachments.s3.amazonaws.com/HDVLuLnQSsk0uTe)
 
 ---
 
