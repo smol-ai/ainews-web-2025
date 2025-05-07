@@ -32,7 +32,10 @@ jobs:
           cache: 'pnpm'  # Use pnpm cache for faster installs
 
       - name: Install dependencies (includes Vercel CLI)
-        run: pnpm install vercel -g
+        run: |
+          pnpm install vercel -g
+          echo "Vercel CLI version:"
+          vercel --version
 
       - name: Deploy to Vercel with Retry Logic
         env:
@@ -43,50 +46,88 @@ jobs:
           # BYPASS_RECENT_CONTENT_CHECK: 'true'
         run: |
           MAX_ATTEMPTS=3
-          ATTEMPT=1
-          DELAY=10  # Initial delay of 10 seconds
-          
-          while [ $ATTEMPT -le $MAX_ATTEMPTS ]; do
-            echo "::group::Deployment Attempt $ATTEMPT of $MAX_ATTEMPTS"
-            
-            echo "Starting deployment to Vercel..."
-            # Capture stderr to a variable
-            DEPLOY_OUTPUT=$(pnpm exec vercel --token $VERCEL_TOKEN --prod 2>&1)
-            DEPLOY_EXIT_CODE=$?
-            
-            # Use pnpm exec to ensure the local Vercel CLI is used
-            if [ $DEPLOY_EXIT_CODE -eq 0 ]; then
-              echo "Deployment successful! ✅"
-              echo "$DEPLOY_OUTPUT" # Print output even on success
-              echo "::endgroup::"
-              exit 0
-            else
-              # DEPLOY_EXIT_CODE=$? # Already captured above
-              echo "Deployment attempt $ATTEMPT failed with exit code $DEPLOY_EXIT_CODE ❌"
-              echo "--- Vercel CLI Output (stdout/stderr) ---"
-              echo "$DEPLOY_OUTPUT"
-              echo "-----------------------------------------"
-              
-              # --- !!! ADD CANCELLATION CHECK HERE (after testing) !!! ---
-              # Example placeholder:
-              # if [[ "$DEPLOY_OUTPUT" == *"Build Canceled"* ]] || [ $DEPLOY_EXIT_CODE -eq SOME_CANCEL_CODE ]; then
-              #   echo "Deployment appears to have been manually canceled. Not retrying."
-              #   exit 1 # Exit with failure, but don't retry loop
-              # fi
-              # --- !!! END CANCELLATION CHECK AREA !!! ---
+          CURRENT_ATTEMPT=1
+          DELAY_SECONDS=10  # Initial delay of 10 seconds
 
-              if [ $ATTEMPT -lt $MAX_ATTEMPTS ]; then
-                echo "Waiting for $DELAY seconds before next attempt..."
-                sleep $DELAY
-                # Increase delay for next attempt
-                DELAY=$((DELAY * 2))
+          while [ $CURRENT_ATTEMPT -le $MAX_ATTEMPTS ]; do
+            echo "::group::Build and Deploy Attempt $CURRENT_ATTEMPT of $MAX_ATTEMPTS"
+            OPERATION_FAILED=false
+
+            # 1. Vercel Pull
+            echo "[Attempt $CURRENT_ATTEMPT] Pulling Vercel project settings..."
+            PULL_OUTPUT=$(pnpm exec vercel pull --yes --environment=production --token $VERCEL_TOKEN 2>&1)
+            PULL_EXIT_CODE=$?
+            if [ $PULL_EXIT_CODE -ne 0 ]; then
+              echo "[Attempt $CURRENT_ATTEMPT] Vercel pull failed with exit code $PULL_EXIT_CODE ❌"
+              echo "--- Vercel Pull Output ---"
+              echo "$PULL_OUTPUT"
+              echo "--------------------------"
+              OPERATION_FAILED=true
+              LAST_ERROR_OUTPUT=$PULL_OUTPUT
+            else
+              echo "[Attempt $CURRENT_ATTEMPT] Vercel pull successful."
+              # echo "$PULL_OUTPUT" # Optional: print pull output on success
+            fi
+
+            # 2. Vercel Build (only if pull succeeded)
+            if [ "$OPERATION_FAILED" = false ]; then
+              echo "[Attempt $CURRENT_ATTEMPT] Building project with Vercel..."
+              BUILD_OUTPUT=$(pnpm exec vercel build --prod --token $VERCEL_TOKEN 2>&1)
+              BUILD_EXIT_CODE=$?
+              if [ $BUILD_EXIT_CODE -ne 0 ]; then
+                echo "[Attempt $CURRENT_ATTEMPT] Vercel build failed with exit code $BUILD_EXIT_CODE ❌"
+                echo "--- Vercel Build Output ---"
+                echo "$BUILD_OUTPUT"
+                echo "---------------------------"
+                OPERATION_FAILED=true
+                LAST_ERROR_OUTPUT=$BUILD_OUTPUT
+              else
+                echo "[Attempt $CURRENT_ATTEMPT] Vercel build successful! ✅"
+                # echo "--- Vercel Build Output ---" # Optional: print build output on success
+                # echo "$BUILD_OUTPUT"
+                # echo "---------------------------"
               fi
             fi
-            
+
+            # 3. Vercel Deploy Prebuilt (only if pull and build succeeded)
+            if [ "$OPERATION_FAILED" = false ]; then
+              echo "[Attempt $CURRENT_ATTEMPT] Deploying prebuilt project to Vercel..."
+              DEPLOY_OUTPUT=$(pnpm exec vercel deploy --prebuilt --prod --token $VERCEL_TOKEN 2>&1)
+              DEPLOY_EXIT_CODE=$?
+              if [ $DEPLOY_EXIT_CODE -ne 0 ]; then
+                echo "[Attempt $CURRENT_ATTEMPT] Deployment of prebuilt failed with exit code $DEPLOY_EXIT_CODE ❌"
+                echo "--- Vercel Deploy Output ---"
+                echo "$DEPLOY_OUTPUT"
+                echo "----------------------------"
+                OPERATION_FAILED=true
+                LAST_ERROR_OUTPUT=$DEPLOY_OUTPUT
+              else
+                echo "[Attempt $CURRENT_ATTEMPT] Deployment of prebuilt successful! ✅"
+                echo "--- Vercel Deploy Output ---"
+                echo "$DEPLOY_OUTPUT"
+                echo "----------------------------"
+                echo "::endgroup::"
+                exit 0 # Overall success
+              fi
+            fi
+
+            # If any operation failed in this attempt
+            if [ "$OPERATION_FAILED" = true ]; then
+              echo "[Attempt $CURRENT_ATTEMPT] failed. See output above for details."
+              # Consider specific error messages from LAST_ERROR_OUTPUT to decide not to retry
+              # e.g., if [[ "$LAST_ERROR_OUTPUT" == *"Build Canceled"* ]]; then ... exit 1 ... fi
+
+              if [ $CURRENT_ATTEMPT -lt $MAX_ATTEMPTS ]; then
+                echo "Waiting for $DELAY_SECONDS seconds before next attempt..."
+                sleep $DELAY_SECONDS
+                DELAY_SECONDS=$((DELAY_SECONDS * 2)) # Exponential backoff
+              fi
+            fi
+
             echo "::endgroup::"
-            ATTEMPT=$((ATTEMPT + 1))
+            CURRENT_ATTEMPT=$((CURRENT_ATTEMPT + 1))
           done
-          
+
           echo "All $MAX_ATTEMPTS deployment attempts failed. Please check logs for details."
           exit 1
 
@@ -96,4 +137,4 @@ jobs:
 
       - name: Notify on Failure
         if: failure()
-        run: echo "Vercel deployment failed after multiple attempts. Please check the logs." 
+        run: echo "Vercel deployment failed after multiple attempts. Please check the logs."
