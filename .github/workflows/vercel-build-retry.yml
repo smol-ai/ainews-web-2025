@@ -46,89 +46,98 @@ jobs:
           # BYPASS_RECENT_CONTENT_CHECK: 'true'
         run: |
           MAX_ATTEMPTS=3
-          CURRENT_ATTEMPT=1
-          DELAY_SECONDS=10  # Initial delay of 10 seconds
+          ATTEMPT_NUM=1
+          DELAY_SECS=10
 
-          while [ $CURRENT_ATTEMPT -le $MAX_ATTEMPTS ]; do
-            echo "::group::Build and Deploy Attempt $CURRENT_ATTEMPT of $MAX_ATTEMPTS"
-            OPERATION_FAILED=false
+          while [ $ATTEMPT_NUM -le $MAX_ATTEMPTS ]; do
+            echo "::group::Build and Deploy Attempt $ATTEMPT_NUM of $MAX_ATTEMPTS"
+            CURRENT_STEP_FAILED=false
+            LAST_ERR_OUTPUT=""
+
+            # Function to execute Vercel commands robustly
+            run_vercel_command() {
+              local command_description="$1"
+              shift
+              local vercel_command_line="$@"
+              local tmp_output_file
+              tmp_output_file=$(mktemp)
+
+              echo "[Attempt $ATTEMPT_NUM] $command_description (with --debug)..."
+              if eval "$vercel_command_line" > "$tmp_output_file" 2>&1; then
+                CMD_EXIT_CODE=0
+              else
+                CMD_EXIT_CODE=$?
+              fi
+              CMD_OUTPUT=$(cat "$tmp_output_file")
+              rm "$tmp_output_file"
+
+              if [ $CMD_EXIT_CODE -eq 0 ]; then
+                echo "[Attempt $ATTEMPT_NUM] $(echo $command_description | sed 's/ing/ed/') successful."
+                # To log success output, uncomment below and customize message
+                # echo -e "--- Vercel $(echo $command_description | sed 's/ing/ed/') Output (Success) ---\n$CMD_OUTPUT\n---------------------------"
+                return 0 # Success
+              else
+                echo "[Attempt $ATTEMPT_NUM] $(echo $command_description | sed 's/ing/ed/') failed with exit code $CMD_EXIT_CODE ❌"
+                echo -e "--- Vercel $(echo $command_description | sed 's/ing/ed/') Output (Failure) ---\n$CMD_OUTPUT\n-------------------------------------"
+                CURRENT_STEP_FAILED=true
+                LAST_ERR_OUTPUT=$CMD_OUTPUT
+                return 1 # Failure
+              fi
+            }
 
             # 1. Vercel Pull
-            echo "[Attempt $CURRENT_ATTEMPT] Pulling Vercel project settings..."
-            PULL_OUTPUT=$(pnpm exec vercel pull --yes --environment=production --token $VERCEL_TOKEN 2>&1)
-            PULL_EXIT_CODE=$?
-            if [ $PULL_EXIT_CODE -ne 0 ]; then
-              echo "[Attempt $CURRENT_ATTEMPT] Vercel pull failed with exit code $PULL_EXIT_CODE ❌"
-              echo "--- Vercel Pull Output ---"
-              echo "$PULL_OUTPUT"
-              echo "--------------------------"
-              OPERATION_FAILED=true
-              LAST_ERROR_OUTPUT=$PULL_OUTPUT
-            else
-              echo "[Attempt $CURRENT_ATTEMPT] Vercel pull successful."
-              # echo "$PULL_OUTPUT" # Optional: print pull output on success
-            fi
+            run_vercel_command "Pulling Vercel project settings" \
+              "pnpm exec vercel pull --yes --environment=production --token $VERCEL_TOKEN --debug"
+            PULL_SUCCESS=$?
 
             # 2. Vercel Build (only if pull succeeded)
-            if [ "$OPERATION_FAILED" = false ]; then
-              echo "[Attempt $CURRENT_ATTEMPT] Building project with Vercel..."
-              BUILD_OUTPUT=$(pnpm exec vercel build --prod --token $VERCEL_TOKEN 2>&1)
-              BUILD_EXIT_CODE=$?
-              if [ $BUILD_EXIT_CODE -ne 0 ]; then
-                echo "[Attempt $CURRENT_ATTEMPT] Vercel build failed with exit code $BUILD_EXIT_CODE ❌"
-                echo "--- Vercel Build Output ---"
-                echo "$BUILD_OUTPUT"
-                echo "---------------------------"
-                OPERATION_FAILED=true
-                LAST_ERROR_OUTPUT=$BUILD_OUTPUT
-              else
-                echo "[Attempt $CURRENT_ATTEMPT] Vercel build successful! ✅"
-                # echo "--- Vercel Build Output ---" # Optional: print build output on success
-                # echo "$BUILD_OUTPUT"
-                # echo "---------------------------"
-              fi
+            if [ $PULL_SUCCESS -eq 0 ]; then
+              run_vercel_command "Building project with Vercel" \
+                "pnpm exec vercel build --prod --token $VERCEL_TOKEN --debug"
+              BUILD_SUCCESS=$?
+            else
+              BUILD_SUCCESS=1 # Mark as failed if pull failed
             fi
 
             # 3. Vercel Deploy Prebuilt (only if pull and build succeeded)
-            if [ "$OPERATION_FAILED" = false ]; then
-              echo "[Attempt $CURRENT_ATTEMPT] Deploying prebuilt project to Vercel..."
-              DEPLOY_OUTPUT=$(pnpm exec vercel deploy --prebuilt --prod --token $VERCEL_TOKEN 2>&1)
-              DEPLOY_EXIT_CODE=$?
-              if [ $DEPLOY_EXIT_CODE -ne 0 ]; then
-                echo "[Attempt $CURRENT_ATTEMPT] Deployment of prebuilt failed with exit code $DEPLOY_EXIT_CODE ❌"
-                echo "--- Vercel Deploy Output ---"
-                echo "$DEPLOY_OUTPUT"
-                echo "----------------------------"
-                OPERATION_FAILED=true
-                LAST_ERROR_OUTPUT=$DEPLOY_OUTPUT
-              else
-                echo "[Attempt $CURRENT_ATTEMPT] Deployment of prebuilt successful! ✅"
-                echo "--- Vercel Deploy Output ---"
-                echo "$DEPLOY_OUTPUT"
-                echo "----------------------------"
+            if [ $PULL_SUCCESS -eq 0 ] && [ $BUILD_SUCCESS -eq 0 ]; then
+              TMP_DEPLOY_OUTPUT_FILE=$(mktemp)
+              echo "[Attempt $ATTEMPT_NUM] Deploying prebuilt project to Vercel (with --debug)..."
+              if pnpm exec vercel deploy --prebuilt --prod --token $VERCEL_TOKEN --debug > "$TMP_DEPLOY_OUTPUT_FILE" 2>&1; then
+                DEPLOY_CMD_OUTPUT=$(cat "$TMP_DEPLOY_OUTPUT_FILE")
+                rm "$TMP_DEPLOY_OUTPUT_FILE"
+                echo "[Attempt $ATTEMPT_NUM] Deployment of prebuilt successful! ✅"
+                echo -e "--- Vercel Deploy Output (Success) ---\n$DEPLOY_CMD_OUTPUT\n--------------------------------------"
                 echo "::endgroup::"
                 exit 0 # Overall success
+              else
+                DEPLOY_EXIT_CODE=$?
+                DEPLOY_CMD_OUTPUT=$(cat "$TMP_DEPLOY_OUTPUT_FILE")
+                rm "$TMP_DEPLOY_OUTPUT_FILE"
+                echo "[Attempt $ATTEMPT_NUM] Deployment of prebuilt failed with exit code $DEPLOY_EXIT_CODE ❌"
+                echo -e "--- Vercel Deploy Output (Failure) ---\n$DEPLOY_CMD_OUTPUT\n---------------------------------------"
+                CURRENT_STEP_FAILED=true
+                LAST_ERR_OUTPUT=$DEPLOY_CMD_OUTPUT
               fi
+            elif [ $PULL_SUCCESS -ne 0 ] || [ $BUILD_SUCCESS -ne 0 ]; then
+                # If pull or build failed, this attempt has failed. CURRENT_STEP_FAILED already true from those steps.
+                echo "[Attempt $ATTEMPT_NUM] Skipping deploy due to previous step failure."
             fi
 
-            # If any operation failed in this attempt
-            if [ "$OPERATION_FAILED" = true ]; then
-              echo "[Attempt $CURRENT_ATTEMPT] failed. See output above for details."
-              # Consider specific error messages from LAST_ERROR_OUTPUT to decide not to retry
-              # e.g., if [[ "$LAST_ERROR_OUTPUT" == *"Build Canceled"* ]]; then ... exit 1 ... fi
-
-              if [ $CURRENT_ATTEMPT -lt $MAX_ATTEMPTS ]; then
-                echo "Waiting for $DELAY_SECONDS seconds before next attempt..."
-                sleep $DELAY_SECONDS
-                DELAY_SECONDS=$((DELAY_SECONDS * 2)) # Exponential backoff
+            if [ "$CURRENT_STEP_FAILED" = true ]; then
+              echo "[Attempt $ATTEMPT_NUM] failed. Review Vercel output above."
+              if [ $ATTEMPT_NUM -lt $MAX_ATTEMPTS ]; then
+                echo "Waiting for $DELAY_SECS seconds before next attempt ($((ATTEMPT_NUM + 1)) of $MAX_ATTEMPTS)..."
+                sleep $DELAY_SECS
+                DELAY_SECS=$((DELAY_SECS * 2))
               fi
             fi
 
             echo "::endgroup::"
-            CURRENT_ATTEMPT=$((CURRENT_ATTEMPT + 1))
+            ATTEMPT_NUM=$((ATTEMPT_NUM + 1))
           done
 
-          echo "All $MAX_ATTEMPTS deployment attempts failed. Please check logs for details."
+          echo "All $MAX_ATTEMPTS deployment attempts failed. See logs."
           exit 1
 
       - name: Notify on Success
