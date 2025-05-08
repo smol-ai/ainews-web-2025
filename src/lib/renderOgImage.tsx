@@ -59,9 +59,7 @@ export function renderIssueOgImage({
         </h1>
         
         {/* Description (first 10 words) */}
-        <p tw="text-2xl text-gray-600 mb-10 leading-normal truncate overflow-hidden text-ellipsis">
-          {shortDescription}
-        </p>
+        <p tw="text-2xl text-gray-600 mb-10 leading-normal truncate overflow-hidden text-ellipsis" dangerouslySetInnerHTML={{ __html: shortDescription }} />
         
         {/* Tags container */}
         {(companyTags.length > 0 || modelTags.length > 0) && (
