@@ -1,0 +1,66 @@
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const speakerImages = document.querySelectorAll<HTMLImageElement>('.speaker-photo');
+    if (speakerImages.length === 0) return;
+
+    const overlay = document.createElement('div');
+    overlay.className =
+      'speaker-overlay fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm p-6 flex flex-wrap content-start justify-center overflow-auto';
+    document.body.appendChild(overlay);
+
+    let selected: HTMLImageElement[] = [];
+
+    function renderOverlay() {
+      overlay.innerHTML = '';
+      selected.forEach((img) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'm-4 text-center text-white';
+        const clone = img.cloneNode(true) as HTMLImageElement;
+        clone.className = 'mx-auto mb-2 w-48 h-48 object-cover rounded-full';
+        const name = img.dataset.name || '';
+        const company = img.dataset.company || '';
+        const talk = img.dataset.talk || '';
+        const info = document.createElement('div');
+        info.innerHTML = `<div class="font-bold">${name}</div><div>${company}</div><div class="italic">${talk}</div>`;
+        wrapper.appendChild(clone);
+        wrapper.appendChild(info);
+        overlay.appendChild(wrapper);
+      });
+      overlay.classList.toggle('hidden', selected.length === 0);
+      document.body.classList.toggle('overflow-hidden', selected.length > 0);
+      speakerImages.forEach((img) => {
+        if (selected.includes(img)) {
+          img.classList.remove('grayscale', 'opacity-50');
+        } else {
+          img.classList.toggle('grayscale', selected.length > 0);
+          img.classList.toggle('opacity-50', selected.length > 0);
+        }
+      });
+    }
+
+    speakerImages.forEach((img) => {
+      img.classList.add('cursor-pointer', 'transition-transform', 'hover:scale-105');
+      img.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (!selected.includes(img)) {
+          selected.unshift(img);
+        }
+        renderOverlay();
+      });
+    });
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        selected = [];
+        renderOverlay();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        selected = [];
+        renderOverlay();
+      }
+    });
+  });
+</script>
