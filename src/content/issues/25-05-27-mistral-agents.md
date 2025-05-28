@@ -59,7 +59,7 @@ Since the original LLM OS discussion in [Nov 2023,](https://x.com/karpathy/statu
 
 If you were to update the 2023 chart for the 2025 consensus you'd get something like:
 
-[](https://resend-attachments.s3.amazonaws.com/Gv4fVaajdesYvAl)
+![](https://resend-attachments.s3.amazonaws.com/Gv4fVaajdesYvAl)
 
 (this is our quick mock of it)
 
@@ -67,7 +67,7 @@ Indeed we've left the less established areas of the LLM OS as "memory" and "orch
 
 Checking on their blog homepage also is a nice reminder of where Mistral's priorities currently lie, as a leading lab for Open Source AI.
 
-[](https://resend-attachments.s3.amazonaws.com/EG8DaoZ2dwnLUls)
+![](https://resend-attachments.s3.amazonaws.com/EG8DaoZ2dwnLUls)
 
 ---
 
