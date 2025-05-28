@@ -10,6 +10,9 @@ export const POST: APIRoute = async ({ request }) => {
     
     const { email, firstName, lastName } = data;
     
+    // Log incoming request with timestamp
+    console.log(`[INFO ${new Date().toISOString()}] Subscribe request received for email: ${email}`);
+    
     // Validate required fields
     if (!email) {
       return new Response(
@@ -20,6 +23,21 @@ export const POST: APIRoute = async ({ request }) => {
         { status: 400 }
       );
     }
+    
+    // Disallow @qq.com emails from signup
+    if (email.toLowerCase().endsWith('@qq.com')) {
+      console.warn(`[WARN ${new Date().toISOString()}] Disallowed email domain attempted: ${email}`);
+      return new Response(
+        JSON.stringify({
+          success: false,
+          message: 'This email unfortunately does not meet our requirements. Please use a work email.'
+        }),
+        { status: 400 }
+      );
+    }
+    
+    // Log creating contact
+    console.log(`[INFO ${new Date().toISOString()}] Creating contact for email: ${email}`);
     
     // Create contact in Resend
     const response = await resend.contacts.create({
@@ -40,6 +58,9 @@ export const POST: APIRoute = async ({ request }) => {
         { status: 400 }
       );
     }
+    
+    // Log successful subscription
+    console.log(`[INFO ${new Date().toISOString()}] Subscription successful for email: ${email}`);
     
     return new Response(
       JSON.stringify({ 
