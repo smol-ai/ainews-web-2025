@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0w
 title: AI Engineer World's Fair Talks Day 1
-date: '2025-06-05T05:44:39.731046Z'
+date: '2025-06-04T05:44:39.731046Z'
 description: >-
   **Mistral** launched a new **Code** project, and **Cursor** released version
   **1.0**. **Anthropic** improved **Claude Code** plans, while **ChatGPT**
