@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0w
 title: Apple exposes Foundation Models API and... no new Siri
-date: '2025-06-10T05:44:39.731046Z'
+date: '2025-06-09T05:44:39.731046Z'
 description: >-
   **Apple** released on-device foundation models for iOS developers, though
   their recent "Illusion of Reasoning" paper faced significant backlash for
