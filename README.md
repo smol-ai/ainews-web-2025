@@ -58,6 +58,8 @@ The site can be deployed to Vercel or Netlify with a single click:
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/smol_ai/ainews-web)
 [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/smol_ai/ainews-web)
 
-## License
+## run script
 
-MIT
+```bash
+pnpm ts-node oneoffs/process-emails.ts --file "$(ls -t src/content/issues/*.md | head -n 1)" && gadmit "latest post" && gpom
+```
