@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0w
 title: Chinese Models Launch - MiniMax-M1, Hailuo 2 "Kangaroo", Moonshot Kimi-Dev-72B
-date: '2025-06-17T05:44:39.731046Z'
+date: '2025-06-16T05:44:39.731046Z'
 description: >-
   **MiniMax AI** launched **MiniMax-M1**, a 456 billion parameter open weights
   LLM with a 1 million token input and 80k token output using efficient
