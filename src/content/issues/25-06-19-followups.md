@@ -66,6 +66,8 @@ A grab bag of followups today:
 - the full Karpathy talk from YC AI SUS is [now up](https://news.ycombinator.com/item?id=44314423) (with [slides](https://www.latent.space/p/s3))
 - the first AI Engineer conf talk recordings are now [rolling out](https://www.youtube.com/watch?v=lswTmGrjhVA&list=PLcfpQ4tk2k0W3ORTR-Cr4Ppw6UrN8kfMh&index=110)
 
+https://www.youtube.com/watch?v=ddd4xjuJTyg
+
 ---
 
 # AI Twitter Recap
