@@ -57,17 +57,17 @@ people:
 
 Last August, a group of authors led by Andrea Bartz [brought a class action lawsuit](https://entertainmentlawreview.lls.edu/authors-v-anthropic-the-legal-showdown-over-ai-copyright-and-fair-use/) on Anthropic PBC for "illegally downloading" their works to train Claude. The scale of the destructive book scanning (perhaps [<$2 per book](https://twitter.com/giffmana/status/1937591844252385323) esp used books) is impressive:
 
-[](https://resend-attachments.s3.amazonaws.com/S9Up265zT1VJ0VA)
+![](https://resend-attachments.s3.amazonaws.com/S9Up265zT1VJ0VA)
 
 This is of course familiar to anyone who knows [Authors Guild v Google](https://en.wikipedia.org/wiki/Authors_Guild,_Inc._v._Google,_Inc.), aka the Google Books lawsuit, which had a very similar setup, but this is the first direct ruling on the legality of pretraining on copyrighted content.
 
 The filings from that case are [here](https://www.courtlistener.com/docket/69058235/bartz-v-anthropic-pbc/) but the result today is from the [Motion for Summary Judgment](https://www.courtlistener.com/docket/69058235/231/bartz-v-anthropic-pbc/), where Anthropic [arguably](https://x.com/mjbommar/status/1937562175955980614) "won" with the explicit ruling that "training use [is] fair use".
 
-[](https://resend-attachments.s3.amazonaws.com/y4sXpTlxUVp0VvI)
+![](https://resend-attachments.s3.amazonaws.com/y4sXpTlxUVp0VvI)
 
 It seems that [the ghost of Books3](https://www.wired.com/story/battle-over-books3/) haunts Anthropic as there is a separate issue on using pirated books, but the judgment is pretty clear here and likely sets an important precedent for years to come: no less than 32 mentions of how "transformative" a use case that pretraining is, regardless of how much the LLM memorizes:
 
-[](https://resend-attachments.s3.amazonaws.com/RcxQDzqlkw3F10a)
+![](https://resend-attachments.s3.amazonaws.com/RcxQDzqlkw3F10a)
 
 ---
 
