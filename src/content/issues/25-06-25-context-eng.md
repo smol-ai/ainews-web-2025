@@ -52,7 +52,7 @@ people:
 
 A lot of relevant news stories to choose from today: the curiously coincidental launches of [Vercel Sandbox](https://x.com/cramforce/status/1937885790152818995?s=46) and [Cloudflare Containers](https://x.com/cloudflare/status/1937544770752045168?s=46), the leak and then release (with generous limits) of [Gemini Code](https://x.com/googleaidevs/status/1937861646082515205), GDM's Claude Code competitor, or the [fundraising of OpenRouter](https://x.com/xanderatallah/status/1937957937692938292).
 
-But very probably the thing that will stick around from today is the confirmation of "Context Engineering" as a noteworthy trend, as coined by [Cognition's Walden Yan:](https://cognition.ai/blog/dont-build-multi-agents)
+But very probably the thing that will stick around from today is the confirmation of "Context Engineering" as a noteworthy trend, as coined by either [Dex Horthy](https://x.com/dexhorthy/status/1938265310869721478) or [Cognition's Walden Yan:](https://cognition.ai/blog/dont-build-multi-agents):
 
 ![](https://resend-attachments.s3.amazonaws.com/9eE7HoXEVqjxrks)
 
