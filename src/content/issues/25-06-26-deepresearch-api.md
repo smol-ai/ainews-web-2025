@@ -62,7 +62,7 @@ people:
 
 While Google had [announced](https://www.latent.space/p/aiewf-2025-keynotes) their *intentions* to release a Deep Research API, it seems OpenAI has chosen today to scoop them by *actually* releasing their Deep Research API in a relatively lowkey [announcement](https://x.com/openaidevs/status/1938286704856863162?s=46&t=jDrfS5vZD4MFwckU5E8f5Q):
 
-[](https://resend-attachments.s3.amazonaws.com/gUxdgTpl2JbsOZJ)
+![](https://resend-attachments.s3.amazonaws.com/gUxdgTpl2JbsOZJ)
 
 We will not mince words - **o3-deep-research and o4-mini-deep-research are probably the most powerful LLMs for powering agents in the world right now.** This is thanks to the native support for MCP, Search and Code Interpreter which are 3 of the [Big 5](https://news.smol.ai/issues/25-05-27-mistral-agents) LLM OS primitives.
 
@@ -71,7 +71,7 @@ Apart from the new webhook modality, you should not miss the cookbooks released 
 - [Introduction to Deep Research API:](https://cookbook.openai.com/examples/deep_research_api/introduction_to_deep_research_api) giving you everything you need to build your own Deep Research in ~30LOC, with MCP
 - [Deep Research API Agents:](https://cookbook.openai.com/examples/deep_research_api/introduction_to_deep_research_api_agents) detailing usage with the Agents SDK and, for the first time, a **multi-agent** setup using 4 agents
     
-    [](https://resend-attachments.s3.amazonaws.com/SrxbBsr13hNncpx)
+    ![](https://resend-attachments.s3.amazonaws.com/SrxbBsr13hNncpx)
     
 
 ---
