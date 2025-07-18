@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0w
-title: ChatGPT Agent
+title: "ChatGPT Agent: new o* model + unified Deep Research browser + Operator computer use + Code Interpreter terminal"
 date: '2025-07-17T05:44:39.731046Z'
 description: >-
   **OpenAI** launched the **ChatGPT Agent**, a new advanced AI system capable of
