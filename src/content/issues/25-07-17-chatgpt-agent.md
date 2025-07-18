@@ -47,14 +47,14 @@ people:
 
 In a very well received, classic OpenAI style [10am PT livestream,](https://www.youtube.com/watch?v=1jn_RpbPbEc) Sama and team launched "ChatGPT agent" with a meme-worthy opener (sitll wasn't the top meme of today):
 
-[](https://resend-attachments.s3.amazonaws.com/qhdSMz9QRA1e5Uv)
+![](https://resend-attachments.s3.amazonaws.com/qhdSMz9QRA1e5Uv)
 
 The [blogpost](https://openai.com/index/introducing-chatgpt-agent/), [system card](https://cdn.openai.com/pdf/6bcccca6-3b64-43cb-a66e-4647073142d7/chatgpt_agent_system_card_launch.pdf), [system prompt](https://gist.github.com/Rutledge/4b0ef2d51ba2f1918a249bce35bdde9c), [Wired](https://www.wired.com/story/openai-chatgpt-agent-launch/) and [Every](https://every.to/vibe-check/vibe-check-openai-enters-the-browser-wars-with-chatgpt-agent) coverage, have focused on making [slides](https://www.youtube.com/watch?v=szJI9YJNEZk), [spreadsheets](https://www.youtube.com/watch?v=JAQ4p662It8), [research](https://www.youtube.com/watch?v=Wgn4JeYI9lY), [customizability](https://www.youtube.com/watch?v=EKMHiOQPwpc) (including [scheduled agents](https://x.com/neelajj/status/1945945913014546805?s=46)), and the HLE, FrontierMath benchmarks are of course great, but:
 
 1. we shouldn't let benchmark fatigue distract from the fact of how quickly models and agents are running up these extraordinarily difficult, already superhuman tests,
 2. most people are missing that **"the model" referred to in the blogpost is a distinct new model separate from and better than o3 i**f you look carefully at the labels:
 
-[](https://resend-attachments.s3.amazonaws.com/9dlIn7cXzby8sxJ)
+![](https://resend-attachments.s3.amazonaws.com/9dlIn7cXzby8sxJ)
 
 Similar to how Deep Research was the first product to publicly expose the full o3 anywhere, ChatGPT Agent seems to be the first product to publicly expose what would have been called o4, but is now being merged into GPTNext.
 
