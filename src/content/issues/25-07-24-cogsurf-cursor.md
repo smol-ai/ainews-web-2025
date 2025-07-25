@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0w
-title: ' 3x in 2 months: Cursor @ $28b, Cognition + Windsurf @ $10b'
+title: '3x in 3 months: Cursor @ $28b, Cognition + Windsurf @ $10b'
 date: '2025-07-24T05:44:39.731046Z'
 description: >-
   **Cursor** is reportedly fundraising at a **$28 billion valuation with $1
