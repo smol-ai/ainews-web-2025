@@ -1,8 +1,65 @@
 ---
 id: MjAyNS0w
-title: "Qwen-Image: SOTA text rendering + 4o-imagegen-level Editing Open Weights MMDiT"
+title: 'Qwen-Image: SOTA text rendering + 4o-imagegen-level Editing Open Weights MMDiT'
 date: '2025-08-04T05:44:39.731046Z'
+description: >-
+  **Alibaba** surprised with the release of **Qwen-Image**, a **20B MMDiT**
+  model excelling at bilingual text rendering and image editing, with open
+  weights and detailed transparency including synthetic data usage. **Google
+  DeepMind** launched **Gemini 2.5 Deep Think** to Ultra subscribers, showing
+  significant reasoning improvements and benchmark gains close to **OpenAI's o3
+  Pro**. ByteDance's **SeedProver** achieved record scores on math benchmarks,
+  surpassing DeepMind's **AlphaGeometry2**, while OpenAI is developing a
+  "universal verifier" for math and coding. Competitive reasoning benchmarks and
+  game arenas by Google and Kaggle highlight a meta-shift in reasoning model
+  efficiency, with models like **Grok 4** leading instruction-following
+  benchmarks. Other open-weight models gaining momentum include **GLM-4.5**,
+  **XBai o4**, and **Tencent Hunyuan**. *"Reasoning models represent a
+  compute-equivalent gain on the order of 10×,"* per community analysis.
+companies:
+  - alibaba
+  - google-deepmind
+  - openai
+  - bytedance
+  - kaggle
+  - tencent
+models:
+  - qwen-image
+  - mmdit-20b
+  - gemini-2.5
+  - o3-pro
+  - seedprover
+  - alphageometry2
+  - grok-4
+  - glm-4.5
+  - xbai-o4
+  - hunyuan
+topics:
+  - bilingual-text-rendering
+  - image-generation
+  - image-editing
+  - synthetic-data
+  - reasoning
+  - math-proving
+  - benchmarking
+  - instruction-following
+  - model-transparency
+  - open-weight-models
+  - competitive-evaluation
+people:
+  - swyx
+  - demishassabis
+  - tulseedoshi
+  - mparakhin
+  - teortaxestex
+  - cgeorgiaw
+  - dorialexander
+  - steph_palazzolo
+  - corbtt
+  - synthwavedd
+  - epochairesearch
 ---
+
 
 **Qwen is all you need.**
 
