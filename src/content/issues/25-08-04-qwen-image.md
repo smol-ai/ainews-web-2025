@@ -4,18 +4,18 @@ title: 'Qwen-Image: SOTA text rendering + 4o-imagegen-level Editing Open Weights
 date: '2025-08-04T05:44:39.731046Z'
 description: >-
   **Alibaba** surprised with the release of **Qwen-Image**, a **20B MMDiT**
-  model excelling at bilingual text rendering and image editing, with open
-  weights and detailed transparency including synthetic data usage. **Google
-  DeepMind** launched **Gemini 2.5 Deep Think** to Ultra subscribers, showing
-  significant reasoning improvements and benchmark gains close to **OpenAI's o3
-  Pro**. ByteDance's **SeedProver** achieved record scores on math benchmarks,
-  surpassing DeepMind's **AlphaGeometry2**, while OpenAI is developing a
-  "universal verifier" for math and coding. Competitive reasoning benchmarks and
-  game arenas by Google and Kaggle highlight a meta-shift in reasoning model
-  efficiency, with models like **Grok 4** leading instruction-following
-  benchmarks. Other open-weight models gaining momentum include **GLM-4.5**,
-  **XBai o4**, and **Tencent Hunyuan**. *"Reasoning models represent a
-  compute-equivalent gain on the order of 10×,"* per community analysis.
+  model excelling at bilingual text rendering and graphic poster creation, with
+  open weights and demos available. **Google DeepMind** launched **Gemini 2.5
+  Deep Think** to Ultra subscribers, showing significant reasoning improvements
+  and benchmark gains (+11.2% AIME, +13.2% HLE, +13.4% LiveCodeBench) rivaling
+  **OpenAI's o3 Pro**. ByteDance's **SeedProver** achieved state-of-the-art math
+  theorem proving results, surpassing DeepMind's AlphaGeometry2. OpenAI is
+  developing a "universal verifier" for math and coding gains transfer.
+  Competitive reasoning benchmarks and game arenas by Google and Kaggle
+  highlight a meta-shift in reasoning model efficiency, comparable to the
+  original Transformer leap. Other open-weight models gaining momentum include
+  **GLM-4.5**, **XBai o4**, and **Tencent Hunyuan** with a focus on efficient
+  training. *"Qwen is all you need."*
 companies:
   - alibaba
   - google-deepmind
@@ -25,12 +25,10 @@ companies:
   - tencent
 models:
   - qwen-image
-  - mmdit-20b
+  - mmdit
   - gemini-2.5
   - o3-pro
   - seedprover
-  - alphageometry2
-  - grok-4
   - glm-4.5
   - xbai-o4
   - hunyuan
@@ -40,11 +38,12 @@ topics:
   - image-editing
   - synthetic-data
   - reasoning
-  - math-proving
+  - math-theorem-proving
   - benchmarking
   - instruction-following
-  - model-transparency
+  - model-efficiency
   - open-weight-models
+  - model-transparency
   - competitive-evaluation
 people:
   - swyx
@@ -59,6 +58,7 @@ people:
   - synthwavedd
   - epochairesearch
 ---
+
 
 
 **Qwen is all you need.**
