@@ -62,4 +62,9 @@ The site can be deployed to Vercel or Netlify with a single click:
 
 ```bash
 pnpm ts-node oneoffs/process-emails.ts --file "$(ls -t src/content/issues/*.md | head -n 1)" && gadmit "latest post" && gpom
+
+## or
+
+pnpm ts-node oneoffs/process-emails.ts --file "$(ls -t src/content/issues/25-08-13*.md | head -n 1)" && gadmit "latest post" && gpom
+
 ```
