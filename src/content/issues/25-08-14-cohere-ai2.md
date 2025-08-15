@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0w
-title: Western Open Model
+title: "Western Open Models get Funding: Cohere $500m @ 6.8B, AI2 gets $152m NSF+NVIDIA grants"
 date: '2025-08-14T05:44:39.731046Z'
 description: >-
   **OpenAI's GPT-5** achieved a speedrun of Pokemon Red 3x faster than **o3**.
