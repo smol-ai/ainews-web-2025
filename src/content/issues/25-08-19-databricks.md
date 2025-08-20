@@ -66,7 +66,7 @@ people:
 
 Instead today's story is a pretty simple one: **Databricks is now a centicorn**.
 
-[](https://resend-attachments.s3.amazonaws.com/A6NbHltCY1mzZXR)
+![](https://resend-attachments.s3.amazonaws.com/A6NbHltCY1mzZXR)
 
 The [press release](https://www.databricks.com/company/newsroom/press-releases/databricks-raising-series-k-investment-100-billion-valuation) contains very little more detail beyond plugging their new Data ([Lakebase nee Neon](https://www.databricks.com/product/lakebase)) and AI ([Agent Bricks](https://docs.databricks.com/aws/en/generative-ai/agent-bricks/)) offerings.
 
