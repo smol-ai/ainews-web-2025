@@ -65,17 +65,17 @@ people:
 
 As discussed [yesterday](https://news.smol.ai/issues/25-08-19-databricks), DeepSeek followed up their characteristic model release with a remarkably low key [tweet](https://x.com/deepseek_ai/status/1958417062008918312) and [blogpost](https://api-docs.deepseek.com/news/news250821) which released their official messaging and evals:
 
-[](https://resend-attachments.s3.amazonaws.com/ZRTe69OKWcqQVh4)
+![](https://resend-attachments.s3.amazonaws.com/ZRTe69OKWcqQVh4)
 
 The standard knowledge benchmark bumps are [incremental](https://x.com/ArtificialAnlys/status/1958432118562041983/photo/1):
 
-[](https://resend-attachments.s3.amazonaws.com/Wab7rhEiDmAb0Jk)
+![](https://resend-attachments.s3.amazonaws.com/Wab7rhEiDmAb0Jk)
 
 but there are important improvements in [coding and agentic benchmarks](https://api-docs.deepseek.com/news/news250821) that make it more useful for agents.
 
 However the major story may be even more subtle - token [efficiency](https://www.latent.space/p/gpt5-router) improvements!
 
-[](https://resend-attachments.s3.amazonaws.com/NjSw3bSxcvxdInq)
+![](https://resend-attachments.s3.amazonaws.com/NjSw3bSxcvxdInq)
 
 the Reddit dissection of DSV3.1 is particularly strong, so just scroll on down.
 
