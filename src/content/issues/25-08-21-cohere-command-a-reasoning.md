@@ -60,11 +60,11 @@ people:
 
 We last checked in on [Cohere's Command A in March](https://news.smol.ai/issues/25-03-17-ainews-coheres-command-a-claims-3-open-model-spot-after-deepseek-and-gemma) and then again last week with their [$7B series D](https://news.smol.ai/issues/25-08-14-cohere-ai2), but we didn't think we'd be talking about Cohere again so soon - [Command A Reasoning](https://x.com/cohere/status/1958542682890047511) puts GPT-OSS to shame according to Cohere's own evals:
 
-[](https://resend-attachments.s3.amazonaws.com/1Ynv4Tjwe5C6Y1k)
+![](https://resend-attachments.s3.amazonaws.com/1Ynv4Tjwe5C6Y1k)
 
 Importantly for the killer agentic use case of 2025, it is a very decent open deep research model:
 
-[](https://resend-attachments.s3.amazonaws.com/f2mfFNddYUeLEjL)
+![](https://resend-attachments.s3.amazonaws.com/f2mfFNddYUeLEjL)
 
 ---
 
