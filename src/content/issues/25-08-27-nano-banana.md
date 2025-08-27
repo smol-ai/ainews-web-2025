@@ -69,11 +69,11 @@ people:
 
 Google [cooked](https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/) today:
 
-[](https://resend-attachments.s3.amazonaws.com/CmV1VbHZ6LMkkFy)
+![](https://resend-attachments.s3.amazonaws.com/CmV1VbHZ6LMkkFy)
 
 and [the LMArena results](https://x.com/lmarena_ai/status/1960343469370884462) are indisputable:
 
-[](https://resend-attachments.s3.amazonaws.com/ZQ9sedBbikWDU6f)
+![](https://resend-attachments.s3.amazonaws.com/ZQ9sedBbikWDU6f)
 
 ---
 
