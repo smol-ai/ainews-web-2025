@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0w
 title: OpenAI Realtime API GA and new `gpt-realtime` model, 20% cheaper than 4o
-date: '2025-08-28T05:44:39.731046Z'
+date: '2025-08-28T08:44:39.731046Z'
 description: >-
   **OpenAI** launched the **gpt-realtime** model and **Realtime API** to GA,
   featuring advanced speech-to-speech capabilities, new voices (**Cedar**,
