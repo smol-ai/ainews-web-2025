@@ -53,7 +53,7 @@ Since Noam Shazeer et al [invented](https://arxiv.org/abs/1701.06538) them in hi
 
 Today's [Qwen3-Next release](https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list) pushes model sparsity even further - the industry has switched from "expert count" to total param vs active param ratio - and 3.75% (3B / 80B = 3.75%) is appreciably lower than [GPT-OSS](https://news.smol.ai/issues/25-08-05-gpt-oss)' 4.3% and [Qwen3](https://news.smol.ai/issues/25-04-28-qwen-3)'s own prior 10%.
 
-[](https://resend-attachments.s3.amazonaws.com/DJmyVCbWnbgSMfu)
+![](https://resend-attachments.s3.amazonaws.com/DJmyVCbWnbgSMfu)
 
 According to them:
 
@@ -65,7 +65,7 @@ According to them:
 
 But for the ML folks, the probable bigger win is the strict pareto win seen in pretraining:
 
-[](https://resend-attachments.s3.amazonaws.com/aoT1VPauj4wiiUl)
+![](https://resend-attachments.s3.amazonaws.com/aoT1VPauj4wiiUl)
 
 The authors credit a few architecture advancements:
 
