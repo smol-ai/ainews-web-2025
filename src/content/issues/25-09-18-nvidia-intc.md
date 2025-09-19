@@ -53,7 +53,7 @@ We are taking this chance to roll up a number of headlines with [Softbank](https
 
 In [their conference call](https://www.tomshardware.com/pc-components/cpus/teams-at-nvidia-and-intel-have-been-working-in-secret-on-jointly-developed-processors-for-a-year-the-trump-administration-has-no-involvement-in-this-partnership-at-all), both CEOs said they had been working on this collaboration for a year. The plans seem a little more mapped out for the consumer collaboration than the data center ones, and NVIDIA says it is committed to its own Grace and Vera CPU roadmap as well. But the news creates big hopes for the Intel Foundry business, and [certain hedge fund managers](https://x.com/twitter/status/1968699318744891627) are very happy today. More in the Reddit recaps below:
 
-[](https://resend-attachments.s3.amazonaws.com/65SbjN7jsu9cSVX)
+![](https://resend-attachments.s3.amazonaws.com/65SbjN7jsu9cSVX)
 
 ---
 
