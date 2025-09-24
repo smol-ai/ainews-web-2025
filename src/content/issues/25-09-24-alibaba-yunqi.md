@@ -48,21 +48,21 @@ people:
 
 Today is both [**AI Engineer Paris**](https://www.youtube.com/watch?v=d6dp_dwgpYQ) and **AliCloud's annual [Yunqi](https://yunqi.aliyun.com/) aka Apsara conference**, and the **Tongyi Qianwen (aka Qwen)** team has been working overtime to launch updates of all their models, including the major ones: the monster 1T model [Qwen3-Max](https://qwen.ai/blog?id=241398b9cd6353de490b0f82806c7848c5d2777d&from=research.latest-advancements-list) ([previewed 3 weeks ago](https://news.smol.ai/issues/25-09-05-1t-models)), [Qwen3-Omni](https://qwen.ai/blog?id=fdfbaf2907a36b7659a470c77fb135e381302028&from=research.research-list),  and [Qwen3-VL](https://qwen.ai/blog?id=99f0335c4ad9ff6153e517418d48535ab6d8afef&from=research.latest-advancements-list), with [Qwen3Guard](https://qwen.ai/blog?id=f0bbad0677edf58ba93d80a1e12ce458f7a80548&from=research.research-list), [Qwen3-LiveTranslate](https://qwen.ai/blog?id=b2de6ae8555599bf3b87eec55a285cdf496b78e4&from=research.latest-advancements-list), [Qwen3-TTS-Flash](https://qwen.ai/blog?id=f50261eff44dfc0dcbade2baf1b527692bdca4cd&from=research.research-list), and updates to [Qwen-Image-Edit](https://qwen.ai/blog?id=1675c295dc29dd31073e5b3f72876e9d684e41c6&from=research.research-list) and [Qwen3Coder](https://x.com/Alibaba_Qwen/status/1970582211993927774). Here's how Junyang Lin, their primary spokesperson in AI Twitter, [put it](https://x.com/JustinLin610):
 
-[](https://resend-attachments.s3.amazonaws.com/FnqSOXCnrqfbng6)
+![](https://resend-attachments.s3.amazonaws.com/FnqSOXCnrqfbng6)
 
 Just to visualize the step up of velocity, here's [all the Qwen releases this year visualized:](https://chatgpt.com/canvas/shared/68d3972d363881918f24524394a87d87)
 
-[](https://resend-attachments.s3.amazonaws.com/LIRJXd9eSwEd4mc)
+![](https://resend-attachments.s3.amazonaws.com/LIRJXd9eSwEd4mc)
 
 Not to forget all the work from [Alibaba Wan](https://x.com/Alibaba_Wan) too, but Qwen is now being regarded as a "[frontier lab](https://x.com/zephyr_z9/status/1970587657421156622)" with all these releases.
 
 Alibaba's CEO Eddie Wu took to the stage to map out their $52B USD roadmap:
 
-[](https://resend-attachments.s3.amazonaws.com/M4CvpR70iVVXD9F)
+![](https://resend-attachments.s3.amazonaws.com/M4CvpR70iVVXD9F)
 
 Here's a translation of [the speech](https://www.cls.cn/detail/2154306):
 
-[](https://resend-attachments.s3.amazonaws.com/HptEk6XZmsyJLf6)
+![](https://resend-attachments.s3.amazonaws.com/HptEk6XZmsyJLf6)
 
 - The first stage is "**intelligence emergence**," characterized by "**learning from humans**."
     - The internet has digitized virtually all knowledge in human history. The information carried by these languages and texts represents the entire corpus of human knowledge. Based on this, large models first develop generalized intelligence by understanding the global knowledge base, emerging with general conversational capabilities, understanding human intent and answering human questions. They gradually develop the reasoning ability to consider multi-step problems. We now see AI approaching the top levels of human performance in various subject tests, such as the gold medal level of the International Mathematical Olympiad. AI is gradually becoming capable of entering the real world, solving real problems, and creating real value. This has been the main theme of the past few years.
@@ -83,7 +83,7 @@ Here's a translation of [the speech](https://www.cls.cn/detail/2154306):
 
 They are also recent converts to the LLM OS thesis.
 
-[](https://resend-attachments.s3.amazonaws.com/gLcx0alzfAQwikZ)
+![](https://resend-attachments.s3.amazonaws.com/gLcx0alzfAQwikZ)
 
 ---
 
