@@ -7,15 +7,20 @@ date: '2025-09-23T05:44:39.731046Z'
 description: >-
   **Alibaba's Tongyi Qianwen (Qwen) team** launched major updates including the
   **1T parameter Qwen3-Max**, **Qwen3-Omni**, and **Qwen3-VL** models, alongside
-  specialized versions like **Qwen3Guard**, **Qwen3-LiveTranslate**, and
-  **Qwen3-TTS-Flash**. CEO **Eddie Wu** outlined a $52B roadmap emphasizing two
-  AI development stages: "intelligence emergence" with learning from humans and
-  reasoning, and "autonomous action" where AI uses tools to perform real-world
-  tasks across industries. The focus is on tool use and enhanced coding
-  capabilities to enable AI agents to handle complex, long-term tasks
-  autonomously.
+  specialized versions like **Qwen3Guard**, **Qwen3-LiveTranslate**,
+  **Qwen3-TTS-Flash**, **Qwen-Image-Edit**, and **Qwen3Coder**. At the
+  **AliCloud Yunqi (Apsara) conference**, CEO **Eddie Wu** outlined a $52B
+  roadmap emphasizing two AI development stages: "intelligence emergence"
+  focusing on learning from humans and reasoning, and "autonomous action"
+  highlighting AI's tool use and real-world task execution. The updates showcase
+  advances in **tool use**, **large-model coding capabilities**, and AI's
+  expanding role across industries such as logistics, manufacturing,
+  biomedicine, and finance. Junyang Lin and Alibaba Wan are key spokespersons
+  for these developments. The Qwen project is now seen as a "frontier lab" for
+  AI innovation.
 companies:
   - alibaba
+  - alicloud
 models:
   - qwen3-max
   - qwen3-omni
@@ -25,20 +30,24 @@ models:
   - qwen3-tts-flash
   - qwen-image-edit
   - qwen3coder
+  - qwen
 topics:
   - tool-use
   - large-model-coding
   - reasoning
   - multimodality
-  - model-scaling
-  - autonomous-systems
-  - knowledge-representation
-  - industrial-ai
-  - language-understanding
+  - model-release
+  - model-updates
+  - industry-application
+  - scaling
+  - fine-tuning
+  - reinforcement-learning
 people:
-  - eddie_wu
   - junyang_lin
+  - eddie_wu
+  - alibaba_wan
 ---
+
 
 
 **Qwen is all you need?**
