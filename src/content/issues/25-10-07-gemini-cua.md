@@ -5,13 +5,13 @@ date: '2025-10-07T05:44:39.731046Z'
 description: >-
   **Google DeepMind** released a new **Gemini 2.5 Computer Use model** for
   browser and Android UI control, evaluated by Browserbase. **OpenAI** showcased
-  **GPT-5 Pro**, new SDKs, and tools like Codex and AgentKit at Dev Day,
-  emphasizing agentic app development and workflow orchestration debates.
-  **Google DeepMind's CodeMender** automates security patching for large
-  codebases, while **Microsoft's Agent Framework** offers an open-source SDK for
-  multi-agent enterprise systems. Educational initiatives include **Andrew Ng's
-  Agentic AI course** and **LlamaIndex's** code-first orchestration workflows.
-  Open models like **GLM-4.6** from Zhipu feature large-scale MoE architectures.
+  **GPT-5 Pro**, new developer tools including **Codex** with Slack integration,
+  and agent-building SDKs at Dev Day. **Google DeepMind's CodeMender** automates
+  security patching for large codebases. **Microsoft** introduced an open-source
+  **Agent Framework** for multi-agent enterprise systems. AI community
+  discussions highlight agent orchestration, program synthesis, and UI control
+  advancements. **GLM-4.6** update from Zhipu features a large
+  Mixture-of-Experts model with 355B parameters.
 companies:
   - google-deepmind
   - openai
@@ -19,35 +19,38 @@ companies:
   - anthropic
   - zhipu-ai
   - llamaindex
+  - mongodb
 models:
   - gemini-2.5
   - gpt-5-pro
   - glm-4.6
+  - codex
 topics:
-  - computer-use-model
-  - agent-framework
+  - agent-frameworks
   - program-synthesis
   - security
   - multi-agent-systems
-  - workflow-orchestration
+  - computer-use-models
   - open-source
   - moe
-  - model-evaluation
-  - agentic-ai
-  - code-first-orchestration
+  - developer-tools
+  - workflow-automation
+  - api
+  - vision
+  - reasoning
 people:
   - swyx
-  - gdb
+  - demishassabis
+  - philschmid
   - assaf_elovic
   - hwchase17
   - jerryjliu0
   - skirano
   - fabianstelzer
   - blackhc
-  - demishassabis
-  - _philschmid
   - andrewyng
 ---
+
 
 
 **Screen vision is all you need?**
