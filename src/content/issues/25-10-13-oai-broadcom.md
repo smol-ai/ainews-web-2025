@@ -54,11 +54,11 @@ and today, the final shoe drops - as [widely rumored and on schedule, after hiri
 
 To put this in scale, all of OpenAI has **2GW** of compute now, majority spent on R&D:
 
-[](https://resend-attachments.s3.amazonaws.com/AkhFZMi62VP2yIV)
+![](https://resend-attachments.s3.amazonaws.com/AkhFZMi62VP2yIV)
 
 and this is 12% of an overall roadmap going to 250GW (half the energy consumption of the United States)
 
-[](https://resend-attachments.s3.amazonaws.com/ek6nyYd2AZvWYCp)
+![](https://resend-attachments.s3.amazonaws.com/ek6nyYd2AZvWYCp)
 
 Greg says ambient agents are a big part of the reason why inference demand will go up a lot:
 
