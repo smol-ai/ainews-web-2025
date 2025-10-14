@@ -35,7 +35,7 @@ topics:
   - energy-consumption
   - podcast
 people:
-  - greg
+  - gdb
 ---
 
 
@@ -50,7 +50,7 @@ There's been a lot of chip dealmaking by OpenAI recently to create "the biggest 
 - Sept 22: [10GW from NVIDIA](https://news.smol.ai/issues/25-09-22-nvda-oai)
 - Oct 6: [6GW from AMD](https://x.com/amd/status/1975155370860384576?s=46)
 
-and today, the final shoe drops - as [widely rumored and on schedule](https://www.reuters.com/technology/openai-set-finalize-first-custom-chip-design-this-year-2025-02-10/) - **10GW** of OpenAI's own ASIC and systems specifically designed for OpenAI's inference capacity (as Sam says on [the OpenAI podcast](https://www.youtube.com/watch?app=desktop&v=qqAbVTFnfk8)).
+and today, the final shoe drops - as [widely rumored and on schedule, after hiring TPU alums from Google](https://www.reuters.com/technology/openai-set-finalize-first-custom-chip-design-this-year-2025-02-10/) - **10GW** of OpenAI's own ASIC and systems specifically designed for OpenAI's inference capacity (as Sam says on [the OpenAI podcast](https://www.youtube.com/watch?app=desktop&v=qqAbVTFnfk8)).
 
 To put this in scale, all of OpenAI has **2GW** of compute now, majority spent on R&D:
 
