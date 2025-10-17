@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: Claude Agent Skills - glorified AGENTS.md? or MCP killer?
-date: '2025-10-17T05:44:39.731046Z'
+date: '2025-10-16T05:44:39.731046Z'
 description: >-
   **Anthropic** achieves a rare feat with back-to-back AI news headlines
   featuring **Claude's** new **Skills**—a novel way to build specialized agents
