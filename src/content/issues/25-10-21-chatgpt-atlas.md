@@ -56,13 +56,13 @@ people:
 
 As [leaked in July](https://www.reuters.com/business/media-telecom/openai-release-web-browser-challenge-google-chrome-2025-07-09/?utm_source=chatgpt.com) (and earlier), OpenAI finally launched their Chromium fork AI browser, Atlas (MacOS only for now but other platforms coming - [download/website here](https://chatgpt.com/atlas)):
 
-[ChatGPT Atlas browser homepage with blue background and browser interface showcasing a flight booking details screen](https://resend-attachments.s3.amazonaws.com/TWkFeQSXfOp82Qh)
+![ChatGPT Atlas browser homepage with blue background and browser interface showcasing a flight booking details screen](https://resend-attachments.s3.amazonaws.com/TWkFeQSXfOp82Qh)
 
 The integration is very polished and impressive, as you can see in the second half of the [livestream.](https://youtu.be/8UWKxJbjriY) By bringing Agent mode into Atlas, OpenAI is not just matching what [Gemini in Chrome already has](https://www.google.com/chrome/ai-innovations/), but going the next obvious step past it by reviving [Operator](https://news.smol.ai/issues/25-01-23-ainews-openai-launches-operator-its-first-agent) and putting it in the local browser instead of remote, so that it can use your logins.
 
 The vibes are positive, but not entirely so:
 
-[A tweet showing a user retracting a previous statement about the polish of ChatGPT Atlas](https://resend-attachments.s3.amazonaws.com/AlsVRpYiGbyCh6t)
+![A tweet showing a user retracting a previous statement about the polish of ChatGPT Atlas](https://resend-attachments.s3.amazonaws.com/AlsVRpYiGbyCh6t)
 
 Your move, Google.
 
