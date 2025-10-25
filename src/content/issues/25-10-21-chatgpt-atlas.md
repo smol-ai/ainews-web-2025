@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0x
-title: 'ChatGPT Atlas: OpenAI''s AI Browser'
+title: "ChatGPT Atlas: OpenAI's AI Browser"
 date: '2025-10-21T05:44:39.731046Z'
 description: >-
   **OpenAI** launched the **Chromium fork AI browser Atlas** for macOS,
