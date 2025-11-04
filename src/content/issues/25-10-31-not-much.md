@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: '2025-10-30T05:44:39.731046Z'
+date: '2025-10-31T05:44:39.731046Z'
 description: >-
   **Poolside** raised **$1B** at a **$12B valuation**. **Eric Zelikman** raised
   **$1B** after leaving **Xai**. **Weavy** joined **Figma**. New research
