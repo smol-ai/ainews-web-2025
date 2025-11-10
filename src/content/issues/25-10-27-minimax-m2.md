@@ -55,11 +55,11 @@ people:
 
 4 months after [MiniMax M1](https://news.smol.ai/issues/25-06-16-chinese-models), Hailuo AI is back with MiniMax M2 ([free chatbot](https://agent.minimax.io/), [weights](https://huggingface.co/MiniMaxAI/MiniMax-M2), [github,](https://github.com/MiniMax-AI/MiniMax-M2) [docs](https://platform.minimax.io/docs/guides/text-transformers-deployment)) with some impressive, but measured claims: a very high 23x sparsity ([Qwen-Next still beats it](https://news.smol.ai/issues/25-09-11-qwen3-next)) and SOTA-for-Open-Source performance:
 
-[Bar graph showing the Artificial Analysis Intelligence Index v3.0 with various AI models and their performance scores, with MiniMax M2](https://resend-attachments.s3.amazonaws.com/OZkMn5R3OhUaghC)
+![Bar graph showing the Artificial Analysis Intelligence Index v3.0 with various AI models and their performance scores, with MiniMax M2](https://resend-attachments.s3.amazonaws.com/OZkMn5R3OhUaghC)
 
 There are some hairs - it is a [very verbose model](https://x.com/ArtificialAnlys/status/1982714153375854998) and there was [no tech report](https://x.com/eliebakouch/status/1982835325992149348) this time, but overall this is a very impressive model launch that comes clsoe to the frontier closed models under a very comprehensive set of benchmarks.
 
-[Bar graph showing performance benchmarks of various AI models across different tasks, with MiniMax M2 highlighted in red and compared against other models like](https://resend-attachments.s3.amazonaws.com/Nf8xxEXVjO6xZMR)
+![Bar graph showing performance benchmarks of various AI models across different tasks, with MiniMax M2 highlighted in red and compared against other models like](https://resend-attachments.s3.amazonaws.com/Nf8xxEXVjO6xZMR)
 
 ---
 
