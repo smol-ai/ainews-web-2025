@@ -45,11 +45,11 @@ people:
 
 Ahead of [AIE CODE tomorrow](https://www.youtube.com/watch?v=cMSprbJ95jg), the coding model refreshes are coming in strong and fast - OpenAI followed yesterday's [Gemini 3 drop](https://news.smol.ai/issues/25-11-18-gemini-3) with an upgraded/updated GPT-5.1-Codex (to be fair, OpenAI did say that this release was preplanned, implying it is not a reaction to Gemini). The automated summary links below from GPT 5.1 are good enough so we aren't touching them, but we would highlight the updated METR Evals which show a HUGE jump in autonomy:
 
-[A graph showing the time-horizon of software engineering tasks and how long different AI models can complete 50% of those tasks across various release dates.](https://resend-attachments.s3.amazonaws.com/LNgVRyc7k631Nrn)
+![A graph showing the time-horizon of software engineering tasks and how long different AI models can complete 50% of those tasks across various release dates.](https://resend-attachments.s3.amazonaws.com/LNgVRyc7k631Nrn)
 
 as well as extra performance under a new "xhigh" param...
 
-[A line graph showing the performance of GPT-5.1-Codex and GPT-5.1-Codex-Max](https://resend-attachments.s3.amazonaws.com/zOHFD4BmKgHX6c9)
+![A line graph showing the performance of GPT-5.1-Codex and GPT-5.1-Codex-Max](https://resend-attachments.s3.amazonaws.com/zOHFD4BmKgHX6c9)
 
 **OpenAI’s GPT‑5.1‑Codex‑Max and the coding‑agent arms race**
 
