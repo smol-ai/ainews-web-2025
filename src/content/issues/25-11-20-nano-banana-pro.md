@@ -49,20 +49,20 @@ people:
 
 With [AIE CODE Day 1](https://www.youtube.com/watch?v=cMSprbJ95jg&t=21s) in the bag, the shipping did not stop. While [AI2 Olmo 3](https://x.com/natolambert/status/1991508141687861479) deserves a very special mention for pushing forward American Open Source models, today's big headliner was "[Nano Banana Pro](https://blog.google/technology/ai/nano-banana-pro/)" ([official prompting tips](https://blog.google/products/gemini/prompting-tips-nano-banana-pro/), [build tips](https://blog.google/technology/developers/gemini-3-pro-image-developers/), [demo app](https://aistudio.google.com/apps/bundled/info_genius?showPreview=true&showAssistant=true)) - the big brother of [the original Nano Banana (Flash)](https://news.smol.ai/issues/25-08-26-nano-banana) and... well.. here's the output of today's AI News summaries, expressed by NBP:
 
-[Infographic detailing the features and capabilities of Nano Banana Pro, a next-generation AI image generation and editing tool powered by Gem](https://resend-attachments.s3.amazonaws.com/BsQTOgYCnh4SOcv)
+![Infographic detailing the features and capabilities of Nano Banana Pro, a next-generation AI image generation and editing tool powered by Gem](https://resend-attachments.s3.amazonaws.com/BsQTOgYCnh4SOcv)
 
 > Hey Nano Banana, redo this as a cartoony, pop art inspired infographic, portrait layout, rearrange the information to explain what people should know:
 > 
 
-[A colorful, comic book-style infographic showcasing the capabilities of Nano Banana Pro, a new AI image generation model with superhero](https://resend-attachments.s3.amazonaws.com/BEMOVHQKUcb64a3)
+![A colorful, comic book-style infographic showcasing the capabilities of Nano Banana Pro, a new AI image generation model with superhero](https://resend-attachments.s3.amazonaws.com/BEMOVHQKUcb64a3)
 
 If you couldn't already tell from these examples, complex, highly detailed text rendering in images is... solved.
 
-[A woodchuck sitting among wooden letters spelling out the tongue twister "How much wood would a woodchuck chuck if a woodchuck coul](https://resend-attachments.s3.amazonaws.com/N5nHzttEs70ljCs)
+![A woodchuck sitting among wooden letters spelling out the tongue twister "How much wood would a woodchuck chuck if a woodchuck coul](https://resend-attachments.s3.amazonaws.com/N5nHzttEs70ljCs)
 
 Here's the pricing comparison of the models:
 
-[Comparison chart of Gemini 3 Pro Image and Gemini 2.5 Flash Image showing pricing, speed, quality,](https://resend-attachments.s3.amazonaws.com/D2Qu9WEcekm2RSq)
+![Comparison chart of Gemini 3 Pro Image and Gemini 2.5 Flash Image showing pricing, speed, quality,](https://resend-attachments.s3.amazonaws.com/D2Qu9WEcekm2RSq)
 
 ---
 
