@@ -61,7 +61,7 @@ All three days of [AIE Code Summit](https://www.ai.engineer/code) (ex tomorrow's
 
 If you joined us in New York, thank you so much!
 
-[A large screen displaying the "AIE/CODE" logo during a tech conference presentation with speakers on a red circular stage.](https://resend-attachments.s3.amazonaws.com/fRqpBkWow7s2jv4)
+![A large screen displaying the "AIE/CODE" logo during a tech conference presentation with speakers on a red circular stage.](https://resend-attachments.s3.amazonaws.com/fRqpBkWow7s2jv4)
 
 ---
 
