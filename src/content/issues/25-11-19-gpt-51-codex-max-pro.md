@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0x
-title: 'OpenAI fires back: GPT 5.1 Codex (API) and GPT 5.1 Pro (ChatGPT)'
+title: 'OpenAI fires back: GPT-5.1-Codex-Max (API) and GPT 5.1 Pro (ChatGPT)'
 date: '2025-11-19T05:44:39.731046Z'
 description: >-
   **OpenAI** released **GPT-5.1-Codex-Max**, featuring compaction-native
