@@ -53,13 +53,13 @@ people:
 
 As ICCV kicks off in Hawaii, DeepSeek continues to show signs of life. This one is a relatively [small paper with 3 authors](https://github.com/deepseek-ai/DeepSeek-OCR), and a small 3B model, but the contribution of a SAM+CLIP+compressor named **DeepEncoder**:
 
-[](https://resend-attachments.s3.amazonaws.com/K2h3q6nqRq5KzAn)
+![](https://resend-attachments.s3.amazonaws.com/K2h3q6nqRq5KzAn)
 
 and the headline findings are sound:
 
-[](https://resend-attachments.s3.amazonaws.com/MrS11LlpmmdZten)
+![](https://resend-attachments.s3.amazonaws.com/MrS11LlpmmdZten)
 
-[](https://resend-attachments.s3.amazonaws.com/U1xDO4WwZEdXcXn)
+![](https://resend-attachments.s3.amazonaws.com/U1xDO4WwZEdXcXn)
 
 The significance of a very good OCR model, beyond liberating a lot of data from books and PDFs, is the opportunity to always consume rich text and [get rid of the tokenizer](https://x.com/karpathy/status/1980397031542989305).
 
