@@ -53,41 +53,41 @@ Some picks:
 
 Deepseek's 50% open model marketshare has plummeted
 
-[A stacked area chart showing the decline of DeepSeek's market share in open-source AI models over time, with increasing fragmentation an](https://resend-attachments.s3.amazonaws.com/iNWx03qmrMiRP68)
+![A stacked area chart showing the decline of DeepSeek's market share in open-source AI models over time, with increasing fragmentation an](https://resend-attachments.s3.amazonaws.com/iNWx03qmrMiRP68)
 
 mostly because coding rose and nobody uses deepseek for coding:
 
-[A stacked bar chart showing DeepSeek's most popular AI model usage categories over several weeks in 2025, with roleplay and casual](https://resend-attachments.s3.amazonaws.com/CgK6rfs1J30lj5v)
+![A stacked bar chart showing DeepSeek's most popular AI model usage categories over several weeks in 2025, with roleplay and casual](https://resend-attachments.s3.amazonaws.com/CgK6rfs1J30lj5v)
 
 Reasoning models went from 0 to >50% usage
 
-[A line graph showing the increasing proportion of reasoning tokens used by AI models over time, rising from near 0% to over 50% by November](https://resend-attachments.s3.amazonaws.com/w5xn5WbKA583Dvh)
+![A line graph showing the increasing proportion of reasoning tokens used by AI models over time, rising from near 0% to over 50% by November](https://resend-attachments.s3.amazonaws.com/w5xn5WbKA583Dvh)
 
 Grok Code Fast is weirdly high usage even excluding free promo:
 
-[A bar chart showing the top used AI models by token volume, with Grok Code Fast 1 leading, followed by Google's Gem](https://resend-attachments.s3.amazonaws.com/c3YLyLKYM0WjP7A)
+![A bar chart showing the top used AI models by token volume, with Grok Code Fast 1 leading, followed by Google's Gem](https://resend-attachments.s3.amazonaws.com/c3YLyLKYM0WjP7A)
 
 Anthropic dominates tool calling and koding
 
-[A stacked bar chart showing the share of programming requests by different AI model providers over several weeks, with Anthropic dominating around 60%](https://resend-attachments.s3.amazonaws.com/kwlM5i7c6Gv5G3K)
+![A stacked bar chart showing the share of programming requests by different AI model providers over several weeks, with Anthropic dominating around 60%](https://resend-attachments.s3.amazonaws.com/kwlM5i7c6Gv5G3K)
 
 :
 
-[A stacked bar chart showing the top 10 most used AI models with 'Tool-Call' finish reason across different months in 2](https://resend-attachments.s3.amazonaws.com/Q7XYcgX1fOCRlrl)
+![A stacked bar chart showing the top 10 most used AI models with 'Tool-Call' finish reason across different months in 2](https://resend-attachments.s3.amazonaws.com/Q7XYcgX1fOCRlrl)
 
 Input tokens 4xed, output tokens 3xed this year...
 
-[A graph showing the growth of prompt and completion tokens over time, illustrating the increasing complexity and length of AI model interactions.](https://resend-attachments.s3.amazonaws.com/gvqejRi2B53yOy8)
+![A graph showing the growth of prompt and completion tokens over time, illustrating the increasing complexity and length of AI model interactions.](https://resend-attachments.s3.amazonaws.com/gvqejRi2B53yOy8)
 
 ... only because of programing usecases
 
-[Line graph showing average number of tokens per request across different domains, with programming (orange line) having the highest and most variable token count over time.](https://resend-attachments.s3.amazonaws.com/wP469stQwrPLZIz)
+![Line graph showing average number of tokens per request across different domains, with programming (orange line) having the highest and most variable token count over time.](https://resend-attachments.s3.amazonaws.com/wP469stQwrPLZIz)
 
-[A stacked area chart showing the changing proportions of different AI model usage categories over time, with programming increasing from 11% to 50%](https://resend-attachments.s3.amazonaws.com/dyFnvG14kK0dqGK)
+![A stacked area chart showing the changing proportions of different AI model usage categories over time, with programming increasing from 11% to 50%](https://resend-attachments.s3.amazonaws.com/dyFnvG14kK0dqGK)
 
 ... which are at a sweet spot of spend and volume
 
-[A scatter plot showing log cost versus log usage for different AI workload categories like programming, technology, science, and translation, highlighting variations across mass-](https://resend-attachments.s3.amazonaws.com/iAkVnVSLMuiLAgR)
+![A scatter plot showing log cost versus log usage for different AI workload categories like programming, technology, science, and translation, highlighting variations across mass-](https://resend-attachments.s3.amazonaws.com/iAkVnVSLMuiLAgR)
 
 ---
 
