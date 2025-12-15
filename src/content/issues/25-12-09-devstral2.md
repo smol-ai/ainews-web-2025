@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0x
-title: MCP -> Agentic AI Foudnation, Mistral Devstral 2
+title: MCP -> Agentic AI Foundation, Mistral Devstral 2
 date: '2025-12-09T05:44:39.731046Z'
 description: >-
   **OpenAI Engineering** sees a significant collaborative milestone with the
