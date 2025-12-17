@@ -53,25 +53,25 @@ people:
 
 Nvidia's [Nemotron](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-White-Paper.pdf) is not often in the [top tiers of open models](https://x.com/natolambert/status/2000299636863734026), but distinguishes by being COMPLETELY open, as in, "**we will openly release the model weights, pre- and post-training software, recipes, and all data for which we hold redistribution rights.**" ([Nemotron 3 paper](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-White-Paper.pdf)), as well as American-origin. Nano 3 is competitive with Qwen3:
 
-[Comparison of Qwen3-30B-A3B-Base and Nemotron 3 Nano 30B-](https://resend-attachments.s3.amazonaws.com/tTSdW0B18duTGpl)
+![Comparison of Qwen3-30B-A3B-Base and Nemotron 3 Nano 30B-](https://resend-attachments.s3.amazonaws.com/tTSdW0B18duTGpl)
 
 When these are released, they effectively serve as the checkpoint for the state of the art in LLM training, because they basically gather all of the table stakes things known to work. Among the notable choices - hybrid archs enabling long (1m) context:
 
 **Hybrid State Space Model + Transformer Architecture**
 
-[Nemotron 3 model architecture visualization showing interleaved Mamba-2 and MoE layers with select self-attention](https://resend-attachments.s3.amazonaws.com/2TGOzmHIf8gpc16)
+![Nemotron 3 model architecture visualization showing interleaved Mamba-2 and MoE layers with select self-attention](https://resend-attachments.s3.amazonaws.com/2TGOzmHIf8gpc16)
 
-[Technical architecture diagram showing details of the Nemotron 3 Nano hybrid Mamba-Transformer Mixture-of-Experts](https://resend-attachments.s3.amazonaws.com/1VcBUGGINuh4gvN)
+![Technical architecture diagram showing details of the Nemotron 3 Nano hybrid Mamba-Transformer Mixture-of-Experts](https://resend-attachments.s3.amazonaws.com/1VcBUGGINuh4gvN)
 
 **Multi environment RL** (Nemo-Gym and Nemo-RL open sourced)
 
-[A technical document page describing the post-training methodology for the Nemotron 3 Nano AI model, highlighting its hybrid architecture, multi](https://resend-attachments.s3.amazonaws.com/Y8r5D8BJVyndgOo)
+![A technical document page describing the post-training methodology for the Nemotron 3 Nano AI model, highlighting its hybrid architecture, multi](https://resend-attachments.s3.amazonaws.com/Y8r5D8BJVyndgOo)
 
-[A technical document page describing the infrastructure for NeMo Gym, a framework for reinforcement learning environments with three core server types: agents, models](https://resend-attachments.s3.amazonaws.com/1yhPYsF5TID3Kem)
+![A technical document page describing the infrastructure for NeMo Gym, a framework for reinforcement learning environments with three core server types: agents, models](https://resend-attachments.s3.amazonaws.com/1yhPYsF5TID3Kem)
 
 Per the [Nano 3 tech report](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Nano-Technical-Report.pdf), they will be releasing all their datasets:
 
-[Diagram of Nemotron 3 Nano layer architecture showing a hybrid Mamba-Transformer Mixture of Experts (M](https://resend-attachments.s3.amazonaws.com/CyZ0TOla4n64Xbu)
+![Diagram of Nemotron 3 Nano layer architecture showing a hybrid Mamba-Transformer Mixture of Experts (M](https://resend-attachments.s3.amazonaws.com/CyZ0TOla4n64Xbu)
 
 ---
 
