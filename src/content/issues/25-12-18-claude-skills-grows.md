@@ -1,39 +1,43 @@
 ---
 id: MjAyNS0x
-title: "Claude Skills grows: Open Standard, Directory, Org Admin"
+title: 'Claude Skills grows: Open Standard, Directory, Org Admin'
 date: '2025-12-18T05:44:39.731046Z'
-```yaml
 description: >-
-  **Anthropic** launches organization-wide **Claude Skills** and rebrands to vendor-neutral **Agent Skills** standard, while **OpenAI** releases **GPT-5.2-Codex** for agentic coding with security vulnerability detection, and **Google** ships **Gemini 3 Flash**, **FunctionGemma**, and **T5Gemma 2** for on-device deployment.
+  **Claude Skills** are gaining significant traction since their launch in
+  October, with a milestone of 100k views in one day for the Claude Skills talk,
+  signaling growing adoption and importance. Announcements include org admin
+  support, a new Skills Directory, and the move to an open standard named
+  **Agent Skills**. In frontier model launches, **OpenAI** released
+  **GPT-5.2-Codex**, touted as the best agentic coding model with improvements
+  in native compaction, long-context reliability, and tool-calling, emphasizing
+  real-world security impacts. **Google DeepMind** introduced **Gemini 3
+  Flash**, focusing on speed as a product feature impacting workflows and user
+  engagement, alongside **FunctionGemma** and **T5Gemma 2**, emphasizing
+  on-device deployment, fine-tuning, and multimodality.
 companies:
   - anthropic
   - openai
-  - google
   - google-deepmind
-  - linux-foundation
+  - hugging-face
 models:
-  - gpt-5-2-codex
-  - claude-3-opus
+  - claude-skills
+  - gpt-5.2-codex
   - gemini-3-flash
   - functiongemma
   - t5gemma-2
-  - gemma-270m
 topics:
-  - agent-skills
-  - mcp
-  - agentic-coding
-  - function-calling
-  - on-device
-  - security
-  - vulnerability-detection
+  - agentic-ai
   - fine-tuning
-  - tool-calling
   - long-context
+  - tool-calling
+  - on-device-ai
+  - multimodality
+  - security
+  - workflow-optimization
 people:
   - sama
-  - gdb
-  - swyx
-```
+  - gregbrockman
+  - philschmid
 ---
 
 
@@ -56,6 +60,7 @@ All these seem incremental additions but the bigger picture is that Skills adopt
 
 The last time we made a non-news trend callout like this was [Claude Code](https://news.smol.ai/issues/25-06-20-claude-code).
 
+---
 
 # AI Twitter Recap
 
@@ -65,6 +70,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 - **Gemini 3 Flash adoption & “speed as a product feature”**: Multiple practitioners argue Gemini 3 Flash shifts day-to-day workflows because speed changes iteration loops and user behavior (retention/engagement) rather than just benchmarks ([product impact quote](https://twitter.com/_philschmid/status/2001492609114456471), [workflow reflection](https://twitter.com/andrew_n_carr/status/2001487412749570549)). There are also claims/observations about **SWE-Bench Verified** standings (including “Flash beating Pro”), but treat these as provisional without a single canonical eval artifact in the tweets ([example](https://twitter.com/scaling01/status/2001803023811797433), [another](https://twitter.com/MS_BASE44/status/2001698991801798927)). Google pushes Flash into the Gemini app as a “build apps by voice” primitive ([Gemini app rollout](https://twitter.com/Google/status/2001746491275083925), [voice-to-app pitch](https://twitter.com/GeminiApp/status/2001760080518353261)).
 - **FunctionGemma (270M) + T5Gemma 2 (encoder-decoder)**: Google/DeepMind and community emphasize small, **on-device / browser** deployment and specialization via fine-tuning. FunctionGemma is framed as a **text-only function calling** foundation requiring domain tuning ([demo + positioning](https://twitter.com/xenovacom/status/2001703932968452365), [collection announcement](https://twitter.com/osanseviero/status/2001704034667769978), [fine-tuning guidance](https://twitter.com/ben_burtenshaw/status/2001704049490489347)). T5Gemma 2 is pitched as a rare modern **multimodal, multilingual encoder–decoder** line (270M/1B/4B) ([release](https://twitter.com/osanseviero/status/2001723652635541566)). Immediate ecosystem pickup: Ollama pulls ([Ollama](https://twitter.com/ollama/status/2001705006450565424)), Unsloth notebooks ([Unsloth](https://twitter.com/danielhanchen/status/2001713676747968906)), MLX support ([MLX example](https://twitter.com/Prince_Canuma/status/2001713991115026738)).
 
+---
 
 **Agents: “Skills” standardization, harness UX, and long-running infra realities**
 
@@ -73,6 +79,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 - **Infra mismatch: serverless vs agent loops**: A pointed engineering claim is that agentic systems need **persistent, long-running execution** and state management; “serverless” patterns force brittle networking workarounds for multi-step loops ([critique](https://twitter.com/anuraggoel/status/2001721861198221629)). This aligns with renewed interest in orchestration primitives (e.g., Temporal as a fit for background agents: [@corbtt](https://twitter.com/corbtt/status/2001801936916643919)).
 - **Claude Code expands capability surface (web browsing)**: Users highlight Claude Code now being able to browse the web, enabling “monitoring” agents that filter X feeds and report back asynchronously (a lightweight but practical “agent as attention proxy” pattern) ([example build](https://twitter.com/omarsar0/status/2001784722549281001)).
 
+---
 
 **Evals, regressions, and safety measurement: METR horizon fixes + OpenAI CoT monitorability**
 
@@ -80,6 +87,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 - **OpenAI: evaluating chain-of-thought (CoT) monitorability**: OpenAI publishes an evaluation suite intended to measure when models verbalize targeted aspects of internal reasoning (13 evals across 24 environments) and argues monitorability depends on monitor strength and test-time compute; follow-up questioning can surface previously unspoken thoughts ([paper/thread](https://twitter.com/OpenAI/status/2001791131353542788), [follow-up point](https://twitter.com/OpenAI/status/2001791136223105188)). Sam Altman boosts the work ([tweet](https://twitter.com/sama/status/2001816114595270921)). Neel Nanda connects it to “meta-models” that explain activations and asks whether bitter-lesson scaling applies to interpretability too ([comment](https://twitter.com/NeelNanda5/status/2001795630973493279)).
 - **Prod regressions as first-class incidents (Claude Code Opus 4.5)**: Anthropic acknowledges feedback about possible Opus 4.5 degradation specifically in Claude Code and claims line-by-line code auditing + transcript requests ([incident tweet](https://twitter.com/trq212/status/2001541565685301248)). This is a reminder that “model quality” in integrated IDE agents is frequently a compound of model, system prompts, tool routers, caching, and UX changes.
 
+---
 
 **Systems & open tooling: MLX distributed on Macs, vLLM MoE throughput, and diffusion-LM toolchains**
 
@@ -87,6 +95,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 - **vLLM wide expert-parallel MoE on multi-node H200**: New benchmark results claim **~2.2k tokens/s per H200 GPU** sustained (up from ~1.5k) via wide-EP + load balancing + disaggregation approaches; the post emphasizes comm/KV-cache bottlenecks and mitigation via DeepEP all-to-all and overlap strategies ([thread](https://twitter.com/vllm_project/status/2001695354983723361)).
 - **Diffusion LMs and hybrid decoding**: A growing mini-wave: dLLM library claims it can “turn any AR LM into a diffusion LM” with unified training/eval ([dLLM](https://twitter.com/akshay_pachaar/status/2001562985043783908)); DEER proposes “draft with diffusion, verify with AR” hybridization ([DEER mention](https://twitter.com/_akhaliq/status/2001685493919158362)); TheTuringPost summarizes an AR→block-diffusion transition (increasing block size, intra-block bidirectional attention, auxiliary AR loss) and reports NBDIFF-7B results ([summary](https://twitter.com/TheTuringPost/status/2001697220387913818), [paper link tweet](https://twitter.com/TheTuringPost/status/2001697302562685034)). Net: the community is converging on “adapt from pretrained AR” rather than training diffusion-LMs from scratch.
 
+---
 
 **Multimodal generation & document intelligence: Kling motion control, Runway Gen-4.5, Mistral OCR 3**
 
@@ -104,6 +113,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 - **Claude Code Opus 4.5 regression investigation**: [@trq212](https://twitter.com/trq212/status/2001541565685301248).
 - **Open-source WebGPU ML compiler in JS (“jax-js”)**: [@ekzhang1](https://twitter.com/ekzhang1/status/2001680771363254646).
 
+---
 
 # AI Reddit Recap
 
@@ -152,6 +162,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
     - Another user noted the appeal of modernizing classic games like Halo: Combat Evolved using Image GPT 1.5, highlighting that the art style remains intact while being updated. This suggests that the model is capable of preserving the original aesthetic of a game while enhancing its visual fidelity, which is crucial for maintaining the game's original charm and appeal.
     - A comment pointed out the potential for Image GPT 1.5 to transform older games into highly detailed versions, using Lego Island as an example. This indicates that the model can be used to add intricate details to simple graphics, potentially creating a new genre of games that are small in scale but rich in detail.
 
+---
 
 # AI Discord Recap
 
@@ -203,6 +214,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 - **Manus AI Agents, ChatGPT App Store, and People Search for Money**: On the [Manus.im](http://manus.im/) server, users circulated an **SCMP article** reporting that **Manus** crossed **US$100 million** in revenue as *"global competition in AI agents heats up"* (["Manus hits US$100 million revenue milestone" – SCMP](https://www.scmp.com/tech/tech-trends/article/3336925/manus-hits-us100-million-revenue-milestone-global-competition-ai-agents-heats)), prompting debate about value vs. image limits for free users compared to competitors like **DeepSeek** and **Gemini**.
     - Meanwhile the OpenAI Discord noted that the **ChatGPT app store is now live** inside the client and accepts third‑party apps backed by **MCP servers**, driving questions in the **MCP Contributors** Discord about whether a bare MCP backend suffices for app submission and hinting at an ecosystem where infra like **vLLM Router**, **SonicMoE**, and **FunctionGemma** quietly power increasingly commercial, AI‑native products at scale.
 
+---
 
 # Discord: High level Discord summaries
 
@@ -224,6 +236,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -242,6 +255,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -260,6 +274,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -278,6 +293,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -296,6 +312,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -314,6 +331,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -332,6 +350,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -348,6 +367,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -366,6 +386,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -384,6 +405,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -402,6 +424,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -420,6 +443,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -436,6 +460,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -454,6 +479,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -472,6 +498,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -490,6 +517,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -508,6 +536,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -522,6 +551,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -536,6 +566,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -548,6 +579,7 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 
@@ -562,21 +594,25 @@ The last time we made a non-news trend callout like this was [Claude Code](https
 
 
 
+---
 
 
 The **LLM Agents (Berkeley MOOC) Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
 
 
+---
 
 
 The **MLOps @Chipro Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
 
 
+---
 
 
 The **Windsurf Discord** has no new messages. If this guild has been quiet for too long, let us know and we will remove it.
 
 
+---
 
 
 
@@ -586,6 +622,7 @@ Want to change how you receive these emails?
 You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
 
+---
 
 # Discord: Detailed by-Channel summaries and links
 
@@ -610,6 +647,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **LMArena ▷ #[announcements](https://discord.com/channels/1340554757349179412/1343296395620126911/1451289254683480147)** (4 messages): 
@@ -629,6 +667,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **BASI Jailbreaking ▷ #[general](https://discord.com/channels/1105891499641684019/1235691879492751460/1450940650001404026)** (941 messages🔥🔥🔥): 
@@ -650,6 +689,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **BASI Jailbreaking ▷ #[jailbreaking](https://discord.com/channels/1105891499641684019/1228043845967544380/1450943854587940865)** (359 messages🔥🔥): 
@@ -671,6 +711,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **BASI Jailbreaking ▷ #[redteaming](https://discord.com/channels/1105891499641684019/1204553141354504193/1451133914327289918)** (3 messages): 
@@ -684,6 +725,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Perplexity AI ▷ #[announcements](https://discord.com/channels/1047197230748151888/1047204950763122820/1451015401898246259)** (1 messages): 
@@ -699,6 +741,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Perplexity AI ▷ #[general](https://discord.com/channels/1047197230748151888/1047649527299055688/1450941700087349504)** (886 messages🔥🔥🔥): 
@@ -720,6 +763,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Perplexity AI ▷ #[pplx-api](https://discord.com/channels/1047197230748151888/1161802929053909012/1451276466271686717)** (10 messages🔥): 
@@ -739,6 +783,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Unsloth AI (Daniel Han) ▷ #[general](https://discord.com/channels/1179035537009545276/1179035537529643040/1450943266982985729)** (263 messages🔥🔥): 
@@ -760,6 +805,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Unsloth AI (Daniel Han) ▷ #[announcements](https://discord.com/channels/1179035537009545276/1179039782681202829/1451269539303260262)** (1 messages): 
@@ -781,6 +827,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Unsloth AI (Daniel Han) ▷ #[off-topic](https://discord.com/channels/1179035537009545276/1179039861576056922/1450941929842802888)** (405 messages🔥🔥🔥): 
@@ -802,6 +849,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Unsloth AI (Daniel Han) ▷ #[help](https://discord.com/channels/1179035537009545276/1179777624986357780/1451168473819648010)** (46 messages🔥): 
@@ -823,6 +871,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Unsloth AI (Daniel Han) ▷ #[showcase](https://discord.com/channels/1179035537009545276/1179779344894263297/1450961609089613987)** (5 messages): 
@@ -837,6 +886,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Unsloth AI (Daniel Han) ▷ #[research](https://discord.com/channels/1179035537009545276/1257011997250424842/1451327450876350584)** (2 messages): 
@@ -852,6 +902,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **OpenRouter ▷ #[announcements](https://discord.com/channels/1091220969173028894/1092729520181739581/1451255773479964793)** (1 messages): 
@@ -867,6 +918,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **OpenRouter ▷ #[app-showcase](https://discord.com/channels/1091220969173028894/1092850552192368710/1451013714504585409)** (44 messages🔥): 
@@ -886,6 +938,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **OpenRouter ▷ #[general](https://discord.com/channels/1091220969173028894/1094454198688546826/1450941304665014415)** (430 messages🔥🔥🔥): 
@@ -903,6 +956,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **OpenRouter ▷ #[discussion](https://discord.com/channels/1091220969173028894/1392278974222307469/1450945275182055465)** (192 messages🔥🔥): 
@@ -920,6 +974,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **Cursor Community ▷ #[general](https://discord.com/channels/1074847526655643750/1074847527708393565/1450942021840801822)** (447 messages🔥🔥🔥): 
@@ -941,6 +996,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **LM Studio ▷ #[general](https://discord.com/channels/1110598183144399058/1110598183144399061/1450961764308226059)** (129 messages🔥🔥): 
@@ -960,6 +1016,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **LM Studio ▷ #[hardware-discussion](https://discord.com/channels/1110598183144399058/1153759714082033735/1450961235427459098)** (132 messages🔥🔥): 
@@ -981,6 +1038,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[general](https://discord.com/channels/1189498204333543425/1189498205101109300/1451022473108656312)** (7 messages): 
@@ -996,6 +1054,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[cuda](https://discord.com/channels/1189498204333543425/1189607726595194971/1450963818472673432)** (2 messages): 
@@ -1011,6 +1070,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[announcements](https://discord.com/channels/1189498204333543425/1189640399476764692/1450950525716660447)** (1 messages): 
@@ -1024,6 +1084,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[job-postings](https://discord.com/channels/1189498204333543425/1190208177829068860/1451267360169136138)** (2 messages): 
@@ -1039,6 +1100,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[beginner](https://discord.com/channels/1189498204333543425/1191300313928433664/1451162521988763739)** (5 messages): 
@@ -1054,6 +1116,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[torchao](https://discord.com/channels/1189498204333543425/1205223658021458100/1451267747039416400)** (5 messages): 
@@ -1068,6 +1131,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[off-topic](https://discord.com/channels/1189498204333543425/1215328286503075953/1451080968025804944)** (14 messages🔥): 
@@ -1087,6 +1151,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[rocm](https://discord.com/channels/1189498204333543425/1233704710389764236/1450975699589660756)** (2 messages): 
@@ -1101,6 +1166,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[self-promotion](https://discord.com/channels/1189498204333543425/1288557096404516945/1451199895410315285)** (9 messages🔥): 
@@ -1116,6 +1182,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[thunderkittens](https://discord.com/channels/1189498204333543425/1300872762163728550/)** (1 messages): 
@@ -1123,6 +1190,7 @@ You can [unsubscribe]({{{RESEND_UNSUBSCRIBE_URL}}}) from this list.
 kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel with mi300s or 355s?
   
 
+---
 
 
 ### **GPU MODE ▷ #[reasoning-gym](https://discord.com/channels/1189498204333543425/1316377974672588850/1451298535990497392)** (4 messages): 
@@ -1138,6 +1206,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[submissions](https://discord.com/channels/1189498204333543425/1343002583001726986/1450942222462746727)** (13 messages🔥): 
@@ -1154,6 +1223,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[hardware](https://discord.com/channels/1189498204333543425/1349152646484987974/1451099487778115604)** (3 messages): 
@@ -1173,6 +1243,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[amd-competition](https://discord.com/channels/1189498204333543425/1359640791525490768/1451347020915933309)** (3 messages): 
@@ -1190,6 +1261,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[general](https://discord.com/channels/1189498204333543425/1394753097989099640/1451046782560632972)** (2 messages): 
@@ -1207,6 +1279,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[nvidia-competition](https://discord.com/channels/1189498204333543425/1434709259500650628/1450940682058338519)** (113 messages🔥🔥): 
@@ -1227,6 +1300,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[robotics-vla](https://discord.com/channels/1189498204333543425/1437390897552818186/1450973481180201042)** (6 messages): 
@@ -1243,6 +1317,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **GPU MODE ▷ #[career-advice](https://discord.com/channels/1189498204333543425/1450579381448609882/1450940782855983245)** (19 messages🔥): 
@@ -1264,6 +1339,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **OpenAI ▷ #[annnouncements](https://discord.com/channels/974519864045756446/977259063052234752/1451312376707027205)** (3 messages): 
@@ -1279,6 +1355,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **OpenAI ▷ #[ai-discussions](https://discord.com/channels/974519864045756446/998381918976479273/1450940633492623360)** (163 messages🔥🔥): 
@@ -1300,6 +1377,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **OpenAI ▷ #[gpt-4-discussions](https://discord.com/channels/974519864045756446/1001151820170801244/1451012401989288008)** (8 messages🔥): 
@@ -1317,6 +1395,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **OpenAI ▷ #[prompt-engineering](https://discord.com/channels/974519864045756446/1046317269069864970/1451112675999219724)** (1 messages): 
@@ -1332,6 +1411,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **OpenAI ▷ #[api-discussions](https://discord.com/channels/974519864045756446/1046317269069864970/1451112675999219724)** (1 messages): 
@@ -1347,6 +1427,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **HuggingFace ▷ #[general](https://discord.com/channels/879548962464493619/879548962464493622/1451016087557767263)** (103 messages🔥🔥): 
@@ -1368,6 +1449,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **HuggingFace ▷ #[i-made-this](https://discord.com/channels/879548962464493619/897390720388825149/1450994971988725872)** (2 messages): 
@@ -1383,6 +1465,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **HuggingFace ▷ #[agents-course](https://discord.com/channels/879548962464493619/1329142738440028273/1451208853818445864)** (4 messages): 
@@ -1398,6 +1481,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Latent Space ▷ #[ai-general-chat](https://discord.com/channels/822583790773862470/1075282825051385876/1450983924368015462)** (89 messages🔥🔥): 
@@ -1414,6 +1498,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Latent Space ▷ #[private-agents](https://discord.com/channels/822583790773862470/1342964204168020018/1451148723856867361)** (2 messages): 
@@ -1431,6 +1516,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Latent Space ▷ #[genmedia-creative-ai](https://discord.com/channels/822583790773862470/1397010677364953149/1450984775526645881)** (8 messages🔥): 
@@ -1444,6 +1530,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Eleuther ▷ #[general](https://discord.com/channels/729741769192767510/729741769738158194/1450962816478609468)** (14 messages🔥): 
@@ -1461,6 +1548,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Eleuther ▷ #[research](https://discord.com/channels/729741769192767510/747850033994662000/1451101109056962561)** (3 messages): 
@@ -1476,6 +1564,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Eleuther ▷ #[interpretability-general](https://discord.com/channels/729741769192767510/1052314805576400977/1450970088575340678)** (4 messages): 
@@ -1492,6 +1581,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Eleuther ▷ #[multimodal-general](https://discord.com/channels/729741769192767510/795089627089862656/1451246848600707216)** (4 messages): 
@@ -1507,6 +1597,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Eleuther ▷ #[gpt-neox-dev](https://discord.com/channels/729741769192767510/730090096287547444/1451362312630829189)** (1 messages): 
@@ -1522,6 +1613,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Modular (Mojo 🔥) ▷ #[general](https://discord.com/channels/1087530497313357884/1098713601386233997/1450995399803404308)** (19 messages🔥): 
@@ -1539,6 +1631,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Modular (Mojo 🔥) ▷ #[mojo](https://discord.com/channels/1087530497313357884/1151418092052815884/1451004910920274098)** (6 messages): 
@@ -1556,6 +1649,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **aider (Paul Gauthier) ▷ #[general](https://discord.com/channels/1131200896827654144/1131200896827654149/1451011195434696905)** (17 messages🔥): 
@@ -1575,6 +1669,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **aider (Paul Gauthier) ▷ #[links](https://discord.com/channels/1131200896827654144/1268910919057149974/1451263447281963173)** (3 messages): 
@@ -1590,6 +1685,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Nous Research AI ▷ #[general](https://discord.com/channels/1053877538025386074/1149866623109439599/1450956459197206621)** (6 messages): 
@@ -1606,6 +1702,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Nous Research AI ▷ #[ask-about-llms](https://discord.com/channels/1053877538025386074/1154120232051408927/1451170957841530880)** (3 messages): 
@@ -1619,6 +1716,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Nous Research AI ▷ #[research-papers](https://discord.com/channels/1053877538025386074/1104063238934626386/1451229645977551078)** (3 messages): 
@@ -1632,6 +1730,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Nous Research AI ▷ #[research-papers](https://discord.com/channels/1053877538025386074/1104063238934626386/1451229645977551078)** (3 messages): 
@@ -1647,6 +1746,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **DSPy ▷ #[general](https://discord.com/channels/1161519468141355160/1161519469319946286/1451005867339157506)** (12 messages🔥): 
@@ -1668,6 +1768,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Yannick Kilcher ▷ #[general](https://discord.com/channels/714501525455634453/986699377257119794/1450993229586628699)** (10 messages🔥): 
@@ -1687,6 +1788,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Yannick Kilcher ▷ #[ml-news](https://discord.com/channels/714501525455634453/853983317044756510/1450986276953264168)** (1 messages): 
@@ -1702,6 +1804,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Moonshot AI (Kimi K-2) ▷ #[general-chat](https://discord.com/channels/1369594130807787570/1371757564005711973/1450968554814832732)** (6 messages): 
@@ -1719,6 +1822,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **Manus.im Discord ▷ #[general](https://discord.com/channels/1348819876348825620/1349440650495398020/1450958376350515265)** (5 messages): 
@@ -1736,6 +1840,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **MCP Contributors (Official) ▷ #[general](https://discord.com/channels/1358869848138059966/1358869848138059969/1451247243570188311)** (4 messages): 
@@ -1751,6 +1856,7 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
   
 
+---
 
 
 ### **tinygrad (George Hotz) ▷ #[general](https://discord.com/channels/1068976834382925865/1068976834928193609/1451359133780676679)** (3 messages): 
@@ -1767,3 +1873,12 @@ kashimoo2_76983: <@1012256135761383465>  did you folks write a decode kernel wit
 
 
   
+
+---
+
+
+---
+
+
+---
+
