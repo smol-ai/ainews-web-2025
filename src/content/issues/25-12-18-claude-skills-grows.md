@@ -48,7 +48,7 @@ people:
 
 Some minorly interesting releases in [5.2 Codex](https://openai.com/index/introducing-gpt-5-2-codex/) and [FunctionGemma](https://huggingface.co/collections/google/functiongemma), but the story you're most likely going to care about a year from now is the continued growth of **Claude Skills**. Launched in [October](https://news.smol.ai/issues/25-10-16-claude-skills), it was pretty universally ridiculed as a "folder of markdown" and/or pivot from MCP (now [moved to Linux Foundation](https://news.smol.ai/issues/25-12-09-devstral2)), but among insiders traction has grown and grown and grown. One way to gauge this growth is the [Claude Skills talk](https://www.youtube.com/watch?v=CEvIs9y1uog&t=6s) crossing [100k views in 1 day](https://x.com/swyx/status/1998786773477110049?s=20) - easily the fastest to that milestone in AIE history and probably the [second](https://www.youtube.com/watch?v=8rABwKRsec4&t=2s) millionaire talk of 2025.
 
-[Two AI engineers from Anthropic presenting at the Code Summit, with a banner suggesting "Don't Build Agents, Build Skills Instead"](https://resend-attachments.s3.amazonaws.com/RRxm1kG9b4tNPvy)
+![Two AI engineers from Anthropic presenting at the Code Summit, with a banner suggesting "Don't Build Agents, Build Skills Instead"](https://resend-attachments.s3.amazonaws.com/RRxm1kG9b4tNPvy)
 
 The announcements today are:
 
