@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: >-
-  Meta Superintelligence Labs acquires Manus AI, at $100M ARR, 9months after
+  Meta Superintelligence Labs acquires Manus AI for ~$4B, at $100M ARR, 9months after
   launch
 date: '2025-12-29T05:44:39.731046Z'
 description: >-
