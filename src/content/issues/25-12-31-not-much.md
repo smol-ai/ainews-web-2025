@@ -48,9 +48,7 @@ people:
 ---
 
 
-
-
-**TODO: ONELINE SUBTITLE**
+**happy new year.**
 
 > AI News for 12/31/2025-1/1/2026. We checked 12 subreddits, [**544** Twitters](https://twitter.com/i/lists/1585430245762441216) and **24** Discords (**205** channels, and **5400** messages) for you. Estimated reading time saved (at 200wpm): **449 minutes**. **Our new website** is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on [@smol_ai](https://x.com/Smol_AI)!
 
