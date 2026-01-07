@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: xAI raises $20B Series E at ~$230B valuation, 18 months after start
+title: xAI raises $20B Series E at ~$230B valuation
 date: '2026-01-06T05:44:39.731046Z'
 description: >-
   **xAI**, Elon Musk's AI company, completed a massive **$20 billion Series E
