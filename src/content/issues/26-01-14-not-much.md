@@ -1,7 +1,7 @@
 ---
 id: MjAyNi0w
 title: not much happened today.
-date: '2026-01-15T05:44:39.731046Z'
+date: '2026-01-14T05:44:39.731046Z'
 description: >-
   **OpenAI** launched **GPT-5.2-Codex** API, touted as their strongest coding
   model for long-running tasks and cybersecurity. **Cursor** integrated
