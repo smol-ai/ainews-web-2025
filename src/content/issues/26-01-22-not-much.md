@@ -2,7 +2,48 @@
 id: MjAyNi0w
 title: not much happened today
 date: '2026-01-22T05:44:39.731046Z'
+description: >-
+  **Anthropic** launches "Claude in Excel Pro" with enhanced features.
+  **OpenAI** reveals upcoming **Codex** agent loop and cybersecurity measures.
+  **Google** boosts **Gemini App** quotas and partners with **Sakana AI** for
+  advanced AI Scientist projects in Japan. **Cursor** introduces Agent Skills
+  for dynamic context focus. **GPT-5.2 Pro** achieves **31%** on FrontierMath
+  Tier 4, showing significant benchmark progress. **Baseten** raises **$300M**
+  at a **$5B valuation** targeting high-performance inference. Discussions
+  highlight math benchmarks as indicators of AI capability, uneven AGI progress,
+  and the importance of reasoning and continual learning as future frontiers.
+  Notable figures include *Sam Altman*, *François Chollet*, *Shane Legg*, and
+  *Demis Hassabis*.
+companies:
+  - anthropic
+  - openai
+  - google
+  - sakana-ai
+  - cursor
+  - baseten
+  - epoch-ai-research
+  - deepmind
+models:
+  - claude-3
+  - codex
+  - gemini
+  - gpt-5.2-pro
+topics:
+  - benchmarking
+  - reasoning
+  - continual-learning
+  - reinforcement-learning
+  - model-performance
+  - agentic-ai
+  - security
+  - model-training
+people:
+  - sama
+  - fchollet
+  - shane_legg
+  - demishassabis
 ---
+
 
 **a quiet day**
 
