@@ -87,6 +87,19 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      watch: {
+        ignored: [
+          '**/buttondown-emails/**',
+          '**/buttondown-oldold/**',
+          '**/oneoffs/**',
+          '**/pong_game/**',
+          '**/src/content/oldissues/**',
+          '**/x.html',
+          '**/xxx.md.md',
+        ],
+      },
+    },
     build: {
       rollupOptions: {
         onLog(level, log, handler) {
