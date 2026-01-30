@@ -51,11 +51,19 @@ people:
 ---
 
 
-**TODO: ONELINE SUBTITLE**
+**xAI cements its position as a frontier lab.**
 
 > AI News for 1/28/2026-1/29/2026. We checked 12 subreddits, [**544** Twitters](https://twitter.com/i/lists/1585430245762441216) and **24** Discords (**253** channels, and **7278** messages) for you. Estimated reading time saved (at 200wpm): **605 minutes**. **Our new website** is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on [@smol_ai](https://x.com/Smol_AI)!
 
+It looks like [OpenAI](https://x.com/mattzeitlin/status/2017027653040001368?s=46) (fundraising at around ~800b), [Anthropic](https://x.com/mattzeitlin/status/2017027653040001368?s=46) (worth $350b) and now [SpaceX + xAI](https://x.com/amitisinvesting/status/2017001950563160517) ([$1100B?](https://x.com/RampLabs/status/2016991534944592176?s=20) - folllowing their [$20B Series E](https://news.smol.ai/issues/26-01-06-xai-series-e) 3 weeks ago) are in a dead heat racing to IPO by year end. Google made an EXTREMELY strong play today [launching Genie 3](https://x.com/swyx/status/2017111381456400603) ([previously reported](https://news.smol.ai/issues/25-08-05-gpt-oss)) to Ultra subscribers, and though technically impressive,, today’s headline story rightfully belongs to Grok, who now have [the SOTA Image/Video Generation and Editing model released in API](https://x.ai/news/grok-imagine-api) that you can use today.
 
+Artificial Analysis’ rankings says it all:
+
+![Image](https://substackcdn.com/image/fetch/$s_!m-eA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F29bc2b9a-cc66-409f-bc00-3eb1abffc039_697x317.png)
+
+There’s not much else to say here apart from look at the list of small video model labs and wonder which of them just got bitter lessoned…
+
+![](https://substackcdn.com/image/fetch/$s_!Mm1U!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F14da553b-af70-4a5e-beb7-4b02e80ae424_2164x912.png)
 
 
 ---
