@@ -49,7 +49,7 @@ people:
 
 > AI News for 1/30/2026-2/2/2026. We checked 12 subreddits, [**544** Twitters](https://twitter.com/i/lists/1585430245762441216) and **24** Discords (**254** channels, and **14979** messages) for you. Estimated reading time saved (at 200wpm): **1408 minutes**. **Our new website** is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on [@smol_ai](https://x.com/Smol_AI)!
 
-We almost did -NOT- give OpenAI the title story today — after all, it’s “just” a desktop app UI for the already existing CLI and Cloud app and VS Code extension… and it’s “just” OpenAI’s version of [Conductor](http://conductor.build/) and [Codex Monitor](https://github.com/Dimillian/CodexMonitor) and [Antigravity’s Inbox (which literally launched with the exact same “AI Agent Command Center” tagline](https://www.youtube.com/shorts/yC-Cv37E-dM)):
+We almost did -NOT- give OpenAI the title story today  — [Xai technically got acquired by SpaceX for ~$177B](https://x.com/tanayj/status/2018460616747540834?s=46), and after all, it’s “just” a desktop app UI for the already existing CLI and Cloud app and VS Code extension… and it’s “just” OpenAI’s version of [Conductor](http://conductor.build/) and [Codex Monitor](https://github.com/Dimillian/CodexMonitor) and [Antigravity’s Inbox (which literally launched with the exact same “AI Agent Command Center” tagline](https://www.youtube.com/shorts/yC-Cv37E-dM)):
 
 which of the 1 possible multiagent app designs are you working on, anon?
 
