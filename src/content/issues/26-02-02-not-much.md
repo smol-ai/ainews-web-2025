@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: not much happened today
+title: "OpenAI Codex App: death of the VSCode fork, multitasking worktrees, Skills Automations"
 date: '2026-02-02T05:44:39.731046Z'
 description: >-
   **OpenAI** launched the **Codex app** on macOS as a dedicated agent-native
@@ -49,7 +49,33 @@ people:
 
 > AI News for 1/30/2026-2/2/2026. We checked 12 subreddits, [**544** Twitters](https://twitter.com/i/lists/1585430245762441216) and **24** Discords (**254** channels, and **14979** messages) for you. Estimated reading time saved (at 200wpm): **1408 minutes**. **Our new website** is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on [@smol_ai](https://x.com/Smol_AI)!
 
+We almost did -NOT- give OpenAI the title story today — after all, it’s “just” a desktop app UI for the already existing CLI and Cloud app and VS Code extension… and it’s “just” OpenAI’s version of [Conductor](http://conductor.build/) and [Codex Monitor](https://github.com/Dimillian/CodexMonitor) and [Antigravity’s Inbox (which literally launched with the exact same “AI Agent Command Center” tagline](https://www.youtube.com/shorts/yC-Cv37E-dM)):
 
+which of the 1 possible multiagent app designs are you working on, anon?
+
+![](https://substackcdn.com/image/fetch/$s_!PHl8!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb25b7bb9-a5f6-4ad4-ad5e-d40583f867f5_2088x1850.png)
+
+[Everything is crab](https://en.wikipedia.org/wiki/Carcinisation), but perhaps the crab is the perfect form factor.
+
+And yet.
+
+In December Steve Yegge and Gene Kim [predicted](https://www.youtube.com/watch?v=7Dtu2bilcFs&pp=2AbMBw%3D%3D) that the IDE would die:
+
+https://www.youtube.com/watch?v=7Dtu2bilcFs&pp=2AbMBw%3D%3D
+
+and here we are in 2026, and OpenAI, which once [offered $3B for Windsurf](https://news.smol.ai/issues/25-07-24-cogsurf-cursor), is out here shipping a coding agent UX that is NOT a VS Code fork, and by the way Anthropic has also done the same with their Claude Code and Claude Cowork app. Bears some thought on truly how far coding models have come that serious coding apps are shipping without an IDE (yes, Codex still lets you link out to an IDE when needed, but evidently that is an exception rather than the norm).
+
+There was a time when “app that lets you write English and build without looking at code” was equivalent to “vibe coding” or “app builder”, but these nontechnical audiences are NOT the ICP for Codex - this is very seriously marketed at developers, who historically love code and identify strongly with hand-writing every line of code.
+
+Now OpenAI is saying: looking at code is kinda optional.
+
+The other observation is the reliance on **multitasking and worktrees**: in hindsight this is the perfect natural UI response to the increase in agent autonomy:
+
+![](https://substackcdn.com/image/fetch/$s_!F2Xo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F035d9d50-cef4-4478-8ccb-6e57869839af_3186x1856.png)
+
+and the final, actually novel thing that Codex ship that is the most overlooked is Automations, which are basically “skills on a cronjob” - somehow OpenAI is the first major player to launch this very simple feature in GA:
+
+![](https://substackcdn.com/image/fetch/$s_!VIJp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0039199-7085-4262-86a7-fd0979e8a14d_2144x1376.png)
 
 
 ---
