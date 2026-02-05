@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: ElevenLabs $500m Series D at $11B, Cerebras $1B Series H at $23B
+title: "ElevenLabs $500m Series D at $11B, Cerebras $1B Series H at $23B, Vibe Coding -> Agentic Engineering"
 date: '2026-02-04T05:44:39.731046Z'
 description: >-
   **Google's Gemini 3** is being integrated widely, including a new **Chrome
@@ -51,8 +51,11 @@ people:
 
 > AI News for 2/3/2026-2/4/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**254** channels, and **10187** messages) for you. Estimated reading time saved (at 200wpm): **795** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026/comments). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
+It is our policy to give the title story to AI companies that cross into **decacorn** status, to celebrate their rarity and look back at their growth, but it seems that it is less rare these days… today not only did Sequoia, a16z and ICONIQ [lead the Eleven@11 round](https://x.com/matiii/status/2019048833687126248?s=46) ([WSJ](https://x.com/sebjohnsonuk/status/2019077081737371971?s=46)), but it was promptly upstaged by Cerebras which, after [their 750MW OpenAI deal (valued at $10B over 3 years)](https://openai.com/index/cerebras-partnership/?utm_source=chatgpt.com), had a **DOUBLE decacorn round at** [$1B at $23B](https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h) from Tiger Global… only 5 months after they were [valued at $8B](https://www.cerebras.ai/press-release/series-g?utm_source=chatgpt.com).
 
-wow.
+It’s also the 1 year anniversary of Vibe Coding, and Andrej has nominated [Agentic Engineering](http://1%20year%20anniversary%20of%20vibe%20coding/) as the new meta of the year, even as [METR anoints GPT 5.2 High](https://x.com/kimmonismus/status/2019174066565849193?s=46) as the [new 6.6 hour human task model](https://x.com/METR_Evals/status/2019169900317798857), beating Opus 4.5, and sama announces [1m MAU of Codex](https://x.com/sama/status/2019219967250669741?s=20).
+
+![](https://substackcdn.com/image/fetch/$s_!HevS!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1c3fa7d8-4909-4c52-a4ce-62f0d7b0873f_1192x1078.png)
 
 ---
 
