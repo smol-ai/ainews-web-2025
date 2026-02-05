@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: ElevenLabs 500m Series D at $11B
+title: ElevenLabs $500m Series D at $11B, Cerebras $1B Series H at $23B
 date: '2026-02-04T05:44:39.731046Z'
 description: >-
   **Google's Gemini 3** is being integrated widely, including a new **Chrome
