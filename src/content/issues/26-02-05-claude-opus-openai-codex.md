@@ -33,12 +33,26 @@ people: []
 ---
 
 
-**TODO: ONELINE SUBTITLE**
+**The battle of the SOTA Coding Models steps up a notch.**
 
 > AI News for 2/4/2026-2/5/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**254** channels, and **9460** messages) for you. Estimated reading time saved (at 200wpm): **731** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026/comments). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
+If you think the simultaneous release of [Claude Opus 4.6](https://news.ycombinator.com/item?id=46902223) and [GPT-5.3-Codex](https://news.ycombinator.com/item?id=46902638) is sheer coincidence, you’re not sufficiently appreciating the intensity of the competition between the two leading coding model labs in the world right now. It has never been as clear from:
 
+- in **Consumer**, [the dueling Superbowl Ad campaigns](https://www.anthropic.com/news/claude-is-a-space-to-think) (and [subsequent defense from sama](https://x.com/sama/status/2019139174339928189?s=20))
+- in the **Enterprise**, [Anthropic releasing knowledge work plugins](https://www.reworked.co/collaboration-productivity/anthropic-adds-plugins-to-claude-cowork/) vs OpenAI launching [Frontier](https://openai.com/index/introducing-openai-frontier/), an enterprise-scale agents platform for knowledge work (with a [~50% collapse in SaaS stocks as collateral damage](https://x.com/awealthofcs/status/2018337784113549510?s=46))
+- to the synced **Coding** launches today.
+
+From a pure PR point of view, Anthropic won the day via [distributed denial of developer attention](https://x.com/swyx/status/2019545404879303059?s=20) across their [1m context](https://x.com/deedydas/status/2019492635292152271?s=46) and [new custom compaction](https://platform.claude.com/docs/en/build-with-claude/compaction) and [adaptive thinking](https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking) and [effort](https://platform.claude.com/docs/en/build-with-claude/effort) and [Claude Code agent teams](https://news.ycombinator.com/item?id=46902368) and Claude in [Powerpoint](https://claude.com/claude-in-powerpoint)/[Excel](https://claude.com/claude-in-excel) and [500 zero-days](https://red.anthropic.com/2026/zero-days/) and [C compiler task](https://x.com/AnthropicAI/status/2019496582698397945?s=20) and use of [mechinterp](https://x.com/adamrpearce/status/2019482478566686955) and [ai consciousness callouts](https://x.com/aisafetymemes/status/2019477474120237318?s=46) and [$50 promos](https://news.ycombinator.com/item?id=46904569), whereas OpenAI won on most benchmarks with 25% higher speed with higher token efficiency and touted more web development skills, but it’s likely that all first day third party reactions are either biased or superficial. [Here](https://x.com/neilsuperduper/status/2019486017703547309?s=20) is Opus making visual comparisons of the different announcements:
+
+![Image](https://substackcdn.com/image/fetch/$s_!ftSw!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4e060337-380b-40ad-b629-132c24f27ad6_1500x1500.jpeg)
+
+![Image](https://substackcdn.com/image/fetch/$s_!Fplu!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F788d2586-c80b-4ce6-854f-09a3f725e77a_1512x1516.jpeg)
+
+Both are minor version bumps, which will set the stage for Claude 5 and GPT 6 battles this summer.
+
+**Your move, GDM and SpaceXai.**
 
 ---
 
