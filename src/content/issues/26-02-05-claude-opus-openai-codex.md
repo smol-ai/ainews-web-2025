@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: OpenAI and Anthropic go to war
+title: "OpenAI and Anthropic go to war: Claude Opus 4.6 vs GPT 5.3 Codex"
 date: '2026-02-05T05:44:39.731046Z'
 description: >-
   **OpenAI** launched **GPT-5.3-Codex**, emphasizing **token efficiency**,
