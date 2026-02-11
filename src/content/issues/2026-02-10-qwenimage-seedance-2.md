@@ -64,8 +64,19 @@ people:
 > AI News for 2/9/2026-2/10/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**256** channels, and **9107** messages) for you. Estimated reading time saved (at 200wpm): **731** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
+It is China model release week before Valentine’s Day, and the floodgates are opening.
 
+We last got excited about [Qwen-Image 1](https://news.smol.ai/issues/25-08-04-qwen-image) in August, and in the meantime the Qwen guys have been cooking, with [Image-Edit](https://qwen.ai/blog?id=a6f483777144685d33cd3d2af95136fcbeb57652&from=research.research-list) and [Layers](https://qwen.ai/blog?id=qwen-image-layered). Today with [Qwen-Image 2](https://qwen.ai/blog?id=qwen-image-2.0) they reveal the grand unification:
 
+![](https://substackcdn.com/image/fetch/$s_!ih9H!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59e22245-fa0e-47cd-8764-60bd2b63168d_2688x1536.png)
+
+The text control and fidelity demonstrated is incredibly impressive. While the weights and full technical report are not yet released, the images drop a few surprising hints (caught by the Reddit sleuths in the recap below) about what’s going on that point to incredible technical advances.
+
+**To put it simply, we will have a [Nano-Banana](https://news.smol.ai/issues/25-08-26-nano-banana)-level open imagegen/imageedit model in a 7B size.** (Per Alibaba’s own Arena rankings on the blogpost)
+
+![](https://substackcdn.com/image/fetch/$s_!C5z7!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F78c41615-a9ec-4a79-9769-b1316e472e1f_2560x1462.png)
+
+Similarly no weights released but lots of hype today is [**Seedance 2.0**](https://petapixel.com/2026/02/09/bytedance-seedance-2-ai-video/), which seems to have solved the Will Smith Spaghetti problem and also generated lots of anime/movie scenes. The sheer flood of examples is almost certainly an astroturfing campaign, but enough people are independently creating new videos that we have some confidence that this isn’t just a cherrypick.
 
 
 ---
