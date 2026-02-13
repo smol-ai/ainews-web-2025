@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: anthropic
+title: "new Gemini 3 Deep Think, Anthropic $30B @ $380B, GPT-5.3-Codex Spark, MiniMax M2.5"
 date: '2026-02-12T05:44:39.731046Z'
 description: >-
   **Google DeepMind** is rolling out the upgraded **Gemini 3 Deep Think V2**
@@ -43,10 +43,19 @@ people:
 ---
 
 
-**TODO: ONELINE SUBTITLE**
+**too much going on!**
 
 > AI News for 2/11/2026-2/12/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**256** channels, and **10331** messages) for you. Estimated reading time saved (at 200wpm): **867** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
+China open model week kept going with [MiniMax M2.5 claiming](https://x.com/minimax_ai/status/2021980761210134808) an Opus-matching 80.2% on SWE-Bench Verified, however, as often happens on Thursdays, all 3 leading US labs had updates - Anthropic [closed their $380B round](https://x.com/AnthropicAI/status/2022023155423002867) confirming a historic [>10xing of revenue to $14B](https://x.com/AnthropicAI/status/2022023156513616220?s=20) as of today (remember in August Dario [projected $10B](https://x.com/collision/status/1953102446403961306?s=46)), with Claude Code’s ARR doubling, hitting 2.5B year to date. Not to be outdone, OpenAI rolled out their answer to [Claude’s fast mode](https://code.claude.com/docs/en/fast-mode) (2.5x speedup) with [GPT-5.3-Codex-Spark](https://openai.com/index/introducing-gpt-5-3-codex-spark/), which delivers >1000 tok/s (10x speedup), an impressively fast turnaround of [the Cerebras deal](https://openai.com/index/cerebras-partnership/).
+
+All fantastic news, but we give the title story to the new Gemini 3 Deep Think today, and Jeff Dean dropped by the studio to give an update on the general state of GDM:
+
+https://www.youtube.com/watch?v=F_1oDPWxpFQ
+
+This is the same model that scored [that IMO Gold last summer](https://news.smol.ai/issues/25-07-21-imo-gold), and is simultaneously [the #8 best Codeforces programmer in the world](https://x.com/deedydas/status/2022021396768133336?s=46) and helping [new semiconductor research](https://x.com/GoogleDeepMind/status/2021981510400709092), but perhaps most impressive is that it reaches new SOTA levels (eg on [ARC-AGI-2](https://x.com/LexnLin/status/2021986194780041394)) while also [being very efficient](https://x.com/aakashgupta/status/2022025020839801186) - 82% cheaper per task - something Jeff was very excited about in his pod.
+
+![](https://substackcdn.com/image/fetch/$s_!XRbI!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb8bb2bd9-a33e-4577-bdae-5cb09076e58f_1176x1256.png)
 
 
 
