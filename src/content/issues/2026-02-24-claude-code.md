@@ -1,8 +1,59 @@
 ---
 id: MjAyNi0w
-title: Claude Code Anniversary + Launches from: Qwen 3.5, Cursor Demos, Cognition Devin 2.2, Inception Mercury 2
+title: >-
+  Claude Code Anniversary + Launches from: Qwen 3.5, Cursor Demos, Cognition
+  Devin 2.2, Inception Mercury 2
 date: '2026-02-24T05:44:39.731046Z'
+description: >-
+  **Alibaba** launched the **Qwen 3.5 Medium Model Series** featuring models
+  like **Qwen3.5-Flash**, **Qwen3.5-35B-A3B (MoE)**, and **Qwen3.5-122B-A10B
+  (MoE)** emphasizing efficiency over scale with innovations like **1M context**
+  and INT4 quantization. **OpenAI** released **GPT-5.3-Codex** via the
+  **Responses API** with enhanced file input support and faster web socket-based
+  throughput. **Anthropic** introduced **Claude Code Remote Control** enabling
+  terminal session continuation from mobile and expanded enterprise workflow
+  features. **Cursor** shifted UX to agent demo videos instead of diffs,
+  highlighting new interaction modes.
+companies:
+  - alibaba
+  - openai
+  - anthropic
+  - cursor
+  - huggingface
+models:
+  - qwen3.5-flash
+  - qwen3.5-35b-a3b
+  - qwen3.5-122b-a10b
+  - qwen3.5-27b
+  - qwen3.5-397b-a17b
+  - gpt-5.3-codex
+  - claude-code
+topics:
+  - model-architecture
+  - reinforcement-learning
+  - quantization
+  - context-windows
+  - agentic-ai
+  - api
+  - websockets
+  - software-ux
+  - enterprise-workflows
+  - model-deployment
+people:
+  - awnihannun
+  - andrew_n_carr
+  - justinlin610
+  - unslothai
+  - terryyuezhuo
+  - haihaoshen
+  - 0xsero
+  - ali_tongyilab
+  - scaling01
+  - gdb
+  - noahzweben
+  - _catwu
 ---
+
 
 **Everyone launching everything everywhere all at once.**
 
