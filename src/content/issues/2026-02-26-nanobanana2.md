@@ -1,6 +1,6 @@
 ---
 id: MjAyNi0w
-title: Gemini Nano Banana 2
+title: "Nano Banana 2 aka Gemini 3.1 Flash Image Preview: the new SOTA Imagegen model"
 date: '2026-02-26T05:44:39.731046Z'
 description: >-
   **Google and DeepMind** launched **Nano Banana 2** (aka **Gemini 3.1 Flash
@@ -51,7 +51,17 @@ people:
 > AI News for 2/25/2026-2/26/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**263** channels, and **12920** messages) for you. Estimated reading time saved (at 200wpm): **1283** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
+Congrats to [**Perplexity on Computer**](https://x.com/perplexity_ai/status/2026695550771540489?s=20) and for [replacing Bixby as default AI on hundreds of millions of Samsung phones](https://x.com/cryptopunk7213/status/2027131287283040488?s=46) going forward, but those are more consumery news.
 
+News that AI Engineers can use from today is [**Nano Banana 2**](https://x.com/GoogleDeepMind/status/2027051581300969755), which is more formally called 3.1 Flash Image. The big story is the pricing: it is **rated the #1 image model in the world** per [Arena](https://x.com/arena/status/2027053222876393703) and [ArtificialAnalysis](https://x.com/ArtificialAnlys/status/2027052241019175148), and yet costs **half the price** (At $67/1k images, vs Nano Banana Pro ($134/1k) and GPT Image 1.5 ($133/1k) for generation, and FLUX.2 [max] at $140/1k images for editing).
+
+![](https://substackcdn.com/image/fetch/$s_!qaVO!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe752c54-6f90-4bb6-8620-5c6fe0e707ea_1204x1374.png)
+
+It comes with 6 [character consistency](https://x.com/GoogleDeepMind/status/2027051583628787880?s=20) and [search grounding](https://x.com/GoogleDeepMind/status/2027051586518765887), and great text rendering. Of course every generation is stamped by [SynthID](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/?utm_source=x&utm_medium=social&utm_campaign=&utm_content=#footnote-source-10).
+
+![](https://substackcdn.com/image/fetch/$s_!O4wt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F861232ef-0996-46bc-a2ac-48ad7ba4d3bd_1870x1888.png)
+
+Of course, there’s no research detail or paper whatsoever, so our coverage ends here.
 
 ---
 
