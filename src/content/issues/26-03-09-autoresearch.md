@@ -1,64 +1,74 @@
 ---
 id: MjAyNi0w
-title: autoresearch
+title: 'Autoresearch: Sparks of Recursive Self Improvement'
 date: '2026-03-09T05:44:39.731046Z'
 description: >-
-  **Coding agents** are shifting the bottleneck from implementation to review
-  and verification, with **Anthropic's Claude Code** improving PR review
-  meaningful comments from **16% to 54%** and reducing incorrect findings to
-  **<1%**. **OpenAI Codex Review** and **Cognition's Devin Review** offer
-  alternative PR review tools. Harness engineering is evolving into systems
-  engineering by decoupling agent storage and compute, enabling collaboration
-  via shared repos and sandboxes. **Perplexity Computer** integrates **Claude
-  Code** and GitHub CLI to orchestrate agent workflows, including autonomous ad
-  campaign management. Terminal UX and agent ergonomics remain critical for
-  developer interaction. In autoresearch, **Andrej Karpathy** demonstrates
-  agent-driven training optimization on **nanochat**, reducing GPT-2 training
-  time by **~11%** through about 700 autonomous changes, highlighting the
-  potential of swarm agents for frontier labs. However, agent loops remain
-  fragile across different harnesses and models, with varying stability observed
-  between GPT-5.4 xhigh and Opus 4.6.
+  **RSI** covers AI developments from 3/5/2026 to 3/9/2026, highlighting the
+  emergence of **LLMs autonomously training smaller LLMs**, marking a
+  significant "AutoML moment" in AI progress. **Karpathy** and **Yi Tay**
+  discuss "vibe training," where AI models fix bugs and improve code
+  autonomously, suggesting models may soon surpass human debugging efficiency.
+  The report anticipates **Jakub Pachocki's Automated AI Research Intern**
+  system by September 2026 to accelerate human researchers. On AI Twitter, the
+  focus is on **coding agents** shifting bottlenecks from implementation to
+  review and verification, with **Anthropic's Claude Code Review** improving PR
+  review effectiveness significantly, and tools like **OpenAI Codex Review** and
+  **Cognition's Devin Review** enhancing code review workflows. Harness
+  engineering is evolving into systems engineering, emphasizing decoupling agent
+  storage from compute for collaborative agent teams.
 companies:
   - anthropic
   - openai
   - cognition
-  - perplexity-ai
 models:
-  - claude-code
-  - openai-codex
-  - nanochat
-  - gpt-5.4
-  - opus-4.6
+  - claude-3
+  - codex
 topics:
+  - automated-machine-learning
   - coding-agents
+  - bug-fixing
+  - model-autonomy
+  - multi-agent-systems
   - pr-review
-  - agent-verification
-  - harness-engineering
-  - agent-orchestration
-  - terminal-ux
-  - agent-ergonomics
-  - autoresearch
-  - training-optimization
-  - swarm-agents
-  - agent-stability
+  - systems-engineering
+  - model-verification
 people:
   - karpathy
-  - astasiamyers
-  - omarsar0
-  - rohanvarma
-  - vtrivedy10
-  - aravsrinivas
-  - theo
-  - quixiai
-  - jerryjliu0
-  - yuchenj_uw
+  - yi_tay
+  - jakub_pachocki
 ---
 
 
-**TODO: ONELINE SUBTITLE**
+
+**RSI is here.**
 
 > AI News for 3/5/2026-3/9/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**264** channels, and **27779** messages) for you. Estimated reading time saved (at 200wpm): **2649** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
+**In the continuing fallout from [WTF Happened in 2025](https://www.latent.space/p/wtf2025), we now have the beginnings of LLMs being able to fully autonomously train (smaller) LLMs.**
+
+Every AI summer has its “AutoML moment”: the dream of models automatically improving model training and therefore causing infinite recursion of intelligence that either leads to nirvana or doom. We may be in the Last Summer, but we just had ours:
+
+[karpathy](https://x.com/karpathy/status/2030371219518931079?s=20)
+
+![](https://substackcdn.com/image/fetch/$s_!j6Wh!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F029937e5-383d-4302-a39c-d0bdac3f797e_1188x1252.png)
+
+In [our Dec 2025 conversation with Yi Tay](https://www.latent.space/p/captaining-imo-gold-deep-think-on?utm_source=publication-search), he talked about “**vibe training**”:
+
+> “I think AI coding has started to come to the point where I run a job and get a bug, I almost don’t look at the bug. I paste it into like Antigravity and let it fix the bug for me. And then I relaunch the job.
+> 
+> 
+> **It’s beyond vibe coding, it’s more like vibe training, vibe ML** or something like that. I would say it does pretty well most of the time. And actually there are classes of problems that it’s just generally... I know this is actually really good for and in fact, maybe probably better than, me, like, I would have to spend 20 minutes to figure out the issue.
+> 
+> I would say l**evel one vibe coding is you actually know what to do, you’re just too lazy**. Yeah, it’s just, ah, just do it for me. Like, I’ve done this a thousand times.
+> 
+> **The next level where you actually don’t even know what to do.** It’s investigating the bug for you. As long as, like, the answer looks right, you’ll just ship it.
+> 
+> At the start, I did check it and look at everything. And then at some point, I’m like, **maybe the model codes better than me**. So I’m just going to let it do its stuff. And then I will relaunch the job based on the fix that the model gave me.”
+> 
+
+So we knew this is happening at the Big Labs, but now anyone with a GPU can play with this at home and see models improving models.
+
+Given that we are at March 2026, we seem well on target for [Jakub Pachocki’s “Automated AI Research Intern](https://www.latent.space/p/science?utm_source=publication-search)” by September THIS YEAR (“*A system that can meaningfully **accelerate human researchers**, not just chat or code*.”)
 
 
 
