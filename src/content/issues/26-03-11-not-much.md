@@ -65,9 +65,7 @@ people:
 
 *a quiet day.**
 
-> AI News for 12/23/2025-12/24/2025. We checked 12 subreddits and [**544** Twitters](https://twitter.com/i/lists/1585430245762441216). Estimated reading time saved (at 200wpm): **341 minutes**. **Our new website** is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on [@smol_ai](https://x.com/Smol_AI)!
-
-
+> AI News for 3/10/2026-3/11/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
 ---
