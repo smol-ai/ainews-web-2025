@@ -1,10 +1,60 @@
 ---
 id: MjAyNi0w
-title: FILL TITLE IN HERE
+title: not much happened today
 date: '2026-03-04T05:44:39.731046Z'
+description: >-
+  **Gemini 3.1 Flash-Lite** is highlighted by **Demis Hassabis** for its speed
+  and cost-efficiency, focusing on latency and cost per capability rather than
+  raw performance. **NotebookLM Studio** introduces a new feature for generating
+  immersive cinematic video overviews. Rumors about **GPT-5.4** suggest a ~1
+  million token context window and an "extreme reasoning mode" for long-horizon
+  tasks, with speculation about monthly model updates from **OpenAI**.
+  **Anthropic's Claude Opus 4.6** is noted for strong general agent behavior but
+  weaker visual mathematics performance. **Alibaba's Qwen** team faces
+  leadership exits and restructuring, with concerns about compute access and
+  organizational changes. Qwen models dominate research workflows, appearing in
+  41% of Hugging Face papers in 2025-2026, raising ecosystem dependence risks.
+  The open-weight model landscape may consolidate around non-profits,
+  **NVIDIA**, and **Meta** due to business incentives.
+companies:
+  - google-deepmind
+  - openai
+  - anthropic
+  - alibaba
+  - nvidia
+  - meta-ai-fair
+  - hugging-face
+models:
+  - gemini-3.1-flash-lite
+  - gpt-5.4
+  - claude-opus-4.6
+  - qwen-3.5
+  - qwen
+topics:
+  - model-positioning
+  - latency
+  - cost-efficiency
+  - context-window
+  - extreme-reasoning
+  - agentic-ai
+  - model-updates
+  - general-agent-behavior
+  - visual-mathematics
+  - leadership-exits
+  - organizational-restructuring
+  - compute-access
+  - research-workflows
+  - open-weight-models
+  - ecosystem-dependence
+people:
+  - demishassabis
+  - natolambert
+  - poezhao0605
+  - simonw
 ---
 
-**TODO: ONELINE SUBTITLE**
+
+**a quiet day**
 
 > AI News for 3/3/2026-3/4/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and 24 Discords (**264** channels, and **14242** messages) for you. Estimated reading time saved (at 200wpm): **1397** minutes. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
