@@ -1,14 +1,44 @@
 ---
 id: MjAyNS0x
-title: Yann LeCun’s AMI Labs launches with a $1.03B seed to build world models around JEPA
+title: >-
+  Yann LeCun’s AMI Labs launches with a $1.03B seed to build world models around
+  JEPA
 date: '2026-03-10T05:44:39.731046Z'
+description: >-
+  **Yann LeCun** launched **Advanced Machine Intelligence (AMI Labs)** with a
+  record **$1.03B seed round** at a **$3.5B pre-money valuation**, aiming to
+  build AI models that understand the **physical world** through **world
+  models** rather than just language prediction. The startup, based in
+  **Europe** with locations in **Paris** and **Zürich**, is framed as a major
+  milestone for European AI and backed by a prominent founding team including
+  **Alex Lebrun**, **Saining Xie**, and **Pascale Fung**. The mission is
+  described as a "long-term scientific endeavor" to create AI that "perceives,
+  learns, reasons and acts" in the real world.
+companies:
+  - ami-labs
+models: []
+topics:
+  - world-models
+  - representation-learning
+  - pretraining
+  - scaling
+  - video
+  - funding
+  - seed-round
+  - valuation
+  - real-world-understanding
+people:
+  - ylecun
+  - lxbrun
+  - sainingxie
+  - pascalefung
+  - laurentsolly
 ---
+
 
 **World Models are all you need.**
 
 > AI News for 12/23/2025-12/24/2025. We checked 12 subreddits and [**544** Twitters](https://twitter.com/i/lists/1585430245762441216). Estimated reading time saved (at 200wpm): **341 minutes**. **Our new website** is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on [@smol_ai](https://x.com/Smol_AI)!
-
-
 
 
 ---
