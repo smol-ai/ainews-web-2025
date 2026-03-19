@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
-title: not much happened today
-date: '2026-03-16T05:44:39.731046Z'
+title: "MiniMax 2.7: GLM-5 at 1/3 cost SOTA Open Model"
+date: '2026-03-18T05:44:39.731046Z'
 description: >-
   **MiniMax M2.7** is the headline model release, described as a "self-evolving
   agent" with strong performance metrics including **56.22% on SWE-Pro**,
@@ -61,11 +61,19 @@ people: []
 ---
 
 
-**a quiet day.**
+**Congrats MiniMax!**
 
 > AI News for 3/18/2026-3/19/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
+Not 2 months after [their IPO](https://www.cnbc.com/2026/01/09/minimax-hong-kong-ipo-ai-tigers-zhipu.html) and [first public quarter](https://www.minimax.io/news/minimax-global-announces-full-year-2025-financial-results), MiniMax is back in the news with [MiniMax 2.7](https://x.com/MiniMax_AI/status/2034315320337522881#m), a nice bright spot in Chinese Open Models after the [changeover in Qwen](https://x.com/swyx/status/2033030744352993296). They match [Z.ai’s GLM-5 SOTA open model from last month](https://www.latent.space/p/ainews-zai-glm-5-new-sota-open-weights?utm_source=publication-search), but the story is efficiency here (see green quadrant in [Artificial Analysis’ chart](https://x.com/ArtificialAnlys/status/2034313314420019462#m)):
 
+![](https://substackcdn.com/image/fetch/$s_!bZgR!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f6a39ab-2a8a-499d-898d-437396bd2f4b_3600x2114.png)
+
+The team calls out “[Early Echoes of Self-Evolution](https://x.com/MiniMax_AI/status/2034335605145182659)”, calling it “our first model deeply participating in its own evolution.”, recalling [Karpathy’s Autoresearch](https://www.latent.space/p/ainews-autoresearch-sparks-of-recursive), although they only claim that “M2.7 is capable of handling 30%-50% of the workflow.”:
+
+![Image](https://substackcdn.com/image/fetch/$s_!KE3r!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6f79d04e-0fdf-4940-90e0-9a7e5825f934_1280x673.jpeg)
+
+They also report some work on multi-agent collaboration (“Agent Teams”) as well as follow Anthropic and OpenAI’s lead in applying their models [for finance usecases](https://docs.google.com/document/d/1ieBAOr8jOL36MTDCmQWakLdYjydDjCts/edit?usp=drive_link&ouid=104169451586617858920&rtpof=true&sd=true). Finally, they launch [OpenRoom](https://www.openroom.ai/), an open source demo for entertainment usecases.
 
 ---
 

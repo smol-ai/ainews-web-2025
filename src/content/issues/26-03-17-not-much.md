@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: '2026-03-16T05:44:39.731046Z'
+date: '2026-03-17T05:44:39.731046Z'
 description: >-
   **OpenAI** released **GPT-5.4 mini** and **GPT-5.4 nano**, their most capable
   small models optimized for coding, multimodal understanding, and subagents,

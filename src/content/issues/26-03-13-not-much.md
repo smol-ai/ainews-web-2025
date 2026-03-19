@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: '2026-03-10T05:44:39.731046Z'
+date: '2026-03-13T05:44:39.731046Z'
 description: >-
   **MCP tools** remain relevant for deterministic APIs despite ergonomic
   criticisms, with new **web MCP support in Chrome v146** enabling continuous
