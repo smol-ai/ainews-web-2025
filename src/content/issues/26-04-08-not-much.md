@@ -1,8 +1,56 @@
-d---
+---
 id: MjAyNS0x
 title: not much happened today
 date: '2026-04-08T05:44:39.731046Z'
+description: >-
+  **Meta Superintelligence Labs** launched **Muse Spark**, a natively multimodal
+  reasoning model featuring tool use, visual chain of thought, and multi-agent
+  orchestration. It is live on **meta.ai** with a private API preview and plans
+  for future open-source versions. Independent benchmarks rank Muse Spark
+  highly, with strong performance on tasks like TaxEval and finance, and notable
+  efficiency gains including >10× less compute than **Llama 4 Maverick**. Meta
+  highlights parallel multi-agent inference and training efficiency
+  improvements. Community testing shows strong image-to-code and one-shot game
+  generation capabilities. Additionally, **Zhipu AI's GLM-5.1** is recognized as
+  a leading open-weight model, resembling DeepSeek-V3.2 architecture.
+companies:
+  - meta-ai-fair
+  - zhipu-ai
+  - deepseek
+models:
+  - muse-spark
+  - llama-4-maverick
+  - glm-5.1
+  - deepseek-v3.2
+topics:
+  - multimodality
+  - tool-use
+  - visual-chain-of-thought
+  - multi-agent-systems
+  - training-efficiency
+  - model-scaling
+  - parallel-inference
+  - image-to-code
+  - coding-integration
+  - benchmarking
+  - model-architecture
+people:
+  - alexandr_wang
+  - shengjia_zhao
+  - jack_w_rae
+  - ananyaku
+  - _jasonwei
+  - artificialanlys
+  - valsai
+  - epochairesearch
+  - matthuang
+  - omarsar0
+  - skirano
+  - mattdeitke
+  - garrytan
+  - sebastianraschka
 ---
+
 
 **a quiet day.**
 
