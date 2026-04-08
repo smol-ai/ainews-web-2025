@@ -5,7 +5,6 @@ import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 import remarkYouTubeEmbed from "./src/remark-youtube-embed.mjs";
 import vercel from "@astrojs/vercel";
-import { readFileSync, writeFileSync } from "node:fs";
 
 console.log(`[Astro Config] Environment: ${process.env.NODE_ENV || 'development'}`);
 console.log(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false'}`);
@@ -82,26 +81,6 @@ export default defineConfig({
           }
         }
       }
-    },
-    {
-      name: 'vercel-filesystem-route-first',
-      hooks: {
-        'astro:build:done': () => {
-          const configPath = new URL('.vercel/output/config.json', `file://${process.cwd()}/`);
-          const config = JSON.parse(readFileSync(configPath, 'utf-8'));
-          const routes = config.routes ?? [];
-          const filesystemRoute = routes.find((route) => route.handle === 'filesystem');
-
-          if (!filesystemRoute) {
-            console.warn('[Vercel Routes] No filesystem route found in output config');
-            return;
-          }
-
-          config.routes = [filesystemRoute, ...routes.filter((route) => route.handle !== 'filesystem')];
-          writeFileSync(configPath, `${JSON.stringify(config, null, 2)}\n`);
-          console.log('[Vercel Routes] Moved filesystem route before error/404 routes');
-        },
-      },
     }
   ],
 

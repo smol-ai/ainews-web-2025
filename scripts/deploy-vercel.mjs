@@ -1,5 +1,5 @@
 import { spawn } from 'node:child_process';
-import { readFile, stat } from 'node:fs/promises';
+import { copyFile, readFile, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -88,6 +88,72 @@ async function verifyOutput() {
   console.log(`Verified ${outputDir}: ${formatBytes(size)}, filesystem route index ${filesystemIndex}, first 404 index ${first404Index}`);
 }
 
+async function fixVercelRoutes() {
+  const configPath = join(outputDir, 'config.json');
+  const config = JSON.parse(await readFile(configPath, 'utf-8'));
+  const routes = config.routes ?? [];
+  const filesystemRoute = routes.find((route) => route.handle === 'filesystem');
+  const filesystemIndex = routes.findIndex((route) => route.handle === 'filesystem');
+  const first404Index = routes.findIndex((route) => route.status === 404);
+
+  if (!filesystemRoute) {
+    throw new Error('Vercel output config has no filesystem route to repair.');
+  }
+
+  const staticRoutes = [
+    { src: '^/_astro/(.*)$', dest: '/_astro/$1' },
+    { src: '^/pagefind/(.*)$', dest: '/pagefind/$1' },
+    { src: '^/favicon\\.ico$', dest: '/favicon.ico' },
+  ];
+  const isGeneratedStaticRoute = (route) => {
+    return typeof route.src === 'string' && [
+      '^/_astro/(.*)$',
+      '^/pagefind/(.*)$',
+      '^/favicon\\.ico$',
+    ].includes(route.src);
+  };
+
+  config.routes = [
+    ...staticRoutes,
+    filesystemRoute,
+    ...routes.filter((route) => route.handle !== 'filesystem' && !isGeneratedStaticRoute(route)),
+  ];
+  await writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`);
+  console.log(`Moved Vercel static/filesystem routes before error/404 routes: filesystem ${filesystemIndex} -> 3, first 404 was ${first404Index}.`);
+}
+
+async function patchCachedAssetUrls() {
+  const sourcePath = join(outputDir, 'static', '_astro', 'index.ljMySSss.css');
+  const versionedPath = join(outputDir, 'static', 'pagefind', 'pagefind-astro-ui-2026-04-08.css');
+
+  if (!existsSync(sourcePath)) {
+    console.log('No cached Pagefind Astro CSS filename found to patch.');
+    return;
+  }
+
+  await copyFile(sourcePath, versionedPath);
+
+  const { readdir } = await import('node:fs/promises');
+  async function patchHtmlFiles(directory) {
+    const entries = await readdir(directory, { withFileTypes: true });
+    for (const entry of entries) {
+      const entryPath = join(directory, entry.name);
+      if (entry.isDirectory()) {
+        await patchHtmlFiles(entryPath);
+      } else if (entry.isFile() && entry.name.endsWith('.html')) {
+        const html = await readFile(entryPath, 'utf-8');
+        const updated = html.replaceAll('/_astro/index.ljMySSss.css', '/pagefind/pagefind-astro-ui-2026-04-08.css');
+        if (updated !== html) {
+          await writeFile(entryPath, updated);
+        }
+      }
+    }
+  }
+
+  await patchHtmlFiles(join(outputDir, 'static'));
+  console.log('Rewrote cached Pagefind Astro CSS URL to /pagefind/pagefind-astro-ui-2026-04-08.css.');
+}
+
 async function verifyScope() {
   const output = await new Promise((resolve, reject) => {
     const child = spawn(vercelCommand, ['project', 'ls', '--scope', scope], {
@@ -115,11 +181,25 @@ async function verifyScope() {
   console.log(`Verified Vercel scope contains project ${scope}/${project}`);
 }
 
+async function verifyProjectLink() {
+  const linkPath = '.vercel/project.json';
+  const link = JSON.parse(await readFile(linkPath, 'utf-8'));
+
+  if (link.projectName !== project) {
+    throw new Error(`${linkPath} is linked to ${link.projectName}, expected ${project}. Run: ${vercelCommand} link --yes --scope ${scope} --project ${project}`);
+  }
+
+  console.log(`Verified local Vercel link targets ${scope}/${project}`);
+}
+
 try {
   console.log(`Deploying to Vercel project: ${scope}/${project}`);
   console.log(`Using Vercel CLI command: ${vercelCommand}`);
   await verifyScope();
+  await verifyProjectLink();
   await run(vercelCommand, ['build', '--yes', '--scope', scope, '--target', 'production']);
+  await fixVercelRoutes();
+  await patchCachedAssetUrls();
   await verifyOutput();
   await run(vercelCommand, ['deploy', '--prebuilt', '--prod', '--scope', scope, '--target', 'production', '--archive=tgz']);
   console.log(`\nDeploy complete. Total runtime: ${elapsed()}`);

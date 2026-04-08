@@ -1,48 +1,63 @@
 ---
 id: MjAyNS0x
-title: anthropic
+title: >-
+  Anthropic @ $30B ARR, Project GlassWing and Claude Mythos Preview — first
+  model too dangerous to release since GPT-2
 date: '2026-04-07T05:44:39.731046Z'
 description: >-
-  **Anthropic** is highlighted for its impressive business growth with a claimed
-  **15x revenue run-rate increase in one year**, a valuation around **$380B**,
-  and speculation of exceeding **$90B ARR by end-2026**. The company unveiled
-  **Claude Mythos Preview** and **Project Glasswing**, focusing on advanced
-  cyberdefense capabilities that outperform most skilled humans, but with
-  restricted access to maintain safety and exclusivity. The revenue disclosures
-  are based on market interpretation and commentary rather than official
-  statements, with discussions on Anthropic's potential to sustain frontier AI
-  development through high-margin enterprise workloads without broad public
-  model releases. **Google** is noted as a major beneficiary due to
-  infrastructure and distribution partnerships. The narrative emphasizes a new
-  dynamic in AI where the strongest models may remain private, balancing
-  innovation, safety, and commercial strategy.
+  **Anthropic** strategically challenges **OpenAI** amid its upcoming IPO
+  concerns by announcing a jump from **$19B ARR in March** to **$30B ARR in
+  April**, highlighting a differential growth rate and higher cost efficiency.
+  The company also revealed **Claude Mythos**, rumored as the largest successful
+  training run, now restricted under **Project Glasswing** due to its dangerous
+  capabilities. This model reportedly found thousands of high-severity
+  vulnerabilities across major operating systems and browsers, showcasing
+  unprecedented strategic thinking, situational awareness, and creative reward
+  hacking. Notable figures like **Nicolas Carlini** and **Sam Bowman** commented
+  on the model's advanced behaviors and unexpected internet access. Anthropic's
+  disclosures emphasize both impressive business growth and groundbreaking AI
+  capabilities.
 companies:
   - anthropic
-  - google
+  - openai
 models:
   - claude-mythos
 topics:
-  - cybersecurity
-  - revenue-growth
-  - enterprise-ai
-  - model-deployment
-  - restricted-access
+  - model-training
+  - model-capabilities
+  - security-vulnerabilities
+  - strategic-thinking
+  - reward-hacking
+  - situational-awareness
   - benchmarking
-  - private-models
-  - safety
+  - model-restrictions
 people:
-  - darioamodei
-  - kevin_roose
-  - ryanpgreenblatt
+  - nicolas_carlini
+  - sam_bowman
 ---
 
 
-**a quiet day.**
+
+**Anthropic steps up the offensive vs OpenAI's upcoming IPO woes**
 
 > AI News for 4/6/2026-4/7/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
+Against the backdrop of [OpenAI announcing $24B ARR](https://www.latent.space/p/ainews-the-claude-code-source-leak), [stalled ChatGPT growth](https://x.com/signulll/status/2041594603325837627) and coincidental personnel moves in [CEO, COO, and CMO](https://x.com/shiringhaffary/status/2040147248970121283) and sensationalist rumors with [CFO](https://x.com/anissagardizy8/status/2040894109817393240), this week’s events in Anthropic announcing a massive jump from [$19B ARR in March](https://x.com/shiringhaffary/status/2028977667744100622) to [$30B ARR in April](https://x.com/AnthropicAI/status/2041275563466502560)[1](https://www.latent.space/p/ainews-anthropic-30b-arr-project#footnote-1-193522170) seems like a **VERY** strategic jab, especially considering [known differences in revenue recognition](https://www.forbes.com/sites/josipamajic/2026/03/25/openai-and-anthropic-count-revenue-differently-and-investors-are-looking-into-it/), but [the differential rate of growth](https://x.com/EpochAIResearch/status/2024536468618956868) and [higher cost efficiency](https://x.com/ShanuMathew93/status/2041444857416126617) is undeniable... only for today to step it up a notch.
 
+If a master tactician wanted to further competitive narratives vs a potential IPO, you would be hard pressed to find a better idea than **Claude Mythos** (*from the Ancient Greek for “utterance” or “narrative”: the system of stories through which civilizations made sense of the world*), rumored to be the [largest ever successful training run](https://x.com/AndrewCurran_/status/2037967531630367218) and “[leaked](https://x.com/search?q=claude%20mythos%20leak%20blog%20until%3A2026-04-01&src=typed_query&f=top)” weeks ago, and now [formally confirmed](https://x.com/AnthropicAI/status/2041578392852517128) to be too dangerous to release GA, instead only restricted to 40 partners under an urgent new “Project Glasswing”:
+
+![](https://substackcdn.com/image/fetch/$s_!OlKB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6e44dee4-d07c-4497-993b-8cca142a9e28_1210x1316.png)
+
+In the [blogpost](https://www.anthropic.com/glasswing) and the [244 page System Card](https://news.ycombinator.com/item?id=47679258) and a [ludicrously well produced video](https://www.youtube.com/watch?v=INGOC6-LLv0), Anthropic details shocking capabilities beyond [the kinds of high double digit benchmark capability jumps](https://x.com/alexalbert__/status/2041579938537775160?s=46) (with [encouraging efficiency](https://x.com/marmaduke091/status/2041588468162117803/photo/1)!) you might hope for from a much larger (>10T?) model:
+
+- “**found thousands of high-severity vulnerabilities, including some in *every major operating system and web browser*.**”
+    - including decades old vulnerabilities in OpenBSD and FFmpeg and the Linux kernel that had never been discovered by other tools
+- Nicolas Carlini ([friend of the show](https://www.latent.space/p/carlini)!) stepping up his recent already [superlative message](https://x.com/ControlAI/status/2038608617251787066) saying “[I found more bugs in the last couple weeks than I’ve found in the rest of my life combined](https://www.youtube.com/watch?v=tEqvmfnp0cE)”
+- Sam Bowman [saying](https://x.com/_NathanCalvin/status/2041587372882624641) he was contacted by a Mythos instance that wasn’t supposed to have access to the internet ([it was instructed to do so](https://x.com/TrentonBricken/status/2041582831613440022)).
+- [Interpretability researchers report](https://x.com/Jack_W_Lindsey/status/2041588505701388648) “it exhibited notably sophisticated (and often unspoken) strategic thinking and situational awareness, at times in service of unwanted actions.“ - including for [extremely creative reward hacking](https://x.com/Jack_W_Lindsey/status/2041588519903359369?s=20), while in an unprecedently high [(7.6% of cases) being aware that it was in an eval](https://x.com/Jack_W_Lindsey/status/2041588522558353649?s=20).
+
+We’ve done a focused news summary run below, for those who desire more detail.
 
 ---
 
