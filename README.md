@@ -79,6 +79,26 @@ The production site is deployed on Vercel under the `smol-ai` scope as `ainews-w
 vercel --prod --scope smol-ai
 ```
 
+For local deploys, prefer the checked script because it deploys Vercel's prebuilt output with `--archive=tgz` and verifies static assets will be served before uploading:
+
+```sh
+pnpm deploy:vercel
+```
+
+Override the scope if needed:
+
+```sh
+VERCEL_SCOPE=smol-ai pnpm deploy:vercel
+```
+
+The script intentionally verifies that the `ainews-web-2025` project exists under the selected scope before deploying. If the deploy output mentions `swyxs-projects/ainews-web`, it targeted the wrong project and will not update `news.smol.ai`.
+
+The script uses the global Vercel CLI by default on this machine because the repo-local `vercel` devDependency is older. Override the binary if needed:
+
+```sh
+VERCEL_CLI=vercel pnpm deploy:vercel
+```
+
 Important deployment notes:
 
 - `vercel.json` intentionally does not set `outputDirectory`; the `@astrojs/vercel` adapter emits Vercel Build Output under `.vercel/output`.
