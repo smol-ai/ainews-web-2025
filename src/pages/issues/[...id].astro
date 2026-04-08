@@ -1,14 +1,15 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { type CollectionEntry, getCollection, render } from "astro:content";
+import { type CollectionEntry, getCollection, getEntry, render } from "astro:content";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
-import { readingTime } from "@lib/utils";
 import BackToPrevious from "@components/BackToPrevious.astro";
 import PostNavigation from "@components/PostNavigation.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 import Giscus from "@components/Giscus.astro";
 import Lightbox from "@components/Lightbox.astro";
+
+type IssueSummary = Pick<CollectionEntry<"issues">, "id" | "data">;
 
 export async function getStaticPaths() {
   console.log(`[Issue Detail] getStaticPaths - Environment: ${import.meta.env.MODE}`);
@@ -41,7 +42,7 @@ export async function getStaticPaths() {
   // Log detailed path info
   const paths = allIssues.map((post) => ({
     params: { id: post.id },
-    props: { post, year: new Date(post.data.date).getFullYear() },
+    props: { id: post.id, year: new Date(post.data.date).getFullYear() },
   }));
   
   console.log(`[Issue Detail] Generated ${paths.length} paths`);
@@ -59,17 +60,34 @@ export async function getStaticPaths() {
   return paths;
 }
 
+export function GET({ props }: { props: Props }) {
+  if (props.year < 2026) {
+    return Response.redirect(`/frozen-issues/${props.id}.html`, 308);
+  }
+}
+
 type Props = {
-  post: CollectionEntry<"issues">;
+  id: string;
   year: number;
 };
 
-const { post, year } = Astro.props;
+const { id, year } = Astro.props;
+const post = await getEntry("issues", id);
+
+if (!post || post.data.draft) {
+  return Astro.redirect("/404");
+}
+
+if (year < 2026) {
+  return Astro.redirect(`/frozen-issues/${post.id}.html`);
+}
+
 console.log(`[Issue Detail] Rendering issue: ${post.id}, date: ${post.data.date}, year: ${year}`);
 
 // To get the next and previous issues
 // Get all issues
 const posts = (await getCollection("issues"))
+  .map((post): IssueSummary => ({ id: post.id, data: post.data }))
   .filter((p) => !p.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 

@@ -1,0 +1,1971 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>not much happened today</title>
+  <meta name="description" content="**LangSmith** launched the **Insights Agent** with multi-turn evaluation for agent ops and observability, improving failure detection and user intent clustering. **Meta PyTorch** and **Hugging Face** introduced **OpenEnv**, a Gymnasium-style API and hub for reproducible agentic environments supporting distributed training. Discussions highlighted the importance of provider fidelity in agent coding, with **OpenRouter**'s exacto filter improving stability. Builder UX updates include **Google AI Studio**'s Annotation mode for Gemini code changes, **Microsoft**'s Copilot Mode enhancements in Edge, and **OpenAI**'s Shared Projects and Company Knowledge features for ChatGPT Business. **Claude** added project-scoped Memory. In reinforcement learning, **Meta**'s ScaleRL proposes a methodology to predict RL scaling outcomes for LLMs with improved efficiency and stability.">
+  <link rel="canonical" href="https://news.smol.ai/issues/25-10-23-not-much">
+  <link rel="stylesheet" href="/_astro/index.BNfmcC--.css">
+  <link rel="stylesheet" href="/_astro/index.ljMySSss.css">
+  <style>
+    body{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;background:#fff;color:#111;line-height:1.65}
+    main{max-width:820px;margin:0 auto;padding:32px 20px 80px}
+    header{border-bottom:1px solid #e5e5e5;margin-bottom:32px;padding-bottom:24px}
+    a{color:#2563eb;text-decoration:underline;text-underline-offset:2px}
+    h1{font-size:2.25rem;line-height:1.1;margin:0 0 12px}
+    h2{font-size:1.6rem;margin-top:2.2rem}
+    h3{font-size:1.25rem;margin-top:1.8rem}
+    blockquote{border-left:4px solid #ddd;margin-left:0;padding-left:1rem;color:#444}
+    pre{overflow:auto;background:#f6f8fa;padding:1rem;border-radius:8px}
+    code{background:#f6f8fa;padding:.1rem .25rem;border-radius:4px}
+    pre code{padding:0;background:transparent}
+    img{max-width:100%;height:auto}
+    .eyebrow{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:#666;margin-bottom:12px}
+    @media (prefers-color-scheme: dark){body{background:#0a0a0a;color:#f5f5f5}header{border-color:#333}blockquote{border-color:#444;color:#ccc}pre,code{background:#171717}a{color:#93c5fd}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Frozen AI News archive</div>
+      <h1>not much happened today</h1>
+      <p>**LangSmith** launched the **Insights Agent** with multi-turn evaluation for agent ops and observability, improving failure detection and user intent clustering. **Meta PyTorch** and **Hugging Face** introduced **OpenEnv**, a Gymnasium-style API and hub for reproducible agentic environments supporting distributed training. Discussions highlighted the importance of provider fidelity in agent coding, with **OpenRouter**'s exacto filter improving stability. Builder UX updates include **Google AI Studio**'s Annotation mode for Gemini code changes, **Microsoft**'s Copilot Mode enhancements in Edge, and **OpenAI**'s Shared Projects and Company Knowledge features for ChatGPT Business. **Claude** added project-scoped Memory. In reinforcement learning, **Meta**'s ScaleRL proposes a methodology to predict RL scaling outcomes for LLMs with improved efficiency and stability.</p>
+      <p><a href="/issues/25-10-23-not-much">Canonical issue URL</a></p>
+    </header>
+    <article><p><strong>a quiet day</strong></p>
+<blockquote>
+<p>AI News for 10/22/2025-10/23/2025. We checked 12 subreddits, 544 Twitters and 23 Discords (198 channels, and 8784 messages) for you. Estimated reading time saved (at 200wpm): 592 minutes. Our new website is now up with full metadata search and beautiful vibe coded presentation of all past issues. See https://news.smol.ai/ for the full news breakdowns and give us feedback on @smol_ai!</p>
+</blockquote>
+<p>a quiet day.</p>
+<hr>
+<h1>AI Twitter Recap</h1>
+<p><strong>Agent ops, observability, and real-world envs</strong></p>
+<ul>
+<li><strong>LangSmith ships “Insights Agent” + multi-turn evals</strong>: LangChain introduced an in-product agent that scans traces to auto-cluster usage patterns and failure modes, plus multi-turn evals to assess goal completion across full conversations. Teams report near-immediate visibility into silent failure classes and user intent clusters without manual triage. See launch threads and details from <a href="https://twitter.com/LangChainAI/status/1981390300502487370">@LangChainAI</a>, <a href="https://twitter.com/hwchase17/status/1981390508841980332">@hwchase17</a>, and engineering notes from <a href="https://twitter.com/Hacubu/status/1981396190077043162">@Hacubu</a>, <a href="https://twitter.com/ankush_gola11/status/1981408009097265344">@ankush_gola11</a>, <a href="https://twitter.com/WHinthorn/status/1981403256598192451">@WHinthorn</a>, and a hands-on analysis by <a href="https://twitter.com/koylanai/status/1981444604869087624">@koylanai</a>.</li>
+<li><strong>OpenEnv: a shared spec and hub for agent/RL environments</strong>: Meta PyTorch and Hugging Face launched OpenEnv, a Gymnasium-style API (reset/step/state), built for container/server execution with simple HTTP, and a Hub for reproducible “agentic environments” (tools, credentials, sandboxing). Early integrations span TRL, Unsloth, Atari, and community examples (e.g., Poker), aiming to standardize env packaging and scale distributed training. See <a href="https://twitter.com/_lewtun/status/1981380372748521929">@_lewtun</a>, <a href="https://twitter.com/bhutanisanyam1/status/1981377720157351938">@bhutanisanyam1</a>, <a href="https://twitter.com/Thom_Wolf/status/1981396028117901401">@Thom_Wolf</a>, and <a href="https://twitter.com/danielhanchen/status/1981428184215363956">@danielhanchen</a>.</li>
+<li><strong>Agent coding in the wild: provider fidelity matters</strong>: Cline highlights how identical open-weight models behave radically differently across inference endpoints (quantization, tool-call formatting, “thinking” tags), often causing users to blame the model instead of the infra. Their fix combined aggressive system prompt reduction and provider filtering (e.g., OpenRouter’s :exacto) to restore stability. They’re also releasing ClineBench with real-world, interruptible tasks. See <a href="https://twitter.com/cline/status/1981370535176286355">@cline</a>, the breakdown by <a href="https://twitter.com/canvrno/status/1981403534471119330">@canvrno</a>, and <a href="https://twitter.com/pashmerepat/status/1981431374386233840">@pashmerepat</a>.</li>
+<li><strong>Builder UX updates, briefly</strong>: Google AI Studio’s new Annotation mode lets you “mark up” the live app UI and have Gemini apply the code changes (<a href="https://twitter.com/GoogleAIStudio/status/1981375306423554490">announcement</a>, <a href="https://twitter.com/patloeber/status/1981375563685384430">demo</a>). Microsoft rolled out Copilot Mode in Edge (Journeys, Actions), Mico voice UI, and upgraded search grounding inside Copilot (<a href="https://twitter.com/mustafasuleyman/status/1981390345578697199">@mustafasuleyman</a>, <a href="https://twitter.com/yusuf_i_mehdi/status/1981426387958583717">@yusuf_i_mehdi</a>, <a href="https://twitter.com/JordiRib1/status/1981399255576174657">@JordiRib1</a>). OpenAI added Shared Projects and “Company knowledge” (Slack, Drive, GitHub, etc.) for ChatGPT Business/Enterprise/Edu (<a href="https://twitter.com/OpenAI/status/1981432799212249119">@OpenAI</a>, <a href="https://twitter.com/fidjissimo/status/1981437695915413947">@fidjissimo</a>, <a href="https://twitter.com/bradlightcap/status/1981454865454027007">@bradlightcap</a>), while Claude shipped project-scoped Memory (<a href="https://twitter.com/mikeyk/status/1981415275695394852">@mikeyk</a>, <a href="https://twitter.com/alexalbert__/status/1981421146886328778">@alexalbert__</a>). Also worth a look: Firecrawl’s integration guides across LangChain, n8n, and MCP (<a href="https://twitter.com/firecrawl_dev/status/1981390679462072766">@firecrawl_dev</a>), and Vercel’s “useworkflow” for durable async tasks in TypeScript (<a href="https://twitter.com/cramforce/status/1981399119559348290">@cramforce</a>, <a href="https://twitter.com/rauchg/status/1981426366982824387">@rauchg</a>).</li>
+</ul>
+<p><strong>RL for LLMs: scaling laws, stability, and off-policy</strong></p>
+<ul>
+<li><strong>ScaleRL (Meta): toward predictable RL scaling</strong>: New work proposes a recipe and methodology to predict LLM RL outcomes from small runs, with design choices like PipelineRL-8 (async), CISPO loss, FP32 compute, prompt-average loss, batch-level norm, zero-variance filtering, and No-Positive-Resampling. Claims accurate extrapolation up to 100k GPU-hours and better efficiency vs GRPO/DAPO/Magistral. Summaries: <a href="https://twitter.com/TheTuringPost/status/1981487666714800356">@TheTuringPost</a> and paper link therein.</li>
+<li><strong>Avoiding RL collapse via train–inference alignment</strong>: A deep post-mortem shows minor framework/precision divergences (KV cache precision, softmax/norm in FP32, RoPE deltas, attention backend differences, MoE routing stability) accumulate across layers/tokens—especially in MoE and long rollouts—causing collapse. The prescription: per-layer activation logging and alignment across prefill/decode, consistent numerics, and high-precision routing. Read the technical checklist via <a href="https://twitter.com/ZhihuFrontier/status/1981337266523164694">@ZhihuFrontier</a>.</li>
+<li><strong>Memory-based continual learning and off-policy RL</strong>: Memento reframes agent improvement as memory-based online RL over a memory-augmented MDP (case-based reasoning + executor over MCP tools), no weight updates needed (<a href="https://twitter.com/_avichawla/status/1981246733322768780">thread</a> + <a href="https://twitter.com/_avichawla/status/1981246746497077492">repo</a>). BAPO targets off-policy RL for LLMs in partial rollouts and experience reuse settings (<a href="https://twitter.com/Be1ong1/status/1981297924564046007">@Be1ong1</a>). OpenEnv’s standardization (above) plus Unsloth/TRT/Llama ecosystems are converging on shared, reproducible envs for large-scale training (<a href="https://twitter.com/danielhanchen/status/1981428184215363956">@danielhanchen</a>).</li>
+</ul>
+<p><strong>Generative media, OCR/VLM surge, and robotics</strong></p>
+<ul>
+<li><strong>Open creative/video engines</strong>: LTX released LTX-2, an open AI creative engine with synchronized audio+video, native 4K, up to 50 fps and 10s sequences, API-first design, efficient on consumer GPUs; weights coming later this year (<a href="https://twitter.com/ltx_model/status/1981346235194683497">@ltx_model</a>, <a href="https://twitter.com/LTXStudio/status/1981371951894667279">@LTXStudio</a>). Argil announced Atom, emphasizing controllability and temporal consistency with no duration limits, plus a “style Tinder” for look selection (<a href="https://twitter.com/BrivaelLp/status/1981343140196778270">launch</a>, <a href="https://twitter.com/BrivaelLp/status/1981344149862314183">try it</a>).</li>
+<li><strong>Robotics foundation models and OCR/VLMs</strong>: NVIDIA’s Gr00t N1.5 (via LeRobot) is a cross-embodiment action model with vision/language/proprioception inputs and a flow-matching action transformer, trained on real/synthetic/internet-scale data; evaluated on Libero and real hardware (<a href="https://twitter.com/LeRobotHF/status/1981334159801929947">@LeRobotHF</a>). OCR/VLMs are spiking: LightOnOCR-1B (end-to-end VLM) focuses on speed/throughput (<a href="https://twitter.com/staghado/status/1981379888301867299">@staghado</a>), OlmOCR-2 leans on RLVR + binary unit tests for fast iteration (<a href="https://twitter.com/kylelostat/status/1981380820658180310">@kylelostat</a>), and model comparisons are being updated rapidly (<a href="https://twitter.com/mervenoyann/status/1981396054634615280">summary</a>; VLM/OCR releases trending on HF per <a href="https://twitter.com/MaziyarPanahi/status/1981421331053760775">@MaziyarPanahi</a>). Also notable: Runway’s “Apps for Advertising” collection to productize common video/image workflows without complex prompting (<a href="https://twitter.com/runwayml/status/1981380360249159783">announcement</a>).</li>
+</ul>
+<p><strong>Infrastructure and model platforms</strong></p>
+<ul>
+<li><strong>Anthropic x Google TPU mega-deal</strong>: Anthropic plans to expand onto “approximately one million” TPUs and “well over” 1 GW capacity in 2026—tens of billions of dollars in compute—sharply expanding training/inference headroom (<a href="https://twitter.com/AnthropicAI/status/1981460118354219180">@AnthropicAI</a>, <a href="https://twitter.com/AnthropicAI/status/1981460119742533848">follow-up</a>).</li>
+<li><strong>Serving stacks</strong>: vLLM now serves NVIDIA’s Nemotron Nano 2 (9B hybrid Transformer–Mamba reasoning model, open weights, >9T tokens) with a tunable “thinking budget” for predictable cost/latency; vLLM claims up to 6× faster “thinking” token throughput vs similar open dense models, improving agent search/reflection (<a href="https://twitter.com/vllm_project/status/1981553870599049286">@vllm_project</a>). Cerebras released REAP-pruned GLM‑4.6 MoE checkpoints at 25/30/40% compression (FP8, A32B) targeting efficiency with preserved generation quality (<a href="https://twitter.com/vithursant19/status/1981476324045967785">@vithursant19</a>). Ollama published perf tests on NVIDIA Spark firmware + new builds (<a href="https://twitter.com/ollama/status/1981486870963114121">@ollama</a>). Also: Qdrant launched a Vector Search “Academy” (<a href="https://twitter.com/qdrant_engine/status/1981319267749679599">@qdrant_engine</a>), and Modular released Mojo GPU “puzzles” for hands-on CUDA/Metal learning (<a href="https://twitter.com/Modular/status/1981455872137318556">@Modular</a>).</li>
+</ul>
+<p><strong>Routing and serving fidelity</strong></p>
+<ul>
+<li><strong>Lookahead routing for multi-LLM systems</strong>: Proposed “Lookahead” predicts latent representations of potential responses to get a cheap “peek” at what each model would say, enabling response-aware routing without full decode. Reported +7.7% average over SOTA routing across 7 benchmarks, with strong data efficiency (16% of data to reach full perf) and generalization across causal/masked LMs (<a href="https://twitter.com/omarsar0/status/1981360482813710384">@omarsar0</a>).</li>
+<li><strong>Provider variance is a first-class risk</strong>: Cline’s analysis shows silent provider-side changes (quantization, tool-call formatting) can flip outcomes from “works” to “fails,” eroding trust in open-source models. Their mitigation: a 57% system prompt trim (56,499 → 24,111 chars), strict provider filtering (e.g., OpenRouter’s :exacto), and workflow enforcement. Recommendation: require transparent reporting of quantization/impl differences, and test providers as part of model evals (<a href="https://twitter.com/cline/status/1981420111815987494">@cline</a>, <a href="https://twitter.com/canvrno/status/1981403534471119330">@canvrno</a>).</li>
+</ul>
+<p><strong>Research highlights</strong></p>
+<ul>
+<li><strong>Instruction-following during reasoning</strong>: Together’s ReasonIF benchmark finds large reasoning models often violate user constraints mid-chain-of-thought (multilingual formatting, length control), stressing the need for instruction-fidelity checks during generation (<a href="https://twitter.com/togethercompute/status/1981441935303975059">@togethercompute</a>).</li>
+<li><strong>Pretraining “coverage profile” over cross-entropy</strong>: A new preprint argues success comes from coverage metrics—what distributions the model internalizes—rather than loss alone (<a href="https://twitter.com/canondetortugas/status/1981481591177105740">@canondetortugas</a>).</li>
+<li><strong>Invertibility/injectivity of LMs</strong>: A paper claims provable injectivity/invertibility of model mappings (inputs → reps) across large empirical tests, suggesting lossless representation properties with implications for interpretability (<a href="https://twitter.com/HuggingPapers/status/1981452722495787286">@HuggingPapers</a>).</li>
+<li><strong>Optimization dynamics</strong>: New work on muP-based weight decay scaling (independent scaling for hyperparameter transfer) plus empirical commentary on early vs late-phase effects (<a href="https://twitter.com/tonysilveti/status/1981406663086391588">paper</a>, discussion by <a href="https://twitter.com/giffmana/status/1981483376604565969">@giffmana</a>). Also: explorations of representational flow via TunedLens (<a href="https://twitter.com/neuranna/status/1981357907170959799">@neuranna</a>) and notes on linear attention precision from practice (<a href="https://twitter.com/francoisfleuret/status/1981487811489317175">@francoisfleuret</a>).</li>
+</ul>
+<hr>
+<p><strong>Top tweets (by engagement)</strong></p>
+<ul>
+<li><a href="https://twitter.com/AnthropicAI/status/1981460118354219180">Anthropic plans ~1M TPUs and >1 GW capacity in 2026</a> (3.4k+)</li>
+<li><a href="https://twitter.com/OpenAI/status/1981432799212249119">OpenAI: Shared Projects in ChatGPT</a> (3.1k+)</li>
+<li><a href="https://twitter.com/ylecun/status/1981360519442321451">Yann LeCun: “You can’t prove turbojets safe before building them; same for AI.”</a> (2.9k+)</li>
+<li><a href="https://twitter.com/ltx_model/status/1981346235194683497">LTX-2: open-source AI creative engine (4K/50fps, API-first)</a> (2.5k+)</li>
+<li><a href="https://twitter.com/BrivaelLp/status/1981343140196778270">Argil Atom: controllable video with strong consistency</a> (2.3k+)</li>
+<li><a href="https://twitter.com/satyanadella/status/1981466897557196837">Microsoft: “Clippy is back!!”</a> (5.7k+)</li>
+<li><a href="https://twitter.com/levelsio/status/1981351393513615813">EU “AI factories” vs industry GPU scale – compute comparison</a> (4.2k+)</li>
+</ul>
+<hr>
+<h1>AI Reddit Recap</h1>
+<h2>/r/LocalLlama + /r/localLLM Recap</h2>
+<h3>1. AI Agent Fundamentals Tutorial</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1oee1ie/i_spent_months_struggling_to_understand_ai_agents/"><strong>I spent months struggling to understand AI agents. Built a from scratch tutorial so you don't have to.</strong></a> (Activity: 345): <strong>The Reddit post introduces a comprehensive tutorial for building AI agents from scratch, focusing on fundamental understanding rather than relying on frameworks like LangChain or CrewAI. The tutorial, available on <a href="https://github.com/pguso/ai-agents-from-scratch">GitHub</a>, includes 8 progressive examples using plain JavaScript and local LLMs such as Qwen and Llama. It covers key concepts like system prompts, streaming, token control, function calling, memory systems, and the ReAct pattern, aiming to demystify the underlying mechanics of AI agents for developers who prefer a hands-on approach.</strong> One commenter appreciated the clarity and suggested the tutorial be featured in relevant forums like r/LocalLLaMA. Another shared a similar learning experience, emphasizing the importance of understanding tool use and function calling in AI agents, as illustrated in the Mistral documentation.
+<ul>
+<li>mobileJay77 discusses a debugging approach for AI agents, referencing Agno Agi and Mistral documentation. They highlight a method where instead of directly asking the LLM a question, you format the query into a JSON with function names and parameters. This structured approach allows parsing the result, executing the function, and then having the LLM convert it into a complete sentence, emphasizing a systematic way to handle tool use in AI agents.</li>
+</ul>
+</li>
+</ul>
+<h2>Less Technical AI Subreddit Recap</h2>
+<blockquote>
+<p>/r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo</p>
+</blockquote>
+<h3>1. AI and Job Replacement Concerns</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/OpenAI/comments/1oe42et/fair_question/"><strong>Fair question</strong></a> (Activity: 1322): <strong>The image is a meme featuring a tweet from Sen. Bernie Sanders that raises concerns about the potential for AI and robots to replace all jobs, a viewpoint associated with Elon Musk. Sanders questions the implications for workers who may be left without jobs and income, highlighting a significant issue regarding the future of employment in the face of technological advancements. The discussion reflects broader societal concerns about the impact of AI on labor markets and the need for economic systems to adapt to technological changes.</strong> Commenters express skepticism about the complete replacement of jobs by AI and robots, suggesting that if such a scenario were to occur, it would necessitate a fundamental change in economic systems. There is a debate about whether AI will create new jobs or lead to a future where traditional labor is obsolete, requiring new societal structures.</li>
+<li><a href="https://www.reddit.com/r/ChatGPT/comments/1ody5w4/elon_musk_says_ai_will_replace_all_jobs_and_make/"><strong>Elon Musk says AI will replace all jobs and make work optional. Do you think that’s a dream or a disaster?</strong></a> (Activity: 6231): <strong>The image is a tweet from Elon Musk suggesting that AI and robots will replace all jobs, making work optional. This concept implies a future where employment is not necessary for survival, akin to choosing to grow your own vegetables instead of buying them. The idea is that AI could handle mundane tasks, allowing humans to focus on hobbies or creativity. However, this raises concerns about losing purpose, identity, and motivation if traditional jobs disappear.</strong> Commenters express skepticism, questioning if AI will replace high-level positions like CEOs and how the economy would function if people no longer earn money through work. Some dismiss Musk's statement as unrealistic or misleading.</li>
+<li><a href="https://www.reddit.com/r/ChatGPT/comments/1oe42v0/fair_question/"><strong>Fair question</strong></a> (Activity: 790): <strong>The image is a meme featuring a tweet from Sen. Bernie Sanders that highlights concerns about the impact of AI and robotics on employment, echoing sentiments attributed to Elon Musk. Sanders questions the future of workers in a world where AI could potentially replace all jobs, raising issues about income and societal structure. This reflects ongoing debates about the implications of AI on the labor market and the need for potential societal changes to address these challenges.</strong> One comment suggests that a capitalist society cannot function without jobs, implying a need for a massive societal shift where traditional economic structures are replaced. Another comment cynically refers to a dystopian future where humans are seen as surplus, while a third comment suggests redefining 'workers' as simply 'humans' in a post-job world.</li>
+</ul>
+<h3>2. Claude AI Memory Feature Launch</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/ClaudeAI/comments/1oe8td4/claude_now_has_memory_for_pro_and_max_plan_users/"><strong>Claude now has memory for Pro and Max plan users</strong></a> (Activity: 617): <strong>Claude has introduced a memory feature for its Pro and Max plan users, allowing the AI to learn and retain users' workflow patterns, including tool usage, key collaborators, and problem-solving preferences. This feature enables ideas to build over time across conversations, with users having control over what is remembered, the ability to edit or reset memory, and the option to toggle memory on or off. The feature is currently available for Max users and will be rolled out to Pro users over the next two weeks. More details can be found on <a href="https://www.anthropic.com/news/memory">Anthropic's news page</a>.</strong> Some users express skepticism about the utility of AI memory, suggesting the need for standardized tests to evaluate its impact on output quality. Others recommend features like an 'ignore memory' flag for individual chats, and some have experienced issues with inaccurate memory entries affecting chat accuracy.
+<ul>
+<li>A user expressed skepticism about the utility of AI 'Memory', suggesting that it might not improve output quality. They proposed a comparative analysis using standardized tests on accounts with and without memory enabled to evaluate its impact on performance.</li>
+<li>Another user highlighted a potential feature improvement by suggesting an 'ignore memory' flag for individual chats. This would allow users to toggle memory usage on or off, potentially even mid-conversation, to better manage when past interactions should influence current outputs.</li>
+<li>A user reported disabling the memory feature after experiencing issues where Claude referenced incorrect memory entries as factual information, rather than relying on the current chat context. This suggests potential reliability issues with the memory feature, particularly in maintaining accurate and relevant information.</li>
+</ul>
+</li>
+<li><a href="https://www.reddit.com/r/singularity/comments/1oe6twb/genies_experimental_launch_is_imminent/"><strong>Genie's experimental launch is imminent</strong></a> (Activity: 664): <strong>The image appears to be a promotional or conceptual graphic for a new feature or tool called 'Genie,' which is likely related to interactive or creative processes, possibly involving AI. The text 'Let's start by sketching your world' suggests a focus on user-driven content creation, potentially allowing users to describe environments and characters in a text-based format. This aligns with the comment speculation that the feature might initially support 'text to world' capabilities, indicating a possible AI-driven world-building tool. The mention of 'Genie's experimental launch' implies that this is an upcoming or beta feature, possibly linked to Google's AI initiatives, as inferred from the comments referencing 'gemini 3 and genie.'</strong> Commenters express excitement about the potential of 'Genie,' with some hoping for future capabilities like image uploads to bring their worlds to life. There is also a humorous anticipation of AI-generated content surpassing existing entertainment, as seen in the comment about AI GTA 6.</li>
+</ul>
+<h3>3. OpenAI Controversy and Legal Issues</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/OpenAI/comments/1oe48qe/openai_going_full_evil_corp/"><strong>OpenAI going full Evil Corp</strong></a> (Activity: 3168): <strong>The image highlights a controversial legal request by OpenAI in a lawsuit involving the family of Adam Raine, a teenager who died by suicide after using ChatGPT. OpenAI's request for documents related to Raine's memorial, including attendee lists and eulogies, has been criticized as 'intentional harassment' by the family's lawyer. This request is likely part of the discovery process in a wrongful death lawsuit, where OpenAI may be seeking to verify interactions Raine had with ChatGPT, potentially to corroborate chat logs with personal testimonies from the memorial.</strong> Commenters note that while the request may seem intrusive, it is a standard part of legal discovery in a lawsuit. Some suggest that OpenAI is trying to verify the context of Raine's interactions with ChatGPT, especially since he had jailbroken the system.</li>
+<li><a href="https://www.reddit.com/r/ChatGPT/comments/1odxuy6/chatgpt_saved_my_moms_life/"><strong>ChatGPT saved my Moms life.</strong></a> (Activity: 1547): <strong>The post describes how ChatGPT was used to identify serious medical conditions, prompting immediate medical intervention. In one case, it correctly suggested an infection that required emergency care, and in another, it identified a blood clot. These instances highlight the potential of AI tools in providing preliminary medical advice, although they should not replace professional medical consultation. The post emphasizes the importance of using AI as a supplementary tool for urgent health assessments.</strong> Comments reflect a mix of personal anecdotes where ChatGPT provided critical health insights, leading to life-saving interventions. Users shared experiences where ChatGPT's suggestions prompted them to seek further medical advice, which was later validated by healthcare professionals, underscoring the tool's potential utility in emergency scenarios.
+<ul>
+<li>ChuCHuPALX shared a case where ChatGPT was used to identify a misdiagnosis of anxiety in their father, who had a major stroke. By inputting symptoms and medications into ChatGPT, they discovered the error and moved him to another hospital where he received appropriate care. This highlights the potential of AI tools in cross-verifying medical treatments and advocating for patient care.</li>
+<li>touchofmal described how ChatGPT helped identify the cause of involuntary tremors as a side effect of high dosage anti-psychotic drugs, potentially leading to tardive dyskinesia. This prompted a consultation with another psychiatrist, confirming ChatGPT's suggestion. This case underscores the utility of AI in recognizing medication side effects and prompting further medical consultation.</li>
+<li>Single-Intention-535 recounted an experience where ChatGPT advised immediate hospital admission for sepsis symptoms, which were initially dismissed by a doctor. The AI's recommendation led to a timely intervention, preventing a potentially life-threatening situation. This illustrates the role of AI in providing critical second opinions in urgent medical scenarios.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1>AI Discord Recap</h1>
+<blockquote>
+<p>A summary of Summaries of Summaries by X.ai Grok-4</p>
+</blockquote>
+<p><strong>Theme 1. AI Models Buzz with Rumors and Releases</strong></p>
+<ul>
+<li><strong>Gemini 3 Teases Imminent Launch</strong>: Users speculate on <strong>Google's Gemini 3</strong> release after spotting Easter eggs on the Gemini site, with debates on readiness due to hallucination issues. Some predict a 2024 rollout, while others doubt it amid resource demands.</li>
+<li><strong>Sora Evolves with Cameos and Edits</strong>: OpenAI's <strong>Sora</strong> adds <a href="https://video.twimg.com/amplify_video/1981118365541310464/vid/avc1/896x512/hoABFvQ_q78wMp_h.mp4">character cameos</a> starting with animals and toys, plus basic editing tools and Android support. Community excitement focuses on trending UI and social sharing for enhanced video generation.</li>
+<li><strong>LTX-2 Lights Up Local Video Magic</strong>: Lightricks drops <a href="https://xcancel.com/ltx_model/status/1981346235194683497">open-source LTX-2</a> for synced <strong>4K/50 fps</strong> videos with audio, running 10-15 seconds on consumer GPUs. Weights arrive later this year, sparking buzz for pro-grade local AI tools.</li>
+</ul>
+<p><strong>Theme 2. Hardware Hustles and GPU Grips</strong></p>
+<ul>
+<li><strong>Anthropic Grabs Gigawatt TPUs</strong>: Anthropic secures ~<strong>1 million Google Cloud TPUs</strong> and ><strong>1 GW</strong> capacity by 2026 in a tens-of-billions deal, per <a href="https://www.cnbc.com/2025/10/23/anthropic-google-cloud-deal-tpu.html">CNBC report</a>. Speculation swirls on lower API costs and extended context windows from this massive compute boost.</li>
+<li><strong>Mojo Tackles GPU Kernels</strong>: Modular's <a href="https://arxiv.org/abs/2509.21039">Mojo workloads</a> deliver MLIR-based HPC kernels on <strong>NVIDIA H100</strong> and <strong>AMD MI300A</strong> GPUs, matching vendor baselines in four scientific tasks. GitHub repo at <a href="https://github.com/tdehoff/Mojo-workloads">Mojo-workloads</a> fuels portable performance talks.</li>
+<li><strong>Cloud Rentals Trump Local Buys</strong>: Experts advise renting cloud GPUs for dozens of hours before local hardware, estimating breakeven at half a year's rental costs including power and management pains.</li>
+</ul>
+<p><strong>Theme 3. Tools Tangle with Bugs and Boosts</strong></p>
+<ul>
+<li><strong>Unsloth QAT Scores NVIDIA Nod</strong>: Unsloth announces <a href="https://x.com/NVIDIAAIDev/status/1981510959048106262">NVIDIA support</a> for <strong>QAT</strong> release, sparking fine-tuning chats on <strong>Qwen Next 80B</strong>. Dependency fixes include pip sequencing for <strong>transformers 4.57.1</strong> to dodge numpy conflicts.</li>
+<li><strong>DSPy Dodges Async Pitfalls</strong>: Users debug <strong>DSPy async ReAct</strong> modules running synchronously, suggesting <code>await program.acall</code> fixes amid gripes on confusing docs. Token tracking via <a href="https://discord.com/channels/1161519468141355160/1161519469319946286/1431029715511232512">LiteLLM snippets</a> calculates costs from program.history.</li>
+<li><strong>Cursor Auto-Routing Riles Coders</strong>: Cursor's model roulette frustrates with opaque switches between LLMs, prompting <strong>/summarize</strong> hacks to cut context and costs. Background agents lag with half-day bootups, blamed on runaway dev processes.</li>
+</ul>
+<p><strong>Theme 4. Research Rumbles on Scaling and Myths</strong></p>
+<ul>
+<li><strong>Scaling Hits Diminishing Returns</strong>: Paper on <a href="https://arxiv.org/abs/2506.06266">pretraining limits</a> questions if scaling caps out with RL and test-time compute, but interfaces like <strong>ChatGPT</strong> unlock zeitgeists per debates. Critics argue unscaled HCI research, citing <a href="https://x.com/DrJimFan/status/1662117799974809603">Minecraft Voyager</a> as pioneer.</li>
+<li><strong>MythWorx Boasts ARC-AGI Win</strong>: MythWorx claims <strong>100% ARC-AGI</strong> in 4 hours without pre-training during <strong>$100M</strong> fundraise, but lacks validation from organizers. Skeptics draw Theranos parallels, with <a href="https://latent.space/">Greg Kamradt</a> offering official tests.</li>
+<li><strong>Meta-Learning Trumps Atari Rules</strong>: <a href="https://www.nature.com/articles/s41586-025-09761-x">Disco RL paper</a> uses agent experiences to meta-learn rules beating Atari benchmarks, codebase at <a href="https://github.com/google-deepmind/disco_rl">GitHub disco_rl</a>. Sparks talks on cumulative RL evolution.</li>
+</ul>
+<p><strong>Theme 5. Community Gripes on Pricing and Perks</strong></p>
+<ul>
+<li><strong>Perplexity Slashes Referral Rewards</strong>: Users fume over <strong>Perplexity AI</strong> referrals dropping from <strong>$20</strong> to <strong>$5</strong> in the USA, with some denied Pro access entirely. Free Pro hacks via <strong>PayPal</strong> and <strong>Airtel</strong> surface amid debates on speed versus <strong>GPT-4</strong>.</li>
+<li><strong>OpenRouter Fees Fuel Frustrations</strong>: Top-ups hit with <strong>80-cent</strong> service fees, turning <strong>$5.83</strong> payments into <strong>$5</strong> credits, plus <strong>DeepSeek v3.2</strong> outages from depleted balances. Exacto models spark pricing rows, though <strong>glm-4.6</strong> rates hold steady.</li>
+<li><strong>Hugging Face Spaces Charge Credits</strong>: Spaces like <a href="https://huggingface.co/spaces/akhaliq/sora-2">Sora-2</a> now bill user credits, shifting monetization. Updated <a href="https://huggingface.co/kalle07/embedder_collection">RAG bases</a> aid retrieval systems amid gripes on <strong>6GB VRAM</strong> tweaks for <strong>1.1B</strong> models.</li>
+</ul>
+<hr>
+<h1>Discord: High level Discord summaries</h1>
+<h2><a href="https://discord.com/channels/1047197230748151888">Perplexity AI</a> Discord</h2>
+<ul>
+<li><strong>Referral Program Rewards Reduced</strong>: Users are reporting confusion and disappointment regarding the <strong>Perplexity AI referral program</strong>, with some only receiving <strong>$5</strong> instead of the advertised <strong>$20</strong> reward.
+<ul>
+<li>One user noted that the reduced reward may be specific to users in the USA, while others have reported not receiving <strong>Pro</strong> access at all.</li>
+</ul>
+</li>
+<li><strong>Perplexity Debated Against GPT Models</strong>: Users are actively debating the relative strengths of <strong>Perplexity AI</strong> compared to <strong>GPT models</strong> such as <strong>GPT-3.5</strong> and <strong>GPT-4</strong>, with comparisons of both paid and free versions.
+<ul>
+<li>One user asserted that <em>Perplexity is 10x better and faster than chatgpt</em>, while another jokingly suggested acquiring <em>super grok</em>.</li>
+</ul>
+</li>
+<li><strong>Free Perplexity Pro Access Explored</strong>: Members are sharing methods to obtain <strong>Perplexity Pro</strong> subscriptions for free, including promotions via <strong>PayPal</strong> and subscriptions through <strong>Airtel</strong>.
+<ul>
+<li>Additionally, some users are seeking guidance on using included perks and requesting refunds for their subscriptions.</li>
+</ul>
+</li>
+<li><strong>Startup Idea: Automated Content Generation for Gooning</strong>: A user has proposed a startup focused on automating content generation specifically for <em>gooning</em>, suggesting it could generate <em>ni hao fine shyts</em>.
+<ul>
+<li>The proposed startup aims to produce both <em>male and female</em> content, with a particular emphasis on Asian preferences, sparking further discussion among members.</li>
+</ul>
+</li>
+<li><strong>Seeking the Safest Family Vehicle</strong>: A member inquired about the <a href="https://www.perplexity.ai/search/what-s-the-safest-family-vehic-D4glhRttT3WnhFuyInsfvQ#0">safest family vehicle</a> using Perplexity AI.
+<ul>
+<li>No additional details or context were provided regarding the specific requirements or intended use of the vehicle.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1340554757349179412">LMArena</a> Discord</h2>
+<ul>
+<li><strong>Google Gemini 3 release rumored</strong>: Members are speculating about a potential <strong>Gemini 3</strong> release this year after discovering clues and Easter eggs on the Google Gemini website.
+<ul>
+<li>Some users think its launch could be imminent, while others believe it may not be ready for release due to issues like hallucination.</li>
+</ul>
+</li>
+<li><strong>LithiumFlow Model Mysteriously Removed</strong>: <strong>LithiumFlow</strong>, a popular model in the arenas, appears to have been removed, leading to speculation about its potential integration into AI Studio or a forthcoming release.
+<ul>
+<li>Some users expressed disappointment, while others noted it could be prompt-sensitive and produce inconsistent results.</li>
+</ul>
+</li>
+<li><strong>Code Arena's HTML Upgrade Sparks Debate</strong>: The Code Arena received updates featuring a new prompt, and file creations are now in <strong>.HTML</strong> format.
+<ul>
+<li>Members suggest refining or removing the explicit tailwind CSS part from the system prompt, as it may not always be necessary and could lead to issues where models create UI-heavy versions of prompts.</li>
+</ul>
+</li>
+<li><strong>Sora 2 Pro Videos Debunked</strong>: A user posted videos claimed to be generated by <strong>Sora 2 Pro</strong>, sparking a debate about their authenticity.
+<ul>
+<li>Other members quickly debunked this claim, suggesting they are likely from a movie or use Minecraft with RTX mod instead.</li>
+</ul>
+</li>
+<li><strong>NimbleBean Becomes Top Video Generator</strong>: Users are buzzing about the new <strong>NimbleBean</strong> video model, also known as <strong>Kling 2.5 Turbo Standard</strong>, now the top video generator in the arena.
+<ul>
+<li>One user stated that it <em>produces a perfect run</em> and that many wouldn't be able to tell if it's AI or not, noting their key ingredient is the <em>labelling</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1074847526655643750">Cursor Community</a> Discord</h2>
+<ul>
+<li><strong>Cursor's Auto Model Routing Feels Like Roulette</strong>: Users express frustration with <strong>Cursor's auto-routing</strong> to different models, describing it as a <em>roulette</em> that inconsistently picks between smart and dumb LLMs depending on prompt and <strong>context</strong>.
+<ul>
+<li>Users note that the lack of transparency makes it difficult to determine which models are being routed to, with some suggesting <strong>cluster benchmark performance</strong> to estimate performance.</li>
+</ul>
+</li>
+<li><strong>Cursor's Billing Triggers Usage Anxiety</strong>: Users report <strong>Cursor's new plan</strong> pushes them to use the <strong>Auto model</strong>, warning when premium model usage decreases days left, but one user stated they will <em>use premium models to the max as long as I can use premium models unlimited with a delay</em>.
+<ul>
+<li>Members note the <strong>Auto model</strong> uses <strong>Claude 4.5 Sonnet Thinking</strong> and is cheaper, so the suggestion is to use <strong>/summarize</strong> often to lower the context window and reduce costs.</li>
+</ul>
+</li>
+<li><strong>Background Agents Suffer Half-Day Bootups</strong>: Users complain about long <strong>Background Agent</strong> boot times, reporting waits up to <em>half a day</em> for git cloning, repo scanning, and initial linting.
+<ul>
+<li>Members humorously speculate a developer might have accidentally left a <strong>Background Agent</strong> running indefinitely, hinting at inefficient resource management.</li>
+</ul>
+</li>
+<li><strong>Parallel Agent Paralyzed by Usability Issues</strong>: A user struggles to find a viable use case for the <strong>parallel agent</strong>, while another encounters issues enabling MCP to run <code>cursor-agent</code> in a container, citing <em>✗ MCP login failed</em>.
+<ul>
+<li>The error indicates the <strong>MCP server "atlassian"</strong> requires approval before loading, suggesting a potential configuration or permission issue.</li>
+</ul>
+</li>
+<li><strong>UI Error Message Causes Debugging Headaches</strong>: A user suggests clarifying a <strong>UI error message</strong> that caused confusion when a local branch wasn't pushed to the origin, by providing a more explicit message like <em>"The branch {branch name} does not exist in the remote repository."</em>
+<ul>
+<li>The user initially suspected an issue with the <em>environment.json</em> file, highlighting the importance of clear error messaging for efficient debugging.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1179035537009545276">Unsloth AI (Daniel Han)</a> Discord</h2>
+<ul>
+<li><strong>NVIDIA Navigates into Unsloth QAT</strong>: Unsloth <a href="https://x.com/NVIDIAAIDev/status/1981510959048106262">announced NVIDIA's support</a> for their <strong>QAT release</strong>, indicating growing industry interest in quantization-aware training.
+<ul>
+<li>The announcement sparked discussions around fine-tuning <strong>Qwen</strong> next 80b, although some responses were job promotion attempts.</li>
+</ul>
+</li>
+<li><strong>Unsloth Users Unravel Dependency Disasters</strong>: Users installing <strong>Unsloth</strong> reported dependency conflicts, particularly with <code>transformers</code> and <code>numpy</code> versions, causing installation failures.
+<ul>
+<li>Workarounds included specific installation sequences (<code>pip install unsloth</code> then <code>pip install transformers==4.57.1</code>) and using Docker to bypass version incompatibilities.</li>
+</ul>
+</li>
+<li><strong>Karpathy Kudos to Key Token Kickstarts</strong>: Karpathy confessed <a href="https://x.com/karpathy/status/1980397031542989305">on X</a> about almost not using <strong>tmux</strong>.
+<ul>
+<li>He highlighted that <strong>good token initialization</strong> really matters, especially without a long teaching phase.</li>
+</ul>
+</li>
+<li><strong>QAT to GGUF Conversion Coming Soon</strong>: A team member confirmed that converting <strong>QAT (Quantization Aware Training)</strong> models to <strong>GGUF</strong> format isn't currently supported but is planned for the end of the year.
+<ul>
+<li>The new feature will allow low-powered devices to leverage <strong>QAT GGUF</strong> models.</li>
+</ul>
+</li>
+<li><strong>Docker's Llama.cpp Compilation Crash Course</strong>: A user reported that <strong>llama-cpp compilation</strong> failed within the official Unsloth Docker image due to a missing CUDA compiler <strong>nvcc</strong>.
+<ul>
+<li>Troubleshooting suggestions included checking the Unsloth version, CUDA setup, ensuring the NVIDIA container toolkit is correctly installed, and running the container with the <code>--gpus all</code> flag.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/879548962464493619">HuggingFace</a> Discord</h2>
+<ul>
+<li><strong>Deepseek OCR faces scrutiny</strong>: Members discussed that the brand new <a href="https://example.com/deepseek-ocr"><strong>Deepseek OCR</strong></a> requires scrutiny before deployment.
+<ul>
+<li>Members suggested testing and reviewing thoroughly before relying on its performance.</li>
+</ul>
+</li>
+<li><strong>Zero3 config goes boom!</strong>: A member reported exploding <strong>GPU RAM</strong> when training a <strong>1b Gemma 3</strong> model with max seq size of 8k using <strong>LoRA</strong> with r of 8, flash attention, deepspeed zero 3 and bf16 precision with batch size of 1.
+<ul>
+<li>Another member suggested that their <strong>Zero3 config</strong> might be busted, implying a configuration error.</li>
+</ul>
+</li>
+<li><strong>Tiny LLM gets roasted</strong>: One member shared a <a href="https://github.com/ker2x/MytinyLLM">GitHub repo</a> for their <strong>Tiny LLM</strong> built from scratch, designed as a learning exercise.
+<ul>
+<li>Another member dismissed the contribution, stating that a <strong>400k parameter model</strong> is just a toy and can't learn anything meaningful out of the box.</li>
+</ul>
+</li>
+<li><strong>Hugging Face Spaces Wants Your Credits Now</strong>: A member noted that some <strong>Hugging Face Spaces</strong>, including those for <strong>Sora</strong> and <strong>Veo 3.1</strong>, now require payment to use <em>your</em> credits, see <a href="https://huggingface.co/spaces/akhaliq/sora-2">Sora space</a>.
+<ul>
+<li>They linked to an example of a <strong>Sora space</strong> with a warning indicating that usage now costs money, noting a shift in the platform's monetization strategy.</li>
+</ul>
+</li>
+<li><strong>RAG Base Updated on Hugging Face</strong>: A member shared an updated <strong>RAG</strong> base for everyone who works with <strong>RAG</strong> at <a href="https://huggingface.co/kalle07/embedder_collection">huggingface.co/kalle07/embedder_collection</a> and <a href="https://huggingface.co/Pacific-Prime/pacific-prime">huggingface.co/Pacific-Prime/pacific-prime</a>.
+<ul>
+<li>The update aims to provide a better starting point for building <strong>Retrieval-Augmented Generation</strong> systems.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/974519864045756446">OpenAI</a> Discord</h2>
+<ul>
+<li><strong>ChatGPT Extension Sees All</strong>: OpenAI launched a <a href="https://video.twimg.com/amplify_video/1981054579648368640/vid/avc1/1280x720/YmADR8pumfl1Zwin.mp4"><strong>ChatGPT Chrome extension</strong></a> enabling <strong>ChatGPT</strong> to view the current page and provide instant, relevant answers without switching tabs.
+<ul>
+<li>This integration aims to streamline information access and enhance user experience by contextualizing <strong>ChatGPT's</strong> responses.</li>
+</ul>
+</li>
+<li><strong>Sora to Premiere Character Cameos</strong>: <strong>Sora</strong> is set to introduce <a href="https://video.twimg.com/amplify_video/1981118365541310464/vid/avc1/896x512/hoABFvQ_q78wMp_h.mp4">character cameos</a>, starting with animals and toys, allowing users to feature familiar characters in generated videos.
+<ul>
+<li>Upcoming features include a trending cameos UI, basic video editing tools, social sharing options, feed quality improvements, and an <strong>Android</strong> version of <strong>Sora</strong>.</li>
+</ul>
+</li>
+<li><strong>Calculators Get Chatty with GPT</strong>: A <strong>Wired</strong> article and <a href="https://www.youtube.com/watch?v=olcZdTRdnQg">YouTube video</a> highlighted the integration of <strong>GPT on a TI-84 calculator</strong> using an <strong>ESP32</strong>, opening doors for AI-assisted problem-solving.
+<ul>
+<li>The community humorously debated whether using such a setup to cheat on math tests deserves credit for technical ingenuity.</li>
+</ul>
+</li>
+<li><strong>Unofficial ChatGPT Extension Fixes Bugs</strong>: A user shared a link to a <a href="https://www.reddit.com/r/ChatGPT/">new unofficial ChatGPT extension</a> called <strong>ChatGPT LightSession</strong>, reporting that it fixed the <em>red text errors</em> and sped up their work.
+<ul>
+<li>Another user warned to <em>be careful with this extension</em>, recommending to stick with publicly accessible content to keep your private information safe.</li>
+</ul>
+</li>
+<li><strong>AI Voice Cloning Goes DIY</strong>: A member shared a <a href="https://www.instructables.com/Create-Your-Own-AI-Voice-Agent-Using-EchoKit-ESP32/">DIY voice AI project</a> that allows users to clone voices using <strong>EchoKit ESP32</strong>.
+<ul>
+<li>This open-source project facilitates training AI on custom voices for various applications, including video generation, with ongoing discussions about its potential uses and ethical implications.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1161519468141355160">DSPy</a> Discord</h2>
+<ul>
+<li><strong>Gemini Fails at Structured Outputs in DSPy</strong>: A user reported that <strong>Gemini models</strong> with the <code>responses</code> parameter in <strong>DSPy</strong> are throwing warnings and errors when used with structured output adapters, specifically a <em>"Stub file not found"</em> error.
+<ul>
+<li>Ongoing discussions focus on enabling structured outputs for <strong>Gemini models</strong> to ensure type safety in Python using <strong>DSPy</strong>.</li>
+</ul>
+</li>
+<li><strong>Refine Loophole: Premature Termination</strong>: A user discovered that <code>dspy.Refine</code> does not necessarily run for all N iterations, but stops early if the <code>reward_fn</code> exceeds the set <code>threshold</code>, contrary to initial assumptions from the <a href="https://dspy.ai/tutorials/output-refinement/best-of-n-and-refine/?h=refine#refine">documentation</a>.
+<ul>
+<li>The user provided a <a href="https://github.com/stanfordnlp/dspy/blob/main/dspy/predict/refine.py#L142">demo</a> illustrating that the refine loop breaks if the <code>reward_fn</code> surpasses a threshold, noting that <code>Refine</code> performs a deep copy of the module each time.</li>
+</ul>
+</li>
+<li><strong>DSPy's Async ReAct: Not So Async?</strong>: A user is facing issues with running two <code>ReAct</code> modules asynchronously using <code>dspy.asyncify</code>, noting that they appear to be executing synchronously, and sought guidance on proper implementation.
+<ul>
+<li>A member suggested using <code>await program.acall</code> instead of <code>await program.aforward</code> as well as implementing <code>async def aforward(...)</code> within the module, noting <strong>DSPy's</strong> confusing documentation.</li>
+</ul>
+</li>
+<li><strong>DSPy Tracks Tokens and Costs</strong>: Users are discussing how to track token usage and costs in <strong>DSPy</strong>, with one member sharing a <a href="https://discord.com/channels/1161519468141355160/1161519469319946286/1431029715511232512">code snippet</a> to calculate costs using <code>program.history</code> and <strong>LiteLLM</strong> model pricing.
+<ul>
+<li>They clarified that the <code>if "usage"</code> condition ensures cost calculation is based on actual model usage, accounting for caching and the member noted that <code>usage</code> in <code>program.history</code> is similar to <code>result.get_lm_usage()</code>.</li>
+</ul>
+</li>
+<li><strong>Customization Causes Conniptions</strong>: A user expressed frustration with <strong>DSPy's</strong> complexity, especially regarding accessing <code>ReAct</code> module outputs, suggesting that it is easier to implement LLM calls in a custom loop for better control and UI integration.
+<ul>
+<li>Users explored alternative approaches, like subclassing and reimplementing the <code>aforward</code> method in a <code>ReAct</code> module as shown in <a href="https://cdn.discordapp.com/attachments/1431066467897577492/1431067652763156666/message.txt?ex=68fc111c&#x26;is=68fabf9c&#x26;hm=956afd7b5a72fb6ea1288e1d2656952b4e64d31baf63e1feccda13f151437ba5&#x26;">this code snippet</a>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1087530497313357884">Modular (Mojo 🔥)</a> Discord</h2>
+<ul>
+<li><strong>Mojo ❤️ Rust: C ABI Bridges the Gap</strong>: Mojo can communicate over the <strong>C ABI</strong> with Rust, C++, Zig, or any other language that speaks <strong>C ABI</strong>, similar to how a host C/C++/Rust process embeds a python interpreter.
+<ul>
+<li>However, using the <strong>C ABI</strong> requires too much manual intervention, motivating the search for solutions that make packages available like they are native to the platform.</li>
+</ul>
+</li>
+<li><strong>Python Power: Mojo's Runtime Secrets 🤫</strong>: Mojo interacts with <strong>CPython</strong> similarly to how a host C/C++/Rust process embeds a python interpreter, allowing it to leverage the Python ecosystem; the goal is to have <strong>zero runtime overhead</strong> if possible.
+<ul>
+<li>This is especially important when proving out things for making hot loop code go faster.</li>
+</ul>
+</li>
+<li><strong>Type System Talk: Mojo Flexes its Power 💪</strong>: Mojo's type system is powerful enough that Dependent Haskell is probably the most popular language that can express everything Mojo can, while a language with a more powerful type system can consume code from a language with a less powerful type system.
+<ul>
+<li>To make calling Mojo functions feel native from another language, the other language needs a type system more powerful than or equally as powerful as Mojo's, potentially including dependent and linear types.</li>
+</ul>
+</li>
+<li><strong>Interop Insights: A Dynamism vs. Statism Duel ⚖️</strong>: Using a compiled language provides both a measure of dynamism and the ability for the Mojo code to get type system guarantees back from your code, which massively cuts down on the type introspection.
+<ul>
+<li>If a host language is static and compiled, a new language implemented on top of it should also be static and compiled to minimize overhead, as static and compiled languages can be compiled to emit dynamic code if the dynamic language is more expressive.</li>
+</ul>
+</li>
+<li><strong>Mojo Misses Out on Pipeline Operator (for Now)</strong>: A member noted that Mojo lacks a pipeline character or function composition like <code>|></code> or <code>>></code> in other languages, and since Mojo isn't stable, the team likely won't consider it soon, but pointed to <a href="https://github.com/modular/modular/issues/213">this github issue</a> as a related feature request.
+<ul>
+<li>Another member noted that Python lacks it.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1091220969173028894">OpenRouter</a> Discord</h2>
+<ul>
+<li><strong>DeepSeek Experiences Credit Crunch</strong>: The <strong>DeepSeek/deepseek-v3.2-exp</strong> model faced availability issues on OpenRouter due to depleted credits, resulting in a <strong>402 Proxy Error</strong> for users.
+<ul>
+<li>Some users initially mistook the error as account-specific, highlighting confusion around error messaging.</li>
+</ul>
+</li>
+<li><strong>Top-Up Timing Troubles</strong>: Users reported delays in OpenRouter credit top-ups and the depletion of <strong>DeepSeek</strong> provider balances.
+<ul>
+<li>One user wryly commented that resolution would occur <em>"until Toven reads it."</em></li>
+</ul>
+</li>
+<li><strong>OpenRouter Top-Up Fees Exposed</strong>: Users scrutinized service fees for adding credits to OpenRouter, noting that a $5.83 USD payment yielded only $5 in credits.
+<ul>
+<li>The additional $0.83 covers service fees, approximately <strong>80c (US)</strong>.</li>
+</ul>
+</li>
+<li><strong>Exacto Models Spark Pricing Debate</strong>: The implementation of <strong>exacto</strong> models as separate API variants raised concerns about potential pricing increases and fragmented token/app statistics.
+<ul>
+<li>Despite worries about higher costs, <strong>glm-4.6</strong> prices remain consistent for <strong>exacto</strong> and <strong>non-exacto</strong> endpoints; however, a member argued that this approach <em>splits token and app stats</em>.</li>
+</ul>
+</li>
+<li><strong>OpenRouter API Hit With Access Problems</strong>: Users encountered login issues and <strong>401 unauthorized errors</strong> on the OpenRouter completions endpoint.
+<ul>
+<li>The problem may be tool-specific, with cURL requests succeeding while other tools failed.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/822583790773862470">Latent Space</a> Discord</h2>
+<ul>
+<li><strong>Linear Shifts to Self-Driving SaaS</strong>: Linear is pivoting from reactive chatbot UIs to <strong>proactive AI</strong>, termed <em>"self-driving SaaS"</em>, to automatically advance tasks.
+<ul>
+<li>Commenters lauded the bold strategy, drawing parallels to <strong>Level-5 autonomy</strong>, where software handles tasks autonomously.</li>
+</ul>
+</li>
+<li><strong>Airbnb Applauds Alibaba’s Qwen</strong>: <strong>Airbnb’s CEO</strong> highlighted <strong>Alibaba’s Qwen models</strong> for being faster and more economical than <strong>OpenAI’s latest</strong>, showcasing <strong>Cerebras’ 2,500-tokens/sec inference</strong>.
+<ul>
+<li>Discussions revolved around the diminishing significance of marginal accuracy gains compared to cost reduction, with security, sovereignty, and hardware evolutions emerging as pivotal considerations.</li>
+</ul>
+</li>
+<li><strong>MythWorx's ARC-AGI Claim Faces Scrutiny</strong>: Organizers from the <strong>ARC Prize</strong> have not confirmed <strong>MythWorx’s</strong> claim of achieving <strong>100%</strong> on <strong>ARC-AGI</strong>, which was announced during a <strong>$100M</strong> fundraise.
+<ul>
+<li><strong>Greg Kamradt</strong> offered to conduct an official test if MythWorx submits accurately, yet skepticism prevails due to lacking validation and parallels with <strong>Theranos-like publicity</strong>.</li>
+</ul>
+</li>
+<li><strong>Anthropic Secures Massive TPU Capacity</strong>: Anthropic revealed a deal to incorporate <strong>~1 million Google Cloud TPUs</strong> and <strong>>1 GW</strong> capacity by <strong>2026</strong>, generating excitement about computational capabilities.
+<ul>
+<li>Reactions involved speculation on whether this will reduce API costs, increase usage, or extend context windows; the deal is valued in the tens of billions and will bring over a gigawatt of AI compute online in 2026 (<a href="https://www.cnbc.com/2025/10/23/anthropic-google-cloud-deal-tpu.html">CNBC Article</a>, <a href="https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services">Anthropic Announcement</a>).</li>
+</ul>
+</li>
+<li><strong>Lightricks Lights Up Local Latent LTX-2</strong>: <strong>Lightricks</strong> released <strong>LTX-2</strong>, an open-source creative engine that creates <a href="https://xcancel.com/ltx_model/status/1981346235194683497">synchronized <strong>4K/50 fps</strong> video with audio</a> for ~10–15 s on consumer GPUs.
+<ul>
+<li>The community is energized by prospects for democratizing pro-grade AI video tools, with weights expected later this year and an API Playground currently live.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1189498204333543425">GPU MODE</a> Discord</h2>
+<ul>
+<li><strong>Mojos HPC Kernels Hit GPUs</strong>: <a href="https://arxiv.org/abs/2509.21039">Mojo</a> and <a href="https://github.com/tdehoff/Mojo-workloads">Mojo Workloads</a> is now being used for <strong>MLIR-Based Performance-Portable HPC Science Kernels on GPUs</strong>.
+<ul>
+<li>The paper targets four scientific workloads comparing their performance against vendor baselines on <strong>NVIDIA H100</strong> and <strong>AMD MI300A GPUs</strong>.</li>
+</ul>
+</li>
+<li><strong>SMEM Descriptor Decoded for WGMMA</strong>: A user shared a custom implementation of shared memory (<strong>SMEM</strong>) descriptors for use with <strong>WGMMA</strong> instructions, including <code>matrix_descriptor_encode</code> and <code>make_smem_descriptor</code> functions and is derived from the <a href="https://docs.nvidia.com/cuda/parallel-thread-execution/#matrix-descriptor-format">PTX guide</a>.
+<ul>
+<li>Another member suggested looking into DeepSeek-AI's DeepGEMM <a href="https://github.com/deepseek-ai/DeepGEMM/blob/c9f8b34dcdacc20aa746b786f983492c51072870/deep_gemm/include/deep_gemm/impls/sm90_fp8_gemm_1d2d.cuh#L275">implementation</a> for handling similar issues with memory fences and WGMMA.</li>
+</ul>
+</li>
+<li><strong>Rent from the Cloud before you commit</strong>: A member suggests to <em>rent from the cloud</em> until you've spent at least a few dozen hours doing serious work to evaluate the costs and benefits.
+<ul>
+<li>They estimate that the <em>breakeven point</em> for investing in local hardware is <em>at least half a year of cloud rental time</em>.</li>
+</ul>
+</li>
+<li><strong>HQQ+ Moves to Dropbox</strong>: The <strong>MobiusML</strong> domain is migrating to <strong>Dropbox</strong> today, causing the original links to break, where users should now replace <code>mobiusml</code> with <code>dropbox</code> for both blog posts and GitHub repositories.
+<ul>
+<li>A member was looking for a working link to the <strong>HQQ+ blog post</strong> after noticing that <a href="https://mobiusml.github.io/1bit_blog/">https://mobiusml.github.io/1bit_blog/</a> was down.</li>
+</ul>
+</li>
+<li><strong>Torch/XLA Takes a New Turn, Still Relevant</strong>: Despite a <em>new direction</em> with <a href="https://github.com/pytorch/xla/issues/9684">torch/xla</a>, the <strong>Lazy Tensor Paper</strong> remains relevant for picograd in shoehorning an eager mode into tinygrad to lower the ramp.
+<ul>
+<li>The <a href="https://arxiv.org/pdf/2102.13267">Lazy Tensor Paper</a> explores integrating an eager mode into tinygrad using picograd.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/729741769192767510">Eleuther</a> Discord</h2>
+<ul>
+<li><strong>Discord Introduces 'Pending' Member Status</strong>: Discord introduced a 'pending' status for new members joining the server, activated after the <em>'join'</em> option was added to the server tag.
+<ul>
+<li>Members confirmed being 'pending' before moderator approval; speculation arose about whether this manual approval process is still in place.</li>
+</ul>
+</li>
+<li><strong>AI Network like Internet Proposed</strong>: A member proposed an <strong>AI network</strong> similar to the internet, where thousands of models communicate via a protocol to answer questions.
+<ul>
+<li>Another member requested concrete examples of such a system's implementation and potential architectures.</li>
+</ul>
+</li>
+<li><strong>New Model Claims Incredible Performance</strong>: A member claimed their <strong>50M</strong> parameter model achieved a <strong>0.223</strong> loss, while their <strong>1B</strong> parameter model has a validation loss of <strong>~0.197</strong>, resulting in a perplexity of <strong>~1.22</strong>, attaching an <a href="https://cdn.discordapp.com/attachments/747850033994662000/1431083629748027402/image.png?ex=68fc1ffd&#x26;is=68face7d&#x26;hm=c347fd3fa1d4dae87e30579f0723253fd5c83a7197c57f6583d66e7d2ba5ca67&#x26;">image</a>.
+<ul>
+<li>Other members expressed skepticism, suggesting that the model has a bug or that the author was seeking attention rather than help and suggested they debug via inference.</li>
+</ul>
+</li>
+<li><strong>Meta-Learning RL Discovers Novel Rules</strong>: A <a href="https://www.nature.com/articles/s41586-025-09761-x">paper</a> explored <strong>meta-learning</strong> from cumulative experiences of agents across environments, yielding a rule that surpasses existing ones on the <strong>Atari benchmark</strong>.
+<ul>
+<li>The codebase for this project is available on <a href="https://github.com/google-deepmind/disco_rl">GitHub</a>.</li>
+</ul>
+</li>
+<li><strong>Causal Abstraction Craze Calms</strong>: Members inquired about the lack of recent discussions on <strong>Causal Abstractions</strong> (see <a href="https://arxiv.org/abs/2301.04709">paper</a>), a popular topic in 2023.
+<ul>
+<li>It was noted that the framework is still useful but suffers from implicit linearity assumptions (<a href="https://arxiv.org/abs/2507.08802">paper</a>), difficulty in choosing the right level of abstraction (<a href="https://arxiv.org/abs/2408.01416">survey</a>), and multiple valid abstractions for a single behavior (<a href="https://arxiv.org/abs/2502.20914">paper</a>).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/714501525455634453">Yannick Kilcher</a> Discord</h2>
+<ul>
+<li><strong>Django Splits into Microservices</strong>: A member is considering splitting a Django app that uses <strong>bi-encoders, cross-encoders, YOLO models</strong>, into a separate microservice to offload inference and deal with potential request queuing with limited VRAM (32GB).
+<ul>
+<li>In response, another member suggested scheduling requests sequentially or running them in parallel, encouraging them to leverage parallel RPC calls to maximize the GPU's capabilities.</li>
+</ul>
+</li>
+<li><strong>Meta's Weight Hardness Hack</strong>: Inspired by real neuron connections, a member linked <a href="https://x.com/realJessyLin/status/1980662516285075762">Meta's implementation</a> to use an additional scalar on each weight to store its <em>hardness</em> or <em>softness</em>.
+<ul>
+<li>The concept involves adjusting weights based on the <em>fruit</em> of the computation, strengthening beneficial connections and weakening detrimental ones, effectively learning without modifying irreversible connections.</li>
+</ul>
+</li>
+<li><strong>MythWox Mysteriously Masters ARC-AGI</strong>: A member shared a link to <a href="https://mythworx.ai/capabilities/">MythWorx.ai</a>, claiming <strong>100%</strong> on <strong>ARC-AGI 1</strong> with no pre-training within 4 hours.
+<ul>
+<li>The member expressed skepticism, questioning the legitimacy of the capabilities, with another reacting with confused disbelief.</li>
+</ul>
+</li>
+<li><strong>Jsonnet Juggling for Functional Configs</strong>: Members debated whether <a href="https://jsonnet.org/">Jsonnet</a> is overengineered, while another appreciated its tailorability and usage by <strong>DeepSeek</strong> for configurations.
+<ul>
+<li>One member likened it to <strong>Nix</strong>, defining a hash table using functional programming, questioning its readability for JSON. Another offered to discuss <strong>Jsonnet</strong>/<strong>VinePPO</strong> and then provided links to <a href="https://icml.cc/virtual/2025/poster/45526">ICML</a>, <a href="https://openreview.net/forum?id=5mJrGtXVwz">OpenReview</a>, <a href="https://arxiv.org/abs/2410.01679">ArXiv</a>, and <a href="https://github.com/McGill-NLP/VinePPO">GitHub</a> related to it.</li>
+</ul>
+</li>
+<li><strong>Brave Browses 'Unseeable' Injections</strong>: A member shared a <a href="https://brave.com/blog/unseeable-prompt-injections/">Brave Browser blog post</a> discussing <strong>unseeable prompt injections</strong>.
+<ul>
+<li>No further discussion was added.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1053877538025386074">Nous Research AI</a> Discord</h2>
+<ul>
+<li><strong>Models do Jamaican accent</strong>: A user reported that the <strong>4o model</strong> still does a <strong>Jamaican accent</strong> in voice mode, while <strong>model 5</strong> claims to do it but doesn't change the voice at all.
+<ul>
+<li>The user specified that this is <em>one of the few metrics I care about</em>.</li>
+</ul>
+</li>
+<li><strong>Debate of Open Sourcing with Bugs</strong>: A member is considering open-sourcing their software but is debating whether to delay the release to fix bugs or ship it with annoying garbage.
+<ul>
+<li>Their app is designed to let anyone train AI models locally without SaaS, and they plan to include a <strong>Weeb Sam finetune</strong> consisting of <strong>40k images</strong>.</li>
+</ul>
+</li>
+<li><strong>ChatGPT Gets Seahorse Scare</strong>: A user shared a link to a <a href="https://fxtwitter.com/ltx_model/status/1981346235194683497">tweet</a> about a <strong>ChatGPT bug</strong> that occurs when sending the prompt <em>is there an emoji of a seahorse?</em>.
+<ul>
+<li>One commenter speculated that it looks like an <strong>Unreal Engine/Runway/Wan competitor</strong> in the making.</li>
+</ul>
+</li>
+<li><strong>New Paper Tests Scaling Limit</strong>: A member shared a <a href="https://arxiv.org/abs/2506.06266">paper</a> and questioned if <strong>scaling</strong> has hit its limit, considering diminishing returns from <strong>pretraining</strong>, <strong>test-time compute</strong>, and <strong>RL</strong> scaling.
+<ul>
+<li>Other members disagreed, saying no, <em>RL, test time compute, etc are only one component of scaling AI</em>.</li>
+</ul>
+</li>
+<li><strong>Interface Plays Key Role in Scaling</strong>: A member argued that the <strong>interface</strong>, <strong>workflows</strong>, and <strong>infra</strong> are extremely important components of scaling AI, as the <strong>ChatGPT interface</strong> unlocked a research zeitgeist.
+<ul>
+<li>They pointed out that <em>Claude is calling their new prompt system 'Skills' but really this was pioneered (and coined) by Minecraft Voyager years ago</em> and cited <a href="https://x.com/DrJimFan/status/1662117799974809603">Jim Fan's tweet</a>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1369594130807787570">Moonshot AI (Kimi K-2)</a> Discord</h2>
+<ul>
+<li><strong>AlphaXiv Maps AI Paper Origins</strong>: A member shared <a href="https://www.alphaxiv.org/labs/geo-trends">AlphaXiv</a>, a tool that tracks the geographic origins of <strong>AI research papers</strong>.
+<ul>
+<li>Another member was timed out for advertising, with repeated violations.</li>
+</ul>
+</li>
+<li><strong>Kimi K2 Cheaper with Questionable Chutes</strong>: A member asked about <strong>Chutes</strong> compared to <strong>Moonshot AI</strong> for <strong>Kimi K2</strong>, citing the quality and data policy.
+<ul>
+<li>Another member claimed that <strong>Chutes</strong> trains on user data without a data policy and has less reliable uptime; its tool call accuracy is half that of the official API, memed on <a href="https://www.reddit.com/r/LocalLLaMA/comments/1da7j6g/did_you_know_you_can_ban_chutes_openrouter_go_to/">Reddit</a>.</li>
+</ul>
+</li>
+<li><strong>Home Server Versions Controlled via Git?</strong>: A member inquired about using <strong>Git</strong> to manage home server versions to aid with resetting after breakages.
+<ul>
+<li>The community ignored this user's concerns.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1348819876348825620">Manus.im Discord</a> Discord</h2>
+<ul>
+<li><strong>Hybrid Architecture Debated</strong>: A user proposed a <em>hybrid architecture</em> using local compute and storage to avoid wasting available resources.
+<ul>
+<li>The suggestion involved building large native apps, processing datasets locally, and running resource-intensive AI models on local hardware.</li>
+</ul>
+</li>
+<li><strong>Pro Plan Users Allege Bait and Switch</strong>: A user voiced discontent over the <strong>Pro plan</strong> now featuring credit limits, claiming it was initially advertised as <em>unlimited</em>.
+<ul>
+<li>The user, feeling it unfair for the paid month, inquired about others wanting to test the pro features.</li>
+</ul>
+</li>
+<li><strong>Manus Launches Logic Arenas App</strong>: A user noted that Manus created a full-stack <strong>AI Arenas app</strong> (<a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430878322073796628/2025-10-23_12-15.jpg?ex=68fc0988&#x26;is=68fab808&#x26;hm=efef49879866f78ee43ea3c281eca345ab2bcf800110c561cc4e81bc723f5219&#x26;">image</a>) (<em>not yet tested</em>) within an hour using minimal credits.
+<ul>
+<li>The <strong>Logic Arenas</strong> app comprises <em>Heart vs Mind</em>, <em>Dual Parents</em>, and <em>Moral Court</em> arenas and utilizes <strong>Kotlin</strong>, <strong>Ktor</strong>, <strong>Redis</strong>, <strong>Jetpack Compose</strong>, and <strong>Material 3</strong>, amounting to ~7k LOC across 28 files.</li>
+</ul>
+</li>
+<li><strong>Manus Code Blasted for Deprecated Modules</strong>: A user observed that <strong>Manus</strong> could be improved by using non-deprecated code, modules, and plugins, though this requires a lot of work.
+<ul>
+<li>Despite <strong>Manus</strong> touting a beautiful Material 3 dark theme (<a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430917287363350728/2025-10-23_14-51.jpg?ex=68fc2dd2&#x26;is=68fadc52&#x26;hm=4e68706e60e030a96d99d157b3abdacc9d2b99077639e85f545cb96a0620d614&#x26;">image1</a>, <a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430917287707279391/2025-10-23_14-47.jpg?ex=68fc2dd2&#x26;is=68fadc52&#x26;hm=04f22a7c26e41abcb491ebfcbdcb2c4ec8b05ad504eeb504de7aa4c2bc80f3f4&#x26;">image2</a>), the initial Android app design seemed outdated; however, Claude Code improved it with one prompt (<a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430971270219956234/2025-10-23_18-26_1.jpg?ex=68fbb758&#x26;is=68fa65d8&#x26;hm=d73323d08753d88efdd123cd9be451622fbb989859f6077c67b76d45598ebfcd&#x26;">image</a>).</li>
+</ul>
+</li>
+<li><strong>Manus Botches Homework</strong>: A user claimed that <strong>Manus</strong> failed to correctly solve a homework assignment, despite the user providing similar examples.
+<ul>
+<li>The user mentioned that two notebooks were supplied but the generated PDF was disorganized, underscoring <strong>Manus'</strong> inability to complete this task.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1131200896827654144">aider (Paul Gauthier)</a> Discord</h2>
+<ul>
+<li><strong>Aider API Keys Cheaper?</strong>: A user inquired about using <strong>aider</strong> with API keys to match <strong>gemini-cli's</strong> cost-effectiveness, using <code>/tokens</code> to manage keys, clear history, and watch context size.
+<ul>
+<li>They noted <strong>gemini-cli's</strong> plan at around <strong>$20 USD</strong> monthly offers nominally <strong>1500</strong> requests daily with a <strong>1M token</strong> context window, outperforming <strong>aider's</strong> interface with file system operations like <code>grep</code> but lacking a repo map.</li>
+</ul>
+</li>
+<li><strong>Playwright struggles on Fedora</strong>: A user asked if anyone got <strong>Playwright</strong> working on <strong>Fedora</strong>.
+<ul>
+<li>No workarounds or solutions were provided.</li>
+</ul>
+</li>
+<li><strong>Community eyes Aider's Future</strong>: Members want to know the future direction of <strong>Aider</strong> and are waiting to hear from its creator, <strong>Paul Gauthier</strong>.
+<ul>
+<li>The community looks forward to upcoming developments and strategic decisions for the project.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1068976834382925865">tinygrad (George Hotz)</a> Discord</h2>
+<ul>
+<li><strong>tinygrad Slides into pytorchconf!</strong>: A <strong>tinygrad</strong> <a href="https://cdn.discordapp.com/attachments/1068976834928193609/1430758414744686655/HDjLLqQ.png?ex=68fc429c&#x26;is=68faf11c&#x26;hm=13bea9c27e9b130accbe594e495dbd0e6813cb720aaabb5bb6f2375495a385b5&#x26;">slide</a> appeared at <strong>pytorchconf</strong>, showcasing <strong>tinygrad</strong>'s significance in the PyTorch ecosystem.
+<ul>
+<li>This highlights <strong>tinygrad</strong>'s growing adoption and relevance in the broader machine learning community.</li>
+</ul>
+</li>
+<li><strong>tinygrad Boosts Dev Team</strong>: A member inquired about documentation for becoming a <strong>tinygrad</strong> developer, signaling interest in contributing to the project.
+<ul>
+<li>This suggests potential growth and expansion of the <strong>tinygrad</strong> contributor base.</li>
+</ul>
+</li>
+<li><strong>JITBEAM Focuses Jitted Kernels</strong>: A member noted that <strong>JITBEAM</strong> only beams the <em>jitted kernels</em>.
+<ul>
+<li>Further context on the specifics of "beaming" and the implications for <strong>tinygrad</strong>'s performance were not provided.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2><a href="https://discord.com/channels/1358869848138059966">MCP Contributors (Official)</a> Discord</h2>
+<ul>
+<li><strong>Block Compares MCP Tools to Ogres</strong>: A member shared a <a href="https://engineering.block.xyz/blog/build-mcp-tools-like-ogres-with-layers">blog post from Block</a> comparing building <strong>MCP tools</strong> to building ogres <em>with layers</em>.
+<ul>
+<li>The comparison alludes to the layered approach for building robust and complex systems.</li>
+</ul>
+</li>
+<li><strong>MCP Website Requests Meeting Schedules</strong>: A reminder was posted for <strong>working group leads</strong> to post their upcoming meeting times on the <a href="https://meet.modelcontextprotocol.io/">Model Context Protocol website</a>.
+<ul>
+<li>Meeting organizers can clone a previous event from the <em>Past Events</em> section to speed up the scheduling process.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>The <strong>LLM Agents (Berkeley MOOC) Discord</strong> has no new messages. If this guild has been quiet for too long, let us know and we will remove it.</p>
+<hr>
+<p>The <strong>MLOps @Chipro Discord</strong> has no new messages. If this guild has been quiet for too long, let us know and we will remove it.</p>
+<hr>
+<p>The <strong>Windsurf Discord</strong> has no new messages. If this guild has been quiet for too long, let us know and we will remove it.</p>
+<hr>
+<p>You are receiving this email because you opted in via our site.</p>
+<p>Want to change how you receive these emails?
+You can <a href="%7B%7B%7BRESEND_UNSUBSCRIBE_URL%7D%7D%7D">unsubscribe</a> from this list.</p>
+<hr>
+<h1>Discord: Detailed by-Channel summaries and links</h1>
+<h3><strong>Perplexity AI ▷ #<a href="https://discord.com/channels/1047197230748151888/1047649527299055688/1430677331239899186">general</a></strong> (1422 messages🔥🔥🔥):</h3>
+<blockquote>
+<p><code>Referral Program, GPT models, Free Pro Accounts, Gooning startup</code></p>
+</blockquote>
+<ul>
+<li><strong>Referral Rewards Cause Confusion</strong>: Users are expressing confusion about the referral program, with some reporting they only received <strong>$5</strong> instead of the advertised <strong>$20</strong> and some not getting Pro at all.
+<ul>
+<li>One user stated that it used to be $20 before, but <em>now they are only giving $5 from USA</em>.</li>
+</ul>
+</li>
+<li><strong>Users Debate Perplexity vs GPT</strong>: Users are debating the capabilities of <strong>GPT models</strong> (3.5 vs 4) and discussing the differences between paid and free versions.
+<ul>
+<li>One user pointed out that <em>Perplexity is 10x better and faster then chatgpt</em>, while another joked they <em>should have bought super grok</em>.</li>
+</ul>
+</li>
+<li><strong>Pro Perks &#x26; Free Accounts</strong>: Users discuss ways to get <strong>Perplexity Pro</strong> for free, like through a <strong>PayPal</strong> promotion or an <strong>Airtel</strong> subscription.
+<ul>
+<li>There are also some users requesting refunds and asking how to use perks.</li>
+</ul>
+</li>
+<li><strong>Enthusiasts Announce Gooning Startup</strong>: A user proposed a <strong>gooning machine startup</strong> that automates content generation, <em>which will show ni hao fine shyts for gooning</em>.
+<ul>
+<li>Members discussed the startup which aims to create both <em>male and female</em> content with a focus on Asian preferences.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Perplexity AI ▷ #<a href="https://discord.com/channels/1047197230748151888/1054944216876331118/1430984118543450173">sharing</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>safest family vehicle, computational evidence</code></p>
+</blockquote>
+<ul>
+<li><strong>Members seek safest family vehicle</strong>: A member asked Perplexity about the <a href="https://www.perplexity.ai/search/what-s-the-safest-family-vehic-D4glhRttT3WnhFuyInsfvQ#0">safest family vehicle</a>.
+<ul>
+<li>No additional context or discussion was provided.</li>
+</ul>
+</li>
+<li><strong>Evidence found computationally</strong>: A member linked to a Perplexity page about <a href="https://www.perplexity.ai/page/computational-evidence-for-rec-MZ.AjbR6SlGMwJpoCK7cCA">computational evidence</a>.
+<ul>
+<li>No additional context or discussion was provided.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>LMArena ▷ #<a href="https://discord.com/channels/1340554757349179412/1340554757827461211/1430681312255148144">general</a></strong> (1333 messages🔥🔥🔥):</h3>
+<blockquote>
+<p><code>Gemini 3 Release, LithiumFlow Removal, Code Arena System Prompt, Sora 2 Pro, NimbleBean Kling 2.5</code></p>
+</blockquote>
+<ul>
+<li><strong>Google Gemini 3 rumored to release soon!</strong>: Members are speculating about a potential <strong>Gemini 3</strong> release this year after discovering clues and Easter eggs on the Google Gemini website, although Logan hasn't tweeted yet.
+<ul>
+<li>Some users think its launch could be imminent, while others believe it may not be ready for release due to issues like hallucination and the need for extensive resources to run the world simulator.</li>
+</ul>
+</li>
+<li><strong>LithiumFlow vanishes from Arena</strong>: <strong>LithiumFlow</strong>, a popular model in the arenas, appears to have been removed, leading to speculation about its potential integration into AI Studio or a forthcoming release.
+<ul>
+<li>Some users expressed disappointment, while others noted it could be prompt-sensitive and produce inconsistent results.</li>
+</ul>
+</li>
+<li><strong>Code Arena revamps with new prompt &#x26; .HTML</strong>: The Code Arena got new updates with new prompt and file creations being in <strong>.HTML</strong>.
+<ul>
+<li>Members suggest refining or removing the explicit tailwind CSS part from the system prompt in the new Code Arena, as it may not always be necessary and could lead to issues where models create UI-heavy versions of prompts.</li>
+</ul>
+</li>
+<li><strong>Debate sparks over New Sora 2 Pro videos</strong>: A user posted some videos and claimed them to be generated by <strong>Sora 2 Pro</strong>, sparking a debate about their authenticity.
+<ul>
+<li>However, other members quickly debunked this claim and noted that these are more likely from some movie or use Minecraft with RTX mod.</li>
+</ul>
+</li>
+<li><strong>NimbleBean now the best video generator</strong>: Users discussed about the new <strong>NimbleBean</strong> video model on the arena, AKA <strong>Kling 2.5 Turbo Standard</strong> model, which is now the top video generator.
+<ul>
+<li>One user stated that it <em>produces a perfect run</em> and that many wouldn't be able to tell if it's AI or not, noting their key ingredient is the <em>labelling</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Cursor Community ▷ #<a href="https://discord.com/channels/1074847526655643750/1074847527708393565/1430677736669843496">general</a></strong> (411 messages🔥🔥🔥):</h3>
+<blockquote>
+<p><code>Cursor Auto Model Routing, Cursor Usage and Billing, Version Control in Cursor, Background Agents gone wild, GCP deployment</code></p>
+</blockquote>
+<ul>
+<li><strong>Auto Model Roulette?</strong>: Users discuss tricks to avoid auto-routing to less capable models, noting it feels like a <em>roulette</em> whether a smart or dumb model is chosen, with suspicion that the choice depends on prompt and <strong>context</strong>.
+<ul>
+<li>Members suggest that it's hard to know which LLMs are being routed to and that the only option is to <em>cluster benchmark performance</em> to estimate the performance.</li>
+</ul>
+</li>
+<li><strong>Usage and Billing gotchas</strong>: Cursor's new plan is trying to force users to use the Auto model, and warn you if you use it too much, decreasing the days left for usage, forcing you to use the terrible Auto model, but one member says that <em>as long as I can use premium models unlimited with a delay I am gonna keep using em to the max</em>.
+<ul>
+<li>Members warn that <strong>Auto model</strong> uses <strong>Claude 4.5 Sonnet Thinking</strong> and it charges much less, so it would be a great way to save money, but if that is not an option members suggest using <strong>/summarize</strong> every 2 prompts to lower the context.</li>
+</ul>
+</li>
+<li><strong>Background Agents Cooked!</strong>: Users complain that background agents can take <em>half a day</em> to boot up, git clone the repo, scan the entire repo, make changes, lint, etc etc etc.
+<ul>
+<li>Members joke that <em>most likely one of the devs used background agents and forgot about it</em>.</li>
+</ul>
+</li>
+<li><strong>Parallel Agent, more like Paralyzed Agent</strong>: A member reports struggling to find a use case for the parallel agent, and another has issues enabling MCP to run <code>cursor-agent</code> in a container.
+<ul>
+<li>When running <code>cursor-agent mcp login atlassian</code> they get: <em>✗ MCP login failed. Failed to load MCP 'atlassian': MCP server "atlassian" has not been approved. Please approve it before loading.</em></li>
+</ul>
+</li>
+<li><strong>When Gemini 3.0?</strong>: With Gemini 3.0 release in the horizon, it may devalue Cursor
+<ul>
+<li>Some members speculate that <em>Gemini won’t beat Sonnet 4.5 thinking</em></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Cursor Community ▷ #<a href="https://discord.com/channels/1074847526655643750/1367213641027551352/1430708078936064150">background-agents</a></strong> (5 messages):</h3>
+<blockquote>
+<p><code>Debugging Cursor's UI Errors, Cursor PRs in review mode, Background Agent API Key</code></p>
+</blockquote>
+<ul>
+<li><strong>UI Error Leads to Head-Scratching</strong>: A user suggested updating a <strong>UI error message</strong> that caused confusion when a local branch wasn't pushed to the origin, suggesting a more explicit message like <em>"The branch {branch name} does not exist in the remote repository."</em>
+<ul>
+<li>The user spent time debugging because they thought <em>environment.json</em> wasn't checked in, and a coffee would have helped.</li>
+</ul>
+</li>
+<li><strong>Cursor's Remote Branch Logic Questioned</strong>: A user found the error message clear, noting that the <strong>remote branch</strong> lacking an <em>environment.json</em> file implies local changes must be merged.
+<ul>
+<li>The user stated <em>"Remote branch does not have an environment.json ... won't work unless you merge your local changes into it"</em>.</li>
+</ul>
+</li>
+<li><strong>Ready-to-Review PRs Sought</strong>: A user inquired if it's possible to configure <strong>Cursor</strong> to open <strong>Pull Requests</strong> directly in <em>ready-to-review mode</em> instead of draft mode.
+<ul>
+<li>No answers were provided.</li>
+</ul>
+</li>
+<li><strong>Background Agent API Key Origin</strong>: A user asked about the source of the <strong>API key</strong> used for <strong>Background Agent status reports</strong>.
+<ul>
+<li>No answers were provided.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Unsloth AI (Daniel Han) ▷ #<a href="https://discord.com/channels/1179035537009545276/1179035537529643040/1430725021923410010">general</a></strong> (264 messages🔥🔥):</h3>
+<blockquote>
+<p><code>UnslothTrainer parameters, LoRA in Unsloth, QAT model conversion, GRPO Training, Unsloth VLLM</code></p>
+</blockquote>
+<ul>
+<li><strong>Tweaking UnslothTrainer For Overfitting</strong>: A user asked if increasing <code>max_grad_norm</code> would improve overfitting with <a href="https://github.com/unslothai/unsloth">UnslothTrainer</a>, seeking to memorize training data and remove watermarks, with initial attempts showing loss decreasing from <strong>2.0 to 0.2</strong>.
+<ul>
+<li>Suggestions included setting <code>weight_decay</code> to 0, using higher learning rates (<strong>5e-4</strong>), and adjusting other parameters to encourage memorization, such as reducing or eliminating warmup and using a constant learning rate schedule.</li>
+</ul>
+</li>
+<li><strong>Applying LoRA to lm_head in Unsloth</strong>: A user inquired about applying <strong>LoRA</strong> to the <code>lm_head</code> layer in <strong>Unsloth</strong>, noting that their initial attempts resulted in the layer being wrapped as a <code>ModulesToSaveWrapper</code> instead of injecting a <strong>LoRA</strong> module.
+<ul>
+<li>The user sought clarification on whether <strong>lm_head LoRA</strong> is supported in the latest <strong>Unsloth</strong> version and if there's a recommended approach for fine-tuning newly added tokens via <strong>LoRA</strong>.</li>
+</ul>
+</li>
+<li><strong>Converting QAT Models to GGUF</strong>: A user inquired about converting <strong>QAT (Quantization Aware Training)</strong> models to <strong>GGUF</strong> format for use on low-power devices.
+<ul>
+<li>A team member responded that <strong>QAT to GGUF</strong> conversion isn't currently supported but is planned for the end of the year, highlighting the potential benefits of running <strong>QAT GGUF</strong> models on low-power devices.</li>
+</ul>
+</li>
+<li><strong>Dependency Issues Plague Unsloth Installations</strong>: Multiple users reported encountering dependency conflicts when installing <strong>Unsloth</strong>, specifically with <code>transformers</code> and <code>numpy</code> versions.
+<ul>
+<li>Suggested workarounds included specific installation sequences (<code>pip install unsloth</code> then <code>pip install transformers==4.57.1</code>) and alternative installation methods like Docker due to version incompatibilities.</li>
+</ul>
+</li>
+<li><strong>NVIDIA Backs Unsloth QAT</strong>: Unsloth <a href="https://x.com/NVIDIAAIDev/status/1981510959048106262">announced NVIDIA's support</a> for their <strong>QAT release</strong>.
+<ul>
+<li>The tweet was met with job promotion attempts and follow up questions regarding finetuning qwen next 80b.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Unsloth AI (Daniel Han) ▷ #<a href="https://discord.com/channels/1179035537009545276/1179039724355211325/1430928966801424404">introduce-yourself</a></strong> (6 messages):</h3>
+<blockquote>
+<p><code>New member introductions, LLM Training Interest</code></p>
+</blockquote>
+<ul>
+<li><strong>New Members Join Community</strong>: Several new members introduced themselves, with interests ranging from training <strong>tiny models</strong> to experimenting with existing ones.
+<ul>
+<li>One member admitted to joining because they see <strong>Unsloth AI</strong> <em>"everywhere"</em>.</li>
+</ul>
+</li>
+<li><strong>LLM Training Sparks Interest</strong>: A new member named Daryl with <strong>no prior experience</strong> in training LLMs expressed interest in learning from the community.
+<ul>
+<li>He stated that it's <em>"something i'm interested in and would love to learn around like-minded people"</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Unsloth AI (Daniel Han) ▷ #<a href="https://discord.com/channels/1179035537009545276/1179039861576056922/1430696763047804949">off-topic</a></strong> (54 messages🔥):</h3>
+<blockquote>
+<p><code>Karpathy No Tmux, Voice generated LLM prosody tokens, Humanoid Robot Temperature, GPU Credits from Alts</code></p>
+</blockquote>
+<ul>
+<li><strong>Karpathy Confesses No Tmux Temptation</strong>: Karpathy confessed <a href="https://x.com/karpathy/status/1980397031542989305">on X</a> about nearly falling for the temptation of not using <strong>tmux</strong> again.
+<ul>
+<li>He emphasized that <strong>good token initialization</strong> really matters, especially without a long teaching phase.</li>
+</ul>
+</li>
+<li><strong>LLM's Voice Prosody Token Tricks</strong>: Members discussed <strong>finetuning an LLM</strong> with specific <strong>prosody tokens</strong> before voice generation to control the tone.
+<ul>
+<li>For example, using tokens like <code>&#x3C;p3> Hello! &#x3C;/p3></code> to denote different levels of emphasis and tone in the generated speech.</li>
+</ul>
+</li>
+<li><strong>Roboticists Debate Humanoid's Heat Management</strong>: A member asked if maintaining a constant temperature of <strong>36.6°C</strong> in a humanoid robot would hurt internal hardware, considering CPUs/GPUs often run around <strong>60°C</strong>.
+<ul>
+<li>Another member responded that electronics are generally much more <strong>temperature-tolerant</strong> than biological systems, humorously noting that meatbags start failing at 42.5°C.</li>
+</ul>
+</li>
+<li><strong>GPU Credit Alt Account Antics</strong>: One user joked about making <strong>alt accounts</strong> to get extra <strong>GPU credits</strong>.
+<ul>
+<li>Another user responded with a <a href="https://tenor.com/view/chris-pratt-mind-blown-parks-and-rec-surprised-shookt-gif-9771169">Chris Pratt mind-blown GIF</a>, likening it to MMO's 101.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Unsloth AI (Daniel Han) ▷ #<a href="https://discord.com/channels/1179035537009545276/1179777624986357780/1430678328297263176">help</a></strong> (72 messages🔥🔥):</h3>
+<blockquote>
+<p><code>Qwen3 finetuning issues, LoRA on lm_head layer, Gemma 4b model training instability, llama-cpp compilation failure in Docker, Fine-tuning Qwen/Qwen3-VL-30B-A3B-Instruct</code></p>
+</blockquote>
+<ul>
+<li><strong>German Dialect Qwen3 Model Stumbles</strong>: A user reported difficulties fine-tuning a <strong>Qwen3-4B-Instruct-2507</strong> model to translate German into a specific dialect, facing issues with the model either losing its German capabilities or getting stuck in repetitive loops.
+<ul>
+<li>Reducing the <strong>learning rate</strong> helped mitigate the language corruption, but the model still struggled to learn the dialect, indicating potential data or training configuration issues.</li>
+</ul>
+</li>
+<li><strong>LoRA on lm_head Layer Leaves User Lost</strong>: A user experimenting with applying <strong>LoRA</strong> to the <strong>lm_head</strong> layer in Unsloth found that it only wrapped the layer instead of injecting LoRA.
+<ul>
+<li>Another member suggested that <strong>lm_head LoRA</strong> is unnecessary.</li>
+</ul>
+</li>
+<li><strong>Gemma 4b Model Grows Glitchy</strong>: A user encountered instability in their <strong>Gemma 4b</strong> model after attempting to fix code to avoid repetition during SFT training with Unsloth.
+<ul>
+<li>Despite resetting the kernel and starting with a fresh model and dataset, the model continued to produce implausible answers, suggesting potential persistent interference or data contamination.</li>
+</ul>
+</li>
+<li><strong>Docker Llama.cpp Derails</strong>: A user reported that <strong>llama-cpp compilation</strong> failed within the official Unsloth Docker image due to a missing CUDA compiler <strong>nvcc</strong>.
+<ul>
+<li>Troubleshooting suggestions included checking the Unsloth version, CUDA setup, and ensuring the NVIDIA container toolkit is correctly installed and the container is run with the <code>--gpus all</code> flag.</li>
+</ul>
+</li>
+<li><strong>Vision Model Finetuning Frustration</strong>: A user encountered an error when trying to fine-tune <strong>Qwen/Qwen3-VL-30B-A3B-Instruct</strong> using the Unsloth notebook for Vision models, specifically during the trainer.train() step.
+<ul>
+<li>It was suggested that disabling compilation might resolve the issue by setting <code>os.environ["UNSLOTH_COMPILE_DISABLE"] = "1"</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Unsloth AI (Daniel Han) ▷ #<a href="https://discord.com/channels/1179035537009545276/1257011997250424842/1431050839975526471">research</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>AGI Definition, Cattel-Horn-Carroll test</code></p>
+</blockquote>
+<ul>
+<li><strong>AGI Definition Paper Posted</strong>: A member shared a link to the <a href="https://www.agidefinition.ai/paper.pdf">AGI Definition paper</a>.</li>
+<li><strong>Cattel-Horn-Carroll test on LLMs</strong>: A member mentioned that it was <em>pretty smart</em> to apply the <strong>Cattel-Horn-Carroll test</strong> to LLMs.</li>
+</ul>
+<hr>
+<h3><strong>HuggingFace ▷ #<a href="https://discord.com/channels/879548962464493619/879548962464493622/1430682469912416407">general</a></strong> (287 messages🔥🔥):</h3>
+<blockquote>
+<p><code>OCR Models, DeepSpeed Zero 3 Configuration, Tiny LLM Training, Hugging Face Spaces Pricing, AI Prompt Standardization</code></p>
+</blockquote>
+<ul>
+<li><strong>Deepseek OCR is shiny and new</strong>: Members discussed that <a href="https://example.com/deepseek-ocr"><strong>Deepseek OCR</strong></a> is brand new and suggested to go through its reviews before using.</li>
+<li><strong>Zero3 config might be busted!</strong>: A member was experiencing exploding <strong>GPU RAM</strong> when training a <strong>1b Gemma 3</strong> model with max seq size of 8k using <strong>LoRA</strong> with r of 8, flash attention, deepspeed zero 3 and bf16 precision with batch size of 1.
+<ul>
+<li>Another member suggested that their <strong>Zero3 config</strong> might be busted.</li>
+</ul>
+</li>
+<li><strong>Tiny LLM for Great Justice</strong>: One member shared a <a href="https://github.com/ker2x/MytinyLLM">GitHub repo</a> for their <strong>Tiny LLM</strong> built from scratch, designed as a learning exercise.
+<ul>
+<li>Another member pointed out that a <strong>400k parameter model</strong> is just a toy and can't learn anything meaningful out of the box.</li>
+</ul>
+</li>
+<li><strong>Hugging Face Spaces now cost money?!</strong>: A member noted that some <strong>Hugging Face Spaces</strong>, including those for <strong>Sora</strong> and <strong>Veo 3.1</strong>, now require payment to use, using <em>your</em> credits.
+<ul>
+<li>They linked to an example of a <a href="https://huggingface.co/spaces/akhaliq/sora-2">Sora space</a> with a warning indicating that usage now costs money.</li>
+</ul>
+</li>
+<li><strong>Standardizing Prompts Like Pseudocode</strong>: A member wondered if standardizing <strong>AI prompts</strong> into a <strong>pseudocode</strong> that's more efficient than JSON could improve AI performance.
+<ul>
+<li>Another member shared <a href="https://huggingface.co/datasets/John6666/forum2/blob/main/ai_prompt_standardization_1.md">GitHub repositories</a> with similar purposes.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>HuggingFace ▷ #<a href="https://discord.com/channels/879548962464493619/898619964095860757/">today-im-learning</a></strong> (1 messages):</h3>
+<p>waffles1: Ah yes this is totally legit</p>
+<hr>
+<h3><strong>HuggingFace ▷ #<a href="https://discord.com/channels/879548962464493619/897390720388825149/1430893934212550756">i-made-this</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>RAG, raw-text-searcher, embedder_collection, pacific-prime, 6GB VRAM optimization</code></p>
+</blockquote>
+<ul>
+<li><strong>RAG base gets an Update</strong>: A member shared an updated, good base for everyone who works with <strong>RAG</strong>, found at <a href="https://huggingface.co/kalle07/embedder_collection">huggingface.co/kalle07/embedder_collection</a> and <a href="https://huggingface.co/Pacific-Prime/pacific-prime">huggingface.co/Pacific-Prime/pacific-prime</a>.</li>
+<li><strong>Raw Text Searcher for Buzzwords Announced</strong>: A member is working on a smart <strong>raw-text-searcher</strong> for buzzwords including <strong>AND/OR, wildcard</strong> to cut out snippets around matches like embedders do but not similarity and asked who likes testing?</li>
+<li><strong>6GB VRAM optimized for 1.1B Model</strong>: A member reported a <strong>10% gain</strong> pushing the limit for <strong>6GB VRAM</strong>, now able to run a <strong>1.1B</strong> model from scratch with a <strong>10% win</strong>.</li>
+</ul>
+<hr>
+<h3><strong>HuggingFace ▷ #<a href="https://discord.com/channels/879548962464493619/922424143113232404/">computer-vision</a></strong> (1 messages):</h3>
+<p>its_nmt05: I used vannilla clip just switched to general prompts</p>
+<hr>
+<h3><strong>HuggingFace ▷ #<a href="https://discord.com/channels/879548962464493619/1313889336907010110/1431018915139555471">smol-course</a></strong> (3 messages):</h3>
+<blockquote>
+<p><code>NanoChat Course, Karpathy Educational Material, nanochat-students org</code></p>
+</blockquote>
+<ul>
+<li><strong>Members ponder NanoChat Course viability</strong>: A member asked if a <strong>Hugging Face course on NanoChat</strong> would be useful.
+<ul>
+<li>Another member expressed confusion about the goal of it, as well as noting the absence of a new channel in the Discord server.</li>
+</ul>
+</li>
+<li><strong>Community Shares Models on the Hub</strong>: A member shared that they started a community on the Hub so that people could share their models, and they are working on porting the architecture to transformers so people can use them more broadly.
+<ul>
+<li>The same member also mentioned that they think <strong>Karpathy</strong> is going to release more educational material, so it makes sense to follow that.</li>
+</ul>
+</li>
+<li><strong>Clarifying the Goal of nanochat-students org</strong>: A member inquired about whether another member meant the Karpathy server or HF, and the goal of <strong>NanoChat</strong> or the <strong>nanochat-students org</strong> on the Hub.
+<ul>
+<li>Another member said they believed that most people are GPU poor, so using <strong>8xH100</strong> is overkill.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>HuggingFace ▷ #<a href="https://discord.com/channels/879548962464493619/1329142738440028273/1430763200608993481">agents-course</a></strong> (5 messages):</h3>
+<blockquote>
+<p><code>HuggingFace Learn Agents Course, Quiz Errors, Qwen Model Issues</code></p>
+</blockquote>
+<ul>
+<li><strong>HuggingFace Agents Course throws Quiz Errors</strong>: Users report errors in the final quiz section of the <a href="https://huggingface.co/learn/agents-course/unit2/smolagents/final_quiz">HuggingFace Learn Agents Course</a>.
+<ul>
+<li>The error message indicates a <strong>404 Client Error: Not Found</strong> when generating feedback, specifically with the <strong>Qwen/Qwen2.5-Coder-32B-Instruct</strong> model.</li>
+</ul>
+</li>
+<li><strong>Unit 4 Questions Lead to 404 Error</strong>: One user reports getting a <strong>404 error</strong> when trying to download <strong>Unit 4 questions</strong> in the HuggingFace Learn Agents Course.</li>
+</ul>
+<hr>
+<h3><strong>OpenAI ▷ #<a href="https://discord.com/channels/974519864045756446/977259063052234752/1430860721717248143">annnouncements</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>ChatGPT Chrome Extension, Sora Roadmap Updates, Sora Character Cameos, Sora Video Editing, Sora Social Experience</code></p>
+</blockquote>
+<ul>
+<li><strong>ChatGPT Extension gives Instant Answers</strong>: OpenAI released a <a href="https://video.twimg.com/amplify_video/1981054579648368640/vid/avc1/1280x720/YmADR8pumfl1Zwin.mp4">ChatGPT Chrome extension</a> that allows <strong>ChatGPT</strong> to see the page you're on to give instant, accurate answers without tab-switching.</li>
+<li><strong>Sora Roadmap Update: Cameos, Editing, Social, Android</strong>: <strong>Sora</strong> is adding <a href="https://video.twimg.com/amplify_video/1981118365541310464/vid/avc1/896x512/hoABFvQ_q78wMp_h.mp4">character cameos</a>, starting with dogs, guinea pigs, and favorite stuffed toys, and cameos of generated characters from <strong>Sora</strong> videos.
+<ul>
+<li>They are updating the generation UI to show the latest trending cameos in real time, adding basic video editing capabilities like stitching multiple clips, exploring new ways to use <strong>Sora</strong> with friends, improving the feed quality and moderation, and working on the <strong>Android</strong> version of <strong>Sora</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>OpenAI ▷ #<a href="https://discord.com/channels/974519864045756446/998381918976479273/1430679139626647572">ai-discussions</a></strong> (216 messages🔥🔥):</h3>
+<blockquote>
+<p><code>Sora access, AI Education Software, Meta Glasses, AI Assisted calculators, Voice AI cloning</code></p>
+</blockquote>
+<ul>
+<li><strong>Users Inquire on Sora Generation</strong>: Members discussed how to access <strong>Sora AI</strong> for video generation, mentioning the need for <strong>text prompts</strong> and suggesting tools like <strong>Comet</strong> or <strong>Atlas</strong> to assist with the process.</li>
+<li><strong>Discussion on AI Assisted Education Software</strong>: A member mentioned working on <strong>AI-assisted university education software</strong>, while others discussed the potential pitfalls and successes of such ventures, including a $5M investment by <strong>LAUSD</strong> in an AI project during COVID.</li>
+<li><strong>Meta Glasses Spark Interest Despite Hurdles</strong>: Some members expressed interest in the <strong>new Meta glasses</strong>, noting the difficulty in purchasing them due to the appointment requirement, with one member also mentioning the illegality of concealed recording devices in their country.
+<ul>
+<li>The discussion touched on the legality of recording devices, with references to <strong>two-party consent laws</strong> and the potential for fines and imprisonment for illegal concealed recording in places like <strong>Australia</strong>.</li>
+</ul>
+</li>
+<li><strong>AI Powers TI-84 Calculator</strong>: A member linked a <strong>Wired</strong> article and a <a href="https://www.youtube.com/watch?v=olcZdTRdnQg">YouTube video</a> showcasing <strong>GPT running on a TI-84 calculator</strong> via an <strong>ESP32</strong>, suggesting that hacking a calculator with AI to cheat on math should warrant credit and a high grade.
+<ul>
+<li>The article was <a href="https://www.wired.com/story/chatgpt-on-a-ti-84-graphing-calculator-cheating-device/">ChatGPT on a TI-84 Graphing Calculator Is a Cheating Device</a></li>
+</ul>
+</li>
+<li><strong>Voice Cloning DIY Project</strong>: A member shared a <a href="https://www.instructables.com/Create-Your-Own-AI-Voice-Agent-Using-EchoKit-ESP32/">DIY voice AI project</a> that allows users to clone voices using <strong>EchoKit ESP32</strong>, with discussions about training AI on custom voices for video generation.
+<ul>
+<li>The project is open source.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>OpenAI ▷ #<a href="https://discord.com/channels/974519864045756446/1001151820170801244/1430713328703115425">gpt-4-discussions</a></strong> (26 messages🔥):</h3>
+<blockquote>
+<p><code>ChatGPT LightSession Extension, Muon as Adam replacement, OpenAI Support Issues, 503 Error on OpenAI</code></p>
+</blockquote>
+<ul>
+<li><strong>ChatGPT LightSession Extension Shared</strong>: A user shared a <a href="https://www.reddit.com/r/ChatGPT/">new unofficial ChatGPT extension</a> called <strong>ChatGPT LightSession</strong>, noting it is still in beta and accessible via a shared link.
+<ul>
+<li>Another user warned to <em>be careful with this extension</em>, recommending to stick with publicly accessible content to keep your private information safe.</li>
+</ul>
+</li>
+<li><strong>LightSession Extension fixes red text errors</strong>: A user reported that the <strong>LightSession extension</strong> fixed the <em>red text errors</em> and sped up their work.
+<ul>
+<li>They said that the best configuration statement they have found for chat is <em>ask clarifying questions</em>.</li>
+</ul>
+</li>
+<li><strong>Muon versus Adam Optimizers</strong>: A user asked about <strong>Muon</strong> as a potential replacement for the <strong>Adam</strong> optimizer.
+<ul>
+<li>No one responded to the question.</li>
+</ul>
+</li>
+<li><strong>OpenAI support MIA, user faces persistent 503 error</strong>: A user has been unable to send or receive any text messages due to a consistent <strong>503 error</strong> for the past 16 days, and has received no response from OpenAI support.
+<ul>
+<li>The user, a <strong>ChatGPT Plus subscriber</strong>, has tried multiple troubleshooting steps and is seeking advice on how to reach a real person at OpenAI support.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>OpenAI ▷ #<a href="https://discord.com/channels/974519864045756446/1046317269069864970/1430738072815009852">prompt-engineering</a></strong> (14 messages🔥):</h3>
+<blockquote>
+<p><code>Creating CCTV footage from Sora, Good prompt engineering source for ChatGPT, LLM's performance and prompting differences, Gemini's translation vocabulary issues, Creating video of ball bouncing and falling</code></p>
+</blockquote>
+<ul>
+<li><strong>Creating CCTV footage with Sora</strong>: A member asked for help on how to create <strong>CCTV footage videos</strong> from <strong>Sora</strong>.
+<ul>
+<li>No solutions were given.</li>
+</ul>
+</li>
+<li><strong>Seeking a Prime Prompting Primer</strong>: A member inquired about a good source for <strong>prompt engineering</strong> for <strong>ChatGPT</strong> and whether each <strong>LLM</strong> has its own performance characteristics and prompting methods.
+<ul>
+<li>No solutions were given.</li>
+</ul>
+</li>
+<li><strong>Gemini's Grammar Goofs</strong>: A member reported that <strong>Gemini's</strong> translations of video scripts into unfamiliar languages resulted in out-of-context vocabulary and seeks advice on prompting <strong>ChatGPT</strong> for better results.
+<ul>
+<li>No solutions were given.</li>
+</ul>
+</li>
+<li><strong>Crafting Catchy Compositions for Custom Creations</strong>: A member shared a <em>mad semi reusable prompt</em> distilled from a custom GPT lyricist/sound engineer/album visualiser, for making music artists usable in music generation AIs as a custom instruction/prompt drop.
+<ul>
+<li>The member attached a <a href="https://cdn.discordapp.com/attachments/1046317269069864970/1431083530695217233/drop_in_as_is_knowledge_initial_instruct.txt?ex=68fc1fe5&#x26;is=68face65&#x26;hm=5f027ddb6661f87ccf71a3d202e90d685e1ec64cb814fa2c5da0a6791c3725cc&#x26;">text file</a> intended as knowledge to be <em>rehydrated</em> prior to use.</li>
+</ul>
+</li>
+<li><strong>Pinpointing Precise Prompting Parameters</strong>: A member asked how to find the information needed to build a precise prompt, particularly for areas outside their expertise, such as lighting and photography.
+<ul>
+<li>Another member suggested showing the example image to <strong>ChatGPT</strong> and asking it to make a nearly identical image and clearly describing the image, focusing on the areas of interest.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>OpenAI ▷ #<a href="https://discord.com/channels/974519864045756446/1046317269069864970/1430738072815009852">api-discussions</a></strong> (14 messages🔥):</h3>
+<blockquote>
+<p><code>Sora for CCTV, Prompt engineering sources, LLM translation, Image prompting, GPTs for prompts</code></p>
+</blockquote>
+<ul>
+<li><strong>Sora's CCTV Debut Falls Flat</strong>: A member inquired about using <strong>Sora</strong> to create <strong>CCTV footage videos</strong>, but received no immediate responses or solutions.
+<ul>
+<li>It remains to be seen how well Sora can simulate the grainy, low-fidelity aesthetic of surveillance cameras.</li>
+</ul>
+</li>
+<li><strong>Prompt Engineers Hunt the Holy Grail</strong>: A user requested recommendations for a good source for <strong>prompt engineering for ChatGPT</strong>, questioning whether each <strong>LLM</strong> has unique performance characteristics that require tailored prompts.
+<ul>
+<li>The community didn't immediately offer resources, highlighting the ongoing quest for effective prompt engineering strategies.</li>
+</ul>
+</li>
+<li><strong>Gemini's Linguistic Stumble</strong>: A member shared their experience using <strong>Gemini</strong> to <strong>translate video scripts</strong>, noting that the vocabulary sometimes lacked context despite Google's translation expertise.
+<ul>
+<li>They sought advice on improving prompts for <strong>ChatGPT</strong> to achieve better translation accuracy.</li>
+</ul>
+</li>
+<li><strong>Image Analysis Inspires Precise Prompts</strong>: A member sought advice on creating precise prompts for image generation, asking <em>how does a person atually go about finding the info to build an actually percise prompt?</em>.
+<ul>
+<li>The member attached an example image, seeking guidance on how to translate visual elements into detailed prompt instructions.</li>
+</ul>
+</li>
+<li><strong>GPTs Unleash Prompting Power</strong>: A member suggested developing personal <strong>GPTs</strong> to tackle specific prompt requests, arguing that specialized GPTs can hone in on specifics better than generalized ones.
+<ul>
+<li>This strategy aims to leverage the specialization of custom GPTs to produce targeted and refined results in prompt generation.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>DSPy ▷ #<a href="https://discord.com/channels/1161519468141355160/1161519469319946286/1430874121679405068">general</a></strong> (214 messages🔥🔥):</h3>
+<blockquote>
+<p><code>Gemini and structured outputs, DSPy Refine logic, Async ReAct modules, DSPy token usage and cost tracking, DSPy customization pain points</code></p>
+</blockquote>
+<ul>
+<li><strong>Gemini can't handle structured outputs in DSPy</strong>: A user reported that Gemini models with <code>responses</code> parameter in DSPy are throwing warnings and errors when used with structured output adapters, specifically experiencing a "Stub file not found" error.
+<ul>
+<li>There is ongoing discussion on enabling structured outputs for <strong>Gemini models</strong> to ensure type safety in Python using <strong>DSPy</strong>.</li>
+</ul>
+</li>
+<li><strong>Refine stops before N is reached</strong>: A user discovered that <code>dspy.Refine</code> does not necessarily run for all N iterations, but stops early if the <code>reward_fn</code> exceeds the set <code>threshold</code>, contrary to initial assumptions from the <a href="https://dspy.ai/tutorials/output_refinement/best-of-n-and-refine/?h=refine#refine">documentation</a>.
+<ul>
+<li>The user provided a <a href="https://github.com/stanfordnlp/dspy/blob/main/dspy/predict/refine.py#L142">demo</a> illustrating that the refine loop breaks if the <code>reward_fn</code> surpasses a threshold, and suggested that <code>Refine</code> performs a deep copy of the module each time, which prevents an accurate count of iterations.</li>
+</ul>
+</li>
+<li><strong>DSPy's async ReAct runs in sync</strong>: A user is facing issues with running two <code>ReAct</code> modules asynchronously using <code>dspy.asyncify</code>, noting that they appear to be executing synchronously, and sought guidance on proper implementation.
+<ul>
+<li>A member suggested using <code>await program.acall</code> instead of <code>await program.aforward</code> as well as implementing <code>async def aforward(...)</code> within the module, while noting DSPy's confusing documentation.</li>
+</ul>
+</li>
+<li><strong>DSPy's token usage tracks costs</strong>: Users are discussing how to track token usage and costs in DSPy, with one member sharing a <a href="https://discord.com/channels/1161519468141355160/1161519469319946286/1431029715511232512">code snippet</a> to calculate costs using <code>program.history</code> and <strong>LiteLLM</strong> model pricing.
+<ul>
+<li>They clarified that the <code>if "usage"</code> condition ensures cost calculation is based on actual model usage, accounting for caching and the member noted that <code>usage</code> in <code>program.history</code> is similar to <code>result.get_lm_usage()</code>.</li>
+</ul>
+</li>
+<li><strong>Users struggle with DSPy customization</strong>: A user expressed frustration with DSPy's complexity, especially regarding accessing <code>ReAct</code> module outputs, suggesting that it is easier to implement LLM calls in a custom loop for better control and UI integration.
+<ul>
+<li>Users explored alternative approaches, like subclassing and reimplementing the <code>aforward</code> method in a <code>ReAct</code> module as shown in <a href="https://cdn.discordapp.com/attachments/1431066467897577492/1431067652763156666/message.txt?ex=68fc111c&#x26;is=68fabf9c&#x26;hm=956afd7b5a72fb6ea1288e1d2656952b4e64d31baf63e1feccda13f151437ba5&#x26;">this code snippet</a>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Modular (Mojo 🔥) ▷ #<a href="https://discord.com/channels/1087530497313357884/1098713601386233997/1430752336048816139">general</a></strong> (181 messages🔥🔥):</h3>
+<blockquote>
+<p><code>Mojo and Rust interoperability, CPython runtime interaction with Mojo, PyO3 and JuliaCall usage with Mojo, Extensible traits in Mojo, Effect systems and logical programming in Mojo</code></p>
+</blockquote>
+<ul>
+<li><strong><strong>Mojo</strong> ❤️ <strong>Rust</strong>: C ABI as Common Ground</strong>: Mojo, being a systems language, can communicate over the <strong>C ABI</strong> with Rust, C++, Zig, or any other language that speaks <strong>C ABI</strong>, similar to how a host C/C++/Rust process embeds a python interpreter.
+<ul>
+<li>However, using the <strong>C ABI</strong> requires too much manual intervention, motivating the search for solutions that make packages available like they are native to the platform.</li>
+</ul>
+</li>
+<li><strong><strong>Python Power</strong>: Mojo's Runtime Secrets 🤫</strong>: Mojo interacts with <strong>CPython</strong> similarly to how a host C/C++/Rust process embeds a python interpreter, allowing it to leverage the Python ecosystem, however this requires work on the part of the runtime and the ability to express concepts from the host language.
+<ul>
+<li>The goal is to have <strong>zero runtime overhead</strong> if possible, especially when proving out things for making hot loop code go faster.</li>
+</ul>
+</li>
+<li><strong><strong>PyO3</strong> and <strong>JuliaCall</strong>: The Interoperability Dream Team ✨</strong>: <strong>PyO3</strong> and <strong>JuliaCall</strong> can be used from a language built on Mojo to access Rust and Julia ecosystems, as they create Python modules, but this approach may introduce performance penalties due to round-tripping through Python.
+<ul>
+<li>It was suggested to just have the <strong>Julia lib export a C ABI</strong>, instead of roundtripping through python, however this has to be done for every single project individually, and its less safe as type safety is lost.</li>
+</ul>
+</li>
+<li><strong><strong>Type System Talk</strong>: Mojo's Power Play 💪</strong>: Mojo's type system is powerful enough that Dependent Haskell is probably the most popular language that can express everything Mojo can, while a language with a more powerful type system can consume code from a language with a less powerful type system.
+<ul>
+<li>To make calling Mojo functions feel native from another language, the other language needs a type system more powerful than or equally as powerful as Mojo's, potentially including dependent and linear types.</li>
+</ul>
+</li>
+<li><strong><strong>Interop Insights</strong>: Dynamism vs. Statism ⚖️</strong>: Using a compiled language means both a measure of dynamism and the ability for the Mojo code to get type system guarantees back from your code, which massively cuts down on the type introspection.
+<ul>
+<li>If a host language is static and compiled, a new language implemented on top of it should also be static and compiled to minimize overhead, as static and compiled languages can be compiled to emit dynamic code if the dynamic language is more expressive.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Modular (Mojo 🔥) ▷ #<a href="https://discord.com/channels/1087530497313357884/1151418092052815884/1430827604964933672">mojo</a></strong> (8 messages🔥):</h3>
+<blockquote>
+<p><code>Mojo pipelines, LeetGPU, GPU Puzzles</code></p>
+</blockquote>
+<ul>
+<li><strong>Mojo Lacks Pipeline Operator (for Now)</strong>: A member inquired about Mojo having a pipeline character or function composition like <code>|></code> or <code>>></code> in other languages.
+<ul>
+<li>Another member responded that Python lacks it, and since Mojo isn't stable, the team likely won't consider it soon, but pointed to <a href="https://github.com/modular/modular/issues/213">this github issue</a> as a related feature request.</li>
+</ul>
+</li>
+<li><strong>LeetGPU supports Mojo</strong>: A member shared a link to <a href="https://leetgpu.com/">LeetGPU</a>, noting its support for Mojo.
+<ul>
+<li>A Modular employee responded saying that Modular found it important to develop training that aligns with the Modular platform, and suggested <a href="https://puzzles.modular.com/introduction.html">GPU Puzzles</a> as an alternative.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Modular (Mojo 🔥) ▷ #<a href="https://discord.com/channels/1087530497313357884/1212827597323509870/">max</a></strong> (1 messages):</h3>
+<p>brockelmore: https://github.com/modular/modular/issues/5496</p>
+<hr>
+<h3><strong>OpenRouter ▷ #<a href="https://discord.com/channels/1091220969173028894/1094454198688546826/1430682766122680442">general</a></strong> (141 messages🔥🔥):</h3>
+<blockquote>
+<p><code>Claude Haiku 4.5 web search, OpenRouter Models in Cursor, Exacto Evaluation, NovitaAI and GPT-OSS-120B, DeepSeek v3.2 exp Moment</code></p>
+</blockquote>
+<ul>
+<li><strong>DeepSeek has a Moment due to Balance</strong>: <strong>DeepSeek/deepseek-v3.2-exp</strong> experienced issues due to OpenRouter running out of credits, leading to a <strong>402 Proxy Error</strong>.
+<ul>
+<li>Users mistook the error for account-specific problems, while others noted that the error was directed at the users, implying something was wrong with their account.</li>
+</ul>
+</li>
+<li><strong>Top-up Timing Troubles Triggered</strong>: Users reported delays in topping up OpenRouter credits and the <strong>DeepSeek</strong> provider running out of balance.
+<ul>
+<li>One user humorously noted that the delay lasted <em>until Toven reads it</em>.</li>
+</ul>
+</li>
+<li><strong>OpenRouter Top-Up Fee Facts</strong>: Users discussed the service fees associated with adding credits to OpenRouter, where a $5.83 USD payment resulted in only $5 in credits.
+<ul>
+<li>It was clarified that the additional $0.83 covers service fees, which is approximately <strong>80c (US)</strong>.</li>
+</ul>
+</li>
+<li><strong>Exacto Model Variants: A Costly Conundrum?</strong>: Users debated the implementation of <strong>exacto</strong> models as separate variants in the API, with concerns about pricing and token/app stats splitting.
+<ul>
+<li>Despite concerns that OpenRouter will charge more, examination of <strong>glm-4.6</strong> showed prices are the same for <strong>exacto</strong> and <strong>non-exacto</strong> endpoints, but one member argued that implementing them as model variants rather than an extra parameter <em>splits the token and app stats for these models</em>.</li>
+</ul>
+</li>
+<li><strong>OpenRouter API Access Problems</strong>: Users reported issues logging into OpenRouter and receiving a <strong>401 unauthorized error</strong> on the completions endpoint.
+<ul>
+<li>It was suggested that the problem might be tool-specific, with cURL requests working while other tools failed.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>OpenRouter ▷ #<a href="https://discord.com/channels/1091220969173028894/1384650595981328475/">new-models</a></strong> (1 messages):</h3>
+<p>Readybot.io: <strong>OpenRouter - New Models</strong></p>
+<hr>
+<h3><strong>OpenRouter ▷ #<a href="https://discord.com/channels/1091220969173028894/1392278974222307469/1430702602978463794">discussion</a></strong> (6 messages):</h3>
+<blockquote>
+<p><code>Model statistics visibility, OpenAI data preservation, Krea AI's video model, OpenRouter Docs</code></p>
+</blockquote>
+<ul>
+<li><strong>Model Stats Visibility Plea</strong>: Members requested that model statistics be publicly displayed, or indicated with a badge to show <strong>"exacto quality"</strong>.
+<ul>
+<li>Staff confirmed that this feature <em>"is coming"</em>.</li>
+</ul>
+</li>
+<li><strong>OpenAI no longer has to preserve all ChatGPT data</strong>: A member shared an <a href="https://www.engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html">Engadget article</a> stating that <strong>OpenAI</strong> no longer has to preserve all of its <strong>ChatGPT</strong> data, with some exceptions.</li>
+<li><strong>Krea AI's 14B video model is here</strong>: A member shared a link to <a href="https://x.com/krea_ai/status/1980358158376988747">Krea AI's tweet</a> about their <strong>14B video model</strong>.</li>
+<li><strong>OpenRouter Docs Status?</strong>: A member reported that <strong>OpenRouter docs</strong> were still down.
+<ul>
+<li>Staff replied that they were <em>"looking into it"</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Latent Space ▷ #<a href="https://discord.com/channels/822583790773862470/1075282825051385876/1430680098100609114">ai-general-chat</a></strong> (115 messages🔥🔥):</h3>
+<blockquote>
+<p><code>OpenClip TS Implementation, Linear's Self-Driving SaaS, Alibaba’s Qwen vs OpenAI, MythWorx’s ARC-AGI Claim, SOTA RL Algorithms</code></p>
+</blockquote>
+<ul>
+<li><strong>TypeScript OpenClip Implementation Discovered!</strong>: A member was looking for a TypeScript implementation of <strong>OpenClip</strong> and found their own solution at <a href="https://huggingface.co/Marqo/marqo-fashionCLIP">Marqo's fashionCLIP</a>.
+<ul>
+<li>They shared code snippets demonstrating how to use the <code>CLIPTextModelWithProjection</code>, <code>CLIPVisionModelWithProjection</code>, <code>AutoTokenizer</code>, and <code>AutoProcessor</code> from <code>@huggingface/transformers</code> to compute similarity scores between text and images.</li>
+</ul>
+</li>
+<li><strong>Linear's Vision: Self-Driving SaaS Takes the Wheel!</strong>: Linear is teasing a shift from reactive chatbot UIs to <strong>proactive AI</strong> that automatically moves work forward, calling it <em>"self-driving SaaS"</em>.
+<ul>
+<li>Followers have praised the bold framing and likened it to <strong>Level-5 autonomy</strong>, where software completes work while users sit back.</li>
+</ul>
+</li>
+<li><strong>Qwen's Charm Offensive: Airbnb Picks Cheaper LLMs!</strong>: <strong>Airbnb’s CEO</strong> publicly praised <strong>Alibaba’s open-source Qwen models</strong> as faster and far cheaper than <strong>OpenAI’s latest</strong>.
+<ul>
+<li>Commenters highlight <strong>Cerebras’ 2,500-tokens/sec inference</strong>, multilingual quality, and the race-to-the-bottom on cost over marginal accuracy gains, noting security, sovereignty, and future hardware shifts as looming concerns.</li>
+</ul>
+</li>
+<li><strong>ARC-AGI Skepticism: MythWorx's Bold 100% Claim!</strong>: <strong>ARC Prize</strong> organizers state they have not yet validated <strong>MythWorx’s</strong> claim in a <strong>$100M</strong> fundraise press release that its model achieved <strong>100%</strong> on <strong>ARC-AGI</strong>.
+<ul>
+<li><strong>Greg Kamradt</strong> offers to run the official test if MythWorx submits properly, while commenters question the claim’s legitimacy due to lack of verification, minimal team visibility, and parallels to <strong>Theranos-level hype</strong>.</li>
+</ul>
+</li>
+<li><strong>Anthropic's Compute Conquest: 1M TPUs by 2026!</strong>: Anthropic announced a multi-billion-dollar deal to add <strong>~1 million Google Cloud TPUs</strong> and <strong>>1 GW</strong> of capacity by <strong>2026</strong>.
+<ul>
+<li>The community reacted with excitement over the compute scale, jokes about ‘empire-building’, and questions about whether this will translate to lower API prices, higher usage limits, or longer context windows; the deal is worth tens of billions of dollars and is expected to bring well over a gigawatt of AI compute capacity online in 2026 (<a href="https://www.cnbc.com/2025/10/23/anthropic-google-cloud-deal-tpu.html">CNBC Article</a>, <a href="https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services">Anthropic Announcement</a>).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Latent Space ▷ #<a href="https://discord.com/channels/822583790773862470/1342964204168020018/1430727704147136524">private-agents</a></strong> (7 messages):</h3>
+<blockquote>
+<p><code>AMD Strix Halo ROCm, GPT-OSS on ROCm, Local AI app for multi-page scanned PDF QA</code></p>
+</blockquote>
+<ul>
+<li><strong><strong>Lisa Su</strong> Signs <strong>Strix Halo</strong>!</strong>: A user shares a <a href="https://xcancel.com/AnushElangovan/status/1981031660209770802">link</a> to <strong>Anush Elangovan</strong> boasting a <strong>Lisa-Su</strong>-signed <strong>Strix Halo (Ryzen AI Max+ PRO 395)</strong> laptop.
+<ul>
+<li>The laptop is running <strong>GPT-OSS</strong> locally on <strong>ROCm</strong>, prompting users to share benchmark results, bug reports, purchase tips and wish-list items for higher memory/next-gen parts.</li>
+</ul>
+</li>
+<li><strong>Seeking Local AI for Scanned PDF QA</strong>: A user asks for a local AI app that supports <strong>QA directly on a multi-page scanned PDF</strong> with a <strong>VLM</strong> like <strong>Qwen3-VL-4B</strong>.
+<ul>
+<li>They note that most apps either only support images or do <strong>RAG</strong> when you upload files, like <strong>LM Studio</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Latent Space ▷ #<a href="https://discord.com/channels/822583790773862470/1397010677364953149/1430702568006357062">genmedia-creative-ai</a></strong> (15 messages🔥):</h3>
+<blockquote>
+<p><code>Sora Roadmap Update, Teaching Sand to Think - Runtime 2025, LTX-2 Launch, Character AI Ovi</code></p>
+</blockquote>
+<ul>
+<li><strong>Peebles Previews Promised Parade of Sora Progress</strong>: Bill Peebles from <strong>OpenAI</strong> outlined upcoming <strong>Sora</strong> app updates, including <a href="https://xcancel.com/billpeeb/status/1981118483607032050">custom character cameos</a> launching within days, a basic clip-stitching editor, upcoming social channels, and the long-awaited <strong>Android</strong> release.
+<ul>
+<li>Users requested cameo search, storyboard saving, longer clips, UK/global access, and better moderation feedback.</li>
+</ul>
+</li>
+<li><strong>A16Z's Abstract AI Ad Astonishes All</strong>: <strong>a16z</strong> unveiled a teaser for <a href="https://xcancel.com/a16z/status/1981074692443427321?s=46">"Runtime 2025"</a> featuring the line <em>"Teaching sand to think, or being left in the dust."</em>
+<ul>
+<li>The <strong>A24-style video</strong> sparked enthusiasm and debate across crypto, AI, and hardware communities, with viewers praising its cinematic quality while questioning whether it’s visionary hype or shallow gloss.</li>
+</ul>
+</li>
+<li><strong>Lightricks Launches Local Latent LTX-2</strong>: <strong>Lightricks</strong> launched <strong>LTX-2</strong>, an open-source creative engine that generates <a href="https://xcancel.com/ltx_model/status/1981346235194683497">synchronized <strong>4K/50 fps</strong> video with audio</a> for up to ~10–15 s on consumer GPUs (RTX 5-series realistic when optimized).
+<ul>
+<li>Community buzz centers on democratizing pro-grade AI video tools and upcoming local installs, with weights dropping later this year and an API Playground live now.</li>
+</ul>
+</li>
+<li><strong>Ovi Open-Source Offering Overlooked?</strong>: Character AI open-sourced <a href="https://github.com/character-ai/Ovi"><strong>Ovi on Github</strong></a>.
+<ul>
+<li>Some community members wondered why it didn't <em>"make a splash at all"</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1189498205101109300/1430688885809090672">general</a></strong> (21 messages🔥):</h3>
+<blockquote>
+<p><code>FA4's correctness optimization, Deterministic inference blogs, Graphics programming Discord server, Kernel programming DSLs for non-ML workloads, Mojo for HPC</code></p>
+</blockquote>
+<ul>
+<li><strong>Numerical Stability Resources Sought</strong>: A member sought resources on numerical stability after reading about <strong>FA4's correctness optimization</strong> and <strong>deterministic inference blogs</strong>, and was pointed to a book on the topic: <a href="https://epubs.siam.org/doi/book/10.1137/1.9781611971491">Numerical Solution of Stochastic Differential Equations</a>.</li>
+<li><strong>Discussing graphics programming outside GPGPU</strong>: A member inquired about resources for graphics programming, specifically for scientific visualization using <strong>OpenGL</strong> or <strong>Vulkan</strong>, rather than <strong>GPGPU</strong>-focused content.
+<ul>
+<li>Another member suggested the <a href="https://graphics-programming.org/">Graphics Programming Discord server</a> with 20k members, known for expertise in both <strong>OpenGL</strong> and <strong>Vulkan</strong>.</li>
+</ul>
+</li>
+<li><strong>DSL kernels for non-ML workloads</strong>: A member asked about the application of <strong>kernel programming DSLs</strong> (TileLang, Triton, Gluon, TLX, Helion) for non-ML workloads, proposing extensions for <strong>sparsity</strong>, <strong>stencils</strong>, and <strong>tiled hardware architectures</strong>.
+<ul>
+<li>Another member referenced <a href="https://github.com/tdehoff/Mojo-workloads">Mojo</a> work for HPC and <a href="https://scholar.google.com/citations?view_op=view_citation&#x26;hl=en&#x26;user=w2kMs8IAAAAJ&#x26;citation_for_view=w2kMs8IAAAAJ:u-x6o8ySG0sC">Triton</a> papers.</li>
+</ul>
+</li>
+<li><strong>Mojo's HPC kernels on GPUs</strong>: A member shared a link to a paper and GitHub repo about <a href="https://arxiv.org/abs/2509.21039">Mojo</a> and <a href="https://github.com/tdehoff/Mojo-workloads">Mojo Workloads</a> being used for <strong>MLIR-Based Performance-Portable HPC Science Kernels on GPUs</strong>.
+<ul>
+<li>The paper targets four scientific workloads: a seven-point stencil, BabelStream, miniBUDE, and Hartree-Fock, and compares their performance against vendor baselines on <strong>NVIDIA H100</strong> and <strong>AMD MI300A GPUs</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1189607726595194971/1430758919269257246">cuda</a></strong> (18 messages🔥):</h3>
+<blockquote>
+<p><code>wgmma template, smem descriptors, Pinned portable memory, PTX memory consistency model, Compiler issued barriers</code></p>
+</blockquote>
+<ul>
+<li><strong>Warpgroup woes with WGMMA</strong>: A user is facing issues with <code>wgmma</code> template and compiler-injected barriers, even after using <code>wgmma.fence.sync.aligned</code> via the <code>warpgroup_arrive</code> function.
+<ul>
+<li>The user is using the <code>wgmma</code> instruction with shared memory descriptors and suspects the problem lies in incorrect fences or memory consistency within PTX; <a href="https://cdn.discordapp.com/attachments/1189607726595194971/1430858333014986862/image.png?ex=68fbf6ea&#x26;is=68faa56a&#x26;hm=c2d221fd9b6ecca17e72af6f77398d4cb88ef8c8049c472ee765ed5250b771e4">code snippets are provided</a>.</li>
+</ul>
+</li>
+<li><strong>SMEM descriptor decoded</strong>: A user provided their custom implementation of shared memory (SMEM) descriptors for use with WGMMA instructions, including <code>matrix_descriptor_encode</code> and <code>make_smem_descriptor</code> functions.
+<ul>
+<li>The implementation is derived from the <a href="https://docs.nvidia.com/cuda/parallel-thread-execution/#matrix-descriptor-format">PTX guide</a>, encoding the address and memory layout information into a 64-bit descriptor.</li>
+</ul>
+</li>
+<li><strong>DeepSeek DeepDive for GEMM</strong>: A community member suggested looking into DeepSeek-AI's DeepGEMM <a href="https://github.com/deepseek-ai/DeepGEMM/blob/c9f8b34dcdacc20aa746b786f983492c51072870/deep_gemm/include/deep_gemm/impls/sm90_fp8_gemm_1d2d.cuh#L275">implementation</a> for handling similar issues with memory fences and WGMMA.
+<ul>
+<li>Additional links to NVIDIA's CUTLASS <a href="https://github.com/NVIDIA/cutlass/blob/b2ca083d2bb96c41d9b3c5a930637c641f6669bf/include/cute/atom/mma_traits_sm90_gmma.hpp#L49">library</a>, <a href="https://github.com/NVIDIA/cutlass/blob/b2ca083d2bb96c41d9b3c5a930637c641f6669bf/include/cute/arch/mma_sm90_gmma.hpp#L88">mma_sm90_gmma.hpp</a> and <a href="https://github.com/NVIDIA/cutlass/discussions/1375">discussions</a> were provided.</li>
+</ul>
+</li>
+<li><strong>FP8 precision accumulation?</strong>: A user inquired about the accumulation precision of <code>m16n8k32 fp8xfp8</code> operations, wondering if it accumulates in FP32 before converting back to FP16.
+<ul>
+<li>This question was inspired by this <a href="https://docs.nvidia.com/cuda/parallel-thread-execution/#warp-level-matrix-instructions-mma">documentation link</a> mentioning that accumulation of intermediate values is performed with at least single precision.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1190208177829068860/1430838297424298005">jobs</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>Pruna.ai Hiring, Vectorware Hiring, Rust GPU software</code></p>
+</blockquote>
+<ul>
+<li><strong><strong>Pruna.ai</strong> Hunts Applied ML Engineer</strong>: <a href="https://careers.pruna.ai/jobs/6569302-applied-ml-engineer">Pruna.ai</a> is hiring an <strong>Applied ML Engineer</strong> with experience optimizing <strong>Diffusion Models</strong>; the position is remote and based in either Paris or Munich.</li>
+<li><strong><strong>Vectorware</strong> Ventures into Hiring</strong>: A company building advanced GPU software in <strong>Rust</strong>, <a href="https://www.vectorware.com/jobs">Vectorware</a>, is hiring, where candidates are expected to learn Rust.
+<ul>
+<li>More details about the company are available in <a href="https://www.vectorware.com/blog/announcing-vectorware/">this blog post</a>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1191300313928433664/1430745347440906274">beginner</a></strong> (1 messages):</h3>
+<blockquote>
+<p><code>Cloud vs Local, Cost Analysis, Serious Work Consideration</code></p>
+</blockquote>
+<ul>
+<li><strong>Cloud Beats Local For a Trial Run</strong>: A member suggests to <em>rent from the cloud</em> until you've spent at least a few dozen hours doing serious work to evaluate the costs and benefits.</li>
+<li><strong>Local Breakeven Requires Half a Year</strong>: They estimate that the <em>breakeven point</em> for investing in local hardware is <em>at least half a year of cloud rental time</em>.</li>
+<li><strong>Don't forget Management and Power Costs</strong>: The cost analysis should consider <em>management pains and power costs</em> when evaluating the cloud vs local tradeoff.</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1205223658021458100/1431050313552494713">torchao</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>HQQ+ blog post, mobiusml github down, dropbox github</code></p>
+</blockquote>
+<ul>
+<li><strong>HQQ+ Blog Post Link Puzzle Solved!</strong>: A member was looking for a working link to the <strong>HQQ+ blog post</strong> after noticing that <a href="https://mobiusml.github.io/1bit_blog/">https://mobiusml.github.io/1bit_blog/</a> was down.
+<ul>
+<li>Another member pointed out that <em><code>mobiusml</code> should be replaced with <code>dropbox</code> for both the blog post and the GitHub link</em>, due to a recent change announced today.</li>
+</ul>
+</li>
+<li><strong>MobiusML to Dropbox Migration</strong>: The <strong>MobiusML</strong> domain is migrating to <strong>Dropbox</strong> today, causing the original links to break.
+<ul>
+<li>Users should now replace <code>mobiusml</code> with <code>dropbox</code> for both blog posts and GitHub repositories.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1215328286503075953/1430954293346697258">off-topic</a></strong> (4 messages):</h3>
+<blockquote>
+<p><code>Mobius Labs acquisition, Austin Huang news</code></p>
+</blockquote>
+<ul>
+<li><strong>Adept Strategy Shift &#x26; Co-Founders Joining Amazon</strong>: The co-founders of <a href="https://x.com/Mobius_Labs/status/1981391562836721786">Mobius Labs</a> share <em>personal news</em> that it <em>was a good ride</em>.
+<ul>
+<li>One member congratulated them, hoping they were treated well, and said <em>you did great work</em>.</li>
+</ul>
+</li>
+<li><strong>Austin Huang Announces Personal News</strong>: <a href="https://x.com/austinvhuang/status/1981393212003521017">Austin Huang</a> announces <em>some personal news</em>, with a link to X.
+<ul>
+<li>He also shared an image of <strong>salmon on the electric grill</strong>, along with a tomato, cucumber, sea salt, coffee, milk cream, and stevia.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1218444432588800010/">irl-meetup</a></strong> (1 messages):</h3>
+<p>melnimr: I dm'ed you</p>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1233802893786746880/1430995659586142319">intel</a></strong> (4 messages):</h3>
+<blockquote>
+<p><code>Lunar Lake, MAMF Script, roofline, vk_cooperative_matrix_perf, CUDA events</code></p>
+</blockquote>
+<ul>
+<li><strong>Lunar Lake Draft Roofline Debuts</strong>: A member shared a draft <strong>roofline</strong> created with data points from <a href="https://github.com/stas00/ml-engineering/tree/master/compute/accelerator/benchmarks">Stas's MAMF script</a> for <strong>Lunar Lake</strong> under PyTorch 2.9.0+xpu.
+<ul>
+<li>They noted constant overhead at small sizes, making them unrepresentative of the GPU's capabilities, but highlighting the test's consistency.</li>
+</ul>
+</li>
+<li><strong>Measuring Time for short Kernels</strong>: A member suggested ways to improve time measurements for short kernels by running multiple kernels on disjoint inputs/outputs to invalidate the L2 cache.
+<ul>
+<li>It was also suggested that if you're using a <strong>CUDA event</strong> (or XPU equivalent), you can add a small matmul before <code>event.record()</code> to reduce overhead, and they linked to a <a href="https://www.speechmatics.com/company/articles-and-news/timing-operations-in-pytorch">Speechmatics article about timing operations in PyTorch</a>.</li>
+</ul>
+</li>
+<li><strong>vk_cooperative_matrix_perf Patched</strong>: The <strong>vk_cooperative_matrix_perf</strong> has been improved with patched.
+<ul>
+<li>No further details were given.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1288557096404516945/1430981414530318448">self-promotion</a></strong> (6 messages):</h3>
+<blockquote>
+<p><code>Vectorware, GPU in Rust, ML on GPU, GPU rendering</code></p>
+</blockquote>
+<ul>
+<li><strong>Vectorware ventures into GPU software in Rust</strong>: A new company called <a href="https://www.vectorware.com/blog/announcing-vectorware/">Vectorware</a> has launched, focusing on writing advanced software for the GPU in <strong>Rust</strong>.
+<ul>
+<li>The company is explicitly not launching a Discord server yet to maintain focus, but is initially focusing on <strong>ML applications</strong> and has some <strong>CPU-based use cases running on the GPU</strong>.</li>
+</ul>
+</li>
+<li><strong>ML takes center stage on GPUs</strong>: Vectorware is prioritizing <strong>Machine Learning (ML)</strong> applications as their initial focus for <strong>GPU-based software development</strong>.
+<ul>
+<li>In the coming weeks, Vectorware plans to showcase demos that leverage the GPU for CPU-based use cases, hinting at a broader long-term vision beyond just ML.</li>
+</ul>
+</li>
+<li><strong>GPU rendering takes center stage</strong>: One of the members expressed curiosity of apps like <strong>Zed</strong> that heavily rely on the <strong>GPU</strong> for rendering, which Vectorware may tackle.
+<ul>
+<li>Members speculated that there are other <strong>non-rendering</strong>, <strong>non-ML applications</strong> that would greatly benefit.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1300872762163728550/1430950569538883696">thunderkittens</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>PGL Support for sm_80, Single-GPU kernels for 4090/L4s</code></p>
+</blockquote>
+<ul>
+<li><strong>Ampere GPUs phased out for development</strong>: A question was raised about future <strong>PGL support for sm_80</strong> (Ampere architecture).
+<ul>
+<li>A member responded that they <em>no longer have Ampere GPUs</em> which probably means no more support.</li>
+</ul>
+</li>
+<li><strong>Single-GPU kernels for 4090/L4s gets a PR</strong>: A member is working on a <strong>PR to unblock single-GPU kernels for 4090/L4s</strong> under the old global layouts.
+<ul>
+<li>The compilation was broken because of the new required namespaces + this, but this would apply to A100s as well because PGLs are now only tested for Hopper/Blackwell.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1343373905783554048/1430917059931537488">ppc</a></strong> (1 messages):</h3>
+<blockquote>
+<p><code>Code Snippets Policy, Shared Memory Speed</code></p>
+</blockquote>
+<ul>
+<li><strong>Discourage lengthy code snippets</strong>: A member asked others to avoid posting longer code snippets and instead share a <a href="https://ppc.system">link to their submission in the ppc system</a>.
+<ul>
+<li>The goal is to not spoil things for other people.</li>
+</ul>
+</li>
+<li><strong>Shared Memory not always performant</strong>: A member suggested that load addresses should be calculated like <code>(something) + threadIdx.x</code>.
+<ul>
+<li>They added that while <strong>shared memory is fast</strong>, it's important to ensure data in registers gets reused well, especially when numbers are loaded and used exactly once; it may be more important than even using shared memory.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1362196854460383353/1431020837695262821">cutlass</a></strong> (3 messages):</h3>
+<blockquote>
+<p><code>Thread Fragment Visualization, Code Formatting in Discord</code></p>
+</blockquote>
+<ul>
+<li><strong>Thread Fragment Visualization Questioned</strong>: A user asked if their method to visualize the layout of a <strong>thread fragment</strong> with a given shape and stride is correct, noting that it prints 128 elements with repeated indices between <strong>0</strong> and <strong>79</strong>.
+<ul>
+<li>The user provided code using <code>Shape</code> and <code>Stride</code> templates, iterating through 128 elements to print the calculated index using <code>crd2idx</code>.</li>
+</ul>
+</li>
+<li><strong>Discord Code Formatting Assistance</strong>: A user suggested reformatting the code provided by another user, advising to use triple backticks (`````) for proper code formatting in Discord.
+<ul>
+<li>Proper formatting is needed to avoid that Discord duplicates the message.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1373414141427191809/1430849056074371144">singularity-systems</a></strong> (4 messages):</h3>
+<blockquote>
+<p><code>Torch/XLA new direction, Lazy Tensor Paper relevance, eDSLs frontends and embeddedness</code></p>
+</blockquote>
+<ul>
+<li><strong>Torch/XLA Takes New Turn</strong>: Despite a <em>new direction</em> with <a href="https://github.com/pytorch/xla/issues/9684">torch/xla</a>, the <strong>Lazy Tensor Paper</strong> remains relevant for picograd in shoehorning an eager mode into tinygrad to lower the ramp.
+<ul>
+<li>The <a href="https://arxiv.org/pdf/2102.13267">Lazy Tensor Paper</a> explores integrating an eager mode into tinygrad using picograd.</li>
+</ul>
+</li>
+<li><strong>eDSLs Embeddedness Depth</strong>: It's realized that eDSLs have <em>non-trivial frontends</em> depending on the depth of their embeddedness with the host language, using <a href="https://pytorch.org/assets/pytorch2-2.pdf">picograd &#x3C;- tinygrad</a> as a case study.
+<ul>
+<li>Previously it was believed that eDSLs were able to duck parsing, but this depends on whether the eDSL has a <em>shallow or deep embedding</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1416087968933740688/1430677295458287881">irl-accel-hackathon</a></strong> (12 messages🔥):</h3>
+<blockquote>
+<p><code>Blackwell B200, H100 availability, Nebius Offerings, PyTorch Open Source Week in SF, IRL Event streaming</code></p>
+</blockquote>
+<ul>
+<li><strong>Blackwell B200s served a la carte</strong>: Attendees will likely receive a single <strong>Blackwell B200 GPU</strong> upon arrival by scanning a <strong>QR code</strong>.
+<ul>
+<li><em>If you're rich feel free to bring your own compute</em>.</li>
+</ul>
+</li>
+<li><strong>Nebius might not have H100s in stock</strong>: A member inquired about the availability of <strong>H100 GPUs</strong> from Nebius.
+<ul>
+<li>No direct answer was given, but the inquiry implies that <strong>H100s</strong> might not be a primary offering at the event.</li>
+</ul>
+</li>
+<li><strong>Hackathon completely booked, no more tickets</strong>: The IRL accel-hackathon event is overbooked by approximately <strong>6x</strong>, which means it's completely sold out.
+<ul>
+<li>A member currently in <strong>SF</strong> for <strong>PyTorch/Open Source Week</strong> hoped to attend but is on the waiting list and inquired whether any portions of the event would be streamed online.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1420098114076803142/1430810943251808366">cluster-management</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>Replica Based Recovery, Automated Fault Detection, AI-Based Fault Handling</code></p>
+</blockquote>
+<ul>
+<li><strong>Nodes get Redundant Replicas</strong>: Depending on the number of nodes and budget, running redundant replicas actively can yield lower downtime for replica-based recovery.
+<ul>
+<li>If redundancy is not an option, <strong>checkpointing</strong> is the realistic recovery strategy.</li>
+</ul>
+</li>
+<li><strong>Automated Recovery and Orchestration Discussed</strong>: Automated recovery and orchestration are being developed for longer training runs using a layer that automates fault detection and recovery across nodes, GPUs, and interconnects.
+<ul>
+<li>The system plugs into existing stacks, adding observability and <strong>AI-based fault handling</strong> to prevent losing runs or time due to hardware issues.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>GPU MODE ▷ #<a href="https://discord.com/channels/1189498204333543425/1425531180002054195/1430792657747312702">helion</a></strong> (7 messages):</h3>
+<blockquote>
+<p><code>Phi nodes, cudagraphs, tilelang, Helion compiler improvements</code></p>
+</blockquote>
+<ul>
+<li><strong>Phi Nodes Chosen for Compiler Simplicity</strong>: The choice of <strong>phi nodes</strong> in Device IR over block arguments was motivated by implementation simplicity in the Helion compiler, as they primarily preserve the user's control flow.
+<ul>
+<li>The phi node becomes something like <em>assign these to the same variable in the output</em>, which gives output code that looks a lot like the input code for control flow.</li>
+</ul>
+</li>
+<li><strong>Helion Kernels Support CUDA Graphs</strong>: <strong>CUDA graphs</strong> are supported in Helion kernels, subject to the same restrictions as other languages, enabling the use of <code>torch.cuda.make_graphed_callables</code>.
+<ul>
+<li>As long as you don't <em>do something in your kernel that is not cudagraphable</em>, you should be fine.</li>
+</ul>
+</li>
+<li><strong>TileLang Improves Mamba-2 Benchmark</strong>: <a href="https://github.com/tile-ai/tilelang/blob/main/benchmark/mamba2/README.md">TileLang</a> recently updated their benchmark on <strong>mamba-2-chunk-scan</strong>, showcasing improvements.
+<ul>
+<li>These improvements to their compiler were in response to published performance numbers, potentially impacting comparisons with Helion and Triton.</li>
+</ul>
+</li>
+<li><strong>Helion Compiler Sees Improvements</strong>: TileLang has made some improvements to their compiler in response to published performance numbers.
+<ul>
+<li>Members pointed out they might have just tuned their <strong>kernel hyperparams</strong>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Eleuther ▷ #<a href="https://discord.com/channels/729741769192767510/729741769738158194/1430690040400314388">general</a></strong> (19 messages🔥):</h3>
+<blockquote>
+<p><code>Chat datasets with system messages, AI network like the internet, Discord 'pending' member status</code></p>
+</blockquote>
+<ul>
+<li><strong>User Seeks Chat Datasets with System Messages</strong>: A member inquired about recommendations for chat datasets that include <strong>system messages</strong>, finding that <a href="https://huggingface.co/datasets/OpenOrca/OpenOrca">Open Orca</a> <em>did the trick</em>.
+<ul>
+<li>The member was seeking more recent datasets; another user followed up to ask for a link.</li>
+</ul>
+</li>
+<li><strong>Envisioning an AI 'Internet'</strong>: A member proposed the idea of an <strong>AI network</strong> akin to the modern internet, where thousands of models communicate via a specific protocol to answer questions.
+<ul>
+<li>Another member asked for examples of what that might look like.</li>
+</ul>
+</li>
+<li><strong>Discord Introduces 'Pending' Member Status</strong>: Users noticed a new 'pending' status for members joining the Discord server after the <em>'join'</em> option was added to the server tag.
+<ul>
+<li>Members confirmed being 'pending' before approval, with moderators manually accepting them, and speculate that this may no longer be the case.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Eleuther ▷ #<a href="https://discord.com/channels/729741769192767510/747850033994662000/1430780880175104061">research</a></strong> (59 messages🔥🔥):</h3>
+<blockquote>
+<p><code>Encoder-Decoder Training, Grokking Theory, Meta-Learning RL, New Model Architecture</code></p>
+</blockquote>
+<ul>
+<li><strong><strong>Encoder-Decoder Training</strong>: Is it Better?</strong>: A member questioned if a new paper (<a href="https://arxiv.org/abs/2510.17558v1">https://arxiv.org/abs/2510.17558v1</a>) is any better than simply training such that the encoder is used for prefill and the decoder for generation, referencing <a href="https://arxiv.org/abs/2412.09810">another paper</a>.</li>
+<li><strong><strong>Grokking Theory</strong> gets Interesting Results</strong>: Discussion arose around an interesting <strong>grokking theory</strong> paper with results on classic modular operations tasks, linking to the <a href="https://arxiv.org/abs/2412.09810">paper</a> and its <a href="https://github.com/brantondemoss/GrokkingComplexity">code</a>.</li>
+<li><strong><strong>Meta-Learning RL</strong> Discovers Rules Surpassing Existing Ones</strong>: A paper (<a href="https://www.nature.com/articles/s41586-025-09761-x">https://www.nature.com/articles/s41586-025-09761-x</a>) on <strong>meta-learning</strong> from cumulative experiences of agents across environments, leading to a discovered rule surpassing existing ones on the <strong>Atari benchmark</strong>, with code available <a href="https://github.com/google-deepmind/disco_rl">here</a>.</li>
+<li><strong><strong>New Model Claims</strong> Incredible Performance</strong>: A new member claimed their <strong>50M</strong> model achieves a <strong>0.223</strong> loss compared to a <strong>2.73</strong> loss for a vanilla transformer, with a validation loss of <strong>~0.197</strong> for their <strong>1B</strong> model, resulting in a perplexity of <strong>~1.22</strong>, attaching an <a href="https://cdn.discordapp.com/attachments/747850033994662000/1431083629748027402/image.png?ex=68fc1ffd&#x26;is=68face7d&#x26;hm=c347fd3fa1d4dae87e30579f0723253fd5c83a7197c57f6583d66e7d2ba5ca67&#x26;">image</a>.</li>
+<li><strong><strong>Inference</strong> and Bug-Hunting</strong>: Members challenged the new member's claims, suggesting that the model likely has a bug and suggesting debugging via inference, requesting to see the code.
+<ul>
+<li>The new member declined to share the code for IP reasons, leading to skepticism and suggestions that they were seeking attention rather than genuine help.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Eleuther ▷ #<a href="https://discord.com/channels/729741769192767510/1052314805576400977/1430833790175150143">interpretability-general</a></strong> (4 messages):</h3>
+<blockquote>
+<p><code>Induction Circuits, Causal Abstractions</code></p>
+</blockquote>
+<ul>
+<li><strong>Interpretable Circuits Induce Discussion</strong>: Members discussed the presence of <strong>induction circuits</strong> and structures for bracket matching and long spaces in a given model.
+<ul>
+<li>According to one member, this model doesn’t seem to contain a lot else (that we can see anyway).</li>
+</ul>
+</li>
+<li><strong>Causal Abstraction Craze Calms</strong>: A member inquired about the lack of recent discussion on <strong>Causal Abstractions</strong> (<a href="https://arxiv.org/abs/2301.04709">paper here</a>), a topic actively discussed in 2023.
+<ul>
+<li>Another member stated that the framework is still useful but suffers from implicit linearity assumptions (<a href="https://arxiv.org/abs/2507.08802">paper here</a>), difficulty in choosing the right level of abstraction (<a href="https://arxiv.org/abs/2408.01416">survey here</a>), and multiple valid abstractions for a single behavior (<a href="https://arxiv.org/abs/2502.20914">paper here</a>).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Yannick Kilcher ▷ #<a href="https://discord.com/channels/714501525455634453/986699377257119794/1430853450048213082">general</a></strong> (30 messages🔥):</h3>
+<blockquote>
+<p><code>Model Deployment Microservice, GPU Memory Management, Weight Hardness in Neural Nets, ARC-AGI 100% MythWox, Docker vs Colab</code></p>
+</blockquote>
+<ul>
+<li><strong><strong>Django App Asks: Microservice or Not?</strong></strong>: A member is considering splitting a Django app using <strong>bi-encoders, cross-encoders, YOLO models</strong>, and other GPU-intensive models into a separate microservice to offload inference.
+<ul>
+<li>They are concerned about potential request queuing on a single GPU and seek advice on deployment strategies and handling multiple parallel RPC calls with limited VRAM (32GB).</li>
+</ul>
+</li>
+<li><strong><strong>GPU Memory Woes and Parallel RPC Prayers</strong></strong>: In response to concerns about GPU overload, a member suggested scheduling requests sequentially if they exhaust VRAM, or running them in parallel if memory permits.
+<ul>
+<li>They encouraged the original poster to try parallel RPC calls with a <strong>32GB GPU</strong>, to take advantage of parallel processing.</li>
+</ul>
+</li>
+<li><strong><strong>Weight Hardness: Meta Does Dendrites</strong></strong>: A member shared an idea to use an additional scalar on each weight to store their <em>hardness</em> or <em>softness</em>, inspired by real neuron connections, and linked <a href="https://x.com/realJessyLin/status/1980662516285075762">Meta's implementation</a>.
+<ul>
+<li>This concept involves adjusting weights based on the <em>fruit</em> of the computation, strengthening beneficial connections and weakening detrimental ones, effectively learning new things without modifying irreversible connections.</li>
+</ul>
+</li>
+<li><strong><strong>MythWox Claims ARC-AGI 100%</strong></strong>: A member shared a link to <a href="https://mythworx.ai/capabilities/">MythWorx.ai</a>, claiming <strong>100%</strong> on <strong>ARC-AGI 1</strong> with no pre-training within 4 hours.
+<ul>
+<li>The member expressed skepticism, questioning the legitimacy of the capabilities, with another reacting with confused disbelief.</li>
+</ul>
+</li>
+<li><strong><strong>Colab can't Docker, Docker can't Colab</strong></strong>: Members discussed the pros and cons of Google Colab versus Docker containers for DL experiments, agreeing Colab is great for quick experiments but lacks Docker container and SSH support.
+<ul>
+<li>One member emphasized that reproducibility on Google Colab with 1 CPU is a nice headline, but has limitations as it's not always hassle-free.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Yannick Kilcher ▷ #<a href="https://discord.com/channels/714501525455634453/1045297868136779846/1430710513293328494">paper-discussion</a></strong> (26 messages🔥):</h3>
+<blockquote>
+<p><code>Jsonnet, VinePPO, Configuration Management, Tiny Recursive Model, MLP Mixer</code></p>
+</blockquote>
+<ul>
+<li><strong>Jsonnet: Overengineered or Tailored?</strong>: Members debated whether <a href="https://jsonnet.org/">Jsonnet</a> is overengineered, while another appreciated its tailorability and usage by <strong>DeepSeek</strong>.
+<ul>
+<li>One member found a directory of config files <em>forbidding</em>, even for a simple experiment like <strong>VinePPO</strong>.</li>
+</ul>
+</li>
+<li><strong>Functional Configs with Jsonnet</strong>: A member suggested using Jsonnet for configurations, especially for applying a functional programming scheme to models to allow easy swapping.
+<ul>
+<li>Another likened it to <strong>Nix</strong>, defining a hash table using functional programming, questioning its readability for JSON.</li>
+</ul>
+</li>
+<li><strong>Tiny Recursive Model Reproduction</strong>: A member shared a link about <a href="https://www.alphaxiv.org/models/samsung/tiny-recursive-model">reproducing a Tiny Recursive Model with weights</a>, noting a 95% probability.
+<ul>
+<li>The poster highlighted that a <strong>single network design</strong> beats <strong>dual networks</strong> and <strong>MLP attention</strong> improves performance from 74.7% to 87.4%.</li>
+</ul>
+</li>
+<li><strong>VinePPO Config Overview</strong>: A member offered to discuss <strong>Jsonnet</strong>/<strong>VinePPO</strong> and then provided links to <a href="https://icml.cc/virtual/2025/poster/45526">ICML</a>, <a href="https://openreview.net/forum?id=5mJrGtXVwz">OpenReview</a>, <a href="https://arxiv.org/abs/2410.01679">ArXiv</a>, and <a href="https://github.com/McGill-NLP/VinePPO">GitHub</a> related to it.
+<ul>
+<li>Later specified that <em>the configuration details for RLVR are more important than the jsonnet language itself</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Yannick Kilcher ▷ #<a href="https://discord.com/channels/714501525455634453/853983317044756510/1430697332848066571">ml-news</a></strong> (8 messages🔥):</h3>
+<blockquote>
+<p><code>Unseeable Prompt Injections, Google's Genie 3 AI</code></p>
+</blockquote>
+<ul>
+<li><strong>AI Community Pans Paper</strong>: Members criticized the quality of a linked paper, with one calling it <em>poor</em> despite an <em>interesting title</em> and the other agreeing that <em>this is just not the one</em>.
+<ul>
+<li>The first member said that he <em>thought oh this will be a fun and easy paper and was surprised at how poor it was</em>.</li>
+</ul>
+</li>
+<li><strong>Brave Exposes 'Unseeable' Prompt Injections</strong>: A member shared a <a href="https://brave.com/blog/unseeable-prompt-injections/">Brave Browser blog post</a> discussing <strong>unseeable prompt injections</strong>.
+<ul>
+<li>No further discussion was added.</li>
+</ul>
+</li>
+<li><strong>Google Gears Up Genie 3 Experiment</strong>: A member linked to a report on <a href="https://www.testingcatalog.com/google-prepares-genie-3-public-experiment-with-ai-generated-worlds/">Google's upcoming <strong>Genie 3</strong> experiment</a> for generating AI worlds.
+<ul>
+<li>No further discussion was added.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Nous Research AI ▷ #<a href="https://discord.com/channels/1053877538025386074/1149866623109439599/1430684999568457909">general</a></strong> (12 messages🔥):</h3>
+<blockquote>
+<p><code>Voice mode accents in models, Open Sourcing decision, Building in Public, Weeb Sam finetune, ChatGPT bug</code></p>
+</blockquote>
+<ul>
+<li><strong>Models' Accent Adventures: Jamaican Me Crazy!</strong>: A user reported that the <strong>4o model</strong> still does a <strong>Jamaican accent</strong> in voice mode, while <strong>model 5</strong> claims to do it but doesn't change the voice at all.
+<ul>
+<li>They specified this as <em>one of the few metrics I care about</em>.</li>
+</ul>
+</li>
+<li><strong>To Open Source or Polish: A Dev's Dilemma</strong>: A member is considering open-sourcing their software but is debating whether to delay the release to fix bugs or ship it with annoying garbage.
+<ul>
+<li>Their app is designed to let anyone train AI models locally without SaaS, but they have concerns about releasing it with imperfections.</li>
+</ul>
+</li>
+<li><strong>Build in Public for Cred</strong>: One member suggested that it's usually good to <strong>build in public</strong>, even if it's just in a personal blog that you don't tell anyone about.
+<ul>
+<li>They suggest it <em>helps build cred and even if it flops on social media you have a documented narrative that can help you get grants/funding</em>.</li>
+</ul>
+</li>
+<li><strong>Weeb Sam Finetune for Anime</strong>: The member mentions that they plan to include a <strong>Weeb Sam finetune</strong> in their release, which currently consists of <strong>40k images</strong>.
+<ul>
+<li>They claim it seems to semi outperform <strong>SAM</strong> when it comes to <strong>Anime</strong>.</li>
+</ul>
+</li>
+<li><strong>ChatGPT has Seahorse Scare</strong>: A user shared a link to a <a href="https://fxtwitter.com/ltx_model/status/1981346235194683497">tweet</a> about a <strong>ChatGPT bug</strong> that occurs when sending the prompt <em>is there an emoji of a seahorse?</em>.
+<ul>
+<li>One commenter speculated that it looks like an <strong>Unreal Engine/Runway/Wan competitor</strong> in the making.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Nous Research AI ▷ #<a href="https://discord.com/channels/1053877538025386074/1104063238934626386/1430749921040007361">research-papers</a></strong> (11 messages🔥):</h3>
+<blockquote>
+<p><code>Scaling Limits, KBLaM Citation, RL Scaling, Interface Matters, Minecraft Voyager</code></p>
+</blockquote>
+<ul>
+<li><strong>New Paper Sparks Scaling Limits Debate</strong>: A member shared a <a href="https://arxiv.org/abs/2506.06266">paper</a> and questioned if <strong>scaling</strong> has hit its limit, considering diminishing returns from <strong>pretraining</strong>, <strong>test-time compute</strong>, and <strong>RL</strong> scaling.
+<ul>
+<li>Other members disagreed, saying no, <em>RL, test time compute, etc are only one component of scaling AI</em>.</li>
+</ul>
+</li>
+<li><strong>Interface Design Drives Research Zeitgeist</strong>: A member argued that the <strong>interface</strong>, <strong>workflows</strong>, and <strong>infra</strong> are extremely important components of scaling AI, as the <strong>ChatGPT interface</strong> unlocked a research zeitgeist.
+<ul>
+<li>They pointed out that <em>Claude is calling their new prompt system 'Skills' but really this was pioneered (and coined) by Minecraft Voyager years ago</em>.</li>
+</ul>
+</li>
+<li><strong>Voyager's Interface Foresight Praised</strong>: Members emphasized that there's a ton of research that hasn't been implemented at scale yet because the <strong>Human-Computer Interaction component</strong> hasn't caught up with the research.
+<ul>
+<li>One member praised <strong>Voyager</strong>, noting they <em>got the privilege of meeting Jim Fan at GTC after he presented it</em> (<a href="https://x.com/DrJimFan/status/1662117799974809603">tweet</a>).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Nous Research AI ▷ #<a href="https://discord.com/channels/1053877538025386074/1104063238934626386/1430749921040007361">research-papers</a></strong> (11 messages🔥):</h3>
+<blockquote>
+<p><code>Scaling Limits, RL Scaling, Minecraft Voyager, Claude Skills</code></p>
+</blockquote>
+<ul>
+<li><strong>Scaling Reaching Limit, Paper Claims</strong>: A member shared a <a href="https://arxiv.org/abs/2506.06266">paper</a> they think is a particularly promising evolution of the idea, and asked if others think <strong>scaling</strong> has hit its limit.
+<ul>
+<li>Another member simply answered <em>no</em>.</li>
+</ul>
+</li>
+<li><strong>Interface and Infra Important for Scaling</strong>: One member stated that <strong>RL</strong>, <strong>test time compute</strong>, etc. are only one component of scaling AI and that the interface, workflows, and infra are also extremely important.
+<ul>
+<li>They added that there's tooons of research that just hasn't been implemented at scale yet because the <strong>Human-Computer Interaction</strong> component hasn't caught up with the research yet, and cited <a href="https://x.com/DrJimFan/status/1662117799974809603">Jim Fan's tweet</a>.</li>
+</ul>
+</li>
+<li><strong>Claude Skills vs Minecraft Voyager</strong>: A member discussed that <strong>Claude</strong> is calling their new prompt system <em>Skills</em> but really this was pioneered (and coined) by <strong>Minecraft Voyager</strong> years ago it's just that the interface to actually implement it hadn't been formalized at scale (e.g. CLI agents).
+<ul>
+<li>Another member said they <em>love bigger Voyager</em>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Moonshot AI (Kimi K-2) ▷ #<a href="https://discord.com/channels/1369594130807787570/1371757564005711973/1430691461875236906">general-chat</a></strong> (23 messages🔥):</h3>
+<blockquote>
+<p><code>Kimi Partnership, AI Paper Tracking, Chutes vs Moonshot AI for Kimi K2, Home Server Version Control with Git, OpenRouter Chutes ban</code></p>
+</blockquote>
+<ul>
+<li><strong>AlphaXiv Tracks AI Papers Geographically</strong>: A member shared a link to <a href="https://www.alphaxiv.org/labs/geo-trends">AlphaXiv</a>, a tool for tracking the geographic origins of <strong>AI research papers</strong>.
+<ul>
+<li>Another member asked not to advertise, and then was timed out for repeated violations.</li>
+</ul>
+</li>
+<li><strong>Kimi K2 Cheaper Chutes Compromises Quality</strong>: A member inquired about the quality of <strong>Chutes</strong> compared to <strong>Moonshot AI</strong> as a provider for <strong>Kimi K2</strong>.
+<ul>
+<li>Another member claimed that Chutes trains on user data without a data policy, has less reliable uptime, and its tool call accuracy is half that of the official API and then <strong>Chutes</strong> was memed on <a href="https://www.reddit.com/r/LocalLLaMA/comments/1da7j6g/did_you_know_you_can_ban_chutes_openrouter_go_to/">Reddit</a>.</li>
+</ul>
+</li>
+<li><strong>Home Servers Manage versions with Git?</strong>: A member inquired about using <strong>Git</strong> to manage home server versions to aid with resetting after breakages.
+<ul>
+<li>No one responded to the user's question or concerns.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>Manus.im Discord ▷ #<a href="https://discord.com/channels/1348819876348825620/1349440650495398020/1430679223584034928">general</a></strong> (22 messages🔥):</h3>
+<blockquote>
+<p><code>Manus sandbox limitations, Pro plan changes, Logic Arenas app, Manus code deprecation, Homework Solutions</code></p>
+</blockquote>
+<ul>
+<li><strong>Hybrid Architecture Brainstorming Session</strong>: A user suggested a <em>hybrid architecture</em> leveraging local compute and storage, questioning why waste local resources when the user has them available.
+<ul>
+<li>The suggestion included enabling building large native apps, processing huge datasets locally, and running resource-intensive AI models on local hardware.</li>
+</ul>
+</li>
+<li><strong>Pro Plan Users Claim Bait and Switch</strong>: A user expressed frustration over the <strong>Pro plan</strong> now having credit limits, claiming that upon purchase, it was advertised as <em>unlimited</em>.
+<ul>
+<li>The user acknowledged that plans can change but felt it unfair for the month already paid for, asking if anyone wanted to test the pro features.</li>
+</ul>
+</li>
+<li><strong>AI-Powered Arena App created by Manus</strong>: A user reported that Manus created a full-stack <strong>AI Arenas app</strong> (<a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430878322073796628/2025-10-23_12-15.jpg?ex=68fc0988&#x26;is=68fab808&#x26;hm=efef49879866f78ee43ea3c281eca345ab2bcf800110c561cc4e81bc723f5219&#x26;">image</a>) (<em>not yet tested</em>) within an hour using minimal credits.
+<ul>
+<li>The <strong>Logic Arenas</strong> app features <em>Heart vs Mind</em>, <em>Dual Parents</em>, and <em>Moral Court</em> arenas, built with <strong>Kotlin</strong>, <strong>Ktor</strong>, <strong>Redis</strong>, <strong>Jetpack Compose</strong>, and <strong>Material 3</strong>, comprising ~7k LOC across 28 files.</li>
+</ul>
+</li>
+<li><strong>Manus code uses Deprecated Modules, Plugins</strong>: A user reported that <strong>Manus</strong> could improve by using non-deprecated code, modules, and plugins, requiring significant effort to update everything.
+<ul>
+<li>Although Manus claimed to create a beautiful Material 3 dark theme (<a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430917287363350728/2025-10-23_14-51.jpg?ex=68fc2dd2&#x26;is=68fadc52&#x26;hm=4e68706e60e030a96d99d157b3abdacc9d2b99077639e85f545cb96a0620d614&#x26;">image1</a>, <a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430917287707279391/2025-10-23_14-47.jpg?ex=68fc2dd2&#x26;is=68fadc52&#x26;hm=04f22a7c26e41abcb491ebfcbdcb2c4ec8b05ad504eeb504de7aa4c2bc80f3f4&#x26;">image2</a>), the initial Android app design looked outdated, but Claude Code improved it with one prompt (<a href="https://cdn.discordapp.com/attachments/1349440650495398020/1430971270219956234/2025-10-23_18-26_1.jpg?ex=68fbb758&#x26;is=68fa65d8&#x26;hm=d73323d08753d88efdd123cd9be451622fbb989859f6077c67b76d45598ebfcd&#x26;">image</a>).</li>
+</ul>
+</li>
+<li><strong>Manus Flunks Homework Assignment</strong>: A user reported that <strong>Manus</strong> failed to correctly solve their homework, even with similar examples provided in two notebooks, and the generated PDF was disorganized.
+<ul>
+<li>The user highlighted Manus' inability to complete this seemingly simple request.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>aider (Paul Gauthier) ▷ #<a href="https://discord.com/channels/1131200896827654144/1131200896827654149/1430893317289410560">general</a></strong> (7 messages):</h3>
+<blockquote>
+<p><code>aider API keys, gemini-cli cost, playwright on Fedora</code></p>
+</blockquote>
+<ul>
+<li><strong>Aider API Keys: Cost-Competitive?</strong>: A user asked about using <strong>aider</strong> with API keys to match <strong>gemini-cli's</strong> cost-effectiveness.
+<ul>
+<li>The user noted that they use <code>/tokens</code> to manage keys, clear history, and watch context size.</li>
+</ul>
+</li>
+<li><strong>Gemini-cli's Generous Plans</strong>: A user described <strong>gemini-cli's</strong> cost profile, mentioning a plan at around <strong>$20 USD</strong> a month that provides nominally <strong>1500</strong> requests a day with a <strong>1M token</strong> context window.
+<ul>
+<li>The user also mentioned that while the interface is mostly better than <strong>aider's</strong>, it lacks a repo map but relies a lot on file system operations, such as <code>grep</code>.</li>
+</ul>
+</li>
+<li><strong>Playwright on Fedora: Anyone?</strong>: A user asked if anyone has successfully gotten <strong>Playwright</strong> working on <strong>Fedora</strong>.
+<ul>
+<li>No solutions or workarounds were provided in the excerpt.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>aider (Paul Gauthier) ▷ #<a href="https://discord.com/channels/1131200896827654144/1133060505792159755/1430741210439618612">questions-and-tips</a></strong> (1 messages):</h3>
+<blockquote>
+<p><code>Future of Aider, Paul Gauthier's Vision</code></p>
+</blockquote>
+<ul>
+<li><strong>Community Awaits Paul Gauthier's Vision for Aider's Future</strong>: Members are curious about the future direction of <strong>Aider</strong> and are looking forward to hearing from its creator, <strong>Paul Gauthier</strong>.
+<ul>
+<li>The community anticipates insights into upcoming developments and strategic decisions for the project.</li>
+</ul>
+</li>
+<li><strong>Speculation on Aider's Roadmap</strong>: Discussion revolves around the potential evolution of <strong>Aider</strong>, with users eager to understand the roadmap.
+<ul>
+<li>Users seek clarity on planned features, enhancements, and the overall trajectory of the <strong>Aider</strong> project.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3><strong>tinygrad (George Hotz) ▷ #<a href="https://discord.com/channels/1068976834382925865/1068976834928193609/1430758415516569640">general</a></strong> (2 messages):</h3>
+<blockquote>
+<p><code>tinygrad slide at pytorchconf, tinygrad dev onboarding</code></p>
+</blockquote>
+<ul>
+<li><strong>tinygrad Slides into pytorchconf!</strong>: tinygrad got a <a href="https://cdn.discordapp.com/attachments/1068976834928193609/1430758414744686655/HDjLLqQ.png?ex=68fc429c&#x26;is=68faf11c&#x26;hm=13bea9c27e9b130accbe594e495dbd0e6813cb720aaabb5bb6f2375495a385b5&#x26;">slide</a> at <strong>pytorchconf</strong>.
+<ul>
+<li>The slide showcases <strong>tinygrad</strong>'s integration and relevance within the broader PyTorch ecosystem.</li>
+</ul>
+</li>
+<li><strong>New tinygrad Devs Wanted</strong>: A member asked about documentation on becoming a <strong>tinygrad developer</strong>.
+<ul>
+<li>No specific resources were directly linked in the messages, but it implies an interest in expanding the <strong>tinygrad</strong> contributor base.</li>
+</ul>
+</li>
+</ul>
+</article>
+  </main>
+</body>
+</html>

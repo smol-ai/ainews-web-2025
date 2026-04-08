@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { ImageResponse } from '@vercel/og';
 import { renderIssueOgImage, renderHomepageOgImage } from '../../lib/renderOgImage';
 
+export const prerender = false;
+
 // Alternative approach using Astro's URL directly
 export const GET: APIRoute = async ({ url, request }) => {
   try {
