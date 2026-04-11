@@ -2,13 +2,50 @@
 id: MjAyNS0x
 title: not much happened today
 date: '2026-04-09T05:44:39.731046Z'
+description: >-
+  **Anthropic's Mythos** and **OpenAI's** upcoming restricted cyber-capable
+  models are central to recent discussions, with debates on their security
+  realism and evaluation methods. **LangChain's Deep Agents deploy** introduces
+  an open memory, model-agnostic agent harness architecture emphasizing open
+  protocols and memory ownership. Sandboxes are gaining prominence as a core
+  infrastructure for reinforcement learning, with labs running up to **100K
+  concurrent sandboxes** aiming for **1M**. The **Hermes Agent** by Nous
+  continues to gain traction with new integrations and features like a web-based
+  HUD and token cost tracking.
+companies:
+  - anthropic
+  - openai
+  - langchain
+  - nous-research
+models:
+  - mythos
+topics:
+  - cybersecurity
+  - sandboxing
+  - reinforcement-learning
+  - agent-architecture
+  - memory-management
+  - model-deployment
+  - software-security
+  - evaluation-methods
+people:
+  - kimmonismus
+  - paul_cal
+  - gneubig
+  - kentonvarda
+  - boazbaraktcs
+  - ylecun
+  - deanwball
+  - hwchase17
+  - vtrivedy10
+  - sarahcat21
+  - aijoey
 ---
+
 
 **a quiet day.**
 
 > AI News for 4/8/2026-4/9/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
-
-
 
 
 ---
