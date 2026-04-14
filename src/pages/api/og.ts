@@ -1,5 +1,4 @@
 /** @jsxImportSource react */
-import React from 'react';
 import { ImageResponse } from '@vercel/og';
 import type { APIRoute } from 'astro';
 import { renderIssueOgImage, renderHomepageOgImage } from '../../lib/renderOgImage';
@@ -8,12 +7,17 @@ import { markdownToHtml } from '@utils/textUtils';
 // https://og-playground.vercel.app/
 export const prerender = false;
 
+const verboseBuild = process.env.VERBOSE_BUILD === 'true';
+const logBuild = (...args: unknown[]) => {
+  if (verboseBuild) console.log(...args);
+};
+
 export const GET: APIRoute = async ({ request }) => {
   try {
     const url = new URL(request.url);
-    console.log('request', request.url)
-    console.log('title', url.searchParams.get('title'))
-    console.log('type', url.searchParams.get('type'))
+    logBuild('request', request.url)
+    logBuild('title', url.searchParams.get('title'))
+    logBuild('type', url.searchParams.get('type'))
     
     // Extract parameters
     const title = url.searchParams.get('title') || 'AI News';

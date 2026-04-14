@@ -12,17 +12,22 @@ import Lightbox from "@components/Lightbox.astro";
 type IssueSummary = Pick<CollectionEntry<"issues">, "id" | "data">;
 
 export async function getStaticPaths() {
-  console.log(`[Issue Detail] getStaticPaths - Environment: ${import.meta.env.MODE}`);
+  const verboseBuild = process.env.VERBOSE_BUILD === "true";
+  const logBuild = (...args: unknown[]) => {
+    if (verboseBuild) console.log(...args);
+  };
+
+  logBuild(`[Issue Detail] getStaticPaths - Environment: ${import.meta.env.MODE}`);
   const allIssuesRaw = await getCollection("issues");
-  console.log(`[Issue Detail] Total raw issues: ${allIssuesRaw.length}`);
+  logBuild(`[Issue Detail] Total raw issues: ${allIssuesRaw.length}`);
   
   // Log the years represented in all issues
   const yearsFound = new Set(allIssuesRaw.map(post => new Date(post.data.date).getFullYear()));
-  console.log(`[Issue Detail] Years found in content: ${Array.from(yearsFound).sort().join(', ')}`);
+  logBuild(`[Issue Detail] Years found in content: ${Array.from(yearsFound).sort().join(', ')}`);
   
   // Log 2025 issues data
   const issues2025 = allIssuesRaw.filter(post => new Date(post.data.date).getFullYear() === 2025);
-  console.log(`[Issue Detail] Found ${issues2025.length} issues from 2025`);
+  logBuild(`[Issue Detail] Found ${issues2025.length} issues from 2025`);
   // issues2025.forEach(issue => {
   //   console.log(`[Issue Detail] 2025 issue: ${issue.id}, date: ${issue.data.date}, draft: ${issue.data.draft || false}`);
   // });
@@ -31,13 +36,13 @@ export async function getStaticPaths() {
     .filter((post) => {
       const isDraft = !!post.data.draft;
       if (isDraft) {
-        console.log(`[Issue Detail] Filtering out draft post: ${post.id}`);
+        logBuild(`[Issue Detail] Filtering out draft post: ${post.id}`);
       }
       return !isDraft;
     })
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   
-  console.log(`[Issue Detail] Final filtered issues count: ${allIssues.length}`);
+  logBuild(`[Issue Detail] Final filtered issues count: ${allIssues.length}`);
   
   // Log detailed path info
   const paths = allIssues.map((post) => ({
@@ -45,8 +50,8 @@ export async function getStaticPaths() {
     props: { id: post.id, year: new Date(post.data.date).getFullYear() },
   }));
   
-  console.log(`[Issue Detail] Generated ${paths.length} paths`);
-  console.log(`[Issue Detail] Sample path details:`, paths.slice(0, 2));
+  logBuild(`[Issue Detail] Generated ${paths.length} paths`);
+  logBuild(`[Issue Detail] Sample path details:`, paths.slice(0, 2));
   
   // Count paths by year
   const pathsByYear = paths.reduce((acc: Record<number, number>, path) => {
@@ -55,7 +60,7 @@ export async function getStaticPaths() {
     return acc;
   }, {});
   
-  console.log(`[Issue Detail] Paths by year:`, pathsByYear);
+  logBuild(`[Issue Detail] Paths by year:`, pathsByYear);
   
   return paths;
 }
@@ -82,7 +87,9 @@ if (year < 2026) {
   return Astro.redirect(`/frozen-issues/${post.id}.html`);
 }
 
-console.log(`[Issue Detail] Rendering issue: ${post.id}, date: ${post.data.date}, year: ${year}`);
+if (process.env.VERBOSE_BUILD === "true") {
+  console.log(`[Issue Detail] Rendering issue: ${post.id}, date: ${post.data.date}, year: ${year}`);
+}
 
 // To get the next and previous issues
 // Get all issues

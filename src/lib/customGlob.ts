@@ -1,7 +1,7 @@
 import { promises as fs, existsSync } from 'node:fs';
 import { relative } from 'node:path';
 import { fileURLToPath, pathToFileURL, URL as NodeURL } from 'node:url';
-import { bold, green } from 'kleur/colors';
+import { green } from 'kleur/colors';
 import pLimit from 'p-limit';
 // @ts-ignore
 import picomatch from 'picomatch';
@@ -14,6 +14,11 @@ interface GenerateIdOptions {
   data: Record<string, unknown>;
 }
 
+const verboseBuild = process.env.VERBOSE_BUILD === 'true';
+const logBuild = (...args: unknown[]) => {
+  if (verboseBuild) console.log(...args);
+};
+
 // Simplified ContentEntryType for our custom implementation
 interface ContentEntryType {
   getEntryInfo: (options: { contents: string; fileUrl: NodeURL }) => Promise<{ body: string; data: Record<string, unknown> }>;
@@ -25,14 +30,13 @@ interface ContentEntryRenderFunction {
   (options: { id: string; data: Record<string, unknown>; body: string; filePath: string; digest: string }): Promise<any>;
 }
 
-function generateIdDefault({ entry, base, data }: GenerateIdOptions): string {
+function generateIdDefault({ entry, data }: GenerateIdOptions): string {
   if (data.slug) {
     return data.slug as string;
   }
   
 //   console.log(`[Custom Glob] Generating ID for entry: ${entry}`);
   
-  const entryURL = new NodeURL(encodeURI(entry), base);
   // Simplified version just using the filename without extension as the slug
   const parts = entry.split('/');
   const filename = parts[parts.length - 1];
@@ -55,7 +59,7 @@ interface CustomGlobOptions extends AstroGlobOptions {
 }
 
 export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
-  console.log('[Custom Glob] Initializing custom glob loader');
+  logBuild('[Custom Glob] Initializing custom glob loader');
   
   if (checkPrefix(globOptions.pattern, '../')) {
     throw new Error(
@@ -76,7 +80,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
     load: async (context: AstroLoaderContext) => {
       const { config, logger, watcher, parseData, store, generateDigest, entryTypes } = context;
       
-      console.log('[Custom Glob] Loading content with custom glob loader');
+      logBuild('[Custom Glob] Loading content with custom glob loader');
       
       const renderFunctionByContentType = new Map<ContentEntryType, ContentEntryRenderFunction>();
       const untouchedEntries = new Set(store.keys());
@@ -126,7 +130,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         const filePath = fileURLToPath(fileUrl);
 
         if (existingEntry && existingEntry.digest === digest && existingEntry.filePath) {
-          console.log(`[Custom Glob] Entry unchanged: ${id}`);
+          logBuild(`[Custom Glob] Entry unchanged: ${id}`);
           
           if (existingEntry.deferredRender) {
             store.addModuleImport(existingEntry.filePath);
@@ -209,7 +213,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
 
       const filePath = fileURLToPath(baseDir);
       const relativePath = relative(fileURLToPath(config.root), filePath);
-      console.log(`[Custom Glob] Base directory: ${relativePath}`);
+      logBuild(`[Custom Glob] Base directory: ${relativePath}`);
 
       const exists = existsSync(baseDir);
 
@@ -217,13 +221,13 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         logger.warn(`The base directory "${fileURLToPath(baseDir)}" does not exist.`);
       }
 
-      console.log(`[Custom Glob] Searching for files matching pattern: ${JSON.stringify(globOptions.pattern)}`);
+      logBuild(`[Custom Glob] Searching for files matching pattern: ${JSON.stringify(globOptions.pattern)}`);
       const files = await tinyglobby(globOptions.pattern, {
         cwd: fileURLToPath(baseDir),
         expandDirectories: false,
       });
 
-      console.log(`[Custom Glob] Found ${files.length} files`);
+      logBuild(`[Custom Glob] Found ${files.length} files`);
       
       
       if (exists && files.length === 0) {
@@ -254,7 +258,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
       );
 
       untouchedEntries.forEach((id) => {
-        console.log(`[Custom Glob] Removing untouched entry: ${id}`);
+        logBuild(`[Custom Glob] Removing untouched entry: ${id}`);
         store.delete(id);
       });
 
@@ -274,7 +278,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         if (!matchesGlob(entry)) {
           return;
         }
-        console.log(`[Custom Glob] File changed: ${entry}`);
+        logBuild(`[Custom Glob] File changed: ${entry}`);
         const entryType = configForFile(changedPath);
         const baseUrl = pathToFileURL(basePath);
         const oldId = fileToIdMap.get(changedPath);
@@ -290,7 +294,7 @@ export function customGlob(globOptions: CustomGlobOptions): AstroLoader {
         if (!matchesGlob(entry)) {
           return;
         }
-        console.log(`[Custom Glob] File deleted: ${entry}`);
+        logBuild(`[Custom Glob] File deleted: ${entry}`);
         const id = fileToIdMap.get(deletedPath);
         if (id) {
           store.delete(id);

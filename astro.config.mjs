@@ -6,8 +6,15 @@ import tailwindcss from "@tailwindcss/vite";
 import remarkYouTubeEmbed from "./src/remark-youtube-embed.mjs";
 import vercel from "@astrojs/vercel";
 
-console.log(`[Astro Config] Environment: ${process.env.NODE_ENV || 'development'}`);
-console.log(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false'}`);
+const verboseBuild = process.env.VERBOSE_BUILD === 'true';
+const logBuild = (...args) => {
+  if (verboseBuild) {
+    console.log(...args);
+  }
+};
+
+logBuild(`[Astro Config] Environment: ${process.env.NODE_ENV || 'development'}`);
+logBuild(`[Astro Config] Verbose build: ${process.env.VERBOSE_BUILD || 'false'}`);
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,25 +29,25 @@ export default defineConfig({
       name: 'content-logger',
       hooks: {
         'astro:config:setup': ({ config }) => {
-          console.log(`[Astro Config] Site URL: ${config.site}`);
+          logBuild(`[Astro Config] Site URL: ${config.site}`);
         },
         'astro:build:start': () => {
-          console.log(`[Astro Build] Starting build process...`);
+          logBuild(`[Astro Build] Starting build process...`);
         },
         'astro:build:done': ({ pages }) => {
-          console.log(`[Astro Build] Built ${pages.length} pages`);
+          logBuild(`[Astro Build] Built ${pages.length} pages`);
           
           // Count and log pages by year
           const issuesPages = pages.filter(page => page.pathname.includes('issues/'));
-          console.log(`[Astro Build] Built ${issuesPages.length} issue pages`);
+          logBuild(`[Astro Build] Built ${issuesPages.length} issue pages`);
           
           // Count issues with 2025 in the URL
           const issues2025 = issuesPages.filter(page => page.pathname.includes('/25-'));
-          console.log(`[Astro Build] Built ${issues2025.length} pages for 2025 issues`);
+          logBuild(`[Astro Build] Built ${issues2025.length} pages for 2025 issues`);
           
-          if (issues2025.length > 0) {
-            console.log(`[Astro Build] Sample 2025 pages:`, issues2025.slice(0, 5).map(p => p.pathname));
-          } else {
+          if (verboseBuild && issues2025.length > 0) {
+            logBuild(`[Astro Build] Sample 2025 pages:`, issues2025.slice(0, 5).map(p => p.pathname));
+          } else if (issues2025.length === 0) {
             console.log(`[Astro Build] WARNING: No 2025 issue pages were built!`);
           }
           
@@ -62,14 +69,14 @@ export default defineConfig({
             return pageDate >= threeWeeksAgo;
           });
           
-          console.log(`[Astro Build] Found ${recentPages.length} pages with content from the last 3 weeks`);
-          if (recentPages.length > 0) {
-            console.log(`[Astro Build] Recent content examples:`, recentPages.slice(0, 3).map(p => p.pathname));
+          logBuild(`[Astro Build] Found ${recentPages.length} pages with content from the last 3 weeks`);
+          if (verboseBuild && recentPages.length > 0) {
+            logBuild(`[Astro Build] Recent content examples:`, recentPages.slice(0, 3).map(p => p.pathname));
           }
           
           // Skip the check in development mode
           if (process.env.NODE_ENV !== 'production') {
-            console.log(`[Astro Build] Skipping recent content check in development mode`);
+            logBuild(`[Astro Build] Skipping recent content check in development mode`);
             return;
           }
           
@@ -104,7 +111,7 @@ export default defineConfig({
         onLog(level, log, handler) {
           // Log content-related warnings
           if (log.message && log.message.includes('content')) {
-            console.log(`[Vite Build] ${log.message}`);
+            logBuild(`[Vite Build] ${log.message}`);
           }
           // Let Rollup handle the log
           handler(level, log);

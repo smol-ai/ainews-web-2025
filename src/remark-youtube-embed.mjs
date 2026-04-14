@@ -24,8 +24,6 @@ export function remarkYouTubeEmbed() {
       if (node.children.length !== 1) return;
       
       let url = '';
-      let isLink = false;
-      
       // Check if it's a plain URL text node
       if (node.children[0].type === 'text') {
         url = node.children[0].value.trim();
@@ -33,7 +31,6 @@ export function remarkYouTubeEmbed() {
       // Check if it's a link node
       else if (node.children[0].type === 'link') {
         url = node.children[0].url;
-        isLink = true;
       }
       else {
         return;

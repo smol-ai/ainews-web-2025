@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process';
-import { copyFile, readFile, stat, writeFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { createWriteStream, existsSync } from 'node:fs';
+import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const startedAt = Date.now();
@@ -8,25 +8,98 @@ const scope = process.env.VERCEL_SCOPE || 'smol-ai';
 const project = process.env.VERCEL_PROJECT || 'ainews-web-2025';
 const outputDir = '.vercel/output';
 const vercelCommand = process.env.VERCEL_CLI || 'vercel';
+const verboseDeploy = process.env.DEPLOY_VERBOSE === 'true';
+const assetVersion = process.env.DEPLOY_ASSET_VERSION || String(startedAt);
+const deployLogDir = '.vercel/deploy-logs';
+const deployLogPath = join(deployLogDir, `deploy-${new Date(startedAt).toISOString().replace(/[:.]/g, '-')}.log`);
 
 function elapsed() {
   return `${((Date.now() - startedAt) / 1000).toFixed(1)}s`;
+}
+
+function stripAnsi(value) {
+  return value.replace(/\u001b\[[0-9;?]*[ -/]*[@-~]/g, '');
+}
+
+function shouldPrintLine(line) {
+  const clean = stripAnsi(line).trim();
+  if (!clean) return false;
+
+  if (verboseDeploy) return true;
+  if (/^\d{2}:\d{2}:\d{2}\s+├─ /.test(clean)) return false;
+  if (/^\d{2}:\d{2}:\d{2}\s+└─ /.test(clean)) return false;
+
+  return [
+    /\b(error|failed|failure|warning|warn)\b/i,
+    /^Detected `pnpm-lock\.yaml`/,
+    /^Generated \d+ frozen issue pages/,
+    /^\d{2}:\d{2}:\d{2} \[(content|types|check|build|pagefind|@astrojs\/vercel|@astrojs\/sitemap)\]/,
+    /^\d{2}:\d{2}:\d{2} ✓ Completed in/,
+    /^\d{2}:\d{2}:\d{2} ▶ /,
+    /^- \d+ errors?/,
+    /^- \d+ warnings?/,
+    /^Step complete in/,
+    /^Uploading \[/,
+    /^Inspect:/,
+    /^Production:/,
+    /^Building:/,
+    /^Completing/,
+    /^Aliased:/,
+    /^Deployment completed/,
+    /^Build completed successfully/,
+    /^Deploying /,
+    /^Retrieving project/,
+  ].some((pattern) => pattern.test(clean));
 }
 
 function run(command, args, options = {}) {
   const commandText = [command, ...args].join(' ');
   const stepStart = Date.now();
   console.log(`\n$ ${commandText}`);
+  console.log(`Full log: ${deployLogPath}`);
 
   return new Promise((resolve, reject) => {
     const child = spawn(command, args, {
-      stdio: 'inherit',
+      stdio: ['ignore', 'pipe', 'pipe'],
       shell: false,
       ...options,
     });
+    const logStream = createWriteStream(deployLogPath, { flags: 'a' });
+    const pending = { stdout: '', stderr: '' };
+
+    logStream.write(`\n$ ${commandText}\n`);
+
+    function handleOutput(source, chunk) {
+      const text = chunk.toString();
+      logStream.write(text);
+
+      if (verboseDeploy) {
+        process[source].write(text);
+        return;
+      }
+
+      pending[source] += text.replace(/\r/g, '\n');
+      const lines = pending[source].split('\n');
+      pending[source] = lines.pop() ?? '';
+
+      for (const line of lines) {
+        if (shouldPrintLine(line)) {
+          process[source].write(`${line}\n`);
+        }
+      }
+    }
+
+    child.stdout.on('data', (chunk) => handleOutput('stdout', chunk));
+    child.stderr.on('data', (chunk) => handleOutput('stderr', chunk));
 
     child.on('error', reject);
     child.on('close', (code) => {
+      for (const source of ['stdout', 'stderr']) {
+        if (pending[source] && shouldPrintLine(pending[source])) {
+          process[source].write(`${pending[source]}\n`);
+        }
+      }
+      logStream.end();
       const seconds = ((Date.now() - stepStart) / 1000).toFixed(1);
       if (code === 0) {
         console.log(`Step complete in ${seconds}`);
@@ -39,7 +112,6 @@ function run(command, args, options = {}) {
 }
 
 async function directorySize(path) {
-  const { readdir } = await import('node:fs/promises');
   let total = 0;
   const entries = await readdir(path, { withFileTypes: true });
 
@@ -122,36 +194,85 @@ async function fixVercelRoutes() {
   console.log(`Moved Vercel static/filesystem routes before error/404 routes: filesystem ${filesystemIndex} -> 3, first 404 was ${first404Index}.`);
 }
 
+async function findFiles(directory, predicate) {
+  const results = [];
+  const entries = await readdir(directory, { withFileTypes: true });
+  for (const entry of entries) {
+    const entryPath = join(directory, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...await findFiles(entryPath, predicate));
+    } else if (entry.isFile() && predicate(entryPath, entry.name)) {
+      results.push(entryPath);
+    }
+  }
+  return results;
+}
+
+function addVersionToAssetUrl(url) {
+  if (url.includes('?')) {
+    return url;
+  }
+  return `${url}?v=${assetVersion}`;
+}
+
 async function patchCachedAssetUrls() {
   const sourcePath = join(outputDir, 'static', '_astro', 'index.ljMySSss.css');
-  const versionedPath = join(outputDir, 'static', 'pagefind', 'pagefind-astro-ui-2026-04-08.css');
+  const versionedPagefindName = `pagefind-astro-ui-${assetVersion}.css`;
+  const versionedPath = join(outputDir, 'static', 'pagefind', versionedPagefindName);
+  const astroCssFiles = await findFiles(join(outputDir, 'static', '_astro'), (_path, name) => name.endsWith('.css'));
 
-  if (!existsSync(sourcePath)) {
-    console.log('No cached Pagefind Astro CSS filename found to patch.');
-    return;
+  if (existsSync(sourcePath)) {
+    await copyFile(sourcePath, versionedPath);
   }
 
-  await copyFile(sourcePath, versionedPath);
+  let patchedFiles = 0;
+  const htmlFiles = await findFiles(join(outputDir, 'static'), (_path, name) => name.endsWith('.html'));
+  for (const htmlFile of htmlFiles) {
+    const html = await readFile(htmlFile, 'utf-8');
+    let updated = html;
 
-  const { readdir } = await import('node:fs/promises');
-  async function patchHtmlFiles(directory) {
-    const entries = await readdir(directory, { withFileTypes: true });
-    for (const entry of entries) {
-      const entryPath = join(directory, entry.name);
-      if (entry.isDirectory()) {
-        await patchHtmlFiles(entryPath);
-      } else if (entry.isFile() && entry.name.endsWith('.html')) {
-        const html = await readFile(entryPath, 'utf-8');
-        const updated = html.replaceAll('/_astro/index.ljMySSss.css', '/pagefind/pagefind-astro-ui-2026-04-08.css');
-        if (updated !== html) {
-          await writeFile(entryPath, updated);
-        }
+    if (existsSync(sourcePath)) {
+      updated = updated.replaceAll('/_astro/index.ljMySSss.css', `/pagefind/${versionedPagefindName}`);
+      updated = updated.replaceAll('/pagefind/pagefind-astro-ui-2026-04-08.css', `/pagefind/${versionedPagefindName}`);
+    }
+
+    updated = updated.replace(/(href=")(\/_astro\/[^"?]+\.css)(")/g, (_match, prefix, url, suffix) => {
+      return `${prefix}${addVersionToAssetUrl(url)}${suffix}`;
+    });
+    updated = updated.replace(/(href=")(\/pagefind\/[^"?]+\.css)(")/g, (_match, prefix, url, suffix) => {
+      return `${prefix}${addVersionToAssetUrl(url)}${suffix}`;
+    });
+
+    if (updated !== html) {
+      await writeFile(htmlFile, updated);
+      patchedFiles += 1;
+    }
+  }
+
+  console.log(`Versioned CSS asset URLs in ${patchedFiles} HTML files with v=${assetVersion}.`);
+  console.log(`Found ${astroCssFiles.length} Astro CSS files in output.`);
+}
+
+async function verifyLocalCssReferences() {
+  const htmlFiles = await findFiles(join(outputDir, 'static'), (_path, name) => name.endsWith('.html'));
+  const missing = new Set();
+
+  for (const htmlFile of htmlFiles) {
+    const html = await readFile(htmlFile, 'utf-8');
+    const matches = html.matchAll(/href="(\/(?:_astro|pagefind)\/[^"?]+\.css)(?:\?[^"]*)?"/g);
+    for (const match of matches) {
+      const assetPath = join(outputDir, 'static', match[1]);
+      if (!existsSync(assetPath)) {
+        missing.add(match[1]);
       }
     }
   }
 
-  await patchHtmlFiles(join(outputDir, 'static'));
-  console.log('Rewrote cached Pagefind Astro CSS URL to /pagefind/pagefind-astro-ui-2026-04-08.css.');
+  if (missing.size > 0) {
+    throw new Error(`Missing CSS assets referenced by HTML: ${[...missing].join(', ')}`);
+  }
+
+  console.log(`Verified CSS references across ${htmlFiles.length} HTML files.`);
 }
 
 async function verifyScope() {
@@ -193,15 +314,18 @@ async function verifyProjectLink() {
 }
 
 try {
+  await mkdir(deployLogDir, { recursive: true });
   console.log(`Deploying to Vercel project: ${scope}/${project}`);
   console.log(`Using Vercel CLI command: ${vercelCommand}`);
+  console.log(`Using deploy asset version: ${assetVersion}`);
   await verifyScope();
   await verifyProjectLink();
   await run(vercelCommand, ['build', '--yes', '--scope', scope, '--target', 'production']);
   await fixVercelRoutes();
   await patchCachedAssetUrls();
+  await verifyLocalCssReferences();
   await verifyOutput();
-  await run(vercelCommand, ['deploy', '--prebuilt', '--prod', '--scope', scope, '--target', 'production', '--archive=tgz']);
+  await run(vercelCommand, ['deploy', '--prebuilt', '--scope', scope, '--target', 'production', '--archive=tgz']);
   console.log(`\nDeploy complete. Total runtime: ${elapsed()}`);
 } catch (error) {
   console.error(`\nDeploy failed after ${elapsed()}`);

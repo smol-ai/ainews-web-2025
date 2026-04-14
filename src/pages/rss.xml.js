@@ -45,7 +45,6 @@ export async function GET(context) {
     items: await Promise.all(items.map(async (item, index) => {
       // Sanitize potential null characters using the utility function
       const title = sanitizeString(item.data.title);
-      const descriptionRaw = sanitizeString(item.data.description);
       // Convert description markdown to HTML (using the simplified version)
       const descriptionHtml = sanitizeString(item.data.description); // Keep raw description for now, or use simplified markdownToHtml if needed later.
       // Sanitize the date string before converting to Date

@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 
+export const prerender = false;
+
 // Simple diagnostic endpoint
 export const GET: APIRoute = async ({ request, url }) => {
   try {

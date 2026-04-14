@@ -1,10 +1,33 @@
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { access, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { basename, join } from 'node:path';
+import pLimit from 'p-limit';
 import { remark } from 'remark';
 import html from 'remark-html';
 
 const sourceDir = 'src/content/frozen-issues';
 const outputDir = 'public/frozen-issues';
+const manifestPath = '.vercel/cache/frozen-issues-manifest.json';
+const templateVersion = 'inline-css-v2';
+const concurrency = Number(process.env.FROZEN_ISSUE_CONCURRENCY || 8);
+const processor = remark().use(html);
+
+function hashSource(contents) {
+  return createHash('sha256')
+    .update(templateVersion)
+    .update('\0')
+    .update(contents)
+    .digest('hex');
+}
+
+async function readManifest() {
+  const contents = await readFile(manifestPath, 'utf-8').catch((error) => {
+    if (error && error.code === 'ENOENT') return null;
+    throw error;
+  });
+  if (!contents) return { files: {} };
+  return JSON.parse(contents);
+}
 
 function splitFrontmatter(contents) {
   const match = contents.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
@@ -54,8 +77,6 @@ function pageTemplate({ title, description, canonicalPath, body }) {
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="https://news.smol.ai${canonicalPath}">
-  <link rel="stylesheet" href="/_astro/index.BNfmcC--.css">
-  <link rel="stylesheet" href="/_astro/index.ljMySSss.css">
   <style>
     body{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;background:#fff;color:#111;line-height:1.65}
     main{max-width:820px;margin:0 auto;padding:32px 20px 80px}
@@ -89,21 +110,54 @@ function pageTemplate({ title, description, canonicalPath, body }) {
 
 const started = Date.now();
 await mkdir(outputDir, { recursive: true });
+await mkdir(join('.vercel', 'cache'), { recursive: true });
+const manifest = await readManifest();
 const files = (await readdir(sourceDir)).filter((file) => /\.(md|mdx)$/.test(file));
-let count = 0;
+const limit = pLimit(concurrency);
 
-for (const file of files) {
+async function generateIssue(file) {
   const id = basename(file).replace(/\.(md|mdx)$/, '');
   const contents = await readFile(join(sourceDir, file), 'utf-8');
+  const sourceHash = hashSource(contents);
+  const outputPath = join(outputDir, `${id}.html`);
+
+  if (manifest.files[file] === sourceHash) {
+    const outputExists = await access(outputPath).then(() => true).catch((error) => {
+      if (error && error.code === 'ENOENT') return false;
+      throw error;
+    });
+    if (outputExists) {
+      return { changed: false, skipped: true, file, sourceHash };
+    }
+  }
+
   const { frontmatter, body } = splitFrontmatter(contents);
   const title = readScalar(frontmatter, 'title') || id;
   const description = readScalar(frontmatter, 'description') || 'AI News archive issue';
-  const rendered = String(await remark().use(html).process(body));
-  await writeFile(
-    join(outputDir, `${id}.html`),
-    pageTemplate({ title, description, canonicalPath: `/issues/${id}`, body: rendered })
-  );
-  count += 1;
+  const rendered = String(await processor.process(body));
+  const output = pageTemplate({ title, description, canonicalPath: `/issues/${id}`, body: rendered });
+  const existing = await readFile(outputPath, 'utf-8').catch((error) => {
+    if (error && error.code === 'ENOENT') return null;
+    throw error;
+  });
+
+  if (existing === output) {
+    return { changed: false, skipped: false, file, sourceHash };
+  }
+
+  await writeFile(outputPath, output);
+  return { changed: true, skipped: false, file, sourceHash };
 }
 
-console.log(`Generated ${count} frozen issue pages in ${((Date.now() - started) / 1000).toFixed(1)}s`);
+const results = await Promise.all(files.map((file) => limit(() => generateIssue(file))));
+const changed = results.filter((result) => result.changed).length;
+const skipped = results.filter((result) => result.skipped).length;
+const rendered = results.length - skipped;
+const nextManifest = {
+  templateVersion,
+  files: Object.fromEntries(results.map((result) => [result.file, result.sourceHash])),
+};
+
+await writeFile(manifestPath, `${JSON.stringify(nextManifest, null, 2)}\n`);
+
+console.log(`Generated ${results.length} frozen issue pages in ${((Date.now() - started) / 1000).toFixed(1)}s (${changed} updated, ${rendered - changed} unchanged, ${skipped} skipped, concurrency ${concurrency})`);

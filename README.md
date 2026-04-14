@@ -32,6 +32,11 @@ pnpm dev
 pnpm build
 ```
 
+5. daily - bash updates
+```sh
+ pnpm tsx oneoffs/process-emails.ts --file "$(ls -t src/content/issues/*.md | head -n 1)" && gadmit "latest post" && gpom
+```
+
 ## Content archive strategy
 
 To keep Vercel builds under the 8 GB build-memory limit, issues before 2026 are frozen as static HTML instead of being fully rendered through Astro content collections on every build.

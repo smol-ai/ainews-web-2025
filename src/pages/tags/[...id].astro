@@ -7,6 +7,14 @@ import BackToPrevious from "@components/BackToPrevious.astro";
 
 export const prerender = true; // try to make sure this is prerendered
 
+const uniqueNonEmptyTags = (tags: Array<string | undefined>) => [
+  ...new Set(
+    tags.filter((tag): tag is string => (
+      typeof tag === "string" && tag.trim().length > 0
+    )),
+  ),
+];
+
 // Helper function to determine tag type
 export function getTagType(
   tag: string, 
@@ -23,16 +31,28 @@ export function getTagType(
 }
 
 export async function getStaticPaths() {
+  const verboseBuild = process.env.VERBOSE_BUILD === "true";
+  const logBuild = (...args: unknown[]) => {
+    if (verboseBuild) console.log(...args);
+  };
+  const cleanTags = (tags: Array<string | undefined>) => [
+    ...new Set(
+      tags.filter((tag): tag is string => (
+        typeof tag === "string" && tag.trim().length > 0
+      )),
+    ),
+  ];
+
   const posts = await getCollection("issues", ({ data }) => !data.draft);
-  console.log("Total issues posts found:", posts.length);
+  logBuild("Total issues posts found:", posts.length);
 
   // Get unique tags from all tag types
-  const companies = [...new Set(posts.flatMap((post) => post.data.companies || []))];
-  const models = [...new Set(posts.flatMap((post) => post.data.models || []))];
-  const topics = [...new Set(posts.flatMap((post) => post.data.topics || []))];
-  const people = [...new Set(posts.flatMap((post) => post.data.people || []))];
+  const companies = cleanTags(posts.flatMap((post) => post.data.companies || []));
+  const models = cleanTags(posts.flatMap((post) => post.data.models || []));
+  const topics = cleanTags(posts.flatMap((post) => post.data.topics || []));
+  const people = cleanTags(posts.flatMap((post) => post.data.people || []));
   
-  console.log("Unique tags found:", {
+  logBuild("Unique tags found:", {
     companies: companies.length,
     models: models.length,
     topics: topics.length,
@@ -55,10 +75,10 @@ const allPosts = await getCollection("issues", ({ data }) => !data.draft);
 // console.log("Posts found for current tag:", allPosts.length);
 
 // Get all tag categories for classification
-const allCompanies = [...new Set(allPosts.flatMap((post) => post.data.companies || []))];
-const allModels = [...new Set(allPosts.flatMap((post) => post.data.models || []))];
-const allTopics = [...new Set(allPosts.flatMap((post) => post.data.topics || []))];
-const allPeople = [...new Set(allPosts.flatMap((post) => post.data.people || []))];
+const allCompanies = uniqueNonEmptyTags(allPosts.flatMap((post) => post.data.companies || []));
+const allModels = uniqueNonEmptyTags(allPosts.flatMap((post) => post.data.models || []));
+const allTopics = uniqueNonEmptyTags(allPosts.flatMap((post) => post.data.topics || []));
+const allPeople = uniqueNonEmptyTags(allPosts.flatMap((post) => post.data.people || []));
 
 // Find posts with this tag
 const posts = allPosts.filter((post) => 
