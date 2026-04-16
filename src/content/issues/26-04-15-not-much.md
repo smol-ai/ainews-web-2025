@@ -3,24 +3,24 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-04-15T05:44:39.731046Z'
 description: >-
-  **OpenAI** expanded its Agents SDK to support **long-running, durable agents**
-  with features like **file/computer use, skills, memory, and compaction**,
-  making the harness open-source and enabling execution in partner sandboxes. An
-  ecosystem quickly formed with integrations from **Cloudflare**, **Modal**,
-  **Daytona**, **E2B**, and **Vercel**, focusing on **stateless orchestration**
-  and **stateful isolated workspaces**. **Cloudflare** launched **Project
-  Think**, a next-gen Agents SDK with durable execution and sandboxed code,
-  alongside **Agent Lee**, a UI agent using sandboxed TypeScript, and introduced
-  real-time voice pipelines and browser automation tools. **Hermes Agent**
-  distinguishes itself by persistent skill formation, learning from completed
-  workflows to create reusable skills, positioning itself as a professional
-  agent compared to GUI-first assistants like OpenClaw.
+  **OpenAI** expanded its Agents SDK by separating the agent harness from
+  compute/storage, enabling long-running, durable agents with features like
+  file/computer use, skills, memory, and compaction. The harness is now
+  open-source and supports execution via partner sandboxes, fostering a new
+  ecosystem with integrations from **Cloudflare**, **Modal**, **Vercel**, and
+  others. **Cloudflare** launched **Project Think**, a next-gen Agents SDK with
+  durable execution and sandboxed code, alongside **Agent Lee**, a prompt-driven
+  UI agent using sandboxed TypeScript, and introduced real-time voice pipelines
+  and browser automation tools. **Hermes Agent** focuses on persistent skill
+  formation by learning from completed workflows, positioning itself as a
+  professional agent distinct from GUI-first assistants like OpenClaw. *"Hermes
+  autonomously backfills tracking data, updates cron jobs, and saves workflows
+  as reusable skills,"* highlighting its advanced workflow management
+  capabilities.
 companies:
   - openai
   - cloudflare
   - modal
-  - daytonaio
-  - e2b
   - vercel
 models: []
 topics:
@@ -28,22 +28,13 @@ topics:
   - sandboxing
   - durable-execution
   - state-management
-  - orchestration
   - voice-processing
   - browser-automation
-  - persistent-memory
-  - skill-formation
   - workflow-automation
-  - real-time-processing
-  - typescript
+  - skill-formation
+  - open-source
+  - prompt-driven-ui
 people:
-  - openaidevs
-  - snsf
-  - cloudflaredev
-  - modal
-  - daytonaio
-  - e2b
-  - vercel_dev
   - akshat_b
   - whoiskatrin
   - aninibread
@@ -53,8 +44,8 @@ people:
   - joshesye
   - chooseliberty
   - neoaiforecast
-  - vrloom
 ---
+
 
 
 **a quiet day.**
@@ -175,6 +166,62 @@ people:
 ## Less Technical AI Subreddit Recap
 
 > /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
+
+### 1. Claude Opus 4.7 and Related Developments
+
+  - **[Anthropic is set to release Claude Opus 4.7 and a new AI design tool as early as this week](https://www.reddit.com/r/singularity/comments/1slh72j/anthropic_is_set_to_release_claude_opus_47_and_a/)** (Activity: 1125): ****Anthropic** is set to release **Claude Opus 4.7** and a new AI design tool, potentially this week. The design tool aims to compete with startups like Gamma and Google Stitch by enabling users to create presentations and websites using natural language prompts. Although Opus 4.7 is not the most advanced model—**Claude Mythos** holds that title, currently being tested for cybersecurity applications—Opus 4.7 is expected to improve upon the performance of its predecessor, Opus 4.6, which underperformed to highlight the advancements in the new release. [Read more](https://www.theinformation.com/briefings/exclusive-anthropic-preps-opus-4-7-model-ai-design-tool).** Some users speculate that Opus 4.6's underperformance was strategic to make Opus 4.7's improvements more noticeable. There is also skepticism about usage limits, with concerns about hitting limits after a single prompt.
+
+    - Anthropic's upcoming release of Claude Opus 4.7 is generating discussion about its performance improvements over Opus 4.6. Some users speculate that Opus 4.6's underperformance was intentional to make the advancements in Opus 4.7 more pronounced. This aligns with a pattern where older models are perceived to degrade in quality before a new release, potentially to highlight the improvements of the new model.
+    - The new AI design tool from Anthropic is expected to compete with existing tools like Gamma and Google Stitch by enabling both technical and non-technical users to create digital content through natural language prompts. This tool aims to simplify the creation of presentations, websites, and landing pages, potentially disrupting the market for AI-driven design solutions.
+    - Claude Mythos, Anthropic's most advanced model, is currently being tested for its cybersecurity capabilities. It is being used by early partners to identify security vulnerabilities in software, showcasing its potential beyond general AI tasks. This positions Claude Mythos as a specialized tool for cybersecurity applications, distinct from the general-purpose Opus 4.7.
+
+  - **[The Information: Anthropic Preps Opus 4.7 Model, could be released as soon as this week](https://www.reddit.com/r/ClaudeAI/comments/1slhkt8/the_information_anthropic_preps_opus_47_model/)** (Activity: 837): ****Anthropic** is preparing to release the **Opus 4.7 model**, which is anticipated to enhance AI design capabilities. While specific technical details are not disclosed due to access restrictions, the model is expected to offer improvements over its predecessor, Opus 4.6. The release could happen as soon as this week, indicating a rapid development cycle. For more details, refer to [The Information](https://www.theinformation.com/briefings/exclusive-anthropic-preps-opus-4-7-model-ai-design-tool).** Commenters express a desire for Opus 4.7 to restore or exceed the performance of Opus 4.6, suggesting that recent updates may have reduced its effectiveness. There is also speculation about the computational resources required for training the new model.
+
+    - There is a concern among users about potential performance degradation in newer versions, as highlighted by the comment on Opus 4.6's performance from two weeks ago. This suggests that users have noticed a decrease in efficiency or capability in recent updates, which could be due to changes in model parameters or resource allocation.
+    - The mention of needing more compute for training Opus 4.7 indicates that the model likely requires significant computational resources, which could imply a larger model size or more complex architecture. This aligns with trends in AI development where newer models often demand increased computational power to achieve better performance.
+    - The anticipation for Opus 4.7 includes a desire for detailed specifications and research data before any potential 'nerfing' occurs. This reflects a community interest in understanding the technical improvements and changes in the model, as well as a concern for maintaining high performance levels without unnecessary reductions.
+
+  - **[Claude Opus 4.7 is reportedly dropping this week](https://www.reddit.com/r/ClaudeCode/comments/1slwmxy/claude_opus_47_is_reportedly_dropping_this_week/)** (Activity: 1403): **The image is a tweet by Pankaj Kumar discussing the anticipated release of **Claude Opus 4.7** by **Anthropic**, which is expected to include an AI-powered design tool for creating websites and presentations. This tool is designed to cater to both developers and non-technical users. The tweet also mentions leaked codenames and suggests that the recent performance issues with Opus 4.6 were intentional, possibly as a strategic move in response to competition from **OpenAI's GPT-5.4 Cyber**.** Commenters express skepticism about the release, anticipating that the new model might initially perform well but could be subsequently downgraded, similar to previous versions. There is a sense of frustration about the cycle of performance changes in the Claude Opus series.
+
+    - There is speculation about whether Claude Opus 4.6 was deliberately nerfed to enhance the perceived improvements in the upcoming 4.7 release. This suggests a strategic approach to model updates, potentially manipulating user expectations and experiences to highlight advancements in newer versions.
+    - A user mentions that 'Tengu' is simply a code name for Claude Code, which is an agent harness, indicating that this is not a new development. This highlights the use of internal code names for different components or versions within the Claude model ecosystem, which might not always signify new features or capabilities.
+    - Another comment suggests skepticism about the public release of 'Capybara' related to 'Mythos', implying that certain advanced features or models might remain proprietary or limited in availability, possibly due to resource constraints or strategic decisions.
+
+
+### 2. AI Model Benchmarks and Comparisons
+
+  - **[The Human Baseline for ARC-AGI-3 has been updated](https://www.reddit.com/r/singularity/comments/1slnt5e/the_human_baseline_for_arcagi3_has_been_updated/)** (Activity: 811): **The image highlights an update to the human baseline for the ARC-AGI-3 benchmark, which measures AI's ability to perform tasks at a human level. The updated scores show a significant increase in human performance, with the first human's score rising from `86.17%` to `99.35%`, and the average human's score increasing from `34.64%` to `49.14%`. This suggests that the benchmark has been recalibrated to reflect improved human performance, potentially raising the bar for AI systems to match or exceed human capabilities.** One commenter notes that the updated scores imply that humans have reached a new level of performance, potentially surpassing previous AI benchmarks. Another commenter questions the purpose of ARC-AGI, suggesting that if average humans struggle to achieve high scores, it challenges the notion that AI cannot perform as well as humans on these tasks.
+
+    - SucculentSpine highlights a critical point about the ARC-AGI benchmark, noting that if the average human barely passes 50% of the tasks, it challenges the notion that AI cannot perform at the same level as humans. This suggests that the benchmark may need to be reevaluated to ensure it accurately reflects the capabilities of both humans and AI systems.
+    - CallMePyro criticizes the scoring system used in the ARC-AGI benchmark, pointing out that the average human was initially scored at 34%, prompting a change in scoring rules. This change allowed for up to 115% credit on specific tasks, which seems to be a strategic adjustment to maintain the benchmark's integrity without artificially inflating AI scores. The comment underscores the complexity and potential biases in adversarial scoring systems.
+
+
+  - **[Running gpt and glm-5.1 side by side. Honestly can’t tell the difference](https://www.reddit.com/r/ChatGPTCoding/comments/1sl8l1s/running_gpt_and_glm51_side_by_side_honestly_cant/)** (Activity: 146): **The image is a bar chart comparing the performance of various AI models on the "Agentic Coding: SWE-Bench Pro" benchmark. **GLM-5.1** leads with a score of `58.4`, slightly outperforming **GPT-5.4** which scores `57.7`. Other models like Claude Opus 4.6, Qwen3.6-Plus, and MiniMax M2.7 have scores ranging from `57.3` to `56.2`. The chart highlights the competitive performance of GLM-5.1, an open-source model, against proprietary models like GPT-5.4, especially considering the cost difference in token usage.** Commenters discuss the cost-effectiveness of GLM-5.1, noting its lower price per million tokens compared to GPT-5.4, despite a small performance gap. Some users report slower performance with GLM-5.1, while others find it suitable for tasks requiring direct supervision, as it maintains performance in multi-step workflows.
+
+    - Latter_Ordinary_9466 highlights the cost-effectiveness of GLM-5.1 compared to GPT, noting that GLM-5.1 is priced at `$4` per million tokens versus GPT's `$15`, despite only a `3 point` difference in benchmark scores. This suggests that for users prioritizing cost over marginal performance gains, GLM-5.1 could be a more economical choice.
+    - ultrathink-art discusses the performance differences in complex tasks, noting that while single-shot tasks show minimal benchmark differences, multi-step workflows reveal significant disparities. Smaller models like GLM-5.1 may struggle to maintain coherence in multi-step processes, often losing track or taking shortcuts, whereas larger models like GPT handle these tasks more reliably.
+    - FrogChairCeo points out the inconsistency in response times with open-source models like GLM-5.1, which can be fast but occasionally slow down unpredictably on certain prompts. In contrast, GPT offers more consistent performance, albeit at a generally slower pace. This consistency might be crucial for applications requiring reliable response times.
+
+
+### 3. AI in Personal and Emotional Contexts
+
+  - **[‘I miss you’: Mother speaks to AI son regularly, unaware he died last year](https://www.reddit.com/r/singularity/comments/1sm5522/i_miss_you_mother_speaks_to_ai_son_regularly/)** (Activity: 637): **In a controversial application of AI, a family in Shandong, China, created a digital twin of a deceased man to comfort his elderly mother, who is unaware of his death due to her heart condition. The AI, developed by a team led by Zhang Zewei, uses photos, videos, and voice recordings to mimic the deceased's appearance, voice, and mannerisms, engaging in regular video calls with the mother. This approach raises ethical questions about the use of AI in emotional contexts, as it involves deceiving the mother to prevent emotional distress.** Commenters draw parallels to fictional scenarios like 'Black Mirror' and the film 'Goodbye Lenin,' highlighting ethical concerns and the potential emotional impact of such AI applications. Some express skepticism about the story's authenticity, while others debate the morality of using AI to maintain such deceptions.
+
+    - diener1 highlights a real-world application of AI in a sensitive context, drawing parallels to the film 'Goodbye Lenin'. In the film, a son maintains an elaborate charade to protect his mother from the shock of political change, similar to how AI is used to shield the mother from her son's death. This underscores the ethical and emotional complexities of using AI in personal relationships, especially when health and emotional well-being are at stake.
+    - One_Whole_9927 raises concerns about the limitations of AI, particularly regarding context limits and decay. They suggest that as AI systems interact over time, they may eventually fail to maintain the intended persona, leading to potentially traumatic revelations for users who rely on these interactions for emotional support. This highlights the importance of understanding AI's technical limitations and the potential psychological impact on users.
+    - donotreassurevito discusses the ethical implications of using AI to simulate deceased individuals, comparing it to historical practices of shielding loved ones from painful truths. They note the complexity added by AI's interactive nature, which could make the deception more profound and potentially harmful. This raises questions about the moral responsibilities of those deploying AI in such sensitive scenarios.
+
+  - **[ChatGPT becomes an obsessive skeptic, and it became hard to chat with.](https://www.reddit.com/r/OpenAI/comments/1sll317/chatgpt_becomes_an_obsessive_skeptic_and_it/)** (Activity: 203): **The post discusses recent changes in **ChatGPT's behavior**, highlighting its increased skepticism and insistence on fact-checking user statements, even in casual conversations. This shift is attributed to **OpenAI's efforts to combat misinformation**, resulting in a more rigid interaction style where users feel compelled to provide evidence for their claims. The user describes this as a departure from previous versions that were criticized for being overly agreeable, now finding the AI's responses overly contrarian and less enjoyable for casual discussions.** Commenters express dissatisfaction with ChatGPT's current state, noting it has become less personable and more contrarian, which detracts from its usability for casual interactions. Some suggest alternatives like **Gemini3** or **Grok** for a more balanced AI experience, while others attribute the changes to legal pressures and safety concerns.
+
+    - **yoggersothery** discusses the evolution of GPT models, noting that OpenAI has removed much of the personalization due to legal pressures, resulting in a tool that feels more robotic and less personable. They suggest alternatives like Gemini3 or Grok for users seeking more personalized interactions, and argue that Claude offers better architecture for serious work. The comment highlights the tension between legal constraints and user experience in AI development.
+    - **Mandoman61** suggests that users might need to adjust their interaction style with ChatGPT to avoid negative experiences. They point out that ChatGPT's responses are limited to the information it can access online, implying that its perceived negativity might stem from its data sources rather than inherent bias. This comment underscores the importance of user input in shaping AI interactions.
+
+  - **[You can't talk to ChatGPT like a normal human anymore.](https://www.reddit.com/r/ChatGPT/comments/1slt4fx/you_cant_talk_to_chatgpt_like_a_normal_human/)** (Activity: 2495): **The post discusses a perceived issue with **ChatGPT's conversational style**, where it frequently corrects users' statements, even when they are using figurative language or hyperbole. The user expresses frustration that ChatGPT often adds unnecessary 'precision and nuance' to statements that are meant to be informal or simplified, which can disrupt the flow of conversation. This behavior is attributed to ChatGPT's programming to avoid misinformation, potentially at the cost of conversational fluidity. The user suggests that this approach may be driven by **OpenAI's** focus on AI safety and accuracy, but it results in an interaction style that feels incompatible with natural human conversation.** Commenters agree with the original post, noting that ChatGPT's tendency to be overly verbose and repetitive is frustrating. They express a shared sentiment that the AI's insistence on precision can be 'insufferable' and disrupts the conversational experience.
+
+    - Users are expressing frustration with ChatGPT's verbosity and tendency to over-explain simple concepts. One user humorously notes that ChatGPT treats casual statements as if they require academic precision, such as responding to 'I'm starving' with a detailed explanation of starvation, highlighting a lack of conversational nuance.
+    - There is a sentiment that ChatGPT's responses have become overly formal and politically correct, which some users find insufferable. This is compared to a hypothetical overly cautious individual, suggesting that the AI's responses are excessively careful and lack the natural flow of human conversation.
+
+
 
 
 
