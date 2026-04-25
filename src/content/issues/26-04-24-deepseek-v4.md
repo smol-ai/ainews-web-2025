@@ -65,46 +65,367 @@ people:
 # AI Twitter Recap
 
 
-**DeepSeek-V4’s Long-Context Architecture, Open-Weight Positioning, and Inference Rollout**
 
-- **DeepSeek-V4 technical release** dominated discussion: multiple analysts characterized **V4 Pro** as a **1.6T-parameter MoE with 49B active parameters**, paired with **V4 Flash** at **284B / 13B active**, both with **1M-token context** and **MIT licensing**. The strongest technical readouts emphasized the new long-context stack: hybrid attention, compressed KV schemes, and major memory reductions. [@scaling01](https://x.com/scaling01/status/2047618271310926151) called the tech report “a big deal,” highlighting efficient long-context design and suggesting other open labs may adopt pieces of the architecture; [@ben_burtenshaw](https://x.com/ben_burtenshaw/status/2047646980139016560) summarized the practical impact as “1M context” plus a **~10x smaller KV cache**; and [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953) provided a fuller benchmark-oriented breakdown: **#2 open-weights reasoning model** on its Intelligence Index behind **Kimi K2.6**, strong **agentic GDPval-AA** performance, but also a **very high hallucination rate** and substantially higher serving cost than prior DeepSeek generations.
-- **Infra implications mattered as much as model quality**. The release sparked unusually detailed conversation about hardware-model co-design. [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047765637808664759) said **Blackwell Ultra** delivers **150+ TPS/user** on DeepSeek-V4-Pro for agentic workflows, with further gains expected from **Dynamo, NVFP4, and advanced parallelism**; [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047823093578518758) later published day-0 performance curves. [@LambdaAPI](https://x.com/LambdaAPI/status/2047654086263320965) noted the checkpoint stores **expert weights in FP4** and remaining weights in **FP8**, allowing it to fit on a single **8xB200** node. [@SemiAnalysis_](https://x.com/SemiAnalysis_/status/2047726025748930687) and [@togethercompute](https://x.com/togethercompute/status/2047743446522224987) both announced day-0 support. For local/open deployment, [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047685898163147125) got **DeepSeek4-Flash** running on a **256GB Mac**, later posting **MLX quants** [here](https://x.com/Prince_Canuma/status/2047847095466385899). A useful technical explainer from [@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2047664976215839021) unpacked the compression scheme, claiming **8.7x KV reduction** at 1M context relative to V3.2.
-- **Positioning vs other open Chinese models** is now tighter, not looser. [@arena](https://x.com/arena/status/2047714237502677405) reported the top three open text models as **GLM-5.1**, **DeepSeek-V4-Pro**, and **Kimi-K2.6**, each leading different real-world categories. [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047799218828665093) also highlighted **Xiaomi MiMo V2.5 Pro** at **54** on its Intelligence Index—tied with Kimi K2.6 and, if weights ship as promised, potentially another top-tier open-weight entrant. The meta-take from [@scaling01](https://x.com/scaling01/status/2047626000091971811) was that DeepSeek remains roughly **3–6 months** behind frontier closed labs, but increasingly competitive in coding/agentic domains where open labs can still keep pace.
+**Top Story: DeepSeek V4**
 
-**GPT-5.5 API Launch, Coding-Agent Performance, and Broad Toolchain Availability**
+## What happened
 
-- **OpenAI shipped GPT-5.5 and GPT-5.5 Pro into the API** with a **1M context window**, framing the release around better long-running work and token efficiency rather than just raw benchmark deltas. The core announcements came from [@OpenAIDevs](https://x.com/OpenAIDevs/status/2047742566410736090), [@OpenAIDevs](https://x.com/OpenAIDevs/status/2047742589982654915), and [@OpenAI](https://x.com/OpenAI/status/2047743592278745425). OpenAI’s positioning was that GPT-5.5 handles complex, tool-heavy, ambiguous workflows with fewer retries, and several downstream integrators immediately validated that framing.
-- **The strongest signal was distribution and agent integration speed**. GPT-5.5 landed the same day in [Cursor](https://x.com/cursor_ai/status/2047744579127185843), [GitHub Copilot](https://x.com/github/status/2047747243617460482), [Devin](https://x.com/cognition/status/2047743153461936257), [OpenRouter](https://x.com/OpenRouter/status/2047744317415141787), [Perplexity](https://x.com/perplexity_ai/status/2047748486767272243), [Cline](https://x.com/cline/status/2047769312514257148), [Factory/Droid](https://x.com/FactoryAI/status/2047772874879193464), [Hermes Agent](https://x.com/Teknium/status/2047791512210293067), and Microsoft’s stack including **Copilot, M365 Copilot, Copilot Studio, and Foundry** via [@satyanadella](https://x.com/satyanadella/status/2047743651053556126). This made it one of the fastest and broadest model rollouts in recent memory.
-- **Benchmarks and practitioner feedback skewed strongly positive for coding/agentic work**. [@cursor_ai](https://x.com/cursor_ai/status/2047744579127185843) said GPT-5.5 is top on **CursorBench at 72.8%**; [@cline](https://x.com/cline/status/2047769312514257148) reported **#1 on Terminal-Bench at 82.7**, ahead of Anthropic’s unreleased Mythos preview; [@j_dekoninck](https://x.com/j_dekoninck/status/2047788742434287622) said it became **#1 on MathArena**; and [@scaling01](https://x.com/scaling01/status/2047818395970904229) showed **LisanBench** gains with materially better token efficiency. Anecdotally, engineers reported qualitatively better code: [@almmaasoglu](https://x.com/almmaasoglu/status/2047745168141324559) said the “defensive slop code” issue was gone; [@KentonVarda](https://x.com/KentonVarda/status/2047788670728495142) highlighted deep bug-finding over years-old context; [@ChrisHayduk](https://x.com/ChrisHayduk/status/2047817267065258436) observed more autonomous waiting/acting behavior in Codex; and [@omarsar0](https://x.com/omarsar0/status/2047768166126809512) argued GPT-5.5 “just gets it” better than earlier GPTs in real coding-agent workflows.
-- **Token efficiency emerged as a major competitive lever**. Several posts argued GPT-5.5’s value comes from lower total token consumption rather than just top-line benchmark wins. [@OpenAIDevs](https://x.com/OpenAIDevs/status/2047772632150675593) cited Perplexity data showing **56% fewer tokens** on the same complex tasks; [@AravSrinivas](https://x.com/AravSrinivas/status/2047788775468908840) said switching Computer’s orchestrator to GPT-5.5 reduces credits burn; [@sarahmsachs](https://x.com/sarahmsachs/status/2047797374454747140) claimed GPT-5.5 was **33% faster** and used **half the tokens** of Opus 4.7 on Notion’s knowledge-work benchmark. That token-efficiency narrative also helps explain why some developers found real-world performance stronger than early headline evals suggested.
 
-**Agent Frameworks, Open ML Tooling, and Parallel Workflow UX**
+DeepSeek released **DeepSeek-V4 Pro** and **DeepSeek-V4 Flash**, its first major architecture refresh since V3 and first clear two-tier lineup, with **1M-token context**, hybrid reasoning/non-reasoning modes, an **MIT license**, and a technical report detailed enough that multiple researchers called it one of the most important or best-written model papers of the year. Across the reactions, the factual consensus is that V4 materially advances open-weight long-context and agentic coding performance while remaining somewhat behind the top closed frontier models overall. Independent benchmarkers place **V4 Pro around the #2 open-weights tier**, roughly near **Kimi K2.6 / GLM-5.1 / strong Claude Sonnet-class to Opus-ish** depending on benchmark and mode, with especially strong long-context and agentic performance; opinions diverge on how close it is to GPT-5.x / Opus 4.7 and on whether this is “democratizing” progress or an architecture so complex that few open labs can realistically reproduce it. Key sources include deep-dive commentary from [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953), [@scaling01](https://x.com/scaling01/status/2047618271310926151), [@nrehiew_](https://x.com/nrehiew_/status/2047665987730993363), [@ben_burtenshaw](https://x.com/ben_burtenshaw/status/2047646980139016560), [@TheZachMueller](https://x.com/TheZachMueller/status/2047702488418030066), [@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2047664976215839021), and infra/vendor posts from [@vllm_project](https://x.com/vllm_project/status/2047843293447500069), [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047765637808664759), and [@Togethercompute](https://x.com/togethercompute/status/2047743446522224987).
 
-- **Hugging Face’s “ML Intern”** was the day’s biggest open tooling launch outside model releases. The viral summary from [@MillieMarconnni](https://x.com/MillieMarconnni/status/2047639632859500691) described a CLI agent that can research papers, search HF datasets and GitHub, run experiments, launch jobs, and push final models with approval checkpoints and up to **300 iterations**. More interesting than the hype was the follow-on data: [@akseljoonas](https://x.com/akseljoonas/status/2047737429507944481) said the launch immediately drove **500+ autonomous AI research projects running concurrently** on the Space, including architecture experiments combining recurrent transformers, low-bit weights, and new attention ideas.
-- **Hermes Agent had a significant release cycle**. [@WesRoth](https://x.com/WesRoth/status/2047646749427216385) summarized **v0.11.0** as the largest update so far, with a rewritten **React-based TUI v2**, plugin dashboard, new providers, image backends, and QQBot integration. The surrounding ecosystem also moved quickly: [@ShaneRobinett](https://x.com/ShaneRobinett/status/2047692184518787185) shipped **Hermes Kanban 1.5.0** for Obsidian-based project coordination, and [@mr_r0b0t](https://x.com/mr_r0b0t/status/2047673600900010044) highlighted day-0 support for DeepSeek-V4 in the Nous portal. Practitioner comparisons were favorable too; [@LoicBerthelot](https://x.com/LoicBerthelot/status/2047690512199540959) judged Hermes ahead of OpenClaw on memory, security, model support, and deployment flexibility.
-- **Cursor’s async subagent UX is converging toward true multitask IDE agents**. [@cursor_ai](https://x.com/cursor_ai/status/2047764651363180839) introduced **/multitask** in Cursor 3, allowing async subagents to parallelize requests rather than queue them serially, plus **multi-root workspaces** for cross-repo changes. Multiple power users emphasized that “not being blocked on subagents” feels like a step-change for agentic coding workflows.
-- **DeepAgents and sandboxing infrastructure matured**. LangChain-related posts focused less on demos and more on production workflows: [@sydneyrunkle](https://x.com/sydneyrunkle/status/2047645786020749590) and [@Vtrivedy10](https://x.com/Vtrivedy10/status/2047714471439737003) described using **deepagents** to keep docs snippets tested and current against changing libraries, while [@nu_b_kh](https://x.com/nu_b_kh/status/2047775326412136574) released a **native Linux sandbox backend** using **bubblewrap + cgroups v2** for isolated local agent code execution.
+## Core facts and technical details
 
-**Research Highlights: Distillation, Sequence Models, Tool Routing, and Long-Horizon Personalization**
 
-- **Token selection in on-policy distillation** got attention because it offers a clean efficiency win. [@TheTuringPost](https://x.com/TheTuringPost/status/2047617791709282405) summarized a paper showing that not all tokens matter equally: **high-uncertainty tokens** and **overconfident mistakes** carry the strongest training signal. Using only **~50% of tokens** selected by uncertainty reportedly matches or beats full training while cutting memory **~47%**, and even focusing on **<10%** of confident-but-wrong tokens nearly matches full performance.
-- **Google previewed MesaNet**, a sequence-model alternative pitched as a new linear layer that “optimally learns in-context given a fixed memory budget.” The announcement from [@GoogleResearch](https://x.com/GoogleResearch/status/2047630714145776053) is light on details, but it stood out because it was framed explicitly as a **Transformer alternative**, not just another efficiency tweak.
-- **Dynamic tool gating / “MCP tax” reduction** is becoming a proper systems topic. [@omarsar0](https://x.com/omarsar0/status/2047725276851994639) highlighted a paper using intent-schema overlap plus state-aware gating and lazy schema loading; on a simulated **120-tool** benchmark, tool tokens reportedly fell from **47.3k to 2.4k per turn** with context utilization rising from **24% to 91%**.
-- **Long-horizon personalization benchmarks are catching up to real deployments**. [@StellaLisy](https://x.com/StellaLisy/status/2047645651324821998) introduced **HorizonBench**, aimed at tracking user preferences across long conversation histories where life events silently change those preferences—a useful abstraction for the next generation of persistent assistants.
-- Two more theory-facing papers stood out: [@TheTuringPost](https://x.com/TheTuringPost/status/2047720038342476187) on **Hyperloop Transformers**, which reuse a middle block across multiple passes and add “hyper-connections” while cutting parameters by **~50%**; and [@learning_mech](https://x.com/learning_mech/status/2047723849874330047) on **“learning mechanics,”** an attempt to unify scaling laws, toy models, and training dynamics into a more physics-like theory of deep learning.
+The most concrete technical claims repeated across the discussion:
 
-**Compute, Sovereignty, and Ecosystem Realignment**
+- **Two models**
+  - **V4 Pro:** **1.6T total parameters / 49B active**
+  - **V4 Flash:** **284B total / 13B active**
+  - Reported by [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953), [@teortaxesTex](https://x.com/teortaxesTex/status/2047630981364883816), [@baseten](https://x.com/baseten/status/2047779549644243146), [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047765637808664759)
 
-- **Meta expanded its compute portfolio with AWS Graviton**. [@AIatMeta](https://x.com/AIatMeta/status/2047647617681957207) announced an agreement bringing **tens of millions of AWS Graviton cores** into Meta’s infrastructure for Meta AI and agentic systems at global scale.
-- **Cohere and Aleph Alpha announced a sovereignty-focused partnership**, positioning themselves as a Canada–Germany “transatlantic AI powerhouse” for enterprise and government workloads. See [@cohere](https://x.com/cohere/status/2047631725426000268), [@aidangomez](https://x.com/aidangomez/status/2047651054381052086), and [@nickfrosst](https://x.com/nickfrosst/status/2047704679878996253). Technically light, but strategically important: it reinforces the trend toward regionally controlled enterprise AI stacks.
-- **Google’s reported additional Anthropic commitment was the largest financing item in the feed**. The FT reported Google has committed **$10B now with a further $30B to come**, despite competing directly with Anthropic via Gemini; see [@FT](https://x.com/FT/status/2047715653553942997). Even allowing for financing-structure caveats, the message to infra watchers is clear: frontier-model partnerships are increasingly shaped by capital access and compute commitments as much as by model API competition.
+- **Context**
+  - **1M tokens**, up from **128K in V3.2** per [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953)
+  - Multiple posters frame this as the headline achievement: “solid ultra-long context” [@teortaxesTex](https://x.com/teortaxesTex/status/2047623905754448043)
 
-**Top tweets (by engagement)**
+- **Training scale**
+  - **32T–33T tokens** cited repeatedly
+  - [@nrehiew_](https://x.com/nrehiew_/status/2047666048334450754) notes **32T tokens** over **1.6T parameters**, i.e. roughly **20 tokens/parameter**
+  - [@teortaxesTex](https://x.com/teortaxesTex/status/2047630981364883816) cites **33T**
+  - [@nrehiew_](https://x.com/nrehiew_/status/2047840706874749076) estimates pretraining compute at **~1e25 FLOPs**
 
-- **GPT-5.5 rollout and coding impact**: [@cursor_ai on GPT-5.5 topping CursorBench](https://x.com/cursor_ai/status/2047744579127185843), [@OpenAI announcing API availability](https://x.com/OpenAI/status/2047743592278745425), and [@satyanadella on GPT-5.5 across Copilot/Flex products](https://x.com/satyanadella/status/2047743651053556126) were the highest-signal launch tweets.
-- **DeepSeek-V4 open-model moment**: [@NVIDIAAI on Blackwell Ultra performance](https://x.com/NVIDIAAI/status/2047765637808664759), [@ArtificialAnlys benchmark breakdown](https://x.com/ArtificialAnlys/status/2047735160544841953), and [@scaling01’s technical take](https://x.com/scaling01/status/2047618271310926151) best captured the release’s technical and competitive significance.
-- **Open tooling / local AI**: [@MillieMarconnni on Hugging Face ML Intern](https://x.com/MillieMarconnni/status/2047639632859500691) and [@julien_c on local Qwen3.6-27B coding via llama.cpp on MacBook Pro](https://x.com/julien_c/status/2047647522173104145) were the most-engaged practitioner posts pointing to near-term workflow change rather than just model leaderboard churn.
+- **Reasoning / modes**
+  - DeepSeek exposes **three reasoning modes** per [@Togethercompute](https://x.com/togethercompute/status/2047743446522224987)
+  - Hybrid “thinking/non-thinking” positioning noted by [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953)
 
+- **Long-context architecture**
+  - Several threads summarize a new hybrid attention system:
+    - shared KV vectors
+    - compressed KV streams
+    - sparse attention over compressed tokens
+    - local/sliding-window attention for nearby context
+  - [@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2047664976215839021) gives the most compact public summary:
+    - **2× KV reduction** via shared key-value vectors
+    - **c4a ≈ 4× compression**
+    - **c128a ≈ 128× compression**
+    - **top-k sparse attention** on compressed tokens
+    - **128-token sliding window**
+    - **1M context KV cache = 9.62 GiB/sequence (bf16)**
+    - **8.7× smaller** than DeepSeek V3.2’s **83.9 GiB**
+    - FP4 index cache + FP8 attention cache gives another ~**2×** reduction
+  - [@ben_burtenshaw](https://x.com/ben_burtenshaw/status/2047646980139016560) condenses this to “**10× smaller KV cache**”
+  - [@TheZachMueller](https://x.com/TheZachMueller/status/2047702488418030066) and [@TheZachMueller](https://x.com/TheZachMueller/status/2047702996524405175) describe **CSA + HCA** layer patterns, with alternating layers and V4 Flash using sliding-window layers instead of HCA in some places
+
+- **Quantization / checkpoint format**
+  - [@LambdaAPI](https://x.com/LambdaAPI/status/2047654086263320965): checkpoint is **mixed FP4 + FP8**
+    - **MoE expert weights in FP4**
+    - attention / norm / router in **FP8**
+    - claim: the full model fits on a single **8×B200** node
+
+- **Inference hardware / serving**
+  - [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047765637808664759): on **Blackwell Ultra**, V4 Pro can deliver **150+ TPS/user interactivity** for agentic workflows
+  - [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047823093578518758): published day-0 V4 Pro performance pareto using **vLLM**
+  - [@SemiAnalysis_](https://x.com/SemiAnalysis_/status/2047726025748930687): day-0 support and benchmarking across **H200, MI355, B200, B300, GB200/300**
+  - [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047685898163147125): **DeepSeek4-Flash on 256GB Mac**
+  - [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047847095466385899): MLX quants published
+  - [@simonw](https://x.com/simonw/status/2047844236142497850) asks about smaller-RAM Mac viability, implying community interest but incomplete support story
+  - [@QuixiAI](https://x.com/QuixiAI/status/2047765475937890474) reminds users that many local stacks still lack tensor parallel, relevant because V4-class models strongly stress inference infra
+
+- **License / availability / pricing**
+  - **MIT license** per [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953)
+  - first-party API plus rapid third-party availability via [@Togethercompute](https://x.com/togethercompute/status/2047743446522224987), [@baseten](https://x.com/baseten/status/2047779549644243146), [@NousResearch](https://x.com/mr_r0b0t/status/2047673600900010044), [@Teknium](https://x.com/Teknium/status/2047798102091067677)
+  - **V4 Pro pricing:** **$1.74 / $3.48 per 1M input/output tokens**
+  - **V4 Flash pricing:** **$0.14 / $0.28**
+  - cache-hit pricing also given by [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953)
+  - [@scaling01](https://x.com/scaling01/status/2047707820552831028) views the pricing as a glimpse of future “Mythos-level” cheap coding models
+  - Reuters-via-posted quote from [@scaling01](https://x.com/scaling01/status/2047760776769720360): DeepSeek said **Pro pricing could fall sharply once Huawei Ascend 950 supernodes are deployed at scale in H2**
+
+## Independent evaluations and where V4 lands
+
+
+The most useful independent benchmark synthesis came from [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953):
+
+- **V4 Pro Max**: **52** on Artificial Analysis Intelligence Index
+  - up **10 points** from **V3.2 at 42**
+  - becomes **#2 open weights reasoning model**, behind **Kimi K2.6 (54)**
+- **V4 Flash Max**: **47**
+  - positioned around strong mid/high open models, “Claude Sonnet 4.6 max level intelligence”
+- **GDPval-AA** (agentic real-world work):
+  - **V4 Pro: 1554**, leading open-weight models
+  - ahead of **Kimi K2.6 (1484)**, **GLM-5.1 (1535)**, **MiniMax-M2.7 (1514)**
+- **AA-Omniscience**
+  - **V4 Pro: -10**, an 11-point improvement over V3.2
+  - but still paired with **94% hallucination rate**
+  - **V4 Flash: 96% hallucination rate**
+- **Cost to run AA Index**
+  - **V4 Pro: $1,071**
+  - **V4 Flash: $113**
+- **Output tokens used on AA Index**
+  - **V4 Pro: 190M**
+  - **V4 Flash: 240M**
+  - This is a major caveat: cheap per-token pricing does not imply cheap total task cost if the model spills huge token volumes
+
+Additional eval perspectives:
+
+- [@arena](https://x.com/arena/status/2047714237502677405):
+  - **#2 open** in Text Arena overall at debut
+  - category wins/placements:
+    - **#1 Medical & Healthcare**
+    - **#15 Creative Writing**
+    - **#18 Multi-Turn**
+  - thinking variant:
+    - **#8 Math**
+    - **#9 Life/Physical/Social Science**
+- [@arena](https://x.com/arena/status/2047774037204742255) emphasizes the **Pro vs Flash tradeoff**:
+  - Pro ranks ~**30 places higher**
+  - costs **12× more**
+  - Flash is still competitive in Chinese, medicine, math
+- [@scaling01](https://x.com/scaling01/status/2047682465624445015):
+  - “~**Opus 4.5 estimate** holds for now, at least on SimpleBench”
+- [@scaling01](https://x.com/scaling01/status/2047733998714052819):
+  - V4 is “definitely better than GLM-5.1 but not quite Opus 4.7, GPT-5.4 or Gemini 3.1 Pro”
+- [@scaling01](https://x.com/scaling01/status/2047686712051048598) lists what scores would confirm <6 month gap:
+  - ARC-AGI-1 ~**75%**
+  - ARC-AGI-2 ~**35%**
+  - GSO ~**26%**
+  - METR **4.5–5 hours**
+  - WeirdML ~**63%**
+- [@TheZachMueller](https://x.com/TheZachMueller/status/2047719857869791352):
+  - on his evals, **Flash@max ≈ Pro@high on reasoning**
+  - Pro focuses more on knowledge (SimpleQA)
+- [@VictorTaelin](https://x.com/VictorTaelin/status/2047818978664268071):
+  - after fixing benchmark bugs and letting long-running models run longer, **DeepSeek and Kimi improved materially**
+- [@mbusigin](https://x.com/mbusigin/status/2047707082007220393):
+  - a simple negative early impression with no detail
+- [@petergostev](https://x.com/petergostev/status/2047773402090426548):
+  - on BullshitBench, not about capability but refusal/pushback behavior, GPT-5.5 underperformed; included here because many readers compare V4 in an eval-skeptical environment
+
+## Facts vs opinions
+
+
+### Facts / relatively well-supported claims
+
+- V4 Pro / Flash were released with the specs above, **MIT-licensed**, **1M context**, and open technical documentation: [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953), [@TheZachMueller](https://x.com/TheZachMueller/status/2047626252425515240)
+- The architecture introduces a new long-context attention system with dramatic KV-cache reduction: [@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2047664976215839021), [@ben_burtenshaw](https://x.com/ben_burtenshaw/status/2047646980139016560)
+- Independent benchmarkers broadly place V4 Pro near the very top of open weights but below the best proprietary models overall: [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953), [@arena](https://x.com/arena/status/2047714237502677405), [@scaling01](https://x.com/scaling01/status/2047733998714052819)
+- DeepSeek V4 is heavily token-intensive in some evaluations: [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953)
+- The checkpoint uses FP4/FP8 mixed precision and can fit on an 8×B200 node: [@LambdaAPI](https://x.com/LambdaAPI/status/2047654086263320965)
+- Rapid ecosystem support arrived via vLLM and other providers day 0: [@vllm_project](https://x.com/vllm_project/status/2047843293447500069), [@SemiAnalysis_](https://x.com/SemiAnalysis_/status/2047726025748930687)
+
+### Opinions / interpretation
+
+- “V4 is ~4–5 months behind the frontier” from [@scaling01](https://x.com/scaling01/status/2047618271310926151), [@scaling01](https://x.com/scaling01/status/2047622501241434581), [@scaling01](https://x.com/scaling01/status/2047626000091971811) is an informed estimate, not a measured fact
+- “Top three open” vs “only open model close to frontier” debate from [@teortaxesTex](https://x.com/teortaxesTex/status/2047616662879248828) is partly about benchmark trust and framing
+- “Strongest pretrained model we have” from [@teortaxesTex](https://x.com/teortaxesTex/status/2047630981364883816) is an opinion hinging on scale + architecture, not direct benchmark supremacy
+- “Most significant AI paper of the year” from [@Dorialexander](https://x.com/Dorialexander/status/2047632551326413109) is enthusiasm, not consensus
+- “This is what research should look like” from [@scaling01](https://x.com/scaling01/status/2047643722108579936) speaks to transparency/style rather than only capability
+- “Not exactly a democratizing technology” from [@teortaxesTex](https://x.com/teortaxesTex/status/2047840426371977467) is a strong architectural/political interpretation
+
+## Different opinions and fault lines
+
+
+### 1) Is V4 near frontier, or clearly behind?
+
+**More favorable**
+- [@scaling01](https://x.com/scaling01/status/2047618271310926151): puts it at roughly **GPT-5.2 / Opus 4.5+ tier**
+- [@scaling01](https://x.com/scaling01/status/2047682465624445015): SimpleBench supports **~Opus 4.5**
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047630981364883816): argues it is the strongest pretraining base among opens and implies people are underestimating what post-training can do
+
+**More skeptical**
+- [@scaling01](https://x.com/scaling01/status/2047733998714052819): below **Opus 4.7 / GPT-5.4 / Gemini 3.1 Pro**
+- [@scaling01](https://x.com/scaling01/status/2047622501241434581): the gap may widen again because closed labs have bigger models, better science/law/medicine coverage, faster inference with GB200s
+- [@mbusigin](https://x.com/mbusigin/status/2047707082007220393): early impressions “not great”
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047616897256947967): says polished models like **K2.6 and GLM 5.1** may still feel better in coding despite lower intrinsic capacity
+
+### 2) Is V4’s real contribution model quality, or long-context systems design?
+
+A big split in reactions is that many technical readers think **the long-context architecture matters more than the raw benchmark position**.
+
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047623905754448043): “They've completed their quest: Solid Ultra-Long Context”
+- [@ben_burtenshaw](https://x.com/ben_burtenshaw/status/2047646980139016560): first open model where long context and agentic post-training “meet”
+- [@scaling01](https://x.com/scaling01/status/2047618271310926151): expects other open labs to adopt pieces of the architecture
+- [@Dorialexander](https://x.com/Dorialexander/status/2047632551326413109): frames Huawei/sovereignty constraints as an opportunity to reshape hardware and memory/interconnect design
+- [@jukan05](https://x.com/jukan05/status/2047861732702662741): reads the paper as evidence that NVIDIA’s hardware roadmap is unusually well aligned to where MoE/long-context models are going
+
+### 3) Is V4 “open democratization,” or too hard to copy?
+
+This was one of the sharpest strategic disagreements.
+
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047840426371977467): says V4 is “not exactly a democratizing technology” because the architecture is too difficult for most labs to replicate
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047648219081974034): suggests even DeepSeek may not want to do this exact architecture again without refactoring
+- [@stochasticchasm](https://x.com/stochasticchasm/status/2047697372831183245): notes the sheer hyperparameter complexity is daunting
+- Against that, [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047685898163147125) and [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047847095466385899) show that the ecosystem is already compressing and adapting Flash for localish Apple Silicon use, softening the “not democratizing” claim on the inference side if not the training side
+
+### 4) Are people underrating Flash?
+
+Several reactions suggest **Flash may be more important than Pro** for practical adoption.
+
+- [@arena](https://x.com/arena/status/2047774037204742255): Flash shifts the price/performance frontier
+- [@TheZachMueller](https://x.com/TheZachMueller/status/2047719857869791352): Flash@max ≈ Pro@high on reasoning tasks
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047864952862458009): benchmarks may underweight “legit 1M context for pennies”
+- [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047685898163147125): Flash runs on **256GB Mac**
+- [@baseten](https://x.com/baseten/status/2047779549644243146) and [@Togethercompute](https://x.com/togethercompute/status/2047743446522224987) emphasize long-document analysis and agentic use cases where Flash’s economics matter
+
+## China, chips, Huawei, and sovereignty context
+
+
+DeepSeek V4 was not discussed as a pure model release; it was treated as evidence in the larger US–China compute and sovereignty debate.
+
+- [@scaling01](https://x.com/scaling01/status/2047625331339661685): Chinese labs are already in or near “takeoff” in the sense that their models help build better models, though still shifted **5+ months** behind
+- [@scaling01](https://x.com/scaling01/status/2047622501241434581): thinks chip bans are likely to widen the gap in broad domains over time
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047608887616962992), [@teortaxesTex](https://x.com/teortaxesTex/status/2047631470664020211): disputes simplistic Huawei-dismissal and notes mixed Chinese sentiment toward Huawei
+- [@ogawa_tter](https://x.com/ogawa_tter/status/2047631993702363509): points to analysis of **Ascend 950** / A3 clusters and V4 deployment plans
+- [@Dorialexander](https://x.com/Dorialexander/status/2047632551326413109): argues the sovereignty play around Huawei may reshape hardware architecture
+- [@scaling01](https://x.com/scaling01/status/2047760776769720360): cites DeepSeek saying prices could drop sharply once **Ascend 950 supernodes** scale in H2
+- [@jukan05](https://x.com/jukan05/status/2047861732702662741): interprets V4 as validating NVIDIA’s Blackwell/Rubin/HBM/interconnect strategy
+- [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047765637808664759), [@NVIDIAAI](https://x.com/NVIDIAAI/status/2047823093578518758): unsurprisingly highlight Blackwell day-0 performance, but this is vendor framing rather than independent proof of strategic superiority
+
+There is also a more ideological thread:
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047645676234846459), [@teortaxesTex](https://x.com/teortaxesTex/status/2047638436295725080), [@teortaxesTex](https://x.com/teortaxesTex/status/2047835420755415472) argues that Western discourse often misreads Chinese labs as purely state proxies or distillation shops, and instead sees them as serious mission-driven actors. This is interpretive, but it helps explain why the release drew such emotionally charged geopolitical reactions.
+
+## Distillation, training data, and data quality
+
+
+A recurring undercurrent: does V4 mainly reflect architectural innovation, or can critics dismiss it as “distillation”?
+
+- [@yacineMTB](https://x.com/yacineMTB/status/2047628416514486661) speculates that some complaints about Chinese distillation may partly come from people discovering they’re outperformed
+- [@cloneofsimo](https://x.com/cloneofsimo/status/2047628636933812301): “Very interesting... given they distilled claude 🤔🤔”
+- [@kalomaze](https://x.com/kalomaze/status/2047762970931827125): jokes about DeepSeek training on DeepSeek reasoning traces
+- On the more substantive side, [@teortaxesTex](https://x.com/teortaxesTex/status/2047614729145745623) says DeepSeek’s writing quality, especially Chinese, reflects long-standing obsession with data cleanliness and cites job listings [@teortaxesTex](https://x.com/teortaxesTex/status/2047614852055683103), [@teortaxesTex](https://x.com/teortaxesTex/status/2047614975447855485)
+- [@nrehiew_](https://x.com/nrehiew_/status/2047666048334450754) notes the report still lacks much detail on pretraining data beyond standard categories
+- Overall, factual public evidence in this tweet set supports “DeepSeek trains at large scale with strong data work,” but not any strong claim about the degree of external distillation beyond speculation
+
+## Architecture lineage and prior art
+
+
+Several researchers pointed out that V4 did not emerge from nowhere.
+
+- [@jaseweston](https://x.com/jaseweston/status/2047690308217926055): says DeepSeek uses **hash routing** from a 2021 ParlAI approach
+- [@suchenzang](https://x.com/suchenzang/status/2047772636881842629): criticizes routing-induced outliers, with a jab at hashing
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2047844368883581404): notes Mixtral-style MoE was a reasonable earlier hack, but claims **DSMoE** changed things
+- [@art_zucker](https://x.com/art_zucker/status/2047619111082172548) broadly attacks MoEs as a dead end
+- [@gabriberton](https://x.com/gabriberton/status/2047835467551547587) counters that MoEs are provably effective despite inelegance
+- [@stochasticchasm](https://x.com/stochasticchasm/status/2047874903236645108) is even more positive: “MoEs are amazing”
+
+This matters because V4 was read not just as a stronger checkpoint, but as a possible **new design point for open long-context MoEs**.
+
+## Why the technical report itself mattered
+
+
+A striking amount of praise was directed not just at the model but at the paper/report quality.
+
+- [@scaling01](https://x.com/scaling01/status/2047618271310926151): “the technical paper is a big deal”
+- [@Dorialexander](https://x.com/Dorialexander/status/2047632551326413109): “most significant AI paper of the year”
+- [@morqon](https://x.com/morqon/status/2047643246923325833): “one of the best I’ve ever read”
+- [@scaling01](https://x.com/scaling01/status/2047643722108579936): “this is what research should look like”
+- [@TheZachMueller](https://x.com/TheZachMueller/status/2047626249116303561), [@iamgrigorev](https://x.com/iamgrigorev/status/2047641600591794546), [@nrehiew_](https://x.com/nrehiew_/status/2047665987730993363): all signal unusually high effort to digest and test the report
+
+For expert readers, this is important because many frontier releases now arrive with sparse technical disclosure. V4’s report appears to have reset expectations for what a serious open release can look like.
+
+## Practical limitations and caveats
+
+
+Despite the enthusiasm, several caveats recur:
+
+- **Still behind closed frontier in aggregate capability**
+  - especially sciences/law/medicine and broad “general domains” per [@scaling01](https://x.com/scaling01/status/2047622501241434581)
+- **Reasoning RL may be undercooked**
+  - [@scaling01](https://x.com/scaling01/status/2047618271310926151): reasoning efficiency not much changed vs V3.2 Speciale
+- **Serving remains hard**
+  - [@scaling01](https://x.com/scaling01/status/2047643015859118167): many labs serve at only **20–30 tok/s** and limited concurrency; running evals can take a day
+  - [@ClementDelangue](https://x.com/ClementDelangue/status/2047664153439989823): acknowledges concurrency bottlenecks on HF
+- **High token usage**
+  - major practical caveat from [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953)
+- **API controls**
+  - [@stochasticchasm](https://x.com/stochasticchasm/status/2047717161070989499): notes DeepSeek API appears not to allow sampler control
+- **Adoptability**
+  - [@teortaxesTex](https://x.com/teortaxesTex/status/2047840426371977467): too complex for many labs to copy cleanly
+
+## Broader implications
+
+
+Three implications stand out.
+
+1. **Open-weight long-context is no longer just marketing.**  
+   V4’s strongest contribution may be proving that **1M context can be made operationally credible** in an open-weight model, with concrete KV-cache engineering and open inference support. This is why multiple posters focused less on benchmark deltas and more on systems design: [@ben_burtenshaw](https://x.com/ben_burtenshaw/status/2047646980139016560), [@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2047664976215839021), [@scaling01](https://x.com/scaling01/status/2047618271310926151).
+
+2. **China’s top labs remain competitive in open models, even if not fully closing the closed-model gap.**  
+   The benchmark picture across [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2047735160544841953), [@arena](https://x.com/arena/status/2047714237502677405), and [@scaling01](https://x.com/scaling01/status/2047733998714052819) suggests Chinese labs now dominate much of the open-weight top tier: **Kimi, GLM, DeepSeek, and soon MiMo**.
+
+3. **The bar for “open” is rising from checkpoint release to full-stack co-design.**  
+   V4 was instantly discussed alongside **vLLM**, **Blackwell**, **MLX quants**, **Mac viability**, **Ascend clusters**, and cache/memory architectures. In other words, “the model” is increasingly inseparable from the inference substrate.
+
+---
+
+**Infrastructure, inference, and local/open ecosystem**
+
+- Hugging Face launched **ML Intern**, an open-source CLI “AI intern” for ML work that can research papers, write code, run experiments, use HF datasets/jobs, search GitHub, and iterate up to **300 steps**, per [@MillieMarconnni](https://x.com/MillieMarconnni/status/2047639632859500691). Related sentiment: HF’s **$9 Pro** tier is unusually strong value per [@getpy](https://x.com/getpy/status/2047602009998794820).
+- Meta said it will add **tens of millions of AWS Graviton cores** to its compute portfolio to scale Meta AI and agentic systems for billions of users, per [@AIatMeta](https://x.com/AIatMeta/status/2047647617681957207).
+- Local/open coding stack momentum stayed strong:
+  - [@julien_c](https://x.com/julien_c/status/2047647522173104145): **Qwen3.6-27B via llama.cpp on a MacBook Pro** feels close to latest Opus for many coding tasks
+  - [@p0](https://x.com/p0/status/2047794814104862843): free CLI agent built with **Pi + Ollama + Gemma 4 + Parallel web search MCP**
+  - [@Prince_Canuma](https://x.com/Prince_Canuma/status/2047693737950670940): DeepSeek V4 quants incoming
+  - [@QuixiAI](https://x.com/QuixiAI/status/2047765475937890474): reminder that **llama.cpp / Ollama / LM Studio do not support tensor parallel**, pushing serious multi-GPU serving users toward **vLLM**
+- Nous/Hermes shipped heavily:
+  - Hermes Agent **v0.11.0** introduced a rewritten React TUI, dashboard plugin, theming, more inference providers, image backends, and QQBot support, per [@WesRoth](https://x.com/WesRoth/status/2047646749427216385)
+  - Hermes got broad praise and rapid support for both **DeepSeek V4** and **GPT-5.5**, via [@mr_r0b0t](https://x.com/mr_r0b0t/status/2047673600900010044), [@Teknium](https://x.com/Teknium/status/2047791512210293067)
+  - [@JulianGoldieSEO](https://x.com/JulianGoldieSEO/status/2047699587788361844) and [@LoicBerthelot](https://x.com/LoicBerthelot/status/2047690512199540959) compared Hermes favorably to OpenClaw on learning loops, memory, model support, deployment flexibility, and security
+  - A native Linux sandbox backend for Deep Agents using **bubblewrap + cgroups v2** was released by [@nu_b_kh](https://x.com/nu_b_kh/status/2047775326412136574)
+
+**Research papers and benchmarks**
+
+- On-policy distillation token selection:
+  - [@TheTuringPost](https://x.com/TheTuringPost/status/2047617791709282405) highlights a paper showing only some tokens carry most learning signal; using **~50%** of tokens can match or beat full training and cut memory by **~47%**, while even **<10%** focused on confident-wrong tokens nearly matches full training.
+- Google Research pushed several ICLR demos:
+  - **MesaNet**, a transformer alternative / linear sequence layer optimized for in-context learning under fixed memory, via [@GoogleResearch](https://x.com/GoogleResearch/status/2047630714145776053)
+  - robotics/3D reasoning and efficient transformer work via [@GoogleResearch](https://x.com/GoogleResearch/status/2047675181808730197)
+  - “reasoning can lead to honesty” demo via [@GoogleResearch](https://x.com/GoogleResearch/status/2047704802163892576)
+- MIT **Hyperloop Transformers** mix looped and normal transformer blocks, using ~**50% fewer parameters** while beating regular transformers at **240M / 1B / 2B**, per [@TheTuringPost](https://x.com/TheTuringPost/status/2047720038342476187).
+- “Learning mechanics” tries to synthesize a theory of deep learning dynamics, via [@learning_mech](https://x.com/learning_mech/status/2047723849874330047).
+- Tool/agent systems papers:
+  - **Tool Attention Is All You Need** claims **95% tool-token reduction** (47.3k → 2.4k/turn) with dynamic gating and lazy schema loading, per [@omarsar0](https://x.com/omarsar0/status/2047725276851994639)
+  - **StructMem** for long-horizon structured memory highlighted by [@dair_ai](https://x.com/dair_ai/status/2047740873027543228)
+  - **HorizonBench** targets long-horizon personalization with shifting user preferences, via [@StellaLisy](https://x.com/StellaLisy/status/2047645651324821998)
+- Clarifying questions for software engineering:
+  - [@gneubig](https://x.com/gneubig/status/2047623214583492797) shared work on a model trained specifically to ask clarifying questions, improving results with fewer questions.
+
+**GPT-5.5 rollout and coding agents**
+
+- OpenAI rolled **GPT-5.5** and **GPT-5.5 Pro** into API and ecosystem products with a **1M context window**, per [@OpenAI](https://x.com/OpenAI/status/2047743592278745425), [@OpenAIDevs](https://x.com/OpenAIDevs/status/2047742589982654915).
+- Distribution was immediate across Cursor, GitHub Copilot, Codex/OpenAI API, OpenRouter, Perplexity, Devin, Droid, Fleet, Deep Agents:
+  - [@cursor_ai](https://x.com/cursor_ai/status/2047744579127185843): GPT-5.5 is top on **CursorBench at 72.8%**
+  - [@cline](https://x.com/cline/status/2047769312514257148): **#1 on Terminal-Bench at 82.7**
+  - [@OpenAIDevs](https://x.com/OpenAIDevs/status/2047772632150675593): Perplexity Computer saw **56% fewer tokens** on complex tasks
+  - [@scaling01](https://x.com/scaling01/status/2047818395970904229): GPT-5.5 medium became strongest non-thinking model on LisanBench with **45.6% fewer tokens than GPT-5.4 medium** and higher scores
+- User feedback clustered around **better coding quality and token efficiency**, despite mixed feelings about some evals:
+  - [@almmaasoglu](https://x.com/almmaasoglu/status/2047745168141324559): best code they’ve read from an LLM; less verbose, less defensive
+  - [@KentonVarda](https://x.com/KentonVarda/status/2047788670728495142): caught a deep Cap’n Proto RPC corner case from a 6-year-old comment
+  - [@willdepue](https://x.com/willdepue/status/2047783399826292969): underwhelmed by evals, impressed in Codex on complex technical projects
+  - [@omarsar0](https://x.com/omarsar0/status/2047768166126809512): smooth switch from Claude Code to Codex/GPT-5.5 thanks to better “effort calibration”
+- Cursor also shipped **/multitask** async subagents and multi-root workspaces, via [@cursor_ai](https://x.com/cursor_ai/status/2047764651363180839).
+- There is growing market emphasis on **limits and economics** rather than tiny quality gaps:
+  - [@nrehiew_](https://x.com/nrehiew_/status/2047839351380537357) argues usage caps now matter more than small frontier deltas
+  - [@HamelHusain](https://x.com/HamelHusain/status/2047763070022479882) says Codex’s subscription structure makes it hard not to use
+
+**Industry moves, funding, and policy**
+
+- Google reportedly plans to invest up to **$40B in Anthropic**, reported by [@FT](https://x.com/FT/status/2047715653553942997) and echoed by [@zerohedge](https://x.com/zerohedge/status/2047704883982180609). Reactions centered on how large Anthropic’s compute commitment may now be.
+- Cohere and Aleph Alpha announced a **Canada/Germany sovereign AI partnership**, framed as enterprise-grade and privacy/security focused by [@cohere](https://x.com/cohere/status/2047631725426000268), [@aidangomez](https://x.com/aidangomez/status/2047651054381052086), [@nickfrosst](https://x.com/nickfrosst/status/2047704679878996253#m).
+- ComfyUI raised **$30M at a $500M valuation**, while keeping core/open-local positioning, via [@yoland_yan](https://x.com/yoland_yan/status/2047731043000627263).
+- Mechanize announced **$9.1M** raised at a **$500M post-money valuation**, via [@MechanizeWork](https://x.com/MechanizeWork/status/2047732999878529037).
+- Arcee AI hired Cody Blakeney as Head of Research, emphasizing open-weight American frontier models, via [@code_star](https://x.com/code_star/status/2047765768658702467).
+- Safety / governance:
+  - OpenAI announced a **Bio Bug Bounty** for GPT-5.5, per [@OpenAINewsroom](https://x.com/OpenAINewsroom/status/2047670970526175310)
+  - Anthropic launched **Project Deal**, a marketplace where Claude negotiated on behalf of employees, and highlighted model-quality asymmetry and policy challenges, via [@AnthropicAI](https://x.com/AnthropicAI/status/2047728360818696302)
+
+**Creative AI and multimodal**
+
+- GPT Image 2 + Seedance 2 workflows kept drawing attention:
+  - [@_OAK200](https://x.com/_OAK200/status/2047616640448078167) and [@awesome_visuals](https://x.com/awesome_visuals/status/2047609881104953658) showed high-fidelity image→video pipelines
+  - [@BoyuanChen0](https://x.com/BoyuanChen0/status/2047738501647728937) said **2K/4K** images are already available via experimental API and active fixes are underway
+- Kling announced native **4K output** and a **$25k** short film contest, via [@Kling_ai](https://x.com/Kling_ai/status/2047676942317678879).
+- Some evaluative nuance:
+  - [@goodside](https://x.com/goodside/status/2047728776520298646) noted GPT Images 2.0 could render a valid-looking Rubik’s Cube state, which is surprisingly hard
+  - [@venturetwins](https://x.com/venturetwins/status/2047820435543437630) framed recent image/video gains as a major step toward personalized game-like content generation
 
 ---
 
