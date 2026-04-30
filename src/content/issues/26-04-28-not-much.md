@@ -214,9 +214,6 @@ people:
     - Kamimashita observes that GPT 5.5's builds appear noisier with random colored blocks, yet the overall design quality is improved. This indicates a trade-off between detail and noise, suggesting that GPT 5.5 might be experimenting with more complex design patterns.
     - FateOfMuffins discusses a notable `270 ELO` increase from GPT 5.4 to 5.5, and an additional `220 ELO` jump to 5.5 Pro. This substantial improvement in ELO ratings reflects enhanced performance and possibly more sophisticated algorithms in the newer versions, though it also raises questions about benchmark saturation and the need for increased difficulty.
 
-  - **[GPT 5.5 is unbelievably wasteful with tokens](https://www.reddit.com/r/CLine/comments/1sxc6wr/gpt_55_is_unbelievably_wasteful_with_tokens/)** (Activity: 14): **The post discusses the high token consumption and associated costs of using **GPT 5.5**, particularly outside of its Codex application, with a single request reportedly costing `$5`. This highlights concerns about the model's efficiency and cost-effectiveness in non-coding contexts.** A comment suggests that the cost of using models like **GPT 5.5** or **Claude Opus 4.7:1m xhigh** should be considered relative to the value they provide, implying that high costs might be justified by the benefits in certain applications.
-
-
 
 ### 3. ChatGPT Solving Mathematical Problems
 
