@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: '2026-04-06T05:44:39.731046Z'
+date: '2026-05-04T05:44:39.731046Z'
 description: >-
   **AI Twitter Recap** highlights the shift from model-centric AI to **context
   pipelines** and **agent orchestration** as key performance drivers. Notably,
@@ -51,7 +51,7 @@ people:
 
 **a quiet day.**
 
-> AI News for 4/3/2026-4/4/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
+> AI News for 5/1/2026-5/4/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
 
