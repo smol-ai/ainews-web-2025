@@ -1,0 +1,36 @@
+---
+id: MjAyNS0x
+title: not much happened today
+date: '2026-05-04T05:44:39.731046Z'
+---
+
+**a quiet day.**
+
+> AI News for 5/4/2026-5/5/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
+
+
+
+
+---
+
+# AI Twitter Recap
+
+
+
+---
+
+# AI Reddit Recap
+
+## /r/LocalLlama + /r/localLLM Recap
+
+
+
+## Less Technical AI Subreddit Recap
+
+> /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
+
+
+
+# AI Discords
+
+Unfortunately, Discord shut down our access today. We will not bring it back in this form but we will be shipping the new AINews soon. Thanks for reading to here, it was a good run.
