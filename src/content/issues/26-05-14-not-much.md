@@ -1,0 +1,178 @@
+---
+id: MjAyNS0x
+title: not much happened today
+date: '2026-05-14T05:44:39.731046Z'
+description: >-
+  **OpenAI** expanded **Codex** integration with the ChatGPT mobile app enabling
+  remote task management and introduced Remote SSH, hooks, and programmatic
+  tokens for enterprise automation. The IDE ecosystem is shifting to
+  "agent-first" UX with **GitHub Copilot App** preview and **VS Code** launching
+  a multi-agent workflow window. Open-source agents like **Nous/Hermes**
+  integrated Codex runtime, and **Kimi** released a web bridge extension
+  supporting multiple coding agents. **LangChain** released significant agent
+  infrastructure including **SmithDB** for agent trace data and **LangSmith
+  Engine** for trace analysis and continual learning, launching **LangChain
+  Labs** to improve agents via production trace feedback loops.
+companies:
+  - openai
+  - github
+  - microsoft
+  - nous-research
+  - moonshot-ai
+  - langchain
+  - prime-intellect
+models:
+  - codex
+  - chatgpt
+topics:
+  - agent-infrastructure
+  - agent-first-ux
+  - remote-ssh
+  - programmatic-access-tokens
+  - sandboxing
+  - continual-learning
+  - agent-trace-data
+  - multi-agent-workflows
+  - ide-integration
+  - browser-extensions
+people:
+  - hwchase17
+  - caspar_br
+  - bentannyhill
+  - jakebroekhuizen
+  - willccbb
+---
+
+
+**a quiet day.**
+
+> AI News for 5/13/2026-5/14/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
+
+
+
+---
+
+# AI Twitter Recap
+
+**Coding Agent Tooling: Codex Mobile, GitHub’s New App, VS Code Multi-Agent UX, and Hermes/Codex Interop**
+
+- **OpenAI pushed Codex further into day-to-day workflows**: the biggest product launch in this set was **Codex in the ChatGPT mobile app**, letting users start tasks, review outputs, approve commands, and steer execution remotely while Codex continues running on a laptop, Mac mini, or devbox. OpenAI also noted **Remote SSH is now generally available** for managed remote environments, and later added **hooks** plus **programmatic access tokens** for Business/Enterprise automation around the Codex loop ([OpenAI](https://x.com/OpenAI/status/2055016850849993072), [OpenAI follow-up](https://x.com/OpenAI/status/2055016852133417389), [@OpenAIDevs on mobile workflow](https://x.com/OpenAIDevs/status/2055016926213181608), [@OpenAIDevs on Remote SSH](https://x.com/OpenAIDevs/status/2055016938217377945), [@OpenAIDevs on hooks/tokens](https://x.com/OpenAIDevs/status/2055032115964870838)). Separately, OpenAI published a technical writeup on the **Windows sandbox for Codex**, focused on the tradeoff between utility and constrained machine access for coding agents ([OpenAI Devs](https://x.com/OpenAIDevs/status/2054735161166819377), [@gdb](https://x.com/gdb/status/2054744721570820444)).
+- **The broader IDE/app ecosystem is converging on “agent-first” UX**: GitHub announced a technical preview of the **GitHub Copilot App**, described as a desktop environment for parallel workstreams, repo/PR lifecycle management, and model flexibility ([GitHub](https://x.com/github/status/2054959324485628120), [@adrianmg](https://x.com/adrianmg/status/2054961575929508067), [@OrenMe](https://x.com/OrenMe/status/2054959549413503308)). **VS Code** shipped a new **Agents window** for multi-agent, multi-project workflows, browser/mobile support via **vscode.dev/agents**, BYOK improvements, and token-efficiency features like compressed terminal output ([VS Code](https://x.com/pierceboggan/status/2054775908586934440), [remote/browser support](https://x.com/pierceboggan/status/2054778014135902715), [BYOK updates](https://x.com/pierceboggan/status/2054778582216622579), [terminal compression](https://x.com/pierceboggan/status/2054779764523815264)). On the open side, **Nous/Hermes Agent** added **Codex runtime integration**, effectively routing OpenAI-backed turns through Codex CLI/app-server and reusing ChatGPT subscription-backed execution in Hermes sessions ([Nous Research](https://x.com/NousResearch/status/2054958564951912714), [@Teknium](https://x.com/Teknium/status/2054958835547443553), [@HermesAgentTips](https://x.com/HermesAgentTips/status/2054963533800992962)). Kimi also shipped **Kimi Web Bridge**, a browser extension exposing human-like web interaction to Kimi Code CLI, Claude Code, Cursor, Codex, Hermes, and others ([Moonshot AI](https://x.com/Kimi_Moonshot/status/2054918374837322140)).
+
+**Agent Infrastructure and Self-Improvement Loops: LangSmith Engine, SmithDB, Sandboxes, and Continual Learning**
+
+- **LangChain’s launch stack was the most substantive agent-infra release cluster**: **SmithDB** is a database purpose-built for **agent trace data**, while **LangSmith Engine** consumes traces, clusters failures, identifies likely code issues, and proposes fixes/evals—turning observability into an improvement loop rather than passive inspection ([@hwchase17](https://x.com/hwchase17/status/2054754206926700914), [@caspar_br on Engine](https://x.com/caspar_br/status/2054726851659248068), [@bentannyhill](https://x.com/bentannyhill/status/2054949581679653326)). Community commentary emphasized SmithDB’s architectural shift toward object storage and a custom storage/query path for this workload shape ([@caspar_br on SmithDB](https://x.com/caspar_br/status/2054773536603144458), [@ngates_](https://x.com/ngates_/status/2054859033488580721), [Chinese summary](https://x.com/0xLogicrw/status/2054852978243404008)).
+- **LangChain also announced LangChain Labs**, an applied research effort around **continual learning** for agents, with the thesis that production traces should become training signal, evals, and targeted capability improvements over long horizons ([LangChain](https://x.com/LangChain/status/2054971487694749898), [@jakebroekhuizen](https://x.com/jakebroekhuizen/status/2054973621312073832), [@willccbb](https://x.com/willccbb/status/2054983266046996839), [Prime Intellect partnership](https://x.com/PrimeIntellect/status/2054986817779425579)).
+- **Execution isolation for agents continues to mature**: W&B/CoreWeave launched **CoreWeave Sandboxes** for isolated execution in RL, tool use, and eval workloads, explicitly testing destructive commands like `rm -rf /` at scale ([Weights & Biases](https://x.com/wandb/status/2054958004118724672)). In a similar spirit, open-source/local dev tooling surfaced around agent debugging: [@benhylak](https://x.com/benhylak/status/2054987683928383872) highlighted a free local agent debugging stack with traces exposed to Codex/Claude Code for automated eval authoring.
+
+**Anthropic Claude Code Restrictions and the Developer Backlash**
+
+- **The sharpest ecosystem reaction was to Anthropic restricting/reshaping Claude Code usage**, especially for third-party wrappers and high-volume programmatic workflows. Theo’s thread became the focal point: he argued users of T3 Code were effectively hit with dramatic rate-limit reductions despite integrating through the officially supported path, and he subsequently cancelled his subscription while encouraging others to post cancellation screenshots for open-source donations ([@theo initial thread](https://x.com/theo/status/2054731856248283318), [subscription cancellation](https://x.com/theo/status/2054732997287625013), [donation thread](https://x.com/theo/status/2054734057368621176), [T3 Code clarification](https://x.com/theo/status/2054737293186126056)). Other prominent builders echoed the complaint that Anthropic had effectively cut off open-source devs/apps and destabilized harnesses built around `claude -p` ([@theo](https://x.com/theo/status/2054728187498946969), [@andersonbcdefg](https://x.com/andersonbcdefg/status/2054721558141403242)).
+- **There was also a more strategic counterargument**: some users argued Anthropic does not owe developers heavily subsidized flat-fee tokens for third-party apps, and that the ecosystem will likely shift toward more explicit API economics and smarter routing between expensive and cheap models ([Sentdex](https://x.com/Sentdex/status/2054925517426491739), [@tadasayy](https://x.com/tadasayy/status/2054922713857462487)). Still, the visible churn signal was nontrivial, including users estimating meaningful ARR loss from reply-thread cancellations alone ([@thegenioo](https://x.com/thegenioo/status/2054919696663663009), [Uncle Bob Martin](https://x.com/unclebobmartin/status/2054970327592042661), [Theo later](https://x.com/theo/status/2055022768262144102)). For agent engineers, the practical takeaway is straightforward: **subscription-backed harnesses are not stable platform primitives**; provider/model abstraction and BYOK paths look increasingly mandatory.
+
+**Robotics and Embodied AI: Figure’s 24/7 Sorting Stream and the Broader Automation Signal**
+
+- **Figure’s livestream dominated robotics discussion**. The company first showed **8 hours of fully autonomous, unsupervised work**, then extended to a **24/7 livestream**, eventually reporting **24+ hours of continuous autonomous operation without failure**, around **human-parity throughput** on small package sorting, and operation by **Helix-02 running entirely onboard** with automatic resets for OOD cases—explicitly claiming **no teleoperation** ([Figure CEO Brett Adcock](https://x.com/adcock_brett/status/2054729581391962353), [24h update](https://x.com/adcock_brett/status/2054946098431881720), [detailed technical clarifications](https://x.com/adcock_brett/status/2054973511572271172), [Day 2 livestream](https://x.com/adcock_brett/status/2054970993442169230)). The repeated “Bob, Frank, and Gary” updates were fluffier, but the core signal was sustained autonomous operation at production-like uptime.
+- **Interpretation split between skepticism about Figure specifically and broader conviction about robotics acceleration**. Some commenters argued that critics were underestimating what these demonstrations imply for near-term labor substitution, while others noted skepticism was directed more at **Figure** than at **robotics as a category** ([@cloneofsimo](https://x.com/cloneofsimo/status/2054712329431109708), [@iScienceLuvr](https://x.com/iScienceLuvr/status/2054715505982743009), [@kimmonismus](https://x.com/kimmonismus/status/2054947354625630462)). Either way, this was one of the clearest “continuous uptime” demos in the batch.
+
+**Research, Benchmarks, and Open Models: Diffusion LMs, Time-Series FMs, Mechanistic Interpretability, and RL/Search**
+
+- **A few technically significant model/research releases stood out**:
+  - **Zyphra’s ZAYA1-8B-Diffusion-Preview** claims a **4.6–7.7x decoding speedup** versus autoregressive generation with limited quality loss, making the usual case that diffusion LMs enable cheaper rollouts and richer generation modes ([Zyphra](https://x.com/ZyphraAI/status/2055038845809480113)).
+  - **Datadog’s Toto 2.0** released **5 open-weights time-series forecasting models** from **4M to 2.5B params** under **Apache 2.0**, claiming #1 on **BOOM, GIFT-Eval, and TIME** and, more importantly, evidence that scaling laws may finally hold cleanly for TSFMs ([Datadog](https://x.com/datadoghq/status/2054929795385893108), [@atalwalkar](https://x.com/atalwalkar/status/2054941930497142826), [@ClementDelangue](https://x.com/ClementDelangue/status/2054991352295731619)).
+  - **Goodfire’s interpretability post** argued that Llama uses a geometric “shape-rotating calculator” / Fourier-feature-like mechanism for arithmetic, with steering-based evidence rather than pure post-hoc description ([GoodfireAI](https://x.com/GoodfireAI/status/2054962242022777189), [follow-up](https://x.com/GoodfireAI/status/2054962356162363599)).
+- **On RL/search and optimizer-style progress**, several threads were notable: a survey framing LLM RL as **rollout engineering** across **Generate / Filter / Control / Replay** rather than just PPO-vs-GRPO ([The Turing Post](https://x.com/TheTuringPost/status/2054713822343266365)); **Pedagogical RL** using privileged information to actively find useful rollouts ([Souradip Chakraborty](https://x.com/SOURADIPCHAKR18/status/2055057138070733176), [@lateinteraction](https://x.com/lateinteraction/status/2055065846389649436)); and **Prime Intellect’s autonomous optimizer search** on the nanoGPT speedrun benchmark, where **Opus 4.7 reached 2930 steps** and **GPT-5.5 2950**, beating the **2990 human baseline** after ~10k runs / ~14k H200 hours ([Prime Intellect](https://x.com/PrimeIntellect/status/2055056380881744365), [@eliebakouch](https://x.com/eliebakouch/status/2055059154738278851)). Also noteworthy: **Kimi K2.6** was reported as **#1 open-weight model on Finance Agent Benchmark V2** ([Moonshot AI](https://x.com/Kimi_Moonshot/status/2054803169994272819)), and **Ring-2.6-1T** got day-0 vLLM support as an open release ([vLLM](https://x.com/vllm_project/status/2054968127298150506)).
+
+**Top Tweets (by engagement)**
+
+- **OpenAI’s Codex mobile launch** was the clearest product winner by engagement and practical relevance: remote control/review of running coding-agent sessions from ChatGPT mobile ([OpenAI](https://x.com/OpenAI/status/2055016850849993072)).
+- **Theo’s Claude Code backlash threads** captured the strongest developer sentiment shift around platform risk and subscription-backed agent workflows ([@theo](https://x.com/theo/status/2054731856248283318), [@theo donations thread](https://x.com/theo/status/2054734057368621176)).
+- **Figure’s autonomous humanoid sorting livestream** remained one of the most discussed embodied-AI demos, especially once it crossed the 24-hour mark with detailed claims about onboard policy execution and no teleop ([Brett Adcock](https://x.com/adcock_brett/status/2054973511572271172)).
+- **GitHub’s Copilot App** and **LangChain’s Engine/SmithDB/Labs** were the most important non-OpenAI tooling launches for agent engineers this cycle ([GitHub](https://x.com/github/status/2054959324485628120), [LangChain](https://x.com/LangChain/status/2054971487694749898), [@hwchase17](https://x.com/hwchase17/status/2054754206926700914)).
+- **Prime Intellect’s autonomous optimizer-search result** is worth watching as a concrete example of coding agents being looped into open-ended ML optimization, not just app dev ([Prime Intellect](https://x.com/PrimeIntellect/status/2055056380881744365)).
+
+
+---
+
+# AI Reddit Recap
+
+## /r/LocalLlama + /r/localLLM Recap
+
+### 1. Qwen 3.6 Local Inference Speedups and Quantization
+
+  - **[Multi-Token Prediction (MTP) for Qwen on LLaMA.cpp + TurboQuant](https://www.reddit.com/r/LocalLLaMA/comments/1tckzy2/multitoken_prediction_mtp_for_qwen_on_llamacpp/)** (Activity: 514): **A patched **llama.cpp** fork adds **Multi-Token Prediction (MTP)** support for **Qwen** plus **TurboQuant**, reporting `21 tok/s` → `34 tok/s` on a MacBook Pro M5 Max 64GB, with a claimed `90%` MTP acceptance rate; note the raw speedup is ~`62%`, not `40%`. Code is published at [`AtomicBot-ai/atomic-llama-cpp-turboquant`](https://github.com/AtomicBot-ai/atomic-llama-cpp-turboquant), with GGUF MTP quantizations for Qwen 3.6 27B/35B in the [`AtomicChat/qwen-36-udt-mtp`](https://huggingface.co/collections/AtomicChat/qwen-36-udt-mtp) HF collection.** Commenters questioned the TurboQuant framing, arguing it is often slower than `f16`, `q8`, or `q4`; one noted a TurboQuant PR to llama.cpp was rejected because existing Q4 KV-quant rotation support already covered most benefits, with gains mainly at Q3 where quality degradation becomes a concern. Others asked for quality/eval data, since higher speculative/MTP acceptance and tokens/s do not alone establish output parity.
+
+    - Several commenters argued that **TurboQuant is not generally faster in llama.cpp**, with one noting it can be slower than `f16`, `q8`, or `q4`. A prior TurboQuant PR to **llama.cpp** was reportedly rejected because llama.cpp already implements rotations for `Q4` KV-cache quantization, where standard `Q4` was faster and showed little gain; TurboQuant may only help around `Q3`, but with notable quality degradation.
+    - Users distinguished between speed, quality, and context tradeoffs: **MTP without TurboQuant** was suggested for speed, while standard `Q4_1` or `Q4_0` quantization was recommended for longer context/quality retention. One commenter questioned whether TurboQuant had any Mac-specific advantage, implying the benefit is hardware- or workload-dependent rather than broadly useful.
+    - A commenter recommended using **dflash** instead of built-in MTP, claiming it is `30–40%` faster. They also mentioned that a pull request for this already existed, suggesting the implementation work may duplicate prior llama.cpp integration efforts.
+
+  - **[we really all are going to make it, aren't we? 2x3090 setup.](https://www.reddit.com/r/LocalLLaMA/comments/1tcf2dt/we_really_all_are_going_to_make_it_arent_we/)** (Activity: 487): **A dual **RTX 3090 (`48 GB` VRAM total, no NVLink)** setup running [`club-3090`](https://github.com/noonghunna/club-3090) reportedly improved from **WSL2** performance of ~`30 tok/s` generation and ~`400 pp/s` prompt processing to **native Ubuntu** at ~`113 tok/s` and ~`4000 pp/s`. The author says recent fixes for an *“sse-session drop bug”* and tool-calling made local workflows viable, with **Qwen “3.6” 27B at `262k` context** feeling “almost-Sonnet level” for coding, monkey patches, and code review on consumer GPUs.** Commenters frame this as evidence that local AI has crossed from demos into practical coding workloads, crediting faster runtimes, infrastructure, and small-model quality. There is cautious optimism that domain-specific frontier-class models may fit prosumer hardware within `1–2 years`, while one user recommends avoiding dual boot and running a dedicated Ubuntu GPU server/API box instead.
+
+    - Commenters noted a major capability jump in local inference: consumer dual-`RTX 3090` setups are now being described as usable for **near-Claude-Sonnet-level coding workflows**, rather than just toy `7B` summarization demos. The discussion attributes this to faster-than-expected gains in **runtime/software optimization**, smaller-model capability, and local inference infrastructure, with speculation that domain-specific frontier-quality models may fit on prosumer hardware within `1–2 years`.
+    - One user described running a `2x RTX 3090` Ubuntu box in a garage at `100% GPU utilization` while serving API calls remotely, suggesting a practical local-server deployment pattern rather than desktop dual-boot usage. This highlights the shift from experimentation to always-on local inference infrastructure using commodity GPUs.
+
+  - **[I don't get Quants, I'm running Qwen3.6-27b flawlessly at iq3, makes no sense](https://www.reddit.com/r/LocalLLM/comments/1tcas9a/i_dont_get_quants_im_running_qwen3627b_flawlessly/)** (Activity: 325): **The poster reports running a **bartowski GGUF quant** of a **Qwen `27B` dense coding-capable model** at roughly **`IQ3` quantization**, fitting **~`90k` context in `16GB` VRAM** and generating around **`30 tok/s`**, while still performing well on **Godot/GDScript** tasks. They observe little apparent degradation from low-bit quantization and hypothesize the strong results may come from the **Pi harness** plus **Context7/ContextQMD** retrieval/checking against current syntax, since the same model allegedly performs worse in other harnesses such as Opencode despite similar tool connections.**
+
+
+
+### 2. Open-Source Local AI App and Voice Model Releases
+
+  - **[TextGen is now a native desktop app. Open-source alternative to LM Studio (formerly text-generation-webui).](https://www.reddit.com/r/LocalLLaMA/comments/1tbyyee/textgen_is_now_a_native_desktop_app_opensource/)** (Activity: 1092): ****oobabooga/textgen** has been repackaged from the long-running `text-generation-webui` into a **portable, no-install Electron desktop app** for Windows/Linux/macOS, with self-contained `user_data` storage and release variants for **CUDA, Vulkan, CPU-only, Apple Silicon/Intel macOS, and ROCm** via the [GitHub releases](https://github.com/oobabooga/textgen/releases). The author positions it as a private, open-source **LM Studio alternative**, emphasizing **zero outbound requests**, `ik_llama.cpp` support with newer quantization formats like `IQ4_KS`/`IQ5_KS`, OpenAI/Anthropic-compatible APIs including Claude Code compatibility via `ANTHROPIC_BASE_URL=http://127.0.0.1:5000`, plus built-in web search, PDF extraction via `PyMuPDF`, `trafilatura` page cleanup, Jinja2 chat-template rendering, and tool calling through Python files or MCP servers; source is AGPLv3 at [github.com/oobabooga/textgen](https://github.com/oobabooga/textgen).** Top comments were largely positive and non-technical, focusing on excitement about a more private LM Studio competitor and recognition of **oobabooga** from the earlier `text-generation-webui` era.
+
+    - One user highlighted that **text-generation-webui/oobabooga** helped them learn that most local LLM frontends ultimately expose or consume an **OpenAI-compatible API**, implying that frontend choice often comes down to UX, packaging, and local model/runtime integration rather than a fundamentally different serving abstraction.
+    - A commenter reported the new desktop app working successfully with **Gemma 4 31-B**, saying it was intuitive and sufficient for their workflow. They also noted they now prefer it over **KoboldCPP**, suggesting the app may be competitive for users who want a local desktop frontend rather than a web UI or standalone llama.cpp-style runner.
+
+  - **[DramaBox - Most Expressive Voice model ever based on LTX 2.3](https://www.reddit.com/r/LocalLLaMA/comments/1tc5wx1/dramabox_most_expressive_voice_model_ever_based/)** (Activity: 405): ****Resemble AI** released **DramaBox**, an open expressive voice/TTS model based on **LTX 2.3**, with code on [GitHub](https://github.com/resemble-ai/DramaBox), weights on [Hugging Face](https://huggingface.co/ResembleAI/Dramabox), and a hosted [HF Space](https://huggingface.co/spaces/ResembleAI/Dramabox). The post positions it as a highly emotive voice model; commenters frame it as potentially useful for **indie game voice acting** and other character-dialogue workflows.** Top comments are broadly positive on expressiveness—*“actually sounds like a real person emotes”*—but one technical critique says the model reaches roughly `95%` speaker/character likeness while still feeling only around `60%` in audio naturalness due to robotic or low-quality artifacts.
+
+    - A commenter assessed the model as achieving roughly **`95%` voice likeness** while still sounding only about **`60%` free of robotic/low-quality audio artifacts**, implying that DramaBox/LTX 2.3 may have strong speaker similarity and expressiveness but still needs improvements in audio fidelity and naturalness.
+    - Several comments framed the model as practically useful for **indie game development**, especially because it is described as an **open model** capable of more human-like emotional delivery than typical TTS/voice models.
+    - One user referenced the creator’s earlier post and thanked them for releasing the code, suggesting the project has an ongoing public implementation rather than being only a demo.
+
+
+### 3. Retrieval Bottlenecks for Local LLM Workflows
+
+  - **[Web-Search is coming to a screeching performance halt as Google shuts down their free search index, and traffic defenders like Cloudflare challenge AI at every gateway. What are our options?](https://www.reddit.com/r/LocalLLaMA/comments/1tcaboi/websearch_is_coming_to_a_screeching_performance/)** (Activity: 838): **The post argues that AI-agent web search/retrieval pipelines are degrading as **Google** restricts free site-specific/custom search to `50` domains with a legacy cutoff of `2027-01-01`, while **Cloudflare** defaults to challenging AI scrapers across customer sites, reportedly extending via a **GoDaddy** partnership. Commenters identify existing alternatives: decentralized **[YaCy](https://yacy.net/)**, self-hosted meta-search **SearXNG**, **[Common Crawl](https://commoncrawl.org/)** for non-real-time bulk web data, **[Brave Search API](https://brave.com/search/api/)** with an independent index and `2,000` free queries/month, plus retrieval fallbacks such as the **[Wayback Machine](https://archive.org/help/wayback_api.php)**, archive.today, and **[Jina Reader](https://r.jina.ai/)**.** The main debate is economic rather than purely technical: commenters expect a shift toward paid search because bot/API traffic does not monetize through ads—*“how do you monetize searches when there’s no human eyes to land on advertising?”* The likely near-term stack is viewed as paid or federated search APIs plus caching/reader services, not unlimited free Google-backed search.
+
+    - Several commenters framed the problem as an infrastructure/economics shift: **API-driven AI search has no ad impressions**, so free high-volume access to commercial indexes is likely unsustainable. Suggested alternatives included **SearXNG** as a self-hosted metasearch layer over Bing/DuckDuckGo/Brave, **Brave Search API** with an independent index and a cited free tier of `2,000 queries/month`, and **Common Crawl** for non-real-time use cases where petabyte-scale public crawl data can be indexed locally.
+    - A technically important distinction was made between **search** and **content retrieval**: search APIs can still return URLs, but Cloudflare-style bot challenges mostly break the subsequent scraping/fetching step. Proposed mitigations included cached or archived sources such as the **Wayback Machine API**, Google Cache while available, archive.today, and reader/extraction services such as **Jina Reader** (`r.jina.ai`) that are designed to retrieve simplified page content.
+    - One commenter pointed to **YaCY** ([yacy.net](https://yacy.net/), [Wikipedia](https://en.wikipedia.org/wiki/YaCy)) as a long-running open-source **P2P decentralized search engine**, arguing that centralized indexes becoming paid or restricted could make distributed crawling/indexing more relevant. Another suggested a more radical variant: scrape content once, package it into distributable archives, and share it over P2P to reduce repeated bandwidth costs on origin sites.
+
+  - **[Anyone actually using a local LLM as their daily knowledge base? Not for coding, for life stuff. What's your setup?](https://www.reddit.com/r/LocalLLaMA/comments/1tcrtt6/anyone_actually_using_a_local_llm_as_their_daily/)** (Activity: 719): **The thread asks whether local LLMs are viable as a **daily personal knowledge base** over private notes/PDFs, with concerns around RAG reliability, quant/model choice, framework complexity, and context growth. The most concrete setup reported: **M3 Max `36GB`**, [`Qwen3-32B`](https://huggingface.co/Qwen) via [`Ollama`](https://ollama.com/), [`bge-m3`](https://huggingface.co/BAAI/bge-m3) embeddings, [`Obsidian`](https://obsidian.md/) as source of truth, [`Postgres + pgvector`](https://github.com/pgvector/pgvector), and ~`300` lines of custom Python instead of LlamaIndex; key implementation details were heading-based Markdown chunking with title/parent-heading prefixes, hybrid [`BM25`](https://en.wikipedia.org/wiki/Okapi_BM25)+dense retrieval with [`RRF`](https://plg.uwaterloo.ca/~gvcormac/cormacksigir09-rrf.pdf), mandatory source citations/quotes, and nightly full reindexing of ~`3000` notes in ~`4 min`. Another commenter described a non-KB but practical local-AI workflow using speech-to-text/translation, screenshot-to-vision translation, clipboard automation, TTS, and future document extraction for business task tracking, noting Whisper-class ASR and vision models were more reliable than older speech/OCR pipelines.** The strongest technical opinion was that **retrieval quality matters more than context length or model choice**: *“you do not need 200k context… you need the right 6 chunks in 8k context,”* and large context is often used to mask poor retrieval. They also warned that mixing daily journals with reference notes degrades retrieval because emotional fragments surface during factual queries, recommending separate indexes routed at query time.
+
+    - One commenter described an `8-month` daily local RAG setup on a **36GB M3 Max** using **Qwen3 32B** as the answer model, **bge-m3** embeddings, **Obsidian** as source-of-truth, **Postgres + pgvector** for indexing, and **Ollama** for serving, with a hand-written Python retriever instead of LlamaIndex. Their main technical findings were that markdown-heading-based chunking with prepended document/parent-heading context dramatically improved recall, **BM25 + dense hybrid retrieval** with **RRF fusion** fixed proper-noun failures at about `+50ms`, and citations/quoted chunks were required to detect hallucinated claims.
+    - The same RAG user argued that very long context windows are often compensating for poor retrieval: *"you do not need 200k context. you need to put the right 6 chunks in 8k context."* They rebuild the index nightly via cron in about `4 minutes` for roughly `3000` Obsidian notes, and found that daily journals should be indexed separately from reference notes because emotionally phrased journal fragments polluted factual retrieval results.
+    - Another commenter built a local-ish multilingual gaming assistant combining speech-to-text, vision translation, clipboard automation, and TTS: holding middle mouse records speech, translates it to Spanish, and copies it for game chat; a hotkey screenshots the chat region and sends it to an AI vision model for translation because OCR was unreliable. They specifically noted **Whisper** speech recognition was accurate enough that they had not noticed transcription errors, and they are extending similar document-ingestion ideas to scan staff task sheets, extract text, create database tasks, and generate summaries.
+
+
+
+
+## Less Technical AI Subreddit Recap
+
+> /r/Singularity, /r/Oobabooga, /r/MachineLearning, /r/OpenAI, /r/ClaudeAI, /r/StableDiffusion, /r/ChatGPT, /r/ChatGPTCoding, /r/aivideo, /r/aivideo
+
+### 1. Claude SDK Credit Limits Backlash
+
+  - **[Anthropic just ripped off everyone and they still managed to make it sound deceptively friendly](https://www.reddit.com/r/ClaudeCode/comments/1tc832e/anthropic_just_ripped_off_everyone_and_they_still/)** (Activity: 2761): **The image is a [screenshot of a ClaudeDevs/X announcement](https://i.redd.it/q81piy8c5y0h1.jpeg) saying that, starting `June 15`, paid Claude plans can claim dedicated monthly credits for programmatic usage via the **Claude Agent SDK**, `claude -p`, **Claude Code GitHub Actions**, and third-party Agent SDK apps. In context, the Reddit post argues this is effectively a pricing/usage-limit nerf: programmatic Claude Code usage that previously benefited from opaque, heavily subsidized subscription limits is now routed through a fixed dollar credit allowance, allegedly reducing practical value from roughly “`$2000` of tokens” to `$200` for heavy SDK/CLI users.** Commenters largely view the change as a disguised downgrade rather than a benefit, especially for autonomous `claude -p` workflows where credits may burn faster than interactive subscription usage. One user says this pushes them toward a “permanent local mode,” reflecting concern that Anthropic is making cloud-based coding-agent workflows less economical.
+
+    - Commenters focused on the impact to **Claude Code / `claude -p` autonomous programmatic usage**, arguing that runs may now be constrained by a separate monthly credit pool rather than effectively sharing subscription access. One user noted that these credits appear to “burn faster than the sub usage,” which would materially affect agentic workflows that make many repeated CLI/API-style calls.
+    - Several users highlighted ambiguity in Anthropic’s wording around a **“dedicated monthly credit for programmatic usage”**, specifically whether it changes normal Claude Code usage versus only autonomous or scripted usage. The concern is that unclear product/usage-billing boundaries make it hard to estimate costs or decide whether to migrate to local models sooner.
+
+  - **[In Time (2011) was a documentary about Claude Pro users and nobody told us](https://www.reddit.com/r/ClaudeAI/comments/1tckar7/in_time_2011_was_a_documentary_about_claude_pro/)** (Activity: 5292): **The image is a **non-technical meme** linking the film *In Time*’s glowing life-clock mechanic to **Claude Pro token/message limits**, showing a forearm counter reading `Tokens Remaining: 125` ([image](https://i.redd.it/u8m6559bg01h1.png)). The post frames paid LLM usage caps as a productivity-era version of a life-or-death countdown, joking that “Justin Timberlake was just a guy trying to finish his PR before the window closed.”** Comments mostly extend the joke, but one commenter makes a broader critique that AI companies exploit users’ **data and collective human intelligence**, arguing that high-quality human-generated real-world data is the scarce resource analogous to “time” in the movie.
+
+    - One comment frames the “resource extraction” analogy around **AI training data and human-generated intelligence**, arguing that LLM progress depends on high-quality real-world human data rather than recursively training on LLM outputs. The commenter specifically claims that models *“can’t get smarter by training on other LLMs”* and that AI companies are effectively competing to exploit scarce, high-signal human-produced data.
+
+
+### 2. AI Image Perception and Generation Glitches
+
+  - **[Twitter user posts a real Monet and says it's AI](https://www.reddit.com/r/singularity/comments/1td046p/twitter_user_posts_a_real_monet_and_says_its_ai/)** (Activity: 3110): **This is a **non-technical meme/social experiment**: the image is a screenshot of an X/Twitter post where a user labels what is allegedly a real **Claude Monet** water-lily painting as “AI-generated,” prompting replies that confidently identify supposed AI flaws such as poor depth, cohesion, brushwork, and lack of “feeling.” The contextual significance is about **cognitive bias in AI art discourse**—once viewers are told an image is AI, they may reverse-engineer criticisms even when the work is human-made. [Image link](https://i.redd.it/4sb11e8m641h1.jpeg)** Top comments frame it as a useful example of **confirmation bias** and ideology-driven perception, with users joking that “all of a sudden everyone’s an expert on impressionism” and warning not to show it to anti-AI communities.
+
+
+  - **[Bruh…](https://www.reddit.com/r/GeminiAI/comments/1tbx1bp/bruh/)** (Activity: 2856): **The image is a **non-technical meme** about an AI image-editing model failing a hand-vectorization request: it first generates a hand with extra fingers, then “corrects” it by changing the gesture into a raised middle finger. It illustrates a common generative-image failure mode around **hand/finger topology** and poor instruction-following during iterative edits. [Image](https://i.redd.it/5clbrmoz5w0h1.jpeg)**
+
+
+
+
+
+# AI Discords
+
+Unfortunately, Discord shut down our access today. We will not bring it back in this form but we will be shipping the new AINews soon. Thanks for reading to here, it was a good run.
