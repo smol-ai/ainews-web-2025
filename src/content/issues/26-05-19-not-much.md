@@ -3,41 +3,46 @@ id: MjAyNS0x
 title: 'Google I/O 2026: Gemini 3.5 Flash, Omni, and Google’s Agent Stack'
 date: '2026-05-18T05:44:39.731046Z'
 description: >-
-  **Google** made a major comeback with the launch of **Gemini 3.5 Flash**,
-  touted as its fastest and most cost-efficient model for **agents** and
-  **coding**, outperforming **Gemini 3.1 Pro** on benchmarks like
-  **Terminal-Bench 2.1** and **GDPval-AA**. Despite its speed and intelligence
-  gains, independent analysis highlights a significant cost increase. Google
-  also expanded its **Antigravity** agent platform with new features and
-  demonstrated autonomous agent teams building an OS in 12 hours. Additionally,
-  Google previewed agentic features in **Search** and introduced **Gemini
-  Spark**, a personal agent running long tasks. **Google DeepMind** launched
-  **Gemini Omni**, a multimodal model capable of generating video, image, audio,
-  and text with consistent character and scene memory, integrated into platforms
-  like **Flow** and **YouTube Shorts**.
+  **Google** announced at I/O the repositioning of **Gemini** as a consumer AI
+  and developer/agent platform with three key releases: **Gemini 3.5 Flash** for
+  fast agentic and coding tasks, **Gemini Omni** for multimodal generation and
+  editing including video, and the expanded **Antigravity 2.0** agent stack.
+  Google reports processing over **3.2 quadrillion tokens per month**, a 7x
+  increase year-over-year, with **900M+ monthly Gemini users** across 230+
+  countries and 70+ languages. Gemini 3.5 Flash features a **1M-token context
+  window**, **65k max output tokens**, **4 thinking levels**, and "thought
+  preservation" across turns, outperforming Gemini 3.1 Pro on multiple
+  benchmarks and running up to 12x faster in Antigravity. Independent benchmarks
+  show Gemini 3.5 Flash scoring **55 on the Intelligence Index**, with higher
+  costs than previous versions. Gemini Omni Flash supports text, image, video,
+  and audio inputs for generative media tasks, available now for paid users.
 companies:
   - google
   - google-deepmind
-  - artificial-analysis
+  - geminiapp
 models:
   - gemini-3.5-flash
   - gemini-3.1-pro
-  - gemini-3-flash
+  - gemini-3.5
   - gemini-omni
 topics:
-  - agents
-  - coding
-  - benchmarking
+  - agentic-ai
   - multimodality
-  - model-performance
-  - model-cost
-  - model-deployment
-  - api
   - video-generation
+  - model-performance
+  - benchmarking
+  - context-windows
   - model-optimization
+  - model-scaling
+  - instruction-following
+  - api
+  - model-efficiency
+  - cost-analysis
 people:
-  - _philschmid
+  - philschmid
+  - jeffdean
 ---
+
 
 
 **Google is so back!**
