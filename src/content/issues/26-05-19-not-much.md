@@ -3,18 +3,18 @@ id: MjAyNS0x
 title: 'Google I/O 2026: Gemini 3.5 Flash, Omni, and Google’s Agent Stack'
 date: '2026-05-18T05:44:39.731046Z'
 description: >-
-  **Google** announced the launch of **Gemini 3.5 Flash**, their fastest and
-  most cost-efficient model for agents and coding, outperforming **Gemini 3.1
-  Pro** on benchmarks like **Terminal-Bench 2.1** and **GDPval-AA**. Independent
-  analysis shows Gemini 3.5 Flash leads in speed and intelligence but at a
-  higher operational cost. Google expanded **Antigravity** into a full agent
-  platform enabling autonomous agent teams to build complex systems efficiently.
-  They also previewed agentic features in Search and introduced **Gemini
-  Spark**, a personal agent running long tasks on cloud VMs. Additionally,
-  **Google DeepMind** launched **Gemini Omni**, a multimodal model capable of
-  generating video from text, image, audio, and video inputs, with rollout
-  starting for paid users and integration into platforms like **Flow** and
-  **YouTube Shorts**.
+  **Google** made a major comeback with the launch of **Gemini 3.5 Flash**,
+  touted as its fastest and most cost-efficient model for **agents** and
+  **coding**, outperforming **Gemini 3.1 Pro** on benchmarks like
+  **Terminal-Bench 2.1** and **GDPval-AA**. Despite its speed and intelligence
+  gains, independent analysis highlights a significant cost increase. Google
+  also expanded its **Antigravity** agent platform with new features and
+  demonstrated autonomous agent teams building an OS in 12 hours. Additionally,
+  Google previewed agentic features in **Search** and introduced **Gemini
+  Spark**, a personal agent running long tasks. **Google DeepMind** launched
+  **Gemini Omni**, a multimodal model capable of generating video, image, audio,
+  and text with consistent character and scene memory, integrated into platforms
+  like **Flow** and **YouTube Shorts**.
 companies:
   - google
   - google-deepmind
@@ -22,23 +22,25 @@ companies:
 models:
   - gemini-3.5-flash
   - gemini-3.1-pro
-  - gemini-3.5-pro
+  - gemini-3-flash
   - gemini-omni
 topics:
   - agents
+  - coding
   - benchmarking
-  - model-performance
-  - cost-efficiency
   - multimodality
-  - video-generation
+  - model-performance
+  - model-cost
   - model-deployment
   - api
+  - video-generation
+  - model-optimization
 people:
   - _philschmid
 ---
 
 
-**a quiet day.**
+**Google is so back!**
 
 > AI News for 5/18/2026-5/19/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
