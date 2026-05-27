@@ -3,62 +3,57 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-05-26T05:44:39.731046Z'
 description: >-
-  **AI News for 5/23/2026-5/26/2026** highlights a shift in AI product strategy
-  emphasizing **model + harness + workflow + UI + memory + economics** over
-  model quality alone. **OpenAI** released a significant **Codex** update with
-  features like **appshots** and remote computer use, while **Claude** expanded
-  **auto mode** and added **Sonnet 4.6** support. **DeepSeek** permanently
-  discounted **DeepSeek-V4-Pro** by 75%, drastically altering the
-  **cost/performance frontier** and making intelligence "too cheap to meter."
-  **Gemini 3.5 Flash** showed benchmark improvements but received mixed feedback
-  on practical usefulness. The competitive landscape includes **Qwen** and other
-  Chinese frontier models compressing the race. *"The model alone is no longer
-  the product,"* and *"intelligence too cheap to meter"* were key sentiments.
+  **Harness engineering** is emerging as the key differentiator for coding
+  agents, emphasizing the stack of **model + harness + eval loop** over just
+  stronger base models. **DeepSeek** is building a harness team to optimize
+  interaction and verification loops, while **Google's Gemini Managed Agents**
+  and **LangChain** formalize harness concepts like context governance and
+  dynamic skill routing. New benchmarks like **DeepSWE** align closely with real
+  developer experience, with **Qwen3.7 Max** and **Claude Opus 4.6** showing
+  strong agentic coding performance. **Anthropic** introduced a
+  security-guidance plugin for **Claude Code** reducing security PR comments by
+  30–40%, and **OpenAI** highlighted **GPT-5.5** in Codex for improved document
+  parsing. In research, **Claude Mythos** solved Erdős problem #90 with a
+  cleaner proof path than previous models, showing latent capabilities unlocked
+  by appropriate harnesses. The paper "Language Models Need Sleep" proposes a
+  sleep-like consolidation phase for long-horizon memory, addressing bottlenecks
+  in persistent context storage. Open research agents like **QUEST** (2B–35B
+  parameters) advance long-horizon fact-seeking and citation grounding, while
+  the **CUSP benchmark** from Sakana/Stanford/Oxford/AI2 evaluates current model
+  capabilities in science.
 companies:
-  - openai
-  - claude
   - deepseek
-  - gemini
-  - deepmind
+  - google-deepmind
+  - langchain-ai
+  - anthropic
+  - openai
+  - alibaba
+  - sakana-ai
+  - stanford
+  - oxford
+  - ai2
 models:
-  - codex
-  - deepseek-v4-pro
-  - sonnet-4.6
-  - gemini-3.5-flash
-  - claude-opus-4.7
-  - gemini-3.1-pro
+  - qwen-3.7
+  - claude-opus-4.6
   - gpt-5.5
+  - mythos
+  - quest-2b-35b
 topics:
-  - model-performance
-  - cost-curves
-  - agent-products
-  - workflow-optimization
-  - model-harnessing
-  - benchmarking
-  - product-differentiation
-  - pricing-strategy
-  - frontier-competition
+  - harness-engineering
+  - agent-infrastructure
+  - coding-benchmarks
+  - security-guidance
+  - long-horizon-memory
+  - context-compression
+  - sleep-phase
+  - math-problem-solving
+  - fact-seeking
+  - citation-grounding
+  - science-evaluation
 people:
-  - gdb
-  - dzhng
-  - signulll
-  - teortaxestex
-  - ajambrosino
-  - reach_vb
-  - theo
-  - claudedevs
-  - _mohansolo
-  - artificialanlys
-  - scaling01
-  - yuchenj_uw
-  - kimmonismus
-  - officiallogank
-  - designarena
-  - alezander907
-  - giffmana
-  - jeremyphoward
-  - hamelhusain
+  - sebastienbubeck
 ---
+
 
 
 
@@ -74,49 +69,41 @@ people:
 # AI Twitter Recap
 
 
-**Agent Products, Harnesses, and the Shift Beyond “Just the Model”**
 
-- **The product surface is moving up-stack**: A recurring theme was that model quality alone is no longer the moat; the winning product is increasingly **model + harness + workflow + UI + memory + economics**. [@gdb](https://x.com/gdb/status/2057670776803996110) put it bluntly: “the model alone is no longer the product,” while [@dzhng](https://x.com/dzhng/status/2057748510947082539) argued top-tier products need **model <> harness <> product symbiosis**. The same pattern shows up in practice: [@signulll](https://x.com/signulll/status/2057850735048458639) framed ambient AI and agentic AI as the new seam of computing interfaces, and [@teortaxesTex](https://x.com/teortaxesTex/status/2057770692112798209) noted that harness research still risks converging on “replicate Claude Code” instead of exploring broader interfaces.
-- **Coding-agent product differentiation is becoming concrete**: OpenAI shipped another substantial Codex update via [“codex thursday no. 6”](https://x.com/ajambrosino/status/2057716220963803577) with **appshots, /goal improvements, remote computer use while locked, annotation mode, plugin sharing, and analytics**. [@gdb](https://x.com/gdb/status/2057802037757157838) separately highlighted **Appshots**, while users reported meaningful workflow shifts: [@gdb](https://x.com/gdb/status/2057704270531903811) said it’s hard to remember coding before Codex, and [@reach_vb](https://x.com/reach_vb/status/2057830243201622368) said they haven’t opened an IDE in over a month. But product rough edges remain: [@theo](https://x.com/theo/status/2057960907997876412) praised **T3 Code’s remote feature** as ahead of alternatives, then contrasted it with buggy remote workflows in Codex in a follow-up [post](https://x.com/theo/status/2057961165175873930). On the Claude side, [@ClaudeDevs](https://x.com/ClaudeDevs/status/2057946803685974482) expanded **auto mode** to the Pro plan and added **Sonnet 4.6** support; [@_mohansolo](https://x.com/_mohansolo/status/2057910616153882949) also had to clarify and patch IDE support in **Antigravity 2.0** after user backlash.
+**Agent Harnesses, Coding Benchmarks, and the Shift Beyond “Just the Model”**
 
-**Model Performance, Cost Curves, and Frontier Competition**
+- **Harness engineering is becoming the main differentiator for coding agents**: Several posts converged on the same thesis: the winning stack is now **model + harness + eval loop**, not just a stronger base model. A long Zhihu summary argued that [DeepSeek is explicitly building a harness team](https://x.com/ZhihuFrontier/status/2059180748637376843) to close the loop between model outputs, runtime feedback, validation, and correction, with a claimed cached-input cost advantage that would support tighter interaction/verification loops. In parallel, [Google’s Gemini Managed Agents guide](https://x.com/_philschmid/status/2059263980913229989) framed agent infra as a single API call to a managed harness with sandboxing, persistence, and mounts, while [LangChain’s updated `create_agent` docs](https://x.com/sydneyrunkle/status/2059280878694531280) and [dair.ai’s “harness” paper summary](https://x.com/dair_ai/status/2059294269698199929) formalized the same stack: **context governance, trustworthy memory, dynamic skill routing**.
+- **Benchmarks are getting closer to real developer experience**: [DeepSWE](https://x.com/serenaa_ge/status/2059308218564890875), introduced as a new benchmark for agentic coding, got strong endorsement from practitioners; [@theo called it](https://x.com/theo/status/2059352130289651925) “the first code bench that actually aligns with how it feels to use these models coding.” It also created more separation at the top end than public SWE leaderboards often show. Related benchmark signals: [Qwen3.7 Max debuted at #4 on Code Arena: Frontend](https://x.com/arena/status/2059297720079393107), roughly on par with **Claude Opus 4.6** on agentic webdev tasks, and [Alibaba amplified the result](https://x.com/AlibabaGroup/status/2059317802935423028). Across the tooling stack, [Anthropic shipped a security-guidance plugin for Claude Code](https://x.com/ClaudeDevs/status/2059385239781384341) and reported a **30–40% reduction** in security-related PR comments in internal use, while [OpenAI highlighted GPT-5.5 in Codex at Databricks](https://x.com/OpenAIDevs/status/2059353117934899289) for more reliable document parsing.
 
-- **DeepSeek’s pricing move was the biggest market signal**: [@deepseek_ai](https://x.com/deepseek_ai/status/2057854261699195173) made the **75% DeepSeek-V4-Pro discount permanent**, triggering strong reactions because it materially changes the **cost/performance frontier**. [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2058021452465799403) quantified first-party pricing at **$0.435/M input, $0.87/M output, $0.0036/M cached input**, estimating a blended **~$0.18/M** and placing V4 Pro on the Pareto frontier for intelligence vs run cost. They estimate running their Intelligence Index on V4 Pro costs **~3x less than Gemini 3.1 Pro Preview, ~12x less than GPT-5.5, and ~19x less than Claude Opus 4.7**. Community reaction centered on DeepSeek’s push toward “**intelligence too cheap to meter**,” as [@scaling01](https://x.com/scaling01/status/2057835507858518178) put it. [@Yuchenj_UW](https://x.com/Yuchenj_UW/status/2057855546460676410) and [@kimmonismus](https://x.com/kimmonismus/status/2057868472965640194) both emphasized the magnitude of the cut.
-- **Gemini Flash improved, but usage feedback was mixed**: [@OfficialLoganK](https://x.com/OfficialLoganK/status/2057682092583227881) reported **Gemini 3.5 Flash** making major progress over **3.1 Pro on GDPval**, claiming Flash is now “competing at the frontier,” and [@Designarena](https://x.com/Designarena/status/2057885688125968660) placed it **16th overall** on Design Arena, a **16-position jump** from Gemini 3 Flash Preview. But several builders pushed back on usefulness vs benchmark gains: [@Alezander907](https://x.com/Alezander907/status/2057686331380359566) saw only slight browser-agent improvement at higher cost, [@giffmana](https://x.com/giffmana/status/2057714729762627950) argued this isn’t “Flash progress” if the brand still implies cheapness, and [@jeremyphoward](https://x.com/jeremyphoward/status/2057923197639840033) said the model feels optimized to **max evals rather than cooperate with humans**. That aligns with broader eval skepticism from [@HamelHusain](https://x.com/HamelHusain/status/2057875320011882923), who argued current tooling underweights qualitative, HITL judgment.
-- **Qwen and Chinese frontier models keep compressing the race**: The official [@Alibaba_Qwen](https://x.com/Alibaba_Qwen/status/2057767604048240987) teasers and a long third-party review from [@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2057772126162354660) portrayed **Qwen3.7-Max** as a meaningful step up, especially in **instruction following, context reliability, and stability**, while still suffering from **verbosity and high token usage**. Elsewhere, [@scaling01](https://x.com/scaling01/status/2057937081070944709) claimed recent ALE-Bench runs show Chinese models like **Kimi-K2.6, DeepSeek-V4, GLM-5.1** outperforming several Western releases in that setting. [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2057914437156409577) also reported **Cursor Composer 2.5** as **3–18x cheaper than Opus 4.7** and **5–32x cheaper than GPT-5.5** on Coding Agent benchmarks, with notably lower token use.
+**Research Agents, Long-Horizon Reasoning, and “Sleep” for Context Compression**
 
-**Protocols, Infra, and Agent Runtime Tooling**
+- **Math/science agents showed more evidence of capability overhang—conditional on the right harness**: The strongest cluster of tweets was around models tackling old open problems. A mathematician reported [Claude Mythos solving Erdős problem #90](https://x.com/__alpoge__/status/2059298565093196012), with follow-up detail that the model often converged to a **different, cleaner proof path** than OpenAI’s earlier route. This was echoed by [@_sholtodouglas](https://x.com/_sholtodouglas/status/2059303540150137244), [@kimmonismus](https://x.com/kimmonismus/status/2059311386820289013), and then sharpened by [Sébastien Bubeck](https://x.com/SebastienBubeck/status/2059343132991623186): with an **appropriate harness**, both **Mythos** and **GPT-5.5** can reproduce what an internal model had done one-shot, implying a large amount of latent capability not exposed by vanilla chat UX.
+- **Long-horizon memory is resurfacing as a core bottleneck**: The paper [“Language Models Need Sleep”](https://x.com/iScienceLuvr/status/2059221770075562113) got notable attention. The mechanism is a **sleep-like consolidation phase** where recent context is converted into persistent fast weights before clearing the KV cache, moving compute into an offline pass while preserving wake-time latency. [dair.ai’s summary](https://x.com/dair_ai/status/2059333792775745619) emphasized the systems angle: this is an alternative to ever-growing KV caches for agents with long trajectories. This theme connected neatly with ongoing discussion about memory systems in agents, including [Omar’s pointer to Anthropic’s memory talk and Dream feature](https://x.com/omarsar0/status/2059285935376765214).
+- **Open deep-research agents and science forecasting also advanced**: [QUEST](https://x.com/iScienceLuvr/status/2059223911011930606), a family of open **2B–35B** models for long-horizon fact-seeking, citation grounding, and report synthesis, was released as a general-purpose deep research agent. On the science-evals side, Sakana/Stanford/Oxford/AI2’s [CUSP benchmark](https://x.com/SakanaAILabs/status/2059166749761872342) found current models can often identify promising research directions but struggle much more with **whether** and **when** breakthroughs materialize.
 
-- **MCP’s new release candidate is a substantive protocol simplification**: [@dsp_](https://x.com/dsp_/status/2057780712187580924) announced the **MCP 2026-07-28 release candidate**, with the key change that the protocol is now **stateless**: **no handshake, no session ID, and any request can hit any server instance**. The RC also introduces **first-class extensions** like **MCP Apps** and **Tasks**, plus auth hardening and a clearer deprecation policy. For infra teams, statelessness is a big operational shift: easier scaling, simpler load balancing, fewer sticky-session concerns.
-- **Sandboxes and managed execution are becoming first-class primitives**: [@_philschmid](https://x.com/_philschmid/status/2057833963633418426) demoed **Gemini Managed Agents + Interactions API** to give an agent a secure hosted Linux sandbox with memory and code execution. [@CoreWeave](https://x.com/CoreWeave/status/2057852737073942634) launched **CoreWeave Sandboxes** in public preview for **RL, agent tool use, and model eval**, while [@cnakazawa](https://x.com/cnakazawa/status/2057823910574588238) released **Cloudsail** for per-task Cloudflare sandboxes with shell, Codex, and GitHub access without exposing tokens. At the orchestration layer, [@skypilot_org](https://x.com/skypilot_org/status/2057854003648598312) argued **RL doesn’t work on Slurm** because modern RL is a multi-service system with heterogeneous hardware and recovery needs.
-- **Open-source harnesses and memory layers are proliferating**: [@NVIDIAAI](https://x.com/NVIDIAAI/status/2057855521193881773) open-sourced **AI-Q agent skills** for portable deep-research pipelines that can plug into arbitrary harnesses. [@Teknium](https://x.com/Teknium/status/2057880570160701852) added **Bitwarden support** for key management in Hermes and later restored **256K context** for **Grok Build v0.1** in Hermes [here](https://x.com/Teknium/status/2057930638632812642). [@shannholmberg](https://x.com/shannholmberg/status/2057821004676956586) described a **shared-memory “gBrain” layer** under Hermes agents, with typed folders and read-first access for specialist agents. [@aakashadesara](https://x.com/aakashadesara/status/2057809590616461399) updated **CTOP** to support **Devin** and a CLI for listing, searching, and killing agent sessions.
+**Model, Optimizer, and Architecture Updates**
 
-**Research: RL, Distillation, Architectures, and Evaluation**
+- **Optimizer work remains lively, especially around Muon variants and schedule-free training**: [AMUSE](https://x.com/jueunkim_0525/status/2059127584601055426) proposes **Anytime MUon with Stable gradient Evaluation**, combining Muon with schedule-free-style gradient evaluation for stable anytime training without LR decay, reporting gains at **124M / 720M / 1B** scale and on ViT/ImageNet fine-tuning. Related implementation discussion came from [ClashLuke’s SFMuon snippet](https://x.com/Clashluke/status/2059187617997197553) and [kellerjordan’s Modded-NanoGPT result on Newton-Muon](https://x.com/kellerjordan0/status/2059353883881976044).
+- **Sparse attention design space continues to diversify**: [MiniMax teased M3 as open source](https://x.com/MiniMax_AI/status/2059286515155599595), and follow-on technical commentary suggested a new **block-sparse two-stage attention** path. [@kimmonismus summarized the reported speedups](https://x.com/kimmonismus/status/2059302121489486335): **9.7× prefilling** and **15.6× decoding** at **1M tokens** versus M2. [@eliebakouch added](https://x.com/eliebakouch/status/2059321928205156568) that M3 appears to move back to **GQA-based** sparse attention with block selection on real KV, distinct from DeepSeek’s compressed-attention variants.
+- **Vision/open model releases and ranking updates**: [PrismML released Bonsai Image 4B](https://x.com/PrismML/status/2059339157600969199), including **1-bit and ternary** variants intended to run locally on laptops and phones; a follow-up noted browser-local execution was possible at ~3GB footprint. On the closed side, [Microsoft’s MAI-Image-2.5](https://x.com/MicrosoftAI/status/2059344061358563838) debuted at **#3 on the Image Arena**, breaking a top-5 club previously dominated by OpenAI and Google, with [Arena reporting a 1,254 score](https://x.com/arena/status/2059346024632820146). Meanwhile, [Artificial Analysis measured Gemini 3.5 Flash](https://x.com/ArtificialAnlys/status/2059316050391634302) at up to **~280 output tok/s** with materially stronger agentic performance, but at **~5×** the cost of Gemini 3 Flash.
 
-- **RL post-training and reward design are under active reconsideration**: [@RyanBoldi](https://x.com/RyanBoldi/status/2057847412819906658) introduced **Vector Policy Optimization (VPO)**, arguing scalar reward collapse during RL can sabotage test-time scaling. VPO instead optimizes **vector-valued rewards**, improving search performance even on the original scalar objective. [@lateinteraction](https://x.com/lateinteraction/status/2057854814395019623) framed this as a way to train LLMs for more diverse environments and goals, while [@FeiziSoheil](https://x.com/FeiziSoheil/status/2057889865362993561) connected it to broader moves toward **structured feedback** instead of a single reward number. Separately, [@jsuarez](https://x.com/jsuarez/status/2057828106023703037) teased a solution to a long-standing RL problem involving extreme sparsity, with initial sweeps showing SOTA on one internal environment.
-- **Agent compilation/distillation is emerging as a serious economic idea**: [@dair_ai](https://x.com/dair_ai/status/2057846601843146760) highlighted a paper showing a **full agentic workflow**—multi-step calls, tool use, scratchpads, decision structure—can be **distilled into weights** and run at **~100x lower inference cost** while preserving near-frontier quality. This is one of the clearest technical arguments yet for compiling expensive runtime agent loops into cheaper deployable models.
-- **Architecture work remains lively beyond vanilla transformers**: [@ChunyuanDeng](https://x.com/ChunyuanDeng/status/2057826955236462715) introduced **LT2**, a **linear-time looped transformer** combining sparse and linear attention to make looping practical, along with a distilled **Ouro-hybrid-1.4B**. [@ZyphraAI](https://x.com/ZyphraAI/status/2057854519732847029) shared work extending **Equilibrium Propagation** beyond energy-based models toward biologically realistic neurons. On MoE, [@Jianlin_S](https://x.com/Jianlin_S/status/2057719868917793221) proposed **Moving Quantile Balancing** for **sequence-level load balancing without a loss penalty**. Meanwhile [@allen_ai](https://x.com/allen_ai/status/2057838486204326078) launched **ArtifactLinker**, which predicts which benchmarks a model is likely to set SOTA on before running them—a useful meta-eval tool amid growing benchmark sprawl.
-- **Math and reasoning capability discourse shifted again**: [@cozyblaze265065](https://x.com/cozyblaze265065/status/2057739317649588558) reported **99.46%** on a multi-digit multiplication experiment using **gpt-5.5** with medium reasoning and no tools, and [@teortaxesTex](https://x.com/teortaxesTex/status/2057826903721951273) noted modern LLMs can now do **100-digit multiplication** without tools. That’s not a complete theory of reasoning, but it further weakens old “autoregression can’t do arithmetic” talking points.
+**Infra, Systems, and the Semiconductor Stack**
 
-**Multimodal Systems: Video, Speech, World Models, and Imaging**
+- **Huawei’s “τ scaling” paper was read mostly as an engineering roadmap, not a new law**: A very detailed thread argued [Huawei’s “A Time Scaling Theory for Multi-Layer Electronic Systems”](https://x.com/ZhihuFrontier/status/2059118295580852374) should be interpreted as a **strategic manifesto / white paper**. The core proposal is to treat **time constant τ**, not process node, as the unifying metric across device, chip, and datacenter scales. The most concrete claims concerned **LogicFolding** on a future Kirin design, including **+55% density**, **+41% energy efficiency**, and **+13% frequency** at fixed node, plus packaging/network ideas like a **Unified Bus** and **Hi-ONE optical I/O**. The same thread was careful to note missing validation artifacts—die photos, SEMs, workload details, yield curves—and to interpret the most eye-catching numbers as promising but **unverified**. Follow-up reactions also stressed that Huawei’s path may rely more on packaging and architecture than lithographic catch-up, e.g. [@josiah_leee citing Jensen’s point](https://x.com/josiah_leee/status/2059297861745963099) that most of Hopper→Blackwell’s gains came from non-node optimizations.
+- **Datacenter power and inference supply constraints are becoming first-order concerns**: [SemiAnalysis published on the 800VDC transition](https://x.com/SemiAnalysis_/status/2059253624249696658), and [John Carmack recommended it](https://x.com/ID_AA_Carmack/status/2059382254191652896), highlighting crossovers from EV power electronics into datacenter design, including high-voltage SiC parts. Separately, [Epoch AI estimated a possible inference compute crunch](https://x.com/EpochAIResearch/status/2059372951338909717): demand appears to be growing faster than serving capacity, especially for long-context workloads. Their rough model suggested that while current global Blackwell supply could serve today’s demand under favorable assumptions, throughput degrades sharply with longer contexts and demand growth may already be outrunning supply.
 
-- **Google’s I/O stack pushed toward persistent agents and world simulators**: [@Google](https://x.com/Google/status/2057841803550683336) introduced **Gemini Spark**, a **24/7 personal AI agent** for recurring tasks, skills, and workflows. [@GoogleDeepMind](https://x.com/GoogleDeepMind/status/2057842131142590512) also launched **Project Genie + Street View**, letting users turn real U.S. locations into interactive worlds; follow-up posts confirm rollout to **Google AI Ultra** subscribers via Google Labs. The multimodal side was reinforced by [@Google](https://x.com/Google/status/2057881884219035752) announcing **Gemini Omni** for conversational video creation/editing and custom avatars, while [@emollick](https://x.com/emollick/status/2057874739817808223) emphasized the significance of a **fully multimodal** system that can natively edit video.
-- **Runway and image/video tooling keep raising editability**: [@runwayml](https://x.com/runwayml/status/2057826728769134599) released **Aleph 2.0**, supporting **multishot sequences up to 30s at 1080p** with targeted edits that preserve the rest of the scene. [@CuriousRefuge](https://x.com/CuriousRefuge/status/2057920807389806699) highlighted **SeeDance 2 Stitcher** for seamlessly extending AI-generated cinematic clips using Omni-generated continuations.
-- **Speech and image generation saw notable jumps**: [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2057878247782908109) ranked **Cartesia Sonic-3.5** as the new **#1 TTS model** on their Speech Arena, citing an **Elo of 1218**, support for **42 languages**, and strong naturalness/transcript following. Cartesia claims **82ms end-to-end first audio** in production [here](https://x.com/cartesia/status/2057880195403800633). In image generation, [@wildmindai](https://x.com/wildmindai/status/2057797994242523317) flagged Tencent’s **Z-Image 6B** as a **pixel-space generator** with **no VAE**, **1K resolution**, and a transfer framework for converting Flux/SD models; related ecosystem work included Pixal3D demos from [@victormustar](https://x.com/victormustar/status/2057752615396557225) and training support for **Z-Image L2P 1k** in AI Toolkit from [@ostrisai](https://x.com/ostrisai/status/2057931161889095928).
+**Production Tooling and Developer Infrastructure**
 
-**Security, Cyber, and Policy Pressure**
-
-- **Cybersecurity is quickly becoming a proving ground for advanced agents**: [@AnthropicAI](https://x.com/AnthropicAI/status/2057909102542549503) said **Project Glasswing** and partners found **more than ten thousand high- or critical-severity vulnerabilities** in essential software within a month, and explicitly warned the industry will need to adapt to the volume of vulnerabilities that models like **Claude Mythos Preview** can find. Security productization is following: [@perplexity_ai](https://x.com/perplexity_ai/status/2057869990536360334) open-sourced **Bumblebee**, a read-only scanner for macOS/Linux to detect risky packages, extensions, and AI tool configs; [@AravSrinivas](https://x.com/AravSrinivas/status/2057873563156402448) said enterprise deployment will require **agentic sandboxes** plus continuous security engineering.
-- **US immigration policy changes triggered sharp backlash from AI leaders**: Several high-engagement posts argued a proposed rule forcing green-card applicants to apply from outside the US would directly damage the AI talent pipeline. See [@Nick_Davidov](https://x.com/Nick_Davidov/status/2057842593850118286), [@AndrewYNg](https://x.com/AndrewYNg/status/2057907324380217821), [@theo](https://x.com/theo/status/2057911377151582437), [@garrytan](https://x.com/garrytan/status/2057958284410380793), and [@togelius](https://x.com/togelius/status/2057912236262453607). The common argument: the rule punishes **legal high-skill immigrants**, undermines startups and research, and harms US competitiveness in AI.
+- **Serving/inference stacks got meaningful performance and observability updates**: [vLLM merged a Rust frontend](https://x.com/vllm_project/status/2059344804295942513) as a drop-in alternative to the Python API server, with early numbers showing **~837 req/s vs ~162 req/s** on a preprocess-heavy workload in a single process. [W&B launched an MCP server](https://x.com/wandb/status/2059384552725025226) to let coding agents inspect experiments and training runs, with a schema-first redesign aimed at avoiding context-window blowups. [Unsloth added support for running GPT, Claude, and other APIs inside its local UI](https://x.com/UnslothAI/status/2059277719633101291), including prompt caching and code execution.
+- **Cloudflare, OpenRouter, and vector/retrieval vendors pushed the “productionization” layer**: [OpenRouter announced a $113M Series B](https://x.com/OpenRouter/status/2059277623629664758) and said weekly volume had grown from **5T to 25T tokens** over six months. [Cloudflare relaunched its startups program](https://x.com/kristianfreeman/status/2059188629780545973) with up to **$350k** in credits, while separate posts around **Think** and agent ergonomics emphasized durable turns, reconnects, stale-state handling, and recovery as key practical differentiators. On retrieval infra, [Booking.com discussed scaling to 100M+ embeddings](https://x.com/weaviate_io/status/2059227285639581729), including filtered vector search, reads-during-writes, concurrency, and human-in-the-loop evals for partner messaging agents.
 
 **Top tweets (by engagement)**
 
-- [@deepseek_ai on making the V4-Pro discount permanent](https://x.com/deepseek_ai/status/2057854261699195173) — the clearest single-market signal in this batch around **LLM inference economics**.
-- [@gdb on “the model alone is no longer the product”](https://x.com/gdb/status/2057670776803996110) — concise articulation of the current **agent/harness product thesis**.
-- [@AnthropicAI on Glasswing finding 10,000+ critical vulnerabilities](https://x.com/AnthropicAI/status/2057909102542549503) — one of the strongest data points for **AI-driven cyber capability** moving into production.
-- [@dsp_ on MCP 2026-07-28 RC](https://x.com/dsp_/status/2057780712187580924) — important protocol update: **stateless MCP** plus first-class extensions.
-- [@GoogleDeepMind on Project Genie + Street View](https://x.com/GoogleDeepMind/status/2057842131142590512) — notable step toward **consumer-facing world models**.
-- [@cursor_ai on opening the Cursor SDK for custom agents](https://x.com/cursor_ai/status/2057913121558413770) — relevant for teams building on top of coding-agent infrastructure.
+- **Codex / agentic coding in practice**: The highest-signal product-use tweet was [@bunkaich showing Codex help reverse-engineer and patch firmware on a cheap MP3 player](https://x.com/bunkaich/status/2059178996126900703), with the workflow spanning chip inspection, OS extraction, binary analysis, and flashing a modified image.
+- **DeepSWE benchmark launch**: [@serenaa_ge’s DeepSWE announcement](https://x.com/serenaa_ge/status/2059308218564890875) became the main reference point for “does this match real coding experience?” discussion.
+- **Claude Code security plugin**: [@ClaudeDevs’ release](https://x.com/ClaudeDevs/status/2059385239781384341) stood out because it paired a concrete product launch with an internal metric: **30–40% fewer** security-related PR comments.
+- **OpenRouter financing + production token growth**: [@OpenRouter’s $113M Series B](https://x.com/OpenRouter/status/2059277623629664758) is one of the clearer market signals that routing and multi-model infra are now seen as durable platform layers.
+- **vLLM Rust frontend**: [@vllm_project’s merge announcement](https://x.com/vllm_project/status/2059344804295942513) mattered for anyone hitting CPU/API-server bottlenecks in high-throughput serving.
 
 ---
 
