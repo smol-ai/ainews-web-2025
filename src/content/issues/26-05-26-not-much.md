@@ -3,7 +3,7 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-05-26T05:44:39.731046Z'
 description: >-
-  **AI News for 5/4/2026-5/5/2026** highlights a shift in AI product strategy
+  **AI News for 5/23/2026-5/26/2026** highlights a shift in AI product strategy
   emphasizing **model + harness + workflow + UI + memory + economics** over
   model quality alone. **OpenAI** released a significant **Codex** update with
   features like **appshots** and remote computer use, while **Claude** expanded
@@ -64,7 +64,7 @@ people:
 
 **a quiet day.**
 
-> AI News for 5/4/2026-5/5/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
+> AI News for 5/23/2026-5/26/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
 
