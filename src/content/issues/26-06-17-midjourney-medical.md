@@ -2,13 +2,33 @@
 id: MjAyNS0x
 title: not much happened today
 date: '2026-06-11T05:44:39.731046Z'
-description: Unable to generate summary due to an error.
-companies: []
+description: >-
+  **Midjourney** unveiled a new **medical imaging/scanning system** called the
+  **Midjourney Scanner**, described as **radiation-free, magnet-free, fast, and
+  low-cost**, but requiring a **water immersion tank** and having **coarser
+  resolution than CT/MRI**. The announcement included a technical dive and a
+  physical demo, sparking enthusiasm and competitive comparisons with other AI
+  hardware efforts. Technical speculation suggested future design directions
+  involving distributed detectors and real-time imaging, highlighting
+  Midjourney's ambitious hardware roadmap in medical imaging.
+companies:
+  - midjourney
 models: []
 topics:
-  - untagged
-people: []
+  - medical-imaging
+  - hardware
+  - imaging-systems
+  - acoustic-imaging
+  - wave-propagation
+  - prototype
+  - technical-dive
+people:
+  - saranormous
+  - matvelloso
+  - johnowhitaker
+  - iscienceluvr
 ---
+
 
 
 **a quiet day.**
