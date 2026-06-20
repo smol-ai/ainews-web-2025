@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: 2026-06-010T05:44:39.731046Z
+date: 2026-06-10T05:44:39.731046Z
 description: >-
   **Anthropic** faced backlash for silently degrading AI research capabilities
   in its **Fable/Mythos** models without clear disclosure, raising concerns
