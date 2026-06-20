@@ -11,6 +11,70 @@ import Lightbox from "@components/Lightbox.astro";
 
 type IssueSummary = Pick<CollectionEntry<"issues">, "id" | "data">;
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderFrozenIssueRedirect(title: string, path: string) {
+  const escapedTitle = escapeHtml(title);
+  const escapedPath = escapeHtml(path);
+
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0;url=${escapedPath}">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://news.smol.ai${escapedPath}">
+  <title>Redirecting to ${escapedTitle} | AINews</title>
+  <style>
+    :root { color-scheme: light dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #111827; background: #f5f5f5; }
+    body { margin: 0; min-height: 100vh; }
+    header { position: sticky; top: 0; border-bottom: 1px solid rgba(0,0,0,.1); background: rgba(255,255,255,.86); backdrop-filter: blur(16px); }
+    .bar, main { width: min(960px, calc(100% - 32px)); margin: 0 auto; }
+    .bar { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 16px; }
+    .brand { color: inherit; text-decoration: none; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; }
+    nav { display: flex; gap: 16px; font-size: 14px; }
+    nav a, main a { color: #2563eb; text-underline-offset: 3px; }
+    main { padding: clamp(48px, 10vw, 96px) 0; }
+    .eyebrow { margin: 0 0 12px; color: #6b7280; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0 0 16px; max-width: 760px; font-size: clamp(2rem, 6vw, 4rem); line-height: .98; letter-spacing: 0; }
+    p { max-width: 620px; color: #4b5563; font-size: 18px; line-height: 1.65; }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #f9fafb; background: #0a0a0a; }
+      header { border-color: rgba(255,255,255,.12); background: rgba(10,10,10,.86); }
+      .eyebrow { color: #9ca3af; }
+      p { color: #d1d5db; }
+      nav a, main a { color: #93c5fd; }
+    }
+  </style>
+  <script>window.location.replace(${JSON.stringify(path)});</script>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="/">AINews</a>
+      <nav aria-label="Primary">
+        <a href="/issues">issues</a>
+        <a href="/tags">tags</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <p class="eyebrow">Frozen archive redirect</p>
+    <h1>${escapedTitle}</h1>
+    <p>This older issue lives in the static archive. If you are not redirected automatically, <a href="${escapedPath}">open the archived issue</a>.</p>
+  </main>
+</body>
+</html>`;
+}
+void renderFrozenIssueRedirect;
+
 export async function getStaticPaths() {
   const verboseBuild = process.env.VERBOSE_BUILD === "true";
   const logBuild = (...args: unknown[]) => {
@@ -84,7 +148,14 @@ if (!post || post.data.draft) {
 }
 
 if (year < 2026) {
-  return Astro.redirect(`/frozen-issues/${post.id}.html`);
+  const frozenIssuePath = `/frozen-issues/${post.id}.html`;
+  void frozenIssuePath;
+
+  return new Response(renderFrozenIssueRedirect(post.data.title, frozenIssuePath), {
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+    },
+  });
 }
 
 if (process.env.VERBOSE_BUILD === "true") {
