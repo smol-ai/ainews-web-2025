@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: '2026-07-11T05:44:39.731046Z'
+date: '2026-07-13T05:44:39.731046Z'
 description: >-
   **Prime Intellect** released **verifiers v1**, a redesigned environment stack
   for **agentic reinforcement learning** and evaluations, improving efficiency
