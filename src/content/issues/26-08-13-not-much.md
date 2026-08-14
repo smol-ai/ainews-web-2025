@@ -1,7 +1,7 @@
 ---
 id: MjAyNS0x
 title: not much happened today
-date: '2026-08-10T05:44:39.731046Z'
+date: '2026-08-13T05:44:39.731046Z'
 description: >-
   **Google** rapidly released **Gemini 3.7 Flash** just three weeks after 3.6
   Flash, targeting coding, web development, knowledge work, and agentic
@@ -52,7 +52,7 @@ people:
 
 **a quiet day.**
 
-> AI News for 8/10/2026-8/11/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
+> AI News for 8/12/2026-8/13/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews' website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!
 
 
 
