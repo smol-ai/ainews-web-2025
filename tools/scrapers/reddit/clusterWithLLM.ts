@@ -19,6 +19,7 @@ import { saveResultsToFile } from './utils';
 import { z } from 'zod';
 import pLimit from 'p-limit';
 import axios from 'axios';
+import { prepareImage } from './image-input';
 import 'dotenv/config';
 import { checkpoint, fingerprint } from '../shared/state';
 
@@ -109,6 +110,11 @@ async function analyzeImagePost(post: PostWithId): Promise<{ isImage: boolean; i
   if (isImage) {
     log('INFO', `[VISION][${new Date().toISOString()}] Analyzing image from URL: ${post.url}`);
     try {
+      const prepared = await prepareImage(post.url);
+      if ('unavailable' in prepared) {
+        log('WARN', `[VISION] ${prepared.unavailable} ${post.url}`);
+        return { isImage: true, imageType, url: post.url, imageDescription: prepared.unavailable };
+      }
       // Use AI SDK for vision API calls
       const visionResponse = await generateText({
         model: openai(CLUSTER_LLM_MODEL),
@@ -117,7 +123,7 @@ async function analyzeImagePost(post: PostWithId): Promise<{ isImage: boolean; i
             role: 'user',
             content: [
               { type: 'text', text: `Describe what you see in this image in 1-4 sentences. Focus on the main subject and any relevant details given the title: ${post.title}` },
-              { type: 'image', image: post.url }
+              { type: 'image', image: prepared.image, mimeType: 'image/jpeg' }
             ]
           }
         ],
