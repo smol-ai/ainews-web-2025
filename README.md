@@ -11,6 +11,14 @@ AINews is a daily newsletter that summarizes top AI discords, reddits, and X/Twi
 
 ## Getting Started
 
+For weekday Reddit and Twitter/Nitter collection, use the [local scrapers](tools/scrapers/README.md). They share run tracking and checkpoint recovery:
+
+```sh
+pnpm --dir tools/scrapers install --frozen-lockfile
+pnpm scrape run daily
+pnpm scrape resume RUN_ID
+```
+
 1. Clone the repository:
 ```sh
 git clone https://github.com/smol_ai/ainews-web.git
