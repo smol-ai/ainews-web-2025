@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0x
-title: not much happened today
+title: Claude Fable 5.1 and Claude Mythos 5.1
 date: '2026-09-01T05:44:39.731046Z'
 description: >-
   **Anthropic** released **Claude Fable 5.1** and **Claude Mythos 5.1**, which
