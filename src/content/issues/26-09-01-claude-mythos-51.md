@@ -66,11 +66,434 @@ people:
 # AI Twitter Recap
 
 
-**Anthropic’s Claude Fable 5.1 / Mythos 5.1 Release: coding gains, lower cache costs, and stronger safeguards**
+**Top Story: Fable 5.1 and Mythos 5.1 release and reactions**
 
-- **Claude’s new split productization**: Anthropic launched [**Claude Fable 5.1 and Claude Mythos 5.1**](https://x.com/claudeai/status/2094848572143407483), positioning them for coding and knowledge work respectively. Several observers noted that the two appear to be **the same base weights with different safeguard/routing behavior**, rather than separate frontier models; see [@eliebakouch](https://x.com/eliebakouch/status/2094854917395517687) and related follow-up questions about benchmark interpretation when only Mythos results are shown [here](https://x.com/eliebakouch/status/2094865857822285898). Early reactions converged on **better usability and writing style**—less “Claudese,” more direct prose—alongside continued strength on long-running coding tasks, with prompt changes to reduce stylistic artifacts also surfaced by [@ethanCaballero](https://x.com/ethanCaballero/status/2094988944425267411) and writing analysis from [@ValsAI](https://x.com/ValsAI/status/2094968141210325227).
-- **Benchmarks and economics**: Anthropic highlighted strong coding/science numbers, including **52.6% on Terminal-Bench-Science** via [@StevenDillmann](https://x.com/StevenDillmann/status/2094860189493317756), and additional scores compiled by [@scaling01](https://x.com/scaling01/status/2094860588451065920). [Artificial Analysis](https://x.com/ArtificialAnlys/status/2094881171066978525) measured **66 on its Intelligence Index**, ahead of recent frontier peers, while noting Fable 5.1 still costs **~20% more per task than Fable 5** because of higher output token usage despite Anthropic’s **75% cache-read price cut** to **$0.25/MTok**. Multiple practitioners called the cache reduction the biggest practical win for agentic workloads, including [@theo](https://x.com/theo/status/2094892373897892291) and [@Teknium](https://x.com/Teknium/status/2094861678785806595). Perplexity quickly integrated the model and reported a **21% higher WANDR score at 37% lower cost than Fable 5** in its environment [via @perplexity_ai](https://x.com/perplexity_ai/status/2094865042873467261).
-- **Adoption friction and safety behavior**: The release also surfaced friction points. Users reported **aggressive safety triggers**, especially around cyber-adjacent wording or reverse-engineering false positives, including [@GregKamradt](https://x.com/GregKamradt/status/2094894689325560172) and [@kylebrussell](https://x.com/kylebrussell/status/2094886149412016359). Anthropic framed this more positively as **Enterprise Frontier Safeguards**, an observability layer for enterprise agent deployments where data remains in the customer’s cloud, described by [@alexalbert__](https://x.com/alexalbert__/status/2094889286990446769). On the product side, Fable 5.1 landed quickly across tools including [Nous Portal/Hermes](https://x.com/NousResearch/status/2094856799061155948), [OpenRouter via Nous](https://x.com/Teknium/status/2094856608002310543), [Perplexity Computer](https://x.com/AravSrinivas/status/2094866503460155700), and [T3 Code support](https://x.com/theo/status/2094923123967836243).
+
+## What happened
+
+
+**Anthropic launched Claude Fable 5.1 and Claude Mythos 5.1 as its new flagship models for coding and knowledge work.**
+
+- Anthropic announced the release directly, positioning them as “the world’s most advanced models for coding and knowledge work” via [@claudeai](https://x.com/claudeai/status/2094848572143407483)
+- Anthropic product/engineering voices framed Fable 5.1 specifically around autonomous, multi-step work: “complex, multi-step work that runs on its own,” with emphasis on coding, knowledge work, and long-running problem solving via [@mikeyk](https://x.com/mikeyk/status/2094863293555114157)
+- Anthropic kept list pricing for Fable 5.1 at **$10 / $50 / $12.5 per million tokens** for input / output / cache write, while cutting **cache read price by 75% to $0.25 / MTok**, again noted by [@mikeyk](https://x.com/mikeyk/status/2094863295459291562), [@Teknium](https://x.com/Teknium/status/2094861678785806595), and independently quantified by [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525)
+- Third-party platforms moved quickly: Perplexity added Fable 5.1 to Computer for Pro/Max users and published internal eval results via [@perplexity_ai](https://x.com/perplexity_ai/status/2094865042873467261); Nous Portal/Hermes Agent and OpenRouter also added support via [@Teknium](https://x.com/Teknium/status/2094856608002310543); T3 Code shipped support via [@theo](https://x.com/theo/status/2094923123967836243)
+- Early benchmark screenshots and system-card excerpts drove much of the discussion, especially around **Terminal-Bench-Science, SWE-family evals, HLE, FrontierCode, and Artificial Analysis** via [@StevenDillmann](https://x.com/StevenDillmann/status/2094860189493317756), [@scaling01](https://x.com/scaling01/status/2094860588451065920), [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525)
+- A key interpretive claim emerged from community analysis: **Fable and Mythos 5.1 may be the same underlying weights, with different safety/routing behavior**, not different base models, per [@eliebakouch](https://x.com/eliebakouch/status/2094854917395517687) and later [@nrehiew_](https://x.com/nrehiew_/status/2094897380277772762)
+- User reactions split along multiple axes: very strong praise for coding/planning ability and tone, but complaints around **rate limits, safeguards false positives, subscription UX, and unclear benchmark presentation** via [@danshipper](https://x.com/danshipper/status/2094848951568474186), [@theo](https://x.com/theo/status/2094933716464541918), [@kimmonismus](https://x.com/kimmonismus/status/2094896358008442960), [@GregKamradt](https://x.com/GregKamradt/status/2094894689325560172), [@kylebrussell](https://x.com/kylebrussell/status/2094886149412016359), and [@eliebakouch](https://x.com/eliebakouch/status/2094913832623714598)
+
+
+## Official claims and model positioning
+
+
+Anthropic’s own messaging was straightforward: Fable 5.1 is for difficult, delegated, long-horizon work, while Mythos 5.1 is the paired release for knowledge work. The main official launch post is [@claudeai](https://x.com/claudeai/status/2094848572143407483). Supporting commentary from Anthropic staff emphasized:
+
+- **autonomous long-running tasks** via [@mikeyk](https://x.com/mikeyk/status/2094863293555114157)
+- **improved honesty / better failure reporting** (“when it’s stuck it says so instead of reporting success”) via [@mikeyk](https://x.com/mikeyk/status/2094863295459291562)
+- new enterprise-oriented controls, especially **Enterprise Frontier Safeguards (EFS)**, positioned as “ZDR++” for agent observability in enterprise environments via [@alexalbert__](https://x.com/alexalbert__/status/2094889286990446769)
+- **zero-data-retention support** highlighted by users as an important adoption unlock, especially [@danshipper](https://x.com/danshipper/status/2094848951568474186)
+
+The official pitch was not merely “better benchmark model,” but “usable autonomous worker” — fast enough, cheap enough in cached agent settings, and enterprise-compatible enough to deploy.
+
+That positioning mattered because Fable 5 had a reputation — repeated in reactions — for being powerful but sometimes impractical. Dan Shipper summarized the prior criticism as Anthropic having “built a supergenius in a datacenter that was almost unusable,” then argued 5.1 addresses slowness, verbosity, and awkward tone via [@danshipper](https://x.com/danshipper/status/2094848951568474186).
+
+
+## Technical details and numbers
+
+
+### Core published/priced details
+
+From [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525):
+
+- **Context window:** **1 million tokens**
+- **Modalities:** text + image inputs
+- **Pricing:** unchanged from Fable 5 for
+  - input: **$10 / 1M tokens**
+  - output: **$50 / 1M tokens**
+  - cache write: **$12.5 / 1M tokens**
+- **Cache read price:** reduced from **$1.00 to $0.25 / 1M tokens** (**75% cut**)
+
+Artificial Analysis notes this cache cut materially benefits agentic workloads where much of the prompt is repeatedly re-read from cache.
+
+### Artificial Analysis headline results
+
+Also from [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525):
+
+- **Artificial Analysis Intelligence Index:** **66** at max effort
+  - ahead of:
+    - Claude Opus 5 max: **63**
+    - Claude Fable 5 max: **62**
+    - GPT-5.6 Sol max: **61**
+    - Grok 4.6 high: **61**
+- **HLE:** **59.1%**
+  - previous best cited: Fable 5 at **55.5%**
+- **Terminal-Bench v2.1:** **91.4%**
+- **SciCode:** **62.0%**
+- **τ³-Banking:** **+9 points over Fable 5**
+- **GDPval-AA v2:** **1853 Elo**, **+130 over Fable 5**
+- **AA-Briefcase:** **1694 Elo**, **+122 over Fable 5**
+
+But AA also adds an important qualification:
+
+- On agentic knowledge work, Fable 5.1 is **effectively tied with Opus 5** on some measures, not obviously dominant
+- Their eval used Anthropic’s **default server-side fallback**, with safety-flagged requests routed to **Claude Opus 4.8 or Claude Opus 5**
+- Fallback accounted for **~4% of output tokens** across the Intelligence Index
+
+That fallback detail became one of the most consequential technical caveats in community interpretation.
+
+### Cost per task
+
+Artificial Analysis also reported:
+
+- **Fable 5.1 max:** **$3.76/task**
+- **Fable 5 max:** lower, so 5.1 is **20% more expensive per task**
+- reason: Fable 5.1 uses **~1.7× output tokens**
+- cache cut saves **~$1.40 per task**
+- **Fable 5.1 xhigh:** score **65**, cost **$2.72/task**
+- **Opus 5 max:** score **63**, cost **$2.34/task**
+
+This produced one of the key tensions in the reaction cycle: Fable 5.1 looks clearly better at the frontier ceiling, but not clearly better on every cost-efficiency framing.
+
+Additional framing from [@nicdunz](https://x.com/nicdunz/status/2094900828796596253):
+
+- Fable 5.1 Max: **66 intelligence**, **140M tokens**, **$3.69/task**
+- Fable 5 Max: **62**, **83M tokens**, **$3.14/task**
+- GPT-5.6 Sol Max: **61**, **70M tokens**, **$0.95/task**
+
+This post argues Sol remains the clear winner on intelligence-per-dollar and intelligence-per-token, even if Fable 5.1 wins absolute ceiling.
+
+### Benchmark snippets from system-card discussion
+
+Community members extracted several benchmark points:
+
+From [@StevenDillmann](https://x.com/StevenDillmann/status/2094860189493317756):
+
+- **Terminal-Bench-Science 0.1**
+  - Fable 5: **24.7%**
+  - Fable 5.1: **52.6%**
+  - more than **2× improvement**
+
+From [@scaling01](https://x.com/scaling01/status/2094860588451065920):
+
+- **DeepSWE:** **67.4%**
+- **FrontierCode 1.1 Extended:** **63.6%**
+- **FrontierSWE v2:** **0.57**, “highest of the models Proximal evaluated”
+
+From [@Sauers_](https://x.com/Sauers_/status/2094860836162634206):
+
+- **Humanity’s Last Exam:** **65% with tools**
+
+From [@perplexity_ai](https://x.com/perplexity_ai/status/2094865042873467261):
+
+- Perplexity’s August **WANDR** evaluation:
+  - score **0.601**
+  - **$12.76 per task**
+  - **21% higher score**
+  - **37% lower cost** than Fable 5
+
+From [@scaling01](https://x.com/scaling01/status/2094865962797265046):
+
+- **Artificial Analysis Intelligence Index score 66**, “back on the frontier”
+
+From [@theo](https://x.com/theo/status/2094892373897892291):
+
+- cache price cut was the “biggest W”
+- in **CursorBench**, costs were cut by “almost **50%**” while scoring higher
+
+From [@kimmonismus](https://x.com/kimmonismus/status/2094866229932822914):
+
+- Fable 5.1 High appears stronger and cheaper than Sol 5.6 Max on **Cursor Bench**
+- though this is a secondary paraphrase, not an original benchmark report
+
+From [@scaling01](https://x.com/scaling01/status/2094915228236476809):
+
+- **Mythos 5.1 displays verbalized grader awareness in 65% of long agentic coding environments**
+
+That last point is especially interesting: it suggests the model may explicitly model the evaluator in a large fraction of long-horizon coding contexts, which raises both capability and eval-gaming questions.
+
+### Safeguards and routing details
+
+Two tweets capture the technical interpretive crux:
+
+- [@eliebakouch](https://x.com/eliebakouch/status/2094854917395517687): **“Fable and Mythos 5.1 are the EXACT same weights”**, with internal activations used for safety classification and escalation to a bigger classifier, then fallback to **Opus 4.8** for dangerous requests
+- [@nrehiew_](https://x.com/nrehiew_/status/2094897380277772762): if true, the difference is “likely the threshold set for the safeguard classifier”
+
+These are not official Anthropic statements in the tweet corpus, but they line up with the official AA note that **fallback routing served ~4% of output tokens** on AA’s evals via [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525).
+
+This led to repeated community questions about whether benchmark lines reported as “Mythos” versus “Fable” are genuinely comparable, especially if one naming convention mostly indicates **which safety path was active**, not which base model was doing the work. See [@eliebakouch](https://x.com/eliebakouch/status/2094865857822285898), [@eliebakouch](https://x.com/eliebakouch/status/2094866135640420712), and [@eliebakouch](https://x.com/eliebakouch/status/2094913832623714598).
+
+
+## Facts vs opinions
+
+
+### Facts strongly supported by official/independent sources
+
+- Anthropic launched **Claude Fable 5.1 and Claude Mythos 5.1** via [@claudeai](https://x.com/claudeai/status/2094848572143407483)
+- Fable 5.1 pricing retained **$10 / $50 / $12.5** for input/output/cache write, with **cache reads cut to $0.25 / MTok** via [@mikeyk](https://x.com/mikeyk/status/2094863295459291562) and [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525)
+- Fable 5.1 has **1M context**, image+text input support, and tops AA’s Intelligence Index at **66** via [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525)
+- AA’s evaluation included **server-side fallback**, with **~4%** of output tokens served by fallback models via [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525)
+- Fable 5.1 showed very large gains on several coding/agentic benchmarks, including **52.6% on Terminal-Bench-Science** via [@StevenDillmann](https://x.com/StevenDillmann/status/2094860189493317756)
+
+### Plausible but not fully verified claims
+
+- **Fable and Mythos 5.1 are identical weights with different safeguard/routing behavior** via [@eliebakouch](https://x.com/eliebakouch/status/2094854917395517687) and [@nrehiew_](https://x.com/nrehiew_/status/2094897380277772762)
+- Some benchmark labels may reflect **safety mode / route differences** rather than separate base-model performance via [@eliebakouch](https://x.com/eliebakouch/status/2094865857822285898)
+- “It talks like a normal person now” / reduced “Claudese” is widely reported anecdotally, but is still subjective, despite some lexical stats below
+
+### Opinions / subjective judgments
+
+- “Strongest coding model we’ve used” from [@danshipper](https://x.com/danshipper/status/2094848951568474186)
+- “Fable is the frontier model by a good margin right now” from [@AravSrinivas](https://x.com/AravSrinivas/status/2094866503460155700)
+- “Astra is going to absolutely destroy Fable 5.1” from [@scaling01](https://x.com/scaling01/status/2094866274073346243)
+- “I honestly haven’t noticed much difference compared to Fable 5” from [@kimmonismus](https://x.com/kimmonismus/status/2094891899945701396)
+- “Literally unusable” because of rate limits from [@kimmonismus](https://x.com/kimmonismus/status/2094896358008442960)
+
+The important pattern is that **hard metrics and user-experience reactions diverged**. On benchmark aggregates, 5.1 looked like a step-function improvement. On practical access and UX, many users still reported friction.
+
+
+## Different opinions and reactions
+
+
+### Strongly positive: capability, planning, and coding quality
+
+Several influential builders were enthusiastic:
+
+- [@danshipper](https://x.com/danshipper/status/2094848951568474186) argued the model is now fast, token-efficient, better in prose, and useful for delegation; specifically cited one-prompt app generation, large programming jobs running for days, and better writer adoption
+- [@theo](https://x.com/theo/status/2094933716464541918) called it “really a good model,” also noting they had to reset/update workflows and were actively using it heavily via [@theo](https://x.com/theo/status/2094894047739695418) and [@theo](https://x.com/theo/status/2095013381417959565)
+- [@alexalbert__](https://x.com/alexalbert__/status/2094860187743986169) showed a design+render workflow where Fable 5.1 took a property lot image, designed a house, rendered it, and produced a cinematic walkthrough; follow-up noted use of **Blender headless** via [@alexalbert__](https://x.com/alexalbert__/status/2094860189316899083)
+- [@spicey_lemonade](https://x.com/spicey_lemonade/status/2094853588216631612) posted a “Fable 5.1 Minecraft one-shot” that gained major engagement, serving as a demo-like proof of creative coding utility
+- [@simonw](https://x.com/simonw/status/2094938927727804684) reported best-ever SVG pelican output from an Anthropic model, though at notable cost
+
+This camp viewed 5.1 as not just incrementally better, but the first Claude in a while that feels fully competitive in end-to-end maker workflows.
+
+### Positive but measured: frontier lead with caveats
+
+- [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525) gave the most balanced third-party account: frontier-leading aggregate score, but still more expensive per task than Fable 5 and effectively tied with Opus 5 on some agentic knowledge-work evals
+- [@kimmonismus](https://x.com/kimmonismus/status/2094866229932822914) called it a “significant leap forward” on price-performance, especially on Cursor Bench, but explicitly hedged on whether reduced verbosity and fewer false refusals would hold up
+- [@theo](https://x.com/theo/status/2094892373897892291) focused more on the practical significance of the cache-read price cut than on raw capability deltas
+- [@perplexity_ai](https://x.com/perplexity_ai/status/2094865042873467261) framed it as a strong orchestrator model inside a broader multi-model agent stack
+
+This view: yes, it’s very strong, but what matters is whether the whole deployment economics and tool stack now make sense.
+
+### Critical: rate limits, safeguards, and subscription experience
+
+The sharpest criticism was not about benchmark fraud or weak intelligence — it was about **access and ergonomics**.
+
+- [@kimmonismus](https://x.com/kimmonismus/status/2094896358008442960) complained of severe rate limits, broken continuation, and no corresponding subscription benefit from the improved efficiency
+- [@kimmonismus](https://x.com/kimmonismus/status/2094912538387648707) doubled down, saying 5.1 was “even worse than Fable 5 when it comes to rate usage”
+- [@GregKamradt](https://x.com/GregKamradt/status/2094894689325560172) reported that during v3 testing, requests were frequently rejected as “reverse engineering,” preventing completion of planned evaluation
+- [@kylebrussell](https://x.com/kylebrussell/status/2094886149412016359) said a “military campaign” metaphor in a theoretical math session triggered cyber safeguards; later added “Day One safeguards… more annoying so far” via [@kylebrussell](https://x.com/kylebrussell/status/2094917619639783750)
+- [@theo](https://x.com/theo/status/2094923342331723986) pushed back on the universality of rate-limit complaints, saying they were “not seeing this at all” and had used only 14% of one weekly Fable limit
+- [@theo](https://x.com/theo/status/2094944341605445875) tried to reverse-engineer practical quota relationships: one 5-hour limit ≈ **21% of weekly limit** and ≈ **38% of Fable limit**
+
+So even on usage limits there was no single consensus; some users hit walls quickly, others did not.
+
+### Skeptical/neutral: benchmark interpretation and naming confusion
+
+A separate reaction cluster focused on methodology and clarity.
+
+- [@scaling01](https://x.com/scaling01/status/2094860986612146641) said **FrontierCode results looked weird**
+- [@scaling01](https://x.com/scaling01/status/2094862734600892811) wanted more multi-agent comparisons and better interpretation
+- [@iScienceLuvr](https://x.com/iScienceLuvr/status/2094956500775297148) criticized Anthropic’s healthcare benchmark presentation, noting non-comparable judge models and lack of broader medical eval coverage
+- [@eliebakouch](https://x.com/eliebakouch/status/2094913832623714598) repeatedly requested clarification on when system-card benchmark rows use “Fable” versus “Mythos,” since that affects whether users should infer safeguard-triggered routing
+
+This is the most technical criticism of the release cycle: **not that the model is weak, but that the reporting format makes it harder than necessary to understand what exactly is being measured.**
+
+
+## Writing quality and the “Claudese” discussion
+
+
+One of the most repeated subjective observations was that 5.1 sounds more normal.
+
+- [@danshipper](https://x.com/danshipper/status/2094848951568474186): “actually speaks like a normal person,” “clearer prose,” fewer “AI tells”
+- [@ethanCaballero](https://x.com/ethanCaballero/status/2094866843156525466) asked directly whether 5.1 “eliminate[s] the claudese?”
+- [@ethanCaballero](https://x.com/ethanCaballero/status/2094988944425267411) later pointed to Anthropic’s new prompt as eliminating “claudese”
+- [@ValsAI](https://x.com/ValsAI/status/2094968145878659459) posted quantitative stylistic shifts:
+  - fewer hyphenated compounds
+  - fewer em dashes
+- [@ValsAI](https://x.com/ValsAI/status/2094968147325657589) found **longer outputs overall** despite shorter sentences:
+  - VCB: **534 → 1299 words/task**
+  - Terminal-Bench: **961 → 1299**
+  - Legal Research: **1892 → 2693**
+- [@ValsAI](https://x.com/ValsAI/status/2094968149242425443) noted a weird compensating artifact: use of **non-breaking hyphen U+2011** rose from near zero to up to **~4.4k occurrences per million**
+
+So the “less Claudese” claim is not purely vibe; there are at least some measurable stylistic changes. But the stats also suggest Anthropic may have traded one surface signature for another.
+
+
+## The safeguards story: improved enterprise viability, but also false positives
+
+
+The safety layer around 5.1 became almost as discussed as the model itself.
+
+Official/Anthropic-aligned framing:
+
+- [@alexalbert__](https://x.com/alexalbert__/status/2094889286990446769) presented **Enterprise Frontier Safeguards** as a practical observability layer for agent deployments in enterprise settings
+- [@mikeyk](https://x.com/mikeyk/status/2094863295459291562) claimed the model is more honest about being stuck rather than falsely claiming success
+
+Critical user reports:
+
+- [@GregKamradt](https://x.com/GregKamradt/status/2094894689325560172) could not finish testing due to false-positive reverse-engineering flags
+- [@kylebrussell](https://x.com/kylebrussell/status/2094886149412016359) triggered safeguards with a metaphor in a math setting
+- [@nrehiew_](https://x.com/nrehiew_/status/2094895860245307483) highlighted the possibility that Anthropic is using an **activation probe** to classify cyber-related content and decide whether safeguards apply
+- [@mikeyk](https://x.com/mikeyk/status/2094864472196501940) shared a brain-model artifact example as a positive illustration of complex reasoning that remains allowed
+
+There is a clear adoption tradeoff here:
+
+- enterprises want more reliable cross-session monitoring and control
+- power users want fewer false positives and more permissive exploratory use
+
+Anthropic is trying to satisfy both, and day-one sentiment suggests the balance is not yet universally accepted.
+
+
+## Mythos vs Fable: same model or separate products?
+
+
+This was one of the most technically interesting discourse threads.
+
+Claims by [@eliebakouch](https://x.com/eliebakouch/status/2094854917395517687):
+
+- Fable and Mythos 5.1 are **“the EXACT same weights”**
+- internal activations are inspected
+- dangerous requests escalate to a larger classifier
+- then may fallback to **Opus 4.8**
+- therefore Fable is **not** a distilled version of a larger Mythos model
+
+Follow-up clarifications and speculation:
+
+- [@eliebakouch](https://x.com/eliebakouch/status/2094861292989272236) said prior community speculation had treated Mythos as teacher and Claude/Fable as distilled student, but that this was guesswork
+- [@eliebakouch](https://x.com/eliebakouch/status/2094871877512581401) remained uncertain about the exact training lineage
+- [@nrehiew_](https://x.com/nrehiew_/status/2094897380277772762) suggested the difference is likely just the classifier threshold
+- [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525) independently confirmed fallback routing behavior in evaluation, though not the “exact same weights” claim directly
+
+Why this matters:
+
+1. **Interpretability of benchmarks.** If “Mythos result” and “Fable result” are mostly the same backbone under different routing/safeguard settings, benchmark tables should make that explicit.
+2. **Procurement and deployment.** Enterprises may think they are choosing between distinct models when they are choosing between distinct policies around the same model.
+3. **Safety/capability accounting.** If a benchmark is run through fallback, then “which model got the score?” is no longer trivial.
+
+This naming/routing ambiguity generated some of the best technical questions in the entire tweet set.
+
+
+## Practical product implications
+
+
+### Why the cache-read cut matters
+
+Agentic systems often resend large scratchpads, repos, prior steps, and tool transcripts. In those setups, cached-input pricing matters disproportionately.
+
+- Anthropic’s **75% cache-read cut** was praised by [@Teknium](https://x.com/Teknium/status/2094861678785806595), [@theo](https://x.com/theo/status/2094892373897892291), and quantified in detail by [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2094881171066978525)
+- In AA’s framing, most of the savings accrue specifically on **agentic evaluations where the majority of input tokens are cache reads**
+- This makes Fable 5.1 more appealing as an **orchestrator/planner** in multi-step workflows even if output-token cost remains high
+
+### Why zero data retention and EFS matter
+
+- Dan Shipper specifically called **ZDR support** a major reason businesses can now use the model via [@danshipper](https://x.com/danshipper/status/2094848951568474186)
+- Alex Albert’s EFS explanation via [@alexalbert__](https://x.com/alexalbert__/status/2094889286990446769) points at a broader market transition: enterprises no longer just want “private inference”; they want **agent observability, cross-session anomaly detection, and risk monitoring**
+
+That suggests Anthropic is optimizing for a future where enterprise adoption depends as much on governance infrastructure as on raw model quality.
+
+### Why subscription complaints matter
+
+If API economics improve but consumer/pro-subscriber caps do not, perception can sour quickly.
+
+- [@kimmonismus](https://x.com/kimmonismus/status/2094896358008442960) explicitly noted Anthropic had **not announced lower prices or higher usage limits** for subscription users
+- This creates a split product perception:
+  - API builders: “big win”
+  - heavy interactive subscribers: “still constrained”
+
+That mismatch is important because many high-visibility reviewers test through the subscription product first, not the raw API.
+
+
+## Competitive context
+
+
+The release landed into a highly active frontier week, with OpenAI’s Astra rumors/safety posts and multiple world-model announcements competing for attention. Even so, Fable 5.1 drew intense notice because it appeared to reset the coding-model leaderboard.
+
+Comparative claims from reactions:
+
+- [@AravSrinivas](https://x.com/AravSrinivas/status/2094866503460155700): Fable is the frontier model “by a good margin”
+- [@kimmonismus](https://x.com/kimmonismus/status/2094866229932822914): favorable to Fable on Cursor Bench against Sol 5.6 Max
+- [@nicdunz](https://x.com/nicdunz/status/2094900828796596253): Fable wins absolute intelligence, Sol wins economics
+- [@scaling01](https://x.com/scaling01/status/2094866274073346243): Astra will likely leapfrog it soon on reasoning efficiency
+- [@theo](https://x.com/theo/status/2094908622333784341): Anthropic had **#1, #2, and #3** at that moment
+
+There was also a widespread sense that the release was significant enough to provoke immediate comparison to the next OpenAI drop:
+
+- [@kimmonismus](https://x.com/kimmonismus/status/2094891899945701396) said they were more excited for GPT-Astra than Fable 5.1
+- [@theo](https://x.com/theo/status/2095013817864671506) remarked this might be the most advance warning ever given for a model drop, referring to the surrounding Astra anticipation
+
+So in market terms, Fable 5.1 was seen both as a genuine Anthropic comeback and as a move in a rapidly escalating model-release exchange.
+
+
+## Context: why this release mattered more than a normal point update
+
+
+Three background dynamics explain the intensity of reaction.
+
+### 1. Anthropic’s reputation had become bifurcated
+
+Claude-family models had a strong reputation for coding depth and writing style in earlier eras, but more recent discussion often painted them as:
+
+- highly capable
+- somewhat awkward in tone
+- conservative in refusals
+- slow or cumbersome in extended use
+
+The positive reactions to 5.1 were often framed as Anthropic finally fixing the “usability tax,” especially by [@danshipper](https://x.com/danshipper/status/2094848951568474186).
+
+### 2. Agents changed what people care about in pricing
+
+Traditional prompt-response users focus on input/output prices. Agent builders focus on:
+
+- cache reads
+- long context
+- reliability over long sessions
+- delegated task behavior
+- honest failure reporting
+
+That is why the **cache-read cut** got almost as much praise as the benchmark scores.
+
+### 3. Safety is becoming product architecture, not just policy
+
+EFS, routing, activation probes, fallback models, and ZDR are all signs that the “model” is no longer a single artifact. It is a **policy-wrapped system**. The Fable/Mythos debate is really a debate over this shift.
+
+Users are starting to ask not just “how smart is the model?” but:
+
+- Which weights handled this request?
+- Which safety path intervened?
+- How often did fallback happen?
+- What benchmark score belongs to what route?
+
+That is a more mature, systems-level conversation than standard model-launch hype.
+
+
+## Notable demos and ecosystem reactions
+
+- [@alexalbert__](https://x.com/alexalbert__/status/2094860187743986169): image-to-house-design-to-cinematic-walkthrough pipeline, with [@alexalbert__](https://x.com/alexalbert__/status/2094860189316899083) clarifying **Blender headless**
+- [@spicey_lemonade](https://x.com/spicey_lemonade/status/2094853588216631612): Minecraft one-shot demo
+- [@simonw](https://x.com/simonw/status/2094938927727804684): SVG pelican + animation
+- [@_catwu](https://x.com/_catwu/status/2094933602228416603): Anthropic team member claims internal teams are taking on projects that would have taken months before
+- [@perplexity_ai](https://x.com/perplexity_ai/status/2094865042873467261): integrated into Perplexity Computer
+- [@Teknium](https://x.com/Teknium/status/2094856608002310543): available in Hermes Agent / Nous Portal / OpenRouter
+- [@theo](https://x.com/theo/status/2094923123967836243): T3 Code shipped Fable 5.1 support
+
+The speed of these integrations reinforced the perception that 5.1 is especially relevant to agent builders, not just chat users.
+
+
+## Open questions raised by the community
+
+- Benchmark transparency
+  - When a system card reports **Mythos** on some benchmarks and **Fable** on others, what exactly determines that labeling? See [@eliebakouch](https://x.com/eliebakouch/status/2094865857822285898) and [@eliebakouch](https://x.com/eliebakouch/status/2094913832623714598)
+  - How much benchmark performance depends on **fallback routing** versus primary-model behavior?
+- Safeguards tuning
+  - Can Anthropic reduce false positives in theoretical or benign technical work without weakening cyber safeguards? See [@GregKamradt](https://x.com/GregKamradt/status/2094894689325560172) and [@kylebrussell](https://x.com/kylebrussell/status/2094886149412016359)
+- Rate limits and product segmentation
+  - Will subscription users benefit from the efficiency gains, or only token-billed API customers? Raised sharply by [@kimmonismus](https://x.com/kimmonismus/status/2094896358008442960)
+- Eval quality and overfitting concerns
+  - Why do some results, especially on FrontierCode or medical subsets, look odd or difficult to compare? See [@scaling01](https://x.com/scaling01/status/2094860986612146641) and [@iScienceLuvr](https://x.com/iScienceLuvr/status/2094956500775297148)
+- Stylistic changes
+  - Is “less Claudese” due to prompt changes, post-training shifts, or both? [@ethanCaballero](https://x.com/ethanCaballero/status/2094988944425267411) points to a newly released prompt, while [@ValsAI](https://x.com/ValsAI/status/2094968145878659459) shows measurable lexical differences
+
 
 **OpenAI’s Astra and the monitorability debate around recurrent depth**
 
