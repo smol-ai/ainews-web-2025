@@ -3,49 +3,40 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-09-09T05:44:39.731046Z'
 description: >-
-  **DeepSeek V4.1-Flash** introduces a **causal encoder-decoder** architecture
-  with **1M context length**, **763B total parameters**, and competitive pricing
-  that significantly lowers open-model costs. It supports **text+image input**
-  and is optimized for **agentic long-context reading** and **cheap repeated
-  retrieval**, with notable local inference performance on consumer hardware.
-  Meanwhile, **OpenAI** launched **GPT-Live-1**, a **full-duplex voice
-  interface** API enabling simultaneous listening and speaking, with advanced
-  control over voice parameters and strong benchmark results when paired with
-  **GPT-6 Astra**. OpenAI also debuted a public-beta **Agents API** featuring a
-  **Codex harness** and hosted sandboxes for code execution, signaling progress
-  toward integrated hosted agent infrastructure.
+  **DeepSeek** launched **V4.1-Flash**, a new open-weight flagship model focused
+  on extreme inference efficiency and low cost, featuring a **763B
+  total-parameter** causal encoder-decoder architecture with **8B active input**
+  and **16B active output** parameters and **1M-token context**. It scored **40
+  on the Artificial Analysis Intelligence Index**, outperforming its predecessor
+  and ranking just below **GLM-5.3-Flash**. The model supports text and image
+  input, is available under an **MIT license**, and is accessible via US/API.
+  The architecture introduces a novel causal encoder-decoder design aimed at
+  reducing active compute and KV/cache costs, with a hybrid sparse/local
+  approach and a unique vision encoder differing from recent Chinese models.
+  Early layers use a **SWA-only** pattern, and the model has an effective depth
+  of about **40 layers** with **20 decoder layers**. Baseten and Ollama have
+  begun supporting and rolling out the model to users.
 companies:
   - deepseek
-  - openai
   - baseten
   - ollama
-  - livekit
 models:
   - deepseek-v4.1-flash
-  - gpt-live-1
-  - gpt-6-astra
-  - codex
+  - glm-5.3-flash
 topics:
   - causal-encoder-decoder
-  - long-context
+  - inference-efficiency
   - model-architecture
+  - multimodality
   - model-optimization
-  - local-inference
-  - voice
-  - full-duplex
-  - agentic-ai
-  - benchmarking
-  - api
-  - toolchain
-  - sandbox
-  - code-execution
+  - vision
+  - model-quantization
+  - model-compression
+  - context-windows
 people:
-  - rasbt
-  - teortaxestex
-  - nrehiew_
-  - fraserpricee
-  - antirez
+  - sebastian_raschka
 ---
+
 
 
 **a quiet day.**
@@ -59,11 +50,114 @@ people:
 
 # AI Twitter Recap
 
-**DeepSeek V4.1-Flash’s Architecture, Price-Performance, and Local Inference Story**
 
-- **DeepSeek’s new flash-tier flagship is the day’s most technically consequential release**: multiple evaluators converged on the same conclusion that **DeepSeek V4.1-Flash** materially improves over prior V4 variants while resetting the open-model cost curve. [Artificial Analysis](https://x.com/ArtificialAnlys/status/2098148674203488422) describes it as a **causal encoder–decoder** design with **1M context**, **MIT license**, **text+image input**, and a reported **763B total / 8B active input / 16B active output** parameter profile; it is priced at **$0.30 / $1.20 per 1M input/output tokens** with **98% cached-input discount**. Community reactions emphasized that it can beat or match much pricier frontier APIs on coding/agent benchmarks, including [Cline’s Terminal-Bench comparison](https://x.com/cline/status/2097980432306561111), [Arena’s Code Arena AutoEval jump](https://x.com/arena/status/2098088993367949337), [Vals’ #1 open-weight ranking](https://x.com/ValsAI/status/2098125164072554545), and [Yuchen Jin’s summary of ~97% lower cost vs GPT-5.6 Sol](https://x.com/Yuchenj_UW/status/2098086079568183324).  
-- **The paper appears to matter as much as the model**: several technically minded readers focused on the architecture and systems details rather than just leaderboard movement. [rasbt](https://x.com/rasbt/status/2098142625819672603) called out the encoder–decoder overhaul as “super cool and refreshing,” while [teortaxesTex](https://x.com/teortaxesTex/status/2098081307427262680) highlighted a long-context training recipe of **64K for 34T tokens, then 1M for 11T**, with **no dense warm-up** and apparently stable training. Others dug into unusual choices around **shared / compressed KV context**, **SWA-only early layers**, and checkpoint-level KV reuse, e.g. [teortaxesTex on KV reuse between checkpoints](https://x.com/teortaxesTex/status/2098067029102043223) and [nrehiew_’s notes on cache compression and ~890 bytes/token KV size](https://x.com/nrehiew_/status/2098170409686647263). The emerging picture is a model optimized aggressively for **agentic long-context reading and cheap repeated retrieval**, not just generic chat.
-- **It is also unusually accessible to hobbyist and edge deployments**: beyond API pricing, local inference posts stood out. [fraserpricee](https://x.com/fraserpricee/status/2098078317723242813) reported **~200 TPS on 4 Max-Qs with 64GB RAM** by offloading the **200GB “Engram” hash table** to NVMe, and [antirez](https://x.com/antirez/status/2098121665771110540) showed **DeepSeek V4.1-Flash on a 128GB M5 Max** with SSD streaming. That, plus same-day availability on [Hermes Agent](https://x.com/Teknium/status/2098088984383725725), [Baseten](https://x.com/baseten/status/2098169972874994071), [Ollama Cloud](https://x.com/ollama/status/2098188014119985406), and [Cline](https://x.com/cline/status/2097980433812357330), made this feel less like a paper drop and more like a full-stack ecosystem event.
+**DeepSeek launched V4.1-Flash as a new open-weight flagship focused on extreme inference efficiency and low cost.**
+
+- Independent benchmark account Artificial Analysis reported that DeepSeek V4.1 Flash surpasses DeepSeek V4 Pro 0813 despite being much cheaper, scoring **40 on the Artificial Analysis Intelligence Index**, just below GLM-5.3-Flash and above the latest V4 Pro, while being priced at **$0.30 / 1M input tokens** and **$1.20 / 1M output tokens** with **cached input at $0.006 / 1M** and an additional **50% off-peak discount**; they also describe it as a **763B total-parameter** model with **8B active input** and **16B active output** parameters, **1M-token context**, text+image input, **MIT license**, and US/API availability via DeepSeek first party [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422), [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148681962913915), [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148684185972758)
+- Vals called it the new **#1 open-weight model on the Vals Index**, ahead of Kimi K3, at just **$0.30 per test**, the cheapest model in the open-weight top 10; they also note the eval ran with **1M context**, **384 max output tokens**, **temperature 1**, default top-p/top-k, and **high reasoning effort** [@ValsAI](https://x.com/ValsAI/status/2098125164072554545), [@ValsAI](https://x.com/ValsAI/status/2098125177116848591), [@ValsAI](https://x.com/ValsAI/status/2098125179092431297)
+- Baseten shipped day-0 support and summarized the product positioning as **smarter, faster, and more efficient than DeepSeek v4 Pro 0813**, with **text and vision**, **US-only**, **ZDR**, and **1M context** [@baseten](https://x.com/baseten/status/2098169972874994071)
+- Ollama began rolling it out to **Max and Team** accounts, later expanding to **Pro plan subscribers** [@ollama](https://x.com/ollama/status/2098188014119985406), [@ollama](https://x.com/ollama/status/2098188470305128692), [@ollama](https://x.com/ollama/status/2098235674793242770)
+
+## Architecture and paper-level technical details
+
+
+**The most discussed technical novelty is a causal encoder-decoder design aimed at lowering active compute and KV/cache costs.**
+
+- Artificial Analysis says the model uses a **new causal Encoder–Decoder architecture**, with **8B active parameters for input/prefill** and **16B active parameters for output/decode** [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- Sebastian Raschka characterized V4.1 as a **“big overhaul”** and said they “should have called it DeepSeek V5,” explicitly highlighting the **encoder-decoder setup** as the key break from prior DeepSeek generations [@rasbt](https://x.com/rasbt/status/2098142625819672603)
+- Multiple technical readers reacted to the design as unusually hybrid: one called it “a very interesting mix of very conservative and sometimes old ideas in research and potentially cutting edge efficiency and hardware design in engineering” [@_xjdr](https://x.com/_xjdr/status/2098106496282448013)
+- A concise architecture read from Stochastic Chasm compared the design philosophy to **HySparse, NSA, and DeepSeek’s own CSA/HCA from V4**, summarizing it as a **local sliding-window branch plus sparse retrieval branch**, suggesting this sparse/local hybrid is becoming a broader pattern [@stochasticchasm](https://x.com/stochasticchasm/status/2098102323268767832)
+- The same account noted multimodal changes were **not radical**, saying DeepSeek mostly “lets the backbone handle most of it and give it visual tokens,” with **3x3 pixel unshuffle** instead of the more common **2x2** [@stochasticchasm](https://x.com/stochasticchasm/status/2098116030627455450)
+- They later flagged a “big difference from K3 on vision encoders,” implying the vision front-end diverges materially from recent Chinese peers [@stochasticchasm](https://x.com/stochasticchasm/status/2098165237400953054)
+- TeortaxesTex observed a recurring DeepSeek pattern of doing something unusual in the **first N layers**—previously dense or hash-routed, now **SWA-only**—speculating this may reflect repeated training difficulties in early layers [@teortaxesTex](https://x.com/teortaxesTex/status/2098132297253896451)
+- Later, the same account argued the stack is “down to **40 layers**, arguably only **20 legit decoder layers**,” underscoring just how aggressively DeepSeek may be compressing effective depth in decode-critical paths [@teortaxesTex](https://x.com/teortaxesTex/status/2098176524612510102)
+- Another thread fragment from TeortaxesTex suggested DeepSeek is doing **multiple compression frequencies**, “it’s just all CSA2,” in response to architectural discussion around memory compression [@teortaxesTex](https://x.com/teortaxesTex/status/2098131613678707129)
+- Nrehiew’s technical notes emphasize **KV cache compression** as central to the design, calling it a case study in “how obsessing over KV Cache compression gets you a hyper-efficient frontier model” [@nrehiew_](https://x.com/nrehiew_/status/2098170409686647263)
+- In a follow-up, nrehiew highlighted infrastructure specifics from the report: **dispatch strategy to reduce long-tail stalls**, **router replay from previous checkpoints**, management of shorter-completion off-policy effects via **dataset-level capping**, **discard schemes**, **bounded off-policy ratio and loss masking**, and **persistent KVs and routers** when a new checkpoint is updated; they also mention a final stage with **full-vocab OPD on 40+ teacher models** [@nrehiew_](https://x.com/nrehiew_/status/2098170443660402942)
+- Nrehiew concluded that the design looks cleaner than the older **HSA + CSA** combination in V4, saying it was “very clearly designed for inference,” and cited a striking **~890 bytes/token KV size** for the benchmarked score regime [@nrehiew_](https://x.com/nrehiew_/status/2098170450526543892)
+- Stochastic Chasm inferred **QAT for the KV cache**, saying this would explain why the model performs better than peers under **FP4 KV cache** [@stochasticchasm](https://x.com/stochasticchasm/status/2098154481750020375)
+
+## Benchmark results and numbers
+
+
+**Independent evals consistently paint V4.1-Flash as unusually strong on cost-adjusted intelligence, long context, and automation, with a major caveat around verbosity.**
+
+- Artificial Analysis’ headline: **40 AA Index**, above V4 Pro and below GLM-5.3-Flash [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422), corroborated separately by Scaling01 [@scaling01](https://x.com/scaling01/status/2098136324603547907)
+- Artificial Analysis reported **AutomationBench-AA: 69%**, tying **GPT-6 Astra (69%)** and above **Grok 4.6 (67%)**, while improving **15 points** over V4 Flash 0731 and sitting **12 points above V4 Pro 0813 (57%)** and **7 points above GLM-5.3 (62%)** [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- On GDPval-AA v2 it reportedly gains **164 Elo**, from **1468 to 1632**, overtaking **Kimi K3 at 1584** [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- On **AA-LCR v1.1** it scores **84%**, on par with **GPT-5.6 Sol** and **Gemini 3.8 Flash** at **84%** [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- Artificial Analysis also says V4.1 Flash is among the **most verbose models measured**, averaging **89k tokens per Intelligence Index task**—**25% more** than GLM-5.3 (71k), **29% more** than GLM-5.3-Flash (69k), **62% more** than V4 Pro 0813 (55k), and even above **Fable 5.1 (78k)** and **Claude Opus 5 (73k)** [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- Even with that verbosity, AA estimates just **$0.27 per Intelligence Index task**, roughly **7x below GLM-5.3 ($2.01)** and **Kimi K3 ($2.00)**, and **~2.5x below V4 Pro 0813 ($0.67)** [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- Vals’ result reinforces cost leadership: **$0.30/test**, #1 open-weight on their board [@ValsAI](https://x.com/ValsAI/status/2098125164072554545)
+- A separate reaction thread summarized DeepSWE-style claims more aggressively, saying V4.1 Flash offered **better performance than GPT-5.6 Sol and Opus 5 in DeepSWE at 94% lower API costs**, but that statement is secondhand summary rather than a primary benchmark post in this dataset [@kimmonismus](https://x.com/kimmonismus/status/2098107083665060275)
+
+## Running it locally and inference engineering reactions
+
+
+**A large fraction of discussion centered on the surprising ease of running V4.1-Flash on commodity-ish local hardware through offload and SSD streaming.**
+
+- Fraser Price reported **full-precision DeepSeek 4.1 Flash + DSpark at 200 TPS on 4 Max-Qs with just 64GB system RAM**, offloading a **200GB Engram/hash table to NVMe**; he says this made keeping the full structure in RAM unnecessary and promised a **vLLM recipe** [@fraserpricee](https://x.com/fraserpricee/status/2098078317723242813)
+- He later improved that to **300+ TPS on 4 RTX Pros**, still at **full precision**, with **<32GB peak system RAM**, using a **custom vLLM fork** and SSD support [@fraserpricee](https://x.com/fraserpricee/status/2098183796080173382)
+- Antirez showed **DwarfStar running V4.1 Flash on a 128GB M5 Max**, saying SSD streaming made it unexpectedly fast; he speculated both recent SSD-streaming changes and the possibility that DS4.1 “uses the same experts more” contributed [@antirez](https://x.com/antirez/status/2098121665771110540)
+- TeortaxesTex reacted that it is “incredible you can run frontier models mostly off SSD” [@teortaxesTex](https://x.com/teortaxesTex/status/2098128365970440432)
+- Elie Bakouch posted a reaction meme explicitly about the **inference engineer view** of the V4.1 Flash architecture, reflecting how strongly the launch resonated with systems folks [@eliebakouch](https://x.com/eliebakouch/status/2098223948127183261)
+- vLLM’s new release also included **DeepSeek-V4 shared experts fused into MegaMoE**, plus **Mooncake Store can offload decode KV**, relevant context for why serving this class of model is rapidly becoming easier in open infra [@vllm_project](https://x.com/vllm_project/status/2098214992755765758), [@vllm_project](https://x.com/vllm_project/status/2098214998426444009)
+
+## Facts vs. opinions
+
+
+**Facts and directly attributed claims**
+
+- V4.1 Flash launched and was quickly supported by Ollama and Baseten [@ollama](https://x.com/ollama/status/2098188014119985406), [@baseten](https://x.com/baseten/status/2098169972874994071)
+- Independent benchmarks reported **AA Index 40**, **AutomationBench-AA 69%**, **AA-LCR 84%**, **GDPval-AA v2 1632 Elo**, **1M context**, **MIT license**, and low API pricing [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- Vals reported #1 among open-weight models on its index, at **$0.30/test**, with **384 max output tokens** under its harness settings [@ValsAI](https://x.com/ValsAI/status/2098125164072554545), [@ValsAI](https://x.com/ValsAI/status/2098125177116848591)
+- Local deployment reports claimed **200 TPS** and later **300+ TPS** on 4-GPU setups, plus successful M5 Max SSD-streamed operation [@fraserpricee](https://x.com/fraserpricee/status/2098078317723242813), [@fraserpricee](https://x.com/fraserpricee/status/2098183796080173382), [@antirez](https://x.com/antirez/status/2098121665771110540)
+
+**Interpretations and opinions**
+
+- Raschka’s “they should have called it V5” is an opinion about how substantial the architectural change is [@rasbt](https://x.com/rasbt/status/2098142625819672603)
+- TeortaxesTex’s speculation that DeepSeek “repeatedly struggled to train first layers properly” is inference, not a confirmed statement from DeepSeek [@teortaxesTex](https://x.com/teortaxesTex/status/2098132297253896451)
+- Nrehiew’s framing that the report is “cleaner” than the prior HSA/CSA design and likely unlike what OpenAI/Anthropic would do because of their custom chips is informed opinion [@nrehiew_](https://x.com/nrehiew_/status/2098170450526543892)
+- The “DeepSeek ships internal research artifacts and not products” critique is an external judgment, not a factual release note [@teortaxesTex](https://x.com/teortaxesTex/status/2098213577546985945)
+- Assertions that “data is all that matters” or “research is over” were themselves criticized as overreactions [@shikibmehri](https://x.com/shikibmehri/status/2098233059242099175)
+
+## Different opinions and reactions
+
+
+**Supportive / impressed**
+
+- Strong positive reactions came from benchmarkers and researchers emphasizing the price/perf step: Vals’ “new #1 open-weight model,” Artificial Analysis’ cost-adjusted headline, and general praise like “interesting release / breath of fresh air vibe” [@ValsAI](https://x.com/ValsAI/status/2098125164072554545), [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422), [@dejavucoder](https://x.com/dejavucoder/status/2098128229408375093)
+- Raschka called it “super cool and refreshing” [@rasbt](https://x.com/rasbt/status/2098142625819672603)
+- XJDR liked the engineering thinking despite some aesthetic reservations [@_xjdr](https://x.com/_xjdr/status/2098106496282448013)
+- Nrehiew called it “yet another banger tech report” [@nrehiew_](https://x.com/nrehiew_/status/2098170450526543892)
+- Stochastic Chasm ended by saying the paper was “dense” but appreciated the multi-agent training angle and sparse design ideas [@stochasticchasm](https://x.com/stochasticchasm/status/2098186711578943775), [@stochasticchasm](https://x.com/stochasticchasm/status/2098186892579860662)
+
+**Neutral / analytical**
+
+- Some observers mainly dissected the design rather than cheering it: sparse/local hybridization, first-layer oddities, multimodal tokenization, KV quantization, colocated async RL, etc. [@stochasticchasm](https://x.com/stochasticchasm/status/2098102323268767832), [@stochasticchasm](https://x.com/stochasticchasm/status/2098185722561966230), [@nrehiew_](https://x.com/nrehiew_/status/2098170443660402942)
+- Gordic Aleksa used the paper as evidence in a broader pretraining-data taxonomy, placing DeepSeek in the **organic data camp** and noting surprise that, based on publications, they do not appear to use even synthetic **rephrasing** [@gordic_aleksa](https://x.com/gordic_aleksa/status/2098108613676212598)
+
+**Critical / skeptical**
+
+- TeortaxesTex repeatedly pushed back on external impressions, arguing DeepSeek often shows **high internal evals, weaker external robustness, brittleness, and weird skill gaps**, because it “ships internal research artifacts and not products” [@teortaxesTex](https://x.com/teortaxesTex/status/2098213577546985945)
+- The same account called some eval results “very strange,” particularly **AutomationBench #1** and a CritPt regression, and asked the DeepSeek team to “meditate on this” [@teortaxesTex](https://x.com/teortaxesTex/status/2098157751465603171)
+- They also argued that **V4 GA** had benefited massively from tool/skills harness access, whereas **V4.1** appears less dependent on harness scaffolding and better in “minimal harnesses” [@teortaxesTex](https://x.com/teortaxesTex/status/2098129561481363901)
+- In hands-on use, they reported that **multi-agent “DSH agent teams”** could degrade quality unless the project has very clear modularity, with **V4.1 solo** outperforming team mode in at least one example because subagents produced slop or wasted tokens on unnecessary research [@teortaxesTex](https://x.com/teortaxesTex/status/2098154067948134492), [@teortaxesTex](https://x.com/teortaxesTex/status/2098202210228109478)
+- Jared Z’s broader product-market critique—that users now care deeply about token cost, and daily-driver coding models should be both cheap and smart—fits V4.1 Flash’s positioning even though it wasn’t about the model specifically [@imjaredz](https://x.com/imjaredz/status/2098135420035035603)
+
+## Context
+
+
+**Why this matters technically and strategically**
+
+- The launch lands amid a broader shift from “bigger dense chat models” toward **systems-optimized, sparse, long-context, agent-oriented models** that can actually be served cheaply and locally.
+- V4.1 Flash’s positioning is unusually aggressive: open-weight, MIT-licensed, 1M context, multimodal input, low active parameter counts, extreme cache discounts, and demonstrated viability on SSD/offload-heavy consumerish setups [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422), [@fraserpricee](https://x.com/fraserpricee/status/2098078317723242813), [@antirez](https://x.com/antirez/status/2098121665771110540)
+- The benchmark pattern suggests a meaningful trade: **very high verbosity** but still **exceptionally low total task cost** thanks to ultra-cheap token pricing [@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2098148674203488422)
+- The architecture also reflects a broader industry trend toward **splitting prefill and decode economics**, making long-context and agentic workloads more practical without paying frontier dense-model costs on every token.
+- The release reinforces the idea that open models are increasingly competitive not just on raw weights availability, but on **servability**—the ability to fit into offload pipelines, quantized KV stacks, local deployment, and open inference servers.
+- It also sharpened debate over what matters most in 2026 model progress: architecture, RL/inference co-design, data quality, or systems work. Shikib Mehri explicitly pushed back on the claim that DeepSeek’s paper means “research is over,” arguing instead that the lever surface has expanded from architecture into data-factory and reward-design research [@shikibmehri](https://x.com/shikibmehri/status/2098233059242099175)
+- Finally, DeepSeek remains a polarizing lab identity-wise: admired for shipping unusual research artifacts and detailed reports, but also seen by some practitioners as less polished than product-centric competitors, with odd eval gaps and brittle behaviors that appear more clearly in real workflows than in internal headline numbers [@teortaxesTex](https://x.com/teortaxesTex/status/2098213577546985945), [@teortaxesTex](https://x.com/teortaxesTex/status/2098157751465603171)
+
 
 **OpenAI’s Voice, Agents, and Enterprise Push**
 
