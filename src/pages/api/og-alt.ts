@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
-import { ImageResponse } from '@vercel/og';
+import { ImageResponse } from 'workers-og';
+import notoSans from '../../assets/fonts/noto-sans.bin';
 import { renderIssueOgImage, renderHomepageOgImage } from '../../lib/renderOgImage';
 
 export const prerender = false;
@@ -71,7 +72,9 @@ export const GET: APIRoute = async ({ url, request }) => {
         {
           width: 1200,
           height: 630,
-          headers,
+          emoji: 'twemoji',
+          headers: { 'Cache-Control': headers.get('Cache-Control')! },
+          fonts: [{ name: 'sans serif', data: notoSans, weight: 400, style: 'normal' }],
         }
       );
     } else {
@@ -84,7 +87,9 @@ export const GET: APIRoute = async ({ url, request }) => {
         {
           width: 1200,
           height: 630,
-          headers,
+          emoji: 'twemoji',
+          headers: { 'Cache-Control': headers.get('Cache-Control')! },
+          fonts: [{ name: 'sans serif', data: notoSans, weight: 400, style: 'normal' }],
         }
       );
     }

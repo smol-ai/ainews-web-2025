@@ -4,7 +4,7 @@ import mdx from "@astrojs/mdx";
 import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 import remarkYouTubeEmbed from "./src/remark-youtube-embed.mjs";
-import vercel from "@astrojs/vercel";
+import cloudflare from "@astrojs/cloudflare";
 
 const verboseBuild = process.env.VERBOSE_BUILD === 'true';
 const logBuild = (...args) => {
@@ -140,5 +140,5 @@ export default defineConfig({
       showFilters: ["tag"]
     },
   },
-  adapter: vercel(),
+  adapter: cloudflare({ imageService: "compile" }),
 });
