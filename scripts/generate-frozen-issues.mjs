@@ -7,7 +7,7 @@ import html from 'remark-html';
 
 const sourceDir = 'src/content/frozen-issues';
 const outputDir = 'public/frozen-issues';
-const manifestPath = '.vercel/cache/frozen-issues-manifest.json';
+const manifestPath = '.cache/frozen-issues-manifest.json';
 const templateVersion = 'inline-css-v4-modern-archive-no-summary';
 const concurrency = Number(process.env.FROZEN_ISSUE_CONCURRENCY || 8);
 const processor = remark().use(html);
@@ -241,7 +241,7 @@ function pageTemplate({ title, description, canonicalPath, body, date, companies
 
 const started = Date.now();
 await mkdir(outputDir, { recursive: true });
-await mkdir(join('.vercel', 'cache'), { recursive: true });
+await mkdir('.cache', { recursive: true });
 const manifest = await readManifest();
 const files = (await readdir(sourceDir)).filter((file) => /\.(md|mdx)$/.test(file));
 const limit = pLimit(concurrency);
