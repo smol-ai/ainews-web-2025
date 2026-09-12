@@ -103,8 +103,10 @@ pnpm check:cloudflare http://127.0.0.1:8792
 
 Deploy the verified build with `pnpm exec wrangler deploy`, or build and deploy
 with `pnpm run deploy`. Before deployment, verify the Cloudflare account and Worker
-name match `wrangler.jsonc`. No custom domain is attached by the initial config;
-verify the Workers preview before moving the production hostname.
+name match `wrangler.jsonc`. The production configuration owns only the exact `news.smol.ai/*` Worker route.
+DNS uses a proxied placeholder A record (`192.0.2.1`), so Vercel is no longer an origin.
+For a separate preview Worker, copy the config to an ignored local JSON file, remove
+`routes`, change `name`, and pass it using `wrangler deploy --config ...`.
 
 After deployment, run `pnpm check:cloudflare https://news.smol.ai` and inspect the
 homepage's linked CSS, JavaScript and fonts. Existing origin cache rules may
@@ -126,3 +128,11 @@ pnpm tsx oneoffs/process-emails.ts --file "$(ls -t src/content/issues/*.md | hea
 pnpm tsx oneoffs/process-emails.ts --file "$(ls -t src/content/issues/25-08-13*.md | head -n 1)" && gadmit "latest post" && gpom
 
 ```
+
+### Migration rollback
+
+Before migration the news record was a proxied CNAME to `cname.vercel-dns.com`
+with Auto TTL. To undo the cutover, restore that record, then remove only
+`news.smol.ai/*` from this Worker. Vercel was disabled with HTTP 402, so that
+restores the old outage, not a healthy service. Prefer a known-good Worker
+version with `wrangler rollback <version-id>` for subsequent releases.
