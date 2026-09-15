@@ -1,4 +1,6 @@
 import React from 'react';
+import { domToReact } from 'html-react-parser';
+import parse from 'html-dom-parser/lib/server/html-to-dom';
 
 interface OgImageProps {
   title: string;
@@ -24,7 +26,7 @@ export function renderIssueOgImage({
   return (
     <div tw="flex flex-col w-full h-full p-12 bg-white font-sans relative">
       {/* Gradient top border */}
-      <div tw="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-gray-900 to-gray-500" />
+      <div tw="absolute top-0 left-0 right-0 h-3" style={{ backgroundImage: "linear-gradient(to right, #111827, #6b7280)" }} />
       
       {/* Header section with issue info */}
       <div tw="flex justify-between items-center w-full">
@@ -59,11 +61,11 @@ export function renderIssueOgImage({
         </h1>
         
         {/* Description (first 10 words) */}
-        <p tw="text-2xl text-gray-600 mb-10 leading-normal truncate overflow-hidden text-ellipsis" dangerouslySetInnerHTML={{ __html: shortDescription }} />
+        <p tw="flex flex-wrap text-2xl text-gray-600 mb-10 leading-normal overflow-hidden">{domToReact(parse(shortDescription), { transform: node => typeof node === 'string' ? node.replace(/ /g, '\u00a0') : React.isValidElement(node) ? node : null })}</p>
         
         {/* Tags container */}
         {(companyTags.length > 0 || modelTags.length > 0) && (
-          <div tw="flex flex-wrap gap-2">
+          <div tw="flex flex-wrap" style={{ gap: 8 }}>
             {/* Company tags */}
             {companyTags.slice(0, 4).map((tag, i) => (
               <div key={`company-${i}`} tw="bg-green-100 text-green-600 px-3 py-1 rounded-md text-lg">
