@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0x
-title: not much happened today
+title: DeepSeek v4.1-Flash
 date: '2026-09-09T05:44:39.731046Z'
 description: >-
   **DeepSeek** launched **V4.1-Flash**, a new open-weight flagship model focused
