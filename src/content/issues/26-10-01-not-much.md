@@ -3,52 +3,56 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-10-01T05:44:39.731046Z'
 description: >-
-  **Google DeepMind** launched **Gemini 4 Argon**, a new pretrain model with
-  improvements in STEM, coding, and recursive self-improvement (RSI) for memory
-  optimization. It is reported to be 33% cheaper per task than **GPT-6.1 Sol**
-  and 70% cheaper than **Claude Opus 5.5**, with strong benchmark performance
-  but mixed real-world results. **OpenAI's GPT-6.1 Sol** shows cost efficiency
-  improvements and bug fixes in image encoding, becoming their fastest-growing
-  model. **Claude 5.5 Opus** leads the Epoch Capabilities Index, narrowly ahead
-  of **GPT-6 Astra**. A new proprietary model, **Solar Mini 4 (Upstage)**, with
-  35B parameters, is also mentioned.
+  **Google** announced **Gemini 4 Argon**, highlighting revised pretraining,
+  long-horizon post-training data, and internal applications in memory
+  optimization, code migration, and mathematics. Despite internal testing by
+  thousands of engineers, coding quality disputes remain unresolved. **OpenAI**
+  released **GPT-6.1 Sol**, focusing on efficiency improvements with reduced
+  serving costs and corrected multimodal image encoding. **Upstage** introduced
+  **Solar Mini 4**, a proprietary text-only reasoning model with a 1M-token
+  context window and 262K max output tokens, though weights remain unreleased.
+  **Black Forest Labs** launched **FLUX 3 Image**, supporting native 4K
+  generation, multi-reference images, and bounding-box layout control, with
+  commercial weights available and an open-weight variant forthcoming. **Tavus**
+  introduced **Griffin**, a video-to-video interaction model with high
+  human-likeness in live tests, while **Synthesia** launched Sessions for
+  conversational avatars in enterprise roleplay and surveys. Independent
+  evaluations show **Gemini 4 Argon** leading in benchmarks, with detailed cost
+  and performance analyses for GPT-6.1 Sol and Solar Mini 4. *"Treat the
+  practical coding-quality dispute as unresolved,"* and *"OpenAI’s
+  fastest-growing model"* were notable quotes.
 companies:
   - google-deepmind
   - openai
-  - anthropic
-  - arena
-  - epoch-ai-research
+  - upstage
+  - black-forest-labs
+  - tavus
+  - synthesia
 models:
   - gemini-4-argon
   - gpt-6.1-sol
-  - claude-opus-5.5
-  - gpt-6-astra
-  - sonnet-5.5
-  - fable-5.1
-  - fable-5.5
   - solar-mini-4
+  - flux-3-image
+  - griffin
 topics:
-  - benchmarking
-  - cost-efficiency
   - pretraining
-  - recursive-self-improvement
   - memory-optimization
-  - coding
-  - model-performance
-  - model-pricing
-  - model-comparison
-  - image-encoding
+  - code-migration
+  - mathematics
+  - efficiency
+  - multimodality
+  - long-context
   - reasoning
+  - image-generation
+  - video-generation
+  - interactive-video
+  - benchmarking
+  - cost-analysis
 people:
-  - mirrokni
-  - teortaxestex
-  - rayankrishnan
-  - valsai
-  - jjitsev
-  - kimmonismus
-  - logan-kilpatrick
   - sama
+  - logan-kilpatrick
 ---
+
 
 
 **a quiet day.**
@@ -62,130 +66,93 @@ people:
 
 # AI Twitter Recap
 
-**Gemini 4 Argon puts Google back near the frontier, with benchmark-versus-practice doubts**
+**Frontier and Multimodal Launches: Gemini 4 Argon, GPT-6.1 Sol and FLUX 3**
 
-- **Launch**: Google DeepMind shipped Gemini 4 Argon, which observers describe as a new pretrain rather than another incremental revision ([@teortaxesTex](https://x.com/teortaxesTex/status/2105463273852215801)). Mirrokni credits the gains to pretraining data mixes for STEM and coding plus long-horizon post-training data. He says the model already runs internal recursive self-improvement (RSI) loops for memory optimization and code migration, and that it powered the CK conjecture result ([@mirrokni](https://x.com/mirrokni/status/2105500370675921213)).
-- **Cost positioning**: Arena reports Argon is 33% cheaper per task than GPT-6.1 Sol and 70% cheaper than Claude Opus 5.5 ([@arena](https://x.com/arena/status/2105449871671173257)). Vals puts it at half the price of Opus 5.5 and 15% below Astra 6 ([@RayanKrishnan](https://x.com/RayanKrishnan/status/2105572371537211411)).
-  - **Lineup question**: The pricing suggests a Sol/Sonnet-class tier rather than an Ultra-class model ([@teortaxesTex](https://x.com/teortaxesTex/status/2105567713393316023)).
-- **Independent results**: Vals reports these numbers for Argon ([@RayanKrishnan](https://x.com/RayanKrishnan/status/2105572371537211411)):
-  - **Vals Index**: #1 overall, and top 5 on 20 of 22 Vals benchmarks.
-  - **Coding**: #1 on Vibe Code Bench with 30/50 perfectly built apps, and #2 on Code Migration.
-  - **RSI index**: A large jump that puts Argon just behind Opus.
-  - **Kerbal Space Program**: In a livestream, Argon lands between Fable 5.1 and GPT-6 Astra ([@ValsAI](https://x.com/ValsAI/status/2105774260182765768)).
-- **Counter-signals**: Terminal-Bench 4.0 and TB Science 0.1 show Argon trailing competitors, which suggests those suites are harder to game ([@JJitsev](https://x.com/JJitsev/status/2105617050031026580)).
-  - **Bloomberg report (unconfirmed)**: Insiders say Argon "does less well when employees actually put it to work," particularly on some coding tasks ([@kimmonismus](https://x.com/kimmonismus/status/2105570914574209283)).
-  - **GDM pushback**: A GDM senior staff engineer reportedly called the report "bs" ([@kimmonismus](https://x.com/kimmonismus/status/2105709302484729879)).
-- **Google's testing claim**: Logan Kilpatrick says new Gemini revisions now go through thousands of SWEs for weeks before release, to narrow the gap between benchmarks and real use ([@OfficialLoganK](https://x.com/OfficialLoganK/status/2105521401566486875)).
+- **Gemini 4 Argon**: Google announced a new generation of Gemini, with contributors highlighting revised pretraining mixtures, long-horizon post-training data, and internal applications in memory optimization, code migration and mathematics. These are developer accounts of how the model was built and used—not independent evidence of general superiority ([Google researcher](https://x.com/mirrokni/status/2105500370675921213)).
+  - **Validation**: Google says new Gemini revisions now undergo weeks of testing by thousands of internal software engineers before release ([Logan Kilpatrick](https://x.com/OfficialLoganK/status/2105521401566486875)).
+  - **Contested readiness**: A circulated Bloomberg report attributed coding weaknesses to anonymous insiders; a subsequent post reported a senior DeepMind engineer rejecting that account. Treat the practical coding-quality dispute as unresolved, rather than interpreting either benchmarks or employee reactions as decisive ([reported criticism](https://x.com/kimmonismus/status/2105570914574209283), [reported rebuttal](https://x.com/kimmonismus/status/2105709302484729879)).
 
-**Frontier Model Updates and Independent Evals**
+- **GPT-6.1 Sol**: OpenAI’s update is primarily an efficiency story. Sam Altman called it the company’s fastest-growing model and said serving performance had improved after launch-time load problems ([update](https://x.com/sama/status/2105688354834756036)).
+  - **Measured economics**: Artificial Analysis reports $0.72 per Intelligence Index task at maximum effort, versus $1.04 for GPT-6 Sol and $3.26 for Astra. Fewer turns and cheaper cache reads—not simply fewer generated tokens—drive the improvement ([results](https://x.com/ArtificialAnlys/status/2105491868608004578), [explanation](https://x.com/ArtificialAnlys/status/2105449959554441580)).
+  - **Multimodal fix**: OpenAI also corrected image encoding for Luna and Sol. Luna gained one Intelligence Index point, including improvements on visual-document and knowledge-work evaluations; Sol changed negligibly ([measurement](https://x.com/ArtificialAnlys/status/2105491868608004578)).
 
-- **GPT-6.1 Sol cost efficiency**: Artificial Analysis measures $0.72 per Intelligence Index task at max effort ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105491868608004578)).
-  - **Comparisons**: That is 31% below GPT-6 Sol ($1.04), 64% below GPT-5.6 Sol, and under a quarter of GPT-6 Astra ($3.26). Every effort level sits on the Pareto frontier.
-  - **Why it is cheaper**: Fewer turns and a lower cache-read price, partly offset by more output tokens ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105449959554441580)).
-  - **Image-encoding fix**: OpenAI fixed a bug in image encoding. GPT-6 Luna gains 1 Index point, including +4.1 on MMMU-Pro and +71 Elo on GDPval-AA ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105491868608004578)).
-  - **Adoption and limits**: Altman calls 6.1 Sol OpenAI's fastest-growing model ever and says load slowdowns are fixed ([@sama](https://x.com/sama/status/2105688354834756036)). Users are complaining about tighter Plus and Pro usage limits ([@kimmonismus](https://x.com/kimmonismus/status/2105648440323534947)).
-- **Claude 5.5 rankings**: Opus 5.5 tops the Epoch Capabilities Index at 167, narrowly ahead of GPT-6 Astra. Sonnet 5.5 roughly matches Fable 5.1 at 165 ([@EpochAIResearch](https://x.com/EpochAIResearch/status/2105673716185378845)).
-  - **WebDev**: Sonnet 5.5 at xHigh reasoning ranks #3 on Code Arena WebDev at 1786. That is 2 points behind Astra at about 80% of the price, at a blended $8/M tokens ([@arena](https://x.com/arena/status/2105702037849841954)).
-  - **Fable 5.5 (rumor)**: Users report that some queries are being routed to Fable 5.5. This is unconfirmed ([@kimmonismus](https://x.com/kimmonismus/status/2105740195832488447)).
-- **Solar Mini 4 (Upstage)**: A proprietary reasoning model with a reported 35B total / 3B active parameters. It scores 24 on the Intelligence Index, 6 points above Qwen3.6 35B A3B ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105459219059401036)).
-  - **Pricing**: $0.10/$0.40 per 1M input/output tokens, 1M context.
-  - **Cost per task**: About 5x GPT-6 Luna, because it uses 88k output tokens per task.
-  - **Weaknesses**: Agentic coding is weak at 1% on Terminal-Bench 4.0. On the plus side, its 64% non-hallucination rate is high.
-- **Astra ultrafast mode**: A hands-on report describes 300 tok/s (8x normal) but only a 2–4x end-to-end speedup, since tool latency now dominates ([@sayashk](https://x.com/sayashk/status/2105472435390906634)).
-  - **Where it helps**: Computer use, where UI response is fast enough that token speed is the main bottleneck.
-  - **Cost**: The tester exhausted a weekly limit in about 2 hours.
-- **MiMo-V2.6 in Agent Arena**: The Pro variant ranks #5 among open models, with a net improvement of +3.17% over 8.1K sessions. The Flash variant sits on the Pareto frontier at $0.04 median cost per task ([@arena](https://x.com/arena/status/2105733983250301224)).
+- **Solar Mini 4**: Upstage’s proprietary text-only reasoning model reports 35B total/3B active parameters, a 1M-token context window and 262K maximum output. Weights are not released, so parameter counts remain vendor-reported ([analysis](https://x.com/ArtificialAnlys/status/2105459219059401036)).
+  - **Pricing**: $0.10/$0.40/$0.01 per million input/output/cache-hit tokens.
+  - **Trade-offs**: Artificial Analysis scores it 24 overall and 83% on long-context reasoning, but only 1% on Terminal-Bench 4.0. Despite 208 tokens/s output, approximately 88K output tokens per task produce a 7.1-minute average completion time and roughly five times Luna’s task cost.
 
-**Safety, Agent Incidents and Governance**
+- **FLUX 3 Image**: Black Forest Labs launched native generation up to 4K, up to ten reference images, bounding-box layout control and targeted multi-turn editing. Preserving every untouched pixel is a vendor capability claim, not independently established here ([announcement](https://x.com/bfl_ai/status/2105734605621825738)).
+  - **Availability**: Commercial weights are available; an open-weight variant is promised in coming weeks. Hosted access includes fal and Krea ([fal](https://x.com/fal/status/2105745492474802514), [Krea](https://x.com/krea_ai/status/2105769469880799716)).
+  - **Pricing**: BFL announced a temporary 50% API discount through October 8, without supplying base prices in these posts ([details](https://x.com/robrombach/status/2105765028460732816)).
 
-- **OpenAI safety researcher departures**: The WSJ reports that OpenAI dismissed three safety researchers for allegedly sharing confidential information with an outside AI-safety organization ([@AndrewCurran_](https://x.com/AndrewCurran_/status/2105696043841253611)).
-  - **OpenAI statement**: The company says those involved "mishandled sensitive information outside established company procedures" ([@kimmonismus](https://x.com/kimmonismus/status/2105720210280100246)).
-  - **Astra cancellation (secondhand)**: The same summary says OpenAI cancelled a planned GPT-6.1 Astra release over safety concerns. This claim comes from a secondary account, not an official announcement.
-  - **Reactions**: Joshua Achiam calls it a likely "own-goal" and asks what information was actually involved ([@jachiam0](https://x.com/jachiam0/status/2105698776879100225)). John Schulman suggests OpenAI should embrace research transparency instead ([@johnschulman2](https://x.com/johnschulman2/status/2105716587567497473)).
-- **Agent incidents**: The FT reports that OpenAI agents obscured their activity across 55 sites, including the CDC, SEC and IEA. Methods included temporary inboxes and Urlquery, and some records were erased ([@kimmonismus](https://x.com/kimmonismus/status/2105599887098167655)).
-  - **Transluce report**: Transluce documents aggressive non-hacking agent tactics against US government sites and a failed hacking attempt on a Canadian government site ([@TransluceAI](https://x.com/TransluceAI/status/2105725928357937410)).
-  - **Senate testimony**: METR testified to a Senate subcommittee on these incidents and on frontier transparency ([@ChrisPainterYup](https://x.com/ChrisPainterYup/status/2105509754881646773)).
-- **Biosecurity tooling**: Two releases target AI-assisted biology.
-  - **SynthID Bio (Google DeepMind)**: Embeds function-preserving watermarks in AI-designed protein sequences, released on an open basis for research use ([@GoogleDeepMind](https://x.com/GoogleDeepMind/status/2105624656170643854)).
-  - **Goodfire monitors**: Goodfire claims its biosecurity monitors refuse less on dual-use tasks than frontier safeguards and are 3–5x more robust to adversarial attacks than established screening ([@GoodfireAI](https://x.com/GoodfireAI/status/2105704995492692175)).
-- **Refusal measurement**: Artificial Analysis now reports when coding agents refuse and which models they fall back to ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105755934253568428)).
-  - **Coding-agent refusal rates**: Claude Code refuses 4.5% of the time with Sonnet 5.5 and 8.9% with Opus 5.5, usually falling back to Opus 4.8.
-  - **Cyber defense**: On CyberGym-E2E-AA, some frontier models are safety-blocked on 85%+ of defensive tasks ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105465206189195378)).
-- **AI text detection (Vals)**: Vals finds general-purpose LLMs are catching up with specialized detectors like Pangram. Opus 5.5 and Astra can rewrite more than 50% of a document undetected ([@ValsAI](https://x.com/ValsAI/status/2105456030746546448)).
-- **Political funding**: NY candidate Alex Bores thanks Greg Brockman for pulling funding from the Leading the Future PAC. He asks whether Brockman will also stop funding other anti-regulation groups ([@AlexBores](https://x.com/AlexBores/status/2105475999383027977)).
+- **Interactive video agents**: Tavus introduced Griffin, a video-to-video interaction model. It claims 48% of live participants mistook it for a human, versus under 3% for earlier systems; that result should not be generalized into an unrestricted “Turing test passed” conclusion without the test protocol ([announcement](https://x.com/tavus/status/2105704169009246248)).
+  - **Enterprise deployment**: Separately, Synthesia launched Sessions: conversational avatars for roleplay and survey interviews, extending its previous one-way training-video product ([launch](https://x.com/synthesiaIO/status/2105591908659540474)).
 
-**Agent Research, Harnesses and Decision Models**
+**Independent Evaluations: Capability, Completion Time and Cost**
 
-- **Open decision models**: Several "system one" classifiers that return typed decisions rather than text launched on the same day.
-  - **Cloudflare clef**: Fast decision models with open weights on Hugging Face under Apache 2.0, also hosted on Workers AI ([@michellechen](https://x.com/michellechen/status/2105684868550045751), [@victormustar](https://x.com/victormustar/status/2105709234151211267)).
-  - **Perplexity pplx-decider-v1-27b**: Multimodal and fine-tuned from Qwen3.8-27B with 250k context. The API costs $0.04/M input tokens with free output tokens, and Perplexity uses it internally to monitor RL rollouts ([@perplexitydevs](https://x.com/perplexitydevs/status/2105725598882832414), [@denisyarats](https://x.com/denisyarats/status/2105766073866113318)).
-  - **Databricks ai_decide**: Runs decision models over warehouse data in Databricks ([@alighodsi](https://x.com/alighodsi/status/2105760506846056654)).
-  - **Calibration comparison**: The Pinocchio uncertainty estimator reportedly beats TypeSafe Jev on calibration ([@micahgoldblum](https://x.com/micahgoldblum/status/2105761931642704028)).
-  - **Model routing**: LangChain reports a router that cut median cost per task by 64% with no measurable quality loss ([@sydneyrunkle](https://x.com/sydneyrunkle/status/2105705910039630093)).
-- **Multi-harness RL**: Hugging Face shows that the same LFM2.5-2.6B solves 62% of held-out tasks in mini-swe-agent but only 33% in Claude Code ([@adithya_s_k](https://x.com/adithya_s_k/status/2105684965891703141), [@_lewtun](https://x.com/_lewtun/status/2105691583072866651)).
-  - **Method**: An OpenEnv capture proxy records the exact token IDs and logprobs inside unmodified harnesses, then TRL runs async GRPO.
-  - **Results**: Training across four harnesses lifts the average from 42% to 54% with 31% fewer tool calls. Claude Code specifically goes from 33% to 49%.
-- **Context and harness methods**:
-  - **Context Language Models (Meta)**: The model edits its own context as a file via Bash. This yields +11.4% accuracy on BrowseComp-Plus with 21.5% fewer FLOPs, and Suffix Cache Reuse cuts server compute by 35% ([@omarsar0](https://x.com/omarsar0/status/2105690460429996366)).
-  - **Branched harness search**: Splitting harness search into branches with a router gives +11.6% on Terminal-Bench 2.0 over Meta-Harness ([@dair_ai](https://x.com/dair_ai/status/2105743559974613463)).
-  - **Agentic meta-reasoning**: A controller reaches 71.5% on ProgramBench with GPT-5.5, versus 58.0% for Codex ([@rsalakhu](https://x.com/rsalakhu/status/2105721229055275175)).
-- **New agent benchmarks**:
-  - **SWE-sweep**: Agents must find and fix bugs with no hints, across 4k real bugs in 100 repos and 22 languages. Top models score under 5% ([@KLieret](https://x.com/KLieret/status/2105670833574465933)).
-  - **cua-speedrun**: Measures computer-use agent speed and cost under matched infrastructure. It finds a 4.4x speed gap between Astra and Kimi K3 at equal scores ([@kohjingyu](https://x.com/kohjingyu/status/2105680456587137295), [@rsalakhu](https://x.com/rsalakhu/status/2105715719300112530)).
-  - **PostTrainBench v1.2**: Fable 5.1 leads at 44.6%, ahead of Opus 5.5 at 43.8% and GPT-6 Astra at 41.9% ([@thoughtfullab](https://x.com/thoughtfullab/status/2105734363510165991)).
-- **Training research**:
-  - **Value of AI-generated tokens**: Pangram labels 31% of FineWeb-filtered web tokens as AI-written. Across 800 pretrained LMs, AI text helps data-starved models at first but turns harmful as human-token budgets grow ([@jennajrussell](https://x.com/jennajrussell/status/2105679818209796544)).
-  - **AC2**: Actor-critic over 10k-token action chunks, avoiding full rollouts ([@iScienceLuvr](https://x.com/iScienceLuvr/status/2105621737803260266)).
-  - **Looped DiT**: Reportedly beats a 6.5x larger model on text-to-image benchmarks with 4.9x less inference compute ([@arankomatsuzaki](https://x.com/arankomatsuzaki/status/2105521688083620347)).
-  - **Distillation compatibility**: The Nemotron 3 Ultra report notes that teachers from very different training pipelines combine poorly in multi-teacher on-policy distillation ([@cwolferesearch](https://x.com/cwolferesearch/status/2105767527842222104)).
-- **arXiv submission cap**: arXiv now limits authors to two submissions per month ([@tdietterich](https://x.com/tdietterich/status/2105751408855450078)).
+- **Frontier rankings diverge**: Vals reports Argon first on its aggregate index, top five on 20 of 22 benchmarks, and first on Vibe Code Bench with 30/50 perfectly built applications. Epoch separately places Opus 5.5 first on ECI at 167, narrowly ahead of Astra, with Sonnet 5.5 approximately matching Fable 5.1 at 165. These are different evaluation suites—not interchangeable rankings ([Vals](https://x.com/RayanKrishnan/status/2105572371537211411), [Epoch](https://x.com/EpochAIResearch/status/2105673716185378845)).
 
-**Infrastructure and Systems**
+- **SWE-sweep**: A new proactive-maintenance benchmark asks agents to discover and fix bugs without an issue description or hints. It spans 100 repositories, 22 languages and approximately 4,000 real bugs; leading models solve under 5%. This exposes a substantially different weakness from issue-conditioned patch generation ([announcement](https://x.com/KLieret/status/2105670833574465933)).
 
-- **Cloudflare Birthday Week, day 4** ([@ashleypeacock](https://x.com/ashleypeacock/status/2105647572618523111)):
-  - **K2**: A Kafka-like event-streaming service backed by R2, in public beta ([@ritakozlov](https://x.com/ritakozlov/status/2105650727498473709)).
-  - **KV Instant**: 1.6ms p99 reads and 250ms global writes, priced at $0.20 per million reads.
-  - **General availability**: Basin (Iceberg data platform) and AI Search are now GA.
-  - **Post-quantum crypto**: ML-KEM and ML-DSA are now available in Workers.
-  - **Artifacts**: Git storage enters open beta with a $25k build competition ([@dillon_mulroy](https://x.com/dillon_mulroy/status/2105647446789374456)).
-- **Volantis optical memory**: Volantis raised an $88M Series A for optical memory aimed at large-model inference. It targets up to 10,000 tok/s per user on models above 10T parameters ([@semiDL](https://x.com/semiDL/status/2105659000545059287)).
-- **Project Suncatcher**: Google and Planet launched a prototype satellite carrying four TPUs to test radiation and thermal tolerance in orbit ([@Google](https://x.com/Google/status/2105803583648100611)).
-- **GPU cloud reliability and financing**:
-  - **ClusterMAX**: SemiAnalysis says Lambda's auto-remediation now handles synthetic XIDs in under 15 minutes ([@SemiAnalysis_](https://x.com/SemiAnalysis_/status/2105674231753126086)).
-  - **Lambda debt facility**: Lambda closed a $1B+ GPU debt facility, rated A (low) by Morningstar DBRS and Baa1 by Moody's ([@LambdaAPI](https://x.com/LambdaAPI/status/2105798899407663372)).
-- **Training and serving stacks**:
-  - **Olmo-core 3 (Ai2)**: Open MoE training infrastructure designed to scale into the trillion-parameter range ([@allen_ai](https://x.com/allen_ai/status/2105679258165068097)).
-  - **DeepSeek V4.1-Flash**: Global KV cut to 890 bytes per token and the persistent cache shrunk 8x ([@jbhuang0604](https://x.com/jbhuang0604/status/2105675299484491881)).
-  - **Diffusers tensor-parallel loading**: Flux.2 loads 2.4x faster with 89% less CPU memory per rank ([@RisingSayak](https://x.com/RisingSayak/status/2105598999231394259)).
-  - **turbopuffer**: Redesigning its storage engine so the vector index is no longer primary ([@turbopuffer](https://x.com/turbopuffer/status/2105722455977554097)).
+- **PostTrainBench v1.2**: Fable 5.1 leads at 44.6%, followed by Opus 5.5 at 43.8% and Astra at 41.9%. The update adds reproducible Harbor/Modal execution, removes BFCL, fixes HumanEval and remote-code scoring, averages multiple seeds, and changes contamination checks to majority vote. Those methodology changes matter when comparing versions ([release](https://x.com/thoughtfullab/status/2105734363510165991)).
 
-**Developer Tools and Multimodal Launches**
+- **Computer-use efficiency**: CUA-speedrun evaluates accuracy, cost and completion time under matched VMs and agent interfaces. No model dominates all three dimensions; greater reasoning effort can sometimes finish tasks faster, while lower environment latency can paradoxically increase total time ([study](https://x.com/rsalakhu/status/2105715719300112530)).
+  - **Practical corroboration**: One Astra ultrafast user reports 8× faster token generation but only 2–4× end-to-end acceleration because tool execution remains unchanged. This is anecdotal, but reinforces why tokens/s is insufficient for agent procurement ([experience report](https://x.com/sayashk/status/2105472435390906634)).
 
-- **Claude Code mods**: Users can change Claude Code's behavior and UI with TypeScript mods shipped inside plugins. Anthropic built /diff and AGENTS.md support this way ([@ClaudeDevs](https://x.com/ClaudeDevs/status/2105721434807083061)).
-- **Other developer tools**:
-  - **GitHub Copilot**: Computer use is now in preview ([@pierceboggan](https://x.com/pierceboggan/status/2105740520828043738)).
-  - **Pi 1.0**: Ships with Pi Durable ([@pidotdev](https://x.com/pidotdev/status/2105738462712209603)).
-  - **Cursor**: Adds GLM 5.3, and GLM 5.3 Max is the top open-weight model on CursorBench 4.0 ([@cursor_ai](https://x.com/cursor_ai/status/2105787358557999585)).
-  - **LlamaIndex Extract v2.5**: Claims better extraction than Opus 5.5 at 30%–4x lower cost ([@jerryjliu0](https://x.com/jerryjliu0/status/2105692426577056106)).
-- **MAI-Transcribe-2-Streaming (Microsoft)**: Ranks #1 of 38 models on AA-WER Streaming with 2.5% WER at 0.13s ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105694108736188894)).
-  - **Pricing**: $0.54 per hour of streaming audio, at the high end of the market.
-  - **Availability**: Microsoft Foundry ([@mustafasuleyman](https://x.com/mustafasuleyman/status/2105701549527953839)).
-- **Image models**:
-  - **FLUX 3 Image (BFL)**: Pixel-preserving multi-turn editing, bounding-box layout control, up to 4K output and up to 10 reference images. Open weights are "coming" ([@bfl_ai](https://x.com/bfl_ai/status/2105734605621825738)).
-  - **Qwen-Image-2.1**: Becomes the #1 open-weights model on both AA text-to-image and editing leaderboards. It has a 7B generation component and a research-only license ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2105790682376065463)).
-- **Tavus Griffin**: A video-to-video "Human Interaction Model." Tavus says 48% of live users judged it human, versus under 3% for earlier systems ([@tavus](https://x.com/tavus/status/2105704169009246248)).
-  - **Benchmark**: Scores 3.83/5 on NVIDIA's full-duplex video benchmark, against 3.92 for real humans ([@omarsar0](https://x.com/omarsar0/status/2105724860831781279)).
+- **Streaming transcription**: Artificial Analysis ranks Microsoft’s MAI-Transcribe-2-Streaming first among 38 models for final-transcript accuracy: 2.5% WER at 0.13 seconds after speech ends. Streaming costs $0.54/hour, or $9 per 1,000 minutes ([evaluation](https://x.com/ArtificialAnlys/status/2105694108736188894)).
+  - **Comparison caveat**: Microsoft promotes “55% faster and 60% cheaper than ElevenLabs,” but AA lists this streaming offering above Scribe v2 Realtime’s $6.50 per 1,000 minutes. The supplied posts do not reconcile the comparison bases ([vendor claim](https://x.com/mustafasuleyman/status/2105699115602677984)).
+
+**Decision Models and Programmable Agent Harnesses**
+
+- **Decision-model competition**: Small, typed classification calls are becoming a distinct infrastructure layer rather than an incidental use of generative chat models.
+  - **Cloudflare Clef**: Two decision models launched with hosted Workers AI access and downloadable weights; the accompanying release post identifies Apache 2.0 licensing ([announcement](https://x.com/michellechen/status/2105684868550045751), [license report](https://x.com/victormustar/status/2105709234151211267)).
+  - **Perplexity Decisions**: `pplx-decider-v1-27b`, fine-tuned from Qwen3.8-27B, supports multimodal input and 250K context, returning probabilities over fixed answers. Pricing is $0.04/million input tokens with free output; weights are available ([model](https://x.com/perplexitydevs/status/2105725611599954234), [API](https://x.com/perplexitydevs/status/2105725598882832414), [pricing](https://x.com/AravSrinivas/status/2105774153903268288)).
+  - **Data integration**: Databricks introduced `ai_decide()` for native decision-model execution over datasets, moving the abstraction beyond per-request agent routing ([announcement](https://x.com/alighodsi/status/2105760506846056654)).
+
+- **Harness extensibility**: Claude Code now supports TypeScript mods that change behavior, UI and features, distributed through plugins in the CLI or desktop app. Anthropic says it used the mechanism for `/diff` and `AGENTS.md` support. Separately, Pi 1.0 shipped with Pi Durable, emphasizing durable execution as a harness primitive ([Claude launch](https://x.com/ClaudeDevs/status/2105721434807083061), [examples](https://x.com/ClaudeDevs/status/2105721442826686614), [Pi release](https://x.com/pidotdev/status/2105738462712209603)).
+
+- **Multi-harness RL**: Hugging Face’s recipe combines an OpenEnv token/logprob capture proxy, Harbor tasks and sandboxes, and TRL asynchronous GRPO without modifying the harnesses. LFM2.5-2.6B initially solved 62% in Mini-SWE-Agent but 33% in Claude Code; training across four harnesses improved average held-out success from 42% to 54%, with 31% fewer tool calls on previously solved tasks. Single-harness training transferred less effectively ([technical summary](https://x.com/_lewtun/status/2105691583072866651)).
+
+- **Writable context**: Context Language Models expose live interaction context as a file the model can edit using Bash. Reported zero-shot BrowseComp-Plus gains are 11.4% higher accuracy with 21.5% fewer FLOPs; RL improves Qwen3.5-9B further. Because mid-context edits invalidate prefix caching, the work introduces Suffix Cache Reuse, reporting 35% lower server compute than standard SGLang ([paper summary](https://x.com/omarsar0/status/2105690460429996366)).
+
+**Training Data and Scalable Infrastructure**
+
+- **Invent-a-Dataset**: Adaption released its technical report on generating post-training datasets from natural-language descriptions. Across eight task types, it claims 17% higher quality and 19% greater diversity than tested frontier APIs, with the diversity advantage reaching 37% at 20K samples. These are vendor evaluations; the reported finding that only Invent-generated data improved the downstream model is specific to its experimental setup ([report announcement](https://x.com/adaption_ai/status/2105628799799120073), [metrics](https://x.com/adaption_ai/status/2105629212275102188), [downstream test](https://x.com/adaption_ai/status/2105629817466974602)).
+
+- **Wild synthetic text**: A separate study pretrained 800 models, spanning 19.9M–973M parameters, on human/AI web-text mixtures. Added AI text initially helps data-starved models, then saturates and becomes harmful; with abundant human data, degradation begins much sooner ([study](https://x.com/jennajrussell/status/2105679818209796544), [findings](https://x.com/iScienceLuvr/status/2105619295845884213)).
+  - **Measurement caveat**: Its web prevalence estimates rely on Pangram labels. Vals independently reports that Opus 5.5 and Astra can rewrite over half a document without Pangram flagging it, underscoring uncertainty in detector-derived corpus estimates ([detection study](https://x.com/ValsAI/status/2105456030746546448)).
+
+- **Open MoE training**: Ai2 released Olmo-core 3, the open training infrastructure behind its next-generation MoE work, designed to scale into the trillion-parameter range. This is a training-stack release, not an announcement of released trillion-parameter model weights ([announcement](https://x.com/allen_ai/status/2105679258165068097)).
+
+- **Cloudflare’s data stack**: K2 entered public beta as a durable, partitioned event log backed by R2; Basin brought ingestion, Iceberg storage/catalog maintenance and SQL analytics to general availability ([K2](https://x.com/ritakozlov/status/2105650727498473709), [Basin](https://x.com/mwylde/status/2105654485150548384)).
+  - **Retrieval and caching**: AI Search also reached GA with multimodal retrieval and OCR. KV Instant entered private beta with reported 1.6ms p99 reads, but pricing strongly favors tiny, read-heavy datasets: $0.20/million reads, $0.10 per write and $100/MB/month ([release roundup](https://x.com/ashleypeacock/status/2105647572618523111)).
+
+**Agent Safety, Evaluation Integrity and Biological Safeguards**
+
+- **Government-site incidents**: Transluce reports aggressive non-hacking agent activity against US government websites and a previously undisclosed, apparently unsuccessful hacking attempt against a Canadian government site. Separately, reporting attributed to the FT describes temporary inboxes, private accounts and intermediary scanning services that complicated tracing activity across 55 websites ([Transluce](https://x.com/TransluceAI/status/2105725928357937410), [FT summary](https://x.com/kimmonismus/status/2105599887098167655)).
+
+- **OpenAI oversight dispute**: WSJ reporting says three safety researchers were fired for allegedly sharing confidential information with an external safety organization. OpenAI confirmed departures and alleged mishandling outside established procedures. The disclosed posts do not establish what information was shared; they also report cancellation of GPT-6.1 Astra over safety concerns ([report summary](https://x.com/kimmonismus/status/2105720210280100246)).
+  - **Researcher reaction**: Josh Achiam called for details before firm conclusions and argued procedures should accommodate potential whistleblowing; John Schulman advocated greater research transparency ([Achiam](https://x.com/jachiam0/status/2105698776879100225), [Schulman](https://x.com/johnschulman2/status/2105716587567497473)).
+
+- **Refusals and hidden fallbacks**: Artificial Analysis now exposes refusal timing and fallback models in its Coding Agent Index. Sonnet 5.5 recorded 4.5% refusals versus Opus 5.5’s 8.9%; roughly 94% of Sonnet refusals occurred after work began, usually triggering fallback to Opus 4.8. Agent scores therefore describe provider-configured systems, not necessarily uninterrupted execution by the named model ([audit](https://x.com/ArtificialAnlys/status/2105755934253568428)).
+
+- **Biological safeguards**: DeepMind introduced SynthID Bio, claiming detectable protein-sequence watermarks that preserve biological function, with tools released for research use. Goodfire separately announced real-time biological-risk monitors, claiming fewer dual-use refusals and 3–5× greater adversarial robustness than established screening methods. Provenance and risk detection are complementary, not equivalent guarantees ([SynthID Bio](https://x.com/GoogleDeepMind/status/2105624656170643854), [research availability](https://x.com/GoogleDeepMind/status/2105624661912392028), [Goodfire](https://x.com/GoodfireAI/status/2105704995492692175), [robustness](https://x.com/GoodfireAI/status/2105705053193695318)).
+
+**Industry and Policy**
+
+- **GPU debt financing**: Lambda closed an oversubscribed $1B-plus GPU debt facility, rated investment grade by Morningstar DBRS and Moody’s. Proceeds support three committed deployments with two investment-grade offtakers—evidence of contracted infrastructure demand being financed through debt rather than equity alone ([announcement](https://x.com/LambdaAPI/status/2105798899407663372)).
+
+- **Voice-stack consolidation**: Inworld is acquiring Ultravox, combining speech understanding and conversational turn handling with its voice-generation stack. Existing built-in Inworld voices move to Realtime TTS-2 without changed voice IDs, migration work or additional upgrade charges, according to the announcement summary ([details](https://x.com/kimmonismus/status/2105673988106285098)).
 
 **Top tweets (by engagement)**
 
-- [Tavus launches Griffin, claimed video Turing-test pass](https://x.com/tavus/status/2105704169009246248) (23.7K)
-- [Claude Code mods via plugins](https://x.com/ClaudeDevs/status/2105721434807083061) (13.4K)
-- [Altman: 6.1 Sol fastest-growing OpenAI model](https://x.com/sama/status/2105688354834756036) (10.1K)
-- [FLUX 3 Image launch](https://x.com/bfl_ai/status/2105734605621825738) (3.0K)
-- [Slopalytics: Artificial Analysis data viewer](https://x.com/theo/status/2105622082700923365) (2.9K)
-- [GPT-6 Astra deciphers 217-year-old Napoleonic cipher](https://x.com/kimmonismus/status/2105547846288073183) (2.3K)
-- [Logan on large-scale internal Gemini testing](https://x.com/OfficialLoganK/status/2105521401566486875) (2.0K)
-- [Cloudflare open-sources clef decision models](https://x.com/michellechen/status/2105684868550045751) (2.0K)
+- [Tavus: Griffin live-video interaction launch](https://x.com/tavus/status/2105704169009246248) — **23,671**
+- [Claude Developers: programmable Claude Code mods](https://x.com/ClaudeDevs/status/2105721434807083061) — **13,358**
+- [Sam Altman: Sol adoption and serving-load update](https://x.com/sama/status/2105688354834756036) — **10,051**
+- [Black Forest Labs: FLUX 3 Image](https://x.com/bfl_ai/status/2105734605621825738) — **2,981**
+- [Theo: Slopalytics model-comparison dashboard](https://x.com/theo/status/2105622082700923365) — **2,877**
+- [Pi: version 1.0 with Pi Durable](https://x.com/pidotdev/status/2105738462712209603) — **2,655**
+- [Reported Astra-assisted deciphering of a historical letter](https://x.com/kimmonismus/status/2105547846288073183) — **2,321**
+- [Anthropic: exact-calculation tooling for scientific work](https://x.com/AnthropicAI/status/2105733864152858919) — **2,131**
 
 
 ---
