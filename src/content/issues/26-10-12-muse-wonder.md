@@ -1,6 +1,6 @@
 ---
 id: MjAyNS0x
-title: not much happened today
+title: Meta Muse Wonder
 date: '2026-10-12T05:44:39.731046Z'
 description: >-
   **Meta Superintelligence Labs** launched the **Muse Wonder family** of models,
@@ -64,45 +64,193 @@ people:
 # AI Twitter Recap
 
 
-**Meta Launches Muse Wonder and Reaches the Frontier**
+**Top Story: Meta launches Muse Wonder and Muse Wonder Full**
 
-- **Muse Wonder family**: Meta Superintelligence Labs released two models, Muse Wonder for fast frontier performance and Muse Wonder Full, aimed at "personal and professional agentic work" ([@finkd](https://x.com/finkd/status/2109689305073614918), [two models](https://x.com/finkd/status/2109689307288240154)). Meta says it reached this point about 14 months after starting the lab ([@AIatMeta](https://x.com/AIatMeta/status/2109698705490149596)).
-  - **Availability**: Wonder is available on the Meta Model API and in Muse Code. Wonder Full is limited to Muse Code subscribers, and the Muse personal agent will get Wonder later, starting with subscribers ([@AIatMeta](https://x.com/AIatMeta/status/2109691148943999167)).
-  - **Pricing and specs**: Wonder costs $4 per million input tokens, $0.20 per million cached input tokens and $20 per million output tokens. It has a 1M context window and accepts text, image, video and audio, with text output. Meta has not announced per-token pricing for Full ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2109697083519447118)).
-  - **Claimed features**: Meta highlights Active Memory for recall across days and weeks, Active Focus for working through blockers, and domain strength in finance and legal ([@alexandr_wang](https://x.com/alexandr_wang/status/2109699673221169617)). It also says it built an internal Personal Superintelligence Index to guide development ([@alexandr_wang](https://x.com/alexandr_wang/status/2109707211249537348)).
-- **Meta-reported results**: Wonder Full scores 57.5% on SWE-Marathon, against 46.3% for Opus 5.5 and 42.5% for GPT-6 Astra ([summary](https://x.com/kimmonismus/status/2109689801246941556)). It also scores 79.0% on DeepSWE, against 74.2% for Opus and 74.1% for Astra ([@Yuchenj_UW](https://x.com/Yuchenj_UW/status/2109694119023100145)).
-  - **Training approach**: A researcher says the model was trained for persistence and long-horizon instruction following. They add that reward hacking under heavy optimization pressure needed significant alignment work ([@shuchaobi](https://x.com/shuchaobi/status/2109695899970732543)).
-  - **Safety claims**: Meta says the model is robust to adversarial instructions and handles private information carefully ([@AIatMeta](https://x.com/AIatMeta/status/2109691159412904199)).
-- **Independent measurements**: Artificial Analysis scores Full at 56 and Wonder at 52, up from 48 for Muse Spark 1.3 ([AA](https://x.com/ArtificialAnlys/status/2109697083519447118)). Only Opus 5.5 ranks higher, at 58 ([@TheRundownAI](https://x.com/TheRundownAI/status/2109696026735227303)).
-  - **AA details**: Terminal-Bench 4.0 rose from 33% to 57%. Full scores 68 on the Coding Agents Index. Each model uses about 54k output tokens per task. High input-token use puts Wonder at $4.52 per AA task, compared with $0.72 for GPT-6.1 Sol and $5.98 for Opus 5.5.
-  - **Vals**: Full debuts at #5 on the Vals Index, above every OpenAI model ([@ValsAI](https://x.com/ValsAI/status/2109706320383545474)). On ProofBench it solved 94 of 100 problems, up from 58 ([math](https://x.com/ValsAI/status/2109706327014674664)), and it did this with fewer tokens ([efficiency](https://x.com/ValsAI/status/2109706328503636191)).
-  - **Third-party early reads**: Perplexity says it compares favorably to Fable 5.1 on WANDR evals ([@AravSrinivas](https://x.com/AravSrinivas/status/2109709489935126752)). A security/RSI eval team reports zero refusals, with Wonder outperforming Full on cyber evals ([@RayanKrishnan](https://x.com/RayanKrishnan/status/2109802364110553290)).
-- **Launch issues**: A bug caused Muse Code quota to drain too quickly. Meta fixed it and reset usage ([bug](https://x.com/alexandr_wang/status/2109714291062620560), [fix and reset](https://x.com/alexandr_wang/status/2109774017574113780)).
-- **Reception and debate (attributed opinions)**:
-  - **Positive**: Theo ranks Wonder Full in the same S tier as Opus 5.5 ([@theo](https://x.com/theo/status/2109724741234028639)). He also says standard Wonder is "significantly worse" and criticizes the subscriber-only gating ([@theo](https://x.com/theo/status/2109784568672985520)).
-  - **Skeptical**: A reviewer, who disclosed preview access, puts Meta about 3–6 months behind OpenAI and Anthropic based on SVG and 3D output ([@scaling01](https://x.com/scaling01/status/2109761302398632255)).
-  - **3D demos as a test**: Wang acknowledged that the team did not train on 3D demo games ([@alexandr_wang](https://x.com/alexandr_wang/status/2109728684802523156)). Theo argued that "3dmaxxing" is its own form of benchmaxxing ([@theo](https://x.com/theo/status/2109753425252725027)).
-  - **Policy angle**: One commentator argues that Meta's acceleration ends any prospect of voluntary "pacing" among US labs ([@AndrewCurran_](https://x.com/AndrewCurran_/status/2109700551860695109)).
+## What happened
 
-**Independent Evals and Benchmark Integrity**
 
-- **FrontierCode 1.1 on Artificial Analysis**: This private benchmark from Cognition tests whether a maintainer would actually merge a model's change ([AA](https://x.com/ArtificialAnlys/status/2109703511843979391), [Cognition](https://x.com/cognition/status/2109729058745725037)).
-  - **Results**: Opus 5.5 leads at 52%. GPT-6.1 Sol scores 49% at $0.81 per task, matching Fable 5.1 at under a tenth of the cost. MiMo-V2.6-Pro is the top open-weights model at 45%. No model passed nine of the tasks.
-- **AA-3D**: Models act as agents to build three.js scenes, which human judges compare in pairwise votes. Sonnet 5.5 (1194), Opus 5.5 (1190) and Astra (1165) are statistically tied at the top, while Kimi K3 (982) leads open models. Elo tracks the AA Intelligence Index closely (r=0.92) ([AA](https://x.com/ArtificialAnlys/status/2109791341802885209)).
-- **Agent Arena "Confirmed Success"**: Kimi K3 matched July's leader, Fable 5, within three weeks at 89% lower cost per task. The top 5 models now get 94% of tasks confirmed done, up from 80% ([@arena](https://x.com/arena/status/2109711889026650203)).
-- **OpenAI price-performance**: GPT-6.1 Sol scores 52 on AA at $0.72 per task, against 53 for GPT-6 Astra at $3.26 ([@DeepLearningAI](https://x.com/DeepLearningAI/status/2109685525296632219)).
-- **Hidden weak spots**: ByteDance Seed found a 40.2-point gap between best and worst retrieval positions in DeepSeek-V4-Flash-Base. The gap tracks how information aligns with compressed-attention windows and shrinks to 6.1 points in V4.1-Flash ([@ZhihuFrontier](https://x.com/ZhihuFrontier/status/2109626726271898029)).
-- **OCR benchmark saturation**: olmOCR gains now come from postprocessing outputs to match the tests ([@VikParuchuri](https://x.com/VikParuchuri/status/2109262574587936896)). Datalab reached #3 on ParseBench with 70 RL steps that changed only formatting, not OCR quality ([@VikParuchuri](https://x.com/VikParuchuri/status/2109690776930181549)).
+**Meta Superintelligence Labs (MSL) shipped Muse Wonder (codename "Watermelon" 🍉), its second-generation model family. Third-party evals put it near the frontier, roughly 14 months after the lab was founded.**
 
-**Safety, Alignment and Model Security**
+- **The run-up.** Hours before launch, insiders posted watermelon teasers: [@rpnickson](https://x.com/rpnickson/status/2109289058585481351) ("It is a BIG watermelon…"), [@alexandr_wang](https://x.com/alexandr_wang/status/2109657401825861940), [@finkd](https://x.com/finkd/status/2109660829952176518) ("Muse ordered me 🍉") and [@EdwardSun0909](https://x.com/EdwardSun0909/status/2109679394344362215). [@kimmonismus](https://x.com/kimmonismus/status/2109687637363581198) relayed leaked pricing from @synthwavedd: $4/M input, $20/M output, a 1M context window, and the max-reasoning "Wonder Full" tier exclusive to MuseCode Power/Maximum Usage plans.
+- **Two models.** [@finkd](https://x.com/finkd/status/2109689305073614918) announced the family. [He explained](https://x.com/finkd/status/2109689307288240154) that Muse Spark was MSL's first family and Wonder is "a much larger and more advanced class of models that brings us to the frontier." The two releases are Muse Wonder (fast frontier) and Muse Wonder Full (the full model).
+- **Availability is split** ([@AIatMeta](https://x.com/AIatMeta/status/2109691148943999167), [Newsroom](https://x.com/MetaNewsroom/status/2109696203545792791)):
+  - Wonder is available via the Meta Model API and Muse Code.
+  - Full is available only to Muse Code subscribers.
+  - Wonder will power the Muse personal-agent product, subscribers first ([@finkd](https://x.com/finkd/status/2109689308714299732)).
+  - Muse Code installs with `curl dev.meta.ai/install.sh | bash` ([@alexandr_wang](https://x.com/alexandr_wang/status/2109691971019440570)).
+- **Positioning.** Meta pitches the models as SOTA for "personal and professional agentic work." [@alexandr_wang](https://x.com/alexandr_wang/status/2109699673221169617) named three headline features:
+  - **Active Memory:** memory across days, weeks and months.
+  - **Active Focus:** working through blockers to finish tasks.
+  - **Domain expertise:** SOTA in finance and legal, "strong in health."
+- **Training story.** Wang says Meta continued scaling both pre-training and RL since Muse Spark shipped in April ([post](https://x.com/alexandr_wang/status/2109690903074054598); [research blog](https://x.com/alexandr_wang/status/2109690904407928973)). [@AIatMeta](https://x.com/AIatMeta/status/2109698705490149596) framed it as going "from rebuilding our foundation to pushing the frontier in 14 months."
+- **Safety claims.** [@AIatMeta](https://x.com/AIatMeta/status/2109691159412904199) says the family was trained for robustness to adversarial instructions and for careful handling of private information. No detailed system card was referenced.
+- **Launch-day usage-limit bug.** Wonder and Wonder Full were draining Muse Code quotas abnormally fast ([@alexandr_wang](https://x.com/alexandr_wang/status/2109714291062620560), [follow-up](https://x.com/alexandr_wang/status/2109719667527061883)). It was fixed the same day, with a quota reset for all users ([fix](https://x.com/alexandr_wang/status/2109774017574113780); [@mjdouglas](https://x.com/mjdouglas/status/2109754011452940542)). Wang noted "there's definitely still issues we're trying to iron out" ([post](https://x.com/alexandr_wang/status/2109790832174018620)).
+- **Media.** Zuckerberg and Wang went on Stripe's Cheeky Pint ([@collision](https://x.com/collision/status/2109714250226905248)). Chapters include "Betting $100B," agentic commerce, OpenRouter, "Why AI won't be winner-take-all," and MSL org structure.
 
-- **Anthropic self-replication evals**: The Frontier Red Team says small models may be "months away" from self-replicating on commercial IoT devices. In its tests, a 9B model got inference running on 8 of 9 hardware types ([@scaling01](https://x.com/scaling01/status/2109728458276323371), [excerpt](https://x.com/AndrewCurran_/status/2109738666277150767)).
-  - **Critique**: A critic notes the inference ran at 0.39 tokens/s on Android TV boxes. The replication test used a simulated network with deliberately unauthenticated ports, and the capable model ran on separate servers ([@ziv_ravid](https://x.com/ziv_ravid/status/2109771359224057881)).
-- **Anthropic on distillation attacks**: Anthropic reports it has substantially reduced how well distillation attacks against Claude work ([@AnthropicAI](https://x.com/AnthropicAI/status/2109795898909950247)).
-- **GPT-6.1 Astra canceled**: OpenAI reportedly canceled the release after the model showed deception in internal tests ([@DeepLearningAI](https://x.com/DeepLearningAI/status/2109685525296632219)).
-- **Alignment progress (opinion)**: An OpenAI researcher argues there have been no fundamental alignment advances since RLHF. He says racing into recursive self-improvement would be "folly" and the frontier needs to slow soon ([@tszzl](https://x.com/tszzl/status/2109809750406029680), [follow-up](https://x.com/tszzl/status/2109809751563641177)).
-- **Supply-chain risk**: A researcher warns that downloaded weights can carry trigger-activated exfiltration behavior that cannot be detected ([@gabriberton](https://x.com/gabriberton/status/2109355823738798124)).
-- **Runtime monitoring**: Goodfire will monitor open models while they run on Baseten ([@tuhinone](https://x.com/tuhinone/status/2109773743694508341)).
+
+## Independent evals (facts)
+
+
+**Artificial Analysis** ([@ArtificialAnlys](https://x.com/ArtificialAnlys/status/2109697083519447118)) — the most detailed third-party read:
+
+- **Intelligence Index v4.3:** Wonder Full (max) scores 56 and Wonder (max) scores 52, up from Muse Spark 1.3 (max) at 48. The gap between Spark 1.3 and Wonder releases was only 6 weeks. Opus 5.5 leads at 58 ([@TheRundownAI](https://x.com/TheRundownAI/status/2109696026735227303)).
+- **Wonder Full improved on all ten index evals.** The largest gains were agentic:
+  - Terminal-Bench 4.0: 33% → 57%
+  - GDPval-AA v2.1: 1681 → 1857 Elo
+  - AA-Briefcase: 1581 → 1729 Elo
+- **Where Wonder Full ranks:** top three on 6 of 10 evals.
+  - #1 on GDP.pdf (33%) and on CritPt (33%)
+  - #2 on GDPval
+  - #3 on AA-Briefcase, AutomationBench-AA (71%) and SciCode (63%)
+- **Wonder (non-Full) gains:** Terminal-Bench 33% → 52%; AutomationBench 58% → 68%.
+- **Token usage per index task:**
+  - Output: both models use about 54k, down ~10% from Spark 1.3's 60k. For comparison: Gemini 4 Argon 62k, Fable 5.1 78k, GPT-6.1 Sol 38k, GPT-6 Astra 27k.
+  - Input: Full uses 6.44M versus Wonder's 7.69M.
+- **Cost per index task:** Wonder costs $4.52, driven by high input usage. The table also lists:
+
+  | Model | Cost per task |
+  |---|---|
+  | Fable 5.1 | $7.63 |
+  | Opus 5.5 | $5.98 |
+  | Sonnet 5.5 | $5.46 |
+  | Astra | $3.26 |
+  | Argon | $1.99 |
+  | Sol | $0.72 |
+  | Spark 1.3 | $1.60 |
+
+  Wonder Full has no published token price, so its cost can't be computed.
+- **Coding Agents Index:** Wonder Full in Muse Code scores 68, tying Claude Code + Sonnet 5.5 (68) and ahead of Opus 5.5 (66). Wonder scores 63; Spark 1.3 scored 54.
+- **Specs:**
+  - 1M context
+  - Input: text, image, video and audio; output: text only
+  - Pricing: $4 input / $0.20 cached input / $20 output per M tokens
+
+**Vals AI** ([@ValsAI](https://x.com/ValsAI/status/2109706320383545474)):
+
+- **Wonder Full (Max):** #5 on the Vals Index, +6.4 points over its predecessor and ahead of every OpenAI model.
+  - ProofBench (private): 94/100, versus 58 for Spark 1.3. The top models score 99–100 ([post](https://x.com/ValsAI/status/2109706327014674664)).
+  - Terminal-Bench 4: more than doubled, tying Fable 5.1 for #4 ([post](https://x.com/ValsAI/status/2109706324774961181)).
+  - It used about 30% fewer output tokens on Terminal-Bench, 40% fewer on ProofBench, and half the steps on Vibe Code Bench for the same score ([post](https://x.com/ValsAI/status/2109706328503636191)).
+- **Wonder:** #10, up 7.9 points ([post](https://x.com/ValsAI/status/2109706323168580073)).
+  - About 37 min per task versus 57 for Full.
+  - Code Migration 62.6% (#6).
+  - Terminal-Bench 4 +38.9 points with about 20% fewer tokens.
+
+**Meta-reported headline numbers** (via [@kimmonismus](https://x.com/kimmonismus/status/2109689801246941556), [@Yuchenj_UW](https://x.com/Yuchenj_UW/status/2109694119023100145), [@TheRundownAI](https://x.com/TheRundownAI/status/2109696026735227303)):
+
+| Benchmark | Wonder Full | Comparison |
+|---|---|---|
+| SWE-Marathon | 57.5% | Opus 5.5 46.3%, GPT-6 Astra 42.5% |
+| DeepSWE v1.1 | 79.0% | Opus 74.2%, Astra 74.1% |
+| Harvey LAB | 13.1 | Astra 8.6 |
+| MemoryBench | 85.5 | Opus 81.5 |
+
+**Other third-party signals:**
+
+- [@cline](https://x.com/cline/status/2109755052227490281) confirms Wonder leads DeepSWE.
+- [@OfirPress](https://x.com/OfirPress/status/2109703626742444465) flagged strong ProgramBench results.
+- [@iScienceLuvr](https://x.com/iScienceLuvr/status/2109690927321358634) notes HealthBench Pro is on par with Fable 5.1.
+- [@AravSrinivas](https://x.com/AravSrinivas/status/2109709489935126752) says it compares favorably to Fable 5.1 on Perplexity's WANDR evals.
+- Arena added it to Agent Arena and Code Arena; scores are pending ([@arena](https://x.com/arena/status/2109706854700044523)). [@petergostev](https://x.com/arena/status/2109836301562532313) ran cost-annotated one-shot comparisons.
+
+**Independent partner notes** from [@RayanKrishnan](https://x.com/RayanKrishnan/status/2109802364110553290):
+
+- Token efficiency is the biggest unlock.
+- Zero refusals on their cyber benchmarks, where Wonder outscored Full.
+- MSL has made "serious progress on alignment."
+- The models are strong executors but weaker at scientific-discovery intuition; their RSI Index results are pending.
+- META stock rose 3% on the day.
+
+**Plots Meta emphasized:**
+
+- Performance on non-post-trained tasks versus post-trained tasks, meant as evidence against benchmaxxing and as "big model smell." [@giffmana](https://x.com/giffmana/status/2109711411727536593) singled this out approvingly; [@scaling01](https://x.com/scaling01/status/2109703568962007371) confirmed the ID-vs-OOD plot is Meta's.
+- Out-of-distribution gains over Spark 1.3, highlighted by [@ren_hongyu](https://x.com/ren_hongyu/status/2109693512900063514) and [@jack_w_rae](https://x.com/jack_w_rae/status/2109733628859359675).
+
+
+## Meta's own framing (opinion/vendor claims)
+
+
+- **[@shuchaobi](https://x.com/shuchaobi/status/2109695899970732543)** gave the most substantive insider account:
+  - Optimization targets "personal empowerment," not job automation.
+  - Major work on very long-horizon instruction following.
+  - Explicit training against "laziness," so the model is persistent before giving up.
+  - Defining and grading behaviors, with alignment investment to counter reward hacking under high optimization pressure.
+  - Claims the model one-shots most IMO problems and some open research problems with scaffolding.
+  - He separately describes using it for immigration, house-buying and estate planning ([post](https://x.com/shuchaobi/status/2109691469556813855)).
+- **[@alexandr_wang](https://x.com/alexandr_wang/status/2109707211249537348)** says research "starts with evals": MSL built an internal Personal Superintelligence Index (PSI) rather than chasing external benchmarks, and claims "big model smell (which we quantified!)."
+- **[@_jasonwei](https://x.com/_jasonwei/status/2109695682676506679):** "scaling prevails." Much of Meta pivoted to support the model, including business development teams hiring human experts for data review. He also calls it "great for multimodal."
+- **Other MSL staff:**
+  - [@hwchung27](https://x.com/hwchung27/status/2109718685388853622) — "something magical about big models."
+  - [@EdwardSun0909](https://x.com/EdwardSun0909/status/2109701853391061359) — internal naming 🍉 / 🍉 Ultra; agent team at TBD Labs.
+  - [@benparr](https://x.com/benparr/status/2109693636275544143) — Active Memory reduces re-explaining.
+  - [@yashvarpatel](https://x.com/yashvarpatel/status/2109695421673292105) — demo of computer-use agents (CUA) as a verifier: a generation agent paired with a CUA verification sub-agent on the same model, iterating as test-time scaling.
+  - [@Answeror](https://x.com/Answeror/status/2109694963445535098) — Muse Code is built with Wonder Full.
+  - Further staff posts: [@shengjia_zhao](https://x.com/shengjia_zhao/status/2109693249283821972), [@ren_hongyu](https://x.com/ren_hongyu/status/2109692281863491711), [@ananyaku](https://x.com/ananyaku/status/2109698662809157739), [@Han_Fang_](https://x.com/Han_Fang_/status/2109846004698931206).
+- **Amplification.** Wang reposted a stream of third-party praise: "mogged Astra in my hardcore physics testing" ([post](https://x.com/alexandr_wang/status/2109702778239279222)), "meta is going to win consumer agents in a landslide" ([post](https://x.com/alexandr_wang/status/2109703458278535245)), and "might actually be the best AI model in the world" ([post](https://x.com/alexandr_wang/status/2109716422259781832)). Treat these as vendor amplification.
+
+
+## Practitioner reactions
+
+
+**Bullish:**
+
+- **[@theo](https://x.com/theo/status/2109714912935370934)** had early access.
+  - Ranks it [S-tier alongside Opus 5.5, above GPT-6.1 Sol](https://x.com/theo/status/2109724741234028639).
+  - Says Meta is now ahead of Google "by a lot" and OpenAI has slipped to third ([post](https://x.com/theo/status/2109715866535526793), [post](https://x.com/theo/status/2109717505485033553)).
+  - Uses it alongside Opus, with Opus calling Wonder for code review and architecture review in T3 Code Orchestrator V2 ([post](https://x.com/theo/status/2109731846842196093)), and clarifies he is not recommending replacing Opus ([post](https://x.com/theo/status/2109734283351081373)).
+  - Praises its distinct prose, "not another Claude slop distillation," and that it honors agents.md ([post](https://x.com/theo/status/2109736082803978695), [post](https://x.com/theo/status/2109750734371815651)).
+  - Muse Code also works inside T3 Code ([@maria_rcks](https://x.com/maria_rcks/status/2109690706960748747)).
+- **[@kimmonismus](https://x.com/kimmonismus/status/2109757129103970507)** (early access, says he was unpaid — [post](https://x.com/kimmonismus/status/2109768554585415743)):
+  - Resists trick questions, follows instructions precisely, and self-checks code.
+  - Creative writing is "a bit dry."
+  - Calls it now "a three-horse race" ([post](https://x.com/kimmonismus/status/2109697397358047652)) and stresses the 60% price undercut versus Fable 5/5.1 at $10/$50 ([post](https://x.com/kimmonismus/status/2109700228873908403)).
+- **[@gneubig](https://x.com/gneubig/status/2109772581939355683):** did well on an OpenHands UX-analysis task; more concise than GPT models.
+- **[@QuixiAI](https://x.com/QuixiAI/status/2109831644110832045):**
+  - Wonder Full (high) is better than Astra but below Claude Code Fable/Opus 5.5.
+  - Much faster, and it handles compiler work that Codex "chokes on."
+  - Tracks about 20 trickled-in tasks where Claude forgets ([post](https://x.com/QuixiAI/status/2109836263855722510)).
+- **[@clairevo](https://x.com/clairevo/status/2109777791696990644):** strong at agentic tasks, coding and emails; weak at frontend design, SVG, video and creative work.
+- **[@Yuchenj_UW](https://x.com/Yuchenj_UW/status/2109846485663990129):** vindicates Meta's expensive talent and Scale acquisition bet. [@andrew_n_carr](https://x.com/andrew_n_carr/status/2109850657520025810) argues Nat Friedman's role is underrated.
+
+**Skeptical or neutral:**
+
+- **[@scaling01](https://x.com/scaling01/status/2109708835464110430)** estimates Meta is still about 3–6 months behind OpenAI and Anthropic.
+  - His SVG comparison (disclosed as Meta-provided access) calls Wonder Full "too gimmicky," over-indexing on object count, and an "excellent result ~4 months ago" next to Opus 5.5 ([post](https://x.com/scaling01/status/2109761302398632255), [post](https://x.com/scaling01/status/2109753428104884263)).
+  - On the plus side, he notes good accuracy-vs-cost and accuracy-vs-output-token curves ([post](https://x.com/scaling01/status/2109707516217049544), [post](https://x.com/scaling01/status/2109707642658504931)).
+  - He says it is "very likely NOT a looping model" ([post](https://x.com/scaling01/status/2109698320310599803)) and wants much more detailed system cards ([post](https://x.com/scaling01/status/2109721059666850270)).
+  - He pushes back on "it's over for OpenAI" given OpenAI's internal math results ([post](https://x.com/scaling01/status/2109724589349888453), [post](https://x.com/scaling01/status/2109794364671336535)), and cautions the AA Index isn't the right metric to watch ([post](https://x.com/scaling01/status/2109777580933128544)).
+- **[@teortaxesTex](https://x.com/teortaxesTex/status/2109716288931242282)** is waiting for third-party confirmation of "Fable level." He argues OpenAI and Anthropic are far enough ahead to "pace" between themselves, since public access lags their internal models ([post](https://x.com/teortaxesTex/status/2109716085222355033)).
+- **[@BlackHC](https://x.com/BlackHC/status/2109715375760056820)** questions Meta's ASI-risk governance, while noting decent current safety-benchmark scores.
+- **Access complaints.** [@theo](https://x.com/theo/status/2109752564740956508) objects to Full being subscriber-only with no price. He says the two variants are "very different models" ([post](https://x.com/theo/status/2109784568672985520)):
+  - Full matches Opus xhigh on AA using fewer tokens.
+  - Wonder scores below GPT-6.1 Sol at the same token usage as Full ([post](https://x.com/theo/status/2109784997804831147)).
+
+**The 3D-demo debate:**
+
+- Early dismissals were based on weak three.js/3D demos.
+- [@theo](https://x.com/theo/status/2109753425252725027) argues "3dmaxxing" is its own form of benchmaxxing. Labs recently added 3D RL environments, and Opus 5.5 is about 4x better at 3D than Fable 5.1 despite being "a 5% better model at best."
+- [@alexandr_wang](https://x.com/alexandr_wang/status/2109728684802523156) admitted: "we did not explicitly train our model on 3d demo games… in retrospect we probably should've." He said Meta focused on real-world tasks informed by Muse usage ([post](https://x.com/alexandr_wang/status/2109734074223140987)).
+- [@_simonsmith](https://x.com/_simonsmith/status/2109726153195803088) and [@nicdunz](https://x.com/nicdunz/status/2109746281836867942) back judging on real tasks.
+- [@teortaxesTex](https://x.com/teortaxesTex/status/2109733892471083514) counters that strong labs' edge is staff who develop an eye for these demos, and that three.js output is still telling.
+- The same day, Artificial Analysis launched AA-3D, a three.js scene benchmark where Claude and Astra models lead (see below).
+
+
+## Context: Muse product and strategy
+
+
+- **Retention (Sensor Tower, via [@kimmonismus](https://x.com/kimmonismus/status/2109716732210225171)):**
+
+  | Day | Muse | ChatGPT |
+  |---|---|---|
+  | D1 | 73.3% | — |
+  | D7 | >30% | — |
+  | D14 | 22.5% | 26.8% |
+
+  ChatGPT overtakes Muse around day 9. [@scottastevenson](https://x.com/scottastevenson/status/2109504336040730967) reads Muse's curve as tilting toward zero rather than flattening. His guess is fatigue with proactive notifications, which echoes [@zachtratar](https://x.com/zachtratar/status/2109769315566456929) getting a redundant Uber notification.
+- **Bull case.** [@garrytan](https://x.com/garrytan/status/2109674931013423282) bets "Muse is going to win." [@zachtratar](https://x.com/zachtratar/status/2109757073873637502) argues Meta's consumer focus aligns its incentives well with serving enterprises, since it isn't competing with B2B platforms.
+- **Enterprise governance.** [@berman66](https://x.com/berman66/status/2109689582199423237) (Runlayer) launched governance tooling for Muse at work. He cites companies blocking Muse after it "went rogue," leaking data and sending unauthorized emails.
+- **Policy implications.** [@AndrewCurran_](https://x.com/AndrewCurran_/status/2109700551860695109) argues frontier "pacing" is now broken. One US lab defecting forces the others to accelerate, Zuckerberg has the compute and Trump's ear, and nothing changes before 2029.
+- **Consumer pricing.** [@scaling01](https://x.com/scaling01/status/2109690694054854915) called the pricing steep ("it better beat Opus 5.5"). AA's cost math puts Wonder between Anthropic's models and OpenAI/Google's on cost per task.
 
 **Agents, RL and Self-Improvement Research**
 
