@@ -3,40 +3,45 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-10-20T05:44:39.731046Z'
 description: >-
-  **DeepSeek** launched **DeepInfer**, a production-scale inference framework
-  supporting NVIDIA and Huawei Ascend hardware, distributed inference, and
-  speculative decoding, with a reported **155 trillion tokens/day** throughput
-  and **96% cache hit rate**. The system uses a large-scale accelerator cluster
-  and persistent SSD storage for cached prefixes, achieving a **6% throughput
-  gain** via speculative verification. Economics show **$38 revenue per
-  GPU-hour** at off-peak prices, though profitability is not confirmed.
-  Additionally, **SGLang** and **Inferact** demonstrated high-performance
-  long-context inference kernels on specialized hardware like GB300 NVL72 and
-  TPU v7, while **Zyphra** optimized GLM-5.3 context processing on AMD MI355X,
-  significantly reducing time to first token.
+  **DeepSeek** released **DeepInfer**, an open-source inference engine powering
+  V4.1 Flash, featuring distributed inference, speculative decoding, and
+  structured output on **NVIDIA** and **Huawei Ascend** platforms. The
+  production system reportedly handles **155 trillion tokens/day** with **96%
+  cache hits**, achieving **230 tokens/s generation** and **$38 revenue per
+  accelerator-hour** at off-peak prices, though some orchestration components
+  remain unreleased. The **vLLM** team benchmarked DeepInfer, finding decode
+  throughput within 6% of DeepInfer's results, sparking debates on serving stack
+  uniqueness and inference profitability. DeepInfer's architecture separates
+  vision encoding, prefill, and decode stages, recommending deployment on
+  8-accelerator machines for prefill and 64-128 accelerator supernodes for
+  decode with wide expert parallelism.
 companies:
   - deepseek
   - nvidia
   - huawei
-  - sglang
-  - inferact
-  - amd
+  - vllm
 models:
-  - glm-5.3
+  - deepinfer
   - vllm
 topics:
-  - inference
+  - inference-engine
   - distributed-inference
   - speculative-decoding
+  - structured-output
+  - production-inference
   - cache-management
-  - accelerator-clusters
-  - long-context
+  - benchmarking
+  - model-architecture
+  - moe
   - hardware-optimization
   - performance-optimization
-  - token-processing
-  - storage-systems
-people: []
+people:
+  - swyx
+  - tim_dettmers
+  - zephyr_z9
+  - yuchenj_uw
 ---
+
 
 
 **a quiet day.**
@@ -50,21 +55,173 @@ people: []
 
 # AI Twitter Recap
 
+**Top Story: DeepSeek DeepInfer—Production Inference, Open-Source Boundaries, and the Economics of Cached Tokens**
 
-**DeepSeek Opens DeepInfer: Production-Scale Inference, With Important Release Boundaries**
+## What happened
 
-- **Production engine**: DeepSeek released DeepInfer, the inference framework serving V4.1 Flash, alongside its production token-processing library, **deepseek-recipe**. The engine supports NVIDIA and Huawei Ascend, distributed inference, speculative decoding, structured output and sliding-window state reconstruction. vLLM confirms an **Apache 2.0** release and says DeepInfer was initially built primarily on vLLM ([announcement](https://x.com/deepseek_ai/status/2112476496283775135), [vLLM acknowledgment](https://x.com/vllm_project/status/2112480719952138301)).
-  - **Release boundary**: Despite the announcement’s “fully open source” wording, the accompanying engineering write-up says KV-cache management and load-balancing components are **not yet fully released**, because they remain coupled to internal infrastructure ([technical summary](https://x.com/ZhihuFrontier/status/2112472782630187517)).
 
-- **Reported operating performance**: DeepSeek reports **155 trillion tokens/day from one cluster**, a **96% input-cache hit rate**, approximately **400 ms average time to first token**, and generation at **230 tokens/s**, reaching **300 tokens/s for coding**. These are production statistics, not independently reproduced benchmarks. The cache-hit rate is essential context: total token volume is not equivalent to newly computed prefill or generated output ([engineering details](https://x.com/ZhihuFrontier/status/2112472782630187517)).
+**DeepSeek released DeepInfer, the inference engine behind V4.1 Flash, alongside production-serving details that make the engineering report as important as the code.**
 
-- **Disaggregated execution**: Vision encoding, prefill and decode scale separately. The described deployment uses eight-accelerator prefill servers and **64–128-accelerator decode supernodes**, with wide expert parallelism.
-  - **Scheduling**: Prefill work is balanced using estimated attention-compute cost; decode routing considers both request count and accumulated KV length. Replicas of popular MoE experts are periodically redistributed to reduce device imbalance.
-  - **Persistent prefixes**: A separate 3FS cluster provides roughly **100 PiB of SSD storage**, retaining cached prefixes for up to three days for agents and seven days for chatbots. Shared storage lets workers retrieve prefixes without tying routing to cache locality ([architecture](https://x.com/ZhihuFrontier/status/2112472782630187517)).
+- **The release covers the inference engine and API-processing layer.** DeepInfer supports distributed inference, speculative decoding, SWA Bounded Replay, and structured output on NVIDIA and Huawei Ascend platforms. The accompanying `deepseek-recipe` component implements production token encoding/decoding and official-API-compatible processing. DeepSeek says future model inference implementations and optimizations will also appear in this repository. [@deepseek_ai](https://twitter.com/deepseek_ai/status/2112476496283775135), [@deepseek_ai](https://twitter.com/deepseek_ai/status/2112476501065286085), [announcement translation](https://twitter.com/teortaxesTex/status/2112493775465443641)
 
-- **State reconstruction and speculation**: SWA Bounded Replay reconstructs missing sliding-window state from the latest **128 tokens**, reusing persistent block cache; DeepSeek says this nearly halves total prefill computation. DSpark varies speculative verification length using predicted acceptance probabilities, delivering a reported **6% production-throughput gain** over always verifying five draft tokens. deepseek-recipe additionally aligns community token encoding/decoding with official API behavior ([technical summary](https://x.com/ZhihuFrontier/status/2112472782630187517), [recipe release](https://x.com/deepseek_ai/status/2112476501065286085)).
+- **The reported production figures are substantial—but describe a heavily cached service.** DeepSeek’s engineering report, as summarized and quoted in the supplied posts, reports **155 trillion tokens/day from one cluster**, **96% input-cache hits**, **400 ms average time to first token**, and **230 tokens/s generation**, reaching **300 tokens/s for coding**. It also reports **$38 revenue per accelerator-hour at off-peak prices**. These are first-party production claims, not independently audited measurements. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517), [@swyx](https://twitter.com/swyx/status/2112587397380943953)
 
-- **Economics, not audited margins**: The technical report gives **$38 revenue per GPU-hour at off-peak prices**. Widely shared serving-margin estimates depend on assumed GPU costs, utilization and token mix; one author subsequently revised the calculation to distinguish ideal benchmark performance from production. These estimates are not company-wide gross margins and do not establish profitability after training, storage, networking and other costs ([reported revenue](https://x.com/swyx/status/2112587397380943953), [calculation correction](https://x.com/zephyr_z9/status/2112533683634942328)).
+- **“Fully open source” does not mean the entire production service is reproducible from this release.** Although DeepSeek describes DeepInfer as fully open source, the technical account says the **KV-cache management and load-balancing components are not yet fully released**, because they remain coupled to internal infrastructure. The engine is open; important service-level orchestration remains a deployment responsibility. [@deepseek_ai](https://twitter.com/deepseek_ai/status/2112476496283775135), [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+- **vLLM supplied the most concrete comparative response.** After acknowledging that DeepInfer was initially built primarily on vLLM and released under **Apache 2.0**, the vLLM team reported decode throughput **within 6% of DeepInfer’s published results** on GB200 under a matched configuration. It also published AgentX results and reproduction recipes, materially qualifying claims that DeepSeek’s efficiency is inaccessible to existing open-source engines. [@vllm_project](https://twitter.com/vllm_project/status/2112480719952138301), [@vllm_project](https://twitter.com/vllm_project/status/2112703311933747347), [reproduction resources](https://twitter.com/vllm_project/status/2112703321526133048)
+
+- **The release triggered two distinct debates:** whether DeepSeek has a uniquely strong serving stack, and whether its disclosures demonstrate high inference profitability more generally. The first now has comparative benchmark evidence; the second remains sensitive to workload mix, cache accounting, hardware cost, and which expenses are included. [@Tim_Dettmers](https://twitter.com/Tim_Dettmers/status/2112592787338408445), [@zephyr_z9](https://twitter.com/zephyr_z9/status/2112533683634942328), [@Yuchenj_UW](https://twitter.com/Yuchenj_UW/status/2112591074409742733)
+
+
+## Architecture: separate stages, schedule compute rather than tokens
+
+
+DeepInfer’s disclosed architecture separates **vision encoding, prefill, and decode**, allowing each stage to scale against its own bottlenecks. The recommended deployment shapes are **ordinary eight-accelerator machines for prefill** and **64–128-accelerator supernodes for decode**. Decode uses wide expert parallelism to distribute MoE experts while maintaining large effective batches. These are deployment recommendations, not sufficient evidence of the exact hardware composition of DeepSeek’s production cluster. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+The scheduling details explain why a conventional “tokens per batch” comparison can miss substantial differences:
+
+- **Prefill scheduling estimates attention-compute cost.** Work is allocated using estimated compute rather than raw request length alone. Chunk sizes vary to fit a time budget, instead of enforcing one fixed chunk size across heterogeneous requests. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+- **Prefill routing does not require cache affinity.** Because cached prefixes are pooled in shared storage, a request can go to an available worker rather than the worker that previously served its prefix. In a detailed Chinese-language analysis, inference engineer Su Jin Yan highlights this as a particularly useful production design: prefill data-parallel groups balance on “compute tokens,” while shared storage supplies reusable state. The same analysis highlights request bucketing and FIFO scheduling with a runtime estimator. [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435)
+
+- **Decode routing balances both running-request count and KV-cache length.** Request count approximates scheduling pressure; accumulated KV length captures memory/state pressure that request count alone misses. The engineering commentary describes prefill/decode scaling signals as aggregate compute load for prefill and running requests for decode. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517), [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435)
+
+- **Expert-parallel load balancing replicates popular experts.** Replicas are periodically redistributed to reduce inter-device waiting caused by routing skew. The trade-off is additional HBM consumption against higher throughput, with diminishing returns as replication increases; the useful replication factor is workload-specific. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517), [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435)
+
+- **CPU scheduling overlaps accelerator execution.** Asynchronous scheduling removes idle gaps between decode steps rather than treating host-side orchestration as free. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+One technically notable observation is the apparent absence of tensor parallelism in the disclosed Blackwell configuration. A commentator contrasts this with default vLLM/SGLang recipes and traces the approach back to DeepSeek V3’s H800-era interconnect constraints. That is an interpretation of the configuration—not evidence that tensor parallelism is generally inferior. [@nrehiew_](https://twitter.com/nrehiew_/status/2112557010663485805)
+
+Scale also matters. Su Jin Yan argues that wide expert-parallel prefill needs enough traffic and workers to pay off, and favors **pipeline parallelism for small-to-medium deployments** with only a few prefill workers. The author also notes that layer heterogeneity can complicate pipeline partitioning. This is practitioner judgment, not a benchmark establishing a universal crossover. [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435)
+
+
+## Cache hierarchy: persistent prefixes and cheap reconstruction of transient state
+
+
+The cache design is the central connection between the throughput figures, agent workloads, and reported revenue per accelerator.
+
+**Persistent block KV lives in a separate 3FS storage cluster with roughly 100 PiB of SSD capacity.** Reported retention is **three days for agent traffic** and **seven days for chatbot traffic**. Any prefill worker can retrieve a cached prefix, decoupling cache locality from compute placement and allowing storage and compute to scale independently. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+That retention is useful for agents that repeatedly resend a growing history of instructions, repository content, tool outputs, and previous responses. It also means **155T served tokens/day must not be read as 155T newly generated tokens/day**: cache hits are part of the service’s token accounting, while newly computed prefill and autoregressive output impose very different costs. The reported 96% input-cache hit rate is therefore essential context for the headline throughput. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517), [economic workload assumptions](https://twitter.com/zephyr_z9/status/2112499092031185134)
+
+The implementation addresses two different state lifecycles:
+
+- **Persistent block cache is loaded asynchronously.** Host-to-device transfers overlap layer execution. Su Jin Yan highlights a lower-level implementation detail: fine-grained KV block copies perform poorly through the CUDA copy engine, so the described path uses **GDR/RDMA-based transfers**, aiming to saturate PCIe bandwidth without occupying SMs. This is a report-derived technical observation, not a separately measured result in the tweet. [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435)
+
+- **Sliding-window attention state stays in host memory rather than persistent SSD storage.** It is useful mainly within active sessions and has a shorter lifetime than reusable block prefixes. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+- **SWA Bounded Replay reconstructs missing short-lived state from only the latest 128 tokens.** Replay restricts attention to that segment while reusing the persistent block cache, producing an approximation rather than rebuilding state across the full preceding history. DeepSeek reports that this **nearly halves total prefill computation**. The approximation and its model-specific validity matter when considering portability to other architectures. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+Su Jin Yan additionally reports that the long retention tail buys only approximately **0.5–1 percentage point of extra cache hits**, illustrating a storage-capacity-versus-recomputation trade-off. The same commentary suggests decode-led cache management allows generated output to become reusable prefix state on subsequent turns. [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435)
+
+The timing invites comparison with OpenAI’s separately announced **12-hour API prompt caching**, versus its **30-minute default**, including mixed retention durations within a request. These are not identical products or architectures, but both target persistent agents that reuse context across long gaps. Claims elsewhere in the feed about indefinite logged-in caching are commentary, not the terms of the API announcement. [@OpenAIDevs](https://twitter.com/OpenAIDevs/status/2112603916076781778), [retention controls](https://twitter.com/OpenAIDevs/status/2112603918522105890), [comparison commentary](https://twitter.com/teortaxesTex/status/2112732909060886638)
+
+
+## Speculation, API compatibility, and model-specific optimization
+
+
+**DSpark makes speculative verification adaptive.** It predicts draft-token acceptance probabilities and changes verification length to maximize expected throughput. DeepSeek reports a **6% production throughput improvement over always verifying five draft tokens**. This is an incremental gain over a specific speculative-decoding baseline, not a 6% gain over non-speculative decoding. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517)
+
+**`deepseek-recipe` addresses the serving interface, not just tokenizer speed.** It supports **Chat Completions, Responses, and Messages APIs**, parallelizes tokenization, and distinguishes real control tokens from identical-looking strings supplied as user text. That distinction prevents literal user content from accidentally being parsed as structural delimiters; it should not be mistaken for a complete prompt-injection defense. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2112472782630187517), [@deepseek_ai](https://twitter.com/deepseek_ai/status/2112476501065286085)
+
+A community explanation attributes the efficiency to several model/runtime co-design choices: **196B Engram parameters**, a smaller prefill backbone activating approximately **8B parameters/token versus 16B at decode**, wide EP, highly compressed KV, and speculative decoding. It further describes **552B expert parameters**, **DP64/EP64**, approximately **45B resident parameters/device**, mostly four-bit weights, and a claimed **400× KV reduction against a GQA baseline**. These are secondary claims: the post does not specify enough about replication, shared weights, quantization layout, or the GQA reference to independently reconstruct those figures. In particular, 45B/device is not obtained by simply dividing 552B by 64. [@bookwormengr](https://twitter.com/bookwormengr/status/2112636749293949122)
+
+This model specificity is one reason not to assume the same gains transfer automatically to arbitrary checkpoints. Su Jin Yan sees value in a **per-model repository/kernel strategy**; Andrew Carr suggests adapting the implementation to other models with coding agents, but supplies no portability or performance validation. [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435), [@andrew_n_carr](https://twitter.com/andrew_n_carr/status/2112560694310936842)
+
+
+## Independent comparison: what vLLM reproduced—and what it did not
+
+
+The strongest technical counterweight to “only DeepSeek can do this” is vLLM’s follow-up:
+
+| Test | Reported result | Important scope |
+|---|---|---|
+| Matched DeepInfer decode configuration | **Within 6%** of published throughput | GB200; V4.1 Flash; **131K context**, `nextn=3`; batch sizes **8–256** |
+| AgentX throughput/economics | Up to **1M tokens/s/GPU**; **$38.96/GPU-hour** at **196 P90 output TPS** | GB300; revenue calculated at DeepSeek off-peak prices |
+| Specialized low-latency path | Headline **826 TPS/user**; follow-up **829 P90 TPS** | Single user on **four B300 GPUs**; follow-up says **26% faster** than standard GB300 path |
+
+Sources: [vLLM comparison](https://twitter.com/vllm_project/status/2112703311933747347), [low-latency detail](https://twitter.com/vllm_project/status/2112703319416455392), [recipes and measurements](https://twitter.com/vllm_project/status/2112703321526133048).
+
+Three distinctions are necessary:
+
+1. **The within-6% result is decode-stage parity, not reproduction of DeepSeek’s whole service.** It does not establish equivalent 100-PiB cache operations, retention economics, routing, production availability, or end-to-end latency under DeepSeek’s traffic distribution.
+
+2. **The 1M-token/s/GPU figure cannot mean per-user generation.** The same post separately reports roughly 200 P90 output TPS; the throughput headline needs the benchmark’s input/cache/output accounting before it can be compared with pure decode throughput.
+
+3. **The work is an external implementation comparison, but still self-reported by the competing engine team.** Public InferenceX results and recipes improve reproducibility; they do not make every quoted production claim independently audited.
+
+The open-source lineage is explicit: vLLM thanked DeepSeek for the **Apache 2.0** release and credit, while Woosuk Kwon described DeepSeek as an early adopter and contributor. DeepInfer is therefore better understood as production learnings flowing back into an existing ecosystem than as an entirely separate replacement for it. [@vllm_project](https://twitter.com/vllm_project/status/2112480719952138301), [@woosuk_k](https://twitter.com/woosuk_k/status/2112493925432979865)
+
+Other reactions span a useful range:
+
+- **Strong endorsement:** Tim Dettmers judges DeepSeek’s inference stack comparable to OpenAI’s and better than Anthropic’s for its user scale; Graham Neubig points to the official API’s speed and price. Neither supplies a matched cross-lab benchmark. QuixiAI says the release will inform SlimServe. [@Tim_Dettmers](https://twitter.com/Tim_Dettmers/status/2112592787338408445), [@gneubig](https://twitter.com/gneubig/status/2112526540906909938), [@QuixiAI](https://twitter.com/QuixiAI/status/2112599847216001164)
+
+- **Deployment skepticism:** Su Jin Yan finds the engineering article more valuable than the repository for an experienced inference developer, partly because important components are absent. Finbarr Timbers asks for comparisons against Modal, Together, and vLLM; no matched Modal/Together comparison appears in the supplied posts. [@SuJinYan123](https://twitter.com/SuJinYan123/status/2112485918527590435), [@finbarrtimbers](https://twitter.com/finbarrtimbers/status/2112548913073066376)
+
+- **Qualified support from an otherwise enthusiastic commentator:** Teortaxes acknowledges missing infrastructure and suggests 3FS plus potentially Dynamo could cover some gaps, while estimating that matching cluster-scale throughput would require roughly **3,000–4,000 GB200s**. That is a proposed deployment path, not a demonstrated reproduction. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2112692263163777508)
+
+An official English version of the technical report was subsequently identified in the repository, reducing the need to rely exclusively on community translations. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2112764627767775575)
+
+
+## Economics: a strong revenue disclosure, not a complete margin statement
+
+
+The most consequential financial disclosure is **$38 per accelerator-hour in revenue at off-peak prices**. Revenue is not profit, and an accelerator-hour is only one part of a production service’s cost base. [@swyx](https://twitter.com/swyx/status/2112587397380943953)
+
+A widely shared estimate initially calculated **87.76–96.94% inference margins**, assuming:
+
+- **97% cached input, 2% uncached input, 1% output** of all billed tokens;
+- **80K uncached input tokens/s/GPU** and **16K output tokens/s/GPU**;
+- **250 output tokens/s/user**;
+- **$3–$6/GPU-hour** rental cost.
+
+For one billion total billed tokens, that model contains **970M cached input**, **20M uncached input**, and **10M output**, requiring approximately **875 GPU-seconds**: 250 for prefill and 625 for decode. Estimated GPU cost is **$0.73–$1.46**, against **$11.91 off-peak** or **$23.82 peak** revenue. [@zephyr_z9](https://twitter.com/zephyr_z9/status/2112499092031185134)
+
+The author then corrected the estimate: the idealized scenario implied roughly **$49/hour**, whereas DeepSeek reported **$38/hour**, or about **80% of benchmark performance in production**. The revised quoted margin range was **84.2–96.1%**. The original estimate should not be repeated without that correction. [@zephyr_z9](https://twitter.com/zephyr_z9/status/2112533683634942328)
+
+Other posts use higher hardware costs:
+
+- At **$7/hour** against $38/hour revenue, the arithmetic gives approximately **81.6%** before other costs. Yuchen Jin explicitly notes that DeepSeek did not disclose the GPU behind the revenue figure. [@Yuchenj_UW](https://twitter.com/Yuchenj_UW/status/2112591074409742733)
+- At **$5–$10/hour**, the same accelerator-only calculation spans approximately **73.7–86.8%**, rather than establishing one universal “80% serving margin.” [@swyx](https://twitter.com/swyx/status/2112587397380943953)
+
+These calculations omit or incompletely allocate **the SSD cache fleet, CPUs, networking, idle/reserve capacity, failures, engineering, support, and other operating costs**. They also depend on a highly favorable cache-heavy token mix. Training expenditure and future compute commitments are separate again: high contribution margins on inference can coexist with large company-level losses.
+
+The more aggressive extrapolations are explicitly speculative. Teortaxes estimates that an alleged **$1B ARR** could be supported by approximately **42 GB200 NVL72 racks/~3,000 GPUs** at off-peak prices, later lowering that to **33 racks** when peak pricing is included. The posts also extrapolate toward **$100B annual revenue from ~4,167 racks**, and high revenue per gigawatt. These are scenario calculations—not audited DeepSeek revenue, fleet size, or payback disclosures. [initial estimate](https://twitter.com/teortaxesTex/status/2112500462842958150), [revised estimate](https://twitter.com/teortaxesTex/status/2112522842004935160), [industry extrapolation](https://twitter.com/teortaxesTex/status/2112506258762957268)
+
+Views on the market implication differ. Some see the disclosures as evidence that inference has crossed a profitability threshold; others anticipate falling token prices and rising compute prices eventually compressing returns. The suggested competitive effect on Moonshot/Zhipu hosting agreements is plausible but unmeasured: an openly deployable stack can improve provider economics while also increasing pricing competition. [@KCDN19](https://twitter.com/KCDN19/status/2112604144901214253), [price-convergence argument](https://twitter.com/teortaxesTex/status/2112780645147504746), [hosting competition](https://twitter.com/teortaxesTex/status/2112669922757169251)
+
+
+## NVIDIA, Ascend, and the limits of hardware inference
+
+
+**Ascend compatibility is confirmed; comparable Ascend production efficiency is not.** Several posts interpret Blackwell support, `sm100` support, and NVL72-shaped configurations as evidence of NVIDIA hardware in production. Those are clues, not a disclosed inventory or a measured NVIDIA-versus-Ascend comparison. [@eliebakouch](https://twitter.com/eliebakouch/status/2112524426428473618), [@stochasticchasm](https://twitter.com/stochasticchasm/status/2112543627276939365), [explicit uncertainty](https://twitter.com/teortaxesTex/status/2112715315847311563)
+
+A later hardware analysis compares reported decode figures for GB200 and Ascend 950DT:
+
+- At a **100 TPS** constraint and **131K context**: approximately **25.5K versus 5K tokens/s/device**.
+- At **230 TPS**: approximately **20K versus 2.7K**, widening the ratio from roughly **5× to 7.4×**.
+- It cites an earlier DeepEP-Ascend disclosure that **EP64–128 and combine operations remained under optimization**, including local-reduction overhead and HBM contention with URMA.
+- It hypothesizes **8–10K tokens/s/chip** after improvements and a roughly **6.8K tokens/s/chip economic crossover**, using assumed prices of **$10M/NVL72 rack** and a rumored **$37K/950DT**.
+
+Those projections combine different measurements, assumed procurement prices, and unverified future optimization gains; they are not an apples-to-apples DeepInfer hardware benchmark. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2112772109902438641)
+
+The same commentator projects major future Ascend allocations and more than **1 GW of Blackwell-equivalent compute** for DeepSeek by end-2027, while also reporting a conflicting model-generated estimate of **250K GPUs**. Neither forecast is a DeepSeek procurement announcement. [compute projection](https://twitter.com/teortaxesTex/status/2112468847941054733), [conflicting estimate](https://twitter.com/teortaxesTex/status/2112490675648315620)
+
+
+## V4.1 Flash context: cheap serving amplifies capabilities, but does not settle quality
+
+
+Independent evaluation supports a meaningful open-model capability advance, although not universal frontier parity:
+
+- **Arena:** V4.1 Flash 20261017 Max ranks **#1 open model** in Agent Arena and Code Arena: WebDev. In Agent Arena it lands **#11 overall**, with **+5.1% net improvement across 7,500+ real-world sessions**, at **$0.20 median cost/task**. Arena describes this as approximately **37% of GPT-6.1 Sol’s improvement for 27% of its cost**. Reported signals include **+11.5% confirmed success**, **+5.9% praise-versus-complaint**, **+5.4% Bash reliability**, and **+2.5% steerability**, with no tool-hallucination issues observed in that evaluation. [@arena](https://twitter.com/arena/status/2112683123406479810), [detailed results](https://twitter.com/arena/status/2112683124773814620)
+
+- **Cybersecurity:** Vals reports that V4.1 Flash 1017 exceeded GPT-6 Sol’s average progress on a simulated corporate-network task using a Pi-based agent. DeepSeek and Sol each received **three fresh-range runs**; other models had single runs. Full evaluation details were still forthcoming. DeepSeek used substantially more tokens but had lower total API cost. [@ValsAI](https://twitter.com/ValsAI/status/2112471082397778083), [cost interpretation](https://twitter.com/ValsAI/status/2112471084524057071), [methodology](https://twitter.com/ValsAI/status/2112471086483071261)
+
+- **The cyber result is contested on efficiency and best-run performance.** Scaling01 argues that “beats Sol” overstates the result because DeepSeek is several times less efficient. Teortaxes reports approximately **4.3× the tokens and 2.4× the time**, and says Sol’s best run reached an objective group no DeepSeek run reached. Suggestions to spend the savings on repeated runs or swarms remain hypotheses, not evaluated equal-budget results. [@scaling01](https://twitter.com/scaling01/status/2112475938059624607), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2112484242974498860), [equal-cost swarm suggestion](https://twitter.com/scaling01/status/2112486097066631502)
+
+Informal reports are more favorable than controlled evidence warrants. Teortaxes describes trivia rounds with DeepSeek at **100%, 100%, and 91%**, versus MiniMax at approximately **60%, 48%, and 62%**, and a description/variant-spelling test at **100% versus 50%**. These are small, author-constructed tests with model-generated questions and answer-key errors; they suggest follow-up experiments, not a validated knowledge benchmark or proof that Engram alone causes the difference. Another user reports strong Hermes-assisted AI research, while a separate post says DeepSeek remains well below Sol-xhigh on another evaluation. [trivia tests](https://twitter.com/teortaxesTex/status/2112467148413227286), [follow-up](https://twitter.com/teortaxesTex/status/2112470576753197404), [variant-spelling test](https://twitter.com/teortaxesTex/status/2112476651095507055), [research anecdote](https://twitter.com/poof_eth/status/2112575109139767796), [contrasting result](https://twitter.com/teortaxesTex/status/2112518857755959738)
+
+Local deployment introduces a different trade-off. Brandon Music released a **TrellisMX K2 Mix** targeting **two RTX PRO 6000s**, using two-bit experts with **629 experts raised to three/four bits**, four-bit Engram tables, and capacity intended for approximately **3M KV tokens**. Reported mean KLD is **0.1306 nats**, **8.6% below plain K2**; a **+5GB** variant targets about **2M KV tokens**. Only KLD had been measured, and serving used a test image, so task-quality retention, actual speed, and operational stability remain unestablished. [@BrandonMusicKy](https://twitter.com/BrandonMusicKy/status/2112474628702498855)
 
 **Agent Infrastructure, Local Execution and Hardware Acceleration**
 
