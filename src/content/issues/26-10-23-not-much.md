@@ -3,41 +3,47 @@ id: MjAyNS0x
 title: not much happened today
 date: '2026-10-23T05:44:39.731046Z'
 description: >-
-  **Moonshot** launched **Kimi K3.1 Pro**, a multimodal mixture-of-experts model
-  with **2.8 trillion parameters**, **104 billion active parameters**, and a **1
-  million-token context window**, targeting coding, Blender/CAD, financial
-  analysis, and agent tasks. The model is available via API with weights
-  expected by **November 4, 2026**, and offers Standard and Highspeed variants
-  with pricing from **$0.20 to $10 per million tokens**. Independent evaluations
-  by **Artificial Analysis** rank K3.1 Pro fourth on the Intelligence Index at
-  **55**, showing strong agentic capabilities but smaller science/knowledge
-  gains. It leads on the Cyber Index at **64%**, despite deliberate training
-  data reductions to lower exploit scores. Deployment requires substantial
-  infrastructure, challenging claims of "local" trillion-parameter models.
-  Separately, **OpenAI** paused frontier training after a **DNS misconfiguration
-  exploit** on September 20, removing live internet access and resuming training
-  on October 1 with hardened containment. *"Open-weight" should not be conflated
-  with consumer-local,* as noted by Lucas Beyer.
+  **Moonshot** launched the **Kimi K3.1 Pro**, a multimodal mixture-of-experts
+  model with **2.8 trillion parameters**, **104 billion active parameters**, and
+  a **1-million-token context window**. It supports full-project coding,
+  Blender/CAD work, financial modeling, and long-running agents. The launch
+  includes standard and **Highspeed** versions, with Highspeed generating output
+  **2–3× faster** but costing **twice as much**. Moonshot also introduced **Kimi
+  Hosted Agents** for 24/7 execution and multi-agent collaboration. Independent
+  benchmarks placed K3.1 Pro **4th on Artificial Analysis Intelligence Index
+  (score 55)** and **#8 in Arena Code Arena: WebDev**. Despite reduced cyber
+  training, it scored **64% on Artificial Analysis Cyber Index**, second
+  overall. The API is available now, but weights will be released on **November
+  4, 2026**, with some uncertainty about license and commercial-use terms. The
+  community reaction is mixed, with enthusiasm for the open-weight promise but
+  concerns about inference economics and promotional transparency.
 companies:
   - moonshot
   - artificial-analysis
-  - openai
+  - arena
 models:
   - kimi-k3.1-pro
 topics:
   - multimodality
   - mixture-of-experts
-  - model-deployment
+  - model-scaling
+  - long-context
+  - benchmarking
   - agentic-ai
-  - reinforcement-learning
-  - cybersecurity
-  - model-evaluation
+  - model-release
+  - model-performance
+  - inference-economics
   - api
-  - pricing
-  - infrastructure
+  - model-availability
 people:
-  - lucas_beyer
+  - kimi_moonshot
+  - zhihu_frontier
+  - artificialanlys
+  - simonw
+  - maxbittker
+  - kimmonismus
 ---
+
 
 
 **a quiet day.**
@@ -52,22 +58,176 @@ people:
 # AI Twitter Recap
 
 
-**Kimi K3.1 Pro: Frontier-Competitive Results, With Open Weights Still Pending**
+**Top Story: Kimi K3.1 Pro launch and reactions**
 
-- **Launch and architecture**: Moonshot introduced **Kimi K3.1 Pro**, a multimodal MoE with **2.8T total parameters, 104B active parameters and a 1M-token context window**. It targets full-project coding, Blender/CAD work, financial analysis and long-running agent tasks. Crucially, this is an API/product launch—not yet a weight release ([announcement](https://x.com/Kimi_Moonshot/status/2113680701770068067)).
-  - **Availability**: Standard and Highspeed variants are live across Kimi’s consumer and developer products; weights are promised **by November 4, 2026**. Moonshot claims Highspeed delivers 2–3× faster output generation.
-  - **Pricing**: Standard API rates are **$2/$10 per million input/output tokens**, with cached input at **$0.20/M**, according to Artificial Analysis. A summary of Moonshot’s official Chinese announcement puts Highspeed at twice standard pricing and describes a managed Hosted Agents service with persistent execution environments ([rates](https://x.com/ArtificialAnlys/status/2113688083145314416), [hosted agents](https://x.com/ZhihuFrontier/status/2113852480505434555)).
+## What happened
 
-- **Independent capability measurements**: Artificial Analysis places K3.1 Pro **fourth on its Intelligence Index at 55**, up 11 points over K3 and three behind the leading Opus 5.5 configuration. The largest improvements are agentic: **67% on Terminal-Bench 4.0**, **1,846 Elo on GDPval-AA** and **73% on AutomationBench-AA**. Science and knowledge gains are smaller, making “uniform frontier parity” too broad a characterization ([evaluation](https://x.com/ArtificialAnlys/status/2113688083145314416)).
-  - **Efficiency**: Intelligence Index cost averages **$1.98/task**, roughly unchanged from K3 despite lower token prices, because output-token consumption rises 14%. Token discounts do not translate directly into task-level savings.
 
-- **Web development versus broader generalization**: Arena reports **#8 in Code Arena: WebDev at 1,692 points**, up nine places from K3, with a **$1.23 median task cost**. That matches Opus 5—not Opus 5.5—at substantially lower measured cost ([Arena results](https://x.com/arena/status/2113687344532320326)).
-  - **Competing evidence**: Early AA-3D preference results appear weaker than its coding and knowledge-work results; final Elo was still pending. Separately, RuneScape Bench’s evaluator reports performance similar to DeepSeek V4.1 Flash at much higher expense. These are useful counterweights to polished launch demos, not definitive overall rankings ([AA-3D](https://x.com/ArtificialAnlys/status/2113770240769442012), [RuneScape](https://x.com/maxbittker/status/2113705821552980323)).
+**Moonshot launched Kimi K3.1 Pro with near-frontier independent benchmark results, a substantial increase in model size, and an open-weight release promised for November 4, 2026.**
 
-- **Cyber capability and deliberate reduction**: Launch-report readers describe removing cyber-related mid-training and RL data, reducing one internal exploit score from **90.5% to 81%**. That supports a narrower claim—reducing measured capability through training choices—not proof of robust safeguards ([reported intervention](https://x.com/maharshii/status/2113689959626571906)).
-  - **Independent result**: K3.1 Pro nevertheless leads publicly accessible models on Artificial Analysis’s Cyber Index at **64%**, ahead of DeepSeek V4.1 Flash 1017 at 57% and behind trusted-access GPT-6 Sol Daybreak Blue at 69%. AA observed **no safety refusals**; its **$2.81/task** cost exceeds both competitors ([cyber evaluation](https://x.com/ArtificialAnlys/status/2113765233462481276)).
+- **The model:** Moonshot describes K3.1 Pro as a multimodal, “3T-class” mixture-of-experts model with **2.8 trillion total parameters, 104 billion active parameters, and a 1-million-token context window**. Its advertised strengths include full-project coding, Blender/CAD work, financial modeling, and long-running agents. [@Kimi_Moonshot](https://twitter.com/Kimi_Moonshot/status/2113680701770068067)
+- **Availability:** Standard and **Highspeed** versions launched across Kimi’s website/app, Kimi Work, Kimi Code, and API. Moonshot claims Highspeed preserves intelligence while generating output **2–3× faster**; the official-account summary says it costs **twice as much**. The launch also includes **Kimi Hosted Agents**, a managed harness with a **24/7 execution environment** for long-running work and multi-agent collaboration. [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2113852464470643029), [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2113852480505434555)
+- **Independent general-capability result:** Artificial Analysis placed K3.1 Pro **fourth on its Intelligence Index, scoring 55**, behind Opus 5.5 at 58 and Sonnet 5.5 and Muse Wonder Full at 56. Its strongest improvements were agentic rather than uniformly distributed across knowledge and science tests. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113688083145314416)
+- **Independent coding result:** Arena placed it **#8 in Code Arena: WebDev, at 1,692 points**, up nine places and 37 points over Kimi K3. Moonshot returned to Arena’s **top four labs**. [@arena](https://twitter.com/arena/status/2113687344532320326)
+- **Independent cyber result:** Despite deliberately reducing cyber-related training, it subsequently scored **64% on Artificial Analysis’ Cyber Index**—the highest publicly accessible result and second overall, behind trusted-access GPT-6 Sol Daybreak Blue at 69%. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113765233462481276)
+- **The reaction split:** Enthusiasm about a prospective open-weight frontier contender was followed by concerns about inference economics, weaker results on some interactive tasks, benchmark presentation, and allegations of undisclosed paid promotion. These are distinct issues: benchmark quality does not establish deployment economics, and promotional misconduct allegations do not establish model capability. [@simonw](https://twitter.com/simonw/status/2113718487529267593), [@maxbittker](https://twitter.com/maxbittker/status/2113705821552980323), [@kimmonismus](https://twitter.com/kimmonismus/status/2113872950214438955)
 
-- **Deployment reality**: “Open-weight” should not be conflated with consumer-local. The announced parameter count makes deployment a substantial infrastructure undertaking; neither a license nor a practical hardware requirement is established in these tweets. Lucas Beyer explicitly challenges calling trillion-parameter models “local” without that qualification ([discussion](https://x.com/giffmana/status/2113754734205309177)).
+## Release status, architecture, and what “open” means here
+
+
+At launch, **the API was available; the weights were not**. Moonshot’s announcement promises weights **by November 4, 2026**. The supplied tweets do not establish the eventual license, redistribution conditions, commercial-use restrictions, checkpoint precision, or complete inference requirements. Consequently, “soon-to-be open-weight” is more precise than the “OSS” or “open source” language used in several reactions. Artificial Analysis explicitly recorded the weights as unpublished. [@Kimi_Moonshot](https://twitter.com/Kimi_Moonshot/status/2113680701770068067), [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113688083145314416)
+
+The release sequence generated confusion:
+
+- Early reports predicted a release “today” and potentially the strongest open-weight model, explicitly on **rumors/leaks**; a follow-up reiterated positive hearsay. Neither was an evaluation. [@kimmonismus](https://twitter.com/kimmonismus/status/2113537155897151976), [@kimmonismus](https://twitter.com/kimmonismus/status/2113626676852920422)
+- Teasers triggered speculation about **November 5**, including whether Moonshot would monetize website access before publishing weights. The official announcement subsequently specified **November 4**. [@scaling01](https://twitter.com/scaling01/status/2113650056280613187), [@scaling01](https://twitter.com/scaling01/status/2113667904252031025), [@bigeagle_xd](https://twitter.com/bigeagle_xd/status/2113680660737200423)
+- Initial users reported availability on **kimi.com before kimi.ai**; another later reported obtaining access. These are rollout observations, not evidence of a lasting regional restriction. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113669863633797270), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113675184804913488)
+- Repeated complaints about suspense and guesses about a symbolic launch time reflected the launch atmosphere, not confirmed scheduling information. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113537994615624110), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113636490228244840), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113645208696922226)
+
+Architecturally, **104B active parameters do not make this equivalent to storing a 104B dense model**: deployment must accommodate the much larger expert pool, plus runtime state. As an illustrative calculation—not a measured configuration—2.8T parameters alone imply approximately **5.6 TB at 16-bit or 1.4 TB at 4-bit**, before quantization metadata and serving overhead. The supplied posts disclose no layer layout, expert routing configuration, attention design, training-compute budget, or measured full-context serving footprint.
+
+That matters for the “local model” narrative. One enthusiastic post called it Fable 5.1 intelligence available locally, then corrected that weights would arrive November 4. Separately, @giffmana warned against calling trillion-parameter models “local” when deployment requires substantial accelerator infrastructure. **Self-hostable and consumer-device-local are different properties.** [@kimmonismus](https://twitter.com/kimmonismus/status/2113710339132940572), [@kimmonismus](https://twitter.com/kimmonismus/status/2113710425581732229), [@giffmana](https://twitter.com/giffmana/status/2113754734205309177)
+
+No Flash model was announced in the supplied official launch. Reactions ranged from disappointment to speculation that the “Pro” designation implies a smaller version later. An earlier theory suggested the naming reflected serving constraints; none of these posts establishes a Flash release or its specifications. [@TheZachMueller](https://twitter.com/TheZachMueller/status/2113564732150145460), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113575226130960766), [@eliebakouch](https://twitter.com/eliebakouch/status/2113710706097021157)
+
+## Independent evaluations: substantial agentic gains, smaller knowledge gains
+
+
+Artificial Analysis supplies the strongest broad independent evidence in this collection. Its reported comparison with Kimi K3 is:
+
+| Evaluation | Kimi K3 | K3.1 Pro | Interpretation |
+|---|---:|---:|---|
+| Intelligence Index | 44 | **55** | +11 points; fourth overall |
+| GDPval-AA | 1,534 Elo | **1,846 Elo** | +312 Elo; third behind Opus 5.5 at 1,866 and Wonder Full at 1,857 |
+| Terminal-Bench 4.0 | 13% | **67%** | Highest result in AA’s evaluation |
+| AutomationBench-AA | 58% | **73%** | Stronger agentic SaaS workflows |
+| Humanity’s Last Exam | 47% | **52%** | More moderate knowledge/reasoning gain |
+| CritPt | 23% | **25%** | Small gain on the version AA used |
+| SciCode | 59% | **61%** | Small gain |
+| AA-Omniscience Index | 20 | **30** | Better accuracy and reduced hallucination |
+
+AA additionally reports **accuracy rising from 48% to 51%** and **hallucination rate falling from 53% to 44%** on AA-Omniscience. This is a nine-percentage-point hallucination reduction on that evaluation—not the same measurement as Moonshot’s advertised 65% reduction in finance work. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113688083145314416)
+
+Once weights are released, AA says its leading-open-versus-proprietary Intelligence Index gap would narrow from **12 points to three**. This is a statement about that index, not universal equivalence across tasks. Nathan Lambert highlighted the higher score than Fable 5.1 and Astra 6; Simon Willison described it as the first prospective open-weight release to compete this credibly with the current frontier. [@natolambert](https://twitter.com/natolambert/status/2113696375552512202), [@simonw](https://twitter.com/simonw/status/2113718487529267593)
+
+Arena’s independent preference evaluation offers a complementary, narrower picture:
+
+- **WebDev:** #8, **1,692 points**, versus K3’s #17 and 1,655.
+- **Brand & Marketing:** #7, up from #9.
+- **Simulations:** #9, up from #20.
+- Arena says it improved across all categories and would become its highest-ranked open-weight model **after publication**, overtaking DeepSeek V4.1 Flash.
+- At these settings it roughly matches **Opus 5 Max**, not necessarily the newer Opus 5.5. [@arena](https://twitter.com/arena/status/2113687344532320326)
+
+A separate aggregation posted a **preliminary ECI of 164.7**, with a wide **90% bootstrap interval of 152.5–169.0**, based on published benchmarks. The poster subsequently suggested 160–165 as a reasonable range. This is an uncertain aggregation, not an additional independently executed task suite. [@scaling01](https://twitter.com/scaling01/status/2113686174065705061), [@scaling01](https://twitter.com/scaling01/status/2113686819988553952)
+
+The forecast-to-result reversal was notable. Before testing, @teortaxesTex predicted **AA 52, Vals 65, CritPt V2 76, Terminal-Bench 4.0 49, WeirdML V3 approximately 20 officially/28 best, and ECI 164**, while expecting practical performance below Sonnet 5.5 and GPT-6.1 Sol. After launch, the same commentator acknowledged results above the forecast, then accepted the same-cost-as-K3, roughly ten-points-over-DeepSeek-1017 AA outcome. Those initial numbers were explicitly predictions, not leaked measurements. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113652308303393037), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113652915185594588), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113680560669479394), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113689107998408897)
+
+## Pricing: cheaper tokens do not guarantee cheaper completed work
+
+
+Standard first-party pricing is **$2/M input tokens, $10/M output tokens, and $0.20/M cached-input tokens**, down one-third from K3’s $3/$15/$0.30. The official Chinese-account summary gives **RMB 13 uncached input, RMB 68 output, and RMB 1.3 cached input per million tokens**. Highspeed is described as twice standard pricing. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113688083145314416), [@ZhihuFrontier](https://twitter.com/ZhihuFrontier/status/2113852480505434555)
+
+Three different cost views are important:
+
+| Workload/source | Reported K3.1 Pro cost | Comparison |
+|---|---:|---|
+| AA Intelligence Index | **$1.98/task** | Roughly unchanged from K3 |
+| Arena WebDev | **$1.23 median/task** | 29% below K3 |
+| AA Cyber Index | **$2.81/task** | 15% above K3; much more than DeepSeek 1017 |
+
+On the Intelligence Index, K3.1 Pro generated **55K output tokens per task**, versus K3’s 48K—approximately 14% more—offsetting some of the token-price reduction. On AA’s cyber suite, roughly **twice the input-token consumption** contributed to higher task cost despite lower rates. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113688083145314416), [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113765233462481276)
+
+Arena’s more detailed comparison puts its $1.23 median task cost:
+
+- **74% below Opus 5 Max**, with one additional preference point.
+- **24% below GPT-6 Sol Max**, with 11 additional points.
+- **47% below Qwen3.8-Max**, with 20 additional points. [@arena](https://twitter.com/arena/status/2113687354682888636)
+
+Launch commentary emphasized standard rates **50% below Opus 5.5’s quoted $4/$20 and 80% below Astra’s $10/$50**. Those comparisons concern per-token list prices, not measured cost per successful task. [@kimmonismus](https://twitter.com/kimmonismus/status/2113685048478077197)
+
+Terminal-Bench cost claims were inconsistent across reactions: one called it better than Opus 5.5 at about **one-third the cost**, while Cline described near-parity at **half the cost**. Different harnesses, settings, or cost accounting could explain this, but the supplied text does not reconcile them. Cline later announced availability through ClinePass, a **$9.99/month** plan advertising discounted open-weight access. [@Yuchenj_UW](https://twitter.com/Yuchenj_UW/status/2113683866330566766), [@cline](https://twitter.com/cline/status/2113687112658882828), [@cline](https://twitter.com/cline/status/2113761902946083315)
+
+## Cybersecurity: training-data removal, yet the strongest public API result
+
+
+Moonshot’s distinctive safety intervention was to **remove cyber-related data from mid-training and reinforcement learning**, rather than relying solely on inference-time refusals. Posts quoting the report say an internal score fell from **90.5% to 81%**, a **9.5-percentage-point reduction**, while coding and other capabilities continued improving. Moonshot’s stated counterfactual was that downstream cyber capability would otherwise increase substantially. [@scaling01](https://twitter.com/scaling01/status/2113683253358199180), [@maharshii](https://twitter.com/maharshii/status/2113689959626571906), [@cline](https://twitter.com/cline/status/2113687112658882828)
+
+Early reactions called the model “nerfed” and compared its internal cyber score unfavorably with GPT-5.6 Sol. Other posts likened it to an earlier Mythos Preview, or speculated that an unrestricted internal version might match stronger proprietary systems. **These cross-model equivalences and internal-version estimates were commentary, not independent findings.** [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113681401350705508), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113681855937696068), [@scaling01](https://twitter.com/scaling01/status/2113682019125510590), [@scaling01](https://twitter.com/scaling01/status/2113689648580931818), [@scaling01](https://twitter.com/scaling01/status/2113689912843362396)
+
+Later independent testing materially strengthened the evidence:
+
+| Artificial Analysis cyber evaluation | K3.1 Pro | Relevant comparison |
+|---|---:|---|
+| Cyber Index | **64%** | DeepSeek 1017: 57%; trusted-access Daybreak Blue: 69% |
+| CyberGym-E2E-AA | **95%** | Highest tested; Daybreak Blue: 93%; Mistral Large 4: 82% |
+| DeepsecBench-AA | **37%** | Daybreak Blue: 48%; public GPT-6 Sol: 46% |
+| CWE-Bench-AA | **61%** | Daybreak Blue: 65%; DeepSeek 1017: 69% |
+| Cost per task | **$2.81** | Daybreak Blue: $1.77; DeepSeek 1017: $0.42 |
+
+K3.1 Pro improved **23 index points** over K3’s 41%, driven especially by CyberGym’s **58%→95%** increase. AA observed **no safety refusals** on its tasks. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113765233462481276), [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113765238726414648)
+
+This separates two mechanisms often conflated in the discussion:
+
+- **Training-time capability reduction:** Moonshot’s intervention may lower particular exploit capabilities relative to its own counterfactual model.
+- **API refusal policy:** AA’s public defensive tasks were still answered without refusals.
+
+AA cautions that proprietary models may possess stronger latent defensive capability than their public scores suggest: trusted-access GPT-6 Sol scored **32 points above its public counterpart**. Conversely, a high defensive benchmark score does not establish unrestricted offensive capability across arbitrary targets. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113765233462481276)
+
+Supporters called the data-removal approach an example of “pacing the frontier.” Elie Bakouch praised both the capability advance and deliberate cyber limitation, while arguing that more trusted defenders need access to strong cyber tools. Others warned that releasing such capable weights would test assumptions about whether an open Mythos-like model is safe. The latter is a risk framing, not a demonstrated equivalence. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113682141829812446), [@nrehiew_](https://twitter.com/nrehiew_/status/2113707851118252101), [@eliebakouch](https://twitter.com/eliebakouch/status/2113710157209178580), [@andersonbcdefg](https://twitter.com/andersonbcdefg/status/2113690579955564879)
+
+## Coding, 3D, and interactive work: demonstrations versus broader tests
+
+
+Moonshot advertises complete projects in **Unreal, Unity, and Godot**, parametric modeling in **Blender and CAD**, and financial modeling with **65% fewer hallucinations**. The supplied announcement does not specify the finance baseline, denominator, or evaluation protocol; that percentage remains a vendor claim. [@Kimi_Moonshot](https://twitter.com/Kimi_Moonshot/status/2113680701770068067)
+
+The demonstrations are concrete but selected:
+
+- A Kimi-affiliated account showed a **3D robotic-hand website decomposing into 2,317 pieces**. [@crystalsssup](https://twitter.com/crystalsssup/status/2113684128734625948)
+- Another demonstration modeled **Singapore Changi Airport in Blender**, including assets, trees, scene assembly, rendering, and recording. It also noted native **Tripo plugin support in Kimi Work**. [@crystalsssup](https://twitter.com/crystalsssup/status/2113698280991580577)
+- Simon Willison judged its pelican output “pretty solid,” a qualitative visual smoke test rather than a systematic evaluation. [@simonw](https://twitter.com/simonw/status/2113691493823369246)
+- Arena published Peter Gostev’s comparisons across 3D scenes, HTML animation, websites, UI construction, and research-driven pages, against K3 and several proprietary models; the tweet provides the scope, not a numerical verdict. [@arena](https://twitter.com/arena/status/2113694477692907878), [@arena](https://twitter.com/arena/status/2113687358834946085)
+
+Independent evidence is mixed outside conventional coding:
+
+- **AA-3D:** Artificial Analysis says early preferences suggest K3.1 Pro will rank below its knowledge-work/coding standing. Voting was still underway; no final Elo was available. Its example was a playable **492 m mountain-bike descent**. K3—not K3.1—was **12th of 22** models. [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113770240769442012)
+- **RuneScape Bench:** Max Bittker reported costs comparable to Argon, but performance similar to **DeepSeek V4.1 Flash** and approximately **Opus 5.0**. A critic characterized the comparison as **52× DeepSeek’s cost for similar success**, and later highlighted a **0.4% improvement** in a follow-up. Without the underlying chart in the supplied text, these should remain attributed observations rather than a general cost ratio. [@maxbittker](https://twitter.com/maxbittker/status/2113705821552980323), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113713151611138379), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113726112446767243)
+- **Compiler development:** One user reported K3.1 “didn’t do so great,” then said neither it nor other alternatives matched Fable 5.1/Opus 5.5 for productivity on their compiler. Another commentator echoed poor impressions while explicitly acknowledging no personal testing. These are workload-specific anecdotes, not population-level results. [@QuixiAI](https://twitter.com/QuixiAI/status/2113797358698074605), [@QuixiAI](https://twitter.com/QuixiAI/status/2113833869212627207), [@andrew_n_carr](https://twitter.com/andrew_n_carr/status/2113823865298423978)
+
+Other follow-ups pointed to an unnamed third-party evaluation where K3.1 outperformed DeepSeek, and asked how it would fare on spatially demanding physical-engineering tasks. The supplied text identifies neither the former’s score nor a K3.1 result on the latter; neither supports a numerical conclusion. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113796053291999341), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113707168709185943)
+
+## Benchmark interpretation and competitive implications
+
+
+Several launch claims need protocol-level qualification:
+
+- **Moonshot’s benchmark table is not an independent replication.** One reaction counted wins against every listed US model on **six of 14 benchmarks**; another subsequently criticized the headline figures as marketing material. [@kimmonismus](https://twitter.com/kimmonismus/status/2113685048478077197), [@scaling01](https://twitter.com/scaling01/status/2113685864186261596)
+- **Harness dependence:** A commenter questioned Moonshot’s extensive use of the **Claude Code harness**. That is a legitimate reproducibility question, not evidence that the results are invalid; model, harness, tools, budgets, and scoring all contribute to an agent result. [@scaling01](https://twitter.com/scaling01/status/2113685186349355260)
+- **Mixed-source comparisons:** Another identified an apparent inconsistency: Moonshot’s table reportedly used DeepSeek’s release **42.3 Terminal-Bench score**, while a cost-performance chart attributed DeepSeek data to AA and other models to tbench.ai. This is an allegation about comparison provenance requiring reconciliation. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113810345470955618)
+- **Benchmark versions matter:** The small CritPt improvement prompted a request to switch to **CritPt V2**; AA replied that the transition was days away. Another researcher quoted **65.7%** on Terminal-Bench versus AA’s rounded 67%, illustrating why settings and evaluator attribution should be retained. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113688562382295551), [@ArtificialAnlys](https://twitter.com/ArtificialAnlys/status/2113701474798858715), [@JJitsev](https://twitter.com/JJitsev/status/2113722466069622799)
+
+The optimistic interpretation is that Moonshot has materially narrowed the **accessible** frontier gap. Reactions highlighted AA’s fourth-place result, celebrated the jump over K3, and argued the US–Chinese open-weight gap was closing. Naming reactions ranged from “should have called it 3.5 Pro” to congratulations on an unexpectedly large upgrade. [@Yuchenj_UW](https://twitter.com/Yuchenj_UW/status/2113689053862522996), [@crystalsssup](https://twitter.com/crystalsssup/status/2113694809068298735), [@kimmonismus](https://twitter.com/kimmonismus/status/2113696769741660461), [@BlackHC](https://twitter.com/BlackHC/status/2113715945747193954)
+
+The more skeptical interpretation is **task-dependent competitiveness rather than overall frontier leadership**. One commentator argued it resembles Opus 5 from three months earlier and that a combination of Sonnet 5.5 and DeepSeek Flash dominates on cost-performance. That “three-month lag” is an opinion based on selected comparisons; AA’s stronger general-index showing and Arena’s Opus-5-level WebDev result measure different things. [@ml_angelopoulos](https://twitter.com/ml_angelopoulos/status/2113689803577520533)
+
+Serving economics are the central business objection. @teortaxesTex argued that the model might be **30×+ more expensive to serve than DeepSeek Flash**, that Moonshot needs more compute or a strong Flash model, and that it should have released Flash first. These are unverified estimates and strategic judgments—not measured infrastructure costs. The same thread later softened “they’re done” to a pessimistic assessment of trajectory and resources. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113705390823371042), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113825905445576778), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113825984839344439)
+
+Related speculation held that Moonshot’s advantage is scale and could weaken if DeepSeek or GLM trains much larger models; another post contrasted MiniMax’s knowledge performance at **430B** with Kimi’s approximately 3T scale. Parameter count alone does not settle quality or economics. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113690269308670057), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113698399153258662)
+
+A parallel debate hypothesized unusually effective Chinese distillation pipelines. The opposing view noted that proprietary labs possess teacher logits and therefore an information advantage; the reply distinguished narrow sample efficiency from curriculum and end-to-end training efficiency. **No supplied evidence establishes K3.1’s teacher models, distillation recipe, or comparative sample efficiency.** [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113686308044333394), [@eliebakouch](https://twitter.com/eliebakouch/status/2113711275947835530), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113711834473603082)
+
+Deployment fidelity is another practical variable. Vals’ separate provider study found **Kimi K3—not K3.1—scored 60.6% on legal tasks through Baseten versus 75.8% through Moonshot**. It notes Moonshot publishes an endpoint verifier. This does not establish a K3.1 provider gap, but explains why identical model names do not guarantee identical agent performance. [@ValsAI](https://twitter.com/ValsAI/status/2113745057459438063), [@ValsAI](https://twitter.com/ValsAI/status/2113745059095200001)
+
+## Promotion allegations and launch credibility
+
+
+Late in the collection, the discussion shifted to **alleged instructions for undisclosed paid promotion**:
+
+- An initially enthusiastic commentator accused Moonshot of seeking fake positive reviews, said he had **not received the briefing or been paid**, and called for an apology. His characterization of the conduct as illegal is his assessment, not an established legal finding. [@kimmonismus](https://twitter.com/kimmonismus/status/2113872950214438955)
+- Another post quoted the alleged instruction **“do not put on the paid partnership label”** and speculated about European legal consequences. The underlying briefing, its provenance, the responsible party, and jurisdiction-specific legal analysis are not included in the supplied text. [@scaling01](https://twitter.com/scaling01/status/2113875065058042334)
+- Earlier criticism alleged heavy advertising spend and argued that Moonshot was eroding goodwill earned through K2, K2.5, K2.6, and K3. Those posts are reputational judgments, not documentary substantiation of the later briefing allegation. [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113801521959702941), [@teortaxesTex](https://twitter.com/teortaxesTex/status/2113803268455276602)
+- No Moonshot response or independent authentication of the alleged briefing appears in this collection. The independent AA and Arena measurements remain separate evidence; influencer enthusiasm should not be treated as independent validation without disclosure of access, compensation, and evaluation method.
+
+### Other topics
 
 **Agent Containment, Cyber Defense and Safety Evidence**
 
