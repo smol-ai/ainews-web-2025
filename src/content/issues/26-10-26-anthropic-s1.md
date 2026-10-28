@@ -124,7 +124,7 @@ He also cited a $16.8B Q3 figure that has been widely reported but is not in the
 ## The narrative claims in the filing
 
 
-These are forward-looking statements by the company, not audited figures. As summarized by [@kimmonismus](https://x.com/kimmonismus/status/2114729823033590134):
+As summarized by [@kimmonismus](https://x.com/kimmonismus/status/2114729823033590134):
 - AI matching or exceeding leading human experts across most professional and scientific disciplines "within a few years." These systems would work autonomously for days or weeks and operate lab equipment and robots.
 - A "country of geniuses in a data center."
 - "Closing the loop": Claude runs experiments, generates training data and automates evals and safety audits. Over 90% of September codebase contributions were written by Claude.
