@@ -64,25 +64,174 @@ people:
 # AI Twitter Recap
 
 
-**Gemini 4 Neon Launch: Pricing, Rollout and Independent Evals**
+**Google DeepMind shipped Gemini 4 Neon, the fourth Gemini 4 model in about seven weeks. It is a mid-tier, faster and cheaper model, and early third-party evals put it at or near the frontier.**
 
-- **Gemini 4 Neon**: Google DeepMind released Neon, positioned between Carbon and Hydrogen, for software engineering, knowledge work and science workflows ([Sundar Pichai](https://x.com/sundarpichai/status/2123167780988125621), [GDM](https://x.com/GoogleDeepMind/status/2123167884411077030), [Koray Kavukcuoglu](https://x.com/koraykv/status/2123167638050541626)).
-  - **Pricing and specs**: $3/$15 per 1M input/output tokens, a 1M-token context window and four effort levels: low, medium, high and xhigh ([AI Studio](https://x.com/GoogleAIStudio/status/2123168408678359294)). Vals reports a 1M max output limit ([Vals](https://x.com/ValsAI/status/2123168183746195620)).
-  - **Official claims**: Google cites improved steerability, ranking #2 on Agent Arena Steering, and its lowest fabrication rate yet in internal Antigravity testing ([Koray](https://x.com/koraykv/status/2123167638050541626)). Google's own testing reportedly has Neon beating Opus 5.5 and GPT-6.2 Sol on 16 of 19 benchmarks ([Rundown](https://x.com/TheRundownAI/status/2123169908338884712)).
-  - **Availability**: Neon is rolling out in the paid Gemini API, AI Studio, Gemini for business, Antigravity and the Gemini app for Pro/Ultra subscribers ([Google](https://x.com/Google/status/2123172294260396442)). It also launched on day zero in [GitHub Copilot](https://x.com/github/status/2123181574116233646) and [Cursor](https://x.com/cursor_ai/status/2123198346802450926).
-- **Artificial Analysis**: Neon at xhigh scores 61 on the Intelligence Index, 3rd behind GPT-6.2 Astra (max) and Claude Fable 5.2 (max) ([AA](https://x.com/ArtificialAnlys/status/2123170645777526962)).
-  - **Cost and speed**: A task costs $6.44, about 17% below Carbon's undiscounted price. Runs take about 21 minutes and output speed is about 110 tokens/s, compared with about 57 tokens/s for Carbon. Neon uses roughly 15% more output tokens per task.
-  - **Coding agents**: Neon scores 59 on the Coding Agent Index in the Antigravity CLI, in line with Fable 5.2 and Opus 5.5, at $6.86 per task versus $12.61 for Opus 5.5 and $15.47 for Fable 5.2.
-- **Other independent leaderboards**: Results show Neon near the top at markedly lower cost.
-  - **Vals Index**: Neon placed #2 at 70.9%, 0.4 points behind Fable 5.2 at less than half the cost per task. It also took #1 on Vals' Finance and Legal indexes ([Vals](https://x.com/ValsAI/status/2123168167879147542)). On Code Migration it used fewer turns than Carbon or Hydrogen but scored below both ([Vals](https://x.com/ValsAI/status/2123168182051762433)).
-  - **Agent Arena**: Neon is #2 with 1336 points at a $2.82 median cost per task, ahead of Opus 5.5 at 53% lower cost. Google now holds the top three Text Arena spots ([Arena](https://x.com/arena/status/2123169189397709174)).
-  - **CursorBench 4.1**: Neon scores 63.7% at default effort, up from 57.3% for Hydrogen ([Cursor](https://x.com/cursor_ai/status/2123198346802450926)).
-  - **Caveat**: Neon's reported 39% on SWE-sweep depends heavily on the harness. It reaches only 12.8% with mini-swe-agent ([Kilian Lieret](https://x.com/KLieret/status/2123172740043505968)).
-- **Release cadence**: The gaps between Gemini 4 releases have roughly halved each time: 28 days from Argon to Carbon, 15 to Hydrogen and 6 to Neon ([Arena](https://x.com/arena/status/2123192239761596566)).
-- **Practitioner reaction**: Early hands-on reports were broadly positive, with some operational problems.
-  - **Theo**: A frequent Gemini critic called it "so good" and said it "should have been named Gemini 5" ([Theo](https://x.com/theo/status/2123237018813779970), [Theo](https://x.com/theo/status/2123240990077268425)).
-  - **Antigravity logs**: An early-access tester's logs show 762 tool calls and 93% cache hits. They also recorded 57 "no capacity" errors before launch ([kimmonismus](https://x.com/kimmonismus/status/2123168557228011759)).
+- **Launch.** Announced by [@sundarpichai](https://x.com/sundarpichai/status/2123167780988125621), [@demishassabis](https://x.com/demishassabis/status/2123168218743554465), [@koraykv](https://x.com/koraykv/status/2123167638050541626), [@OfficialLoganK](https://x.com/OfficialLoganK/status/2123167791922741362) and [@GoogleDeepMind](https://x.com/GoogleDeepMind/status/2123167884411077030). Google pitches it as "frontier-level intelligence with fast end-to-end task completion" for SWE, knowledge work and science. DeepMind places it "between Carbon and Hydrogen."
+- **Pricing and specs.** Per [@GoogleAIStudio](https://x.com/GoogleAIStudio/status/2123168408678359294) and [@ValsAI](https://x.com/ValsAI/status/2123168183746195620):
+  - $3/$15 per 1M input/output tokens.
+  - 1M context window and 1M max output tokens.
+  - Four thinking levels: low, medium, high and xhigh.
+- **Availability.** Rollout is staged ([@Google](https://x.com/Google/status/2123172294260396442), [@koraykv](https://x.com/koraykv/status/2123167644161634344)):
+  - Paid Gemini API tier in AI Studio and Android Studio.
+  - Gemini for business and Google Cloud.
+  - Antigravity for paid Pro/Ultra subscribers.
+  - Gemini app for Pro/Ultra, labeled "Deeper analysis" in the dropdown, including Tasks ([@GeminiApp](https://x.com/GeminiApp/status/2123169070988337603), [Tasks](https://x.com/GeminiApp/status/2123169000310096115)).
+- **Day-0 integrations.**
+  - [Cursor](https://x.com/cursor_ai/status/2123198346802450926).
+  - [GitHub Copilot](https://x.com/github/status/2123181574116233646) app, CLI and VS Code, generally available.
+  - [LangChain Managed Deep Agents](https://x.com/caspar_br/status/2123192026745409844).
+- **Release cadence.** Arena counts the gaps between Gemini 4 releases as roughly halving each time ([@arena](https://x.com/arena/status/2123192239761596566), [@ml_angelopoulos](https://x.com/ml_angelopoulos/status/2123169986944586103)):
+  - Argon (Sep 30) → Carbon: 28 days.
+  - Carbon → Hydrogen: 15 days.
+  - Hydrogen → Neon: 6 days.
+- **Pre-launch signals.**
+  - Teaser posts from [@OfficialLoganK](https://x.com/SicongJiang25/status/2123004684516335793), [@osanseviero](https://x.com/osanseviero/status/2122949758440575397) and [@_philschmid](https://x.com/_philschmid/status/2122954931250565187).
+  - Osanseviero said serving and caching work had already made Carbon's TTFT in Antigravity [1.5x faster](https://x.com/osanseviero/status/2123004863579619513).
+  - [@dejavucoder](https://x.com/dejavucoder/status/2123079438577676729) speculated Google would drop something "better than Fable 5.2 one day before Anthropic IPO."
 
+
+## Official claims (vendor-reported)
+
+
+- **Koray Kavukcuoglu** ([thread](https://x.com/koraykv/status/2123167638050541626)):
+  - Claims much improved steerability (#2 on Agent Arena Steering), strong multi-step instruction following, and "our lowest fabrication rate yet" in internal Antigravity testing.
+  - Demo: Neon segmented a raw Smithsonian woolly-mammoth 3D scan into bones, rigged a skeleton, and generated a [museum walkthrough](https://x.com/koraykv/status/2123167642567762164).
+- **Phil Schmid** ([@_philschmid](https://x.com/_philschmid/status/2123168015160320420)): "faster than Carbon and more capable than Hydrogen." Cites #3 on Artificial Analysis, #1 on CursorBench and #3 on Agents Last Exam, and says he "mostly use[s] Neon now."
+- **Omar Sanseviero** ([@osanseviero](https://x.com/osanseviero/status/2123168220542632387)): faster, more token-efficient, better TTFT, and "better tuned thinking levels," iterated on user feedback.
+- **Google** ([thread](https://x.com/Google/status/2123172292175822907)):
+  - 50–80% lower cost per task than top competing frontier models.
+  - "Best in class at science and math."
+  - Demo: a /swarm reconstruction of Turing's 1936 King's College study.
+- **Cybersecurity.** [@ralucaadapopa](https://x.com/ralucaadapopa/status/2123189881543561408) says Neon excels at cyber-defense tasks.
+- **Google's own comparison.** Per [@TheRundownAI](https://x.com/TheRundownAI/status/2123169908338884712), Google's testing has Neon beating Claude Opus 5.5 and GPT-6.2 Sol on 16 of 19 benchmarks, at roughly ½ to ⅕ the cost per task. [@AndrewCurran_](https://x.com/AndrewCurran_/status/2123169127309410619) posted the benchmark table.
+- **Other Google staff** ([@melvinjohnsonp](https://x.com/melvinjohnsonp/status/2123167943345545419), [@joshwoodward](https://x.com/joshwoodward/status/2123177835254952348), [@tulseedoshi](https://x.com/tulseedoshi/status/2123183416090984929), [@mirrokni](https://x.com/mirrokni/status/2123192430681887113), [@shimritby](https://x.com/shimritby/status/2123172748327637036), [@gracepursuits](https://x.com/gracepursuits/status/2123190512853176421), [@shaneguML](https://x.com/shaneguML/status/2123295455127953862)):
+  - These echo "balance of speed/intelligence/usability."
+  - Mirrokni attributes the cadence to agents helping researchers "optimize and ship models."
+
+
+## Independent evaluations
+
+
+**Artificial Analysis** ([main](https://x.com/ArtificialAnlys/status/2123170645777526962), [cost](https://x.com/ArtificialAnlys/status/2123170658129768801), [breakdown](https://x.com/ArtificialAnlys/status/2123170661015396386)):
+- **Intelligence Index v5:** Neon (xhigh) scores 61, which is #3. That is behind GPT-6.2 Astra (max) and Claude Fable 5.2 (max), and +1 over Carbon (high).
+- **Cost and time per task:**
+
+  | Model | Cost/task | Time/task | Output speed |
+  |---|---|---|---|
+  | Neon (xhigh) | $6.44 | ~21 min | ~110 tok/s |
+  | Carbon (high), standard pricing | $7.76 | ~36 min | ~57 tok/s |
+  | GPT-6.2 Astra (max) | $4.00 | — | — |
+
+  - Neon is about 17% cheaper and 40% faster than Carbon, but about 1.6x Astra's cost per task.
+- **Neon at high effort** matches Carbon's score of 60 for $3.74 per task, under half of Carbon's cost.
+- **Token use vs. price:** Neon uses about 15% more output tokens than Carbon. Its savings come entirely from 25% lower list prices ($3/$15 vs $4/$20).
+- **Carbon's discount:** Carbon is currently discounted to $2/$10 until Nov 30, so Neon is 50% pricier than Carbon until then. Cached input on Neon costs $0.15 (a 95% discount).
+- **Coding Agent Index (Antigravity CLI):**
+  - Neon (xhigh) scores 59, vs Carbon 55 and Claude Code with Fable 5.2 (xhigh) / Opus 5.5 (max) at 58.
+  - Cost per task: $6.86 for Neon vs $12.61 (Opus 5.5) and $15.47 (Fable 5.2).
+  - [@kimmonismus](https://x.com/kimmonismus/status/2123221275594403932) notes this puts it 6 points above GPT-6.2 Astra.
+- **Visual reasoning and presentation:**
+  - GDP.pdf: Neon (high) 33.4% vs Carbon 28.4%. Notably, Neon at xhigh scored lower (28.0%).
+  - AA-Briefcase: 1700 Elo overall. Presentation Quality leads at 1771 Elo, +45 over Claude Sonnet 5.5.
+  - MKA Climb WSR: 56%, vs Fable 5.2 at 57%.
+- **Modalities:** text, image, video and speech input; text output.
+
+**Vals AI** ([index](https://x.com/ValsAI/status/2123168167879147542), [code migration](https://x.com/ValsAI/status/2123168182051762433)):
+- #2 on the Vals Index at 70.9%, 0.4 pts behind Fable 5.2 at less than half the cost per task.
+- #1 on the Finance and Legal indexes, Tax Agent and Legal Research.
+- **Caveat on Code Migration:** Neon averaged 160 turns per task vs 234 for Carbon and 574 for Hydrogen, but scored *below both*. "Fewer steps don't always come with a higher score."
+- **Context from Vals' Autoform-Hard results (Carbon, not Neon):** Gemini 4 Carbon "trails" GPT-6.2 Astra, Sol and Fable 5.2 on formal math ([@ValsAI](https://x.com/ValsAI/status/2123129597206450505)).
+
+**Arena / LMArena** ([Agent Arena](https://x.com/arena/status/2123169189397709174), [Text Arena](https://x.com/arena/status/2123169199396946279)):
+- **Agent Arena Index:** #2 at 1336 pts, from 4.2k real sessions. That is the best Google model, ahead of Carbon (#4, 1303), Hydrogen (#9, 1271) and Argon (#11, 1229).
+- **Agent Arena cost frontier:** $2.82 median cost per task puts it on the Pareto frontier.
+  - It beats #3 Opus 5.5 (Max) at 53% lower cost.
+  - It costs 69% less than #1 Fable 5.2 (Max), which leads the index at 1463 ([index launch](https://x.com/arena/status/2123126646983332177)).
+- **Agent Arena sub-signals:** #2 Praise vs Complaint (1539), #2 Steerability (1298), #3 Task Completion (1316).
+- **Text Arena:** Google holds the top 3. Carbon 1526, Argon 1521, Neon 1518; Neon does not top its siblings here.
+- **For comparison, GPT-6.2 Astra** lands at #6 (1291) on Agent Arena ([@arena](https://x.com/arena/status/2123234410032214464)).
+
+**CursorBench 4.1** ([@cursor_ai](https://x.com/cursor_ai/status/2123198346802450926)):
+- 63.7% at default effort, up from 57.3% for Hydrogen, setting a new cost-performance frontier.
+- Echoed by [@melvinjohnsonp](https://x.com/melvinjohnsonp/status/2123188659562459256) and [@StringChaos](https://x.com/StringChaos/status/2123214284331303337).
+
+**SWE-sweep** ([@KLieret](https://x.com/KLieret/status/2123172740043505968), [@18jeffreyma](https://x.com/18jeffreyma/status/2123171441919316292)):
+- Google claims up to 39%, "blowing all previous results out of the water."
+- With the neutral mini-swe-agent harness it gets only 12.8%, so the result is strongly harness-dependent.
+- Open questions remain on cost and inference scaling.
+
+**GitHub** ([changelog](https://x.com/github/status/2123181574116233646)): relays Google's claim of near-Carbon quality at lower token cost per task, with fewer unrequested code changes.
+
+
+## Hands-on reviews
+
+
+**Kimmonismus** (early access, Antigravity; [thread](https://x.com/kimmonismus/status/2123168299890704735)):
+- Built 17 interactive demos.
+- Bug-fix tests ([coding results](https://x.com/kimmonismus/status/2123168545303609385)):
+  - Booking checker: 1/5 → 5/5.
+  - Task scheduler: 8/14 → 14/14.
+  - Async loader: 10/16 → 16/16.
+  - Found all 4 planted bugs in a code review.
+  - It self-reported two residual gaps: a leap-second (23:59:60) rejection and a TOCTOU folder-swap race.
+- Log analysis across 13 xhigh sessions, 762 tool calls ([logs](https://x.com/kimmonismus/status/2123168557228011759)):
+  - Breakdown: 313 reads, 266 edits, 104 new files, 43 shell commands, 13 sub-agents, 2 web searches.
+  - Pattern: batch-read up to 16 files, write a single edit, re-read to verify; about 2–3 min per fix.
+  - Instruction following: told 14 times to avoid the terminal, it ran zero shell commands in those runs.
+  - It delegated browser testing to Flash sub-agents.
+  - Token use: about 71M input (93% cache hits) and 1.8M output.
+  - Weak spot was capacity: 57 "no capacity" errors and 4 stalled runs (possibly pre-launch load).
+- Verdict: "great for prototypes and solid code fixes. Expect some follow-ups."
+
+**Theo** (previously a vocal Gemini skeptic):
+- Quickly turned positive: ["looks significantly more compelling than Carbon"](https://x.com/theo/status/2123207527064318174), ["I don't hate this model. Yet"](https://x.com/theo/status/2123224301948330114), ["This is SO READABLE?"](https://x.com/theo/status/2123225578753102079), ["might actually be a good model. Fuck."](https://x.com/theo/status/2123226794409287937).
+- Escalated to ["Why the fuck is nobody talking about Neon?"](https://x.com/theo/status/2123237018813779970), ["They should have just named this Gemini 5"](https://x.com/theo/status/2123240990077268425) and a public [apology to Google](https://x.com/theo/status/2123255588570501585).
+- Ran a cross-model test where GPT-6.2 Astra [accepted Neon's suggestions](https://x.com/theo/status/2123227832587546642), and posted a [prompt-based vote of confidence](https://x.com/theo/status/2123238365629931896).
+- Framed Neon as a ["counter balance to GPT-6.2 Astra … so much more pleasant to work with"](https://x.com/theo/status/2123279922311692552).
+- Now uses Neon as the [exclusive copywriter](https://x.com/theo/status/2123273253850628260) in his multi-model setup (Fable implements, Astra playtests).
+- [@SicongJiang25](https://x.com/SicongJiang25/status/2123234446728171954) called it possibly the highest praise Theo has ever given a Gemini model; [@Willsquirrels](https://x.com/Willsquirrels/status/2123240526908711106) vouched for the reaction in person.
+
+**Jeremy Howard** ([@jeremyphoward](https://x.com/jeremyphoward/status/2123280439314108762)): reverting Solveit's Astra/Sol to their pre-6.2 versions, adding "Neon is awesome!"
+
+**Other reactions:**
+- [@fchollet](https://x.com/fchollet/status/2123193532186005962): "Really impressive numbers at that price point."
+- [@kimmonismus](https://x.com/kimmonismus/status/2123169294112698774): "Google… is back in the game" and ["Google did what OpenAI tried to achieve"](https://x.com/kimmonismus/status/2123221373510361290).
+- Kimmonismus also says Opus 5.5 (high) [remains the best overall model](https://x.com/kimmonismus/status/2123251215320719663), with Neon a candidate to become [his favorite pending more testing](https://x.com/kimmonismus/status/2123251729185869941).
+
+
+## Skeptical and critical views
+
+
+- **Benchmark trust.**
+  - [@scaling01](https://x.com/scaling01/status/2123175281414529060): "outscores Opus 5.5 and Sol 6.2 on basically every reported eval, surely it's a better model right?"
+  - Scaling01 also says Gemini 3 left him with ["PTSD"](https://x.com/scaling01/status/2123176531409158419) about trusting Google benchmarks, though he credits Google for dropping "Preview" labels.
+  - [@rasbt](https://x.com/rasbt/status/2123064851383677087) argues release benchmarks are like IQ tests for hiring, and that the real "job sample test" is [using the model](https://x.com/rasbt/status/2123117497209786374).
+- **Distillation explanation.**
+  - [@MParakhin](https://x.com/MParakhin/status/2123298795865968883) frames Neon as a smaller distillation ("Fable→Opus style"). It is cheaper to run, so it gets a larger reasoning budget, which helps on benchmarks, "though Carbon is better in real life."
+  - He nonetheless defends Google for releasing its best rather than nerfing it.
+- **The "RSI" framing.**
+  - [@teortaxesTex](https://x.com/teortaxesTex/status/2123169782153503198) quipped "Cheaper faster better with shorter iterations… something like 'RSI'," and that the best news of the day is ["Google might have RSI too"](https://x.com/teortaxesTex/status/2123231224617648316).
+  - He then argued nothing in the releases isn't explained by ["a ton of RL over parallel pretrains"](https://x.com/teortaxesTex/status/2123231480310616484).
+- **Adoption gap.** [@zachtratar](https://x.com/zachtratar/status/2123246938586001763): if Google is Pareto-optimal, why does barely anyone use its APIs relative to OpenAI and Anthropic?
+- **Naming confusion.** This was a recurring complaint.
+  - Before launch, a [list of 8 variants](https://x.com/gabriberton/status/2122962708060647534) circulated: Argon, Carbon, Hydrogen, Krypton, Neon, Oxygen, plus "Carbon for cyber" and "Argon Cyber Permissive."
+  - [@teortaxesTex](https://x.com/teortaxesTex/status/2123154096668712966): "Carbon builds on Argon, Neon builds on Hydrogen — most ridiculous naming convention award," followed by [joke roadmaps](https://x.com/teortaxesTex/status/2123197926390280427).
+  - Further jabs from [@andrew_n_carr](https://x.com/andrew_n_carr/status/2123223374046671007) (full Google lineage list), [@nicdunz](https://x.com/nicdunz/status/2123182200078078420) and [@TheTuringPost](https://x.com/TheTuringPost/status/2123191243102450165). [@YiTayML](https://x.com/YiTayML/status/2123236405048647742) replied "Enjoy the element maxxing."
+- **Capacity and reliability.** Kimmonismus's 57 capacity errors (above) are the main concrete operational complaint so far.
+
+
+## Context
+
+
+- **Competitive backdrop.** Neon landed one day after OpenAI's GPT-6.2 Astra/Sol, which drew mixed reviews over verbosity and communication style (see below), and on the eve of Anthropic's IPO. Many reviewers explicitly positioned Neon as the "pleasant to work with" counterweight to Astra's "capable but incoherent" profile. Theo frames this as [capability vs. coherency](https://x.com/theo/status/2123253181593587770).
+- **Pareto frontier.** [@jeffwang](https://x.com/jeffwang/status/2123269541409009899) notes that for the first time OpenAI, Anthropic, Google and Cognition each have a model on the cost/performance Pareto curve.
+- **Fast iteration.** [@andersonbcdefg](https://x.com/andersonbcdefg/status/2123220791366144039) reads the much-mocked Gemini 3.x Flash series as a preview of this fast-iteration cycle.
+- **Antigravity orchestration.** [@ChrisRackauckas](https://x.com/ChrisRackauckas/status/2123043267268767902) argues Google's internal use of Antigravity, which he calls far ahead on orchestrating dozens of parallel issues, explains its velocity.
+- **Unverified scale rumors.** These circulated without confirmation.
+  - "Gemini 4 ≈ 12T params trained on 500B tokens" was relayed [mockingly](https://x.com/teortaxesTex/status/2123152907583344860).
+  - Teortaxes joked about ["artistic taste emerges at ≈10T params"](https://x.com/teortaxesTex/status/2123164068240404977).
+  - He argued Zartbot-style 500B-active / 300T-token models could be served [profitably at Gemini prices](https://x.com/teortaxesTex/status/2123267783123456246).
+- **Coverage ahead.** ThursdAI is running an [Astra vs Neon episode](https://x.com/thursdai_pod/status/2123234811183788353) with Artificial Analysis.
 **GPT-6.2 Astra and Sol: Strong Evals, Contested Usability**
 
 - **Hard-task results**: Astra's strongest independent showings were in math and formal proof.
