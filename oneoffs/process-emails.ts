@@ -33,6 +33,10 @@ const systemPrompt = `You are an expert AI news analyst and tagger. Extract a co
 
 For Description: Use **bold** for important companies, models, topics, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.
 
+For Title: Write a short headline naming the biggest story of the day (e.g. "Anthropic IPOs at $2T", "Gemini 4 Hydrogen launches", "Weight Space Programming - LLMs can natively read & write neural network weights"). Do not include the date. If the day was genuinely quiet, return "not much happened today".
+
+For Slug: A very short 2-5 word URL slug for the filename, lowercase and hyphenated, derived from the title's key story (e.g. "anthropic-ipo", "gemini-4-hydrogen", "weight-space-programming", "jensen-out"). If the day was quiet, use "not-much".
+
 Follow these rules for tagging:
 1. COMPANIES:
     - Use lowercase normalized company names (e.g., "openai", "google-deepmind", "meta-ai-fair")
@@ -77,6 +81,8 @@ const PeopleSchema = z.string().describe('A person mentioned in the content, typ
 
 // Unified schema for news tag extraction
 const NewsTagsSchema = z.object({
+  title: z.string().describe('A short headline title for the issue capturing the most important story, e.g. "Anthropic IPOs at $2T" or "Gemini 4 Hydrogen launches". Do not include the date. If the day was genuinely quiet, use "not much happened today".'),
+  slug: z.string().describe('A short 2-5 word URL-safe slug for the issue filename, lowercase and hyphenated with no punctuation, derived from the title\'s key story, e.g. "anthropic-ipo", "weight-space-programming", "jensen-out". If the day was quiet, use "not-much".'),
   description: z.string().describe('A concise 1-3 sentence summary focusing on the most important stories. Use **bold** for important companies, models, topics, numbers, and numbers/facts, and *italics* for direct quotes from the content. Ignore the "> AI News for ..." header.'),
   companies: z.array(CompanySchema).describe(`List of companies or organizations mentioned. Use official lowercase names with hyphens for multi-word names (e.g., "openai", "google-deepmind", "x-ai"). Meta AI has a few names - use "meta-ai-fair" not "meta-ai" or "facebook-ai-research". Use "x-ai" instead of "xai", "deepseek" instead of "deepseek-ai", "together-ai" instead of "togethercompute", "figure-ai" instead of "figure", "langchain-ai" instead of "langchain".
     
@@ -114,12 +120,34 @@ interface EmailMetadata {
 }
 
 interface ProcessFileResult {
+  title: string;
+  slug: string;
+  newFilename: string;
   description: string;
   companies: string[];
   models: string[];
   topics: string[];
   people: string[];
   content: string;
+}
+
+function slugify(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+// Build the issue filename: keep the existing YY-MM-DD date prefix (or derive
+// it from the frontmatter date), swap in the new slug.
+function buildFilename(filePath: string, frontmatter: EmailMetadata, slug: string): string {
+  const basename = path.basename(filePath);
+  const cleanSlug = slugify(slug || '');
+  if (!cleanSlug) return basename;
+  const prefixMatch = basename.match(/^(\d{2,4}-\d{2}-\d{2})-/);
+  let prefix = prefixMatch?.[1];
+  if (!prefix && frontmatter.date) {
+    const d = new Date(frontmatter.date);
+    if (!isNaN(d.getTime())) prefix = d.toISOString().slice(2, 10);
+  }
+  return prefix ? `${prefix}-${cleanSlug}.md` : `${cleanSlug}.md`;
 }
 
 async function processFile(filePath: string, cliMode = false): Promise<ProcessFileResult | void> {
@@ -171,10 +199,13 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
       });
 
       // Use the structured extraction results
-      const { description, companies, models, topics, people } = extractionResult;
+      const { title, slug, description, companies, models, topics, people } = extractionResult;
+      const newFilename = buildFilename(filePath, frontmatter, slug);
 
+      if (title) frontmatter.title = title;
 
-      console.log(`\nExtracted ${companies.length} companies, ${models.length} models, ${topics.length} topics, ${people.length} people for ${path.basename(filePath)}`);
+      console.log(`\nTitle: ${title} | Slug: ${slug} -> ${newFilename}`);
+      console.log(`Extracted ${companies.length} companies, ${models.length} models, ${topics.length} topics, ${people.length} people for ${path.basename(filePath)}`);
       console.log(`Companies: ${companies.join(', ')}`);
       console.log(`Models: ${models.join(', ')}`);
       console.log(`Topics: ${topics.join(', ')}`);
@@ -193,6 +224,9 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
       if (cliMode) {
         // In CLI mode, return the result without writing to file
         return {
+          title,
+          slug,
+          newFilename,
           description,
           companies,
           models,
@@ -202,9 +236,9 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
         };
       } else {
         // Write to new file
-        const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
+        const outputPath = path.join(OUTPUT_DIR, newFilename);
         await fs.promises.writeFile(outputPath, newContent, 'utf8');
-        console.log(`Processed: ${path.basename(filePath)}`);
+        console.log(`Processed: ${path.basename(filePath)} -> ${newFilename}`);
         return;
       }
     } catch (extractionError) {
@@ -225,9 +259,11 @@ async function processFile(filePath: string, cliMode = false): Promise<ProcessFi
               content: `Given this email content about AI news:
 ${truncatedBody}
 
-1. Write a 1-3 sentence summary focusing ONLY on the top 1-2 most important stories.
+1. Write a short headline title for the issue naming the biggest story (no date), and a short 2-5 word lowercase-hyphenated slug for the filename.
 
-2. Generate specific tag categories. For each category, provide 5-15 relevant tags.
+2. Write a 1-3 sentence summary focusing ONLY on the top 1-2 most important stories.
+
+3. Generate specific tag categories. For each category, provide 5-15 relevant tags.
 
 Follow these rules for all tags:
 - Use lowercase throughout
@@ -246,8 +282,12 @@ Follow these rules for all tags:
           temperature: 0.3,
         });
         
-        const { description, companies, models, topics, people = [] } = result;
+        const { title, slug, description, companies, models, topics, people = [] } = result;
+        const newFilename = buildFilename(filePath, frontmatter, slug);
 
+        if (title) frontmatter.title = title;
+
+        console.log(`Title: ${title} | Slug: ${slug} -> ${newFilename}`);
         console.log(`Generated tags for ${path.basename(filePath)}:`);
         console.log(`Companies (${companies.length}): ${companies.join(', ')}`);
         console.log(`Models (${models.length}): ${models.join(', ')}`);
@@ -267,6 +307,9 @@ Follow these rules for all tags:
         if (cliMode) {
           // In CLI mode, return the result without writing to file
           return {
+            title,
+            slug,
+            newFilename,
             description,
             companies,
             models,
@@ -276,9 +319,9 @@ Follow these rules for all tags:
           };
         } else {
           // Write to new file
-          const outputPath = path.join(OUTPUT_DIR, path.basename(filePath));
+          const outputPath = path.join(OUTPUT_DIR, newFilename);
           await fs.promises.writeFile(outputPath, newContent, 'utf8');
-          console.log(`Processed: ${path.basename(filePath)}`);
+          console.log(`Processed: ${path.basename(filePath)} -> ${newFilename}`);
           return;
         }
       } catch (error) {
@@ -301,10 +344,13 @@ Follow these rules for all tags:
 
         // Create new content
         const newContent = `---\n${yaml.dump(frontmatter)}---\n\n${body}`;
-        
+
         if (cliMode) {
           // In CLI mode, return the result without writing to file
           return {
+            title: frontmatter.title || '',
+            slug: '',
+            newFilename: path.basename(filePath),
             description,
             companies,
             models,
@@ -347,16 +393,23 @@ async function main() {
       
       if (result) {
         console.log('\n=== PROCESSING RESULTS ===');
+        console.log('\nTitle:', result.title);
+        console.log('Slug:', result.slug);
         console.log('\nDescription:');
         console.log(result.description);
         console.log('\nCompanies:', result.companies.join(', '));
         console.log('\nModels:', result.models.join(', '));
         console.log('\nTopics:', result.topics.join(', '));
         console.log('\nPeople:', result.people.join(', '));
-        
-        // Write the updated content back to the original file
-        await fs.promises.writeFile(filePath, result.content, 'utf8');
-        console.log(`\nUpdated file in place: ${filePath}`);
+
+        // Write the updated content back, renaming the file if the slug changed
+        const newPath = path.join(path.dirname(filePath), result.newFilename);
+        await fs.promises.writeFile(newPath, result.content, 'utf8');
+        if (newPath !== filePath) {
+          await fs.promises.unlink(filePath);
+          console.log(`\nRenamed: ${path.basename(filePath)} -> ${result.newFilename}`);
+        }
+        console.log(`\nUpdated file: ${newPath}`);
       }
       
       return;
